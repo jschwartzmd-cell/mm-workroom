@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reviews — Rabbi Ephrati Shiurim</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+    --ink:#1a1a1a;
+    --muted:#4a4a4a;
+    --card-bg:#faf3e0;
+  }
+  html,body{background:var(--paper);color:var(--ink);}
+  body{
+    font-family: Georgia, "Times New Roman", serif;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 24px 36px 60px;
+    line-height: 1.6;
+    font-size: 16.5px;
+  }
+  header{
+    border-bottom: 3px double var(--rule);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+  }
+  .kicker{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  h1{
+    color: var(--blue);
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 0 0 10px;
+  }
+  .meta{font-size: 13px; color: var(--muted); font-style: italic;}
+  .lede{
+    background: var(--card-bg);
+    border-left: 4px solid var(--gold);
+    padding: 16px 20px;
+    margin: 22px 0 28px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  .lede p{margin: 6px 0;}
+  .lede .type-label{
+    color: var(--blue);
+    font-weight: bold;
+  }
+  .nav{font-size: 14px; margin-bottom: 22px;}
+  .nav a{
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--gold);
+  }
+  .nav a:hover{border-bottom-style: solid;}
+  h2{
+    color: var(--blue);
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .shiur-block{
+    padding: 16px 0;
+    border-bottom: 1px dotted #d4c8a0;
+  }
+  .shiur-block:last-child{border-bottom: none;}
+  .shiur-header{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 18px;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  .shiur-date{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+  }
+  .shiur-title{
+    color: var(--ink);
+    font-size: 16.5px;
+    font-weight: 600;
+  }
+  .review-group{
+    display: grid;
+    grid-template-columns: 130px 200px 1fr;
+    gap: 12px;
+    align-items: baseline;
+    padding: 4px 0;
+    font-size: 14px;
+  }
+  .review-group + .review-group{margin-top: 4px;}
+  .rg-type{
+    grid-column: 2;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--blue);
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .rg-links{grid-column: 3;}
+  .rg-links a{
+    color: var(--blue);
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--gold);
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  .rg-links a:hover{background: var(--gold); color: var(--paper);}
+  .heb{font-family: "SBL Hebrew", "Times New Roman", serif; font-size: 1.05em;}
+  footer{
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 12.5px;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .count{
+    display: inline-block;
+    background: var(--blue);
+    color: var(--paper);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">Rabbi Ephrati · Shiurim on Tefillah</div>
+  <h1>Reviews <span class="count">2 shiurim · 4 reviews</span></h1>
+  <div class="meta">Two independent reads on each week's shiur · Index updated 9 August 2026</div>
+</header>
+
+<nav class="sibling-nav" style="display:flex;gap:14px;justify-content:center;margin:0 0 24px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;letter-spacing:.05em;text-transform:uppercase;">
+  <a href="../" style="color:var(--blue);text-decoration:none;padding:6px 14px;border:1px solid var(--gold);border-radius:4px;">Reworked Shiurim</a>
+  <span style="color:var(--paper);font-weight:bold;padding:6px 14px;border:1px solid var(--gold);border-radius:4px;background:var(--gold);">Editorial Reviews</span>
+  <a href="../sefer-edition/" style="color:var(--blue);text-decoration:none;padding:6px 14px;border:1px solid var(--gold);border-radius:4px;">Sefer Edition</a>
+</nav>
+
+<div class="nav" style="display:none">
+  &laquo; <a href="../index.html">Back to main Shiurim index</a>
+</div>
+
+<div class="lede">
+<p>Each shiur receives two reviews of different character:</p>
+<p><span class="type-label">Shiur Review</span> — a content-focused read from the raw source material (transcript, summary, and finished write-up). This is a review of the <em>shiur itself</em>: what the Rav was after, what worked, what the ideas needed more of, and follow-up questions worth asking. Same in spirit as a chaver's reaction after sitting through it.</p>
+<p><span class="type-label">Editorial Review</span> — a cold read of the finished write-up only, by a reviewer with no exposure to the source material or the writing process. Diagnostic — flags weak paragraphs, contradictions, factual concerns, copy-level polish suggestions. A friend who wasn't in the writing room.</p>
+</div>
+
+<h2>2026</h2>
+
+<div class="shiur-block">
+  <div class="shiur-header">
+    <div class="shiur-date">9 August 2026</div>
+    <div class="shiur-title">Entering Shabbos Shacharis — <span class="heb">מזמור לתודה, תפילין</span>, and the Seventh Wing</div>
+  </div>
+  <div class="review-group">
+    <div class="rg-type">Shiur Review</div>
+    <div class="rg-links">
+      <a href="2026-08-09 — Shiur Review.pdf">PDF</a>
+      <a href="2026-08-09 — Shiur Review.html">HTML</a>
+    </div>
+  </div>
+  <div class="review-group">
+    <div class="rg-type">Editorial Review</div>
+    <div class="rg-links">
+      <a href="2026-08-09 — Editorial Review.pdf">PDF</a>
+      <a href="2026-08-09 — Editorial Review.html">HTML</a>
+    </div>
+  </div>
+</div>
+
+<div class="shiur-block">
+  <div class="shiur-header">
+    <div class="shiur-date">19 July 2026</div>
+    <div class="shiur-title"><span class="heb">קריאת שמע על המטה</span> — <span class="heb">המפיל</span>, Hareini Mochel, and the Maharam's Prison Seder</div>
+  </div>
+  <div class="review-group">
+    <div class="rg-type">Shiur Review</div>
+    <div class="rg-links">
+      <a href="2026-07-19 — Shiur Review.pdf">PDF</a>
+      <a href="2026-07-19 — Shiur Review.html">HTML</a>
+    </div>
+  </div>
+  <div class="review-group">
+    <div class="rg-type">Editorial Review</div>
+    <div class="rg-links">
+      <a href="2026-07-19 — Editorial Review.pdf">PDF</a>
+      <a href="2026-07-19 — Editorial Review.html">HTML</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+Reviews are produced automatically each week as part of the Mareh Mekamos pipeline. They are two readers' opinions — <em>caveat lector</em>. Feedback and disagreement welcome.
+</footer>
+
+</body>
+</html>
