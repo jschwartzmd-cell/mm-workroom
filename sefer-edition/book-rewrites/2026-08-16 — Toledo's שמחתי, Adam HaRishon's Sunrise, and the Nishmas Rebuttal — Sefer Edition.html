@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Toledo's שמחתי, Adam HaRishon's Sunrise, and the Nishmas Rebuttal</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.4;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">תּוֹסָפוֹת שַׁחֲרִית שֶׁל שַׁבָּת &mdash; שָׂמַחְתִּי, מִזְמוֹר שִׁיר, וְנִשְׁמַת כָּל חַי</h1>
+  <div class="english-title">Toledo's שָׂמַחְתִּי, Adam HaRishon's First Sunrise, and the Rebuttal on נִשְׁמַת</div>
+  <div class="sub">Sefer Edition &mdash; Shiur of Rabbi Ephrati on <em>Tefillah</em>: Shabbos Shacharis, Part II</div>
+  <div class="date">Delivered <span class="heb">ג׳ אלול תשפ״ו</span> &middot; 16 August 2026 &middot; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>L&rsquo;zecher</em> <span class="heb">רבי יהודה הלוי</span>, whose <em>yahrzeit</em> falls on <span class="heb">ג׳ אלול</span>, and the <em>Ohr Sameach</em> &mdash; <span class="heb">רבי מאיר שמחה הכהן מדווינסק</span> &mdash; whose <em>yahrzeit</em> is marked the same night. <span class="heb">זכותם יגן עלינו</span>.</p>
+
+<p class="lead">The <em>Pesukei d&rsquo;Zimra</em> of Shabbos morning receive a set of additions that the weekday order lacks. Behind each addition stands a source, and behind several of them stands a human story: a Toledo synagogue completed in the year 1180 whose inaugural Shabbos gave <span class="heb">כלל ישראל</span> the recitation of <span class="heb">שָׂמַחְתִּי בְּאֹמְרִים לִי</span>; the first sunrise <span class="heb">אדם הראשון</span> ever saw after the <em>chet</em>, which gave the world <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span>; and a Rishonic thundering against a legend concerning the authorship of <span class="heb">נִשְׁמַת כָּל חַי</span>. This chapter treats each in turn, and the smaller additions that stand alongside them.</p>
+
+<h2>I. The Framework: <span class="heb">בָּרוּךְ שֶׁאָמַר</span> and <span class="heb">יִשְׁתַּבַּח</span> as a <em>Berachah Masgeres</em></h2>
+
+<p>The order of <em>Pesukei d&rsquo;Zimra</em> is constructed as a bracket. <span class="heb">בָּרוּךְ שֶׁאָמַר</span> opens; <span class="heb">יִשְׁתַּבַּח</span> closes. The two form a <em>berachah masgeres</em> (<span class="heb">בְּרָכָה מַסְגֶּרֶת</span>) &mdash; a framing blessing &mdash; enclosing everything between.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The opening declaration is a promise of praise: the <em>tzibbur</em> announces its intention to spend the following minutes praising the Master of the world with the words of <span class="heb">שירי דוד עבדך</span>. The closing blessing seals that praise.</p>
+
+<p>This structural logic yields a Rishonic ruling of immediate liturgical consequence: whatever is added to <em>Pesukei d&rsquo;Zimra</em> &mdash; and Shabbos morning brings substantial additions &mdash; belongs <em>inside</em> the bracket, between <span class="heb">בָּרוּךְ שֶׁאָמַר</span> and <span class="heb">יִשְׁתַּבַּח</span>. The additions are not appendages tacked onto the perimeter of the tefillah; they are the very praise which the opening blessing announced. Nusach Ashkenaz preserves this framework in its most direct form: <span class="heb">בָּרוּךְ שֶׁאָמַר</span> is said early, immediately following the introductory <em>pesukim</em>, and every added <em>kapittel</em> of Shabbos morning falls within the bracket.</p>
+
+<h2>II. Why Nusach Sefard Places the Additions <em>Before</em> <span class="heb">בָּרוּךְ שֶׁאָמַר</span></h2>
+
+<p>Nusach Sefard, and the <em>Chassidishe</em> siddurim that follow its ordering, do something structurally different. The extended <em>kapitlach</em> of Shabbos morning &mdash; <span class="heb">הוֹדוּ לַה׳ קִרְאוּ בִשְׁמוֹ</span> and the sequence that follows &mdash; are recited <em>before</em> <span class="heb">בָּרוּךְ שֶׁאָמַר</span>, not within the bracket. On the surface this appears to contradict the very framework principle just laid out. In truth it embodies a different halakhic priority.</p>
+
+<p>The <em>Mesadrei HaSiddur</em>, from the age of the <em>Anshei Knesses HaGedolah</em> through the Rishonim, were consistently sensitive to those who cannot easily be present for the full order of tefillah &mdash; the latecomer, the unlearned, the one who depends upon the <em>shaliach tzibbur</em> to be <em>yotzei</em> via <em>shomeia k&rsquo;oneh</em>.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> This is not an accommodation invented in later generations; it is a Rishonic sensibility woven throughout the architecture of the siddur.</p>
+
+<p><span class="heb">בָּרוּךְ שֶׁאָמַר</span> is precisely the sort of blessing at which this sensitivity operates. In earlier generations many <em>mispallelim</em> did not know how to daven independently and relied on the <em>shaliach tzibbur</em>&rsquo;s recitation of the opening berachah, being <em>yotzei</em> through <em>shomeia k&rsquo;oneh</em>. Were <span class="heb">בָּרוּךְ שֶׁאָמַר</span> said too early on Shabbos morning &mdash; before the <em>tzibbur</em> has fully gathered &mdash; those relying on the <em>shaliach tzibbur</em> would lose the berachah entirely with no path to recover it.</p>
+
+<p>Hence the Nusach Sefard inversion. The extended <em>kapitlach</em> are recited first, providing perhaps fifteen minutes of runway during which the <em>tzibbur</em> assembles; only then is <span class="heb">בָּרוּךְ שֶׁאָמַר</span> said, catching everyone who has by then arrived. The framework yields to the practical need. Nusach Ashkenaz, by contrast, holds the framework strictly and accepts as its price that some will miss <span class="heb">בָּרוּךְ שֶׁאָמַר</span>. Neither rite is arbitrary; the divergence encodes a genuine dispute about which halakhic value carries the greater weight in the ordering of <em>Pesukei d&rsquo;Zimra</em>.</p>
+
+<h2>III. Three Reasons for the Additions</h2>
+
+<h3>The Seventh Wing of the Serafim</h3>
+
+<p><em>Tosafos</em> on <em>Sanhedrin</em><a class="footnote-ref" id="ref3" href="#fn3">[3]</a> brings the tradition of the Zohar concerning the wings of the <em>serafim</em>. The pasuk in <em>Yeshaya</em> describes <span class="heb">שֵׁשׁ כְּנָפַיִם שֵׁשׁ כְּנָפַיִם לְאֶחָד</span> &mdash; six wings for each <em>seraf</em>. Each wing corresponds to one day of the week and serves as the vehicle for that day&rsquo;s <em>shirah</em>. On Shabbos, no wing remains; the <em>malachim</em> have exhausted their wings across the week&rsquo;s six days. On this day <span class="heb">כלל ישראל</span> becomes the seventh wing. The added <em>kapitlach</em> of Shabbos morning are, on this account, the <em>shirah</em> of the <em>malachim</em> now sung by Klal Yisrael in their stead.</p>
+
+<h3>The <em>Turcha D&rsquo;Tzibbura</em> Relaxes</h3>
+
+<p>The <em>Tur</em> in the <em>hilchos</em> of <em>Pesukei d&rsquo;Zimra</em><a class="footnote-ref" id="ref4" href="#fn4">[4]</a> offers a more practical reason. During the week the <em>tzibbur</em> is pressed for time; work and obligation weigh, and Chazal were reluctant to extend the length of the tefillah. On Shabbos the constraint releases. The added <em>kapitlach</em> reflect the opportunity of the day and the honor due it. Both reasons &mdash; the structural (the seventh wing) and the pragmatic (the released constraint) &mdash; may operate simultaneously, and both are valid.</p>
+
+<h3>Rabbeinu Shlomo mi&rsquo;Garmisa: The Shabbos Set Was Once the Daily Norm</h3>
+
+<p>A third and startling account emerges from the siddur of <strong>Rabbeinu Shlomo of Worms</strong> (<em>mi&rsquo;Garmisa</em> &mdash; <span class="heb">רבנו שלמה מגרמייזא</span>), an Ashkenazic Rishon of the late eleventh and early twelfth centuries, a contemporary of Rashi and a major <em>mekubal</em>.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> In his own siddur he preserves a striking historical claim: the <em>original takanah</em> of <em>Pesukei d&rsquo;Zimra</em> called for the full expanded corpus &mdash; the entire set that Shabbos morning now retains &mdash; to be recited <em>every day</em>. The gradual curtailment of the weekday version was a later concession to practical necessity: the working <em>oylam</em> could not sustain the length; some were leaving before <span class="heb">אַשְׁרֵי וּבָא לְצִיּוֹן</span>; attendance itself was at stake. The full expansion was preserved intact only on the one day that permitted it, and the weekday <em>Pesukei d&rsquo;Zimra</em> was pared down to what remains today.</p>
+
+<p>He adds a wistful conclusion: <em><span class="heb">וְהָאוֹמְרָם כָּל יוֹם תָּבֹא עָלָיו בְּרָכָה</span></em> &mdash; one who says the extended set daily will be blessed. Whether this ideal has ever been widely adopted in practice is another question; the historical claim itself carries a significant consequence for how the added <em>kapitlach</em> of Shabbos morning should be understood. They are not liturgical padding. They are the recovered original template of daily <em>Pesukei d&rsquo;Zimra</em>, preserved intact on the day that permits their full deployment.</p>
+
+<h2>IV. <span class="heb">שָׂמַחְתִּי בְּאֹמְרִים לִי</span> and the Toledo Synagogue of 1180</h2>
+
+<h3>A Chapter Without a Rishonic Genealogy</h3>
+
+<p>Among the added <em>kapitlach</em> of Shabbos morning stands <span class="heb">שִׁיר הַמַּעֲלוֹת שָׂמַחְתִּי בְּאֹמְרִים לִי בֵּית ה׳ נֵלֵךְ</span> &mdash; <em>Tehillim</em> 122<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> &mdash; a fixture of every Nusach Sefard siddur on Shabbos morning. Yet a striking feature of its liturgical history distinguishes it from every other addition: no Rishon of the standard corpus &mdash; not the <em>Avudraham</em>, not the <em>Machzor Vitri</em>, not <em>Rabbeinu Shlomo mi&rsquo;Garmisa</em> &mdash; includes this particular <em>perek</em> in his list of Shabbos-morning additions. Each of the other added <em>kapitlach</em> can be traced to a Rishonic source. This one cannot &mdash; save for a single text.</p>
+
+<h3>The <em>Sefer HaManhig</em> Preserves the Origin</h3>
+
+<p>The one Rishonic source that records the origin of the <span class="heb">שָׂמַחְתִּי</span> minhag is the <strong><em>Sefer HaManhig</em></strong> of <span class="heb">רבי אברהם בן נתן הירחי</span> (early thirteenth century).<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> What he preserves is remarkable in specificity: a place, a date, a family, an occasion, and a single evening in which a universal minhag was born.</p>
+
+<p>In the year <strong>1180</strong>, in the city of Toledo in Castile, a Jew named <strong><span class="heb">רבנו יוסף בן שושן</span></strong> completed the construction of a grand synagogue.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> The <em>ibn Shushan</em> family were among the <em>nesi&rsquo;im</em> of the Toledo Jewish community &mdash; recognized by the Castilian crown as the community&rsquo;s official leadership, possessed of extraordinary wealth. Rabbeinu Yosef himself was a <em>gaon</em>, a <em>tzaddik</em>, and a <em>mekubal</em>, and served in the court of King Alfonso VIII of Castile in a position of financial administration &mdash; a role analogous to the one <em>Don Yitzchak Abarbanel</em> would later occupy under Ferdinand and Isabella.</p>
+
+<p>Driven by his devotion, Rabbeinu Yosef built not merely a shul but a substantial complex &mdash; a <em>mikdash me&rsquo;at</em> of astonishing scale for the age. On the first Shabbos morning that the <em>tzibbur</em> gathered to daven in the newly inaugurated shul, Rabbeinu Yosef stood before them and, overcome by the joy of what he beheld, declared that in honor of the new <em>Beis Hashem</em> the <em>tzibbur</em> would add one specific <em>perek</em> to the Shabbos-morning <em>Pesukei d&rsquo;Zimra</em>: <span class="heb">שָׂמַחְתִּי בְּאֹמְרִים לִי בֵּית ה׳ נֵלֵךְ</span>. The name of the shul, the joy of the moment, and the yearning of the pasuk formed a triple echo. The minhag was adopted by neighboring Toledan communities; through the influence of the widely read <em>Sefer HaManhig</em> it spread outward. And every Shabbos morning across the world today, millions of Yidden recite this <em>perek</em> because of that single Shabbos in Toledo in 1180.</p>
+
+<h3>The Gemara&rsquo;s Backstory: Why David Rejoiced</h3>
+
+<p>The pasuk itself carries a Gemara backstory that deepens what the <em>ibn Shushan</em> chose. The Gemara in <em>Makkos</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> teaches that <span class="heb">דוד המלך</span> heard murmurings behind his back: <em><span class="heb">מָתַי יָמוּת זָקֵן זֶה וְיִבָּנֶה בֵּית הַמִּקְדָּשׁ</span></em> &mdash; &ldquo;When will this old man die, so that the <em>Beis HaMikdash</em> may finally be built?&rdquo; The nation knew that David had been informed &mdash; <span class="heb">יָדֶיךָ דָּמִים מָלֵאוּ</span> &mdash; that he himself would not build the Mikdash, that Shlomo would do so after his passing.</p>
+
+<p>The natural response to such murmuring would be insult and rage. David&rsquo;s response was <em><span class="heb">שָׂמַחְתִּי</span></em> &mdash; he rejoiced. The rudeness of the words revealed the <em>kisufin</em> that lay beneath them: a collective yearning of <span class="heb">כלל ישראל</span> to be <em>oleh l&rsquo;regel</em>, to serve in the <em>Beis Hashem</em>. Yes, the words themselves were a <em>shtickel chutzpah</em>; but beneath the harshness was national longing, and David heard the longing rather than the harshness.</p>
+
+<p>When Rabbeinu Yosef ibn Shushan chose this precise pasuk for the inauguration of his shul, the choice reached toward that same layered joy. A <em>mikdash me&rsquo;at</em> is not the fulfillment of the yearning but its extension: a Yid builds a <em>Beis Hashem</em> not because he has arrived but because he longs for the one that is not yet built. The pasuk carries the yearning forward, from David to Toledo to every Shabbos morning since.</p>
+
+<h2>V. The Toledo Synagogue&rsquo;s Later History</h2>
+
+<p>The building itself still stands. Its later history closes an arc that begins in 1180 and ends only in the twenty-first century.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></p>
+
+<p>In the summer of <strong>1391</strong> &mdash; a full century before the Alhambra Decree of 1492 &mdash; a wave of anti-Jewish violence and forced conversions swept Christian Spain. The pogroms were initiated in Seville by the preacher <em>Ferrand Mart&iacute;nez</em> and spread to Toledo and beyond; historians estimate tens of thousands of Sephardic Jews were forcibly converted or killed in the summer&rsquo;s events. The Dominican friar <strong>Vincent Ferrer</strong> &mdash; whose itinerant preaching campaign peaked in the years 1411&ndash;1416 and whom the Catholic Church later canonized &mdash; carried the conversionary project directly into the synagogues of Spain in the decades that followed. Learned in <em>Torah She&rsquo;bichsav</em> and portions of <em>Torah She&rsquo;be&rsquo;al Peh</em>, he would enter a shul with a cross in one hand and a <em>Sefer Torah</em> in the other and declare the building a church.</p>
+
+<p>The <em>ibn Shushan</em> synagogue of Toledo was among the buildings he came to. Within a few years the Catholic Church took possession of it and renamed it <em>Sinagoga de Santa Mar&iacute;a la Blanca</em> &mdash; the name jarring on the tongue, <span class="heb">להבדיל אלף אלפי הבדלות</span>. The building served as a church for over six centuries. Only in <strong>2013</strong> did the Archbishop of Toledo formally return it to the local Jewish community; today it functions as a Jewish museum.</p>
+
+<p>It is among the most ancient standing synagogue buildings in Europe. The claim of being the very oldest is contested &mdash; the Old-New Synagogue of Prague, dating to approximately 1270, is a serious competitor for the same title &mdash; but the Toledo building&rsquo;s antiquity, standing form, and continuous physical existence across nearly nine centuries are matters of historical record. The architecture is <em>mud&eacute;jar</em>: designed by Muslim architects working for Jewish patrons in Christian Spain. Small windows, distinctive arches, a <em>Magen David</em> preserved in the <em>mizrach</em> wall, a central arch where the <em>Aron HaKodesh</em> once stood.</p>
+
+<h2>VI. <span class="heb">רבי אברהם הירחי</span>: The Wandering Rishon Who Preserved the Story</h2>
+
+<p>A word on the source itself. <span class="heb">רבי אברהם בן נתן הירחי</span> &mdash; the author of the <em>Sefer HaManhig</em> &mdash; is an unusual figure among the Rishonim.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> The great majority of Rishonim were born, learned, taught, and died within a single region &mdash; Ashkenaz, or Sefarad, or Italy, or Provence. Their halakhic vantage was local; their rulings reflected the practice of their own community, drawn from what they had seen and heard within its borders.</p>
+
+<p><span class="heb">רבי אברהם</span> was different. He was born in the town of <em>Lunel</em> (<span class="heb">לוֹנֵל</span>) in Provence; his very appellation &mdash; <em>HaYarchi</em> (<span class="heb">הירחי</span>, &ldquo;of the moon&rdquo;) &mdash; is a bilingual play on the town&rsquo;s name (French <em>lune</em>, Hebrew <span class="heb">ירח</span>). Having received his early formation in Provence, he then traveled by deliberate choice, systematically, from kehillah to kehillah &mdash; through France, Germany, Provence, and finally Spain &mdash; documenting the variations of local <em>minhag</em> as he went. He was, in modern language, a working ethnographer of Jewish practice, and his <em>Sefer HaManhig</em> stands among the most important early-Rishonic witnesses to the geographic diversity of Jewish tefillah and observance.</p>
+
+<p>He ended his life in Toledo, where he died in approximately 1215. It is precisely his willingness to travel &mdash; his readiness to leave Provence for Castile and to record what he saw there &mdash; that preserves for us the story of the <em>ibn Shushan</em> synagogue and the origin of <span class="heb">שָׂמַחְתִּי</span> as a Shabbos-morning addition. Had he remained in Lunel the story would have died with the Toledo community; every Yid today would say <span class="heb">שָׂמַחְתִּי</span> Shabbos morning with no knowledge of why.</p>
+
+<h2>VII. <span class="heb">הַלֵּל הַגָּדוֹל</span> &mdash; Why the &ldquo;Great&rdquo; <em>Hallel</em></h2>
+
+<p>The Shabbos-morning additions include <em>Tehillim</em> 136: <span class="heb">הוֹדוּ לַה׳ כִּי טוֹב כִּי לְעוֹלָם חַסְדּוֹ</span> &mdash; known throughout the tradition as <em>Hallel HaGadol</em>, the &ldquo;Great <em>Hallel</em>.&rdquo; The Gemara in <em>Pesachim</em><a class="footnote-ref" id="ref12" href="#fn12">[12]</a> preserves Rabbi Yochanan&rsquo;s account of the epithet: it is called <em>great</em> because <span class="heb">הקב״ה</span> sits <em>b&rsquo;rum olamo</em> &mdash; in the heights of His world &mdash; and personally distributes sustenance to every creature. The proof-text is the pasuk toward the close: <span class="heb">נֹתֵן לֶחֶם לְכָל בָּשָׂר, כִּי לְעוֹלָם חַסְדּוֹ</span>.</p>
+
+<p>The <em>gadlus</em> of the Ribbono Shel Olam that this <em>perek</em> praises is not the abstract majesty of the distant sovereign. It is the specific, granular care that ensures every ant, every fish, every bird, every human being receives its sustenance. In infinite majesty the Creator attends to the smallest <em>beriyah</em>. That is what makes the <em>perek</em> &mdash; whose refrain celebrates precisely this quality &mdash; <em>gadol</em>.</p>
+
+<p>The Gemara in <em>Berachos</em><a class="footnote-ref" id="ref13" href="#fn13">[13]</a> preserves a <em>hava amina</em> that measures the stature of the <em>perek</em> still more directly. It was passingly considered whether <em>Hallel HaGadol</em> should be recited daily in the place of <em>Ashrei</em>. Both share the alphabetic-acrostic structure that Chazal valued; both praise the Ribbono Shel Olam broadly. In the end the Gemara preserved <em>Ashrei</em> as the daily standard, but the very fact that <em>Hallel HaGadol</em> was considered for that role confirms its weight. It is reserved for Shabbos morning and for the Seder night at <em>Pesach</em> &mdash; both moments when the themes of <em>bri&rsquo;as ha&rsquo;olam</em> and universal <em>chesed</em> are foregrounded.</p>
+
+<h2>VIII. <span class="heb">הָאַדֶּרֶת וְהָאֱמוּנָה</span> &mdash; The <em>Shirah</em> of the <em>Malachim</em></h2>
+
+<p>Certain kehillos &mdash; particularly the <em>Chassidishe</em> world &mdash; include in Shabbos <em>Pesukei d&rsquo;Zimra</em> the alphabetical acrostic <span class="heb">הָאַדֶּרֶת וְהָאֱמוּנָה לְחַי עוֹלָמִים</span>, a text of divine attributes drawn from the ancient mystical literature of <em>Pirkei Heichalos</em> &mdash; the corpus that ascribes <em>shirah</em> to the <em>malachei ha&rsquo;shares</em>.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<p>The <strong><em>Maharil</em></strong> (Rabbeinu Yaakov Molin, c. 1360&ndash;1427) ruled that this tefillah is so exalted in status that it ought not be recited <em>b&rsquo;tzibbur</em> except on <em>Yom Kippur</em> &mdash; the one day of the year when Klal Yisrael&rsquo;s parallel to the <em>malachim</em> is halakhically formalized (<em>Shabbos Shabbason</em>, no eating and no drinking, white <em>bigadim</em>). To recite the <em>shirah</em> of the <em>malachim</em> on ordinary days, on the <em>Maharil</em>&rsquo;s reading, risks a certain <em>chutzpah</em> &mdash; the appropriation of a register that does not belong to man.</p>
+
+<p>The <em>Chassidishe oylam</em> nonetheless recites <span class="heb">הָאַדֶּרֶת</span> every Shabbos morning. The justification runs directly through the seventh-wing principle set out above (Section III). If, on Shabbos, Klal Yisrael <em>is</em> the seventh wing of the <em>serafim</em>, then on that day the <em>shirah</em> that belongs on ordinary days to the <em>malachim</em> alone belongs also to Klal Yisrael. The <em>Arizal</em> is the halakhic ground for this practice, teaching that <span class="heb">הָאַדֶּרֶת</span> belongs specifically to Shabbos precisely because of the seventh-wing status; this is the counter to the <em>Maharil</em>&rsquo;s concern. Some <em>chassidim</em> nonetheless preserve the <em>Maharil</em>&rsquo;s scruple by reciting <span class="heb">הָאַדֶּרֶת</span> before the formal beginning of the tzibbur&rsquo;s tefillah, so that it is technically outside the <em>tzibbur</em>&rsquo;s formal davening.</p>
+
+<p>A further consideration: the sanctity of Shabbos may in a certain sense exceed that of Yom Kippur itself. Yom Kippur is called <em>Shabbos Shabbason</em> &mdash; a Shabbos of Shabbosos &mdash; but the base <em>kedushah</em>, the source, is Shabbos. On that reading the very argument that reserves <span class="heb">הָאַדֶּרֶת</span> for Yom Kippur may quietly justify its recitation on Shabbos as well.</p>
+
+<h2>IX. <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span> &mdash; The First Sunrise of Adam HaRishon</h2>
+
+<h3>The Song of Shabbos</h3>
+
+<p>The most weighty of all the Shabbos-morning additions is <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span> &mdash; <em>Tehillim</em> 92<a class="footnote-ref" id="ref15" href="#fn15">[15]</a>. In the era of the <em>Beis HaMikdash</em>, this was the <em>Shir Shel Yom</em> which the <em>Leviim</em> would sing when the <em>Tamid shel Shachar</em> was offered on Shabbos. Every day of the week had its own <em>Shir Shel Yom</em>; on Shabbos this was theirs.</p>
+
+<p>Its ultimate authorship &mdash; the identity of the composer whose words the <em>Leviim</em> received &mdash; is answered by <em>Avos d&rsquo;Rabbi Nassan</em><a class="footnote-ref" id="ref16" href="#fn16">[16]</a>: <span class="heb">אָדָם הָרִאשׁוֹן</span>. And the story of the composition is among the most moving passages that the <em>Torah She&rsquo;be&rsquo;al Peh</em> preserves concerning the origin of any tefillah.</p>
+
+<h3>The First Nightfall</h3>
+
+<p><span class="heb">אדם הראשון</span> was created on Friday. On Friday afternoon he committed the <em>chet</em> of the <em>Etz HaDa&rsquo;as</em>. As Shabbos began the sun started to set &mdash; for the first time in his experience. This was the first day of a human being&rsquo;s life on the earth, and therefore, in the most literal sense, the first night.</p>
+
+<p>As the darkness fell, <span class="heb">אדם</span> was seized by terror. His interpretation of the setting sun was catastrophic. He believed his sin had brought upon the world an eternal darkness &mdash; that the world was ending, in the dark, on his account, in punishment for what he had done. He passed the night in that terror, waiting to see whether the morning would come.</p>
+
+<p>The <em>Ritva</em> on <em>Avodah Zarah</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a> raises the obvious difficulty. <span class="heb">אדם הראשון</span> was, per the Gemara&rsquo;s descriptions of him, a being of towering intellect and profound spiritual insight; the <em>Gemara</em> in <em>Bava Basra</em> teaches that even the polish of his heel outshone the sun&rsquo;s wheel. Did he not understand that there is a natural cycle of <span class="heb">ויהי ערב ויהי בוקר</span>, of evening and morning? Even without prior experience, surely his intellect grasped the rhythm of creation.</p>
+
+<p>The Ritva&rsquo;s answer is that of course he understood; but <em><span class="heb">החטא מבלבלו</span></em> &mdash; the <em>chet</em> disorients. Post-<em>chet</em>, his clear mind clouded. He could not <em>believe</em> what he intellectually knew. The chiddush is theological as much as psychological: <em>chet</em> damages a person&rsquo;s ability to believe what he knows. The same mechanism is described in <em>Mesillas Yesharim</em> in the language of <em>aveiros mitatmim es ha&rsquo;lev</em>: the heart is dulled; the intellect&rsquo;s conclusions no longer reach it.</p>
+
+<h3>The Sunrise</h3>
+
+<p>Shabbos morning, the sun rose. <span class="heb">אדם</span> saw the light and understood: <em>the world continues. Even though I sinned. Even though I broke the first commandment ever given. A person can fail &mdash; and there is still a morning.</em></p>
+
+<p>Overcome, he composed <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת, טוֹב לְהוֹדוֹת לַה׳</span> &mdash; a song of thanks for the day of Shabbos, for the day whose sunrise disclosed that the world was not over. And then: <span class="heb">לְהַגִּיד בַּבֹּקֶר חַסְדֶּךָ וֶאֱמוּנָתְךָ בַּלֵּילוֹת</span> &mdash; to declare His kindness in the morning and His faithfulness in the nights. The night was terrifying; the morning declared <em>chesed</em>.</p>
+
+<p><em>Avos d&rsquo;Rabbi Nassan</em> adds a further detail. At the very moment <span class="heb">אדם</span> began to sing, <em><span class="heb">בְּאוֹתָהּ שָׁעָה יָרְדוּ כִּתּוֹת שֶׁל מַלְאֲכֵי הַשָּׁרֵת</span></em> &mdash; <em>kittos</em> of <em>malachim</em> descended from Shamayim with musical instruments in hand: <span class="heb">עֲלֵי עָשׂוֹר וַעֲלֵי נָבֶל, עֲלֵי הִגָּיוֹן בְּכִנּוֹר</span>. The instruments the <em>perek</em> itself names accompanied its first singing; heavenly music attended the first human sunrise.</p>
+
+<p>Every Shabbos morning, when the <em>tzibbur</em> reaches <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span>, the <em>emunah</em> that stands behind the words is that the sun always rises again &mdash; that a Yid who has failed can begin again in the morning. The <em>chet</em> did not end the world for <span class="heb">אדם</span> and it does not end the world now.</p>
+
+<blockquote>
+<div class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת. טוֹב לְהוֹדוֹת לַה׳, וּלְזַמֵּר לְשִׁמְךָ עֶלְיוֹן. לְהַגִּיד בַּבֹּקֶר חַסְדֶּךָ, וֶאֱמוּנָתְךָ בַּלֵּילוֹת.</div>
+<div class="trans">A psalm, a song, for the day of Shabbos. It is good to give thanks to Hashem, and to sing to Your name, Most High &mdash; to declare Your kindness in the morning, and Your faithfulness in the nights.</div>
+<div class="source"><em>Tehillim</em> 92:1&ndash;3</div>
+</blockquote>
+
+<h3>The <em>Shevisas Keilim</em> Question and the <em>Korbanos</em> Parallel</h3>
+
+<p>A serious difficulty arises within the <em>Avos d&rsquo;Rabbi Nassan</em> narrative and deserves being named rather than glossed. The <em>malachim</em> descend playing instruments &mdash; but Shabbos morning has arrived. The halakhic prohibition of <em>shevisas keilim</em> (the requirement that one&rsquo;s utensils rest on Shabbos) applies to musical instruments among other <em>keilim</em>. Are the <em>malachim</em>, in this account, <em>mechalel Shabbos</em>? A parallel wrinkle: <em>Avos d&rsquo;Rabbi Nassan</em> also records that <span class="heb">אדם</span> brought <em>korbanos</em> that morning &mdash; yet a <em>korban yachid</em> is not brought on Shabbos.</p>
+
+<p>The Rishonim treating this <em>sugya</em> approach it in more than one direction. Some resolve the difficulty by dating the <em>korbanos</em> to Sunday rather than Shabbos itself; on this reading a portion of the aggadic material of the passage reflects the events of the following day. Others invoke the principle that <em>malachim</em> are not <em>bnei chiyuv</em> &mdash; not obligated in the halakhic system that binds Klal Yisrael &mdash; and hence their music on the first Shabbos morning does not stand under the prohibition of <em>shevisas keilim</em> as it applies to a Yid. The <em>machlokes</em> of the Rishonim on this point cannot be fully resolved here; it is enough that both directions be preserved, and that the difficulty be recognized as a <em>machlokes</em> rather than dismissed as a stray question.</p>
+
+<h2>X. <span class="heb">ה׳ מָלָךְ גֵּאוּת לָבֵשׁ</span> &mdash; <span class="heb">הקב״ה</span>&rsquo;s <em>Bigdei Shabbos</em></h2>
+
+<p>Immediately following <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span> comes <em>Tehillim</em> 93<a class="footnote-ref" id="ref18" href="#fn18">[18]</a>: <span class="heb">ה׳ מָלָךְ, גֵּאוּת לָבֵשׁ &mdash; לָבֵשׁ ה׳ עֹז הִתְאַזָּר</span> &mdash; <em>Hashem has reigned; He has clothed Himself in majesty; Hashem has girded Himself with strength.</em> The choice of this <em>perek</em>, specifically for Shabbos, follows from the verb <span class="heb">לָבֵשׁ</span> &mdash; &ldquo;He clothed Himself.&rdquo;</p>
+
+<p>Just as a Yid puts on <em>bigdei Shabbos</em> &mdash; as the Friday-night piyut <em><span class="heb">לק-ל אֲשֶׁר שָׁבַת</span></em><a class="footnote-ref" id="ref19" href="#fn19">[19]</a> declares of <span class="heb">הקב״ה</span>: <em><span class="heb">תִּפְאֶרֶת עָטָה לְיוֹם הַמְּנוּחָה</span></em> &mdash; so, <em>kaviyachol</em>, the Ribbono Shel Olam Himself &ldquo;wraps Himself&rdquo; in the <em>kedushah</em> of Shabbos as one wraps himself in a garment of honor. The change is not one-sided. Something changes in the higher <em>olamos</em> on Shabbos, and the material act of the Yid changing into finer clothes is an emulation of a divine act.</p>
+
+<p>The pasuk that commemorates this &mdash; <span class="heb">ה׳ מָלָךְ גֵּאוּת לָבֵשׁ</span> &mdash; is added on Shabbos morning to bring the parallel to speech. The <em>kedushah</em> of Shabbos reaches through <em>all</em> the <em>olamos</em>. What the Yid does with his body in preparation for the day corresponds to something that is happening, <em>kaviyachol</em>, in Shamayim.</p>
+
+<h2>XI. <span class="heb">נִשְׁמַת כָּל חַי</span> &mdash; The <em>Yesod v&rsquo;Shoresh</em> of Shabbos Shacharis</h2>
+
+<h3>The Peak of Shabbos-Morning Tefillah</h3>
+
+<p><span class="heb">נִשְׁמַת כָּל חַי</span> is the peak of Shabbos-morning davening &mdash; the <em>yesod v&rsquo;shoresh ha&rsquo;avodah</em> of Shabbos Shacharis, according to the great <em>mekubalim</em>. It is a <em>segulah</em> of significant weight in its own right; some women recite it every day. Yet a legend attached to its authorship, of a kind that has circulated in some corners of Jewish popular literature for many centuries, requires being addressed directly &mdash; both because the legend itself is false and because the Rishonic rebuttal is a matter of the historical record.</p>
+
+<h3>The Legend of Shimon Kefa</h3>
+
+<p>The legend concerns a Jew known in the story as <strong>Shimon Kefa</strong> (Kefa &mdash; the Aramaic <em>kefa</em>, &ldquo;rock,&rdquo; rendered in Greek as <em>Petros</em>).<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> Its historical setting: the era of the <em>Tanna&rsquo;im</em>, when the movement that later became Christianity had first emerged. In that early period the followers of <em>Yoshke</em> (<span class="heb">ימח שמו וזכרו</span>) were not yet a separate community &mdash; they were Yidden, neighbors and shul-goers, and the boundary between the two religions had not yet been drawn.</p>
+
+<p>According to the legend, the <em>Tanna&rsquo;im</em> officially appointed Shimon Kefa &mdash; a frum Yid &mdash; as an undercover agent charged with a specific mission: to infiltrate the emerging Christian movement, rise within its ranks, and establish laws that would create a decisive and permanent separation between Christianity and Yiddishkeit. He is credited within the legend with the institution of Sunday as the Christian day of rest &mdash; a single stroke that made the boundary of Shabbos between the two religions permanent and unmistakable. The legend then extends: that this same Shimon Kefa returned to Klal Yisrael, composed <span class="heb">נִשְׁמַת</span>, and had it inserted into the siddur of Israel.</p>
+
+<p>If the legend were true &mdash; if <span class="heb">נִשְׁמַת</span> were the composition of a Yid who had (even for tactical purposes) crossed the boundary into Christianity &mdash; the presence of the tefillah in the siddur would carry a shadow. This is the question that the Rishonim in Northern France in the age of Rashi felt compelled to address, and did address, with striking force.</p>
+
+<h3>The <em>Machzor Vitri</em>&rsquo;s Rebuttal</h3>
+
+<p>The <strong><em>Machzor Vitri</em></strong><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> &mdash; authored by <span class="heb">ר׳ שמחה בן שמואל מויטרי</span>, a talmid of Rashi &mdash; rebuts the legend with unusual sharpness. The formulation is a paraphrase; the substance is that anyone who claims that <span class="heb">נִשְׁמַת</span> was composed by this Yid who became a Christian &mdash; even if only in the manner of an undercover mission &mdash; will be <em>chayav</em>, when the <em>Beis HaMikdash</em> is rebuilt, to bring a <em>korban chatas</em> for having uttered such a falsehood about a holy tefillah.</p>
+
+<p>The severity of the language is itself the measure of how seriously the <em>Machzor Vitri</em> took the danger. He rules the legend a falsehood and its repetition a sin. His counter-attribution is the standard authorship of the fixed elements of the siddur: <span class="heb">נִשְׁמַת</span> was composed by the <em>Anshei Knesses HaGedolah</em>, and he brings multiple <em>rayos</em> from the internal structure and vocabulary of the tefillah in support.</p>
+
+<h3>What Remains of the Question</h3>
+
+<p>The persistence of the rebuttal implies the persistence of the rumor. The <em>Machzor Vitri</em>&rsquo;s formulation is not an academic exercise; the fact that a talmid of Rashi in northern France felt the need to invoke a <em>korban chatas</em> to warn against the legend means that the legend was in fact circulating among Jews of his era, and that the potential damage of its uncritical repetition was real. Nothing in the historical or scholarly record supports the legend on its merits: the historical Simon Peter (c. 1&ndash;c. 65 CE) is a central figure in Christian tradition as founder of the Roman Church, and the &ldquo;undercover Jewish agent&rdquo; narrative appears only in Jewish popular literature and has no basis outside it.</p>
+
+<p>The point is not to soften the <em>Machzor Vitri</em>&rsquo;s severity. It is to hear him clearly: when a Yid reaches <span class="heb">נִשְׁמַת כָּל חַי</span> on Shabbos morning, he is saying words the <em>Anshei Knesses HaGedolah</em> composed. That is the fact of the matter per one of the closest talmidim of Rashi, and the legend to the contrary is one that the Rishonim themselves felt obligated to condemn in the strongest halakhic terms available.</p>
+
+<h2>XII. Closing</h2>
+
+<p>The added <em>kapitlach</em> of Shabbos morning are, in the account of <em>Rabbeinu Shlomo mi&rsquo;Garmisa</em>, the recovered form of the original daily <em>Pesukei d&rsquo;Zimra</em> &mdash; the ideal that the weekday <em>tzibbur</em> could not sustain, preserved intact on the one day that permits it. Each has its source and, in the case of the additions here traced, its human story: an inaugural Shabbos in Toledo in 1180 that seeded <span class="heb">שָׂמַחְתִּי</span>; the first sunrise of <span class="heb">אדם הראשון</span> that gave the world <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span>; the <em>Machzor Vitri</em>&rsquo;s thunder that preserved the Anshei Knesses HaGedolah authorship of <span class="heb">נִשְׁמַת</span> against a false legend that had crept into circulation.</p>
+
+<p>The <em>Berachah Masgeres</em> encloses all of this. The extended <em>kapitlach</em> are not liturgical padding but the very praise the opening blessing promised. <em>Bigdei Shabbos</em> &mdash; the ones the Yid puts on and the ones <span class="heb">הקב״ה</span> wears <em>kaviyachol</em> &mdash; are worn precisely because Shabbos is the day on which Klal Yisrael becomes the seventh wing of the <em>serafim</em>, and the day whose sunrise, from the first one <span class="heb">אדם</span> ever saw, has always meant that the world does not end at nightfall.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מַרְאֵה מְקוֹמוֹת</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> <span class="heb">סימן נ״א</span> and <span class="heb">סימן נ״ד</span> &mdash; <em>Baruch She&rsquo;amar</em> and <em>Yishtabach</em> as a <em>berachah masgeres</em>.</span>
+  <span class="expanded">&mdash; The framework doctrine that <span class="heb">בָּרוּךְ שֶׁאָמַר</span> and <span class="heb">יִשְׁתַּבַּח</span> form an enclosing bracket around <em>Pesukei d&rsquo;Zimra</em> is standard in the Rishonim on <em>Pesukei d&rsquo;Zimra</em> and codified in <em>Shulchan Aruch, Orach Chaim</em>, <em>sim.</em> 51 (opening berachah) and <em>sim.</em> 54 (closing berachah). Just as one may not speak between the berachah on food and the eating of the food, one may not speak between <span class="heb">בָּרוּךְ שֶׁאָמַר</span> and <span class="heb">יִשְׁתַּבַּח</span>: <em>sichas chulin</em> is prohibited, and only a <em>davar mitzvah</em> or a <em>tzorech gadol</em> is permitted.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Shulchan Aruch, Orach Chaim</em> <span class="heb">סימן ח&rsquo; י&mdash;יא</span> &mdash; <em>shomeia k&rsquo;oneh</em> as the halakhic basis for the latecomer accommodation.</span>
+  <span class="expanded">&mdash; <em>Shomeia k&rsquo;oneh</em> is the halakhic principle that one who listens to another&rsquo;s recitation with the intent to be included in it is halakhically as though he has recited it himself. Its general application to berachos is codified in <em>Shulchan Aruch, Orach Chaim</em> 8:10&ndash;11. In earlier generations, many <em>mispallelim</em> did not know how to daven independently and relied on the <em>shaliach tzibbur</em>&rsquo;s recitation of the fixed berachos. This creates a real halakhic weight to timing decisions in the tefillah: if <span class="heb">בָּרוּךְ שֶׁאָמַר</span> is said too early on Shabbos morning, those relying on <em>shomeia k&rsquo;oneh</em> lose the berachah entirely with no way to recover it. This same design principle &mdash; runway for the <em>tzibbur</em> to gather &mdash; parallels the sevara often given for the addition of <em>Kabbalas Shabbos</em> before Ma&rsquo;ariv on Friday night; the Shabbos-evening and Shabbos-morning structures share a common Rishonic logic.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Tosafos</em>, <em>Sanhedrin</em> <span class="heb">ל״ז</span> &mdash; the Zoharic tradition of the six wings of the <em>serafim</em>.</span>
+  <span class="expanded">&mdash; <em>Tosafos</em> on <em>Sanhedrin</em> 37 brings a Zoharic tradition read against the pasuk in <em>Yeshaya</em> 6:2 &mdash; <span class="heb">שֵׁשׁ כְּנָפַיִם שֵׁשׁ כְּנָפַיִם לְאֶחָד</span>. Each of the six wings of the <em>serafim</em> corresponds to one day of the week and serves as the vehicle of that day&rsquo;s <em>shirah</em>. On Shabbos, the six wings are exhausted; no wing remains for the <em>malachim</em>&rsquo; own <em>shirah</em>. Klal Yisrael takes their place as the seventh wing. On this framework, the added <em>kapitlach</em> of Shabbos morning are, structurally, the <em>shirah</em> of the <em>malachim</em> sung by Klal Yisrael.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Tur, Orach Chaim</em>, <em>hilchos Pesukei d&rsquo;Zimra</em>, <em>simanim</em> 51&ndash;54 &mdash; <em>turcha d&rsquo;tzibbura</em> as a pragmatic reason for the weekday abbreviation.</span>
+  <span class="expanded">&mdash; The <em>Tur</em> in the <em>hilchos</em> of <em>Pesukei d&rsquo;Zimra</em> gives the pragmatic reason for the added <em>kapitlach</em> on Shabbos: during the week, <em>turcha d&rsquo;tzibbura</em> &mdash; the burden on a <em>tzibbur</em> that must reach its labor &mdash; constrained Chazal from imposing extended liturgy. On Shabbos, when the constraint releases, the <em>tzibbur</em> has room for the fuller form. This pragmatic reason and the <em>Tosafos</em>/Zohar structural reason (fn 3) may operate simultaneously.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Siddur Rabbeinu Shlomo mi&rsquo;Garmisa</em>, on the original scope of <em>Pesukei d&rsquo;Zimra</em>.</span>
+  <span class="expanded">&mdash; Rabbeinu Shlomo mi&rsquo;Garmisa &mdash; R&rsquo; Shlomo of Worms (Germany) &mdash; was an Ashkenazic Rishon of the late eleventh and early twelfth centuries, a contemporary of Rashi and a major <em>mekubal</em>. His own siddur (published in scholarly edition in modern times, and cited by the <em>Machzor Vitri</em> and other Ashkenazi Rishonim) preserves the chiddush that the original <em>takanah</em> of <em>Pesukei d&rsquo;Zimra</em> called for the full expanded set every day. Over time, communities curtailed the weekday version due to practical constraints; the full expansion was preserved only for Shabbos. He concludes: <span class="heb">וְהָאוֹמְרָם כָּל יוֹם תָּבֹא עָלָיו בְּרָכָה</span>. Whether this claim represents a widely-shared position among the Rishonim or a <em>da&rsquo;as yachid</em> is a question worth further inquiry; on the historical claim itself, no widely known Rishonic contradiction has surfaced. The specific <em>siman</em> of the siddur is not fixed in the received tradition of the citation; the material is best located in the printed scholarly edition.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Tehillim</em> 122 &mdash; <span class="heb">שִׁיר הַמַּעֲלוֹת לְדָוִד: שָׂמַחְתִּי בְּאֹמְרִים לִי בֵּית ה׳ נֵלֵךְ</span>.</span>
+  <span class="expanded">&mdash; Opening pasuk: <span class="heb">שִׁיר הַמַּעֲלוֹת לְדָוִד: שָׂמַחְתִּי בְּאֹמְרִים לִי בֵּית ה׳ נֵלֵךְ. עֹמְדוֹת הָיוּ רַגְלֵינוּ בִּשְׁעָרַיִךְ יְרוּשָׁלִָם</span>. The <em>perek</em> is one of the <em>Shirei HaMa&rsquo;alos</em> (<em>Tehillim</em> 120&ndash;134) traditionally sung by the <em>Leviim</em> on the fifteen steps between the <em>ezras nashim</em> and the <em>ezras Yisrael</em> during <em>Simchas Beis HaSho&rsquo;evah</em>. Its closing: <span class="heb">לְמַעַן אַחַי וְרֵעָי אֲדַבְּרָה נָּא שָׁלוֹם בָּךְ; לְמַעַן בֵּית ה׳ אֱלֹקֵינוּ אֲבַקְשָׁה טוֹב לָךְ</span>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Sefer HaManhig</em>, <em>hilchos Shabbos</em>, <em>siman</em> 23 &mdash; the sole Rishonic source for <span class="heb">שָׂמַחְתִּי</span> in Shabbos <em>Pesukei d&rsquo;Zimra</em>.</span>
+  <span class="expanded">&mdash; The <em>Sefer HaManhig</em>, by <span class="heb">רבי אברהם בן נתן הירחי</span> (early thirteenth century), is a comprehensive digest of Jewish <em>minhagim</em> collected from the author&rsquo;s travels between kehillos in France, Provence, Germany, and Spain. It is the only Rishonic source that records the origin of the practice of adding <span class="heb">שָׂמַחְתִּי בְּאֹמְרִים לִי</span> to Shabbos-morning <em>Pesukei d&rsquo;Zimra</em>. The <em>Avudraham</em>, the <em>Machzor Vitri</em>, and the siddur of Rabbeinu Shlomo mi&rsquo;Garmisa all discuss the Shabbos additions but do not list this <em>perek</em>. Standard reference: <em>Sefer HaManhig, hilchos Shabbos</em>, <em>siman</em> 23. A separate question deserves inquiry: whether the <em>ibn Shushan</em> innovation was accepted so widely precisely because it was already aligned with pre-existing Sephardic tefillah-tastes for the <em>Shirei HaMa&rsquo;alos</em>, or whether Toledo initiated the minhag entirely from scratch.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short">Rabbeinu Yosef ibn Shushan and the Toledo synagogue of 1180.</span>
+  <span class="expanded">&mdash; Rabbeinu Yosef ibn Shushan (also spelled ben Shushan) &mdash; a Rishonic-era Toledan <em>gaon</em>, <em>tzaddik</em>, and <em>mekubal</em>. Head of a wealthy Nasi family that carried the title <em>nesi&rsquo;im</em>, recognized by the Castilian crown as leaders of the Jewish community. He served in the court of King Alfonso VIII of Castile (r. 1158&ndash;1214) in a role of financial administration analogous to the one Don Yitzchak Abarbanel would later occupy under Ferdinand and Isabella. The precise administrative title (treasurer, finance minister, or a comparable court office) is variously described across sources; some accounts distribute the office among other members of the family and other generations. Certain from the historical record is his standing as a court Jew of exceptional means and his authorship of the synagogue project. In 1180, using his personal resources, he constructed the massive synagogue complex that later became known as <em>Santa Mar&iacute;a la Blanca</em>. On its inaugural Shabbos morning he instituted the addition of <span class="heb">שָׂמַחְתִּי בְּאֹמְרִים לִי</span> to <em>Pesukei d&rsquo;Zimra</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Makkos</em> 10a &mdash; <span class="heb">מָתַי יָמוּת זָקֵן זֶה</span> and David&rsquo;s joy.</span>
+  <span class="expanded">&mdash; The Gemara in <em>Makkos</em> 10a teaches: <span class="heb">דוד המלך</span> heard from Klal Yisrael <span class="heb">מָתַי יָמוּת זָקֵן זֶה וְיִבָּנֶה בֵּית הַמִּקְדָּשׁ</span>. Rather than being insulted, David rejoiced &mdash; because the very rudeness of the murmuring revealed the depth of Klal Yisrael&rsquo;s yearning to be <em>oleh l&rsquo;regel</em>. David knew (<em>Divrei HaYamim</em> I 22:8, <span class="heb">יָדֶיךָ דָּמִים מָלֵאוּ</span>) that he himself would not build the Mikdash &mdash; that Shlomo would. His response, <em>samachti</em>, becomes the theological ground for the entire <em>perek</em>. When Rabbeinu Yosef ibn Shushan chose this precise pasuk for the inauguration of his shul in Toledo, the choice invoked that same layered joy: a <em>mikdash me&rsquo;at</em> is built not because the yearning is fulfilled but because it is carried forward.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short">The Toledo synagogue&rsquo;s later history &mdash; the 1391 pogroms, Vincent Ferrer, and the 2013 return.</span>
+  <span class="expanded">&mdash; In 1391, a full century before the Alhambra Decree of 1492, a wave of anti-Jewish violence swept Christian Spain. The pogroms were initiated in Seville by the preacher Ferrand Mart&iacute;nez and spread to Toledo and beyond; tens of thousands of Sephardic Jews were forcibly converted or killed in the summer&rsquo;s events. The Dominican friar <strong>Vincent Ferrer</strong> (c. 1350&ndash;1419, later canonized by the Catholic Church), whose itinerant preaching campaign peaked in the years 1411&ndash;1416, carried the conversionary project directly into the synagogues of Spain in the decades that followed. Learned in <em>Torah She&rsquo;bichsav</em> and portions of <em>Torah She&rsquo;be&rsquo;al Peh</em>, he entered synagogues with a cross and a <em>Sefer Torah</em> and declared each shul a church. The <em>ibn Shushan</em> synagogue of Toledo was among the buildings so appropriated. Renamed <em>Sinagoga de Santa Mar&iacute;a la Blanca</em>, it served as a church for over six centuries. In 2013 the Archbishop of Toledo formally returned it to the local Jewish community; today it functions as a Jewish museum. It is among the most ancient standing synagogue buildings in Europe; the claim of being the very oldest is contested (the Old-New Synagogue of Prague, c. 1270, is a serious competitor for the same title).</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><span class="heb">רבי אברהם בן נתן הירחי</span> (c. 1155&ndash;c. 1215).</span>
+  <span class="expanded">&mdash; Born in <em>Lunel</em> (<span class="heb">לוֹנֵל</span>) in Provence; the epithet <em>HaYarchi</em> (&ldquo;of the moon&rdquo;) is a bilingual play on the town&rsquo;s name (French <em>lune</em>, Hebrew <span class="heb">ירח</span>). He traveled systematically through Provence, Northern France, Germany, and finally Spain, documenting the variations of local <em>minhag</em> as he went. He eventually settled in Toledo, where he died around 1215 and where the <em>ibn Shushan</em> synagogue&rsquo;s first-Shabbos-morning story reached him directly. His <em>Sefer HaManhig</em> is one of the most important early-Rishonic sources for the geographic variation of Jewish practice. Contrast the vast majority of Rishonim, whose halakhic vantage was regional; his willingness to travel is precisely what preserves for the tradition the entire chapter of the <span class="heb">שָׂמַחְתִּי</span> chiddush.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Pesachim</em> 118a &mdash; Rabbi Yochanan on why <em>Hallel HaGadol</em> is called &ldquo;great.&rdquo;</span>
+  <span class="expanded">&mdash; The Gemara in <em>Pesachim</em> 118a: <span class="heb">אָמַר רַבִּי יוֹחָנָן... מִפְּנֵי שֶׁהַקָּדוֹשׁ בָּרוּךְ הוּא יוֹשֵׁב בְּרוּם עוֹלָמוֹ וּמְחַלֵּק מְזוֹנוֹת לְכׇל בְּרִיָּה</span>. The <em>gadlus</em> praised in this <em>perek</em> is the granular care that ensures every <em>beriyah</em> receives its <em>mazon</em>. Proof-text: <em>Tehillim</em> 136:25, <span class="heb">נֹתֵן לֶחֶם לְכָל בָּשָׂר, כִּי לְעוֹלָם חַסְדּוֹ</span>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Berachos</em> 4b &mdash; the <em>hava amina</em> to require <em>Hallel HaGadol</em> daily in place of <em>Ashrei</em>.</span>
+  <span class="expanded">&mdash; The Gemara in <em>Berachos</em> 4b, discussing the daily obligation of <em>Ashrei</em> three times a day, raises a passing <em>hava amina</em>: why not require <em>Hallel HaGadol</em> instead? Both share the alphabetic-acrostic feature Chazal valued; both praise the Ribbono Shel Olam broadly. The Gemara concludes with <em>Ashrei</em> as the daily standard, but the very consideration measures the stature of <em>Hallel HaGadol</em>. It is reserved for weightier occasions &mdash; Shabbos morning and the Seder night at <em>Pesach</em>.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><span class="heb">הָאַדֶּרֶת וְהָאֱמוּנָה</span> &mdash; from <em>Pirkei Heichalos</em>; the <em>Maharil</em>&rsquo;s restriction and the counter-position of the <em>Arizal</em>.</span>
+  <span class="expanded">&mdash; <span class="heb">הָאַדֶּרֶת וְהָאֱמוּנָה לְחַי עוֹלָמִים</span> is an alphabetical acrostic naming divine attributes across all the letters, drawn from the ancient mystical corpus of <em>Pirkei Heichalos</em> &mdash; the &ldquo;Heichalos literature&rdquo; describing the <em>shirah</em> of the <em>malachim</em>. The <strong><em>Maharil</em></strong> (Rabbeinu Yaakov Molin, c. 1360&ndash;1427) ruled that the tefillah is to be recited <em>b&rsquo;tzibbur</em> only on Yom Kippur &mdash; the one day when Klal Yisrael formally attains a status parallel to <em>malachim</em>. The <em>Chassidishe</em> world nonetheless recites it every Shabbos morning; the <em>Arizal</em> is the halakhic ground for this practice, teaching that <span class="heb">הָאַדֶּרֶת</span> belongs specifically to Shabbos precisely because of the seventh-wing status (fn 3). Some <em>chassidim</em> preserve the <em>Maharil</em>&rsquo;s concern by reciting <span class="heb">הָאַדֶּרֶת</span> before the formal beginning of the <em>tzibbur</em>&rsquo;s tefillah, so that it is technically outside the <em>tzibbur</em>&rsquo;s davening. The Chabad <em>nigun</em> for the tefillah is traditionally attributed to a Napoleonic-era French military march; the specific composer is disputed within scholarship.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Tehillim</em> 92 &mdash; <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span>.</span>
+  <span class="expanded">&mdash; Full opening: <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת. טוֹב לְהוֹדוֹת לַה׳, וּלְזַמֵּר לְשִׁמְךָ עֶלְיוֹן. לְהַגִּיד בַּבֹּקֶר חַסְדֶּךָ, וֶאֱמוּנָתְךָ בַּלֵּילוֹת. עֲלֵי עָשׂוֹר וַעֲלֵי נָבֶל, עֲלֵי הִגָּיוֹן בְּכִנּוֹר</span>. This was the <em>Shir Shel Yom</em> that the <em>Leviim</em> would sing in the <em>Beis HaMikdash</em> when the <em>Tamid shel Shachar</em> was brought on Shabbos. The <em>perek</em> is also recited in the <em>Kabbalas Shabbos</em> liturgy on Friday night in most <em>nusachos</em>; the <em>Levush</em> and <em>Mishnah Berurah</em> both address the question of its dual recitation, holding that Friday night belongs to <em>Kabbalas Shabbos</em> proper while Shacharis carries both the <em>Pesukei d&rsquo;Zimra</em> role and the <em>Shir Shel Yom</em> role.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Avos d&rsquo;Rabbi Nassan</em> &mdash; <span class="heb">אדם הראשון</span>&rsquo;s composition of the mizmor.</span>
+  <span class="expanded">&mdash; <em>Avos d&rsquo;Rabbi Nassan</em> is one of the <em>Masechtos Ketanos</em> appended to the Talmud, functioning as an extended <em>tosefta</em> on <em>Pirkei Avos</em>; it is generally attributed to R&rsquo; Nathan HaBavli or a student and was redacted through the Amoraic period. The relevant passage teaches: <span class="heb">אדם הראשון</span> committed the <em>chet</em> of the <em>Etz HaDa&rsquo;as</em> late Friday afternoon. As Shabbos began and darkness fell &mdash; his first-ever experience of night &mdash; he assumed the sin had brought eternal darkness upon the world and stayed awake in terror. Shabbos morning the sun rose. Overcome, he composed <span class="heb">מִזְמוֹר שִׁיר לְיוֹם הַשַּׁבָּת</span>. At the moment he began to sing, <span class="heb">בְּאוֹתָהּ שָׁעָה יָרְדוּ כִּתּוֹת שֶׁל מַלְאֲכֵי הַשָּׁרֵת</span> &mdash; <em>kittos</em> of <em>malachim</em> descended with instruments (<span class="heb">עֲלֵי עָשׂוֹר וַעֲלֵי נָבֶל, עֲלֵי הִגָּיוֹן בְּכִנּוֹר</span>). See parallel material in <em>Bereishis Rabbah</em> 22 and <em>Sanhedrin</em> 38 for related <em>aggados</em> on Adam&rsquo;s first days.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Ritva</em> on <em>Avodah Zarah</em> &mdash; <span class="heb">החטא מבלבלו</span>.</span>
+  <span class="expanded">&mdash; The <em>Ritva</em> (R&rsquo; Yom Tov ben Ashbili, c. 1250&ndash;1330), in his <em>chiddushim</em> on <em>Avodah Zarah</em>, addresses the difficulty: <span class="heb">אדם הראשון</span> was, per the Gemara&rsquo;s descriptions (see <em>Bava Basra</em> 58a: <span class="heb">תפוח עקבו של אדם הראשון מכהה גלגל חמה</span>), a being of towering wisdom. How could he fail to know that there is a natural cycle of <span class="heb">ויהי ערב ויהי בוקר</span>? The Ritva&rsquo;s answer: of course he knew; but <span class="heb">החטא מבלבלו</span> &mdash; the <em>chet</em> disorients. The chiddush is as much theological as psychological: the <em>chet</em> damages the person&rsquo;s ability to <em>believe</em> what he intellectually knows. The mechanism parallels the description in the <em>Mesillas Yesharim</em> of <em>aveiros</em> that <em>metamtemim es ha&rsquo;lev</em>. The <em>chiddushim</em> passage stands in the material on <span class="heb">אדם הראשון</span> and the early history of the world; the specific <em>sugya</em> location within the Ritva on <em>Avodah Zarah</em> is not fixed in the received citation and would benefit from further pinpointing.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Tehillim</em> 93 &mdash; <span class="heb">ה׳ מָלָךְ גֵּאוּת לָבֵשׁ</span>.</span>
+  <span class="expanded">&mdash; Full pasuk 1: <span class="heb">ה׳ מָלָךְ, גֵּאוּת לָבֵשׁ &mdash; לָבֵשׁ ה׳ עֹז הִתְאַזָּר; אַף תִּכּוֹן תֵּבֵל בַּל תִּמּוֹט</span>. The <em>perek</em> is added on Shabbos morning immediately after <em>Mizmor Shir</em>. The verb <span class="heb">לָבֵשׁ</span> is the anchor for the chiddush that <span class="heb">הקב״ה</span> <em>kaviyachol</em> puts on <em>bigdei Shabbos</em>, parallel to the Yid&rsquo;s change into Shabbos clothes. Also recited in <em>Kabbalas Shabbos</em> on Friday night in most <em>nusachos</em>.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short">The Friday-night piyut <span class="heb">לק-ל אֲשֶׁר שָׁבַת</span>.</span>
+  <span class="expanded">&mdash; Text: <span class="heb">לק-ל אֲשֶׁר שָׁבַת מִכָּל הַמַּעֲשִׂים, בַּיּוֹם הַשְּׁבִיעִי נִתְעַלָּה וְיָשַׁב עַל כִּסֵּא כְבוֹדוֹ; תִּפְאֶרֶת עָטָה לְיוֹם הַמְּנוּחָה &mdash; עֹנֶג קָרָא לְיוֹם הַשַּׁבָּת</span>. The critical phrase &mdash; <span class="heb">תִּפְאֶרֶת עָטָה לְיוֹם הַמְּנוּחָה</span> &mdash; is the direct textual anchor for the chiddush that <span class="heb">הקב״ה</span> <em>kaviyachol</em> wraps Himself in <em>tiferes</em> for Shabbos, exactly as the Yid wraps himself in finer <em>bigadim</em>. The piyut appears in the extended <em>Emes v&rsquo;Emunah</em> / <em>Hashkiveinu</em> section on Friday night in many <em>nusachos</em>.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short">The Shimon Kefa legend &mdash; <span class="heb">נִשְׁמַת</span> attributed to an undercover infiltrator.</span>
+  <span class="expanded">&mdash; A legend circulating in some Jewish popular sources and current already in Ashkenazic circles in the Rishonic era in Northern France (see fn 21). The legend holds that <strong>Shimon Kefa</strong> (&ldquo;Kefa&rdquo; = &ldquo;rock&rdquo; in Aramaic; &ldquo;Petros&rdquo; in Greek) was a frum Yid appointed by the <em>Tanna&rsquo;im</em> to infiltrate the early Christian movement. His mission: to establish laws creating a definitive separation between Christianity and Yiddishkeit &mdash; among them the institution of Sunday as the Christian day of rest. The legend then claims he composed <span class="heb">נִשְׁמַת</span> and it was smuggled into the siddur of Israel. The historical Simon Peter (c. 1&ndash;c. 65 CE) is a central figure in Christian tradition as the founder of the Roman Church; the &ldquo;undercover Jewish agent&rdquo; narrative appears only in Jewish popular literature and has no basis in the historical or scholarly record outside it. The legend is decisively rebutted by the <em>Machzor Vitri</em> (fn 21). Whatever pastoral or narrative function the legend served in Jewish popular memory, it is not history.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Machzor Vitri</em> &mdash; the rebuttal of the Shimon Kefa legend on <span class="heb">נִשְׁמַת</span>.</span>
+  <span class="expanded">&mdash; The <em>Machzor Vitri</em> is an important eleventh-to-twelfth-century Rishonic compilation authored by <span class="heb">ר׳ שמחה בן שמואל מויטרי</span>, a talmid of Rashi. (The occasional description of him as Rashi&rsquo;s <em>chasan</em> is not the standard attribution and should not be relied upon.) The rebuttal is a paraphrase rather than a verbatim quotation: anyone who claims <span class="heb">נִשְׁמַת</span> was written by the Yid who became a Christian &mdash; even if only in the manner of an undercover mission &mdash; will be <em>chayav</em>, when the <em>Beis HaMikdash</em> is rebuilt, to bring a <em>korban chatas</em> for uttering such a falsehood about a holy tefillah. The specific formulation of &ldquo;<em>korban chatas shemeinah</em>&rdquo; is unusual and, as reported, deserves comparison against the actual <em>Machzor Vitri</em> text before final printing; a version of the rebuttal is also transmitted in the name of <em>Rabbeinu Tam</em>&rsquo;s <em>Sefer HaYashar</em>, and the two Rishonic sources are sometimes conflated. The counter-attribution in either case is the same: <span class="heb">נִשְׁמַת</span> was composed by the <em>Anshei Knesses HaGedolah</em>, and multiple <em>rayos</em> from the internal structure and vocabulary of the tefillah are marshaled in support. Standard reference: <em>Machzor Vitri, hilchos Shabbos / seder tefillas Shabbos</em>; specific <em>siman</em> pinpointing would strengthen the citation.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, delivered <span class="heb">ג׳ אלול תשפ״ו</span> &middot; 16 August 2026. This edition incorporates the factual corrections established in review (the Vincent Ferrer / 1391 dating, the qualification of the &ldquo;oldest surviving synagogue in Europe&rdquo; claim, the dating of Rabbeinu Shlomo mi&rsquo;Garmisa as a contemporary of Rashi, and the standard attribution of <em>Machzor Vitri</em> to R&rsquo; Simcha of Vitri as talmid of Rashi). <em>Mareh Mekomos</em> carry dual-layer (short + expanded) footnotes throughout.
+</footer>
+
+</body>
+</html>
