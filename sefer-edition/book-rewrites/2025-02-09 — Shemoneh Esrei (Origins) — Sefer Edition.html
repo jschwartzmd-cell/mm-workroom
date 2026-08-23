@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — 9 February 2025 — The Origins and Development of Shemoneh Esrei</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">שְׁמוֹנֶה עֶשְׂרֵה — רֵאשִׁית וְתוֹלָדוֹת</h1>
+  <div class="english-title">The Origins and Development of Shemoneh Esrei</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 9 February 2025 &nbsp;&middot;&nbsp; Sefer Edition &middot; Prepared 23 August 2026</div>
+</header>
+
+<p class="dedication">Opening chapter of the long study of <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>): its authorship, its shape, the number of its <em>berachos</em>, and the historical layers that have made it into the <em>tefillah</em> we recite three times each day.</p>
+
+<p class="lead">An introduction to <em>Shemoneh Esrei</em>: the <em>machlokes</em> (<span class="heb-inline">מחלוקת</span>) whether the <em>Avos</em> (<span class="heb-inline">אבות</span>) established <em>tefillah</em> (<span class="heb-inline">תפילה</span>) or whether the <em>berachos</em> (<span class="heb-inline">ברכות</span>) were fixed <em>k'neged ha'korbanos</em> (<span class="heb-inline">כנגד הקרבנות</span>); why the count is precisely eighteen; the addition of the nineteenth <em>berachah</em> by <em>Shmuel HaKatan</em> (<span class="heb-inline">שמואל הקטן</span>) in <em>Yavneh</em> (<span class="heb-inline">יבנה</span>); the <em>Rambam</em> (<span class="heb-inline">רמב״ם</span>)'s historical reconstruction tracing the entire enterprise to <em>Ezra HaSofer</em> (<span class="heb-inline">עזרא הסופר</span>); and the <em>Avudraham</em> (<span class="heb-inline">אבודרהם</span>)'s lonely <em>shitas yachid</em> (<span class="heb-inline">שיטת יחיד</span>) on the counting of words.</p>
+
+<h2>I. Beginning the Journey</h2>
+
+<p>Having closed <em>Birkas Ga'al Yisrael</em> (<span class="heb-inline">ברכת גאל ישראל</span>), the final <em>berachah</em> of the <em>Birchos Kri'as Shema</em> (<span class="heb-inline">ברכות קריאת שמע</span>) that precede <em>Shemoneh Esrei</em>, we now come to <em>Shemoneh Esrei</em> itself: who composed it, where it originated, whether the <em>nusach</em> (<span class="heb-inline">נוסח</span>) we recite today was always the standard, and how it developed. Much of what follows is <em>divrei peshutim</em> (<span class="heb-inline">דברים פשוטים</span>); but before we take up each <em>berachah</em> individually over the coming months, the foundations require laying. A Jew davens <em>Shemoneh Esrei</em> three times each day; he ought to know what he is saying.</p>
+
+<h3>The Names of the Tefillah</h3>
+
+<p>Among <em>Ashkenazim</em> (<span class="heb-inline">אשכנזים</span>) the <em>tefillah</em> is called <em>Shemoneh Esrei</em>, or simply <em>ha'lachash</em> (<span class="heb-inline">הלחש</span>) &mdash; &ldquo;the silent one.&rdquo; Among <em>Sefaradim</em> (<span class="heb-inline">ספרדים</span>) it is <em>Tefillas HaAmidah</em> (<span class="heb-inline">תפילת העמידה</span>), after the requirement to stand &mdash; a requirement whose source is <em>Avraham Avinu</em> (<span class="heb-inline">אברהם אבינו</span>): <em>&ldquo;Va'yashkeim Avraham ba'boker el ha'makom asher amad sham&rdquo;</em> (<span class="heb-inline">וישכם אברהם בבקר אל המקום אשר עמד שם</span>). When <em>Chazal</em> (<span class="heb-inline">חז״ל</span>) speak of <em>tefillah</em> without qualification, they mean specifically the <em>Shemoneh Esrei</em>; the rest of the daily <em>siddur</em> (<span class="heb-inline">סידור</span>) is called <em>tefillah</em> only by extension.</p>
+
+<h2>II. The Machlokes: Avos Tiknum or K'neged Korbanos Tiknum</h2>
+
+<h3>The First Position &mdash; Avos Tiknum</h3>
+
+<p>The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) in <em>Berachos</em> (<span class="heb-inline">ברכות</span>) 26b<a href="#fn1" id="ref1" class="footnote-ref">[1]</a> records the famous <em>machlokes</em>. The first view holds that the <em>Avos</em> instituted the three daily <em>tefillos</em>:</p>
+
+<ul>
+  <li><em>Avraham Avinu</em> established <em>Shacharis</em> (<span class="heb-inline">שחרית</span>) &mdash; from <em>&ldquo;va'yashkeim... el ha'makom asher amad sham,&rdquo;</em> where <em>amidah</em> (<span class="heb-inline">עמידה</span>) is <em>tefillah</em>.</li>
+  <li><em>Yitzchak Avinu</em> (<span class="heb-inline">יצחק אבינו</span>) established <em>Minchah</em> (<span class="heb-inline">מנחה</span>) &mdash; from <em>&ldquo;lasu'ach ba'sadeh&rdquo;</em> (<span class="heb-inline">לשוח בשדה</span>), where <em>sichah</em> (<span class="heb-inline">שיחה</span>) is <em>tefillah</em>.</li>
+  <li><em>Yaakov Avinu</em> (<span class="heb-inline">יעקב אבינו</span>) established <em>Ma'ariv</em> (<span class="heb-inline">ערבית</span>) &mdash; from <em>&ldquo;va'yifga ba'makom&rdquo;</em> (<span class="heb-inline">ויפגע במקום</span>), where <em>pegi'ah</em> (<span class="heb-inline">פגיעה</span>) is supplication.</li>
+</ul>
+
+<p>What is meant by the claim that the <em>Avos</em> &ldquo;instituted&rdquo; these <em>tefillos</em>? The <em>mefarshim</em> (<span class="heb-inline">מפרשים</span>) do not suppose that <em>Avraham</em>, <em>Yitzchak</em>, and <em>Yaakov</em> recited our precise <em>Shemoneh Esrei</em>. They fixed the three <em>times</em> of daily <em>tefillah</em>; the <em>nusach</em> is not from them. Each <em>Av</em> davened in his own words &mdash; the supplications and praises particular to his own <em>avodah</em>.</p>
+
+<h3>The Second Position &mdash; K'neged Temidim Tiknum</h3>
+
+<p>The other <em>shitah</em> (<span class="heb-inline">שיטה</span>): the three daily <em>tefillos</em> were established <em>k'neged ha'korbanos</em> (<span class="heb-inline">כנגד הקרבנות</span>) &mdash; corresponding to the <em>Tamid shel Shachar</em> (<span class="heb-inline">תמיד של שחר</span>), the <em>Tamid shel Bein Ha'Arbayim</em> (<span class="heb-inline">תמיד של בין הערבים</span>), and the <em>haktar chalavim v'evarim</em> (<span class="heb-inline">הקטר חלבים ואברים</span>) of the night. After the <em>Churban</em> (<span class="heb-inline">חורבן</span>), <em>tefillah</em> stands in the place of <em>avodah</em> (<span class="heb-inline">עבודה</span>) &mdash; it is <em>avodah she'ba'lev</em> (<span class="heb-inline">עבודה שבלב</span>). On this <em>shitah</em>, the <em>Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) &mdash; the one hundred and twenty <em>chachamim</em> whose ranks included <em>Mordechai</em>, <em>Ezra</em>, and <em>Shimon HaTzaddik</em> (<span class="heb-inline">שמעון הצדיק</span>) among the last of their remnants<a href="#fn2" id="ref2" class="footnote-ref">[2]</a> &mdash; are the <em>mesakenim</em> (<span class="heb-inline">מתקנים</span>) of <em>tefillah</em>.</p>
+
+<h3>The Gemara's Synthesis</h3>
+
+<p>Even on the first <em>shitah</em>, the question presses: what of <em>Mussaf</em> (<span class="heb-inline">מוסף</span>) &mdash; recited every <em>Rosh Chodesh</em>, every <em>Shabbos</em>, every <em>Yom Tov</em>? The <em>Gemara</em> answers that those who hold <em>Avos tiknum</em> agree the <em>Anshei Knesses HaGedolah</em> later <em>&ldquo;asmichinhu a'korbanos&rdquo;</em> &mdash; anchored the three <em>tefillos</em> to the <em>korbanos</em> and added <em>Mussaf</em> as <em>k'neged Korban Mussaf</em>. Both <em>shitos</em> are absorbed into the received practice: the <em>Avos</em> set the times, and <em>Chazal</em> fixed the structure and the <em>nusach</em>.</p>
+
+<h2>III. The Threefold Structure of Shemoneh Esrei</h2>
+
+<p><em>Chazal</em> arranged the <em>berachos</em> in three blocks:</p>
+
+<ol>
+  <li>The first three <em>berachos</em> &mdash; <em>shevach</em> (<span class="heb-inline">שבח</span>), praise: <em>Avos</em>, <em>Gevuros</em>, <em>Kedushas HaShem</em>.</li>
+  <li>The middle twelve &mdash; <em>bakashah</em> (<span class="heb-inline">בקשה</span>), petition: <em>Refuah</em>, <em>Parnasah</em>, and the remaining requests.</li>
+  <li>The final three &mdash; <em>hoda'ah</em> (<span class="heb-inline">הודאה</span>), thanksgiving: <em>Avodah</em>, <em>Modim</em>, <em>Shalom</em>.</li>
+</ol>
+
+<p>This <em>shevach&ndash;bakashah&ndash;hoda'ah</em> triad is not an aesthetic ordering; it is, as will emerge in the <em>Rambam</em>'s reconstruction below, the biblical minimum shape of <em>tefillah</em> itself. Every human address to <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>), on that view, must contain these three elements in this order &mdash; and <em>Chazal</em>, in fixing the <em>Shemoneh Esrei</em>, expanded that biblical triad into eighteen articulated <em>berachos</em>.</p>
+
+<h2>IV. Why Eighteen? Three Sources in the Gemara</h2>
+
+<h3>The Eighteen Mentions of Hashem in Havu La'Hashem</h3>
+
+<p>The <em>mizmor</em> (<span class="heb-inline">מזמור</span>) <em>&ldquo;Havu la'Hashem bnei eilim&rdquo;</em> (<span class="heb-inline">הבו לה' בני אלים</span>)<a href="#fn3" id="ref3" class="footnote-ref">[3]</a> contains eighteen references to <em>Hashem</em>. The eighteen <em>berachos</em> correspond to those eighteen <em>Sheimos</em> (<span class="heb-inline">שמות</span>).</p>
+
+<h3>The Eighteen Chuliyos HaShidrah</h3>
+
+<p>The <em>Gemara</em> teaches that eighteen <em>berachos</em> correspond to the eighteen <em>chuliyos ha'shidrah</em> (<span class="heb-inline">חוליות השדרה</span>) &mdash; the vertebrae of the spine. Modern anatomy counts thirty-three vertebrae in the developing spine, which fuse into twenty-six distinct bones in the adult; the <em>Gemara</em>'s count is by a different reckoning, functional rather than descriptive.<a href="#fn4" id="ref4" class="footnote-ref">[4]</a></p>
+
+<p>The teaching that lies within: the <em>Pnei Yehoshua</em> (<span class="heb-inline">פני יהושע</span>) and other <em>Acharonim</em> bring the <em>pasuk</em> <em>&ldquo;kol atzmosai tomarnah&rdquo;</em> (<span class="heb-inline">כל עצמותי תאמרנה</span>).<a href="#fn5" id="ref5" class="footnote-ref">[5]</a> Most <em>mitzvos</em> engage specific <em>evarim</em> (<span class="heb-inline">אברים</span>) &mdash; the hand that binds <em>tefillin</em>, the foot that walks to a <em>mitzvah</em>, the mouth that speaks Torah, the eyes that see <em>tzitzis</em>. How does the entire body &mdash; all of the <em>ramach evarim</em> (<span class="heb-inline">רמ״ח אברים</span>) &mdash; engage in <em>avodas Hashem</em>? Through <em>Shemoneh Esrei</em>. When a person stands and bows through eighteen <em>berachos</em>, the spine &mdash; the eighteen vertebrae &mdash; moves the whole body in <em>avodah</em>. It is uniquely a <em>mitzvah</em> of the entire person.</p>
+
+<h3>The Eighteen Sheimos in Kri'as Shema</h3>
+
+<p>A third <em>shitah</em> in the <em>Gemara</em>: there are eighteen mentions of the Name in <em>Kri'as Shema</em>, which immediately precedes <em>Shemoneh Esrei</em>. Each of the three derivations is understood by many <em>Rishonim</em> as an <em>asmachta</em> (<span class="heb-inline">אסמכתא</span>) rather than a binding structural claim &mdash; a placement of <em>Chazal</em>'s <em>tekanah</em> against the natural landmarks of <em>Tanach</em>. This will matter directly when we come to the addition of the nineteenth <em>berachah</em>.</p>
+
+<h2>V. The Nineteenth Berachah</h2>
+
+<p>For all the reasons the count is eighteen, the truth is that our <em>Shemoneh Esrei</em> today contains <em>nineteen</em> <em>berachos</em>. Almost since time immemorial it has been in fact <em>tesha esrei</em> (<span class="heb-inline">תשע עשרה</span>); only the name <em>Shemoneh Esrei</em> persists.</p>
+
+<h3>Yavneh and the Aftermath of the Churban</h3>
+
+<p>The <em>Gemara</em> in <em>Megillah</em><a href="#fn6" id="ref6" class="footnote-ref">[6]</a> reports that the nineteenth <em>berachah</em> was added at <em>Yavneh</em> in the days of <em>Rabban Gamliel</em> (<span class="heb-inline">רבן גמליאל</span>). The <em>Rishonim</em> dispute which <em>Rabban Gamliel</em>; the location itself suggests <em>Rabban Gamliel</em> the second. The historical setting is the aftermath of the <em>Churban Bayis Sheni</em>: <em>Rabban Yochanan ben Zakkai</em> (<span class="heb-inline">רבן יוחנן בן זכאי</span>), in his celebrated request to <em>Vespasian</em>,<a href="#fn7" id="ref7" class="footnote-ref">[7]</a> said <em>&ldquo;ten li Yavneh v'chachameha&rdquo;</em> (<span class="heb-inline">תן לי יבנה וחכמיה</span>). He understood that <em>Torah she'baal peh</em> (<span class="heb-inline">תורה שבעל פה</span>) and a central seat of <em>chachamim</em> would carry <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) through the long <em>galus</em> (<span class="heb-inline">גלות</span>) ahead. The <em>Sanhedrin</em> (<span class="heb-inline">סנהדרין</span>) moved from <em>Lishkas HaGazis</em> (<span class="heb-inline">לשכת הגזית</span>) to <em>Yavneh</em>, and many <em>tekanos</em> were established there.</p>
+
+<h3>The Early Minim</h3>
+
+<p>The earliest Christians were themselves Jewish &mdash; <em>me'anshei brisenu</em> (<span class="heb-inline">מאנשי בריתנו</span>). They wore the same <em>tzitzis</em>, attended the same <em>batei knesses</em>, lived as friends and neighbors of their fellow <em>Yehudim</em>. <em>Chazal</em> call them <em>minim</em> (<span class="heb-inline">מינים</span>). For several centuries it was extraordinarily difficult to distinguish them externally from authentic <em>Yehudim</em>, and their <em>malshinim</em> (<span class="heb-inline">מלשינים</span>) &mdash; informers &mdash; operated from within the community, denouncing their fellow <em>Yehudim</em> to the <em>malchuyos</em> (<span class="heb-inline">מלכויות</span>). The structural need for sharp differentiation was pressing; without it, the <em>kehillah</em> (<span class="heb-inline">קהילה</span>) faced an existential threat. It is against this background that the nineteenth <em>berachah</em> must be read.<a href="#fn8" id="ref8" class="footnote-ref">[8]</a></p>
+
+<h3>Rabban Gamliel and Shmuel HaKatan</h3>
+
+<p><em>Rabban Gamliel</em> stood before the assembled <em>chachamim</em> at <em>Yavneh</em>: <em>We must have a berachah against the minim &mdash; who among you will compose it?</em> A great <em>tanna</em> (<span class="heb-inline">תנא</span>) arose. It was <em>Shmuel HaKatan</em> &mdash; called <em>ha'katan</em> not for stature but for the <em>anavah</em> (<span class="heb-inline">ענוה</span>) that defined him. He composed <em>Birkas HaMinim</em> (<span class="heb-inline">ברכת המינים</span>); <em>Rabban Gamliel</em> instituted it as a <em>tekanah</em>. From that day, <em>Shemoneh Esrei</em> contains nineteen <em>berachos</em>. The severity of the <em>lashon</em> (<span class="heb-inline">לשון</span>) reflects what these <em>malshinim</em> were and what they did.</p>
+
+<p>The addition raises a real <em>lomdishe</em> question. If the count of eighteen is anchored in three biblical landmarks &mdash; the <em>Sheimos</em> of <em>Havu La'Hashem</em>, the eighteen <em>chuliyos</em>, the <em>Sheimos</em> of <em>Kri'as Shema</em> &mdash; how did the <em>beis din</em> at <em>Yavneh</em> have the <em>koach</em> to add a nineteenth? The mainstream reading treats those three derivations as retrospective <em>asmachtos</em> rather than binding structural constraints; the <em>tekanah</em> of the count belongs to <em>Chazal</em>, and what <em>Chazal</em> established, <em>Chazal</em> could adjust when the hour required.</p>
+
+<h3>Why Specifically Shmuel HaKatan?</h3>
+
+<p>The <em>Rishonim</em> ask what seems the obvious question. The <em>Rosh</em><a href="#fn9" id="ref9" class="footnote-ref">[9]</a> writes that any ordinary <em>Yehudi</em> &mdash; even a woman &mdash; could compose effective <em>kelalos</em> (<span class="heb-inline">קללות</span>) against <em>minim</em>. The <em>Rosh</em> himself concedes he has no satisfying answer; the <em>Rashba</em>, the <em>Ritva</em>, and <em>Rabbeinu Yonah</em> all wrestle with the same difficulty.</p>
+
+<p>The <em>Nefesh HaChaim</em> (<span class="heb-inline">נפש החיים</span>) in <em>Shaar</em> II<a href="#fn10" id="ref10" class="footnote-ref">[10]</a> supplies the deepest answer. The <em>berachos</em> of <em>Shemoneh Esrei</em> are not merely human sentiments aimed at driving <em>minim</em> from the <em>batei knesses</em>. Each word and each letter of a <em>berachah</em> aligns with profound spiritual structures; the <em>berachah</em> functions in higher worlds. To compose a <em>berachah</em> tuned to those structures required a person whose <em>kavvanah</em> (<span class="heb-inline">כוונה</span>) could align every word and letter precisely. <em>Shmuel HaKatan</em>'s <em>anavah</em> made him precisely that <em>kli</em>. The answer also frames the whole study ahead: if that is what a <em>berachah</em> is, the word-by-word study to come is not <em>pilpul</em>; it is exegesis.</p>
+
+<h2>VI. The Forgetting</h2>
+
+<p>The <em>Gemara</em> preserves a remarkable epilogue. A year later, <em>Shmuel HaKatan</em> was honored to lead the <em>tefillah</em> as <em>shliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) before <em>Rabban Gamliel</em>. He reached <em>&ldquo;v'la'malshinim&rdquo;</em> (<span class="heb-inline">ולמלשינים</span>) &mdash; the very <em>berachah</em> he himself had authored &mdash; and froze. He fumbled, hemmed, could not produce the <em>nusach</em>.</p>
+
+<p>The immediate suspicion in the <em>beis midrash</em> (<span class="heb-inline">בית מדרש</span>) was sharp: <em>he must be a min</em>. Only a <em>min</em> would forget the very <em>berachah</em> against <em>minim</em>. Remove him from the <em>amud</em>. The <em>Gemara</em> defends him: he composed the <em>berachah</em>; how could he be a <em>min</em>? The counter: perhaps he had <em>become</em> one in the interim &mdash; for we hold <em>&ldquo;al ta'amin b'atzmecha ad yom mos'cha&rdquo;</em> (<span class="heb-inline">אל תאמין בעצמך עד יום מותך</span>), and the <em>Gemara</em> brings the case of a <em>Kohen Gadol</em> (<span class="heb-inline">כהן גדול</span>) who served faithfully for eighty years and ended his life a <em>tzedoki</em> (<span class="heb-inline">צדוקי</span>). The <em>Gemara</em> concludes: this was not what happened to <em>Shmuel HaKatan</em>. He remained an upright <em>Yehudi</em> to the end.</p>
+
+<p>Why then did he forget? The <em>Rishonim</em> answer that <em>Shmuel HaKatan</em> was of the type the <em>Gemara</em> calls <em>&ldquo;toraso umnaso&rdquo;</em> (<span class="heb-inline">תורתו אומנתו</span>) &mdash; his Torah is his craft &mdash; like <em>Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>). Such a person is fully obligated in <em>Kri'as Shema</em> but holds a different relationship to fixed daily <em>tefillah</em>. After composing <em>Birkas HaMinim</em>, <em>Shmuel HaKatan</em> returned to the <em>beis midrash</em> and had no occasion to recite his own <em>berachah</em> aloud. It had not entered muscle memory; standing at last as <em>shliach tzibbur</em>, he could not retrieve the words. After a time &mdash; some hours &mdash; he recalled them, and <em>tefillah</em> continued.</p>
+
+<h2>VII. The Older Midrash: The Berachos of the Malachim</h2>
+
+<p>Beneath the historical institution by the <em>Anshei Knesses HaGedolah</em> and by <em>Rabban Gamliel</em> lies a more ancient <em>midrash</em> (<span class="heb-inline">מדרש</span>), brought (apparently) in <em>Pirkei d'Rabi Eliezer</em> (<span class="heb-inline">פרקי דרבי אליעזר</span>) and cited at the opening of <em>Hilchos Shemoneh Esrei</em> in <em>Siman</em> 113 by the <em>Beis Yosef</em>, the <em>Kol Bo</em>, the <em>Shibolei HaLeket</em>, and the <em>Shulchan Aruch</em><a href="#fn11" id="ref11" class="footnote-ref">[11]</a> &mdash; notably absent from the <em>Tur</em>.</p>
+
+<p>The <em>midrash</em>: these <em>berachos</em> are not new compositions. They are as ancient as creation itself. The <em>malachei ha'shareis</em> (<span class="heb-inline">מלאכי השרת</span>) were already reciting them before any human throat gave them voice. When <em>Chazal</em> formalized our <em>Shemoneh Esrei</em>, they were channeling &mdash; drawing down into our human <em>peh</em> (<span class="heb-inline">פה</span>) and our daily <em>siddur</em> &mdash; the <em>tefillah</em> of the <em>malachim</em>.</p>
+
+<p>The <em>midrash</em> stands in evident tension with the historical account that the <em>Gemara</em> and the <em>Rambam</em> supply, in which particular <em>chachamim</em> at particular moments compose particular <em>berachos</em>. The <em>Rishonim</em> who cite it evidently read the two accounts as complementary rather than competing. The historical account describes the <em>vessel</em>: the <em>tekanah</em> of <em>Ezra</em>, the composition by <em>Shmuel HaKatan</em>, the fixing of the <em>nusach</em>. The <em>midrash</em> describes what was poured into the vessel: a pre-existing <em>tefillah</em> that had waited from creation for a mouth capable of receiving it. On this reading the <em>Nefesh HaChaim</em>'s answer about <em>Shmuel HaKatan</em> is not an accident but the pattern of the whole enterprise &mdash; each of the <em>Anshei Knesses HaGedolah</em> was the <em>kli</em> through which one particular <em>berachah</em> of the <em>malachim</em> was drawn into speech.</p>
+
+<h2>VIII. The Rambam's History</h2>
+
+<p>The <em>Rambam</em> at the opening of <em>Hilchos Tefillah</em><a href="#fn12" id="ref12" class="footnote-ref">[12]</a> supplies the most complete historical account of the <em>Shemoneh Esrei</em>'s development.</p>
+
+<h3>The Daily Mitzvah</h3>
+
+<p>The <em>Rambam</em> rules &mdash; against the <em>Ramban</em> (<span class="heb-inline">רמב״ן</span>)<a href="#fn13" id="ref13" class="footnote-ref">[13]</a> &mdash; that daily <em>tefillah</em> is a <em>mitzvas aseh min ha'Torah</em> (<span class="heb-inline">מצות עשה מן התורה</span>). But only the fact of daily <em>tefillah</em> is <em>d'oraisa</em>. The specific number of <em>tefillos</em> and the specific <em>nusach</em> are <em>d'rabbanan</em>. Biblically, the obligation is discharged by speaking &mdash; at any time, in any words, in any language &mdash; three elements in order: <em>praise HaKadosh Baruch Hu; ask Him for what one needs; thank Him.</em> This is the biblical minimum. It is precisely the <em>shevach&ndash;bakashah&ndash;hoda'ah</em> triad that <em>Chazal</em> later expanded into the eighteen articulated <em>berachos</em>.</p>
+
+<p>The <em>machlokes</em> between <em>Rambam</em> and <em>Ramban</em> is not a curiosity. On the <em>Rambam</em>'s <em>shitah</em>, a person unable or unfit to daven the fixed <em>nusach</em> &mdash; a sick person, a person who has never learned the words &mdash; discharges his <em>chiyuv d'oraisa</em> the moment he articulates the three-part shape in his own words; on the <em>Ramban</em>'s <em>shitah</em>, there is no <em>chiyuv d'oraisa</em> of daily <em>tefillah</em> at all, and the entire obligation is <em>d'rabbanan</em>. The two positions bear directly on <em>safek tefillah</em>, on women's obligation, and on the halakhic weight of any alteration to the fixed <em>nusach</em>.</p>
+
+<h3>The Era Before Ezra</h3>
+
+<p>The <em>Rambam</em> traces the early period. From <em>Moshe Rabbeinu</em> (<span class="heb-inline">משה רבינו</span>) through the <em>Shoftim</em>, the <em>Nevi'im</em>, and the <em>Melachim</em>, every <em>Yehudi</em> davened in his own words &mdash; at his own times, with his own emphasis, in his own <em>lashon ha'kodesh</em> (<span class="heb-inline">לשון הקודש</span>). <em>Moshe Rabbeinu</em> davened as he wished in the <em>midbar</em>. <em>Yehoshua bin Nun</em> the same. The <em>kohanim</em> of the <em>Mishkan</em> and the <em>Bayis Rishon</em> had no fixed daily <em>Shemoneh Esrei</em>; the record leaves no trace of such an institution before <em>Ezra</em>. Which answers a natural difficulty a thoughtful child once put to his <em>rebbi</em> &mdash; is it not strange to thank <em>HaKadosh Baruch Hu</em> by reading words from a <em>siddur</em>? Real gratitude is personal, passionate, one's own. The <em>Rambam</em> answers that <em>kushya</em>: for the greater part of Jewish history, that is precisely how <em>tefillah</em> was conducted.</p>
+
+<h3>The Turning Point &mdash; Ezra HaSofer</h3>
+
+<p>The <em>Rambam</em> writes:</p>
+
+<blockquote>
+  <div class="heb">כיון שגלו ישראל בימי נבוכדנצר הרשע, נתערבו בפרס וביון ובשאר האומות... ולא היו יכולין לדבר בלשון אחת עד שתערב בלשונם משאר לשונות... וכיון שראה עזרא ובית דינו כך, עמדו ותקנו להם שמנה עשרה ברכות על הסדר.</div>
+  <div class="source"><em>Rambam, Hilchos Tefillah</em> 1:4</div>
+</blockquote>
+
+<p>With the <em>galus</em> of <em>Nevuchadnetzar</em>, <em>lashon ha'kodesh</em> itself was lost. The next generation could not speak Hebrew properly &mdash; what the <em>Rambam</em> calls <em>&ldquo;lashon ilegess&rdquo;</em> (<span class="heb-inline">לשון עילגת</span>); <em>Sefer Nechemiah</em><a href="#fn14" id="ref14" class="footnote-ref">[14]</a> documents the linguistic collapse directly. Without a unified <em>lashon</em>, ordinary <em>Yehudim</em> could no longer compose proper <em>tefillos</em> in their own words. <em>Ezra</em> and his <em>beis din</em> saw this and stood up: they composed <em>shemoneh esrei berachos al ha'seder</em> &mdash; eighteen fixed <em>berachos</em>, in a fixed order, which the <em>chacham</em> and the <em>am ha'aretz</em> (<span class="heb-inline">עם הארץ</span>) would recite identically.</p>
+
+<p><em>Tefillah</em> as we know it is, in the <em>Rambam</em>'s framing, a product of <em>galus</em>: a unifying instrument for a moment in which the unifying language had been lost. <em>Rabban Gamliel</em> at <em>Yavneh</em> later reasserted and reinforced it; the foundational <em>tekanah</em> is <em>Ezra</em>'s. The three accounts of authorship &mdash; <em>k'neged korbanos</em> by the <em>Anshei Knesses HaGedolah</em>, the linguistic-response <em>tekanah</em> of <em>Ezra</em>, and the ancient <em>malachim</em>-<em>tefillah</em> of the older <em>midrash</em> &mdash; describe one composite reality from three angles. <em>Ezra</em> and his <em>beis din</em> are of the <em>Anshei Knesses HaGedolah</em>; the <em>Rambam</em> foregrounds the linguistic occasion, while the <em>Gemara</em> foregrounds the <em>korbanos</em> correspondence, and the <em>midrash</em> foregrounds the metaphysical content. It is one <em>tefillah</em>, seen from three sides.</p>
+
+<h2>IX. Counting Words &mdash; and the Avudraham's Skepticism</h2>
+
+<p>The <em>Rishonim</em> &mdash; and after them particularly the <em>Chasidei Ashkenaz</em> (<span class="heb-inline">חסידי אשכנז</span>)<a href="#fn15" id="ref15" class="footnote-ref">[15]</a>: <em>Rabbeinu Yehudah HaChasid</em>, the <em>Rokeach</em>, and their circle, roughly one to two centuries before the <em>Tur</em> &mdash; counted every word and every letter of every <em>berachah</em>. They identified corresponding <em>pesukim</em> in <em>Torah</em> with matching counts, and built extended edifices of <em>kavvanos</em> (<span class="heb-inline">כוונות</span>) upon them. The <em>Tur</em> preserves these counts; the <em>Arizal</em> (<span class="heb-inline">האר״י ז״ל</span>) and the <em>kabbalah</em> (<span class="heb-inline">קבלה</span>) intensify them. On the mainstream <em>mesorah</em>, every word of every <em>berachah</em> is gold.</p>
+
+<h3>The Avudraham's Kushya</h3>
+
+<p>The <em>Avudraham</em><a href="#fn16" id="ref16" class="footnote-ref">[16]</a> registers a sharp <em>kushya</em> on this entire enterprise. He writes that he himself once counted the words; he came to regard the exercise as futile. Why? Because even after <em>Chazal</em>'s formalization, communities have always maintained differing <em>nuscha'os</em> (<span class="heb-inline">נוסחאות</span>). <em>Nusach Ashkenaz</em> and <em>Nusach Sefard</em> differ in their word counts; even in his own day the variations existed. So how can the precise count be load-bearing?</p>
+
+<p>The <em>Avudraham</em>'s conclusion: do as you will; what is <em>truly</em> binding is the prohibition <em>&ldquo;meshaneh mi'matbei'a she'tav'u chachamim&rdquo;</em> (<span class="heb-inline">משנה ממטבע שטבעו חכמים</span>) &mdash; one may not alter the <em>chasimah</em> (<span class="heb-inline">חתימה</span>) of a <em>berachah</em> or the body of the <em>berachah</em> in a meaningful way; one may not transform <em>&ldquo;Magen Avraham&rdquo;</em> (<span class="heb-inline">מגן אברהם</span>) into something else. Within that frame, individuals historically added their own supplementary language; today we no longer possess that liberty.</p>
+
+<p>The <em>Avudraham</em>'s position is a <em>shitas yachid</em>. The mainstream of the <em>Rishonim</em> and <em>Acharonim</em> holds that the precise <em>nusach</em> matters and that the counts do their work; and as we move through the <em>berachos</em> in the shiurim to come, <em>b'ezras Hashem</em> (<span class="heb-inline">בעזרת השם</span>) we shall see them counting and weighing every word.</p>
+
+<h2>X. Closing</h2>
+
+<p>We began with the observation that a Jew davens <em>Shemoneh Esrei</em> three times each day and ought to know what he is saying. What we have laid out is the foundation of that knowing. The <em>Avos</em> set the times; <em>Chazal</em> gave the structure; <em>Ezra</em> and his <em>beis din</em>, in a moment of linguistic collapse, composed the fixed <em>nusach</em>; <em>Rabban Gamliel</em> and <em>Shmuel HaKatan</em> at <em>Yavneh</em>, in a moment of communal peril, added the nineteenth <em>berachah</em>. Beneath every layer, on the reading of the <em>Zohar</em>-tradition and of the older <em>midrash</em>, the <em>berachos</em> themselves are ancient as creation; the <em>Nefesh HaChaim</em> teaches that every word aligns with structures in higher worlds.</p>
+
+<p>With the historical spine now in place, the study proper begins. Over the coming months we shall take the <em>berachos</em> one by one &mdash; <em>Avos</em>, <em>Gevuros</em>, <em>Kedushah</em>, and onward through <em>bakashah</em> and <em>hoda'ah</em> &mdash; counting words where the mainstream counts them, weighing the <em>chasimos</em>, and asking what each <em>berachah</em> is doing. If the <em>Nefesh HaChaim</em> is right, this is the work of a lifetime; if the <em>Avudraham</em> is right, at least the <em>matbei'a</em> deserves our care. On either reading, three times each day we are placing on our lips the <em>tefillah</em> of the <em>malachim</em>, transposed into the human throat by <em>Ezra</em> and his <em>beis din</em>. It is worth knowing what we are saying.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Berachos</em> <span class="heb-inline">כ״ו ע״ב</span> (26b).</span>
+  <span class="expanded">&mdash; The classic <em>machlokes</em>: <em>Avos tiknum</em> (<em>Avraham</em> &rarr; <em>Shacharis</em> from <em>vayashkeim... el ha'makom asher amad sham</em>; <em>Yitzchak</em> &rarr; <em>Minchah</em> from <em>lasu'ach ba'sadeh</em>; <em>Yaakov</em> &rarr; <em>Ma'ariv</em> from <em>vayifga ba'makom</em>) versus <em>k'neged temidim tiknum</em>. The <em>Gemara</em>'s synthesis: even on <em>Avos tiknum</em>, <em>Chazal</em> later <em>asmichinhu a'korbanos</em> and added <em>Mussaf</em> as <em>k'neged Korban Mussaf</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Mishnah Avos</em> 1:2 &mdash; <em>Shimon HaTzaddik hayah mi'she'yarei Knesses HaGedolah</em>.</span>
+  <span class="expanded">&mdash; The received tradition is that <em>Shimon HaTzaddik</em> was the last surviving member of the <em>Anshei Knesses HaGedolah</em>. The source itself is slightly softer: it says <em>mi'she'yarei</em> &mdash; &ldquo;from the remnants&rdquo; &mdash; rather than <em>ha'acharon</em>. The traditional identification as the last survivor is a <em>mesorah</em> on top of the language, not the plain reading of the phrase itself.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Tehillim</em> 29 &mdash; <em>Havu la'Hashem bnei eilim</em>.</span>
+  <span class="expanded">&mdash; The <em>mizmor</em> contains eighteen mentions of <em>Hashem</em>; the correspondence to the eighteen <em>berachos</em>. One of three <em>shitos</em> in the <em>Gemara</em> for the count.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Bechoros</em> <span class="heb-inline">מ״ה ע״א</span> (45a) &mdash; the anatomical <em>sugya</em>.</span>
+  <span class="expanded">&mdash; The <em>Mishnah</em>'s count of <em>ramach evarim</em>; <em>talmidei Rebbi Shmuel</em>'s investigation, conducted on the body of a non-Jewish woman condemned by the <em>malchus</em> to death (chosen given the gravity of <em>bizayon ha'meis</em>), counted 252 &mdash; <em>ramav</em> plus <em>b' tzirim</em> and <em>b' pesachim</em>, the additional structures of the <em>rechem</em>. On modern anatomy: 33 vertebrae in the developing spine (7 cervical, 12 thoracic, 5 lumbar, 5 fused sacral, 4 fused coccygeal), which fuse into 26 distinct bones in the adult. The <em>Gemara</em>'s count is functional rather than descriptive. Prof. Avraham Ofir Shemesh, both academic anatomist and <em>talmid chacham</em>, has produced a full thesis on <em>Chazal</em>'s anatomical framework around the <em>ramach evarim</em> and the eighteen <em>chuliyos</em>, cited here as a scholarly bridge between <em>Chazal</em>'s references and modern medical understanding.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Pnei Yehoshua</em> on <em>Berachos</em>, <em>sugya</em> of <em>tefillos Avos tiknum</em>.</span>
+  <span class="expanded">&mdash; On <em>kol atzmosai tomarnah</em> through the eighteen <em>chuliyos ha'shidrah</em> in <em>Shemoneh Esrei</em>. The teaching: most <em>mitzvos</em> engage specific <em>evarim</em> (hands, feet, mouth, eyes); <em>Shemoneh Esrei</em> uniquely engages all <em>ramach evarim</em> through the spine that moves the whole body in bowing.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Berachos</em> <span class="heb-inline">כ״ח ע״ב</span> (28b); cf. <em>Megillah</em> <span class="heb-inline">י״ז ע״ב</span> (17b).</span>
+  <span class="expanded">&mdash; The addition of the nineteenth <em>berachah</em> at <em>Yavneh</em> in the days of <em>Rabban Gamliel</em>; <em>Shmuel HaKatan</em>'s composition; the year-later episode of the forgetting as <em>shliach tzibbur</em>; the resolution that he was of the <em>toraso umnaso</em> type, not committed to muscle memory through repeated public recitation. The <em>Rishonim</em>' <em>machlokes</em> as to which <em>Rabban Gamliel</em> &mdash; location (<em>Yavneh</em>) supports the identification with <em>Rabban Gamliel</em> the second.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Gittin</em> <span class="heb-inline">נ״ו ע״ב</span> (56b) &mdash; <em>ten li Yavneh v'chachameha</em>.</span>
+  <span class="expanded">&mdash; <em>Rabban Yochanan ben Zakkai</em>'s celebrated request to Vespasian in the aftermath of the <em>Churban</em>: he understood that <em>Torah she'baal peh</em> and a central seat of <em>chachamim</em> would carry <em>Klal Yisrael</em> through the long <em>galus</em>. The <em>Sanhedrin</em> moved from <em>Lishkas HaGazis</em> to <em>Yavneh</em>; many <em>tekanos</em> were established there, including the nineteenth <em>berachah</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short">On the early <em>minim</em> as the setting for <em>Birkas HaMinim</em> (general historical background).</span>
+  <span class="expanded">&mdash; The first Christians were themselves Jewish, indistinguishable externally from other <em>Yehudim</em>, and their <em>malshinim</em> operated from within the community as informers to the <em>malchuyos</em>. The structural need for sharp differentiation is the setting for <em>Birkas HaMinim</em>. Some traditions in later legendary literature attribute the eventual external differentiation of Christianity from Judaism to a <em>chacham</em> who deliberately engineered distinctions from within; the historical foundation of those accounts is uncertain and they are not the source for the halakhic <em>tekanah</em>, whose plain occasion &mdash; internal Christian informing on other <em>Yehudim</em> &mdash; is well-documented in <em>Chazal</em> without them.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Rosh</em>, <em>Rashba</em>, <em>Ritva</em>, <em>Rabbeinu Yonah</em> on <em>Berachos</em> &mdash; why specifically <em>Shmuel HaKatan</em>.</span>
+  <span class="expanded">&mdash; The <em>Rishonim</em>' <em>kushya</em>: any ordinary <em>Yehudi</em> &mdash; even a woman &mdash; could compose effective <em>kelalos</em> against <em>minim</em>. Why specifically <em>Shmuel HaKatan</em>? The <em>Rosh</em> openly concedes he has no satisfying answer; the others wrestle with it.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Nefesh HaChaim</em>, <em>Shaar</em> II (R' Chaim of Volozhin).</span>
+  <span class="expanded">&mdash; The deepest answer: each word and each letter of the <em>berachos</em> aligns with profound spiritual structures and functions in higher worlds. To compose a <em>berachah</em> tuned precisely to those structures required a person whose <em>kavvanah</em> could align every word and letter &mdash; <em>Shmuel HaKatan</em>'s <em>anavah</em> made him exactly that <em>kli</em>. Frames the entire study of <em>Shemoneh Esrei</em> ahead.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Beis Yosef</em>; <em>Kol Bo</em>; <em>Shibolei HaLeket</em>; <em>Shulchan Aruch, Orach Chaim</em> <span class="heb-inline">סימן קי״ג</span>; cf. <em>Pirkei d'Rabi Eliezer</em>.</span>
+  <span class="expanded">&mdash; The older <em>midrash</em>, brought (apparently) in <em>Pirkei d'Rabi Eliezer</em> and cited at the opening of <em>Hilchos Shemoneh Esrei</em>: the <em>berachos</em> are not new compositions but as ancient as creation itself; the <em>malachei ha'shareis</em> were already reciting them. <em>Chazal</em>'s formalization channels the <em>tefillah</em> of the <em>malachim</em> into our daily <em>peh</em>. Notably absent from the <em>Tur</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Rambam</em>, <em>Hilchos Tefillah</em> ch. 1 (esp. <em>halachos</em> 1&ndash;4).</span>
+  <span class="expanded">&mdash; The most complete historical reconstruction. Daily <em>tefillah</em> as a <em>mitzvas aseh min ha'Torah</em> (against the <em>Ramban</em>); the number of <em>tefillos</em> and the specific <em>nusach</em> as <em>d'rabbanan</em>. The pre-<em>Ezra</em> period: every <em>Yehudi</em> davened in his own words. With <em>galus Bavel</em>, <em>lashon ha'kodesh</em> was lost; <em>Ezra</em> and his <em>beis din</em> stood up and composed <em>shemoneh esrei berachos al ha'seder</em> &mdash; a unifying instrument for a generation that could no longer compose proper <em>tefillos</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Ramban</em>, <em>Hasagos al Sefer HaMitzvos</em>, <em>mitzvah</em> 5.</span>
+  <span class="expanded">&mdash; The <em>Ramban</em>'s <em>machlokes</em> against the <em>Rambam</em>: daily <em>tefillah</em> as <em>d'rabbanan</em>, not as a Pentateuchal <em>mitzvah</em>. The obligation, on the <em>Ramban</em>'s reading, originates with the <em>Anshei Knesses HaGedolah</em> rather than with any biblical <em>chiyuv</em>. The dispute bears directly on <em>safek tefillah</em>, on women's obligation on various <em>shitos</em>, and on the halakhic weight of any alteration to the fixed <em>nusach</em>.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Sefer Nechemiah</em> 13:23&ndash;24.</span>
+  <span class="expanded">&mdash; <em>u'vneihem chatzi medaber ashdodis v'einam makirim l'daber Yehudis</em>. Direct documentation of the linguistic crisis of the post-<em>galus</em> generation, and the textual anchor for the <em>Rambam</em>'s account of <em>lashon ilegess</em> driving <em>Ezra</em>'s formalization of <em>Shemoneh Esrei</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Chasidei Ashkenaz</em>: R' Yehudah HaChasid (<em>Sefer Chasidim</em>, <em>Sefer HaKavod</em>); the <em>Rokeach</em> (R' Elazar of Worms) and their circle.</span>
+  <span class="expanded">&mdash; The systematic counters of every word and letter in every <em>berachah</em>; identifying corresponding <em>pesukim</em> in <em>Torah</em>; building edifices of <em>kavvanos</em> upon them. The <em>Tur</em> preserves their counts; the <em>Arizal</em> and <em>kabbalah</em> intensify them. The mainstream <em>mesorah</em> against which the <em>Avudraham</em>'s <em>shitas yachid</em> stands.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short">R' David ben Yosef Avudraham, <em>Sefer Avudraham</em>, section on the counting of words in <em>Shemoneh Esrei</em>.</span>
+  <span class="expanded">&mdash; The lonely <em>shitas yachid</em>: the <em>Avudraham</em> himself used to count words and concluded the exercise futile, given that communities have always maintained differing <em>nuscha'os</em> with differing word counts. What is binding is <em>meshaneh mi'matbei'a she'tav'u chachamim</em> &mdash; one may not alter the <em>chasimah</em> or the body of a <em>berachah</em>; word-by-word counts cannot be load-bearing when even <em>Nusach Ashkenaz</em> and <em>Nusach Sefard</em> disagree. The mainstream <em>mesorah</em> stands against this view.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati's Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 9 February 2025. Opening chapter of the long study of <em>Shemoneh Esrei</em>: authorship, structure, the number eighteen, the nineteenth <em>berachah</em>, the <em>Rambam</em>'s history, and the <em>Avudraham</em>'s <em>shitas yachid</em>. This edition integrates revisions from the Shiur Review and Editorial Review of 23 August 2026: the three parallel accounts of authorship have been explicitly adjudicated as complementary; the <em>Rambam</em> vs. <em>Ramban</em> <em>machlokes</em> has been developed for its halakhic yield; the anatomical <em>vertebrae</em> figures have been made precise; the Christian-origins speculative passage has been trimmed and moved to a footnote; the classroom-anecdote and Rav Kook <em>chiddush</em> asides have been removed in favor of a proper landing that brackets the opening. Mareh Mekomos carry dual-layer (short + expanded) footnotes throughout.
+</footer>
+
+</body>
+</html>

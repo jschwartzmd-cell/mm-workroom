@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — 5 January 2025 — יְדִיד נֶפֶשׁ — Origin and Journey of the Piyut</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">יְדִיד נֶפֶשׁ &mdash; מְקוֹרוֹ וְהִתְפַּתְּחוּתוֹ שֶׁל הַפִּיּוּט</h1>
+  <div class="english-title">Yedid Nefesh: Origin and Journey of the Piyut</div>
+  <div class="sub">A Detour from Hilchos Krias Shema &mdash; Hei Teves, Yahrtzeit of Rav Shlomo Molcho</div>
+  <div class="date">Recorded 5 January 2025 (Hei Teves 5785) &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>L&rsquo;ilui nishmas</em> Rav Shlomo Molcho <em>ha&rsquo;kadosh</em>, who was killed <em>al kiddush Hashem</em> in Mantua on Yud-Gimmel Teves of the year 5292 (1532); and in memory of that <em>chevra shel chaverim</em> in Tzfas whose secret <em>tefillah</em> we recite each morning without knowing what we ask.</p>
+
+<p class="lead">Among the piyutim of the <em>siddur</em>, few are so widely sung, and few are so poorly understood, as <em>Yedid Nefesh</em> (<span class="heb-inline">יְדִיד נֶפֶשׁ</span>). This chapter traces the journey of the piyut from its <em>mechaber</em>, Rabbeinu Elazar Azkari (<span class="heb-inline">רבינו אלעזר אזכרי</span>) of Tzfas, through the extraordinary <em>parshah</em> that occasioned its composition &mdash; the life and death of Shlomo Molcho (<span class="heb-inline">שלמה מולכו</span>) <em>al kiddush Hashem</em>, and the <em>Maggid Meisharim</em> (<span class="heb-inline">מגיד משרים</span>) of the Beis Yosef (<span class="heb-inline">בית יוסף</span>) &mdash; and finally into the pages of the modern <em>siddur</em>. What emerges is a piyut that most Jews sing without knowing that they are pleading, in coded language, for the survival of the man to whom <em>Klal Yisrael</em> owes the <em>Shulchan Aruch</em>.</p>
+
+<h2>I. The Piyut and Its Three Stations in the Siddur</h2>
+
+<p>In the <em>siddurim</em> in common use today, <em>Yedid Nefesh</em> appears in three distinct liturgical stations. In the morning it is placed between the daily <em>korbanos</em> (<span class="heb-inline">קרבנות</span>) and <em>Pesukei d&rsquo;Zimra</em> (<span class="heb-inline">פסוקי דזמרא</span>). On <em>Erev Shabbos</em> (<span class="heb-inline">ערב שבת</span>) it stands before <em>Kabbalas Shabbos</em> (<span class="heb-inline">קבלת שבת</span>) &mdash; a placement embraced especially in the <em>Dati Le&rsquo;umi</em> (<span class="heb-inline">דתי לאומי</span>), Yeshurun, Chabad, and German-Ashkenaz communities. And on Shabbos afternoon it is sung at <em>Shalosh Seudos</em> (<span class="heb-inline">שלוש סעודות</span>) as the melody of the day&rsquo;s waning light.</p>
+
+<p>The piyut has become so embedded in the daily <em>seder</em> that its late arrival to that <em>seder</em> is easily forgotten. In its origin, <em>Yedid Nefesh</em> was not <em>tefillah</em> at all &mdash; not in any of the three stations in which it now sits. Its <em>mechaber</em> composed it as a <em>shir ahavah</em> (<span class="heb-inline">שיר אהבה</span>), a love-song to be sung with a <em>chevra shel chaverim</em>. Its migration into the <em>siddur</em> would take a century and a half.</p>
+
+<h2>II. The Mechaber &mdash; Rabbeinu Elazar Azkari</h2>
+
+<h3>The Simple Gabbai of the Arizal</h3>
+
+<p>The author of <em>Yedid Nefesh</em>, Rabbeinu Elazar Azkari, is best known to the <em>olam</em> as the author of <em>Sefer Charedim</em> (<span class="heb-inline">ספר חרדים</span>). He lived in Tzfas (<span class="heb-inline">צפת</span>) in the sixteenth century, in the years of the Arizal (<span class="heb-inline">האר&quot;י ז&quot;ל</span>), and served as the <em>shamash</em> (<span class="heb-inline">שמש</span>) &mdash; the <em>gabbai</em> &mdash; of the Arizal&rsquo;s <em>shul</em>. Outwardly he presented as a modest, unremarkable <em>ba&rsquo;al ha&rsquo;bayis</em>. In the eyes of many he was little more than a simpleton. The full stature of the man remained hidden.</p>
+
+<h3>The Revelation at Meron</h3>
+
+<p>The moment in which the <em>olam</em>&rsquo;s perception of Rabbeinu Elazar was overturned is preserved in the collections of Ashkenazic <em>hanhagos</em> printed in the name of the <em>Hadras Zekenim</em> tradition of Meron.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> It was the Arizal who popularized the <em>minhag</em> of ascending to <em>Meron</em> on <em>Lag B&rsquo;Omer</em> to the <em>kever</em> of Rabi Shimon bar Yochai (<span class="heb-inline">רבי שמעון בר יוחאי</span>); the annual <em>hilula</em> in its present form owes its shape to him. On one such <em>Lag B&rsquo;Omer</em>, in the middle of the dancing in the <em>chatzer</em> beside the <em>me&rsquo;arah</em> of the <em>Rashbi</em>, the Arizal suddenly drew the humble <em>gabbai</em> into the innermost circle and danced with him with intense <em>dveikus</em> (<span class="heb-inline">דבקות</span>) for a great length of time.</p>
+
+<p>The <em>talmidim</em> stood astonished. What place had this simple <em>gabbai</em> at the very center of the <em>hilula</em>? Only afterward did the Arizal reveal what he had seen: <em>Rabbeinu Elazar Azkari is a </em>gadol me&rsquo;od ba&rsquo;Kabbalah<em>. I saw Rabi Shimon dancing with him; I joined them.</em> From that moment the perception of the man among his contemporaries was radically overturned.</p>
+
+<h3>Yiras Hashem, Ahavas Hashem, and the Duty of Love-Song</h3>
+
+<p>In the opening chapters of <em>Sefer Charedim</em>,<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> Rabbeinu Elazar establishes the twin foundations of the <em>oved Hashem</em>: <em>yiras Hashem</em> (<span class="heb-inline">יראת ה&rsquo;</span>) and <em>ahavas Hashem</em> (<span class="heb-inline">אהבת ה&rsquo;</span>). The two are inseparable, and the generation must be strengthened in both. As the <em>pasuk</em> teaches, <em>reishis chochmah yiras Hashem</em> &mdash; only from <em>yirah</em> can one arrive at <em>ahavah</em>, as the <em>Chovos HaLevavos</em> (<span class="heb-inline">חובות הלבבות</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> and the classical <em>mussar sefarim</em> establish.</p>
+
+<p>Building on the framework of the <em>Chovos HaLevavos</em>, Rabbeinu Elazar advances a striking teaching: part of love is the constant expression of love. To love is to <em>speak</em> that love. This is why we recite <em>Tehillim</em> (<span class="heb-inline">תהילים</span>): to give voice to the love of <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>). More than this &mdash; Rabbeinu Elazar teaches that one must <em>compose</em> <em>shirei ahavah</em>, love-songs, to the Beloved. <em>HaKadosh Baruch Hu</em> is the Beloved; the <em>neshamah</em> of the Jew is the lover. And it is in this <em>hakdamah</em> that <em>Yedid Nefesh</em> is born.</p>
+
+<h3>The Piyut and Its Roshei Teivos</h3>
+
+<p>The <em>roshei teivos</em> (<span class="heb-inline">ראשי תיבות</span>) of the four stanzas spell the <em>Sheim Havayah</em> (<span class="heb-inline">שם הוי&quot;ה</span>):</p>
+
+<ul>
+<li><strong>י</strong>דיד נפש</li>
+<li><strong>ה</strong>דור נאה</li>
+<li><strong>ו</strong>תיקך יהמו רחמיך</li>
+<li><strong>ה</strong>גלה נא</li>
+</ul>
+
+<p>Yet the piyut was composed neither for the <em>siddur</em> nor for the <em>tzibbur</em>. Rabbeinu Elazar records that he sang this <em>shir</em> together with a <em>chevra shel chaverim</em> &mdash; the intimate circle of <em>mekubalim</em> among whom he moved in Tzfas. He did not designate a time for its recitation; he did not petition that it enter the liturgy. From the day it was composed until it first appeared in a printed <em>siddur</em>, roughly one hundred and thirty years would pass.</p>
+
+<h2>III. The World in Which the Piyut Was Composed</h2>
+
+<h3>The Expulsion from Spain</h3>
+
+<p>To grasp how <em>Yedid Nefesh</em> reached the <em>siddur</em>, one must understand the atmosphere of Sephardic Jewry in the sixteenth century. In the year 5252 (1492), the Jews of Spain were driven from their homes &mdash; one of the most catastrophic <em>tekufos</em> in the history of <em>galus</em>. The wealthiest and most learned community in the diaspora was destroyed in a matter of years. The eyewitness account of Don Yitzchak Abarbanel (<span class="heb-inline">דון יצחק אברבנאל</span>), royal treasurer and one of the leaders of Spanish Jewry, is preserved in his <em>hakdamah</em> to <em>Sefer Melachim</em>:<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> hundreds of thousands expelled, with nowhere to receive them; bankers, <em>talmidei chachamim</em>, royal advisors driven into the sea and into the mountains.</p>
+
+<h3>The Anusim</h3>
+
+<p>Those who could neither leave nor accept martyrdom became <em>Anusim</em> (<span class="heb-inline">אנוסים</span>) &mdash; the Conversos. They lived as Catholics in public and as Jews in secret, baking <em>matzah</em> (<span class="heb-inline">מצה</span>) in cellars, making <em>sederim</em> (<span class="heb-inline">סדרים</span>) by whispered <em>haggadah</em>, transmitting whatever fragments of <em>Yiddishkeit</em> they could preserve to children raised outwardly in the Church.</p>
+
+<h3>The Yearning for Geulah</h3>
+
+<p>Jews were scattered through the Middle East, North Africa, and Greece. In such a <em>tzar</em>-saturated moment, any vision of <em>geulah</em> (<span class="heb-inline">גאולה</span>) &mdash; any promise that the redemption stood at the door &mdash; became magnetic. It is the fundamental principle of historical reading in <em>mesorah</em> that the generations must be understood in their own atmosphere and not reproached with the categories of later centuries. The <em>tekufah</em> that followed the Expulsion was, in the phrase of the <em>mekubalim</em>, <em>re&rsquo;uyah la&rsquo;geulah</em> (<span class="heb-inline">ראויה לגאולה</span>) &mdash; ripe for redemption &mdash; even if <em>Klal Yisrael</em> was not <em>zocheh</em> to see it come.</p>
+
+<h2>IV. Diego Pires in the Portuguese Court</h2>
+
+<p>In the year 5260 (1500), eight years after the Expulsion, a child was born in Lisboa (<span class="heb-inline">ליסבון</span>), Portugal, to a family of <em>Anusim</em>. His name at the baptismal font was Diego Pires. He was raised outwardly Catholic; his parents told him only that he was, in some hidden sense, a Jew. He received no <em>bris milah</em> (<span class="heb-inline">ברית מילה</span>); he knew no Shabbos, no <em>Yiddishkeit</em>, no <em>Torah</em> (<span class="heb-inline">תורה</span>).</p>
+
+<p>Gifted with extraordinary intellect and personal presence, Diego rose swiftly in the Portuguese royal service. Still in his early twenties, he was appointed Secretary of the Highest Appeals Court of Portugal under King João III (reigned 1521&ndash;1557), the son of the King Manuel I who had forcibly converted Portuguese Jewry a generation earlier. Diego moved in the innermost circles of the court, secretly bearing a Jewish identity that he neither professed nor practiced.</p>
+
+<h2>V. The Arrival of David HaReuveni</h2>
+
+<h3>The Emissary from the Ten Tribes</h3>
+
+<p>In the year 5283 (1523), there appeared at the Portuguese court a figure whose origins have remained an unsolved question of Jewish history: David HaReuveni (<span class="heb-inline">דוד הראובני</span>). Dark of complexion and Sephardic in appearance, he spoke chiefly Arabic with fragments of Hebrew. He claimed to have come from a distant desert; his brother, he said, was king over the <em>Aseres HaShevatim</em> (<span class="heb-inline">עשרת השבטים</span>), the Ten Lost Tribes, and commanded three hundred thousand Jewish soldiers prepared to make war.</p>
+
+<p>The claim rested upon a real <em>machlokes</em> in <em>Chazal</em>. The <em>Gemara</em> in <em>Sanhedrin</em><a class="footnote-ref" id="ref5" href="#fn5">[5]</a> preserves a dispute over whether the Ten Tribes will return; various <em>rishonim</em> and <em>acharonim</em> placed them in India, in China, and in yet more distant regions. Whatever the truth of HaReuveni&rsquo;s personal biography, his story engaged a <em>sugya</em> that stood open in the <em>mesorah</em>.</p>
+
+<h3>The Proposed Alliance</h3>
+
+<p>HaReuveni brought a proposal fit for a European court. The armies of his brother, joined with the Christian forces of Portugal, Spain, and France &mdash; the Holy Roman Empire &mdash; would march against the Ottoman Empire, which then held <em>Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>). Christians and Jews would jointly conquer the Land and share its sovereignty. His personal magnetism was such that the King of Portugal at one stage committed eight warships, ammunition, and soldiers; the original correspondence survives in the Portuguese archives. The king afterward withdrew from the enterprise but furnished HaReuveni with letters of introduction to the other monarchs of Christendom.</p>
+
+<h2>VI. Bris Milah in Secret</h2>
+
+<p>At court HaReuveni encountered the young Secretariat Diego Pires. The impact was profound. Diego approached him with a single request: <em>Perform a bris milah for me.</em> HaReuveni refused. To be discovered circumcising an <em>Anus</em> in the royal precincts would have alerted the king that the entire enterprise of Ferdinand and Isabella was being quietly reversed on his own soil; it would have destroyed the political mission at a stroke.</p>
+
+<p>Diego acted alone. He performed his own <em>bris milah</em>. He records the event in his own hand in his <em>sefer HaMefoar</em> (<span class="heb-inline">ספר המפואר</span>),<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> preserved to this day and now available in digital form.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> He describes the <em>nissim</em> (<span class="heb-inline">נסים</span>) attending the healing: a physician summoned in haste, the wound closing within days. He took the name <em>Shlomo Molcho</em> &mdash; &ldquo;Molcho&rdquo; from <em>malchus</em> (<span class="heb-inline">מלכות</span>), a name that from its first utterance carried a suggestion of messianic aspiration &mdash; and committed himself entirely to a life of <em>Torah</em>.</p>
+
+<p class="pullquote">The halachic dimension of the act is not incidental. The status of one who acts as <em>mohel</em> upon himself is treated in the <em>sugya</em> of <em>Avodah Zarah</em> and its <em>nosei keilim</em>;<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> the <em>Rambam</em> (<span class="heb-inline">רמב&quot;ם</span>) and the <em>Shulchan Aruch</em> in <em>Yoreh De&rsquo;ah</em> hold that a person may indeed be <em>mohel</em> for himself. For the class of <em>Anusim</em> as a whole, this <em>halachah</em> was no theoretical matter; whole families in <em>Sefarad</em> received <em>bris milah</em> in secret precisely because self-circumcision, or circumcision at the hands of a fellow <em>Anus</em>, was the only path available.</p>
+
+<h2>VII. From Anus to Talmid Chacham</h2>
+
+<h3>Under Rav Ovadyah Sforno</h3>
+
+<p>The newly-named Shlomo Molcho left Portugal and travelled to Italy, where he applied himself to <em>Torah</em> and <em>mitzvos</em>. There he found in <em>Rav Ovadyah Sforno</em> (<span class="heb-inline">רב עובדיה ספורנו</span>) &mdash; the great <em>parshan</em> on <em>Chumash</em> (<span class="heb-inline">חומש</span>) &mdash; a <em>rebbi</em> and a source of encouragement. But personal <em>teshuvah</em> was not, for him, the end of the road. Molcho had been so impacted by HaReuveni&rsquo;s messianic vision that he cast his lot with the mission itself. In his <em>Sefer Chayas Kinah</em> (<span class="heb-inline">ספר חית קנה</span>)<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> he writes with astonishing self-abnegation: <em>I am as a servant to his master. My master David HaReuveni leads me; I do his bidding.</em> HaReuveni, who had at first held the new <em>ger</em>-in-spirit at arm&rsquo;s length, eventually accepted him as a full partner.</p>
+
+<h3>In the Circle of the Maharitatz</h3>
+
+<p>In Greece, Molcho reached the study-hall of one of the greatest <em>talmidei chachamim</em> of the era: <em>Rabbeinu Yosef Taitazak</em> (<span class="heb-inline">רבינו יוסף טאיטאצאק</span>), known by his acronym as the <em>Maharitatz</em> (<span class="heb-inline">מהרי&quot;ט&quot;ץ</span>), frequently cited by the Beis Yosef.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> Within his <em>beis midrash</em> in Salonika had learned or would learn some of the very builders of the <em>Shulchan Aruch</em>-generation:</p>
+
+<ul>
+<li>Rabbeinu Shlomo Alkabetz (<span class="heb-inline">רבינו שלמה אלקבץ</span>), the <em>mechaber</em> of <em>Lecha Dodi</em> (<span class="heb-inline">לכה דודי</span>);</li>
+<li>The Beis Yosef himself (<em>Rabbeinu Yosef Karo</em>, <span class="heb-inline">רבינו יוסף קארו</span>), whose broader circle of teachers included the Maharitatz alongside his primary <em>rabbanim</em> in Adrianople and Tzfas.</li>
+</ul>
+
+<p>Molcho, the former Marrano at the Portuguese court, had thus made his way into the most elite circle of <em>talmidei chachamim</em>, <em>mekubalim</em>, and <em>poskim</em> of his age &mdash; the very circle whose <em>halachah</em> and <em>hanhagah</em> would flow forward as the <em>Shulchan Aruch</em>-<em>mesorah</em> we follow to this day.</p>
+
+<h3>The Beis Yosef Drawn into Torah HaSigulah</h3>
+
+<p>The Beis Yosef, at least twelve years Molcho&rsquo;s senior, was so impressed by the younger man that his own path shifted. His absorption into <em>torah ha&rsquo;sigulah</em> (<span class="heb-inline">תורת הסגולה</span>) and <em>kabbalah</em> &mdash; his intense preoccupation with <em>Mashiach</em> (<span class="heb-inline">משיח</span>) and <em>geulah</em> &mdash; can be traced in significant part to Molcho&rsquo;s influence. From that current would in turn flow influences reaching the Arizal and Rav Chaim Vital (<span class="heb-inline">רב חיים ויטאל</span>). Molcho himself was deeply engaged in calculations of the <em>keitz</em> (<span class="heb-inline">קץ</span>) &mdash; despite the <em>Gemara</em>&rsquo;s stinging <em>ma&rsquo;amar</em> in <em>Sanhedrin</em>, <em>tipach atzman shel mechashvei kitzin</em><a class="footnote-ref" id="ref11" href="#fn11">[11]</a> &mdash; and he received visions and dreams. The <em>Acharonim</em> extend various <em>heteirim</em> for such calculations in a <em>tekufah</em> of severe <em>tzar</em>; whether or not Molcho would today have received formal sanction, his contemporaries evidently understood his activity within that framework.</p>
+
+<h3>The Tzitzis of Shlomo Molcho</h3>
+
+<p>The single most extraordinary halachic remainder of Molcho&rsquo;s life is his <em>tzitzis</em> (<span class="heb-inline">ציצית</span>). The Beis Yosef in <em>Hilchos Tzitzis</em><a class="footnote-ref" id="ref12" href="#fn12">[12]</a> records the specific manner in which Molcho tied his <em>tzitzis</em> &mdash; the <em>kshorim</em> (<span class="heb-inline">קשרים</span>) &mdash; and brings it down <em>l&rsquo;halachah l&rsquo;ma&rsquo;aseh</em>.</p>
+
+<p>The <em>Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>), writing some two hundred and fifty years after the events, testifies that Molcho&rsquo;s actual <em>tzitzis</em> still existed in his time.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> The <em>Tosfos Yom Tov</em> (<span class="heb-inline">תוספות יום טוב</span>) &mdash; Rabbeinu Yom Tov Lipman Heller, who served as <em>av beis din</em> of Prague and whose <em>kever</em> lies in Krakow beside that of the Rema (<span class="heb-inline">רמ&quot;א</span>) &mdash; personally examined the tzitzis in Prague and confirmed the Beis Yosef&rsquo;s description in every detail.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> The <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) preserves this chain and rules accordingly.</p>
+
+<p>The consequence, felt in every Jewish morning, is stark. The <em>tzitzis</em> tied upon the <em>tallis</em> of every observant Jew today is tied, in part, on the pattern once tied by an <em>Anus</em> who circumcised himself in secret in the Portuguese court and died <em>al kiddush Hashem</em> in Mantua. His personal <em>hanhagah</em> has become the <em>halachah</em> of <em>Klal Yisrael</em>.</p>
+
+<h2>VIII. A Century Before Shabbsai Tzvi</h2>
+
+<p>HaReuveni and Molcho travelled together from city to city and from court to court, urging their messianic proposal upon Christian monarchs and Jewish communities alike. Chronologically, their campaign preceded that of Shabbsai Tzvi (<span class="heb-inline">שבתי צבי</span>) &mdash; the most infamous false <em>mashiach</em> of Jewish history &mdash; by almost exactly a century. Not every <em>kehillah</em> welcomed them. Salonika, the great post-Expulsion Sephardic center of Greece, feared <em>sin&rsquo;as Yisrael</em> (<span class="heb-inline">שנאת ישראל</span>) from the political ripples the two men produced; the trauma of the Expulsion was still fresh. Yet the support they garnered was considerable.</p>
+
+<h2>IX. The Prophet at the Gates of Rome</h2>
+
+<h3>The Two Prophecies</h3>
+
+<p>In Italy Molcho uttered two prophecies that were publicly fulfilled. The first foretold the great flooding of the Tiber River; one month later thousands perished when the river broke over Rome. The second foretold the earthquake that struck Portugal in 5292 (1532), a catastrophe recorded on the secular register that killed thousands.</p>
+
+<h3>Before Pope Clement VII</h3>
+
+<p>The Cardinals of Rome admitted him to an audience with Pope Clement VII. The Pope was overwhelmed. He entertained, at least in outline, the proposed alliance with the Jews and with HaReuveni against the Ottoman Empire; he provided letters of introduction. A tradition preserved among historians reports that the Pope himself intervened to protect Molcho from the Inquisition at one juncture. In the end the political currents proved too intricate; the alliance was never consummated.</p>
+
+<h3>The Metzora at the Gates</h3>
+
+<p>Before entering the Pope&rsquo;s presence, Molcho sat for thirty days at the very <em>gates of Rome</em>, dressed in the torn clothing of a pauper, fasting. The <em>ma&rsquo;aseh</em> he was enacting was not obscure. The <em>Gemara</em> in <em>Sanhedrin</em><a class="footnote-ref" id="ref15" href="#fn15">[15]</a> records that <em>Rabi Yehoshua ben Levi</em> asked <em>Eliyahu HaNavi</em> where <em>Mashiach</em> was to be found. <em>Eliyahu</em> answered: at the gates of Rome. <em>Mashiach</em> sits there as a <em>metzora</em> (<span class="heb-inline">מצורע</span>), a leper, changing his bandages; but unlike other lepers, who unwrap all their bandages together and rebind them together, <em>Mashiach</em> unwraps one at a time and rebinds each before proceeding to the next. Why? So that at any moment, when <em>HaKadosh Baruch Hu</em> shall command him, he may spring instantly into action; not one bandage may delay him. When <em>Rabi Yehoshua ben Levi</em> asked <em>Mashiach</em> himself when he would come, the answer was: <em>today</em>. Sunset came; he did not. When <em>Rabi Yehoshua</em> returned to <em>Eliyahu</em> in complaint, <em>Eliyahu</em> revealed the <em>tnai</em>: <em>hayom im b&rsquo;kolo tishma&rsquo;u</em> &mdash; <em>today, if you will hearken to His voice</em>. The redemption stands ready; it awaits our <em>teshuvah</em>.</p>
+
+<p>Molcho was walking, deliberately and knowingly, in the pattern of that <em>sugya</em>. By the time he entered the Pope&rsquo;s presence, all Rome was speaking of the strange Jew at the gates whose prophecies had come to pass.</p>
+
+<h2>X. Mantua &mdash; Yud-Gimmel Teves 5292</h2>
+
+<p>Eventually the two companions were seized. HaReuveni disappeared into the dungeons of the Inquisition and was put to death, according to the commonly accepted tradition, around the year 1538 (the Portuguese archival record varies between 1535 and 1541). A single entry in the Portuguese national archive states that he accepted Christianity before his death &mdash; a claim to be received with appropriate reserve, given that the Church was accustomed to record what it wished to record.</p>
+
+<p>In the year 5292 (1532), in Mantua (<span class="heb-inline">מנטובה</span>), Italy, on the day of <em>Yud-Gimmel Teves</em>, Shlomo Molcho was brought before an Inquisitorial tribunal, condemned, and led to be burned alive. The historical record preserves the details of his final hours. The authorities stuffed his mouth with cotton, so persuasive a speaker was he that they feared even Christians might be swayed if he were permitted to speak before the flames. Before the pyre was lit they removed the cotton and offered him a final choice: return to the faith into which he had been baptized, and he would be saved.</p>
+
+<h3>His Final Words</h3>
+
+<blockquote>
+<div class="trans"><em>I regret ever having been born and having practiced Christianity. My </em>neshamah<em> is going to return to her Father in </em>Shamayim<em>.</em></div>
+</blockquote>
+
+<p>And then, from a mouth that had lately been stopped with cotton lest the flames themselves be delayed by his eloquence, rose the ancient <em>pasuk</em> that has escorted the <em>kedoshim</em> of <em>Klal Yisrael</em> across every generation:</p>
+
+<blockquote>
+<div class="heb">שְׁמַע יִשְׂרָאֵל ה' אֱלֹקֵינוּ ה' אֶחָד!</div>
+<div class="trans">Hear, O Israel: Hashem is our God; Hashem is One.</div>
+</blockquote>
+
+<p>On <em>Yud-Gimmel Teves</em> 5292 he was killed <em>al kiddush Hashem</em>.</p>
+
+<h2>XI. The Reuveni-Molcho Paradox</h2>
+
+<p>Even at this point in the narrative a question demands to be voiced. Why is David HaReuveni consigned to what one might call the dustbins of history &mdash; recalled, when at all, as a strange episode, a Sephardic <em>mashiach sheker</em> at the edge of respectability &mdash; while his partner Shlomo Molcho, equally engaged in the same messianic enterprise, is drawn <em>b&rsquo;kahal kedoshim</em> (<span class="heb-inline">בקהל קדושים</span>) and remembered with reverence, his <em>tzitzis</em>-<em>kshorim</em> ruled to <em>halachah</em> in the <em>Beis Yosef</em>?</p>
+
+<p>The answer rests upon a distinction fundamental to the <em>mesorah</em>. HaReuveni bore his messianic vision; Molcho bore both the vision <em>and</em> the <em>Torah</em>. He entered the <em>beis midrash</em> of the Maharitatz; he became a genuine <em>talmid chacham</em>; he was the <em>mechaber</em> of two <em>sefarim</em>; his <em>hanhagah</em> in <em>tzitzis</em> was received by the Beis Yosef himself; and he sealed his life <em>al kiddush Hashem</em>. HaReuveni, lacking the <em>limud</em> and lacking the seal, is forgotten. Molcho, sealed and studied, stands within the <em>mesorah</em>. <em>Limud haTorah</em> and <em>kiddush Hashem</em> together, in the reading of <em>Klal Yisrael</em>, are what confer place among the <em>kedoshim</em>.</p>
+
+<h2>XII. The Beis Yosef&rsquo;s Request</h2>
+
+<h3>&ldquo;I Wish to Die Like Shlomo Molcho&rdquo;</h3>
+
+<p>When word of Molcho&rsquo;s <em>kiddush Hashem</em> reached Tzfas, the entire Jewish world was shaken. The Beis Yosef, who had held Molcho in the highest personal esteem, uttered a wish that his <em>talmidim</em> preserved: <em>May I be </em>zocheh<em> to die </em>al kiddush Hashem<em> like Shlomo Molcho.</em> It was not a passing exclamation. It became a fixed request in his <em>tefillah</em>.</p>
+
+<h3>The Maggid&rsquo;s Threefold Promise</h3>
+
+<p>The Beis Yosef was accompanied through his life by a <em>Maggid</em> (<span class="heb-inline">מגיד</span>) &mdash; an entity from <em>Shamayim</em> that revealed <em>sodos</em> and <em>hanhagos</em> to him. His encounters with this <em>Maggid</em> are recorded in his <em>sefer Maggid Meisharim</em>,<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> a genuine <em>sefer</em> that has passed through many printings and stands upon the shelves of every serious Jewish library.</p>
+
+<p>The <em>Maggid</em> spoke to the Beis Yosef of his request. <em>I hear you are davening to die </em>al kiddush Hashem<em> like Shlomo Molcho.</em> Three separate times &mdash; in <em>Parshas Noach</em> and in <em>Parshas Lech Lecha</em>, at the concluding entries of those <em>parshiyos</em> &mdash; the <em>Maggid</em> promised that the Beis Yosef would in truth be <em>zocheh</em> to die <em>al kiddush Hashem</em>, to be burned by the enemies of <em>Yisrael</em>, <em>k&rsquo;Shlomo b&rsquo;chiri</em> &mdash; <em>like My chosen Shlomo</em>.</p>
+
+<h3>The Difficulty</h3>
+
+<p>The Beis Yosef lived to the age of eighty-seven. He was <em>niftar</em> on <em>Yud-Gimmel Nisan</em> of 5335 (1575), two days before <em>Pesach</em>, in his bed, in peace. The <em>Maggid</em>&rsquo;s threefold promise from <em>Shamayim</em> &mdash; the promise of a <em>kiddush Hashem</em> like Molcho&rsquo;s &mdash; had, by the plain reading of his life, gone unfulfilled. This is the difficulty that stands at the very heart of the <em>parshah</em> of <em>Yedid Nefesh</em>.</p>
+
+<h2>XIII. The Secret Tefillah of Rabbeinu Elazar Azkari</h2>
+
+<h3>The Realization</h3>
+
+<p>Rabbeinu Elazar Azkari was born after Molcho&rsquo;s death and knew this entire <em>parshah</em> at close range. He was a <em>talmid</em> in the wider circle of the Beis Yosef&rsquo;s Tzfas and drank from the wellsprings of the Arizal; he knew the <em>Maggid</em>&rsquo;s threefold promise, and he knew the Beis Yosef&rsquo;s daily prayer.</p>
+
+<p>Rabbeinu Elazar and his <em>chevra</em> in Tzfas reached a difficult and radiant realization. <em>Klal Yisrael</em> could not afford for the Beis Yosef&rsquo;s prayer to be answered as he himself desired it. Were the Beis Yosef to be taken young, his <em>magnum opus</em> &mdash; the <em>Shulchan Aruch</em> &mdash; would be left incomplete or unwritten; and generations of Jews yet unborn would be deprived of the <em>sefer</em> that would order their entire religious life. The Beis Yosef had already completed his <em>Beis Yosef</em> upon the <em>Tur</em> by the year 5302 (1542), and it had begun to circulate in the following decades; the <em>Shulchan Aruch</em> itself was completed and printed only in the years leading to 5325 (1565). The years in which the <em>Shulchan Aruch</em> was being drawn together, printed, and disseminated across the diaspora were precisely the years in which the Beis Yosef&rsquo;s <em>tefillah</em> for a martyr&rsquo;s death might have been answered.</p>
+
+<p>Therefore Rabbeinu Elazar and his <em>chevra</em> dedicated themselves to <em>daven</em> daily that the Beis Yosef&rsquo;s wish <em>not</em> be granted &mdash; that he live to complete his labor. The <em>piyut</em> they composed for this <em>tefillah</em> was <em>Yedid Nefesh</em>.</p>
+
+<h3>The Manuscript Evidence: &ldquo;Bincha Yechidcha&rdquo;</h3>
+
+<p>The witness to this reading of the piyut lies in the original manuscript, the <em>ksav yad</em> of Rabbeinu Elazar Azkari, preserved to this day in the collection of the Jewish Theological Seminary in New York.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> The manuscript diverges in several respects from the printed text familiar from modern <em>siddurim</em>. The most striking divergence stands in the third stanza. Where the printed text now most commonly reads:</p>
+
+<blockquote>
+<div class="heb">וְחוּסָה נָּא עַל בִּנְךָ יְחִידְךָ.</div>
+<div class="trans">Have mercy, we pray, upon Your only son.</div>
+</blockquote>
+
+<p>&mdash; the manuscript preserves an alternation attributed within the <em>mesorah</em> of the Tzfas <em>mekubalim</em> to Rabbeinu Elazar&rsquo;s own hand. In the reading transmitted within that <em>mesorah</em>, <em>bincha yechidcha</em> was a coded reference to the Beis Yosef himself &mdash; the <em>ben yachid</em> whom <em>Klal Yisrael</em> could not spare, the only one in whose hand the <em>Shulchan Aruch</em> could yet be completed.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<p>When, <em>b&rsquo;siyata di&rsquo;Shmaya</em>, the <em>tefillah</em> was accepted and the Beis Yosef survived to complete his <em>chibbur</em>, Rabbeinu Elazar himself amended the text. In editions prepared under his hand thereafter, the third stanza was generalized:</p>
+
+<blockquote>
+<div class="heb">וְחוּסָה נָּא עַל עַמְּךָ יְחִידְךָ.</div>
+<div class="trans">Have mercy, we pray, upon Your only nation.</div>
+</blockquote>
+
+<p>Since the danger was past, the <em>remez</em> was no longer required. Later printers, coming upon the earlier manuscript, restored the reading <em>bincha yechidcha</em>, and it is this reading that now stands in the majority of printed <em>siddurim</em>. Most of those who recite it are wholly unaware that they are voicing a coded plea for the survival of the man whose <em>halachah</em> orders their daily life.</p>
+
+<h3>Two Layers, Not Two Readings</h3>
+
+<p>It should be observed that the framing of <em>Yedid Nefesh</em> as a <em>shir ahavah</em> in <em>Sefer Charedim</em> and its function as a coded <em>tefillah</em> for the Beis Yosef are not in tension. The piyut operates on two layers at once, as the <em>mekubalim</em> composed their <em>tefillos</em>: the outer <em>peshat</em>, the <em>shir ahavah</em> of the <em>neshamah</em> to her Creator; and the inner <em>sod</em>, the specific petition sung by the <em>chevra shel chaverim</em> for the survival of a single <em>tzaddik</em> whose life the generation could not spare. The <em>chevra</em> sang the <em>shir</em> of love, and within its cadences carried the plea for the Beis Yosef; the outer meaning was <em>emes</em>, and the inner meaning was <em>emes</em>, and both were sung in one breath.</p>
+
+<h2>XIV. Kiddush Hashem: Actualized and Accepted</h2>
+
+<h3>The Question the Doros Have Asked</h3>
+
+<p>The <em>gedolei ha&rsquo;doros</em> across the generations grappled with the difficulty presented by the Beis Yosef&rsquo;s peaceful death against the <em>Maggid</em>&rsquo;s threefold promise. The Lubavitcher Rebbe (<span class="heb-inline">האדמו&quot;ר מליובאוויטש</span>) addressed the matter in a <em>sichah</em> on <em>Chof Teves</em> 5736,<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> framing the question in its full weight before proposing his own <em>haaros</em>.</p>
+
+<h3>The Teretz of Rav Yaakov Chaim Sofer</h3>
+
+<p>The <em>posek</em> Rav Yaakov Chaim Sofer (<span class="heb-inline">רב יעקב חיים סופר</span>) of <em>Eretz Yisrael</em>, who was <em>niftar</em> in the years shortly preceding this <em>shiur</em>, devoted an entire chapter of his <em>chiddushim</em> to the question.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> His <em>teretz</em> rests upon a fundamental distinction. There is a <em>kiddush Hashem</em> that is actualized in deed &mdash; the martyr who is in truth killed <em>al kiddush Hashem</em>. And there is a <em>kiddush Hashem</em> that consists in the acceptance itself &mdash; the Jew who takes upon himself, in full readiness, <em>moser nefesh al kiddush Hashem</em>, even where the <em>gzeirah</em> is in the event lifted from him.</p>
+
+<p>His proof stands in <em>Sefer Chasidim</em>.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> The <em>sefer</em> records that in every generation Jews have been seized by hostile authorities, informed that they were to be killed, and have accepted upon themselves <em>moser nefesh al kiddush Hashem</em>. In many such cases the authorities relented and the Jews were released. The ruling of the <em>Sefer Chasidim</em>: <em>it is accounted as though they had died </em>al kiddush Hashem<em>.</em> The <em>koach</em> of acceptance equals, in <em>Shamayim</em>, the <em>koach</em> of the deed itself.</p>
+
+<p>Upon this principle the difficulty of the Beis Yosef&rsquo;s <em>Maggid</em>-promise finds its resolution. The Beis Yosef&rsquo;s wish to die <em>al kiddush Hashem</em> was so complete and so continuous &mdash; it rose from his lips daily; it accompanied his every <em>Shema</em> for eighty-seven years &mdash; that it fulfilled the promise of the <em>Maggid</em> in acceptance if not in deed. He did not need to be led to the pyre because his soul was already there. The wider reach of this <em>teretz</em> touches many other <em>sugyos</em>: the classical <em>machlokes</em> between the <em>Rambam</em> and the <em>Ramban</em> on whether the <em>mitzvah</em> of <em>kiddush Hashem</em> is fulfilled in <em>machashavah</em> alone or requires <em>ma&rsquo;aseh</em>, the daily <em>b&rsquo;chol nafshecha</em> at <em>Shema</em>, and the entire framework of <em>lo na&rsquo;aseh v&rsquo;lo asah</em> in <em>korbanos</em>. If acceptance suffices, the daily <em>Shema</em> of a <em>tzaddik</em> is itself no small <em>kiddush</em>.</p>
+
+<h3>Rabbeinu Bachya on the Asarah Harugei Malchus</h3>
+
+<p>The principle is not without precedent in the earlier <em>mesorah</em>. Rabbeinu Bachya (<span class="heb-inline">רבינו בחיי</span>) on the <em>Torah</em>, in <em>Parshas Mikeitz</em>,<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> cites a <em>midrash</em> from <em>Pirkei Heichalos</em> (<span class="heb-inline">פרקי היכלות</span>) touching on the <em>Asarah Harugei Malchus</em> (<span class="heb-inline">עשרה הרוגי מלכות</span>). The <em>midrash</em> preserves a startling alternative: that in the case of certain of these <em>kedoshim</em>, a <em>malach min ha&rsquo;shamayim</em> substituted another form for their bodies, and they were spared the actual <em>harigah</em>. If so &mdash; why then do we mourn them in <em>Eileh Ezkerah</em> (<span class="heb-inline">אלה אזכרה</span>) on <em>Yom Kippur</em>, why do we recite them in the <em>kinos</em> of <em>Tishah B&rsquo;Av</em>? Because they accepted upon themselves <em>moser nefesh al kiddush Hashem</em>. Their acceptance was itself the <em>harigah</em>. This is not the accepted <em>peshat</em> of the <em>sugya</em> in <em>Avodah Zarah</em><a class="footnote-ref" id="ref23" href="#fn23">[23]</a> or of our <em>liturgy</em>, which read the <em>harigah</em> as actualized; but the <em>opinion</em> stands within our <em>mesorah</em>, and it is the same principle upon which Rav Yaakov Chaim Sofer builds his <em>teretz</em>.</p>
+
+<h2>XV. The Piyut Enters the Siddur</h2>
+
+<h3>The Yaavetz &mdash; 1730s</h3>
+
+<p>For a full century and a third after its composition, <em>Yedid Nefesh</em> stood outside the printed <em>siddur</em>. The first <em>siddur</em> to include it was <em>Siddur Beis Yaakov</em> of Rabbeinu Yaakov Emden (<span class="heb-inline">רבינו יעקב עמדין</span>), the <em>Yaavetz</em> (<span class="heb-inline">יעב&quot;ץ</span>), in the 1730s &mdash; a <em>siddur</em> that came to stand among the most widely received in the Ashkenazi world.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a></p>
+
+<p>The Yaavetz did not place <em>Yedid Nefesh</em> at <em>Shalosh Seudos</em>, nor at <em>Kabbalas Shabbos</em>, nor between <em>Korbanos</em> and <em>Pesukei d&rsquo;Zimra</em>. He placed it, rather, at <em>Krias Shema Al Ha&rsquo;Mitah</em> (<span class="heb-inline">קריאת שמע על המטה</span>), after <em>Maariv</em>. His reason: his father, the <em>Chacham Tzvi</em> (<span class="heb-inline">חכם צבי</span>), had recited <em>Yedid Nefesh</em> each night before sleep. It awakened, said the <em>Chacham Tzvi</em>, his <em>cheishek</em> (<span class="heb-inline">חשק</span>) and his <em>ahavah</em> for <em>HaKadosh Baruch Hu</em>. His son the Yaavetz preserved the <em>hanhagah</em> in print.</p>
+
+<h3>The Mekubalim of Tzfas &mdash; Late 1700s and Early 1800s</h3>
+
+<p>Some fifty years after the Yaavetz&rsquo;s <em>siddur</em>, a <em>siddur</em> appeared in Livorno, Italy, that included <em>Yedid Nefesh</em>; from Livorno the <em>mekubalim</em> of Tzfas gradually incorporated the piyut into three further stations:</p>
+
+<ul>
+<li>In the morning, between <em>Korbanos</em> and <em>Pesukei d&rsquo;Zimra</em>, as a piyut &ldquo;good to say every morning&rdquo;;</li>
+<li>Before <em>Kabbalas Shabbos</em>, in a tradition &mdash; of uncertain provenance &mdash; that attributed the placement to the Arizal;</li>
+<li>At <em>Shalosh Seudos</em>, as a <em>mizmor</em> for the Shabbos afternoon table.</li>
+</ul>
+
+<h3>A Question of Minhag</h3>
+
+<p><em>Shalosh Seudos</em> presents no difficulty: one may sing any <em>mizmor</em> that draws the soul. But the insertion of an extra <em>piyut</em> into <em>tefillah</em> proper touches a wider and much-debated <em>parshah</em> &mdash; the whole question, running from the Kalir <em>piyutim</em> in the <em>machzor</em> through the Rambam&rsquo;s well-known reservations and the Vilna Gaon&rsquo;s selective pruning, of what may and may not be added to the fixed <em>nusach</em>. The recitation of <em>Yedid Nefesh</em> in the morning between <em>Korbanos</em> and <em>Pesukei d&rsquo;Zimra</em> is a <em>minhag</em> of no more than one hundred and fifty to two hundred years&rsquo; standing. It is, in the end, a beautiful <em>hanhagah</em>, and the <em>tzibbur</em> that says it says a <em>shir</em> composed by one of the greatest <em>mekubalim</em> of the Tzfas generation.</p>
+
+<h2>XVI. Physical Remnants of Shlomo Molcho in Prague</h2>
+
+<p>Physical relics of Molcho are preserved to this day in Prague, in two of the historic <em>shuls</em> of the city.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> In the Altneu Shul (<span class="heb-inline">אלטנוישול</span>) &mdash; the <em>shul</em> of the Maharal (<span class="heb-inline">מהר&quot;ל</span>) &mdash; is preserved a flag of Shlomo Molcho, inscribed with <em>pesukim</em> from <em>Tehillim</em>: the messianic standard he carried from court to court. In the Meisel Synagogue is preserved a second flag, inscribed <em>Maccabi &mdash; Mi Kamocha Ba&rsquo;eilim Hashem</em>, and his <em>tachrichim</em> (<span class="heb-inline">תכריכים</span>) &mdash; the burial shrouds of the man himself. The witnesses of an <em>Anus</em>-turned-<em>tzaddik</em>-turned-<em>kadosh</em> stand today upon the walls of a city he never lived in, testifying across five centuries to a life that ordinary categories can barely contain.</p>
+
+<h2>XVII. Closing</h2>
+
+<p>The paradox that <em>Yedid Nefesh</em> preserves is not easily exhausted. A piyut was composed by <em>mekubalim</em> in Tzfas whose deliberate <em>tefillah</em> was to defeat a promise given from <em>Shamayim</em> itself &mdash; a promise the Beis Yosef had begged for and been granted, and which those who came after him understood <em>Klal Yisrael</em> could not endure to see fulfilled. The <em>tefillah</em> succeeded so completely that the Beis Yosef lived to eighty-seven and gave to the Jewish people the <em>Shulchan Aruch</em>; and the piyut through which it succeeded entered, in later generations, into the daily <em>siddur</em>, so that today the <em>tzibbur</em> recites it morning by morning without knowing that they are asking for the survival of the man to whose <em>hand</em> they themselves owe the ordering of their entire <em>Yiddishkeit</em>.</p>
+
+<p>Rabbeinu Elazar Azkari&rsquo;s teaching in <em>Sefer Charedim</em> was that <em>ahavas Hashem</em> must be spoken; that love, unspoken, is not love. He composed a <em>shir ahavah</em> in obedience to his own teaching, and the <em>shir ahavah</em> carried within its stanzas the whispered plea of the <em>chevra shel chaverim</em> of Tzfas. Both meanings are true; both were sung together; both have made their way, without our knowledge, into the <em>siddur</em>. From this day forward, one who says <em>Yedid Nefesh</em> in the morning between <em>Korbanos</em> and <em>Pesukei d&rsquo;Zimra</em>, or on <em>Erev Shabbos</em> before <em>Kabbalas Shabbos</em>, or at <em>Shalosh Seudos</em> as the light fades, may know what he is doing when he sings it. He is voicing the love of the <em>neshamah</em> for its Creator; and he is voicing the ancient plea of the <em>mekubalim</em> of Tzfas &mdash; the plea for the survival of the man who gave <em>Klal Yisrael</em> the <em>Shulchan Aruch</em>, whose <em>tefillah</em> for his own <em>kiddush Hashem</em> was fulfilled in <em>Shamayim</em> in the accepting, and in <em>this world</em> in a life extended one further hour and one further year and one further chapter, so that the <em>halachah</em> of <em>Klal Yisrael</em> should have its <em>mesader</em>.</p>
+
+<p>This is the piyut of <em>Yedid Nefesh</em>. This is what we say when we say it.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short">The <em>Lag B&rsquo;Omer</em> narrative of the Arizal and Rabbeinu Elazar Azkari &mdash; preserved in collections of <em>hanhagos</em> printed under the name of the <em>Hadras Zekenim</em> tradition of Meron.</span>
+  <span class="expanded">&mdash; The narrative is loosely cited in the popular literature; readers seeking to trace the primary transmission are advised to consult the various <em>Hadras Zekenim</em> and Meron-<em>hanhagos</em> compilations printed as <em>nosei keilim</em>-adjacent volumes in <em>hilchos Tishah B&rsquo;Av</em> and <em>hilchos Sefiras HaOmer</em>. The <em>ma&rsquo;aseh</em> as delivered in the shiur is the received tradition of Tzfas concerning the moment at which the true station of Rabbeinu Elazar Azkari was revealed.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Sefer Charedim</em> (R&rsquo; Elazar Azkari), <em>perakim</em> 2&ndash;3 and the chapter on <em>ahavas Hashem</em>.</span>
+  <span class="expanded">&mdash; On the inseparability of <em>yiras Hashem</em> and <em>ahavas Hashem</em>; on <em>ahavas Hashem</em> expressed through speech and song; and on the duty to compose <em>shirei ahavah</em> to the Beloved. This is the philosophical <em>hakdamah</em> against which <em>Yedid Nefesh</em> as a <em>shir</em> is to be read. Rabbeinu Elazar frames the piyut as sung by a <em>chevra shel chaverim</em> and does not designate any specific <em>zman</em> for its recitation.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Chovos HaLevavos</em> (R&rsquo; Bachya ibn Paquda), <em>Sha&rsquo;ar Ahavas Hashem</em>.</span>
+  <span class="expanded">&mdash; The classical <em>mussar</em>-foundation for the obligation to express love through speech and song. Cited within <em>Sefer Charedim</em> as the anchor for the entire project of <em>shirei ahavah</em> to <em>HaKadosh Baruch Hu</em>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short">Don Yitzchak Abarbanel, <em>Hakdamah</em> to <em>Peirush al Sefer Melachim</em>.</span>
+  <span class="expanded">&mdash; Eyewitness account of the 1492 expulsion from Spain by the royal treasurer-minister. The suffering of the refugees; the six-to-eight-year destruction of the wealthiest and most learned community of the diaspora. The textual anchor for the post-Expulsion atmosphere in which <em>geulah</em>-yearning flourished.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Sanhedrin</em> <span class="heb">ק&quot;י ע&quot;ב</span> (110b).</span>
+  <span class="expanded">&mdash; The <em>machlokes</em> on whether the <em>Aseres HaShevatim</em> will return. Various <em>rishonim</em> and <em>acharonim</em> place them in India, in China, and in yet more distant regions. The <em>sugya</em> stands behind the plausibility of HaReuveni&rsquo;s claim: it engaged a real, open question of <em>mesorah</em>.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short">Shlomo Molcho, <em>Sefer HaMefoar</em> &mdash; primary autobiographical <em>kabbalistic</em> work.</span>
+  <span class="expanded">&mdash; Molcho&rsquo;s own account of his self-<em>bris milah</em> and the <em>nissim</em> in his healing: a doctor summoned in haste; the wound closing within days. The principal <em>rishon</em>-order source for his transformation from Diego Pires to Shlomo Molcho.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <div class="note-academic"><em>Source-type note (digital archive):</em> <em>Sefer HaMefoar</em> is available in scanned form on HebrewBooks.org and in the National Library of Israel&rsquo;s digital collection. Readers who wish to see Molcho&rsquo;s account of his self-<em>bris</em> in his own words may consult these online holdings.</div>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Avodah Zarah</em> <span class="heb">כ&quot;ז ע&quot;א</span> (27a); <em>Rambam Hilchos Milah</em>; <em>Shulchan Aruch Yoreh De&rsquo;ah</em> 264:1.</span>
+  <span class="expanded">&mdash; The status of one who acts as <em>mohel</em> upon himself. The <em>Rambam</em> and the <em>Shulchan Aruch</em> hold that a person may indeed be <em>mohel</em> for himself. For the class of <em>Anusim</em>, self-circumcision was frequently the only practicable path to <em>bris milah</em>; the Molcho <em>ma&rsquo;aseh</em> is not merely a biographical detail but a <em>halachic ma&rsquo;aseh</em> that stands within the wider <em>parshah</em> of <em>anusim-milah</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short">Shlomo Molcho, <em>Sefer Chayas Kinah</em>.</span>
+  <span class="expanded">&mdash; Molcho&rsquo;s second <em>sefer</em>. The self-abnegating line on serving HaReuveni as a servant to his master. Together with <em>Sefer HaMefoar</em>, the principal autobiographical record of the messianic partnership.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short">R&rsquo; Yosef Taitazak (the <em>Maharitatz</em>) of Salonika, d. c. 5305 (1545); frequently cited in the <em>Beis Yosef</em>.</span>
+  <span class="expanded">&mdash; One of the great <em>talmidei chachamim</em> of the pre-Tzfas Sephardic world. His <em>beis midrash</em> in Salonika stood at the crossroads of the generation that would produce the <em>Shulchan Aruch</em>. The Beis Yosef&rsquo;s primary <em>rabbanim</em> are conventionally identified with his Adrianople and Tzfas circles; the Maharitatz stands in the wider Sephardic teaching-network of that generation. Rabbeinu Shlomo Alkabetz was among his <em>talmidim</em>; the Alshich HaKadosh, whose primary <em>rebbi</em> was the Beis Yosef, stood within a broader Salonika-Tzfas circle in which the Maharitatz&rsquo;s influence radiated.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Sanhedrin</em> <span class="heb">צ&quot;ז ע&quot;ב</span> (97b).</span>
+  <span class="expanded">&mdash; <em>Tipach atzman shel mechashvei kitzin</em>: the sharp <em>ma&rsquo;amar</em> against those who calculate the <em>keitz</em>. Molcho was deeply engaged in such calculations; the <em>acharonim</em> extend various <em>heteirim</em> for a <em>tekufah</em> of severe <em>tzar</em>. Whether Molcho would today have received formal <em>heter</em> or not, his contemporaries evidently understood his activity within the wider framework of <em>tekufah re&rsquo;uyah la&rsquo;geulah</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Beis Yosef</em>, <em>Tur Orach Chaim</em> 11.</span>
+  <span class="expanded">&mdash; The <em>tzitzis kshorim</em> of Shlomo Molcho as recorded by the Beis Yosef in the <em>hilchos tzitzis</em> of the <em>Tur</em>: the specific manner in which Molcho tied his <em>tzitzis</em>, brought down as halachic precedent within the <em>chibbur</em> that shapes our normative <em>halachah</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Magen Avraham</em>, <em>Orach Chaim</em> 11.</span>
+  <span class="expanded">&mdash; Testimony, some 250 years after the events, that the actual <em>tzitzis</em> of Molcho still existed &mdash; a physical witness within the <em>halachic</em> chain confirming the <em>kshorim</em> as recorded by the Beis Yosef.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Tosfos Yom Tov</em> (R&rsquo; Yom Tov Lipman Heller); cf. <em>Mishnah Berurah</em>, <em>Orach Chaim</em> 11.</span>
+  <span class="expanded">&mdash; R&rsquo; Yom Tov Lipman Heller (1579&ndash;1654), <em>av beis din</em> of Prague, whose <em>kever</em> is in Krakow near the Rema. He personally examined the <em>tzitzis</em> of Shlomo Molcho preserved in Prague and confirmed the Beis Yosef&rsquo;s description in every detail. The <em>Mishnah Berurah</em> preserves this chain within the normative <em>halachic</em> tradition of <em>tzitzis</em>-tying.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Sanhedrin</em> <span class="heb">צ&quot;ח ע&quot;א</span> (98a).</span>
+  <span class="expanded">&mdash; The encounter of Rabi Yehoshua ben Levi with <em>Mashiach</em> at the gates of Rome; the <em>metzora</em> unwrapping his bandages one at a time so as to remain ready to spring instantly into the redemption; the <em>tnai</em> of <em>hayom im b&rsquo;kolo tishma&rsquo;u</em>. This is the <em>sugya</em> Molcho was deliberately enacting when he sat thirty days at the gates of Rome, dressed as a pauper, before entering the Pope&rsquo;s presence.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short">Beis Yosef (R&rsquo; Yosef Karo), <em>Maggid Meisharim</em> &mdash; entries at the conclusion of <em>Parshas Noach</em> and <em>Parshas Lech Lecha</em>.</span>
+  <span class="expanded">&mdash; The <em>sefer</em> recording the <em>Maggid</em>&rsquo;s revelations to the Beis Yosef. The threefold promise of <em>kiddush Hashem</em> &ldquo;<em>k&rsquo;Shlomo b&rsquo;chiri</em>&rdquo; drives the entire <em>parshah</em> of <em>Yedid Nefesh</em>. Standard printings of <em>Maggid Meisharim</em> preserve the entries at the conclusion of the respective <em>parshiyos</em>.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <div class="note-academic"><em>Source-type note (manuscript):</em> The original <em>ksav yad</em> of Rabbeinu Elazar Azkari&rsquo;s <em>Yedid Nefesh</em> is preserved in the collection of the <strong>Jewish Theological Seminary</strong> in New York, within Rabbeinu Elazar&rsquo;s wider personal notebook of <em>hanhagos</em> and <em>chiddushim</em>. The manuscript diverges from the printed text in several respects; the most striking is the third stanza&rsquo;s reading <em>v&rsquo;chusah na al bincha yechidcha</em>.</div>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <div class="note-academic"><em>Source-type note (mesorah of the Tzfas mekubalim):</em> The identification of the manuscript&rsquo;s <em>bincha yechidcha</em> as a coded reference to the Beis Yosef &mdash; rather than as a generalized reference to <em>Klal Yisrael</em> as God&rsquo;s <em>ben yachid</em> (as in <em>beni bechori Yisrael</em>) &mdash; is a reading transmitted within the <em>mesorah</em> of the Tzfas <em>mekubalim</em> and preserved in the oral tradition delivered in the shiur. Readers who wish to trace the identification back to a specific <em>talmid</em> of Rabbeinu Elazar Azkari, or a subsequent <em>mekubal</em> who first recorded it in writing, will find the trail rewarding &mdash; the identification is, at present, best documented as received <em>kabbalah</em> rather than as an explicit printed source.</div>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short">Lubavitcher Rebbe, <em>Sichos Kodesh</em>, <em>Chof Teves</em> 5736 (1976).</span>
+  <span class="expanded">&mdash; The <em>sichah</em> framing the difficulty of the Beis Yosef&rsquo;s peaceful death against the <em>Maggid</em>&rsquo;s threefold promise. The Rebbe&rsquo;s treatment stands within the wider <em>doros</em>-conversation resolved most cleanly by Rav Yaakov Chaim Sofer&rsquo;s <em>teretz</em>.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short">R&rsquo; Yaakov Chaim Sofer (of <em>Eretz Yisrael</em>, <em>niftar</em> 5783), <em>chiddushim</em> on <em>kiddush Hashem</em>.</span>
+  <span class="expanded">&mdash; Devotes an entire chapter to the question of the Beis Yosef&rsquo;s <em>Maggid</em>-promise. The <em>teretz</em>: <em>kiddush Hashem</em> in deed and <em>kiddush Hashem</em> in acceptance are both true <em>kiddush Hashem</em>; the <em>koach</em> of acceptance equals the <em>koach</em> of deed. The <em>chiddush</em> is preserved within his collected <em>chiddushim</em>; readers should consult standard bibliographic tools for the precise citation.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Sefer Chasidim</em> (R&rsquo; Yehudah HaChasid).</span>
+  <span class="expanded">&mdash; Cases of Jews seized by hostile authorities, informed of their imminent execution, who accepted upon themselves <em>moser nefesh al kiddush Hashem</em> and were then released. The ruling of the <em>sefer</em>: <em>it is accounted as though they had died </em>al kiddush Hashem<em>.</em> The textual foundation for Rav Yaakov Chaim Sofer&rsquo;s <em>teretz</em>.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short">Rabbeinu Bachya al haTorah, <em>Bereishis</em> (<em>Parshas Mikeitz</em>), citing <em>Pirkei Heichalos</em>.</span>
+  <span class="expanded">&mdash; The <em>midrash</em> that certain of the <em>Asarah Harugei Malchus</em> were substituted by a <em>malach min ha&rsquo;shamayim</em> and spared the actual <em>harigah</em>; we commemorate them in <em>Eileh Ezkerah</em> and in the <em>kinos</em> not by virtue of the <em>harigah</em> in deed but by virtue of the acceptance of <em>moser nefesh</em>. Not the accepted <em>peshat</em> of our <em>liturgy</em>, which assumes the <em>harigah</em> was actualized, but a genuine <em>opinion</em> within the <em>mesorah</em>; the same principle upon which Rav Yaakov Chaim Sofer builds his <em>teretz</em>.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Avodah Zarah</em> <span class="heb">י&quot;ח ע&quot;א</span> (18a).</span>
+  <span class="expanded">&mdash; The classical <em>peshat</em> account of the <em>harigah</em> of the <em>Asarah Harugei Malchus</em>; the <em>sugya</em> that undergirds <em>Eileh Ezkerah</em> and the <em>kinos</em>. The baseline against which the alternate <em>Pirkei Heichalos</em> tradition preserved in Rabbeinu Bachya stands as counter-<em>opinion</em>.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short"><em>Siddur Beis Yaakov</em> / <em>Siddur Yaavetz</em> (R&rsquo; Yaakov Emden), Altona, 1730s.</span>
+  <span class="expanded">&mdash; The first printed <em>siddur</em> to include <em>Yedid Nefesh</em>. Placed at <em>Krias Shema Al Ha&rsquo;Mitah</em> on the precedent of the Yaavetz&rsquo;s father, the <em>Chacham Tzvi</em>, who recited it nightly before sleep to awaken his <em>cheishek</em> and <em>ahavah</em> for <em>HaKadosh Baruch Hu</em>. The subsequent placements &mdash; morning between <em>Korbanos</em> and <em>Pesukei d&rsquo;Zimra</em>, before <em>Kabbalas Shabbos</em>, and at <em>Shalosh Seudos</em> &mdash; are fifty to one hundred years later, emerging from the Livorno <em>siddurim</em> and the <em>mekubalim</em> of Tzfas.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <div class="note-academic"><em>Source-type note (artifacts):</em> Physical remnants of Shlomo Molcho preserved in Prague:
+  <ul>
+    <li><strong>Altneu Shul / Jewish Museum, Prague</strong> &mdash; flag of Shlomo Molcho, inscribed with <em>pesukim</em> from <em>Tehillim</em>; the messianic standard he carried from court to court.</li>
+    <li><strong>Meisel Synagogue, Prague</strong> &mdash; second flag, inscribed <em>Maccabi &mdash; Mi Kamocha Ba&rsquo;eilim Hashem</em>; and his <em>tachrichim</em> (burial shrouds).</li>
+  </ul>
+  The artifacts are on public display within the Jewish Museum of Prague network.</div>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of the shiur of <em>Hei Teves</em> 5785, the <em>yahrtzeit</em> of Rav Shlomo Molcho <em>ha&rsquo;kadosh</em>. This edition incorporates factual and structural revisions drawn from the Shiur Review and Editorial Review: the reigning Portuguese monarch corrected to King João III; the <em>petirah</em> of the Beis Yosef corrected to Yud-Gimmel Nisan 5335 (1575); the identification of the <em>Maharitatz</em> (R&rsquo; Yosef Taitazak of Salonika) restored to its conventional form; the Tosfos Yom Tov&rsquo;s examination of Molcho&rsquo;s <em>tzitzis</em> in Prague reframed to reflect his own residence in the city; the Rabbeinu Bachya <em>midrash</em> on martyrdom-by-acceptance correctly attributed to the <em>Asarah Harugei Malchus</em>; the Reuveni-Molcho paradox integrated into the biographical arc; Molcho&rsquo;s final Hebrew <em>Shema</em> restored to the <em>blockquote</em>; the sourcing question on <em>bincha yechidcha</em>&rsquo;s identification with the Beis Yosef flagged in a source-type note; and the closing given the fuller landing this <em>parshah</em> requires. Mareh Mekomos carry dual-layer (short + expanded) footnotes throughout; manuscript, artifact, and <em>mesorah</em>-received sources are flagged in academic-style notes.
+</footer>
+
+</body>
+</html>

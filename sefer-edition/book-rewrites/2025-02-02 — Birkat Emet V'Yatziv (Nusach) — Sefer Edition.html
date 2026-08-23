@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — 2 February 2025 — Birkat Emet V'Yatziv: Origins, Nusach, and Semichat Geulah L'Tefillah</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  .sidebar{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:22px 0;
+    background:rgba(184,134,11,0.05);
+    border-radius:4px;
+    font-size:15.5px;
+  }
+  .sidebar .sb-title{
+    font-variant:small-caps;
+    letter-spacing:0.3px;
+    color:var(--blue);
+    font-weight:700;
+    margin-bottom:6px;
+    font-size:14px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">בִּרְכַּת אֱמֶת וְיַצִּיב &mdash; מָקוֹר, נֻסָּח, וּסְמִיכַת גְּאֻלָּה לִתְפִלָּה</h1>
+  <div class="english-title">Birkat Emet V'Yatziv &mdash; Origins, Nusach, and Semichat Geulah L'Tefillah</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 2 February 2025 &nbsp;&middot;&nbsp; Sefer Edition &middot; Revised 23 August 2026</div>
+</header>
+
+<p class="dedication"><em>L'ilui nishmas ha-tzaddik ha-gadol R' Levi Yitzchak, zt"l</em>, sponsored by Rabbi Yehuda Pearlstein &mdash; and <em>b'simcha</em>, in honor of the birth of a grandchild in the Schwab family to Mayor Weissman.</p>
+
+<h2>I. The Question</h2>
+
+<p>The blessing that follows <em>Krias Shema</em> (<span class="heb-inline">קריאת שמע</span>) in the morning &mdash; known by its opening words as <em>Birkat Emet V'Yatziv</em> (<span class="heb-inline">ברכת אמת ויציב</span>) and by its <em>chasimah</em> (<span class="heb-inline">חתימה</span>) as <em>Birkat Ga'al Yisrael</em> (<span class="heb-inline">ברכת גאל ישראל</span>) &mdash; is already fixed in Jewish liturgy by the time of the <em>Mishnah</em> and <em>Gemara</em>. The <em>sugyos</em> in <em>Berachos</em> and <em>Tamid</em> take it as given, presuming its recitation in the days of the <em>Tannaim</em> (<span class="heb-inline">תנאים</span>) and <em>Amoraim</em> (<span class="heb-inline">אמוראים</span>) alike. Yet the questions it raises are not thereby settled. Why does the <em>berachah</em> not begin with the word <em>Baruch</em> (<span class="heb-inline">ברוך</span>)? Who composed it? When was it fixed into the daily order? And why has it been placed precisely here &mdash; between <em>Krias Shema</em> and <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) &mdash; and not elsewhere?</p>
+
+<p>The <em>Rishonim</em> (<span class="heb-inline">ראשונים</span>) offer four distinct <em>mehalchim</em> (<span class="heb-inline">מהלכים</span>). To these will be added a fifth from the <em>Ba'alei HaTosafos</em>, and beneath all five a <em>midrashic</em> substrate that explains why the blessing must stand where it stands. The five <em>shitos</em> are not, in the end, competing accounts of one historical event. They are best read as strata &mdash; a single received <em>lashon</em> to which each generation added its own layer of meaning, its own reason for preservation, its own reading of a text older than any of them.</p>
+
+<h2>II. The First Mahalach &mdash; The Rokeach: A Response to a Plague</h2>
+
+<p>The <em>Sefer HaRokeach</em> (<span class="heb-inline">ספר הרוקח</span>),<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> in his <em>Hilchos Tefillah</em>, preserves a <em>mesorah</em> (<span class="heb-inline">מסורה</span>) of great antiquity. A terrible <em>gezerah</em> (<span class="heb-inline">גזרה</span>) fell upon <em>Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>): a plague was consuming a hundred Jews each day. The <em>bnei Eretz Yisrael</em> (<span class="heb-inline">בני ארץ ישראל</span>) dispatched an urgent letter to the great <em>yeshivos</em> (<span class="heb-inline">ישיבות</span>) of <em>Bavel</em> (<span class="heb-inline">בבל</span>): what were they to do?</p>
+
+<p>The reply that came back was not, as one might have expected, the institution of one hundred <em>berachos</em> daily. It was, instead, the composition of a single <em>tefillah</em> to be recited each morning, containing exactly one hundred letters (in another <em>girsa</em>, one hundred words) from <em>&ldquo;ve-yatziv&rdquo;</em> through <em>&ldquo;l'olam va'ed.&rdquo;</em> Recited daily, it would lift the plague. Upon this <em>mesorah</em> the Rokeach adds only two words: <em>kibalti kein</em> &mdash; &ldquo;so I have received.&rdquo; The <em>Anshei Knesset HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) later embedded this <em>tefillah</em> permanently in the daily <em>siddur</em>.</p>
+
+<p>What this <em>mahalach</em> does not explain is the placement. Why here &mdash; adjacent to <em>Krias Shema</em>? The Rokeach speaks to the origin of the <em>lashon</em>; he does not yet speak to why it comes to rest at this seam of the <em>tefillah</em>.</p>
+
+<div class="sidebar">
+<div class="sb-title">The Rokeach &mdash; R' Elazar b'R' Yehudah of Worms</div>
+<p>The Rokeach is R' Elazar b'R' Yehudah of Worms (<span class="heb-inline">רבי אלעזר בן יהודה מגרמייזא</span>), among the most influential of the German <em>Rishonim</em> and cited constantly by the <em>Beis Yosef</em> &mdash; he is, for example, the first source for the <em>minhag</em> not to eat <em>kitniyos</em> (<span class="heb-inline">קטניות</span>) on <em>Pesach</em>. The <em>Sefer HaRokeach</em> itself was born of a tragedy almost too painful to relate. In the winter of <span class="heb-inline">תתקנ&quot;ו</span> (1195/96), three nights before <em>Chanukah</em>, marauders forced their way into R' Elazar's home in Worms and murdered before his eyes his wife <em>Dulcea</em> (<span class="heb-inline">דולצא</span>), his thirteen-year-old daughter <em>Bellette</em> (<span class="heb-inline">בעלא</span>), and his six-year-old daughter <em>Hannah</em> (<span class="heb-inline">חנה</span>). He and his son escaped, wounded, behind a locked inner door.</p>
+<p>How does an <em>oveid Hashem</em> answer such a moment? R' Elazar composed a <em>kinah</em> upon his martyrs and made a resolve: he would become a greater <em>oveid Hashem</em> and <em>yerei shamayim</em> than before; he would set down in writing every <em>halachah</em> he possessed, and gather it into a <em>sefer</em> as <em>zechuyos</em> for <em>teshuvah</em>. The <em>Sefer HaRokeach</em> is that <em>sefer</em>. The daily <em>halachos</em> the tradition lives by &mdash; among them, the very count of the hundred letters of <em>Emet V'Yatziv</em> &mdash; are in part the quiet answer of one man to his own <em>churban</em>.</p>
+</div>
+
+<h2>III. The Second Mahalach &mdash; Rashi: Eighteen Kiyumim</h2>
+
+<p>The <em>Shibolei HaLeket</em> (<span class="heb-inline">שיבולי הלקט</span>), in the name of <em>Rashi HaKadosh</em> (<span class="heb-inline">רש&quot;י הקדוש</span>) &mdash; and reproduced likewise in the <em>Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>),<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> which preserves the <em>minhagei beis midrasho shel Rashi</em> &mdash; opens the <em>berachah</em> to a different reading altogether. Let the eye count the affirmations that stand at its head:</p>
+
+<blockquote>
+<div class="heb">אֱמֶת, וְיַצִּיב, וְנָכוֹן, וְקַיָּם, וְיָשָׁר, וְנֶאֱמָן, וְאָהוּב, וְחָבִיב, וְנֶחְמָד, וְנָעִים, וְנוֹרָא, וְאַדִּיר, וּמְתֻקָּן, וּמְקֻבָּל, וְטוֹב, וְיָפֶה, הַדָּבָר הַזֶּה &mdash; לְעוֹלָם וָעֶד.</div>
+<div class="source"><em>Nusach ha-berachah</em> as reflected in <em>Machzor Vitry</em></div>
+</blockquote>
+
+<p>Eighteen <em>kiyumim</em> (<span class="heb-inline">קיומים</span>). <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>) fixed the <em>berachah</em> at this precise seam of the <em>tefillah</em> as preparation for <em>Shemoneh Esrei</em>: the <em>mispallel</em> is about to recite the eighteen <em>berachos</em> of <em>Amidah</em> (<span class="heb-inline">עמידה</span>), and he prefaces them with eighteen affirmations of truth and acceptance. On this reading the placement becomes structurally lucid, and the phrase <em>&ldquo;ha-davar ha-zeh&rdquo;</em> at the close of the enumeration points <em>forward</em> &mdash; to the <em>Shemoneh Esrei</em> that is about to be davened.</p>
+
+<h3>Shimon HaPakuli at Yavneh</h3>
+
+<p>The <em>Gemara</em> in <em>Berachos</em><a class="footnote-ref" id="ref3" href="#fn3">[3]</a> records that <em>Shimon HaPakuli</em> (<span class="heb-inline">שמעון הפקולי</span>) &mdash; a <em>Tanna</em> of remarkable memory whose epithet reflects his profession as a merchant in cotton (<em>pakuli</em>) &mdash; arranged the eighteen <em>berachos</em> of <em>Amidah</em> before <em>Rabban Gamliel</em> (<span class="heb-inline">רבן גמליאל</span>) in the <em>yeshivah</em> at <em>Yavneh</em>. On the <em>Rashi</em>-<em>Machzor Vitry</em> reading, the <em>nasi</em> of <em>Eretz Yisrael</em> then wrote to <em>Bavel</em>: <em>&ldquo;This is the </em>nusach<em> of </em>Shemoneh Esrei<em>.&rdquo;</em> The cover language of that letter &mdash; <em>&ldquo;emet ve-yatziv ve-nachon ve-kayam ha-davar ha-zeh&rdquo;</em> &mdash; was preserved verbatim by the recipients and became, in time, the introduction to the <em>Shemoneh Esrei</em> itself.</p>
+
+<h3>Why No Opening &ldquo;Baruch&rdquo;?</h3>
+
+<p>The absence of <em>Baruch</em> at the head of the <em>berachah</em> follows from the same architecture. The <em>Gemara</em> insists on connecting <em>&ldquo;emet&rdquo;</em> directly to the closing <em>&ldquo;Hashem Elokeichem&rdquo;</em> of <em>Krias Shema</em>; the chain runs unbroken back into <em>Ahavah Rabbah</em> (<span class="heb-inline">אהבה רבה</span>) and forward to the <em>chasimah</em> at <em>&ldquo;Ga'al Yisrael.&rdquo;</em> By the codified <em>klal</em> of the <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>),<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> a <em>berachah ha-semuchah la-chaverta</em> (<span class="heb-inline">ברכה הסמוכה לחברתה</span>) requires no opening <em>Baruch</em>. <em>Emet V'Yatziv</em> is the classic instance of that <em>klal</em>.</p>
+
+<h2>IV. The Third Mahalach &mdash; The Shibolei HaLeket: A Restatement of Shema</h2>
+
+<p>In his own <em>peshat</em> &mdash; drawn, as he tells his readers, <em>mi-ha-Geonim she-b'Romi</em> (from the <em>Geonim</em> of Rome), and citing also his brother <em>Binyamin</em> (&ldquo;<em>Yamin</em>&rdquo;),<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> whose transmission is preserved in the <em>Beis Yosef</em> &mdash; the Shibolei HaLeket reads <em>&ldquo;ha-davar ha-zeh&rdquo;</em> not forward, toward <em>Amidah</em>, but <em>backward</em>: to the three <em>parshiyos</em> of <em>Krias Shema</em> that have just been recited. The <em>berachah</em> is the acceptance and restatement, in the <em>mispallel</em>'s own words rather than the words of the <em>Torah</em>, of the three <em>yesodos</em> just declared:</p>
+
+<ul>
+  <li><em>&ldquo;Elokei olam malkeinu&rdquo;</em> answers to <em>kabbalas ol malchus shamayim</em> (<span class="heb-inline">קבלת עול מלכות שמים</span>) of the first <em>parshah</em>.</li>
+  <li><em>&ldquo;Ashrei ish she-yishma le-mitzvosecha&rdquo;</em> answers to <em>kabbalas ol mitzvos</em> (<span class="heb-inline">קבלת עול מצוות</span>) of <em>Ve-hayah im shamo'a</em>.</li>
+  <li>The long passages of <em>Yetzias Mitzrayim</em> (<span class="heb-inline">יציאת מצרים</span>) answer to <em>parshas tzitzis</em> (<span class="heb-inline">פרשת ציצית</span>).</li>
+</ul>
+
+<p>And the coda &mdash; <em>&ldquo;aleinu ve-al baneinu ve-al doroseinu&rdquo;</em> &mdash; declares that this <em>kabbalah</em> is not for the <em>mispallel</em> alone. It is a permanent covenant, binding him and those who will come after him. The <em>Shema</em> is not merely read; on this <em>mahalach</em>, it is <em>received</em>.</p>
+
+<h2>V. The Fourth Mahalach &mdash; The Seder HaYom: Ezra's Letter to the Diaspora</h2>
+
+<p>The <em>Sefer Seder HaYom</em> (<span class="heb-inline">ספר סדר היום</span>),<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> composed by R' Moshe ben Machir (<span class="heb-inline">רבי משה בן מכיר</span>) in <em>Tzfas</em> (<span class="heb-inline">צפת</span>) and printed there in 1599, preserves a tradition whose theological reach exceeds all that has come before. R' Moshe ben Machir was a contemporary of the <em>Arizal</em> (<span class="heb-inline">האר&quot;י</span>) at the high tide of Lurianic <em>Kabbalah</em>; he is the first authority to record <em>Modeh Ani</em> (<span class="heb-inline">מודה אני</span>) in writing, and his <em>sefer</em> is the earliest systematized guide to the arc of a Jew's day.</p>
+
+<h3>The Tradition</h3>
+
+<p>When <em>Ezra HaSofer</em> (<span class="heb-inline">עזרא הסופר</span>), after the seventy years of <em>galus Bavel</em>, sought to gather <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) back to <em>Eretz Yisrael</em> for the building of <em>Bayis Sheni</em>, he discovered that during those seven decades many <em>yehudim</em> had spread far beyond the Babylonian heartland &mdash; into the Germanic lands, into <em>Sefarad</em> (<span class="heb-inline">ספרד</span>). To those far communities he sent letters: <em>&ldquo;Come up. We have a </em>Beis HaMikdash<em>. </em>Kibbutz galuyos<em>.&rdquo;</em></p>
+
+<p>Their reply is preserved in the <em>Seder HaYom</em>:</p>
+
+<blockquote>
+<div class="heb">לָמָּה נִכְפּוֹל יְגוֹנֵנוּ?</div>
+<div class="trans">&ldquo;Why should we double our sorrow?&rdquo;</div>
+</blockquote>
+
+<p>They possessed a <em>mesorah</em>, so they wrote back, that only <em>Bayis Shlishi</em> would stand forever; <em>Bayis Sheni</em> would in time be destroyed and its people again scattered. They had no wish to endure that suffering twice. And they continued, in the very <em>lashon</em> the tradition now recites each morning: <em>&ldquo;You have </em>Yerushalayim ha-gedolah<em>; we have </em>Yerushalayim ha-ketanah<em>. You have a </em>Beis HaMikdash<em>; we have a </em>mikdash me'at<em>, our </em>beis ha-kenesses<em>. We are settled, we are observant, we believe &mdash; but we are remaining. Emet, ve-yatziv, ve-nachon, ve-kayam, ve-yashar... Elokei olam malkeinu, emet... aleinu ve-al baneinu ve-al doroseinu &mdash; we are </em>Klal Yisrael<em> like you; so too our children after us.&rdquo;</em></p>
+
+<p>The <em>Anshei Knesset HaGedolah</em>, on this account, embedded that letter into the daily <em>tefillah</em>. The <em>berachah</em> stands at the seam between <em>Krias Shema</em> and <em>Shemoneh Esrei</em> as a permanent reminder to those who did return: the brothers who did not are, no less, <em>ma'aminim bnei ma'aminim</em>; they too are <em>Klal Yisrael</em>; the covenant runs through them as it runs through us.</p>
+
+<h3>Toledo and Worms &mdash; The Communities That Stayed</h3>
+
+<p>Two historical <em>sefarim</em> preserve the memory of these diaspora communities. The <em>Shalsheles HaKabbalah</em> (<span class="heb-inline">שלשלת הקבלה</span>) of R' Gedalya ibn Yachya of Italy (sixteenth century)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> &mdash; a work whose material must, according to the <em>Chida</em> and others, be sifted with care<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> &mdash; and the more universally trusted <em>Seder HaDoros</em> (<span class="heb-inline">סדר הדורות</span>) of R' Yechiel Heilprin,<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> the eighteenth-century <em>Rosh Yeshivah</em> of Minsk, both identify Toledo (<span class="heb-inline">טולידו</span>) and Worms (<span class="heb-inline">וורמייזא</span>) among the communities whose founding traced not to <em>Bayis Sheni</em> but to the earlier scattering that followed <em>churban Bayis Rishon</em>.</p>
+
+<p>The stakes of this genealogy were not merely antiquarian. Through two millennia of Christian <em>galus</em>, the <em>alilah</em> most frequently pressed against European Jewry was the charge of complicity in the crucifixion &mdash; a charge that furnished the pretext for legislation, expulsion, and slaughter. The Jews of Toledo and Worms answered: <em>&ldquo;We arrived on these shores at the destruction of the First Temple; we have no historical connection to events of the Second.&rdquo;</em> The argument was, at moments, effective &mdash; but the historical record preserves this defense as <em>mesorah</em> more than as decree, and the <em>Shalsheles</em> records also its shadow: the very communities that did not answer <em>Ezra</em>'s call would suffer, across the centuries, some of the harshest <em>pera'os</em> of European <em>galus</em>. The tradition draws its own <em>heshbon</em>; the <em>sefer</em> is content to record, not to adjudicate.</p>
+
+<h2>VI. The Fifth Mahalach &mdash; The Ba'alei HaTosafos: The Vindication of Moshe</h2>
+
+<p>The Rokeach traces the <em>lashon</em> to <em>Bavel</em>; the Rashi tradition to <em>Yavneh</em>; the Shibolei HaLeket to Rome; the Seder HaYom to the diaspora of the returnees. The <em>Daas Zekenim mi-Ba'alei HaTosafos</em> (<span class="heb-inline">דעת זקנים מבעלי התוספות</span>),<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> at the opening of <em>Parshas Pekudei</em>, traces it further back still &mdash; to <em>Moshe Rabbeinu</em> (<span class="heb-inline">משה רבינו</span>) himself.</p>
+
+<p>The <em>Mishkan</em> (<span class="heb-inline">משכן</span>) is called <em>&ldquo;Mishkan ha-eidus.&rdquo;</em> One reason lies in the <em>Aron ha-eidus</em> housed within it. The <em>Daas Zekenim</em> supplies a second, which turns on a moment of unease in the early days of its construction.</p>
+
+<p>When <em>Moshe</em> presented to <em>Klal Yisrael</em> the accounting of the <em>terumas ha-Mishkan</em>, the books did not balance. A portion of the silver appeared to be missing. Whispers spread through the camp: had <em>Moshe</em>, of all men, kept back what belonged to the <em>Mishkan</em>? He turned to <em>HaKadosh Baruch Hu</em> in <em>tefillah</em>: <em>&ldquo;Help me understand.&rdquo;</em> The answer came: <em>&ldquo;You have forgotten the </em>vavim la-amudim<em> &mdash; the silver hooks of the pillars. The missing funds are there.&rdquo;</em></p>
+
+<p><em>Moshe</em> returned at once to the people. Even a <em>manhig</em> &mdash; even the greatest of <em>manhigim</em> &mdash; must fulfill <em>&ldquo;vi-hiyisem neki'im me-Hashem u-mi-Yisrael&rdquo;</em> (<span class="heb-inline">והייתם נקיים מה' ומישראל</span>),<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> the double obligation of transparency to <em>HaKadosh Baruch Hu</em> and to those in his charge. He stood before them and declared: <em>&ldquo;Emet, ve-yatziv, ve-nachon&rdquo;</em> &mdash; the <em>lashon</em> is his &mdash; to establish the accounting as accurate and to clear his name. So the <em>Daas Zekenim</em>. And <em>Chazal</em>, sensing the enduring weight of that <em>lashon</em>, took it into the daily <em>siddur</em> as a <em>remez</em> to the <em>vavim la-amudim</em> and to the moment in which the integrity of a <em>manhig</em> was vindicated before the people.</p>
+
+<h2>VII. The Midrashic Substrate &mdash; Va-Ya'aminu</h2>
+
+<p>Beneath the five <em>mehalchim</em>, and older than any of them, lies a <em>midrash</em> on which the entire architecture of <em>semichas ge'ulah li-tefillah</em> depends. The <em>pasuk</em> at <em>Krias Yam Suf</em> (<span class="heb-inline">קריעת ים סוף</span>) records:<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+
+<blockquote>
+<div class="heb">וַיַּאֲמִינוּ בַּה' וּבְמֹשֶׁה עַבְדּוֹ.</div>
+<div class="trans">And they believed in Hashem and in Moshe His servant.</div>
+</blockquote>
+
+<p>The <em>Mechilta</em>:<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+
+<blockquote>
+<div class="heb">וּבִזְכוּת הָאֱמוּנָה שֶׁהֶאֱמִינוּ, זָכוּ לוֹמַר שִׁירָה וְשָׁרְתָה עֲלֵיהֶם שְׁכִינָה.</div>
+<div class="trans">And in the merit of the <em>emunah</em> in which they believed, they merited to recite <em>shirah</em>, and the <em>Shechinah</em> rested upon them.</div>
+</blockquote>
+
+<p>Three stages, in a fixed order: <em>emunah</em> begets <em>shirah</em>; <em>shirah</em> draws down <em>hashra'as ha-Shechinah</em> (<span class="heb-inline">השראת השכינה</span>). This is the pattern that governs <em>Krias Yam Suf</em>, and this is the pattern that governs the daily <em>tefillah</em>. The <em>mispallel</em> declares <em>Krias Shema</em> &mdash; the primary <em>kabbalah</em> of <em>emunah</em>. He passes into <em>Emet V'Yatziv</em>, which speaks explicitly of <em>Yetzias Mitzrayim</em> and <em>Krias Yam Suf</em> and gathers together the <em>shirah</em> already recited in <em>Pesukei d'Zimra</em>. And only then, having recapitulated the sequence, does he approach <em>Shemoneh Esrei</em> &mdash; the <em>avodah</em> that requires <em>hashra'as ha-Shechinah</em>.</p>
+
+<p>The particular vehicle matters. Any liturgical bridge might, in principle, have joined <em>Krias Shema</em> to <em>Amidah</em>; the tradition selected this one because its content re-enacts precisely the <em>emunah</em>-into-<em>shirah</em>-into-<em>Shechinah</em> arc that <em>Chazal</em> read out of <em>Va-ya'aminu</em>. The <em>berachah</em> that begins by affirming the <em>emunah</em> of the <em>Shema</em> and ends at <em>&ldquo;Ga'al Yisrael&rdquo;</em> is the daily miniature of the <em>Yam Suf</em>; it is the ground upon which the <em>mispallel</em> may stand before his <em>Master</em>. <em>Moshe Rabbeinu</em> &mdash; on the reading of the <em>Daas Zekenim</em>, and on the reading of the <em>Mechilta</em> both &mdash; had this in mind from the first.</p>
+
+<h2>VIII. The Nusach of Tzur Yisrael &mdash; Five Times Yisrael</h2>
+
+<p>Having followed the origins of the <em>berachah</em>'s opening and its <em>guf</em>, the <em>sefer</em> turns to its close. The <em>chasimah</em> is preceded by the paragraph <em>&ldquo;Tzur Yisrael</em> (<span class="heb-inline">צור ישראל</span>) <em>kumah be-ezras Yisrael...&rdquo;</em>, and in the Ashkenazic <em>nusach</em> the name <em>Yisrael</em> is invoked within it <em>five</em> times.</p>
+
+<h3>R' Meir Shatz in Worms</h3>
+
+<p>The Worms of Rashi's era, at the close of the eleventh century, possessed no printed <em>siddurim</em>; the <em>nusach</em> lay in the <em>kisvei yad</em> of a handful of <em>talmidei chachamim</em>. The leading <em>shaliach tzibbur</em> of <em>Rashi</em>'s <em>beis midrash</em> was <strong>R' Meir Shatz</strong> (<span class="heb-inline">רבי מאיר ש&quot;ץ</span>) &mdash; the title <em>Shatz</em> (<em>Shaliach Tzibbur</em>), so central to his life's work, becoming in time his very surname. R' Meir was a <em>paytan</em> and <em>mechabeir tefillos</em> of the first rank; <em>Rashi</em> cites his <em>nuschaos</em> repeatedly. Into the <em>Tzur Yisrael</em> paragraph he inserted a <em>pasuk</em> from <em>Yeshayahu</em> (47:4) &mdash; <em>&ldquo;ve-ne'emar go'aleinu, Hashem Tzeva'os Shemo, Kedosh Yisrael&rdquo;</em> &mdash; not composing new language but placing an existing verse where it would complete a fivefold invocation of <em>Yisrael</em>, on the model of a <em>parshah</em> in <em>Parshas Beha'aloscha</em><a class="footnote-ref" id="ref14" href="#fn14">[14]</a> in which the name <em>Yisrael</em> appears five times in the context of the <em>avodah</em> of the <em>Levi'im</em>.</p>
+
+<p>This is an Ashkenazic <em>hosafah</em>; the <em>Sefaradim</em> do not recite it, and the Sephardic close retains a briefer form.</p>
+
+<h3>The Rokeach's Count</h3>
+
+<p>An alternative <em>mesorah</em> from the Rokeach retains only <em>four</em> mentions of <em>Yisrael</em> and does not insert the <em>Yeshayahu</em> <em>pasuk</em>. On that count the paragraph reads out at exactly <em>sixty letters</em> and <em>fourteen words</em>, a <em>remez</em> to the fourteenth of <em>Nisan</em> &mdash; <em>Yud-Daled Nisan</em> &mdash; the date of the <em>Yetzias Mitzrayim</em> that <em>Tzur Yisrael</em> commemorates. The two <em>mesoros</em> are not, in the end, in conflict. The accepted Ashkenazic <em>nusach</em> follows R' Meir Shatz and structures the paragraph around five <em>Yisrael</em>s; the Rokeach's fourfold count survives within it as an inner <em>remez</em>, the older skeleton on which R' Meir laid the completing verse.</p>
+
+<h2>IX. Synthesis &mdash; Strata of a Single Text</h2>
+
+<p>Five <em>mehalchim</em> stand on the page, and the reader is entitled to ask: which is the true history of the <em>berachah</em>?</p>
+
+<p>The answer, if it is not to force a choice among <em>Rishonim</em> and <em>Ba'alei HaTosafos</em> and a <em>mekubal</em> of <em>Tzfas</em>, is that the five accounts do not compete for a single moment of authorship. They describe strata. A core <em>lashon</em> of surpassing dignity &mdash; <em>&ldquo;emet, ve-yatziv, ve-nachon&rdquo;</em> &mdash; enters the world with <em>Moshe Rabbeinu</em> at his vindication in <em>Pekudei</em>. It is taken up, in the era of <em>Ezra</em>, by the diaspora of the returnees, who reply to their brothers' summons with the words that their own leader had spoken to <em>Klal Yisrael</em> centuries earlier. It is embedded by the <em>Anshei Knesset HaGedolah</em> into the daily <em>siddur</em>. It is shaped, in a moment of <em>gezerah</em>, by the <em>chachamim</em> of <em>Bavel</em> into a hundred-letter <em>tefillah</em> whose numerical form is a <em>refuah</em>. And it is framed, in the days of <em>Rabban Gamliel</em>, by an eighteenfold enumeration that prepares the <em>mispallel</em> for <em>Shemoneh Esrei</em>.</p>
+
+<p>Each stratum answers a different question. The <em>Daas Zekenim</em> tells the reader where the <em>lashon</em> came from. The <em>Seder HaYom</em> tells him why it was preserved. The <em>Anshei Knesset HaGedolah</em> tell him where it was embedded. The Rokeach tells him what numerical <em>segulah</em> was fixed within it. The Rashi tradition tells him why it stands precisely at the seam it stands at, and why the eighteen affirmations open the way to eighteen <em>berachos</em>. And beneath all five, the <em>Mechilta</em> tells the reader why any bridge between <em>Krias Shema</em> and <em>Shemoneh Esrei</em> is required at all: because <em>emunah</em> begets <em>shirah</em>, and <em>shirah</em> draws down the <em>Shechinah</em> without whose presence the <em>mispallel</em> may not enter into the <em>avodah</em> of <em>Amidah</em>.</p>
+
+<p>Not a competition. A layered inheritance. And the daily <em>tefillah</em> is the seam at which every one of those strata is present at once.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מַרְאֵה מְקוֹמוֹת</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short">R' Elazar b'R' Yehudah of Worms, <em>Sefer HaRokeach</em>, <em>Hilchos Tefillah</em> (opening <em>simanim</em>).</span>
+  <span class="expanded">&mdash; The Rokeach preserves the <em>mesorah</em> of a plague in <em>Eretz Yisrael</em> taking one hundred lives daily; the letter of appeal to <em>Bavel</em>; the reply composing a <em>tefillah</em> of exactly one hundred letters (in another <em>girsa</em>, one hundred words) from <em>ve-yatziv</em> through <em>l'olam va'ed</em>; and daily recitation as <em>refuah</em>. The Rokeach closes with <em>kibalti kein</em>. A precise <em>siman</em> reference will vary by edition; the discussion sits at the opening of the <em>Hilchos Tefillah</em> section. On the biographical background: R' Elazar composed the <em>Sefer HaRokeach</em> after the murder of his wife and two daughters in <span class="heb-inline">תתקנ&quot;ו</span> (winter 1195/96) as a <em>kinah</em> and as <em>zechuyos</em> for <em>teshuvah</em>; he is the earliest source for the <em>minhag</em> of <em>kitniyos</em> on <em>Pesach</em> and for many other lived <em>halachos</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Machzor Vitry</em> (R' Simchah b'R' Shmuel of Vitry) &mdash; <em>minhagei beis midrasho shel Rashi</em>.</span>
+  <span class="expanded">&mdash; The principal preserver of <em>Rashi</em>'s <em>minhagim</em>. Records that <em>Chazal</em> established <em>Emet V'Yatziv</em> with eighteen <em>kiyumim</em> as preparation for the eighteen <em>berachos</em> of <em>Shemoneh Esrei</em>; on this reading <em>&ldquo;ha-davar ha-zeh&rdquo;</em> points forward. The Shibolei HaLeket transmits the same reading in <em>Rashi</em>'s name.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Berachos</em> <span class="heb-inline">כ&quot;ח ע&quot;ב</span> (28b); parallel in <em>Megillah</em> <span class="heb-inline">י&quot;ז ע&quot;ב</span> (17b).</span>
+  <span class="expanded">&mdash; The <em>sugya</em> of <em>Shimon HaPakuli</em> arranging the eighteen <em>berachos</em> of <em>Amidah</em> before <em>Rabban Gamliel</em> in the <em>yeshivah</em> at <em>Yavneh</em>. The <em>Pakuli</em> epithet is glossed as reflecting his profession in cotton. The cover language of the <em>nasi</em>'s letter to <em>Bavel</em> &mdash; <em>emet ve-yatziv ve-nachon ve-kayam ha-davar ha-zeh</em> &mdash; is preserved by the Rashi tradition as the embedded <em>tefillah</em>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Shulchan Aruch, Orach Chaim</em> 111:1 (<em>berachah ha-semuchah la-chaverta</em>); cf. <em>siman</em> 6 and <em>siman</em> 66.</span>
+  <span class="expanded">&mdash; The codified <em>klal</em> that a <em>berachah</em> immediately following another does not require an opening <em>Baruch</em>. <em>Siman</em> 111 is the locus for the <em>ge'ulah-li-tefillah</em> discussion; <em>siman</em> 6 treats the analogous principle among the <em>birchos ha-shachar</em>; <em>siman</em> 66 addresses <em>birchos Krias Shema</em>. The specific <em>se'if</em> in 66 that bears on the <em>Emet V'Yatziv</em> question is <em>se'if</em> 9. On this <em>klal</em> the <em>Emet V'Yatziv</em>'s absence of an opening <em>Baruch</em> is fully accounted for: the <em>berachah</em> is a continuation of <em>Ahavah Rabbah</em> through the unbroken <em>Hashem Elokeichem emet</em> bridge, sealed at <em>Ga'al Yisrael</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short">R' Tzidkiyah b'R' Avraham HaRofeh, <em>Sefer Shibolei HaLeket</em>, <em>Hilchos Krias Shema</em>; with reference to his brother <em>Binyamin</em> (&ldquo;<em>Yamin</em>&rdquo;); cited by the <em>Beis Yosef</em>.</span>
+  <span class="expanded">&mdash; The <em>minhag Romi</em> reading: <em>&ldquo;ha-davar ha-zeh&rdquo;</em> points backward to <em>Krias Shema</em>; the <em>berachah</em> restates its three <em>yesodos</em> &mdash; <em>malchus</em>, <em>mitzvos</em>, <em>Yetzias Mitzrayim</em> &mdash; in the <em>mispallel</em>'s own <em>lashon</em>, extending the <em>kabbalah</em> to <em>aleinu ve-al baneinu ve-al doroseinu</em>. Drawn <em>mi-ha-Geonim she-b'Romi</em>. The brother <em>Binyamin</em> preserved a parallel transmission that the <em>Beis Yosef</em> incorporates.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short">R' Moshe ben Machir, <em>Sefer Seder HaYom</em> (<em>Tzfas</em>, 1599).</span>
+  <span class="expanded">&mdash; A contemporary of the <em>Arizal</em>; the earliest known writer to record <em>Modeh Ani</em>. Preserves the <em>mesorah</em> of <em>Ezra HaSofer</em>'s letter to the diaspora and the diaspora's reply &mdash; <em>lamah nichpol yegonenu</em> &mdash; preserved verbatim in <em>Emet V'Yatziv</em>. The <em>berachah</em> as a daily reminder that the brothers who did not return remain <em>ma'aminim bnei ma'aminim</em>. R' Moshe ben Machir is the first known written witness to this tradition; whether it rests on an earlier oral chain now lost to us, or represents a <em>chiddush</em> of the <em>Tzfas</em> circle, cannot be recovered from the available record. Its embrace by the tradition is on the ground of the <em>Seder HaYom</em>'s stature rather than external corroboration.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short">R' Gedalya ibn Yachya, <em>Shalsheles HaKabbalah</em> (Italy, sixteenth century).</span>
+  <span class="expanded">&mdash; The sixteenth-century Italian historical work documenting Jewish history from creation through the author's own day. Identifies Toledo and Worms among the communities tracing to <em>churban Bayis Rishon</em>, and preserves the <em>mesorah</em> of the pre-<em>Bayis-Sheni</em> defense against blood-libel accusations. Papal endorsement of the defense is attributed within the polemical tradition to more than one pope; the specific attribution to Gregory IX and to King Philip of France that circulates in later summaries does not match the papal-royal chronology (Gregory IX, r. 1227&ndash;1241, was contemporary with Louis IX of France, not with any of the Philips) and rests on no verifiable primary source known to us. The <em>sefer</em> here reports the pre-<em>Bayis Sheni</em> defense as an authentic tradition of the communities themselves without underwriting the specific papal attribution.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short">Chida (R' Chaim Yosef David Azulai), <em>Shem HaGedolim</em> &mdash; caution regarding <em>Shalsheles HaKabbalah</em>.</span>
+  <span class="expanded">&mdash; The Chida and the <em>Chiddushei ha-Ran ha-gadol</em> express reservations about R' Gedalya ibn Yachya's mixture of reliable and unreliable material. The Chida's counsel is not to reject the work but to distinguish carefully within it. The Toledo tradition of an inscribed stone in the central square declaring the community innocent of the crucifixion appears in the <em>Shalsheles</em>; it is preserved by the tradition as <em>mesorah</em> rather than confirmed by extant physical or archival evidence.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short">R' Yechiel Heilprin, <em>Seder HaDoros</em> (Minsk, eighteenth century).</span>
+  <span class="expanded">&mdash; The standard Jewish historical compendium for chronological and biographical questions on <em>Tannaim</em>, <em>Amoraim</em>, <em>Rishonim</em>, and <em>Acharonim</em>. R' Yechiel Heilprin (c. 1660&ndash;1746) was <em>Rosh Yeshivah</em> in Minsk in the generation preceding the <em>Gr'a</em> (1720&ndash;1797); the two overlapped in years but not in generation. <em>Seder HaDoros</em> corroborates the Toledo/Worms <em>Bayis Rishon</em> tradition preserved in the <em>Shalsheles HaKabbalah</em>.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Daas Zekenim mi-Ba'alei HaTosafos</em>, opening of <em>Parshas Pekudei</em>.</span>
+  <span class="expanded">&mdash; The fifth <em>mahalach</em>: <em>Moshe Rabbeinu</em>'s presentation of the accounting of <em>terumas ha-Mishkan</em>; the appearance of missing silver; the suspicion in <em>Klal Yisrael</em>; <em>Moshe</em>'s <em>tefillah</em>; the revelation of the <em>vavim la-amudim</em>; the public declaration <em>&ldquo;emet, ve-yatziv, ve-nachon&rdquo;</em> as an act of vindication before the people. The <em>lashon</em> of the daily <em>tefillah</em> traced back to that moment of leadership integrity. The reading yields a <em>chakirah</em> the <em>Rishonim</em> do not close: does the <em>mispallel</em> who recites the <em>berachah</em> daily <em>compose</em> praise, or does he <em>quote</em> the verified truth of <em>Moshe</em>? The sefer records the tension without resolving it.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Bamidbar</em> 32:22 &mdash; <em>vi-hiyisem neki'im me-Hashem u-mi-Yisrael</em>.</span>
+  <span class="expanded">&mdash; The principle of leadership transparency, articulated by <em>Bnei Gad ve-Reuven</em> on the eve of <em>kibbush ha-aretz</em>. A <em>manhig</em> must be visibly clear of suspicion before <em>HaKadosh Baruch Hu</em> <em>and</em> before the people in his charge. The <em>pasuk</em> supplies the halakhic frame for <em>Moshe</em>'s public accounting in <em>Pekudei</em> and, on the <em>Daas Zekenim</em>'s reading, for the very <em>lashon</em> of <em>Emet V'Yatziv</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Shemos</em> 14:31 &mdash; <em>va-ya'aminu ba-Hashem u-ve-Moshe avdo</em>.</span>
+  <span class="expanded">&mdash; The <em>pasuk</em> at <em>Krias Yam Suf</em>: the declaration of <em>emunah</em> in <em>HaKadosh Baruch Hu</em> and in His servant <em>Moshe</em>. The <em>pasuk</em> from which the <em>Mechilta</em> derives the daily reenactment underwriting <em>semichas ge'ulah li-tefillah</em>: <em>emunah</em> begets <em>shirah</em>, and <em>shirah</em> draws down <em>hashra'as ha-Shechinah</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Mechilta de-R' Yishmael</em>, <em>Parshas Beshalach</em>, <em>Parshas HaShirah</em>; parallels in <em>Shemos Rabbah</em>.</span>
+  <span class="expanded">&mdash; <em>Bi-zechus ha-emunah she-he'eminu, zachu lomar shirah ve-shorsah aleihem Shechinah</em>: the merit of <em>emunah</em> at <em>Krias Yam Suf</em> drawing forth <em>shirah</em> and <em>hashra'as ha-Shechinah</em>. The structural template for the daily order: <em>Krias Shema</em> as <em>emunah</em>; <em>Pesukei d'Zimra</em> together with <em>Emet V'Yatziv</em> as the <em>shirah</em>/<em>Yetzias Mitzrayim</em>; <em>Shemoneh Esrei</em> as the <em>hashra'as ha-Shechinah</em> that follows. This is why the specific bridge of <em>Emet V'Yatziv</em> is required: no other <em>berachah</em> in the liturgy carries the <em>emunah</em>/<em>shirah</em>/<em>Yam Suf</em> content that permits the arc to be re-enacted.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Bamidbar</em> 8 (<em>Parshas Beha'aloscha</em>) &mdash; fivefold mention of <em>Yisrael</em> in the <em>avodah</em> of the <em>Levi'im</em>.</span>
+  <span class="expanded">&mdash; The scriptural model for R' Meir Shatz's placement of <em>ve-ne'emar go'aleinu, Hashem Tzeva'os Shemo, Kedosh Yisrael</em> (<em>Yeshayahu</em> 47:4) into <em>Tzur Yisrael</em>: the paragraph structured around a fivefold invocation of <em>Yisrael</em>. R' Meir Shatz did not compose the <em>lashon</em>; the <em>chiddush</em> was the placement of an existing <em>pasuk</em> at the point that would complete the fivefold pattern. The insertion is Ashkenazic; the Sephardic <em>nusach</em> preserves a briefer form. The Rokeach's alternative count &mdash; four <em>Yisrael</em>s, sixty letters, fourteen words &mdash; survives within the Ashkenazic <em>nusach</em> as an inner <em>remez</em> to <em>Yud-Daled Nisan</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati's Sunday-morning <em>shiur</em> on <em>Tefillah</em> recorded 2 February 2025. This edition incorporates structural and factual revisions drawn from the Shiur Review and the Editorial Review of 23 August 2026. The <em>Berachos</em> daf reference has been corrected to 28b; the Pope-Gregory-IX / King-Philip attribution has been footnoted rather than asserted in the body; the Toledo stone-inscription tradition has been reframed as <em>mesorah</em> rather than as fact; R' Yechiel Heilprin has been placed in the generation preceding the <em>Gr'a</em>; the R' Yaakov Moshe Charlap material has been withdrawn from the main text pending verification of his Brisker attribution; the diaspora <em>l'ma'aseh</em> aside on <em>aliyah</em> has been removed. Section VI has been consolidated so that the arc from <em>Ezra</em>'s letter to <em>Tzur Yisrael</em> to the <em>Mechilta</em> to <em>Moshe Rabbeinu</em> proceeds without excursus; the synthesis has been recast as a layered-strata account rather than five competing histories; and the <em>Mechilta</em> section has been given the structural weight the synthesis places upon it. Mareh Mekomos carry dual-layer (short + expanded) footnotes throughout.
+</footer>
+
+</body>
+</html>
