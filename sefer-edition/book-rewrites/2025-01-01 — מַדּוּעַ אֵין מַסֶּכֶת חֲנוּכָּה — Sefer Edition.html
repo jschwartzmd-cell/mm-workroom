@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — 1 January 2025 — מַדּוּעַ אֵין מַסֶּכֶת חֲנוּכָּה</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .sidebar{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:20px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+    font-size:15.5px;
+  }
+  .sidebar .sidebar-title{
+    font-variant:small-caps;
+    color:var(--gold);
+    font-size:13px;
+    letter-spacing:0.15em;
+    margin-bottom:6px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">מַדּוּעַ אֵין מַסֶּכֶת חֲנוּכָּה?</h1>
+  <div class="english-title">Why Is There No Maseches Chanukah?</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Erev Zos Chanukah 5785</div>
+  <div class="date">Delivered 1 January 2025 (Erev Zos Chanukah) &nbsp;&middot;&nbsp; Sefer Edition &middot; Revised August 2026</div>
+</header>
+
+<p class="dedication">A study of one silence in the <em>Mishnah</em> &mdash; and of the political, historical, and mystical currents that give that silence its shape &mdash; delivered on Erev <em>Zos Chanukah</em>, the day the sages named for the last outstretched hand of the year.</p>
+
+<h2>I. Erev Zos Chanukah: The Last Outstretched Hand</h2>
+
+<h3>The Plain Meaning of the Name</h3>
+
+<p>The eighth day of Chanukah bears an ancient name: <em>Zos Chanukah</em>. Its plain sense is drawn from the <em>Krias HaTorah</em> of that day, when the offerings of the twelve <em>nesi&rsquo;im</em> are summed up in the closing verse: <span class="heb">זֹאת חֲנֻכַּת הַמִּזְבֵּחַ בְּיוֹם הִמָּשַׁח אֹתוֹ</span> &mdash; <em>&ldquo;This is the dedication of the altar on the day it was anointed.&rdquo;</em><a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The name is textual: it belongs to the <em>parshas ha&rsquo;yom</em>.</p>
+
+<h3>The Bnei Yissaschar: A Gate That Remains Open</h3>
+
+<p>The <em>Bnei Yissaschar</em>, however &mdash; as transmitted by his son the <em>Sameach David</em> &mdash; reads a deeper stratum into the day.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> On <em>Zos Chanukah</em>:</p>
+
+<blockquote>
+<div class="heb">כִּי יְמִינְךָ פְּשׁוּטָה לְקַבֵּל שָׁבִים.</div>
+<div class="trans">&ldquo;For Your right hand is outstretched to receive those who return.&rdquo;</div>
+</blockquote>
+
+<p>The right hand of <em>HaKadosh Baruch Hu</em> remains outstretched even now to receive any Jew whose <em>teshuvah</em> from the <em>Yamim Nora&rsquo;im</em> has not yet been completed. In the framing of the <em>Chassidishe sefarim</em>, we have been granted an additional stretch of weeks past the sealing of the year &mdash; past <em>Rosh HaShanah</em>, past <em>Yom Kippur</em>, past <em>Hoshana Rabbah</em> &mdash; and <em>Zos Chanukah</em> stands as the last of the gates through which the returning soul may enter.</p>
+
+<h3>The Apter Rav on the Secular New Year</h3>
+
+<p>To this the <em>Chassidishe</em> tradition adds a striking supplementary teaching, preserved in the name of the <em>Apter Rav</em>, the <em>Ohev Yisrael</em> of Apta<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> &mdash; that one ought to greet a fellow Jew with <em>&ldquo;A gutt yohr&rdquo;</em> even on the first of January. The <em>vort</em> answers its own obvious objection. Our <em>Rosh HaShanah</em> falls in <em>Tishrei</em>; why mark the calendar of the nations at all?</p>
+
+<p>The answer runs to the theological core of the matter. On the night of <em>Rosh HaShanah</em> the Jewish people stood in <em>tefillah</em> and <em>cheshbon ha&rsquo;nefesh</em>. On the night that marks the turning of the secular year, much of the surrounding world stands in the opposite posture. When these two nights are set beside one another before the Throne of Judgment, the contrast itself becomes an advocate. Whatever <em>tefillos</em> may have been obstructed by <em>mekatregim</em> during <em>Aseres Yemei Teshuvah</em>, on this day &mdash; on the strength of the contrast &mdash; they are retroactively received.</p>
+
+<h3>Rav Yaakov Kamenetsky and the New Year&rsquo;s Resolution</h3>
+
+<p>There is a well-preserved anecdote about Rav Yaakov Kamenetsky<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> that gives the same teaching a practical face. He walked into a yeshiva classroom on the morning of January the first &mdash; a regular day of learning in the beis midrash &mdash; and posed a question to the assembled <em>bachurim</em>: <em>&ldquo;What is your New Year&rsquo;s resolution?&rdquo;</em> The students, taken aback, replied that such a thing was not properly a Jewish practice. Rav Yaakov corrected them. An entire country was spending the day in <em>cheshbon ha&rsquo;nefesh</em> and <em>kabbalos tovos</em>. Ought <em>Klal Yisrael</em> to remain silent? If a whole nation had set aside a day to accept upon itself something good, then a <em>ben Torah</em> should accept upon himself something good as well &mdash; something worthy of his stature. Where the surrounding world resolves to read two books, a Jew ought to resolve to finish two <em>masechtos</em>.</p>
+
+<p>The theme common to all three teachings &mdash; the <em>Bnei Yissaschar</em>&rsquo;s hand, the <em>Apter Rav</em>&rsquo;s <em>vort</em>, Rav Yaakov&rsquo;s resolution &mdash; is that history is read backward. What appears final has not yet been sealed; what was blocked one day ascends the next; what appears secular becomes, through the contrast, an advocate for the sacred. This is the register in which the central <em>kushya</em> of this study must be heard, for it too concerns a silence that turns out to speak.</p>
+
+<h2>II. The Kushya: The Silence of the Mishnah</h2>
+
+<p>Nearly every <em>yom tov</em> in the Jewish calendar has received a <em>maseches</em> of its own from the hand of <em>Rabbeinu HaKadosh</em>. <em>Yoma</em> for the fast; <em>Sukkah</em> for the booth; <em>Rosh HaShanah</em>, <em>Megillah</em>, <em>Beitzah</em>, <em>Pesachim</em>, <em>Ta&rsquo;anis</em>. Each of these tractates is the definitive halakhic codification of its day.</p>
+
+<p>For Chanukah there is no such tractate. The <em>halakhos</em> of the eight-day festival &mdash; the lighting of the <em>menorah</em>, the placement at the doorway, the times of kindling, the order of the blessings &mdash; are transmitted in scattered <em>mishnayos</em> across roughly seven tractates and receive their sustained treatment only in the <em>beraisa</em> preserved in <em>Shabbos</em>.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> No <em>Maseches Chanukah</em> appears in the six orders. The absence is conspicuous; it has troubled every generation of learners; and it demands accounting.</p>
+
+<p>The classical tradition offers a series of answers. What follows arrays these answers in ascending order &mdash; each addressing a weakness in the one before it &mdash; and then draws them together at the end.</p>
+
+<h2>III. The First Answer: The Vilna Gaon &mdash; A Lost Maseches</h2>
+
+<p>The tradition of the <em>Vilna Gaon</em>, preserved by his son R&rsquo; Avraham in the introduction to <em>Aderes Eliyahu</em>,<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> is that there once did exist a <em>Maseches Chanukah</em>, and that it was lost along with several other short <em>masechtos</em> devoted to specific <em>inyanim</em> &mdash; among them a tractate on <em>tefillin</em>. The Gaon&rsquo;s tradition draws on the well-known account of Rav Hai Gaon, who is said to have encountered a mysterious <em>zaken v&rsquo;chacham</em> in possession of an unknown <em>maseches</em>, and who departed before the text could be transcribed.</p>
+
+<p>A serious difficulty accompanies this position. When one <em>maseches</em> exists within <em>Shas</em>, the others typically cross-reference it in the familiar formula <em>&ldquo;k&rsquo;di&rsquo;amrinan b&rsquo;maseches ploni.&rdquo;</em> No such reference to <em>&ldquo;b&rsquo;maseches Chanukah&rdquo;</em> appears anywhere in the <em>Bavli</em> or the <em>Yerushalmi</em>. This absence is not decisive &mdash; it is possible that a very short <em>maseches</em> of the type the Gaon envisioned would have generated no cross-references, and it is equally possible that the loss came sufficiently early that references were themselves excised or forgotten &mdash; but the difficulty remains substantial enough that the position cannot stand as the sole account. It is best treated as a genuine <em>tzurech iyun</em>: a <em>mesorah</em> that resists ordinary evidentiary confirmation and that later authors have engaged rather than dismissed.</p>
+
+<h2>IV. The Second Answer: The Reported Vendetta and the Sforno&rsquo;s Response</h2>
+
+<h3>The Reported Chasam Sofer</h3>
+
+<p>A second answer is preserved in the name of the <em>Chasam Sofer</em>, transmitted by his grandson in <em>Chut HaMeshulash</em>.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> <em>Rabbeinu HaKadosh</em> was a descendant of <em>Beis David</em>. The <em>Chashmonaim</em> were <em>kohanim</em> of the tribe of Levi. When they assumed the crown alongside their priestly service, they occupied a station reserved by prophetic promise for the descendants of David. On this reading, the composer of the <em>Mishnah</em> could not bring himself to devote a full tractate to the <em>yom tov</em> of a dynasty that had, in his eyes, encroached upon the inheritance of his own royal line.</p>
+
+<p>The position is not without internal support within <em>Chazal</em>&rsquo;s own literary conventions. The <em>Gemara</em> in <em>Horayos</em><a class="footnote-ref" id="ref8" href="#fn8">[8]</a> records that <em>Rabbeinu HaKadosh</em> instructed his son not to cite <em>Rabi Meir</em> by name but as <em>&ldquo;acherim,&rdquo;</em> and not to cite <em>Rabi Nasan</em> by name but as <em>&ldquo;yesh omrim&rdquo;</em> &mdash; because these two great <em>tanna&rsquo;im</em> had once attempted to unseat <em>Rabban Shimon ben Gamliel</em>, <em>Rabbeinu HaKadosh</em>&rsquo;s father, and thus (on the reading of the tradition) to uproot the honor of <em>Malchus Beis David</em>. Whoever attempts to displace the <em>kavod</em> of the Davidic line, in <em>Rabbeinu HaKadosh</em>&rsquo;s editorial discipline, is not to be named. By extension, one might reason, the <em>Chashmonaim</em>&rsquo;s <em>yom tov</em> would meet a corresponding silence.</p>
+
+<p>The internal <em>re&rsquo;ayah</em> is real, but a difficulty presses upon the answer from without. The <em>halakhos</em> of Chanukah are binding upon every Jew every year; they require transmission whatever a personal disposition might dictate. It is true that a distinction remains available &mdash; one may transmit the <em>halakhos</em> in scattered <em>mishnayos</em> (as in fact happens) while declining to grant the <em>Chashmonaim</em> a full tractate of their own &mdash; but this refinement is not the position as originally presented, and it leaves open a still deeper question.</p>
+
+<h3>The Sforno&rsquo;s Objection: Was There a Cheit at All?</h3>
+
+<p>The premise of the vendetta answer is that the <em>Chashmonaim</em>&rsquo;s assumption of the throne was itself a transgression of Yaakov Avinu&rsquo;s blessing, <span class="heb">לֹא יָסוּר שֵׁבֶט מִיהוּדָה</span>. The <em>Ramban</em>, in the previous year&rsquo;s study, was cited for the view that it was.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The <em>Sforno</em>,<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> however &mdash; R&rsquo; Ovadyah Sforno of Bologna, one of the leading Italian <em>poskim</em> of the late fifteenth and early sixteenth centuries and among the finest Hebraists of the Renaissance &mdash; reads the verse in the opposite direction and thereby dismantles the premise of the previous answer.</p>
+
+<p><em>&ldquo;Lo yasur&rdquo;</em> in the <em>Sforno</em>&rsquo;s reading is a prohibition on <em>removing</em> the royal scepter from <em>Shevet Yehudah</em>. So long as a Davidic king sits upon the throne, no other tribe may usurp him. But once the crown has been removed &mdash; by the <em>churban</em> of the First Temple, by the exile of <em>Tzidkiyahu</em>, by the centuries in which no Davidic king reigned at all &mdash; the prohibition falls silent. There is no <em>issur</em> upon a member of another tribe assuming a throne that has already stood empty. The <em>Sforno</em>&rsquo;s objection to the <em>Ramban</em>&rsquo;s reading is sharp: on his view it is <em>a serious error</em> to indict the <em>Chashmonaim</em> for taking up a crown that had lain vacant for centuries.</p>
+
+<p>If the <em>Sforno</em> is correct, then the second answer loses its footing. There was no <em>cheit</em> for <em>Rabbeinu HaKadosh</em> to hold against the Hasmonean line. The <em>Chashmonaim</em> restored what had been removed; they neither trespassed upon <em>Yehudah</em>&rsquo;s prerogative nor displaced a rightful heir. The <em>kushya</em> of the missing <em>maseches</em> must be answered on other grounds.</p>
+
+<h3>The Rambam&rsquo;s Praise and His Historical Introduction</h3>
+
+<p>That the <em>Sforno</em>&rsquo;s reading enjoys strong internal support may be seen from the <em>Rambam</em>&rsquo;s own posture toward the <em>Chashmonaim</em>. In <em>Hilchos Chanukah</em><a class="footnote-ref" id="ref11" href="#fn11">[11]</a> the <em>Rambam</em> does not condemn them; he praises them. The <em>Chashmonaim</em> were <em>chazakim v&rsquo;gibborim</em>; through them <em>malchus</em> was restored to <em>Klal Yisrael</em> for more than two hundred years.</p>
+
+<p>More striking still is the literary form the <em>Rambam</em> chooses for these <em>halakhos</em>. Uniquely in the entire <em>Mishneh Torah</em>, the opening of <em>Hilchos Chanukah</em> is not <em>halakhah</em> at all but three full <em>halakhos</em> of historical narrative: who the <em>Chashmonaim</em> were, what oppression they overthrew, how the Temple was reconsecrated. The <em>Mishneh Torah</em> is, by design, a dry codex of law &mdash; not a storybook. What compelled the <em>Rambam</em> to open here with history?</p>
+
+<p>The answer lies in the <em>Rambam</em>&rsquo;s own <em>hakdamah</em>.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> He composed the <em>Mishneh Torah</em>, he tells us, so that <em>a Jew need have at home only a <em>Tanach</em> and this book</em>, and from the two possess the complete corpus of the written and the oral Torah. This <em>hakdamah</em> was the source of the great opposition that arose against him: the <em>Geonim</em> of Babylonia argued that his stated aim would render the study of <em>Mishnah</em> and <em>Gemara</em> obsolete, and roughly forty years after his passing his books were burned. For a century the Jewish world split between <em>pro-Rambam</em> and <em>anti-Rambam</em> parties. The <em>Rambam</em>&rsquo;s vision ultimately prevailed.</p>
+
+<p>But if the <em>Rambam</em>&rsquo;s intended reader possessed only the <em>Tanach</em> and the <em>Mishneh Torah</em>, then a difficulty arises at Chanukah alone. Chanukah is nowhere in <em>Tanach</em>. Without a historical introduction, the reader would open <em>Hilchos Chanukah</em> and encounter obligations concerning a festival whose origin he could not name. The <em>Rambam</em> therefore prefixes a <em>hakdamah historit</em> to the <em>halakhos</em>. The comparison with <em>Hilchos Megillah</em> confirms the diagnosis: there the <em>Rambam</em> supplies no historical introduction, because the reader already possesses <em>Megillas Esther</em> in his <em>Tanach</em>.</p>
+
+<h2>V. The Third Answer: Only What the Olam Does Not Know</h2>
+
+<p>A third answer, likewise attributed to the <em>Chasam Sofer</em> in the tradition of his <em>drashos</em>,<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> rests on a general principle of the <em>Mishnah</em>&rsquo;s editorial method. <em>Rabbeinu HaKadosh</em>&rsquo;s task was <em>l&rsquo;chadeish</em> &mdash; to record what was not already universally known. The <em>halakhos</em> that lived on every Jewish tongue required no <em>tikun b&rsquo;kesav</em>; the <em>Mishnah</em> committed to writing only what was in danger of being forgotten.</p>
+
+<p>The principle is not stated by <em>Rabbeinu HaKadosh</em> in the <em>Mishnah</em> itself. It is drawn, rather, from the <em>Rambam</em>&rsquo;s remarkable observation in his <em>Pirush HaMishnayos</em> on <em>Menachos</em>.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> The <em>Rambam</em> notes that <em>there is no <em>mishnah</em> anywhere</em> that mandates the twice-daily recitation of <em>Krias Shema</em>. <em>Maseches Berachos</em> opens with the times and postures of the recitation but never establishes the underlying <em>chiyuv</em>. Nor does any <em>mishnah</em> mandate the affixing of a <em>mezuzah</em> to the doorpost or the daily wearing of <em>tefillin</em>. These were universal practices; every Jewish home observed them; no formal codification was required.</p>
+
+<p>Applied to Chanukah: by the time of the <em>Mishnah</em>&rsquo;s redaction, approximately three and a half centuries had elapsed since the Maccabean revolt. The chronology is precise. The Maccabean uprising is dated to 167 BCE; Rabi Yehudah HaNasi was born, as the <em>Gemara</em> in <em>Kiddushin</em> records,<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> on the day <em>Rabi Akiva</em> died, roughly 135 CE; the <em>Mishnah</em> was redacted approximately half a century after that. Over roughly three hundred and fifty years the practices of Chanukah &mdash; the eight days, the kindling of lights, the recitation of <em>Hallel</em>, the reading of the <em>nesi&rsquo;im</em> &mdash; had settled so deeply into the fabric of Jewish domestic life that no household required a written codification.</p>
+
+<p>The <em>l&rsquo;chadeish</em> principle raises a converse question that its defender must be prepared to meet: if <em>Rabbeinu HaKadosh</em> declined to record what was universally known, why do <em>Maseches Sukkah</em>, <em>Maseches Pesachim</em>, and <em>Maseches Megillah</em> contain material equally universal? The distinction, on the closest reading of the principle, is that these tractates address <em>halakhos</em> whose fine details vary sufficiently in application, or whose calendrical or agricultural conditions require sufficient adjudication, that comprehensive treatment is necessary. Chanukah&rsquo;s core practice &mdash; kindle the lights, on eight consecutive nights, at the doorway &mdash; admits of less variation. The <em>l&rsquo;chadeish</em> principle is genuine, but it operates on a spectrum rather than as a binary; it explains what is possible about Chanukah&rsquo;s treatment without exhausting what needs explanation.</p>
+
+<h2>VI. The Fourth Answer: Megillas Taanis Already Existed</h2>
+
+<p>A fourth answer removes the pressure of the <em>kushya</em> by pointing to what already existed in written form when <em>Rabbeinu HaKadosh</em> sat to compose the <em>Mishnah</em>. <em>Megillas Taanis</em><a class="footnote-ref" id="ref16" href="#fn16">[16]</a> is a short work in <em>leshon ha&rsquo;kodesh</em> that lists the days of the year on which <em>hesped</em> and <em>ta&rsquo;anis</em> are forbidden &mdash; the calendar of the <em>yamim tovim ketanim</em>. It is quoted throughout both Talmuds; it is, by scholarly consensus, the earliest written composition of <em>Torah she&rsquo;b&rsquo;al peh</em>, predating the <em>Mishnah</em>.</p>
+
+<p>The majority of the material in <em>Megillas Taanis</em> concerns the victories of the <em>Chashmonaim</em> over the Greek forces. The chronology of the eight days, the sequence of the miracle, the identification of the days that must be treated as <em>yom tov</em> &mdash; the essential historical framework of Chanukah is already there. By the time <em>Rabbeinu HaKadosh</em> sat down to compose the <em>Mishnah</em>, the historical and halakhic corpus of Chanukah was already accessible <em>b&rsquo;kesav</em>. He had no obligation to duplicate what the <em>umah</em> already possessed.</p>
+
+<p>This answer, unlike the two before it, does not depend on any claim about <em>Rabbeinu HaKadosh</em>&rsquo;s personal disposition or editorial method. It rests on a simple bibliographic observation about the state of the written tradition in his day. As such it stands independently of the difficulties that press upon the earlier answers, and it may well remain a partial contributor to the true account even if it is not the whole of it.</p>
+
+<h2>VII. The Fifth Answer: Rav Reuven Margaliyos and the Political Silence</h2>
+
+<h3>The Author and His Question</h3>
+
+<p>The most historically ambitious of the classical answers &mdash; and the one toward which the argument of this study is directed &mdash; is developed by <strong>Rav Reuven Margaliyos</strong>.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> Rav Margaliyos was among the most striking figures of the twentieth century&rsquo;s Torah scholarship: a <em>talmid chacham</em> of the first rank, a historian who read the Roman sources in the original, and by trade a shopkeeper in <em>Eretz Yisrael</em>. He emigrated from Galicia in 1946 or 1947 and supported himself by running a small grocery; the dozens of <em>sefarim</em> he produced were composed in the hours he could steal from his shop. His <em>Margaliyos HaYam</em> on <em>Sanhedrin</em> stands as a required companion to that tractate for anyone learning it seriously; his other works include a sustained study of what motivated <em>Rabbeinu HaKadosh</em> to write the <em>Mishnah</em> at all. It is in that study that the fifth answer is developed.</p>
+
+<h3>The Tumultus Iudaicus</h3>
+
+<p>The three-and-a-half centuries between the Maccabean revolt and the redaction of the <em>Mishnah</em> were named by Roman historians the <em>Tumultus Iudaicus</em> &mdash; <em>&ldquo;the Judean tumult.&rdquo;</em> The period was defined by three great Jewish revolts against Roman rule:</p>
+
+<ul>
+  <li><strong>The Great Revolt (66&ndash;73 CE)</strong>, culminating in the destruction of the Second Temple and the fall of Masada.</li>
+  <li><strong>The Diaspora Revolt, or Kitos War (115&ndash;117 CE)</strong>, which erupted simultaneously in the Jewish communities of Egypt, Cyprus, and Cyrene in Libya.</li>
+  <li><strong>The Bar Kochva Revolt (132&ndash;135 CE)</strong>, in <em>Eretz Yisrael</em>, led by Shimon Bar Kochva whom <em>Rabi Akiva</em> proclaimed to be <em>Mashiach</em>, and ending after roughly three and a half years in the catastrophe from which <em>Rabi Akiva</em>&rsquo;s generation did not recover.</li>
+</ul>
+
+<p>Across all three revolts, and in the decades of Roman consolidation that followed each of them, the pattern was the same. Jewish rebels &mdash; the <em>biryonim</em>, of whom the <em>Sicarii</em> of the First Revolt were the most feared &mdash; adopted a militant nationalism grounded in the memory of Hasmonean triumph. When their revolts collapsed at home, the survivors dispersed into the great Jewish population centers of the Diaspora: Alexandria in Egypt, the cities of Cyprus, and Cyrene in Libya. Most Jews at this time already lived outside <em>Eretz Yisrael</em>; many families had never returned after the destruction of the First Temple. Into these established communities the failed rebels brought their nationalist <em>ru&rsquo;ach</em>, and in more than one place they succeeded in kindling a further round of revolt.</p>
+
+<h3>Dio Cassius and the Roman Record</h3>
+
+<p>The principal non-Talmudic source for this period is the <em>Roman History</em> of <strong>Cassius Dio</strong>,<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> a Roman historian of Greek origin and a near-contemporary of <em>Rabbeinu HaKadosh</em>. Dio composed eighty books of Roman history; his account of the Diaspora Revolt is inevitably tilted against its Jewish subjects, but no substantive account of the period can be constructed without him.</p>
+
+<h3>The Great Synagogue of Alexandria</h3>
+
+<p>The magnificence of the Jewish community of Alexandria before its destruction is preserved in the <em>Yerushalmi</em> and the <em>Bavli</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> The Great Synagogue of Alexandria was one of the wonders of the ancient Jewish world:</p>
+
+<blockquote>
+<div class="trans">Whoever did not see the synagogue of Alexandria has never seen the glory of Israel.</div>
+<div class="source"><em>Sukkah</em> 51b; <em>Yerushalmi Sukkah</em> 5:1</div>
+</blockquote>
+
+<p>Along the walls stood seventy <em>kateidros shel zahav</em> &mdash; seventy chairs of gold, arranged in memory of the seventy <em>zekenim</em> of the <em>Sanhedrin</em>. The building was so vast that the assembly could not hear the <em>chazan</em>&rsquo;s voice, and a <em>shamash</em> would raise a flag at each <em>amen</em> so that the <em>tzibbur</em> knew when to respond.</p>
+
+<h3>The Massacre at Alexandria</h3>
+
+<p>Into this community the Judean rebels of the diaspora period arrived and stirred a great revolt. According to Dio Cassius, the Jews of Alexandria, Cyprus, and Cyrene, once roused, killed some 120,000 gentiles &mdash; a figure whose Roman source and Roman bias must be weighed but which points, at the least, to a conflict of catastrophic scale. The Roman response was proportionate to Roman terror: the emperor Trajan dispatched his general Lusius Quietus, from whose name the war acquired its Talmudic designation &mdash; the <em>Kitos War</em> &mdash; to reduce the diaspora communities.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> The <em>Gemara</em>&rsquo;s narrative names Trajan personally as the agent of destruction; the identification is faithful to the Talmudic register even where Roman sources place the direct action in the hands of his general.</p>
+
+<p>The <em>Gemara</em>&rsquo;s account of the emperor&rsquo;s motive is preserved in the <em>Yerushalmi</em>. Trajan had a son who was born on <em>Tisha B&rsquo;Av</em>; on that day the Jews mourned. He had a daughter who died on Chanukah; on those nights the Jews kindled lights. His wife pressed him: <em>&ldquo;Before you march out against the barbarians, come first to Alexandria. The Jews mourn what we celebrate; they celebrate what we mourn.&rdquo;</em></p>
+
+<h3>The Yeshiva of Alexandria: Ki Savo</h3>
+
+<p>He came to Alexandria and entered the yeshiva. He asked the assembled scholars what they were learning. They were learning <em>Parshas Ki Savo</em>:</p>
+
+<blockquote>
+<div class="heb">יִשָּׂא ה' עָלֶיךָ גּוֹי מֵרָחוֹק מִקְצֵה הָאָרֶץ... גּוֹי אֲשֶׁר לֹא תִשְׁמַע לְשׁוֹנוֹ... וְהֵצַר לְךָ בְּכָל שְׁעָרֶיךָ עַד רֶדֶת חוֹמוֹתֶיךָ הַגְּבֹהוֹת וְהַבְּצֻרוֹת.</div>
+<div class="trans">&ldquo;Hashem will raise up against you a nation from afar, from the ends of the earth&hellip; a nation whose tongue you will not understand&hellip; and they will besiege you in all your gates until your high and fortified walls fall.&rdquo;<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></div>
+</blockquote>
+
+<p>To this Trajan replied: <em>&ldquo;Here I am. That is me.&rdquo;</em> The entire yeshiva was put to death. The <em>Gemara</em> describes what followed: the slaughter of the men, then the slaughter of their wives when they refused to be taken as spoils. So great was the loss that <em>the sea between Egypt and Cyprus turned red with Jewish blood</em>. The <em>Gemara</em> closes:</p>
+
+<blockquote>
+<div class="trans">At that hour, the horn of Israel was cut off &mdash; and it will not be restored until <em>Mashiach ben David</em>, speedily in our days, <em>amen</em>.</div>
+</blockquote>
+
+<div class="sidebar">
+<div class="sidebar-title">Sidebar &mdash; A Twentieth-Century Reader of Ki Savo</div>
+<p>On September 11, 2001, which fell that year in the week of <em>Parshas Ki Savo</em>, a <em>rebbe</em> in a Brooklyn yeshiva stood on the roof of his beis midrash and watched the smoke rise from lower Manhattan. He returned to his classroom, opened a <em>Chumash</em>, and read to his students the <em>tochachah</em>: <em>&ldquo;A nation from afar&hellip; a nation whose tongue you will not understand&hellip; the high and fortified walls.&rdquo;</em> He offered no interpretation; only the verses. The impulse to reach for these verses at that moment is itself a testimony to how the yeshiva of Alexandria heard them &mdash; the fixed vocabulary in which the Jewish people has always named what has come for it from afar.</p>
+</div>
+
+<h3>Roman Surveillance of Jewish Texts</h3>
+
+<p>Two corroborating pieces of evidence support the political reading Rav Margaliyos builds on this history.</p>
+
+<p>The first is the <em>Targum</em> of the <em>Shivim Zekenim</em> &mdash; the Septuagint. The <em>Gemara</em> in <em>Megillah</em><a class="footnote-ref" id="ref22" href="#fn22">[22]</a> records that Ptolemy assembled seventy sages in seventy separate chambers and required each independently to translate the Torah into Greek. Eleven identical <em>shinuyim</em> emerged from all seventy pens, guided by <em>ru&rsquo;ach ha&rsquo;kodesh</em>. Among the alterations was the change of <em>&ldquo;v&rsquo;es ha&rsquo;arneves&rdquo;</em> to <em>&ldquo;tze&rsquo;iras raglayim,&rdquo;</em> because a member of Ptolemy&rsquo;s family bore the name <em>Arnevet</em>. The translation, once produced, passed to the Roman successors of the Ptolemaic world and served for centuries as the Roman authorities&rsquo; window onto Jewish sacred texts.</p>
+
+<p>The second is the striking narrative in <em>Bava Kama</em>.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> The <em>malchus</em> of Rome dispatched <em>shnei sardiotin</em> &mdash; two high officers &mdash; to sit before the <em>Chachmei Yisrael</em> and copy out the laws of <em>Bava Kama</em>. The scene is unambiguous: the imperial authorities monitored the halakhic corpus of the Jewish people, and they did so with sufficient interest to send trained officers for the purpose. Whatever <em>Rabbeinu HaKadosh</em> committed to writing would find its way into Roman hands.</p>
+
+<h3>The Self-Censorship of the Mishnah</h3>
+
+<p>Against this backdrop the fifth answer receives its full force. Chanukah is not, in its historical substance, a religious matter alone. It is the great <em>national</em> festival of the Jewish people. Its narrative arc is the arc of a subjected nation rising against a foreign empire, defeating that empire, and restoring an independent Jewish crown to <em>Eretz Yisrael</em> for more than two centuries. Even in modern times secular Israelis have adopted Chanukah as the foundational national holiday of the state, and they do so accurately: the historical Chanukah is a story of successful national revolt.</p>
+
+<p>For <em>Rabbeinu HaKadosh</em>, composing the <em>Mishnah</em> in the immediate aftermath of the Bar Kochva catastrophe and against the fresh memory of the Kitos War, to grant this festival its own tractate would have been to place, in the hands of an imperial censor already known to monitor Jewish halakhic writing, an authorized codification of the last successful Jewish revolt against a foreign occupier. He refrained. He preserved the <em>halakhos</em> of the festival &mdash; scattered across seven tractates, embedded in <em>mishnayos</em> whose primary subject was other &mdash; and declined to grant the <em>Chashmonaim</em> the structural prominence of a tractate of their own.</p>
+
+<h3>Why the Beraisa in Shabbos Was Acceptable</h3>
+
+<p>An objection presses immediately. The <em>sugya</em> of Chanukah does appear in <em>Shabbos</em> 21b. If the Roman concern was so grave, how did the material reach the printed page at all?</p>
+
+<p>The answer draws on a distinction of redaction rather than of date. The Chanukah material in <em>Shabbos</em> is a <em>beraisa</em> &mdash; a body of <em>tanna&rsquo;ic</em> teaching that stands outside the <em>Mishnah</em>&rsquo;s canonical spine and that entered the written record through the redactional labors of later generations. The <em>Mishnah</em>, by contrast, is the foundational canonical document of the Oral Torah &mdash; the text that <em>Rabbeinu HaKadosh</em> himself signed and released. What appears in the <em>Mishnah</em> carries an editorial weight that a <em>beraisa</em> does not; the political stakes of what goes into the canon differ from the stakes of what circulates alongside it. When later generations of <em>tanna&rsquo;im</em> and <em>amora&rsquo;im</em> committed the Chanukah <em>beraisa</em> to the redacted text of the <em>Bavli</em>, the acute political pressure that had constrained <em>Rabbeinu HaKadosh</em> had largely eased. The <em>Mishnah</em>&rsquo;s silence is thus an editorial silence; the <em>Gemara</em>&rsquo;s eventual speech is a redactional inheritance.</p>
+
+<h3>The Sefas Emes: Concealment as the Inner Yesod</h3>
+
+<p>The political explanation of the <em>Mishnah</em>&rsquo;s silence receives, in the teaching of the <em>Sefas Emes</em>,<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> an inner counterpart. Chanukah, in his framing, is the festival of <em>tarpa balbeis</em> &mdash; the festival at which all is concealed, all is <em>b&rsquo;sod</em>, all awaits the revelation that will come with <em>Mashiach</em>. What <em>Rabbeinu HaKadosh</em> enacted at the editorial level &mdash; the deliberate withholding of the festival&rsquo;s written codification &mdash; participates in a deeper truth about the festival itself: that its full meaning belongs to a time not yet come, and that its interim status in the exile is properly one of veiled rather than open commemoration. The political and the mystical are not competing accounts of the <em>Mishnah</em>&rsquo;s silence; they are two registers of a single teaching about a festival whose disclosure remains partial.</p>
+
+<h2>VIII. B&rsquo;Sha&rsquo;as HaSakanah: The Window as Inheritance</h2>
+
+<p>The concealment that shaped the <em>Mishnah</em>&rsquo;s treatment of Chanukah persists in a small but living halakhic detail. The original obligation of <em>ner Chanukah</em>, as recorded in <em>Shabbos</em> 21b,<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> is to place the <em>menorah</em> at the doorway of the house, opposite the <em>mezuzah</em>, on the side of the <em>reshus ha&rsquo;rabbim</em>. Where this is not possible, or in a time of danger, the <em>Gemara</em> permits placing the <em>menorah</em> on the table indoors and considers the obligation discharged. Diaspora communities have inherited the indoor practice by the intermediate step of lighting at the window &mdash; a compromise between the ideal outdoor placement and the concealed indoor lighting of <em>b&rsquo;sha&rsquo;as ha&rsquo;sakanah</em>.</p>
+
+<p>In much of <em>Yerushalayim</em> today the ideal has returned: neighborhoods light in glass <em>menorah</em> boxes at the entrances to their courtyards, <em>k&rsquo;tikkun</em>. In the diaspora the window remains the norm. Whether this constitutes a permanent <em>l&rsquo;chatchilah</em> or a <em>b&rsquo;di&rsquo;eved</em> that persists on inertia is a live halakhic question; what is not disputed is that the practice preserves in miniature the same discretion that shaped the <em>Mishnah</em>&rsquo;s silence &mdash; a discretion born of the moment when celebrating openly would have provoked those who knew exactly what was being celebrated.</p>
+
+<h2>IX. Sefer HaMaccabim and the Yiddish Bridge</h2>
+
+<p>The question of <em>sifrei chitzonim</em> &mdash; the <em>Gemara</em>&rsquo;s prohibition against learning &ldquo;outside books&rdquo; &mdash; has been raised more than once against the practice of consulting <em>Sefer HaMaccabim</em>. The prohibition is serious and the concern for it is well-founded, yet the historical record shows that a chain of the most mainstream <em>poskim</em> &mdash; the <em>Tosfos Yom Tov</em>, the <em>Aruch HaShulchan</em>, and a long line of Lithuanian and Galician <em>acharonim</em> from the eighteenth century onward &mdash; cite <em>Sefer HaMaccabim</em> by name in their halakhic writings.</p>
+
+<p>The mechanism by which they could do so has only recently been reconstructed. The original Hebrew of <em>Sefer HaMaccabim</em> was lost; only the Greek translation, preserved in Christian Bibles, survived antiquity. The Engelman edition of <em>Sefer HaMaccabim I</em> (2018) and <em>Sefer HaMaccabim II</em> (late 2024),<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> in its introductory apparatus, traces the survival of the text into the Ashkenazic halakhic world through an eighteenth-century Yiddish translation of the work, now itself preserved in only a handful of copies. It was the Yiddish version, or its intermediate Hebrew back-translations, that supplied the citations found in the <em>Tosfos Yom Tov</em> and his successors. That a chain of mainstream <em>poskim</em> found the work acceptable is itself evidence for its permissibility &mdash; not as canonical <em>Torah she&rsquo;b&rsquo;al peh</em>, but as a historical source that may be consulted where it clarifies the substance of the tradition.</p>
+
+<h2>X. The Sixth Answer: The Remez of the Chenvani</h2>
+
+<h3>Mattisyahu ben Yochanan: A Question of Identity</h3>
+
+<p>The <em>Al HaNissim</em> that <em>Klal Yisrael</em> recites each day of Chanukah names <em>Mattisyahu ben Yochanan Kohen Gadol</em>. The <em>Bnei Yissaschar</em><a class="footnote-ref" id="ref27" href="#fn27">[27]</a> raises a difficulty. The <em>Gemara</em> in <em>Berachos</em><a class="footnote-ref" id="ref28" href="#fn28">[28]</a> records that <em>Yochanan Kohen Gadol</em> served in the <em>Kehunah Gedolah</em> for eighty years and at the end of his life turned <em>Tzeduki</em>. If <em>Mattisyahu</em>&rsquo;s father was this same <em>Yochanan</em> &mdash; the one who fell to <em>Tzedukiyus</em> in the closing chapter of his life &mdash; why mention him at all in the sacred liturgy of Chanukah? Why not simply say <em>&ldquo;Mattisyahu Kohen Gadol&rdquo;</em>?</p>
+
+<p>Historically, it is possible that the two are not the same <em>Yochanan</em>. Chronologically the identification is difficult and modern historians have generally distinguished them. The <em>Bnei Yissaschar</em> nevertheless takes as his working assumption that they are one and the same, and accordingly develops several answers to his own difficulty. The most beautiful of these answers is the <em>remez</em> that follows.</p>
+
+<h3>Eight Mentions in Shas</h3>
+
+<p>The word <em>Chanukah</em> appears in the <em>Mishnah</em> &mdash; despite the absence of a tractate bearing its name &mdash; some seven times, with an additional appearance of the term <em>Chashmonai</em>. The count is eight &mdash; corresponding, as is traditional to notice, to the eight days of the festival.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> The <em>mishnah</em> that concerns this study is one of these eight: the <em>mishnah</em> at the end of <em>perek HaKonis</em> in <em>Bava Kama</em>.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a></p>
+
+<h3>The Mishnah of the Camel and the Storekeeper</h3>
+
+<p>A man drives a camel laden with <em>pishtan</em>, flax, through the <em>reshus ha&rsquo;rabbim</em>. A <em>chenvani</em> &mdash; a shopkeeper &mdash; has arranged his wares on the stoop of his store, with a candle burning to illuminate them. The overflowing flax catches fire from the candle; the camel is engulfed; the store burns. Who bears the loss?</p>
+
+<ul>
+  <li>If the shopkeeper&rsquo;s candle was <strong>inside</strong> the store, the camel-driver pays: his overladen animal had no business projecting into the storefront.</li>
+  <li>If the candle was <strong>outside</strong> in the public way, the camel-driver is <em>patur</em>: the shopkeeper had no business kindling a flame in the <em>reshus ha&rsquo;rabbim</em>.</li>
+  <li>But if the candle outside is <strong>a <em>ner Chanukah</em></strong>, the camel-driver pays: every Jew knows that on the nights of Chanukah candles stand at the doorways of the town, and the driver ought to have steered his laden animal wide.</li>
+</ul>
+
+<h3>The Bircas HaShalom&rsquo;s Remez</h3>
+
+<p>The <em>Bircas HaShalom</em><a class="footnote-ref" id="ref31" href="#fn31">[31]</a> &mdash; a <em>sefer</em> of a <em>Chassidishe tzaddik</em> of the generation after the <em>Baal Shem Tov</em>, deep, elevated, and little known &mdash; reads this <em>mishnah</em> as a coded testimony to <em>Yochanan Kohen Gadol</em>&rsquo;s fall and to the <em>tikkun</em> effected by his sons. The equation that opens the reading is precise:</p>
+
+<blockquote>
+<div class="heb">חֶנְוָנִי &nbsp; = &nbsp; יוֹחָנָן</div>
+<div class="trans">The letters of <em>chenvani</em> and <em>Yochanan</em> are the same.</div>
+</blockquote>
+
+<p>To see the <em>drash</em>, one must recall a second <em>sugya</em>. The <em>Gemara</em> in <em>Yoma</em><a class="footnote-ref" id="ref32" href="#fn32">[32]</a> records the first <em>ma&rsquo;aseh</em> of the <em>Tzedukim</em>. The <em>Kohen Gadol</em> on <em>Yom Kippur</em>, before entering the <em>Kodesh HaKodashim</em>, must place the coals of the fire on the <em>kaf</em> of the <em>ketores</em> <em>within</em>. The <em>Tzedukim</em>, on the strength of a private <em>drasha</em>, insisted that the fire be kindled <em>outside</em>, before the <em>Kohen Gadol</em> entered. The first <em>Kohen Gadol</em> to accede to their reading was <em>Yochanan Kohen Gadol</em>, in the closing chapter of his eighty-year service; his acquiescence gave the <em>Tzedukim</em> their first great public triumph. The <em>Gemara</em> pronounces its verdict: <em>chayav</em>. Anyone who performs the <em>avodah</em> in this manner is liable.</p>
+
+<p>Now the two <em>sugyos</em> may be laid side by side. <em>Yochanan</em>&rsquo;s <em>cheit</em> was a fire placed <em>outside</em> where the <em>halakhah</em> required it to be <em>inside</em>. His descendants &mdash; the <em>Chashmonaim</em> &mdash; enacted a <em>takanah</em> that placed a fire <em>outside</em> where earlier practice had known no such placement at all: the <em>ner Chanukah</em> at the doorway, on the <em>reshus ha&rsquo;rabbim</em>. On the surface the two acts appear to share the same posture; in halakhic substance they are opposites. The <em>Tzedukim</em>&rsquo;s fire-outside was an assertion of private <em>drasha</em> against the received tradition of <em>Chazal</em>. The <em>Chashmonaim</em>&rsquo;s fire-outside was a <em>gezerah</em> of the sages, publicly enacted in the <em>reshus ha&rsquo;rabbim</em> as the visible declaration of the very <em>koach d&rsquo;rabbanan</em> that the <em>Tzedukim</em> had rejected. Where the grandfather&rsquo;s outdoor fire had inaugurated the ascendancy of the sectarian challenge, the grandsons&rsquo; outdoor fire proclaimed the authority of <em>Chazal</em>.</p>
+
+<p>To this the <em>mishnah</em> in <em>Bava Kama</em> speaks with a single word: <em>patur</em>. In its plain sense the term is a technical tort ruling &mdash; the camel-driver bears no liability. In the <em>Bircas HaShalom</em>&rsquo;s reading it opens onto a deeper meaning. <em>Yochanan</em> himself is <em>patur</em>: the <em>cheit</em> of the grandfather has been redeemed by the <em>tikkun</em> of the descendants; the outdoor fire that inaugurated the <em>Tzedukim</em>&rsquo;s triumph has been answered by the outdoor fire that vindicates the <em>koach</em> of <em>Chazal</em>. The <em>drash</em> reads a technical <em>patur</em> into a theological absolution &mdash; a homiletical move whose textual anchor is the <em>chenvani</em>&rsquo;s presence in the very <em>mishnah</em> that adjudicates <em>ner Chanukah</em>. On this reading the <em>Bnei Yissaschar</em>&rsquo;s difficulty resolves. <em>Yochanan Kohen Gadol</em> may be named in the liturgy of Chanukah precisely because Chanukah itself is his rehabilitation; the mention of the father is inseparable from the memory of what the sons accomplished on his behalf.</p>
+
+<h2>XI. Which Answers Stand?</h2>
+
+<p>Six answers have been arrayed. It remains to ask which of them survive.</p>
+
+<p>The first answer &mdash; the <em>Vilna Gaon</em>&rsquo;s <em>mesorah</em> of a lost <em>Maseches Chanukah</em> &mdash; is best treated as an unresolved <em>tzurech iyun</em>. It rests on a chain of oral tradition that need not answer to ordinary evidentiary criteria, and the difficulty from the absence of cross-references is real without being decisive.</p>
+
+<p>The second answer &mdash; the reported <em>Chasam Sofer</em>&rsquo;s vendetta &mdash; falls with its premise when the <em>Sforno</em>&rsquo;s reading of <em>&ldquo;Lo yasur&rdquo;</em> is accepted. On the <em>Sforno</em>&rsquo;s account there was no <em>cheit</em> for <em>Rabbeinu HaKadosh</em> to hold against the <em>Chashmonaim</em>, and the <em>Rambam</em>&rsquo;s explicit praise of them confirms the direction.</p>
+
+<p>The third answer &mdash; the <em>l&rsquo;chadeish</em> principle &mdash; is genuine but partial. It explains why the composer of the <em>Mishnah</em> could have refrained from a Chanukah tractate without any editorial cost; it does not by itself determine why he did so.</p>
+
+<p>The fourth answer &mdash; the existence of <em>Megillas Taanis</em> &mdash; is likewise genuine and independent of the others. It reduces the pressure of the <em>kushya</em> by observing that the historical and halakhic corpus was already <em>b&rsquo;kesav</em>; it does not exhaust the question but it contributes to any adequate account.</p>
+
+<p>The fifth answer &mdash; Rav Margaliyos&rsquo;s political reading &mdash; is the deepest and, on the evidence assembled here, the load-bearing account. The three-and-a-half centuries of the <em>Tumultus Iudaicus</em>, the destruction of Alexandrian Jewry, the Roman surveillance of halakhic texts attested by the <em>shnei sardiotin</em>: these are not decorative context. They are the historical situation in which the <em>Mishnah</em> was composed, and they render intelligible in a single stroke both the absence of a Chanukah tractate and the presence of Chanukah material in the later, safer, redactional layers of <em>Shabbos</em>. The <em>Sefas Emes</em>&rsquo;s teaching of Chanukah as the festival of concealment stands as the inner counterpart of the same account: political discretion in the outer world; <em>tarpa balbeis</em> in the inner one.</p>
+
+<p>The sixth teaching &mdash; the <em>Bircas HaShalom</em>&rsquo;s <em>remez</em> &mdash; is not an alternative to the other answers but their crown. The <em>Mishnah</em> that <em>Rabbeinu HaKadosh</em> did compose contains, in its treatment of the camel and the <em>chenvani</em>, a coded testimony to precisely what he declined to codify openly: that Chanukah is the redemption of a priestly line, the vindication of <em>koach d&rsquo;rabbanan</em>, the exemption of a father through the merit of his sons. What the tractate could not say the <em>mishnah</em> whispers.</p>
+
+<p>To this whisper the opening of the study responds. Erev <em>Zos Chanukah</em> is the day of the last outstretched hand &mdash; the day on which <em>teshuvah</em> is received after all other gates have closed. The <em>Bircas HaShalom</em>&rsquo;s <em>Yochanan</em> is a fitting emblem: the father whose failing was answered, generations later, by the fidelity of his descendants. The Chanukah lights kindled in the doorways of the exile are the sons&rsquo; hand outstretched to receive the father. That is the note on which <em>Zos Chanukah</em> ends the year, and it is the note on which this study must end as well.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Bamidbar</em> 7:84.</span>
+  <span class="expanded">&mdash; <span class="heb">זֹאת חֲנֻכַּת הַמִּזְבֵּחַ בְּיוֹם הִמָּשַׁח אֹתוֹ</span>: the closing verse of the sequence of the <em>nesi&rsquo;im</em>&rsquo;s offerings, read as the <em>krias haTorah</em> for the eighth day of Chanukah. The verse supplies the plain textual source for the name <em>Zos Chanukah</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short">Bnei Yissaschar, <em>Ma&rsquo;amarei Chodesh Kislev-Teves</em>, <em>Ma&rsquo;amar</em> 4 &sect;27, with additions in <em>Sameach Nefesh</em> of his son.</span>
+  <span class="expanded">&mdash; The teaching that on <em>Zos Chanukah</em> the <em>yad pshutah l&rsquo;kabel shavim</em> remains outstretched: the eighth day of Chanukah stands as the final gate of <em>teshuvah</em> extending from the <em>Yamim Nora&rsquo;im</em>. The <em>Chassidishe</em> tradition consequently frames the interval from <em>Rosh HaShanah</em> through <em>Zos Chanukah</em> as a single extended <em>ma&rsquo;amad teshuvah</em>, with successive gates &mdash; the <em>chasimah</em>, <em>Hoshana Rabbah</em>, <em>Zos Chanukah</em> &mdash; each admitting the returning soul that has not yet completed its return.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <div class="sidebar" style="margin:0;">
+    <div class="sidebar-title">Source-type note (oral / Chassidic)</div>
+    R&rsquo; Avraham Yehoshua Heschel of Apta (the <em>Ohev Yisrael</em>, 1748&ndash;1825), cited in the name of the <em>Wilanower Rebbe</em> (the <em>Velver</em>) &mdash; two forms of the same designation. The <em>vort</em>: on the strength of the contrast between the Jewish <em>Rosh HaShanah</em> in <em>Tishrei</em> and the surrounding world&rsquo;s new year, the <em>tefillos</em> of <em>Aseres Yemei Teshuvah</em> that had been obstructed are retroactively received on January the first. Preserved as oral <em>Chassidishe</em> tradition rather than in the <em>Ohev Yisrael</em>&rsquo;s printed writings.
+  </div>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short">Rav Yaakov Kamenetsky (1891&ndash;1986); cf. <em>Emes L&rsquo;Yaakov</em>, <em>Aseres Yemei Teshuvah</em>.</span>
+  <span class="expanded">&mdash; The anecdote is preserved in the oral tradition of Torah Vodaas and in later collections of Rav Yaakov&rsquo;s <em>hanhagos</em>. His principle: a public day of <em>cheshbon ha&rsquo;nefesh</em> and <em>kabbalos tovos</em> observed by an entire surrounding society ought not to pass without a Jewish response measured to the stature of a <em>ben Torah</em>. Where the surrounding culture resolves upon reading two books, a <em>ben Torah</em> resolves upon two <em>masechtos</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short">Chanukah material in <em>Shas</em>: <em>Shabbos</em> 21a&ndash;24a (the primary <em>beraisa</em>); scattered <em>mishnayos</em> in <em>Bava Kama</em>, <em>Rosh HaShanah</em>, <em>Megillah</em>, <em>Ta&rsquo;anis</em>, and elsewhere.</span>
+  <span class="expanded">&mdash; The sustained treatment of the <em>halakhos</em> of <em>ner Chanukah</em> appears in <em>beraisa</em> form in <em>Maseches Shabbos</em>. The <em>Mishnah</em> itself mentions Chanukah in a handful of contexts (see fn 29 for the count of eight), but never as a subject of independent halakhic exposition.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short">Hakdamah of R&rsquo; Avraham, son of the Vilna Gaon, to <em>Aderes Eliyahu</em>; cf. <em>Ma&rsquo;aseh Rav</em>.</span>
+  <span class="expanded">&mdash; The Gaon&rsquo;s tradition that there once existed a <em>Maseches Chanukah</em> among a small group of short tractates devoted to specific <em>inyanim</em>, now lost. The narrative frame commonly invoked in this connection is the account of Rav Hai Gaon&rsquo;s encounter with a mysterious <em>zaken v&rsquo;chacham</em> in possession of an unknown <em>maseches</em>. The difficulty from the absence of internal cross-references is genuine but not decisive; a very short <em>maseches</em> may not have generated the standard cross-referencing formulae.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <div class="sidebar" style="margin:0;">
+    <div class="sidebar-title">Source-type note (indirect attribution)</div>
+    Chasam Sofer, as reported in <em>Chut HaMeshulash</em>, compiled by his grandson. The reading has been reframed by later authors as <em>l&rsquo;sheim shamayim</em> rather than personal, but the Chasam Sofer himself does not appear to have written it: the grandson&rsquo;s testimony is the sole source, and this study treats it accordingly.
+  </div>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Horayos</em> 13b.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu HaKadosh</em>&rsquo;s instruction to his son not to cite <em>Rabi Meir</em> by name (but as <em>&ldquo;acherim&rdquo;</em>) and not to cite <em>Rabi Nasan</em> by name (but as <em>&ldquo;yesh omrim&rdquo;</em>), on account of their attempt to displace <em>Rabban Shimon ben Gamliel</em>. The <em>re&rsquo;ayah</em> to the vendetta reading of the missing <em>Maseches Chanukah</em>, developed in Section IV. This <em>sugya</em> is often mistakenly ascribed to <em>Chagigah</em>; the correct location is <em>Horayos</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short">Ramban, <em>Bereishis</em> 49:10, on <span class="heb">לֹא יָסוּר שֵׁבֶט מִיהוּדָה</span>.</span>
+  <span class="expanded">&mdash; The Ramban reads Yaakov&rsquo;s blessing as an ongoing prohibition that binds any tribe other than <em>Yehudah</em> from taking the royal scepter. On his reading, the <em>Chashmonaim</em> &mdash; kohanim of <em>Levi</em> &mdash; transgressed this prohibition when they assumed the crown alongside their priestly service.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short">Sforno (R&rsquo; Ovadyah Sforno, c. 1475&ndash;1550), <em>Bereishis</em> 49:10.</span>
+  <span class="expanded">&mdash; <em>&ldquo;Lo yasur&rdquo;</em> as a prohibition on <em>removing</em> the <em>malchus</em> from <em>Shevet Yehudah</em>. Once the crown has been removed &mdash; by the destruction of the First Temple and the exile of <em>Tzidkiyahu</em> &mdash; no <em>issur</em> attaches to another tribe assuming a throne that has already stood empty. Sforno was among the leading Italian <em>poskim</em> of the late Renaissance and a Hebraist of the first rank whose instruction was sought by prominent Christian scholars of his day.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short">Rambam, <em>Hilchos Chanukah</em> 3:1&ndash;3.</span>
+  <span class="expanded">&mdash; The three opening <em>halakhos</em> of pure historical narrative &mdash; atypical of the entire <em>Mishneh Torah</em> &mdash; that recount the oppression of the Greek kingdom, the rise of the <em>Chashmonaim</em>, and the restoration of <em>malchus</em> to <em>Klal Yisrael</em> <em>&ldquo;yeser al ma&rsquo;asayim shanah.&rdquo;</em> The Rambam&rsquo;s explicit praise of the Chashmonaim (<em>chazakim v&rsquo;gibborim</em>) stands as internal evidence for the Sforno-consonant reading that there was no <em>cheit</em> requiring editorial retribution.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short">Rambam, <em>Hakdamas Mishneh Torah</em>.</span>
+  <span class="expanded">&mdash; <em>&ldquo;L&rsquo;fichach kara&rsquo;ti shem ha&rsquo;chibur ha&rsquo;zeh Mishneh Torah&hellip; she&rsquo;adam koreh Torah she&rsquo;b&rsquo;ksav techillah, v&rsquo;achar kach koreh ba&rsquo;zeh, v&rsquo;yodea mimenu kol ha&rsquo;Torah she&rsquo;b&rsquo;al peh.&rdquo;</em> The declaration that ignited the Geonic controversy over the <em>Mishneh Torah</em> &mdash; and that supplies the internal reason for the historical <em>hakdamah</em> at <em>Hilchos Chanukah</em>, since a reader with only <em>Tanach</em> and <em>Mishneh Torah</em> would otherwise encounter Chanukah&rsquo;s obligations without any account of their origin.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short">Chasam Sofer, tradition of the <em>drashos</em> on Chanukah; cf. <em>Toras Moshe</em> on the Chanukah <em>parshiyos</em>.</span>
+  <span class="expanded">&mdash; The precise <em>drasha</em> is widely cited in the tradition of the Chasam Sofer&rsquo;s teachings but not consistently pinned to a fixed <em>siman</em>; formulations appear in the neighborhood of <em>Parshas Mikeitz</em> and <em>Parshas Vayeishev</em>. The principle: <em>Rabbeinu HaKadosh</em>&rsquo;s method in the <em>Mishnah</em> was <em>l&rsquo;chadeish</em>, to record what was not already universally practiced; Chanukah&rsquo;s <em>halakhos</em> had settled so deeply into Jewish domestic life by the redaction of the <em>Mishnah</em> that no <em>tikun b&rsquo;kesav</em> was required.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short">Rambam, <em>Pirush HaMishnayos</em>, <em>Menachos</em>, <em>perek</em> 4, <em>mishnah</em> 1.</span>
+  <span class="expanded">&mdash; The <em>yesod</em> that supplies the halakhic backing for the third answer: there is no <em>mishnah</em> anywhere that mandates the twice-daily recitation of <em>Krias Shema</em>, the affixing of a <em>mezuzah</em>, or the daily wearing of <em>tefillin</em>. These were universal Jewish practices and required no formal codification. The same principle, applied to Chanukah, is developed by the Chasam Sofer (fn 13).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Kiddushin</em> 72b.</span>
+  <span class="expanded">&mdash; The Gemara&rsquo;s statement that Rabi Yehudah HaNasi was born on the day Rabi Akiva died. Combined with the standard dating of Rabi Akiva&rsquo;s death to roughly 135 CE and the Maccabean revolt to 167 BCE, this yields an interval of approximately three centuries between the revolt and Rabi&rsquo;s birth, with an additional five decades to the redaction of the <em>Mishnah</em> &mdash; roughly three hundred and fifty years in all.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Megillas Taanis</em> &mdash; the earliest written work of <em>Torah she&rsquo;b&rsquo;al peh</em>.</span>
+  <span class="expanded">&mdash; A calendar in <em>leshon ha&rsquo;kodesh</em> of the <em>yamim tovim ketanim</em> on which <em>hesped</em> and <em>ta&rsquo;anis</em> are forbidden. Quoted throughout <em>Bavli</em> and <em>Yerushalmi</em>; predates the <em>Mishnah</em>. The majority of its content concerns the victories of the <em>Chashmonaim</em>, including sustained treatment of Chanukah and its <em>halakhos</em>. Its existence in written form when <em>Rabbeinu HaKadosh</em> sat to compose the <em>Mishnah</em> reduces the pressure of the <em>kushya</em>: the corpus was already accessible <em>b&rsquo;kesav</em>.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short">Rav Reuven Margaliyos (1889&ndash;1971), <em>Yesod HaMishnah V&rsquo;Arichaso</em>; cf. <em>Margaliyos HaYam</em> on <em>Sanhedrin</em>.</span>
+  <span class="expanded">&mdash; The sustained study of the historical motivations behind <em>Rabbeinu HaKadosh</em>&rsquo;s composition of the <em>Mishnah</em>. Rav Margaliyos, who emigrated from Galicia to <em>Eretz Yisrael</em> in 1946 or 1947 and supported himself as a shopkeeper, produced dozens of <em>sefarim</em> in his hours of leisure. His <em>Margaliyos HaYam</em> on <em>Sanhedrin</em> incorporates classical Roman and Greek historical sources where they illuminate the substance of the <em>sugya</em>; it is required companion reading for anyone learning that tractate in depth.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <div class="sidebar" style="margin:0;">
+    <div class="sidebar-title">Source-type note (Roman historian)</div>
+    Cassius Dio Cocceianus (c. 155&ndash;235 CE), <em>Roman History</em>, especially Books 68&ndash;69. A near-contemporary of <em>Rabbeinu HaKadosh</em>; the author of an eighty-book Roman history of which substantial portions survive. His descriptions of the Diaspora Revolt (115&ndash;117 CE) and of the destruction of the Alexandrian, Cypriot, and Cyrenian Jewish communities constitute the principal extant non-Talmudic record of these events; his 120,000-gentile death toll must be weighed against the systematic Roman-source bias in his account. Cited here as a historical source, not as <em>sifrei kodesh</em>.
+  </div>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Yerushalmi Sukkah</em> 5:1; <em>Bavli Sukkah</em> 51b.</span>
+  <span class="expanded">&mdash; The Great Synagogue of Alexandria: <em>&ldquo;mi she&rsquo;lo ra&rsquo;ah&hellip; lo ra&rsquo;ah b&rsquo;hodah shel Yisrael.&rdquo;</em> Seventy <em>kateidros shel zahav</em> in memory of the seventy <em>zekenim</em> of the <em>Sanhedrin</em>; the <em>shamash</em>&rsquo;s flag as signal for the <em>tzibbur</em>&rsquo;s <em>amen</em> in a building too vast for the <em>chazan</em>&rsquo;s voice to carry.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Yerushalmi Sukkah</em> 5:1; <em>Bavli Sukkah</em> 51b &mdash; Trajan&rsquo;s massacre of Alexandrian Jewry.</span>
+  <span class="expanded">&mdash; The Gemara narrates the personal trigger (Trajan&rsquo;s son born on <em>Tisha B&rsquo;Av</em>; his daughter died on Chanukah), the wife&rsquo;s incitement, the destruction of the Alexandrian community, and the closing declaration <em>&ldquo;karno shel Yisrael nigdah&rdquo;</em> &mdash; the horn of Israel cut off until <em>Mashiach ben David</em>. Roman sources place the direct execution of the campaign in the hands of Trajan&rsquo;s general Lusius Quietus, from whose name the war acquired its Talmudic designation as the <em>Kitos War</em>; the <em>Gemara</em>&rsquo;s attribution of the action to Trajan himself is faithful to the Talmudic register (in which the emperor bears responsibility for what his agents perform in his name).</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Devarim</em> 28:49&ndash;52 &mdash; <em>tochachah</em> of <em>Parshas Ki Savo</em>.</span>
+  <span class="expanded">&mdash; The foreign nation from afar, the unintelligible tongue, the high and fortified walls &mdash; the <em>parshah</em> the yeshiva of Alexandria was learning when Trajan entered.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>Megillah</em> 9a.</span>
+  <span class="expanded">&mdash; The translation of the Torah for Ptolemy; the seventy sages in separate chambers; the eleven identical <em>shinuyim</em> inserted by <em>ru&rsquo;ach ha&rsquo;kodesh</em>. Among them, the substitution of <em>&ldquo;tze&rsquo;iras raglayim&rdquo;</em> for <em>&ldquo;v&rsquo;es ha&rsquo;arneves&rdquo;</em> in deference to a member of Ptolemy&rsquo;s family bearing the name <em>Arnevet</em>; the traditional gloss identifying that family member with the line of Amalek is homiletical and appears in the surrounding <em>mesorah</em> rather than in the plain <em>sugya</em>. The Roman inheritance of the <em>Targum</em> is what makes the episode relevant to the political-surveillance reading developed in this study.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Bava Kama</em> 38a.</span>
+  <span class="expanded">&mdash; The <em>malchus</em> dispatching <em>shnei sardiotin</em> (variant: <em>shnei istrategin</em>) &mdash; two high-ranking officers &mdash; to copy the laws of <em>Bava Kama</em> from the <em>Chachmei Yisrael</em>. Direct Talmudic attestation to imperial surveillance of Jewish halakhic material; the anchor of Rav Margaliyos&rsquo;s political reading of the <em>Mishnah</em>&rsquo;s silence on Chanukah.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short"><em>Sefas Emes</em>, <em>Likutim</em>, Chanukah.</span>
+  <span class="expanded">&mdash; The teaching of Chanukah as <em>tarpa balbeis</em>: all concealed, all <em>b&rsquo;sod</em>, all awaiting the disclosure of <em>Mashiach</em>. The mystical counterpart of the political reading &mdash; <em>Chazal</em>&rsquo;s deliberate suppression of the national-redemption narrative in <em>galus</em> is here framed as the outward face of a deeper spiritual necessity of veiling.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short"><em>Shabbos</em> 21b&ndash;22a.</span>
+  <span class="expanded">&mdash; <em>&ldquo;Ner Chanukah mitzvah l&rsquo;hanicha al pesach beiso mi&rsquo;bachutz&hellip; u&rsquo;visha&rsquo;as ha&rsquo;sakanah, manicha al shulchano, v&rsquo;dai lo.&rdquo;</em> The original obligation to place the <em>menorah</em> at the doorway on the side of <em>reshus ha&rsquo;rabbim</em>; the <em>heter</em> for indoor placement <em>b&rsquo;sha&rsquo;as ha&rsquo;sakanah</em>. The diaspora practice of lighting at the window is the intermediate inheritance between these two poles.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <div class="sidebar" style="margin:0;">
+    <div class="sidebar-title">Source-type note (modern critical edition)</div>
+    Engelman publishing house, <em>Sefer HaMaccabim I</em> (<em>Eretz Yisrael</em>, 2018), <em>Sefer HaMaccabim II</em> (late 2024). A Hebrew critical edition with maps, illustrations, and a full apparatus documenting every early Ashkenazic authority that cites the <em>sefer</em>. Its introduction reconstructs the eighteenth-century Yiddish translation, now nearly lost, through which the text reached the <em>Tosfos Yom Tov</em>, the <em>Aruch HaShulchan</em>, and their <em>Litvish</em> and Galician successors.
+  </div>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short">Bnei Yissaschar, <em>Kuntres</em> on Chanukah.</span>
+  <span class="expanded">&mdash; The <em>kushya</em> of mentioning <em>Yochanan Kohen Gadol</em> by name in the Chanukah liturgy despite his end-of-life turn to <em>Tzedukiyus</em>; the rejection of the possibility that the two <em>Yochanans</em> are distinct; the several <em>teirutzim</em>, chief among them the <em>tikkun</em> effected through his descendants, developed in this study through the <em>Bircas HaShalom</em>&rsquo;s <em>remez</em>.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <span class="short"><em>Berachos</em> 29a.</span>
+  <span class="expanded">&mdash; <em>&ldquo;Yochanan Kohen Gadol shimeish bi&rsquo;kehunah gedolah shemonim shanah, u&rsquo;l&rsquo;sof na&rsquo;aseh tzeduki.&rdquo;</em> The source of the <em>mishnah</em>&rsquo;s warning <em>&ldquo;al ta&rsquo;amin b&rsquo;atzmecha ad yom mosecha.&rdquo;</em> The textual basis for the identification of <em>Mattisyahu</em>&rsquo;s father with the <em>Kohen Gadol</em> whose end-of-life turn to <em>Tzedukiyus</em> generates the <em>Bnei Yissaschar</em>&rsquo;s difficulty.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn29">
+  <span class="short">The eight mentions of Chanukah / Chashmonai in the <em>Mishnah</em>.</span>
+  <span class="expanded">&mdash; The seven appearances of the word <em>Chanukah</em> and the single appearance of <em>Chashmonai</em> in the <em>Mishnah</em> are distributed across <em>Bikkurim</em>, <em>Rosh HaShanah</em>, <em>Ta&rsquo;anis</em>, <em>Megillah</em>, <em>Middos</em>, <em>Bava Kama</em>, and <em>Menachos</em> (locations vary by mishnaic edition and by whether the term appears in the <em>mishnah</em> proper or in accompanying <em>beraisos</em>). The count of eight corresponds to the eight days of the festival &mdash; a symmetry noted in the <em>Chassidishe</em> tradition and preserved here as a matter worth recording.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn30">
+  <span class="short">Mishnah, <em>Bava Kama</em> 6:6 (end of <em>perek HaKonis</em>).</span>
+  <span class="expanded">&mdash; The <em>mishnah</em> of the camel laden with <em>pishtan</em> and the <em>chenvani</em>&rsquo;s candle. Three rulings: candle inside &mdash; camel-driver pays; candle outside in <em>reshus ha&rsquo;rabbim</em> &mdash; camel-driver <em>patur</em>; <em>ner Chanukah</em> outside &mdash; camel-driver pays. This <em>mishnah</em> is the anchor of the <em>Bircas HaShalom</em>&rsquo;s <em>remez</em> developed in Section X.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn31">
+  <div class="sidebar" style="margin:0;">
+    <div class="sidebar-title">Source-type note (Chassidic, elevated register)</div>
+    <em>Bircas HaShalom</em> &mdash; a work of a <em>Chassidishe tzaddik</em> of the generation following the <em>Baal Shem Tov</em>, described in the tradition as <em>very gehoiben</em> and not widely disseminated. The identification of <em>chenvani</em> with <em>Yochanan</em> is the anchoring equation; the <em>drash</em> that reads the <em>mishnah</em>&rsquo;s <em>patur</em> as the theological absolution of <em>Yochanan Kohen Gadol</em> through the <em>tikkun</em> of his descendants proceeds from the surface tort ruling into a homiletical register whose textual anchor is the <em>chenvani</em>&rsquo;s presence in the very <em>mishnah</em> that adjudicates <em>ner Chanukah</em>. Cited by the Rabbi in his own research on the <em>Bnei Yissaschar</em>&rsquo;s <em>teirutzim</em>.
+  </div>
+  <a class="backref" href="#ref31" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn32">
+  <span class="short"><em>Yoma</em> 19b and 53a.</span>
+  <span class="expanded">&mdash; The narrative of <em>Yochanan Kohen Gadol</em>&rsquo;s <em>avodah</em> with the <em>ketores</em>: the <em>Tzedukim</em>&rsquo;s insistence, on the basis of a private <em>drasha</em>, that the fire be kindled outside before entering the <em>Kodesh HaKodashim</em>; his acquiescence as the first great public triumph of the <em>Tzedukim</em>; the Gemara&rsquo;s ruling <em>&ldquo;chayav&rdquo;</em> against anyone performing the <em>avodah</em> in this manner. The <em>Bircas HaShalom</em>&rsquo;s <em>drash</em>: the <em>Chashmonaim</em>&rsquo;s <em>ner Chanukah</em> reverses precisely this act &mdash; a fire brought outside <em>rightly</em>, as the public vindication of <em>koach d&rsquo;rabbanan</em>.</span>
+  <a class="backref" href="#ref32" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s shiur of Erev <em>Zos Chanukah</em> 5785. This edition incorporates the structural and editorial recommendations of the Shiur Review and Editorial Review: the six answers are arrayed in ascending order and expressly weighed against one another in a closing synthesis; the Section-V header confusion has been resolved by folding the Rambam material into the Sforno&rsquo;s answer as a single unit; the Trajan / Kitos-War chronology has been corrected (the Diaspora Revolt of 115&ndash;117 CE preceded the Bar Kochva Revolt of 132&ndash;135 CE, and the specific narrative of Bar Kochva survivors seeding the Kitos War has been retired in favor of the more general observation that Judean rebels dispersed into the diaspora across the successive failed revolts); the length of the Bar Kochva Revolt has been corrected to roughly three and a half years; a note has been added on Roman sources placing the direct execution of the Alexandrian campaign in the hands of Lusius Quietus; the 9/11 anecdote has been moved to a sidebar outside the Trajan climax; the Sefas Emes teaching has been folded into the political-reading section as its inner counterpart; the <em>b&rsquo;sha&rsquo;as ha&rsquo;sakanah</em> discussion has been tightened; a coda has been added returning to the outstretched hand of the opening. Additional citations added for <em>Kiddushin</em> 72b and for the count of eight Chanukah mentions in the <em>Mishnah</em>. Mareh Mekomos carry dual-layer (short + expanded) footnotes throughout.
+</footer>
+
+</body>
+</html>
