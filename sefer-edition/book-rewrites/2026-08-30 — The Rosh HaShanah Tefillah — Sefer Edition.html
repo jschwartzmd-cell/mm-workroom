@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — The Rosh HaShanah Tefillah — Malchiyos, Zichronos, Shofaros</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">תְּפִלַּת רֹאשׁ הַשָּׁנָה — מַלְכֻיּוֹת, זִכְרוֹנוֹת, שׁוֹפָרוֹת</h1>
+  <div class="english-title">The Rosh HaShanah Tefillah — The Core of the Day and the Duality of <em>Pachad</em> and <em>Simchah</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 30 August 2026 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>First of three shiurim on the <span class="heb-inline">מחזור</span> in the weeks approaching Rosh HaShanah 5787. The <span class="heb-inline">סידור</span> is already in its place; the <span class="heb-inline">מחזור</span> is already arranged. What remains is the <span class="heb-inline">אדם</span> himself.</em></p>
+
+<h2>I. Approaching the Yamim Nora&rsquo;im</h2>
+
+<h3>The Two Emotions of the Day</h3>
+
+<p>The <em>Yamim Nora&rsquo;im</em> (<span class="heb-inline">ימים נוראים</span>) impose upon a Jew a demand that few other times of the year impose: the sustained holding of two apparently opposing emotions at one and the same moment. On the one side stands the <em>pachad ha&rsquo;din</em> (<span class="heb-inline">פחד הדין</span>) &mdash; the terror of judgment, the awareness that the books of the living and the dead lie open before the Throne. On the other side stands the <em>bitachon</em> (<span class="heb-inline">בטחון</span>) of a child of <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) who trusts that his Father, sitting on the seat of judgment, remains his Father still, and will inscribe him for good along with the community that stands before Him. To hold these two together is itself a genuine <em>avodah</em> (<span class="heb-inline">עבודה</span>) &mdash; and the entire structure of the Rosh HaShanah <em>tefillah</em> (<span class="heb-inline">תפילה</span>), from its innermost <em>pesukim</em> to its outermost <em>piyutim</em> (<span class="heb-inline">פיוטים</span>), is designed to escort the mispallel through it.</p>
+
+<h3>The Nadvorna Rebbe &mdash; <em>Sader es Atzmecha</em></h3>
+
+<p>A chassidishe vort circulates in the courts of <em>Nadvorna</em> (<span class="heb-inline">נדבורנא</span>) that sets the frame for any serious approach to the <em>machzor</em> (<span class="heb-inline">מחזור</span>).<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> A <em>chassid</em> came before his Rebbe to take leave: he had accepted an appointment as <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) for the <em>Yamim Nora&rsquo;im</em> in a distant town and needed to travel in order to prepare the tefillos. <em>Why leave now,</em> the Rebbe asked, <em>on the eve of Rosh HaShanah?</em> The <em>chassid</em> replied: <em>I must go to be <span class="heb-inline">מסדר</span> the machzor &mdash; to arrange the tefillos of the day.</em></p>
+
+<div class="pullquote">
+<div class="heb" style="text-align:center;font-size:19px;line-height:2;">הַסִּדּוּר בִּמְקוֹמוֹ, וְהַמַּחְזוֹר מְסֻדָּר. אַתָּה צָרִיךְ לְסַדֵּר אֶת עַצְמְךָ.</div>
+<div style="text-align:center;font-style:italic;margin-top:8px;color:#444;">The <em>siddur</em> is in its place, and the <em>machzor</em> is already arranged. It is <em>you</em> who need arranging.</div>
+</div>
+
+<p>The first preparation for Rosh HaShanah is not the machzor but the man. The machzor is a text; it has already been ordered by the <em>chachomim</em> (<span class="heb-inline">חכמים</span>) of every generation. The variable in the equation is the <em>nefesh</em> (<span class="heb-inline">נפש</span>) of the person who will hold that machzor in his hands. Every study of <em>malchiyos</em>, <em>zichronos</em>, and <em>shofaros</em> that follows in these pages serves that inner arranging &mdash; <em>yishuv ha&rsquo;daas</em> (<span class="heb-inline">יישוב הדעת</span>), <em>berur ha&rsquo;kavvanah</em> (<span class="heb-inline">בירור הכוונה</span>), and the alignment of the <em>nefesh</em> to the register of the day.</p>
+
+<h2>II. The Core of the Day &mdash; Beyond the Piyutim</h2>
+
+<h3>Where the Emotional Weight Falls</h3>
+
+<p>Ask any Jew which portion of the Rosh HaShanah davening moves him most and the answer is almost universally the same: <em>U&rsquo;Nesaneh Tokef</em> (<span class="heb-inline">וּנְתַנֶּה תֹּקֶף</span>). And with justice. Nowhere else in the liturgy is the drama of the day painted in such vivid strokes &mdash; the <em>malachim</em> (<span class="heb-inline">מלאכים</span>) trembling, the great <em>shofar</em> blast followed by the <em>kol demamah dakah</em> (<span class="heb-inline">קול דממה דקה</span>), all creation passing before the Throne like sheep before a shepherd, and the climactic release: <em>Teshuvah, Tefillah, u&rsquo;Tzedakah ma&rsquo;avirin es ro&rsquo;a ha&rsquo;gezerah</em> (<span class="heb-inline">תשובה, תפילה, וצדקה מעבירין את רע הגזרה</span>). The <em>piyut</em> earns its place in the emotional life of the mispaller, and the tradition has always so regarded it.</p>
+
+<h3>What Chazal Actually Required</h3>
+
+<p>Yet <em>U&rsquo;Nesaneh Tokef</em> is a much later composition, and its authorship and dating remain the subject of ongoing scholarly discussion.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> What is beyond dispute is this: <em>Abaye</em> (<span class="heb-inline">אביי</span>) and <em>Rava</em> (<span class="heb-inline">רבא</span>) never said <em>U&rsquo;Nesaneh Tokef</em>. The Rosh HaShanah <em>tefillah</em> as depicted in the <em>Gemara</em> (<span class="heb-inline">גמרא</span>) consists of <em>pesukim</em> (<span class="heb-inline">פסוקים</span>) &mdash; nothing more, nothing less. The core of the day&rsquo;s davening is <em>malchiyos</em> (<span class="heb-inline">מלכיות</span>), <em>zichronos</em> (<span class="heb-inline">זכרונות</span>), and <em>shofaros</em> (<span class="heb-inline">שופרות</span>). This is not a matter of taste or aesthetic preference; it is a matter of what <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>) established as the obligatory substance of the day.</p>
+
+<p>An unsettling irony follows. The very portion of the davening that <em>Chazal</em> installed as the <em>ikkar</em> is often the portion that <em>shluchei tzibbur</em> and <em>kehillos</em> race through most rapidly &mdash; while the <em>piyutim</em>, layered on generations and centuries later, receive the sustained emotional attention. This is a natural human response: drama moves the heart more readily than a bare <em>pasuk</em>. Yet the mispallel who wishes to daven Rosh HaShanah as <em>Chazal</em> designed it must reverse the emphasis. The <em>piyut</em> is the outer wrapping. The <em>pesukim</em> of <em>malchiyos, zichronos, shofaros</em> are the fruit itself. What to do practically with <em>U&rsquo;Nesaneh Tokef</em> is not to demote it emotionally but to remember, when reciting it, that it is an <em>hisarusa</em> (<span class="heb-inline">התערותא</span>) &mdash; an emotional overture &mdash; that opens the heart for the actual substance of the <em>brachos</em> that follow.</p>
+
+<h2>III. The Structure of Musaf &mdash; Nine Berachos</h2>
+
+<h3>The Torah&rsquo;s Names for the Day</h3>
+
+<p>The <em>Torah</em> gives Rosh HaShanah four designations: <em>Yom Teruah</em> (<span class="heb-inline">יום תרועה</span>), <em>Zichron Teruah</em> (<span class="heb-inline">זכרון תרועה</span>), <em>Mikra Kodesh</em> (<span class="heb-inline">מקרא קודש</span>), and <em>Shabbason</em> (<span class="heb-inline">שבתון</span>). Notably, the phrase <em>Yom HaZikaron</em> (<span class="heb-inline">יום הזכרון</span>) &mdash; the formulation that appears in the <em>brachah</em> of <em>Mekadesh Yom HaZikaron</em> (<span class="heb-inline">מקדש יום הזכרון</span>) &mdash; is nowhere given by the <em>Torah</em> itself. That name is the coinage of <em>Chazal</em>. The <em>Torah</em> tells us little about specific prayers; it tells us that this is a <em>Yom Tov</em>, and that a <em>shofar</em> (<span class="heb-inline">שופר</span>) must be sounded.</p>
+
+<h3>The Chiddush of the Mishnah</h3>
+
+<p>The unique liturgical architecture of the day is the work of <em>Chazal</em>. The <em>Mishnah Rosh HaShanah</em> (<span class="heb-inline">משנה ראש השנה</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> establishes that in place of the standard seven <em>brachos</em> of the <em>Musaf</em> (<span class="heb-inline">מוסף</span>) of every <em>Yom Tov</em> &mdash; three opening, three closing, and a single middle <em>brachah</em> for the <em>kedushas ha&rsquo;yom</em> (<span class="heb-inline">קדושת היום</span>) &mdash; Rosh HaShanah adds three special sections: <em>malchiyos</em>, proclaiming the sovereignty of the King; <em>zichronos</em>, invoking His remembrance; and <em>shofaros</em>, centered upon the <em>shofar</em>.</p>
+
+<p>In principle this would yield ten <em>brachos</em>. The <em>Gemara</em>,<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> however, rules that <em>malchiyos</em> is not to be recited as an independent <em>brachah</em> but is to be merged into the middle <em>brachah</em> of <em>kedushas ha&rsquo;yom</em> itself. The result is a structure of <em>nine brachos</em> &mdash; a count unique in the entire liturgical year. The <em>Gemara</em> gives the reason in a formula of programmatic force: <em>kedei she&rsquo;tamlichuni aleichem</em> (<span class="heb-inline">כדי שתמליכוני עליכם</span>) &mdash; <em>so that you crown Me over you</em>. Here lies a chiddush that reaches far beyond a technical <em>halachah</em>: the <em>kedushas ha&rsquo;yom</em> of Rosh HaShanah <em>is</em> <em>malchus</em> (<span class="heb-inline">מלכות</span>). The sanctity of the day is not one thing and the coronation another; they are a single act. This is why <em>malchiyos</em> is not appended as a fourth item on top of <em>kedushas ha&rsquo;yom</em>, but embedded within it. The very substance of what makes this day <em>kadosh</em> is the enthronement of the King.</p>
+
+<h2>IV. Historical Layers &mdash; Tannaim, Rav, Geonim</h2>
+
+<h3>The Machlokes on the Placement of Malchiyos</h3>
+
+<p>The precise station of <em>malchiyos</em> within the <em>Amidah</em> (<span class="heb-inline">עמידה</span>) was itself the subject of a foundational <em>machlokes</em> among the <em>Tannaim</em> (<span class="heb-inline">תנאים</span>).<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> <em>Rabbi Akiva</em> (<span class="heb-inline">רבי עקיבא</span>) held &mdash; as is the halachah today &mdash; that <em>malchiyos</em> is integrated into the middle unique <em>brachah</em> of the Musaf Amidah, thereby constituting the <em>kedushas ha&rsquo;yom</em>. <em>Rabbi Yochanan ben Nuri</em> (<span class="heb-inline">רבי יוחנן בן נורי</span>) argued that <em>malchiyos</em> ought instead to be integrated into the third <em>brachah</em> of <em>kedushas HaShem</em> (<span class="heb-inline">קדושת השם</span>), the daily <em>Atah Kadosh</em> (<span class="heb-inline">אתה קדוש</span>) that on Rosh HaShanah culminates in <em>HaMelech HaKadosh</em> (<span class="heb-inline">המלך הקדוש</span>).</p>
+
+<p>Beneath the surface of this dispute lies a deeper conceptual divide. For <em>Rabbi Akiva</em>, <em>malchiyos</em> is the very content of the day&rsquo;s <em>kedushah</em> &mdash; an independent <em>kiyum</em> (<span class="heb-inline">קיום</span>) in the <em>kedushas ha&rsquo;yom</em>. For <em>Rabbi Yochanan ben Nuri</em>, <em>malchiyos</em> is a general statement of <em>malchus Shamayim</em> (<span class="heb-inline">מלכות שמים</span>) that piggybacks upon the daily proclamation of <em>HaMelech HaKadosh</em>. The <em>halachah</em> follows <em>Rabbi Akiva</em>: on Rosh HaShanah, the sanctity of the day <em>is</em> the coronation, and any structure that separates them dilutes both.</p>
+
+<p>Even after the <em>halachah</em> was fixed, the era of the <em>Mishnah</em> saw practice divided along geographical lines. The <em>Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> preserves the record: in the <em>Galil</em> (<span class="heb-inline">גליל</span>) the custom followed <em>Rabbi Yochanan ben Nuri</em>; in <em>Yehudah</em> (<span class="heb-inline">יהודה</span>) the custom followed <em>Rabbi Akiva</em>. The uniformity that later generations take for granted took centuries of consolidation to achieve.</p>
+
+<h3>Ten Pesukim per Section</h3>
+
+<p>In the era of the <em>Tannaim</em>, the substance of each of the three special sections was concise and formal. The <em>Gemara</em><a class="footnote-ref" id="ref7" href="#fn7">[7]</a> specifies the composition: for each of <em>malchiyos</em>, <em>zichronos</em>, and <em>shofaros</em>, ten <em>pesukim</em> were recited &mdash; three from the <em>Torah</em>, three from <em>Kesuvim</em> (<span class="heb-inline">כתובים</span>) (specifically <em>Tehillim</em>, <span class="heb-inline">תהילים</span>), three from <em>Nevi&rsquo;im</em> (<span class="heb-inline">נביאים</span>), and a concluding tenth <em>pasuk</em> once again from the <em>Torah</em>. The <em>Torah</em> brackets the structure; <em>Kesuvim</em> and <em>Nevi&rsquo;im</em> fill the middle. This is the same design-logic <em>Chazal</em> employ throughout <em>Shas</em> in the <em>binyanei av</em> of scriptural exposition: the <em>Torah</em> is foundation and closing anchor; the <em>Nach</em> is elaboration. In the era of the <em>Tannaim</em>, this was the entirety of the <em>brachah</em>&rsquo;s substance beyond its opening and closing formulas. There were no introductions and no <em>piyutim</em> &mdash; simply the <em>pesukim</em>, framed by the <em>brachah</em>.</p>
+
+<h3>Teka D&rsquo;Rav &mdash; The Amoraic Introductions</h3>
+
+<p>The next layer was the work of one of the greatest of the <em>Amoraim</em>: <em>Rav</em> (<span class="heb-inline">רב</span>), the founder of the yeshiva of <em>Sura</em>. To each of the three sections he composed a thematic <em>hakdamah</em> &mdash; a doctrinal introduction to be recited before the <em>pesukim</em>. This series of introductions became known in the halachic literature as <em>Teka D&rsquo;Rav</em> (<span class="heb-inline">תָּקַע דְּרַב</span>) &mdash; &ldquo;the establishment of Rav.&rdquo;<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> The three <em>hakdamos</em> are:</p>
+
+<ul>
+  <li><em>Aleinu L&rsquo;Shabeach</em> (<span class="heb-inline">עלינו לשבח</span>) &mdash; for <em>malchiyos</em>.</li>
+  <li><em>Atah Zocher Ma&rsquo;aseh Olam</em> (<span class="heb-inline">אתה זוכר מעשה עולם</span>) &mdash; for <em>zichronos</em>.</li>
+  <li><em>Atah Nigleisa Ba&rsquo;Anan Kevodecha</em> (<span class="heb-inline">אתה נגלית בענן כבודך</span>) &mdash; for <em>shofaros</em>.</li>
+</ul>
+
+<p>A remarkable historical fact deserves its full weight: <em>Aleinu L&rsquo;Shabeach</em> &mdash; the tefillah with which every davening of the year is closed, in every <em>kehillah</em> across the Jewish world &mdash; was composed by <em>Rav</em> as an introduction to <em>malchiyos</em> of Rosh HaShanah Musaf. Its later migration into the daily liturgy as the closing of every service is a secondary appropriation. Its original home is here, opening the coronation section of the day of the coronation.</p>
+
+<h3>The Piyutim &mdash; Geonim and Rishonim</h3>
+
+<p>The <em>piyutim</em> of the Rosh HaShanah machzor were composed later still, in the era of the <em>Geonim</em> (<span class="heb-inline">גאונים</span>) and the early <em>Rishonim</em> (<span class="heb-inline">ראשונים</span>). Great <em>paytanim</em> (<span class="heb-inline">פייטנים</span>) took the central themes of the day and wove them into intricate poetic architecture. This layer of the machzor is both a treasure and a challenge. For those to whom <em>lashon ha&rsquo;kodesh</em> (<span class="heb-inline">לשון הקודש</span>) is transparent, the <em>piyutim</em> deepen and beautify the davening. For those to whom the language is opaque, reciting a long and elaborate <em>piyut</em> without comprehension may miss the point of the composition altogether.</p>
+
+<p>A practical suggestion emerges. Rather than racing through the entire catalog of <em>piyutim</em> with comprehension of none, the mispallel is better served by selecting <em>one</em> &mdash; preparing its meaning in advance, understanding its imagery, and saying that one with genuine <em>kavvanah</em> (<span class="heb-inline">כוונה</span>). One <em>piyut</em> understood outweighs many raced. This is not to dismiss the ancient <em>Ashkenazi</em> tradition of <em>piyutei ha&rsquo;Kalir</em> as <em>tefillah shel avoseinu</em> (<span class="heb-inline">תפילה של אבותינו</span>) &mdash; a tradition defended by great <em>poskim</em> including the <em>Chida</em> and the <em>Chasam Sofer</em> &mdash; but only to prioritize, within the finite hours of a Rosh HaShanah davening, the comprehended over the uncomprehended.</p>
+
+<h2>V. The Three Themes</h2>
+
+<h3>Malchiyos &mdash; The Coronation of the King</h3>
+
+<p>The <em>Gemara</em> states the purpose of <em>malchiyos</em> in a single phrase: <em>kedei she&rsquo;tamlichuni aleichem</em> &mdash; <em>so that you crown Me over you</em>. Rosh HaShanah is the day on which <em>Klal Yisrael</em> places the crown upon the head of the <em>Ribbono Shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>), <em>kaviyachol</em> (<span class="heb-inline">כביכול</span>). And the crown is placed not by <em>malachim</em> and not by <em>tzaddikim gemurim</em> alone: it is placed by every simple Jew who steps into shul on the night of Rosh HaShanah.</p>
+
+<p>A story preserved from the childhood of <em>Rav Yosef Dov Soloveitchik</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">הגאון רבי יוסף דב סולובייצ&rsquo;יק זצ&quot;ל</span>), the <em>Rav</em> of Boston,<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> captures this idea with the freshness of a child hearing it for the first time. He recounted that on the day of <em>Erev</em> Rosh HaShanah in the chassidishe shtetl of <em>Chaslavich</em>, his first-grade <em>rebbi</em> &mdash; a <em>Lubavitcher chassid</em> &mdash; walked into the classroom with his face aglow. He said to the children: <em>Do you know what tonight is? Tonight is <span class="heb-inline">קרוינונג נאכט</span> &mdash; Kroining Nacht &mdash; Coronation Night. Tonight we inaugurate the coronation of <span class="heb-inline">הקדוש ברוך הוא</span>. We place a crown upon His head, <span class="heb-inline">כביכול</span>. And do you know who places the crown? Yankl the tailor, and Berl the shoemaker &mdash; every simple Yid ascends to the <span class="heb-inline">כסא הכבוד</span> and crowns the <span class="heb-inline">רבש&quot;ע</span>. We declare: <span class="heb-inline">ריבונו של עולם</span> &mdash; You are our king.</em></p>
+
+<p>This is the essence of <em>malchiyos</em>. The tailor&rsquo;s crown and the shoemaker&rsquo;s crown together become the crown of the King. Nothing in the section&rsquo;s substance requires ancestral <em>zechus</em> or scholarly attainment; it requires only the willingness of a Jew to stand in shul and, from the depths of his own <em>nefesh</em>, to say <em>Melech</em>.</p>
+
+<h3>Zichronos &mdash; The Dimension of Yom HaDin</h3>
+
+<p>The second section, <em>zichronos</em>, opens the dimension of the day as <em>Yom HaDin</em> (<span class="heb-inline">יום הדין</span>). The <em>Gemara</em> supplies its reason with an economy parallel to <em>malchiyos</em>: <em>kedei she&rsquo;ya&rsquo;aleh zichronchem lefanai le&rsquo;tovah</em> (<span class="heb-inline">כדי שיעלה זכרונכם לפני לטובה</span>) &mdash; <em>so that your remembrance rises before Me for good</em>. In the <em>brachah</em> of <em>zichronos</em>, <em>Klal Yisrael</em> reminds the <em>Ribbono Shel Olam</em> &mdash; <em>kaviyachol</em> &mdash; that He is the One before Whom nothing is forgotten, and that at the head of all things He remembers stands <em>Akeidas Yitzchak</em> (<span class="heb-inline">עקדת יצחק</span>).</p>
+
+<p>The theology at the core of <em>zichronos</em> is the theology of the covenant. <em>Klal Yisrael</em> asks to be judged not merely on its own account but against the standing of the fathers &mdash; the <em>zechus</em> of the <em>Akeidah</em> that stands eternally before the Throne. On this day, when the books are opened, the same <em>zichron</em> that recorded the ram caught in the thicket at <em>Har HaMoriah</em> (<span class="heb-inline">הר המוריה</span>) rises again on behalf of Yitzchak&rsquo;s children.</p>
+
+<h3>Shofaros &mdash; The Voice Across History</h3>
+
+<p>The third section, <em>shofaros</em>, is the <em>avodah</em> of the day proper: <em>Klal Yisrael</em> blows the <em>shofar</em>, and <em>Klal Yisrael</em> speaks about the <em>shofar</em>. The first great <em>shofar</em> blast in the history of the world sounded at <em>Matan Torah</em> (<span class="heb-inline">מתן תורה</span>). The final <em>shofar</em> will sound at the <em>geulah shleimah</em>: <em>Tekiah Gedolah l&rsquo;Cheiruseinu</em> (<span class="heb-inline">תקיעה גדולה לחירותנו</span>). Between the first <em>shofar</em> and the last <em>shofar</em> sits every <em>shofar</em> of Jewish history &mdash; the <em>shofaros</em> of <em>Yehoshua</em> at <em>Yericho</em>, the <em>shofaros</em> that will herald the ingathering of the exiles, and, not least, the <em>shofar</em> that will be sounded tomorrow morning in the <em>beis ha&rsquo;knesses</em> where the mispallel finds himself standing. All of this is folded into the <em>brachah</em> of <em>shofaros</em>. The section is not merely a description of the mitzvah being performed alongside it; it is a placement of the mispallel within the entire arc of Jewish time.</p>
+
+<h2>VI. The Duality &mdash; Pachad and Simchah</h2>
+
+<h3>The Dimension of Pachad</h3>
+
+<p>Rosh HaShanah is a day of <em>pachad</em> and <em>eimah</em> (<span class="heb-inline">אימה</span>). The <em>Gemara</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> teaches that three <em>sefarim</em> (<span class="heb-inline">ספרים</span>) are opened before the Throne on Rosh HaShanah: one for the <em>tzaddikim gemurim</em>, one for the <em>reshaim gemurim</em>, and one for the <em>beinonim</em> (<span class="heb-inline">בינונים</span>) &mdash; the great middle in which most of humanity finds itself. The <em>tzaddikim</em> are inscribed at once for life; the <em>reshaim</em> at once for death; the <em>beinonim</em> are <em>teluyim v&rsquo;omdim</em> (<span class="heb-inline">תלויים ועומדים</span>) &mdash; suspended, hanging between the two possibilities, from Rosh HaShanah until Yom Kippur.</p>
+
+<p>The mashal preserved from <em>Rav Chaim Shmuelevitz</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">רבי חיים שמואלביץ זצ&quot;ל</span>), the Mirrer Rosh Yeshiva,<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> renders the <em>tolui v&rsquo;omeid</em> in language of unmistakable weight: it is as though a noose is placed around the neck of the <em>beinoni</em>, and the ten days of <em>Teshuvah</em> are the interval in which his <em>teshuvah</em> and his <em>maasim</em> must come forward as witnesses to save him. This is what the <em>Aseres Yemei Teshuvah</em> actually are &mdash; not a pleasant devotional interlude between two <em>Yamim Tovim</em>, but the interval of a suspended sentence, granted precisely so that the ten days may alter the verdict.</p>
+
+<h3>The Dimension of Simchah</h3>
+
+<p>And yet the same tradition that establishes the <em>pachad</em> establishes the <em>simchah</em> alongside it. The <em>Gemara</em> asks<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> why <em>Hallel</em> is not recited on Rosh HaShanah despite its status as a major <em>Yom Tov</em>, and answers that when the King sits upon the throne of judgment with the books of life and death open before Him, <em>Klal Yisrael</em> does not sing songs of praise. The suppression of <em>Hallel</em> is itself a form of <em>pachad</em>. And yet the very same <em>sugya</em> records the counter-side: <em>lovshin levanin u&rsquo;misatfin levanin</em> (<span class="heb-inline">לובשין לבנין ומתעטפין לבנין</span>) &mdash; <em>Klal Yisrael</em> dresses in white, garbs itself as one preparing for a day of joy, and comes to the day with <em>simchah</em>.</p>
+
+<p>The scriptural anchor is the <em>pasuk</em> in <em>Nechemiah</em>,<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> spoken by <em>Ezra HaSofer</em> to the assembled returnees from <em>Bavel</em> on the very day of Rosh HaShanah:</p>
+
+<blockquote>
+<div class="heb">לְכוּ אִכְלוּ מַשְׁמַנִּים וּשְׁתוּ מַמְתַקִּים... כִּי חֶדְוַת ה' הִיא מָעֻזְּכֶם.</div>
+<div class="trans">Go, eat rich foods and drink sweet drinks... for the joy of Hashem is your strength.</div>
+<div class="source"><em>Nechemiah</em> 8:10</div>
+</blockquote>
+
+<p>The assembly had wept upon hearing the words of the <em>Torah</em>; <em>Ezra</em> instructed them not to weep, for this is a holy day, and the joy of Hashem is their strength. From this <em>pasuk</em> the tradition draws the white garments, the <em>seudah</em> of <em>Yom Tov</em>, and even the practice, preserved by the <em>Pri Chadash</em> (<span class="heb-inline">פרי חדש</span>),<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> of sending <em>mishloach manos</em> (<span class="heb-inline">משלוח מנות</span>) on Rosh HaShanah &mdash; a <em>minhag</em> that fell into general disuse but that testifies to how squarely the tradition placed <em>simchah</em> alongside the <em>din</em>.</p>
+
+<h3>Gilu Bir&rsquo;adah &mdash; The Synthesis</h3>
+
+<p>How can the two coexist? The <em>pasuk</em> in <em>Tehillim</em><a class="footnote-ref" id="ref15" href="#fn15">[15]</a> supplies the formula that has served as the theological anchor for this synthesis across the generations:</p>
+
+<blockquote>
+<div class="heb">עִבְדוּ אֶת ה' בְּיִרְאָה, וְגִילוּ בִּרְעָדָה.</div>
+<div class="trans">Serve Hashem with fear, and rejoice with trembling.</div>
+<div class="source"><em>Tehillim</em> 2:11</div>
+</blockquote>
+
+<p>The joy is not <em>despite</em> the trembling but <em>within</em> it. Not sequentially &mdash; not first <em>pachad</em>, then <em>simchah</em>, when the danger has passed &mdash; but simultaneously, held together in the same davening, the same white garment, the same seat in the same shul. The <em>Nefesh HaChaim</em> teaches this simultaneity as the fruit of <em>daas</em> (<span class="heb-inline">דעת</span>) &mdash; a mature awareness of Whom one stands before, in which the terror of the judgment does not extinguish the trust in the Judge but is animated by it. Only a Jew who knows that his Judge is also his Father can do this. The Judge is real; the Father is real; the trembling and the joy are two facets of the encounter with the One who is both.</p>
+
+<h2>VII. Personal Kavvanah and Communal Identity</h2>
+
+<h3>The Length of Shemoneh Esrei</h3>
+
+<p>A common mispallel&rsquo;s error is to race through the <em>Shemoneh Esrei</em> in order to keep pace with the tzibbur. The truth is the opposite: on Rosh HaShanah, one&rsquo;s personal <em>Amidah</em> ought if anything to be <em>longer</em>, not shorter, provided that the extra time is being spent in genuine address to the <em>Ribbono Shel Olam</em>. The <em>piyutim</em> of the <em>chazaras ha&rsquo;shatz</em> (<span class="heb-inline">חזרת הש&quot;ץ</span>) are the sidebar. The <em>ikkar</em> is the <em>Shemoneh Esrei</em> itself and the <em>pesukim</em> of <em>malchiyos, zichronos, shofaros</em> within it.</p>
+
+<h3>Within the Community</h3>
+
+<p>Yet personal <em>kavvanah</em> must be balanced against the truth that Rosh HaShanah is davened as a <em>tzibbur</em>. The <em>Zohar</em><a class="footnote-ref" id="ref16" href="#fn16">[16]</a> applies to the <em>Yamim Nora&rsquo;im</em> the <em>pasuk</em> of the <em>Shunamite</em> woman &mdash; <em>b&rsquo;soch ami anochi yoshaves</em> (<span class="heb-inline">בתוך עמי אנכי יושבת</span>): <em>I dwell in the midst of my people</em>. The individual who does not seek to be singled out but is embedded in the community is thereby granted the community&rsquo;s protection. When the <em>mekatreig</em> searches for individuals to indict, the mispallel who has folded himself into the tzibbur is not visible as a target. This is why the tefillos of the day are formulated in the plural &mdash; <em>chatanu lefanecha</em> (<span class="heb-inline">חטאנו לפניך</span>) &mdash; and why the day&rsquo;s tefillos in general do not admit of solitary formulations.</p>
+
+<p>The tension between personal <em>kavvanah</em> and communal identity is not a contradiction but a genuine synthesis. The mispallel does not choose between the two. He immerses his personal <em>Amidah</em> in the <em>tzibbur</em>&rsquo;s <em>Amidah</em>: the personal voice inside the communal voice, the individual within the collective. Hillel&rsquo;s teaching in <em>Avos</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a> &mdash; <em>im ein ani li, mi li? U&rsquo;kshe&rsquo;ani le&rsquo;atzmi, mah ani?</em> (<span class="heb-inline">אם אין אני לי, מי לי? וכשאני לעצמי, מה אני?</span>) &mdash; is not a paradox but the exact halachic-hashkafic posture required of every mispallel on Rosh HaShanah. Both halves apply, and both apply at the same moment.</p>
+
+<h2>VIII. The Weight of the Gezar Din</h2>
+
+<h3>The Michtav MeEliyahu on the Year&rsquo;s Decree</h3>
+
+<p>The gravity of Rosh HaShanah is captured in a letter of <em>Rav Eliyahu Eliezer Dessler</em>, <em>zt&rdquo;l</em>, preserved in <em>Michtav MeEliyahu</em> (<span class="heb-inline">מכתב מאליהו</span>).<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> Writing to his son, Rav Dessler observes that <em>all</em> the <em>tzaros</em>, <em>yesurim</em>, and <em>agmas nefesh</em> that a person experiences over the course of the year have been decreed on the previous Rosh HaShanah. Had the tefillah on that Rosh HaShanah been recited with greater <em>kavvanah</em>, had the <em>teshuvah</em> been deeper, the year&rsquo;s decree could have been fundamentally different. The point of the letter is not <em>fatalism</em> but its opposite: the day carries real causal weight on the coming year, and deserves the investment appropriate to that weight.</p>
+
+<p>This position is not to be read as displacing the Rambam&rsquo;s classical formulation in <em>Hilchos Teshuvah</em> that <em>teshuvah</em> during the <em>Aseres Yemei Teshuvah</em> genuinely reopens the <em>gezar din</em> (<span class="heb-inline">גזר דין</span>). The two teachings inhabit the same reality from different angles. Rav Dessler is describing what happens if a mispallel comes to Rosh HaShanah in his ordinary state; the Rambam is describing the transformative power still available in the ten-day interval that follows. Both are the tradition&rsquo;s teaching. Together they generate the same practical implication: this is the day to invest.</p>
+
+<h3>Reb Elimelech and Reb Zusha</h3>
+
+<p>A story preserved in the biographical literature of chassidus, told of <em>Rebbe Reb Elimelech of Lizhensk</em> (<span class="heb-inline">רבי אלימלך מליזענסק</span>), author of <em>Noam Elimelech</em>, and his brother <em>Rebbe Reb Zusha of Anipoli</em> (<span class="heb-inline">רבי זושא מאניפולי</span>),<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> conveys the immovability of a <em>gezar din</em> once it has been sealed. During the years the two brothers were traveling in self-imposed <em>galus</em> (<span class="heb-inline">גלות</span>), they lodged one night at a rough tavern. Drunken peasants took a dislike to Reb Zusha and resolved to give him a beating. Reb Elimelech &mdash; unwilling that his brother should suffer alone &mdash; quietly switched beds with Reb Zusha, that he himself might receive the blows. When the peasants returned, however, they went not to the bed they had been eyeing but to the other, and gave Reb Zusha the beating &mdash; three times in succession.</p>
+
+<p>Reb Zusha, when the peasants had gone, turned to his brother and said: <em>On Rosh HaShanah it was decreed that Zusha should receive three blows tonight. You can switch beds all you wish; if the <span class="heb-inline">רבש&quot;ע</span> has decreed something, it will come to pass.</em></p>
+
+<h3>The Practical Consequence</h3>
+
+<p>The <em>gezar din</em> is decreed. If a person wishes to prevent the difficulties of the coming year, the day on which the decree is set is the day on which to intervene. The intervention has one shape: focused <em>avodah</em> &mdash; proper <em>tefillah</em>, sincere <em>teshuvah</em>, and hearing the <em>shofar</em>. When the mispallel recites <em>malchiyos, zichronos, shofaros</em>, holding within a single davening both the awe of the <em>din</em> and the trust of the <em>ban</em> in his Father, he may merit to be <em>nichtav v&rsquo;nechtam b&rsquo;sefer tzaddikim l&rsquo;chaim tovim</em> (<span class="heb-inline">נכתב ונחתם בספר צדיקים לחיים טובים</span>).</p>
+
+<h2>IX. Practical Summary</h2>
+
+<ul>
+  <li><strong>Prepare the self, not the machzor.</strong> The <em>siddur</em> is in its place; the <em>machzor</em> is arranged. What remains is <em>sader es atzmecha</em>.</li>
+  <li><strong>The core of the davening is the <em>pesukim</em> of <em>malchiyos, zichronos, shofaros</em>.</strong> The <em>piyutim</em> &mdash; including <em>U&rsquo;Nesaneh Tokef</em> &mdash; are the outer layer. Do not race the inner core.</li>
+  <li><strong>Choose one <em>piyut</em>.</strong> Prepare its meaning in advance and say it with <em>kavvanah</em>. One <em>piyut</em> understood outweighs many raced through.</li>
+  <li><strong>Hold <em>pachad</em> and <em>simchah</em> together.</strong> The white garments and the <em>Nechemiah</em> <em>pasuk</em> on the one side; the <em>teluyim v&rsquo;omdim</em> on the other. <em>Gilu bir&rsquo;adah.</em></li>
+  <li><strong>Personal <em>kavvanah</em> and communal identity are not opposed.</strong> The <em>Shemoneh Esrei</em> may run longer; the <em>b&rsquo;soch ami</em> must remain. The mispallel is saved as an individual by being embedded in <em>Klal Yisrael</em>.</li>
+  <li><strong>The day carries the weight of the year.</strong> Invest in it accordingly.</li>
+</ul>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short">The Nadvorna vort &mdash; <span class="heb-inline">הסידור במקומו, המחזור מסודר, אתה צריך לסדר את עצמך</span>.</span>
+  <span class="expanded">&mdash; A chassidishe vort circulating in the courts of the <em>Nadvorna</em> dynasty (<span class="heb-inline">נדבורנא</span>), one of the classical Galician chassidishe branches descending from the <em>Zidichov</em> line. The vort appears in various forms across chassidishe biographical anthologies (<em>Sipurei Chassidim</em>, <em>Otzar HaSipurim</em>). The <em>chassid</em> asks leave to travel and prepare the tefillos as <em>shaliach tzibbur</em>; the Rebbe redirects him from the text to the self.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>U&rsquo;Nesaneh Tokef</em> &mdash; late <em>piyut</em>; authorship contested.</span>
+  <span class="expanded">&mdash; The traditional attribution names <em>Rabbeinu Amnon of Mainz</em> (<span class="heb-inline">רבי אמנון ממגנצא</span>), preserved in the famous account of the <em>Or Zarua</em> (thirteenth century). Modern scholarship has surfaced pre-Amnon versions in Cairo Genizah fragments, suggesting a Byzantine or earlier origin with the Amnon narrative attaching to the text at a later stage. What is certain and undisputed: the <em>Amoraim</em> did not recite <em>U&rsquo;Nesaneh Tokef</em>; the tefillah described by the <em>Gemara</em> is the <em>pesukim</em> of <em>malchiyos, zichronos, shofaros</em>.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Mishnah Rosh HaShanah</em> 4:5 &mdash; the nine-<em>brachah</em> Musaf.</span>
+  <span class="expanded">&mdash; The <em>Mishnah</em> establishes the unique <em>Musaf</em> structure of Rosh HaShanah: the standard opening three and closing three <em>brachos</em>, with a middle unit consisting of <em>kedushas ha&rsquo;yom</em> combined with <em>malchiyos</em>, followed by <em>zichronos</em>, followed by <em>shofaros</em> &mdash; nine <em>brachos</em> in total. This count is unique in the liturgical year.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Rosh HaShanah</em> 32a &mdash; <em>Malchiyos</em> combined with <em>Kedushas HaYom</em>: <span class="heb-inline">כדי שתמליכוני עליכם</span>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> discusses the merger of <em>malchiyos</em> with <em>kedushas ha&rsquo;yom</em> and the formulaic reasoning behind each of the three special sections. The formula <em>kedei she&rsquo;tamlichuni aleichem</em> is the <em>Gemara</em>&rsquo;s answer to why <em>malchiyos</em> is embedded specifically in the <em>kedushas ha&rsquo;yom</em> <em>brachah</em>: the <em>kedushas ha&rsquo;yom</em> of Rosh HaShanah <em>is</em> the coronation. Parallel formulas: for <em>zichronos</em>, <em>kedei she&rsquo;ya&rsquo;aleh zichronchem lefanai le&rsquo;tovah</em>; for <em>shofaros</em>, the <em>avodah</em> and the <em>zecher</em> of the <em>shofar</em> of <em>Matan Torah</em> and of the future redemption.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Rosh HaShanah</em> 34b &mdash; <em>Rabbi Akiva</em> vs. <em>Rabbi Yochanan ben Nuri</em> on the placement of <em>malchiyos</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yochanan ben Nuri</em> holds that <em>malchiyos</em> should be integrated into the <em>brachah</em> of <em>Atah Kadosh</em>, culminating in <em>HaMelech HaKadosh</em>. <em>Rabbi Akiva</em> holds that <em>malchiyos</em> goes into the middle unique <em>brachah</em>, becoming the substance of the <em>kedushas ha&rsquo;yom</em>. The halachah follows <em>Rabbi Akiva</em>. The deeper conceptual dispute concerns whether <em>malchiyos</em> is the very content of the day&rsquo;s <em>kedushah</em> (<em>Rabbi Akiva</em>) or a separable <em>kiyum</em> attached to it (<em>Rabbi Yochanan ben Nuri</em>). The Rambam&rsquo;s formulation of the closing <em>brachah</em> &mdash; <em>Melech al kol ha&rsquo;aretz mekadesh Yisrael v&rsquo;Yom HaZikaron</em> &mdash; is a rich locus for the Brisker analysis of this shitah.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Yerushalmi Rosh HaShanah</em>, ch. 4, hal. 6 &mdash; regional practice divided.</span>
+  <span class="expanded">&mdash; In the era of the <em>Mishnah</em>, the <em>Galil</em> followed <em>Rabbi Yochanan ben Nuri</em>; <em>Yehudah</em> followed <em>Rabbi Akiva</em>. The consolidation into a single unified practice took generations. A useful historical footnote: uniformity of <em>minhag Yisrael</em> is often the product of centuries of consolidation, not a state that existed from the outset.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Rosh HaShanah</em> 32a &mdash; the ten <em>pesukim</em>: 3 Torah + 3 Kesuvim + 3 Nevi&rsquo;im + 1 Torah.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> specifies the required composition. Each of <em>malchiyos</em>, <em>zichronos</em>, and <em>shofaros</em> requires ten <em>pesukim</em>: three from the <em>Torah</em>, three from <em>Kesuvim</em> (specifically <em>Tehillim</em>), three from <em>Nevi&rsquo;im</em>, and a concluding tenth <em>pasuk</em> from the <em>Torah</em>. The <em>Torah</em> serves as bookend; <em>Kesuvim</em> and <em>Nevi&rsquo;im</em> occupy the middle. This is the substantive core of each <em>brachah</em> in the era of the <em>Tannaim</em>, before the addition of any introductions or <em>piyutim</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Teka D&rsquo;Rav</em> &mdash; Rav&rsquo;s introductions: <em>Aleinu L&rsquo;Shabeach</em>, <em>Atah Zocher</em>, <em>Atah Nigleisa</em>.</span>
+  <span class="expanded">&mdash; <em>Rav</em> (<em>Abba Arikha</em>), the founder of the yeshiva of <em>Sura</em>, composed thematic <em>hakdamos</em> to each of the three special sections of <em>Musaf</em>. The term <em>Teka D&rsquo;Rav</em> &mdash; &ldquo;the establishment of Rav&rdquo; &mdash; is a designation that entered the halachic literature to describe this liturgical layer. The attribution of <em>Aleinu L&rsquo;Shabeach</em> specifically to <em>Rav</em> is standard among the <em>Rishonim</em> (<em>Machzor Vitry</em>, <em>Kol Bo</em>); its later migration into the daily closing of every davening is a secondary appropriation of a text originally composed to open <em>malchiyos</em> of Rosh HaShanah.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Rav Yosef Dov Soloveitchik</em>, <em>zt&rdquo;l</em> &mdash; the Chaslavich Kroining Nacht story.</span>
+  <span class="expanded">&mdash; The story of the first-grade Lubavitcher <em>rebbi</em> in <em>Chaslavich</em> calling Erev Rosh HaShanah <em>Kroining Nacht</em> (<span class="heb-inline">קרוינונג נאכט</span>) &mdash; and describing every simple Jew as ascending the <em>kisei ha&rsquo;kavod</em> to place the crown upon the head of the <em>Ribbono Shel Olam</em> &mdash; appears in several published collections of Rav Soloveitchik&rsquo;s Rosh HaShanah <em>derashos</em>, notably in <em>Days of Deliverance</em> and <em>Before Hashem You Shall Be Purified</em>. It is one of the Rav&rsquo;s signature stories on the personal-and-universal dimension of coronation.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Rosh HaShanah</em> 16b &mdash; three <em>sefarim</em>; <em>teluyim v&rsquo;omdim</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em>, quoting <em>Rabbi Kruspedai</em> in the name of <em>Rabbi Yochanan</em>: on Rosh HaShanah, three <em>sefarim</em> are opened &mdash; one for <em>reshaim gemurim</em>, one for <em>tzaddikim gemurim</em>, and one for <em>beinonim</em>. The <em>tzaddikim</em> are inscribed at once for life; the <em>reshaim</em> at once for death; the <em>beinonim</em> hang in suspension from Rosh HaShanah until Yom Kippur. The ten days of <em>teshuvah</em> are given specifically to those in the middle to shift their standing.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Rav Chaim Shmuelevitz</em>, <em>zt&rdquo;l</em> &mdash; the noose mashal on <em>teluyim v&rsquo;omdim</em>.</span>
+  <span class="expanded">&mdash; The <em>mashal</em> that the <em>beinoni</em> stands with a noose around his neck through the ten days &mdash; his <em>teshuvah</em> and <em>maasim</em> being the witnesses that must come forward to save him &mdash; is preserved in the <em>sichos</em> of Rav Chaim Shmuelevitz, Rosh Yeshiva of the Mirrer Yeshiva in Yerushalayim (published as <em>Sichos Musar</em>). The <em>mashal</em> gives concrete emotional weight to the abstract <em>halachic</em> category of <em>tolui v&rsquo;omeid</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Rosh HaShanah</em> 32b &mdash; no <em>Hallel</em> because the books are open.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> asks why <em>Hallel</em> is not recited on Rosh HaShanah despite its status as a major <em>Yom Tov</em>. The answer: <em>Efshar Melech yosheiv al kisei din, v&rsquo;sifrei chaim v&rsquo;sifrei meisim pesuchin lefanav, v&rsquo;Yisrael omrim shirah?</em> The absence of <em>Hallel</em> is itself a form of <em>pachad</em>. And yet the parallel practice of <em>lovshin levanin</em> and the <em>Nechemiah</em> <em>pasuk</em> of <em>chedvas Hashem hi ma&rsquo;uzchem</em> coexist within the same day.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Nechemiah</em> 8:10 &mdash; <span class="heb-inline">חדות ה' היא מעוזכם</span>.</span>
+  <span class="expanded">&mdash; The full <em>pasuk</em>: <span class="heb-inline">ויאמר להם: לכו אכלו משמנים ושתו ממתקים, ושלחו מנות לאין נכון לו, כי קדוש היום לאדונינו; ואל תעצבו, כי חדות ה' היא מעוזכם</span>. The context: <em>Ezra HaSofer</em> reads the <em>Torah</em> to the returned Babylonian exiles on the day of Rosh HaShanah; the assembly weeps upon hearing the words, and Ezra tells them not to weep, for the day is holy, and the joy of Hashem is their strength. This <em>pasuk</em> is the textual anchor for the <em>simchah</em> side of Rosh HaShanah &mdash; the white garments, the <em>seudah</em>, and the sending of <em>mishloach manos</em>.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Pri Chadash</em> &mdash; <em>minhag</em> of <em>mishloach manos</em> on Rosh HaShanah.</span>
+  <span class="expanded">&mdash; The <em>Pri Chadash</em> (<em>Rabbi Chizkiyah di Silva</em>, 1659&ndash;1698), commentary on <em>Shulchan Aruch Orach Chaim</em>, records the <em>minhag</em> of sending <em>mishloach manos</em> on Rosh HaShanah, drawing on the <em>Nechemiah</em> <em>pasuk</em> above (<em>v&rsquo;shilchu manos le&rsquo;ein nachon lo</em>). The practice has fallen into general disuse &mdash; most contemporary <em>kehillos</em> associate <em>mishloach manos</em> exclusively with <em>Purim</em> &mdash; but the <em>Pri Chadash</em> preserves it as a legitimate ancient practice for Rosh HaShanah, rooted in the <em>Nechemiah</em> context. The specific <em>siman</em> is generally identified with the <em>hilchos Rosh HaShanah</em> section of <em>Orach Chaim</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Tehillim</em> 2:11 &mdash; <span class="heb-inline">עבדו את ה' ביראה וגילו ברעדה</span>.</span>
+  <span class="expanded">&mdash; The full <em>pasuk</em>: <span class="heb-inline">עבדו את ה' ביראה, וגילו ברעדה</span> &mdash; &ldquo;Serve Hashem with fear, and rejoice with trembling.&rdquo; The <em>Gemara</em> in <em>Berachos</em> 30b applies this <em>pasuk</em> to establish that intense <em>simchah</em> and intense <em>yirah</em> must coexist in <em>avodas Hashem</em>. The classical elaboration of the <em>simultaneity</em> of the two &mdash; not sequentially but as a single unified posture &mdash; appears in the <em>Nefesh HaChaim</em> (<em>Shaar</em> III) as the fruit of <em>daas</em>.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Zohar</em> &mdash; <span class="heb-inline">בתוך עמי אנכי יושבת</span> applied to Rosh HaShanah.</span>
+  <span class="expanded">&mdash; The <em>Zohar</em> (<em>Chelek</em> III, <em>Parshas Emor</em>, in the passages on the <em>Yamim Nora&rsquo;im</em>) applies the <em>pasuk</em> from <em>Melachim Bais</em> 4:13 &mdash; <em>b&rsquo;soch ami anochi yoshaves</em>, the <em>Shunamite</em> woman&rsquo;s answer to <em>Elisha</em> &mdash; to the theology of communal davening on the <em>Yamim Nora&rsquo;im</em>. The individual embedded in the tzibbur is not visible to the <em>mekatreig</em> as a solitary target; the plural formulations of the day&rsquo;s tefillos derive from this principle.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Avos</em> 1:14 &mdash; Hillel: <span class="heb-inline">אם אין אני לי מי לי</span>.</span>
+  <span class="expanded">&mdash; The famous three-clause teaching of <em>Hillel HaZaken</em>: <em>If I am not for myself, who will be for me? And when I am for myself alone, what am I? And if not now, when?</em> The first clause anchors personal responsibility; the second anchors communal identity; and Rosh HaShanah requires both simultaneously.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Michtav MeEliyahu</em> &mdash; prior Rosh HaShanah&rsquo;s tefillah decrees the year&rsquo;s tribulations.</span>
+  <span class="expanded">&mdash; <em>Michtav MeEliyahu</em>, by <em>Rav Eliyahu Eliezer Dessler</em>, <em>zt&rdquo;l</em> (1892&ndash;1953), Bnei Brak. In a letter to his son (published in the later volumes of the collection), Rav Dessler writes that <em>all</em> the <em>tzaros</em>, <em>yesurim</em>, and <em>agmas nefesh</em> of the past year were decreed on the previous Rosh HaShanah. The point is not fatalism but the reverse: the day carries real causal weight on the coming year. Read alongside the Rambam in <em>Hilchos Teshuvah</em> 2:6&ndash;7 on the reopening of the <em>gezar din</em> through <em>teshuvah</em> during the <em>Aseres Yemei Teshuvah</em>, the two positions describe the same reality from complementary angles.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Rebbe Reb Elimelech of Lizhensk</em> and <em>Rebbe Reb Zusha of Anipoli</em> &mdash; the tavern beating.</span>
+  <span class="expanded">&mdash; The two brothers, both talmidim of the <em>Maggid of Mezritch</em>: <em>Rebbe Reb Elimelech of Lizhensk</em> (1717&ndash;1787), author of <em>Noam Elimelech</em>, and <em>Rebbe Reb Zusha of Anipoli</em> (c. 1718&ndash;1800). They spent years traveling in self-imposed <em>galus</em>, wandering from town to town in disguise, doing <em>teshuvah</em> for <em>Klal Yisrael</em>. The story of the switched beds at the tavern &mdash; and Reb Zusha&rsquo;s punchline that a <em>gezar din</em> once decreed cannot be evaded by switching beds &mdash; appears in multiple forms across chassidishe biographical anthologies (<em>Sipurei Chassidim</em>, <em>Ma&rsquo;asei HaGedolim</em>). The story&rsquo;s force in this context: the decree is real and it is set; the intervention available is not the switching of beds but the investment of the day itself.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 30 August 2026 &mdash; first of three shiurim on the <em>machzor</em> in the weeks approaching Rosh HaShanah 5787. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice; incorporates the historical layering of <em>Tannaim</em>, <em>Teka D&rsquo;Rav</em>, and <em>Geonim/Rishonim</em> piyutim as a single continuous scaffold; sharpens the lomdish frame of the <em>Rabbi Akiva</em> / <em>Rabbi Yochanan ben Nuri</em> machlokes; supplies a practical resolution for <em>U&rsquo;Nesaneh Tokef</em>; and closes the tension between the <em>Michtav MeEliyahu</em>&rsquo;s <em>gezar din</em> and the Rambam&rsquo;s <em>teshuvah</em> of the ten days.
+</footer>
+
+</body>
+</html>

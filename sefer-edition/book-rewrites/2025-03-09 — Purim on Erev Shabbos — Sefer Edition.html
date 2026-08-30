@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Purim Falling on Erev Shabbos Kodesh</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  .sidebar{
+    border:1px dashed var(--gold-soft);
+    background:rgba(184,134,11,0.04);
+    padding:12px 18px;
+    margin:20px 0;
+    border-radius:4px;
+    font-size:15.5px;
+  }
+  .sidebar .sidebar-title{
+    color:var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.3px;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">פּוּרִים שֶׁחָל בְּעֶרֶב שַׁבָּת קֹדֶשׁ</h1>
+  <div class="english-title">Purim Falling on Erev Shabbos Kodesh</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Practical <em>Halacha l&rsquo;Ma&rsquo;aseh</em></div>
+  <div class="date">Recorded 9 March 2025 &nbsp;&middot;&nbsp; Sefer Edition &middot; Revised 30 August 2026</div>
+</header>
+
+<p class="lead">In a year in which <em>Purim</em> (<span class="heb-inline">פּוּרִים</span>) falls upon <em>erev Shabbos kodesh</em> (<span class="heb-inline">עֶרֶב שַׁבָּת קֹדֶשׁ</span>) &mdash; a calendar collision that visits the unwalled cities perhaps once in a generation &mdash; two valid <em>derachim</em> (<span class="heb-inline">דְּרָכִים</span>) stand before us. The simpler is the ruling of the <em>Rema</em> (<span class="heb-inline">רְמָ&quot;א</span>): wash and eat the <em>seudas Purim</em> (<span class="heb-inline">סְעוּדַת פּוּרִים</span>) before <em>chatzos</em> (<span class="heb-inline">חֲצוֹת</span>). The older and more dramatic is the <em>minhag</em> (<span class="heb-inline">מִנְהָג</span>) of the <em>Meiri</em> (<span class="heb-inline">מְאִירִי</span>) and the <em>Maharil</em> (<span class="heb-inline">מַהֲרִי&quot;ל</span>) &mdash; <em>&ldquo;pores mapah u&rsquo;mekadesh&rdquo;</em> (<span class="heb-inline">פּוֹרֵס מַפָּה וּמְקַדֵּשׁ</span>) &mdash; beginning the <em>seudah</em> upon <em>Purim</em> and continuing it, seamlessly, into <em>Shabbos</em>. The present <em>siman</em> lays out the sources of each <em>derech</em>, the mechanics of the second, the <em>bentshen</em> question at the meal&rsquo;s close, and the two great <em>ma&rsquo;asim</em> &mdash; the <em>Imrei Emes</em> in Gur and Rav Yitzchak Isaac Sher in Yerushalayim &mdash; that transform the second <em>derech</em> from a curiosity into a <em>l&rsquo;chatchilah</em> (<span class="heb-inline">לְכַתְּחִלָּה</span>) option.</p>
+
+<h2>I. The Rarity of the Year</h2>
+
+<p>The <em>luach</em> (<span class="heb-inline">לוּחַ</span>) sets <em>Purim</em> of the unwalled cities upon <em>erev Shabbos</em> only at long intervals; the case that occupies this <em>siman</em> will not present itself again to our generation for approximately twenty years. The rarity is itself pedagogically decisive: because most who read these <em>halachos</em> will not have practiced them in the recent past, the material must be laid out with the fullness a <em>halacha l&rsquo;ma&rsquo;aseh</em> reader requires.</p>
+
+<p>The parallel case of <em>Yerushalayim</em> &mdash; where in such a year <em>Shushan Purim</em> (<span class="heb-inline">שׁוּשַׁן פּוּרִים</span>) falls on <em>Shabbos</em> itself, generating the intricate <em>halachos</em> of <em>Purim Meshulash</em> (<span class="heb-inline">פּוּרִים הַמְשֻׁלָּשׁ</span>) &mdash; is a distinct <em>sugya</em> (<span class="heb-inline">סוּגְיָא</span>) and has its own literature. The present <em>siman</em> addresses the unwalled cities alone.</p>
+
+<h2>II. The Underlying <span class="heb-inline">אִסּוּר</span> &mdash; Kevi&rsquo;as Seudah on Erev Shabbos</h2>
+
+<p>The <em>Shulchan Aruch</em> (<span class="heb-inline">שֻׁלְחָן עָרוּךְ</span>) in <em>Orach Chaim</em> <em>siman</em> 249<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> rules that one may not establish a <em>seudah</em> (<span class="heb-inline">סְעוּדָה</span>) on <em>erev Shabbos</em>. The <em>Gemara</em> (<span class="heb-inline">גְּמָרָא</span>) in <em>Gittin</em> 38a<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> is the conceptual root: two prominent families of <em>Yerushalayim</em> in the days of the <em>Beis HaMikdash</em> (<span class="heb-inline">בֵּית הַמִּקְדָּשׁ</span>) were <em>nichresu</em> (<span class="heb-inline">נִכְרְתוּ</span>) &mdash; wiped out from the world &mdash; and the <em>sugya</em> explains why. The first family, of great wealth, would gather each <em>erev Shabbos</em> at midday for a substantial family <em>seudah</em>; this consumed the <em>tei&rsquo;avon</em> (<span class="heb-inline">תֵּאָבוֹן</span>) that the <em>seudas Shabbos</em> (<span class="heb-inline">סְעוּדַת שַׁבָּת</span>) required. The second stretched the <em>Shabbos</em>-day <em>seudah</em> until three or four in the afternoon, missing the <em>shiur</em> (<span class="heb-inline">שִׁעוּר</span>) of Torah that filled the day&rsquo;s remaining hours. Both were held accountable, and both were <em>nichresu</em>.</p>
+
+<p>Two independent <em>ta&rsquo;amim</em> (<span class="heb-inline">טְעָמִים</span>) emerge from the <em>Shulchan Aruch</em>&rsquo;s codification. The first is <em>kevod Shabbos</em> (<span class="heb-inline">כְּבוֹד שַׁבָּת</span>) &mdash; the <em>seudos</em> of <em>Shabbos</em> are to be eaten with an unspent appetite, and any earlier <em>seudah</em> that would blunt that appetite is prohibited. The second, drawn by the <em>Magen Avraham</em> (<span class="heb-inline">מָגֵן אַבְרָהָם</span>) from <em>Rabbeinu Tam</em> (<span class="heb-inline">רַבֵּינוּ תָּם</span>), is that a heavy meal in the late afternoon of <em>erev Shabbos</em> displaces the <em>hachanos</em> (<span class="heb-inline">הֲכָנוֹת</span>) that <em>Shabbos</em> requires: bathing, cutting nails, seeing to the household. The <em>Mishnah Berurah</em> (<span class="heb-inline">מִשְׁנָה בְּרוּרָה</span>) accordingly directs that when a substantial <em>seudah</em> must be eaten on <em>erev Shabbos</em>, it is to be scheduled early in the morning; some <em>Rishonim</em> (<span class="heb-inline">רִאשׁוֹנִים</span>) limit even that.</p>
+
+<p>The distinction between the two <em>ta&rsquo;amim</em> is not merely academic. When the <em>Purim</em>-day <em>seudah</em> continues, without a break, into the <em>Shabbos seudah</em> itself &mdash; the operation described below as <em>&ldquo;pores mapah u&rsquo;mekadesh&rdquo;</em> &mdash; the first concern (<em>kevod Shabbos</em>, the unspent appetite for a separate <em>seudas Shabbos</em>) largely evaporates, because there is no separate later meal being displaced. The second concern (the <em>hachanos</em>) remains live, and the practical warnings in Section VIII &mdash; that the telephone be silenced, the <em>muktzeh</em> (<span class="heb-inline">מֻקְצֶה</span>) set aside, and the household made ready &mdash; are doing structural work of the first order.</p>
+
+<h2>III. When the <span class="heb-inline">סְעוּדַת פּוּרִים</span> Is Eaten in a Normal Year</h2>
+
+<p>The <em>mitzvah</em> (<span class="heb-inline">מִצְוָה</span>), properly formulated, is to eat the <em>seudas Purim</em> in the day of <em>Purim</em> itself &mdash; not the preceding night and not, in the strict view, after the day&rsquo;s <em>shki&rsquo;ah</em> (<span class="heb-inline">שְׁקִיעָה</span>) alone. The most rigorous of the <em>poskim</em> (<span class="heb-inline">פּוֹסְקִים</span>) hold that the <em>seudah</em> is best eaten in the morning, before <em>chatzos</em>, with <em>netilas yadayim</em> (<span class="heb-inline">נְטִילַת יָדַיִם</span>) taken a second time toward evening for the closing of the day. In practice, the universal <em>minhag</em> is to begin the <em>seudah</em> in the late afternoon, an hour or two before <em>shki&rsquo;ah</em>, and to extend it into the night. This <em>minhag</em> is well founded: the daylight hours are consumed by <em>mishloach manos</em> (<span class="heb-inline">מִשְׁלוֹחַ מָנוֹת</span>), <em>matanos la&rsquo;evyonim</em> (<span class="heb-inline">מַתָּנוֹת לָאֶבְיוֹנִים</span>), and <em>kri&rsquo;as ha&rsquo;Megillah</em> (<span class="heb-inline">קְרִיאַת הַמְּגִלָּה</span>), and a substantial early <em>seudah</em> is difficult to arrange.</p>
+
+<p>Already among the <em>Rishonim</em> the <em>kedushah</em> (<span class="heb-inline">קְדֻשָּׁה</span>) of <em>Purim</em> is understood to extend before and after the day proper. <em>Rabbeinu Simchah of Vitry</em> (<span class="heb-inline">רַבֵּינוּ שִׂמְחָה מִוִּיטְרִי</span>), a <em>talmid</em> (<span class="heb-inline">תַּלְמִיד</span>) and nephew of <em>Rashi</em> (<span class="heb-inline">רַשִׁ&quot;י</span>), refers in his <em>Machzor Vitry</em> (<span class="heb-inline">מַחְזוֹר וִיטְרִי</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> to the night preceding <em>Purim</em> as <em>&ldquo;leil shikorim&rdquo;</em> (<span class="heb-inline">לֵיל שִׁכּוֹרִים</span>) &mdash; the night of the drinkers &mdash; recording that the <em>yeshivos</em> (<span class="heb-inline">יְשִׁיבוֹת</span>) of <em>Ashkenaz</em> (<span class="heb-inline">אַשְׁכְּנַז</span>) kept the <em>Purim</em> drinking already on the night before. The day&rsquo;s <em>seudah</em> is the essential fulfillment; the <em>kedushah</em> of the day surrounds it.</p>
+
+<h2>IV. The Collision</h2>
+
+<p>These two <em>halachos</em> collide head-on in the year we describe. One may not establish a <em>seudah</em> on <em>erev Shabbos</em>; and the accepted time for the <em>seudas Purim</em> is precisely the hours of the late afternoon that the <em>issur</em> (<span class="heb-inline">אִסּוּר</span>) forbids. What is a <em>ben Torah</em> (<span class="heb-inline">בֶּן תּוֹרָה</span>) to do?</p>
+
+<h2>V. <em>Derech</em> Alef &mdash; The Ruling of the <span class="heb-inline">רְמָ&quot;א</span></h2>
+
+<p>The <em>Rema</em> in <em>siman</em> 695<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> rules <em>l&rsquo;halacha</em> (<span class="heb-inline">לְהֲלָכָה</span>): in such a year, the <em>seudas Purim</em> is to be washed and eaten before <em>chatzos</em>. The <em>Shelah HaKadosh</em> (<span class="heb-inline">שְׁלָ&quot;ה הַקָּדוֹשׁ</span>), as brought by the <em>Mishnah Berurah</em>,<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> holds that even in an ordinary year the <em>seudah</em> before <em>chatzos</em> is preferable. Most do not follow this stringency in ordinary years; but in the year in question there is no dispute at all &mdash; once the <em>chatzos</em> hour is passed, the <em>issur</em> of <em>siman</em> 249 is fully in force, and the <em>seudah</em> must be earlier.</p>
+
+<p>The <em>seudah</em>, <em>l&rsquo;chatchilah</em>, is <em>basar v&rsquo;yayin</em> (<span class="heb-inline">בָּשָׂר וְיַיִן</span>) &mdash; meat and wine. Where an early meat <em>seudah</em> is not feasible for the household, some <em>poskim</em> permit discharging the obligation with a <em>chalavi</em> (<span class="heb-inline">חֲלָבִי</span>) meal, though the stricter view retains the requirement of meat and wine. In practical outline, one who chooses this <em>derech</em> proceeds as follows: <em>kri&rsquo;as ha&rsquo;Megillah</em> and the mitzvos of <em>mishloach manos</em> and <em>matanos la&rsquo;evyonim</em> are attended to as early as possible; the <em>seudah</em> is washed and begun before <em>chatzos</em>; <em>bentshen</em> (<span class="heb-inline">בֶּנְטְשֶׁן</span>) is recited normally, with <em>al ha&rsquo;nissim</em> (<span class="heb-inline">עַל הַנִּסִּים</span>) in its place and without <em>retzeh</em> (<span class="heb-inline">רְצֵה</span>); the balance of the afternoon is devoted to the <em>hachanos</em> for <em>Shabbos</em>; and the household prepares and eats a full, separate <em>seudas Shabbos</em> on Friday night. This is the simpler <em>derech</em>, valid without <em>machlokes</em> (<span class="heb-inline">מַחֲלֹקֶת</span>), and for many families is the appropriate default.</p>
+
+<h2>VI. <em>Derech</em> Beis &mdash; The <span class="heb-inline">מַהֲרִי&quot;ל</span> and the Old <span class="heb-inline">מִנְהָג</span></h2>
+
+<h3>The Standing of the Maharil in the Halacha of Ashkenaz</h3>
+
+<p>The <em>Maharil</em> &mdash; <em>Rabbeinu Yaakov Moellin</em> (<span class="heb-inline">רַבֵּינוּ יַעֲקֹב מוֹלִין</span>) &mdash; is among the foundational <em>Rishonim</em> of <em>Yahadus Ashkenaz</em> (<span class="heb-inline">יַהֲדוּת אַשְׁכְּנַז</span>). Born in Mainz (<em>Magenza</em> &mdash; <span class="heb-inline">מַגֶּנְצָא</span>) circa 1365, he directed a vast <em>yeshivah</em> there for many years and produced a generation of <em>talmidim</em> whose <em>piskei halacha</em> (<span class="heb-inline">פִּסְקֵי הֲלָכָה</span>) shape the Ashkenazic siddur and <em>nusach</em> (<span class="heb-inline">נֻסָּח</span>) to this day. He was, as his <em>talmidim</em> attest, himself a <em>ba&rsquo;al menagen</em> (<span class="heb-inline">בַּעַל מְנַגֵּן</span>), and much of the <em>nusach</em> of <em>Shabbos</em> and <em>Yom Tov</em> as we sing it in the great communities of the West traces to him. He was <em>niftar</em> (<span class="heb-inline">נִפְטַר</span>) in 1427 and is buried in the ancient Jewish cemetery of Worms (<em>Vermayza</em> &mdash; <span class="heb-inline">וֶרְמַיְזָא</span>), where two and a half centuries later the <em>Chavas Ya&rsquo;ir</em> (<span class="heb-inline">חַוּוֹת יָאִיר</span>) would also be laid to rest. His era &mdash; the late fourteenth into the early fifteenth century in Ashkenaz &mdash; was one of unrelenting <em>pera&rsquo;os</em> (<span class="heb-inline">פְּרָעוֹת</span>) and expulsions, of which the <em>gezerah</em> (<span class="heb-inline">גְּזֵרָה</span>) of Vienna in 1421 was among the sharpest; <em>Hashem yerachem</em> (<span class="heb-inline">ה&rsquo; יְרַחֵם</span>).</p>
+
+<p>The <em>Rema</em>, as is commonly observed, cites the <em>Maharil</em> more freely than any other single <em>Rishon</em>, for the <em>Rema</em> is the <em>posek</em> of Ashkenazic <em>halacha</em> and the <em>Maharil</em> is his chief <em>rebbi muvhak</em> (<span class="heb-inline">רְבִּי מֻבְהָק</span>) in that <em>mesorah</em> (<span class="heb-inline">מְסוֹרָה</span>). This makes the case at hand all the more striking.</p>
+
+<h3>The Teshuvah the Rema Did Not Adopt</h3>
+
+<p>The <em>Maharil</em> was asked by a <em>talmid</em>:<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> what shall we do when <em>Purim</em> falls on <em>erev Shabbos</em>? Are we bound to eat before <em>chatzos</em>? His answer, in outline, is no. One may wash for the <em>seudah</em> after <em>chatzos</em> &mdash; even at the ninth or tenth hour of the day &mdash; because the <em>mitzvah</em> of the <em>seudas Purim</em> is bound to <em>Purim</em>, and one may continue the <em>seudah</em> straight into <em>Shabbos</em>. His analogy is to a <em>seudas bris milah</em> (<span class="heb-inline">סְעוּדַת בְּרִית מִילָה</span>) upon the eighth day, or a <em>seudas pidyon ha&rsquo;ben</em> (<span class="heb-inline">סְעוּדַת פִּדְיוֹן הַבֵּן</span>) upon the thirtieth day, that fall upon <em>erev Shabbos</em>: the <em>poskim</em> permit beginning such a <em>seudah</em> after <em>chatzos</em>, since the <em>mitzvah</em> is tied to the day. So too, he reasons, for the <em>seudas Purim</em>.</p>
+
+<p>The analogy is the load-bearing move of the entire <em>teshuvah</em> (<span class="heb-inline">תְּשׁוּבָה</span>), and it can be pressed in either direction. The <em>seudos</em> of <em>bris</em> and <em>pidyon</em> are widely treated as <em>seudos reshus</em> (<span class="heb-inline">סְעוּדוֹת רְשׁוּת</span>) that acquire their <em>chashivus</em> (<span class="heb-inline">חֲשִׁיבוּת</span>) only by their association with the <em>mitzvah</em>; the <em>seudas Purim</em> is a full <em>chiyuv</em> (<span class="heb-inline">חִיּוּב</span>) in its own right, an integral limb of the day&rsquo;s <em>mitzvos</em>. Read one way, the <em>kal va&rsquo;chomer</em> (<span class="heb-inline">קַל וָחֹמֶר</span>) is strong: all the more so a full <em>chiyuv</em> permits the extension. Read the other way, there is room to distinguish: perhaps precisely because <em>seudas Purim</em> is a <em>chiyuv</em> demanding its own integrity, it is less naturally fused into a <em>Shabbos seudah</em> that follows.</p>
+
+<p>The <em>Rema</em>, faithful to the <em>Maharil</em> in nearly every other <em>halacha</em>, did not rule with him here. Why the <em>Rema</em> declined to adopt the <em>teshuvah</em> is not stated by him explicitly; three plausible readings suggest themselves. Perhaps he felt the analogy to <em>bris</em> and <em>pidyon</em> did not carry; perhaps he was reluctant to require of the average household the intricate mechanics of <em>&ldquo;pores mapah u&rsquo;mekadesh&rdquo;</em>; perhaps he was uneasy with the kabbalistic reordering discussed below in Section X. In any event, the <em>Rema</em>&rsquo;s silence does not overturn the <em>Maharil</em>&rsquo;s ruling; it leaves it standing as an alternative <em>derech</em> for those who wish to follow it. The position was preserved through the generations: the <em>Yad Ephraim</em> (<span class="heb-inline">יַד אֶפְרַיִם</span>) of <em>Rabbi Ephraim Zalman Margaliyos</em> (<span class="heb-inline">רַבִּי אֶפְרַיִם זַלְמָן מַרְגָּלִיּוֹת</span>) records the <em>Maharil</em>&rsquo;s ruling in his glosses on the <em>Tanya Rabbasi</em> (<span class="heb-inline">תַּנְיָא רַבָּתִי</span>) &mdash; the early Ashkenazic halachic compendium of R&rsquo; Yechiel b. Yekusiel of Rome, not to be confused with the later Chabad work of the same name &mdash; and the <em>Mishnah Berurah</em> in <em>siman</em> 695 brings the ruling from there.</p>
+
+<h2>VII. The Mechanics of <span class="heb-inline">פּוֹרֵס מַפָּה וּמְקַדֵּשׁ</span></h2>
+
+<h3>The Source in the Meiri and the Sugya in Pesachim</h3>
+
+<p>The <em>Maharil</em>&rsquo;s <em>teshuvah</em> establishes the permission; the mechanics of the operation are worked out most fully by the <em>Meiri</em> &mdash; <em>Rabbeinu Menachem HaMeiri</em> (<span class="heb-inline">רַבֵּינוּ מְנַחֵם הַמְּאִירִי</span>) &mdash; among the greatest of the <em>chachmei Provence</em> (<span class="heb-inline">חַכְמֵי פְּרוֹבַנְס</span>), writing in Perpignan roughly a century before the <em>Maharil</em>. In his <em>Beis HaBechirah</em> (<span class="heb-inline">בֵּית הַבְּחִירָה</span>) on <em>Kesuvos</em> 7a<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> he writes that <em>&ldquo;ani v&rsquo;rabbim acherim&rdquo;</em> (<span class="heb-inline">אֲנִי וְרַבִּים אֲחֵרִים</span>) &mdash; I and many others &mdash; followed an established <em>masorah</em> (<span class="heb-inline">מָסֹרֶת</span>) of running the <em>seudas Purim</em> straight up against <em>shki&rsquo;ah</em>, and, when <em>Shabbos</em> arrived in its midst, performing <em>&ldquo;pores mapah u&rsquo;mekadesh&rdquo;</em>. His formulation places the <em>minhag</em> already <em>kadum</em> (<span class="heb-inline">קָדוּם</span>) in his own day; the <em>Maharil</em>&rsquo;s <em>teshuvah</em>, then, does not innovate the <em>derech</em> but authorizes and codifies a <em>mesorah</em> that had already stood for more than a century in the communities of Provence.</p>
+
+<p>The structural <em>din</em> (<span class="heb-inline">דִּין</span>) rests on the <em>sugya</em> in <em>Pesachim</em> 105<a class="footnote-ref" id="ref8" href="#fn8">[8]</a>: <em>Rebbi Yosi</em> (<span class="heb-inline">רַבִּי יוֹסֵי</span>) and <em>Rebbi Yehudah</em> (<span class="heb-inline">רַבִּי יְהוּדָה</span>) dispute the case of one who began a <em>seudah</em> on <em>erev Shabbos</em> and wishes to continue it into <em>Shabbos</em>. <em>Rebbi Yehudah</em> requires the removal and replacement of the table, to mark visibly the new <em>seudas Shabbos</em>. The <em>Shulchan Aruch</em> in <em>siman</em> 271<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> follows <em>Rebbi Yosi</em>: no interruption of the <em>seudah</em> is required; instead, a cloth is spread over the bread &mdash; <em>pores mapah</em> &mdash; and <em>kiddush</em> (<span class="heb-inline">קִדּוּשׁ</span>) is recited, the covered bread serving as the visible marker of the <em>shinnuy</em> (<span class="heb-inline">שִׁנּוּי</span>) in the status of the meal. The bread is then uncovered and the <em>seudah</em> continues, now as a <em>seudas Shabbos</em>.</p>
+
+<h3>The Chakirah Beneath the Mechanics</h3>
+
+<p>A single <em>chakirah</em> (<span class="heb-inline">חֲקִירָה</span>) underlies nearly every practical question that follows. Is the second portion of the meal a continuation of the <em>seudas Purim</em>, now bearing a <em>kiddush</em>-marker to acknowledge that <em>Shabbos</em> has entered? Or is it a <em>seudas Shabbos</em> in its own right, beginning within the frame of a meal already in progress? The <em>Rebbi Yosi</em>-<em>Rebbi Yehudah</em> <em>machlokes</em> can be understood in either direction, and the <em>Meiri</em>&rsquo;s language leaves room for both. Almost every practical <em>machlokes</em> below &mdash; the requirement of <em>lechem mishneh</em> (<span class="heb-inline">לֶחֶם מִשְׁנֶה</span>), the <em>berachos</em> (<span class="heb-inline">בְּרָכוֹת</span>) of a latecomer, and the <em>bentshen</em> question of <em>retzeh</em> and <em>al ha&rsquo;nissim</em> &mdash; is a facet of this deeper <em>chakirah</em>.</p>
+
+<h2>VIII. The Mechanics of the Meal &mdash; <span class="heb-inline">הֲלָכָה לְמַעֲשֶׂה</span></h2>
+
+<p>The following steps trace the practical shape of a <em>seudah</em> conducted <em>al pi</em> the <em>Meiri</em> and the <em>Maharil</em>. The clock references are given in generic terms; concrete times must be drawn from the local <em>luach</em> for the year and place in question (a sidebar at the close of the section illustrates with the Lawrence, New York times of <em>5785</em>).</p>
+
+<div class="sidebar">
+<div class="sidebar-title">Before the Meal &mdash; The Mitzvos of the Day</div>
+<em>Kri&rsquo;as ha&rsquo;Megillah</em>, <em>mishloach manos</em>, and <em>matanos la&rsquo;evyonim</em> are all bound to the day of <em>Purim</em>. On the year in question they must be discharged before <em>shki&rsquo;ah</em>. Once <em>Shabbos</em> enters, the <em>mitzvos</em> of <em>Purim</em> cease; nothing is postponed to Motza&rsquo;ei Shabbos, and no partial credit is available to one who did not complete them on the day.
+</div>
+
+<h3>1. Mincha &mdash; Early</h3>
+
+<p><em>Mincha</em> (<span class="heb-inline">מִנְחָה</span>) is davened early, at or shortly after <em>mincha gedolah</em> (<span class="heb-inline">מִנְחָה גְּדוֹלָה</span>), before the <em>seudah</em> begins or at its very first stages, so that it is discharged before wine takes effect. Every congregation runs an early <em>mincha</em> on such an <em>erev Shabbos</em>; one goes.</p>
+
+<h3>2. Beginning the Seudah</h3>
+
+<p>The <em>seudah</em> is begun in the late afternoon, aimed to run for a full two hours or so before <em>shki&rsquo;ah</em>. <em>L&rsquo;chatchilah</em> the <em>seudah</em> of <em>Purim</em> is a <em>seudas mere&rsquo;im</em> (<span class="heb-inline">סְעוּדַת מְרֵעִים</span>) &mdash; a gathering of friends &mdash; and the household should be joined by others where feasible. <em>Netilas yadayim</em>, <em>hamotzi</em> (<span class="heb-inline">הַמּוֹצִיא</span>), a <em>seudah</em> of meat and wine, <em>divrei Torah</em> (<span class="heb-inline">דִּבְרֵי תוֹרָה</span>), and the customary <em>mishteh</em> (<span class="heb-inline">מִשְׁתֶּה</span>) of the day.</p>
+
+<h3>3. Shki&rsquo;ah &mdash; The Women Light and the Household Prepares</h3>
+
+<p>As <em>shki&rsquo;ah</em> approaches, the women of the household step aside briefly to complete any remaining <em>hachanos</em> and to light the <em>neros Shabbos</em> (<span class="heb-inline">נֵרוֹת שַׁבָּת</span>). Once a woman has lit, she has accepted <em>Shabbos</em> upon herself and may not eat further until <em>kiddush</em> has been made. She may light in the room of the <em>seudah</em> or in another room of the house, as her <em>minhag</em> and the practical situation require.</p>
+
+<p>The men remain seated; the <em>seudah</em> is not interrupted. As <em>shki&rsquo;ah</em> arrives, the <em>challos</em> (<span class="heb-inline">חַלּוֹת</span>) are covered with a cloth &mdash; the visible <em>pores mapah</em>.</p>
+
+<div class="sidebar">
+<div class="sidebar-title">Stop Being a Weekday Jew</div>
+Before the <em>bentshen</em>, and certainly by the moment of <em>shki&rsquo;ah</em>, every trace of weekday behavior must be set aside. The telephone is silenced and put away. Anything that is <em>muktzeh</em> is set out of reach; the children are checked for the same. Any last <em>hachanos</em> for <em>Shabbos</em> are completed. This is the point of transition that gives Rabbeinu Tam&rsquo;s concern (Section II) its full weight, and it operates whether the <em>bentshen</em> is at seven at night or at ten. The <em>Shabbos</em>-ness of the second half of the meal is real; the household must be ready for it.
+</div>
+
+<h3>4. Kabbalas Shabbos</h3>
+
+<p><em>Kabbalas Shabbos</em> (<span class="heb-inline">קַבָּלַת שַׁבָּת</span>) is recited around the table. No <em>minyan</em> (<span class="heb-inline">מִנְיָן</span>) is required; there are no <em>berachos</em>; the recitation is the words themselves, sung with the household. Where the head of the household prefers to walk to the <em>shul</em> (<span class="heb-inline">שׁוּל</span>) for <em>kabbalas Shabbos</em> with the <em>tzibbur</em> (<span class="heb-inline">צִבּוּר</span>), the <em>Mishnah Berurah</em> and the <em>poskim</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> hold that this is not a <em>hefsek</em> (<span class="heb-inline">הֶפְסֵק</span>): one has <em>da&rsquo;as</em> (<span class="heb-inline">דַּעַת</span>) from the start of the <em>seudah</em> to return and continue, and the meal is not interrupted. It is not the most <em>l&rsquo;chatchilah</em> arrangement, but it is fully permissible.</p>
+
+<h3>5. Kiddush &mdash; Without Hagefen and Without Hamotzi</h3>
+
+<p>Here is the operation that gives the <em>derech</em> its distinctive character. A fresh cup of wine is poured and <em>kiddush</em> is recited &mdash; <em>vayechulu</em> (<span class="heb-inline">וַיְכֻלּוּ</span>) and the <em>berachah</em> of <em>kiddush ha&rsquo;yom</em> (<span class="heb-inline">קִדּוּשׁ הַיּוֹם</span>). <em>Borei pri ha&rsquo;gafen</em> (<span class="heb-inline">בּוֹרֵא פְּרִי הַגֶּפֶן</span>) is <em>not</em> recited, because the <em>berachah</em> made earlier in the meal still covers this cup of wine; a fresh <em>netilas yadayim</em> is not taken and <em>hamotzi</em> is not repeated, for the same reason. The <em>kiddush</em>-wine is drunk and the meal resumes.</p>
+
+<div class="sidebar">
+<div class="sidebar-title">Latecomers</div>
+One who joins the meal only after <em>kabbalas Shabbos</em> &mdash; not present for the <em>Purim</em>-portion and not having made <em>ha&rsquo;gafen</em> or <em>ha&rsquo;motzi</em> earlier &mdash; makes both <em>berachos</em> when he is served, exactly as he would at any <em>seudas Shabbos</em>. The reason he makes fresh <em>berachos</em> where the original participants do not is precisely the <em>chakirah</em> above: for him, this is the beginning of a <em>seudas Shabbos</em>, without the covering continuity of the earlier <em>Purim</em>-portion.
+</div>
+
+<h3>6. Lechem Mishneh</h3>
+
+<p>Whether <em>lechem mishneh</em> is required at the <em>kiddush</em> is itself a <em>machlokes</em>, and it is a facet of the same <em>chakirah</em>: is the second half of the meal a <em>seudas Shabbos</em> in its own right, which would require <em>lechem mishneh</em>, or a continuation of the earlier <em>seudah</em> under a <em>kiddush</em>-marker, which would not? The prudent practice is <em>l&rsquo;chumra</em> (<span class="heb-inline">לְחֻמְרָא</span>): an additional <em>challah</em> is brought to the table before <em>kiddush</em> so that <em>lechem mishneh</em> is present. It bears emphasis that the reason no fresh <em>hamotzi</em> is recited (Section VIII.5) is unrelated to the <em>lechem mishneh</em> question; the two operate on different tracks and both are honored.</p>
+
+<h3>7. Eating a True Seudas Shabbos</h3>
+
+<p>The second portion of the meal must not be treated as an afterthought. At least a <em>ke&rsquo;zayis</em> (<span class="heb-inline">כְּזַיִת</span>) of bread is eaten, and real <em>seudas Shabbos</em> food is served &mdash; not merely dessert or dishes cleared from the <em>Purim</em>-portion. Whatever <em>zemiros</em> (<span class="heb-inline">זְמִירוֹת</span>) the household ordinarily sings on Friday night are sung; the <em>Shabbos</em>-ness of the hour is honored in the ordinary ways.</p>
+
+<h3>8. Ma&rsquo;ariv</h3>
+
+<p>After the <em>seudah</em>, or in some households mid-meal at an appropriate pause, <em>ma&rsquo;ariv</em> (<span class="heb-inline">מַעֲרִיב</span>) is davened.</p>
+
+<div class="sidebar">
+<div class="sidebar-title">A Local Timetable &mdash; Lawrence, N.Y., 5785</div>
+By way of concrete example, the times for the case-year of <em>5785</em> in Lawrence, N.Y. were: <em>chatzos</em> at 12:04 p.m.; <em>mincha gedolah</em> at 1:34 p.m.; <em>shki&rsquo;ah</em> at 6:42 p.m., with some <em>machmirim</em> to complete matters by 7:00 for <em>bein ha&rsquo;shmashos</em> (<span class="heb-inline">בֵּין הַשְּׁמָשׁוֹת</span>). The <em>seudah</em> is aimed for a start between 4:00 and 5:00 p.m., <em>kabbalas Shabbos</em> for shortly before 7:00, and the meal continues onward. For any other year or place, the <em>luach</em> is consulted for the local <em>zemanim</em> (<span class="heb-inline">זְמַנִּים</span>) and the same structural steps are followed.
+</div>
+
+<h2>IX. The Bentshen &mdash; <span class="heb-inline">רְצֵה</span> and <span class="heb-inline">עַל הַנִּסִּים</span></h2>
+
+<p>At the close of the meal, one is at once within <em>Shabbos</em> (which calls for <em>retzeh</em>) and, in some fashion, still within <em>Purim</em> (which calls for <em>al ha&rsquo;nissim</em>). The two <em>kedushos</em> appear to be <em>tarti d&rsquo;sasri</em> (<span class="heb-inline">תַּרְתֵּי דְּסָתְרֵי</span>) &mdash; two mutually exclusive frames. How does one <em>bentsh</em>?</p>
+
+<p>Two approaches stand in the <em>poskim</em>.</p>
+
+<ol>
+  <li><strong>The <em>Meiri</em></strong>: both are said in their standard places.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> The <em>Meiri</em>, who is the <em>Rishon</em> for the <em>minhag</em>, holds that <em>erev Shabbos</em> retains its <em>kedushas Purim</em> at the close of the <em>seudah</em>, and one says <em>retzeh</em> and <em>al ha&rsquo;nissim</em> together in <em>bentshen</em>. This is the structural claim proper to the <em>derech</em>: the meal has carried two <em>kedushos</em> from its middle to its end, and both are acknowledged where they belong.</li>
+  <li><strong>The <em>Mishnah Berurah</em></strong>: <em>retzeh</em> in its place, and <em>al ha&rsquo;nissim</em> shifted from its standard place to the <em>ha&rsquo;rachaman</em> (<span class="heb-inline">הָרַחֲמָן</span>) at the end.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> Uncomfortable with the appearance of <em>tarti d&rsquo;sasri</em> within a single <em>berachah</em>, the <em>Mishnah Berurah</em> proposes a formulation in which <em>al ha&rsquo;nissim</em> is preserved &mdash; framed in the standard <em>&ldquo;ha&rsquo;rachaman hu ya&rsquo;aseh lanu nissim ke&rsquo;mo she&rsquo;asa la&rsquo;avoseinu&rdquo;</em> pattern &mdash; but is not made to sit within the same <em>berachah</em> that houses <em>retzeh</em>. This is the more widely followed practice today, particularly in Litvish batim.</li>
+</ol>
+
+<p>The choice between the two encodes, once again, the deeper <em>chakirah</em> of Section VII. The <em>Meiri</em>&rsquo;s <em>bentshen</em> reflects a meal that retains its dual identity through its close. The <em>Mishnah Berurah</em>&rsquo;s reflects a meal whose <em>ikkar chiyuv</em> (<span class="heb-inline">עִקַּר חִיּוּב</span>) at the moment of <em>bentshen</em> is <em>Shabbos</em>, with the <em>Purim</em>-recognition preserved in the <em>ha&rsquo;rachaman</em> as a <em>zecher</em> (<span class="heb-inline">זֵכֶר</span>) rather than a co-<em>chiyuv</em>. One follows the practice of his <em>rebbe</em>, his community, or the household in which he finds himself; a guest at a <em>tish</em> that follows the <em>Meiri</em> defers to the arrangement of that <em>tish</em>.</p>
+
+<h2>X. The Kabbalistic Concern and the Response of the <span class="heb-inline">אַמְרֵי אֱמֶת</span></h2>
+
+<p>The <em>mekubalim</em> (<span class="heb-inline">מְקֻבָּלִים</span>) note a structural concern.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> The order in which one enters <em>Shabbos</em> is calibrated to a spiritual ascent through the <em>mochin</em> (<span class="heb-inline">מוֹחִין</span>): <em>mincha</em> of <em>erev Shabbos</em>, then <em>kabbalas Shabbos</em> (the rise of the <em>neshamah</em> &mdash; <span class="heb-inline">נְשָׁמָה</span>), then <em>ma&rsquo;ariv</em> with <em>kri&rsquo;as Shema</em> and <em>Shemoneh Esrei</em>, then the <em>berachah me&rsquo;ein sheva</em> (<span class="heb-inline">בְּרָכָה מֵעֵין שֶׁבַע</span>), and finally <em>kiddush</em> and the connection to the <em>neshamah yeseirah</em> (<span class="heb-inline">נְשָׁמָה יְתֵרָה</span>). The order of the second <em>derech</em> is, in this sense, <em>afkah</em> (<span class="heb-inline">אַפְכָא</span>): the meal comes first, <em>kabbalas Shabbos</em> in its midst, <em>kiddush</em> mid-meal, and <em>ma&rsquo;ariv</em> only after. From a kabbalistic standpoint the sequence is not <em>l&rsquo;chatchilah</em>.</p>
+
+<p>Yet the <em>Imrei Emes</em> of Gur (<span class="heb-inline">אִמְרֵי אֱמֶת מִגּוּר</span>) &mdash; <em>Rabbi Avraham Mordechai Alter</em> (<span class="heb-inline">רַבִּי אַבְרָהָם מָרְדֳּכַי אַלְטֶר</span>), the third <em>rebbe</em> of Gur &mdash; who was himself a <em>gadol b&rsquo;kabbalah</em> steeped in the world of the <em>Chasidus</em> that flows from the <em>Arizal</em>&rsquo;s <em>mochin</em>-architecture, conducted his <em>Purim tish</em> (<span class="heb-inline">טִישׁ</span>) in the reordered manner nonetheless.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> That the kabbalistic concern was known to him and did not deter him is itself an argument &mdash; whether one reads him as holding that the <em>kedushas Purim</em> supplies the ascent that <em>kabbalas Shabbos</em> ordinarily achieves through its ordered sequence, or as ruling that the <em>halachic heter</em> (<span class="heb-inline">הֶתֵּר</span>) governs even where the kabbalistic order is not preserved. The concern remains as a note against the <em>l&rsquo;chatchilah</em>-ness of the arrangement; it is not, in the practice of a <em>gadol b&rsquo;kabbalah</em>, a bar to the <em>derech</em>.</p>
+
+<h2>XI. Two <span class="heb-inline">מַעֲשֵׂי רַב</span></h2>
+
+<h3>The Testimony of Rav Zalman Nechemiah Goldberg from Rav Yitzchak Isaac Sher</h3>
+
+<p>In a written response to a questioner,<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> <em>Rav Zalman Nechemiah Goldberg</em> (<span class="heb-inline">רַב זַלְמָן נְחֶמְיָה גּוֹלְדְּבֶּרְג</span>) &mdash; one of the great <em>poskim</em> of Yerushalayim of the last generation, <em>chasan</em> (<span class="heb-inline">חָתָן</span>) of <em>Rav Shlomo Zalman Auerbach</em> (<span class="heb-inline">רַב שְׁלֹמֹה זַלְמָן אוֹיֶרְבַּךְ</span>) &mdash; recorded that his own <em>rebbe</em> had, in a year in which <em>Purim</em> fell on <em>erev Shabbos</em>, eaten the <em>seudah</em> at the table of <em>Rav Yitzchak Isaac Sher</em> (<span class="heb-inline">רַב יִצְחָק אַיְזִיק שֶׁר</span>) &mdash; the <em>rosh yeshivah</em> (<span class="heb-inline">רֹאשׁ יְשִׁיבָה</span>) of Slabodka, <em>chasan</em> and <em>talmid muvhak</em> of the <em>Alter of Slabodka</em> (<span class="heb-inline">הַאַלְטֶר מִסְּלַבּוֹדְקָא</span>), <em>niftar</em> in <em>5712</em> (1952). Rav Sher performed <em>pores mapah u&rsquo;mekadesh</em> at the meal, and stated of the <em>derech</em>: <em>&ldquo;l&rsquo;chatchilah mamash mamash l&rsquo;chatchilah&rdquo;</em> (<span class="heb-inline">לְכַתְּחִלָּה מַמָּשׁ מַמָּשׁ לְכַתְּחִלָּה</span>). The tripled emphasis is his own, and it does what no citation of the <em>Yad Ephraim</em> alone could do: it gives the second <em>derech</em> a Litvish, <em>Yerushalmi</em>, mainstream pedigree entirely outside the world of <em>Chasidus</em>.</p>
+
+<h3>The Purim Tish of the Imrei Emes in Gur</h3>
+
+<p>The <em>Imrei Emes</em> conducted his <em>Purim tish</em>, in years in which <em>Purim</em> fell on <em>erev Shabbos</em>, in the fullest form of the <em>derech</em>.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> The <em>tish</em> was begun approximately an hour before <em>shki&rsquo;ah</em>; at <em>shki&rsquo;ah</em> the <em>pores mapah u&rsquo;mekadesh</em> was performed there at the <em>tish</em>, upon the same table, with <em>lechem mishneh</em> prepared for the occasion; <em>kabbalas Shabbos</em> was recited at the <em>tish</em>; <em>kiddush</em> was made without <em>ha&rsquo;gafen</em> and without <em>hamotzi</em>; and the meal continued until nine or ten at night, when <em>bentshen</em> was recited with both <em>retzeh</em> and <em>al ha&rsquo;nissim</em>, followed by <em>ma&rsquo;ariv</em>. The image of <em>kabbalas Shabbos</em> received in the midst of a <em>Purim tish</em> is not a rhetorical flourish; it is an actual tableau from an actual <em>tish</em>, and it fixes the <em>derech</em> in the memory of one who has been told of it in a way no <em>Mishnah Berurah</em> footnote can.</p>
+
+<p>Not every household will replicate the precise format of a <em>rebbe</em>&rsquo;s <em>tish</em>. But the two <em>ma&rsquo;asim</em> &mdash; from a <em>Litvish rosh yeshivah</em> in <em>Yerushalayim</em> and from a <em>chasidishe rebbe</em> in Poland &mdash; together demonstrate that <em>pores mapah u&rsquo;mekadesh</em> is not a <em>b&rsquo;dieved</em> (<span class="heb-inline">בְּדִיעֲבַד</span>) arrangement to which one resorts when no better is available. In the practice of serious <em>gedolim</em> across the great divisions of the Jewish world, it is a <em>l&rsquo;chatchilah</em> option.</p>
+
+<h2>XII. Choosing Between the Two <span class="heb-inline">דְּרָכִים</span></h2>
+
+<p>Both <em>derachim</em> are <em>halacha l&rsquo;ma&rsquo;aseh</em>. Neither is a <em>b&rsquo;dieved</em>; neither is a <em>chumra</em> (<span class="heb-inline">חֻמְרָא</span>) upon the other. The following observations may guide a household on the fence.</p>
+
+<p>A household of young children, in which the <em>Purim</em> day itself has been consumed by <em>chagigos</em> (<span class="heb-inline">חֲגִיגוֹת</span>), <em>mishloach manos</em> delivery, and the ordinary chaos of small children on the day of <em>Purim</em>, may find the <em>Rema</em>&rsquo;s <em>derech</em> practically difficult and the <em>Meiri</em>&rsquo;s more feasible: a single <em>seudah</em> in the late afternoon that carries the family into <em>Shabbos</em> without a second full meal at night. On the other hand, the mechanics of <em>pores mapah</em> require an alert head of household who can supervise <em>kiddush</em> without <em>ha&rsquo;gafen</em>, <em>lechem mishneh</em>, the <em>bentshen</em>-question, and the timing &mdash; and where the head of the household has himself been drinking through the <em>Purim</em>-portion, the <em>Rema</em>&rsquo;s <em>derech</em> is safer.</p>
+
+<p>A <em>ben Torah</em> in a <em>chasidishe</em> community whose <em>rebbe</em> follows the <em>Meiri</em>&rsquo;s <em>derech</em> should follow his <em>rebbe</em>&rsquo;s <em>tish</em>; a <em>bochur</em> (<span class="heb-inline">בָּחוּר</span>) in a Litvish <em>yeshivah</em> with no established institutional <em>mesorah</em> in either direction may reasonably default to the <em>Rema</em>. A young couple without children who wish to conduct a small <em>seudas mere&rsquo;im</em> at length may find the <em>Meiri</em>&rsquo;s <em>derech</em> attractive precisely for its length. In each case the choice is oriented by the <em>mesorah</em> of one&rsquo;s <em>rebbe</em> and the practical shape of one&rsquo;s home; it is not a matter for personal invention.</p>
+
+<h2>XIII. Sof Davar</h2>
+
+<p>Both <em>derachim</em> stand upon <em>poskim</em> and <em>minhagim</em> of <em>gedolim</em>. The simpler is the <em>Rema</em>&rsquo;s: <em>seudas Purim</em> before <em>chatzos</em>, and <em>Shabbos</em> received in its ordinary shape thereafter. The older and more dramatic is the <em>Meiri</em>&rsquo;s and the <em>Maharil</em>&rsquo;s: a single <em>seudah</em> that begins in the sunlight of <em>Purim</em> and crosses, under a cloth spread over the <em>challos</em>, into the light of <em>Shabbos</em> &mdash; a meal that carries in its own interior the seam between the <em>kedushos</em> of two days. The <em>Meiri</em>&rsquo;s testimony from twelfth-century Provence, and the two <em>ma&rsquo;asim</em> of Rav Sher and the <em>Imrei Emes</em> from the century past, place the second <em>derech</em> firmly among the <em>lechatchilah</em> options of a <em>Yid</em> (<span class="heb-inline">יִיד</span>) in <em>galus</em> (<span class="heb-inline">גָּלוּת</span>).</p>
+
+<p>A <em>freilichen Purim</em> (<span class="heb-inline">אַ פְרֵייְלִיכֶן פּוּרִים</span>).</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מַרְאֵה מְקוֹמוֹת</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> <span class="heb-inline">סִימָן רמ&quot;ט סָעִיף ב&rsquo;</span>; <em>Magen Avraham</em> ad loc. citing <em>Rabbeinu Tam</em>.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> codifies the prohibition against establishing a <em>seudah</em> on <em>erev Shabbos</em>. The <em>Magen Avraham</em> on the <em>siman</em> brings <em>Rabbeinu Tam</em>&rsquo;s second reason: a heavy late-afternoon meal displaces the <em>hachanos</em> that <em>Shabbos</em> requires. The <em>Mishnah Berurah</em> ad loc. limits even an early-morning <em>seudah</em> in certain conditions.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Gemara Gittin</em> <span class="heb-inline">ל&quot;ח ע&quot;א</span>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> of the two <em>mishpachos</em> of <em>Yerushalayim</em> that were <em>nichresu</em>: one for holding a great family <em>seudah</em> every <em>erev Shabbos</em> at noon &mdash; consuming the <em>tei&rsquo;avon</em> needed for the <em>seudas Shabbos</em>; the other for stretching the <em>Shabbos</em>-day <em>seudah</em> until three or four in the afternoon and missing the afternoon <em>shiur</em>. The first half of the <em>sugya</em> is the conceptual root of the <em>issur kevi&rsquo;as seudah b&rsquo;erev Shabbos</em> as later codified in <em>siman</em> 249.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Machzor Vitry</em> (<em>Rabbeinu Simchah of Vitry</em>) &mdash; <em>&ldquo;leil shikorim.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbeinu Simchah of Vitry</em> (d. c. 1105), <em>talmid</em> and nephew of <em>Rashi</em>, in his <em>Machzor</em> &mdash; among the earliest of the great Ashkenazic compendia of <em>halacha</em> and <em>minhag</em> &mdash; refers to the night of <em>yud daled Adar</em> (<span class="heb-inline">י&quot;ד אֲדָר</span>) as <em>&ldquo;leil shikorim,&rdquo;</em> recording that the <em>yeshivos</em> of <em>Ashkenaz</em> already kept the <em>Purim</em> drinking on the preceding night. Standard editions of the <em>Machzor Vitry</em> collect the <em>hilchos Purim</em> together in the section following <em>hilchos ta&rsquo;anis</em>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Rema</em>, <em>Orach Chaim</em> <span class="heb-inline">סִימָן תרצ&quot;ה סָעִיף ב&rsquo;</span>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Moshe Isserles</em> (Rema, c. 1530&ndash;1572, Krakow) rules in his glosses on the <em>Shulchan Aruch</em>: when <em>Purim</em> falls on <em>erev Shabbos</em>, the <em>seudah</em> is to be eaten before <em>chatzos</em>, out of respect for <em>Shabbos</em> and to remain within the limits of <em>siman</em> 249. This is the simpler of the two valid <em>derachim</em> laid out in this <em>siman</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Mishnah Berurah</em> <span class="heb-inline">סִימָן תרצ&quot;ה ס&quot;ק ט&rsquo;&ndash;י&quot;א</span>, citing the <em>Shelah HaKadosh</em>; also citing the <em>Yad Ephraim</em> on <em>Tanya Rabbasi</em> for the <em>Maharil</em>&rsquo;s position.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> (<em>Chofetz Chaim</em>, on <em>siman</em> 695, se&rsquo;if katan 9&ndash;11 in standard printings) brings the <em>Shelah HaKadosh</em> (<em>Rabbi Yeshaya HaLevi Horowitz</em>, 1565&ndash;1630) holding that <em>seudas Purim</em> before <em>chatzos</em> is preferable even in an ordinary year. He further records the <em>Maharil</em>&rsquo;s lenient view as preserved by <em>Rabbi Ephraim Zalman Margaliyos</em> (the <em>Yad Ephraim</em>) in his glosses on the <em>Tanya Rabbasi</em>. &mdash; <em>Note</em>: the <em>Tanya Rabbasi</em> here is the early Ashkenazic halachic compendium of R&rsquo; Yechiel b. Yekusiel of Rome (thirteenth century), and not the later work of the same short-form title (<em>Tanya</em>) by the <em>Ba&rsquo;al HaTanya</em> of Chabad.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Shu&rsquo;t Maharil</em> (<em>Rabbeinu Yaakov Moellin</em>).</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Yaakov Moellin</em> (Maharil, c. 1365&ndash;1427, Mainz/Worms), foundational <em>posek</em> of <em>Yahadus Ashkenaz</em>, was asked by a <em>talmid</em> what to do when <em>Purim</em> falls on <em>erev Shabbos</em>. His <em>teshuvah</em>: one may begin the <em>seudah</em> after <em>chatzos</em>, even at the ninth or tenth hour, since the <em>mitzvah</em> of the <em>seudas Purim</em> is bound to the day. He compares the case to a <em>seudas bris milah</em> on the eighth day or a <em>seudas pidyon ha&rsquo;ben</em> on the thirtieth day falling on <em>erev Shabbos</em>, where the <em>poskim</em> permit beginning after <em>chatzos</em>. The <em>Rema</em>, who follows the <em>Maharil</em> more freely than any other source, did not adopt this particular ruling.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Beis HaBechirah la&rsquo;Meiri</em> on <em>Kesuvos</em> <span class="heb-inline">ז&rsquo; ע&quot;א</span> &mdash; <em>&ldquo;ani v&rsquo;rabbim acherim&rdquo;</em>; the <em>minhag</em> of <em>pores mapah u&rsquo;mekadesh</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Menachem HaMeiri</em> (1249&ndash;1315, Perpignan in Provence) testifies in his <em>Beis HaBechirah</em> on <em>Kesuvos</em> that <em>&ldquo;I and many others&rdquo;</em> followed an established <em>masorah</em> of beginning <em>seudas Purim</em> close to <em>shki&rsquo;ah</em> and continuing it into <em>Shabbos</em> by means of <em>&ldquo;pores mapah u&rsquo;mekadesh.&rdquo;</em> His formulation indicates that the <em>minhag</em> was already <em>kadum</em> in his day, predating the <em>Maharil</em>&rsquo;s codification by a full century.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Gemara Pesachim</em> <span class="heb-inline">ק&quot;ה ע&quot;א&ndash;ע&quot;ב</span> &mdash; <em>machlokes Rebbi Yosi u&rsquo;Rebbi Yehudah</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> in <em>Arvei Pesachim</em> (the tenth <em>perek</em> of <em>Pesachim</em>) records the dispute concerning one who began a <em>seudah</em> on <em>erev Shabbos</em> and wishes to extend it into <em>Shabbos</em>. <em>Rebbi Yehudah</em> requires removing or replacing the table; <em>Rebbi Yosi</em> permits continuation with a marker. The <em>sugya</em> is the structural <em>makor</em> for the <em>pores mapah</em> mechanism.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> <span class="heb-inline">סִימָן רע&quot;א סָעִיף ד&rsquo;</span>.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> codifies the <em>pesak</em> of <em>Rebbi Yosi</em> against <em>Rebbi Yehudah</em>: where one is in the midst of a <em>seudah</em> when <em>Shabbos</em> begins, one does not need to interrupt the meal or change the table &mdash; instead, one covers the bread (<em>pores mapah</em>) and recites <em>kiddush</em> over wine (<em>u&rsquo;mekadesh</em>), and the meal continues seamlessly under the new <em>kedushas ha&rsquo;yom</em>. The covered cloth is the visible marker of the <em>shinnuy</em>.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Mishnah Berurah</em>, <span class="heb-inline">סִימָן רס&quot;ג</span> and <span class="heb-inline">סִימָן רע&quot;א</span>, on the <em>kabbalas Shabbos</em>-mid-<em>seudah</em> question.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> in the relevant <em>simanim</em> of <em>hilchos Shabbos</em> (see especially <em>siman</em> 263 on <em>kabbalas Shabbos</em> and <em>siman</em> 271 on <em>kiddush</em> and <em>pores mapah</em>) rules that one may interrupt the <em>seudah</em> to walk to <em>shul</em> for <em>kabbalas Shabbos</em> with the <em>tzibbur</em>; this does not constitute a <em>hefsek</em> requiring fresh <em>berachos</em>, since the eater has <em>da&rsquo;as</em> from the start to return and continue. <em>Kabbalas Shabbos</em> at home around the table is more <em>l&rsquo;chatchilah</em> in this specific scenario, but the <em>shul</em> option is permissible.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Beis HaBechirah la&rsquo;Meiri</em>, sham &mdash; saying both <em>retzeh</em> and <em>al ha&rsquo;nissim</em>.</span>
+  <span class="expanded">&mdash; Continuing in his discussion in <em>Kesuvos</em>, the <em>Meiri</em> holds that <em>erev Shabbos</em> retains a <em>kedushas Purim</em> at the close of the <em>seudah</em>, and one says both <em>retzeh</em> (for <em>Shabbos</em>) and <em>al ha&rsquo;nissim</em> (for <em>Purim</em>) together in the <em>bentshen</em>. The same logic underlies the position of those <em>poskim</em> who hold that <em>al ha&rsquo;nissim</em> may be said even on <em>Shushan Purim</em> for one who is still within the extended <em>seudah</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Mishnah Berurah</em> &mdash; the <em>ha&rsquo;rachaman</em> compromise.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> in the relevant <em>simanim</em> on <em>birkas ha&rsquo;mazon</em>, <em>Purim</em>, and <em>pores mapah</em> (in particular the discussion attached to <em>siman</em> 695) is uncomfortable with the apparent <em>tarti d&rsquo;sasri</em> of saying both <em>retzeh</em> and <em>al ha&rsquo;nissim</em> in the same <em>berachah</em>. His practical proposal: keep <em>retzeh</em> in its <em>Shabbos</em> place; omit <em>al ha&rsquo;nissim</em> from its <em>berachah</em>; instead, in the <em>ha&rsquo;rachaman</em> at the end, add <em>&ldquo;ha&rsquo;rachaman hu ya&rsquo;aseh lanu nissim ke&rsquo;mo she&rsquo;asa la&rsquo;avoseinu&rdquo;</em> with reference to the <em>Purim</em>-miracle, preserving the <em>Purim</em>-recognition without structural conflict inside the <em>berachah</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <div class="note-academic">Kabbalistic literature on the order of entering <em>Shabbos</em> &mdash; the structured ascent through the <em>mochin</em>: <em>mincha erev Shabbos</em> &rarr; <em>kabbalas Shabbos</em> (rise of the <em>neshamah</em>) &rarr; <em>ma&rsquo;ariv</em> &rarr; <em>berachah me&rsquo;ein sheva</em> &rarr; <em>kiddush</em> (connection to the <em>neshamah yeseirah</em>). The structure is developed in the writings of the <em>Arizal</em> and codified in <em>Pri Etz Chaim</em>, <em>Sha&rsquo;ar HaKavanos</em>, and the <em>siddurim</em> of the <em>mekubalim</em>; the <em>pores mapah u&rsquo;mekadesh</em> sequence reorders these stages and is therefore not <em>l&rsquo;chatchilah</em> from a kabbalistic standpoint, even where halachically permitted.</div>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <div class="note-academic">Oral <em>masorah</em> from <em>Chasidus Gur</em> regarding the <em>Imrei Emes</em> &mdash; <em>Rabbi Avraham Mordechai Alter</em> (1866&ndash;1948, the third <em>rebbe</em> of Gur) &mdash; and his conduct of the <em>Purim tish</em> when <em>Purim</em> fell on <em>erev Shabbos</em>: <em>pores mapah u&rsquo;mekadesh</em> performed at the <em>tish</em> on the same table, with <em>lechem mishneh</em>; <em>kabbalas Shabbos</em> recited at the <em>tish</em>; <em>bentshen</em> with both <em>retzeh</em> and <em>al ha&rsquo;nissim</em> at meal&rsquo;s end, then <em>ma&rsquo;ariv</em>. That the <em>Imrei Emes</em> was himself a <em>gadol b&rsquo;kabbalah</em> is decisive: his practice indicates that the kabbalistic concern noted above (fn 13) does not bar the <em>derech</em> for one operating within the world of the <em>Arizal</em>.</div>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <div class="note-academic">Letter of <em>Rav Zalman Nechemiah Goldberg</em> (1931&ndash;2020, Yerushalayim; <em>chasan</em> of <em>Rav Shlomo Zalman Auerbach</em>) &mdash; written response to a questioner, recording the testimony of his <em>rebbe</em> that he ate at the table of <em>Rav Yitzchak Isaac Sher</em> (<span class="heb-inline">שֶׁר</span>; <em>chasan</em> and <em>talmid muvhak</em> of the <em>Alter of Slabodka</em>; <em>rosh yeshivah</em> of Slabodka; <em>niftar</em> <em>5712</em> / 1952) when <em>Purim</em> fell on <em>erev Shabbos</em> in <em>Yerushalayim</em>, where Rav Sher performed <em>pores mapah u&rsquo;mekadesh</em> and called the <em>derech</em> <em>&ldquo;l&rsquo;chatchilah mamash mamash l&rsquo;chatchilah.&rdquo;</em> The letter circulates among Jerusalem <em>poskim</em>; precise publication details were not given in the source <em>shiur</em>.</div>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <div class="note-academic">The <em>ma&rsquo;aseh</em> of the <em>Imrei Emes</em>: as recorded in the oral <em>masorah</em> of <em>Chasidus Gur</em> and preserved in the standard collections of the <em>rebbe</em>&rsquo;s conduct. The <em>tish</em> began an hour before <em>shki&rsquo;ah</em>; <em>pores mapah u&rsquo;mekadesh</em> at the <em>tish</em> with <em>lechem mishneh</em>; <em>kabbalas Shabbos</em> at the <em>tish</em>; <em>kiddush</em> without <em>ha&rsquo;gafen</em> and without <em>hamotzi</em>; meal continued until nine or ten at night; <em>bentshen</em> with both <em>retzeh</em> and <em>al ha&rsquo;nissim</em>; <em>ma&rsquo;ariv</em>. Brought as the <em>ma&rsquo;aseh rav</em> that demonstrates the <em>derech</em>&rsquo;s <em>l&rsquo;chatchilah</em> status in the practice of <em>gedolim</em>.</div>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati&rsquo;s <em>shiur</em> of 9 March 2025 &mdash; practical <em>halacha l&rsquo;ma&rsquo;aseh</em> for <em>Purim</em> falling on <em>erev Shabbos kodesh</em>. This edition incorporates the structural and factual corrections drawn from the Shiur Review and Editorial Review of 30 August 2026: the <em>Maharil</em>&rsquo;s dates have been corrected to the late fourteenth &mdash; early fifteenth century; the transliteration &ldquo;Rav Yitzchak Shor&rdquo; has been corrected to <em>Rav Yitzchak Isaac Sher</em>; the temporal relationship of the <em>Maharil</em>&rsquo;s and the <em>Chavas Ya&rsquo;ir</em>&rsquo;s <em>kevarim</em> in the Worms cemetery has been re-phrased; the <em>Yad Ephraim</em>&rsquo;s <em>Tanya Rabbasi</em> reference has been clarified to distinguish it from the Chabad <em>Tanya</em>; the redundancy between the earlier &ldquo;Simpler Alternative&rdquo; and the <em>Rema</em>-derech has been consolidated; the orphaned &ldquo;Practical Notes&rdquo; have been folded into the numbered mechanics of Section VIII; the three-approach <em>bentshen</em> discussion has been re-labeled as the actual two-position <em>machlokes</em> between the <em>Meiri</em> and the <em>Mishnah Berurah</em>; the underlying <em>chakirah</em> concerning the status of the second half of the meal has been named and used to organize the practical <em>machlokes</em>; the <em>Imrei Emes</em>&rsquo; standing as a <em>gadol b&rsquo;kabbalah</em> has been brought into direct conversation with the kabbalistic concern; the local Lawrence times have been abstracted into a boxed sidebar; personal asides (the Dor L&rsquo;Dor announcement, the Rebbe&rsquo;s <em>cholent</em> vignette) have been omitted. <em>Mareh Mekomos</em> carry the dual-layer (short + expanded) footnote format throughout.
+</footer>
+
+</body>
+</html>

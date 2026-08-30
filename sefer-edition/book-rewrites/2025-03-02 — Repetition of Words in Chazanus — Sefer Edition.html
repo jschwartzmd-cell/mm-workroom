@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — 2 March 2025 — Repetition of Words in Chazanus</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">כְּפִילַת מִלִּים בַּחֲזָנוּת</h1>
+  <div class="english-title">Repetition of Words in Chazanus</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 2 March 2025 &nbsp;&middot;&nbsp; Sefer Edition &middot; Revised 30 August 2026</div>
+</header>
+
+<p class="dedication"><em>The following chapter treats a question that lives at the meeting point of <em>halacha</em>, aesthetics, and the sociology of the <em>bais hakenesses</em>: may a <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) repeat words in the fixed <em>nusach</em> of <em>tefillah</em> for the sake of the <em>niggun</em> (<span class="heb-inline">ניגון</span>)? The <em>mekoros</em> read the reader through five centuries of increasingly resigned protest.</em></p>
+
+<h2>I. The Question in Its Setting</h2>
+
+<p>A <em>chazan</em> (<span class="heb-inline">חזן</span>) of the old European school &mdash; trained in the tradition of Kwartin, Rosenblatt, Pinchik, and Koussevitzky &mdash; steps to the <em>amud</em> (<span class="heb-inline">עמוד</span>) on a <em>Shabbos</em> morning. The <em>nusach</em> flows; the <em>kehilla</em> is stirred. But at several points in the <em>tefillah</em> he does what the great cantorial repertoire requires him to do: for the sake of the musical line, he repeats a word. <em>Ha-E-l</em> becomes <em>Ha-E-l, Ha-E-l</em>; <em>mekimi</em> becomes <em>mekimi, mekimi</em>. To the <em>oilam</em> (<span class="heb-inline">עולם</span>) it is beautiful. To one man in the back it is a serious halachic problem. He waits for the end of <em>davening</em> and comes forward.</p>
+
+<p>The question is not new. Every generation for the past five hundred years has been forced to reckon with it, because in every generation the same tension has reasserted itself: the <em>chazan</em> is a musician, and the fixed <em>nusach</em> of <em>tefillah</em> is a text. Musical structure often demands what textual fixity forbids. The <em>halacha</em> did not develop in a vacuum. It developed in and against the actual practice of <em>chazanim</em> (<span class="heb-inline">חזנים</span>), and its <em>mekoros</em> preserve the sound of the argument.</p>
+
+<p>Before entering the <em>sugya</em> (<span class="heb-inline">סוגיא</span>) it is worth naming the internal check that any halachic protest of this kind requires. Is the objection <em>kanaus l'sheim Shamayim</em> (<span class="heb-inline">קנאות לשם שמים</span>) &mdash; a jealous concern for the honor of <em>tefillah</em> itself &mdash; or is it, more quietly, the discomfort of a <em>rav</em> or a congregant whose authority has been sidestepped? The <em>poskim</em> ahead do not soften on the underlying <em>issur</em>; but the honesty of the question is itself part of the <em>sugya</em>, and it belongs at the entrance rather than in a footnote.</p>
+
+<h2>II. The Foundational Mishnah: <span class="heb">מוֹדִים מוֹדִים</span></h2>
+
+<p>The starting point is the fifth <em>perek</em> of <em>Berachos</em> (<span class="heb-inline">ברכות</span>):<a class="footnote-ref" id="ref1" href="#fn1">[1]</a></p>
+
+<blockquote>
+<div class="heb">הָאוֹמֵר &quot;מוֹדִים מוֹדִים&quot; &mdash; מְשַׁתְּקִין אוֹתוֹ.</div>
+<div class="trans">One who says &ldquo;<em>Modim Modim</em>&rdquo; &mdash; we silence him.</div>
+<div class="source"><em>Mishnah Berachos</em> 5:3</div>
+</blockquote>
+
+<p>The <em>gemara</em> (<span class="heb-inline">גמרא</span>) supplies the reason: to say <em>&ldquo;Modim&rdquo;</em> twice suggests that one is addressing <em>two</em> entities.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The concern was not theoretical. In the <em>bais hakenesses</em> (<span class="heb-inline">בית הכנסת</span>) of the <em>Mishnaic</em> and <em>Talmudic</em> era, <em>minim</em> (<span class="heb-inline">מינים</span>) and dualists prayed alongside <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>); a doubled word of thanksgiving could be seized upon and read as an admission of the very heresy the <em>Anshei Knesses HaGedolah</em> had structured the <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) to exclude.</p>
+
+<p>The same <em>sugya</em> in <em>Berachos</em> 33 extends the principle: one who repeats <em>&ldquo;Shema&rdquo;</em> is <em>meguneh</em> (<span class="heb-inline">מגונה</span>). The <em>gemara</em>'s milder verb marks a distinction &mdash; between the actively silenced and the merely disapproved &mdash; that the <em>Rishonim</em> (<span class="heb-inline">ראשונים</span>) discuss at length and that need not detain the present <em>sugya</em>. What matters is that the <em>Mishnah</em> names two specific words and forbids their repetition; the classical dispute begins where the <em>Mishnah</em> stops.</p>
+
+<h2>III. The Machlokes Rishonim: How Far Does the Rule Reach?</h2>
+
+<h3>The Ritva &mdash; A Principle, Not a List</h3>
+
+<p>The <em>Ritva</em> (<span class="heb-inline">ריטב&quot;א</span>) &mdash; <em>Rabbeinu Yom Tov ben Avraham Asvili</em> (c. 1260&ndash;1320), foremost <em>talmid</em> of the <em>Ra'ah</em> and the <em>Rashba</em> &mdash; reads the <em>Mishnah</em> as principle rather than as list.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>) did not intend to prohibit only the two specific words named in the text. Any repetition capable of suggesting dual address falls within the <em>issur</em> (<span class="heb-inline">איסור</span>). This is the strict reading that will later become the <em>Beis Yosef</em>'s (<span class="heb-inline">בית יוסף</span>) position.</p>
+
+<h3>Rabbeinu Yonah &mdash; The Kushia from Ne&rsquo;ilah</h3>
+
+<p><em>Rabbeinu Yonah of Gerona</em> (<span class="heb-inline">רבינו יונה</span>, c. 1200&ndash;1263), commenting on the <em>Rif</em>, raises the difficulty that the <em>Rishonim</em> after him will have to resolve.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> If repetition is forbidden, how does the <em>tzibbur</em> (<span class="heb-inline">ציבור</span>) at <em>Ne'ilah</em> (<span class="heb-inline">נעילה</span>) call out <em>&ldquo;Hashem Hu HaElokim&rdquo;</em> (<span class="heb-inline">ה' הוא האלקים</span>) seven times? The <em>machzorim</em> (<span class="heb-inline">מחזורים</span>) offer the mystical reading &mdash; that the <em>Shechinah</em> ascends through the seven <em>rekiim</em> (<span class="heb-inline">רקיעים</span>) with each acclamation &mdash; but the halachic question stands on its own.</p>
+
+<p>The resolution reshapes the whole <em>sugya</em>. The phrase itself is not new liturgical composition. It is the biblical cry of <em>Klal Yisrael</em> at <em>Har HaKarmel</em> (<span class="heb-inline">הר הכרמל</span>):</p>
+
+<blockquote>
+<div class="heb">וַיַּרְא כׇּל הָעָם, וַיִּפְּלוּ עַל פְּנֵיהֶם, וַיֹּאמְרוּ: ה' הוּא הָאֱלֹקִים, ה' הוּא הָאֱלֹקִים.</div>
+<div class="trans">All the people saw, and they fell on their faces, and they said: Hashem, He is God; Hashem, He is God.</div>
+<div class="source"><em>Melachim I</em> 18:39<a class="footnote-ref" id="ref5" href="#fn5">[5]</a></div>
+</blockquote>
+
+<p>When the entire <em>tzibbur</em> together reenacts <em>Har HaKarmel</em>, the theological framework the <em>Mishnah</em> was guarding against &mdash; the suggestion of dual address by a lone speaker in a mixed <em>bais hakenesses</em> &mdash; is off the table by construction. A communal, biblically-modeled acclamation is a different <em>din</em> altogether. The same logic covers the doubled <em>pesukim</em> that close <em>Pesukei d'Zimra</em> (<span class="heb-inline">פסוקי דזמרא</span>) &mdash; <em>&ldquo;Kol haneshamah tehallel Yah, Halleluyah&rdquo;</em> (<span class="heb-inline">כל הנשמה תהלל י-ה הללוי-ה</span>) &mdash; and the closing <em>&ldquo;Hashem yimloch l'olam va'ed&rdquo;</em> (<span class="heb-inline">ה' ימלוך לעולם ועד</span>) of <em>Shiras HaYam</em> (<span class="heb-inline">שירת הים</span>). These are structural seals, parallel in form to <em>chazak chazak ve'nischazek</em>, not doubled addresses.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+
+<p>Rabbeinu Yonah's resolution supplies a distinction that later <em>poskim</em> depend on without always naming: repetition that is <em>structural</em> and <em>communal</em> is a different halachic category from repetition that is <em>interpolative</em> and <em>individual</em>. Everything ahead in the <em>sugya</em> &mdash; the <em>Beis Yosef</em>'s prohibition, the <em>Maharam Shik</em>'s five reasons, and the eventual <em>heter</em> for <em>Hallel</em> &mdash; is worked out within this bifurcation.</p>
+
+<h3>The Bach &mdash; The Halachic Counterweight</h3>
+
+<p>The <em>Bach</em> (<span class="heb-inline">ב&quot;ח</span>) &mdash; <em>Bayis Chadash</em>, <em>Rabbi Yoel Sirkis</em> (1561&ndash;1640, Cracow) &mdash; takes the opposite methodological road.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> The <em>Mishnah</em>, he argues, names <em>&ldquo;Modim&rdquo;</em> and <em>&ldquo;Shema&rdquo;</em>, and no others. A <em>derabbanan</em> (<span class="heb-inline">דרבנן</span>) is not to be extended by <em>hekesh</em> (<span class="heb-inline">היקש</span>). Further, the underlying concern about <em>minim</em> exploiting a doubled word presupposes the acoustic conditions of a <em>bais hakenesses</em> where a lone speaker could be overheard by a hostile listener; where the entire <em>tzibbur</em> is davening aloud in unison, the original grounds of the <em>gezeirah</em> (<span class="heb-inline">גזירה</span>) evaporate.</p>
+
+<p>The <em>Bach</em>'s position must be taken seriously on its own terms and not dismissed as idiosyncratic. He is a first-tier <em>posek</em> (<span class="heb-inline">פוסק</span>), and his lenient reading is the actual halachic counterweight to the mainline strict view &mdash; not the far more controversial <em>heter</em> that will appear later in this chapter. The methodological question he raises is genuine: what is the halachic status of the <em>issur</em> beyond <em>&ldquo;Modim&rdquo;</em> and <em>&ldquo;Shema&rdquo;</em>? Is it a full <em>issur</em> extended by <em>hekesh</em>, a <em>gezeirah</em> whose reasoning is time-bound, or a <em>hiddur</em> (<span class="heb-inline">הידור</span>)? The <em>Beis Yosef</em>'s answer &mdash; that <em>Chazal</em>'s principle is not exhausted by their examples and that the extension is itself part of the <em>gezeirah</em> &mdash; carries the day <em>l'halacha</em> (<span class="heb-inline">להלכה</span>);<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> but the <em>Bach</em>'s methodological reservation continues to hover over the <em>sugya</em>, and later <em>chazanim</em> who will one day lean on the Venetian <em>heter</em> often think they are leaning on the <em>Bach</em>. They are not; the <em>Bach</em> is a narrower and more disciplined position.</p>
+
+<h2>IV. The Four Categories of Repetition</h2>
+
+<p>Before proceeding to the nineteenth-century <em>poskim</em>, it is useful to sort the <em>mekoros</em>. Not every act of repetition in <em>tefillah</em> is the same halachic phenomenon. At least four distinct categories are visible in the sources:</p>
+
+<ol>
+  <li><strong>Theologically-loaded repetition</strong> &mdash; <em>&ldquo;Modim Modim,&rdquo;</em> <em>&ldquo;Shema Shema&rdquo;</em>: forbidden by the <em>Mishnah</em>; the mechanism is <em>maris ayin</em> (<span class="heb-inline">מראית עין</span>) of dual address; the response is <em>meshatkin oso</em>.</li>
+  <li><strong>Mid-<em>berachah</em> word-repetition</strong> &mdash; the <em>chazan</em> who says <em>&ldquo;Ha-E-l, Ha-E-l&rdquo;</em> for the sake of the <em>niggun</em>: this is the operative subject of the <em>Maharam Shik</em>'s <em>teshuvah</em>, and it is here that the multiple grounds of prohibition &mdash; <em>hefsek</em> (<span class="heb-inline">הפסק</span>), <em>bal tosif</em> (<span class="heb-inline">בל תוסיף</span>), <em>kavod malchei ha-melachim</em> (<span class="heb-inline">כבוד מלכי המלכים</span>) &mdash; converge.</li>
+  <li><strong>Structural closing doublings</strong> &mdash; <em>&ldquo;Kol haneshamah,&rdquo;</em> <em>&ldquo;Hashem yimloch,&rdquo;</em> <em>&ldquo;Hashem Hu HaElokim&rdquo;</em> at <em>Ne'ilah</em>: permitted <em>lechatchilah</em> per Rabbeinu Yonah; the category is <em>siyum</em> and <em>edus tzibburis</em>, not repetition.</li>
+  <li><strong><em>Minhag nevi'im</em> repetition inside <em>Hallel</em></strong> &mdash; <em>&ldquo;Ana Hashem hoshia na,&rdquo;</em> the closing <em>pesukim</em>: positively enjoined by the <em>Mishnah</em> in <em>Sukkah</em>;<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> the mechanism is <em>takanas nevi'im</em>, obligatory rather than tolerated.</li>
+</ol>
+
+<p>The <em>Maharam Shik</em>'s five reasons, which follow, all address category (2). They do not touch categories (3) and (4). This sorting will become load-bearing at the end of the chapter, where the practical <em>heter</em> for <em>Hallel</em> rests precisely on the difference between (2) and (4).</p>
+
+<h2>V. The Maharam Shik &mdash; Five Reasons Against the Chazan's Repetition</h2>
+
+<h3>The Setting</h3>
+
+<p><em>Rabbi Moshe Shick</em>, the <em>Maharam Shik</em> (<span class="heb-inline">מהר&quot;ם שיק</span>, 1809&ndash;1879), was the foremost <em>talmid</em> of the <em>Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) and <em>Rosh Yeshiva</em> in Huszt (<span class="heb-inline">חוסט</span>, Hungarian Huszt / modern Ukrainian Khust), where he taught eight hundred <em>talmidim</em> and authored a <em>Shu&quot;t</em> (<span class="heb-inline">שו&quot;ת</span>) of over a thousand <em>teshuvos</em>. The acronym <em>&ldquo;Shik&rdquo;</em> stands for <em>&ldquo;Shmo Yisroel Kodesh&rdquo;</em> (<span class="heb-inline">שמו ישראל קודש</span>). The tradition preserves the account of him as a <em>bachur</em>, slow to grasp <em>limud</em>, whose sheer <em>hasmadah</em> (<span class="heb-inline">התמדה</span>) transformed him into the <em>Chasam Sofer</em>'s greatest <em>talmid</em>; the <em>Chasam Sofer</em>, defending his sleeping <em>talmid</em> on a wagon journey, called him a <em>living Sefer Torah</em>. The point is not sentimental. It bears on how one should read what follows: a <em>teshuvah</em> written by a man whose intellectual authority derives from an entire life of quiet, disciplined <em>hasmadah</em> under the <em>Chasam Sofer</em>'s eye.</p>
+
+<h3>The Historical Moment</h3>
+
+<p>The <em>Maharam Shik</em>'s era was the nineteenth-century struggle against the <em>Haskalah</em> (<span class="heb-inline">השכלה</span>) and Reform in central Europe. The <em>Chasam Sofer</em> had been the leading <em>kanai</em> (<span class="heb-inline">קנאי</span>) of the generation; the <em>Maharam Shik</em> stood as his standard-bearer. Reform's characteristic liturgical innovations &mdash; the <em>bimah</em> moved to the front of the <em>bais hakenesses</em>, the organ introduced within it, choral and operatic <em>chazanus</em> (<span class="heb-inline">חזנות</span>) with <em>chidushim</em> in the <em>nusach</em> &mdash; were the visible battlefield. Hungarian Jewish life was tri-partite in that period: the Neologs (Reform), the Orthodox, and the so-called Status Quo movement between them. In a well-known <em>teshuvah</em> to the <em>Ksav Sofer</em> (<span class="heb-inline">כתב סופר</span>) &mdash; the <em>Chasam Sofer</em>'s son &mdash; the <em>Maharam Shik</em> writes that even the Status Quo must be treated as fully outside the halachic community, on the principle that one cannot remain neutral where <em>emes</em> is being negotiated away.</p>
+
+<p>Against this backdrop, the <em>Maharam Shik</em>'s language on the <em>chazan</em> question is sharp. It is worth registering, however, one asymmetry that qualifies any simple reading of him as a reflexive traditionalist: on the introduction of German for the <em>drashah</em> he did <em>not</em> oppose the innovation. He himself spoke elegant German and considered that particular front unwinnable. The <em>cherem</em> against changing the language of the <em>drashah</em> was pressed most forcefully in the <em>Eleh Divrei HaBris</em> of 1819, in the wake of the Hamburg-Altona dispute over the Reform temple's German prayers; that <em>cherem</em>, and not any imaginary 1800 declaration, is what continues to shape certain <em>kehilos</em>' refusal of vernacular <em>drashos</em> to this day.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></p>
+
+<h3>The Five Reasons</h3>
+
+<p>In <em>Shu&quot;t Maharam Shik, Orach Chaim</em>,<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> the <em>Maharam Shik</em> assembles five independent grounds on which a <em>chazan</em> is forbidden to repeat words in <em>Shemoneh Esrei</em>, <em>Kedushah</em> (<span class="heb-inline">קדושה</span>), or any <em>&ldquo;matbea sh'tavu Chachamim&rdquo;</em> (<span class="heb-inline">מטבע שטבעו חכמים</span>) &mdash; the fixed coinage of <em>tefillah</em>:</p>
+
+<ol>
+  <li><strong><em>Bal tosif</em>.</strong> <em>Tefillah</em> is <em>derabbanan</em>, but <em>Chazal</em>'s <em>takanos</em> are <em>k'ein deoraisa</em> (<span class="heb-inline">כעין דאורייתא</span>). To add to the fixed <em>nusach</em> &mdash; even by repetition &mdash; is a form of <em>bal tosif</em>. Whether bare repetition of an existing word (rather than the introduction of new content) is a genuine <em>hosafah</em> for these purposes is itself a real <em>lomdishe</em> question. <em>Rav Ovadia Yosef</em> in <em>Shu&quot;t Yabia Omer</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> takes it up at length and rules narrowly: a <em>yachid</em> (<span class="heb-inline">יחיד</span>) who lost <em>kavvanah</em> (<span class="heb-inline">כוונה</span>) may in defined circumstances repeat <em>&ldquo;Baruch&rdquo;</em>; a <em>shaliach tzibbur</em> may not. The operative distinction, on reflection, is probably not <em>bal tosif</em> at all but the public/private divide of <em>hefsek</em> &mdash; which is the <em>Maharam Shik</em>'s next ground.</li>
+  <li><strong>Public embarrassment / <em>amad nizok</em>.</strong> The very act of repeating a word broadcasts, in front of the <em>tzibbur</em>, that the first recitation lacked <em>kavvanah</em>. What sounds to the ear like enhancement functions in halachic reality like an admission of inadequate first attempt.</li>
+  <li><strong><em>Hefsek</em>.</strong> This is the central reason, and the one to which the others are structurally subordinate. A word repeated in the middle of a <em>berachah</em> is an interruption, no different in halachic form from an idle utterance. The <em>berachah</em>'s <em>matbea</em> is a single continuous verbal act; repetition breaks it.</li>
+  <li><strong>The <em>issur</em> of turning <em>tefillah</em> into <em>shirah</em>.</strong> The <em>gemara</em> in <em>Sanhedrin</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> warns that when <em>pesukim</em> are treated as material for ordinary musical performance, the <em>Torah</em> personified comes before the <em>Kisei HaKavod</em> wrapped in sackcloth and protests: <em>&ldquo;Your children have made me into a singer's instrument.&rdquo;</em> Contemporary practice tolerates a great deal of singing in <em>tefillah</em> that the <em>gemara</em>'s framework would treat with alarm; the underlying gravity remains. One is standing before the <em>Melech</em>, not producing a performance.</li>
+  <li><strong><em>Kavod malchei ha-melachim</em>.</strong> A person addressing an earthly monarch on a matter of consequence would not stutter, would not double back, would not repeat words for aesthetic effect. Before the <em>Melech Malchei HaMelachim</em> the same elementary decorum applies. What is at stake in the <em>chazan</em>'s repetition is not principally the aesthetics of the <em>tefillah</em> but the awareness of the One before whom the <em>tefillah</em> stands.</li>
+</ol>
+
+<h3>The Psak</h3>
+
+<p>Having assembled the five grounds, the <em>Maharam Shik</em> rules that one is obligated to protest a <em>chazan</em> who repeats words in the fixed <em>nusach</em>, and to remove him from the <em>amud</em> even in the middle of <em>tefillah</em>.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> The severity of the halachic remedy invites a further question: is the removal a <em>kenas</em> (<span class="heb-inline">קנס</span>), a communal disciplinary act aimed at the <em>chazan</em>'s conduct; or is it a statement that the <em>chazan</em>'s <em>chazaras hashatz</em> (<span class="heb-inline">חזרת הש&quot;ץ</span>) is halachically invalid, so that the <em>tzibbur</em> is exposed and must have a valid <em>shatz</em> installed to complete the <em>tefillah</em>? The <em>Maharam Shik</em>'s <em>lashon</em> tilts toward the second: the repetition disqualifies the <em>chazaras hashatz</em> as a proper <em>matbea</em>, and the <em>tzibbur</em>'s <em>chiyuv</em> is unfulfilled. The practical stakes follow accordingly &mdash; a <em>tzibbur</em> that lets the <em>chazan</em> finish has not necessarily discharged its <em>chazaras hashatz</em>.</p>
+
+<h2>VI. The Machaneh Chaim &mdash; Removing a Chazan from the Amud</h2>
+
+<p>The <em>Maharam Shik</em>'s ruling is not merely theoretical. The <em>Machaneh Chaim</em> &mdash; <em>Rabbi Chaim Sofer</em> (1821&ndash;1886, Hungary) &mdash; records his father's actual practice.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> In a Sephardic <em>bais hakenesses</em>, the <em>chazan</em> at <em>Mussaf</em> (<span class="heb-inline">מוסף</span>) began repeating words during <em>&ldquo;Kesser&rdquo;</em> (<span class="heb-inline">כתר</span>) in the middle of <em>Kedushah</em>. The elder <em>Rabbi Sofer</em> was <em>mafsik</em> from <em>Kedushah</em> mid-<em>tefillah</em>, addressed the <em>chazan</em> directly &mdash; <em>&ldquo;Get off the amud; you cannot daven for this tzibbur&rdquo;</em> &mdash; and physically removed him. The <em>Machaneh Chaim</em> preserves the episode as normative practice, not merely as anecdote. The <em>psak</em> is thus continuously attested from the early nineteenth century through its late decades: the mid-<em>berachah</em> repetition is forbidden, and the halachic remedy is unusually forceful.</p>
+
+<h2>VII. Rav Moshe Feinstein in America</h2>
+
+<p><em>Rav Moshe Feinstein zt&quot;l</em> (<span class="heb-inline">רב משה פיינשטיין</span>, 1895&ndash;1986) took up the same question, in a very different setting, in <em>Igros Moshe</em> (<span class="heb-inline">אגרות משה</span>).<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> The great <em>chazanim</em> of the pre- and post-war generations &mdash; Kwartin, Rosenblatt, Pinchik, Koussevitzky &mdash; had populated American <em>shuls</em>, and the <em>cantorial repertoire</em> that had crystallized in Europe over the preceding century required, as its musical building block, precisely the mid-word repetition that the <em>Beis Yosef</em>, the <em>Maharam Shik</em>, and the <em>Machaneh Chaim</em> had ruled out.</p>
+
+<p>The <em>chazanim</em>'s argument to Rav Moshe was the argument every <em>chazan</em> makes: without repetition, the <em>niggun</em> cannot be performed. Rav Moshe's answer was that this is not the <em>cheshbon</em> of <em>Shulchan Aruch</em>. The <em>Beis Yosef</em> rules clearly against repetition; the <em>Bach</em> is not the position <em>l'halacha</em>; the musical requirements of a particular repertoire cannot override a <em>psak</em>. He does not, in the body of the <em>teshuvah</em>, engage the Venetian <em>heter</em> that will occupy the next chapter of the present <em>sugya</em>; he <em>paskens</em> with the <em>Beis Yosef</em> as if the <em>heter</em> were absent. The strategic significance of this silence is itself worth noting: for Rav Moshe, the Venetian <em>heter</em> did not rise to the level of a position that a mainstream <em>posek</em> was obligated to refute. It is treated as beneath the argument.</p>
+
+<h2>VIII. Why the Chazanim Persist</h2>
+
+<p>One reads through <em>Beis Yosef</em>, <em>Maharam Shik</em>, <em>Machaneh Chaim</em>, and <em>Igros Moshe</em> and notices the same phenomenon: the <em>poskim</em> are <em>screaming</em>, and the <em>chazanim</em>, by and large, are not listening. <em>L'halacha meforeshes</em> (<span class="heb-inline">להלכה מפורשת</span>) &mdash; why?</p>
+
+<p>The answer, when the <em>chazanim</em>'s <em>seforim</em> and their traditions of practice are examined honestly, comes down to a single <em>teshuvah</em>. There is one voice, almost solitary in the corpus of <em>poskim</em>, which permits repetition for the sake of the <em>niggun</em>. That voice belongs to a <em>gaon olam</em> of early-seventeenth-century Venice whose biography and whose halachic method deserve to be seen clearly before his ruling is weighed. Without knowing who he was, one cannot know what the <em>chazanim</em> are actually leaning on.</p>
+
+<h2>IX. Rabbi Yehudah Aryeh of Modena</h2>
+
+<h3>The Ilui</h3>
+
+<p><em>Rabbi Yehudah Aryeh of Modena</em> (<span class="heb-inline">רבי יהודה אריה ממודינא</span>, c. 1571&ndash;1648, <span class="heb-inline">ה'ת&quot;ח</span>) was a <em>gaon olam</em> in early seventeenth-century Venice.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> Born in Venice, the family originated in Modena in northern Italy near Milan. He learned under <em>Rabbi Shmuel Yehudah Katzenellenbogen</em>, son of the <em>Maharam of Padua</em>. In his autobiographical memoir <em>Chayei Yehudah</em> (<span class="heb-inline">חיי יהודה</span>) he records that at two and a half he stood up in <em>shul</em> and recited an entire <em>Haftorah</em> by heart; the memoir is the source, and what is known is what the memoir attests, no more and no less.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a></p>
+
+<h3>The Chochmos Chitzoniyos Track</h3>
+
+<p>He immersed himself in <em>chochmos chitzoniyos</em> (<span class="heb-inline">חכמות חיצוניות</span>) &mdash; music, drama, poetry &mdash; to a degree without near-parallel among the <em>Rishonim</em> and <em>Acharonim</em>. He was a playwright of substantial reputation in the Italian literary world of his time. The <em>Chida</em> (<span class="heb-inline">חיד&quot;א</span>) in <em>Shem HaGedolim</em>,<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> writing a century and a half later, brings him as a <em>chashuv talmid chacham</em> with his <em>seforim</em> and <em>pesakim</em> intact; the <em>Chida</em>'s inclusion places him within the standard canon of <em>Acharonim</em> despite what would follow.</p>
+
+<h3>The Tragic Hisma&rsquo;chrus</h3>
+
+<p>By his own account he was, from adolescence, in the grip of a gambling addiction. Already at thirteen he composed a dialogue-<em>sefer</em> against gambling, structured as a debate between <em>Eldad</em> (the gambler) and <em>Meidad</em> (the friend attempting to pull him out), the names borrowed from the seventy <em>zekeinim</em> in <em>Parshas Beha'aloscha</em>.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> In effect a thirteen-year-old writing to himself. The work is historically referenced as <em>&ldquo;Sefer Eldad u&rsquo;Meidad&rdquo;</em> and preserved under variant titles.</p>
+
+<p>The autobiographical passages of <em>Chayei Yehudah</em> are of unusual candor for an <em>Acharon</em>. He records that on <em>Shavuos</em> (<span class="heb-inline">שבועות</span>) he davened in <em>bais hakenesses</em>, fasting and exerting himself in <em>avodah</em>; a <em>ruach shtus</em> (<span class="heb-inline">רוח שטות</span>) then entered him, his mind clouded, and his feet carried him to the gambling house, where he lost everything he had. The severity of the entry, and the fact that he preserved it in writing, are themselves halachic data.</p>
+
+<h3>The Family Cost</h3>
+
+<p>He records the destruction of his family in the same voice. Three children: one died in youth, one was killed under circumstances his memoir does not fully explain (traditions surrounding gambling debts have been suggested), one fled to Brazil in the sixteenth-century Portuguese-Jewish diaspora and returned only after his father's death. His wife's mental health failed under the strain. In one passage he writes: <em>&ldquo;What have I done to my family? My wife is ill, I have no relationship with my children, I am destroying my life.&rdquo;</em> And in the same period he was writing <em>teshuvos</em> and instructing <em>talmidim</em>.</p>
+
+<h3>The Darshan</h3>
+
+<p>He was a <em>darshan</em> of extraordinary power, drawing large audiences &mdash; and, notably, non-Jewish auditors who came to hear his oratory. His <em>talmidim</em> included some of the leading figures of the Venetian and broader Italian-Jewish world of the mid-seventeenth century; whether Baruch Spinoza, whose formal teachers in Amsterdam were Saul Levi Morteira and Manasseh ben Israel, had any direct or indirect intellectual link to Modena's Venetian circle is a matter for the historical literature and not for the present halachic argument.</p>
+
+<h2>X. Shu&quot;t Zikkenei Yehudah &mdash; The Heter and Its Method</h2>
+
+<h3>Repetition for the Sake of the Niggun</h3>
+
+<p>In <em>Shu&quot;t Zikkenei Yehudah, Klal 1</em>,<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> <em>Rabbi Yehudah Aryeh</em> takes up the very question the present chapter has been building toward. His argument, in summary, is musicological: he has studied music, he understands the internal structure of <em>niggunim</em>, and he holds that certain <em>niggunim</em> cannot be sung without the repetition of words. Because the repetition is imposed by the musical form rather than introduced as an interpolation, he does not see it as a halachic problem. His own example is his <em>chazan</em>'s repeated <em>&ldquo;Kesser Kesser&rdquo;</em> in <em>Kedushah</em>, which he defends enthusiastically. He does not engage the <em>Rishonim</em>'s framework in detail; the <em>teshuvah</em> reads as if the sources he would need to overcome have simply been set aside.</p>
+
+<h3>Christian Melodies in the Bais Hakenesses</h3>
+
+<p>Later in the same <em>teshuvah</em><a class="footnote-ref" id="ref18" href="#fn18">[18]</a> he extends the argument further. It is permissible, he writes, to take non-Jewish liturgical melodies and incorporate them into the <em>chazanus</em> of the <em>bais hakenesses</em>. He records his own practice: before <em>Yamim Nora'im</em> (<span class="heb-inline">ימים נוראים</span>) he would go, <em>lehavdil</em> (<span class="heb-inline">להבדיל</span>), to church in Venice to hear which melodies were being composed for their liturgy; he had a strong ear, he memorized them, and on <em>Rosh Hashanah</em> the <em>chazanim</em> of his circle would sing them. The <em>Bach</em> has a separate discussion of the general question of adopting non-Jewish melodies for <em>tefillah</em>, from a different angle, and the topic has its own literature.</p>
+
+<h2>XI. The Weight of the Heter</h2>
+
+<p>Here the chapter must proceed with care. The <em>halacha</em> does not, as a general rule, invalidate a <em>psak</em> on account of the <em>posek</em>'s personal failings. The <em>Chida</em>'s inclusion of Modena in <em>Shem HaGedolim</em> reflects precisely this discipline: a <em>psak</em> is weighed on its own <em>mekoros</em> and its own reasoning, not on the biography of the man who signed it. To argue simply that Modena's <em>heter</em> should be disregarded because Modena was a <em>ba'al aveirah</em> would be to trade the halachic argument for a rhetorical one.</p>
+
+<p>What can nevertheless be said, on strictly halachic grounds, is this. The <em>heter</em> is a <em>daas yachid</em> (<span class="heb-inline">דעת יחיד</span>) against the overwhelming mainline of <em>Rishonim</em> and <em>Acharonim</em>, from the <em>Ritva</em> and the <em>Beis Yosef</em> forward. Its methodological ground is a musicological <em>sevara</em> (<span class="heb-inline">סברא</span>) &mdash; that the internal structure of the <em>niggun</em> imposes the repetition &mdash; rather than an engagement with the <em>Mishnah</em>'s and the <em>gemara</em>'s frameworks on their own terms. A musical <em>sevara</em> is not, in the <em>Beis Yosef</em>'s categories, a halachic counterweight to a <em>psak</em>; it is a consideration that a <em>posek</em> may (or may not) weigh, but that does not, on its own, displace an established ruling. Rav Moshe's silent handling of the <em>heter</em> reflects this reading: he does not refute it because there is nothing halachically to refute.</p>
+
+<p>Where the biography does bear on the argument is precisely at the point of internal disclosure. The author of the <em>heter</em> was himself deeply invested, by his own testimony, in the musical world whose interests the <em>heter</em> serves. Modena's <em>Chayei Yehudah</em> preserves in his own hand not only his gambling but his continued attraction to the concerts of the <em>shloshes ha-shavuos</em> (<span class="heb-inline">שלושת השבועות</span>) which he acknowledges are forbidden. This is not offered as a substitute for the halachic case; it is offered as a caution that the <em>chazanim</em> who rest their practice on this single <em>heter</em> should know what they are resting on. The <em>heter</em>'s isolation from the mainline sources, its methodological method, and the interest-alignment of its author are three independent reasons for weighing it with restraint. They do not, taken together, produce a <em>psak</em>; they explain why the <em>Beis Yosef</em>'s <em>psak</em> holds.</p>
+
+<h2>XII. The Aruch HaShulchan &mdash; The Realist Coda</h2>
+
+<p>The <em>Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) &mdash; <em>Rabbi Yechiel Michel Epstein</em> (1829&ndash;1908, Novardok) &mdash; captures the situation with characteristic realism.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> In <em>Hilchos Shabbos</em>, addressing the <em>chazan</em>'s tuning fork, he calls it a <em>kli l&rsquo;genai</em> (<span class="heb-inline">כלי לגנאי</span>) but concludes that one cannot protest against the <em>chazanim</em>: the <em>kehilla</em> wants its <em>chazan</em>, is uninterested in the fine points of <em>hilchos Shabbos</em>, and <em>machlokes</em> (<span class="heb-inline">מחלוקת</span>) must not be provoked.</p>
+
+<p>Then, in parentheses in the same <em>siman</em>, he adds a second grief with the same <em>chazanim</em>: they repeat words. <em>Anyone with yiras shamayim</em>, he writes, <em>suffers when he hears it.</em> But &mdash; <em>&ldquo;einan shomim b'kol divrei chachamim&rdquo;</em> (<span class="heb-inline">אינן שומעים בקול דברי חכמים</span>): they do not listen; the <em>oilam</em> will not accept the rebuke from the <em>rav</em>. He then adds, faintly, that <em>&ldquo;perhaps in truth there is no real issur&rdquo;</em> &mdash; invoking, almost inaudibly, the Venetian <em>heter</em> &mdash; and concludes with the meta-<em>klal</em>: once a practice has spread widely among the <em>tzibbur</em>, one does not raise a great commotion against it.</p>
+
+<p>This is the most painful single passage in the <em>sugya</em>. The <em>Aruch HaShulchan</em>'s invocation of the Venetian <em>heter</em> is not made because he himself trusts it; it is made because the <em>oilam</em>'s practice has already made the argument for him, and he is describing rather than endorsing. The meta-<em>klal</em> then reveals its own gravitational limit. If entrenchment of practice is itself the criterion of halachic tolerance, the <em>psak</em> authority has effectively been transferred from the <em>poskim</em> to the <em>chazanim</em> &mdash; the very inversion the <em>Maharam Shik</em> had been fighting one generation earlier. The <em>Aruch HaShulchan</em> is not celebrating this transfer. He is describing what has already occurred, and letting the parentheses register the pain of it.</p>
+
+<h2>XIII. L'Halacha L'Ma'aseh &mdash; The Heter for Hallel</h2>
+
+<p>The chapter closes with the one place where the <em>heter</em> for repetition holds on its own terms, without leaning on Modena. On <em>Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>), a <em>chazan</em> asked to repeat words in <em>Hallel</em> (<span class="heb-inline">הלל</span>) can be granted a <em>heter</em>, on two grounds that operate independently and reinforce one another:</p>
+
+<ol>
+  <li><em>Hallel</em> is a self-contained liturgical unit, with its own <em>berachah</em> before and after. On <em>Rosh Chodesh</em> the <em>tzibbur</em> says <em>chatzi Hallel</em> (<span class="heb-inline">חצי הלל</span>) rather than <em>Hallel HaShalem</em>; the <em>hefsek</em> concern that dominates the <em>Maharam Shik</em>'s treatment of <em>Shemoneh Esrei</em> repetition operates with reduced force here.</li>
+  <li>More fundamentally: repetition is <em>built into <em>Hallel</em> itself</em>. <em>&ldquo;Ana Hashem hoshia na, Ana Hashem hatzlicha na&rdquo;</em> is doubled; the closing <em>pesukim</em> are doubled. This is <em>minhag nevi'im</em>, taught in the <em>Mishnah</em> in <em>Sukkah</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a></li>
+</ol>
+
+<p>The second ground is the load-bearing one. Once a <em>tefillah</em> is by its own construction a doubled-<em>pesukim</em> form, the theological concern of <em>&ldquo;two entities&rdquo;</em> is off the table by definition &mdash; the same category that Rabbeinu Yonah invoked at <em>Ne'ilah</em>. A <em>chazan</em>'s further repetition of words within <em>Hallel</em>, at least within the doubled <em>pesukim</em> themselves and their immediate structural neighborhood, is not the same halachic act as his repetition inside a <em>Shemoneh Esrei berachah</em>. The <em>hefsek</em> ground (i.e., ground 1 above) then supplies the additional cushion that permits a wider grant in practice.</p>
+
+<p>For <em>Hallel</em> on <em>Rosh Chodesh</em>, then, the <em>heter</em> stands, grounded in a <em>Mishnah</em> in <em>Sukkah</em> and a <em>chatzi-Hallel</em> structure. For <em>Kedushah</em>, <em>chazaras hashatz</em>, and the balance of <em>Shemoneh Esrei</em>, the <em>psak</em> of the <em>Beis Yosef</em>, the <em>Maharam Shik</em>, the <em>Machaneh Chaim</em>, and Rav Moshe is unchanged. The same <em>chazan</em>, in the same <em>davening</em>, receives a <em>heter</em> in one <em>tefillah</em> and no <em>heter</em> in another &mdash; because each <em>tefillah</em> is governed by a different set of <em>mekoros</em>, and the <em>halacha</em> is fine-grained enough to hold both rulings at once.</p>
+
+<h2>XIV. Closing</h2>
+
+<p>What the <em>sugya</em> shows, in the long arc from the <em>Mishnah</em> to the <em>Aruch HaShulchan</em>, is that a fixed <em>nusach</em> of <em>tefillah</em> is not the private property of the <em>chazan</em>. It is the inherited coinage of <em>Chazal</em>, and every generation of <em>poskim</em> has understood that it must be defended against the pressures that would deform it &mdash; whether those pressures come from a Venetian musicological argument, a nineteenth-century Reform aesthetic, or the twentieth-century golden age of American <em>chazanus</em>. The defense has not, on the whole, prevailed with the <em>oilam</em>. That does not change the <em>psak</em>.</p>
+
+<p>The Rabbi's role, when a <em>chazan</em> steps to the <em>amud</em> with a Rosenblatt or a Koussevitzky in his memory, is neither to celebrate the beauty of the <em>niggun</em> nor to declare war on the <em>chazan</em>. It is to know the <em>sugya</em> well enough to draw the line at the right place: <em>chas v'shalom</em> in <em>Shemoneh Esrei</em>, in <em>Kedushah</em>, in <em>chazaras hashatz</em>; a specific, sourced <em>heter</em> in <em>Hallel</em>; and, all along, the internal question of whether the protest is <em>kanaus l'sheim Shamayim</em> or a defense of one's own authority. On the honesty of that internal question, more of the <em>sugya</em> depends than any of the <em>mekoros</em> quite say.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מַרְאֵה מְקוֹמוֹת</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Mishnah Berachos</em> 5:3 &mdash; <em>&ldquo;Ha&rsquo;omer &lsquo;Modim Modim&rsquo; &mdash; meshatkin oso.&rdquo;</em></span>
+  <span class="expanded">&mdash; The opening <em>Mishnah</em> of the fifth <em>perek</em> of <em>Berachos</em>. The <em>gemara</em> at <em>Berachos</em> 33b explains the silencing as a guard against the appearance of addressing two entities &mdash; an active concern in the <em>bais hakenesses</em> of the <em>Mishnaic</em> era, where <em>minim</em> and dualists prayed alongside <em>Klal Yisrael</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Berachos</em> 33b &mdash; <em>&ldquo;Ha-koreh Kriyas Shema, ve&rsquo;kofelah &mdash; harei zeh meguneh.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>gemara</em> extends the principle of <em>Mishnah</em> 5:3 to one who repeats <em>&ldquo;Shema&rdquo;</em>, but uses the milder <em>meguneh</em> rather than <em>meshatkin oso</em>. The precise distinction is debated by the <em>Rishonim</em> and is set aside in the present chapter.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Chidushei HaRitva</em> on <em>Berachos</em> 33b (and parallel in <em>Sukkah</em>).</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Yom Tov ben Avraham Asvili</em> (c. 1260&ndash;1320, Spain), foremost <em>talmid</em> of the <em>Ra&rsquo;ah</em> and the <em>Rashba</em>, holds that <em>Chazal</em> never intended to restrict the <em>issur</em> to the two specific words named in the <em>Mishnah</em>. Any repetition that could suggest dual address is included. This is the strict reading that the <em>Beis Yosef</em> subsequently adopts.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Rabbeinu Yonah</em> on the <em>Rif</em>, <em>Berachos</em> ch. 5 &mdash; the <em>kushia</em> from <em>&ldquo;Hashem Hu HaElokim.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbeinu Yonah of Gerona</em> (c. 1200&ndash;1263) raises the difficulty: if repetition is forbidden, why does the <em>tzibbur</em> at <em>Ne&rsquo;ilah</em> say <em>&ldquo;Hashem Hu HaElokim&rdquo;</em> seven times? His resolution &mdash; that a communal, biblically-modeled repetition is a categorically different <em>din</em> from a personal interpolation &mdash; supplies the framework within which the entire subsequent <em>sugya</em> is worked out.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Melachim I</em> 18:39.</span>
+  <span class="expanded">&mdash; The biblical source for the doubled declaration. After the fire descends at <em>Har HaKarmel</em> and consumes <em>Eliyahu HaNavi</em>&rsquo;s <em>korban</em>, the entire nation falls on its face and proclaims Hashem&rsquo;s exclusivity twice. The <em>tefillah</em> at <em>Ne&rsquo;ilah</em> echoes this collective acclamation.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Tur</em> and <em>Shulchan Aruch, Orach Chaim</em> siman 51 (laws of <em>Pesukei d&rsquo;Zimra</em>); <em>Magen Avraham</em> and <em>Mishnah Berurah</em> on the closing <em>pesukim</em> of <em>Shiras HaYam</em>.</span>
+  <span class="expanded">&mdash; The doubled closing <em>pesukim</em> &mdash; <em>&ldquo;Kol haneshamah tehallel Yah, Halleluyah&rdquo;</em> and <em>&ldquo;Hashem yimloch l&rsquo;olam va&rsquo;ed&rdquo;</em> &mdash; function as structural seals, not as separate addresses. The <em>poskim</em> treat them as concluding markers, parallel in form to <em>chazak chazak ve&rsquo;nischazek</em> at the end of a <em>chumash</em>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Bach (Bayis Chadash)</em> on <em>Tur, Orach Chaim</em> siman 61 &mdash; lenient view.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yoel Sirkis</em> (1561&ndash;1640, Cracow), the <em>Bach</em>, argues that the <em>Mishnah</em>&rsquo;s prohibition is limited to the specific words named in it &mdash; <em>&ldquo;Modim&rdquo;</em> and <em>&ldquo;Shema&rdquo;</em> &mdash; and is reluctant to extend a <em>derabbanan</em> by <em>hekesh</em>. He further argues that when the <em>tzibbur</em> is davening aloud the concern about a <em>min</em> exploiting the repetition evaporates. The <em>Bach</em> stands famously at odds with the <em>Beis Yosef</em> across many <em>sugyos</em>; this is one of his characteristic counter-readings.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Shu&quot;t Maharam Shik, Orach Chaim</em>, siman on <em>chazanus</em> (variously cited in the printed editions).</span>
+  <span class="expanded">&mdash; <em>Rabbi Moshe Shik</em> (1809&ndash;1879, Hungary), foremost <em>talmid</em> of the <em>Chasam Sofer</em> and <em>Rosh Yeshiva</em> in Huszt, wrote a <em>Shu&quot;t</em> of over a thousand <em>teshuvos</em>. The <em>teshuvah</em> on the practice of nineteenth-century <em>chazanim</em> assembles five independent grounds for prohibition: <em>bal tosif</em>; public embarrassment / <em>amad nizok</em>; <em>hefsek</em>; the <em>issur</em> of <em>shirah</em> in <em>tefillah</em>; and <em>kavod malchei ha-melachim</em>. The <em>siman</em> is cited variously in different oral <em>mesorahs</em> of this <em>sugya</em>; the reader should consult a printed <em>Maharam Shik, Orach Chaim</em> to fix the exact <em>siman</em> in the edition at hand.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Shu&quot;t Yabia Omer</em> (<em>Rav Ovadia Yosef</em>), <em>Orach Chaim</em> &mdash; extended treatment of repetition and <em>bal tosif</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Ovadia Yosef zt&quot;l</em> (1920&ndash;2013) takes up the question whether the bare repetition of an existing word counts as an <em>hosafah</em> for purposes of <em>bal tosif</em>, or only the introduction of new material. He surveys the <em>Rishonim</em> and rules narrowly: a private <em>yachid</em> who lost <em>kavvanah</em> may in defined circumstances repeat, but a <em>shaliach tzibbur</em> may not. The <em>teshuvah</em> appears in the <em>chalakim</em> on <em>Orach Chaim</em>.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Sanhedrin</em> 101a &mdash; <em>&ldquo;Ha-koreh pasuk shel Shir HaShirim ve&rsquo;oseh oso k&rsquo;min zemer&hellip; ha-Torah chogeres sak&hellip; ve&rsquo;omeres lifnei ha-Kadosh Baruch Hu: Ribbono shel Olam, asaani banecha ki-kinor she&rsquo;menagnin bo leitzim.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>gemara</em>&rsquo;s warning against treating <em>pesukim</em> as material for ordinary musical performance. The <em>Torah</em> personified comes before the <em>Kisei HaKavod</em> wrapped in sackcloth and protests that her words have been turned into a singer&rsquo;s instrument. The <em>Maharam Shik</em> uses this as the fourth of his five grounds.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Maharam Shik, ibid.</em> &mdash; <em>psak</em> requiring removal of the <em>chazan</em> from the <em>amud</em>.</span>
+  <span class="expanded">&mdash; Concluding the same <em>teshuvah</em>, the <em>Maharam Shik</em> rules that one is obligated to protest a <em>chazan</em> who repeats words and to remove him from the <em>amud</em>, even mid-<em>tefillah</em>. Whether the removal is a <em>kenas</em> or a statement that the <em>chazaras hashatz</em> is halachically invalid is discussed in the body of the present chapter (siman V); the <em>Maharam Shik</em>&rsquo;s <em>lashon</em> tilts toward the invalidity reading.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Shu&quot;t Machaneh Chaim</em> (<em>Rabbi Chaim Sofer</em>) &mdash; incident at a Sephardic <em>bais hakenesses</em> at <em>&ldquo;Kesser.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbi Chaim Sofer</em> (1821&ndash;1886, Hungary) records his father&rsquo;s actual practice. The <em>chazan</em> in a Sephardic <em>bais hakenesses</em> began repeating words during <em>&ldquo;Kesser&rdquo;</em> in <em>Kedushas Mussaf</em>; the elder <em>Rabbi Sofer</em> interrupted <em>Kedushah</em>, instructed the <em>chazan</em> to step down from the <em>amud</em>, and physically expelled him. The episode furnishes the <em>psak</em> from the mid-nineteenth century and matches the <em>Maharam Shik</em>&rsquo;s ruling.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Shu&quot;t Igros Moshe</em> (<em>Rav Moshe Feinstein</em>), <em>Orach Chaim</em> &mdash; prohibition of word-repetition by <em>chazanim</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Moshe Feinstein zt&quot;l</em> (1895&ndash;1986) addressed the question as the great American <em>chazanim</em> of the early twentieth century &mdash; Kwartin, Rosenblatt, Pinchik, Koussevitzky &mdash; populated American <em>shuls</em>. He rules sharply with the <em>Beis Yosef</em> against the <em>Bach</em>: musical convenience cannot override a <em>psak</em> of the <em>Shulchan Aruch</em>. The <em>teshuvah</em> appears in <em>Orach Chaim, Chelek II</em>; the reader should consult the printed <em>Igros Moshe</em> to fix the exact <em>siman</em>. Rav Moshe does not engage the Venetian <em>heter</em> of <em>Zikkenei Yehudah</em> directly; the silence is itself argument.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short">Biographical data on <em>Rabbi Yehudah Aryeh of Modena</em> &mdash; drawn primarily from his own memoir <em>Chayei Yehudah</em>.</span>
+  <span class="expanded">&mdash; The autobiographical <em>Chayei Yehudah</em> is the principal source for the biographical material in the present chapter, including the childhood account, the gambling addiction, the <em>Shavuos</em> episode, and the destruction of the family. The memoir circulated in manuscript from the seventeenth century and was published in modern critical editions in the twentieth century, most notably in the edition of Daniel Carpi (Tel Aviv, 1985), which serves as the standard scholarly reference for citation purposes.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Shem HaGedolim</em> (<em>Chida</em>), entry on <em>Rabbi Yehudah Aryeh of Modena</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Chaim Yosef David Azulai</em> (1724&ndash;1806), the <em>Chida</em>, brings <em>Rabbi Yehudah Aryeh</em> as a <em>chashuv talmid chacham</em> with his <em>seforim</em> and <em>pesakim</em>. The <em>Chida</em>&rsquo;s inclusion places him within the standard canon of <em>Acharonim</em> and stands as the historical warrant for the general principle discussed in siman XI: a <em>psak</em> is weighed on its own merits and not on the biography of its author. That the <em>heter</em> is nevertheless weighed with restraint in the present chapter is not a violation of this principle but its application on independent halachic grounds.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short">The anti-gambling dialogue at age thirteen &mdash; historically referenced as <em>&ldquo;Sefer Eldad u&rsquo;Meidad,&rdquo;</em> also under variant titles such as <em>Sur me&rsquo;Ra</em>.</span>
+  <span class="expanded">&mdash; The dialogue between <em>Eldad</em> (the gambler) and <em>Meidad</em> (his moral counterweight), the names borrowed from the seventy <em>zekeinim</em> in <em>Bemidbar</em> 11:26. The <em>sefer</em> has been printed under variant titles in different editions; the standard scholarly literature on Modena preserves the textual history.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Shu&quot;t Zikkenei Yehudah, Klal 1</em> (<em>Rabbi Yehudah Aryeh of Modena</em>) &mdash; <em>heter</em> for word-repetition for the sake of the <em>niggun</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yehudah Aryeh of Modena</em> (c. 1571&ndash;1648, Venice) treats the question musicologically in his <em>Shu&quot;t Zikkenei Yehudah</em>: a trained ear understands that the structure of certain <em>niggunim</em> requires the repetition of words, and there is therefore no <em>issur</em>. He gives his own <em>chazan</em>&rsquo;s <em>&ldquo;Kesser Kesser&rdquo;</em> as illustration. The <em>teshuvah</em> stands nearly alone among the <em>poskim</em> on the lenient side; the <em>chazanim</em> of subsequent centuries have leaned on it almost exclusively.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Shu&quot;t Zikkenei Yehudah, ibid.</em> &mdash; incorporation of non-Jewish melodies into <em>chazanus</em>.</span>
+  <span class="expanded">&mdash; Continuing in the same <em>teshuvah</em>, <em>Rabbi Yehudah Aryeh</em> defends taking liturgical melodies heard in non-Jewish religious settings and adapting them for the <em>bais hakenesses</em>, citing his own pre-<em>Yamim Nora&rsquo;im</em> attendance at Venetian church services. The passage is the central historical text invoked when later <em>poskim</em> debate the use of non-Jewish-origin melodies in <em>tefillah</em>; the <em>Bach</em> has a separate discussion from a different angle.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Mishnah Sukkah</em> 3:11 (<em>daf</em> 38a; cf. <em>Sukkah</em> 53) &mdash; <em>&ldquo;Makom she-nahagu likhpol &mdash; yikhpol.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>Mishnah</em> on the <em>minhagei Hallel</em> records that doubled <em>pesukim</em> in <em>Hallel</em> &mdash; <em>&ldquo;Ana Hashem hoshia na, Ana Hashem hatzlicha na,&rdquo;</em> and the closing <em>pesukim</em> &mdash; are <em>minhag nevi&rsquo;im</em>. Because the structure of <em>Hallel</em> contains its own internal repetition <em>lechatchilah</em>, <em>poskim</em> permit further repetition for the <em>niggun</em>, particularly in <em>chatzi Hallel</em> on <em>Rosh Chodesh</em> where the <em>hefsek</em> concern is reduced.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Beis Yosef</em> and <em>Shulchan Aruch, Orach Chaim</em> siman 61 &mdash; main halachic position against the <em>Bach</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yosef Karo</em> (1488&ndash;1575, Tzfas), in the <em>Beis Yosef</em> on the <em>Tur</em> and in his own <em>Shulchan Aruch</em>, rules with the <em>Ritva</em>: the <em>issur</em> of word-repetition is not limited to <em>&ldquo;Modim&rdquo;</em> and <em>&ldquo;Shema.&rdquo;</em> This is the position adopted by the overwhelming majority of later <em>poskim</em> &mdash; <em>Maharam Shik</em>, <em>Machaneh Chaim</em>, <em>Rav Moshe</em> &mdash; against the <em>Bach</em>&rsquo;s narrow reading and against the Venetian musicological <em>heter</em>.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Eleh Divrei HaBris</em> (Altona / Hamburg, 1819) &mdash; the rabbinic response to the Hamburg Reform Temple.</span>
+  <span class="expanded">&mdash; The best-known nineteenth-century <em>cherem</em>-collection against Reform liturgical innovations, including the change of the <em>drashah</em> language, the introduction of vernacular <em>tefillah</em>, and organ accompaniment. Assembled by the rabbinical courts of Hamburg-Altona-Wandsbeck in the wake of the establishment of the Hamburg Reform Temple. This is the actual documentary anchor for the tradition of resistance to vernacular <em>drashos</em> that persists in some <em>kehilos</em> to the present. Popular oral traditions often re-date and misattribute it; the reader should consult the printed <em>Eleh Divrei HaBris</em>.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short">The Haftorah-at-two-and-a-half account &mdash; <em>Chayei Yehudah</em>, autobiographical prologue.</span>
+  <span class="expanded">&mdash; The account of Modena as a small child reciting an entire <em>Haftorah</em> in <em>shul</em> is preserved in his own memoir <em>Chayei Yehudah</em>. As a self-reported childhood memory it is a memoir claim and not an independently verifiable historical datum; it is nevertheless a striking piece of testimony and consonant with the reputation for prodigious ability that his career subsequently bore out. The standard modern edition is Daniel Carpi&rsquo;s (Tel Aviv, 1985).</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Aruch HaShulchan, Orach Chaim</em> siman 338 (<em>Hilchos Shabbos</em>) &mdash; <em>chazan</em>&rsquo;s tuning fork; parenthetical lament about word-repetition.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yechiel Michel Epstein</em> (1829&ndash;1908, Novardok), the <em>Aruch HaShulchan</em>, treats the <em>chazan</em>&rsquo;s tuning fork as <em>kli l&rsquo;genai</em> on <em>Shabbos</em> but rules that one should not protest its use, since the <em>kehilla</em> is invested in its <em>chazan</em>. In a parenthetical aside in the same <em>siman</em> he extends the same realism to word-repetition: those with <em>yiras shamayim</em> suffer when they hear it, but <em>&ldquo;einan shomim b&rsquo;kol divrei chachamim,&rdquo;</em> and he concludes with a faint invocation of the Venetian <em>heter</em> and the meta-<em>klal</em> that one does not raise a great commotion against an entrenched practice.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 2 March 2025 &mdash; repetition of words by the <em>chazan</em>; the <em>Maharam Shik</em>&rsquo;s five reasons for prohibition; <em>Rabbi Yehudah Aryeh of Modena</em> as the single controversial source most <em>chazanim</em> rely on; the <em>Aruch HaShulchan</em>&rsquo;s realism; and the practical <em>heter</em> for <em>Hallel</em>. Revised 30 August 2026 in light of the Shiur Review and Editorial Review of the same date: the Hebrew year for Modena&rsquo;s death corrected; the Haftorah account softened to what the memoir attests; the <em>Eleh Divrei HaBris</em> anchor supplied for the <em>drashah</em>-language <em>cherem</em>; the Spinoza tag qualified; the town name standardized to Huszt; the closing recast for the written form; and the halachic argument against the Venetian <em>heter</em> reframed on its own terms rather than on biographical grounds. Mareh Mekomos carry dual-layer (short + expanded) footnotes throughout.
+</footer>
+
+</body>
+</html>

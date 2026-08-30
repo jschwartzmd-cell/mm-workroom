@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — 16 March 2025 — Magen Avraham: The Soul of the First Berachah</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">מָגֵן אַבְרָהָם &mdash; נִשְׁמַת הַבְּרָכָה הָרִאשׁוֹנָה</h1>
+  <div class="english-title">Magen Avraham: The Soul of the First Berachah</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 16 March 2025 (<em>Purim Katan</em>) &nbsp;&middot;&nbsp; Sefer Edition &middot; Revised 30 August 2026</div>
+</header>
+
+<p class="dedication"><em>A single word stands at the head of the <span class="heb-inline">שמונה עשרה</span> (Shemoneh Esrei) &mdash; <em>&ldquo;<span class="heb-inline">מגן אברהם</span>&rdquo;</em> &mdash; and behind it three ranges of Jewish thought converge: the <span class="heb-inline">חסידישע</span> (chassidishe) reading of the last generation, the halakhic-eschatological vision of the future <em>avodah</em>, and the messianic universalism of the uncensored Rambam. What follows is an attempt to draw them together.</em></p>
+
+<h2>I. The Puzzle of the Chasimah</h2>
+
+<h3>The Source in Pesachim</h3>
+
+<p>The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) in <em>Pesachim</em> (<span class="heb-inline">פסחים</span>) 117b<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> derives the entire structure of <em>Birkas Avos</em> (<span class="heb-inline">ברכת אבות</span>) &mdash; the first <em>berachah</em> (<span class="heb-inline">ברכה</span>) of the <em>Shemoneh Esrei</em> &mdash; from the four clauses of <em>Hashem</em>&rsquo;s opening promise to <em>Avraham Avinu</em> (<span class="heb-inline">אברהם אבינו</span>) at the beginning of <em>Parshas Lech Lecha</em> (<span class="heb-inline">פרשת לך לך</span>):</p>
+
+<blockquote>
+  <div class="heb">וְאֶעֶשְׂךָ לְגוֹי גָּדוֹל, וַאֲבָרֶכְךָ, וַאֲגַדְּלָה שְׁמֶךָ, וֶהְיֵה בְּרָכָה.</div>
+  <div class="trans">I shall make you a great nation; and I shall bless you; and I shall make your name great; and be a blessing.</div>
+  <div class="source"><em>Bereshis</em> 12:2, cited by <em>Rashi</em> (<span class="heb-inline">רש&quot;י</span>) ad loc.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a></div>
+</blockquote>
+
+<p>The <em>Gemara</em> reads each clause as a future <em>tefillah</em> (<span class="heb-inline">תפילה</span>):</p>
+
+<ul>
+  <li><em>&ldquo;<span class="heb-inline">ואעשך לגוי גדול</span>&rdquo;</em> &mdash; this is the <em>&ldquo;<span class="heb-inline">אלקי אברהם</span>&rdquo;</em> of the <em>berachah</em>.</li>
+  <li><em>&ldquo;<span class="heb-inline">ואברכך</span>&rdquo;</em> &mdash; this is <em>&ldquo;<span class="heb-inline">אלקי יצחק</span>.&rdquo;</em></li>
+  <li><em>&ldquo;<span class="heb-inline">ואגדלה שמך</span>&rdquo;</em> &mdash; this is <em>&ldquo;<span class="heb-inline">אלקי יעקב</span>.&rdquo;</em></li>
+  <li><em>&ldquo;<span class="heb-inline">והיה ברכה</span>&rdquo;</em> &mdash; through this <em>you</em>, Avraham, shall become a <em>berachah</em>.</li>
+</ul>
+
+<p>The natural expectation is that the <em>chasimah</em> (<span class="heb-inline">חתימה</span>) &mdash; the sealing formula &mdash; would name all three <em>Avos</em>: <em>&ldquo;<span class="heb-inline">ברוך אתה ה' מגן אברהם, יצחק, ויעקב</span>.&rdquo;</em> The <em>Gemara</em>, however, rules otherwise:</p>
+
+<blockquote>
+  <div class="heb">וּבְךָ חוֹתְמִין, וְלֹא בְּכֻלָּם.</div>
+  <div class="trans">With <em>you</em> we seal &mdash; and not with all of them.</div>
+  <div class="source"><em>Pesachim</em> 117b</div>
+</blockquote>
+
+<h3>The Question Behind the Ruling</h3>
+
+<p>Why? Why does the sealing of the first <em>berachah</em> single out <em>Avraham</em> alone, when the three <em>Avos</em> are named in a single breath two words earlier? This chapter offers three <em>mehalchim</em> (<span class="heb-inline">מהלכים</span>) &mdash; three angles of approach &mdash; each drawn from a distinct stream in the tradition: the <em>chassidishe</em> reading of the <em>Kotzker</em> (<span class="heb-inline">קאצקער</span>) with its antecedent in the <em>Megaleh Amukos</em> (<span class="heb-inline">מגלה עמוקות</span>); the halakhic-eschatological reading of the <em>Tif&rsquo;eres Banim</em> (<span class="heb-inline">תפארת בנים</span>) of Munkács, riding on a face-value <em>Radak</em> (<span class="heb-inline">רד&quot;ק</span>); and the messianic-universal reading of the <em>Maharam Schick</em> (<span class="heb-inline">מהר&quot;ם שיק</span>), anchored in the uncensored <em>Rambam</em> (<span class="heb-inline">רמב&quot;ם</span>) at the close of <em>Hilchos Melachim</em> (<span class="heb-inline">הלכות מלכים</span>). Each reading widens the frame of the previous one; together, as will be argued in the closing chapter, they converge on a single reading of the word <em>&ldquo;<span class="heb-inline">ובך</span>&rdquo;</em> &mdash; <em>with you</em>.</p>
+
+<h2>II. Body and Soul of Tefillah</h2>
+
+<p>Before entering the three <em>mehalchim</em>, a brief reminder of the framework within which they operate. The words of the <em>Shemoneh Esrei</em>, established by the <em>Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>), are the <em>guf</em> (<span class="heb-inline">גוף</span>) &mdash; the body &mdash; of <em>tefillah</em>. <em>Kavvanah</em> (<span class="heb-inline">כוונה</span>) is the <em>neshamah</em> (<span class="heb-inline">נשמה</span>). The <em>Zohar HaKadosh</em> (<span class="heb-inline">זוהר הקדוש</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> repeatedly warns that <em>tefillah</em> without <em>kavvanah</em> is <em>&ldquo;<span class="heb-inline">כגוף בלי נשמה</span>&rdquo;</em> &mdash; a body without a soul; the <em>mekubalim</em> (<span class="heb-inline">מקובלים</span>), notably the <em>Ramak</em> (<span class="heb-inline">רמ&quot;ק</span>) in <em>Pardes Rimonim</em> (<span class="heb-inline">פרדס רימונים</span>), explain the <em>Zohar</em>&rsquo;s frightening image of empty <em>tefillos</em> being cast to the <em>chitzonim</em> (<span class="heb-inline">חיצונים</span>) and <em>kelipos</em> (<span class="heb-inline">קליפות</span>).</p>
+
+<p>The <em>Gemara</em> in <em>Rosh HaShanah</em> (<span class="heb-inline">ראש השנה</span>) 18a<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> gives the practical corollary: two people daven <em>&ldquo;<span class="heb-inline">רפאנו</span>&rdquo;</em>; one is healed, the other is not. Why? <em>Tefillah shleimah</em> (<span class="heb-inline">תפילה שלמה</span>) versus <em>tefillah she&rsquo;einah shleimah</em> &mdash; a complete <em>tefillah</em> versus an incomplete one; <em>Rashi</em>: with <em>kavvanah</em> versus without. <em>Kavvanah</em> is decisive. But the focus of this chapter is on the <em>words</em> themselves &mdash; what they mean, from what depths of the tradition they were drawn.</p>
+
+<h2>III. Mahalach A &mdash; The Kotzker: A Generation of Chesed</h2>
+
+<p>The famous <em>vort</em> from the <em>Kotzker Rebbe</em>, Rabbi Menachem Mendel of Kotzk (<span class="heb-inline">רבי מנחם מנדל מקאצק</span>, 1787&ndash;1859), whose antecedent is found already in the <em>Megaleh Amukos</em> of Rabbi Nosson Nota Shapiro of Kraków (<span class="heb-inline">רבי נתן נטע שפירא</span>, 1585&ndash;1633)<a class="footnote-ref" id="ref5" href="#fn5">[5]</a>: there is a <em>remez</em> (<span class="heb-inline">רמז</span>) &mdash; a hint &mdash; embedded in the <em>Gemara</em>&rsquo;s ruling.</p>
+
+<p>The three <em>Avos</em> are the three <em>amudim</em> (<span class="heb-inline">עמודים</span>) &mdash; the three pillars on which the spiritual life of <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) rests:</p>
+
+<ul>
+  <li><em>Avraham Avinu</em> &mdash; the pillar of <em>chesed</em> (<span class="heb-inline">חסד</span>).</li>
+  <li><em>Yitzchak Avinu</em> (<span class="heb-inline">יצחק אבינו</span>) &mdash; the pillar of <em>gevurah</em> (<span class="heb-inline">גבורה</span>).</li>
+  <li><em>Yaakov Avinu</em> (<span class="heb-inline">יעקב אבינו</span>) &mdash; the pillar of <em>tif&rsquo;eres</em> (<span class="heb-inline">תפארת</span>), the integration of the two, the pillar of <em>Torah</em>.</li>
+</ul>
+
+<p>Different generations of <em>Klal Yisrael</em> have leaned on different pillars &mdash; ages of martyrological <em>gevurah</em>, ages of towering Torah scholarship, ages of open-handed <em>chesed</em>. In the <em>Kotzker</em>&rsquo;s reading, <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>) are intimating something specific about the <em>final</em> generation, the generation that ushers in the coming of <em>Mashiach</em> (<span class="heb-inline">משיח</span>): it will be the <em>dor</em> (<span class="heb-inline">דור</span>) of <em>Avraham Avinu</em>, the <em>dor ha-chesed</em> (<span class="heb-inline">דור החסד</span>). <em>&ldquo;<span class="heb-inline">ובך חותמין</span>&rdquo;</em> &mdash; with <em>you</em>, <em>Avraham</em>, with your <em>middah</em> of <em>chesed</em>, will we close the <em>galus</em> (<span class="heb-inline">גלות</span>).</p>
+
+<div class="pullquote">
+<p>If one had any awareness of the volume of <em>tzedakah</em> (<span class="heb-inline">צדקה</span>) given in the two or three days surrounding <em>Purim</em> (<span class="heb-inline">פורים</span>) &mdash; hundreds of millions of dollars across the Jewish communities of the world, in a single burst &mdash; the sheer scale is staggering. The generation living today experiences <em>chesed</em> on a scale unprecedented in Jewish history: institutions of <em>tzedakah</em> and <em>chessed</em>, medical societies, gemachs, hospitality networks that reach into every corner of the Jewish world. This, the <em>Kotzker</em> teaches, is the <em>matbe&rsquo;a</em> (<span class="heb-inline">מטבע</span>) &mdash; the currency &mdash; of the final <em>geulah</em> (<span class="heb-inline">גאולה</span>) promised to <em>Avraham Avinu</em>.</p>
+</div>
+
+<h2>IV. Mahalach B &mdash; The Tif&rsquo;eres Banim: Only Shacharis in the Future</h2>
+
+<h3>The Author</h3>
+
+<p>The <em>Tif&rsquo;eres Banim</em><a class="footnote-ref" id="ref6" href="#fn6">[6]</a> is the work of the Munkatcher Rebbe, Rabbi Tzvi Hirsh Shapira of Munkács (<span class="heb-inline">רבי צבי הירש שפירא ממונקאטש</span>, 1850&ndash;1913), a grandson of the <em>Bnei Yissaschar</em> (<span class="heb-inline">בני יששכר</span>, Rabbi Tzvi Elimelech of Dinov, 1783&ndash;1841 &mdash; one of the foundational <em>sifrei chassidus</em>). Munkács, in what is today western Ukraine, was the seat of a <em>chassidus</em> dynasty whose <em>rebbes</em> were not only great <em>chassidim</em> and <em>mekubalim</em> but also major <em>poskim</em> (<span class="heb-inline">פוסקים</span>). Rabbi Tzvi Hirsh authored the encyclopedic <em>Darchei Teshuvah</em> (<span class="heb-inline">דרכי תשובה</span>) on <em>Yoreh De&rsquo;ah</em> (<span class="heb-inline">יורה דעה</span>) &mdash; the primary reference for any <em>bachur</em> (<span class="heb-inline">בחור</span>) who has learned <em>basar be-chalav</em> (<span class="heb-inline">בשר וחלב</span>) or <em>ta&rsquo;aroves</em> (<span class="heb-inline">תערובות</span>). His <em>Tif&rsquo;eres Banim</em> on <em>Chumash</em> contains a <em>chiddush</em> (<span class="heb-inline">חידוש</span>) on <em>Parshas Lech Lecha</em> that stands among the most striking readings of <em>&ldquo;<span class="heb-inline">ובך חותמין</span>&rdquo;</em> in the entire literature.</p>
+
+<h3>The Pesukim in Yechezkel</h3>
+
+<p>The <em>navi</em> (<span class="heb-inline">נביא</span>) <em>Yechezkel</em> (<span class="heb-inline">יחזקאל</span>) was given the great vision of the <em>Bayis Shelishi</em> (<span class="heb-inline">בית שלישי</span>), the future <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>); the vision is read as the <em>haftarah</em> of <em>Parshas HaChodesh</em> (<span class="heb-inline">פרשת החודש</span>).<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> The <em>nevuah</em> (<span class="heb-inline">נבואה</span>) contains many <em>sesirot</em> (<span class="heb-inline">סתירות</span>) with the arrangements of the first and second Temples &mdash; how the <em>kohanim</em> (<span class="heb-inline">כהנים</span>) dress, how they conduct themselves; the <em>Rishonim</em> (<span class="heb-inline">ראשונים</span>) labor at length to reconcile.</p>
+
+<p>One <em>pasuk</em> stands out. In describing the daily <em>korban</em> (<span class="heb-inline">קרבן</span>), <em>Yechezkel</em> 46:13&ndash;15<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> mentions the <em>tamid shel shachar</em> (<span class="heb-inline">תמיד של שחר</span>) &mdash; <em>&ldquo;<span class="heb-inline">בבקר בבקר</span>&rdquo;</em>, morning after morning &mdash; and <em>does not mention</em> a <em>tamid shel bein ha&rsquo;arbayim</em> (<span class="heb-inline">תמיד של בין הערבים</span>).</p>
+
+<h3>The Radak&rsquo;s Reading</h3>
+
+<p>Most <em>mefarshim</em> (<span class="heb-inline">מפרשים</span>) assimilate the <em>pasuk</em> to the familiar structure of <em>korban tamid</em> (<span class="heb-inline">קרבן תמיד</span>) &mdash; some speak of <em>korbanos milu&rsquo;im</em> (<span class="heb-inline">קרבנות מילואים</span>) at the inauguration of the future <em>Beis HaMikdash</em>, others suggest textual ellipsis. The <em>Radak</em>, Rabbi David Kimchi (<span class="heb-inline">רבי דוד קמחי</span>, 1160&ndash;1235, Narbonne in Provence)<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> &mdash; one of the great <em>mefarshei Nach</em> (<span class="heb-inline">מפרשי נ&quot;ך</span>) among the <em>Rishonim</em> &mdash; breaks with this. He reads the <em>pasuk</em> at face value: in the <em>Bayis Shelishi</em>, <strong>there will be only a <em>tamid shel shachar</em></strong>, and no <em>tamid shel bein ha&rsquo;arbayim</em>.</p>
+
+<h3>The Implication for Tefillah</h3>
+
+<p>The <em>Gemara</em> in <em>Berachos</em> (<span class="heb-inline">ברכות</span>) 26b<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> teaches the great principle:</p>
+
+<blockquote>
+  <div class="heb">תְּפִלּוֹת כְּנֶגֶד תְּמִידִין תִּקְּנוּם.</div>
+  <div class="trans">The daily <em>tefillos</em> were instituted parallel to the <em>temidin</em>.</div>
+</blockquote>
+
+<ul>
+  <li><em>Shacharis</em> (<span class="heb-inline">שחרית</span>) corresponds to the <em>tamid shel shachar</em>.</li>
+  <li><em>Minchah</em> (<span class="heb-inline">מנחה</span>) corresponds to the <em>tamid shel bein ha&rsquo;arbayim</em>.</li>
+  <li><em>Ma&rsquo;ariv</em> (<span class="heb-inline">מעריב</span>) corresponds to the <em>eivarim</em> and <em>pedarim</em> (<span class="heb-inline">אברים ופדרים</span>) consumed on the <em>mizbe&rsquo;ach</em> (<span class="heb-inline">מזבח</span>) through the night.</li>
+</ul>
+
+<p>Follow the implication. If in the future there is no <em>tamid shel bein ha&rsquo;arbayim</em>, there is no anchor for <em>Minchah</em> and no anchor for <em>Ma&rsquo;ariv</em> &mdash; only <strong><em>Shacharis</em></strong>.</p>
+
+<h3>Why? &ldquo;Ha-Laylah Ka-Yom Ya&rsquo;ir&rdquo;</h3>
+
+<p>The reason is disclosed in the <em>pesukim</em>. <em>David HaMelech</em> (<span class="heb-inline">דוד המלך</span>) declares in <em>Tehillim</em> (<span class="heb-inline">תהילים</span>) 139:12<a class="footnote-ref" id="ref11" href="#fn11">[11]</a>:</p>
+
+<blockquote>
+  <div class="heb">גַּם חֹשֶׁךְ לֹא יַחְשִׁיךְ מִמֶּךָּ, וְלַיְלָה כַּיּוֹם יָאִיר; כַּחֲשֵׁכָה כָּאוֹרָה.</div>
+  <div class="trans">Even darkness does not conceal from You; night shines like day; darkness is as light.</div>
+</blockquote>
+
+<p><em>Yeshayahu</em> (<span class="heb-inline">ישעיהו</span>) 60:19&ndash;20<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> extends the vision to the future world itself: <em>&ldquo;<span class="heb-inline">לא יבוא עוד שמשך</span>&rdquo;</em> &mdash; your sun shall no longer set. If in the future world the sun does not set, there is no transition between day and night, no <em>bein ha&rsquo;arbayim</em>, no <em>zeman</em> (<span class="heb-inline">זמן</span>) for an evening <em>korban</em>. Therefore only <em>Shacharis</em>.</p>
+
+<h3>The Remez in Pesachim</h3>
+
+<p>Here is the <em>Tif&rsquo;eres Banim</em>&rsquo;s <em>chiddush</em>. <em>Chazal</em> record in <em>Berachos</em>:</p>
+
+<ul>
+  <li><em>Avraham Avinu</em> instituted <em>Shacharis</em>.</li>
+  <li><em>Yitzchak Avinu</em> instituted <em>Minchah</em>.</li>
+  <li><em>Yaakov Avinu</em> instituted <em>Ma&rsquo;ariv</em>.</li>
+</ul>
+
+<p><em>&ldquo;<span class="heb-inline">ובך חותמין</span>&rdquo;</em> &mdash; in the future, only <em>Avraham</em>&rsquo;s <em>tefillah</em> will remain. <em>Yitzchak</em>&rsquo;s <em>Minchah</em> and <em>Yaakov</em>&rsquo;s <em>Ma&rsquo;ariv</em> are the <em>tefillos</em> of <em>galus</em>; the <em>tefillah</em> of <em>geulah</em>, of the age of the <em>Bayis Shelishi</em>, is <em>Avraham</em>&rsquo;s alone.</p>
+
+<h3>Confirmation in the Verbal Tense</h3>
+
+<p>The <em>Sforno</em> (<span class="heb-inline">ספורנו</span>) and other <em>Rishonim</em> notice a precise pattern in the <em>pesukim</em> establishing each of the three <em>tefillos</em>:</p>
+
+<ul>
+  <li>Of <em>Avraham</em> in <em>Parshas Vayera</em> (<span class="heb-inline">פרשת וירא</span>): <em>&ldquo;<span class="heb-inline">ויהי עמד לפני ה'</span>&rdquo;</em><a class="footnote-ref" id="ref13" href="#fn13">[13]</a>. <em>Rashi</em>: <em>&ldquo;<span class="heb-inline">אין עמידה אלא תפילה</span>.&rdquo;</em> The form <em>&ldquo;<span class="heb-inline">עמד</span>&rdquo;</em> is a participle &mdash; a continuous, eternal present. <em>Standing</em>, always.</li>
+  <li>Of <em>Yitzchak</em>: <em>&ldquo;<span class="heb-inline">ויצא יצחק לשוח בשדה לפנות ערב</span>&rdquo;</em><a class="footnote-ref" id="ref14" href="#fn14">[14]</a> &mdash; the <em>vav ha-hipuch</em> (<span class="heb-inline">וו ההיפוך</span>) narrative past.</li>
+  <li>Of <em>Yaakov</em>: <em>&ldquo;<span class="heb-inline">ויפגע במקום, וילן שם</span>&rdquo;</em><a class="footnote-ref" id="ref15" href="#fn15">[15]</a> &mdash; again the narrative past.</li>
+</ul>
+
+<p><em>Minchah</em> and <em>Ma&rsquo;ariv</em> are placed grammatically in the past &mdash; they are the <em>tefillos</em> of the historical unfolding of <em>galus</em>. <em>Avraham</em>&rsquo;s <em>Shacharis</em> alone is set in the eternal present. The very grammar of the <em>Chumash</em> (<span class="heb-inline">חומש</span>) confirms the <em>chiddush</em>.</p>
+
+<h3>Reconciling with &ldquo;Lo Sishtaneh Ha-Torah&rdquo;</h3>
+
+<p>The <em>chiddush</em> as stated confronts a principle of first order: <em>&ldquo;<span class="heb-inline">לא תשתנה התורה</span>&rdquo;</em> &mdash; the <em>Torah</em> does not change. The <em>Rambam</em> establishes this as one of the <em>Ani Ma&rsquo;amin</em>; the <em>Ra&rsquo;avad</em> (<span class="heb-inline">ראב&quot;ד</span>)<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> disputes with the <em>Rambam</em> over whether nature itself will change <em>le&rsquo;asid la&rsquo;vo</em> (<span class="heb-inline">לעתיד לבוא</span>) &mdash; but even according to the <em>Rambam</em>, the <em>Torah</em> stands unaltered. How can the <em>Tif&rsquo;eres Banim</em>&rsquo;s <em>chiddush</em> hold?</p>
+
+<p>The stronger reconciliation is by way of the <em>Ramban</em> (<span class="heb-inline">רמב&quot;ן</span>) and the well-known <em>drasha</em> (<span class="heb-inline">דרשה</span>) that <em>&ldquo;<span class="heb-inline">למה נקרא שמו חזיר? שעתיד הקדוש ברוך הוא להחזירו לישראל</span>&rdquo;</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a>. The <em>Ramban</em>&rsquo;s reading is not, <em>chas ve-shalom</em> (<span class="heb-inline">חס ושלום</span>), that the <em>Torah</em>&rsquo;s rules of <em>kashrus</em> (<span class="heb-inline">כשרות</span>) will change. The rule is stable: the <em>simanei kashrus</em> (<span class="heb-inline">סימני כשרות</span>) of <em>maflis parsah u-ma&rsquo;aleh gerah</em> (<span class="heb-inline">מפריס פרסה ומעלה גרה</span>) remain. The <em>animal</em> develops. Applied to <em>Yechezkel</em> 46: the <em>halakhos</em> (<span class="heb-inline">הלכות</span>) of <em>tefillah</em> and the correspondence to <em>temidin</em> remain intact; the <em>world</em> changes &mdash; the daily cycle of light and dark reconfigures &mdash; and with the disappearance of <em>bein ha&rsquo;arbayim</em> as a <em>zeman</em>, the second <em>tamid</em> has no <em>metzius</em> (<span class="heb-inline">מציאות</span>) in which to be brought. The <em>Torah</em> has not changed; the world&rsquo;s daily clock has.</p>
+
+<p>A supplementary reconciliation follows the <em>Rambam</em>&rsquo;s own count. In <em>Sefer HaMitzvos</em> (<span class="heb-inline">ספר המצוות</span>) and at the head of <em>Hilchos Temidin U-Musafin</em> (<span class="heb-inline">הלכות תמידין ומוספין</span>)<a class="footnote-ref" id="ref18" href="#fn18">[18]</a>, the <em>Rambam</em> counts <em>korban tamid</em> as <em>one</em> <em>mitzvah</em>, not two. In <em>Bayis Rishon</em> and <em>Bayis Sheini</em>, the one <em>mitzvah</em> was discharged twice daily; in <em>Bayis Shelishi</em>, it will be discharged once. The <em>mitzvah</em> is the same; only its frequency of execution shifts.</p>
+
+<h2>V. Mahalach C &mdash; The Maharam Schick: A Tikkun for All of Zera Avraham</h2>
+
+<p>The third <em>mehalach</em> comes from Rabbi Moshe Schick (<span class="heb-inline">רבי משה שיק</span>, 1809&ndash;1879), the <em>Maharam Schick</em><a class="footnote-ref" id="ref19" href="#fn19">[19]</a>, foremost <em>talmid</em> of the <em>Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) and <em>rosh yeshivah</em> (<span class="heb-inline">ראש ישיבה</span>) in Huszt of a <em>yeshiva</em> of eight hundred <em>talmidim</em>. It is a profound and difficult reading, and it takes some patience to absorb; but for anyone who cares about <em>kevod Shamayim</em> (<span class="heb-inline">כבוד שמים</span>) and the long arc of <em>tikkun ha-olam</em> (<span class="heb-inline">תיקון העולם</span>), it repays close attention.</p>
+
+<h3>The Arithmetic of Zera Avraham</h3>
+
+<p>Trace the lineage of <em>Avraham Avinu</em>. He was the <em>rosh ha-ma&rsquo;aminim</em> (<span class="heb-inline">ראש המאמינים</span>), the one who &mdash; as the <em>Rambam</em> describes in <em>Hilchos Avodah Zarah</em> (<span class="heb-inline">הלכות עבודה זרה</span>)<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> &mdash; traveled town to town and family to family proclaiming the <em>emes</em> (<span class="heb-inline">אמת</span>) of the one Creator. He had two sons:</p>
+
+<ul>
+  <li><em>Yishmael</em> (<span class="heb-inline">ישמעאל</span>) &mdash; a whole branch of <em>Avraham</em>&rsquo;s descendants, later the seed of much of the Islamic world.</li>
+  <li><em>Yitzchak</em> &mdash; and <em>Yitzchak</em> too had two sons:
+    <ul>
+      <li><em>Eisav</em> (<span class="heb-inline">עשו</span>) &mdash; <em>Chazal</em>: <em>&ldquo;<span class="heb-inline">ישראל מומר</span>&rdquo;</em>, raised in the house of <em>Yitzchak</em>, and yet lost to the mission.</li>
+      <li><em>Yaakov</em> &mdash; the <em>&ldquo;<span class="heb-inline">מטה שלמה</span>&rdquo;</em>, from whom emerged the <em>y&rsquo;&quot;b shivtei Kah</em> (<span class="heb-inline">י&quot;ב שבטי י-ה</span>) and the <em>Klal Yisrael</em> we know.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Considered by branches, the majority of <em>Avraham</em>&rsquo;s line departed from his mission within two generations: three of the four branches at the level of the grandchildren. If one had approached <em>Avraham Avinu</em> at his <em>bris</em> (<span class="heb-inline">ברית</span>) and disclosed to him this outcome, would he have wanted to marry at all?</p>
+
+<div class="pullquote">
+<p><em>Chizkiyahu HaMelech</em> (<span class="heb-inline">חזקיהו המלך</span>) &mdash; the <em>Gemara</em> in <em>Berachos</em> 10a records &mdash; refused to marry, having seen through <em>ruach ha-kodesh</em> (<span class="heb-inline">רוח הקודש</span>) that he would father wayward children. <em>Yeshayahu HaNavi</em> (<span class="heb-inline">ישעיהו הנביא</span>) had to prevail upon him with the ruling that a person is not the master of divine calculations, and must fulfill his obligation. <em>Chizkiyahu</em> married <em>Yeshayahu</em>&rsquo;s daughter; his son <em>Menasheh</em> did indeed go astray. The reluctance was real; the halakhah still required the marriage.</p>
+</div>
+
+<h3>The Promise to Avraham</h3>
+
+<p>The <em>Maharam Schick</em>, drawing on the <em>Zohar HaKadosh</em>, teaches: <em>Avraham Avinu</em> received from <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) a promise that ultimately <em>all</em> of his descendants will be gathered back to the truth of the one God. The <em>tikkun</em> (<span class="heb-inline">תיקון</span>) is not for the surviving <em>Yaakov mateh shleimah</em> alone. This is what <em>Yeshayahu</em> 2:2&ndash;3 envisions when he prophesies <em>&ldquo;<span class="heb-inline">ונהרו אליו כל הגוים</span>&rdquo;</em> &mdash; that all the nations shall stream to the mountain of <em>Hashem</em>; and it is what <em>Klal Yisrael</em> davens for on <em>Rosh HaShanah</em> when we ask that the entire world recognize the sovereignty of the one God.</p>
+
+<h3>The Mechanism &mdash; Gilgulim of Eisav and Yishmael</h3>
+
+<p>The <em>Arizal</em> (<span class="heb-inline">האר&quot;י ז&quot;ל</span>), through his foremost <em>talmid</em> Rabbi Chaim Vital (<span class="heb-inline">רבי חיים ויטאל</span>, 1542&ndash;1620), teaches in <em>Etz HaDa&rsquo;as Tov</em> (<span class="heb-inline">עץ הדעת טוב</span>) at the close of <em>Parshas Re&rsquo;eh</em> (<span class="heb-inline">פרשת ראה</span>)<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> a kabbalistic <em>mesorah</em> (<span class="heb-inline">מסורה</span>):</p>
+
+<ul>
+  <li>The founder of Christianity is spiritually the <em>gilgul</em> (<span class="heb-inline">גלגול</span>) of <em>Eisav</em>. The two names differ by only a single letter (<span class="heb-inline">י</span> in place of <span class="heb-inline">ע</span>) &mdash; a mnemonic pointer to the deeper spiritual identification.</li>
+  <li>The founder of Islam is spiritually the <em>gilgul</em> of <em>Yishmael</em>.</li>
+</ul>
+
+<p>Rabbi Chaim Vital further preserves the tradition that Islam&rsquo;s founder had a Jewish teacher, and records the dream of a great tree growing from his hand and giving shade to all the world &mdash; a dream interpreted for him by a Jewish sage as the summons to prophethood. Whatever historical form the tradition takes, its theological point is this: influences of Torah passed, through unexpected conduits, into the two great non-Jewish monotheisms.</p>
+
+<h3>Shituf and the Radbaz</h3>
+
+<p>The <em>Radbaz</em> (<span class="heb-inline">רדב&quot;ז</span>), Rabbi David ibn Zimra (<span class="heb-inline">רבי דוד בן זמרא</span>, 1479&ndash;1573, Egypt and Tzfas)<a class="footnote-ref" id="ref22" href="#fn22">[22]</a>, develops the halakhic-theological category of <em>shituf</em> (<span class="heb-inline">שיתוף</span>): belief in the one God paired with another power. In the <em>Radbaz</em>&rsquo;s formulation, Christianity for non-<em>Yehudim</em> (<span class="heb-inline">יהודים</span>) is <em>shituf</em> &mdash; not the full <em>issur</em> (<span class="heb-inline">איסור</span>) of <em>avodah zarah</em> (<span class="heb-inline">עבודה זרה</span>). Christians are <em>chatzi kofrim</em> (<span class="heb-inline">חצי כופרים</span>), but they are <em>half</em>: they retain <em>emes</em>, they retain monotheism, and they revere the Hebrew <em>Tanach</em> (<span class="heb-inline">תנ&quot;ך</span>). Islam is more clearly monotheistic still, without any Trinitarian element. Neither, in this framework, stands on the same footing as the <em>ovdei avodah zarah</em> of <em>Chazal</em>&rsquo;s era, who believed in nothing but their idols.</p>
+
+<p>Whether the <em>Radbaz</em>&rsquo;s classification represents halakhic consensus is not simple; the <em>Rema</em> (<span class="heb-inline">רמ&quot;א</span>), the <em>Noda Bi-Yehudah</em> (<span class="heb-inline">נודע ביהודה</span>), the <em>Chasam Sofer</em>, and others weigh in with varying positions, and there is genuine <em>machlokes</em> (<span class="heb-inline">מחלוקת</span>) on the scope and application of the ruling.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> What matters for the present <em>mahalach</em> is that within a serious halakhic tradition, the descendants of <em>Yishmael</em> and (in the <em>Radbaz</em>&rsquo;s reading) of <em>Eisav</em> are seen as bearing something of the <em>emunah</em> (<span class="heb-inline">אמונה</span>) of <em>Avraham</em>, not as fully outside it.</p>
+
+<div class="pullquote">
+<p>The story is told of <em>Rav Baruch Ber Leibowitz</em> of Kamenitz (<span class="heb-inline">רב ברוך בער ליבוביץ מקאמניץ</span>), <em>talmid</em> of <em>Rav Chaim Soloveitchik</em> of Brisk<a class="footnote-ref" id="ref24" href="#fn24">[24]</a>. Traveling by horse and wagon driven by a Christian, they passed a church. Christians customarily cross themselves at a church; this driver did not &mdash; evidently an atheist. <em>Rav Baruch Ber</em> at once called out, <em>Stop the wagon.</em> Asked why, he answered in his Yiddish: <em>&ldquo;<span class="heb-inline">איינער וואָס גלייבט נישט אין גאָט</span>&rdquo;</em> &mdash; <em>one who does not even believe in his own false god &mdash; even if it is <em>sheker sheker ve-chazav</em> (<span class="heb-inline">שקר שקר וכזב</span>) &mdash; if he does not care about that either, he is </em>chashud<em> (<span class="heb-inline">חשוד</span>) </em>even for murder<em>. There are no moral boundaries left.</em> The story, told in the <em>yeshiva</em> world for decades, illustrates the point that even a false theology, taken seriously, retains a moral floor that pure unbelief does not.</p>
+</div>
+
+<h3>The Rambam in Hilchos Melachim &mdash; The Censored Passage</h3>
+
+<p>The <em>Rambam</em>, at the very end of <em>Hilchos Melachim</em> (<span class="heb-inline">רמב&quot;ם הלכות מלכים</span> י&quot;א ה&quot;ד), wrote a passage that was excised by Christian censors from printed editions for centuries. Only with the Frankel edition, working from Yemenite <em>kisvei yad</em> (<span class="heb-inline">כתבי יד</span>), was it restored to standard printings.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a></p>
+
+<p>The <em>Rambam</em>&rsquo;s teaching, in substance, runs as follows. The founder of Christianity thought he was <em>Mashiach</em>; a Jewish court executed him. From him, and from the founder of Islam who arose after him, emerged an <em>irbuvya gedolah</em> (<span class="heb-inline">ערבוביה גדולה</span>) &mdash; a great confusion. The Crusades, the persecutions, the pogroms across centuries flowed in their wake, and <em>Klal Yisrael</em> paid the price. <em>And yet</em> &mdash; the <em>Rambam</em> writes &mdash; <em>&ldquo;<span class="heb-inline">מחשבות בורא עולם אין כח באדם להשיגם</span>&rdquo;</em>, the thoughts of the Creator of the world are beyond human comprehension. The unfolding of history was designed to bring the world to a consciousness of <em>Mashiach</em>. <em>Klal Yisrael</em> is a messianic people, in a world that had never heard the concept. Across centuries, in every country, the two great non-Jewish religions saturated the world&rsquo;s consciousness with the categories of a coming redeemer, of a single God, of a great final reckoning. When the <em>real</em> <em>Mashiach</em> arrives, the world is prepared to receive him.</p>
+
+<p>The <em>Yaavetz</em> (<span class="heb-inline">יעב&quot;ץ</span>), Rabbi Yaakov Emden (<span class="heb-inline">רבי יעקב עמדן</span>, 1697&ndash;1776, Altona)<a class="footnote-ref" id="ref26" href="#fn26">[26]</a>, returns to this <em>Rambam</em> repeatedly in his writings on <em>emunah</em>, emphasizing exactly this point: humans are small-minded and see only their own suffering; the <em>Rambam</em> asks us to lift our eyes to the arc of <em>tikkun ha-olam</em>, an arc whose length is measured in millennia and whose meaning is not immediately legible.</p>
+
+<h3>The Chiddush on &ldquo;Magen Avraham&rdquo;</h3>
+
+<p>This is what the <em>Maharam Schick</em> brings into the <em>Shemoneh Esrei</em>. When we recite <em>&ldquo;<span class="heb-inline">אלקי אברהם, אלקי יצחק, ואלקי יעקב</span>,&rdquo;</em> we are naming the three <em>Avos</em> in their specific paternity of <em>Yaakov mateh shleimah</em>. When we then close with <em>&ldquo;<span class="heb-inline">מגן אברהם</span>&rdquo;</em> alone, one might naturally suppose the singling out of <em>Avraham</em> is a <em>contraction</em> &mdash; that only <em>Yaakov</em>&rsquo;s line made it through, and the branches of <em>Yishmael</em> and <em>Eisav</em> are written off.</p>
+
+<p><strong>No.</strong> The <em>Maharam Schick</em> teaches the opposite. The <em>chasimah</em> on <em>Avraham</em> alone is precisely the <em>chasimah</em> that reaches beyond the specific paternity of the three <em>Avos</em> to the wider paternity described in <em>Bereshis</em> 17:5<a class="footnote-ref" id="ref27" href="#fn27">[27]</a>: <em>&ldquo;<span class="heb-inline">כי אב המון גוים נתתיך</span>&rdquo;</em> &mdash; <em>I have made you the father of a multitude of nations.</em> <em>Avraham</em> alone among the <em>Avos</em> carries this title. <em>Yitzchak</em> and <em>Yaakov</em> are the <em>Avos</em> of <em>Klal Yisrael</em>; <em>Avraham</em> is both the <em>Av</em> of <em>Klal Yisrael</em> <em>and</em> the <em>av hamon goyim</em>.</p>
+
+<p>This is the linguistic pivot that the <em>Maharam Schick</em>&rsquo;s reading requires, and it has textual footing: the <em>Torah</em> itself uses two names for the same person &mdash; <em>&ldquo;<span class="heb-inline">אברם</span>&rdquo;</em> narrowed to a single lineage, <em>&ldquo;<span class="heb-inline">אברהם</span>&rdquo;</em> expanded to <em>av hamon</em>. In the <em>chasimah</em>, the wider name is what is invoked. <em>&ldquo;<span class="heb-inline">מגן אברהם</span>&rdquo;</em> is the sealing on the promise that <em>HaKadosh Baruch Hu</em> shielded <em>Avraham</em> not for a partial <em>zera</em> but for the whole <em>zera</em> &mdash; every branch, in the fullness of time, gathered back.</p>
+
+<h2>VI. Synthesis &mdash; Three Faces of &ldquo;U-vecha&rdquo;</h2>
+
+<p>The three <em>mehalchim</em> can be laid out and left as three. But there is a synthetic reading available that is worth stating explicitly, because it lifts the reading of <em>&ldquo;<span class="heb-inline">ובך חותמין</span>&rdquo;</em> from an accumulation of <em>divrei Torah</em> to a single vision.</p>
+
+<p>Read the <em>Gemara</em>&rsquo;s <em>&ldquo;<span class="heb-inline">ובך</span>&rdquo;</em> &mdash; <em>with you</em> &mdash; as pointing outward and forward. <em>Avraham</em> in the <em>chasimah</em> is <em>Avraham</em> in the sense in which he is not identical with <em>Yitzchak</em> and <em>Yaakov</em>: <em>Avraham</em> as the wider figure that the two subsequent <em>Avos</em> did not become.</p>
+
+<ul>
+  <li>His <em>middah</em> is <em>chesed</em> &mdash; and <em>chesed</em> is the outward-facing <em>middah</em>, the one that goes beyond the boundaries of the self to include the other. The <em>dor ha-chesed</em> is the <em>dor</em> in which <em>Avraham</em>&rsquo;s outward-facing <em>middah</em> becomes the axis of the age.</li>
+  <li>His <em>tefillah</em> is <em>Shacharis</em> &mdash; and <em>Shacharis</em> is the <em>tefillah</em> of the eternal present, the one grammatical form that persists into the age when <em>&ldquo;<span class="heb-inline">לא יבוא עוד שמשך</span>&rdquo;</em>. The <em>Bayis Shelishi</em> is the <em>Beis HaMikdash</em> in which <em>Avraham</em>&rsquo;s <em>tefillah</em> alone continues.</li>
+  <li>His fatherhood is <em>av hamon goyim</em> &mdash; and this is the fatherhood that reaches beyond the specific lineage of <em>Yaakov</em> to gather in, in the fullness of the messianic unfolding, the whole of <em>zera Avraham</em>.</li>
+</ul>
+
+<p>All three <em>mehalchim</em> converge on the reading of <em>Avraham</em> in the <em>chasimah</em> as the outward, eternal, universal face of the promise &mdash; the face that is not diminished in the sealing but <em>expanded</em>. The single <em>chasimah</em> is at once historical (the <em>Kotzker</em>), liturgical (the <em>Tif&rsquo;eres Banim</em>), and universal (the <em>Maharam Schick</em>). When we close <em>Birkas Avos</em> tomorrow morning, the word <em>&ldquo;<span class="heb-inline">אברהם</span>&rdquo;</em> at the seal carries all three layers at once.</p>
+
+<h3>A Kavvanah in the Chasimah</h3>
+
+<p>A kabbalistic <em>siddur</em> (<span class="heb-inline">סידור</span>)-<em>kavvanah</em> tradition transmitted in the name of the <em>Mateh Tov</em> (<span class="heb-inline">מטה טוב</span>)<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> encapsulates the synthesis in practice: at the closing words <em>&ldquo;<span class="heb-inline">מגן אברהם</span>,&rdquo;</em> have in mind that this <em>chasimah</em> reaches toward the eternal <em>tefillah</em> of <em>le&rsquo;asid la&rsquo;vo</em> &mdash; the <em>tefillah</em> of the <em>dor ha-chesed</em>, of the <em>Bayis Shelishi</em>, of the whole of <em>zera Avraham</em> gathered under the shield of the one God. The <em>kavvanah</em> is offered as an enhancement; the fundamental halakhic requirement of <em>kavvanah</em> in the first <em>berachah</em>, established in <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) <em>Orach Chaim</em> 101<a class="footnote-ref" id="ref29" href="#fn29">[29]</a>, remains the meaning of the words as they stand. For one who can lift the <em>kavvanah</em> higher, this is the direction in which the <em>mehalchim</em> of the <em>Kotzker</em>, the <em>Tif&rsquo;eres Banim</em>, and the <em>Maharam Schick</em> together point.</p>
+
+<p><em>Be&rsquo;ezras Hashem</em> (<span class="heb-inline">בעזרת השם</span>), may we merit to see the fulfillment of the <em>chasimah</em> in our own days &mdash; the <em>chesed</em> that seals the <em>galus</em>, the <em>Shacharis</em> that opens the age of the <em>Bayis Shelishi</em>, and the shield of <em>Avraham</em> extended over all of his children.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Footnotes run sequentially with the body text.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Pesachim</em> 117b &mdash; <em>&ldquo;<span class="heb-inline">ובך חותמין ולא בכולם</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Arvei Pesachim</em> derives the structure of <em>Birkas Avos</em> from the four clauses of <em>Hashem</em>&rsquo;s opening promise to <em>Avraham</em> in <em>Lech Lecha</em>. Each clause becomes a phrase in the <em>berachah</em>, but only the first &mdash; <em>&ldquo;<span class="heb-inline">ואעשך לגוי גדול</span>&rdquo;</em>, mapped to <em>&ldquo;<span class="heb-inline">אלקי אברהם</span>&rdquo;</em> &mdash; receives the <em>chasimah</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Bereshis</em> 12:2, with <em>Rashi</em> ad loc.; cf. <em>Bereshis</em> 17:5.</span>
+  <span class="expanded">&mdash; <em>Rashi</em> brings the <em>Pesachim</em> <em>drasha</em> in his commentary on the <em>pasuk</em>, signaling its centrality to the <em>pshat</em> (<span class="heb-inline">פשט</span>) of <em>Lech Lecha</em>. The later <em>pasuk</em> in <em>Bereshis</em> 17:5 &mdash; <em>&ldquo;<span class="heb-inline">כי אב המון גוים נתתיך</span>&rdquo;</em> &mdash; provides the textual basis for the <em>Maharam Schick</em>&rsquo;s reading in Mahalach C.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Zohar HaKadosh</em> across <em>Parshas Terumah</em>, <em>Vayakhel</em>, and <em>Balak</em>; <em>Pardes Rimonim</em> (<em>Ramak</em>) on the <em>chitzonim</em>.</span>
+  <span class="expanded">&mdash; The <em>Zohar</em> repeatedly likens <em>tefillah</em> without <em>kavvanah</em> to <em>&ldquo;<span class="heb-inline">גוף בלי נשמה</span>&rdquo;</em> and develops the frightening image that empty words of <em>tefillah</em> are seized by the <em>chitzonim</em>. Rabbi Moshe Cordovero (<em>Ramak</em>, 1522&ndash;1570, Tzfas) in <em>Pardes Rimonim</em> systematizes the doctrine of the <em>kelipos</em> and the <em>sitra achra</em> (<span class="heb-inline">סטרא אחרא</span>) on which the <em>Zohar</em>&rsquo;s warnings rest.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Rosh HaShanah</em> 18a &mdash; <em>tefillah shleimah</em> versus <em>tefillah she&rsquo;einah shleimah</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em>&rsquo;s account of two who davened <em>&ldquo;<span class="heb-inline">רפאנו</span>&rdquo;</em>, one healed and one not; <em>Rashi</em> identifies the difference as <em>kavvanah</em>. The <em>sugya</em> is the classical <em>ma&rsquo;amar</em> establishing the halakhic weight of <em>kavvanah</em> in the internal <em>berachos</em> of <em>Shemoneh Esrei</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short">The <em>Kotzker Rebbe</em> (<em>Rabbi Menachem Mendel of Kotzk</em>, 1787&ndash;1859) on <em>&ldquo;<span class="heb-inline">ובך חותמין</span>&rdquo;</em> as <em>dor ha-chesed</em>; antecedent in <em>Megaleh Amukos</em> of Rabbi Nosson Nota Shapiro of Kraków (1585&ndash;1633).</span>
+  <span class="expanded">&mdash; The <em>Kotzker</em>&rsquo;s <em>vort</em> circulates in <em>chassidishe</em> tradition; the antecedent <em>remez</em> in the <em>Megaleh Amukos</em> &mdash; a foundational kabbalistic-<em>drush</em> (<span class="heb-inline">דרוש</span>) work on the <em>Torah</em> &mdash; identifies the three-<em>amudim</em> mapping of the <em>Avos</em> as the key to the ruling. The <em>Kotzker</em> brings it forward in <em>chassidishe</em> form. The three-<em>amudim</em> structure (<em>chesed</em>, <em>gevurah</em>, <em>tif&rsquo;eres</em>) is standard kabbalistic mapping.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Tif&rsquo;eres Banim</em> on <em>Parshas Lech Lecha</em> (Rabbi Tzvi Hirsh Shapira of Munkács, 1850&ndash;1913).</span>
+  <span class="expanded">&mdash; Rabbi Tzvi Hirsh Shapira &mdash; grandson of the <em>Bnei Yissaschar</em> (Rabbi Tzvi Elimelech of Dinov, 1783&ndash;1841), one of the foundational <em>sifrei chassidus</em> &mdash; authored both the encyclopedic <em>Darchei Teshuvah</em> on <em>Yoreh De&rsquo;ah</em> (a primary reference for any <em>lamdan</em> in <em>basar be-chalav</em> or <em>ta&rsquo;aroves</em>) and the <em>Tif&rsquo;eres Banim</em> on <em>Chumash</em>. The <em>chiddush</em> on <em>Lech Lecha</em>, building on the <em>Radak</em>&rsquo;s face-value reading of <em>Yechezkel</em> 46, identifies <em>&ldquo;<span class="heb-inline">ובך חותמין</span>&rdquo;</em> with the future cessation of <em>tamid shel bein ha&rsquo;arbayim</em>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short">On <em>Yechezkel</em>&rsquo;s vision as <em>Bayis Shelishi</em>: the standard reading; alternative <em>Rishonim</em>.</span>
+  <span class="expanded">&mdash; The dominant reading among <em>Rishonim</em> and <em>mefarshei Nach</em> is that <em>Yechezkel</em>&rsquo;s vision from ch. 40 onward describes the future <em>Beis HaMikdash</em>. A minority of <em>Rishonim</em>, however, read the vision as descriptive of the <em>Bayis Sheini</em>. The <em>Tif&rsquo;eres Banim</em>&rsquo;s <em>chiddush</em> depends on the majority reading; readers who follow the minority position must reframe the <em>chiddush</em> as bearing on the arrangements of <em>Bayis Sheini</em>, an arrangement that in fact included <em>tamid shel bein ha&rsquo;arbayim</em> and thereby weakens the <em>chiddush</em> considerably. The section proceeds on the majority reading.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Yechezkel</em> 46:13&ndash;15 &mdash; the future <em>tamid shel shachar</em> without corresponding <em>tamid shel bein ha&rsquo;arbayim</em>.</span>
+  <span class="expanded">&mdash; The <em>perek</em> in <em>Yechezkel</em>&rsquo;s vision of the <em>Bayis Shelishi</em> in which the daily <em>korban</em> is described. The <em>pasuk</em> mentions only <em>&ldquo;<span class="heb-inline">בבקר בבקר</span>&rdquo;</em>. The chapter is read as the <em>haftarah</em> of <em>Parshas HaChodesh</em>. Most <em>mefarshim</em> harmonize the omission with various <em>tirutzim</em> (<span class="heb-inline">תירוצים</span>) &mdash; <em>korbanos milu&rsquo;im</em>, textual ellipsis; the <em>Radak</em> takes it at face value.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Radak</em> on <em>Yechezkel</em> 46 &mdash; <em>chiddush</em>: only <em>tamid shel shachar</em> in the future.</span>
+  <span class="expanded">&mdash; Rabbi David Kimchi (1160&ndash;1235, Narbonne in Provence), one of the great <em>mefarshei Nach</em> among the <em>Rishonim</em>, breaks with the harmonizing approach. He reads <em>Yechezkel</em> 46 at face value: <em>Bayis Shelishi</em> will have only a <em>tamid shel shachar</em>, not a <em>tamid shel bein ha&rsquo;arbayim</em>. This is the foundational <em>chiddush</em> on which the <em>Tif&rsquo;eres Banim</em> builds his reading of <em>&ldquo;<span class="heb-inline">ובך חותמין</span>.&rdquo;</em></span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Berachos</em> 26b &mdash; <em>&ldquo;<span class="heb-inline">תפילות כנגד תמידין תקנום</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>Gemara</em>&rsquo;s formulation of the principle that the daily <em>tefillos</em> were instituted parallel to the daily <em>temidin</em>: <em>Shacharis</em> against <em>tamid shel shachar</em>, <em>Minchah</em> against <em>tamid shel bein ha&rsquo;arbayim</em>, <em>Ma&rsquo;ariv</em> against the <em>eivarim</em> and <em>pedarim</em> consumed through the night. The <em>sugya</em> presents an alternative view (<em>tefillos</em> instituted by the <em>Avos</em>) and resolves that both are correct &mdash; the <em>Avos</em> originated the practice; the <em>Anshei Knesses HaGedolah</em> gave it formal structure parallel to the <em>korbanos</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Tehillim</em> 139:12 &mdash; <em>&ldquo;<span class="heb-inline">ולילה כיום יאיר; כחשכה כאורה</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>David HaMelech</em>&rsquo;s declaration that before <em>HaKadosh Baruch Hu</em> there is no distinction between night and day. Read by the <em>Tif&rsquo;eres Banim</em> as a vision of the future state &mdash; <em>le&rsquo;asid la&rsquo;vo</em> the <em>chiluk</em> (<span class="heb-inline">חילוק</span>) between day and night dissolves, and with it the <em>metzius</em> of an evening <em>korban</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Yeshayahu</em> 60:19&ndash;20 &mdash; <em>&ldquo;<span class="heb-inline">לא יבוא עוד שמשך</span>&rdquo;</em>; cf. <em>Yeshayahu</em> 2:2&ndash;3 &mdash; <em>&ldquo;<span class="heb-inline">ונהרו אליו כל הגוים</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; Two <em>nevu&rsquo;os</em> (<span class="heb-inline">נבואות</span>) of the future <em>geulah</em>. <em>Yeshayahu</em> 60 describes the unending light of the <em>or ha-ganuz</em> (<span class="heb-inline">אור הגנוז</span>) replacing the natural sun and moon &mdash; textual support for the <em>Tif&rsquo;eres Banim</em>&rsquo;s reading. <em>Yeshayahu</em> 2 &mdash; <em>all the nations shall stream</em> &mdash; is the textual support for the <em>Maharam Schick</em>&rsquo;s reading of the universal <em>tikkun</em> of <em>zera Avraham</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Bereshis</em> 18:22 &mdash; <em>&ldquo;<span class="heb-inline">ויהי עמד לפני ה'</span>&rdquo;</em>; <em>Rashi</em>: <em>&ldquo;<span class="heb-inline">אין עמידה אלא תפילה</span>&rdquo;</em>; cf. <em>Sforno</em>.</span>
+  <span class="expanded">&mdash; <em>Avraham</em>&rsquo;s <em>tefillah</em> for <em>Sedom</em> (<span class="heb-inline">סדום</span>) is described with the participial <em>&ldquo;<span class="heb-inline">עמד</span>&rdquo;</em> &mdash; <em>standing</em>, in continuous present. <em>Rashi</em> identifies this as the <em>mekor</em> (<span class="heb-inline">מקור</span>) for <em>tefillas Shacharis</em>. The <em>Sforno</em> and other <em>Rishonim</em> note that the verbal form chosen for <em>Avraham</em>&rsquo;s <em>tefillah</em> differs from those used for <em>Yitzchak</em> and <em>Yaakov</em> &mdash; eternal present versus narrative past &mdash; supporting the <em>Tif&rsquo;eres Banim</em>&rsquo;s reading.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Bereshis</em> 24:63 &mdash; <em>&ldquo;<span class="heb-inline">ויצא יצחק לשוח בשדה לפנות ערב</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>pasuk</em> describing <em>Yitzchak</em>&rsquo;s prayer at <em>Minchah</em> time (<em>&ldquo;<span class="heb-inline">לפנות ערב</span>&rdquo;</em>) &mdash; the <em>mekor</em> for <em>tefillas Minchah</em> as instituted by <em>Yitzchak Avinu</em>. The verbal form <em>&ldquo;<span class="heb-inline">ויצא</span>&rdquo;</em> is <em>vav ha-hipuch</em> narrative past.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Bereshis</em> 28:11 &mdash; <em>&ldquo;<span class="heb-inline">ויפגע במקום, וילן שם</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>pasuk</em> describing <em>Yaakov</em>&rsquo;s prayer on the way to Charan &mdash; the <em>mekor</em> for <em>tefillas Ma&rsquo;ariv</em> as instituted by <em>Yaakov Avinu</em>. The form <em>&ldquo;<span class="heb-inline">ויפגע</span>&rdquo;</em> is again narrative past, completing the grammatical contrast that supports the <em>Tif&rsquo;eres Banim</em>&rsquo;s reading.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Hasagos HaRa&rsquo;avad</em> on <em>Rambam</em> &mdash; whether nature changes <em>le&rsquo;asid la&rsquo;vo</em>.</span>
+  <span class="expanded">&mdash; Rabbi Avraham ben David of Posqui&egrave;res (<em>Ra&rsquo;avad</em>, c. 1125&ndash;1198), in his <em>hasagos</em> on the <em>Mishneh Torah</em>, takes positions across several <em>sugyos</em> on the relationship between the <em>Torah</em>&rsquo;s eternal stability and the natural world&rsquo;s potential for transformation in the messianic era. The <em>Rambam</em>&rsquo;s general view is that nature does not change; the <em>Ra&rsquo;avad</em> and many <em>mekubalim</em> hold that nature itself transforms. Both positions accommodate the <em>Tif&rsquo;eres Banim</em>&rsquo;s <em>chiddush</em> within the principle of <em>&ldquo;<span class="heb-inline">לא תשתנה התורה</span>.&rdquo;</em></span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <div class="note-academic"><em>Ramban</em> on the future <em>kashrus</em> of the <em>chazir</em> (<span class="heb-inline">חזיר</span>) &mdash; the well-known <em>drasha</em> <em>&ldquo;<span class="heb-inline">למה נקרא שמו חזיר? שעתיד הקדוש ברוך הוא להחזירו לישראל</span>&rdquo;</em>. The <em>drasha</em> is widely cited in <em>Ramban</em>&rsquo;s name in <em>chassidishe</em> literature and appears in printed collections associated with him, though the precise textual location is not straightforward and parallel formulations are attributed also to <em>Rabbeinu Bachye</em> (<span class="heb-inline">רבינו בחיי</span>) and to <em>Midrashic</em> collections. The <em>Ramban</em>&rsquo;s reading &mdash; that the pig itself will develop to satisfy the <em>simanei kashrus</em> of <em>maflis parsah u-ma&rsquo;aleh gerah</em>, while the <em>Torah</em>&rsquo;s rules remain unchanged &mdash; is the structural parallel the <em>Tif&rsquo;eres Banim</em> invokes: nature changes, the <em>Torah</em> does not.</div>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Rambam</em>, <em>Hilchos Temidin U-Musafin</em> ch. 1; <em>Sefer HaMitzvos</em>, <em>Mitzvas Aseh</em> 39.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> counts the daily <em>korban tamid</em> as a single <em>mitzvah</em>, discharged twice each day. This is the structural support for the secondary reconciliation with <em>&ldquo;<span class="heb-inline">לא תשתנה התורה</span>&rdquo;</em>: in <em>Bayis Shelishi</em>, the same one <em>mitzvah</em> is discharged once instead of twice &mdash; the <em>mitzvah</em> has not changed, only its frequency of execution.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>She&rsquo;eilos u-Teshuvos Maharam Schick</em> and his <em>drashos</em> &mdash; <em>chiddush</em> on <em>&ldquo;<span class="heb-inline">מגן אברהם</span>&rdquo;</em> as the <em>chasimah</em> on the <em>tikkun</em> of all of <em>zera Avraham</em>.</span>
+  <span class="expanded">&mdash; Rabbi Moshe Schick (1809&ndash;1879), foremost <em>talmid</em> of the <em>Chasam Sofer</em> and <em>rosh yeshivah</em> in Huszt with a <em>yeshiva</em> of eight hundred <em>talmidim</em>. In his <em>drashos</em> and <em>teshuvos</em> he develops the reading that the singular <em>chasimah</em> <em>&ldquo;<span class="heb-inline">מגן אברהם</span>&rdquo;</em> is not a contraction excluding <em>Yishmael</em> and <em>Eisav</em> but an inclusion: <em>Avraham</em> as <em>&ldquo;<span class="heb-inline">אב המון גוים</span>&rdquo;</em>, with the promise of <em>Hashem</em>&rsquo;s shielding extended over the whole <em>zera</em>. The reading interlocks with the <em>Rambam</em>&rsquo;s long-arc framing of <em>Yishu</em> and the founder of Islam.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Rambam</em>, <em>Hilchos Avodah Zarah</em> ch. 1 &mdash; <em>Avraham Avinu</em> spreading the <em>emunah</em>.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em>&rsquo;s opening <em>perek</em> in <em>Hilchos Avodah Zarah</em> is a brief history of <em>emunah</em>: humanity&rsquo;s slide into idolatry, and <em>Avraham</em>&rsquo;s solitary recognition of <em>achdus ha-Bore</em> (<span class="heb-inline">אחדות הבורא</span>). The <em>Rambam</em> describes <em>Avraham</em>&rsquo;s indefatigable travel from town to town and family to family proclaiming <em>emes</em>, gathering followers, and seeding the future <em>umah</em> (<span class="heb-inline">אומה</span>). This portrait stands behind the <em>Maharam Schick</em>&rsquo;s emphasis that <em>Avraham</em>&rsquo;s mission was universal, not parochial.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <div class="note-academic"><em>Etz HaDa&rsquo;as Tov</em> (Rabbi Chaim Vital, 1542&ndash;1620) at the close of <em>Parshas Re&rsquo;eh</em>, drawing on the <em>Arizal</em> &mdash; the kabbalistic <em>mesorah</em> that identifies the founders of Christianity and Islam as spiritual <em>gilgulim</em> of <em>Eisav</em> and <em>Yishmael</em>. Rabbi Chaim Vital was the foremost <em>talmid</em> of the <em>Arizal</em> and the chief transmitter of his Kabbalah. The two names of the founder of Christianity and of <em>Eisav</em> differ by only a single letter (<span class="heb-inline">י</span> in place of <span class="heb-inline">ע</span>); the letter-play is a mnemonic pointer, not a proof, and the substantive tradition is the kabbalistic <em>gilgul</em> attribution itself. The tradition that Islam&rsquo;s founder had a Jewish teacher &mdash; and the dream of the tree growing from his hand, interpreted by a Jewish sage as a summons to prophethood &mdash; is preserved in <em>Etz HaDa&rsquo;as Tov</em> as kabbalistic <em>mesorah</em>; the historical form of the tradition should be understood in that register.</div>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>She&rsquo;eilos u-Teshuvos HaRadbaz</em> on <em>shituf</em>; status of Christianity and Islam relative to <em>avodah zarah</em>.</span>
+  <span class="expanded">&mdash; Rabbi David ibn Zimra (<em>Radbaz</em>, 1479&ndash;1573, Egypt and Tzfas) develops the halakhic-theological category of <em>shituf</em>: belief in one God paired with another power. For non-<em>Yehudim</em>, <em>shituf</em> is not the full <em>issur</em> of <em>avodah zarah</em>; Christians thereby retain a partial <em>emes</em>. Islam, with no Trinitarian element, is more clearly monotheistic. The <em>Radbaz</em>&rsquo;s framework grounds the <em>Maharam Schick</em>&rsquo;s and <em>Rambam</em>&rsquo;s view that the descendants of <em>Yishmael</em> and <em>Eisav</em> hold residual elements of <em>Avraham</em>&rsquo;s legacy.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <div class="note-academic">On the scope of the <em>Radbaz</em>&rsquo;s <em>shituf</em> ruling and the wider <em>machlokes</em>. The <em>Rema</em> (<em>Choshen Mishpat</em> 425), the <em>Noda Bi-Yehudah</em>, the <em>Chasam Sofer</em>, and later <em>poskim</em> weigh in with differing positions on the precise scope of the leniency &mdash; whether <em>shituf</em> is fully permitted to non-<em>Yehudim</em>, or is prohibited but not classified as full <em>avodah zarah</em>; and whether Christianity in particular falls within the category. The <em>Maharam Schick</em>&rsquo;s reading does not require the strongest formulation of the leniency; it requires that within a serious halakhic tradition, the descendants of <em>Yishmael</em> and <em>Eisav</em> retain something of the <em>emunah</em> of <em>Avraham</em>. That much is well-founded across the range of <em>shittos</em> (<span class="heb-inline">שיטות</span>).</div>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <div class="note-academic">Oral <em>mesorah</em> from the <em>talmidim</em> of <em>Rav Baruch Ber Leibowitz</em> of Kamenitz (1862&ndash;1939), <em>rosh yeshivah</em> of Knesses Beis Yitzchak in Slabodka and later Kamenitz; <em>talmid</em> of <em>Rav Chaim Soloveitchik</em> of Brisk; author of <em>Birkas Shmuel</em> (<span class="heb-inline">ברכת שמואל</span>). The story of the wagon driver who did not cross himself &mdash; <em>&ldquo;<span class="heb-inline">איינער וואָס גלייבט נישט אין גאָט</span>&rdquo;</em>, one with no fear of any God, even a false one, has no moral floor &mdash; circulates in the <em>yeshiva</em> world; the shiur did not identify a published source.</div>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short"><em>Rambam</em>, <em>Hilchos Melachim</em> 11:4 (uncensored, Frankel edition) &mdash; the founders of Christianity and Islam in the long arc of <em>tikkun ha-olam</em>.</span>
+  <span class="expanded">&mdash; The closing <em>halakhah</em> of the <em>Mishneh Torah</em> in which the <em>Rambam</em> discusses the founder of Christianity and the founder of Islam (whom he names elsewhere as <em>&ldquo;<span class="heb-inline">המשוגע</span>&rdquo;</em>) as having played, despite the immense suffering they caused, an instrumental role in seeding world consciousness with the concept of <em>Mashiach</em> in preparation for the <em>actual</em> <em>Mashiach</em>. The passage was excised by Christian censors from printed editions for centuries. The Frankel edition of the <em>Mishneh Torah</em>, working from the original Yemenite <em>kisvei yad</em>, restored it to printed form in our generation. The <em>Rambam</em>&rsquo;s language is compact; the paraphrase in the body text renders his substance in expanded English rather than a verbatim translation.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <span class="short">The <em>Yaavetz</em> (Rabbi Yaakov Emden, 1697&ndash;1776, Altona) &mdash; emphasis of the <em>Rambam</em>&rsquo;s <em>Hilchos Melachim</em> passage on the long arc of <em>tikkun ha-olam</em>.</span>
+  <span class="expanded">&mdash; The <em>Yaavetz</em>, son of the <em>Chacham Tzvi</em> (<span class="heb-inline">חכם צבי</span>), in his writings on <em>emunah</em> and in his polemics returns repeatedly to the <em>Rambam</em>&rsquo;s long-arc framing in <em>Hilchos Melachim</em>. He emphasizes that the historical role of Christianity and Islam in seeding world consciousness with the messianic idea is, in the <em>Rambam</em>&rsquo;s reading, providential &mdash; an aspect of <em>tikkun ha-olam</em> beyond human comprehension.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short"><em>Bereshis</em> 17:5 &mdash; <em>&ldquo;<span class="heb-inline">כי אב המון גוים נתתיך</span>.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>pasuk</em> in which <em>Avram</em> is renamed <em>Avraham</em>, with the explicit expansion of his paternity to <em>&ldquo;a multitude of nations.&rdquo;</em> This is the textual pivot on which the <em>Maharam Schick</em>&rsquo;s reading rests: <em>Avraham</em>, unlike <em>Yitzchak</em> or <em>Yaakov</em>, carries both a narrow paternity (of the <em>Yaakov mateh shleimah</em>) and a wide one (of the <em>av hamon goyim</em>). The <em>chasimah</em> that names <em>Avraham</em> alone reaches for the wider paternity that only he bears.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <div class="note-academic">A kabbalistic <em>siddur</em>-<em>kavvanah</em> tradition transmitted in the name of the <em>Mateh Tov</em> (<span class="heb-inline">מטה טוב</span>) &mdash; recorded in the shiur under the name <em>Minkud Matav</em>; the precise attribution and edition were not identified. The <em>kavvanah</em> tradition recorded under this name overlaps with the kabbalistic <em>siddurim</em> of the <em>Arizal</em> school. The synthesis offered in the closing chapter can be received on the strength of the three <em>mehalchim</em> themselves, independent of the pinned attribution of the <em>kavvanah</em>.</div>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn29">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 101 &mdash; the halakhic requirement of <em>kavvanah</em> in the first <em>berachah</em> of <em>Shemoneh Esrei</em>.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> rules that <em>kavvanah</em> in <em>Birkas Avos</em> is <em>me&rsquo;akev</em> (<span class="heb-inline">מעכב</span>) &mdash; one who did not have <em>kavvanah</em> in the first <em>berachah</em> is required, <em>be-di&rsquo;avad</em> (<span class="heb-inline">בדיעבד</span>), to repeat the <em>Shemoneh Esrei</em>. The kabbalistic <em>kavvanah</em> offered in the closing chapter is an <em>enhancement</em> layered upon the halakhic requirement of understanding what one is saying; the halakhic obligation is fulfilled by the ordinary meaning of the words, and the kabbalistic overlay is for the <em>ba&rsquo;al nefesh</em> (<span class="heb-inline">בעל נפש</span>) who can reach it without disturbing the base <em>kavvanah</em>.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning shiur on <em>Tefillah</em>, recorded 16 <em>Adar</em> 5785 (16 March 2025, <em>Purim Katan</em>). This edition incorporates the Shiur Review and Editorial Review of 30 August 2026: the three <em>mehalchim</em> are now drawn together in an explicit synthetic chapter; the <em>Maharam Schick</em>&rsquo;s linguistic pivot from <em>Avraham</em>-of-the-<em>Avos</em> to <em>Avraham</em>-of-the-<em>av hamon goyim</em> is defended from the <em>Bereshis</em> 17:5 renaming; the self-contradicting letter claim on <em>Yishu</em> / <em>Eisav</em> has been corrected to a single-letter difference; the paraphrased &ldquo;censored <em>Rambam</em>&rdquo; blockquote has been demoted to indirect discourse to avoid misleading the reader about verbatim <em>Rambam</em>; the <em>Ramban</em>-on-<em>chazir</em> reconciliation now leads and the <em>Rambam</em>-<em>chad-mitzvah</em> follows; the <em>Kavvanah</em> section has been folded into the closing synthesis rather than standing as an orphan; the sponsorship / <em>Purim Katan</em> lead-block has been removed; the <em>Yechezkel</em> <em>Bayis Sheini</em>/<em>Shelishi</em> range is flagged in the notes; the <em>gilgul</em> and Jewish-teacher-of-<em>Muhammad</em> claims are labeled explicitly as kabbalistic <em>mesorah</em>; the <em>Mateh Tov</em> attribution is hedged in the body; the <em>Radbaz</em> is placed within the broader halakhic <em>machlokes</em>; the &ldquo;painful math&rdquo; framing is softened; and footnotes are renumbered in body order.
+</footer>
+
+</body>
+</html>
