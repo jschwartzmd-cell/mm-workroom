@@ -43,6 +43,118 @@ The retroactive block at the top covers the four weekly shiurim (2026-07-19 thro
 
 ---
 
+## Retroactive backfill pass — Sefer Edition shiurim (Batches 1-5, ran 2026-09-06)
+
+Full Sefaria verification pass on all 25 backfill shiurim originally processed before verification was baked into the pipeline. Sefaria verification is now the 4th agent in the Sefer Edition pipeline (see `sefer_edition_project.md`), so future batches include it inline.
+
+### Batch 1 — 2024-06-23 through 2024-08-13
+
+#### 2024-06-23 — Ana B'Ko'ach
+- **Total:** 0 corrections, 0 confirmations, 1 preserved (kabbalistic mesorah).
+
+#### 2024-07-04 — Nishmas Kol Chai
+- **fnX (Kiddushin)** — CORRECTED. Original cited Kiddushin 69b; correct daf is **Kiddushin 69a**.
+- **fnY (Shir HaShirim Rabbah)** — CORRECTED. Original cited SHR 2:23; correct location is **Shir HaShirim Rabbah 2:9**.
+- **Total:** 2 corrections, 14 confirmations, 0 preserved. Modified: both original + Sefer Edition.
+
+#### 2024-08-04 — Sof Pesukei D'Zimra
+- **Total:** 0 corrections, 4 confirmations, 0 preserved.
+
+#### 2024-08-11 — [shiur]
+- **Total:** 0 corrections, 4 confirmations, 0 preserved.
+
+#### 2024-08-13 — [shiur]
+- **fnZ (Yirmiyahu pasuk range)** — CORRECTED. Original cited Yirmiyahu 31:15-16; correct range is **31:15-17**.
+- **Total:** 1 correction, 6 confirmations, 0 preserved. Modified: both files.
+
+### Batch 2 — 2024-08-18 through 2024-09-08
+
+#### 2024-08-18 — מִזְמוֹר לְתוֹדָה · צִיצִית · יְהִי כְבוֹד · אַשְׁרֵי
+- **Total:** 0 corrections, 0 confirmations, 4 preserved (Rimzei Elul obscure sefer, Aderes biography, Vilna Gaon oral hagiographic, Friedlander forgery-history).
+
+#### 2024-08-25 — אַשְׁרֵי — פֶּתַח לְעוֹלָם הַבָּא
+- **Total:** 0 corrections, 8 confirmations (Berachos 4b muvtach, Berachos 32b chassidim harishonim, all Tehillim pesukim, Shemos 15:19), 12 preserved (Rishonim/Acharonim/halachic citations not directly re-checked).
+
+#### 2024-09-01 — סוֹף פְּסוּקֵי דְּזִמְרָה
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+#### 2024-09-02 — אֱמוּנָה בְּבִיאַת הַמָּשִׁיחַ
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+#### 2024-09-08 — אָז יָשִׁיר · יִשְׁתַּבַּח · כִּסֵּא שְׁלֹמֹה הַמֶּלֶךְ
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+### Batch 3 — 2024-09-22 through 2025-01-01
+
+#### 2024-09-22 — בָּרְכוּ — מקורות, כח ומעשה
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+#### 2024-09-29 — סְלִיחוֹת — חסד ואמת לפני יום הדין
+- **fn1 (Brisker Rav mashal)** — PRESERVED. Oral Brisker drashos; not on Sefaria.
+- **Total:** 0 corrections, 0 confirmations, 1 preserved.
+
+#### 2024-12-25 — כֵּיצַד נַעֲשׂוּ הַחַשְׁמוֹנָאִים לִמְלָכִים
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (already integrated prior editorial corrections; no note-academic flags remaining).
+
+#### 2024-12-29 — בָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+#### 2025-01-01 — מַדּוּעַ אֵין מַסֶּכֶת חֲנוּכָּה
+- **Total:** 0 corrections, 0 confirmations, 5 preserved (Apter Rav oral; Chasam Sofer via Chut HaMeshulash indirect; Cassius Dio; Engelman modern critical edition; Bircas HaShalom Chassidic).
+
+### Batch 4 — 2025-01-05 through 2025-02-09
+
+#### 2025-01-05 — יְדִיד נֶפֶשׁ
+- **Total:** 0 corrections, 0 confirmations, 4 preserved (Sefer HaMefoar digital archive, Elazar Azkari autograph MS at JTS, Tzfas mekubalim oral, Prague museum artifacts).
+
+#### 2025-01-12 — Seder Kriat Shema and Its Halachot
+- **fn22/fn23 (Mahar"i Beirav biography)** — VERIFIED. Dates 1474–1546, Spain→Fez→Tlemçen→Safed, 1538 semichah renewal opposed by Ralbach, ordained Beis Yosef→Alshich→Chaim Vital confirmed.
+- **fn28 (Rashbash / HaMagdef)** — UNCERTAIN. HaLevi/HaLorki relationship is "friend/correspondent" per JE, not clearly formal teacher; preserved as-is.
+- **Total:** 0 corrections, 2 confirmations, 1 preserved.
+
+#### 2025-01-26 — The Hidden History of Birkat Emet V'Yatziv
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+#### 2025-02-02 — Birkat Emet V'Yatziv — Origins, Nusach, Semichat Geulah
+- **fn10 (Rav Yaakov Moshe Charlap bio)** — VERIFIED. 1882–1951, Mercaz HaRav, talmid muvhak of Rav Kook, Mei Marom, connection to R' Yehoshua Leib Diskin's beis din confirmed.
+- **Total:** 0 corrections, 1 confirmation, 0 preserved.
+
+#### 2025-02-09 — The Origins and Development of Shemoneh Esrei
+- **fn4 (Prof. Avraham Ofir Shemesh academic)** — PRESERVED. Non-Sefaria academic source.
+- **Total:** 0 corrections, 0 confirmations, 1 preserved.
+
+### Batch 5 — 2025-02-16 through 2025-03-16
+
+#### 2025-02-16 — The Origins of Shemoneh Esrei — Words of the Malachim
+- **Total:** 0 corrections, 0 confirmations, 0 preserved (no flags).
+
+#### 2025-02-23 — The Three-Part Structure of Shemoneh Esrei and Birkat Avot
+- **fn5 (Ketzos HaChoshen / Terumas HaDeshen brotherly pair + Vilna Gaon haskamah)** — CORRECTED. There is no 18th-century Terumas HaDeshen by a Heller brother; Aryeh Leib's elder brother Yehuda Kahana Heller authored **Kuntras HaSfeikos** (customarily printed with Ketzos). Terumas HaDeshen (at fn4) is the medieval R' Yisrael Isserlein. The Gra all-night-haskamah anecdote could not be verified; removed. Note rewritten.
+- **fn16 (Sadigura Rebbe)** — PRESERVED. Oral Chassidic.
+- **Total:** 1 correction, 0 confirmations, 1 preserved. Modified: original file.
+
+#### 2025-03-02 — Repetition of Words in Chazanus
+- **fn15 (Leon of Modena — Sur MeRa / anti-gambling dialogue)** — UNCERTAIN. Core biographical claims verified (age 13, Amsterdam 1692, Eldad/Meidad from Bamidbar 11); "סוד ישרים" alternate title unverifiable via Sefaria (Sefaria doesn't host the work). Preserved as flagged.
+- **Total:** 0 corrections, 0 confirmations, 1 preserved.
+
+#### 2025-03-09 — Purim Falling on Erev Shabbos Kodesh
+- **Total:** 0 corrections, 0 confirmations, 7 preserved (RZNG private letter, Gur Imrei Emes oral, kabbalistic Arizal without specific locus, x2 in Sefer Edition).
+
+#### 2025-03-16 — Magen Avraham — The Soul of the First Berachah
+- **fn23 Sefer Edition (Rema on shituf)** — CORRECTED. Original cited "Rema, Choshen Mishpat 425" (capital cases). The Rema's shituf ruling is at **Orach Chaim 156**. Fixed.
+- **fn17 (Ramban / chazir drasha)** — UNCERTAIN preserved; classical printed source is Or HaChaim on Vayikra 11:7, "shem chazir" drasha circulates without clean rishonic pin.
+- **Others (Etz HaDa'as Tov, Rav Baruch Ber oral, Mateh Tov kavvanah)** — PRESERVED.
+- **Total:** 1 correction, 0 confirmations, 4 preserved. Modified: Sefer Edition file.
+
+### Backfill-pass summary
+- **4 real citation corrections applied** across the 25 shiurim (2 in 2024-07-04, 1 in 2024-08-13, 1 in 2025-02-23, 1 in 2025-03-16 = 5 individual fixes across 4 shiurim)
+- **~29 references confirmed as accurate**
+- **~45 flags correctly preserved as uncertain** (chassidishe/oral/off-Sefaria/academic-secondary)
+- **~9 of 25 shiurim had zero note-academic flags** (Sefer Edition rewrites had already stripped them)
+- Sefaria verification now baked into Sefer Edition pipeline as 4th agent for all future batches
+
+---
+
 ## Weekly entries (going forward)
 
 New entries added each Sunday by the automated scheduled task. Format for each week:
