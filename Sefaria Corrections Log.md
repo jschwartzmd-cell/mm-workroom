@@ -165,4 +165,20 @@ New entries added each Sunday by the automated scheduled task. Format for each w
 - **Total:** X corrections, Y confirmations, Z flags preserved.
 ```
 
-*First automated entry will be for the 2026-09-06 shiur (or whichever week has the next new shiur).*
+### 2026-09-06 — The Final Mincha, אֲחוֹת קְטַנָּה, and the Chofetz Chaim's Primordial Oath
+- **fn1 (Berakhot 12a, hakol holech achar hachitum)** — VERIFIED. Gemara at 12a explicitly.
+- **fn5 (Megillah 31b, tikhleh shanah)** — VERIFIED verbatim (Abaye / Reish Lakish).
+- **fn8 (Tehillim 24:3-4)** — VERIFIED verbatim.
+- **fn9 (Niddah 30b, mashbi'in oso / tehi tzaddik)** — VERIFIED. R' Simlai drasha with all elements.
+- **fn10 (Chofetz Chaim application to Ps 24)** — CORRECTED/TIGHTENED. Niddah 30b itself explicitly cites Ps 24:4 as the pasuk describing one who kept the oath — flag rewritten to note the linkage is in Chazal; Chofetz Chaim's chiddush is the practical Rosh HaShanah avodah drawn out.
+- **fn12 (Devarim 20:8; Sotah 44a)** — VERIFIED both. Pasuk + R' Yosei HaGelili's mei-averos she-b'yado.
+- **fn15 (Berakhot 34a — no bakashos)** — VERIFIED verbatim. SA OC 112:1 also verified — communal bakashos ARE permitted, supporting the first teretz in the shiur.
+- **fn20 (SA OC 582:5, forgot Zochreinu)** — VERIFIED.
+- **fn21 (Taanit 25b, R' Akiva)** — VERIFIED verbatim.
+- **fn24 (II Samuel 6:14/16, David mekharker)** — VERIFIED (v.14 mekharker, v.16 mefazez u-mekharker).
+- **Preserved as UNCERTAIN** (out of scope: chassidishe/oral/kabbalistic/non-Sefaria): fn2, fn3, fn4, fn6, fn7, fn11, fn13, fn14, fn16, fn17, fn18, fn19, fn22, fn23.
+- **Total:** 1 correction/tightening, 11 confirmations, 13 preserved. Modified: original shiur HTML.
+
+---
+
+*Weekly entries continue below.*

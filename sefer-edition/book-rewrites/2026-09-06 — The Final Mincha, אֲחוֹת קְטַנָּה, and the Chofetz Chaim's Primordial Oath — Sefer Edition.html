@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; The Final Mincha, Achos Ketanah, and the Chofetz Chaim's Primordial Oath</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">הַמִּנְחָה הָאַחֲרוֹנָה, אֲחוֹת קְטַנָּה, וּשְׁבוּעַת הַנְּשָׁמָה</h1>
+  <div class="english-title">The Final <em>Mincha</em>, <em>Achos Ketanah</em>, and the Chofetz Chaim on the Primordial Oath of the <em>Neshamah</em></div>
+  <div class="sub">Studies in the <em>Machzor</em> of Rosh HaShanah &mdash; Second Discourse</div>
+  <div class="date">24 Elul &nbsp;&middot;&nbsp; Yahrzeit of the Chofetz Chaim &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>The <span class="heb-inline">מחזור</span> does not begin at the first <span class="heb-inline">מעריב</span> of Rosh HaShanah. It begins with the <span class="heb-inline">מנחה</span> that closes the year that just was &mdash; for <span class="heb-inline">הכל הולך אחר החתום</span>.</em></p>
+
+<h2>I. The Final <em>Mincha</em> &mdash; <em>Hakol Holech Achar HaChitum</em></h2>
+
+<h3>Where the <em>Machzor</em> Truly Begins</h3>
+
+<p>The natural instinct on Erev Rosh HaShanah is to reserve one&rsquo;s <em>kavvanah</em> (<span class="heb-inline">כוונה</span>) for the first <em>maariv</em> (<span class="heb-inline">מעריב</span>) of the new year &mdash; to treat the closing hours of Elul as logistics: the <em>mikveh</em> (<span class="heb-inline">מקוה</span>), the final preparations, the last mundane errands of the outgoing year. Yet the true opening of the <em>machzor</em> (<span class="heb-inline">מחזור</span>) sits earlier still, in an easily-overlooked place: the <em>Mincha</em> (<span class="heb-inline">מנחה</span>) of Erev Rosh HaShanah &mdash; the final <em>tefillah</em> (<span class="heb-inline">תפילה</span>) of the outgoing year.</p>
+
+<p>This is the last moment the departing year has to close itself. The principle of <em>hakol holech achar hachitum</em> (<span class="heb-inline">הכל הולך אחר החתום</span>) &mdash; <em>everything follows the seal</em> &mdash; is a fundamental in the halachos of <em>berachos</em> (<span class="heb-inline">ברכות</span>): an error at the <em>chasimah</em> (<span class="heb-inline">חתימה</span>) of a <em>berachah</em> invalidates the <em>berachah</em> in a way that an error in its middle does not.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The klal carries beyond the technical <em>halachah</em>: the <em>Ribbono Shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>) judges a matter by how it ends. Whatever quality the departing year is finally to have &mdash; that quality is set in its closing minutes. The <em>Mincha</em> of Erev Rosh HaShanah is thus not the tail of one year but the <em>chasimah</em> upon which the entire year is judged.</p>
+
+<h3>The Skverer Rebbe on <em>Barech Aleinu HaShanah HaZos</em></h3>
+
+<p>An oral tradition preserved through two generations places the weight of this <em>Mincha</em> in unmistakable relief.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> <em>Reb Yoel Gross</em> of Miami, <em>zichrono livrachah</em>, the eldest <em>einikel</em> (<span class="heb-inline">אייניקל</span>) of <em>Reb Shaya&rsquo;le Kerestirer</em>, made a lifelong practice of davening <em>far&rsquo;n amud</em> for the <em>Mincha</em> of Erev Rosh HaShanah. Each year, at the same point &mdash; the <em>berachah</em> of <em>Barech Aleinu HaShanah HaZos</em> (<span class="heb-inline">ברך עלינו השנה הזאת</span>) &mdash; he broke into intense weeping. Asked why one should weep so hard over <em>bless upon us this year</em> when only minutes of the year remained, Reb Yoel replied that he had heard the same weeping in the same place from the previous <em>Skverer Rebbe</em>, <em>Rav Yaakov Yosef Twersky</em>, <em>zecher tzaddik livrachah</em>.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> The Skverer Rebbe had taught: at the final <em>Mincha</em>, when a Jew weeps with the words <em>barech aleinu ha&rsquo;shanah ha&rsquo;zos</em>, he may be <em>meraches</em> (<span class="heb-inline">מרחיק</span>) the entire outgoing year retroactively. The year is being sealed at that very hour; a single moment of authentic <em>kavvanah</em> can pull the whole year up with it into the seal.</p>
+
+<div class="pullquote">
+<div class="heb" style="text-align:center;font-size:19px;line-height:2;">הַמִּנְחָה הָאַחֲרוֹנָה שֶׁל הַשָּׁנָה הִיא הַחֲתִימָה עַצְמָהּ.</div>
+<div style="text-align:center;font-style:italic;margin-top:8px;color:#444;">The final <em>Mincha</em> of the year <em>is</em> the seal itself.</div>
+</div>
+
+<p>Beneath the <em>mesorah</em> lies a lomdish question of some depth. Is the <em>chasimah</em> of the year a <em>din b&rsquo;zman</em> (<span class="heb-inline">דין בזמן</span>) &mdash; a fixed moment in time that stamps whatever was placed within it &mdash; or is it a <em>din b&rsquo;pe&rsquo;ulah</em> (<span class="heb-inline">דין בפעולה</span>), an act that must be performed to close the year? On the first understanding, Reb Yoel&rsquo;s tear is an outstanding <em>maaseh</em> caught at the last permissible instant. On the second, that tear is itself the <em>pe&rsquo;ulas ha&rsquo;chasimah</em> &mdash; the very act of sealing. In either case the operational conclusion is identical: this is the hour to invest.</p>
+
+<h2>II. <em>Achos Ketanah</em> &mdash; The Piyut of Transition</h2>
+
+<h3>Between the Departing Year and the Incoming</h3>
+
+<p>Between the final <em>Mincha</em> of the outgoing year and the first <em>maariv</em> of Rosh HaShanah, the <em>Sefardim</em> (<span class="heb-inline">ספרדים</span>) recite a short <em>piyut</em> (<span class="heb-inline">פיוט</span>) that captures the seam with unusual precision &mdash; <em>Achos Ketanah</em> (<span class="heb-inline">אֲחוֹת קְטַנָּה</span>). Its composition is attributed to <em>Rabbeinu Avraham Chazan</em> of Girona (<span class="heb-inline">רבינו אברהם חזן גירונדי</span>), a figure of the Girona school active in the era of the <em>Ramban</em> (<span class="heb-inline">רמב&quot;ן</span>).<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> The <em>paytan</em> signed the composition through an acrostic of his name across the opening letters of the stanzas, closing with the formulaic <em>chazak</em> (<span class="heb-inline">חזק</span>) traditional to the end of a <em>piyut</em>.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a></p>
+
+<h3><em>Tichleh Shanah v&rsquo;Killeloseha</em></h3>
+
+<p>The <em>piyut</em> takes its structural motto from the Gemara&rsquo;s teaching<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> that the <em>tochachah</em> (<span class="heb-inline">תוכחה</span>) of <em>Ki Savo</em> is read on the Shabbos before Rosh HaShanah in order that <em>tichleh shanah v&rsquo;killeloseha</em> (<span class="heb-inline">תכלה שנה וקללותיה</span>) &mdash; that the year, together with its curses, may end. Each stanza of <em>Achos Ketanah</em> catalogs a chapter of the <em>tzaros</em> of <em>Klal Yisrael</em> in <em>galus</em> (<span class="heb-inline">גלות</span>) and closes with this refrain. The final stanza pivots:</p>
+
+<blockquote>
+<div class="heb">תָּחֵל שָׁנָה וּבִרְכוֹתֶיהָ.</div>
+<div class="trans">May the year and its blessings begin.</div>
+</blockquote>
+
+<p>The <em>klalos</em> (<span class="heb-inline">קללות</span>) petitioned to end are not only the material burdens of <em>parnasah</em> (<span class="heb-inline">פרנסה</span>), health, and <em>shalom bayis</em> (<span class="heb-inline">שלום בית</span>). They include the spiritual <em>arur</em> (<span class="heb-inline">ארור</span>) attached by the <em>Torah</em> to specific <em>aveiros</em> &mdash; the shadow that clings to a Jew from a year&rsquo;s worth of failures. <em>Achos Ketanah</em> begs that the corridor between the two years be swept clean, so that the incoming year opens with <em>berachah</em> on both planes.</p>
+
+<h2>III. <em>Ledavid Mizmor</em> and the Divine Name <em>Cha&quot;tach</em></h2>
+
+<h3>The <em>Segulah</em> of the <em>Arizal</em></h3>
+
+<p>The <em>Arizal</em> (<span class="heb-inline">אריז&quot;ל</span>) transmitted a well-known <em>segulah</em> for <em>parnasah</em>: the recitation of <em>Ledavid Mizmor</em> (<span class="heb-inline">לְדָוִד מִזְמוֹר</span>), <em>Tehillim</em> 24, with <em>kavvanah</em> after <em>maariv</em> on the first and second nights of Rosh HaShanah and again on <em>Yom Kippur</em>, functions as a <em>keli</em> (<span class="heb-inline">כלי</span>) that draws down <em>shefa parnasah</em> for the entire year.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> The <em>kapitel</em> is one that the mispallel says often; on these nights it carries an unusual <em>koach</em> (<span class="heb-inline">כוח</span>). In <em>Belz</em> the <em>segulah</em> is honored with a public gathering &mdash; the <em>Ledavid Mizmor tish</em> on the second night of Rosh HaShanah &mdash; where the mispallelim recite the entire mizmor together, <em>pasuk</em> by <em>pasuk</em>.</p>
+
+<h3>The Kabbalistic Name <em>Cha&quot;tach</em></h3>
+
+<p>The <em>mekubalim</em> (<span class="heb-inline">מקובלים</span>) tie the <em>segulah</em> to the divine Name of <em>parnasah</em>, <em>Cha&quot;tach</em> (<span class="heb-inline">חת&quot;ך</span>) &mdash; a Name embedded in two roots within <em>tehillah</em>:</p>
+
+<ul>
+  <li>In <em>Ashrei</em>, the final letters of <span class="heb-inline">פּוֹתֵ<u>חַ</u> אֶ<u>ת</u> יָדֶ<u>ךָ</u></span> spell <em>Cha&quot;tach</em>.</li>
+  <li>In <em>Ledavid Mizmor</em>, the opening letters of <span class="heb-inline"><u>תֵּ</u>בֵל <u>וְ</u>יֹשְׁ<u>בֵי</u> <u>בָ</u>הּ</span> spell the same Name.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></li>
+</ul>
+
+<p>Reciting <em>Ledavid Mizmor</em> on Rosh HaShanah is thus a plugging-in to a channel of <em>shefa</em> that the mispallel already touches every day in <em>Ashrei</em> without knowing it. And with the channel comes a responsibility: as the <em>Ribbono Shel Olam</em> is <em>poseach es yadecha</em> (<span class="heb-inline">פותח את ידך</span>) toward His creatures, so the mispallel must, in his own <em>parnasah</em>, be <em>masbia lechol chai ratzon</em> (<span class="heb-inline">משביע לכל חי רצון</span>). The <em>segulah</em> is not a bare technique; it is an <em>avodah</em> that pledges the recipient to imitate the Giver.</p>
+
+<h2>IV. The Chofetz Chaim on the Primordial Oath</h2>
+
+<h3>The Difficulty in <em>Ledavid Mizmor</em></h3>
+
+<p>The <em>Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>), <em>Rav Yisrael Meir HaKohen of Radin</em>, whose <em>yahrzeit</em> is observed on this very date &mdash; 24 Elul<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> &mdash; was troubled by the <em>peshat</em> of the central <em>pesukim</em> of <em>Ledavid Mizmor</em>:</p>
+
+<blockquote>
+<div class="heb">מִי־יַעֲלֶה בְהַר־ה' וּמִי־יָקוּם בִּמְקוֹם קָדְשׁוֹ׃ נְקִי כַפַּיִם וּבַר־לֵבָב, אֲשֶׁר לֹא־נָשָׂא לַשָּׁוְא נַפְשִׁי וְלֹא נִשְׁבַּע לְמִרְמָה׃</div>
+<div class="trans">Who shall ascend the mountain of Hashem, and who shall stand in His holy place? He of clean hands and pure heart, who has not borne My soul in vain, nor sworn deceitfully.</div>
+<div class="source"><em>Tehillim</em> 24:3&ndash;4</div>
+</blockquote>
+
+<h3><em>Neki Kappayim</em> &mdash; Cleanliness in Money</h3>
+
+<p><em>Neki kappayim</em> (<span class="heb-inline">נקי כפים</span>) is the classical <em>matbea lashon</em> of financial integrity &mdash; the hand that has taken nothing that does not belong to it. There is a certain <em>sheine zach</em> (a fine thing) in the very fact that Jews call with a <em>shailah</em> asking whether they must repay a given debt: the willingness to ask is itself the <em>nekiyus</em> that permits a mispallel to stand before the <em>Ribbono Shel Olam</em> and spread open his palms.</p>
+
+<h3><em>V&rsquo;Lo Nishba L&rsquo;Mirmah</em> &mdash; The Oath Before Birth</h3>
+
+<p>But the clause <em>v&rsquo;lo nishba l&rsquo;mirmah</em> (<span class="heb-inline">ולא נשבע למרמה</span>) &mdash; <em>and has not sworn deceitfully</em> &mdash; presents a difficulty. In the era of the Gemara, <em>nedarim</em> (<span class="heb-inline">נדרים</span>) and <em>shevuos</em> (<span class="heb-inline">שבועות</span>) were woven into ordinary life; today most Jews never make a formal <em>shevuah</em> at all. What then does the <em>pasuk</em> demand of the mispallel who is himself the ascender-of-the-mountain the <em>pasuk</em> describes?</p>
+
+<p>To this the Chofetz Chaim brings a chiddush of considerable beauty. The Gemara in <em>Niddah</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> teaches that before a child is born, a <em>malach</em> (<span class="heb-inline">מלאך</span>) teaches the <em>neshamah</em> (<span class="heb-inline">נשמה</span>) the entire <em>Torah</em>. Pure and spiritual, at home in the <em>olam ha&rsquo;ruchani</em> (<span class="heb-inline">עולם הרוחני</span>), the <em>neshamah</em> does not wish to descend into a physical body in a physical world; it would remain at the <em>Kisei HaKavod</em> (<span class="heb-inline">כסא הכבוד</span>). But a body has been prepared for it, and it must enter. The <em>chevlei leidah</em> (<span class="heb-inline">חבלי לידה</span>) that accompany the birth are, on this view, the physical trace of a spiritual struggle: the <em>neshamah</em>&rsquo;s resistance to descent.</p>
+
+<p>At the moment of descent the <em>malach</em> administers an oath: <em>mashbi&rsquo;in oso</em> (<span class="heb-inline">משביעין אותו</span>) &mdash; <em>tehi tzaddik v&rsquo;al tehi rasha</em> (<span class="heb-inline">תהי צדיק ואל תהי רשע</span>).<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> <em>Be a tzaddik; do not be a rasha.</em> The <em>neshamah</em> &mdash; knowing full well how difficult <em>tzaddikus</em> in this world will prove &mdash; takes the <em>shevuah</em>.</p>
+
+<div class="pullquote">
+<div style="color:#444;font-style:italic;">The chiddush of the Chofetz Chaim: <span class="heb-inline">ולא נשבע למרמה</span> speaks of <em>that</em> <em>shevuah</em>. Every human being took it. To ascend the <em>har Hashem</em> is to live the life of the <em>tzaddik</em> one committed to before birth. Where a mispallel has, <em>chas v&rsquo;shalom</em>, come short of that oath until now, the recitation of <em>Ledavid Mizmor</em> on Rosh HaShanah is the moment to be <em>mekabel al atzmo</em> to honor it from this point forward.</div>
+</div>
+
+<p>The chiddush is not a novelty imposed upon <em>Chazal</em> from without; it draws out what is already latent in the Gemara itself. The very sugya in <em>Niddah</em> that records the oath cites <em>Tehillim</em> 24:4 &mdash; <em>asher lo nasa la&rsquo;shav nafshi v&rsquo;lo nishba l&rsquo;mirmah</em> &mdash; as the <em>pasuk</em> describing the one who has kept the oath.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> The Chofetz Chaim thus renders explicit an association <em>Chazal</em> had already forged. This is the <em>Chofetz Chaim</em>&rsquo;s classical <em>derech</em>: not innovation ex nihilo, but the drawing out of what the sugya itself contains &mdash; here converted into the working <em>avodah</em> of the <em>lail</em> Rosh HaShanah at the recitation of the Arizal&rsquo;s <em>segulah</em>.</p>
+
+<h2>V. <em>Shir HaMaalos MiMa&rsquo;amakim</em> &mdash; The Question of <em>Hefsek</em></h2>
+
+<h3>The Widespread <em>Minhag</em> and the Severity of the <em>Hefsek</em></h3>
+
+<p>In the <em>Aseres Yemei Teshuvah</em> (<span class="heb-inline">עשרת ימי תשובה</span>), a widespread <em>minhag</em> inserts <em>Shir HaMaalos MiMa&rsquo;amakim</em> (<span class="heb-inline">שיר המעלות ממעמקים</span>), <em>Tehillim</em> 130, between <em>Yishtabach</em> (<span class="heb-inline">ישתבח</span>) and the <em>berachah</em> of <em>Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>). The <em>minhag</em> collides with a well-established rule: the seam between <em>Yishtabach</em> and <em>Yotzer</em> tolerates no <em>hefsek</em> (<span class="heb-inline">הפסק</span>).<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> <em>Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>), following the <em>Vilna Gaon</em> (<span class="heb-inline">הגר&quot;א</span>), does not insert the mizmor at this juncture.</p>
+
+<p>The severity of a <em>hefsek</em> at this seam is illustrated by a striking comparison in the <em>Rishonim</em>: the mispallel who is <em>mafsik</em> is likened to the soldier sent home from battle. The Torah&rsquo;s passage of the <em>kohen mashuach milchamah</em> (<span class="heb-inline">כהן משוח מלחמה</span>) addressing the army<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> asks: <em>mi ha&rsquo;ish ha&rsquo;yarei v&rsquo;rach ha&rsquo;levav</em> (<span class="heb-inline">מי האיש הירא ורך הלבב</span>) &mdash; <em>who is the man who is fearful and fainthearted?</em> One <em>shitah</em> in the Gemara<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> reads the phrase as referring to the soldier who fears the <em>aveiros</em> in his hand: <em>me&rsquo;aveiros she&rsquo;beyado</em> (<span class="heb-inline">מעבירות שבידו</span>). A Jew burdened with <em>aveiros</em> cannot fight. The severity of a <em>hefsek</em> at <em>Yishtabach</em>-to-<em>Yotzer</em> is, in the classical simile, that of the same order.</p>
+
+<h3>The <em>Dagul MeiRevava</em> in Defense of the Minhag</h3>
+
+<p>The origin of the <em>minhag</em> is traced to the <em>Arizal</em>. The <em>Noda BiYehudah</em> (<span class="heb-inline">נודע ביהודה</span>), <em>Rav Yechezkel Landau</em>, in his commentary on <em>Shulchan Aruch</em> known as the <em>Dagul MeiRevava</em> (<span class="heb-inline">דגל מרבבה</span>),<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> mounts a defense grounded in a piece of testimony from the <em>Rambam</em>: in the older <em>minhag Sefarad</em>, the community was accustomed to recite <em>Az Yashir</em> (<span class="heb-inline">אָז יָשִׁיר</span>) at precisely this seam &mdash; after <em>Yishtabach</em> and before <em>Yotzer</em>.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> Since the <em>Rambam</em> testifies to that <em>minhag</em> as a legitimate ancient practice, the prohibition on <em>hefsek</em> at this seam cannot pertain to additions per se. What is forbidden is <em>sichah beteilah</em> (<span class="heb-inline">שיחה בטלה</span>), idle chatter that has no place in the <em>tefillah</em>&rsquo;s flow. Additional <em>shevachim</em> of the <em>Ribbono Shel Olam</em> &mdash; songs of praise structurally continuous with the enterprise of <em>Pesukei d&rsquo;Zimra</em> &mdash; are of a different halachic category and are permitted. This <em>derech</em> is reinforced by other <em>poskim</em>, notably the <em>Aruch HaShulchan</em>,<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> who reads the sequence from the end of <em>Pesukei d&rsquo;Zimra</em> into <em>Yotzer</em> as a continuous ascent, not as two hermetically separated units.</p>
+
+<p>Wide swaths of <em>Klal Yisrael</em> have accepted the <em>minhag</em>. <em>Nusach Ashkenaz</em>, following the Gra, holds the line. The <em>Mishnah Berurah</em> records the <em>minhag</em> without a full <em>haskamah</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> A mispallel should follow the <em>nusach</em> of his community.</p>
+
+<h2>VI. <em>Zochreinu L&rsquo;Chaim</em> and the Additions of the <em>Aseres Yemei Teshuvah</em></h2>
+
+<h3>The Halachic Problem</h3>
+
+<p>During the <em>Aseres Yemei Teshuvah</em>, four <em>bakashos</em> are inserted into the <em>Shemoneh Esrei</em>: <em>Zochreinu L&rsquo;Chaim</em> (<span class="heb-inline">זכרנו לחיים</span>) in the first <em>berachah</em>; <em>Mi Kamocha Av HaRachamim</em> (<span class="heb-inline">מי כמוך אב הרחמים</span>) in the second; <em>U&rsquo;Chsov L&rsquo;Chaim Tovim</em> (<span class="heb-inline">וכתוב לחיים טובים</span>) in <em>Modim</em>; and <em>U&rsquo;V&rsquo;sefer Chaim</em> (<span class="heb-inline">ובספר חיים</span>) in <em>Sim Shalom</em>.</p>
+
+<p>The Gemara in <em>Berachos</em><a class="footnote-ref" id="ref20" href="#fn20">[20]</a> establishes that in the first three <em>berachos</em> of <em>shevach</em> (<span class="heb-inline">שבח</span>) and the final three of <em>hoda&rsquo;ah</em> (<span class="heb-inline">הודאה</span>) of the <em>Shemoneh Esrei</em>, one may not insert personal <em>bakashos</em>; requests belong exclusively to the middle <em>berachos</em> of <em>bakashah</em>. The four <em>Aseres Yemei Teshuvah</em> insertions are a <em>takkanah</em> of the <em>Geonim</em> (<span class="heb-inline">גאונים</span>). The <em>Vilna Gaon</em>, according to the record of his practices preserved by his talmidim, held that the insertions altered the <em>matbea she&rsquo;tavu Chazal</em> (<span class="heb-inline">מטבע שטבעו חז&quot;ל</span>).<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></p>
+
+<h3>Three <em>Terutzim</em> and Their Weight</h3>
+
+<p>Three lines of justification for the <em>takkanah</em> are given in the <em>Rishonim</em> and <em>Acharonim</em>:</p>
+
+<ol>
+  <li><em>Communal, not personal.</em> The prohibition on <em>bakashos</em> in the outer <em>berachos</em> is a prohibition on <em>tzarchei yachid</em> (<span class="heb-inline">צרכי יחיד</span>). <em>Tzarchei tzibbur</em> (<span class="heb-inline">צרכי ציבור</span>) are exempted. The insertions are formulated in the plural &mdash; <em>zochreinu</em>, <em>ka&rsquo;svenu</em> &mdash; and function as communal <em>bakashos</em>, not personal ones. This is the most direct reading of the <em>Shulchan Aruch</em>&rsquo;s formulation<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> and the workmanlike defense of the <em>takkanah</em>.</li>
+  <li><em>The character of the days.</em> The <em>Maharam of Rothenburg</em> (<span class="heb-inline">מהר&quot;ם מרוטנבורג</span>)<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> holds that the very <em>ofyan shel yamim</em> &mdash; the specific character of the <em>Yamim Nora&rsquo;im</em> &mdash; renders these <em>bakashos</em> appropriate for insertion in the outer <em>berachos</em>. On days when <em>Klal Yisrael</em>&rsquo;s entire posture is oriented toward the <em>gezar din</em>, the request for life is not an intrusion upon <em>shevach</em> but a completion of it.</li>
+  <li><em>Spiritual life, formulated as <em>shevach</em>.</em> The strongest teretz proceeds from the language of the insertions themselves. The mispallel does not merely ask for biological continuance; he specifies <em>l&rsquo;maancha Elokim Chaim</em> (<span class="heb-inline">למענך אלקים חיים</span>) &mdash; <em>for Your sake, O living G-d</em>. The <em>bakashah</em> is thereby framed as a <em>bakashah</em> that is itself <em>shevach</em>: a request for life so that one may serve the King. In lomdish terms, this is the <em>chiluk</em> between a <em>bakashah b&rsquo;geder bakashah</em> and a <em>bakashah b&rsquo;geder shevach</em>.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a></li>
+</ol>
+
+<p>The three <em>terutzim</em> do not exclude one another. The first is the halachically cleanest and the one on which the <em>Shulchan Aruch</em> most naturally rests; the second supplies the <em>ta&rsquo;am</em> proper to the days; the third supplies the deepest lomdish rationale by reclassifying the <em>bakashah</em> itself.</p>
+
+<h3><em>L&rsquo;Chaim</em> and <em>La&rsquo;Chaim</em> &mdash; a Sharp <em>Kefidah</em></h3>
+
+<p>The <em>poskim</em>, discussed at length in the <em>Mishnah Berurah</em>,<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> observe a <em>kefidah gedolah</em> (<span class="heb-inline">קפידא גדולה</span>) that one must recite <em>zochreinu l&rsquo;chaim</em> (<span class="heb-inline">זכרנו לחיים</span>) with a <em>sheva</em> under the <em>lamed</em> &mdash; and not <em>la&rsquo;chaim</em> (<span class="heb-inline">לחיים</span>) with a <em>patach</em>. The <em>mekubalim</em> warn that on the <em>Yom HaDin</em>, when every word is combed by the <em>mekatregim</em> (<span class="heb-inline">מקטרגים</span>), the <em>patach</em> vocalization may be misheard as <em>lo chaim</em> (<span class="heb-inline">לא חיים</span>) &mdash; <em>not for life</em>. In these days the mispallel must be careful with every word he lets out of his mouth.</p>
+
+<p>The <em>Bach</em> (<span class="heb-inline">ב&quot;ח</span>), <em>Rav Yoel Sirkis</em>,<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> raises a <em>kashya</em>: we say <em>la&rsquo;chaim tovim u&rsquo;l&rsquo;shalom</em> every night in <em>maariv</em> and no one is <em>medakdek</em>. The <em>kashya</em>, however, appears to reflect a <em>nusach</em> in which the <em>maariv</em> phrase is pointed with a <em>patach</em>. In the ascendant <em>nusach</em> the phrase is vocalized <em>l&rsquo;chaim tovim</em> with a <em>sheva</em>, in which case the difficulty dissolves. Where a competing <em>nusach</em> was current, the <em>Bach</em>&rsquo;s question stands within its own <em>nusach</em> and admits no easy resolution; the accepted <em>halachah</em>, in any case, follows the <em>sheva</em>.</p>
+
+<h3>The <em>Din</em> of One Who Forgot <em>Zochreinu</em></h3>
+
+<p>Because the four insertions are a <em>takkanah</em> of the <em>Geonim</em> and not a matter fixed in the Gemara itself, one who forgets <em>zochreinu</em> and has not yet reached <em>Shem u&rsquo;Malchus</em> (<span class="heb-inline">שם ומלכות</span>) of the <em>chasimah</em> returns to the point of insertion; once he has already uttered <em>Baruch Atah Hashem</em>, he does not go back.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> This is to be contrasted with the <em>din</em> of <em>HaMelech HaKadosh</em> (<span class="heb-inline">המלך הקדוש</span>), which is a change grounded in the Gemara itself and which carries stricter consequences.</p>
+
+<h2>VII. <em>Avinu Malkeinu</em> &mdash; Rabbi Akiva at the Drought</h2>
+
+<h3>The Origin in <em>Ta&rsquo;anis</em></h3>
+
+<p>Following the <em>chazaras ha&rsquo;shatz</em> of Rosh HaShanah, the tzibbur recites <em>Avinu Malkeinu</em> (<span class="heb-inline">אבינו מלכנו</span>). The Gemara in <em>Ta&rsquo;anis</em><a class="footnote-ref" id="ref28" href="#fn28">[28]</a> records its origin. A severe drought had struck; one <em>chacham</em> after another rose to daven and no rain came. <em>Rabbi Akiva</em> (<span class="heb-inline">רבי עקיבא</span>) stood before the amud and called out:</p>
+
+<blockquote>
+<div class="heb">אָבִינוּ מַלְכֵּנוּ, חָטָאנוּ לְפָנֶיךָ. אָבִינוּ מַלְכֵּנוּ, אֵין לָנוּ מֶלֶךְ אֶלָּא אָתָּה. אָבִינוּ מַלְכֵּנוּ, לְמַעַנְךָ רַחֵם עָלֵינוּ.</div>
+<div class="trans">Our Father, our King, we have sinned before You. Our Father, our King, we have no King but You. Our Father, our King, for Your own sake have mercy upon us.</div>
+</blockquote>
+
+<p>The rain fell at once. The Gemara supplies the <em>ta&rsquo;am</em>: <em>mipnei she&rsquo;hu ma&rsquo;avir al middosav</em> (<span class="heb-inline">מפני שהוא מעביר על מדותיו</span>) &mdash; Rabbi Akiva was one who overlooked his own honor when others slighted him, and in kind was answered from above.</p>
+
+<h3>The Gematria &mdash; <em>Rabbi Akiva Yesado</em></h3>
+
+<p>The <em>Rishonim</em> preserve a striking <em>remez</em> that binds the origin narrative to the text as we have it. The <em>gematria</em> of the opening phrase &mdash; <em>Avinu Malkeinu chatanu lefanecha</em> (<span class="heb-inline">אבינו מלכנו חטאנו לפניך</span>) &mdash; equals the phrase <em>Rabbi Akiva Yesado</em> (<span class="heb-inline">רבי עקיבא יסדו</span>): <em>Rabbi Akiva composed it</em>.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> The klal is well-known: a <em>mechaber</em> signs his <em>piyut</em> within the composition, most commonly in an acrostic. Rabbi Akiva signed his in <em>gematria</em>.</p>
+
+<h3>Correspondence with the Middle <em>Berachos</em></h3>
+
+<p>A careful reading of the successive <em>bakashos</em> of <em>Avinu Malkeinu</em> reveals a correspondence &mdash; not one-to-one, but thematically striking &mdash; with the middle <em>berachos</em> of the weekday <em>Shemoneh Esrei</em>. The requests for <em>chaim</em>, for <em>parnasah</em>, for <em>selichah</em>, for <em>geulah</em>, for <em>refuah</em>, and for the sealing of the year of goodness recapitulate in <em>Avinu Malkeinu</em> the substance of what is asked in the middle <em>berachos</em> of an ordinary weekday <em>Shemoneh Esrei</em>. Two examples suffice: the requests for <em>selichah</em> and <em>mechilah</em> in <em>Avinu Malkeinu</em> parallel <em>Selach Lanu</em> (<span class="heb-inline">סלח לנו</span>); the requests for <em>parnasah</em> parallel <em>Bareich Aleinu</em>. This correspondence is drawn out in the <em>Abudraham</em> and the <em>Kol Bo</em>,<a class="footnote-ref" id="ref30" href="#fn30">[30]</a> and explains a structural puzzle: on Rosh HaShanah the mispallel does <em>not</em> recite the weekday middle <em>berachos</em> of <em>bakashah</em>, and yet the day is the <em>Yom HaDin</em> on which the year&rsquo;s <em>parnasah</em>, <em>refuah</em>, and <em>selichah</em> are decreed. It is through <em>Avinu Malkeinu</em> &mdash; recited immediately after the <em>chazaras ha&rsquo;shatz</em> &mdash; that these <em>bakashos</em> reach their proper expression on the day itself.</p>
+
+<p>On Shabbos, when personal <em>bakashos</em> are not voiced in the <em>Shemoneh Esrei</em>, <em>Avinu Malkeinu</em> is omitted; when Rosh HaShanah falls on Shabbos, <em>Ashkenazim</em> omit it (the <em>Sefardim</em> retain a shortened version). On a weekday Rosh HaShanah, it is central.</p>
+
+<h2>VIII. The Thread Through the Sections</h2>
+
+<p>The sections traversed &mdash; the final <em>Mincha</em>, <em>Achos Ketanah</em>, <em>Ledavid Mizmor</em> with its embedded Name of <em>parnasah</em>, the primordial oath at the heart of <em>Ledavid Mizmor</em>, the seam of <em>Shir HaMaalos MiMa&rsquo;amakim</em>, the insertions of the <em>Aseres Yemei Teshuvah</em>, and <em>Avinu Malkeinu</em> of <em>Rabbi Akiva</em> &mdash; are not disparate topics grouped by the accident of proximity. They trace a single motion: the closing of one year and the opening of the next, section by section, from the last minutes of Elul through the <em>bakashos</em> that carry the mispallel to the <em>chasimah</em> of the new year.</p>
+
+<p>What binds them is the <em>klal</em> of the first section: <em>hakol holech achar hachitum</em>. Every <em>chasimah</em> counts &mdash; the <em>chasimah</em> of the departing year at the final <em>Mincha</em>, the <em>chasimah</em> of a <em>berachah</em> of the <em>Aseres Yemei Teshuvah</em> when the mispallel must say <em>l&rsquo;chaim</em> and not <em>la&rsquo;chaim</em>, and the <em>chasimah</em> of the new year that will be sealed on <em>Yom Kippur</em>. Between them stands the mispallel, opening his palms in <em>neki kappayim</em>, remembering the <em>shevuah</em> that his own <em>neshamah</em> once took, and joining the words of <em>Rabbi Akiva</em> at a distant drought to his own drought of merit as he stands before the King.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Hakol holech achar hachitum</em> &mdash; the halachic and aggadic <em>klal</em>.</span>
+  <span class="expanded">&mdash; The <em>klal</em> operates in <em>hilchos berachos</em>: an error at the <em>chasimah</em> of a <em>berachah</em> invalidates in a way an error in the middle does not. See <em>Berachos</em> 12a on <em>chasimas berachos</em> as determinative of <em>nusach</em>. The aggadic application to <em>chasimah</em> of the year on Rosh HaShanah / Yom Kippur is a natural extension. Compare <em>Chazon Ish</em>, <em>Orach Chaim</em>, on the <em>chasimah</em> of the year as either a <em>din b&rsquo;zman</em> or a <em>din b&rsquo;pe&rsquo;ulah</em> &mdash; a distinction that carries into the very meaning of the final <em>Mincha</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short">Reb Yoel Gross of Miami &mdash; eldest <em>einikel</em> of Reb Shaya&rsquo;le Kerestirer.</span>
+  <span class="expanded">&mdash; Oral <em>mesorah</em> preserved through personal <em>yedidus</em>. <em>Reb Shaya&rsquo;le Steiner of Kerestir</em> (c. 1852&ndash;1925) was the celebrated Hungarian chassidishe Rebbe, talmid of the <em>Divrei Chaim of Sanz</em>. The specific detail &mdash; annual weeping at <em>Barech Aleinu HaShanah HaZos</em> during the final <em>Mincha</em> of the year &mdash; is a personal recollection and does not appear in printed sources.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short">Previous Skverer Rebbe &mdash; <em>Rav Yaakov Yosef Twersky</em>, <em>zecher tzaddik livrachah</em> (1899&ndash;1968).</span>
+  <span class="expanded">&mdash; The second Skverer Rebbe, founder of New Square, NY. The <em>maaseh</em> of intense weeping at <em>Barech Aleinu</em> of the final <em>Mincha</em> on Erev Rosh HaShanah is transmitted through Skverer oral tradition rather than a specific published source.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Rabbeinu Avraham Chazan Girondi</em> &mdash; <em>mechaber</em> of <em>Achos Ketanah</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Avraham Chazan of Girona</em> (early 13th century), of the Girona school active in the era of the <em>Ramban</em>. The <em>piyut</em> is preserved in <em>machzorei Sefarad</em> and standard <em>Sefardic</em> Rosh HaShanah <em>machzorim</em>, recited following <em>Mincha</em> of Erev Rosh HaShanah. Sefardi tradition also relates a personal association between the two Girona figures; the precise nature of the relationship &mdash; and any <em>hesped</em> between them &mdash; is a matter of <em>mesorah</em> rather than firmly established chronology and would benefit from verification against Fleischer&rsquo;s and Rosenzweig&rsquo;s studies of Girona-school liturgical poetry before further specification.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short">The acrostic of <em>Achos Ketanah</em>.</span>
+  <span class="expanded">&mdash; The opening letters of the stanzas spell out the <em>mechaber</em>&rsquo;s name, closing with the conventional <em>chazak</em> that traditionally seals a <em>piyut</em>. The standard reading of the acrostic is <em>Avraham</em> &hellip; <em>chazak</em>; the <em>chazan</em> designation of the <em>mechaber</em> reflects his liturgical role rather than a component of the acrostic itself.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Megillah</em> 31b &mdash; <em>tichleh shanah v&rsquo;killeloseha</em>.</span>
+  <span class="expanded">&mdash; <em>Ezra tikken lahem l&rsquo;Yisrael she&rsquo;yehu korin klalos she&rsquo;b&rsquo;Toras Kohanim kodem Atzeres, v&rsquo;she&rsquo;b&rsquo;Mishneh Torah kodem Rosh HaShanah &mdash; kdei she&rsquo;tichleh shanah v&rsquo;killeloseha.</em> Codified by the Rambam and the Tur in <em>hilchos tefillah</em> as part of the annual seder ha&rsquo;keriah.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short">The <em>Arizal</em> on <em>Ledavid Mizmor</em> as a <em>segulah</em> for <em>parnasah</em>.</span>
+  <span class="expanded">&mdash; The <em>mesorah</em> traces to the writings of <em>Rav Chaim Vital</em> in <em>Shaar HaKavvanos</em> and <em>Peri Etz Chaim</em> (<em>Shaar Rosh HaShanah</em>); it is codified in <em>Kaf HaChaim</em> to <em>Orach Chaim</em> 582 and in the <em>Yalkut Yosef</em>. The <em>mizmor</em> is specifically <em>Tehillim</em> 24, which opens with the words <em>Ledavid Mizmor</em> (as distinct from other mizmorim that open <em>Mizmor l&rsquo;David</em>).</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short">The Divine Name <em>Cha&quot;tach</em> &mdash; <em>rashei teivos</em> and <em>sofei teivos</em>.</span>
+  <span class="expanded">&mdash; The <em>rashei teivos</em> / <em>sofei teivos</em> constructions upon this Name appear across the kabbalistic liturgical literature. The standard citation for the <em>Cha&quot;tach</em> hidden in the <em>sofei teivos</em> of <em>poseach es yadecha</em> is <em>Shelah HaKadosh</em> in <em>Maseches Tamid</em>, drawing on the writings of the Arizal; see also the <em>Magen Avraham</em> on <em>Orach Chaim</em> 51:7 on <em>kavvanah</em> in <em>poseach es yadecha</em>. The parallel <em>rashei teivos</em> reading in <em>Tevel v&rsquo;yoshvei bah</em> is preserved in later kabbalistic collections including the <em>Kaf HaChaim</em>; it is less widely attested than the <em>poseach es yadecha</em> <em>remez</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short">The Chofetz Chaim &mdash; 24 Elul.</span>
+  <span class="expanded">&mdash; <em>Rav Yisrael Meir HaKohen of Radin</em> (1839&ndash;1933), whose <em>yahrzeit</em> falls on 24 Elul, author of <em>Chofetz Chaim</em>, <em>Shmiras HaLashon</em>, <em>Mishnah Berurah</em>, and <em>Machaneh Yisrael</em>. The <em>hilula</em> of a <em>gadol</em> whose life-work included the <em>Mishnah Berurah</em>&rsquo;s guidance for the very <em>tefillos</em> under discussion is not incidental to a shiur on the <em>machzor</em>.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Niddah</em> 30b &mdash; the <em>malach</em> teaches the <em>neshamah</em> in utero.</span>
+  <span class="expanded">&mdash; <em>Darash Rabbi Simlai: L&rsquo;mah ha&rsquo;vlad domeh bi&rsquo;mei imo? &hellip; U&rsquo;melamdin oso kol ha&rsquo;Torah kulah.</em> The Gemara continues that at birth a <em>malach</em> strikes the child on the mouth, causing forgetfulness of what was learned. The oath of <em>tehi tzaddik</em> is on the same daf.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Mashbi&rsquo;in oso &mdash; tehi tzaddik v&rsquo;al tehi rasha</em>.</span>
+  <span class="expanded">&mdash; <em>Niddah</em> 30b, immediately following the account of the <em>Torah</em> taught to the <em>neshamah</em>: <em>U&rsquo;mashbi&rsquo;in oso: tehi tzaddik v&rsquo;al tehi rasha. Va&rsquo;afilu kol ha&rsquo;olam kulo omrim lecha tzaddik atah &mdash; heyeh b&rsquo;einecha k&rsquo;rasha.</em></span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short">The <em>pasuk</em> in <em>Ledavid Mizmor</em> already cited in the <em>Niddah</em> sugya.</span>
+  <span class="expanded">&mdash; <em>Niddah</em> 30b brings <em>Tehillim</em> 24:4 &mdash; <em>asher lo nasa la&rsquo;shav nafshi v&rsquo;lo nishba l&rsquo;mirmah</em> &mdash; as the <em>pasuk</em> descriptive of the one who has upheld the primordial oath. The linkage of the <em>shevuah</em> to <em>Ledavid Mizmor</em> is thus already in <em>Chazal</em>; the Chofetz Chaim&rsquo;s contribution is the drawing out of this linkage as the operative <em>avodah</em> at the recitation of the mizmor on Rosh HaShanah. Compare the <em>Nefesh HaChaim</em>, <em>Shaar</em> I, and the <em>Mesillas Yesharim</em>, opening chapters, on the <em>tachlis</em> established for the <em>neshamah</em> prior to its descent; the same <em>derech</em> animates the <em>Ramchal</em>&rsquo;s <em>Daas Tevunos</em> on why the <em>neshamah</em> must forget after birth if the aim is to remember. The Chofetz Chaim&rsquo;s reading is a <em>derech derush</em> layered on top of the classical <em>peshat</em> of the <em>Rishonim</em> (<em>Rashi</em>, <em>Ibn Ezra</em>, <em>Radak</em>, <em>Rabbeinu Bachya</em>), who read <em>shevuas shav</em> in the standard <em>peshat</em>-sense of ordinary <em>shevuos</em>; the two layers coexist.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short">The severity of <em>hefsek</em> between <em>Yishtabach</em> and <em>Yotzer</em>.</span>
+  <span class="expanded">&mdash; Primary sources: <em>Yerushalmi Berachos</em> ch. 1; discussions in the <em>Rashba</em> and the <em>Mordechai</em>; codified in <em>Shulchan Aruch</em>, <em>Orach Chaim</em> 54:3, and elaborated in the <em>Mishnah Berurah</em> ad loc.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Devarim</em> 20:8 &mdash; <em>mi ha&rsquo;ish ha&rsquo;yarei v&rsquo;rach ha&rsquo;levav</em>.</span>
+  <span class="expanded">&mdash; Part of the address of the <em>kohen mashuach milchamah</em> to the army before battle.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Sotah</em> 44a &mdash; <em>me&rsquo;aveiros she&rsquo;beyado</em>.</span>
+  <span class="expanded">&mdash; The Gemara records a <em>machlokes tannaim</em>: one <em>shitah</em> holds that <em>ha&rsquo;yarei v&rsquo;rach ha&rsquo;levav</em> refers to actual fear of battle; a second holds that it refers to fear of one&rsquo;s own <em>aveiros</em>. The stricter reading &mdash; <em>me&rsquo;aveiros she&rsquo;beyado</em> &mdash; supplies the classical simile applied by the <em>Rishonim</em> to the severity of a <em>hefsek</em> between <em>Yishtabach</em> and <em>Yotzer</em>. A Prague chapter in the annals of the <em>Haskalah</em>, in which a play was staged mocking this <em>shitah</em>, elicited the well-known retort attributed to the Chofetz Chaim and to <em>Rav Chaim Brisker</em>: the play was left unfinished &mdash; had it been completed, the two <em>gedolim</em> who did not exit the field would have been shown to have won the war.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short">The <em>Noda BiYehudah</em>&rsquo;s <em>Dagul MeiRevava</em>.</span>
+  <span class="expanded">&mdash; <em>Dagul MeiRevava</em> is <em>Rav Yechezkel Landau</em>&rsquo;s commentary on the <em>Shulchan Aruch</em>. His treatment of the <em>hefsek</em> question at the seam of <em>Yishtabach</em>-<em>Yotzer</em> appears in <em>Orach Chaim</em> in the vicinity of <em>siman</em> 51/54. The critical move is the halachic distinction between <em>sichah beteilah</em> (prohibited) and <em>shevachim</em> continuous with the <em>Pesukei d&rsquo;Zimra</em> flow (permitted).</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short">The <em>Rambam</em> and the <em>Sefarad</em> <em>minhag</em> of <em>Az Yashir</em> after <em>Yishtabach</em>.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em>&rsquo;s codification of the nusach appears in <em>Hilchos Tefillah</em> ch. 7, with editorial variants noted across the printed <em>mehaduros</em>; the <em>seder ha&rsquo;tefillah</em> appended to <em>Sefer Ahavah</em> is a further locus of testimony to the sequence of pieces around <em>Yishtabach</em>. The Sefardic-minhag testimony of <em>Az Yashir</em> at this juncture is what the <em>Dagul MeiRevava</em> takes as his primary <em>raiya</em>. Cited here as the <em>Dagul MeiRevava</em> brings it; the precise Rambam locus repays checking against a critical edition.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Aruch HaShulchan</em>, <em>Orach Chaim</em> 54:4 &mdash; the continuity of <em>shevachim</em> into <em>Yotzer</em>.</span>
+  <span class="expanded">&mdash; The <em>Aruch HaShulchan</em> reads the trajectory from the concluding <em>shevachim</em> of <em>Pesukei d&rsquo;Zimra</em> through <em>Yishtabach</em> into <em>Yotzer</em> as a single continuous ascent, not two hermetically-sealed units; on this reading, <em>shevachim</em> occupying that transition are structurally proper to it. A related line is developed by the <em>Eshel Avraham</em> of Butchatch.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Mishnah Berurah</em> to <em>Orach Chaim</em> 54 &mdash; the <em>minhag</em> recorded without full endorsement.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> notes the <em>minhag</em> of inserting <em>Shir HaMaalos MiMa&rsquo;amakim</em> at this seam during the <em>Aseres Yemei Teshuvah</em> but does not offer a full <em>haskamah</em>, which is why <em>Nusach Ashkenaz</em>, following the Gra, does not adopt it.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Berachos</em> 34a &mdash; no <em>bakashos</em> in the first three or last three <em>berachos</em>.</span>
+  <span class="expanded">&mdash; <em>Amar Rav Yehudah: L&rsquo;olam al yish&rsquo;al adam tzerachav lo b&rsquo;shalosh rishonos v&rsquo;lo b&rsquo;shalosh acharonos, ela ba&rsquo;emtza&rsquo;iyos.</em> Codified in <em>Shulchan Aruch</em>, <em>Orach Chaim</em> 112:1.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short">The <em>Vilna Gaon</em> on the <em>Aseres Yemei Teshuvah</em> insertions.</span>
+  <span class="expanded">&mdash; Reports transmitted by talmidim of the Gra (see <em>Ma&rsquo;aseh Rav</em>) place him at reservation regarding the insertions on the grounds that they altered the <em>matbea she&rsquo;tavu Chazal</em>. The exact scope of his practice &mdash; whether he refrained from reciting them or recited them <em>b&rsquo;lis breirah</em> &mdash; is transmitted with some variation; the safer formulation is that he held them with reservation, not that he omitted them outright.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short">The <em>tzarchei tzibbur</em> teretz &mdash; <em>Shulchan Aruch</em> 112:2.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em>&rsquo;s formulation limits the prohibition of <em>bakashos</em> in the outer <em>berachos</em> to <em>tzarchei yachid</em>; <em>tzarchei rabbim</em> are permitted. This is the most direct halachic defense of the <em>takkanah</em>. See also <em>Mishnah Berurah</em> to <em>Orach Chaim</em> 112 for the practical application.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short">The <em>Maharam of Rothenburg</em> &mdash; the <em>ofyan shel yamim</em> teretz.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Meir b&rsquo;Rabbi Baruch of Rothenburg</em>, in his teshuvos on the <em>Yamim Nora&rsquo;im</em>, argues that the character of the days themselves generates the <em>heter</em> for the insertions. Cited by later <em>poskim</em> as the classical <em>Rishonim</em>-level defense of the <em>takkanas ha&rsquo;Geonim</em>.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short">The <em>chiluk</em> between <em>bakashah b&rsquo;geder bakashah</em> and <em>bakashah b&rsquo;geder shevach</em>.</span>
+  <span class="expanded">&mdash; The Brisker-style formulation. Analogous to the <em>Rishonim</em>&rsquo;s classification of <em>she&rsquo;eilas geshamim</em> in <em>Bareich Aleinu</em> as belonging in gemara-terms to the material of <em>gevuros</em>. The precise <em>l&rsquo;maancha Elokim Chaim</em> clause reframes the whole <em>bakashah</em> as a request for life <em>in order to serve</em>, converting the utterance from <em>bakashah</em> to <em>shevach</em>. See also <em>Shulchan Aruch HaRav</em>, <em>Orach Chaim</em> 112, for a related treatment.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short"><em>Mishnah Berurah</em> to <em>Orach Chaim</em> 582 &mdash; <em>l&rsquo;chaim</em> versus <em>la&rsquo;chaim</em>.</span>
+  <span class="expanded">&mdash; <em>Mishnah Berurah</em> 582:7 addresses the <em>kefidah</em> of <em>l&rsquo;chaim</em> (<em>sheva</em>) rather than <em>la&rsquo;chaim</em> (<em>patach</em>), warning against the latter. The concern of <em>lo chaim</em> traces back through the <em>Abudraham</em> and the <em>mekubalim</em>.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <span class="short">The <em>Bach</em>&rsquo;s <em>kashya</em> from <em>maariv</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Yoel Sirkis</em> in the <em>Bayis Chadash</em> on <em>Orach Chaim</em> raises the <em>kashya</em> from the phrase <em>l&rsquo;chaim tovim u&rsquo;l&rsquo;shalom</em> in <em>hashkiveinu</em>: if the daily practice were <em>la&rsquo;chaim</em> and no one is <em>medakdek</em>, the special <em>kefidah</em> on Rosh HaShanah would be difficult to sustain. The <em>kashya</em> presupposes a specific vocalization of the <em>maariv</em> phrase; the accepted <em>nusach</em> uses <em>sheva</em>, and on that reading the <em>kashya</em> dissolves. Where the <em>kashya</em> holds within its own <em>nusach</em>, it stands without a full resolution.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short">Forgot <em>Zochreinu</em>: the din of returning.</span>
+  <span class="expanded">&mdash; <em>Shulchan Aruch</em>, <em>Orach Chaim</em> 582:5. Since the addition is a <em>takkanah</em> of the <em>Geonim</em> and not from the Gemara, if one has not yet said <em>Shem u&rsquo;Malchus</em> of the <em>chasimah</em> he returns; if he has already uttered <em>Baruch Atah Hashem</em>, he does not. Contrast <em>Shulchan Aruch</em> 582:1 for <em>HaMelech HaKadosh</em>, which appears in the Gemara itself and is halachically stricter.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <span class="short"><em>Ta&rsquo;anis</em> 25b &mdash; Rabbi Akiva at the drought.</span>
+  <span class="expanded">&mdash; <em>Maaseh b&rsquo;Rabbi Eliezer&hellip; v&rsquo;lo na&rsquo;anu. Yarad l&rsquo;fanav Rabbi Akiva v&rsquo;amar: Avinu Malkeinu, chatanu lefanecha. Avinu Malkeinu, ein lanu Melech ela Atah. Avinu Malkeinu, l&rsquo;maancha rachem aleinu &mdash; v&rsquo;yardu geshamim.</em> The Gemara supplies the <em>ta&rsquo;am</em>: <em>mipnei she&rsquo;hu ma&rsquo;avir al middosav</em>.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn29">
+  <span class="short">The <em>Rishonim</em> on <em>Rabbi Akiva yesado</em> &mdash; the gematria.</span>
+  <span class="expanded">&mdash; The gematria of <em>Avinu Malkeinu chatanu lefanecha</em> equalling <em>Rabbi Akiva yesado</em> is cited as a <em>remez</em> in the classical liturgical commentators &mdash; the <em>Abudraham</em>, <em>Kol Bo</em>, and related early collections. The signature-in-composition <em>klal</em> is standard among <em>paytanim</em>; the gematria variant here is the unusual form. Presented in the spirit in which it is transmitted &mdash; as a widely-cited <em>remez</em>.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn30">
+  <span class="short"><em>Abudraham</em> and <em>Kol Bo</em> on the structure of <em>Avinu Malkeinu</em>.</span>
+  <span class="expanded">&mdash; The <em>Abudraham</em> and <em>Kol Bo</em> draw out the correspondence between the successive <em>bakashos</em> of <em>Avinu Malkeinu</em> and the middle <em>berachos</em> of the weekday <em>Shemoneh Esrei</em>. The Gra, in <em>Shenos Eliyahu</em> on <em>Avinu Malkeinu</em>, structures the composition against thematic groupings rather than a strict one-to-one correspondence with the weekday <em>berachos</em> &mdash; a slightly different <em>shitah</em> that leaves the underlying insight intact: the day of the <em>gezar din</em> requires the substance of the weekday <em>bakashos</em>, even where their outer form is displaced by the day&rsquo;s special <em>berachos</em>.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning shiur on <em>Tefillah</em>, recorded 6 September 2026 (24 Elul) &mdash; second of three discourses on the <em>machzor</em> in the weeks approaching Rosh HaShanah 5787, delivered on the <em>yahrzeit</em> of the Chofetz Chaim. This edition sequences the sections along the arc that closes one year and opens the next; converts the Chofetz Chaim&rsquo;s reading of <em>v&rsquo;lo nishba l&rsquo;mirmah</em> into the operative <em>avodah</em> at the recitation of <em>Ledavid Mizmor</em>; deepens the <em>Dagul MeiRevava</em>&rsquo;s defense of <em>Shir HaMaalos MiMa&rsquo;amakim</em> with the further leg of the <em>Aruch HaShulchan</em>; weighs the three <em>terutzim</em> on <em>Zochreinu</em>; addresses the <em>Bach</em>&rsquo;s <em>kashya</em> in its <em>nusach</em>-conditional force; and closes with <em>Avinu Malkeinu</em>&rsquo;s structural correspondence to the weekday middle <em>berachos</em> as it appears in the <em>Abudraham</em> and <em>Kol Bo</em>. The <em>Simchas Torah</em> coda of the delivered shiur has been set aside as belonging to a discourse on that <em>chag</em>.
+</footer>
+
+</body>
+</html>
