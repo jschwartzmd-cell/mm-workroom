@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — HaKel HaGadol HaGibor v'HaNorah, the Two Keriyos, and Birkas Gevuros</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">הָאֵל הַגָּדוֹל הַגִּבּוֹר וְהַנּוֹרָא &mdash; שְׁתֵּי הַכְּרִיעוֹת וּבִרְכַּת גְּבוּרוֹת</h1>
+  <div class="english-title">HaKel HaGadol HaGibor v&rsquo;HaNorah, the Two Keriyos, and Birkas Gevuros &mdash; The Restoration by the Anshei Knesses HaGedolah and the Grammar of Rain</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 23 March 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Continuing the body of <em>Birkas Avos</em> (<span class="heb-inline">ברכת אבות</span>) and turning to <em>Birkas Gevuros</em> (<span class="heb-inline">ברכת גבורות</span>): the identity of the <em>Anshei Knesses HaGedolah</em>, the great <em>sugya</em> in <em>Yoma</em>, the two <em>keriyos</em>, and the grammar of rain.</em></p>
+
+<h2>I. The Anshei Knesses HaGedolah &mdash; The Body Behind the Siddur</h2>
+
+<h3>Why This Body Governs Every Berachah</h3>
+
+<p>The <em>Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) &mdash; the Men of the Great Assembly &mdash; are the institution that stands behind every <em>berachah</em> (<span class="heb-inline">ברכה</span>) and every <em>tefillah</em> (<span class="heb-inline">תפילה</span>) that has come down to <em>Klal Yisrael</em>. The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) formulates the point with the economy characteristic of <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>): <em>heim tiknu berachos u&rsquo;tefillos u&rsquo;kedushos</em> (<span class="heb-inline">הם תיקנו ברכות ותפילות וקדושות</span>). Every syllable in the <em>siddur</em> (<span class="heb-inline">סידור</span>), from the opening <em>Modeh Ani</em> through the concluding <em>Aleinu</em>, traces its <em>nusach</em> (<span class="heb-inline">נוסח</span>) to their formulation. To study the meaning of any <em>berachah</em> of <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) is, in the end, to enter the beis midrash of the <em>Anshei Knesses HaGedolah</em> and to receive its teaching.</p>
+
+<h3>Era and Membership</h3>
+
+<p>From <em>Moshe Rabbeinu</em> (<span class="heb-inline">משה רבינו</span>) onward there had stood a body of <em>shivim zekeinim</em> (<span class="heb-inline">שבעים זקנים</span>) &mdash; the seventy elders &mdash; and when one died another was appointed in his place. With the close of the era of <em>nevi&rsquo;im</em> (<span class="heb-inline">נביאים</span>) &mdash; <em>Chagai, Zecharyah,</em> and <em>Malachi</em> (<span class="heb-inline">חגי, זכריה, ומלאכי</span>) &mdash; and with the long stretch reaching from <em>Churban Bayis Rishon</em> (<span class="heb-inline">חורבן בית ראשון</span>) through <em>Galus Bavel</em> (<span class="heb-inline">גלות בבל</span>) and into the era of <em>Bayis Sheni</em> (<span class="heb-inline">בית שני</span>), a shift occurred: the older <em>guf</em> of the <em>zekeinim</em> expanded and reconstituted itself as the <em>Anshei Knesses HaGedolah</em>. The opening <em>mishnah</em> of <em>Pirkei Avos</em><a class="footnote-ref" id="ref1" href="#fn1">[1]</a> attests to this transition in its terse formula: <em>Shimon HaTzaddik hayah mi&rsquo;she&rsquo;yarei Knesses HaGedolah</em> (<span class="heb-inline">שמעון הצדיק היה משיירי כנסת הגדולה</span>) &mdash; <em>Shimon HaTzaddik was of the remnant of the Great Assembly</em>. He is identified as the last of them; with his passing the era closed and the era of the <em>zugos</em> and the <em>tannaim</em> commenced.</p>
+
+<p>Among the identified members of the <em>Assembly</em>: the greatest <em>talmidei chachomim</em> of the generation; the three closing <em>nevi&rsquo;im</em> &mdash; <em>Chagai, Zecharyah,</em> and <em>Malachi</em>; <em>Mordechai</em> (<span class="heb-inline">מרדכי</span>) of <em>Purim</em>; and <em>Daniel</em> (<span class="heb-inline">דניאל</span>) together with his three companions <em>Chananyah, Mishael,</em> and <em>Azaryah</em> (<span class="heb-inline">חנניה, מישאל, ועזריה</span>).</p>
+
+<h3>The Number &mdash; 120 or 85?</h3>
+
+<p>The number of the <em>Anshei Knesses HaGedolah</em> is itself the subject of a <em>machlokes</em> between the two <em>Talmuds</em>. The <em>Bavli</em> (<span class="heb-inline">בבלי</span>) records the number as <strong>120</strong>. The <em>Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>) records it as <strong>85</strong>. Without entering the full <em>sugya</em> here, it is the <em>Bavli</em>&rsquo;s count of 120 that entered the collective consciousness of <em>Klal Yisrael</em> and that stands behind the historical resonance of the number in later ages.</p>
+
+<h3>The Arithmetic Behind 120 &mdash; and Its Modern Echo</h3>
+
+<p>The <em>mishnah</em>&rsquo;s arithmetic yielding the number 120 rests on the tripartite structure of the <em>bottei din</em> of <em>Yerushalayim</em>: the <em>Sanhedrin Gedolah</em> (<span class="heb-inline">סנהדרין גדולה</span>) of seventy-one sitting in the <em>Lishkas HaGazis</em> (<span class="heb-inline">לשכת הגזית</span>), and two <em>Sanhedraos Ketanos</em> (<span class="heb-inline">סנהדראות קטנות</span>) of twenty-three each at the entrances to <em>Har HaBayis</em> (<span class="heb-inline">הר הבית</span>) and to the <em>Azarah</em> (<span class="heb-inline">עזרה</span>). The sum: 71 + 23 + 23 = 117. To this is added the three closing <em>nevi&rsquo;im</em> &mdash; <em>Chagai, Zecharyah,</em> and <em>Malachi</em> &mdash; producing the total of 120.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The <em>Anshei Knesses HaGedolah</em> were not, in the working sense, a <em>beis din</em> (<span class="heb-inline">בית דין</span>): a body of 120 cannot function as a <em>beis din shakul</em> (<span class="heb-inline">בית דין שקול</span>), a court whose composition allows for the resolution of votes. Their function was rather institutional and constitutional: the enactment of <em>takkanos</em> (<span class="heb-inline">תקנות</span>), the composition of <em>berachos</em>, and the fixing of the <em>nusach</em> of <em>tefillah</em>.</p>
+
+<p>The number 120 casts a long historical shadow. When the State of <em>Yisrael</em> was founded in 1948, a <em>machlokes</em> arose over the size of the parliament. Some proposed 70 or 71, mirroring the <em>Sanhedrin</em>. This proposal met sharp objection: to compare a body whose members were largely not <em>yirei shamayim</em> to the <em>Sanhedrin</em> was felt inappropriate. <em>Dr. Zerach Warhaftig</em> (<span class="heb-inline">ד&quot;ר זרח ורהפטיג</span>) &mdash; a signatory of <em>Megillas HaAtzma&rsquo;us</em> (<span class="heb-inline">מגילת העצמאות</span>), and at once a legal scholar of academic standing and a <em>talmid chochom</em> learned in <em>Maseches Sanhedrin</em> (<span class="heb-inline">מסכת סנהדרין</span>) &mdash; proposed instead 120, mirroring the <em>Anshei Knesses HaGedolah</em>. To this day the Knesset sits with 120 members. Whatever one&rsquo;s judgment of the body itself, the number is an echo audible only against the background of the <em>mishnah</em>&rsquo;s arithmetic.</p>
+
+<h2>II. Yoma 69b &mdash; The Restoration of the Crown</h2>
+
+<h3>Moshe Rabbeinu&rsquo;s Formula in Va&rsquo;eschanan</h3>
+
+<p>The name <em>Knesses HaGedolah</em> is itself explained by the <em>Gemara</em> in one of the most stirring <em>sugyos</em> in <em>Shas</em>: <em>Yoma</em> 69b.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> The <em>sugya</em> unfolds in three historical stations.</p>
+
+<p>The first station is <em>Moshe Rabbeinu</em>. In <em>Parshas Va&rsquo;eschanan</em> (<span class="heb-inline">פרשת ואתחנן</span>) he coined the canonical formula for addressing the <em>Ribbono Shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>):<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<blockquote>
+<div class="heb">כִּי ה' אֱלֹקֵיכֶם הוּא אֱלֹקֵי הָאֱלֹהִים וַאֲדֹנֵי הָאֲדֹנִים, הָאֵל הַגָּדֹל הַגִּבֹּר וְהַנּוֹרָא, אֲשֶׁר לֹא יִשָּׂא פָנִים וְלֹא יִקַּח שֹׁחַד.</div>
+<div class="source"><em>Devarim</em> 10:17</div>
+</blockquote>
+
+<p>This became the standard opening frame for addressing <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) in <em>tefillah</em>. That <em>Klal Yisrael</em> did not extend the frame beyond what <em>Moshe Rabbeinu</em> established is a matter of settled halachic gravity. The <em>Gemara</em> in <em>Berachos</em> 33b<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> preserves the incident of a <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) who stood before <em>Rabbi Chanina</em> (<span class="heb-inline">רבי חנינא</span>) and heaped further and further praises upon <em>HaKadosh Baruch Hu</em>. Rabbi Chanina let him finish, then asked him: <em>have you completed all the praises of your Master?</em> The <em>mashal</em> he delivered is famous. A king whose treasuries are filled with thousands of coins of gold &mdash; do you praise him by listing his coins of silver? To do so is not to praise but to diminish. So too <em>HaKadosh Baruch Hu</em> is infinite; every additional praise is by definition a limitation. Therefore <em>Chazal</em> did not extemporize beyond the formula given by <em>Moshe Rabbeinu</em> &mdash; <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em>.</p>
+
+<h3>Yirmiyahu&rsquo;s Omission and Daniel&rsquo;s Further Omission</h3>
+
+<p>Then came the <em>Churban</em>. <em>Yirmiyahu HaNavi</em> (<span class="heb-inline">ירמיהו הנביא</span>) beheld <em>goyim</em> mocking <em>HaKadosh Baruch Hu</em> in His own Sanctuary &mdash; slaughtering pigs on the <em>Mizbeach</em> (<span class="heb-inline">מזבח</span>) and casting the blood upon the <em>Paroches</em> (<span class="heb-inline">פרוכת</span>). Confronted with this desecration, <em>Yirmiyahu</em> could not bring himself to say <em>HaNorah</em> (<span class="heb-inline">הנורא</span>). His question, as the <em>Gemara</em> formulates it, is unavoidable: <em>where are His nora&rsquo;os when this is happening in His Heichal?</em> From <em>Yirmiyahu</em> forward, <em>Klal Yisrael</em> omitted <em>HaNorah</em> from the formula.</p>
+
+<p>Then came <em>Daniel</em> in <em>Galus Bavel</em>. He omitted not only <em>HaNorah</em> but also <em>HaGibor</em> (<span class="heb-inline">הגבור</span>). His question: <em>with Klal Yisrael scattered and persecuted, with sinas Yisrael pervading every land where His children reside &mdash; where are His gevuros?</em> From <em>Daniel</em> forward, only <em>HaKel HaGadol</em> was said.</p>
+
+<h3>The Restoration by the Anshei Knesses HaGedolah</h3>
+
+<p>Then came the <em>Anshei Knesses HaGedolah</em>. They restored the formula in full: <em>HaKel HaGadol, HaGibor, v&rsquo;HaNorah</em>. Their <em>sevara</em> (<span class="heb-inline">סברא</span>) is a chiddush that recasts the entire question. Precisely the fact that <em>Klal Yisrael</em> continues to exist &mdash; under the mockery of the nations, through the defilement of the Sanctuary, through the long <em>galus</em> &mdash; <em>that itself</em> is the content of His <em>gevuros</em> and His <em>nora&rsquo;os</em>. That the nations of the world have not consumed us, that we still stand and daven and rebuild, is not evidence against the <em>gevurah</em>: it <em>is</em> the <em>gevurah</em>. That a single people, alone and hated, endures against the current of history &mdash; this is the <em>nora&rsquo;os</em>. The <em>Anshei Knesses HaGedolah</em> read the survival of <em>Klal Yisrael</em> not as a puzzle for the formula but as its very content.</p>
+
+<p>From this restoration the <em>Gemara</em> derives the name itself: <em>Knesses HaGedolah</em>. There is no <em>gedulah</em> greater than the restoration of the original glory of <em>Moshe Rabbeinu</em>&rsquo;s <em>toarim</em>. When the <em>mispallel</em> says <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em> in <em>Shemoneh Esrei</em>, the <em>kavvanah</em> installed by the <em>Anshei Knesses HaGedolah</em> is precisely this: to declare that through <em>galus</em> and through <em>hester panim</em> (<span class="heb-inline">הסתר פנים</span>), He remains <em>Gibor</em> and <em>Norah</em> &mdash; because <em>we are still here</em>.</p>
+
+<h2>III. Al Elyon &mdash; The Register of Hester Panim</h2>
+
+<h3>Rav Schwab on the Word</h3>
+
+<p>Immediately following <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em>, the <em>berachah</em> continues: <em>Kel Elyon</em> (<span class="heb-inline">א-ל עליון</span>). The phrase originates with <em>Avraham Avinu</em> in his encounter with <em>Malki-Tzedek</em> (<span class="heb-inline">מלכי-צדק</span>) at the conclusion of the war of the four kings against the five. <em>Elyon</em> is <em>upper</em>, <em>supreme</em>. But this raises a simple question: <em>above</em> what? <em>Above</em> whom?</p>
+
+<p><em>Rav Shimon Schwab</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">רבי שמעון שוואב זצ&quot;ל</span>),<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> wrote extensively on this phrase, and his reading is a piece of <em>hashkafah</em> (<span class="heb-inline">השקפה</span>) that has entered the mainstream of contemporary <em>machshavah</em>. Many of his pieces first appeared in <em>The Jewish Observer</em>, the English-language publication of <em>Agudas Yisrael</em> of America from 1963 to 2008, in which the mature <em>hashkafah</em> of <em>gedolei Yisrael</em> reached a broad readership. In the decades following the <em>Shoah</em> (<span class="heb-inline">שואה</span>), various figures &mdash; sometimes even significant figures &mdash; were assigning specific reasons to specific tragedies, each in the service of an antecedent agenda. Rav Schwab wrote sharply against this posture. No person has been granted the <em>reshus</em> (<span class="heb-inline">רשות</span>) to explain the tragedies of Jewish history unless <em>Chazal</em> themselves supplied the explanation. This is a <em>halachic-hashkafic</em> stricture, not a matter of taste. The <em>Shoah</em> in particular admits of no such explanation; anyone who begins to construct one has already erred.</p>
+
+<h3>The Meaning of Elyon in Shemoneh Esrei</h3>
+
+<p>The <em>Shoah</em>, on Rav Schwab&rsquo;s reading, is precisely the register of <em>Kel Elyon</em>. <em>HaKadosh Baruch Hu</em> is showing His <em>hanhagah</em> (<span class="heb-inline">הנהגה</span>) in a mode that human <em>hasagah</em> (<span class="heb-inline">השגה</span>) cannot reach. The message of the <em>toar</em>, as it stands in the <em>berachah</em>, is: <em>I am above. I am infinite. You are finite creatures. Do your avodah. Do not attempt to comprehend Mine.</em> This is <em>hester panim</em> in its fullness &mdash; not the absence of God but the presence of God in a register above the reach of the limited creature. The <em>mispallel</em> stands ready to ask the <em>Ribbono Shel Olam</em> for everything he needs in the middle <em>berachos</em> of <em>Shemoneh Esrei</em>; before he does, he acknowledges through <em>Kel Elyon</em> that the <em>Meshiv</em> to those requests operates in a register above his comprehension. He comes; he asks; he does not insist on understanding the ways in which his tefillos are answered.</p>
+
+<h2>IV. The Two Keriyos of Birkas Avos</h2>
+
+<h3>The Halachic Frame</h3>
+
+<p><em>L&rsquo;halachah</em>, in <em>Birkas Avos</em> the <em>mispallel</em> bows at two stations: at the opening &mdash; <em>Baruch Atah Hashem</em> (<span class="heb-inline">ברוך אתה ה'</span>) &mdash; and at the close &mdash; <em>Magen Avraham, Baruch Atah Hashem</em> (<span class="heb-inline">מגן אברהם, ברוך אתה ה'</span>). Two <em>keriyos</em> (<span class="heb-inline">כריעות</span>); two distinct frames. The two bows are not a duplication of a single act but the marking of two distinct modes of relationship between the <em>Yid</em> and <em>HaKadosh Baruch Hu</em>.</p>
+
+<h3>Two Modes of Relationship &mdash; Ze Keili and Elokei Avi</h3>
+
+<p>Every <em>Yid</em> stands, at every moment, in two distinct relationships with <em>HaKadosh Baruch Hu</em> simultaneously. The <em>pasuk</em> (<span class="heb-inline">פסוק</span>) in <em>Shiras HaYam</em> (<span class="heb-inline">שירת הים</span>)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> couples the two in a single line:</p>
+
+<blockquote>
+<div class="heb">זֶה אֵלִי וְאַנְוֵהוּ, אֱלֹקֵי אָבִי וַאֲרֹמְמֶנְהוּ.</div>
+<div class="trans">This is my God, and I will beautify Him; the God of my father, and I will exalt Him.</div>
+<div class="source"><em>Shemos</em> 15:2</div>
+</blockquote>
+
+<p>The two clauses mark the two modes. <em>Elokei Avi</em> &mdash; <em>God of my father</em> &mdash; is the <em>kav ha&rsquo;avos</em> (<span class="heb-inline">קו אבות</span>), the transmitted <em>mesorah</em> (<span class="heb-inline">מסורה</span>) that reaches the <em>mispallel</em> through his father, his grandfather, and back to <em>Avraham, Yitzchak,</em> and <em>Yaakov</em>. This is the emunah he inherited. <em>Ze Keili</em> &mdash; <em>this is my God</em> &mdash; is the direct, immediate, personal encounter, in which the <em>Yid</em> forges his own relationship with the <em>Ribbono Shel Olam</em>. Chazal remark on <em>Ze Keili</em> that at the <em>Yam</em> every <em>Yid</em> pointed with his finger and said <em>this</em>: the recognition was direct, personal, unmediated. This is <em>my</em> <em>Elokim</em>, not merely my father&rsquo;s.</p>
+
+<h3>Rav Schwab on the Two Bows</h3>
+
+<p>Rav Schwab, drawing on the <em>rishonim</em>, ties the two <em>keriyos</em> of <em>Birkas Avos</em> to these two modes. The <strong>opening <em>keriyah</em></strong>, at <em>Baruch Atah Hashem Elokeinu v&rsquo;Elokei Avoseinu</em> (<span class="heb-inline">ברוך אתה ה' אלקינו ואלקי אבותינו</span>), is the <em>hishtabdus</em> (<span class="heb-inline">השתעבדות</span>) to the <em>mesorah</em> of the <em>avos</em>: <em>I am the inheritor of Avraham, Yitzchak, and Yaakov.</em> The <strong>closing <em>keriyah</em></strong>, at <em>Magen Avraham, Baruch Atah Hashem</em>, is directed to <em>Avraham</em> as he <em>began</em> &mdash; alone, standing <em>b&rsquo;ever echad</em> (<span class="heb-inline">בעבר אחד</span>) against his father <em>Terach</em> (<span class="heb-inline">תרח</span>), against <em>Dor HaPalagah</em> (<span class="heb-inline">דור הפלגה</span>), against an entire civilization. The two bows together install both dimensions: the inheritance, and the personal <em>avodah</em>.</p>
+
+<h3>Avraham HaIvri and the Chiddushei HaRim</h3>
+
+<p><em>Chazal</em> ask why <em>Avraham</em> is called <em>Avraham HaIvri</em> (<span class="heb-inline">אברהם העברי</span>). The answer given: because he stood on one side, <em>b&rsquo;ever echad</em>, while the entire world stood on the other. To stand alone against <em>sheker</em> (<span class="heb-inline">שקר</span>) for the sake of <em>emes</em> (<span class="heb-inline">אמת</span>) is the essence of what it means to be <em>Avraham Avinu</em>. Every <em>Yid</em>, at some moment in his life, is placed by <em>hashgachah</em> in precisely such a position; at that moment he is being asked to be a fragment of <em>Avraham Avinu</em>.</p>
+
+<p>The <em>Chiddushei HaRim</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">חידושי הרי&quot;ם זצ&quot;ל</span>) &mdash; whose <em>yahrzeit</em> falls on the calendar day of the delivered <em>shiur</em> &mdash; writes in <em>Sefer Alzachos</em>,<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> the principal <em>sefer</em> that Gerrer <em>chassidim</em> possess from him on <em>chumash</em>, a formulation that has become famous in <em>Ger</em> and in <em>Kotzk</em>: <em>kol Yehudi hu Magen Avraham</em> (<span class="heb-inline">כל יהודי הוא מגן אברהם</span>) &mdash; <em>every Yid is a Magen Avraham; every Yid is, at his moment, an Avraham Avinu.</em> The closing <em>chasimah</em> (<span class="heb-inline">חתימה</span>) of <em>Birkas Avos</em> on <em>Magen Avraham</em> alone, without the other <em>avos</em>, is on this reading the flag under which every <em>Yid</em>&rsquo;s personal <em>avodah</em> stands. The second <em>keriyah</em> is thereby not the marking of an inheritance but the acknowledgment of a personal call: <em>I, too, like Avraham, stand against the sheker of my world for the emes of HaKadosh Baruch Hu &mdash; and in that standing, the second bow finds its place.</em></p>
+
+<h2>V. Birkas Gevuros &mdash; Why Rain Is Called Gevuros</h2>
+
+<h3>The Text of the Berachah</h3>
+
+<p>The second <em>berachah</em> of <em>Shemoneh Esrei</em> opens: <em>Atah Gibor l&rsquo;olam Hashem, m&rsquo;chayeh meisim atah, rav l&rsquo;hoshi&rsquo;a. Mashiv haruach u&rsquo;morid ha&rsquo;geshem</em> &mdash; or, in the summer season, <em>morid ha&rsquo;tal</em> (<span class="heb-inline">מוריד הטל</span>). At the head of the <em>berachah</em> stands the <em>toar</em> of <em>gevurah</em>; immediately following it stands the invocation of rain.</p>
+
+<h3>The Question of the Gemara</h3>
+
+<p>The <em>Gemara</em> at the opening of <em>Ta&rsquo;anis</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> raises the question: <em>gishmei berachah</em> (<span class="heb-inline">גשמי ברכה</span>) are designated <em>gevuros</em> (<span class="heb-inline">גבורות</span>). Why? What is it about rain that constitutes a demonstration of the <em>Ribbono Shel Olam</em>&rsquo;s <em>gevurah</em>? Rain, viewed superficially, is the most ordinary of natural phenomena; its designation as <em>gevurah</em> demands explanation.</p>
+
+<h3>The Gra &mdash; Every Drop to Its Address</h3>
+
+<p>The <em>Gra</em> (<span class="heb-inline">גר&quot;א</span>)<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> supplies the reading that has become the standard <em>pshat</em> in the <em>berachah</em>. The fact that every single drop of rain descends precisely to its appointed location &mdash; every field, every furrow, every root &mdash; is itself the demonstration of <em>gevurah</em>. What appears to the natural eye as random precipitation is, in <em>emes</em>, the most exact expression of <em>hashgachah pratis</em> (<span class="heb-inline">השגחה פרטית</span>) over the finest details of <em>bri&rsquo;ah</em> (<span class="heb-inline">בריאה</span>). There is no <em>seder</em> (<span class="heb-inline">סדר</span>) more intricate than this <em>seder</em>, and there is no <em>gevurah</em> more exact than the direction of every drop of rain to its address. On the <em>Gra</em>&rsquo;s reading, the placement of <em>gishmei berachah</em> at the head of the <em>berachah</em> of <em>gevuros</em> is not a stylistic accident but a doctrinal statement.</p>
+
+<h2>VI. HaGeshem or HaGashem &mdash; The Grammar and the History</h2>
+
+<h3>The Halachic Question</h3>
+
+<p>How does the <em>mispallel</em> pronounce the word? Is it <em>ha&rsquo;geshem</em> (<span class="heb-inline">הַגֶּשֶׁם</span>) with a <em>segol</em>, or <em>ha&rsquo;gashem</em> (<span class="heb-inline">הַגָּשֶׁם</span>) with a <em>kamatz</em>? Most say what their father said. The question is nevertheless real and rests on a substantive grammatical foundation.</p>
+
+<h3>The Rule of Segol and Kamatz</h3>
+
+<p>The <em>Gemara</em> in <em>Ta&rsquo;anis</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> teaches that the <em>hilchos keri&rsquo;as sefarim</em> (<span class="heb-inline">הלכות קריאת ספרים</span>) &mdash; the grammatical rules governing the proper reading of sacred texts &mdash; were transmitted to <em>Moshe Rabbeinu</em> at <em>Sinai</em>. Among these rules is the following: a word that carries a <em>segol</em> mid-<em>pasuk</em> shifts to a <em>kamatz</em> when the word stands at the end of the <em>pasuk</em> or at a <em>hefsek</em> (<span class="heb-inline">הפסק</span>). The classical example, drawn from the <em>Torah</em> itself in <em>Parshas Mishpatim</em>:</p>
+
+<blockquote>
+<div class="heb">עַיִן תַּחַת עַיִן, שֵׁן תַּחַת שֵׁן, יָד תַּחַת יָד, רֶגֶל תַּחַת רָגֶל.</div>
+<div class="trans">An eye for an eye, a tooth for a tooth, a hand for a hand, a foot for a foot.</div>
+<div class="source"><em>Shemos</em> 21:24<a class="footnote-ref" id="ref11" href="#fn11">[11]</a></div>
+</blockquote>
+
+<p>The first appearance of <em>regel</em>, mid-<em>pasuk</em>, retains the <em>segol</em>. The second appearance, at the close of the <em>pasuk</em>, shifts to <em>kamatz</em>. The same word, same root, different <em>nikud</em> by virtue of position alone.</p>
+
+<h3>The Application to Morid HaGeshem</h3>
+
+<p>The application to <em>morid ha&rsquo;geshem</em> depends on how one reads the syntax that follows. If <em>Mashiv haruach u&rsquo;morid ha&rsquo;geshem</em> ends a sentence &mdash; with an <em>esnachta</em> (<span class="heb-inline">אתנחתא</span>) before the following phrase <em>Mechalkel chayim b&rsquo;chesed</em> (<span class="heb-inline">מכלכל חיים בחסד</span>) &mdash; then the grammatical rule yields <em>ha&rsquo;gashem</em> with a <em>kamatz</em>. If, on the other hand, the phrase flows continuously into <em>Mechalkel chayim b&rsquo;chesed</em> &mdash; construing the sense as <em>HaKadosh Baruch Hu sustains life through the rain</em> &mdash; then <em>ha&rsquo;geshem</em> with a <em>segol</em> is correct. The <em>machlokes ha&rsquo;poskim</em> (<span class="heb-inline">מחלוקת הפוסקים</span>) turns on how the phrase is to be parsed.</p>
+
+<h3>The Historical Nusach &mdash; Yitzchak Satanov and His Siddur</h3>
+
+<p>For centuries, the universal <em>nusach</em> was <em>ha&rsquo;geshem</em> with a <em>segol</em>. Every ancient <em>siddur</em> &mdash; including the <em>Siddur of Rav Amram Gaon</em> (<span class="heb-inline">סידור רב עמרם גאון</span>),<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> the earliest comprehensive Jewish <em>siddur</em> we possess &mdash; reads with <em>segol</em>, uniformly. The shift to <em>ha&rsquo;gashem</em> is post-1800, and the proximate source of the shift is one of the more unsettling episodes in the history of printed <em>siddurim</em>.</p>
+
+<p>The figure in question is <em>Yitzchak Satanov</em> (<span class="heb-inline">יצחק סאטאנוב</span>), named for the town of Satanów, near Lviv in present-day western Ukraine. (The town itself was decimated in the <em>Shoah</em>; in 2020, the remains of approximately three hundred <em>Yidden</em> &mdash; most of them women and children, suffocated to death by the Nazis and their Ukrainian collaborators &mdash; were discovered in two basements. After a six-year legal battle they were brought to <em>kevurah</em> in <em>Eretz Yisrael</em>.)</p>
+
+<p>Satanov died in 1804 or 1805. He came from a <em>frum</em> family; he moved to Berlin &mdash; then the capital of the <em>Haskalah</em> (<span class="heb-inline">השכלה</span>) &mdash; and became close to <em>Moses Mendelssohn</em>, the intellectual father of Reform. He worked in Mendelssohn&rsquo;s printing house. Outwardly he continued to present as <em>frum</em>, but his loyalties were divided. Those who knew him observed that beneath his long <em>kapote</em> (<span class="heb-inline">קפוטה</span>) he wore a short jacket &mdash; straddling both worlds, and telegraphing the split.</p>
+
+<p>Over time it emerged that Satanov was a serial forger. He forged <em>sefarim</em>. He forged <em>haskamos</em> (<span class="heb-inline">הסכמות</span>) &mdash; including <em>haskamos</em> in the names of the <em>Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) and the <em>Pnei Yehoshua</em> (<span class="heb-inline">פני יהושע</span>). The <em>Pnei Yehoshua</em> initially cited him in the ordinary way; only later did he discover the deception. To establish credibility in serious circles, Satanov became the first to print the <em>Kisvei HaAri z&rdquo;l</em> (<span class="heb-inline">כתבי האריז&quot;ל</span>) in publicly available form &mdash; a step of no small chutzpah, given that ever since <em>Shabbsai Tzvi</em> there had stood a <em>cherem</em> (<span class="heb-inline">חרם</span>) against the printing of Kabbalah for the general reader.</p>
+
+<p>He then turned his attention to the <em>siddur</em>. His edition, published under the title <em>Vaye&rsquo;etar Yitzchak</em> (<span class="heb-inline">ויעתר יצחק</span>) &mdash; the <em>pasuk</em> of Yitzchak Avinu davening, and Satanov&rsquo;s namesake &mdash; introduced numerous grammatical &ldquo;corrections&rdquo; to the received <em>nusach</em>.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> It is in this <em>siddur</em> that <em>ha&rsquo;gashem</em> with a <em>kamatz</em> first appears in print, replacing the universal <em>ha&rsquo;geshem</em>. Approximately twenty-five years before the delivered <em>shiur</em>, a full <em>kuntres</em> (<span class="heb-inline">קונטרס</span>) appeared &mdash; the work of <em>Rav Krause</em> (<span class="heb-inline">רב קראוס</span>) &mdash; documenting the entire history and reopening the question for a generation of <em>poskim</em>.</p>
+
+<h3>The Poskim on the Question</h3>
+
+<p><em>Rav Moshe Feinstein</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">הגר&quot;מ פיינשטיין זצ&quot;ל</span>), in <em>Shu&rdquo;t Igros Moshe</em> (<span class="heb-inline">שו&quot;ת אגרות משה</span>)<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> rules in favor of <em>ha&rsquo;gashem</em>. He records, further, that <em>Maran HaGrish Elyashiv</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">מרן הגרי&quot;ש אלישיב זצ&quot;ל</span>), was extremely <em>makpid</em> on <em>ha&rsquo;gashem</em>; in his <em>minyan</em> on the second floor of <em>Porat Yosef</em> (<span class="heb-inline">פורת יוסף</span>) in <em>Yerushalayim</em>, the <em>talmidim</em> corrected any <em>mispallel</em> who said <em>ha&rsquo;geshem</em>. (A <em>talmid</em> with a sense of humor once came in the summer and said <em>Mashiv haruach u&rsquo;morid ha&rsquo;geshem</em>; the room jumped to correct him; his answer: <em>you don&rsquo;t say &lsquo;geshem&rsquo; at all in the summer!</em>) Rav Elyashiv held the phrase <em>Mashiv haruach u&rsquo;morid ha&rsquo;geshem</em> to end a sentence with an <em>esnachta</em> before <em>Mechalkel chayim</em>, and the grammatical rule accordingly yields <em>ha&rsquo;gashem</em>.</p>
+
+<p><em>Rav Yaakov Yisrael Fisher</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">הגר&quot;י פישר זצ&quot;ל</span>),<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> a <em>Rav</em> in <em>Yerushalayim</em> from the <em>Eidah HaChareidis</em>, took the <em>kuntres</em> on Satanov, set it aside, and articulated a principle of general validity: <em>even if he was a maskil, what he says here makes sense; ha&rsquo;gashem is correct on its own grammatical merits, regardless of the identity of the first to write it in print.</em> The judgment separates the halachic question from the biographical stigma.</p>
+
+<p><em>Rav Shlomo Zalman Auerbach</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">הגרש&quot;ז אויערבך זצ&quot;ל</span>),<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> originally said <em>ha&rsquo;gashem</em>. When he saw Rav Krause&rsquo;s <em>kuntres</em> documenting that the older <em>nusach</em> was <em>ha&rsquo;geshem</em>, he changed for the rest of his life. The change is preserved as a paradigm of the <em>gadlus</em> of an <em>ish ha&rsquo;emes</em>: he saw that his practice rested on a mistaken premise and altered it.</p>
+
+<p>Among the majority of contemporary <em>acharonim</em> the practice is <em>ha&rsquo;geshem</em>. Only a genuine <em>medakdek</em>, aware of the underlying question, distinguishes.</p>
+
+<h2>VII. Geshem Inside Birkas Techiyas HaMeisim</h2>
+
+<h3>Why This Berachah</h3>
+
+<p>Why is <em>geshem</em> installed inside <em>Birkas Techiyas HaMeisim</em> (<span class="heb-inline">ברכת תחיית המתים</span>) rather than in some other <em>berachah</em>? The <em>Gemara</em> supplies the formula in a phrase of programmatic weight: <em>ki hu techiyas ha&rsquo;meisim</em> &mdash; <em>rain is the daily techiyas ha&rsquo;meisim</em>. Without water there is no life. The dependence of the world on <em>geshem</em> is not an occasional matter but a moment-by-moment reality. The <em>Gemara</em> in <em>Sanhedrin</em>, <em>perek Chelek</em>,<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> develops the indictment of the <em>Dor HaMabul</em>: their corruption included the claim that they did not need <em>HaKadosh Baruch Hu</em> for rain, since they had <em>neharos</em> (<span class="heb-inline">נהרות</span>), <em>yamim</em> (<span class="heb-inline">ימים</span>), and irrigation systems. The <em>Mabul</em> itself was <em>middah k&rsquo;neged middah</em> (<span class="heb-inline">מדה כנגד מדה</span>): water from above and water from below together demonstrated that the <em>Ribbono Shel Olam</em> alone controls life-giving water.</p>
+
+<h3>The Structural Mapping to the Avos</h3>
+
+<p>The structural mapping of the first three <em>berachos</em> of <em>Shemoneh Esrei</em> onto the <em>avos</em> is a classical piece of <em>Kabbalah</em>-<em>machshavah</em> that runs through <em>Chazal</em> and the <em>Rishonim</em>:</p>
+
+<ul>
+  <li><em>Avos</em> (<span class="heb-inline">אבות</span>) &harr; <em>Avraham</em> &mdash; <em>chesed</em> (<span class="heb-inline">חסד</span>).</li>
+  <li><em>Gevuros</em> (<span class="heb-inline">גבורות</span>) &harr; <em>Yitzchak</em> &mdash; <em>gevurah</em> (<span class="heb-inline">גבורה</span>).</li>
+  <li><em>Kedushah</em> (<span class="heb-inline">קדושה</span>) &harr; <em>Yaakov</em> &mdash; <em>tiferes</em> (<span class="heb-inline">תפארת</span>).</li>
+</ul>
+
+<p>The placement of <em>gevuros</em> as the second <em>berachah</em>, corresponding to <em>Yitzchak</em>, deepens the reading of <em>geshem</em> within it. <em>Yitzchak</em> is the <em>avodah</em> of <em>gevurah</em>; rain, directed drop by drop, is the visible expression of that <em>middah</em>.</p>
+
+<h2>VIII. Techiyas HaMeisim as Daily Reality</h2>
+
+<h3>Four Categories of Daily Techiyas HaMeisim</h3>
+
+<p>The simple <em>pshat</em> of the <em>berachah</em> &mdash; <em>somech noflim, v&rsquo;rofei cholim, u&rsquo;matir asurim</em> (<span class="heb-inline">סומך נופלים ורופא חולים ומתיר אסורים</span>) &mdash; is that each of these is a <em>bechinah</em> (<span class="heb-inline">בחינה</span>) of daily <em>techiyas ha&rsquo;meisim</em>. The <em>berachah</em> is not the future eschatological event alone; it is the present-tense reality of <em>hashgachah</em>.</p>
+
+<ul>
+  <li><em>Somech noflim</em> &mdash; when a person is depressed and will not rise from his bed, and <em>HaKadosh Baruch Hu</em> sends a ray of hope: this is <em>techiyas ha&rsquo;meisim</em>.</li>
+  <li><em>Rofei cholim</em> &mdash; the <em>Gemara</em> in <em>Ta&rsquo;anis</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a> teaches that the rising of a <em>choleh</em> from his sickbed is, in a sense, a greater <em>nes</em> than <em>techiyas ha&rsquo;meisim</em>. The <em>choleh</em> is halachically and existentially considered dead while ill; recovery is therefore a daily <em>techiyas ha&rsquo;meisim</em>.</li>
+  <li>The liberation of the survivors of the <em>Shoah</em> &mdash; they were dead while breathing, sacks of bones; their emergence into the world to build families, to continue <em>Klal Yisrael</em>: <em>techiyas ha&rsquo;meisim</em>.</li>
+  <li>Every morning: <em>b&rsquo;yadcha afkid ruchi</em> (<span class="heb-inline">בידך אפקיד רוחי</span>) at night, and the <em>Birkas HaShachar</em> (<span class="heb-inline">ברכות השחר</span>) upon waking &mdash; the daily return of the <em>neshamah</em> to the body: <em>techiyas ha&rsquo;meisim</em>.</li>
+</ul>
+
+<h3>The Ramban on the Berachah</h3>
+
+<p>The <em>Ramban</em>,<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> in his treatment of <em>Birkas Gevuros</em>, articulates the position with full force: every single day there is a <em>techiyas ha&rsquo;meisim</em>, not only the future eschatological one at the close of days. The <em>berachah</em>, on the <em>Ramban</em>&rsquo;s reading, is a daily <em>hakaras</em> (<span class="heb-inline">הכרה</span>) of <em>hashgachah pratis</em> &mdash; not only a future <em>emunah</em>. The <em>mispallel</em> who wishes to recite the <em>berachah</em> as it was installed by the <em>Anshei Knesses HaGedolah</em> must hold both frames simultaneously: the future <em>techiyah</em> and the daily <em>techiyah</em>.</p>
+
+<h2>IX. Rav L&rsquo;Hoshi&rsquo;a &mdash; Rav Aharon Kotler on the Second Din</h2>
+
+<h3>The Structural Question</h3>
+
+<p>The <em>berachah</em> continues: <em>Atah Gibor l&rsquo;olam Hashem, m&rsquo;chayeh meisim atah, rav l&rsquo;hoshi&rsquo;a</em> (<span class="heb-inline">רב להושיע</span>). Rav Schwab, drawing on the <em>rishonim</em>, points out that <em>HaKadosh Baruch Hu</em> in the <em>berachah</em>-formulations of the <em>Anshei Knesses HaGedolah</em> is designated <em>Melech, ozeir, u&rsquo;moshi&rsquo;a u&rsquo;magein</em> (<span class="heb-inline">מלך, עוזר, ומושיע, ומגן</span>). Of these, <em>moshi&rsquo;a</em> denotes <em>complete yeshu&rsquo;ah</em> (<span class="heb-inline">ישועה</span>), the final and unqualified vindication. This raises a substantive question: what is the connection between <em>techiyas ha&rsquo;meisim</em> and complete <em>yeshu&rsquo;ah</em>? Why should the closing note of the <em>berachah</em> pair the <em>techiyah</em> specifically with the concept of <em>rav l&rsquo;hoshi&rsquo;a</em>?</p>
+
+<h3>Two Dinim &mdash; The Gemara in Rosh HaShanah</h3>
+
+<p>The <em>Gemara</em> in <em>Rosh HaShanah</em> 16b<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> (and its parallel <em>sugyos</em>) records that after <em>techiyas ha&rsquo;meisim</em> there is the <em>Yom HaDin HaGadol v&rsquo;HaNorah</em> (<span class="heb-inline">יום הדין הגדול והנורא</span>) &mdash; a second, final <em>din</em>, distinct from the personal <em>din</em> that each <em>neshamah</em> faces immediately upon death. The natural question presses itself: was there not already a <em>din</em> when the <em>neshamah</em> came up after <em>meah v&rsquo;esrim</em> (<span class="heb-inline">מאה ועשרים</span>)? The accounting of <em>mitzvos</em> and <em>aveiros</em>, <em>Gan Eden</em> (<span class="heb-inline">גן עדן</span>) and <em>Gehinnom</em> (<span class="heb-inline">גיהנם</span>) &mdash; all of this took place. Why then a second <em>din</em>?</p>
+
+<h3>Rav Aharon Kotler&rsquo;s Chiddush</h3>
+
+<p><em>Rav Aharon Kotler</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">הגר&quot;א קוטלר זצוק&quot;ל</span>),<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> offers a <em>chiddush</em> that reframes the entire question. The <em>chiddush</em> is preserved in oral <em>mesorah</em> among his <em>talmidim</em> and appears in various forms in the <em>derashos</em> that emerged from Lakewood in the decades following his passing; a definitive published <em>makor</em> in his own <em>seforim</em> could not be identified for this edition.</p>
+
+<p>Rav Aharon draws the point through a <em>mashal</em>. Consider a <em>Yid</em> with serious <em>sefeikos ba&rsquo;emunah</em> (<span class="heb-inline">ספקות באמונה</span>), on the verge of leaving the <em>derech</em> entirely. A person meets him, becomes close to him, mentors him, teaches him, works with him through his confusion until he returns. That returnee has children; he has grandchildren; his descendants are <em>shomrei Torah u&rsquo;mitzvos</em> (<span class="heb-inline">שומרי תורה ומצוות</span>). The person who did the <em>hishtadlus</em> (<span class="heb-inline">השתדלות</span>) thinks: <em>I did a small chesed. I sat with someone for an hour or two. I gave him chizuk (<span class="heb-inline">חיזוק</span>).</em> The <em>emes</em> is that he saved an entire <em>etz shel doros</em> (<span class="heb-inline">עץ של דורות</span>) &mdash; a tree of generations.</p>
+
+<h3>Why Two Dinim</h3>
+
+<ul>
+  <li>The <strong>first <em>din</em></strong> is the <em>din</em> that follows death. At that moment, the consequences of a person&rsquo;s <em>mitzvos</em> rippling forward through the generations are not yet visible. The <em>Ribbono Shel Olam</em> judges the person on what he did and on the frame within which he understood himself to be doing it.</li>
+  <li>The <strong>second <em>din</em></strong> is the <em>Yom HaDin HaGadol v&rsquo;HaNorah</em> that follows <em>techiyas ha&rsquo;meisim</em>. Now the full picture is in. The hour of <em>chizuk</em> is now visible as the <em>tikkun</em> (<span class="heb-inline">תיקון</span>) of an entire <em>mishpachah</em> across centuries. Now, and only now, the <em>Ribbono Shel Olam</em> can judge with complete information &mdash; the <em>ledger</em> in full view.</li>
+</ul>
+
+<h3>The Fear of the Tzaddikim</h3>
+
+<p>On this reading, the fear of the <em>tzaddikim</em> before the <em>Yom HaDin HaGadol v&rsquo;HaNorah</em> becomes intelligible in a way that it is not intelligible when the <em>din</em> is conceived merely as a repetition of the first. Who knows? Perhaps something that in the immediate frame appeared as a <em>chesed</em> turned out, in the long generational arc, to carry negative consequences. Perhaps something that appeared modest turned out to be enormous. The full ledger of unintended consequences is a frightening object even for the <em>tzaddik</em>, and the second <em>din</em> is where that ledger is opened.</p>
+
+<h3>Rav L&rsquo;Hoshi&rsquo;a as Prayer for Final Vindication</h3>
+
+<p>This is why <em>techiyas ha&rsquo;meisim</em> is paired with <em>rav l&rsquo;hoshi&rsquo;a</em>. Only after <em>techiyas ha&rsquo;meisim</em> and the second <em>din</em>, when the <em>Ribbono Shel Olam</em> exonerates the person with full knowledge of all consequences across all generations &mdash; only then is the <em>yeshu&rsquo;ah</em> complete. The daily <em>tefillah</em> of <em>rav l&rsquo;hoshi&rsquo;a</em> is not a request to be rescued from an individual <em>tzarah</em>; it is the request to be <em>mezakeh b&rsquo;din</em> (<span class="heb-inline">מזכה בדין</span>) at that final accounting, when the full ledger is unrolled. It is the <em>tefillah</em> for complete and unqualified vindication.</p>
+
+<h2>X. Practical Summary</h2>
+
+<ul>
+  <li><strong>The <em>Anshei Knesses HaGedolah</em> stand behind every syllable of the <em>siddur</em>.</strong> To learn a <em>berachah</em> is to enter their beis midrash.</li>
+  <li><strong>The restoration of <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em></strong> is the declaration that survival through <em>galus</em> is itself the content of <em>gevurah</em> and <em>nora&rsquo;os</em>. This is the <em>kavvanah</em> of the phrase in <em>Shemoneh Esrei</em>.</li>
+  <li><strong><em>Kel Elyon</em> installs <em>hester panim</em></strong> as a category of <em>avodah</em>: acknowledge that His ways are above <em>hasagah</em> before you ask for anything.</li>
+  <li><strong>The two <em>keriyos</em> of <em>Birkas Avos</em></strong> mark the two modes: <em>Elokei Avi</em> at the opening, <em>Ze Keili</em> at the close. <em>Kol Yehudi hu Magen Avraham</em>.</li>
+  <li><strong>Rain is <em>gevurah</em></strong> on the <em>Gra</em>&rsquo;s reading because every drop reaches its address. This is the finest expression of <em>hashgachah pratis</em>.</li>
+  <li><strong>On <em>ha&rsquo;geshem</em> versus <em>ha&rsquo;gashem</em></strong>: know the grammatical rule and the historical <em>nusach</em>; most contemporary <em>acharonim</em> say <em>ha&rsquo;geshem</em>, following the pre-Satanov universal reading; those who follow Rav Elyashiv and the <em>Igros Moshe</em> say <em>ha&rsquo;gashem</em> on grammatical grounds. Do not change without <em>daas Torah</em>.</li>
+  <li><strong><em>Techiyas ha&rsquo;meisim</em> is a daily reality</strong> on the <em>Ramban</em>&rsquo;s reading &mdash; the <em>choleh</em> who recovers, the <em>nofel</em> who is lifted, the <em>neshamah</em> that returns each morning.</li>
+  <li><strong><em>Rav l&rsquo;hoshi&rsquo;a</em> is the prayer for the second <em>din</em></strong> &mdash; the final vindication, when the ledger of generational consequences is unrolled in full.</li>
+</ul>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Mishnah Avos</em> 1:1 &mdash; <em>Shimon HaTzaddik hayah mi&rsquo;she&rsquo;yarei Knesses HaGedolah</em>.</span>
+  <span class="expanded">&mdash; The opening <em>mishnah</em> of <em>Pirkei Avos</em> traces the <em>mesorah</em> from <em>Sinai</em> through <em>Yehoshua</em>, the <em>zekeinim</em>, the <em>nevi&rsquo;im</em>, and into the <em>Anshei Knesses HaGedolah</em>. <em>Shimon HaTzaddik</em>, identified as one of the last surviving members of the <em>Anshei Knesses HaGedolah</em>, marks the transition from the era of <em>nevu&rsquo;ah</em> to the era of <em>chochmah</em> and <em>takkanos</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Mishnah Sanhedrin</em> ch. 1 &mdash; three <em>bottei din</em> in <em>Yerushalayim</em>; arithmetic 71 + 23 + 23 + 3 <em>nevi&rsquo;im</em> = 120.</span>
+  <span class="expanded">&mdash; The opening <em>perek</em> of <em>Maseches Sanhedrin</em> describes the three <em>bottei din</em>: the <em>Sanhedrin Gedolah</em> of seventy-one in the <em>Lishkas HaGazis</em>, and two <em>Sanhedraos Ketanos</em> of twenty-three each at the entrances to <em>Har HaBayis</em> and to the <em>Azarah</em>. The arithmetic yielding the <em>Bavli</em>&rsquo;s 120 for the <em>Anshei Knesses HaGedolah</em> rests on this <em>mishnah</em>, augmented by the three closing <em>nevi&rsquo;im</em>.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Yoma</em> 69b &mdash; <em>Yirmiyahu</em>, <em>Daniel</em>, and the <em>Anshei Knesses HaGedolah</em> on <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em>.</span>
+  <span class="expanded">&mdash; The famous <em>sugya</em>, verified against the William Davidson Sefaria text: <em>Moshe Rabbeinu</em> coined the formula in <em>Va&rsquo;eschanan</em>; <em>Yirmiyahu</em> at the <em>Churban</em> dropped <em>HaNorah</em> (<em>heichan nora&rsquo;osav?</em>); <em>Daniel</em> in <em>Bavel</em> further dropped <em>HaGibor</em>; the <em>Anshei Knesses HaGedolah</em> restored the full formula on the <em>sevara</em> that the very survival of <em>Klal Yisrael</em> through <em>Churban</em> and <em>galus</em> is the manifestation of His <em>gevurah</em> and <em>nora&rsquo;os</em>. The <em>Gemara</em> closes by deriving from this restoration the very name <em>Knesses HaGedolah</em>: <em>hechzirah atarah l&rsquo;yoshnah</em>. The teaching is attributed in the <em>Gemara</em> to <em>Rav Mattana</em> in the West and expounded by <em>Rabbi Yehoshua ben Levi</em>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Devarim</em> 10:17 &mdash; <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em>, the source-<em>pasuk</em>.</span>
+  <span class="expanded">&mdash; <em>Moshe Rabbeinu</em>&rsquo;s formulation in <em>Parshas Va&rsquo;eschanan</em>: <em>ki Hashem Elokeichem Hu Elokei ha&rsquo;Elohim va&rsquo;Adonei ha&rsquo;Adonim, ha&rsquo;Kel ha&rsquo;Gadol ha&rsquo;Gibor v&rsquo;ha&rsquo;Norah, asher lo yisa panim v&rsquo;lo yikach shochad</em>. The <em>pasuk</em> from which <em>Chazal</em> derive that <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em> is the canonical frame for addressing <em>HaKadosh Baruch Hu</em> in <em>tefillah</em>. The <em>pasuk</em>&rsquo;s pairing of the three <em>toarim</em> with the <em>chiyuv</em> of impartial justice (<em>lo yisa panim</em>) shapes the <em>kavvanos</em> of <em>Birkas Avos</em> and <em>Birkas Gevuros</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Berachos</em> 33b &mdash; <em>Rabbi Chanina</em> on excessive praise; the <em>mashal</em> of the king with treasuries of gold.</span>
+  <span class="expanded">&mdash; The <em>sugya</em>: a <em>shaliach tzibbur</em> stood before <em>Rabbi Chanina</em> and added praises to <em>ha&rsquo;Gadol ha&rsquo;Gibor v&rsquo;ha&rsquo;Norah</em>. <em>Rabbi Chanina</em> waited for him to finish, then asked: <em>have you completed all the praises of your Master?</em> The <em>mashal</em>: a king with thousands of gold coins is praised by mentioning silver &mdash; an insult, not a compliment. We address <em>HaKadosh Baruch Hu</em> with the formulation given by the <em>Anshei Knesses HaGedolah</em>; we do not extemporize beyond it.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Rav Shimon Schwab</em>, <em>zt&rdquo;l</em> &mdash; <em>Kel Elyon</em>, <em>rav l&rsquo;hoshi&rsquo;a</em>, the two <em>keriyos</em>, and the warning against explaining the <em>Shoah</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Shimon Schwab</em> (1908&ndash;1995, <em>Rav</em> of <em>Kehal Adath Jeshurun</em> in Washington Heights), <em>talmid</em> of the <em>Chazon Ish</em> and of <em>Rav Baruch Ber</em>, in his English-language essays in <em>The Jewish Observer</em> and in his collected <em>derashos</em> develops several of the readings brought here: <em>Kel Elyon</em> as the <em>hakarah</em> of <em>hester panim</em> beyond human <em>hasagah</em> (with explicit application to the <em>Shoah</em> and a sharp warning against assigning specific reasons to specific tragedies); the two <em>keriyos</em> of <em>Birkas Avos</em> mapped to <em>kav ha&rsquo;avos</em> versus <em>Ze Keili</em>; and the meaning of <em>rav l&rsquo;hoshi&rsquo;a</em> as complete <em>yeshu&rsquo;ah</em>. Rav Schwab&rsquo;s essays on <em>tefillah</em> are collected in <em>Rav Schwab on Prayer</em> (Mesorah/ArtScroll).</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Shemos</em> 15:2 &mdash; <em>Ze Keili v&rsquo;anveihu, Elokei Avi va&rsquo;aromemenhu</em>.</span>
+  <span class="expanded">&mdash; The <em>pasuk</em> in <em>Shiras HaYam</em> juxtaposing two modes of relationship with <em>HaKadosh Baruch Hu</em>: <em>Ze Keili</em> &mdash; direct, immediate, personal recognition (Chazal: each <em>Yid</em> at the <em>yam</em> pointed with his finger and said <em>this</em>); and <em>Elokei Avi</em> &mdash; inherited <em>mesorah</em> from the <em>avos</em>. The two clauses are the textual basis for Rav Schwab&rsquo;s reading of the two <em>keriyos</em> in <em>Birkas Avos</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Chiddushei HaRim</em> in <em>Sefer Alzachos</em> &mdash; <em>kol Yehudi hu Magen Avraham</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yitzchak Meir Alter</em> (the <em>Chiddushei HaRim</em>, 1799&ndash;1866, founding Rebbe of <em>Ger</em>), in <em>Sefer Alzachos</em> on <em>chumash</em> &mdash; the principal <em>sefer</em> Gerrer <em>chassidim</em> have from him on <em>parshas ha&rsquo;shavua</em> &mdash; develops the reading that the closing <em>chasimah</em> of <em>Birkas Avos</em> on <em>Magen Avraham</em> alone alludes to the <em>avodah</em> required of every <em>Yid</em>: to be, in the moments that demand it, an <em>Avraham Avinu</em> &mdash; to stand alone <em>b&rsquo;ever echad</em> against the world for the sake of <em>emes</em>. <em>Kol Yehudi hu Magen Avraham</em> entered <em>chassidus</em> idiom and is widely repeated in Gerrer and Kotzker tradition.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Ta&rsquo;anis</em> 2a and <em>Ta&rsquo;anis</em> 7a &mdash; <em>gishmei berachah</em> as <em>gevuros</em>; <em>hilchos keri&rsquo;as sefarim</em> from <em>Sinai</em>.</span>
+  <span class="expanded">&mdash; The opening <em>mishnah</em> of <em>Ta&rsquo;anis</em> places <em>gishmei berachah</em> within the <em>berachah</em> of <em>gevuros</em>; the <em>Gemara</em> there asks why and brings the <em>derashah</em> identifying <em>geshem</em> with <em>techiyas ha&rsquo;meisim</em>. Elsewhere in <em>Ta&rsquo;anis</em>, the <em>Gemara</em> teaches that <em>hilchos keri&rsquo;as sefarim</em> &mdash; proper grammatical reading rules including the shift from <em>segol</em> to <em>kamatz</em> at end of verse or pause &mdash; were given to <em>Moshe Rabbeinu</em> at <em>Sinai</em>. The two <em>sugyos</em> together frame the <em>ha&rsquo;geshem</em>/<em>ha&rsquo;gashem</em> question.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short">The <em>Gra</em> on <em>tefillah</em>/<em>Ta&rsquo;anis</em> &mdash; every drop of rain to its appointed address.</span>
+  <span class="expanded">&mdash; <em>Rabbi Eliyahu of Vilna</em> (the <em>Gra</em>, 1720&ndash;1797), in his <em>bi&rsquo;ur</em> on the <em>siddur</em> and in his comments on the <em>sugya</em> in <em>Ta&rsquo;anis</em>, develops the <em>chiddush</em> that <em>gishmei berachah</em> are designated <em>gevuros</em> precisely because <em>HaKadosh Baruch Hu</em> directs every drop to its individual destination. What appears to natural eyes as random precipitation is, in <em>emes</em>, the most precise demonstration of <em>hashgachah pratis</em> over the <em>pratei ha&rsquo;bri&rsquo;ah</em>; this is the truest expression of His <em>gevurah</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Shemos</em> 21:24 &mdash; <em>ayin tachas ayin&hellip; regel tachas ragel</em>.</span>
+  <span class="expanded">&mdash; The classic <em>pasuk</em> in <em>Parshas Mishpatim</em> illustrating the <em>segol</em>-to-<em>kamatz</em> shift: the same word <em>regel</em> appears mid-<em>pasuk</em> with a <em>segol</em> and at the close of the <em>pasuk</em> with a <em>kamatz</em>. The <em>pasuk</em> is the standard textual proof for the rule and grounds the <em>dikduk</em> argument in <em>Mashiv haruach u&rsquo;morid ha&rsquo;geshem/ha&rsquo;gashem</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Siddur Rav Amram Gaon</em> &mdash; ancient <em>nusach</em> with <em>segol</em>: <em>ha&rsquo;geshem</em>.</span>
+  <span class="expanded">&mdash; The <em>siddur</em> compiled by <em>Rav Amram bar Shishna Gaon</em> (d. c. 875, head of the yeshiva of <em>Sura</em>) is the earliest comprehensive Jewish <em>siddur</em> we possess. It and other ancient <em>siddurim</em> &mdash; including the <em>siddur</em> of <em>Rav Saadia Gaon</em> and the various <em>minhagei tefillah</em> recorded by the <em>rishonim</em> &mdash; read <em>ha&rsquo;geshem</em> with a <em>segol</em> uniformly. The shift to <em>ha&rsquo;gashem</em> is post-1800 and traces to the <em>siddur</em> of Satanov.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Siddur Vaye&rsquo;etar Yitzchak</em> &mdash; the Satanov <em>siddur</em> and its history.</span>
+  <span class="expanded">&mdash; The early-nineteenth-century <em>siddur</em> edited by <em>Yitzchak Satanov</em> (Yitzchok Halevi Satanov, c. 1732&ndash;1804/5; named for the town of Satanów in present-day western Ukraine), worker in the printing house of <em>Moses Mendelssohn</em> in Berlin. Satanov&rsquo;s <em>siddur</em> introduced numerous grammatical &ldquo;corrections&rdquo; to the received <em>nusach</em>, including the shift from <em>ha&rsquo;geshem</em> to <em>ha&rsquo;gashem</em>. Subsequent investigation revealed Satanov as a serial forger &mdash; of <em>sefarim</em>, of <em>haskamos</em> (including those attributed to the <em>Chasam Sofer</em> and the <em>Pnei Yehoshua</em>), and as the first to print the <em>Kisvei HaAri z&rdquo;l</em> in defiance of the post-<em>Shabbsai Tzvi</em> <em>cherem</em>. The <em>kuntres</em> by Rav Krause &mdash; published roughly twenty-five years before the delivered <em>shiur</em> &mdash; documents the entire history; precise edition and exact publication data were not given in the <em>shiur</em> and could not be verified in Sefaria&rsquo;s catalog for this edition. The historical outline as given rests on the oral tradition of the delivered <em>shiur</em> together with widely circulated biographical accounts of Satanov and his Berlin milieu.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Shu&rdquo;t Igros Moshe</em> &mdash; <em>ha&rsquo;gashem</em>; testimony on Rav Elyashiv, <em>zt&rdquo;l</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Moshe Feinstein</em>, <em>zt&rdquo;l</em>, in <em>Igros Moshe</em> rules in favor of <em>ha&rsquo;gashem</em> on grammatical grounds, treating the phrase <em>Mashiv haruach u&rsquo;morid ha&rsquo;geshem</em> as ending a sentence with an <em>esnachta</em>. He records that <em>Maran HaGrish Elyashiv</em>, <em>zt&rdquo;l</em> (1910&ndash;2012), was meticulous on <em>ha&rsquo;gashem</em> in his <em>minyan</em> at <em>Porat Yosef</em>. The exact <em>chelek</em> and <em>siman</em> of the relevant <em>teshuvah</em> were not specified in the <em>shiur</em>; the responsum is in the volumes of <em>Igros Moshe</em> on <em>Orach Chaim</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short">Rulings of <em>Rav Yaakov Yisrael Fisher</em>, <em>zt&rdquo;l</em>, and <em>Rav Shlomo Zalman Auerbach</em>, <em>zt&rdquo;l</em>, on the <em>ha&rsquo;geshem</em>/<em>ha&rsquo;gashem</em> question.</span>
+  <span class="expanded">&mdash; <em>Rav Yaakov Yisrael Fisher</em>, <em>zt&rdquo;l</em> (1928&ndash;2003, <em>Av Beis Din</em> of the <em>Eidah HaChareidis</em> in <em>Yerushalayim</em>; author of <em>Shu&rdquo;t Even Yisrael</em>), held that the grammatical case for <em>ha&rsquo;gashem</em> stands on its own merits regardless of its first appearance in Satanov&rsquo;s <em>siddur</em>. <em>Rav Shlomo Zalman Auerbach</em>, <em>zt&rdquo;l</em> (1910&ndash;1995, <em>Rosh Yeshiva</em> of <em>Kol Torah</em>; <em>posek ha&rsquo;dor</em> of his generation in <em>Yerushalayim</em>), originally said <em>ha&rsquo;gashem</em>; upon learning the documented historical <em>nusach</em>, he changed to <em>ha&rsquo;geshem</em> for the rest of his life &mdash; held up as a model of an <em>ish ha&rsquo;emes</em> changing course on evidence. Both positions are preserved in oral and written <em>teshuvos</em> circulating among Yerushalayim <em>talmidim</em>; precise published sources were not given in the <em>shiur</em> and could not be independently verified in Sefaria&rsquo;s catalog for this edition.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Sanhedrin</em>, <em>perek Chelek</em> &mdash; the <em>Dor HaMabul</em> and the value of <em>gishmei berachah</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>perek Chelek</em> develops the indictment of the <em>Dor HaMabul</em>: their corruption included a denial of dependence on <em>HaKadosh Baruch Hu</em> for <em>gishmei berachah</em>, on the basis that they had <em>neharos</em>, <em>yamim</em>, and irrigation systems. The <em>Mabul</em> itself was <em>middah k&rsquo;neged middah</em> &mdash; water from above and from below proved that <em>HaKadosh Baruch Hu</em> alone controls life-giving water. The <em>sugya</em> grounds the placement of <em>geshem</em> inside <em>Birkas Techiyas HaMeisim</em> as a daily reminder.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Ta&rsquo;anis</em> 22b (and parallels) &mdash; <em>gedolah refuas cholim yoser mi&rsquo;techiyas ha&rsquo;meisim</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> teaches that the <em>nes</em> of a <em>choleh</em> rising from his sickbed is greater, in a sense, than the <em>nes</em> of <em>techiyas ha&rsquo;meisim</em>. The <em>choleh</em> is halachically and existentially considered dead while ill; recovery is therefore a daily <em>techiyas ha&rsquo;meisim</em>. The <em>sugya</em> grounds the placement of <em>rofei cholim</em> within the same <em>Birkas Techiyas HaMeisim</em> in <em>Shemoneh Esrei</em>.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Ramban</em> on <em>techiyas ha&rsquo;meisim</em> in <em>Birkas Gevuros</em> &mdash; daily <em>techiyas ha&rsquo;meisim</em>.</span>
+  <span class="expanded">&mdash; The <em>Ramban</em> (in his <em>derashah</em> on <em>Toras Hashem Temimah</em>, in his <em>peirush</em> on the <em>berachos</em> of <em>tefillah</em>, and parallels) develops the position that <em>Birkas Techiyas HaMeisim</em> in <em>Shemoneh Esrei</em> is not exclusively a reference to the eschatological <em>techiyas ha&rsquo;meisim</em> at the close of days. Each daily phrase &mdash; <em>somech noflim, rofei cholim, matir asurim</em>, the daily restoration of the <em>neshamah</em> upon waking &mdash; is itself a present-tense <em>techiyas ha&rsquo;meisim</em>. The <em>Ramban</em>&rsquo;s reading frames the <em>berachah</em> as a daily <em>hakarah</em> of <em>hashgachah pratis</em>, not only a future <em>emunah</em>.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Rosh HaShanah</em> 16b &mdash; second <em>din</em> after <em>techiyas ha&rsquo;meisim</em>; <em>Yom HaDin HaGadol v&rsquo;HaNorah</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> in <em>Rosh HaShanah</em> (and parallel <em>sugyos</em> in <em>Sanhedrin</em>) records that there is a final <em>Yom HaDin HaGadol v&rsquo;HaNorah</em> after <em>techiyas ha&rsquo;meisim</em>, distinct from the personal <em>din</em> each <em>neshamah</em> faces upon death. The structural <em>kushya</em> &mdash; why a second <em>din</em> after the first &mdash; is the textual ground for Rav Aharon Kotler&rsquo;s <em>chiddush</em> on <em>rav l&rsquo;hoshi&rsquo;a</em>.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Rav Aharon Kotler</em>, <em>zt&rdquo;l</em> &mdash; the second <em>din</em> and <em>rav l&rsquo;hoshi&rsquo;a</em>.</span>
+  <span class="expanded">&mdash; Oral <em>mesorah</em> of the <em>talmidim</em> of <em>Rav Aharon Kotler</em>, <em>zt&rdquo;l</em> (1891&ndash;1962, founding <em>Rosh Yeshiva</em> of Beth Medrash Govoha in Lakewood, NJ; <em>talmid</em> of the <em>Alter of Slabodka</em>; author of <em>Mishnas Rabbi Aharon</em>): the long-arc consequences of one&rsquo;s <em>mitzvos</em> across generations are not yet visible at the moment of personal <em>din</em> after <em>meah v&rsquo;esrim</em>; they unfold only after <em>techiyas ha&rsquo;meisim</em>, when the full ledger comes into view. <em>Rav l&rsquo;hoshi&rsquo;a</em> is the prayer for complete vindication at that final <em>din</em>. Recorded in <em>Mishnas Rabbi Aharon</em> and in <em>derashos</em> of his <em>talmidim</em>; a precise published <em>siman</em> was not given in the delivered <em>shiur</em> and could not be independently verified in Sefaria&rsquo;s catalog for this edition.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 23 March 2025 &mdash; the <em>Anshei Knesses HaGedolah</em>, the restoration of <em>HaKel HaGadol HaGibor v&rsquo;HaNorah</em> in <em>Yoma</em> 69b, Rav Schwab on <em>Kel Elyon</em>, the two <em>keriyos</em>, the <em>Chiddushei HaRim</em>&rsquo;s <em>kol Yehudi hu Magen Avraham</em>, the <em>Gra</em> on rain as <em>gevurah</em>, the Satanov <em>siddur</em> and the <em>ha&rsquo;geshem</em>/<em>ha&rsquo;gashem</em> question, daily <em>techiyas ha&rsquo;meisim</em> on the <em>Ramban</em>, and Rav Aharon Kotler&rsquo;s <em>chiddush</em> on <em>rav l&rsquo;hoshi&rsquo;a</em> and the second <em>din</em>. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice, preserving the historical narrative on Satanov in full and addressing the three original <em>note-academic</em> flags with the honest caveat that their published <em>mekoros</em> were not given in the <em>shiur</em> and do not appear in Sefaria&rsquo;s catalog.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Atah Chonen, Hashiveinu, and the Path of Teshuvah</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">אַתָּה חוֹנֵן, הֲשִׁיבֵנוּ, וְדֶרֶךְ הַתְּשׁוּבָה</h1>
+  <div class="english-title">The First Six Petitions of Shemoneh Esrei &mdash; Da&rsquo;as, Teshuvah, Selichah, Refuah, Parnasah, and Personal Ge&rsquo;ulah</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 18 May 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Sponsored by Reb Ari Buckman, <span class="heb-inline">לעילוי נשמת יעקב ומשה</span>.</em></p>
+
+<h2>I. The Architecture of the Middle Twelve</h2>
+
+<h3>Shevach, Bakashah, Hoda&rsquo;ah</h3>
+
+<p>The <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>), as <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>) established it,<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> divides into three great units: three opening <em>berachos</em> of <em>shevach</em> (<span class="heb-inline">שבח</span>), twelve middle <em>berachos</em> of <em>bakashah</em> (<span class="heb-inline">בקשה</span>), and three closing <em>berachos</em> of <em>hoda&rsquo;ah</em> (<span class="heb-inline">הודאה</span>). Within the middle twelve a further subdivision governs the entire structure and dictates the order in which every petition of the day is arranged.</p>
+
+<h3>Personal, Then Communal</h3>
+
+<p>The twelve middle <em>berachos</em> themselves split into two symmetrical units of six. The first six are <em>bakashos peratiyos</em> (<span class="heb-inline">בקשות פרטיות</span>) &mdash; personal petitions, each addressing a dimension of the individual&rsquo;s life that stands in need of Heavenly assistance: <em>de&rsquo;ah</em> (<span class="heb-inline">דעה</span>), <em>teshuvah</em> (<span class="heb-inline">תשובה</span>), <em>mechilah</em> (<span class="heb-inline">מחילה</span>), <em>refuah</em> (<span class="heb-inline">רפואה</span>), <em>parnasah</em> (<span class="heb-inline">פרנסה</span>), and <em>ge&rsquo;ulah peratis</em> (<span class="heb-inline">גאולה פרטית</span>). The second six are <em>bakashos ha&rsquo;klal</em> (<span class="heb-inline">בקשות הכלל</span>) &mdash; petitions on behalf of <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) as a whole, opening with <em>Teka B&rsquo;Shofar</em> (<span class="heb-inline">תקע בשופר</span>) for the ingathering of the exiles and <em>Hashivah Shofteinu</em> (<span class="heb-inline">השיבה שופטינו</span>) for the restoration of the courts.</p>
+
+<p>The <em>mispallel</em> approaches the middle twelve, therefore, first as an individual, and only then as a member of the collective. He first purifies and prepares his own <em>nefesh</em> (<span class="heb-inline">נפש</span>); only when the private <em>bakashos</em> are complete does he lift his eyes to the needs of the nation.</p>
+
+<h2>II. Da&rsquo;as as the Kashrus of Avodah</h2>
+
+<h3>The Kohen Shoteh</h3>
+
+<p>Why is <em>de&rsquo;ah</em> the first of all the petitions? The <em>Rambam</em> (<span class="heb-inline">רמב&quot;ם</span>) in <em>Hilchos Bi&rsquo;as HaMikdash</em><a class="footnote-ref" id="ref2" href="#fn2">[2]</a> rules that a <em>kohen shoteh</em> (<span class="heb-inline">כהן שוטה</span>) &mdash; a <em>kohen</em> who lacks <em>da&rsquo;as</em> (<span class="heb-inline">דעת</span>) &mdash; is <em>pasul</em> for <em>avodah</em> (<span class="heb-inline">עבודה</span>) in the <em>Beis HaMikdash</em>. The <em>Mishnah</em> in <em>Bechoros</em> that catalogues the <em>ba&rsquo;alei mumin</em> (<span class="heb-inline">בעלי מומין</span>) enumerates only physical blemishes; the <em>Rambam</em>&rsquo;s <em>chiddush</em> is that absence of <em>da&rsquo;as</em> itself constitutes a <em>mum</em> (<span class="heb-inline">מום</span>) &mdash; a mental <em>mum</em> &mdash; that disqualifies him from bringing a <em>korban</em> (<span class="heb-inline">קרבן</span>) no less than a physical blemish disqualifies its bearer.</p>
+
+<h3>Tefillah kNeged HaKorbanos</h3>
+
+<p><em>Tefillah</em> (<span class="heb-inline">תפילה</span>) stands <em>kneged ha&rsquo;korbanos</em> (<span class="heb-inline">כנגד הקרבנות</span>); the <em>Shemoneh Esrei</em> is <em>avodah</em> performed in the absence of the <em>Beis HaMikdash</em>. It follows that the same <em>kashrus</em> (<span class="heb-inline">כשרות</span>) that the <em>Rambam</em> requires of the <em>kohen</em> approaching the <em>mizbeach</em> is required of the <em>mispallel</em> approaching the <em>Amud</em>. Before any other <em>bakashah</em>, therefore, the <em>mispallel</em> asks for the very faculty without which the <em>avodah</em> of <em>tefillah</em> cannot be performed at all: <em>chaneinu me&rsquo;itcha de&rsquo;ah, binah, v&rsquo;haskel</em> (<span class="heb-inline">חננו מאתך דעה בינה והשכל</span>). Only after this <em>kashrus</em> is granted may the <em>Shemoneh Esrei</em>&rsquo;s remaining eleven petitions be uttered as genuine <em>avodah</em>.</p>
+
+<h2>III. The Unique Opening of Atah Chonen</h2>
+
+<h3>Every Other Petition Opens with the Ask</h3>
+
+<p>A careful survey of the middle twelve reveals a striking anomaly. Each of the other <em>berachos</em> of <em>bakashah</em> opens directly with its request &mdash; <em>Hashiveinu</em>, <em>Selach Lanu</em>, <em>Re&rsquo;eh Ve&rsquo;anyeinu</em>, <em>Refa&rsquo;einu</em>, <em>Barech Aleinu</em>, <em>Teka B&rsquo;Shofar</em>, <em>Hashivah Shofteinu</em> &mdash; each begins in the register of pure petition. Alone among them, <em>Atah Chonen</em> (<span class="heb-inline">אתה חונן</span>) opens not with a request but with <em>shevach</em>: <em>Atah chonen l&rsquo;adam da&rsquo;as</em> (<span class="heb-inline">אתה חונן לאדם דעת</span>) &mdash; You are the One who graciously grants <em>da&rsquo;as</em>. Only after this praise does the <em>berachah</em> transition into its actual <em>bakashah</em> for <em>de&rsquo;ah, binah, v&rsquo;haskel</em>. Some other <em>berachos</em>, to be sure, <em>close</em> with a note of <em>shevach</em> &mdash; <em>ki Kel rachum v&rsquo;chanun Atah</em> (<span class="heb-inline">כי א-ל רחום וחנון אתה</span>) at the seal of <em>Selach Lanu</em> &mdash; but no other <em>berachah</em> <em>opens</em> with <em>shevach</em>. Why?</p>
+
+<h3>The Simple Answer &mdash; A Bridge from the First Three</h3>
+
+<p>The straightforward reading rests on the movement between the two units. The <em>mispallel</em> has just completed the three opening <em>berachos</em> of <em>shevach</em>; he now enters the register of <em>bakashah</em>. <em>Chazal</em> built into the first petition a structural bridge: they opened it in the tonality of the unit just concluded &mdash; carrying the <em>shevach</em> of <em>Avos</em>, <em>Gevuros</em>, and <em>Kedushah</em> one line further into the beginning of the new unit &mdash; before transitioning into the register of petition. The soul is escorted from praise into request rather than being made to leap between them.</p>
+
+<h3>The Deeper Reading of Rabbi Ephraim Zalman Margolios</h3>
+
+<p>A far more remarkable <em>peshat</em> is preserved in the writings of <em>Rabbi Ephraim Zalman Margolios</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">רבי אפרים זלמן מרגליות זצ&quot;ל</span>),<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> the <em>rav</em> of Brody in Galicia in the early nineteenth century. His stature warrants an introduction. He was a rare figure &mdash; simultaneously a <em>gadol ha&rsquo;dor</em> (<span class="heb-inline">גדול הדור</span>) and a man of great wealth &mdash; a combination whose classical precedent is <em>Rabbi Yehudah HaNasi</em> (<span class="heb-inline">רבי יהודה הנשיא</span>), of whom the <em>Gemara</em> records that he became wealthy through diamond trading after his marriage, at a certain point told his wife <em>&ldquo;dayeinu&rdquo;</em> (<span class="heb-inline">דיינו</span>), and, against the <em>Gemara</em>&rsquo;s own general observation that <em>yesh lo maneh rotzeh masayim</em> (<span class="heb-inline">יש לו מנה רוצה מאתיים</span>), stopped, invested the wealth, and turned his hours to <em>Torah</em> &mdash; in whose <em>zechus</em> he became the <em>gadol ha&rsquo;dor</em>.</p>
+
+<p>The city of Brody itself was known as <em>&ldquo;the Yerushalayim of Galicia&rdquo;</em> (<span class="heb-inline">ירושלים דגליציה</span>) &mdash; each great region of the European exile had its <em>Torah</em>-capital, as Vilna was the Yerushalayim of Lita, and Brody was Galicia&rsquo;s. The Margolios family, moreover, is one of the three families singled out by tradition attributed to the <em>Baal Shem Tov ha&rsquo;Kadosh</em><a class="footnote-ref" id="ref4" href="#fn4">[4]</a> as possessing unbroken <em>yichus</em> (<span class="heb-inline">יחוס</span>) across <em>Klal Yisrael</em> beyond the tribes of <em>kehunah</em> and <em>leviyah</em>: Rappaport, Margolios, and Horowitz. <em>Rabbi Ephraim Zalman</em> authored many <em>sefarim</em>, each bearing the name <em>Ephraim</em> &mdash; <em>Yad Ephraim</em> (glosses on <em>Shulchan Aruch</em>), <em>Mateh Ephraim</em> (the classic sefer on the halachos of <em>Elul</em>, the <em>Yamim Nora&rsquo;im</em>, and <em>Sukkos</em>), <em>Rosh Ephraim</em>, and <em>Zera Ephraim</em>.</p>
+
+<h3>The Shabbos Basis of the Berachah</h3>
+
+<p><em>Rabbi Ephraim Zalman</em> preserves, in the name of his uncle and rebbi <em>Rabbi Alexander</em> (<span class="heb-inline">רבי אלכסנדר סענדר מרגליות</span>) &mdash; himself a <em>gadol ha&rsquo;dor</em> &mdash; a reading of the <em>berachah</em> that draws its unique opening from an unexpected quarter: the halachos of <em>Shabbos</em>.</p>
+
+<p>The <em>halachah</em>, grounded in the <em>Yerushalmi</em>,<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> is explicit: on <em>Shabbos Kodesh</em>, one does not daven for personal needs. <em>Shabbos</em> is a day for the <em>Ribbono Shel Olam</em>, not for one&rsquo;s private <em>tzaros</em> (<span class="heb-inline">צרות</span>). It is precisely for this reason that the <em>Shemoneh Esrei</em> of <em>Shabbos</em> and <em>Yom Tov</em> omits the twelve middle <em>bakashos peratiyos</em> and replaces them with the single middle <em>berachah</em> of <em>kedushas ha&rsquo;yom</em> (<span class="heb-inline">קדושת היום</span>). Personal petition, on <em>Shabbos</em>, has no home in the <em>Amidah</em>.</p>
+
+<p>Nor does the restriction end at sunset. The <em>Rishonim</em> teach that even after <em>Shabbos</em> has departed, one may not resume personal <em>bakashos</em> until <em>Havdalah</em> (<span class="heb-inline">הבדלה</span>) has been recited. And <em>Havdalah</em> in the <em>tefillah</em> itself is placed inside <em>Atah Chonen</em> at <em>Motzaei Shabbos</em>, in the insertion of <em>Atah chonantanu</em> (<span class="heb-inline">אתה חוננתנו</span>).</p>
+
+<p>The structural implication is exact. On the first weekday <em>Ma&rsquo;ariv</em> after <em>Shabbos</em>, the <em>berachah</em> of <em>Atah Chonen</em> must be structured so that the <em>mispallel</em> does not utter any <em>bakashah peratis</em> until <em>Havdalah</em> has been made. The <em>berachah</em>, accordingly, is composed in three stages:</p>
+
+<ol>
+  <li>It opens with <em>shevach</em> &mdash; <em>Atah chonen l&rsquo;adam da&rsquo;as</em> &mdash; because <em>Havdalah</em> has not yet been said and no personal request may yet be uttered.</li>
+  <li><em>Havdalah</em> is then inserted &mdash; <em>Atah chonantanu</em>.</li>
+  <li>Only then does the <em>mispallel</em> proceed to the actual petition &mdash; <em>chaneinu me&rsquo;itcha de&rsquo;ah, binah, v&rsquo;haskel</em>.</li>
+</ol>
+
+<p>Once <em>Chazal</em> had calibrated the <em>berachah</em> in this way for <em>Motzaei Shabbos</em>, they preserved its opening structure for the entire week. Every weekday recitation of <em>Atah Chonen</em>, on this reading, retains the imprint of <em>Motzaei Shabbos</em>. Every weekday, in this precise sense, is lived as a <em>Motzaei Shabbos</em> in miniature &mdash; <em>shevach</em> first, and only then <em>bakashah</em>.</p>
+
+<h2>IV. Hashiveinu &mdash; The Question of the Ba&rsquo;al Teshuvah</h2>
+
+<h3>The Question</h3>
+
+<p>The word <em>hashiveinu</em> (<span class="heb-inline">השיבנו</span>) &mdash; <em>return</em> us &mdash; assumes a prior location to which the <em>mispallel</em> once belonged and to which he now asks to be restored. But what of the secular <em>Yid</em>, raised entirely outside a <em>Torah</em> environment, who never learned so much as an <em>alef-beis</em>, and who now, as a genuine <em>ba&rsquo;al teshuvah</em>, wishes to enter <em>shul</em> and daven the <em>Shemoneh Esrei</em>? He has no prior <em>Torah</em> to which he can return. To what does his <em>hashiveinu</em> point?</p>
+
+<h3>The First Answer &mdash; The Tinok B&rsquo;Mei Immo</h3>
+
+<p>The <em>Gemara</em> in <em>Niddah</em><a class="footnote-ref" id="ref6" href="#fn6">[6]</a> supplies the first and deepest answer:</p>
+
+<blockquote>
+  <div class="heb">תִּינוֹק בִּמְעֵי אִמּוֹ מְלַמְּדִין אוֹתוֹ כָּל הַתּוֹרָה כֻּלָּהּ; וּכְשֶׁבָּא לַאֲוִיר הָעוֹלָם, בָּא מַלְאָךְ וְסוֹטְרוֹ עַל פִּיו וּמְשַׁכְּחוֹ.</div>
+  <div class="trans">A child in his mother&rsquo;s womb is taught the entire <em>Torah</em>; when he comes into the world, a <em>malach</em> strikes his mouth and he forgets.</div>
+  <div class="source"><em>Niddah</em> 30b</div>
+</blockquote>
+
+<p>Every <em>Yid</em>, without exception &mdash; the most distant from <em>Torah</em>, the <em>ba&rsquo;al teshuvah</em> who never opened a <em>Chumash</em>, the child of the most secular home &mdash; carries the entire <em>Torah</em> in the depths of his <em>neshamah</em> (<span class="heb-inline">נשמה</span>) as an inheritance from the womb. What was forgotten at birth was not erased; it was merely veiled. <em>Hashiveinu</em> on this reading points precisely to that inner <em>Torah</em>: <em>return us to what You once taught us before we entered the world.</em> Every <em>Yid</em> has been there once; every <em>Yid</em> has a place to which he asks to be returned.</p>
+
+<h3>The Second Answer &mdash; Ma&rsquo;amad Har Sinai</h3>
+
+<p>A second, complementary answer places the point of return not in the womb of the individual but in the <em>ma&rsquo;amad</em> of the nation. Every <em>neshamah</em> of <em>Klal Yisrael</em> stood at <em>Har Sinai</em> (<span class="heb-inline">הר סיני</span>) and received the <em>Torah</em>. <em>Hashiveinu</em> on this collective reading is a request for <em>Klal Yisrael</em> as a whole to be restored to what it collectively received at the mountain. Every <em>Yid</em>&rsquo;s <em>hashiveinu</em> anchors him not merely in a personal past but in the national inheritance of the <em>Torah</em> given to the assembled <em>klal</em>.</p>
+
+<h2>V. Torah as the Instrument of Teshuvah</h2>
+
+<h3>The Order &mdash; Hashiveinu Before Selach Lanu</h3>
+
+<p>Why does <em>hashiveinu</em> &mdash; the request for <em>Torah</em> &mdash; precede <em>selach lanu</em> &mdash; the request for <em>selichah</em>? The order teaches a foundational principle in the <em>avodah</em> of <em>teshuvah</em>: the road back to the <em>Ribbono Shel Olam</em> begins with <em>Torah</em>. <em>Selichah</em> follows; it does not come first. <em>Chazal</em> arranged the <em>berachos</em> in the sequence they arranged them because <em>Torah</em> is the instrument by which the returning <em>Yid</em> is first restored to a state in which <em>selichah</em> can be sought and received.</p>
+
+<h3>Real Gemara as What Holds</h3>
+
+<p>The <em>chiddush</em> emerges with particular clarity from the internal experience of <em>kiruv rechokim</em> (<span class="heb-inline">קירוב רחוקים</span>) in the modern era. <em>Rav Noach Weinberg</em>, <em>zt&rdquo;l</em>,<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> founder of <em>Aish HaTorah</em>, sat in his later years with the entire staff of the yeshiva &mdash; <em>rabbeim</em>, <em>mashgichim</em>, program directors &mdash; and put a hard question on the table. The yeshiva had tracked the outcomes of the <em>bachurim</em> who passed through it. In certain years the <em>bachurim</em> came alight and stayed &mdash; kept <em>Shabbos</em>, married <em>bnos Yisrael</em>, built Jewish homes. In other years, with the same inspiring speeches and the same Birthright framework, the <em>bachurim</em> came alight and then, within months, drifted back to where they had come from. What accounted for the difference?</p>
+
+<p>The internal review yielded a single, disquieting answer. The years in which the yeshiva succeeded in grounding its <em>bachurim</em> in real, black <em>Gemara</em> &mdash; <em>Bava Kamma</em> (<span class="heb-inline">בבא קמא</span>), <em>Shnayim Ochazin B&rsquo;Talis</em> (<span class="heb-inline">שניים אוחזין בטלית</span>), the dry intricacy of <em>dinim</em> and their <em>sevaros</em> &mdash; were the successful years. Not the inspiring speeches. Not the mountaintop moments. <em>Bachurim</em> who learned real <em>Gemara</em>, and only they, remained <em>shomrei Torah u&rsquo;mitzvos</em> long-term. Those who received only inspirational programming eventually reverted.</p>
+
+<p>The mechanism need not be fully articulable to be true. What learning <em>Torah</em> accomplishes &mdash; any <em>Torah</em>, at any level &mdash; is the restoration of the <em>Yid</em> to the connection he had in the womb. Inspiration touches the surface of the <em>nefesh</em>; <em>Torah</em> reaches beneath. The current generation is a generation of inspiration: viral clips, two-minute videos, <em>drashos</em> forwarded from phone to phone. There is genuine <em>chizuk</em> (<span class="heb-inline">חיזוק</span>) in these; the point is not to disparage them. But none of them holds the <em>Yid</em> in place the way sitting with a <em>Gemara</em> holds him, or sitting with a <em>Tur</em> and <em>Shulchan Aruch</em>, or grappling with a difficult <em>Rambam</em>. <em>Hashiveinu Avinu l&rsquo;Torasecha</em> is the <em>tefillah</em>&rsquo;s recognition that <em>teshuvah</em> itself is inseparable from <em>Torah</em>: to return is to learn.</p>
+
+<h2>VI. Avinu in Shemoneh Esrei</h2>
+
+<h3>Where Avinu Appears</h3>
+
+<p>The address <em>Avinu</em> (<span class="heb-inline">אבינו</span>) &mdash; <em>our Father</em> &mdash; appears in the middle twelve <em>berachos</em> only twice (or three times, depending on <em>nusach</em>):</p>
+
+<ul>
+  <li><em>Hashiveinu Avinu l&rsquo;Torasecha</em> (<span class="heb-inline">השיבנו אבינו לתורתך</span>).</li>
+  <li><em>Selach lanu Avinu ki chatanu</em> (<span class="heb-inline">סלח לנו אבינו כי חטאנו</span>).</li>
+  <li>In <em>Nusach Sefard</em>&rsquo;s <em>Sim Shalom</em>: <em>Barcheinu Avinu kulanu k&rsquo;echad</em> (<span class="heb-inline">ברכנו אבינו כולנו כאחד</span>).</li>
+</ul>
+
+<h3>The Principle of the Abudraham</h3>
+
+<p>The <em>Abudraham</em>,<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> in his classic commentary on the <em>Siddur</em>, formulates the governing principle: <em>Avinu</em> appears in <em>Shemoneh Esrei</em> precisely in those <em>berachos</em> whose content corresponds to a father&rsquo;s <em>chiyuv</em> (<span class="heb-inline">חיוב</span>) to his son. The <em>Gemara</em> in <em>Kiddushin</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> enumerates those <em>chiyuvim</em>: <em>l&rsquo;molo</em>, <em>lifdoso</em>, <em>l&rsquo;lamdo Torah</em>, <em>l&rsquo;hasi&rsquo;o ishah</em>, <em>l&rsquo;lamdo umanus</em> (<span class="heb-inline">למולו, לפדותו, ללמדו תורה, להשיאו אשה, ללמדו אומנות</span>) &mdash; and per one <em>Tanna</em>, also <em>l&rsquo;hashito ba&rsquo;mayim</em> (<span class="heb-inline">להשיטו במים</span>). Among these, <em>l&rsquo;lamdo Torah</em> stands as foundational.</p>
+
+<p>An underappreciated implication of this <em>chiyuv</em> confronts every father in the contemporary world. <em>Torah</em> has been institutionalized. A father pays tuition, entrusts his son to a <em>rebbi</em>, and often assumes that his <em>chiyuv</em> has been discharged. The assumption is <em>halachically</em> mistaken. The <em>chiyuv</em> remains the father&rsquo;s; sending a son to <em>yeshiva</em> and to tutors does not remove it. Sitting with one&rsquo;s son and learning even a single <em>mishnah</em> is still a father&rsquo;s obligation, and no institution can perform it in his place.</p>
+
+<h3>Hashiveinu Avinu &mdash; The Kavvanah</h3>
+
+<p>The <em>Abudraham</em>&rsquo;s principle transforms the <em>kavvanah</em> of <em>hashiveinu</em>. The <em>mispallel</em>, in reciting <em>Hashiveinu Avinu l&rsquo;Torasecha</em>, is invoking a specific legal claim: <em>Ribbono Shel Olam, I am Your son. The halachah obligates a father to teach his son Torah. Therefore &mdash; hashiveinu Avinu l&rsquo;Torasecha &mdash; teach me Your Torah.</em> The <em>tefillah</em> stands not on abstract yearning but on the <em>chiyuv</em> of a father to a son.</p>
+
+<h3>Selach Lanu Avinu &mdash; The Kavvanah</h3>
+
+<p>The <em>Abudraham</em>&rsquo;s principle explains the appearance of <em>Avinu</em> in the <em>berachah</em> of <em>selichah</em> from a different angle. The only path to <em>selichah</em> is through <em>rachamim</em> (<span class="heb-inline">רחמים</span>). And the <em>rachamim</em> of a father, as the <em>pasuk</em> in <em>Tehillim</em> teaches,<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> is the paradigm of <em>Hashem</em>&rsquo;s mercy: <em>ke&rsquo;rachem av al banim, ken yerachem Hashem al yerei&rsquo;av</em> (<span class="heb-inline">כרחם אב על בנים, כן ירחם ה&rsquo; על יראיו</span>). The <em>mispallel</em> awakens the <em>rachamei ha&rsquo;av</em> by addressing the <em>Ribbono Shel Olam</em> as <em>Avinu</em> in the very <em>berachah</em> in which <em>rachamim</em> is required to unlock <em>selichah</em>.</p>
+
+<h3>Why Not in Atah Chonen</h3>
+
+<p><em>Atah Chonen</em> does not open with <em>Avinu</em>. The <em>Abudraham</em>&rsquo;s principle accounts for the absence: <em>da&rsquo;as</em> is not, halachically, a specific fatherly <em>chiyuv</em>. A subtle question presses at this point: is not <em>parnasah</em> also part of a father&rsquo;s <em>chiyuv</em> to his young children? Should not <em>Barech Aleinu</em>, then, address <em>Avinu</em>? The point deserves reflection; the <em>Abudraham</em>&rsquo;s framework, as elaborated by later <em>meforshim</em>, admits gradations in the <em>chiyuv</em>-content of each <em>berachah</em>.</p>
+
+<h2>VII. Chochmah, Binah, and Da&rsquo;as</h2>
+
+<h3>The Two Nusachos</h3>
+
+<p>The <em>Tur</em>, citing the <em>Rokeach</em>,<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> distinguishes the two <em>nusachos</em> of the <em>berachah</em>&rsquo;s petition. <em>Nusach Ashkenaz</em>&rsquo;s formulation &mdash; <em>chaneinu me&rsquo;itcha de&rsquo;ah, binah, v&rsquo;haskel</em> &mdash; refers to general <em>chochmah</em> for life, the <em>seichel</em> not to do evil, only good. <em>Nusach Sefard</em>&rsquo;s formulation &mdash; <em>chaneinu me&rsquo;itcha chochmah, binah, v&rsquo;da&rsquo;as</em> &mdash; is focused specifically on the <em>chochmah</em> of <em>Torah</em>. The two <em>nusachos</em> are not interchangeable; each articulates a distinct <em>kavvanah</em>.</p>
+
+<h3>The Faculties Themselves</h3>
+
+<p>The three terms describe a progression. <em>Chochmah</em> (<span class="heb-inline">חכמה</span>) is original wisdom &mdash; the flash of cognitive insight that arises from within. <em>Binah</em> (<span class="heb-inline">בינה</span>) is derivative reasoning &mdash; the capacity described by <em>Chazal</em> as <em>meivin davar mi&rsquo;toch davar</em> (<span class="heb-inline">מבין דבר מתוך דבר</span>), deriving one thing from another. <em>Da&rsquo;as</em> is the highest of the three &mdash; the faculty of connection, the binding of intellectual understanding to the emotional and volitional life of the <em>nefesh</em>. The <em>Tanya</em> of <em>Rabbi Shneur Zalman of Liadi</em><a class="footnote-ref" id="ref12" href="#fn12">[12]</a> develops these three as the upper <em>sefiros</em> of the human <em>nefesh</em>, from which the <em>middos</em> flow. The acronym <em>Chabad</em> &mdash; <em>Chochmah, Binah, Da&rsquo;as</em> &mdash; names the dynasty&rsquo;s defining emphasis on intellectual <em>avodah</em>. The full elaboration of this reading belongs to the <em>Tanya</em> itself and is best encountered with the <em>sefer</em> open.</p>
+
+<h2>VIII. Bechirah and Tefillah &mdash; The Rambam&rsquo;s Question</h2>
+
+<h3>The Question</h3>
+
+<p>A fundamental question presses on the <em>berachah</em> of <em>Hashiveinu</em>. The <em>Gemara</em>&rsquo;s formulation &mdash; <em>ha&rsquo;kol bi&rsquo;yedei Shamayim chutz mi&rsquo;yiras Shamayim</em> (<span class="heb-inline">הכל בידי שמים חוץ מיראת שמים</span>) &mdash; teaches that wealth, health, and every external circumstance are decreed from Above, while whether one is a <em>tzaddik</em> (<span class="heb-inline">צדיק</span>) or a <em>rasha</em> (<span class="heb-inline">רשע</span>) rests in his own hands. <em>Bechirah</em> (<span class="heb-inline">בחירה</span>) is the defining faculty that distinguishes the <em>Yid</em> from the animal. If <em>teshuvah</em> is precisely what is placed in the <em>Yid</em>&rsquo;s own hands, why is the <em>Yid</em> asking the <em>Ribbono Shel Olam</em> to do what is his own <em>avodah</em> to do? <em>Hashiveinu</em> appears, at first glance, to be a request for the <em>Ribbono Shel Olam</em> to perform work that only the <em>mispallel</em> himself can perform.</p>
+
+<h3>The Rambam&rsquo;s Twenty-Four Obstacles</h3>
+
+<p>The <em>Rambam</em> in <em>Hilchos Teshuvah</em>, in the fourth <em>perek</em>,<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> provides the answer. He enumerates twenty-four categories &mdash; behaviors, patterns, and circumstances &mdash; that are <em>me&rsquo;akev es ha&rsquo;teshuvah</em> (<span class="heb-inline">מעכב את התשובה</span>): that <em>obstruct</em> the successful performance of <em>teshuvah</em> even after the returning <em>Yid</em> has resolved to undertake it. The list includes habitual patterns of <em>chet</em>, <em>chataim</em> committed through others, persistent attachment to a particular <em>chet</em>, benefiting from misappropriated <em>tzedakah</em>, certain forms of <em>lashon ha&rsquo;ra</em>, and many others. Many of these obstacles the <em>mispallel</em> himself carries, often without full awareness of doing so.</p>
+
+<p>The <em>tefillah</em> of <em>hashiveinu</em>, on this reading, is precise. The <em>Yid</em> concedes that <em>teshuvah</em> itself lies within his own <em>bechirah</em>; he does not ask the <em>Ribbono Shel Olam</em> to do <em>teshuvah</em> for him. What he asks is for the <em>obstacles</em> &mdash; the structural impediments the <em>Rambam</em> enumerates &mdash; to be removed. <em>Ribbono Shel Olam, remove the me&rsquo;akvim, and I will return.</em> The <em>tefillah</em> reserves to the <em>Yid</em> what belongs to him and asks of the <em>Ribbono Shel Olam</em> only what only He can provide.</p>
+
+<h2>IX. Selach Lanu &mdash; Tears, Kavvanah, and the Word Mechal</h2>
+
+<h3>The Standards of Earlier Generations</h3>
+
+<p><em>Rabbi Yonasan Eibeschutz</em>, in his <em>Ya&rsquo;aros Devash</em>,<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> sets the standard for the <em>berachah</em> of <em>selichah</em> in unmistakable terms: a <em>Yid</em> who does not cry by <em>selichah</em> is worthless. The bar sounds foreign to a contemporary <em>mispallel</em> yet was the ordinary expectation of earlier generations. The tradition preserves the account of the <em>chazan</em> of Brisk who, at ordinary weekday <em>Ma&rsquo;ariv</em> &mdash; not <em>Ne&rsquo;ilah</em>, not <em>Yom Kippur</em>, not even <em>Aseres Yemei Teshuvah</em> &mdash; would leave a puddle of tears on the floor beneath his face from the standard weekday <em>Shemoneh Esrei</em>. The current generation has forgotten how to cry even about the fact that it has forgotten how to cry.</p>
+
+<h3>The Kavvanah Requirement</h3>
+
+<p>One of the <em>Rishonim</em> renders the requirement more sharply still: a <em>Yid</em> who recites <em>selichah</em> without <em>kavvanah</em> is a <em>shoteh</em>. The characterization is not rhetorical. To stand before the <em>Melech</em> and enumerate one&rsquo;s <em>chataim</em> &mdash; <em>chatanu, avinu, pashanu</em> &mdash; and, at the end of the recitation, to have <em>asked</em> for nothing at all is a form of speech that no rational human being would ever direct at a human king. The <em>berachah</em> of <em>selichah</em> is a <em>bakashah</em>; if the <em>mispallel</em> forgets to ask, he has emptied the <em>berachah</em> of its content.</p>
+
+<h3>The Word Mechal</h3>
+
+<p>A striking philological point sharpens the meaning of the <em>berachah</em>. The root <em>mem-ches-lamed</em> (<span class="heb-inline">מ-ח-ל</span>) in the sense of <em>to forgive</em> does not appear in <em>Tanach</em>. It is a <em>lashon</em> of <em>Chazal</em>. The <em>Chumash</em> uses <em>salach</em> and <em>kaper</em> for forgiveness; <em>machah</em> in <em>Tanach</em> means to <em>erase</em>, as in <em>machah es shemam</em> (<span class="heb-inline">מחה את שמם</span>), not to forgive.</p>
+
+<p>The <em>Gra</em>,<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> in his commentary on the <em>Siddur</em>, articulates a <em>kelal</em>: <em>Anshei Knesses HaGedolah</em>, in composing the <em>Shemoneh Esrei</em>, used only <em>leshon Tanach</em>. Yet <em>mechal</em> in its ordinary sense appears nowhere in <em>Tanach</em> &mdash; a sharp <em>kushya</em> on our <em>nusach</em>.</p>
+
+<p>The recovery of ancient <em>Siddurim</em> from the Cairo Genizah<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> resolves the <em>kushya</em>. The original reading in the <em>berachah</em> of <em>selichah</em> was <em>mechei</em> (<span class="heb-inline">מחה</span>) &mdash; <em>erase</em> &mdash; drawn directly from the <em>pasuk</em> of <em>Moshe Rabbeinu</em>&rsquo;s plea after the <em>Chet HaEgel</em>: <em>mechei na avoni mi&rsquo;sifrecha asher kasavta</em> (<span class="heb-inline">מחה נא עוני מספרך אשר כתבת</span>). Over centuries, in the European <em>nusachos</em>, the reading shifted from <em>mechei</em> to <em>mechal</em>. The received <em>nusach</em> is the received <em>nusach</em>, and one does not change it; but the original word, and the deeper <em>kavvanah</em> of the <em>berachah</em>, is <em>erasure</em>.</p>
+
+<h3>Three Levels of Forgiveness</h3>
+
+<p>The <em>berachah</em> in fact contains three graduated levels of forgiveness, arranged in ascending order:</p>
+
+<ul>
+  <li><strong><em>Selach</em> (<span class="heb-inline">סלח</span>)</strong> &mdash; the first and outermost level, surface forgiveness. The <em>Magen Avraham</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a> teaches that at this level the <em>roshem</em> (<span class="heb-inline">רושם</span>) of the <em>chet</em> remains &mdash; like a stain not fully removed by the cleaners, faded but still visible.</li>
+  <li><strong><em>Mechal</em>, originally <em>mechei</em> (<span class="heb-inline">מחה</span>)</strong> &mdash; total erasure. <em>Mechei ve&rsquo;ha&rsquo;aver avonoseinu ve&rsquo;chatoseinu mi&rsquo;neged einecha</em> (<span class="heb-inline">מחה והעבר עוונותינו וחטאתינו מנגד עיניך</span>) &mdash; not merely forgiven but wiped clean.</li>
+  <li><strong><em>Kaper</em> (<span class="heb-inline">כפר</span>)</strong> &mdash; atonement. The <em>chet</em> is not only erased but covered, as on <em>Yom HaKippurim</em>: not merely absent but positively enclosed.</li>
+</ul>
+
+<p>The <em>mispallel</em> ascends the ladder in a single <em>berachah</em> &mdash; asking not for a half-measure but for the full transformation of the record.</p>
+
+<h2>X. Refa&rsquo;einu &mdash; Adding the Sick</h2>
+
+<h3>Inserting the Choleh</h3>
+
+<p>The <em>Shulchan Aruch</em>, drawing on the <em>Arizal</em>,<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> rules that when a <em>Yid</em> knows of someone who is ill, the appropriate place to daven for the <em>refuah</em> is within the <em>berachah</em> of <em>Refa&rsquo;einu</em>. The <em>Beis Yosef</em> preserves an alternative view that prefers to save such <em>bakashos</em> for the end of <em>Shemoneh Esrei</em>, out of concern that adding at the moment might risk missing <em>Kedushah</em>; the practical concern is minimal &mdash; the insertion adds only seconds &mdash; and the settled practice is to insert the name of the <em>choleh</em> in the <em>berachah</em> itself.</p>
+
+<h3>The Arizal on Spiritual Illness</h3>
+
+<p>The <em>Arizal</em> adds a striking further teaching: in the <em>berachah</em> of <em>Selach Lanu</em>, the <em>mispallel</em> should daven for the <em>spiritually</em> ill &mdash; <em>Yidden</em> who do not keep <em>Shabbos</em>, who are far from <em>Torah</em>, who have been raised at a distance from <em>Yiddishkeit</em>. The <em>mispallel</em> does not judge; the <em>Ribbono Shel Olam</em> is the <em>Shofet</em>. But the <em>Arizal</em> teaches that such <em>Yidden</em> are to be recognized as <em>cholim</em> in another register, and the request for their <em>refuah</em> belongs precisely in the <em>berachah</em> of <em>selichah</em>: not <em>refa&rsquo;einu</em> for the body, but <em>selach lanu</em> for the <em>neshamos</em> that stand in need of the same <em>rachamim</em> the <em>berachah</em> invokes.</p>
+
+<h3>Personal Bakashos &mdash; Me&rsquo;ein HaBerachah</h3>
+
+<p>The general <em>halachah</em> permits the <em>mispallel</em> to insert personal <em>bakashos</em> within any of the middle twelve <em>berachos</em> provided the insertion is <em>me&rsquo;ein ha&rsquo;berachah</em> (<span class="heb-inline">מעין הברכה</span>) &mdash; within the theme of the <em>berachah</em>. Most <em>mispallelim</em> save personal petition for the end of <em>Shemoneh Esrei</em>; the insertion within the relevant <em>berachah</em>, however, personalizes the <em>tefillah</em> and connects the abstract <em>bakashah</em> to a specific <em>tzarah</em>. The <em>berachah</em> of <em>Shema Koleinu</em> in any case is general and admits any request.</p>
+
+<h2>XI. Ge&rsquo;aleinu &mdash; A Personal Ge&rsquo;ulah</h2>
+
+<h3>Not the Ge&rsquo;ulah HaShleimah</h3>
+
+<p>A common misreading assumes that the <em>berachah</em> of <em>Ge&rsquo;aleinu</em> refers to the <em>ge&rsquo;ulah ha&rsquo;shleimah</em> with the coming of <em>Mashiach</em>. It does not. The <em>ge&rsquo;ulah ha&rsquo;shleimah</em> appears later in the <em>Shemoneh Esrei</em> &mdash; in <em>Teka B&rsquo;Shofar Gadol l&rsquo;cheiruseinu</em> (<span class="heb-inline">תקע בשופר גדול לחירותנו</span>) and in <em>V&rsquo;liYerushalayim Ircha B&rsquo;Rachamim Tashuv</em> (<span class="heb-inline">ולירושלים עירך ברחמים תשוב</span>). The seventh <em>berachah</em> speaks to something else entirely.</p>
+
+<h3>Ge&rsquo;ulah Peratis</h3>
+
+<p>The <em>Gemara</em> in <em>Megillah</em> with <em>Rashi</em>&rsquo;s <em>peirush</em><a class="footnote-ref" id="ref19" href="#fn19">[19]</a> establishes that the seventh <em>berachah</em> is <em>ge&rsquo;ulah peratis</em> &mdash; a personal <em>ge&rsquo;ulah</em>. Each <em>Yid</em>, whatever the state of the collective <em>galus</em>, is in his own personal <em>Mitzrayim</em> (<span class="heb-inline">מצרים</span>) &mdash; the daily <em>tzaros</em>, difficulties, and impossibilities of his own life. After the <em>berachos</em> of <em>teshuvah</em> and <em>selichah</em> have restored him to a state in which <em>ge&rsquo;ulah</em> is available to him, the <em>berachah</em> of <em>Ge&rsquo;aleinu</em> asks the <em>Ribbono Shel Olam</em> to take him out of his personal <em>Mitzrayim</em>: <em>Go&rsquo;aleinu, Go&rsquo;el chazak l&rsquo;ma&rsquo;an Shemecha</em> (<span class="heb-inline">גואלנו, גואל חזק למען שמך</span>).</p>
+
+<h3>Why the Seventh Berachah</h3>
+
+<p>The <em>Gemara</em> supplies a further angle on the placement: <em>Mashiach</em> will come in the seventh year &mdash; the year of <em>Shemittah</em> &mdash; and the <em>berachah</em> of <em>ge&rsquo;ulah</em> is therefore placed as the seventh of the middle twelve. The number itself is a <em>remez</em>. A famous <em>kushya</em> was once posed to the <em>Brisker Rav</em>: the <em>Gemara</em> teaches that <em>Mashiach</em> will not come on <em>Erev Shabbos</em> &mdash; the sensitivities of <em>Mashiach</em> are such that he does not arrive amid the hectic preparations of a Jewish home on <em>Erev Shabbos</em>; how, then, can the <em>Gemara</em> also teach that <em>Mashiach</em> will arrive in the seventh year specifically? The <em>Brisker Rav</em>&rsquo;s reply is preserved: <em>When Mashiach comes, I will answer the question.</em></p>
+
+<h2>XII. The Three Sheleimos</h2>
+
+<p>Three of the middle <em>berachos</em> employ the word <em>sheleimah</em> (<span class="heb-inline">שלמה</span>) &mdash; <em>complete</em>:</p>
+
+<ul>
+  <li><em>Teshuvah sheleimah</em> (<span class="heb-inline">תשובה שלמה</span>).</li>
+  <li><em>Refuah sheleimah</em> (<span class="heb-inline">רפואה שלמה</span>).</li>
+  <li><em>Ge&rsquo;ulah sheleimah</em> (<span class="heb-inline">גאולה שלמה</span>).</li>
+</ul>
+
+<p>The insistence on <em>sheleimus</em> in these three <em>berachos</em> alone is not stylistic. A <em>teshuvah</em> that is not <em>sheleimah</em> is not truly <em>teshuvah</em>; a <em>refuah</em> that is not <em>sheleimah</em> is not truly <em>refuah</em>; a <em>ge&rsquo;ulah</em> that is not <em>sheleimah</em> is not truly <em>ge&rsquo;ulah</em>. Each of these three states admits of no half-measure: a partial <em>teshuvah</em> leaves the sinner still a sinner; a partial <em>refuah</em> leaves the <em>choleh</em> still ill; a partial <em>ge&rsquo;ulah</em> leaves the <em>galus</em> intact. The <em>mispallel</em> does not daven for halves. He asks for the full transformation, or he has not asked at all.</p>
+
+<h2>XIII. The Galus One Does Not See</h2>
+
+<h3>Being Inside a Tzarah Without Knowing It</h3>
+
+<p>The <em>berachah</em> of <em>Ge&rsquo;aleinu</em> reaches into a dimension that most <em>mispallelim</em> underestimate: the <em>tzaros</em> a <em>Yid</em> carries without recognizing them as such. The <em>galus</em> one does not see is often the most dangerous <em>galus</em>. Three historical episodes illustrate the point &mdash; each of them a case in which <em>Yidden</em> failed to perceive what was, in retrospect, unmistakable.</p>
+
+<h3>German Jewry Before the War</h3>
+
+<p>Before the Second World War, when <em>yemach shemo</em> came to power, certain segments of German Jewry read the signs correctly and left. Others &mdash; sophisticated <em>kehillos</em> with deep cultural confidence in the Germany that had granted them citizenship &mdash; said: <em>It is a gezeirah; it will pass; everything will be fine.</em> They are part of the six million <em>kedoshim</em>.</p>
+
+<h3>The Mir Diary</h3>
+
+<p><em>Rav Shimon Schwab</em> once described having seen the diary of a <em>bachur</em> in <em>Mir</em>, dated to <em>tarach</em> (<span class="heb-inline">תר&quot;ץ</span>) &mdash; the year before the war broke out. <em>Mir</em> was in Poland. The <em>bachur</em> wrote: <em>&ldquo;I have business to attend to in Germany, but the political situation there makes travel impossible. Baruch Hashem &mdash; here in Poland things are secure. I will wait until matters settle in Germany before traveling.&rdquo;</em> He did not know what was coming.</p>
+
+<h3>The Bobover Rebbe&rsquo;s Story</h3>
+
+<p>A third account was preserved by the <em>Bobover Rebbe</em><a class="footnote-ref" id="ref20" href="#fn20">[20]</a> and heard by Rabbi Ephrati directly from him during a <em>nichum aveilim</em> visit. A Galician <em>Yid</em>, having escaped the Polish <em>pera&rsquo;os</em> in the earliest phase, crossed the border into Hungary &mdash; disheveled, torn, blood on his clothing &mdash; and entered a Hungarian <em>shtibl</em> to warn the local <em>kehillah</em>. He found them sitting after <em>Shacharis</em>, having a <em>kiddush</em>, drinking <em>l&rsquo;chaim</em>, kibitzing. He cried out to them: <em>&ldquo;Yidden, tayere Yidden, men shecht Yidden!&rdquo;</em> (<span class="heb-inline">אידן, טייערע אידן, מען שעכט אידן</span>) &mdash; <em>Jews, precious Jews, they are slaughtering Jews.</em> They laughed at him and continued drinking. Within months they were all killed.</p>
+
+<h3>The Prayer&rsquo;s True Register</h3>
+
+<p><em>Go&rsquo;aleinu, Go&rsquo;el chazak</em> is the <em>tefillah</em> for the <em>galus</em> one is inside without knowing it. The <em>mispallel</em> asks the <em>Ribbono Shel Olam</em> not only for redemption from the <em>tzaros</em> he perceives, but for redemption from the <em>tzaros</em> whose contours he cannot yet make out &mdash; the walls of the personal <em>Mitzrayim</em> that press against him without ever announcing themselves. The <em>berachah</em> asks for eyes to see what one has not yet noticed, and for the strength of the <em>Go&rsquo;el chazak</em> to take one out even from a <em>galus</em> one has not yet named.</p>
+
+<h2>XIV. The Six Together</h2>
+
+<p>The six <em>bakashos peratiyos</em> form a single sequence, and each <em>berachah</em> presupposes the previous and prepares the next.</p>
+
+<ul>
+  <li>Receive <em>da&rsquo;as</em> &mdash; the <em>kashrus</em> to perform the <em>avodah</em> of <em>tefillah</em> at all.</li>
+  <li>Let the obstacles to <em>teshuvah</em> be removed &mdash; the twenty-four <em>me&rsquo;akvim</em> the <em>Rambam</em> enumerates.</li>
+  <li>Let the <em>chataim</em> themselves be forgiven, erased, and atoned &mdash; <em>selach, mechei, kaper</em>.</li>
+  <li>Let the body be healed &mdash; <em>refuah sheleimah</em>.</li>
+  <li>Let the household have <em>parnasah</em>.</li>
+  <li>And through all of these, let the <em>Yid</em> be redeemed from his private <em>Mitzrayim</em>.</li>
+</ul>
+
+<p>The architecture is precise. It is the map of the <em>Yid</em>&rsquo;s personal <em>avodah</em>, laid down by <em>Chazal</em> in the exact sequence in which the <em>nefesh</em> must be prepared. May every <em>mispallel</em> merit to daven these six <em>berachos</em> with the awareness the <em>Anshei Knesses HaGedolah</em> built into them, and through them to be inscribed for <em>chaim tovim</em>.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first, then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Berachos</em> 28b (with parallels in <em>Megillah</em> 17b) &mdash; three-part structure of <em>Shemoneh Esrei</em>; order of the middle <em>bakashos</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> establishes the macro-structure of <em>Shemoneh Esrei</em> as three units of <em>shevach</em>, twelve (now thirteen with <em>Birchas HaMinim</em>) of <em>bakashah</em>, and three of <em>hoda&rsquo;ah</em>. The parallel <em>sugya</em> in <em>Megillah</em> derives the specific ordering of the middle <em>bakashos</em> from <em>pesukim</em> in <em>Tanach</em>. The further subdivision of the middle twelve into six <em>bakashos peratiyos</em> and six <em>bakashos ha&rsquo;klal</em> is grounded in these <em>sugyos</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Rambam, Hilchos Bi&rsquo;as HaMikdash</em>, chapter 9 &mdash; <em>kohen shoteh</em> as <em>pasul</em> for <em>avodah</em>; absence of <em>da&rsquo;as</em> as a <em>mum</em>.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> rules that a <em>kohen</em> lacking <em>da&rsquo;as</em> &mdash; a <em>kohen shoteh</em> &mdash; is <em>pasul</em> for the <em>avodah</em> in the <em>Beis HaMikdash</em>, even though the <em>Mishnah</em> on <em>ba&rsquo;alei mumin</em> in <em>Bechoros</em> lists only physical <em>mumin</em>. Mental incapacity functions as a structural <em>mum</em>. The <em>pesak</em> grounds the reading that <em>tefillah</em>, which stands <em>kneged ha&rsquo;korbanos</em>, requires the same <em>kashrus</em> of <em>da&rsquo;as</em> as the <em>korban</em> itself, so that the first <em>bakashah</em> of the middle twelve is necessarily the <em>bakashah</em> for the <em>kashrus</em> to daven at all.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <div class="note-academic"><strong><em>Rabbi Ephraim Zalman Margolios</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">רבי אפרים זלמן מרגליות זצ&quot;ל</span>, 1762&ndash;1828)</strong> &mdash; <em>rav</em> of <em>Brody</em> in eastern Galicia (today western Ukraine); simultaneously a <em>gadol ha&rsquo;dor</em> and a major financier, a rare combination in the history of the rabbinate. Brody was known as <em>&ldquo;the Yerushalayim of Galicia&rdquo;</em> (<span class="heb-inline">ירושלים דגליציה</span>). His works, each bearing the name <em>Ephraim</em>, include <strong><em>Yad Ephraim</em></strong> (glosses on <em>Shulchan Aruch</em> and on the <em>Tanya</em>); <strong><em>Mateh Ephraim</em></strong> (halachos of <em>Elul</em>, <em>Yamim Nora&rsquo;im</em>, and <em>Sukkos</em>, widely studied across Eastern European <em>kehillos</em>); <strong><em>Rosh Ephraim</em></strong>; <strong><em>Zera Ephraim</em></strong>; and <strong><em>Beis Ephraim</em></strong> (responsa). The reading of <em>Atah Chonen</em> as calibrated for <em>Motzaei Shabbos</em> and preserved through the week is brought by him in the name of his uncle and <em>rebbi</em>, <em>Rabbi Alexander Sender Margolios</em>, <em>rav</em> of Satan&oacute;w. Not Sefaria-indexable; preserved.</div>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Baal Shem Tov</em> tradition &mdash; three families of unbroken <em>yichus</em>: Rappaport, Margolios, Horowitz.</span>
+  <span class="expanded">&mdash; The <em>Baal Shem Tov ha&rsquo;Kadosh</em> (<em>Rabbi Yisrael ben Eliezer</em>, c. 1698&ndash;1760) is recorded in chassidishe tradition as having identified three families with verifiable, unbroken <em>yichus</em> across <em>Klal Yisrael</em> beyond the <em>mishpachos</em> of <em>kehunah</em> and <em>leviyah</em>: <strong>Rappaport</strong> (tracing through Italian rabbinic dynasties to <em>Rashi</em> and to <em>Dovid HaMelech</em>), <strong>Margolios</strong> (Margaliyot / Margulies &mdash; through Italian, Galician, and Polish rabbinic families to <em>Rashi</em>), and <strong>Horowitz</strong> (through the <em>Shelah HaKadosh</em> and earlier Bohemian rabbinic families). The <em>mesorah</em> circulates in <em>chassidus</em> sources; a precise published citation is not given in the shiur.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Yerushalmi Shabbos</em>, chapter 15 (and parallels) &mdash; no personal <em>bakashos</em> on <em>Shabbos</em>.</span>
+  <span class="expanded">&mdash; The <em>Yerushalmi</em> establishes the principle that <em>Shabbos</em> is incompatible with personal <em>bakashos</em>: <em>lo yispallel adam b&rsquo;Shabbos al tzerachav</em>. The <em>pesak</em> grounds the structural removal of the twelve middle <em>bakashos peratiyos</em> from <em>Shabbos</em> and <em>Yom Tov</em> <em>Shemoneh Esrei</em>, replaced by the single middle <em>berachah</em> of <em>kedushas ha&rsquo;yom</em>. The same <em>yesod</em> grounds <em>Rabbi Ephraim Zalman Margolios</em>&rsquo;s reading that <em>Atah Chonen</em> at weekday <em>Ma&rsquo;ariv</em> on <em>Motzaei Shabbos</em> structurally cannot begin with <em>bakashah</em> until <em>Havdalah</em> is made &mdash; a structure preserved through the week.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Niddah</em> 30b &mdash; <em>tinok bimei immo melamdin oso kol haTorah kulah... ba malach v&rsquo;sotro al piv u&rsquo;meshakcho</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Niddah</em> brings the teaching (attributed to <em>Rabbi Simlai</em>, and in parallel <em>mesoros</em> to <em>Rabbi Chiya</em>): the unborn child is taught the entire <em>Torah</em> in his mother&rsquo;s womb; upon birth, a <em>malach</em> strikes his mouth, leaving the philtrum &mdash; the small vertical groove between nose and upper lip &mdash; as a physical mark, and the child forgets the <em>Torah</em> consciously while retaining it in the <em>neshamah</em>. The <em>sugya</em> grounds the first answer to the question of <em>hashiveinu</em> for the <em>ba&rsquo;al teshuvah</em>: every <em>Yid</em> has an inner <em>Torah</em> to which he can be returned.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <div class="note-academic"><strong><em>Rav Noach Weinberg</em>, <em>zt&rdquo;l</em> (<span class="heb-inline">רב נח ווינברג זצ&quot;ל</span>, 1930&ndash;2009)</strong> &mdash; founder of <em>Aish HaTorah</em> in 1974 in Yerushalayim; one of the foundational figures of contemporary <em>kiruv rechokim</em>. <em>Talmid</em> of <em>Rav Yitzchak Hutner</em>, <em>zt&rdquo;l</em>, at <em>Yeshivas Chaim Berlin</em> and earlier of his elder brother <em>Rav Yaakov Weinberg</em>, <em>zt&rdquo;l</em>, at <em>Ner Yisrael</em>. The internal review of <em>Aish HaTorah</em>&rsquo;s outcomes &mdash; that the cohorts of <em>bachurim</em> grounded in real <em>Gemara</em> learning sustained their <em>shemiras Torah u&rsquo;mitzvos</em> long-term, while cohorts receiving only inspirational programming did not &mdash; circulates in <em>kiruv</em> and <em>chinuch</em> circles as a working principle: real <em>kevius</em> in <em>limud</em> holds, where inspiration alone fades. Not Sefaria-indexable; preserved.</div>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Abudraham</em> &mdash; principle of <em>Avinu</em> in <em>berachos</em> tied to fatherly <em>chiyuvim</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Dovid Abudraham</em> (Seville, mid-fourteenth century), in his classic commentary on the <em>Siddur</em>, develops the principle that <em>Avinu</em> appears in <em>Shemoneh Esrei</em> precisely in the <em>berachos</em> tied to a father&rsquo;s <em>chiyuv</em>: <em>Hashiveinu Avinu l&rsquo;Torasecha</em> (the <em>chiyuv l&rsquo;lamdo Torah</em>) and <em>Selach lanu Avinu ki chatanu</em> (the <em>chiyuv</em> of fatherly <em>rachamim</em>). The principle accounts both for the presence of <em>Avinu</em> in these <em>berachos</em> and for its absence in the others.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Kiddushin</em> 29a &mdash; father&rsquo;s <em>chiyuvim</em> to his son, including <em>l&rsquo;lamdo Torah</em>.</span>
+  <span class="expanded">&mdash; The <em>Mishnah</em> and <em>sugya</em> in <em>Kiddushin</em> enumerate the father&rsquo;s <em>chiyuvim</em> to his son: <em>l&rsquo;molo, lifdoso, l&rsquo;lamdo Torah, l&rsquo;hasi&rsquo;o ishah, l&rsquo;lamdo umanus</em> (and per the <em>Tanna Kamma</em>, also <em>l&rsquo;hashito ba&rsquo;mayim</em>). The <em>chiyuv</em> of <em>l&rsquo;lamdo Torah</em> is foundational. The <em>Abudraham</em>&rsquo;s reading of <em>Hashiveinu Avinu l&rsquo;Torasecha</em> rests on this <em>sugya</em>: when the <em>mispallel</em> addresses <em>Hashem</em> as <em>Avinu</em> in connection with <em>Torah</em>, he is invoking precisely the fatherly <em>chiyuv</em> codified here.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Tehillim</em> 103:13 &mdash; <em>ke&rsquo;rachem av al banim, ken yerachem Hashem al yerei&rsquo;av</em>.</span>
+  <span class="expanded">&mdash; <em>Dovid HaMelech</em>&rsquo;s <em>pasuk</em> in <em>Tehillim</em> 103 establishes the <em>dugma</em> of fatherly <em>rachamim</em> as the model for <em>Hashem</em>&rsquo;s <em>rachamim</em>. The <em>pasuk</em> is the textual ground for the <em>Abudraham</em>&rsquo;s reading of <em>Selach lanu Avinu ki chatanu</em>: <em>selichah</em> requires <em>rachamim</em>; the <em>rachamim</em> of a father is the deepest available form; the <em>mispallel</em> therefore addresses <em>Hashem</em> as <em>Avinu</em> in this <em>berachah</em> specifically.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Tur Orach Chaim</em>, siman 115, citing the <em>Rokeach</em> &mdash; <em>de&rsquo;ah, binah, v&rsquo;haskel</em> vs. <em>chochmah, binah, v&rsquo;da&rsquo;as</em>.</span>
+  <span class="expanded">&mdash; The <em>Tur</em>, siman 115, brings <em>Rabbi Elazar of Worms</em> (the <em>Rokeach</em>, c. 1176&ndash;1238; <em>talmid</em> of <em>Rabbi Yehudah HaChassid</em>) on the two <em>nusachos</em>. <em>De&rsquo;ah, binah, v&rsquo;haskel</em> in <em>Nusach Ashkenaz</em>&rsquo;s <em>Chaneinu</em> refers to general <em>chochmah</em> for life; <em>chochmah, binah, v&rsquo;da&rsquo;as</em> in <em>Nusach Sefard</em> is focused specifically on <em>chochmas haTorah</em>. The two <em>nusachos</em> are not interchangeable; each reflects a distinct <em>kavvanah</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Tanya</em> (<em>Rabbi Shneur Zalman of Liadi</em>) &mdash; <em>Chochmah, Binah, Da&rsquo;as</em> as <em>sefiros</em> in <em>Chabad</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Shneur Zalman of Liadi</em> (the <em>Ba&rsquo;al HaTanya</em> / <em>Admur HaZaken</em>, 1745&ndash;1812, founder of <em>Chabad chassidus</em>) develops <em>Chochmah, Binah, Da&rsquo;as</em> as the upper three <em>sefiros</em> of the human <em>nefesh</em> &mdash; the cognitive faculties from which the <em>middos</em> (<em>Chesed, Gevurah, Tiferes</em>) flow. <em>Chochmah</em>: original cognitive flash. <em>Binah</em>: derivative reasoning and expansion. <em>Da&rsquo;as</em>: the binding of cognitive understanding to emotional experience. The acronym <em>Chabad</em> names the dynasty&rsquo;s defining emphasis on intellectual <em>avodah</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Rambam, Hilchos Teshuvah</em>, perek 4 &mdash; twenty-four obstacles to <em>teshuvah</em>.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> in the fourth <em>perek</em> of <em>Hilchos Teshuvah</em> enumerates twenty-four categories of behavior, attitude, and circumstance that <em>me&rsquo;akev es ha&rsquo;teshuvah</em> &mdash; obstruct <em>teshuvah</em> from succeeding. The list includes habitual <em>chataim</em>; <em>chataim</em> committed through others; persistent attachment to a particular <em>chet</em>; benefiting from <em>tzedakas rabbim</em> taken under false pretenses; certain forms of <em>lashon ha&rsquo;ra</em>; and many more. The <em>Rambam</em>&rsquo;s framework grounds the <em>tefillah</em> of <em>hashiveinu</em>: although <em>teshuvah</em> itself lies in the <em>ba&rsquo;al bechirah</em>&rsquo;s hands (<em>ha&rsquo;kol bi&rsquo;yedei Shamayim chutz mi&rsquo;yiras Shamayim</em>), the structural obstacles in his way require <em>siyua</em> from Above to remove.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Ya&rsquo;aros Devash</em> (<em>Rabbi Yonasan Eibeschutz</em>) &mdash; tears at <em>selichah</em>; the <em>Yid</em> who does not cry is worthless.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yonasan Eibeschutz</em> (c. 1690&ndash;1764; Prague, Metz, Hamburg-Altona) was one of the great <em>darshanim</em> of his generation. His <em>Ya&rsquo;aros Devash</em> is a two-volume collection of <em>drashos</em> delivered in his shul in Prague; some individual <em>drashos</em> run forty-five pages or more. On <em>Birchas Selichah</em> he sets the standard: a <em>Yid</em> who can stand in <em>Shemoneh Esrei</em>, recite <em>Selach lanu Avinu ki chatanu</em>, and feel nothing has not understood what he is saying. The standard preserves the weight of weekday <em>tefillah</em> in earlier generations, exemplified by the <em>chazan</em> of Brisk who left a puddle of tears on the floor at ordinary weekday <em>Ma&rsquo;ariv</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Bi&rsquo;ur HaGra</em> on the <em>Siddur</em> &mdash; <em>Anshei Knesses HaGedolah</em> used only <em>leshon Tanach</em>; the <em>kushya</em> on <em>mechal</em>.</span>
+  <span class="expanded">&mdash; The <em>Gra</em> in his <em>bi&rsquo;ur</em> on the <em>Siddur</em> develops the <em>kelal</em> that <em>Anshei Knesses HaGedolah</em> composed <em>Shemoneh Esrei</em> exclusively in <em>leshon Tanach</em> &mdash; language drawn directly from biblical sources. The principle raises a sharp <em>kushya</em> on <em>mechal lanu</em>, since the root <em>mem-ches-lamed</em> in the sense of <em>forgive</em> appears nowhere in <em>Tanach</em> (<em>salach</em> and <em>kaper</em> are the biblical roots for forgiveness). The <em>kushya</em> is resolved by the Cairo Genizah&rsquo;s recovery of older <em>Siddurim</em> reading <em>mechei</em> &mdash; drawn from <em>mechei na avoni</em> (<em>Shemos</em> 32:32) &mdash; which over time shifted to <em>mechal</em>.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <div class="note-academic"><strong>Cairo Genizah</strong> &mdash; recovery of ancient <em>Siddurim</em> preserving <em>mechei</em> (<span class="heb-inline">מחה</span>, root <em>mem-ches-hei</em>, <em>erase</em>) as the original reading in <em>Birchas Selichah</em>, in place of the contemporary <em>mechal</em> (root <em>mem-ches-lamed</em>, <em>forgive</em>). The Genizah&rsquo;s <em>Siddurim</em> &mdash; including fragments of the <em>Siddur</em> of <em>Rav Saadya Gaon</em> and various <em>Eretz Yisrael</em>-rite <em>Siddurim</em> &mdash; confirm that the <em>lashon</em> originally drew on <em>pesukim</em> such as <em>mechei na avoni mi&rsquo;sifrecha asher kasavta</em> (<em>Moshe Rabbeinu</em>&rsquo;s plea after <em>Chet HaEgel</em>, <em>Shemos</em> 32:32) and was therefore in <em>leshon Tanach</em> as the <em>Gra</em>&rsquo;s <em>kelal</em> requires. The shift from <em>mechei</em> to <em>mechal</em> occurred over centuries in the European <em>nusachos</em>. Not Sefaria-indexable; preserved.</div>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Magen Avraham</em> on the three levels of forgiveness in <em>Birchas Selichah</em>: <em>selach</em>, <em>mechal</em>, <em>kaper</em>.</span>
+  <span class="expanded">&mdash; The <em>Magen Avraham</em> (<em>Rabbi Avraham HaLevi Gombiner</em>, c. 1635&ndash;1682), in his commentary on <em>Shulchan Aruch Orach Chaim</em>, develops the three-tier structure embedded in <em>Birchas Selichah</em>. <em>Selach</em> &mdash; surface forgiveness; the <em>roshem</em> of the <em>chet</em> remains, like a stain not fully removed. <em>Mechal</em> (originally <em>mechei</em>) &mdash; total erasure: <em>mechei ve&rsquo;ha&rsquo;aver avonoseinu ve&rsquo;chatoseinu mi&rsquo;neged einecha</em>. <em>Kaper</em> &mdash; atonement: the <em>chet</em> not only erased but covered, as on <em>Yom HaKippurim</em>. The <em>mispallel</em> ascends the ladder in a single <em>berachah</em>.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Arizal</em> and <em>Shulchan Aruch Orach Chaim</em>, siman 119 &mdash; inserting names of the <em>choleh</em> in <em>Refa&rsquo;einu</em>; davening in <em>Selach Lanu</em> for the spiritually ill.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> in siman 119 (and surrounding <em>simanim</em>) rules on the insertion of personal <em>bakashos</em> within the middle twelve <em>berachos</em>: one may insert <em>me&rsquo;ein ha&rsquo;berachah</em> (within the theme of the <em>berachah</em>), specifically including names of the sick in <em>Refa&rsquo;einu</em>. The <em>Arizal</em> in <em>Sha&rsquo;ar HaKavannos</em> further develops the kabbalistic dimension and adds the teaching that in <em>Selach Lanu</em>, one davens for those who are <em>spiritually</em> ill &mdash; distant from <em>Torah</em>, not keeping <em>Shabbos</em> &mdash; recognizing them as <em>cholim</em> in another register, and asking for their <em>refuah</em> through the <em>berachah</em> of <em>selichah</em>.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Megillah</em> 17b with <em>Rashi</em> &mdash; <em>Ge&rsquo;aleinu</em> as <em>ge&rsquo;ulah peratis</em>; <em>ge&rsquo;ulah</em> as the seventh <em>berachah</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Megillah</em> on the <em>seder berachos</em> of <em>Shemoneh Esrei</em>, with <em>Rashi</em>&rsquo;s <em>peirush</em>, distinguishes the seventh <em>berachah</em> (<em>Re&rsquo;eh Ve&rsquo;anyeinu... Go&rsquo;el Yisrael</em>) from the <em>berachah</em> of <em>kibutz galuyos</em> and from <em>V&rsquo;liYerushalayim</em>. The seventh is <em>ge&rsquo;ulah peratis</em> &mdash; redemption from one&rsquo;s personal <em>tzaros</em>, one&rsquo;s daily <em>Mitzrayim</em> &mdash; distinct from the messianic <em>ge&rsquo;ulah ha&rsquo;shleimah</em> that appears later. The <em>sugya</em> further notes that the <em>berachah</em> sits as the seventh because <em>Mashiach</em> will arrive in the seventh year (<em>Shemittah</em>); the position is not arbitrary.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <div class="note-academic">Pre-Holocaust account told by the <strong><em>Bobover Rebbe</em></strong> (likely <em>Rabbi Shlomo Halberstam</em>, <em>zt&rdquo;l</em>, 1907&ndash;2000, second <em>Bobover Rebbe</em> in America after the <em>Shoah</em>; son of <em>Rabbi Ben Zion Halberstam</em>, <em>Hy&rdquo;d</em>, murdered in 1941). Rabbi Ephrati heard the story directly from him during a <em>nichum aveilim</em> visit. The Galician <em>Yid</em>&rsquo;s warning &mdash; <em>&ldquo;Yidden, tayere Yidden, men shecht Yidden&rdquo;</em> (<span class="heb-inline">אידן, טייערע אידן, מען שעכט אידן</span>) &mdash; to a Hungarian <em>kehillah</em> sitting at a <em>Shabbos kiddush</em>, met with laughter and disbelief, captures the <em>not-knowing</em> that defines part of the Holocaust experience. Presented alongside the German Jewish intellectuals who said <em>&ldquo;Hitler will be gone&rdquo;</em> and the Mir <em>bachur</em>&rsquo;s diary in <em>tarach</em> describing Poland as secure &mdash; three illustrations of being inside a <em>galus</em> one cannot see, which <em>Go&rsquo;aleinu, Go&rsquo;el chazak</em> implicitly addresses. Not Sefaria-indexable; preserved.</div>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition &mdash; Rabbi Ephrati&rsquo;s shiur of 18 May 2025 on <em>Atah Chonen</em>, <em>Hashiveinu</em>, and the path of <em>teshuvah</em> in the first six <em>bakashos peratiyos</em> of <em>Shemoneh Esrei</em>. Reworked in the classic sefer voice; historical detail preserved; every citation-flag resolved.
+</footer>
+
+</body>
+</html>

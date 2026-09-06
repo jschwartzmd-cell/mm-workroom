@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Kedushah: The Daily Mitzvah of Kiddush Hashem</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">קְדֻשָּׁה &mdash; הַמִּצְוָה הַיּוֹמִית שֶׁל קִדּוּשׁ הַשֵּׁם</h1>
+  <div class="english-title">Kedushah &mdash; The Daily Mitzvah of <em>&ldquo;V&rsquo;Nikdashti B&rsquo;Soch Bnei Yisrael&rdquo;</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded <span class="heb-inline">ראש חודש ניסן תשפ&quot;ה</span> &middot; 30 March 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Sponsored <span class="heb-inline">לעילוי נשמת אלטר מרדכי בן שמואל ז&quot;ל</span>; <span class="heb-inline">ולרפואה שלימה פנחס בן [שמו]</span>.</em></p>
+
+<p class="lead"><em>Kedushah</em> (<span class="heb-inline">קדושה</span>) as a daily <em>mitzvah de&rsquo;oraisa</em> (<span class="heb-inline">מצוה דאורייתא</span>) grounded in <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em> (<span class="heb-inline">ונקדשתי בתוך בני ישראל</span>); its rank above <em>tefillah</em> (<span class="heb-inline">תפילה</span>) itself; the architecture of the <em>nusach</em> (<span class="heb-inline">נוסח</span>) with the insertion of <em>David HaMelech</em>&rsquo;s <em>pasuk</em>; the <em>Rosh</em>/<em>Arizal</em> dispute over <em>&ldquo;l&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em>; the practices of jumping, trembling, and gazing upward; the mystical romance depicted in <em>Pirkei Heichalos</em>; the biography of <em>Rabbeinu Kalonymus HaZakein</em> from the Crusades through the burial in the <em>mikveh</em>; and the letter of <em>Rav Pirkoi ben Baboi</em>, recovered only in the Cairo Geniza, that reframes the ancient <em>Bnei Eretz Yisrael</em> practice of <em>Shabbos</em>-only <em>Kedushah</em> as a relic of persecution rather than a <em>minhag</em> to be preserved.</em></p>
+
+<h2>I. The Whole Month of Nissan as Yom Tov</h2>
+
+<h3>Rosh Chodesh Nissan and its Extension</h3>
+
+<p><em>Rosh Chodesh Nissan</em> (<span class="heb-inline">ראש חודש ניסן</span>) is not merely one day of festive weight but the doorway into a full month bearing the sanctity of the day. The <em>Shefa Kodesh</em> (<span class="heb-inline">שפע קודש</span>)<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> develops the doctrine that the entire month of <em>Nissan</em> (<span class="heb-inline">ניסן</span>) &mdash; anchored by <em>Pesach</em> (<span class="heb-inline">פסח</span>) and the redemption from <em>Mitzrayim</em> (<span class="heb-inline">מצרים</span>) &mdash; carries the <em>kedushah</em> of <em>Rosh Chodesh</em> throughout, and this teaching stands behind the well-established practice of omitting <em>tachanun</em> (<span class="heb-inline">תחנון</span>) the entire month and of maintaining a broadly festive demeanor. The foundation lies in the <em>Gemara</em> in <em>Shevuos</em>,<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> which derives that <em>Rosh Chodesh</em> is included in the <em>Torah</em>&rsquo;s designation <em>&ldquo;mo&rsquo;ed&rdquo;</em> (<span class="heb-inline">מועד</span>): <em>&ldquo;Rosh Chodesh ikri mo&rsquo;ed&rdquo;</em> (<span class="heb-inline">ראש חודש איקרי מועד</span>) &mdash; the day is subject to the framework of <em>Yom Tov</em> in defined respects, and this classification is what the <em>Shefa Kodesh</em> extends across the whole of the month.</p>
+
+<h3>Gehinnom Closed for the Month</h3>
+
+<p>The <em>Mordechai</em> (<span class="heb-inline">מרדכי</span>) on <em>Maseches Pesachim</em><a class="footnote-ref" id="ref1" href="#fn1">[1]</a> teaches that just as <em>Gehinnom</em> (<span class="heb-inline">גהינום</span>) is closed on <em>Shabbos</em>, so too it is closed on <em>Rosh Chodesh</em>. This ruling has a concrete halachic footprint. At <em>Minchah</em> of <em>Shabbos</em> the <em>tzibbur</em> recites <em>&ldquo;Tzidkascha Tzedek&rdquo;</em> (<span class="heb-inline">צדקתך צדק</span>) as a plea that the <em>din</em> of the <em>neshamos</em> waiting to re-enter <em>Gehinnom</em> be delayed; on a <em>Shabbos</em> that falls on <em>Erev Rosh Chodesh</em>, however, <em>&ldquo;Tzidkascha Tzedek&rdquo;</em> is omitted &mdash; the <em>neshamos</em> require no extension, since <em>Gehinnom</em> remains closed on <em>Rosh Chodesh</em> as well. The <em>Mordechai</em>&rsquo;s extension is that this closure persists throughout the entire month of <em>Nissan</em>, and this extension grounds the broader festive treatment of the month. From the <em>Mordechai</em>&rsquo;s own life a further weight adheres to the ruling: <em>Rabbeinu Mordechai ben Hillel Ashkenazi</em>, <em>talmid</em> of the <em>Maharam MiRotenburg</em>, was himself killed <em>al Kiddush Hashem</em> in the Rindfleisch massacres of 1298.</p>
+
+<h3>The Gra&rsquo;s Shabbos Hat on Rosh Chodesh</h3>
+
+<p>A related <em>minhag</em> preserved in the <em>Ma&rsquo;aseh Rav</em>: the <em>Gra</em> (<span class="heb-inline">גר&quot;א</span>) wore his <em>Shabbos</em> hat &mdash; a <em>spodik</em> (<span class="heb-inline">ספודיק</span>) in the <em>levush</em> of his time and place &mdash; on <em>Rosh Chodesh</em>, but did not change into the remainder of his <em>bigdei Shabbos</em>.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> The reasoning preserved by his <em>talmidim</em>: <em>Rosh Chodesh</em> is <em>Yom Tov</em> in <em>kedushah</em> but <em>muttar bi&rsquo;melachah</em> (<span class="heb-inline">מותר במלאכה</span>). The <em>neshamah</em> (<span class="heb-inline">נשמה</span>) experiences the full <em>Yom Tov</em>; the body does not, since ordinary <em>melachah</em> proceeds. <em>Kedushah</em> is <em>l&rsquo;maalah</em> (<span class="heb-inline">למעלה</span>) &mdash; in the head, the seat of the <em>neshamah</em> &mdash; and so the head wears the <em>Shabbos</em> hat while the rest of the body does not. The <em>Shulchan Aruch</em> in <em>Orach Chaim siman</em> <span class="heb-inline">תי&quot;ט</span> records the broader <em>minhag</em> to wear at least some <em>bigdei Shabbos</em> on <em>Rosh Chodesh</em>, and it is a <em>ma&rsquo;alah</em> to accustom children to this practice from a young age.</p>
+
+<h2>II. The Purpose of Chazaras HaShatz</h2>
+
+<p>The received explanation for <em>chazaras ha&rsquo;shatz</em> (<span class="heb-inline">חזרת הש&quot;ץ</span>) in every <em>tefillah</em> other than <em>Ma&rsquo;ariv</em> is well known: in earlier generations, not every member of the <em>tzibbur</em> was able to daven the <em>Shemoneh Esrei</em> on his own. There were no <em>siddurim</em>, many could not read, and the <em>chazarah</em> made it possible for the <em>am ha&rsquo;aretz</em> (<span class="heb-inline">עם הארץ</span>) to be <em>yotzei</em> by answering <em>amen</em> to each of the <em>brachos</em>. The category of <em>am ha&rsquo;aretz</em> in the classical sense no longer describes the contemporary <em>kehillah</em> &mdash; nor, one must acknowledge, does the classical <em>din</em> of <em>talmid chacham</em> apply with its historic force. The current mispallel occupies a middle ground, and the historic function of the <em>chazarah</em> now depends less on the literacy gap than on the deeper reason.</p>
+
+<p>Several <em>Acharonim</em> identify that deeper reason as something else entirely: the <em>chazarah</em> exists <em>so that the</em> tzibbur <em>can say</em> Kedushah. The whole institution of <em>chazaras ha&rsquo;shatz</em> &mdash; twice every weekday, three times on <em>Shabbos</em> &mdash; is built around that single moment of the <em>tzibbur</em>&rsquo;s <em>Kedushah</em>. This alone testifies to the centrality of the <em>Kedushah</em> in the halachic and hashkafic architecture of the day.</p>
+
+<h2>III. The Halachic Weight of Kedushah</h2>
+
+<h3>The Din of a Late Arrival</h3>
+
+<p>The <em>Gemara</em> in <em>Berachos</em><a class="footnote-ref" id="ref3" href="#fn3">[3]</a> rules &mdash; and the <em>Shulchan Aruch</em> in <em>Orach Chaim siman kuf-tes</em><a class="footnote-ref" id="ref4" href="#fn4">[4]</a> codifies &mdash; that one who arrives at shul as the <em>tzibbur</em> is approaching <em>Kedushah</em> may not begin his private <em>Shemoneh Esrei</em> until after the <em>chazan</em> has said <em>Kedushah</em>, in order to answer <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> (<span class="heb-inline">קדוש קדוש קדוש</span>) with the <em>tzibbur</em>. Even the individual&rsquo;s <em>tefillah b&rsquo;tzibbur</em> defers to the <em>Kedushah</em> &mdash; a striking measure of its rank within the structure of communal <em>tefillah</em>.</p>
+
+<h3>The Aruch HaShulchan&rsquo;s Tension</h3>
+
+<p>Precisely for that reason the <em>Aruch HaShulchan</em><a class="footnote-ref" id="ref5" href="#fn5">[5]</a> raises a structural tension. If <em>Kedushah</em> is so central that <em>Chazal</em> require the late arrival to delay his private <em>Amidah</em> in order to catch it, what right does an ordinary mispallel &mdash; who is already davening with the <em>tzibbur</em> &mdash; have to draw out his own <em>Shemoneh Esrei</em> at such length that the <em>chazan</em> reaches <em>Kedushah</em> while the mispallel is still in his silent <em>Amidah</em>? The <em>tzibbur</em> finishes in five or six minutes; the mispallel who lingers falls behind and forfeits participation in the <em>tzibbur</em>&rsquo;s <em>Kedushah</em>.</p>
+
+<p><em>Le&rsquo;halachah</em>, the mispallel who finds himself mid-<em>brachah</em> when the <em>chazan</em> reaches <em>Kedushah</em> may pause silently and have in mind what the <em>chazan</em> says &mdash; this listening posture does not constitute <em>hefsek</em>. But the <em>Aruch HaShulchan</em> does not offer this technical mechanism as his resolution. His answer is that <em>Chazal</em> did not <em>mechayev</em> the mispallel to truncate his <em>Shemoneh Esrei</em>. Where the mispallel is davening at length with genuine <em>kavvanah</em> &mdash; <em>&ldquo;halevai!&rdquo;</em> &mdash; the tension is real but not dispositive against extended <em>kavvanah</em>. The mispallel who is truly present in every <em>brachah</em> is not required to sacrifice his <em>Amidah</em> for the <em>Kedushah</em>, though every effort should be made to align the timing.</p>
+
+<h2>IV. Klal Yisrael&rsquo;s Shirah Above the Malachim&rsquo;s</h2>
+
+<p>The <em>Gemara</em> in <em>Chullin</em> tzadi-alef amud <em>bais</em><a class="footnote-ref" id="ref6" href="#fn6">[6]</a> teaches a doctrine of remarkable force: the <em>shirah</em> (<span class="heb-inline">שירה</span>) of <em>Klal Yisrael</em> stands at a higher <em>madreigah</em> than the <em>shirah</em> of the <em>malachei ha&rsquo;shareis</em> (<span class="heb-inline">מלאכי השרת</span>). The <em>sugya</em> substantiates this from two directions: the frequency of the <em>Kedushah</em> and the intimacy of the pronunciation of the <em>Shem</em>.</p>
+
+<p>How often, the <em>Gemara</em> asks, do the <em>malachim</em> recite <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em>? Several <em>shitos</em> are brought: once a day, once a week, once a month, once a year, once every <em>shemittah</em> (<span class="heb-inline">שמיטה</span>), once every <em>yovel</em> (<span class="heb-inline">יובל</span>) &mdash; and, according to one opinion, only once in their entire existence. <em>Klal Yisrael</em>, by contrast, recites <em>Kedushah</em> <em>twice every single day</em> at <em>Shacharis</em> and <em>Minchah</em>, without even counting the <em>Kedushah</em> of <em>Yotzeir Or</em> (<span class="heb-inline">יוצר אור</span>). And in the interval before the pronunciation of the <em>Shem</em>: when <em>Klal Yisrael</em> says <em>&ldquo;Shema Yisrael&rdquo;</em>, two words later the <em>Shem</em> is already pronounced. The <em>malachim</em> require three words &mdash; <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> &mdash; before <em>&ldquo;Hashem Tzeva&rsquo;os&rdquo;</em>. <em>Klal Yisrael</em> stands closer to the <em>Ribbono Shel Olam</em> than the <em>malachim</em> do. The <em>Gemara</em> designates the <em>Kedushah</em> itself as <em>shirah</em>: just as the <em>malachim</em> sing <em>shirah</em>, so does <em>Klal Yisrael</em>.</p>
+
+<h2>V. The Architecture of the Kedushah</h2>
+
+<h3>The Three Pesukim</h3>
+
+<p>The <em>Kedushah</em> opens with the invitation: <em>&ldquo;Nakdish es Shimcha ba&rsquo;olam, k&rsquo;shem she&rsquo;makdishim oso bi&rsquo;shmei marom&rdquo;</em> (<span class="heb-inline">נקדיש את שמך בעולם, כשם שמקדישים אותו בשמי מרום</span>) &mdash; we will sanctify Him below as He is sanctified above. The body of the <em>Kedushah</em> then consists of three <em>pesukim</em>:</p>
+
+<ol>
+  <li><em>&ldquo;Kadosh, kadosh, kadosh Hashem Tzeva&rsquo;os&rdquo;</em> &mdash; from <em>Yeshayahu</em> <span class="heb-inline">ו'</span>; the <em>shirah</em> of the <em>malachim</em>.</li>
+  <li><em>&ldquo;Baruch kevod Hashem mi&rsquo;mekomo&rdquo;</em> (<span class="heb-inline">ברוך כבוד ה' ממקומו</span>) &mdash; from <em>Yechezkel</em> <span class="heb-inline">ג'</span>; the <em>shirah</em> of the <em>malachim</em>.</li>
+  <li><em>&ldquo;Yimloch Hashem l&rsquo;olam, Elokayich Tziyon l&rsquo;dor va&rsquo;dor Halleluka&rdquo;</em> (<span class="heb-inline">ימלוך ה' לעולם, אלקיך ציון לדור ודור הללוי-ה</span>) &mdash; from <em>Tehillim</em> <span class="heb-inline">קמ&quot;ו:י'</span>; <em>not</em> from the <em>malachim</em>.</li>
+</ol>
+
+<h3>The Avudraham&rsquo;s Question</h3>
+
+<p>If the design of the <em>Kedushah</em> is to mirror the <em>shiras ha&rsquo;malachim</em>, the third <em>pasuk</em> is a puzzle: why is a <em>pasuk</em> from <em>Tehillim</em> &mdash; not the <em>shirah</em> of the <em>malachim</em> &mdash; inserted between the two <em>pesukim</em> that are? The <em>Avudraham</em><a class="footnote-ref" id="ref7" href="#fn7">[7]</a> offers a resolution that ties the structure directly to the theme of <em>Chullin</em> tzadi-alef: the only figure in the whole of Jewish history who came near to a <em>malach</em> in his <em>shirah</em> was <em>David HaMelech</em> (<span class="heb-inline">דוד המלך</span>). <em>David HaMelech</em> composed <em>Sefer Tehillim</em>, the enduring <em>shirah</em> of <em>Klal Yisrael</em>, and a <em>pasuk</em> of his is inserted to mark that <em>Klal Yisrael</em>, too, has a figure whose <em>shirah</em> stands beside the <em>malachim</em>&rsquo;s. The <em>Kedushah</em> is not the <em>shirah</em> of the <em>malachim</em> alone but the joint <em>shirah</em> of the <em>malachim</em> and <em>Klal Yisrael</em> represented by their <em>chazan</em>, <em>David HaMelech</em>.</p>
+
+<p>A secondary reason is offered as well. The <em>pasuk</em> mentions <em>Tziyon</em> (<span class="heb-inline">ציון</span>), and there is a <em>shitah</em> in the <em>Rishonim</em> that every <em>tefillah</em> must mention <em>Yerushalayim</em> (<span class="heb-inline">ירושלים</span>) and <em>Tziyon</em> &mdash; <em>&ldquo;im lo a&rsquo;aleh es Yerushalayim al rosh simchasi&rdquo;</em> (<span class="heb-inline">אם לא אעלה את ירושלים על ראש שמחתי</span>). The <em>Kedushah</em> of <em>chazaras ha&rsquo;shatz</em> is one place where this requirement is satisfied; the <em>Kedushah d&rsquo;Yotzeir Or</em> does not require it because the surrounding <em>brachos</em> already include it.</p>
+
+<h2>VI. Nusach HaKedushah &mdash; The Rosh and the Arizal</h2>
+
+<h3>The Litvish Practice and its Halachic Consequence</h3>
+
+<p>The scope of what the <em>kahal</em> recites during the <em>chazan</em>&rsquo;s <em>Kedushah</em> is the subject of a live <em>machlokes</em>. In Litvish <em>batei knesios</em>, the <em>kahal</em> recites only <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> and <em>&ldquo;Baruch kevod Hashem mi&rsquo;mekomo&rdquo;</em>. They do not say the bridging phrase <em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em> (<span class="heb-inline">לעומתם משבחים ואומרים</span>).</p>
+
+<p>This is not merely a stylistic difference. It has a direct halachic consequence in the <em>halachos</em> of <em>hefsek</em>. The <em>halachah</em> permits interrupting <em>Kri&rsquo;as Shema</em> (<span class="heb-inline">קריאת שמע</span>) for <em>Kedushah</em> &mdash; but only for the <em>essential pesukim</em>, namely <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> and <em>&ldquo;Baruch kevod Hashem mi&rsquo;mekomo&rdquo;</em>. One does <em>not</em> interrupt <em>Kri&rsquo;as Shema</em> for <em>&ldquo;L&rsquo;umasam...&rdquo;</em> The taxonomy is: within <em>Pesukei D&rsquo;zimra</em> (<span class="heb-inline">פסוקי דזמרה</span>) one may recite the entire <em>nusach</em>; within <em>Kri&rsquo;as Shema</em> proper, only the essentials are permitted.</p>
+
+<h3>The Rosh&rsquo;s Reasoning</h3>
+
+<p>The <em>Rosh</em><a class="footnote-ref" id="ref8" href="#fn8">[8]</a> supplies the reasoning by analogy to <em>Kaddish</em>. When does anyone say <em>&ldquo;Yisgadal v&rsquo;yiskadash Shmei Rabba&rdquo;</em> (<span class="heb-inline">יתגדל ויתקדש שמיה רבא</span>) together with the <em>chazan</em>? Nobody. The <em>chazan</em> says <em>&ldquo;Yisgadal&rdquo;</em>; the <em>kahal</em> answers <em>amen</em>. The <em>Kedushah</em>, in the <em>Rosh</em>&rsquo;s reading, follows the same model. The <em>chazan</em> says <em>&ldquo;Nakdishcha&rdquo;</em> (<span class="heb-inline">נקדישך</span>) &mdash; that is his invitation to the <em>kahal</em> to sanctify; the <em>kahal</em>&rsquo;s role is the response, not the invitation. According to the <em>Rosh</em>, the <em>kahal</em> should not even say <em>&ldquo;Nakdishcha&rdquo;</em> along with the <em>chazan</em>. The only words that belong to the <em>kahal</em> are the two response-<em>pesukim</em>. The Litvish <em>minhag</em> rests on this <em>shitah</em>.</p>
+
+<h3>The Arizal&rsquo;s Ruling</h3>
+
+<p>The <em>Arizal HaKadosh</em> (<span class="heb-inline">אריז&quot;ל הקדוש</span>),<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> however, ruled &mdash; on <em>kabbalah</em> grounds &mdash; that the <em>kahal</em> must recite the <em>entire</em> <em>nusach</em>: <em>&ldquo;Nakdishcha v&rsquo;na&rsquo;aritzcha&rdquo;</em>, the bridging phrases <em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em>, and the third <em>pasuk</em>. The reasoning is that each phrase corresponds to a specific <em>tikkun</em> in the upper worlds, and the <em>kahal</em>&rsquo;s participation is essential to the structural ascent. This is the ruling that stands behind the majority <em>Ashkenazi</em> practice today, in which the <em>kahal</em> says the full <em>nusach</em>.</p>
+
+<h3>The Magen Avraham&rsquo;s Harmonizing Pesak</h3>
+
+<p>The <em>Magen Avraham</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> supplies the harmonizing pesak. The phrases <em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em> are, in his reading, <em>descriptive narrative</em> &mdash; narrating that the second group of <em>malachim</em>, positioned opposite the first, also responds &mdash; and not part of the <em>Kedushah</em>&rsquo;s essential <em>pesukim</em>. Where the <em>minhag</em> is to recite them, they should be said <em>quietly</em>, and <em>only after the</em> chazan &mdash; not with him. The Litvish practice omits them; the <em>Ashkenazi</em> practice includes them; the <em>Magen Avraham</em>&rsquo;s qualification governs the manner in which they are said where they are said.</p>
+
+<h2>VII. Kedushah D&rsquo;Yotzeir Or is Not the Same Kedushah</h2>
+
+<p>The <em>Gemara</em> in <em>Megillah</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> establishes the category of <em>davar sh&rsquo;bi&rsquo;kedushah</em> (<span class="heb-inline">דבר שבקדושה</span>) &mdash; items that may not be said without a <em>minyan</em> of ten &mdash; and includes <em>Kedushah</em> in that list. It follows immediately that <em>Kedushah</em> proper cannot be said alone.</p>
+
+<p>What then is the status of the <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> embedded in the <em>Kedushah d&rsquo;Yotzeir Or</em>? An individual davening alone at home recites <em>Yotzeir Or</em> with <em>&ldquo;u&rsquo;v&rsquo;divrei kodshecha kasuv leimor: Kadosh, kadosh, kadosh...&rdquo;</em> (<span class="heb-inline">ובדברי קדשך כתוב לאמר: קדוש קדוש קדוש</span>). The <em>Rishonim</em> answer that this is <em>not</em> <em>Kedushah</em>. It is <strong>narrative</strong> &mdash; the mispallel is <em>describing</em> what the <em>malachim</em> say, not himself performing an act of <em>Kedushah</em>. The actual <em>Kedushah</em> takes place only in <em>chazaras ha&rsquo;shatz</em>; that is where the <em>mitzvah</em> of <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em> is discharged.</p>
+
+<p>The proof is sharp. If a <em>goy</em> held a gun to a Jew&rsquo;s head on <em>Shabbos</em> and demanded that he recite <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> as a performance of public <em>chillul Shabbos</em>, the Jew would be forbidden to comply. But an individual reciting the narrative <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> of <em>Yotzeir Or</em> commits no violation whatever, since in that context the words are not an act of <em>Kedushah</em>. The categorical distinction is intrinsic: <em>Kedushah</em> as <em>davar sh&rsquo;bi&rsquo;kedushah</em> exists only where the <em>tzibbur</em> is present to constitute the framework.</p>
+
+<h2>VIII. Kedushah as a Daily Mitzvah De&rsquo;Oraisa</h2>
+
+<h3>The Pasuk and the Two Kiyumim</h3>
+
+<p>The <em>pasuk</em> <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em> (<em>Vayikra</em> <span class="heb-inline">כ&quot;ב:ל&quot;ב</span>) is the source from which the <em>Gemara</em> derives the well-known <em>din</em> of <em>Kiddush Hashem</em> (<span class="heb-inline">קידוש השם</span>) in the classical case: where a <em>goy</em> demands public idolatry under threat of death, one gives one&rsquo;s life. <em>Baruch Hashem</em>, the gun-to-the-head case does not describe the daily reality of the contemporary Jew.</p>
+
+<h3>The Shaarei Kedushah&rsquo;s Chiddush</h3>
+
+<p>The <em>Shaarei Kedushah</em><a class="footnote-ref" id="ref23" href="#fn23">[23]</a> of <em>Rabbi Chaim Vital</em>, foremost <em>talmid</em> of the <em>Arizal</em>, develops the doctrine that the same <em>pasuk</em> grounds a <strong>daily <em>mitzvah</em></strong>: the <em>kiyum</em> of <em>Kiddush Hashem</em> in the form of the <em>Kedushah</em> recited with a <em>minyan</em>. The <em>Mishnah Berurah</em><a class="footnote-ref" id="ref11" href="#fn11">[11]</a> codifies this <em>lechatchilah</em>: when the mispallel stands for <em>Kedushah</em>, he should have explicitly in mind the words, <em>&ldquo;I am about to fulfill the</em> mitzvas aseih d&rsquo;oraisa <em>of &lsquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael.&rsquo;&rdquo;</em> This <em>kavvanah</em> is not decorative but essential to the <em>kiyum</em>, since the daily <em>Kedushah</em> is the principal non-martyrdom <em>kiyum</em> of the <em>pasuk</em>.</p>
+
+<p>The <em>chiddush</em> that follows is of significant halachic-hashkafic weight: the <em>Kedushah</em> stands on a <em>higher tier</em> than <em>tefillah</em> itself, which is <em>de&rsquo;rabbanan</em>. The mispallel who davens <em>Shemoneh Esrei</em> is discharging a <em>mitzvah de&rsquo;rabbanan</em>; the mispallel who says <em>Kedushah</em> with the <em>tzibbur</em> is discharging a <em>mitzvah de&rsquo;oraisa</em>. The <em>Arizal HaKadosh</em> was <em>makpid</em> on this <em>kavvanah</em>; saying <em>Kedushah</em> with this consciousness draws the <em>kedushah</em> down <em>&ldquo;b&rsquo;soch Bnei Yisrael&rdquo;</em>.</p>
+
+<h2>IX. Regel Yeshara &mdash; Joining the Stance of the Malachim</h2>
+
+<p>The <em>Terumas HaDeshen</em><a class="footnote-ref" id="ref12" href="#fn12">[12]</a> rules that during <em>Kedushah</em> one stands with feet together &mdash; <em>&ldquo;regel yeshara&rdquo;</em> (<span class="heb-inline">רגל ישרה</span>) &mdash; exactly as during <em>Shemoneh Esrei</em>. The reasoning is textual: the <em>pasuk</em> in <em>Yechezkel</em> <span class="heb-inline">א':ז'</span> describes the <em>malachim</em>: <em>&ldquo;v&rsquo;ragleihem regel yeshara&rdquo;</em> (<span class="heb-inline">ורגליהם רגל ישרה</span>). The mispallel physically joins the <em>malachim</em>&rsquo;s stance as he joins their <em>shirah</em>.</p>
+
+<h2>X. The Mystical Dimension &mdash; Pirkei Heichalos</h2>
+
+<h3>The Tur&rsquo;s Unusual Citation</h3>
+
+<p>The <em>Tur</em>, <em>Rabbeinu Yaakov Baal HaTurim</em> &mdash; who is characteristically distant from kabbalistic literature in his halachic compendium &mdash; uniquely cites <em>Pirkei Heichalos</em> (<span class="heb-inline">פרקי היכלות</span>) in his treatment of <em>Kedushah</em>.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> <em>Pirkei Heichalos</em> is a tannaitic-era mystical text &mdash; some twenty-odd pages dense with names of <em>malachim</em> and a description of the <em>shamayim</em> during <em>Kedushah</em>; only serious <em>mekubalim</em> ordinarily learn it. The <em>Tur</em>&rsquo;s decision to lift its imagery into mainstream halachic awareness signals how central this dimension is to the <em>Kedushah</em>&rsquo;s meaning.</p>
+
+<h3>The Scene Described</h3>
+
+<p>When <em>Yidden</em> below recite <em>Kedushah</em> &mdash; lifting their heels, gazing upward &mdash; the <em>Ribbono Shel Olam</em>, <em>kaviyachol</em> (<span class="heb-inline">כביכול</span>), experiences an immense <em>simchah</em>. It is as if <em>Klal Yisrael</em> and the <em>Ribbono Shel Olam</em> lock eyes; <em>Klal Yisrael</em> is in love with Him in that moment, and He looks back. He grasps the <em>Kisei HaKavod</em> (<span class="heb-inline">כסא הכבוד</span>) &mdash; specifically the part upon which the image of <em>Yaakov Avinu</em> is engraved (<em>&ldquo;Yaakov chakuk al Kisei HaKavod&rdquo;</em>, <span class="heb-inline">יעקב חקוק על כסא הכבוד</span>)<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> &mdash; the image standing for <em>Klal Yisrael</em> below. The <em>Midrash</em> describes what follows in language of unmistakable intimacy: <em>&ldquo;u&rsquo;mchabek u&rsquo;menashek&rdquo;</em> (<span class="heb-inline">ומחבק ומנשק</span>) &mdash; He embraces and kisses. He declares: <em>&ldquo;They are in love with Me!&rdquo;</em> &mdash; and at that moment, He awakens <em>geulah</em> (<span class="heb-inline">גאולה</span>).</p>
+
+<p><em>Klal Yisrael</em> has been doing this every day for centuries and the <em>geulah</em> has not yet come. Yet the scene is not thereby diminished. It remains a <em>rega</em> (<span class="heb-inline">רגע</span>) of <em>deveikus</em> (<span class="heb-inline">דביקות</span>) between <em>Klal Yisrael</em> and the <em>Ribbono Shel Olam</em> that the <em>poskim</em> bring down as <em>halachah</em>, not merely as poetic elaboration.</p>
+
+<h2>XI. The Mechanics &mdash; Jumping, Trembling, Gazing</h2>
+
+<h3>Jumping at Kadosh</h3>
+
+<p>The <em>Rishonim</em> and the <em>Shulchan Aruch</em> in <em>siman</em> <span class="heb-inline">קכ&quot;ה</span> and <span class="heb-inline">קכ&quot;ח</span><a class="footnote-ref" id="ref19" href="#fn19">[19]</a> describe the <em>minhag</em> of jumping at each <em>&ldquo;Kadosh&rdquo;</em>. Variations are recorded: some lift the toes only with heels remaining grounded; some lift the heels with toes grounded; some leave the ground entirely. The <em>Mishnah Berurah</em> records the full range. The <em>Magen Avraham</em> cautions against a complete jump in a shul where this is not the <em>minhag</em> of the community &mdash; <em>lest one provoke mockery</em> &mdash; and rules that <em>lechatchilah</em> the lifting of the heels suffices. The <em>mekubalim</em>: three lifts at the three <em>&ldquo;Kadosh&rdquo;</em>s and one at <em>&ldquo;Baruch kevod.&rdquo;</em></p>
+
+<h3>The Two Reasons for Motion</h3>
+
+<p>Two sources ground the practice of physical motion at the <em>Kedushah</em>:</p>
+
+<ul>
+  <li>The <em>Midrash Tanchuma</em><a class="footnote-ref" id="ref20" href="#fn20">[20]</a> develops the imagery of <em>Yeshayahu</em> <span class="heb-inline">ו':ב'</span>: the <em>malachim</em> have six wings &mdash; two cover the face, two cover the feet, and two carry them aloft (<em>&ldquo;u&rsquo;vishtayim y&rsquo;ofef&rdquo;</em>, <span class="heb-inline">ובשתים יעופף</span>) when they sing <em>Kedushah</em>. The mispallel mirrors the <em>malachim</em>&rsquo;s wing-motion as he joins their <em>shirah</em>.</li>
+  <li>The <em>Shibbolei HaLeket</em>,<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> citing <em>Rashi</em>, brings the <em>pasuk</em> in <em>Yeshayahu</em> <span class="heb-inline">ו':ד'</span>: <em>&ldquo;va&rsquo;yanu&rsquo;u amos ha&rsquo;sipim mi&rsquo;kol ha&rsquo;korei&rdquo;</em> (<span class="heb-inline">וינועו אמות הספים מקול הקורא</span>) &mdash; even the wooden and stone thresholds of the <em>Heichal</em> trembled when the <em>malachim</em> recited <em>Kedushah</em>. <em>Rashi</em>&rsquo;s <em>kal va&rsquo;chomer</em>: if the <em>eitzim v&rsquo;avanim</em> (<span class="heb-inline">עצים ואבנים</span>) tremble, all the more so must the mispallel.</li>
+</ul>
+
+<h3>Looking Upward</h3>
+
+<p>Though not explicit in the body of the <em>Shulchan Aruch</em>, the <em>nose&rsquo;ei keilim</em> record the practice of looking upward at <em>&ldquo;Kadosh, kadosh, kadosh.&rdquo;</em> The <em>mekubalim</em> hold that the eyes ought to be closed; the general <em>minhag</em> is that the eyes are open. Either way, the head is oriented upward &mdash; the physical posture of the mispallel enacts the theological content of the <em>Kedushah</em>.</p>
+
+<h2>XII. Rabbeinu Kalonymus HaZakein</h2>
+
+<p>The most consequential <em>Rishon</em> standing behind the <em>Ashkenazi</em> <em>nusach ha&rsquo;tefillah</em> and its <em>minhagim</em> is <em>Rabbeinu Kalonymus HaZakein</em> (<span class="heb-inline">רבינו קלונימוס הזקן</span>). Every <em>ben Torah</em> should know who he was.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a></p>
+
+<h3>The First Crusade &mdash; 1096 / <span class="heb-inline">תתנ&quot;ו</span></h3>
+
+<p>The First Crusade began in 1096.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> Pope Urban II called Christians to retake <em>Yerushalayim</em> from the Fatimid Caliphate; it took three years for the Crusader armies to take the city in July of 1099, with the slaughter of its Muslim and Jewish populations. But the Crusader path through Europe &mdash; particularly through Germany and France &mdash; left in its wake the devastation of the <em>kehillos ha&rsquo;kedoshos</em> known collectively by the acronym <em>ShUM</em> (<span class="heb-inline">שו&quot;ם</span>):<a class="footnote-ref" id="ref16" href="#fn16">[16]</a></p>
+
+<ul>
+  <li><strong><span class="heb-inline">ש</span></strong> &mdash; Speyer (<em>Shpira</em>, <span class="heb-inline">שפירא</span>)</li>
+  <li><strong><span class="heb-inline">ו</span></strong> &mdash; Worms (<em>Vermeiza</em>, <span class="heb-inline">ורמייזא</span>)</li>
+  <li><strong><span class="heb-inline">ם</span></strong> &mdash; Mainz (<em>Magentza</em>, <span class="heb-inline">מגנצא</span>)</li>
+</ul>
+
+<p>The <em>Maharal MiPrague</em> taught that every <em>ben Torah</em> is obligated to know this. These are the cities from which the <em>Ashkenazi</em> <em>mesorah</em> and the <em>nusach ha&rsquo;tefillah</em> descend &mdash; the brief and devastating window of the early <em>Rishonim</em> from <em>Rabbeinu Kalonymus HaZakein</em> through <em>Rashi</em>.</p>
+
+<h3>The Burial in the Mikveh</h3>
+
+<p><em>Rabbeinu Kalonymus HaZakein</em> was among the few survivors of the <em>gezeiros</em> in Worms. He fled to Mainz, where cousins took him and his son into their home. When he was <em>niftar</em>, however, Worms was still under siege &mdash; the community could not bring him to the <em>beis ha&rsquo;kevaros</em> of Worms, where his ancestors lay, though they wished to bring him to <em>kever avosav</em>.</p>
+
+<p>The <em>Rosh</em> in <em>Maseches Mo&rsquo;ed Katan</em> records the <em>ma&rsquo;aseh</em>, and the <em>Shulchan Aruch</em> in <em>Yoreh De&rsquo;ah siman shin-ayin-hei</em> brings the <em>pesak</em>:<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> the community placed the <em>aron</em> in the <em>mikveh</em>. Several weeks later, when the siege lifted, they transported him to Worms for <em>kevurah</em>. From this <em>ma&rsquo;aseh</em> the <em>Rosh</em> develops the halachic discussion of <em>kevurah zemannis</em> (<span class="heb-inline">קבורה זמנית</span>) &mdash; the parameters of permitted delay in <em>kevurah</em> and what constitutes an acceptable temporary interment. A snippet of catastrophic Jewish history sits embedded permanently in <em>halachah</em>.</p>
+
+<h3>The Chain of Sodos HaTefillah</h3>
+
+<p><em>Rabbeinu Kalonymus HaZakein</em>&rsquo;s <em>Torah</em> reaches later generations through a precise chain of transmission. The <em>hakdamos</em> to <em>Sefer Chassidim</em> record the sequence:</p>
+
+<blockquote>
+  <em><span class="heb-inline">רבינו קלונימוס הזקן</span> → his son → <span class="heb-inline">רבי יהודה החסיד</span> (author of <em>Sefer Chassidim</em>) → the <span class="heb-inline">רוקח</span></em>
+</blockquote>
+
+<p>The <em>sodos ha&rsquo;tefillah</em> (<span class="heb-inline">סודות התפילה</span>) were transmitted father-to-son and <em>rebbi-to-talmid</em>. The <em>Rokeach</em> &mdash; <em>Rabbi Elazar MiGarmeiza</em>, of Worms &mdash; was the most prolific writer of these <em>peirushei ha&rsquo;tefillah</em>. <em>Rashi</em> and <em>Tosafos</em> quote <em>Rabbeinu Kalonymus HaZakein</em> repeatedly, and most of the <em>Ashkenazi</em> <em>nusach ha&rsquo;tefillah</em> traces ultimately to him.</p>
+
+<h2>XIII. The Daily Chiyuv &mdash; Rabbeinu Kalonymus vs. Rashi</h2>
+
+<p><em>Rabbeinu Kalonymus HaZakein</em> writes a striking <em>teshuvah</em>: the <em>Kedushah</em> that a mispallel says as part of <em>Kedushah d&rsquo;Yotzeir Or</em> in the morning does <em>not</em> discharge the daily <em>chiyuv</em> of <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael.&rdquo;</em> To discharge that <em>chiyuv</em>, one must say the <em>Kedushah</em> of <em>chazaras ha&rsquo;shatz</em> &mdash; the <em>Kedushah</em> recited with the <em>minyan</em>.</p>
+
+<p><em>Rashi</em>, <em>talmid</em> of a <em>talmid</em> of <em>Rabbeinu Kalonymus</em>, dissents: <em>&ldquo;I have not found such a</em> chiyuv <em>in the</em> Gemara.<em>&rdquo;</em> <em>Rashi</em> regards the <em>Kedushah</em> as beautiful and beloved to the <em>Ribbono Shel Olam</em>, but not as constituting an absolute daily <em>chiyuv</em>.</p>
+
+<p>The received <em>pesak</em> follows <em>Rabbeinu Kalonymus</em>. The <em>Shulchan Aruch</em><a class="footnote-ref" id="ref18" href="#fn18">[18]</a> rules accordingly, and the <em>Zohar HaKadosh</em> treats the <em>Kedushah</em> as a <em>kiyum</em> to be discharged daily. The practical implication follows immediately: if a mispallel has missed <em>Kedushah</em> at <em>Shacharis</em>, he should make every effort to catch it at <em>Minchah</em>, or to locate a later <em>minyan</em>, and should not let the day pass without <em>Kedushah</em>.</p>
+
+<h2>XIV. The Bnei Eretz Yisrael Practice &mdash; and the Cairo Geniza</h2>
+
+<h3>The Old Minhag</h3>
+
+<p>In ancient <em>Eretz Yisrael</em> &mdash; long before the era of the <em>Shulchan Aruch</em> &mdash; the <em>minhag</em> was to recite <em>Kedushah</em> only on <em>Shabbos</em> and <em>Yom Tov</em>, not during the week. This is striking in light of everything said above about the daily <em>mitzvah</em>. The <em>Tosafos</em> in <em>Sanhedrin</em> <span class="heb-inline">ל&quot;ז ע&quot;ב</span><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> offers a kabbalistic reason for this ancient practice. The <em>malachim</em> have <em>six</em> wings, one for each weekday. On <em>Shabbos</em> they have no seventh wing on which to elevate the <em>Kedushah</em>; the <em>Ribbono Shel Olam</em> answers them, <em>&ldquo;I have a seventh wing below &mdash; </em>Klal Yisrael.<em>&rdquo;</em> On <em>Shabbos</em>, in this reading, the <em>Kedushah</em> is <em>Klal Yisrael</em>&rsquo;s; during the week it belongs to the <em>malachim</em>.</p>
+
+<h3>The Cairo Geniza</h3>
+
+<p>The history by which the real story of the <em>Shabbos</em>-only <em>Kedushah</em> came to be known is itself remarkable. In the late 1800s, two Scottish twin sisters &mdash; <em>Margaret Gibson</em> and <em>Agnes Smith Lewis</em> &mdash; devoted themselves to Semitic studies and traveled the world hunting for ancient manuscripts for the libraries and universities of Britain. <em>Solomon Schechter</em> was a Jew on the faculty of Cambridge. The sisters traveled to Egypt, to the ancient quarter of <em>Fustat</em> in Cairo where the <em>Rambam</em> had once lived, and there they learned of the Ben Ezra Synagogue&rsquo;s <em>geniza</em> &mdash; an upstairs <em>shaimos</em> repository hundreds of years deep. Schechter saw what they had brought back, recognized what it was, and traveled to Egypt himself. He spent months in an attic without windows or doors &mdash; sitting with the manuscripts of a thousand years of <em>Klal Yisrael</em> &mdash; sorting, cataloging, and arranging orderly transit to Cambridge. The bulk of the collection remains at Cambridge University Library to this day, available for scholarly consultation. The discovery transformed the modern scholarly understanding of ancient Jewish life.</p>
+
+<h3>Rav Pirkoi ben Baboi&rsquo;s Letter</h3>
+
+<p>Among the manuscripts recovered from the geniza was a letter from a previously unknown <em>Gaon</em>: <em>Rav Pirkoi ben Baboi</em> (<span class="heb-inline">רב פרקוי בן באבוי</span>),<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> a <em>talmid</em> of <em>Rav Yehudai Gaon</em> of the yeshiva of <em>Sura</em>. His letter, sharp in tone, is directed against several <em>minhagim</em> of <em>Eretz Yisrael</em> &mdash; including the <em>Shabbos</em>-only <em>Kedushah</em>.</p>
+
+<h3>The Yesod</h3>
+
+<p><em>Rav Pirkoi</em>&rsquo;s <em>yesod</em> is breathtaking and, on his own view, decisive. The only authentic, unbroken chain of <em>mesorah</em> from the <em>Beis HaMikdash</em> ran through <em>Bavel</em>. The <em>yeshivos</em> of <em>Eretz Yisrael</em> suffered <em>gezeiros</em>, <em>redifos</em>, and <em>shmad</em> (<span class="heb-inline">שמד</span>) on a continuous basis from non-Jewish authorities; the <em>minhagim</em> that emerged there in those generations, therefore, cannot be presumed to be unbroken <em>Torah sheba&rsquo;al peh</em>. They must be examined and, where the historical record allows, distinguished from authentic <em>minhag</em>.</p>
+
+<h3>The Historical Reason for Shabbos-Only Kedushah</h3>
+
+<p>According to <em>Rav Pirkoi</em>, the <em>Shabbos</em>-only <em>Kedushah</em> in <em>Eretz Yisrael</em> was <em>not</em> a kabbalistic <em>minhag</em> built on the <em>Tosafos</em>&rsquo; reading of the <em>malachim</em>&rsquo;s six wings. It was a <em>relic of persecution</em>. At one point there had been a <em>gezeirah</em> (a Byzantine-era decree) that forbade <em>tefillah be&rsquo;rabbim</em> (<span class="heb-inline">תפילה ברבים</span>) in <em>Eretz Yisrael</em> during the week; the <em>batei knesios</em> were closed. <em>Kedushah</em>, which requires a <em>minyan</em>, simply could not be said. When the <em>gezeirah</em> lifted, the <em>Shabbos</em>-only practice ossified into a <em>minhag</em>.</p>
+
+<p><em>Rav Pirkoi</em>&rsquo;s <em>pesak</em> is uncompromising: do not preserve a <em>minhag</em> born of <em>shmad</em>. Recite <em>Kedushah</em> daily, as in <em>Bavel</em>, where the <em>mesorah</em> ran without interruption. The kabbalistic reading of <em>Tosafos</em> is a beautiful theological gloss but does not, in his view, explain how the practice actually arose.</p>
+
+<h3>The Larger Machlokes</h3>
+
+<p>The <em>Kedushah</em> question was in fact a single facet of a far larger <em>machlokes</em> between the <em>Bnei Bavel</em> (<span class="heb-inline">בני בבל</span>) and the <em>Bnei Eretz Yisrael</em>. In the 900s, for two full years, the two communities observed the <em>Yamim Tovim</em> on different days<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> &mdash; <em>Pesach</em> on Sunday for one and Monday for the other; <em>Shavuos</em> on different days as well. The dispute concerned authority over the <em>luach</em> after the transition from empirical <em>Kiddush HaChodesh</em> by witnesses to the fixed <em>cheshbon</em>. <em>Bnei Eretz Yisrael</em> claimed authority by location; <em>Bnei Bavel</em> claimed it by <em>mesorah</em>. Every recitation of the <em>Kedushah</em> on a Tuesday morning stands downstream of this larger dispute.</p>
+
+<h2>XV. Synthesis</h2>
+
+<p>The <em>Kedushah</em> is the <em>tefillah</em> in which <em>Klal Yisrael</em> stands with the <em>malachim</em> and declares itself &mdash; through the <em>Gemara</em>&rsquo;s <em>chiddush</em> &mdash; higher than they are; embeds <em>David HaMelech</em>&rsquo;s <em>pasuk</em> alongside the <em>shirah</em> of the <em>malachim</em>; jumps or trembles or looks upward, mirroring the wing-motion and the trembling thresholds; locks eyes with the <em>Ribbono Shel Olam</em> while He embraces the image of <em>Yaakov</em> engraved upon the <em>Kisei HaKavod</em>; and discharges a daily <em>mitzvah de&rsquo;oraisa</em> that stands, in halachic weight, <em>l&rsquo;maalah</em> from <em>tefillah</em> itself.</p>
+
+<p>Behind the <em>Kedushah</em> stands <em>Rabbeinu Kalonymus HaZakein</em>&rsquo;s <em>teshuvah</em>, transmitted from the burning of <em>ShUM</em> through <em>Sefer Chassidim</em> and the <em>Rokeach</em> to every <em>Ashkenazi</em> <em>siddur</em> in use today. In front of it stands <em>Rav Pirkoi ben Baboi</em>&rsquo;s letter, unknown to the medieval <em>poskim</em> and recovered a thousand years later from a Cairo geniza through the work of two Scottish twins and a Cambridge Jew. May we say <em>Kedushah</em> tomorrow morning with all of it in mind.</p>
+
+<h2>XVI. Practical Summary</h2>
+
+<ul>
+  <li><strong>Say <em>Kedushah</em> daily with a <em>minyan</em>.</strong> This is the principal non-martyrdom <em>kiyum</em> of <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em> &mdash; a <em>mitzvah de&rsquo;oraisa</em> that stands above <em>tefillah</em> itself.</li>
+  <li><strong>Have explicit <em>kavvanah</em>.</strong> As one rises to <em>Kedushah</em>, articulate internally: <em>I am about to fulfill the</em> mitzvas aseih d&rsquo;oraisa <em>of &lsquo;v&rsquo;nikdashti.&rsquo;</em></li>
+  <li><strong>Stand <em>regel yeshara</em>.</strong> Feet together as in <em>Shemoneh Esrei</em>, joining the <em>malachim</em>&rsquo;s stance.</li>
+  <li><strong>Lift the heels at each <em>&ldquo;Kadosh&rdquo;</em> and at <em>&ldquo;Baruch kevod.&rdquo;</em></strong> <em>Lechatchilah</em>, lifting the heels suffices; do not perform a full jump outside a community where all do so.</li>
+  <li><strong>Say the essentials with the <em>chazan</em>; the bridging phrases quietly, after him.</strong> The <em>Magen Avraham</em>&rsquo;s harmonizing pesak between <em>Rosh</em> and <em>Arizal</em>.</li>
+  <li><strong>Do not interrupt <em>Kri&rsquo;as Shema</em> for anything beyond the essentials.</strong> Only <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> and <em>&ldquo;Baruch kevod Hashem mi&rsquo;mekomo.&rdquo;</em></li>
+  <li><strong>If <em>Kedushah</em> was missed at <em>Shacharis</em>, pursue it at <em>Minchah</em>.</strong> Do not let the day pass without <em>Kedushah</em>.</li>
+</ul>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Mordechai</em> on <em>Maseches Pesachim</em> &mdash; <em>Gehinnom</em> closed on <em>Rosh Chodesh</em> and throughout <em>Nissan</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Mordechai ben Hillel Ashkenazi</em> (the <em>Mordechai</em>, c. 1250&ndash;1298, <em>talmid</em> of the <em>Maharam MiRotenburg</em>; killed <em>al Kiddush Hashem</em> in the Rindfleisch massacres of 1298), in his commentary on the <em>Rif</em> on <em>Maseches Pesachim</em>, records the <em>mesorah</em> that <em>Gehinnom</em> is closed on <em>Rosh Chodesh</em> as it is on <em>Shabbos</em>. The <em>Mordechai</em>&rsquo;s extension &mdash; that <em>Gehinnom</em> remains closed throughout the entire month of <em>Nissan</em> &mdash; grounds the omission of <em>Tzidkascha Tzedek</em> at <em>Minchah</em> of <em>Shabbos</em> when <em>Shabbos</em> falls on <em>Erev Rosh Chodesh</em>, and the broader festive treatment of the month.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Shevuos</em> 10a &mdash; <em>&ldquo;Rosh Chodesh ikri mo&rsquo;ed.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>sugya</em> in the opening <em>perek</em> of <em>Shevuos</em> derives that <em>Rosh Chodesh</em> is included in the <em>Torah</em>&rsquo;s designation <em>&ldquo;mo&rsquo;ed&rdquo;</em> and is therefore subject to <em>dinei Yom Tov</em> in certain respects (offerings, omission of <em>tachanun</em>, festive demeanor). The <em>Gemara</em>&rsquo;s designation grounds the <em>Shefa Kodesh</em>&rsquo;s reading of the entire month of <em>Nissan</em> as carrying <em>kedushas Rosh Chodesh</em>.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Berachos</em> 21b &mdash; late arrival and the <em>chiyuv</em> to wait for <em>Kedushah</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> rules that one who arrives at shul as the <em>tzibbur</em> is approaching <em>Kedushah</em> must delay his private <em>Shemoneh Esrei</em> in order to answer <em>Kedushah</em> with the <em>tzibbur</em>. The <em>sugya</em> embeds the central role of <em>Kedushah</em> within the structure of communal <em>tefillah</em>: even an individual&rsquo;s <em>tefillah b&rsquo;tzibbur</em> defers to it.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Shulchan Aruch Orach Chaim siman</em> 109 &mdash; late arrival; ordering <em>Kedushah</em> before private <em>Shemoneh Esrei</em>.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> codifies the <em>sugya</em> in <em>Berachos</em>: one delays one&rsquo;s private <em>Shemoneh Esrei</em> when arriving late, in order to discharge <em>Kedushah</em> with the <em>tzibbur</em>. The <em>Mishnah Berurah</em> ad loc. elaborates the practical applications, including how to time <em>birkas avos</em> so that <em>Kedushah</em> is reached together with the <em>chazan</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Aruch HaShulchan Orach Chaim</em> on the tension between a long <em>Shemoneh Esrei</em> and missing <em>Kedushah</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yechiel Michel Epstein</em> (1829&ndash;1908), the <em>Aruch HaShulchan</em>, raises the structural tension: if <em>Kedushah</em> is so central, what right does an individual davening at length (<em>&ldquo;l&rsquo;seiavon&rdquo;</em>, <span class="heb-inline">לתיאבון</span>) have to fall behind the <em>chazan</em> and miss it? His resolution: <em>Chazal</em> did not <em>mechayev</em> truncating one&rsquo;s <em>tefillah</em>; if one is davening at length with genuine <em>kavvanah</em>, <em>&ldquo;halevai.&rdquo;</em> The tension is real but not dispositive against extended <em>kavvanah</em>.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Chullin</em> 91b &mdash; the <em>shirah</em> of <em>Klal Yisrael</em> stands at a higher <em>madreigah</em> than that of the <em>malachei ha&rsquo;shareis</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> brings the <em>derashah</em> that <em>Klal Yisrael</em>&rsquo;s <em>shirah</em> is <em>&ldquo;chavivim&rdquo;</em> (<span class="heb-inline">חביבים</span>) beyond the <em>malachim</em>&rsquo;: <em>Klal Yisrael</em> says <em>Kedushah</em> twice every day; the <em>malachim</em> in some <em>shitos</em> only once a day, once a week, once a year, or even once in their entire existence. <em>Klal Yisrael</em> pronounces the <em>Shem</em> after only two words (<em>&ldquo;Shema Yisrael&rdquo;</em>); the <em>malachim</em> need three (<em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em>). The <em>sugya</em> grounds <em>Chazal</em>&rsquo;s portrayal of <em>Klal Yisrael</em> as <em>closer</em> to the <em>Ribbono Shel Olam</em> than the <em>malachim</em>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Avudraham</em>, <em>Seder Tefillas Shabbos</em> / <em>Hilchos Tefillah</em> &mdash; <em>David HaMelech</em> as nearly a <em>malach</em>; the insertion of <em>&ldquo;Yimloch Hashem l&rsquo;olam.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbi David Avudraham</em> (Seville, mid-fourteenth century), in his classic commentary on the <em>siddur</em>, addresses the <em>kushya</em> of inserting a <em>pasuk</em> from <em>Tehillim</em> (<em>&ldquo;Yimloch Hashem l&rsquo;olam,&rdquo;</em> <em>Tehillim</em> 146:10) between the two <em>pesukim</em> of the <em>shiras ha&rsquo;malachim</em>. His resolution: <em>David HaMelech</em> alone among <em>bnei adam</em> reached a <em>madreigah</em> in <em>shirah</em> approaching the <em>malachim</em>; we represent <em>Klal Yisrael</em>&rsquo;s parallel voice in the <em>Kedushah</em> by inserting his <em>pasuk</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Rosh</em>, <em>Maseches Berachos perek</em> 5 &mdash; the <em>nusach ha&rsquo;Kedushah</em>: only the response, not <em>&ldquo;Nakdishcha&rdquo;</em> or <em>&ldquo;L&rsquo;umasam.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbeinu Asher ben Yechiel</em> (the <em>Rosh</em>, c. 1250&ndash;1327, Germany and Toledo), in his discussion of the <em>Kedushah</em>, reasons by analogy from <em>Kaddish</em>: just as the <em>kahal</em> does not say <em>&ldquo;Yisgadal v&rsquo;yiskadash&rdquo;</em> with the <em>chazan</em> &mdash; only responds <em>amen</em> &mdash; so too in <em>Kedushah</em>, the <em>chazan</em>&rsquo;s <em>&ldquo;Nakdishcha&rdquo;</em> is the invitation, and the <em>kahal</em>&rsquo;s role is the response: <em>&ldquo;Kadosh, kadosh, kadosh&rdquo;</em> and <em>&ldquo;Baruch kevod Hashem mi&rsquo;mekomo.&rdquo;</em> The Litvish <em>minhag</em> that omits <em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em> from the <em>kahal</em>&rsquo;s recitation rests on this <em>shitah</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Magen Avraham</em> on <em>Shulchan Aruch Orach Chaim siman</em> 125 &mdash; <em>&ldquo;L&rsquo;umasam&rdquo;</em> as descriptive narrative, not the <em>Kedushah</em> proper.</span>
+  <span class="expanded">&mdash; <em>Rabbi Avraham HaLevi Gombiner</em> (the <em>Magen Avraham</em>, c. 1635&ndash;1682, Kalish), in his commentary on the <em>Shulchan Aruch</em>, reconciles the two practices. The <em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em> phrases, in his reading, are descriptive &mdash; narrating that the second group of <em>malachim</em>, opposite the first, also responds &mdash; and not part of the <em>Kedushah</em>&rsquo;s essential <em>pesukim</em>. His <em>pesak</em>: where the <em>minhag</em> is to say them, do so quietly and only after the <em>chazan</em>; do not interrupt <em>Kri&rsquo;as Shema</em> for them.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Megillah</em> 23b &mdash; <em>Kedushah</em> as a <em>davar sh&rsquo;bi&rsquo;kedushah</em>; requirement of a <em>minyan</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Megillah</em> establishes the category of <em>davar sh&rsquo;bi&rsquo;kedushah</em> &mdash; items that may not be said without a <em>minyan</em> of ten &mdash; and includes <em>Kedushah</em> in that list. The <em>sugya</em> grounds the <em>Rishonim</em>&rsquo;s distinction between the actual <em>Kedushah</em> in <em>chazaras ha&rsquo;shatz</em> (which requires a <em>minyan</em>) and the narrative <em>Kedushah d&rsquo;Yotzeir Or</em> (which an individual recites alone, <em>describing</em> what the <em>malachim</em> say rather than performing <em>Kedushah</em> as such).</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Mishnah Berurah siman</em> 125 &mdash; <em>kavvanah</em> for <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em> at <em>Kedushah</em>.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em>, codifying the <em>Shaarei Kedushah</em> and the <em>Arizal</em>, rules <em>lechatchilah</em> that one should have explicit <em>kavvanah</em> when standing for <em>Kedushah</em>: <em>&ldquo;I am about to fulfill the</em> mitzvas aseih d&rsquo;oraisa <em>of &lsquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael.&rsquo;&rdquo;</em> The <em>kavvanah</em> is essential to the <em>kiyum</em>, since the daily <em>Kedushah</em> is the principal non-martyrdom <em>kiyum</em> of the <em>pasuk</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Terumas HaDeshen</em> &mdash; <em>regel yeshara</em> at <em>Kedushah</em>, mirroring the <em>malachim</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yisrael Isserlein</em> (the <em>Terumas HaDeshen</em>, c. 1390&ndash;1460, Austria), in his <em>Shu&rsquo;t</em>, rules that during <em>Kedushah</em> one stands with feet together &mdash; <em>&ldquo;regel yeshara&rdquo;</em> &mdash; paralleling the stance of <em>Shemoneh Esrei</em>. The textual basis is the <em>pasuk</em> in <em>Yechezkel</em> 1:7 describing the <em>malachim</em>: <em>&ldquo;v&rsquo;ragleihem regel yeshara.&rdquo;</em> The mispallel physically joins the <em>malachim</em>&rsquo;s posture as he joins their <em>shirah</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Tur Orach Chaim</em> at the close of <em>Hilchos Tefillah</em> &mdash; citation of <em>Pirkei Heichalos</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Yaakov Baal HaTurim</em> (1269&ndash;1343, son of the <em>Rosh</em>) &mdash; characteristically distant from kabbalistic literature in his halachic compendium &mdash; uniquely cites <em>Pirkei Heichalos</em> in his treatment of <em>Kedushah</em>. <em>Pirkei Heichalos</em> is a tannaitic-era mystical text describing the seven <em>heichalos</em> of the <em>shamayim</em> and the <em>malachim</em>&rsquo;s <em>Kedushah</em>; among its passages is the description of the <em>Ribbono Shel Olam</em>&rsquo;s <em>simchah</em> when <em>Klal Yisrael</em> recites <em>Kedushah</em>, His grasp of the <em>Kisei HaKavod</em>, and the embrace of the <em>demus Yaakov</em>. The <em>Tur</em>&rsquo;s citation lifted the kabbalistic dimension of <em>Kedushah</em> into mainstream halachic awareness.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Midrash</em> &mdash; <em>&ldquo;Yaakov chakuk al Kisei HaKavod&rdquo;</em>; <em>&ldquo;u&rsquo;mchabek u&rsquo;menashek.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Chazal</em> in <em>Bereishis Rabbah</em>, <em>Pirkei d&rsquo;Rabbi Eliezer</em>, and parallel <em>midrashim</em> develop the image: <em>Yaakov Avinu</em>&rsquo;s likeness is engraved on the <em>Kisei HaKavod</em>, standing for <em>Klal Yisrael</em>; when <em>Klal Yisrael</em> below recites <em>Kedushah</em>, the <em>Ribbono Shel Olam</em>, <em>kaviyachol</em>, embraces and kisses the engraved image &mdash; declaring <em>&ldquo;They are in love with Me!&rdquo;</em> and arousing <em>geulah</em>. The <em>Midrash</em> is the kabbalistic ground for the <em>Pirkei Heichalos</em> passage cited in the <em>Tur</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <div class="note-academic">First Crusade, 1096 (<span class="heb-inline">תתנ&quot;ו</span>) &mdash; declared by Pope Urban II in 1095 to retake <em>Yerushalayim</em> from the Fatimid Caliphate; Crusader armies took <em>Yerushalayim</em> in July 1099 with the slaughter of its Muslim and Jewish populations. The Rhineland massacres of late spring 1096 &mdash; the <em>Volkskreuzzug</em> of Peter the Hermit and Count Emicho &mdash; devastated the Jewish communities of Speyer, Worms, Mainz, Cologne, and others; thousands chose <em>Kiddush Hashem</em> by their own hand or were murdered. The events are recorded in the early <em>piyutim</em> of <em>ShUM</em>, in the chronicles of <em>Rabbi Shlomo bar Shimshon</em> and the anonymous <em>Mainz Anonymous</em>, and underlie the <em>kinos</em> of <em>Tishah B&rsquo;Av</em> (<em>&ldquo;Mi Yitten Roshi Mayim&rdquo;</em> and parallel compositions) attributed to <em>Rabbi Kalonymus ben Yehudah HaZakein</em>.</div>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <div class="note-academic"><strong><em>ShUM</em></strong> &mdash; the acronym for the three <em>kehillos ha&rsquo;kedoshos</em> of the Rhineland whose <em>takkanos</em>, <em>minhagim</em>, and <em>piyutim</em> shaped <em>Yahadus Ashkenaz</em>: Speyer (<em>Shpira</em>), Worms (<em>Vermeiza</em>), and Mainz (<em>Magentza</em>). The three communities held joint synods (<em>Takkanos Shum</em>, twelfth&ndash;thirteenth centuries) that produced foundational <em>takkanos</em> in <em>dinei ishus</em>, financial law, and communal governance. The communities were destroyed in 1096 (most thoroughly), in the Second Crusade (1146), and in the Black Death persecutions (1349); the <em>Maharal MiPrague</em> emphasized that every <em>ben Torah</em> must know that the <em>mesorah</em> of <em>Ashkenaz</em> traces to these <em>kehillos</em> in the brief window from <em>Rabbeinu Kalonymus HaZakein</em> through <em>Rashi</em>.</div>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Rosh</em>, <em>Maseches Mo&rsquo;ed Katan perek</em> 3; <em>Shulchan Aruch Yoreh De&rsquo;ah siman</em> 375 &mdash; delayed burial; <em>kever</em> in the <em>mikveh</em>.</span>
+  <span class="expanded">&mdash; The <em>Rosh</em> in <em>Mo&rsquo;ed Katan</em> records the <em>ma&rsquo;aseh</em> of the burial of <em>Rabbeinu Kalonymus HaZakein</em>: he was <em>niftar</em> in Mainz under siege, where he had fled from Worms. Unable to transport him to the <em>beis ha&rsquo;kevaros</em> of Worms (where his ancestors lay), the community placed his <em>aron</em> in the <em>mikveh</em> for several weeks until the siege lifted. From this <em>ma&rsquo;aseh</em> the <em>Rosh</em> develops the halachic discussion of <em>kevurah zemannis</em> and the parameters of permitted delay in <em>kevurah</em>; the <em>Shulchan Aruch</em> brings the <em>pesak</em>. A snippet of catastrophic Jewish history embedded permanently in <em>halachah</em>.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Shulchan Aruch Orach Chaim siman</em> 109 / <em>siman</em> 90:9 &mdash; daily <em>chiyuv</em> of <em>Kedushah b&rsquo;tzibbur</em>.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> codifies the <em>pesak</em> of <em>Rabbeinu Kalonymus HaZakein</em> against <em>Rashi</em>: one is required to make every effort to daven <em>b&rsquo;tzibbur</em> in order to discharge <em>Kedushah</em>, <em>Kaddish</em>, and <em>Barchu</em>. <em>Mishnah Berurah</em> ad loc. elaborates: if <em>Kedushah</em> at <em>Shacharis</em> is missed, one should pursue a <em>minyan</em> at <em>Minchah</em> or in another shul; the daily <em>kiyum</em> should not be allowed to lapse. The <em>Zohar HaKadosh</em> reinforces this <em>kiyum</em> on kabbalistic grounds.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Shulchan Aruch Orach Chaim siman</em> 125 (and parallel discussion in <em>siman</em> 128) &mdash; jumping at <em>&ldquo;Kadosh&rdquo;</em>; the <em>Magen Avraham</em>&rsquo;s qualification.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> records the <em>minhag</em> of lifting the heels (or fully jumping) at the three <em>&ldquo;Kadosh&rdquo;</em>s and at <em>&ldquo;Baruch kevod,&rdquo;</em> mirroring the <em>malachim</em>&rsquo; wing-motion. <em>Mishnah Berurah</em> brings the variations: full jump, lifting heels with toes grounded, lifting toes with heels grounded. <em>Magen Avraham</em> warns that one should not perform a full jump in a shul where this is not the <em>minhag</em>, lest one provoke mockery; <em>lechatchilah</em> lifting the heels suffices. <em>Mekubalim</em>: three lifts at the three <em>&ldquo;Kadosh,&rdquo;</em> one at <em>&ldquo;Baruch kevod.&rdquo;</em></span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Midrash Tanchuma</em> &mdash; <em>malachim</em>&rsquo; six wings; <em>&ldquo;u&rsquo;vishtayim y&rsquo;ofef&rdquo;</em> at <em>Kedushah</em>.</span>
+  <span class="expanded">&mdash; The <em>Midrash Tanchuma</em> develops the imagery of <em>Yeshayahu</em> 6:2: the <em>serafim</em> have six wings &mdash; two cover the face, two cover the feet, and two carry them aloft (<em>&ldquo;u&rsquo;vishtayim y&rsquo;ofef&rdquo;</em>) when they sing <em>Kedushah</em>. The <em>Midrash</em> is the principal source for the <em>minhag</em> of physical motion (jumping, lifting heels, swaying) at the <em>Kedushah</em>: the mispallel mirrors the <em>malachim</em>&rsquo;s flight as he joins their <em>shirah</em>.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Tosafos Sanhedrin</em> 37b &mdash; six wings of the <em>malachim</em>; <em>Klal Yisrael</em> as the seventh on <em>Shabbos</em>.</span>
+  <span class="expanded">&mdash; <em>Tosafos</em> in <em>Sanhedrin</em> develops the kabbalistic resolution offered for the ancient <em>minhag</em> of <em>Bnei Eretz Yisrael</em> reciting <em>Kedushah</em> only on <em>Shabbos</em> and <em>Yom Tov</em>. Six of the <em>malachim</em>&rsquo;s wings correspond to the six weekdays; on <em>Shabbos</em> there is no seventh wing. The <em>Ribbono Shel Olam</em> declares: <em>&ldquo;I have a seventh wing &mdash; </em>Klal Yisrael <em>below&rdquo;</em>; therefore on <em>Shabbos</em> the <em>Kedushah</em> is <em>Klal Yisrael</em>&rsquo;s, while during the week it remains the <em>malachim</em>&rsquo;s. <em>Rav Pirkoi ben Baboi</em>&rsquo;s letter from the <em>geniza</em> displaces this kabbalistic explanation with a historical-political one.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <div class="note-academic">The Saadia&ndash;Ben Meir calendar dispute, 921&ndash;923 CE &mdash; between <em>Rav Saadia Gaon</em> (in <em>Bavel</em>) and <em>Ben Meir</em> (head of the yeshiva of <em>Eretz Yisrael</em>) &mdash; over the determination of the <em>luach</em> after the transition from empirical <em>Kiddush HaChodesh</em> by witnesses to fixed <em>cheshbon</em>. <em>Ben Meir</em> claimed authority by location (<em>Eretz Yisrael</em>); <em>Rav Saadia</em> claimed it by <em>mesorah</em> from the <em>Tannaim</em>. For two years (922 and 923) the <em>kehillos</em> divided: <em>Pesach</em> on different days, <em>Shavuos</em> on different days. <em>Rav Saadia</em>&rsquo;s authority eventually prevailed and the <em>luach</em> followed the Babylonian <em>cheshbon</em>. The dispute is the most acute historical instance of the broader <em>Bnei Bavel</em> / <em>Bnei Eretz Yisrael</em> tension within which <em>Rav Pirkoi ben Baboi</em>&rsquo;s letter (a century earlier) belongs.</div>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Shaarei Kedushah</em> (<em>Rabbi Chaim Vital</em>) &mdash; daily <em>mitzvah de&rsquo;oraisa</em> of <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbi Chaim Vital</em> (1542&ndash;1620), foremost <em>talmid</em> of the <em>Arizal</em>, in <em>Shaarei Kedushah</em> develops the doctrine that the <em>pasuk</em> <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em> (<em>Vayikra</em> 22:32) grounds not only the well-known <em>chiyuv mesiras nefesh</em> but also a <strong>daily</strong> <em>mitzvah de&rsquo;oraisa</em>, fulfilled by reciting <em>Kedushah</em> with a <em>minyan</em>. The <em>kiyum</em> places <em>Kedushah</em> on a higher tier than <em>tefillah</em> itself (which is <em>de&rsquo;rabbanan</em>) and grounds the <em>Mishnah Berurah</em>&rsquo;s requirement of explicit <em>kavvanah</em>.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short"><em>Shibbolei HaLeket</em> (<em>Rabbi Tzidkiyah HaRofei</em>), citing <em>Rashi</em> on <em>&ldquo;va&rsquo;yanu&rsquo;u amos ha&rsquo;sipim.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbi Tzidkiyah ben Avraham HaRofei</em> (the <em>Shibbolei HaLeket</em>, c. 1210&ndash;1280, Italy), an early <em>Rishon</em> of the Italian <em>chachomim</em>, in his halachic compendium brings <em>Rashi</em>&rsquo;s reading of the <em>pasuk</em> in <em>Yeshayahu</em> 6:4: <em>&ldquo;va&rsquo;yanu&rsquo;u amos ha&rsquo;sipim mi&rsquo;kol ha&rsquo;korei&rdquo;</em> &mdash; even the wooden and stone thresholds of the <em>Heichal</em> trembled when the <em>malachim</em> recited <em>Kedushah</em>. <em>Rashi</em>&rsquo;s <em>kal va&rsquo;chomer</em>: if <em>&ldquo;eitzim v&rsquo;avanim&rdquo;</em> tremble, how much more so should we. The <em>Shibbolei HaLeket</em>&rsquo;s citation grounds the <em>minhag</em> of trembling and physical motion at <em>Kedushah</em> as a <em>din</em> derived from the <em>pasuk</em>, not merely a kabbalistic embellishment.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <div class="note-academic"><strong><em>Rabbeinu Kalonymus HaZakein</em></strong> (<em>Rabbi Kalonymus ben Meshullam</em>, late tenth&ndash;early eleventh century, Italy and the Rhineland) &mdash; foundational <em>Rishon</em> of <em>Yahadus Ashkenaz</em>; survivor of the destruction of Worms in 1096 (per the chronicles); transmitter of the chain of <em>sodos ha&rsquo;tefillah</em> recorded in the <em>hakdamos</em> to <strong><em>Sefer Chassidim</em></strong>: <em>Rabbeinu Kalonymus HaZakein</em> → his son → <em>Rabbi Yehudah HaChassid</em> (1140&ndash;1217, Regensburg, author of <em>Sefer Chassidim</em>) → <strong>the <em>Rokeach</em></strong> (<em>Rabbi Elazar MiGarmeiza</em>, c. 1176&ndash;1238, Worms; the most prolific writer of <em>peirushei ha&rsquo;tefillah</em> in the <em>Chassidei Ashkenaz</em> tradition). <em>Rabbeinu Kalonymus</em>&rsquo;s <em>teshuvah</em> on <em>Kedushah</em> rules that the embedded <em>Kedushah d&rsquo;Yotzeir Or</em> does not discharge the daily <em>chiyuv</em> of <em>&ldquo;v&rsquo;nikdashti&rdquo;</em>; <em>Rashi</em>, <em>talmid</em>-<em>talmid</em> of <em>Rabbeinu Kalonymus</em>, dissents &mdash; but the <em>Shulchan Aruch</em> rules with <em>Rabbeinu Kalonymus</em>. Most of the <em>nusach ha&rsquo;tefillah Ashkenaz</em> traces ultimately to him.</div>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <div class="note-academic"><strong><em>Rav Pirkoi ben Baboi</em></strong> (early ninth century, <em>Bavel</em>) &mdash; <em>talmid</em> of <em>Rav Yehudai Gaon</em> (head of the yeshiva of <em>Sura</em>, mid-eighth century). His polemical letter to the communities of <em>Eretz Yisrael</em> and <em>Tzafon Afrika</em>, recovered in fragments from the <strong>Cairo Geniza</strong> (the <em>geniza</em> of the Ben Ezra Synagogue in Fustat, brought to Cambridge in 1896 by Solomon Schechter through the work of Margaret Gibson and Agnes Smith Lewis), argues against several <em>minhagei Eretz Yisrael</em> &mdash; most notably the <em>Shabbos</em>-only <em>Kedushah</em>. His <em>yesod</em>: the only continuous, unbroken <em>mesorah</em> from the <em>Beis HaMikdash</em> ran through <em>Bavel</em>; the <em>minhagim</em> of <em>Eretz Yisrael</em> emerged under <em>shmad</em>, <em>gezeiros</em>, and forced closures of <em>batei knesios</em>, and several should be reformed accordingly. The <em>Shabbos</em>-only <em>Kedushah</em> in particular he attributes to a Byzantine-era <em>gezeirah</em> against weekday <em>tefillah be&rsquo;rabbim</em>, not to authentic kabbalistic <em>minhag</em>. The letter was unknown to medieval <em>poskim</em> and is now central to scholarly understanding of <em>Bnei Bavel</em> / <em>Bnei Eretz Yisrael</em> tensions.</div>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short"><em>Shefa Kodesh</em> &mdash; <em>kedushas chodesh Nissan</em> as extending throughout the entire month.</span>
+  <span class="expanded">&mdash; <em>Shefa Kodesh</em> is the <em>sefer</em> of <em>Rabbi Yissachar Dov of Belz</em> (1854&ndash;1926, third <em>Rebbe</em> of Belz) on the <em>Torah</em> and <em>mo&rsquo;adim</em>, in the <em>mesorah</em> of his grandfather the <em>Sar Shalom of Belz</em>. He develops the kabbalistic-chassidishe reading that the entire month of <em>Nissan</em>, anchored by <em>Pesach</em> and the redemption from <em>Mitzrayim</em>, carries the <em>kedushah</em> of <em>Rosh Chodesh</em> throughout &mdash; explaining the <em>minhag</em> to omit <em>tachanun</em> the entire month and to maintain festive demeanor.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <span class="short"><em>Minhag HaGra</em> &mdash; <em>Shabbos</em> hat (<em>spodik</em>) on <em>Rosh Chodesh</em>; cf. <em>Shulchan Aruch Orach Chaim siman</em> 419.</span>
+  <span class="expanded">&mdash; Recorded in the <em>Ma&rsquo;aseh Rav</em> and the <em>Minhagei HaGra</em>: <em>Rabbi Eliyahu of Vilna</em> (1720&ndash;1797, the <em>Gra</em>) wore his <em>Shabbos</em> hat &mdash; a <em>spodik</em> in the <em>levush</em> of his time &mdash; on <em>Rosh Chodesh</em>, but did not change into the rest of his <em>bigdei Shabbos</em>. The reasoning preserved by his <em>talmidim</em>: <em>Rosh Chodesh</em> is <em>Yom Tov</em> in <em>kedushah</em> but <em>muttar bi&rsquo;melachah</em>; the <em>neshamah</em> experiences the full <em>Yom Tov</em> while the body still does <em>melachah</em>, so the head &mdash; seat of the <em>neshamah</em> &mdash; wears <em>Shabbos</em> garb while the rest of the body does not. The <em>Shulchan Aruch</em> in <em>siman</em> 419 records the broader <em>minhag</em> to wear at least some <em>bigdei Shabbos</em> on <em>Rosh Chodesh</em>.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn29">
+  <span class="short"><em>Arizal HaKadosh</em>, <em>Peri Etz Chaim</em> / <em>Shaar HaKavvanos</em> &mdash; <em>kabbalah</em> requirement to recite the full <em>nusach ha&rsquo;Kedushah</em>, including <em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Rabbi Yitzchak Luria</em> (the <em>Arizal</em>, 1534&ndash;1572, Tzfas), as transmitted in <em>Peri Etz Chaim</em> and <em>Shaar HaKavvanos</em> by <em>Rabbi Chaim Vital</em>, ruled &mdash; against the <em>Rosh</em>&rsquo;s narrow reading &mdash; that the <em>kahal</em> recites the entire <em>nusach ha&rsquo;Kedushah</em>: <em>&ldquo;Nakdishcha v&rsquo;na&rsquo;aritzcha,&rdquo;</em> the bridging phrases (<em>&ldquo;L&rsquo;umasam meshabchim v&rsquo;omrim&rdquo;</em>), and the third <em>pasuk</em>. The basis is kabbalistic: each phrase corresponds to a specific <em>tikkun</em> in the upper worlds, and the <em>kahal</em>&rsquo;s participation is essential to the structural ascent. The <em>Ashkenazi</em> <em>minhag</em> follows the <em>Arizal</em>; the Litvish <em>minhag</em> follows the <em>Rosh</em>. <em>Magen Avraham</em>&rsquo;s qualification (recite quietly, after the <em>chazan</em>) is the harmonizing <em>pesak</em>.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded <span class="heb-inline">ראש חודש ניסן תשפ&quot;ה</span> &middot; 30 March 2025 &mdash; <em>Kedushah</em> as a daily <em>mitzvah de&rsquo;oraisa</em> of <em>&ldquo;v&rsquo;nikdashti b&rsquo;soch Bnei Yisrael&rdquo;</em>; the architecture of the <em>nusach</em> with the insertion of <em>David HaMelech</em>&rsquo;s <em>pasuk</em>; the <em>Rosh</em>/<em>Arizal</em> <em>machlokes</em> harmonized by the <em>Magen Avraham</em>; the mystical romance depicted in <em>Pirkei Heichalos</em>; <em>Rabbeinu Kalonymus HaZakein</em> from the Crusades through the burial in the <em>mikveh</em>; and <em>Rav Pirkoi ben Baboi</em>&rsquo;s letter from the Cairo Geniza. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice; sharpens the <em>Rabbeinu Kalonymus</em> / <em>Rashi</em> dispute; sets the <em>Shefa Kodesh</em> in continuity with the <em>Gemara</em> in <em>Shevuos</em>; and closes with a practical summary of the six items to internalize before the next <em>Kedushah</em>.
+</footer>
+
+</body>
+</html>

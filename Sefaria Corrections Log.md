@@ -182,3 +182,27 @@ New entries added each Sunday by the automated scheduled task. Format for each w
 ---
 
 *Weekly entries continue below.*
+
+---
+
+## Retroactive backfill pass — Batch 6 (ran 2026-09-06)
+
+Verified inline during 4-agent Sefer Edition pipeline (Sefaria verify integrated as agent #3, per updated pipeline).
+
+### 2025-03-23 — HaKel HaGadol HaGibor v'HaNorah, the Two Bows, and Birkat Gevurot
+- **Sefaria pass:** 0 corrections, 1 verification (Yoma 69b sugya of Yirmiyahu/Daniel/Anshei Knesses HaGedolah verbatim confirmed), 3 preserved (Satanov historical, R' Aharon Kotler oral mesorah, Rav Fisher/Rav Auerbach oral teshuvos).
+
+### 2025-03-30 — Kedushah — The Daily Mitzvah of Kiddush Hashem
+- **Sefaria pass:** 0 corrections, 0 verifications, 5 preserved (all historical/biographical: First Crusade, ShUM, Saadia–Ben Meir calendar dispute, Rabbeinu Kalonymus HaZakein, Rav Pirkoi ben Baboi).
+
+### 2025-04-06 — Preparing for Pesach — Bedikat Chametz and Bi'ur Chametz
+- **Sefaria pass:** 0 corrections, 0 verifications, 2 preserved (mechiras chametz historical development, R' Itzele Charif anecdote).
+
+### 2025-05-04 — Atah Kadosh, the Kuzari, and Atah Chonen
+- **Sefaria pass:** 0 corrections, 2 spot-verifications (Nedarim 41a; Rashi on Vayikra 19:2), 6 preserved (Kuzari, Cairo Genizah, Raavad, Rizhiner, Rav Yonah of Vizhnitz, Rav Avli Posweller, Nieto/Breuer).
+
+### 2025-05-18 — Atah Chonen, Hashiveinu, and the Path of Teshuvah
+- **Sefaria pass:** 0 corrections, 0 verifications, 4 preserved (Rabbi Ephraim Zalman Margolios bio, Cairo Genizah manuscript recovery, Rav Noach Weinberg bio, Bobover Rebbe's oral pre-Holocaust account).
+
+### Batch 6 summary
+- 0 corrections, 3 verifications, 20 preserved (all correctly per skip-rule: chassidishe/oral/biographical/non-Sefaria).

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Preparing for Pesach: Bedikas Chametz and Bi'ur Chametz</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">הַהֲכָנָה לְפֶסַח — בְּדִיקַת חָמֵץ וּבִיעוּר חָמֵץ</h1>
+  <div class="english-title">Preparing for Pesach — The Uniqueness of Chametz, the Nature of <em>Tashbisu</em>, and the <em>Avodah</em> of Rooting Out the <em>Yetzer HaRa</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 6 April 2025 (<span class="heb-inline">ח' ניסן תשפ&quot;ה</span>) &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>A pause from the running track of <em>hilchos tefillah</em> six days before <em>Pesach</em>: the uniqueness of the <em>issur</em> of <em>chametz</em>, the <em>Rambam</em>&rsquo;s reading of <em>bittul</em>, the <em>tekanah</em> of <em>bedikah</em>, the <em>Minchas Chinuch</em>&rsquo;s <em>chakirah</em>, and the <em>chametz</em> that lies concealed in the corners of a man&rsquo;s own heart.</em></p>
+
+<h2>I. Hachanah &mdash; The Preparation Before the Mitzvah</h2>
+
+<h3>Why Prepare</h3>
+
+<p>To enter a <em>Yom Tov</em> (<span class="heb-inline">יום טוב</span>) authentically, a person cannot simply be carried into it by the passage of the calendar. <em>Bedikas chametz</em> (<span class="heb-inline">בדיקת חמץ</span>), <em>bi&rsquo;ur chametz</em> (<span class="heb-inline">ביעור חמץ</span>), the <em>Seder</em> (<span class="heb-inline">סדר</span>) with all its <em>mitzvos</em> &mdash; each of these requires <em>hachanah</em> (<span class="heb-inline">הכנה</span>). It is a teaching of the <em>chassidim</em> (<span class="heb-inline">חסידים</span>) that the preparation before a <em>mitzvah</em> is itself essential to the <em>mitzvah</em>: appreciating, valuing, and treasuring the <em>mitzvah</em> begin with understanding what one is about to do &mdash; both spiritually and concretely. For that reason, the ordinary weekly study of <em>hilchos tefillah</em> (<span class="heb-inline">הלכות תפילה</span>) yields, in the days before <em>Pesach</em>, to the <em>halachos</em> and the <em>avodas Hashem</em> (<span class="heb-inline">עבודת ה'</span>) of <em>bedikas chametz</em> and <em>bi&rsquo;ur chametz</em>.</p>
+
+<h3>A Milsa D&rsquo;Bedichusa Told Le&rsquo;Sheim Shamayim</h3>
+
+<p>It is fitting, before entering into the substance, to preserve one <em>milsa d&rsquo;bedichusa</em> (<span class="heb-inline">מילתא דבדיחותא</span>) told <em>le&rsquo;sheim Shamayim</em> (<span class="heb-inline">לשם שמים</span>) &mdash; a saying of <em>Rabbi Itzele Charif</em> (<span class="heb-inline">רבי איצלה חריף</span>) of <em>Slonim</em>,<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> a <em>gaon olam</em> (<span class="heb-inline">גאון עולם</span>) more widely remembered for his sharp <em>bon mot</em> than for his <em>Torah</em>. On <em>Erev Pesach</em> his <em>rebbetzin</em> (<span class="heb-inline">רבנית</span>) inquired whether he had finished with all the <em>chametz</em>. He replied that he had burned everything &mdash; but there was one piece of <em>chametz</em> he had not been able to get rid of for thirty-five years. She, equally sharp, answered: &ldquo;<em>That</em> is what you are worried about? My father sold that <em>chametz</em> to a <em>goy gamur</em> (<span class="heb-inline">גוי גמור</span>) thirty-five years ago.&rdquo; (It is a <em>lashon</em> of <em>Chazal</em> (<span class="heb-inline">חז&quot;ל</span>) that when we say <em>goy gamur</em>, we always mean a Jew &mdash; a non-Jew is never called a <em>goy gamur</em>.)</p>
+
+<h2>II. The Uniqueness of the Issur of Chametz</h2>
+
+<h3>Three Layers of Prohibition</h3>
+
+<p><em>Chametz</em> (<span class="heb-inline">חמץ</span>) on <em>Pesach</em> is unlike any other <em>issur</em> (<span class="heb-inline">איסור</span>) in the <em>Torah</em>. Three distinct prohibitions layer upon a single substance:</p>
+
+<ol>
+  <li><strong><em>Issur achilah</em></strong> (<span class="heb-inline">איסור אכילה</span>) &mdash; eating <em>chametz</em> on <em>Pesach</em>, carrying with it the <em>chiyuv kares</em> (<span class="heb-inline">חיוב כרת</span>).</li>
+  <li><strong><em>Issur hana&rsquo;ah</em></strong> (<span class="heb-inline">איסור הנאה</span>) &mdash; even non-eating uses, such as feeding it to one&rsquo;s animal.</li>
+  <li><strong><em>Bal yeira&rsquo;eh u&rsquo;val yimatzeh</em></strong> (<span class="heb-inline">בל יראה ובל ימצא</span>) &mdash; a Jew may not <em>own</em> <em>chametz</em> on <em>Pesach</em>, even if he never intends to eat it. The <em>Torah</em> commands the elimination of possession, not merely of consumption.</li>
+</ol>
+
+<p>This third element has no parallel elsewhere in the <em>Torah</em>. <em>Basar v&rsquo;chalav</em> (<span class="heb-inline">בשר וחלב</span>) is forbidden to eat, but the <em>Torah</em> does not forbid the ownership of <em>basar v&rsquo;chalav</em>. <em>Cheilev</em> (<span class="heb-inline">חלב</span>) &mdash; forbidden fats &mdash; <em>dam</em> (<span class="heb-inline">דם</span>), and other <em>issurei achilah</em> may sit in one&rsquo;s house indefinitely without transgression. Only <em>chametz</em> on <em>Pesach</em> does the <em>Torah</em> demand be removed from one&rsquo;s domain altogether.</p>
+
+<h3>The Rationale of the Tosafos</h3>
+
+<p>The <em>Tosafos</em> (<span class="heb-inline">תוספות</span>) at the opening of <em>Maseches Pesachim</em><a class="footnote-ref" id="ref2" href="#fn2">[2]</a> address the structural question directly. The reason is that <em>chametz</em> is what one eats every day of the year. <em>Basar v&rsquo;chalav</em> is forbidden always, and a Jew is conditioned from childhood never to eat it; <em>chametz</em> is the inverse case: a daily food that becomes forbidden for a single week. The <em>Torah</em> anticipates the natural mistake &mdash; the person wakes tired after the <em>Seder</em>, walks into the kitchen, reaches. It removes the temptation by removing the <em>chametz</em> entirely. <em>Bal yeira&rsquo;eh</em> is a <em>seyag</em> (<span class="heb-inline">סייג</span>) against accidental <em>achilas chametz</em> with its <em>chiyuv kares</em>.</p>
+
+<h2>III. Bittul Alone &mdash; The Mideoraisa Fulfillment</h2>
+
+<h3>The Position of the Rambam</h3>
+
+<p>The <em>Rambam</em> (<span class="heb-inline">רמב&quot;ם</span>),<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> following the <em>peshat</em> of the <em>Gemara</em> at the opening of <em>Pesachim</em>,<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> rules that <em>mideoraisa</em>, the <em>mitzvah</em> of &ldquo;<em>tashbisu</em>&rdquo; (<span class="heb-inline">תשביתו</span>) is fulfilled through <em>bittul</em> (<span class="heb-inline">ביטול</span>) alone. Were one to strip away the layer of <em>tekanos</em> that <em>Chazal</em> added on top of the <em>Torah</em>&rsquo;s command, <em>Erev Pesach</em> would look very different from the day the mispallel knows: no <em>bedikah</em>; no <em>sereifah</em> (<span class="heb-inline">שריפה</span>), for <em>mideoraisa</em> there is no obligation to <em>burn</em> the <em>chametz</em>. One would sit at the proper moment, focus one&rsquo;s mind, and declare:</p>
+
+<blockquote>
+<div class="heb">כָּל חֲמִירָא וַחֲמִיעָא דְּאִיכָּא בִּרְשׁוּתִי, דְּלָא חֲזִיתֵיהּ וּדְלָא בִעַרְתֵּיהּ, לִבָּטֵל וְלֶהֱוֵי הֶפְקֵר כְּעַפְרָא דְאַרְעָא.</div>
+<div class="trans">All <em>chametz</em> in my possession is nullified, rendered ownerless, like the dust of the earth.</div>
+</blockquote>
+
+<h3>How Bittul Works</h3>
+
+<p>Once one has authentically made this <em>bittul</em>, the <em>chametz</em> is no longer his. It may sit in his cabinets throughout <em>Pesach</em>, and he has not transgressed <em>bal yeira&rsquo;eh u&rsquo;val yimatzeh</em>, for there is no <em>chametz</em> <em>of his</em> to be seen or found &mdash; just as the dust upon his floor lies in his house but is not his, and any passerby may take it. On this <em>mideoraisa</em> plane, <em>Erev Pesach</em> would consist entirely of a family seated together, each reciting the <em>bittul</em> with genuine <em>kavvanah</em> (<span class="heb-inline">כוונה</span>) &mdash; and the entire obligation would be discharged.</p>
+
+<h2>IV. The Tekanas Chachomim &mdash; Bedikah and Bi'ur</h2>
+
+<h3>The Mishnah</h3>
+
+<p>The first <em>Mishnah</em> in <em>Pesachim</em><a class="footnote-ref" id="ref5" href="#fn5">[5]</a> records the rabbinic layer: <em>&ldquo;Or l&rsquo;arba&rsquo;ah asar bodkin es hachametz l&rsquo;or ha&rsquo;ner&rdquo;</em> (<span class="heb-inline">אור לארבעה עשר בודקין את החמץ לאור הנר</span>) &mdash; on the night of the fourteenth of <em>Nissan</em> (<span class="heb-inline">ניסן</span>) the <em>chametz</em> is checked by candlelight; and on the morning of the fourteenth it is burned. Active removal &mdash; a <em>ma&rsquo;aseh</em> (<span class="heb-inline">מעשה</span>). What compelled <em>Chazal</em> to add to the <em>Torah</em>&rsquo;s requirement?</p>
+
+<h3>The Reason of the Tosafos</h3>
+
+<p>The <em>Tosafos</em> explain that <em>bittul</em> is purely a <em>matzav nafshi</em> (<span class="heb-inline">מצב נפשי</span>) &mdash; a mental act of release. The words themselves are not the <em>bittul</em>; the inner <em>kavvanah</em> is. Not everyone can authentically reach that inner state, and many people mouth the words of the <em>nusach</em> (<span class="heb-inline">נוסח</span>) without any genuine act of release. For that reason the <em>Mishnah Berurah</em><a class="footnote-ref" id="ref6" href="#fn6">[6]</a> rules that one who does not understand the Aramaic of <em>&ldquo;kol chamira&rdquo;</em> must translate it into a language he understands &mdash; Yiddish, English, or Hebrew &mdash; before reciting; the <em>bittul</em> requires understanding. Where authentic <em>bittul</em> has not been achieved, the <em>chametz</em> remains the person&rsquo;s and <em>bal yeira&rsquo;eh u&rsquo;val yimatzeh</em> is being violated. <em>Chazal</em>&rsquo;s <em>tekanah</em>: do not rely on the inner state alone. Make it physical. Search, find, remove. <em>Ma&rsquo;aseh</em> operates precisely where <em>machshavah</em> may have failed.</p>
+
+<h3>The Reason of the Ran</h3>
+
+<p>The <em>Ran</em> (<span class="heb-inline">ר&quot;ן</span>)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> offers a different rationale. He concedes that <em>bittul</em> works <em>mideoraisa</em> for <em>bal yeira&rsquo;eh</em>. The concern to which he addresses the <em>tekanah</em> is downstream: the mispallel wakes on <em>Pesach</em> morning, sees a beautiful bottle of schnapps or a <em>geshmake</em> (<span class="heb-inline">געשמאקע</span>) roll of <em>chametz</em>, and his hand instinctively reaches. His earlier <em>bittul</em> protects him from <em>bal yeira&rsquo;eh</em>, but it does not protect him from the <em>issur achilah</em> that operates independently of ownership. <em>Chazal</em> intervened: remove the <em>chametz</em> physically from the home, and the temptation goes with it.</p>
+
+<h2>V. The Chakirah of the Minchas Chinuch</h2>
+
+<h3>The Sefer and Its Author</h3>
+
+<p>The <em>Sefer Minchas Chinuch</em> (<span class="heb-inline">ספר מנחת חינוך</span>)<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> &mdash; composed by <em>Rabbi Yosef Babad</em> (<span class="heb-inline">רבי יוסף באבאד</span>), <em>Rav</em> of <em>Tarnopol</em> in eastern Galicia (1801&ndash;1874; remarkably, his birth and death fell on the same day of the year) &mdash; is one of the great <em>sefarim</em> of analytical <em>lomdus</em> (<span class="heb-inline">למדנות</span>). On the <em>mitzvah</em> of <em>tashbisu</em> he raises a foundational <em>chakirah</em> (<span class="heb-inline">חקירה</span>) whose implications shape the entire understanding of the day.</p>
+
+<h3>Two Categories of Mitzvah</h3>
+
+<p>The general framework of <em>mitzvos</em> divides into two categories:</p>
+
+<ol>
+  <li><strong><em>Mitzvos kum va&rsquo;aseh</em></strong> (<span class="heb-inline">מצות קום ועשה</span>) &mdash; fulfilled by active performance: <em>tefillin</em> (<span class="heb-inline">תפילין</span>), <em>shofar</em> (<span class="heb-inline">שופר</span>), <em>sukkah</em> (<span class="heb-inline">סוכה</span>), <em>matzah</em> (<span class="heb-inline">מצה</span>).</li>
+  <li><strong><em>Mitzvos sheiv v&rsquo;al ta&rsquo;aseh</em></strong> (<span class="heb-inline">מצות שב ואל תעשה</span>) &mdash; fulfilled by inaction. The <em>mitzvas asei</em> (<span class="heb-inline">מצות עשה</span>) of &ldquo;<em>u&rsquo;vayom hashvi&rsquo;i tishbos</em>&rdquo; (<span class="heb-inline">וביום השביעי תשבות</span>): every moment one refrains from <em>melachah</em> (<span class="heb-inline">מלאכה</span>) is a moment of active fulfillment of the <em>mitzvah</em> of resting. Hands folded, seated still on <em>Shabbos</em> (<span class="heb-inline">שבת</span>) &mdash; the <em>mitzvah</em> is being performed.</li>
+</ol>
+
+<h3>Which Is Tashbisu?</h3>
+
+<p>The <em>Minchas Chinuch</em>&rsquo;s <em>chakirah</em>: did the <em>Torah</em> command an <em>active destruction</em> &mdash; get up, find <em>chametz</em>, burn it, perform <em>bittul</em>, <em>do</em> something? Or did the <em>Torah</em> command <em>not having</em> <em>chametz</em>, a <em>sheiv v&rsquo;al ta&rsquo;aseh</em> in which the absence itself is the fulfillment?</p>
+
+<h2>VI. Three Nafka Minos</h2>
+
+<p>The <em>Minchas Chinuch</em> brings three concrete cases in which the answer to this <em>chakirah</em> is decisive.</p>
+
+<h3>The First &mdash; The Jew Who Has No Chametz</h3>
+
+<p>Consider a Jew who is gluten-free; <em>chametz</em> has not entered his house in seven months. <em>Erev Pesach</em> arrives. Must he <em>buy</em> <em>chametz</em> in order to burn it?</p>
+
+<ul>
+  <li>If <em>tashbisu</em> is <em>kum va&rsquo;aseh</em>, he must perform an act; he should acquire <em>chametz</em> in order to discharge the <em>mitzvah</em>.</li>
+  <li>If <em>tashbisu</em> is <em>sheiv v&rsquo;al ta&rsquo;aseh</em>, he is already <em>yotzei</em>; he has no <em>chametz</em>; that is precisely what the <em>Torah</em> desired.</li>
+</ul>
+
+<p>The <em>Minchas Chinuch</em> raises the first option in earnest, however strange it may sound: perhaps the <em>Torah</em> desired that one buy <em>chametz</em> for the sake of burning it.</p>
+
+<h3>The Second &mdash; Eating Chametz as Bi'ur</h3>
+
+<p>One finds a piece of <em>chametz</em> on <em>Pesach</em>. He must remove it. May he eat it? It would, after all, no longer be in his possession. Suppose the discovery occurs on <em>Shabbos</em> afternoon &mdash; when burning is forbidden anyway &mdash; while the <em>issur achilah</em> is fully operative. If he eats, has he been <em>mekayem</em> <em>tashbisu</em> through the eating?</p>
+
+<p>The objection: this appears to be <em>mitzvah ha&rsquo;ba&rsquo;ah b&rsquo;aveirah</em> (<span class="heb-inline">מצוה הבאה בעבירה</span>) &mdash; many <em>poskim</em> hold that a <em>mitzvah</em> performed by means of an <em>aveirah</em> is invalid. Eating <em>chametz</em> is the <em>aveirah</em>; one cannot dress it up as a <em>mitzvah</em>. The <em>Minchas Chinuch</em> answers that the question depends on our <em>chakirah</em>:</p>
+
+<ul>
+  <li>If <em>tashbisu</em> is <em>kum va&rsquo;aseh</em>, the <em>act of removal</em> is the <em>mitzvah</em>, and here the act of removal is the eating itself. This is textbook <em>mitzvah ha&rsquo;ba&rsquo;ah b&rsquo;aveirah</em>; invalid.</li>
+  <li>If <em>tashbisu</em> is <em>sheiv v&rsquo;al ta&rsquo;aseh</em>, only the <em>state of not having chametz</em> is the <em>mitzvah</em>. The eating was a <em>hechsher</em> (<span class="heb-inline">הכשר</span>), a means to that state. Not <em>mitzvah ha&rsquo;ba&rsquo;ah b&rsquo;aveirah</em>; the <em>mitzvah</em> may be valid (although the eater is nevertheless <em>chayav kares</em> for the <em>achilas chametz</em>).</li>
+</ul>
+
+<h3>The Third &mdash; Stealing Another&rsquo;s Bi'ur</h3>
+
+<p>A Jew walks to his <em>bi&rsquo;ur</em> (<span class="heb-inline">ביעור</span>) with a bag of <em>chametz</em>. Another grabs the bag and throws it into the fire before its owner can. He has stolen the <em>mitzvah</em>.</p>
+
+<p>The general <em>gemara</em>&rsquo;s rule, established in the <em>sugya</em> of <em>kisui ha&rsquo;dam</em> (<span class="heb-inline">כיסוי הדם</span>) &mdash; where one who covers another&rsquo;s blood owes the <em>shochet</em> ten <em>zuzim</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> &mdash; is that one who steals another&rsquo;s <em>mitzvah</em> pays the fixed <em>kenas</em>. Whether that <em>halachah</em> applies here depends on our <em>chakirah</em>:</p>
+
+<ul>
+  <li>If <em>tashbisu</em> is <em>kum va&rsquo;aseh</em>, the interloper stole the <em>mitzvah</em>; he owes ten <em>zuzim</em>.</li>
+  <li>If <em>tashbisu</em> is <em>sheiv v&rsquo;al ta&rsquo;aseh</em>, he did not steal the <em>mitzvah</em>; he <em>helped</em>. One says to him <em>yasher ko&rsquo;ach</em> (<span class="heb-inline">יישר כח</span>) and owes him nothing.</li>
+</ul>
+
+<h2>VII. Chametz as the Yetzer HaRa</h2>
+
+<h3>The Chasam Sofer&rsquo;s Question on Matzah</h3>
+
+<p>The <em>Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) in his commentary on the <em>Haggadah</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> raises a counter-intuitive observation. <em>Chazal</em> teach that <em>matzah</em> may only be made from a grain that <em>can become chametz</em>. Rice flour, corn flour, ground potato &mdash; none may be used for <em>matzah</em>, however diligently baked. Only the five <em>minei dagan</em> (<span class="heb-inline">מיני דגן</span>), which <em>can</em> ferment into <em>chametz</em>, qualify.</p>
+
+<p>The observation cuts sharply: the most dangerous ingredient on <em>Pesach</em> is <em>matzah</em> itself. <em>Matzah</em> <em>is</em> flour and water &mdash; the exact formula for <em>chametz</em>. It is baked within eighteen minutes; scrupulous <em>ba&rsquo;alei batim</em> on <em>Erev Pesach</em> are <em>makpid</em> on <em>kefulos</em> (<span class="heb-inline">קפולות</span>),<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> the folds in <em>matzah</em> where the dough may have doubled over and failed to bake through, breaking off the folds and discarding them before the <em>zman bi&rsquo;ur</em>. Why did the <em>Torah</em> command that we take precisely the most dangerous ingredient and make our <em>mitzvah</em> from it? Why not use rice &mdash; which the <em>Gemara</em> teaches cannot become <em>chametz</em>, undergoing only <em>sirchon</em> (<span class="heb-inline">סרחון</span>), decay, rather than fermentation &mdash; and have a worry-free <em>Pesach</em>?</p>
+
+<h3>The Radbaz &mdash; Chametz Is the Yetzer HaRa</h3>
+
+<p>The <em>Radbaz</em> (<span class="heb-inline">רדב&quot;ז</span>)<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> writes &mdash; not as <em>chassidus</em> and not as <em>Kabbalah</em>, but as the simple <em>peshat</em> of the <em>chumrah</em> in the <em>issur</em> &mdash; that <em>chametz</em> represents the <em>yetzer ha&rsquo;ra</em> (<span class="heb-inline">יצר הרע</span>). The <em>Torah</em>&rsquo>s extreme stringency on <em>chametz</em> &mdash; even a <em>mashehu</em> (<span class="heb-inline">משהו</span>) forbidden, even <em>owning</em> it forbidden, <em>chiyuv kares</em> for eating &mdash; is grounded in the fact that the <em>chametz</em> we hunt is simultaneously the <em>yetzer ha&rsquo;ra</em> we hunt.</p>
+
+<h3>The Chasam Sofer&rsquo;s Answer</h3>
+
+<p>The <em>avodah</em> of <em>achilas matzah</em> is precisely the journey <em>from potential chametz to matzah</em>: taking the very flour that could ferment into the <em>yetzer ha&rsquo;ra</em> and arresting it within eighteen minutes, transforming it into <em>kedushah</em> (<span class="heb-inline">קדושה</span>). The <em>tzaddikim gemurim</em> (<span class="heb-inline">צדיקים גמורים</span>) who have long since transmuted their <em>yetzer ha&rsquo;ra</em> into <em>avodas Hashem</em> are not the primary audience for this <em>mitzvah</em>; the <em>mitzvah</em> is for the rest &mdash; those still struggling, those whose flour can still ferment. Rice flour lacks the <em>potential</em>; it cannot teach the <em>avodah</em>.</p>
+
+<p>The same reading applies to <em>tashbisu</em> itself. The <em>mitzvah</em> is not the mere absence of <em>chametz</em> but the active <em>finding and burning</em>. <em>Pesach</em> is the season for going into the corners of one&rsquo;s own heart, seeking out the <em>yetzer ha&rsquo;ra</em>, and defeating it &mdash; searching, breaking, burning.</p>
+
+<p>This reading may sit behind the <em>Minchas Chinuch</em>&rsquo;s <em>chakirah</em> itself. If <em>tashbisu</em> were merely the absence of <em>chametz</em>, the gluten-free Jew would be <em>yotzei</em> automatically. But if <em>tashbisu</em> is the <em>avodah</em> of confrontation &mdash; finding the <em>yetzer ha&rsquo;ra</em> in order to burn it &mdash; then the gluten-free Jew is missing the <em>avodah</em> of <em>Pesach</em>. He needs to <em>confront</em> <em>chametz</em>, not merely to lack it.</p>
+
+<h2>VIII. The Search Within</h2>
+
+<p>The other face of the same teaching addresses the many who walk into <em>Pesach</em> convinced that they are already fine. &ldquo;<em>I am fine relative to others. I learn the daf; I daven three times a day; I give tzedakah; I put on tefillin. I am fine.</em>&rdquo;</p>
+
+<p>Yet the <em>pasuk</em><a class="footnote-ref" id="ref13" href="#fn13">[13]</a> teaches: there is no such person as one who is wholly <em>tzaddik</em>. The <em>Torah</em>&rsquo;s instruction at this <em>parshah</em> of the year: <em>go check for chametz</em>. Go into the hidden recesses of one&rsquo;s heart, find the <em>chametz</em> being carried there, and burn it. To sit on <em>Erev Pesach</em> declaring &ldquo;<em>I have no chametz</em>&rdquo; is not the <em>avodah</em>; the <em>avodah</em> is the <em>ma&rsquo;aseh</em> of <em>bedikah</em> &mdash; looking honestly, by candlelight, into the corners.</p>
+
+<h2>IX. Yachatz &mdash; The Deliberate Breaking</h2>
+
+<p>This <em>avodah</em> explains a striking feature of the <em>Seder</em>. Throughout the <em>Torah</em>, our <em>mitzvos</em> generally require their objects to be <em>whole</em>. A <em>shofar</em> with a hole is invalid; an <em>esrog</em> (<span class="heb-inline">אתרוג</span>) with a blemish is invalid; the box of <em>tefillin</em> must be perfectly square. Wholeness is the rule.</p>
+
+<p>And then, in the very middle of the <em>Seder</em>, we perform <em>yachatz</em> (<span class="heb-inline">יחץ</span>): we deliberately <em>break</em> the middle <em>matzah</em> in half.</p>
+
+<p>The teaching: <em>Pesach</em> is the night on which one acknowledges that he is <em>not</em> whole. However righteous he believes himself to be, there is a piece missing. One comes to the <em>Kadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) through <em>yachatz</em> not whole but vulnerable &mdash; &ldquo;<em>we are only half; help us to become whole.</em>&rdquo; The <em>avodah</em> of <em>Pesach</em> begins with that admission.</p>
+
+<h2>X. A Historical Note on Mechiras Chametz</h2>
+
+<h3>The Question of Chametz Gamur</h3>
+
+<p>An adjacent question arises around <em>chametz gamur</em> (<span class="heb-inline">חמץ גמור</span>) &mdash; the practice of selling actual <em>chametz</em> (not merely <em>chametz</em>-touched utensils) to a non-Jew over <em>Pesach</em>. Practice varies widely, and many <em>ba&rsquo;alei nefesh</em> (<span class="heb-inline">בעלי נפש</span>) follow the older <em>minhag</em> of disposing of <em>chametz gamur</em> entirely rather than relying on <em>mechirah</em>.</p>
+
+<h3>The Historical Development</h3>
+
+<p>The historical reality of <em>mechiras chametz</em> (<span class="heb-inline">מכירת חמץ</span>)<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> is instructive. In earlier generations no such practice existed. One had <em>chametz</em>, one disposed of it, and that was that. <em>Mechiras chametz</em> in its formal contemporary shape developed in the seventeenth and eighteenth centuries in Europe, in response to a specific economic situation.</p>
+
+<p>The most common respectable <em>parnasah</em> (<span class="heb-inline">פרנסה</span>) for the European Jew in that era was running an inn or a tavern &mdash; the <em>kretshmer</em> (<span class="heb-inline">קרעטשמער</span>) Jews, holding the local nobleman&rsquo;s license, operating distilleries with barrels of whisky and grain-based spirits. To require these <em>Yidden</em> to destroy their entire stock for <em>Pesach</em> would have meant economic ruin. The <em>poskim</em> of those generations developed the formal mechanism of <em>mechiras chametz</em> to permit these <em>Yidden</em> to continue in their trade.</p>
+
+<h3>The Contemporary Machlokes</h3>
+
+<p>Some <em>poskim</em> hold that <em>mechiras chametz</em> for actual <em>chametz gamur</em> was developed only for cases resembling the schnapps of the tavern-keeper &mdash; significant economic loss, serious enjoyment over the year &mdash; and not for a few dollars&rsquo; worth of leftover cookies. On this position, better to throw the marginal cookies away than to include them in the sale. Other <em>poskim</em> hold that <em>mechiras chametz</em> applies fully to all <em>chametz gamur</em> without such distinction. The <em>machlokes</em> is live.</p>
+
+<p>The broader point is one of historical awareness in <em>halachah</em>: what appears today as a self-evident, universal <em>minhag</em> is in fact a three-hundred-year-old response to a specific economic reality. <em>Halachah</em> did not descend uniform from Sinai on every particular; the mechanisms that structure our <em>Erev Pesach</em> were forged in the workshops of the <em>poskim</em> of Poland, Galicia, and Bohemia in the face of the world in which their communities lived.</p>
+
+<h2>XI. Practical Closing</h2>
+
+<ul>
+  <li><strong>Bittul is real.</strong> Recite <em>&ldquo;kol chamira v&rsquo;chami&rsquo;a&rdquo;</em> with genuine <em>kavvanah</em>; understand the words. If Aramaic is opaque, translate.</li>
+  <li><strong>Bedikah is a ma&rsquo;aseh, not a formality.</strong> Search honestly, by candlelight, into the corners of the home.</li>
+  <li><strong>Bi&rsquo;ur is the physical arm of the mitzvah.</strong> The <em>chametz</em> is removed by hand and by fire.</li>
+  <li><strong>The inner search is the point.</strong> Beneath the <em>halachos</em>, the <em>avodah</em> of the day is to find the <em>chametz</em> hidden in the corners of one&rsquo;s own heart, the <em>yetzer ha&rsquo;ra</em> one has been quietly carrying, and to burn it.</li>
+  <li><strong>Yachatz teaches the posture.</strong> Come before the <em>Ribbono Shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>) not whole but broken; only from that place can wholeness be granted.</li>
+</ul>
+
+<p>May we merit to fulfill <em>bedikas chametz</em> and <em>bi&rsquo;ur chametz</em> with full heart, and to see the coming of <em>Mashiach Tzidkeinu bimheirah b&rsquo;yameinu</em> (<span class="heb-inline">משיח צדקנו במהרה בימינו</span>), <em>Amen</em>.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Rabbi Yitzchak (Itzele) Charif</em> of <em>Slonim</em> &mdash; the <em>Erev Pesach</em> anecdote.</span>
+  <span class="expanded">&mdash; Anecdote attributed to <em>Rabbi Yitzchak (Itzele) Charif</em> of <em>Slonim</em>, properly <em>Rabbi Yitzchak Yaakov Rabinowitz</em> of <em>Ponevezh</em>/<em>Slonim</em>, one of the great <em>lamdanim</em> of late-nineteenth-century Lithuania, known by the appellation <em>Charif</em> for the sharpness of his <em>pilpul</em> (not to be confused with other Lithuanian <em>charifim</em> bearing similar names). The story circulates in oral <em>mesorah</em> as a representative example of his characteristic <em>bon mot</em> &mdash; playful, sharp humor told within the <em>beis midrash</em>. Most <em>Torah</em> attributed to him is preserved in his <em>chidushei</em> on <em>Shas</em>; the witticisms circulate independently in the oral tradition.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Tosafos Pesachim</em> 2a (<em>d&rsquo;h Or</em>) &mdash; uniqueness of <em>bal yeira&rsquo;eh</em>; <em>chametz</em> as a year-round food.</span>
+  <span class="expanded">&mdash; The opening <em>Tosafos</em> in <em>Maseches Pesachim</em> develops the structural answer: the <em>Torah</em> uniquely adds <em>issur hana&rsquo;ah</em> and <em>bal yeira&rsquo;eh u&rsquo;val yimatzeh</em> to the <em>issur achilah</em> of <em>chametz</em> because <em>chametz</em> is what one eats the rest of the year and is therefore uniquely tempting. The prohibition operates as a <em>seyag</em> against accidental <em>achilah</em> with its <em>chiyuv kares</em>. The same logic grounds the <em>Tosafos</em>&rsquo;s explanation of the <em>tekanas bedikah</em>: <em>bittul</em> alone, being a mental act, is unreliable; <em>Chazal</em> required physical removal as a backup.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Rambam, Hilchos Chametz U&rsquo;Matzah</em> 2:2 &mdash; <em>bittul</em> as the <em>mitzvah mideoraisa</em>.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> codifies the <em>peshat</em> of the <em>sugya</em>: <em>&ldquo;U&rsquo;mah hi hashbasah zo ha&rsquo;amurah baTorah? Hi she&rsquo;yevatel b&rsquo;libo v&rsquo;yachshov oso k&rsquo;afar&rdquo;</em> &mdash; the <em>deoraisa</em> requirement is a purely mental-declarative act: rendering the <em>chametz</em> like dust in one&rsquo;s heart. The active rabbinic <em>bedikah</em> and <em>sereifah</em> are <em>tekanas Chachomim</em> layered on top of that base. The <em>Rambam</em>&rsquo;s formulation shapes all subsequent <em>piskei halachah</em>: <em>bittul</em> is the foundation; <em>bedikah</em> is the supporting structure.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Pesachim</em> 4b &mdash; <em>bittul</em> as the <em>kiyum</em> of &ldquo;<em>tashbisu</em>&rdquo; <em>mideoraisa</em>; <em>bedikah</em> as <em>tekanas Chachomim</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> establishes that <em>mideoraisa</em>, the <em>kiyum</em> of &ldquo;<em>tashbisu se&rsquo;or mibateichem</em>&rdquo; (<em>Shemos</em> 12:15) is achieved through <em>bittul</em> alone: the <em>chametz</em> is rendered <em>hefker</em>, ceases to be the person&rsquo;s, and the <em>issur bal yeira&rsquo;eh u&rsquo;val yimatzeh</em> does not apply. The rabbinic layer of <em>bedikah</em> and physical <em>bi&rsquo;ur</em> was overlaid upon this <em>deoraisa</em> base for the reasons developed by <em>Tosafos</em> and the <em>Ran</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Mishnah Pesachim</em> 1:1 &mdash; &ldquo;<em>Or l&rsquo;arba&rsquo;ah asar bodkin es hachametz l&rsquo;or ha&rsquo;ner</em>.&rdquo;</span>
+  <span class="expanded">&mdash; The opening <em>Mishnah</em> of <em>Maseches Pesachim</em>: on the night of the fourteenth of <em>Nissan</em>, <em>chametz</em> is checked by candlelight. The <em>Mishnah</em> codifies the rabbinic <em>tekanah</em> of <em>bedikas chametz</em>; the <em>Gemara</em>&rsquo;s opening discussion explores the ambiguity of &ldquo;<em>or</em>&rdquo; (morning or evening?) and the parameters of the search.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Mishnah Berurah Siman</em> 434:2 &mdash; translating &ldquo;<em>kol chamira</em>&rdquo; into a language the <em>mevatel</em> understands.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> rules that <em>bittul</em> requires understanding: one who does not understand the Aramaic of &ldquo;<em>kol chamira v&rsquo;chami&rsquo;a</em>&rdquo; must translate it into a language he does understand (Yiddish, English, Hebrew) before reciting. The <em>psak</em> follows from the <em>Tosafos</em>&rsquo;s premise that <em>bittul</em> is essentially a mental-declarative act of release; meaningless words cannot effect it. The same reasoning grounds the standard instruction to one&rsquo;s wife and children to recite the <em>nusach</em> in a language they understand on <em>Erev Pesach</em>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Chiddushei HaRan Pesachim</em> 2a &mdash; <em>bedikah</em> as <em>gezeirah shema yochal</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Nissim Gerondi</em> (the <em>Ran</em>, c. 1320&ndash;1376, Barcelona) offers a rationale for the <em>tekanas bedikah</em> different from the <em>Tosafos</em>&rsquo;s. He concedes that <em>bittul</em> works <em>mideoraisa</em> for <em>bal yeira&rsquo;eh u&rsquo;val yimatzeh</em>; the <em>tekanah</em> targets a downstream concern &mdash; the <em>issur achilah</em>. Even after <em>bittul</em>, <em>chametz</em> physically present in the home tempts the eater on <em>Pesach</em>; the <em>tekanah</em> is to remove the <em>chametz</em> physically so that the eater is not drawn into <em>issur achilah</em> with its <em>chiyuv kares</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Minchas Chinuch, Mitzvah</em> 9 (<em>Rabbi Yosef Babad</em>, Tarnopol, 1801&ndash;1874) &mdash; <em>kum va&rsquo;aseh</em> vs. <em>sheiv v&rsquo;al ta&rsquo;aseh</em> in &ldquo;<em>tashbisu</em>&rdquo;; three <em>nafka minos</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yosef Babad</em>, <em>Rav</em> of <em>Tarnopol</em> in eastern Galicia (today Ternopil, western Ukraine), composed the <em>Minchas Chinuch</em> as an analytical commentary on the <em>Sefer HaChinuch</em>, exploring the parameters of each <em>mitzvah</em> through <em>chakiros</em> and <em>nafka minos</em>. The work became one of the foundational <em>sifrei lomdus</em> of nineteenth-century <em>lamdan</em>-style analysis. On &ldquo;<em>tashbisu</em>&rdquo; he raises the <em>chakirah</em> whether the <em>mitzvah</em> is <em>kum va&rsquo;aseh</em> (active destruction) or <em>sheiv v&rsquo;al ta&rsquo;aseh</em> (the state of not having <em>chametz</em>), with three concrete <em>nafka minos</em>: the gluten-free Jew, eating found <em>chametz</em> on <em>Shabbos</em>, and stealing another&rsquo;s <em>bi&rsquo;ur</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Chullin</em> 87a &mdash; ten <em>zuzim</em> for one who steals a <em>mitzvah</em> (<em>kisui ha&rsquo;dam</em>).</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Chullin</em> records the <em>din</em> that one who covers another&rsquo;s blood after <em>shechitah</em>, depriving the <em>shochet</em> of the <em>mitzvah</em> of <em>kisui ha&rsquo;dam</em>, owes the <em>shochet</em> ten gold <em>zuzim</em> as a <em>kenas</em> for the stolen <em>mitzvah</em>. The <em>sugya</em> establishes the general principle, cited later by <em>poskim</em> in many contexts, that one who deprives another of a <em>mitzvah ha&rsquo;ba&rsquo;ah l&rsquo;yado</em> is liable for a <em>kenas</em> in this fixed amount. The principle grounds the <em>Minchas Chinuch</em>&rsquo;s third <em>nafka mina</em> &mdash; whether one who throws another&rsquo;s <em>chametz</em> into the fire owes the ten <em>zuzim</em> depends on whether &ldquo;<em>tashbisu</em>&rdquo; is <em>kum va&rsquo;aseh</em>.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Chasam Sofer</em>, <em>Perush al ha&rsquo;Haggadah</em> / <em>Drashos Chasam Sofer</em> on <em>Pesach</em> &mdash; <em>matzah</em> from grains capable of becoming <em>chametz</em>; the <em>avodah</em> from <em>chametz</em> to <em>matzah</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Moshe Sofer</em> (the <em>Chasam Sofer</em>, 1762&ndash;1839, Pressburg/Bratislava), in his commentary on the <em>Haggadah</em> and his <em>drashos</em> on <em>Pesach</em>, develops the <em>chiddush</em>: <em>matzah</em> may be made only from the five <em>minei dagan</em> &mdash; precisely those grains that <em>can</em> become <em>chametz</em>. The <em>avodah</em> of <em>achilas matzah</em> is therefore the <em>avodah</em> of taking the very ingredient that could ferment into the <em>yetzer ha&rsquo;ra</em> and arresting it &mdash; within eighteen minutes &mdash; into <em>kedushah</em>. The <em>mitzvah</em> addresses the still-struggling <em>Yid</em>, not the perfected <em>tzaddik</em>; rice flour, which cannot ferment, lacks the <em>potentzial</em> needed for the <em>avodah</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Mishnah Berurah Siman</em> 461 &mdash; <em>kefulos</em> in <em>matzah</em>; <em>sirchon</em> of rice (<em>Pesachim</em> 35a).</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> records the <em>chumrah</em> of <em>kefulos</em>: doubled-over folds in baked <em>matzah</em> where the dough may not have baked through, leaving uncooked dough between the layers &mdash; at risk of <em>chimutz</em>. Many <em>ba&rsquo;alei batim</em> inspect their <em>matzos</em> on <em>Erev Pesach</em> and break off <em>kefulos</em> before the <em>zman bi&rsquo;ur</em>. The <em>Gemara</em> in <em>Pesachim</em> 35a establishes that rice (<em>orez</em>, <span class="heb-inline">אורז</span>) does not undergo <em>chimutz</em> but only <em>sirchon</em> (decay), explaining why rice flour cannot be used for <em>matzah</em> and grounding the <em>Chasam Sofer</em>&rsquo;s rhetorical question about why we do not simply use rice.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Shu&rsquo;t HaRadbaz</em> &mdash; <em>chametz</em> as the <em>yetzer ha&rsquo;ra</em>; the <em>peshat</em> behind the stringency of the <em>issur</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi David ben Zimra</em> (the <em>Radbaz</em>, 1479&ndash;1573, Egypt and Tzfas), in his <em>Shu&rsquo;t</em>, develops the reading that <em>chametz</em>&rsquo;s extreme <em>chumrah</em> in the <em>Torah</em> &mdash; the only <em>issur achilah</em> with <em>issur hana&rsquo;ah</em> and <em>bal yeira&rsquo;eh</em>, forbidden even <em>b&rsquo;mashehu</em>, <em>chiyuv kares</em> for <em>achilah</em> &mdash; is grounded in <em>chametz</em> as a representation of the <em>yetzer ha&rsquo;ra</em>. The <em>Radbaz</em> presents this not as <em>chassidus</em> or <em>Kabbalah</em> but as the <em>peshat</em> of the <em>chumrah</em>: the <em>Torah</em>&rsquo;s war against <em>chametz</em> is, simultaneously, the annual <em>avodah</em> of confronting and defeating the <em>yetzer ha&rsquo;ra</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Koheles</em> 7:20 &mdash; <span class="heb-inline">כי אדם אין צדיק בארץ אשר יעשה טוב ולא יחטא</span>.</span>
+  <span class="expanded">&mdash; <em>Shlomo HaMelech</em>&rsquo;s <em>pasuk</em>: <em>Ki adam ein tzaddik ba&rsquo;aretz asher ya&rsquo;aseh tov v&rsquo;lo yecheta</em> &mdash; &ldquo;there is no <em>tzaddik</em> on the earth who does good and does not sin.&rdquo; The <em>pasuk</em> anchors the classical teaching that even the most upright person carries <em>chametz</em> within &mdash; residual <em>chelbenah</em> (<span class="heb-inline">חלבנה</span>) in the <em>ketores</em> of a life &mdash; and that <em>Pesach</em> is the season for honest self-examination rather than complacent self-assessment. The same theme runs through the <em>Nefesh HaChaim</em> and the <em>mussar</em> literature more broadly.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short">Historical development of <em>mechiras chametz</em> in seventeenth- and eighteenth-century European <em>poskim</em>.</span>
+  <span class="expanded">&mdash; The formal mechanism for selling <em>chametz gamur</em> to a non-Jew over <em>Pesach</em> emerged in response to the economic structure of the <em>kretshmer</em> (innkeeper/tavern-keeper) Jewish economy in Poland, Galicia, and Bohemia, where Jewish lessees of noble distilleries and taverns held large stocks of grain spirits whose destruction would have meant financial ruin. The mechanism was developed by <em>poskim</em> across this period (the <em>Beis Meir</em>, the <em>Chok Yaakov</em>, the <em>Pnei Yehoshua</em>, and others) and codified in the <em>Shulchan Aruch HaRav</em> and later <em>poskim</em>. A live <em>machlokes</em> remains among contemporary <em>poskim</em> whether the <em>heter</em> applies fully to all <em>chametz gamur</em> or only to cases of significant economic loss; many <em>ba&rsquo;alei nefesh</em> follow the older <em>minhag</em> of disposing of <em>chametz gamur</em> entirely rather than including it in the sale.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 6 April 2025 (<span class="heb-inline">ח' ניסן תשפ&quot;ה</span>) as a <em>hachanah</em> for <em>Pesach</em>. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice: the uniqueness of the three-layered <em>issur</em> of <em>chametz</em>; the <em>Rambam</em>&rsquo;s <em>bittul</em> as the <em>deoraisa</em> fulfillment of &ldquo;<em>tashbisu</em>&rdquo;; the competing reasons of <em>Tosafos</em> and the <em>Ran</em> for the <em>tekanas bedikah</em>; the <em>Minchas Chinuch</em>&rsquo;s <em>chakirah</em> with its three <em>nafka minos</em>; the <em>Chasam Sofer</em> and the <em>Radbaz</em> on <em>chametz</em> as the <em>yetzer ha&rsquo;ra</em>; the symbolism of <em>yachatz</em>; and the eighteenth-century historical context behind <em>mechiras chametz</em>.
+</footer>
+
+</body>
+</html>
