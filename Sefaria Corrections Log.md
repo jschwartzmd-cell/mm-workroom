@@ -206,3 +206,24 @@ Verified inline during 4-agent Sefer Edition pipeline (Sefaria verify integrated
 
 ### Batch 6 summary
 - 0 corrections, 3 verifications, 20 preserved (all correctly per skip-rule: chassidishe/oral/biographical/non-Sefaria).
+
+---
+
+## Weekly entry — 2026-09-07 (extra Monday shiur, Labor Day)
+
+### 2026-09-07 — Kaf-Hei Elul, Rosh HaShanah on Shabbos, and the Piyutim Machloikes
+- **fn1 (RH 11a, R' Eliezer בתשרי נברא העולם)** — VERIFIED.
+- **fn2 (Rashi Bereishis 1:1, בשביל ישראל)** — VERIFIED (BR 1:4 + VR 36:4).
+- **fn3 (Nechemiah 6:15, 52 days כ"ה אלול)** — VERIFIED verbatim.
+- **fn5 (R' Akiva Ta'anit 25b)** — VERIFIED.
+- **fn6 (SA OC 288:1 fasting on Shabbos)** — VERIFIED.
+- **fn7 (SA OC 89:3 no eating before davening)** — VERIFIED.
+- **fn9 (SA OC 288:2 area on crying on Shabbos)** — VERIFIED.
+- **fn12 (SA OC 583:2 sleeping on RH)** — VERIFIED locus (formulation quoted is really MB/MA on the siman).
+- **fn14 (MB 583)** — VERIFIED locus.
+- **fn16 (SA OC 592:3 hefsek by shofar)** — VERIFIED.
+- **fn17 (SA YD 228 hataras nedarim)** — VERIFIED.
+- **fn18 (מסירת מודעא)** — **CORRECTED** from YD 210:5 → **SA YD 211:1-2** (211 has the "כל הנדרים שאני עתיד לידור" formula with Rama attaching to Kol Nidrei; 210 is on aligning heart/lips + dream vows).
+- **fn22 (Rosh via Tur OC 68)** — VERIFIED.
+- **Preserved UNCERTAIN** (chassidishe/kabbalistic/oral/non-Sefaria): fn4 (Zohar end of Balak, כ"ה אלול), fn8 (modern coffee psak), fn10 (Arizal on RH tears), fn11 (Reishis Chochma), fn13 (Arizal/Gra sleep after חצות), fn15 (Arizal Ps. 47 x7), fn19 (chassidishe minhag המלך הקדוש), fn20 (piyutim gzeiros framing), fn21 (Rav Hai teshuvah locus), fn23 (Gra מעשה רב), fn24 (Maharil), fn25 (הקליר legends).
+- **Total:** 1 correction (fn18 YD 210→211), 10 confirmations, 14 preserved. Modified: original shiur HTML.

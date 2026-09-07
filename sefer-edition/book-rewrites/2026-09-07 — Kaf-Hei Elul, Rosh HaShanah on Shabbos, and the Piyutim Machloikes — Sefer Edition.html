@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Kaf-Hei Elul, Rosh HaShanah on Shabbos, and the Piyutim Machloikes</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">כ&quot;ה אֱלוּל, רֹאשׁ הַשָּׁנָה שֶׁחָל בְּשַׁבָּת, וּמַחֲלֹקֶת הַפִּיּוּטִים</h1>
+  <div class="english-title">Kaf-Hei Elul, Rosh HaShanah on Shabbos, and the Battle over the <em>Piyutim</em></div>
+  <div class="sub">Studies in the <em>Machzor</em> of Rosh HaShanah &mdash; Third Discourse</div>
+  <div class="date">25 Elul &nbsp;&middot;&nbsp; The Eve of Rosh HaShanah 5787 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>The last light of Elul falls on the day <span class="heb-inline">ר&quot;א</span> assigns to <span class="heb-inline">בראשית</span> and on which Nechemiah closed the wall of <span class="heb-inline">ירושלים</span>. The mispallel who takes the day seriously is already inside the <span class="heb-inline">מחזור</span>.</em></p>
+
+<h2>I. <em>Kaf-Hei Elul</em> &mdash; Three Anchors</h2>
+
+<h3>The Day of <em>Bereishis</em></h3>
+
+<p>The 25th of Elul carries an unusual density. According to the <em>shitah</em> of <em>Rebbi Eliezer</em> (<span class="heb-inline">רבי אליעזר</span>) in <em>Rosh HaShanah</em>,<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> the world was created in <em>Tishrei</em>. <em>Adam HaRishon</em> (<span class="heb-inline">אדם הראשון</span>) was formed on the sixth day of Creation, which is Rosh HaShanah itself; counting the six days of <em>maaseh bereishis</em> back from that anchor places the first day of Creation &mdash; <em>bereishis bara Elokim</em> (<span class="heb-inline">בראשית ברא אלקים</span>) &mdash; on the 25th of Elul. The dating is a derivation from the Gemara rather than an explicit statement in the sugya, but it is the fixed <em>mesorah</em> that governs the day.</p>
+
+<p><em>Rashi</em> (<span class="heb-inline">רש&quot;י</span>) on the opening <em>pasuk</em> cites the <em>midrash</em>: the world was created <em>bishvil Yisrael she&rsquo;nikreu reishis</em> (<span class="heb-inline">בשביל ישראל שנקראו ראשית</span>).<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The first day of Creation and the coronation-day of the King three days later thus rest on the same <em>tachlis</em>: the <em>Ribbono Shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>) creates a world for the sake of the <em>am</em> whose <em>keser malchus</em> will crown Him at the beginning of every year.</p>
+
+<h3>The Wall of Nechemiah</h3>
+
+<p>The pasuk in <em>Nechemiah</em> records that the wall of <em>Yerushalayim</em> (<span class="heb-inline">ירושלים</span>) was completed on this very date: <em>va&rsquo;tishlam ha&rsquo;chomah b&rsquo;esrim v&rsquo;chamishah la&rsquo;Elul, la&rsquo;chamishim u&rsquo;shnayim yom</em> (<span class="heb-inline">ותשלם החומה בעשרים וחמשה לאלול לחמשים ושנים יום</span>).<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> Fifty-two days of communal <em>avodah</em> against opposition sealed the city&rsquo;s protection on the 25th of Elul &mdash; a communal-historical anchor to the day that matches the day&rsquo;s cosmological load. On <em>Kaf-Hei Elul</em> the physical enclosure of Yerushalayim was finished; on Rosh HaShanah, three days later, the spiritual enclosure of Klal Yisrael for the coming year begins.</p>
+
+<h3>A Hint of the <em>Geulah</em></h3>
+
+<p>A tradition transmitted in the name of the <em>Zohar</em> at the end of <em>Balak</em><a class="footnote-ref" id="ref4" href="#fn4">[4]</a> associates <em>Kaf-Hei Elul</em> with the fall of <em>malchus Romi</em> (<span class="heb-inline">מלכות רומי</span>) and the opening of the <em>geulah</em> (<span class="heb-inline">גאולה</span>). The eschatological content is unmistakably in the <em>Zohar</em>; the specific calendar peg to <em>Kaf-Hei Elul</em> is preserved in the later chassidic and kabbalistic transmission of that <em>Zohar</em>. In whichever form it is received, the day is treated as one on which the door of the <em>geulah</em> stands slightly ajar &mdash; a fitting <em>hachanah</em> to the days on which the King is to be coronated.</p>
+
+<h2>II. <em>Avinu Malkeinu</em> &mdash; <em>Harugim</em> and <em>Tevuchim</em></h2>
+
+<h3>Two Consecutive Lines</h3>
+
+<p><em>Avinu Malkeinu</em> (<span class="heb-inline">אבינו מלכנו</span>), whose origin at the <em>ta&rsquo;anis geshamim</em> of <em>Rabbi Akiva</em> was traced in the previous discourse and signed in <em>gematria</em> by the composer<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> &mdash; <em>Avinu Malkeinu chatanu lefanecha</em> equalling <em>Rabbi Akiva yesado</em> &mdash; contains two consecutive lines that appear to say the same thing:</p>
+
+<blockquote>
+<div class="heb">אָבִינוּ מַלְכֵּנוּ עֲשֵׂה לְמַעַן הֲרוּגִים עַל שֵׁם קָדְשֶׁךָ.</div>
+<div class="heb">אָבִינוּ מַלְכֵּנוּ עֲשֵׂה לְמַעַן טְבוּחִים עַל יִחוּדֶךָ.</div>
+<div class="trans">Our Father, our King, act for the sake of those slain for Your holy Name. Our Father, our King, act for the sake of those slaughtered for Your Oneness.</div>
+</blockquote>
+
+<p>Why the doubling? What does <em>harugim al shem kodshecha</em> (<span class="heb-inline">הרוגים על שם קדשך</span>) add to &mdash; or subtract from &mdash; <em>tevuchim al yichudecha</em> (<span class="heb-inline">טבוחים על יחודך</span>)?</p>
+
+<h3>The Pshevarsker Rebbe on the Banks of the Danube</h3>
+
+<p>A <em>pshat</em> preserved in the name of the <em>Pshevarsker Rebbe</em> (<span class="heb-inline">הרבי מפשעווארסק</span>)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> maps the two lines onto two <em>madreigos</em> of <em>mesirus nefesh</em> whose distinction became grotesquely literal in the last century. On the banks of the Danube, Yidden were lined up while reciting <em>Shema</em> (<span class="heb-inline">שמע</span>). The bullets moved down the line. Some were shot mid-<em>pasuk</em>, mouth open on the <em>Shem</em> but the word <em>echad</em> (<span class="heb-inline">אחד</span>) not yet pronounced &mdash; killed <em>al Shem Kadsho</em>, on the Name of Kedushah alone, without the <em>yichud</em> that completes it. These are the <em>harugim al Shem kodshecha</em>. Others reached the word <em>echad</em>, articulating the <em>yichud Hashem</em>, and were shot in the act of pronouncing it. These are the <em>tevuchim al yichudecha</em>.</p>
+
+<p>Two <em>madreigos</em>, two lines in <em>Avinu Malkeinu</em>. The composition is old; the framework that supplies the <em>peshat</em> is of our own generation. The mispallel who reaches these two lines on Rosh HaShanah 5787 &mdash; while the emotional distance to that <em>mesirus nefesh</em> is not yet great &mdash; is asked to hold both images and to say the two lines as they were separately intended.</p>
+
+<div class="pullquote">
+<div style="color:#444;font-style:italic;">Before the events of the last several years the mispallel could bring a great-grandfather to mind at these two lines. He now brings all of them.</div>
+</div>
+
+<h2>III. Fasting Past <em>Chatzos</em> on <em>Rosh HaShanah She&rsquo;Chal B&rsquo;Shabbos</em></h2>
+
+<h3>The Halachic Setting</h3>
+
+<p>Rosh HaShanah 5787 falls on Shabbos &mdash; the first day of <em>Yom Tov</em> and Shabbos together, followed by the second day of <em>Yom Tov</em>. This creates a halachic pressure most mispallelim underweight: <em>ta&rsquo;anis b&rsquo;Shabbos</em> (<span class="heb-inline">תענית בשבת</span>) past <em>chatzos</em> (<span class="heb-inline">חצות</span>) violates the <em>chiyuv</em> of <em>oneg Shabbos</em> (<span class="heb-inline">עונג שבת</span>).<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> On an ordinary Shabbos this is a non-issue &mdash; <em>kiddush</em> and the <em>seudah</em> are complete long before <em>chatzos</em>. On Rosh HaShanah, when <em>chazaras ha&rsquo;shatz</em> carries the full seder of <em>Malchuyos</em>, <em>Zichronos</em>, and <em>Shofros</em>, <em>Birkas Kohanim</em> (<span class="heb-inline">ברכת כהנים</span>), and the <em>piyutim</em> that girdle them &mdash; a mispallel can find himself in shul at <em>chatzos</em> with nothing yet in his stomach.</p>
+
+<h3>The Question of Drinking Before <em>Tefillah</em></h3>
+
+<p>The <em>Shulchan Aruch</em> prohibits eating and drinking before <em>Shacharis</em>.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> The <em>Acharonim</em> discuss the status of water, of coffee, and of the <em>shiur</em> at which the prohibition attaches. A <em>machlokes</em> also exists whether the <em>issur</em> of a Shabbos fast past <em>chatzos</em> is <em>de&rsquo;oraisa</em> &mdash; a violation of <em>oneg Shabbos</em> which the <em>Ramban</em> counts among the <em>Torah</em>&rsquo;s obligations &mdash; or <em>d&rsquo;rabbanan</em>.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> Even on the softer view the <em>issur</em> retains real weight; on the harder view the mispallel who fasts past <em>chatzos</em> to preserve a <em>chumra</em> of not drinking before <em>tefillah</em> is trading a <em>de&rsquo;oraisa</em> against an <em>issur</em> that most <em>poskim</em> read as <em>d&rsquo;rabbanan</em>. The <em>psak</em> falls in an obvious direction: drink.</p>
+
+<div class="pullquote">
+<div style="color:#444;font-style:italic;">A bochur once came to the <em>Minchas Elazar</em> (<span class="heb-inline">מנחת אלעזר</span>) &mdash; <em>Rav Chaim Elazar Spira of Munkacs</em> &mdash; with the <em>chumra</em> of never drinking before davening, even on Shabbos Rosh HaShanah. The Minchas Elazar himself brought in a tray with coffee, milk, and sugar. The <em>chumra</em> of not drinking before <em>tefillah</em> is not worth the <em>issur chamur</em> of a Shabbos fast past <em>chatzos</em>.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></div>
+</div>
+
+<h2>IV. Tears on the <em>Yom HaDin</em></h2>
+
+<h3>The <em>Shulchan Aruch</em> and the <em>Arizal</em></h3>
+
+<p>The <em>Shulchan Aruch</em><a class="footnote-ref" id="ref11" href="#fn11">[11]</a> rules that weeping on Shabbos is generally forbidden, on the ground that it negates <em>oneg</em>. The exception is tears from which the weeper derives <em>hanaah</em> (<span class="heb-inline">הנאה</span>) &mdash; the tear that closes the heart around what has been felt is itself a form of <em>oneg</em> and is permitted. The <em>Arizal</em> (<span class="heb-inline">אריז&quot;ל</span>) taught that the <em>avodah</em> of Rosh HaShanah is not weeping. The day is one of <em>eimas ha&rsquo;din</em> (<span class="heb-inline">אימת הדין</span>) fused with <em>bitachon</em> (<span class="heb-inline">בטחון</span>); the composure appropriate to the <em>Yom HaDin</em> is not the composure of <em>Tisha b&rsquo;Av</em>. Uncontrolled tears &mdash; the <em>neshamah</em> (<span class="heb-inline">נשמה</span>) sensing the din on its own &mdash; are of a different order and are welcomed.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+
+<h3>A <em>Remez</em> in the Tefillah</h3>
+
+<p>A compact <em>remez</em> preserves the paradox in the <em>tefillah</em> itself. In the <em>piyut</em> <em>u&rsquo;vchein tzaddikim yiru v&rsquo;yismachu</em>, the phrase <em>b&rsquo;Shimcha yagilun</em> (<span class="heb-inline">בשמך יגילון</span>) &mdash; <em>they shall exult in Your Name</em> &mdash; carries the <em>roshei teivos</em> that spell <em>bechiyah</em> (<span class="heb-inline">בכיה</span>). The joy at the coronation of the King on the <em>Yom HaDin</em> and the tear at the <em>eimas ha&rsquo;din</em> are the same motion of the <em>nefesh</em>; the <em>paytan</em> planted the <em>remez</em> to mark it.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+
+<h3>The <em>Reishis Chochmah</em> &mdash; a Tear on the Forehead</h3>
+
+<p>The <em>Reishis Chochmah</em><a class="footnote-ref" id="ref14" href="#fn14">[14]</a> preserves a practice: take a tear of <em>teshuvah</em> from the eye and place it on the forehead. The forehead is the place where the <em>tzitz</em> of the <em>Kohen Gadol</em> once bore the <em>Shem</em>; a tear placed there becomes a <em>keli</em> of <em>kapparah</em>. Whether the practice is retained when Rosh HaShanah falls on Shabbos &mdash; where the physical wiping of a tear may raise a <em>chashash</em> of <em>memarei&rsquo;ach</em> or of <em>michak</em> &mdash; is a matter to consult with a local <em>Rav</em>; the <em>Arizal</em>&rsquo;s permission for uncontrolled tears from <em>eimas ha&rsquo;din</em> stands regardless. Performative or willed weeping is not encouraged even on a weekday Rosh HaShanah; a fortiori not when the day falls on Shabbos.</p>
+
+<h2>V. Sleep on the <em>Yom HaDin</em></h2>
+
+<p>The <em>Shulchan Aruch</em><a class="footnote-ref" id="ref15" href="#fn15">[15]</a> discourages sleep on Rosh HaShanah morning: <em>mi she&rsquo;yashen b&rsquo;Rosh HaShanah ba&rsquo;yom mazalo yashen</em> &mdash; his <em>mazal</em> sleeps with him at the head of the year. The <em>Shulchan Aruch</em> itself qualifies the concern with the phrase <em>aval im yashen achar chatzos ein kepeidah</em> &mdash; after <em>chatzos</em> there is no objection. The <em>Arizal</em> and the <em>Vilna Gaon</em> converge on this reading: the <em>mazal</em>-concern attaches to the morning specifically, not to the whole day.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> The <em>Mishnah Berurah</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a> presses the point further from an <em>avodah</em>-standpoint: idle awake time is halachically indistinguishable from sleep for purposes of the <em>mazal</em> concern; a mispallel who needs a nap after <em>chatzos</em> in order to daven <em>Musaf</em> or the afternoon <em>tefillah</em> with <em>kavvanah</em> is better off asleep than sitting idle. A brief nap after <em>chatzos</em>, when required for <em>koach</em>, is not a <em>chumrah</em> worth defending against.</p>
+
+<h2>VI. <em>Lamnatzeach Livnei Korach</em> and the Absolute <em>Hefsek</em> of the Shofar</h2>
+
+<h3>The Sevenfold Recitation</h3>
+
+<p>Before the <em>tekios</em>, a widespread <em>minhag</em> traced to the <em>Arizal</em> is to recite <em>Lamnatzeach Livnei Korach mizmor</em> (<span class="heb-inline">למנצח לבני קרח מזמור</span>) &mdash; <em>Tehillim</em> 47 &mdash; seven times.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> The number seven corresponds to the sevenfold naming of <em>Elokim</em> in the <em>mizmor</em>, each recitation cutting a <em>shaar</em> of the <em>Satan</em>&rsquo;s prosecution. It is worth counting the <em>Names</em> once in a printed <em>Tehillim</em> before Rosh HaShanah in order to say the <em>mizmor</em> with the arithmetic in view.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a></p>
+
+<h3>The Priority of the <em>Mitzvah</em> over the <em>Minhag</em></h3>
+
+<p>The <em>minhag</em> is beloved but recent in the historical scale; the older <em>machzorim</em> of <em>Rodelheim</em> and <em>Heidenheim</em> do not print the sevenfold recitation at all. What is not recent is the <em>issur hefsek</em> (<span class="heb-inline">איסור הפסק</span>) between the <em>berachah</em> of <em>lishmoa kol shofar</em> (<span class="heb-inline">לשמוע קול שופר</span>) and the fulfillment of the <em>mitzvah</em>. Hearing <em>shofar</em> is <em>de&rsquo;oraisa</em>; a <em>hefsek</em> between <em>berachah</em> and <em>kiyum</em> is treated with the strictness of a <em>hefsek</em> between <em>birkas ha&rsquo;mitzvah</em> and <em>mitzvah</em> generally, with implications extending, in some <em>shittos</em>, to whether the <em>berachah</em> must be repeated.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> The operational rule is unambiguous: if the <em>ba&rsquo;al tokea</em> (<span class="heb-inline">בעל תוקע</span>) has begun the <em>berachos</em> and the mispallel has not yet finished the seventh recitation of <em>Lamnatzeach</em>, he stops mid-<em>mizmor</em>. The <em>Aruch HaShulchan</em><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> puts it in his own idiom: no <em>minhag</em> from the <em>Arizal</em> displaces a <em>mitzvas asei de&rsquo;oraisa</em>.</p>
+
+<h2>VII. <em>Hataras Nedarim</em> and <em>Mesiras Moda&rsquo;ah</em></h2>
+
+<h3>The <em>Erev</em> Rosh HaShanah Practice</h3>
+
+<p>On <em>Erev</em> Rosh HaShanah, the mispallel performs <em>hataras nedarim</em> (<span class="heb-inline">הַתָּרַת נדרים</span>) before three &mdash; a <em>beis din</em> of ordinary Yidden suffices &mdash; using the <em>nusach</em> printed in every <em>machzor</em>.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> Two levels of reflection belong to the moment. A promise made in the outgoing year to a shul, to <em>tzedakah</em>, to a <em>chavrusa</em> or a family member, that has not yet been fulfilled and was not framed <em>bli neder</em> (<span class="heb-inline">בלי נדר</span>), carries the weight of a <em>neder</em>. <em>Hataras nedarim</em> is not a substitute for paying what is owed. Where a mispallel owes money to the shul, he pays it; the <em>hataras nedarim</em> then addresses what remains.</p>
+
+<h3>The <em>Mesiras Moda&rsquo;ah</em> for the Coming Year</h3>
+
+<p>After the <em>hataras nedarim</em> before the <em>beis din</em>, a private declaration may be made at home: <em>mesiras moda&rsquo;ah</em> (<span class="heb-inline">מסירת מודעא</span>) &mdash; a formal statement that any expression of intention issued in the coming year should not carry the status of a <em>neder</em> unless the word <em>neder</em> is explicitly said.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> The Gemara in <em>Nedarim</em><a class="footnote-ref" id="ref24" href="#fn24">[24]</a> discusses this posture &mdash; <em>ha&rsquo;rotzeh she&rsquo;lo yiskaymu nedarav kol ha&rsquo;shanah</em>. The same posture is what <em>Kol Nidrei</em> (<span class="heb-inline">כל נדרי</span>) performs on the night of <em>Yom Kippur</em>; the two practices are the same instrument at the two ends of the <em>Aseres Yemei Teshuvah</em>. The mispallel who has said the <em>mesiras moda&rsquo;ah</em> at home on <em>Erev</em> Rosh HaShanah reaches <em>Kol Nidrei</em> having already done, on a personal register, what <em>Kol Nidrei</em> is doing on a communal one.</p>
+
+<h2>VIII. The Ownership of Tefillah &mdash; Core Over Piyut, <em>HaMelech</em> from the Place</h2>
+
+<h3>The Order of Priority</h3>
+
+<p>The instinct on Rosh HaShanah is to compress <em>Pesukei d&rsquo;Zimra</em>, <em>Birkas Kerias Shema</em>, and <em>Shemoneh Esrei</em> in order to keep pace with the <em>piyutim</em> that accompany <em>chazaras ha&rsquo;shatz</em>. The instinct is inverted. These are the core of the <em>tefillah</em>. Where the piyutim of <em>chazaras ha&rsquo;shatz</em> must wait an extra two minutes so that the mispallel can finish his own <em>Shemoneh Esrei</em> with the <em>kavvanah</em> the day demands, they wait. The <em>piyutim</em>, whose halachic status will occupy the next chapter, are supplements; the <em>berachos</em> of the <em>Amidah</em> are the <em>ikkar</em>.</p>
+
+<h3><em>HaMelech HaKadosh</em> from the Mispallel&rsquo;s Own Place</h3>
+
+<p>A related <em>chassidishe minhag</em>: some <em>shluchei tzibbur</em> begin the opening word <em>HaMelech</em> (<span class="heb-inline">המלך</span>) of the <em>chazarah</em> on Rosh HaShanah morning from their own place in the tzibbur, not from the amud.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> The two moves &mdash; refusing to rush the core to reach the piyut, and letting the tzibbur, not the shatz, be the coronating body &mdash; are the same claim in two registers: the <em>tefillah</em> belongs to the mispallel and to the tzibbur. The <em>shatz</em> serves it; he does not own it. On the day of the coronation of the King, who does the coronating is not a minor question.</p>
+
+<h2>IX. The Battle Over the <em>Piyutim</em></h2>
+
+<h3>Origin in a <em>Gezeirah</em></h3>
+
+<p>The centerpiece of the day&rsquo;s discourse is a documentary discovery that reshaped the modern historical understanding of the machzor. From the Cairo <em>genizah</em>, published only at the end of the 19th century, was recovered the polemical epistle of <em>Pirkoi ben Baboi</em> (<span class="heb-inline">פרקוי בן באבוי</span>), a <em>talmid</em> in the circle of <em>Rav Yehudai Gaon</em> (<span class="heb-inline">רב יהודאי גאון</span>).<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> The document records the tradition that the <em>piyutim</em> originated in <em>Eretz Yisrael</em> under a <em>gezeiras shmad</em> (<span class="heb-inline">גזירת שמד</span>) that had suppressed the standard <em>nusach ha&rsquo;tefillah</em>. Yidden could not daven the regular <em>berachos</em> publicly; the paytanic form &mdash; metrical, acrostic, dense with signature patterns &mdash; concealed the halachic content of the day inside a poetic surface that a Yid could recite and that his neighbor understood but that stood outside the reach of the enforcement mechanism. The <em>piyutim</em> were, on this account, substitute-<em>tefillah</em> for a persecution era.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a></p>
+
+<h3>The <em>Geonic</em> Critique</h3>
+
+<p>When the persecution ended and the standard <em>nusach</em> could be restored openly, the substitute did not withdraw &mdash; the <em>tzibbur</em> had grown attached to it. The great <em>Geonim</em> pushed to strip the <em>piyutim</em> back out:</p>
+
+<ul>
+  <li><em>Rav Hai Gaon</em> (<span class="heb-inline">רב האי גאון</span>, ca. 939&ndash;1038) held that <em>piyutim</em> inserted inside the <em>berachos</em> of <em>Shemoneh Esrei</em> constitute a <em>hefsek</em>.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a></li>
+  <li><em>Rav Saadia Gaon</em> (<span class="heb-inline">רב סעדיה גאון</span>, 882&ndash;942) held that the <em>matbea she&rsquo;tavu Chazal</em> (<span class="heb-inline">מטבע שטבעו חז&quot;ל</span>) is not to be altered from the outside. Rav Saadia himself, it should be noted, is the compiler of one of the earliest known <em>siddurim</em> and did compose <em>piyutim</em> of his own; his position on inserted <em>piyutim</em> inside the outer <em>berachos</em> of the <em>Amidah</em> is stricter than his general practice of <em>piyut</em>-composition, and the two facts are compatible.</li>
+  <li>The <em>Rosh</em> (<span class="heb-inline">רא&quot;ש</span>), cited by the <em>Tur</em> in <em>Orach Chaim</em> <em>siman</em> 68,<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> endorses the Geonic critique with respect to <em>piyutim</em> inside <em>Birkas Kerias Shema</em> and inside <em>Shemoneh Esrei</em>.</li>
+  <li>The <em>Vilna Gaon</em> follows the Geonic line, and his operational move &mdash; recorded in <em>Ma&rsquo;aseh Rav</em> &mdash; is precise rather than blanket: <em>piyutim</em> that fall inside the <em>berachos</em> are moved outside them or omitted; <em>piyutim</em> that fall at neutral moments of <em>chazaras ha&rsquo;shatz</em> are treated differently.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a></li>
+</ul>
+
+<h3>The Defense &mdash; <em>Shevach</em>, <em>Minhag</em>, and the <em>Maharil</em></h3>
+
+<p>The classical defense of the <em>piyutim</em> against the Geonic critique proceeds on two legs. The first is halachic: <em>piyutim</em> of pure <em>shevach</em> (<span class="heb-inline">שבח</span>) &mdash; praises of the <em>Ribbono Shel Olam</em> without embedded <em>bakashah</em> &mdash; do not fall under the Geonic prohibition, which was aimed at inserted <em>bakashos</em> foreign to the <em>berachah</em>&rsquo;s <em>matbea</em>. This is the same halachic engine that permits the mispallel to answer <em>amen</em> to a <em>berachah</em> he hears in the middle of <em>Pesukei d&rsquo;Zimra</em>: continuous <em>shevach</em> is a different halachic category from foreign <em>bakashah</em>. The engine is developed at length in the <em>Rishonim</em> and codified in the <em>Beis Yosef</em> to <em>Orach Chaim</em> 68.<a class="footnote-ref" id="ref31" href="#fn31">[31]</a></p>
+
+<p>The second leg is the leg of <em>minhag</em>. The <em>Maharil</em> (<span class="heb-inline">המהרי&quot;ל</span>), <em>Rav Yaakov Moellin</em> of the early 15th century, is the great codifier of the <em>minhagei Ashkenaz</em> and the most forceful voice against the alteration of established <em>minhag</em>. His argument is not merely institutional. A <em>minhag</em> accepted by <em>klal Yisrael</em> across generations acquires a halachic standing that is not undone by the discovery of a difficulty; the discovery obliges study of the <em>minhag</em>, not its abolition. The Maharil&rsquo;s specific instruction with respect to the <em>piyutim</em> is remembered in three parts: learn them, understand what one is saying, correct grammar where copyists have introduced error &mdash; but do not alter the meaning and do not remove the <em>piyut</em> from the <em>minhag</em>.<a class="footnote-ref" id="ref32" href="#fn32">[32]</a></p>
+
+<p>A <em>maaseh</em> transmitted with the Maharil closes the argument. The Maharil, in one year, removed a specific <em>piyut</em> from the <em>tefillah</em> of the community; his daughter died in that year, and he retracted, treating the loss as heaven&rsquo;s response to the alteration. Whether the <em>maaseh</em> is offered as historical record or as parable, its halachic force is the same: on the question of <em>minhag Ashkenaz</em>, the Maharil holds the line.<a class="footnote-ref" id="ref33" href="#fn33">[33]</a></p>
+
+<h3>Where the Argument Rests</h3>
+
+<p>The two legs of the defense do not exhaust one another. The <em>shevach</em>-vs-<em>bakashah</em> distinction addresses the halachic engine; the Maharil&rsquo;s <em>minhag</em>-argument addresses the sociological and metaphysical standing of the community&rsquo;s established practice. The Geonic critique retains its own force &mdash; and the <em>Nusach HaGra</em>&rsquo;s operational preference for keeping <em>piyutim</em> out of the <em>berachos</em> themselves is a legitimate expression of that force &mdash; without dislodging the <em>minhag</em> of <em>Ashkenaz</em> and <em>Sefarad</em> to retain the piyut structure of the <em>machzor</em>. A mispallel follows the <em>nusach</em> of his community; the halachic <em>parshas ha&rsquo;drachim</em> is settled by <em>minhag ha&rsquo;makom</em>, not by fresh judgment at the amud.</p>
+
+<h2>X. The Mystery of <em>Rabbi Elazar HaKalir</em></h2>
+
+<h3>The Question of Identity and Era</h3>
+
+<p>The spine of the <em>Ashkenaz machzor</em> is the corpus of <em>Rabbi Elazar HaKalir</em> (<span class="heb-inline">רבי אלעזר הקליר</span>). Who he was, and when he lived, is contested in the <em>Rishonim</em> themselves. <em>Rabbeinu Tam</em> in <em>Tosafos</em> <em>Chagigah</em> 13a<a class="footnote-ref" id="ref34" href="#fn34">[34]</a> identifies him with a <em>Tanna</em> &mdash; on some readings <em>Rabbi Elazar b&rsquo;Rabbi Shimon</em> (<span class="heb-inline">רבי אלעזר בר&quot; שמעון</span>) &mdash; and rests the identification on a chain of <em>mesorah ish mi&rsquo;pi ish</em>: transmitted, on his own testimony, from Rashi through <em>Rabbi Meir</em>. Later <em>Rishonim</em> including the <em>Shibbolei HaLeket</em> and <em>Rabbi Yitzchak Ibn Ghayyat</em>, and much of subsequent scholarship down to the modern academic study of piyut based on the Cairo <em>genizah</em>, place the <em>paytan</em> in <em>Eretz Yisrael</em> in the 6th or 7th century, some time after the <em>Tannaim</em> but before the rise of the classical <em>piyutim</em> of Ashkenaz.</p>
+
+<p>The stakes of the question are more than biographical. If the <em>Kalir</em> was a <em>Tanna</em>, the Geonic critique that the <em>piyutim</em> are a post-<em>Chazal</em> substitute cannot straightforwardly apply to his corpus &mdash; the <em>piyutim</em> would be <em>Chazal</em>&rsquo;s own composition. If the <em>Kalir</em> is a 6th- or 7th-century figure in <em>Eretz Yisrael</em>, the timing aligns with the persecution era to which <em>Pirkoi ben Baboi</em> traces the piyut form, and the Geonic critique bears more directly on the corpus. The <em>Rishonim</em> hold both positions; the <em>tzibbur</em>, on both, sings the <em>Kalir</em> at the <em>machzor</em>.</p>
+
+<h3>Legends and Their Weight</h3>
+
+<p>Colorful legends surround the <em>Kalir</em>. One tradition speaks of an insect &mdash; recorded in some versions as a bee, in others as a scorpion &mdash; stinging his tongue and thereby loosening the <em>koach</em> to compose. Another, from the <em>Aruch</em>, describes a piece of cake and a <em>kameia</em> associated with a fire that would burn around him as he wrote. <em>Rabbeinu Tam</em> transmits these traditions with the framing that he received them <em>ish mi&rsquo;pi ish</em> from Rashi through <em>Rabbi Meir</em>; the halachic weight lies in the <em>mesorah</em>-chain rather than in the miracle detail, and it is on that chain that his identification of the <em>Kalir</em> as a <em>Tanna</em> rests.<a class="footnote-ref" id="ref35" href="#fn35">[35]</a></p>
+
+<h3>The Language of the <em>Kalir</em></h3>
+
+<p>What is not contested is the character of the language itself. The <em>Kalir</em>&rsquo;s Hebrew stretches to its limits: rare roots from the far corners of <em>Tanach</em>, dense acrostics, elaborate signature patterns, a lexicon that requires <em>peirush</em> at almost every stanza. It is the language that makes serious study of the <em>machzor</em> a lifelong project, and the <em>Kalir</em>&rsquo;s corpus that gives the Ashkenaz <em>machzor</em> its particular density. A mispallel who wishes to daven the <em>machzor</em> with <em>kavvanah</em> begins each year by learning a few stanzas he has not yet unlocked.</p>
+
+<h2>XI. The Arc</h2>
+
+<p>The <em>Kaf-Hei Elul</em> of the day of <em>Bereishis</em> and of Nechemiah&rsquo;s wall opens onto a Rosh HaShanah that is also a Shabbos. The mispallel enters carrying the two lines of <em>Avinu Malkeinu</em> with the Danube in his ear, the coffee already drunk against the <em>issur</em> of fasting past <em>chatzos</em>, the tear of the <em>neshamah</em> permitted where it comes on its own, a nap after <em>chatzos</em> if <em>koach</em> requires it, the seventh recitation of <em>Lamnatzeach</em> abandoned mid-<em>mizmor</em> if the <em>ba&rsquo;al tokea</em> has begun, the <em>hataras nedarim</em> and the <em>mesiras moda&rsquo;ah</em> already accomplished, the <em>ikkar</em> of the <em>tefillah</em> refusing to be rushed for the sake of the <em>piyutim</em>, and the great corpus of the <em>Kalir</em> &mdash; whose era is contested and whose language is difficult &mdash; sitting in the <em>machzor</em> open before him. The <em>chasimah</em> of the outgoing year happens at that <em>Mincha</em> of yesterday&rsquo;s discourse; the <em>chasimah</em> of the incoming year lies ten days away. Between them stands the mispallel, whose <em>avodah</em> during these hours is what the <em>machzor</em> is for.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short">Rebbi Eliezer &mdash; the world was created in Tishrei; the derivation to <em>Kaf-Hei Elul</em>.</span>
+  <span class="expanded">&mdash; <em>Rosh HaShanah</em> 10b&ndash;11a records the <em>machlokes Tannaim</em> of <em>Rebbi Eliezer</em> and <em>Rebbi Yehoshua</em>: <em>b&rsquo;Tishrei nivra ha&rsquo;olam</em> versus <em>b&rsquo;Nissan nivra ha&rsquo;olam</em>. The specific date <em>Kaf-Hei Elul</em> as the first day of <em>maaseh bereishis</em> is a derivation from Rebbi Eliezer&rsquo;s <em>shitah</em>, working backward from the creation of <em>Adam HaRishon</em> on the sixth day of Creation, identified with Rosh HaShanah. The derivation is standard in the classical commentators and is codified in the <em>tefillah</em> of <em>zeh ha&rsquo;yom techilas maasecha</em> on Rosh HaShanah; it is not an explicit Talmudic statement.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short">Rashi to <em>Bereishis</em> 1:1 &mdash; <em>bishvil Yisrael she&rsquo;nikreu reishis</em>.</span>
+  <span class="expanded">&mdash; Sourced from <em>Bereishis Rabbah</em> 1:4 and <em>Vayikra Rabbah</em> 36:4. Rashi&rsquo;s formulation binds the two <em>reishis</em>-terms: <em>bishvil ha&rsquo;Torah she&rsquo;nikres reishis u&rsquo;vishvil Yisrael she&rsquo;nikreu reishis</em>.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Nechemiah</em> 6:15 &mdash; the wall completed on the 25th of Elul.</span>
+  <span class="expanded">&mdash; <em>Va&rsquo;tishlam ha&rsquo;chomah b&rsquo;esrim v&rsquo;chamishah la&rsquo;Elul la&rsquo;chamishim u&rsquo;shnayim yom</em>. Fifty-two days of rebuilding, culminating on <em>Kaf-Hei Elul</em>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Zohar</em> at the end of <em>Balak</em> &mdash; the fall of <em>malchus Romi</em> and the opening of the <em>geulah</em>.</span>
+  <span class="expanded">&mdash; The customary citation is <em>Zohar</em> III 212&ndash;213 at the end of <em>parshas Balak</em>, treating the eschatological arc. The specific date-linkage to <em>Kaf-Hei Elul</em> as the day of the fall of <em>malchus Romi</em> is developed in the later chassidic and kabbalistic transmission of that <em>Zohar</em>; the calendar peg on any plain reading of the <em>Zohar</em>&rsquo;s printed text is not explicit. The tradition is received in the form in which it is transmitted.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short">The gematria of <em>Avinu Malkeinu chatanu lefanecha</em> &mdash; treated at length in the previous discourse.</span>
+  <span class="expanded">&mdash; See the second discourse (<em>Sefer Edition</em>, 24 Elul / 2026-09-06), fn28&ndash;29, with primary reference to <em>Ta&rsquo;anis</em> 25b and the <em>Abudraham</em> and <em>Kol Bo</em>.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short">The <em>Pshevarsker Rebbe</em> on <em>harugim al Shem kodshecha</em> and <em>tevuchim al yichudecha</em>.</span>
+  <span class="expanded">&mdash; The <em>pshat</em> distinguishing the two lines by whether the <em>kadosh</em> reached the word <em>echad</em> before the shot is transmitted in the name of the <em>Rebbe of Pshevarsk</em> (<span class="heb-inline">פשעווארסק</span>), the chassidishe court centered in Antwerp in the post-war generations. The framework is oral; the specific storyteller-chain and its precise attribution to a particular Pshevarsker <em>Rebbe</em> is a matter of oral <em>mesorah</em> received in the shiur.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Ta&rsquo;anis b&rsquo;Shabbos</em> past <em>chatzos</em>.</span>
+  <span class="expanded">&mdash; <em>Shulchan Aruch</em>, <em>Orach Chaim</em> 288:1&ndash;2 prohibits fasting on Shabbos <em>b&rsquo;stam</em>; the <em>Mishnah Berurah</em> ad loc. treats the fasting-past-<em>chatzos</em> case at length. The <em>chiyuv</em> of <em>oneg Shabbos</em> stands behind the prohibition; the parallel to a <em>Yom Tov</em> that falls on Shabbos is a fortiori.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 89:3 &mdash; no eating or drinking before <em>Shacharis</em>.</span>
+  <span class="expanded">&mdash; <em>Asur lo l&rsquo;his&rsquo;asek b&rsquo;tzarachav o leilech la&rsquo;derech ad she&rsquo;yispallel tefillas Shemoneh Esrei, v&rsquo;lo le&rsquo;echol v&rsquo;lo lishtos</em>. The status of water, the status of coffee &mdash; especially with milk and sugar &mdash; and the <em>shiur</em> at which the prohibition attaches are discussed in the <em>Mishnah Berurah</em> ad loc.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short">The <em>machlokes</em> whether the Shabbos-fast <em>issur</em> is <em>de&rsquo;oraisa</em> or <em>d&rsquo;rabbanan</em>.</span>
+  <span class="expanded">&mdash; The <em>Ramban</em> counts <em>oneg Shabbos</em> as a <em>de&rsquo;oraisa</em> chiyuv; on that view the fasting-past-<em>chatzos</em> issur derives from a <em>Torah</em>-obligation. Other <em>Rishonim</em> and <em>Acharonim</em> place the <em>issur</em> as <em>d&rsquo;rabbanan</em>. The <em>Mishnah Berurah</em>&rsquo;s treatment of <em>ta&rsquo;anis chalom</em> exceptions in <em>Orach Chaim</em> 288:7 supplies the practical calibration. The specific <em>ta&rsquo;anis</em>-<em>shiur</em> question &mdash; whether <em>ta&rsquo;anis</em> requires <em>kabbalas ta&rsquo;anis</em> subjectively or <em>shiur achilah</em> absence objectively &mdash; is developed at length in the <em>Pri Megadim</em>. Even on the softer positions, the <em>issur</em> carries real weight.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short">The <em>Minchas Elazar</em> (<span class="heb-inline">מנחת אלעזר</span>) on the bochur with the <em>chumra</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Chaim Elazar Spira of Munkacs</em> (1868&ndash;1937), whose <em>teshuvos</em> <em>Minchas Elazar</em> comprise seven <em>chelakim</em>. The specific ma&rsquo;aseh of the tray with coffee, milk, and sugar cubes for the <em>oiberlender</em>-bochur with the <em>chumra</em> not to drink before <em>tefillah</em> on <em>Rosh HaShanah she&rsquo;chal b&rsquo;Shabbos</em> is transmitted in Munkatch <em>mesorah</em>; a specific printed <em>teshuvah</em> is findable in the indexed <em>Minchas Elazar</em> corpus and would strengthen citation. The broader modern <em>psak</em> on drinking coffee before davening when <em>tefillah</em> will run past <em>chatzos</em> on Shabbos is discussed in <em>Igros Moshe</em> (<em>Orach Chaim</em>) and in the <em>teshuvos</em> of <em>Rav Shlomo Zalman Auerbach</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short">The <em>Shulchan Aruch</em> on <em>bechiyah b&rsquo;Shabbos</em>.</span>
+  <span class="expanded">&mdash; <em>Shulchan Aruch</em>, <em>Orach Chaim</em> 288:2 on the prohibition of fasting on Shabbos, with <em>Rama</em> and <em>Mishnah Berurah</em> ad loc. treating the collateral question of <em>bechiyah</em> where it negates <em>oneg</em>. <em>Ta&rsquo;anugim</em> vs. <em>tzaar</em> is the halachic frame; tears from which the weeper derives <em>hanaah</em> fall outside the prohibition.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short">The <em>Arizal</em> on the <em>avodah</em> of Rosh HaShanah.</span>
+  <span class="expanded">&mdash; The <em>Arizal</em>&rsquo;s derech on the day is preserved in <em>Shaar HaKavvanos</em> and in <em>Peri Etz Chaim</em> (<em>Shaar Rosh HaShanah</em>). The specific position that composed weeping is not the <em>avodah</em>, while uncontrolled tears from <em>eimas ha&rsquo;din</em> are welcomed, is standard <em>mesorah</em>. Its pin against a specific <em>Shaar HaKavvanos</em> paragraph on Rosh HaShanah bears verification against a critical edition.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>B&rsquo;Shimcha yagilun</em> &mdash; <em>roshei teivos</em> <em>bechiyah</em>.</span>
+  <span class="expanded">&mdash; The <em>remez</em> reads the <em>roshei teivos</em> of the phrase in the paragraph <em>u&rsquo;vchein tzaddikim</em> of the <em>kedushas ha&rsquo;yom</em>. The tradition is widely transmitted in the <em>chassidishe</em> literature on the <em>machzor</em>; a specific printed source would repay verification.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Reishis Chochmah</em> &mdash; the tear on the forehead.</span>
+  <span class="expanded">&mdash; <em>Rav Eliyahu de Vidas</em>, <em>Reishis Chochmah</em>, 16th-century Tzfas. The practice of placing a tear of <em>teshuvah</em> on the forehead as a <em>keli</em> of <em>kapparah</em>, evoking the <em>tzitz</em> of the <em>Kohen Gadol</em> that bore the <em>Shem</em>, appears in the <em>Shaar HaTeshuvah</em> section. Specific perek reference bears verification.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 583:2 &mdash; sleeping on Rosh HaShanah.</span>
+  <span class="expanded">&mdash; <em>V&rsquo;chen mi she&rsquo;yashen b&rsquo;Rosh HaShanah ba&rsquo;yom mazalo yashen, aval im yashen achar chatzos ein kepeidah</em>. The <em>Shulchan Aruch</em>&rsquo;s own formulation includes the post-<em>chatzos</em> qualifier.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Arizal</em> and <em>Vilna Gaon</em> &mdash; convergence on the post-<em>chatzos</em> permission.</span>
+  <span class="expanded">&mdash; Both traditions read the <em>mazal</em>-concern as attaching to the morning specifically. See <em>Ma&rsquo;aseh Rav</em> for the Gra&rsquo;s <em>minhag</em>.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Mishnah Berurah</em> to <em>Orach Chaim</em> 583.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> presses the point on <em>avodah</em>-grounds: sleeping in order to daven <em>Musaf</em> or the afternoon <em>tefillah</em> with <em>kavvanah</em> is preferable to idle awake time, since idle awake time is halachically equivalent to sleep for the <em>mazal</em>-concern. <em>Yoshev battel k&rsquo;yashen dami</em>.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short">The <em>Arizal</em> on the sevenfold recitation of <em>Lamnatzeach</em> before <em>tekios</em>.</span>
+  <span class="expanded">&mdash; The <em>minhag</em> is traced to the <em>Arizal</em> via <em>Shaar HaKavvanos</em> and <em>Peri Etz Chaim</em>; codified in <em>Machzor Vitry</em> and in later widespread practice; discussed in <em>Kaf HaChaim</em> to <em>Orach Chaim</em> 585.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short">The count of divine names in <em>Tehillim</em> 47.</span>
+  <span class="expanded">&mdash; The kabbalistic <em>ta&rsquo;am</em> for the sevenfold recitation invokes the sevenfold appearance of <em>Elokim</em> in the <em>mizmor</em>. The <em>mizmor</em> contains multiple divine Names, and different enumerations count differently &mdash; some include <em>Melech</em> or <em>Elyon</em> to reach seven, others count only explicit <em>Elokim</em>. Worth a literal count in a printed <em>Tehillim</em> before Rosh HaShanah to say the recitations with the arithmetic in view.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 592:3 and <em>Mishnah Berurah</em> ad loc.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> and <em>Mishnah Berurah</em> treat the <em>hefsek</em> question between the <em>berachah</em> of <em>lishmoa kol shofar</em> and the fulfillment of the <em>mitzvah</em> with the strictness of <em>hefsek</em> between <em>birkas ha&rsquo;mitzvah</em> and <em>mitzvah</em> generally &mdash; an <em>issur d&rsquo;rabbanan</em> with real consequences, including in some <em>shittos</em> the obligation to repeat the <em>berachah</em>. Talking after the initial <em>tekios</em> but before the <em>Malchuyos</em>/<em>Zichronos</em>/<em>Shofros</em> sequences of <em>Musaf</em> is a discussion in the <em>Acharonim</em>.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Aruch HaShulchan</em> to <em>Orach Chaim</em> 585 / 592 &mdash; no <em>minhag</em> displaces the <em>de&rsquo;oraisa</em>.</span>
+  <span class="expanded">&mdash; The <em>Aruch HaShulchan</em> spells out the priority in his own posek-idiom: the sevenfold <em>Lamnatzeach</em> is a beautiful <em>minhag</em> from the <em>Arizal</em>, but the <em>mitzvah</em> of <em>shofar</em> is <em>de&rsquo;oraisa</em> and a <em>hefsek</em> between the <em>berachah</em> and the <em>kiyum</em> is not to be entertained. The Rodelheim and Heidenheim <em>machzorim</em>, which do not print the sevenfold recitation at all, are a historical corroboration.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>Hataras nedarim</em> on <em>Erev</em> Rosh HaShanah.</span>
+  <span class="expanded">&mdash; Standard <em>minhag</em> codified in the <em>machzor</em> and in the <em>Kitzur Shulchan Aruch</em>; done before three, with the <em>nusach</em> printed in every <em>machzor</em>. The general <em>halachos</em> of <em>hataras nedarim</em> are in <em>Shulchan Aruch</em>, <em>Yoreh De&rsquo;ah</em> 228.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Mesiras moda&rsquo;ah</em> &mdash; the private declaration for future <em>nedarim</em>.</span>
+  <span class="expanded">&mdash; The private declaration performed at home &mdash; in some ashkenaz traditions on <em>Erev</em> Rosh HaShanah and in others as part of <em>Kol Nidrei</em> on <em>Yom Kippur</em> &mdash; that any future statement of intention shall not carry <em>neder</em>-status unless the word <em>neder</em> is explicitly said. Codified in <em>Shulchan Aruch</em>, <em>Yoreh De&rsquo;ah</em> 211:1&ndash;2, with <em>Rama</em> noting that this is the operative function of <em>Kol Nidrei</em>. The question whether <em>mesiras moda&rsquo;ah</em> for future <em>nedarim</em> requires <em>edim</em> constitutively (as in <em>mesiras moda&rsquo;ah</em> for <em>gittin</em> and <em>kiddushin</em>) or whether the private declaration suffices is a <em>machlokes</em> in the <em>Rishonim</em>; the accepted practice is the private declaration.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short"><em>Nedarim</em> 23b &mdash; <em>ha&rsquo;rotzeh she&rsquo;lo yiskaymu nedarav kol ha&rsquo;shanah</em>.</span>
+  <span class="expanded">&mdash; The Gemara in <em>Nedarim</em> supplies the source: <em>ha&rsquo;rotzeh she&rsquo;lo yiskaymu nedarav kol ha&rsquo;shanah, ya&rsquo;amod b&rsquo;Rosh HaShanah v&rsquo;yomar: kol neder she&rsquo;ani asid lidor yehi vateil</em>. Some <em>Rishonim</em>, including the <em>Rosh</em>, tie the <em>nusach</em> of <em>Kol Nidrei</em> directly to this <em>Gemara</em> &mdash; <em>nedarim she&rsquo;ani asid lidor</em>; <em>Rabbeinu Tam</em> famously argues that <em>Kol Nidrei</em> concerns past <em>nedarim</em> and revised the <em>nusach</em> accordingly. This is the classical <em>machlokes Rishonim</em> that lies behind the two placements of the <em>mesiras moda&rsquo;ah</em> in the Ashkenaz liturgical year.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short">The <em>chassidishe minhag</em> &mdash; beginning <em>HaMelech</em> from the mispallel&rsquo;s place.</span>
+  <span class="expanded">&mdash; Oral <em>chassidishe minhag</em>; a printed pin is not to be expected. The <em>kavvanah</em>: the tzibbur, not the <em>shatz</em>, coronates the <em>Ribbono Shel Olam</em>; the <em>shatz</em>&rsquo;s role is to join what the tzibbur has already begun. Whether a <em>shatz</em> raised in a non-chassidishe shul is obligated to adopt the <em>minhag</em> is a <em>minhag ha&rsquo;makom</em> question rather than a general halachic requirement.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <span class="short"><em>Pirkoi ben Baboi</em> and <em>Rav Yehudai Gaon</em> &mdash; the Cairo <em>genizah</em> polemic.</span>
+  <span class="expanded">&mdash; The polemical epistle of <em>Pirkoi ben Baboi</em>, transmitted in the <em>Bavli</em>-centered Geonic <em>derech</em> and treating <em>minhagei Eretz Yisrael</em> as remnants of the <em>gezeiras shmad</em> era, was recovered from the Cairo <em>genizah</em> and published in the scholarly literature only from the late 19th century onward &mdash; earlier <em>Acharonim</em> including <em>Rabbi Akiva Eiger</em>, the <em>Ketzos HaChoshen</em>, and the <em>Chida</em> did not know it. <em>Pirkoi</em> writes as a <em>talmid</em> in the circle of <em>Rav Yehudai Gaon</em> and invokes his authority. Modern academic scholarship debates whether <em>Pirkoi</em> is transmitting a verified <em>teshuvah</em> of Rav Yehudai or presenting an independent polemical case under Rav Yehudai&rsquo;s <em>haskamah</em>. Either way, the historical <em>picture</em> the document establishes &mdash; that the <em>Geonim</em> understood the <em>piyutim</em> as a persecution-era substitute that no longer had halachic warrant &mdash; is corroborated independently by the direct <em>teshuvos</em> of <em>Rav Hai</em> and <em>Rav Saadia</em>.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short">The <em>gezeiras shmad</em>-origin narrative and the modern academic pushback.</span>
+  <span class="expanded">&mdash; The traditional understanding, preserved by <em>Pirkoi</em> and by the Geonic critique, is that <em>piyutim</em> in <em>Eretz Yisrael</em> developed as substitutes for the standard <em>nusach</em> during a period of Byzantine, and then early Muslim, gezeiros. Modern academic scholarship &mdash; associated preeminently with <em>Ezra Fleischer</em> &mdash; argues that <em>piyut</em> was primarily an aesthetic-liturgical development in its own right, not a persecution-driven substitute. Both frameworks appear in the received <em>mesorah</em>; the <em>Pirkoi</em> document is compatible with the older narrative, and the modern academic reading is compatible with the halachic reception the <em>Rishonim</em> gave to the piyut corpus.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <span class="short"><em>Rav Hai Gaon</em> on <em>piyutim</em> as <em>hefsek</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Hai Gaon</em> (ca. 939&ndash;1038), the last of the great <em>Geonim</em> of Pumbedisa. His <em>teshuvos</em> on liturgical matters are cited by the <em>Tur</em> and the <em>Beis Yosef</em> as the strongest Geonic pushback against inserted <em>piyutim</em>; specific loci in <em>Sha&rsquo;arei Teshuvah</em> and in <em>Otzar HaGeonim</em>.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn29">
+  <span class="short">The <em>Tur</em>, <em>Orach Chaim</em> 68 &mdash; citing the <em>Rosh</em>.</span>
+  <span class="expanded">&mdash; The <em>Tur</em> in <em>Orach Chaim</em> 68 collects the Geonic critique of <em>piyutim</em> inside <em>Birkas Kerias Shema</em> and cites the <em>Rosh</em> in agreement; the <em>Beis Yosef</em> ad loc. develops the discussion at length.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn30">
+  <span class="short">The <em>Vilna Gaon</em> &mdash; nuanced operational practice.</span>
+  <span class="expanded">&mdash; The Gra&rsquo;s position, as recorded in <em>Ma&rsquo;aseh Rav</em> and in the <em>Aderes</em>&rsquo;s reports, is not a blanket rejection of <em>piyut</em> but a precise operational move: <em>piyutim</em> that fall inside the <em>berachos</em> of <em>Kerias Shema</em> or of <em>Shemoneh Esrei</em> are omitted or repositioned outside the <em>berachos</em>; <em>piyutim</em> that fall at neutral moments are treated differently. The implementation in different <em>kehillos</em> that took <em>Nusach HaGra</em> varied; the halachic <em>sevara</em> is uniform.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn31">
+  <span class="short">The <em>shevach</em>-vs-<em>bakashah</em> distinction &mdash; <em>Beis Yosef</em> to <em>Orach Chaim</em> 68.</span>
+  <span class="expanded">&mdash; The classical halachic engine for the defense of <em>piyutim</em> against the Geonic critique. Continuous <em>shevach</em> is a different halachic category from foreign <em>bakashah</em>; the parallel is the permission to answer <em>amen</em> to a <em>berachah</em> heard in the middle of <em>Pesukei d&rsquo;Zimra</em>. The engine is developed in the <em>Rishonim</em> around <em>Orach Chaim</em> 51 and 68 and codified in the <em>Beis Yosef</em> ad loc.</span>
+  <a class="backref" href="#ref31" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn32">
+  <span class="short">The <em>Maharil</em> &mdash; learn the piyutim, correct grammar, do not alter meaning or omit.</span>
+  <span class="expanded">&mdash; <em>Rav Yaakov Moellin</em> (ca. 1360&ndash;1427), <em>Sefer Maharil</em> (<em>Minhagim</em>). The Maharil is the great codifier of the <em>minhagei Ashkenaz</em> and issues repeated strong rulings against altering communal practice, including on liturgical matters. The three-part instruction &mdash; learn, correct grammar, do not alter meaning &mdash; is preserved in his responses to inquiries from various <em>kehillos</em>. Specific <em>siman</em> in the printed <em>Sefer Maharil</em> bears verification.</span>
+  <a class="backref" href="#ref32" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn33">
+  <span class="short">The Maharil <em>ma&rsquo;aseh</em> &mdash; the removed piyut and the daughter.</span>
+  <span class="expanded">&mdash; The tradition that the Maharil, in one year, removed a specific piyut from the <em>tefillah</em> and that his daughter died in that year, prompting his retraction, is preserved as a foundational anecdote in the Ashkenaz <em>mesorah</em> on the sanctity of <em>minhag</em>. Whether transmitted as historical record or as parable, its halachic force in the <em>mesorah</em> is identical: on the question of <em>minhag Ashkenaz</em>, the Maharil holds the line and the community holds with him.</span>
+  <a class="backref" href="#ref33" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn34">
+  <span class="short"><em>Tosafos Chagigah</em> 13a &mdash; <em>Rabbeinu Tam</em> on the <em>Kalir</em> as a <em>Tanna</em>.</span>
+  <span class="expanded">&mdash; <em>Tosafos</em> <em>Chagigah</em> 13a, <em>s.v.</em> <em>v&rsquo;raglei ha&rsquo;chayos</em>, records <em>Rabbeinu Tam</em>&rsquo;s identification of the <em>Kalir</em> with a <em>Tanna</em> and cites the <em>mesorah ish mi&rsquo;pi ish</em> from Rashi through <em>Rabbi Meir</em>. The identification is contested by other <em>Rishonim</em>, including the <em>Shibbolei HaLeket</em> and <em>Rabbi Yitzchak Ibn Ghayyat</em>, and by modern academic scholarship, which places the <em>Kalir</em> in 6th- or 7th-century <em>Eretz Yisrael</em> on the basis of linguistic, historical, and Cairo-<em>genizah</em>-corpus grounds. The scholarly picture converges, in its dating, with the Geonic timing of the <em>piyut</em>-origin narrative.</span>
+  <a class="backref" href="#ref34" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn35">
+  <span class="short">The <em>Aruch</em>, the <em>kameia</em>, and the insect legend.</span>
+  <span class="expanded">&mdash; The <em>Aruch</em> preserves a tradition of a piece of cake and a <em>kameia</em> associated with the <em>Kalir</em>&rsquo;s composition of piyutim, with a fire that would burn around him as he wrote. <em>Rabbeinu Tam</em> transmits the tradition with the framing <em>ish mi&rsquo;pi ish</em> from Rashi through <em>Rabbi Meir</em>. The insect-on-the-tongue tradition is preserved in various forms &mdash; a common version has a bee, another has a scorpion; the received text bears verification. The halachic weight of the transmission is in the <em>mesorah</em>-chain, not in the miracle detail, and it is on the strength of that chain that <em>Rabbeinu Tam</em>&rsquo;s identification of the <em>Kalir</em> as a <em>Tanna</em> rests.</span>
+  <a class="backref" href="#ref35" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Monday-morning shiur on <em>Tefillah</em>, delivered on Labor Day, 25 Elul 5786, as the third and last of three preparatory discourses on the <em>machzor</em> before Rosh HaShanah 5787. This edition sequences the material as the ten preparatory <em>halachos</em> and <em>madreigos</em> of the mispallel entering a Rosh HaShanah that falls on Shabbos, and closes with the historical arc of the <em>piyutim</em> from <em>Pirkoi ben Baboi</em> through the <em>Maharil</em> and the contested identity of <em>Rabbi Elazar HaKalir</em>. Citations that in the source were partial &mdash; the <em>Zohar</em>&rsquo;s date-peg, the Kalir insect tradition, the Minchas Elazar coffee-<em>teshuvah</em>, the position of the <em>Vilna Gaon</em> &mdash; are received here in their transmitted form with the caveat, historical or textual, appropriate to each.
+</footer>
+
+</body>
+</html>
