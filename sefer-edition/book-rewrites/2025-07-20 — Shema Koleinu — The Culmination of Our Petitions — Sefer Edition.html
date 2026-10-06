@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Shema Koleinu: The Culmination of Our Petitions</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">שְׁמַע קוֹלֵנוּ</h1>
+  <div class="english-title">Shema Koleinu &mdash; The Culmination of Our Petitions: The Quality of Hearing, the Limits of Addition, and the Plea Not to Be Sent Away Empty</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded <span class="heb-inline">כ״ד תמוז תשפ״ה</span> &nbsp;&middot;&nbsp; 20 July 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Sponsored <span class="heb-inline">לעילוי נשמת מורינו ורבינו</span>. The discourse was first delivered on the <em>yahrzeit</em> (<span class="heb-inline">יארצייט</span>) of <strong>Rabbi Yaakov Yosef</strong>,<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> first and last Chief Rabbi of New York.</em></p>
+
+<p class="lead">A treatise on <em>Shema Koleinu</em> (<span class="heb-inline">שמע קולנו</span>), the <em>berachah</em> (<span class="heb-inline">ברכה</span>) that closes the twelve <em>bakashos</em> (<span class="heb-inline">בקשות</span>) of <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>), and on the different kinds of <em>shema</em> (<span class="heb-inline">שמע</span>) for which it asks: the warm hearing and the cold, the latter set out in the <em>Gemara</em> (<span class="heb-inline">גמרא</span>) of <em>Taanis</em> (<span class="heb-inline">תענית</span>) on <em>Shmuel HaKatan</em> (<span class="heb-inline">שמואל הקטן</span>) and the rain that came too soon. It treats the question of personal additions to the <em>berachah</em>: the <em>Taz</em> (<span class="heb-inline">ט״ז</span>), the sharp protest of the <em>Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) against the printers, and the counsel of the <em>Yaavetz</em> (<span class="heb-inline">יעב״ץ</span>) to add in one&rsquo;s own words. It closes with <em>&ldquo;reikam al teshiveinu&rdquo;</em> (<span class="heb-inline">ריקם אל תשיבנו</span>) and <em>Rav Schwab</em>&rsquo;s memory of his mother and a loaf of black bread in the Germany of the First World War.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. The Place of <em>Shema Koleinu</em></h2>
+
+<p><em>Shema Koleinu</em> (<span class="heb-inline">שמע קולנו</span>) is a <em>berachah</em> (<span class="heb-inline">ברכה</span>) of critical importance: it is the culmination of the middle section of <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>). The first three <em>berachos</em> (<span class="heb-inline">ברכות</span>) are <em>shevach</em> (<span class="heb-inline">שבח</span>), praise; the middle twelve are <em>bakashah</em> (<span class="heb-inline">בקשה</span>), petition; the last three are <em>hoda&rsquo;ah</em> (<span class="heb-inline">הודאה</span>), thanksgiving. The twelve themselves divide into the personal six and the communal six, and <em>Shema Koleinu</em> closes the entire arc.</p>
+
+<p>It is often overlooked that the <em>amen</em> (<span class="heb-inline">אמן</span>) that follows <em>Shema Koleinu</em> requires special <em>kavanah</em> (<span class="heb-inline">כוונה</span>). Just as the <em>amen</em> after <em>Kedushas Hashem</em> (<span class="heb-inline">קדושת השם</span>) seals the opening unit, so the <em>amen</em> after <em>Shema Koleinu</em> seals the twelve: it lifts up the <em>amens</em> (<span class="heb-inline">אמנים</span>) and the <em>bakashos</em> (<span class="heb-inline">בקשות</span>) of the entire central section.</p>
+
+<h3>Why It Follows <em>Tzemach David</em></h3>
+
+<p>The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) in <em>Megillah</em> (<span class="heb-inline">מגילה</span>)<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> derives the order of the <em>berachos</em> verse by verse. Once <em>Yerushalayim</em> (<span class="heb-inline">ירושלים</span>) is rebuilt, <em>David</em> (<span class="heb-inline">דוד</span>) comes: <em>&ldquo;Afterward the children of Israel shall return, and seek the Lord their God and David their king.&rdquo;</em> And once <em>David</em> has come, <em>tefillah</em> (<span class="heb-inline">תפילה</span>) has come: <em>&ldquo;<span class="heb-inline">והביאותים אל הר קדשי ושמחתים בבית תפילתי</span>&rdquo;</em>, the <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>) as the house of prayer. The completeness of <em>Yerushalayim</em> under the kingship of the house of David opens directly into the <em>berachah</em> in which Hashem is asked to listen to our prayers.</p>
+
+<h2>II. The Original Moment</h2>
+
+<p>The <em>Midrash</em> (<span class="heb-inline">מדרש</span>) teaches<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> that when <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) cried out in the servitude of <em>Mitzrayim</em> (<span class="heb-inline">שעבוד מצרים</span>) &mdash; <em>&ldquo;<span class="heb-inline">ויאנחו ויזעקו ותעל שועתם אל האלקים</span>&rdquo;</em> &mdash; and <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) heard them, the <em>malachei hashares</em> (<span class="heb-inline">מלאכי השרת</span>) proclaimed: <em>&ldquo;<span class="heb-inline">ברוך אתה ה׳ שומע תפילה</span>&rdquo;</em>. Each day the worshipper asks that Hashem hear him as He heard Israel then.</p>
+
+<h2>III. <em>&ldquo;Av HaRachaman&rdquo;</em> or Not?</h2>
+
+<p>A question of <em>nusach</em> (<span class="heb-inline">נוסח</span>) presents itself. In <em>Nusach Sefard</em> (<span class="heb-inline">נוסח ספרד</span>) the <em>berachah</em> opens <em>&ldquo;<span class="heb-inline">אב הרחמן שמע קולנו</span>&rdquo;</em>; most <em>Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) <em>siddurim</em> (<span class="heb-inline">סידורים</span>) omit <em>&ldquo;<span class="heb-inline">אב הרחמן</span>&rdquo;</em> and open with <em>&ldquo;<span class="heb-inline">שמע קולנו</span>&rdquo;</em>.</p>
+
+<p>The <em>Tur</em> (<span class="heb-inline">טור</span>)<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> enters into uncharacteristic detail on <em>gematria</em> (<span class="heb-inline">גימטריא</span>) and the counting of letters in <em>Shemoneh Esrei</em>. The opening letters of the <em>berachos</em> sum to <strong>1,800</strong>, corresponding to the 1,800 <em>malachim</em> (<span class="heb-inline">מלאכים</span>) appointed to receive the <em>tefillos</em> (<span class="heb-inline">תפילות</span>) of Israel; the <em>Tur</em> cites the <em>Midrash Dorshei Reshumos</em> (<span class="heb-inline">מדרש דורשי רשומות</span>) for this, and the Rav connects it with the <em>Zohar HaKadosh</em> (<span class="heb-inline">זוהר הקדוש</span>). From the count the conclusion is drawn that the <em>berachah</em> must open with <em>&ldquo;<span class="heb-inline">שמע</span>&rdquo;</em> and not with <em>&ldquo;<span class="heb-inline">אב הרחמן</span>&rdquo;</em>: the <em>shin</em> (<span class="heb-inline">ש׳</span>), worth 300, is needed, not the <em>aleph</em> (<span class="heb-inline">א׳</span>), worth 1, to reach the sum.</p>
+
+<p>The <em>Arizal</em> (<span class="heb-inline">אריז״ל</span>)<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> nevertheless has <em>&ldquo;<span class="heb-inline">אב הרחמן שמע קולנו</span>&rdquo;</em> in his <em>nusach</em>, for he was not <em>makpid</em> (<span class="heb-inline">מקפיד</span>) on the <em>roshei teivos</em> (<span class="heb-inline">ראשי תיבות</span>). Certain <em>nuschaos</em> (<span class="heb-inline">נוסחאות</span>) from various <em>chassidic</em> (<span class="heb-inline">חסידות</span>) circles compromise by placing <em>&ldquo;<span class="heb-inline">אב הרחמן</span>&rdquo;</em> in the middle of the <em>berachah</em>, preserving the opening <em>shin</em> (<span class="heb-inline">ש׳</span>).</p>
+
+<h2>IV. The Two Kinds of Hearing &mdash; A <em>Gemara</em> in <em>Taanis</em></h2>
+
+<p>The whole of <em>Maseches Taanis</em> (<span class="heb-inline">מסכת תענית</span>) turns on the fasts that were decreed when rain was needed. In it the <em>Gemara</em> (<span class="heb-inline">גמרא</span>) (<em>Taanis</em> 25b)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> tells two accounts of <strong><em>Shmuel HaKatan</em> (<span class="heb-inline">שמואל הקטן</span>)</strong> &mdash; the same <em>tanna</em> (<span class="heb-inline">תנא</span>) who composed <em>Birkas HaMinim</em> (<span class="heb-inline">ברכת המינים</span>) &mdash; that complicate the plain reading of <em>&ldquo;<span class="heb-inline">שמע</span>&rdquo;</em>.</p>
+
+<h3>The First Year</h3>
+
+<p>There was a drought, and <em>Shmuel HaKatan</em> decreed a <em>taanis tzibbur</em> (<span class="heb-inline">תענית ציבור</span>). On the very morning the fast was to begin &mdash; before the people had prayed, before the fast had started &mdash; the rain began to pour. The community rejoiced and came to him: <em>&ldquo;Even before we fasted, even before we prayed, Hashem has sent us so much rain. He loves us. It is to the praise of the congregation.&rdquo;</em></p>
+
+<p><em>Shmuel HaKatan</em> replied: <em>&ldquo;No. <span class="heb-inline">משל למה הדבר דומה</span> &mdash; to a servant who keeps coming to his master&rsquo;s door, asking and asking. The master cannot bear the sight of him, and says to a friend: Give him whatever he wants; I do not wish him knocking at my door any longer.&rdquo;</em></p>
+
+<p>There are times when Hashem gives and gives &mdash; <em>&ldquo;only do not trouble Me.&rdquo;</em> It is a frightening thought.</p>
+
+<h3>The Second Year</h3>
+
+<p>Another drought; another fast. They prayed the entire day. Just after <em>shkiah</em> (<span class="heb-inline">שקיעת החמה</span>), as the congregation was leaving the <em>beis knesses</em> (<span class="heb-inline">בית כנסת</span>) to break the fast, the rain began to fall. They came to <em>Shmuel HaKatan</em>: <em>&ldquo;This year you cannot say anything negative. We prayed, He listened, and we have rain.&rdquo;</em></p>
+
+<p>He answered: <em>&ldquo;Not necessarily. <span class="heb-inline">משל למה הדבר דומה</span> &mdash; to a servant who comes to his master begging. The master, displeased with him, says to a friend: Let him beg until he is exhausted; then I will give him what he wants.&rdquo;</em></p>
+
+<p>The <em>mashal</em> (<span class="heb-inline">משל</span>) teaches that Hashem sometimes wishes the petitioner to plead until he is spent, and only then to grant. Both accounts &mdash; the rain before the fast and the rain at sundown &mdash; are forms of hearing, but neither is the <em>shema</em> (<span class="heb-inline">שמע</span>) that is sought.</p>
+
+<h3>What Would Have Been the Praise of the Congregation</h3>
+
+<p>The <em>Gemara</em> itself raises the obvious question: if neither was the praise of the congregation, what is? It answers: when the <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) says <em>&ldquo;<span class="heb-inline">משיב הרוח</span>&rdquo;</em> and the wind blows, and says <em>&ldquo;<span class="heb-inline">מוריד הגשם</span>&rdquo;</em> and the rain falls &mdash; that is, rain that answers the prayer as it is being said. The distinction thus lies not in the rain but in the manner in which it is given.</p>
+
+<h2>V. The Lesson &mdash; A Pleasant <em>Tefillah</em></h2>
+
+<p>This is what is requested in <em>Shema Koleinu</em>: not the cold <em>&ldquo;<span class="heb-inline">שמע</span>&rdquo;</em> of the master who cannot bear the servant, nor the wearying <em>&ldquo;<span class="heb-inline">שמע</span>&rdquo;</em> of the master who waits for exhaustion, but the warm <em>&ldquo;<span class="heb-inline">שמע</span>&rdquo;</em> &mdash; that the <em>tefillah</em> (<span class="heb-inline">תפילה</span>) be pleasant in the ears of <em>HaKadosh Baruch Hu</em>, and not a burden.</p>
+
+<p>When a person carries <em>chataim</em> (<span class="heb-inline">חטאים</span>) and <em>aveiros</em> (<span class="heb-inline">עברות</span>), his words have difficulty rising. The <em>Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> is said to have entered a <em>beis medrash</em> (<span class="heb-inline">בית מדרש</span>) and declared: <em>&ldquo;This shul is full of Torah and prayer.&rdquo;</em> The <em>chazanim</em> (<span class="heb-inline">חזנים</span>), the <em>rav</em> (<span class="heb-inline">רב</span>) and the <em>roshei hakahal</em> (<span class="heb-inline">ראשי קהל</span>) swelled with pride. The <em>Baal Shem Tov</em> clarified: <em>&ldquo;That is not what I meant. Prayers and Torah are meant to ascend. If they are weighted with <em>aveiros</em> and lack <em>yiras shamayim</em> (<span class="heb-inline">יראת שמים</span>), they remain in the room. Perhaps one day someone will break through the ceiling and lift them all up. Your <em>beis medrash</em> is full of Torah and prayer because the Torah and prayer never left.&rdquo;</em></p>
+
+<p>The desired state is the opposite: a shul empty of <em>tefillah</em> because the <em>tefillah</em> has risen. <em>&ldquo;<span class="heb-inline">שמע קולנו</span>&rdquo;</em> is the prayer for that very ascent.</p>
+
+<h2>VI. Personal Requests in <em>Shema Koleinu</em></h2>
+
+<p><em>Shema Koleinu</em> is the place in <em>Shemoneh Esrei</em> for the broadest range of personal <em>bakashos</em> (<span class="heb-inline">בקשות</span>). The <em>Gemara</em> in <em>Avodah Zarah</em> (<span class="heb-inline">עבודה זרה</span>) 8a<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> permits a person to add specific needs in the <em>berachah</em> whose theme they fit &mdash; <em>refuah</em> (<span class="heb-inline">רפואה</span>) in <em>Refaeinu</em> (<span class="heb-inline">רפאנו</span>), <em>parnasah</em> (<span class="heb-inline">פרנסה</span>) in <em>Birkas HaShanim</em> (<span class="heb-inline">ברכת השנים</span>) &mdash; a principle called <em>me&rsquo;ein haberachah</em> (<span class="heb-inline">מעין הברכה</span>). <em>Shema Koleinu</em> is general: here anything may be asked.</p>
+
+<h3>The <em>Arizal</em> on <em>Viduy</em></h3>
+
+<p>The first addition that many <em>siddurim</em> (<span class="heb-inline">סידורים</span>) place at <em>Shema Koleinu</em> is a <em>viduy</em> (<span class="heb-inline">וידוי</span>). The <em>Arizal</em> (<span class="heb-inline">אריז״ל</span>) taught that one should add a <em>viduy</em> over one&rsquo;s sins; some say at every <em>tefillah</em>. His instruction is to specify the <em>cheit</em> (<span class="heb-inline">חטא</span>) &mdash; not a generic confession but a particular one. The <em>Arizal</em> draws this from the <em>Zohar HaKadosh</em> (<span class="heb-inline">זוהר הקדוש</span>).<a class="footnote-ref" id="ref9" href="#fn9">[9]</a></p>
+
+<h3>The Prayer for <em>Parnasah</em></h3>
+
+<p>The next standard insertion is a prayer for <em>parnasah</em> (<span class="heb-inline">פרנסה</span>). The <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>)<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> permits it, and many <em>acharonim</em> (<span class="heb-inline">אחרונים</span>) say that it may be added daily.</p>
+
+<h3>Two Terms: <em>Be&rsquo;arai</em> and <em>Bekviyus</em></h3>
+
+<p>The discussion that follows turns on a distinction. To add <em>be&rsquo;arai</em> (<span class="heb-inline">בעראי</span>) is to add occasionally, when the need arises &mdash; that day, that week, that month. To add <em>bekviyus</em> (<span class="heb-inline">בקביעות</span>) is to make the addition a fixed part of the daily <em>Shemoneh Esrei</em>.</p>
+
+<h2>VII. The <em>Taz</em> and the <em>Aruch HaShulchan</em></h2>
+
+<h3>The <em>Taz</em>&rsquo;s Caution</h3>
+
+<p>The <em>Taz</em> (<span class="heb-inline">ט״ז</span>)<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> is presented as protesting: <em>&ldquo;You are going to add something <em>bekviyus</em> &mdash; to make it a permanent fixture of your daily <em>Shemoneh Esrei</em>? You are adding to what the <em>Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) instituted? Who are you?&rdquo;</em> The <em>Gemara</em> in <em>Avodah Zarah</em> permits adding <em>be&rsquo;arai</em> &mdash; when the need arises that day, that week, that month &mdash; and not <em>bekviyus</em>.</p>
+
+<p>The <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>)<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> records the <em>Taz</em>&rsquo;s position, and most <em>acharonim</em> permit daily recitation. One who recites it daily does not follow the <em>Taz</em>, but Hashem certainly listens.</p>
+
+<h3>The <em>Aruch HaShulchan</em> &mdash; Sharper Still</h3>
+
+<p>The <strong><em>Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>)</strong><a class="footnote-ref" id="ref13" href="#fn13">[13]</a> goes much further. The <em>takanah</em> (<span class="heb-inline">תקנה</span>) of the <em>Anshei Knesses HaGedolah</em> is <em>kodesh kodashim</em> (<span class="heb-inline">קודש קודשים</span>); every word and every letter is holy; the permission to add applies only <em>be&rsquo;arai</em>, never <em>bekviyus</em>. To add daily is <em>chutzpah</em> (<span class="heb-inline">חוצפה</span>).</p>
+
+<div class="pullquote">
+<p>The <em>Aruch HaShulchan</em>&rsquo;s polemic runs: <em>&ldquo;All the printers &mdash; <strong>they are guilty.</strong> They sought to insert these additions into <em>Shemoneh Esrei</em> every day. It is their fault; without them no one would say it. We have just spoken of this in <em>Pirkei Avos</em> (<span class="heb-inline">פרקי אבות</span>) &mdash; the printers.&rdquo;</em> He continues: <em>&ldquo;Who are you to insert these additions? It is all the fault of the printers. Many <em>amei ha&rsquo;aretz</em> (<span class="heb-inline">עמי הארץ</span>) do so regularly.&rdquo;</em></p>
+<p>And again: <em>&ldquo;I mourn over the corruption of our <em>siddurim</em> (<span class="heb-inline">סידורים</span>). One of the <em>gedolei hador</em> (<span class="heb-inline">גדולי הדור</span>) made a great protest about this. The world has been handed over to fools who decide what to put in the <em>siddur</em>; the printers do what they wish; <em>Klal Yisrael</em> is corrupted.&rdquo;</em></p>
+</div>
+
+<p>These are strong words. The Rav observes that the <em>Aruch HaShulchan</em> is said to be the opposite of the <em>Shulchan Aruch</em>: in many places he rules differently from most <em>poskim</em> (<span class="heb-inline">פוסקים</span>). He was a great <em>mechadesh</em> (<span class="heb-inline">מחדש</span>), and he is relied upon in many places, though most of <em>Klal Yisrael</em>, especially those who follow the <em>Mishnah Berurah</em>, accepted the <em>Mishnah Berurah</em> more. Yet for clarity in any <em>sugya</em> (<span class="heb-inline">סוגיא</span>), the <em>Aruch HaShulchan</em> is the volume to open: <em>&ldquo;fantastic&rdquo;</em> is the only word.</p>
+
+<p>No one holds this way <em>lema&rsquo;aseh</em> (<span class="heb-inline">למעשה</span>). It is to be understood that the permission of the <em>Gemara</em>, on this view, is a license to add a request, not a license to install one into the fixed text. Whoever says the <em>viduy</em> daily should continue to do so, and should take no offense at the strength of the <em>Aruch HaShulchan</em>&rsquo;s words, for many Jews do exactly this. The matter is related <em>le&rsquo;yedi&rsquo;ah</em> (<span class="heb-inline">לידיעה</span>), for knowledge, not for practice.</p>
+
+<h2>VIII. The <em>Yaavetz</em> &mdash; In Your Own Words</h2>
+
+<p>The teaching of the <em>Yaavetz</em> (<span class="heb-inline">יעב״ץ</span>), drawn from a <em>derashah</em> (<span class="heb-inline">דרשה</span>) in Prague, must not be forgotten<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> &mdash; pages upon pages of it; people in those generations had patience.</p>
+
+<blockquote>
+  <em>The <em>Gemara</em> permits adding. Printed prayers for addition have been issued. <strong>Forget the printed prayers &mdash; add your own words.</strong></em>
+</blockquote>
+
+<p>This is a <em>chiddush</em> (<span class="heb-inline">חידוש</span>). <em>Shema Koleinu</em> is general. If a person needs a <em>shidduch</em> (<span class="heb-inline">שידוך</span>) for his child &mdash; three hundred and fifty years ago the <em>Yaavetz</em> already speaks of the <em>shidduch</em> crisis of <em>his</em> generation: <em>&ldquo;we suffer greatly; we have great difficulty finding <em>shidduchim</em> (<span class="heb-inline">שידוכים</span>) for our children or grandchildren&rdquo;</em> &mdash; let him add the prayer in his own words, his own language, his own <em>kavanah</em>.</p>
+
+<p>If he needs <em>parnasah</em>, let him add his own words. The source of many of the printed prayers is not even known: one appears in <em>Maseches Soferim</em> (<span class="heb-inline">מסכת סופרים</span>); another only in the <em>Geonic</em> (<span class="heb-inline">גאונים</span>) period; who composed them is not known. Let him use his own language. <em>&ldquo;<span class="heb-inline">ממעמקים קראתיך ה׳</span>&rdquo;</em>: prayer from the depths of the heart is more powerful than what is printed. Yet the printed prayers are powerful too, for the <em>Anshei Knesses HaGedolah</em> wove every <em>kavanah</em> into them.</p>
+
+<p>The two positions are closer than they first appear. Both resist the normalization of someone else&rsquo;s request as one&rsquo;s own; they differ only in what is to stand in its place &mdash; for the <em>Aruch HaShulchan</em>, nothing fixed; for the <em>Yaavetz</em>, one&rsquo;s own words.</p>
+
+<h3>Stop and Speak From the Heart</h3>
+
+<p>At <em>Shema Koleinu</em> one stops and says: <em>&ldquo;<span class="heb-inline">רבונו של עולם</span> &mdash; I need <em>parnasah</em>; I need this business deal to come through today.&rdquo;</em> The <strong>Brisker Rav</strong> (<span class="heb-inline">הגרי״ז</span>)<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> is reported to have ruled that one with a major business meeting that day should do exactly this &mdash; one line. The <em>Yaavetz</em> teaches that Hashem listens because it comes from the heart. If a person needs a <em>shidduch</em>, a <em>refuah</em> (<span class="heb-inline">רפואה</span>), anything, he should say it briefly, not at length, just before the close of the <em>berachah</em>. The <em>Chida</em> (<span class="heb-inline">חיד״א</span>) says the same.</p>
+
+<h3>One Caution &mdash; Do Not Miss <em>Kedushah</em></h3>
+
+<p>The <em>Mishnah Berurah</em>: if one&rsquo;s <em>Shemoneh Esrei</em> will run so long that the <em>shaliach tzibbur</em> will already be in the <em>chazaras hashatz</em> (<span class="heb-inline">חזרת הש״ץ</span>) and one will miss <em>Kedushah</em> (<span class="heb-inline">קדושה</span>), he should <em>not</em> add at length here; let him wait until after <em>Shemoneh Esrei</em>. <em>Kedushah</em> is too important to lose, and the balance must always be kept.</p>
+
+<h2>IX. The <em>Zohar</em> on Constant Prayer &mdash; <em>Rav Yeiva Sava</em></h2>
+
+<p>The <em>Zohar HaKadosh</em> (<span class="heb-inline">זוהר הקדוש</span>)<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> records a <em>tanna</em> (<span class="heb-inline">תנא</span>) named <strong><em>Rav Yeiva Sava</em> (<span class="heb-inline">רב ייבא סבא</span>)</strong>. He never sat down to a meal &mdash; breakfast, lunch or dinner &mdash; without first pausing to pray: <em>&ldquo;Just as You have given me food for this meal, give me food for the next meal.&rdquo;</em> He was a Jew who lived with Hashem in every moment, taking nothing for granted.</p>
+
+<p>The worshipper does not stop before every meal. But three times a day, in <em>Shema Koleinu</em>, he should add a prayer for <em>parnasah</em> (<span class="heb-inline">פרנסה</span>), even if, <em>baruch Hashem</em> (<span class="heb-inline">ברוך השם</span>), he is doing well &mdash; in his own words, as <em>Rabbi Yonah Landsofer</em> (<span class="heb-inline">רבי יונה לנדסופר</span>) taught.</p>
+
+<h2>X. The Whole Point of Studying <em>Tefillah</em></h2>
+
+<p>It is for this reason that every Sunday morning since <em>Simchas Torah</em> (<span class="heb-inline">שמחת תורה</span>) after <strong>October 7</strong> has been given to the study of <em>tefillah</em> (<span class="heb-inline">תפילה</span>). Something was needed on Sunday morning; the community agreed that <em>tefillah</em> was what it needed to learn; and each <em>berachah</em> of <em>Shemoneh Esrei</em> has been taken in turn, in order to develop an appreciation of what is said every day.</p>
+
+<p><em>Tefillah</em> is a meeting with <em>HaKadosh Baruch Hu</em>. The essence of <em>Shema Koleinu</em> is exactly this: <em>tefillah</em> as <em>chibbur</em> (<span class="heb-inline">חיבור</span>), connection. <em>Naftali</em> (<span class="heb-inline">נפתלי</span>) is <em>chibbur</em>, says <em>Rashi</em> (<span class="heb-inline">רש״י</span>):<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> we connect. Man is the only species capable of intellectual communication with his Creator. Birds chirp; <em>Perek Shirah</em> (<span class="heb-inline">פרק שירה</span>) is full of songs; the trees rustle &mdash; <em>&ldquo;<span class="heb-inline">ירננו כל עצי היער</span>&rdquo;</em>. Man <em>speaks</em>. He does not always hear an answer; sometimes there is silence. But he speaks, and is certain that Hashem listens.</p>
+
+<h2>XI. <em>&ldquo;Reikam Al Teshiveinu&rdquo;</em> (<span class="heb-inline">ריקם אל תשיבנו</span>)</h2>
+
+<p>The Rav shares a personal <em>kavanah</em> on an expression in this <em>berachah</em>, and sets it with an observation from the day before. A member of the congregation had told him that when he says <em>&ldquo;<span class="heb-inline">טוב ה׳ לכל ורחמיו על כל מעשיו</span>&rdquo;</em> he has more <em>kavanah</em> than in any other <em>pasuk</em> (<span class="heb-inline">פסוק</span>) in all of <em>tefillah</em>. Everyone has his own <em>pasuk</em>; this one is the Rav&rsquo;s own. There are no more beautiful words in <em>tefillah</em> than <em>&ldquo;<span class="heb-inline">כי א-ל שומע תפילות ותחנונים אתה, מלפניך מלכנו ריקם אל תשיבנו</span>&rdquo;</em>.</p>
+
+<h3>The Simple <em>Peshat</em> (<span class="heb-inline">פשט</span>)</h3>
+
+<p><em>&ldquo;<span class="heb-inline">מלפניך מלכנו ריקם אל תשיבנו</span>&rdquo;</em>: <em>Ribbono shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>), I have asked for so much &mdash; from <em>da&rsquo;as</em> (<span class="heb-inline">דעת</span>) to <em>refuah</em>, from <em>parnasah</em> to <em>geulah</em> (<span class="heb-inline">גאולה</span>). Do not let me leave empty-handed. <em>&ldquo;Make a deal &mdash; give me a third, half, something.&rdquo;</em> Whoever can shed a tear at these words, his <em>tefillah</em> is being accepted.</p>
+
+<h3>A Deeper Reading</h3>
+
+<p>Several <em>meforshim</em> (<span class="heb-inline">מפרשים</span>) read <em>&ldquo;<span class="heb-inline">ריקם אל תשיבנו</span>&rdquo;</em> differently. Even if Hashem, for the petitioner&rsquo;s own benefit, does not grant the request, at least the <em>feeling</em> of having spent four minutes connected to Him should remain. Do not send me away empty in <em>that</em> sense. A man takes three steps back, and within minutes he has lost the connection. The prayer is that he not feel empty: whether Hashem gives what was asked or not, let him leave still feeling connected.</p>
+
+<h2>XII. <em>Rav Schwab</em>&rsquo;s Reading &mdash; A Loaf of Black Bread</h2>
+
+<p>The Rav relates from <strong><em>Rav Shimshon Schwab</em> (<span class="heb-inline">רב שמשון שוואב</span>)</strong> in <em>Sefer Iyun Tefillah</em> (<span class="heb-inline">עיון תפילה</span>)<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> a reading of unusual depth. <em>Rav Schwab</em> writes that when he says <em>&ldquo;<span class="heb-inline">ריקם אל תשיבנו</span>&rdquo;</em>, this is what he has in mind.</p>
+
+<div class="pullquote">
+<p>He was six years old in Germany during the First World War. Food was severely short. Weekly government rations arrived &mdash; <em>Kommissar Brot</em>, commissary bread. A family of nine received nine loaves a week. The bread was black, made with potato peels and whatever else could be ground into it: terrible bread, which on an ordinary day one would not touch, and in those days it was everything.</p>
+<p>Each child had his own loaf, paced for the week &mdash; a piece on Sunday, a piece on Monday. One day his mother cut him a piece for his meal. He finished it; he was hungry; he asked for another. There was none to give; it had to last the week. She told him sharply: <em>&ldquo;Enough. Save it. We need it for tomorrow.&rdquo;</em> She raised her voice at the six-year-old, and he was hurt.</p>
+<p>But when she turned her face away, he saw a single tear escape her eye, fall onto her cheek, and drip onto the loaf of bread she was holding. <strong>And the six-year-old understood, in that moment, that everything was for his benefit.</strong> She raised her voice at him because she so wished to give him more bread; she so wished to give him more that she could not give him.</p>
+</div>
+
+<h3>The <em>Pasuk</em> in <em>Tehillim</em> 37:25</h3>
+
+<p><em>David HaMelech</em> (<span class="heb-inline">דוד המלך</span>) says:<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> <em>&ldquo;<span class="heb-inline">נער הייתי גם זקנתי, ולא ראיתי צדיק נעזב וזרעו מבקש לחם</span>&rdquo;</em> &mdash; <em>&ldquo;I was young, I have aged, and I have never seen a <em>tzaddik</em> abandoned, his children begging for bread.&rdquo;</em> Surely there are <em>tzaddikim</em> (<span class="heb-inline">צדיקים</span>) whose children beg for bread. How can <em>David HaMelech</em> say this?</p>
+
+<p>The reading of <em>Rav Schwab</em>: <em>I have never seen a <em>tzaddik</em> who <strong>felt</strong> abandoned</em> &mdash; never seen a <em>tzaddik</em> whose children carried that abandonment within them. The <em>tzaddik</em> remains connected to <em>HaKadosh Baruch Hu</em> regardless of the bread on the table. This is a reading that moves the verse from a statement of what happens to a statement of what is felt; it is <em>Rav Schwab</em>&rsquo;s reading, and the verse is commonly understood in a more literal sense.</p>
+
+<p><em>Rav Schwab</em> writes: <em>&ldquo;I am one hundred percent certain that my mother &mdash; the <em>tzadekes</em> (<span class="heb-inline">צדקת</span>) &mdash; even at the moment the tear fell on the black bread, because she could not give her child another piece, did not feel abandoned by Hashem. She had to do what she had to do. This is the situation now. Hashem arranged it.&rdquo;</em></p>
+
+<h3>This Is <em>&ldquo;Reikam Al Teshiveinu&rdquo;</em></h3>
+
+<p>Even when the piece of bread does not arrive, <em>Ribbono shel Olam</em>, the worshipper wishes to remain connected; he wishes to feel that he has not been abandoned. <em>That</em> is the deeper request, and a very high <em>madreigah</em> (<span class="heb-inline">מדרגה</span>) if it can be held daily in <em>tefillah</em>.</p>
+
+<h2>XIII. The Power of Tears</h2>
+
+<p>There is nothing wrong with crying. It is forgotten how to cry on an ordinary weekday.</p>
+
+<div class="pullquote">
+<p>The Rav tells of his father, <em>of blessed memory</em> (<span class="heb-inline">ע״ה</span>). <strong>Rabbi Avraham Schorr</strong>,<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> the Flatbush <em>rav</em>, with whom the Rav&rsquo;s father davened in his later years on the East Side, said publicly after the Rav&rsquo;s father had passed away: <em>&ldquo;There was no other person in the <em>beis knesses</em> who cried during a regular weekday <em>Shemoneh Esrei</em>. Your father cried.&rdquo;</em></p>
+<p>As a child, the Rav was embarrassed. No one else&rsquo;s father cried on a regular Tuesday. <em>&ldquo;You are a weakling if you cry.&rdquo;</em> But his father would shed a tear at <em>Krias Shema</em> (<span class="heb-inline">קריאת שמע</span>); he truly meant it. Perhaps he was more emotional than others &mdash; that makes no difference. One is allowed to cry. When the words come out &mdash; <em>&ldquo;<span class="heb-inline">השיבנו בחיים</span>&rdquo;</em>, <em>&ldquo;<span class="heb-inline">בא נשלום</span>&rdquo;</em><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> &mdash; one should have something to cry for. The tear can take a person to far places, and he can get what he needs.</p>
+</div>
+
+<p>What <em>Rav Schwab</em> describes in the tear of his mother was lived in the Rav&rsquo;s own generation in the tears of his father: the worshipper who stays connected whatever the circumstance.</p>
+
+<p>The theme of inheritance through <em>tefillah</em> found a second expression at the close of the shiur. When the Rav took the <em>siddur</em> of one of the participants in order to check whether these insertions appear at <em>Minchah</em>, he learned that it had been the participant&rsquo;s father&rsquo;s <em>siddur</em>, which the son had inherited and now davened from. The Rav stopped, visibly moved, and told him: <em>&ldquo;It is a very big <em>zechus</em> (<span class="heb-inline">זכות</span>) to daven in the <em>siddur</em> of your ancestors, of your father. It is a very, very <em>choshuveh</em> (<span class="heb-inline">חשובה</span>) thing.&rdquo;</em></p>
+
+<h2>XIV. The Prayer for Rain in <em>Shema Koleinu</em></h2>
+
+<p>One further insertion belongs in <em>Shema Koleinu</em>: a prayer for rain when there is a drought. It is not said in the ordinary course. Some make the mistake of saying it without a <em>taanis</em> (<span class="heb-inline">תענית</span>), and the <em>poskim</em> (<span class="heb-inline">פוסקים</span>) are divided. A couple of years before the shiur, the <em>batei din</em> (<span class="heb-inline">בתי דין</span>) in <em>Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>) issued a letter that all should add <em>Aneinu</em> (<span class="heb-inline">עננו</span>) during a drought; the Rav remarked that this is probably not relevant for those living in New York.</p>
+
+<h3>The <em>Bach</em>&rsquo;s Warning</h3>
+
+<p>The <strong><em>Bach</em> (<span class="heb-inline">ב״ח</span>)</strong><a class="footnote-ref" id="ref22" href="#fn22">[22]</a> rules that to request rain in any <em>berachah</em> other than <em>Birkas HaShanim</em> (<span class="heb-inline">ברכת השנים</span>) is forbidden <em>b&rsquo;tzibbur</em> (<span class="heb-inline">בציבור</span>). An individual (<em>b&rsquo;yachid</em>, <span class="heb-inline">ביחיד</span>) may insert it at <em>Shema Koleinu</em>; but for the congregation to add it together, even at <em>Shema Koleinu</em>, is a serious matter.</p>
+
+<p>The <em>Bach</em> records a tradition that two <em>gedolim</em> (<span class="heb-inline">גדולים</span>) instituted exactly this in their communities &mdash; when they needed rain and did not declare a formal <em>taanis</em>, they had the entire congregation say the prayer for rain at <em>Shema Koleinu</em>. <strong>Both <em>gedolim</em> died within the year.</strong> It is a grave thing to add to <em>Shemoneh Esrei</em> beyond what <em>Chazal</em> (<span class="heb-inline">חז״ל</span>) instituted, particularly to insert <em>sheilas geshamim</em> (<span class="heb-inline">שאלת גשמים</span>) outside its proper place.</p>
+
+<p><em>Halachah lema&rsquo;aseh</em> (<span class="heb-inline">הלכה למעשה</span>): when there is a communal need for rain, one consults a <em>rav</em>; one does not improvise. The letter of the <em>batei din</em> is the proper form &mdash; a communal addition under rabbinic direction.</p>
+
+<h3>Timing</h3>
+
+<p>These insertions are typically said at <em>Shacharis</em> (<span class="heb-inline">שחרית</span>), not <em>Minchah</em> (<span class="heb-inline">מנחה</span>) or <em>Maariv</em> (<span class="heb-inline">מעריב</span>). Some <em>siddurim</em> include them at all three; some do not. The <em>Aruch HaShulchan</em> warns against saying them at <em>Minchah</em> and <em>Maariv</em>; the <em>Shaarei Tziyon</em> (<span class="heb-inline">שערי ציון</span>) and the <em>Mishnah Berurah</em> are more permissive.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a></p>
+
+<h2>XV. Closing</h2>
+
+<p><em>Shema Koleinu</em> is the place in which to bring one&rsquo;s week, one&rsquo;s year, one&rsquo;s life. It is not to be passed through mechanically, the words turning over without engagement. Let the worshipper add a <em>viduy</em> in the spirit of the <em>Arizal</em> &mdash; specifying the <em>cheit</em>. Let him add a prayer for <em>parnasah</em> in the spirit of the <em>Zohar HaKadosh</em> &mdash; like <em>Rav Yeiva Sava</em> (<span class="heb-inline">רב ייבא סבא</span>) at every meal. Let him add for his <em>shidduchim</em> and his children in the spirit of the <em>Yaavetz</em> &mdash; in his own words. And, at the very close, let him mean <em>&ldquo;<span class="heb-inline">ריקם אל תשיבנו</span>&rdquo;</em>: do not let me leave empty; and if You will not give me bread today, do not let me feel abandoned. Stay connected to me. We will keep coming.</p>
+
+<p>The words were first spoken on the <em>yahrzeit</em> of a man who stood in a wilderness of Torah observance and kept going to the door of a city that would not easily listen; the final line, <em>&ldquo;we will keep coming,&rdquo;</em> is a fitting one on that day.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Notes marked with a caveat record points not verified, or verified differently from the delivered text.</p>
+<ol>
+
+<li id="fn1">
+  <div class="note-academic"><strong>Rabbi Yaakov Yosef of New York</strong> (<span class="heb-inline">רבי יעקב יוסף הלוי זצ״ל</span>, 1840&ndash;1902; a <em>talmid</em> of the Salant school; <em>rav</em> of Vilna and Slutsk before emigrating to America in 1888) &mdash; the first and only <strong>Chief Rabbi of New York</strong>, appointed by the <em>Association of American Hebrew Orthodox Congregations</em> with the support of fifteen Eastern European immigrant congregations. His tenure was marked by the difficulty of imposing centralized halachic authority on a fragmented immigrant community, and he faced significant opposition from competing factions; New York in his day was a <em>midbar</em> (<span class="heb-inline">מדבר</span>) in terms of Torah observance, and his <em>tzaros</em> (<span class="heb-inline">צרות</span>) were great. The Rav recalled the opposition as an open rebellion, in which, as he put it, stones were thrown at the people there. He suffered a stroke in 1895 and was largely incapacitated for the remaining years of his life; his <em>petirah</em> (<span class="heb-inline">פטירה</span>) in 1902 (<span class="heb-inline">כ״ד תמוז</span>) drew tens of thousands. He is buried in Cypress Hills, Queens (the weekly write-up gives <strong>Union Field Cemetery</strong>); on the <em>yahrzeit</em> great numbers visit the grave, even in the rain. The Satmar Rebbe&rsquo;s tribute, that every good <em>machshavah</em> (<span class="heb-inline">מחשבה</span>) a Jew has in New York is <em>bizchuso</em> (<span class="heb-inline">בזכותו</span>) of Rabbi Yaakov Yosef, circulates in oral <em>mesorah</em> (<span class="heb-inline">מסורה</span>).
+  <br><em>Caveat:</em> the dates, offices, appointing body, burial site and the details of the opposition are given from the weekly write-up and the Shiur Review of the live telling (which also records the surviving shul on Ocean Parkway, the <em>cheder</em> &ldquo;Mevakshei Hashem&rdquo; on Ditmas, and his eventual move to the Lower East Side); none is independently verified here, and no published source for the Satmar Rebbe&rsquo;s remark is specified.</div>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Megillah</em> 17b&ndash;18a (<span class="heb-inline">מגילה י״ז ע״ב – י״ח ע״א</span>) &mdash; the order of the <em>berachos</em>; <em>bais tefilasi</em> after <em>malchus beis David</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> (<span class="heb-inline">סוגיא</span>) derives the sequence of the <em>berachos</em> of <em>Shemoneh Esrei</em> verse by verse. Once <em>Yerushalayim</em> is rebuilt, <em>David</em> comes (<em>Hoshea</em> 3:5, <span class="heb-inline">אחר ישובו בני ישראל ובקשו את ה׳ אלהיהם ואת דוד מלכם</span>); once <em>David</em> comes, <em>tefillah</em> comes (<em>Yeshayahu</em> 56:7, <span class="heb-inline">והביאותים אל הר קדשי ושמחתים בבית תפילתי</span>; the verse continues &ldquo;for My house shall be called a house of prayer for all peoples&rdquo;); and once <em>tefillah</em> comes, the <em>avodah</em> comes (&ldquo;their burnt-offerings and sacrifices shall be accepted on My altar&rdquo;). The <em>Tur</em> (<span class="heb-inline">טור אורח חיים קי״ט</span>) and the <em>Beis Yosef</em> (<span class="heb-inline">בית יוסף</span> 119:1, citing <em>Megillah</em> 18a) give the same rationale for <em>Shema Koleinu</em>. (Corrected from the weekly write-up&rsquo;s <em>Megillah</em> 17b alone: the verse on <em>bais tefilasi</em> is on 18a; verified against Sefaria.)</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <div class="note-academic"><strong>The <em>Midrash</em> of the <em>malachei hashares</em></strong> (<span class="heb-inline">מלאכי השרת</span>) proclaiming <em>&ldquo;<span class="heb-inline">ברוך אתה ה׳ שומע תפילה</span>&rdquo;</em> when Israel cried out in <em>Mitzrayim</em> (<em>Shemos</em> 2:23) was given without a specific source in the delivered exposition. <em>Caveat:</em> the <em>midrashic</em> source was not identified in the weekly write-up and could not be pinned here; it is retained as the Rav presented it. The verse quoted, <span class="heb-inline">ויאנחו בני ישראל מן העבודה ויזעקו ותעל שועתם אל האלקים מן העבודה</span>, is <em>Shemos</em> 2:23.</div>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <div class="note-academic"><span class="short"><em>Tur Orach Chaim</em> 118 (<span class="heb-inline">טור אורח חיים סימן קי״ח</span>) &mdash; <em>gematria</em> of 1,800 from the opening letters of the <em>berachos</em>; the <em>shin</em> of <em>&ldquo;Shema.&rdquo;</em></span> <span class="expanded">&mdash; <strong>Verified against Sefaria, with a correction of locus and attribution.</strong> The count appears in the <em>Tur</em> at <em>siman</em> 118, in the <em>berachah</em> of <em>Boneh Yerushalayim</em>: <em>&ldquo;<span class="heb-inline">מנין ראשי תיבות של שמונה עשר עולה אלף ות״ת כמנין המלאכים שמקבלין תפלותיהן של ישראל</span>&rdquo;</em>, brought as support from the <em>Midrash Dorshei Reshumos</em> for the <em>nusach</em> <em>&ldquo;<span class="heb-inline">ולירושלים עירך</span>&rdquo;</em> (<em>&ldquo;<span class="heb-inline">ולפי הנוסח הזה יהיה החשבון מכוון</span>&rdquo;</em>). The <em>Tur</em> does not there name the <em>Zohar</em>; the connection to the <em>Zohar</em> is the Rav&rsquo;s. The <em>Shema Koleinu</em> <em>berachah</em> itself is treated in <em>siman</em> 119, which does not mention <em>Av HaRachaman</em>.
+  <br><em>Caveat:</em> the conclusion that the <em>berachah</em> must open with the <em>shin</em> of <em>Shema</em> (300) rather than the <em>aleph</em> of <em>Av</em> (1) was not found in the <em>Tur</em> text and is retained as the Rav&rsquo;s application. As an editorial arithmetic check only (not a Sefaria source): the nineteen opening letters of the Ashkenaz <em>nusach</em> sum to 1,799 (1,800 with the <em>kollel</em>), and substituting an <em>aleph</em> for the <em>shin</em> gives 1,500. Whether the count presumes eighteen or nineteen <em>berachos</em>, and which <em>nusach</em> of <em>Boneh Yerushalayim</em>, is not established here.</span></div>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <div class="note-academic"><strong><em>Shaar HaKavanos</em></strong> (<span class="heb-inline">שער הכוונות</span>), transmitted by <em>Rav Chaim Vital</em> (<span class="heb-inline">רב חיים ויטאל</span>), for the <em>Arizal</em>&rsquo;s <em>nusach</em> <em>&ldquo;<span class="heb-inline">אב הרחמן שמע קולנו</span>&rdquo;</em>; his <em>kavanos</em> (<span class="heb-inline">כוונות</span>) here rest on the kabbalistic structure of the <em>berachah</em> rather than on the <em>Tur</em>&rsquo;s <em>gematria</em>. <em>Caveat:</em> this source is not on Sefaria in the relevant passage, and the specific <em>drush</em> or page is not pinned. The <em>chassidic</em> <em>nuschaos</em> that place <em>&ldquo;Av HaRachaman&rdquo;</em> mid-<em>berachah</em> were not identified in the delivered exposition (the Shiur Review suggests that a footnote naming the particular <em>nusach</em> would raise the point from folklore to <em>mesorah</em>).</div>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Taanis</em> 25b (<span class="heb-inline">תענית כ״ה ע״ב</span>) &mdash; <em>Shmuel HaKatan</em>&rsquo;s two fasts; the <em>meshalim</em> of master and servant.</span>
+  <span class="expanded">&mdash; <strong>Verified against Sefaria.</strong> After the <em>mishnah</em> and <em>baraisa</em> on rain falling before or after sunrise during a fast, the <em>Gemara</em> records that <em>Shmuel HaKatan</em> decreed a fast and rain fell <em>&ldquo;<span class="heb-inline">קודם הנץ החמה</span>&rdquo;</em> (before sunrise); the people thought it the praise of the community; he told the <em>mashal</em> of a servant who asks a reward and the master says <em>&ldquo;<span class="heb-inline">תנו לו ואל אשמע קולו</span>&rdquo;</em>. On another occasion rain fell <em>&ldquo;<span class="heb-inline">לאחר שקיעת החמה</span>&rdquo;</em> (after sunset); he told the <em>mashal</em> of the master who says <em>&ldquo;<span class="heb-inline">המתינו לו עד שיצטער ואחר כך תנו לו</span>&rdquo;</em>. The <em>Gemara</em> then asks what, according to <em>Shmuel HaKatan</em>, would be <em>&ldquo;<span class="heb-inline">שבחן של צבור</span>&rdquo;</em>, and answers: when the <em>shaliach tzibbur</em> says <em>&ldquo;<span class="heb-inline">משיב הרוח</span>&rdquo;</em> and the wind blows, and <em>&ldquo;<span class="heb-inline">מוריד הגשם</span>&rdquo;</em> and the rain falls. The attribution of <em>Birkas HaMinim</em> to <em>Shmuel HaKatan</em> is recorded in <em>Berachos</em> 28b (not re-checked in this pass).</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <div class="note-academic"><strong>The <em>Baal Shem Tov</em> tradition</strong> (<span class="heb-inline">רבי ישראל בן אליעזר</span>, c. 1698&ndash;1760, founder of <em>chassidus</em>) &mdash; the <em>ma&rsquo;aseh</em> of his entering a <em>beis medrash</em> and remarking that it was &ldquo;full of Torah and prayer,&rdquo; then clarifying that this was a problem rather than a compliment: the prayers had not ascended. The weekly write-up reports that the story circulates in <em>chassidic</em> sources (<em>Degel Machaneh Ephraim</em>, <em>Toldos Yaakov Yosef</em>, and parallel collections) as a paradigmatic teaching on the relationship between the moral state of the worshipper and the ascent of his prayer. <em>Caveat:</em> no specific locus was given; not verifiable on Sefaria; retained as a <em>chassidic</em> tradition and not as a documented episode.</div>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Avodah Zarah</em> 8a (<span class="heb-inline">עבודה זרה ח׳ ע״א</span>; the <em>sugya</em> begins at 7b) &mdash; adding personal <em>bakashos</em>; <em>me&rsquo;ein haberachah</em>.</span>
+  <span class="expanded">&mdash; <strong>Verified against Sefaria, with a correction.</strong> The <em>Rabbanan</em> rule that a person asks his own needs in <em>Shomea Tefillah</em> (7b&ndash;8a). <em>Rav Yehudah</em> in the name of <em>Shmuel</em>: the <em>halachah</em> is that one asks his needs in <em>Shomea Tefillah</em>. <em>Rav Yehudah the son of Rav Shmuel bar Sheilat</em> in the name of <em>Rav</em>: if one wishes, at the end of each <em>berachah</em> he may add what reflects its nature (<em>&ldquo;<span class="heb-inline">מעין כל ברכה וברכה</span>&rdquo;</em>). <em>Rav Chiyya bar Ashi</em> in the name of <em>Rav</em>: a sick person in the house, in the <em>berachah</em> of the sick; <em>parnasah</em>, in <em>Birkas HaShanim</em>. <em>Rabbi Yehoshua ben Levi</em>: after his <em>tefillah</em> one may add prayers and supplications, even as long as the order of the <em>viduy</em> of <em>Yom Kippur</em>.</span>
+  <div class="note-academic"><strong>Flag:</strong> the weekly write-up&rsquo;s statement that the <em>sugya</em> itself distinguishes <em>be&rsquo;arai</em> from <em>bekviyus</em> is not found in the <em>Gemara</em>; the distinction is the <em>Taz</em>&rsquo;s and the <em>Aruch HaShulchan</em>&rsquo;s reading as presented by the Rav (see notes 11 and 13). It has been removed from this note.</div>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Arizal</em> and <em>Zohar</em> &mdash; the <em>viduy</em> in <em>Shema Koleinu</em>, specifying the <em>cheit</em>.</span>
+  <span class="expanded">&mdash; The <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה קי״ט</span>) 119:4 rules that it is good to confess in <em>Shomea Tefillah</em> (<em>&ldquo;<span class="heb-inline">חטאתי עויתי פשעתי</span>&rdquo;</em>), and that if one has a fresh <em>aveirah</em> he should mention it explicitly in the <em>tefillah</em> and say it with submission, and at least in a weeping voice. At 119:2 the <em>Mishnah Berurah</em> brings the <em>Pri Chadash</em>, citing the <em>Zohar</em> (<em>Parshas Vayishlach</em>, <em>&ldquo;<span class="heb-inline">הצילני נא</span>&rdquo;</em>), that in prayer one must specify matters properly. (Verified against Sefaria.)</span>
+  <div class="note-academic"><strong>Caveat:</strong> the <em>Arizal</em>&rsquo;s own instruction to add a <em>viduy</em> at <em>Shema Koleinu</em>, and its derivation from the <em>Zohar</em>, are the Rav&rsquo;s presentation; the precise <em>Zohar</em> locus is not pinned and is not located on Sefaria.</div>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Shulchan Aruch Orach Chaim</em> 119:1&ndash;2 (<span class="heb-inline">שולחן ערוך אורח חיים סימן קי״ט סעיף א׳–ב׳</span>) &mdash; adding personal <em>bakashos</em> in <em>Shema Koleinu</em>.</span>
+  <span class="expanded">&mdash; <strong>Verified against Sefaria.</strong> <em>Seif</em> 1: one may add in each of the middle <em>berachos</em> something similar to its theme &mdash; for a sick person in <em>Refaeinu</em>, for livelihood in <em>Birkas HaShanim</em> &mdash; and in <em>Shomea Tefillah</em> one may ask any of one&rsquo;s needs, <em>&ldquo;<span class="heb-inline">שהיא כוללת כל הבקשות</span>&rdquo;</em>; the <em>Rama</em>&rsquo;s gloss and <em>Rabbeinu Yonah</em>&rsquo;s rules (plural and singular language; the end of the <em>berachah</em> and not the middle) follow. <em>Seif</em> 2: one authority holds that one adding for individual needs should not make it lengthy. The <em>Mishnah Berurah</em> (119:4) develops the practice of <em>viduy</em> and the request for sustenance, even if wealthy.</span>
+  <div class="note-academic"><strong>Caveat:</strong> that most contemporary <em>poskim</em> permit daily recitation, with the <em>Taz</em> and <em>Aruch HaShulchan</em> as minority voices, is the Rav&rsquo;s characterization and was not located in the text of <em>siman</em> 119.</div>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <div class="note-academic"><strong><em>Taz</em> on <em>Orach Chaim</em> 119</strong> (<span class="heb-inline">ט״ז על שולחן ערוך אורח חיים סימן קי״ט</span>) &mdash; <em>Rabbi David HaLevi Segal</em> (1586&ndash;1667), in his commentary on the <em>Shulchan Aruch</em>. As presented by the Rav, the <em>Taz</em> holds that the <em>Gemara</em> permits adding only <em>be&rsquo;arai</em>, not <em>bekviyus</em>. <em>Caveat (Sefaria check):</em> <em>Taz</em> 119:1 as found contains <em>Rabbeinu Yonah</em>&rsquo;s fourfold framework and the <em>Taz</em>&rsquo;s own concern that one make the standard text instituted by the Sages primary and one&rsquo;s request secondary (<em>&ldquo;<span class="heb-inline">ובקשה שלו תהיה טפלה</span>&rdquo;</em>), but the explicit <em>be&rsquo;arai</em> / <em>bekviyus</em> prohibition and the quoted rebuke were not found there. The attribution is retained as the Rav presented it; the precise source is unconfirmed.</div>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Mishnah Berurah</em> 119 (<span class="heb-inline">משנה ברורה סימן קי״ט</span>) &mdash; the balance of personal additions.</span>
+  <span class="expanded">&mdash; <strong>Verified in part against Sefaria.</strong> <em>Se&rsquo;if katan</em> 3: one begins with the <em>berachah</em> proper, so that the standard text is primary and the personal request secondary; 4: <em>viduy</em>, <em>mezonos</em> even if wealthy, specifying a new <em>aveirah</em>; 12: one must not lengthen within the <em>berachah</em>, but after the <em>tefillah</em> one may lengthen freely.</span>
+  <div class="note-academic"><strong>Flag:</strong> the weekly write-up&rsquo;s statement that the <em>Mishnah Berurah</em> presents the <em>Taz</em>&rsquo;s <em>be&rsquo;arai</em> / <em>bekviyus</em> position and the majority position permitting daily recitation was not located in <em>Mishnah Berurah</em> 119, and the warning against missing <em>Kedushah</em> was not located there either (se&rsquo;ifim 4 and 11 cross-reference <em>siman</em> 122). Both are retained as the Rav presented them, unconfirmed.</div>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <div class="note-academic"><strong><em>Aruch HaShulchan Orach Chaim</em> 119</strong> (<span class="heb-inline">ערוך השלחן אורח חיים סימן קי״ט</span>) &mdash; <em>Rabbi Yechiel Michel Epstein</em> (1829&ndash;1908). As presented by the Rav, he escalates the <em>Taz</em>&rsquo;s caution into a polemic against the printers of <em>siddurim</em>: by inserting personal prayers as standard daily text they corrupt the <em>nusach</em> instituted by the <em>Anshei Knesses HaGedolah</em>; he frames the <em>takanah</em> as <em>kodesh kodashim</em> and fixed daily additions as <em>chutzpah</em>. The Shiur Review observes that the underlying reasoning is conceptual rather than merely stringent: the permission of <em>Avodah Zarah</em> is a license to <em>add a request</em>, not a license to install one into the permanent <em>nusach</em>. <em>Caveat:</em> the <em>Aruch HaShulchan</em> text for this <em>siman</em> could not be retrieved from Sefaria; the quotations (<em>&ldquo;they are guilty&rdquo;</em>, the printers, the corruption of the <em>siddurim</em>) and the characterization that no community follows him are preserved as the Rav presented them.</div>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <div class="note-academic"><strong>The <em>Yaavetz</em></strong> (<span class="heb-inline">רבי יעקב עמדן</span>, 1697&ndash;1776; son of the <em>Chacham Tzvi</em>), in his <em>siddur</em> (<em>Siddur Beis Yaakov</em>), and parallel teachings of <strong><em>Rabbi Yonah Landsofer</em></strong> (<span class="heb-inline">רבי יונה לנדסופר</span>, 1678&ndash;1712, Prague) &mdash; develop the principle that the most powerful additions to <em>Shema Koleinu</em> are those formulated in one&rsquo;s own words. The <em>Yaavetz</em> writes openly of the difficulty of finding <em>shidduchim</em> for children and grandchildren and recommends specific in-the-moment <em>bakashos</em>; the <em>Chida</em> (<span class="heb-inline">חיד״א</span>) in his <em>derashos</em> on <em>tefillah</em> is reported to echo the same teaching.
+  <br><em>Caveat:</em> the <em>Yaavetz</em> was based in Altona (and Emden), whereas the <em>derashos</em> from a Prague pulpit point to <em>Rabbi Yonah Landsofer</em>; the Rav&rsquo;s &ldquo;<em>derashah</em> in Prague&rdquo; may therefore belong to the latter, and the two sources are not to be read as one. The Editorial Review notes that the <em>Yaavetz</em>&rsquo;s <em>chiddush</em> is the primary source, with <em>Rabbi Yonah Landsofer</em> and the <em>Chida</em> brought as corroboration. No published reference was specified in the shiur; not verifiable on Sefaria.</div>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <div class="note-academic"><strong>The Brisker Rav</strong> (<span class="heb-inline">רבי יצחק זאב הלוי סולובייצ׳יק זצ״ל</span>, 1886&ndash;1959; son of <em>Rav Chaim Soloveitchik</em>; <em>rav</em> of Brisk and later of Jerusalem) &mdash; a tradition on adding a brief personal request in <em>Shema Koleinu</em> for an immediate practical concern of the day, such as a major business meeting. The weekly write-up frames it as the point at which <em>hishtadlus</em> (<span class="heb-inline">השתדלות</span>) and <em>bitachon</em> (<span class="heb-inline">בטחון</span>) meet; the Editorial Review observes that this is not the kind of ruling associated with the Brisker <em>derech</em>&rsquo;s published <em>chiddushim</em>. <em>Caveat:</em> an oral <em>mesorah</em>; no published source specified; not verifiable on Sefaria.</div>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <div class="note-academic"><strong><em>Zohar HaKadosh</em> on <em>Rav Yeiva Sava</em></strong> (<span class="heb-inline">רב ייבא סבא</span>) &mdash; a <em>tanna</em> appearing in <em>Zohar</em> passages, who would not begin any meal without first praying that the next meal be granted; a model of constant <em>tefillah</em> that the Rav brings as the spirit behind daily personal additions in <em>Shema Koleinu</em>. <em>Caveat:</em> the specific <em>Zohar</em> locus (the weekly write-up suggests it is a recurring motif, for example in <em>Parshas Mishpatim</em>) was not given and is not pinned; not verifiable on Sefaria.</div>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Rashi</em> on <em>Bereishis</em> 30:8 (<span class="heb-inline">רש״י על בראשית ל׳:ח׳</span>) &mdash; <em>niftulei Elokim</em>; <em>Naftali</em> as <em>chibbur</em>.</span>
+  <span class="expanded">&mdash; <em>Rashi</em> brings <em>Menachem ben Saruk</em>, who derives <em>niftulei</em> from <em>pesil</em>: <em>&ldquo;<span class="heb-inline">חיבורים מאת המקום נתחברתי עם אחותי</span>&rdquo;</em>; <em>Rashi</em> then gives his own reading: <em>&ldquo;<span class="heb-inline">נתעקשתי והפצרתי פצירות ונפתולים הרבה למקום</span>&rdquo;</em>, persistent wrestling with Hashem.</span>
+  <div class="note-academic"><strong>Corrected after Sefaria check:</strong> the sense of <em>chibbur</em> is <em>Menachem</em>&rsquo;s, cited by <em>Rashi</em>, not <em>Rashi</em>&rsquo;s own preferred reading, which is wrestling and importuning &mdash; itself fitting for <em>tefillah</em>. The Rav&rsquo;s point is retained as presented.</div>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <div class="note-academic"><strong><em>Rav Shimshon Raphael Schwab</em></strong> (<span class="heb-inline">רב שמשון רפאל שוואב זצ״ל</span>, 1908&ndash;1995, <em>rav</em> of <em>Khal Adath Jeshurun</em> in Washington Heights), <em>Iyun Tefillah</em> (<span class="heb-inline">עיון תפילה</span>; in English, <em>Rav Schwab on Prayer</em>) &mdash; a personal reading of <em>&ldquo;<span class="heb-inline">ריקם אל תשיבנו</span>&rdquo;</em>: the request is not only that Hashem grant the substance of our requests but that we not <em>feel</em> abandoned when He does not. He grounds it in his childhood memory of his mother in Germany in the First World War, the tear falling on the loaf of black bread, and the dawning recognition that her sharpness was love. <em>Caveat:</em> <em>Iyun Tefillah</em> is not on Sefaria; the exact page or chapter of this passage is not pinned. (The Shiur Review notes that an earlier summary mis-attributed the story to <em>Rav Shimshon Raphael Hirsch</em>; the attribution to <em>Rav Schwab</em> is correct.)</div>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Tehillim</em> 37:25 (<span class="heb-inline">תהלים ל״ז:כ״ה</span>) &mdash; <em>&ldquo;<span class="heb-inline">נער הייתי גם זקנתי ולא ראיתי צדיק נעזב וזרעו מבקש לחם</span>&rdquo;</em>.</span>
+  <span class="expanded">&mdash; <strong>Verified against Sefaria.</strong> <em>David HaMelech</em>&rsquo;s declaration in the thirty-seventh <em>mizmor</em>. The verse is recited at the close of <em>Birkas HaMazon</em> and is one of the foundational verses of <em>bitachon</em> in prayer. <em>Rav Schwab</em>&rsquo;s reading takes <em>&ldquo;<span class="heb-inline">נעזב</span>&rdquo;</em> as <em>experiencing oneself as abandoned</em>. The Shiur Review notes that this is a reading of <em>mussar</em> force more than strict <em>peshat</em>, since <em>nifal</em> forms in <em>Tanach</em> are not typically experiential, and that the verse is generally read more literally; it is accordingly presented as <em>Rav Schwab</em>&rsquo;s reading and not as the <em>peshat</em>.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <div class="note-academic"><strong>Rabbi Avraham Schorr</strong> (<span class="heb-inline">שליט״א</span>) &mdash; the Flatbush <em>rav</em> of <em>Kehal Tiferes Rachmiel Avraham</em>; a <em>talmid</em> of <em>Rav Avraham Pam zt&rdquo;l</em> at Torah Vodaath; author of <em>HaLekach VeHaLibuv</em> on Torah and the festivals. His public remark about the Rav&rsquo;s father, that he was the only person in their <em>beis knesses</em> who cried during a regular weekday <em>Shemoneh Esrei</em>, is brought as testimony to a time when prayer on an ordinary Tuesday could still draw real tears. <em>Caveat:</em> the biographical particulars are from the weekly write-up and are unverified; the Editorial Review asks that the geography (the Rav&rsquo;s father davening with him &ldquo;on the East Side&rdquo;) and the honorific be confirmed.</div>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <div class="note-academic"><strong>The quoted phrases <em>&ldquo;<span class="heb-inline">השיבנו בחיים</span>&rdquo;</em> and <em>&ldquo;<span class="heb-inline">בא נשלום</span>&rdquo;</em></strong> are retained as transcribed. <em>Caveat:</em> the Editorial Review observes that they appear to be transcription artifacts: the weekday <em>Shemoneh Esrei</em> reads <em>&ldquo;<span class="heb-inline">השיבנו אבינו לתורתך</span>&rdquo;</em> and <em>&ldquo;<span class="heb-inline">שים שלום</span>&rdquo;</em>, while <em>&ldquo;<span class="heb-inline">השיבנו בחיים</span>&rdquo;</em> belongs to the <em>tefillah zakah</em>, and <em>&ldquo;<span class="heb-inline">בואי בשלום</span>&rdquo;</em> to <em>Lecha Dodi</em>. What the Rav actually said, and which words of the <em>tefillah</em> he meant, is to be confirmed.</div>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <div class="note-academic"><strong>The <em>Bach</em> on the <em>Tur Orach Chaim</em></strong> (<span class="heb-inline">ב״ח על טור אורח חיים</span>; <em>Rabbi Yoel Sirkes</em>, 1561&ndash;1640, Krakow) &mdash; as presented by the Rav, a <em>yachid</em> may insert <em>sheilas geshamim</em> in <em>Shema Koleinu</em>, but the <em>tzibbur</em> may not; two <em>gedolim</em> who instituted it communally, when rain was needed and no <em>taanis</em> was declared, both died within the year, read as a sign of the gravity of structural deviation in <em>tefillah</em>. <em>Caveat:</em> the <em>Bach</em> text could not be retrieved from Sefaria; the exact <em>siman</em> is not pinned; the <em>gedolim</em> are not named, and the account carries the shape of a <em>mussar</em> tradition, so it is reported as a tradition the <em>Bach</em> records. (<em>Mishnah Berurah</em> 119:10 does cite a <em>Bach</em> on <em>Rabbeinu Yonah</em>&rsquo;s framework for <em>Shomea Tefillah</em>, but not this account.)</div>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <div class="note-academic"><strong>The <em>Aruch HaShulchan</em>, the <em>Shaarei Tziyon</em> and the <em>Mishnah Berurah</em></strong> on saying these insertions at <em>Minchah</em> and <em>Maariv</em> &mdash; the more and less permissive positions as the Rav stated them. <em>Caveat:</em> no <em>siman</em> was cited and none is pinned here; not verified.</div>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning shiur on <em>Tefillah</em>, recorded <span class="heb-inline">כ״ד תמוז תשפ״ה</span> &middot; 20 July 2025. This edition rewrites the delivered shiur in the classical sefer voice; corrects the <em>Megillah</em> citation to 17b&ndash;18a and the sequence of the verses; corrects the source of the 1,800 count to <em>Tur</em> 118 (the <em>Midrash Dorshei Reshumos</em>, with the <em>Zohar</em> as the Rav&rsquo;s link); corrects <em>Avodah Zarah</em> to 8a and removes the <em>be&rsquo;arai</em> / <em>bekviyus</em> distinction from the <em>Gemara</em>; corrects <em>Rashi</em> on <em>Naftali</em>; adds the <em>Gemara</em>&rsquo;s own account of the praise of the congregation; moves the aside on the <em>Aruch HaShulchan</em>&rsquo;s stature beside the polemic; restores the texture of the opening on Rabbi Yaakov Yosef, the <em>Toiv Hashem lakol</em> framing, the batei din letter from <em>Eretz Yisrael</em> and the father&rsquo;s <em>siddur</em>; replaces the writeup&rsquo;s &ldquo;bear licking honey&rdquo; image, which the Rav did not say in this shiur, with plain prose; and adds, as an editorial bracket, the closing sentence returning to the <em>yahrzeit</em>. The <em>Retzei</em> appendix on <em>Michoel sar hagadol</em> and the Wikisource aside are omitted as belonging elsewhere. The <em>Mareh Mekomos</em> is renumbered in body order.
+</footer>
+
+</body>
+</html>

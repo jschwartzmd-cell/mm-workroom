@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Refaeinu and Barech Aleinu — Healing, Sustenance, and Rain</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .part-header{
+    text-align:center;
+    color:var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.3em;
+    font-size:15px;
+    margin:46px 0 10px 0;
+    padding-top:14px;
+    border-top:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:34px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">רְפָאֵנוּ וּבָרֵךְ עָלֵינוּ — רְפוּאָה, פַּרְנָסָה, וְגֶשֶׁם</h1>
+  <div class="english-title">Refaeinu and Barech Aleinu — Healing, Sustenance, and Rain</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 25 May 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>The eighth and ninth <span class="heb-inline">ברכות</span> of <span class="heb-inline">שמונה עשרה</span>, taken together with the <span class="heb-inline">הלכה</span> of <span class="heb-inline">ותן טל ומטר</span> that is embedded in the ninth. Three times each day the mispallel asks the <em>Ribbono Shel Olam</em> for the <em>refuah</em> and the <em>parnasah</em> of <span class="heb-inline">כלל ישראל</span> &mdash; and in the ninth <em>brachah</em> he adds, in its season, the request for the rain upon which all of life rests.</em></p>
+
+<div class="part-header">Part One &nbsp;&middot;&nbsp; <span class="heb-inline">בִּרְכַּת רְפָאֵנוּ</span></div>
+
+<h2>I. The Eighth <em>Brachah</em></h2>
+
+<h3>Why the Eighth Slot</h3>
+
+<p>Three times each day the mispallel is afforded the opportunity to ask the <em>Ribbono Shel Olam</em> for <em>refuah</em> (<span class="heb-inline">רפואה</span>). The content of the <em>brachah</em> carries two distinct requests at once: that those who are <em>cholim</em> (<span class="heb-inline">חולים</span>) be restored to health, and that those who are not yet <em>cholim</em> be guarded from becoming so. The pastoral opening of the <em>brachah</em> is universal in scope &mdash; every member of <span class="heb-inline">כלל ישראל</span> stands in need of one or the other.</p>
+
+<p>The <em>Gemara</em> in <em>Megillah</em><a class="footnote-ref" id="ref1" href="#fn1">[1]</a> teaches that this <em>brachah</em> was placed in the eighth position by the <em>Anshei Knesses HaGedolah</em> in correspondence with the <em>mitzvah</em> of <em>bris milah</em> (<span class="heb-inline">ברית מילה</span>), which is performed on the eighth day. The <em>Gemara</em>&rsquo;s formulation is <em>refuah kenegeд милаh she&rsquo;nitnah ba&rsquo;shemini</em> (<span class="heb-inline">רפואה כנגד מילה שנתנה בשמיני</span>) &mdash; every Jew is in need of <em>refuah</em> after his <em>bris</em>, and the <em>brachah</em> whose entire subject is <em>refuah</em> is set in the slot that marks the day on which the need first arises.</p>
+
+<h3>The First <em>Baruch Rofei Cholim</em></h3>
+
+<p>The <em>Midrash</em><a class="footnote-ref" id="ref2" href="#fn2">[2]</a> records that the very first time the words <em>Baruch Rofei Cholim</em> (<span class="heb-inline">ברוך רופא חולים</span>) were uttered in this world was in response to the <em>refuah</em> that the <em>Ribbono Shel Olam</em> brought to <em>Avraham Avinu</em> immediately after his <em>bris</em>. The <em>Midrash</em>&rsquo;s word is <em>miyad</em> (<span class="heb-inline">מיד</span>) &mdash; without delay the <em>Ribbono Shel Olam</em> healed him; the <em>malachei ha&rsquo;shareis</em> (<span class="heb-inline">מלאכי השרת</span>) opened their mouths and uttered the <em>brachah</em>. The formula of the eighth <em>brachah</em> traces, in this reading, directly to that moment.</p>
+
+<p>A seeming difficulty presents itself. <em>Avraham Avinu</em> was not himself <em>nimol</em> on the eighth day of his life; his <em>bris</em> was at the age of ninety-nine. In what sense, then, does the eighth-day pattern begin with him? The answer is that the <em>brachah</em> models the standard case rather than the unique one. <em>Avraham</em> inaugurated the <em>mitzvah</em>; every subsequent <em>bris</em> performed within <span class="heb-inline">כלל ישראל</span> is performed on the eighth day; and the <em>brachah</em> is set to the standard. The <em>refuah</em> that the <em>Ribbono Shel Olam</em> brought to <em>Avraham</em> is paradigmatic in content &mdash; <em>refuah</em> after <em>bris</em> &mdash; even where it is not paradigmatic in timing.</p>
+
+<h3>The <em>Chasimah</em> &mdash; <em>Rofei Cholei Amo Yisrael</em></h3>
+
+<p>The <em>chasimah</em> of the <em>brachah</em> reads <em>Baruch Attah Hashem, rofei cholei amo Yisrael</em> (<span class="heb-inline">ברוך אתה ה' רופא חולי עמו ישראל</span>). A question arises directly from the <em>Midrash</em> above. The <em>malachim</em> at the moment of <em>Avraham</em>&rsquo;s <em>refuah</em> uttered only <em>Baruch Rofei Cholim</em> &mdash; universal in scope, no reference to <span class="heb-inline">עם ישראל</span>, which did not yet exist. Why then does our <em>chasimah</em> narrow the <em>refuah</em> to <span class="heb-inline">כלל ישראל</span>?</p>
+
+<p>One answer flows from the structural tie to <em>bris milah</em>: the <em>brachah</em> as instituted by the <em>Anshei Knesses HaGedolah</em> is the <em>refuah</em> that follows the <em>bris</em>, and that <em>bris</em> is a <em>mitzvah</em> given only to <span class="heb-inline">עם ישראל</span>. The <em>chasimah</em> tracks the shape of the <em>brachah</em>. A deeper answer emerges from the <em>yesod</em> of <em>cholei ha&rsquo;nefesh</em> developed below in Section IV: the <em>brachah</em> contains within it a request for <em>refuas ha&rsquo;nefesh</em>, and <em>cholei ha&rsquo;nefesh</em> in the sense of a <em>neshamah</em> in need of <em>teshuvah</em> is a category that applies uniquely to a Jew. The opening <em>Refaeinu</em> addresses the universal human need for healing; the <em>chasimah</em> narrows the frame to the <em>refuas ha&rsquo;nefesh</em> that is particular to <span class="heb-inline">כלל ישראל</span>. Opening and closing in this <em>brachah</em> are not symmetrical, and the architecture is deliberate.</p>
+
+<h2>II. The Permission to Insert a <em>Yehi Ratzon</em></h2>
+
+<p>The <em>brachah</em> of <em>Refaeinu</em> occupies a distinguished place among the middle <em>brachos</em> of <em>Shemoneh Esrei</em>: it is one of only two <em>brachos</em> &mdash; the other being <em>Birkas HaShanim</em>, the subject of Part Two below &mdash; in which <em>Chazal</em> expressly permit the mispallel to pause and insert a personal <em>bakashah</em> on behalf of a specific individual. The <em>Gemara</em>&rsquo;s basis is the principle of <em>me&rsquo;ein ha&rsquo;brachah</em> (<span class="heb-inline">מעין הברכה</span>) &mdash; a <em>bakashah</em> that lies within the subject matter of the <em>brachah</em> may be added at that point. For <em>Refaeinu</em>, the permitted addition is a <em>yehi ratzon</em> on behalf of a specific <em>choleh</em>; for <em>Birkas HaShanim</em>, the permitted addition is a <em>bakashah</em> for relief from <em>dochak parnasah</em> (<span class="heb-inline">דוחק פרנסה</span>).<a class="footnote-ref" id="ref3" href="#fn3">[3]</a></p>
+
+<p>The standard formulation of the <em>yehi ratzon</em> for a <em>choleh</em> reads:</p>
+
+<blockquote>
+<div class="heb">יְהִי רָצוֹן מִלְּפָנֶיךָ, ה' אֱלֹקַי וֵאלֹקֵי אֲבוֹתַי, שֶׁתִּשְׁלַח מְהֵרָה רְפוּאָה שְׁלֵמָה מִן הַשָּׁמַיִם — רְפוּאַת הַנֶּפֶשׁ וּרְפוּאַת הַגּוּף — לַחוֹלֶה פְּלוֹנִי בֶּן פְּלוֹנִית בְּתוֹךְ שְׁאָר חוֹלֵי יִשְׂרָאֵל.</div>
+<div class="trans">May it be Your will, Hashem my God and the God of my fathers, that You send swiftly a complete healing from Heaven &mdash; healing of the soul and healing of the body &mdash; to the ill one, [name] son of [mother&rsquo;s name], among the other ill of Yisrael.</div>
+</blockquote>
+
+<h3>Where the <em>Yehi Ratzon</em> Is Said</h3>
+
+<p>A <em>machlokes acharonim</em> addresses whether the <em>yehi ratzon</em> is best inserted within <em>Refaeinu</em> itself or deferred until <em>Shema Koleinu</em> (<span class="heb-inline">שמע קולנו</span>). The <em>Ran</em><a class="footnote-ref" id="ref4" href="#fn4">[4]</a> rules that one may say it in <em>Refaeinu</em>, on the strength of the <em>me&rsquo;ein ha&rsquo;brachah</em> principle: <em>Refaeinu</em> is the <em>brachah</em> whose topic <em>is</em> <em>refuah</em>, and the insertion sits naturally within it. Some later <em>acharonim</em> prefer to defer the <em>bakashah</em> to <em>Shema Koleinu</em>, which is the general-purpose <em>brachah</em> for personal requests. The practice preserved as the principal <em>shitah</em> in the standard <em>siddurim</em> is to say it in <em>Refaeinu</em>.</p>
+
+<p>A practice worth preserving in the name of <em>Rabbi Ephrati</em> is to insert a <em>yehi ratzon</em> within every <em>Shemoneh Esrei</em>, three times a day, on the ground that there is always a <em>choleh</em> somewhere in <span class="heb-inline">כלל ישראל</span>. The mispallel need not supply a specific name on every occasion; the <em>yehi ratzon</em> can be said with the collective <em>cholei amo Yisrael</em> in view. The <em>brachah</em>&rsquo;s permission is not conditioned on an active emergency; its exercise models the mispallel&rsquo;s standing awareness that illness is somewhere present in the community that the <em>brachah</em> names.</p>
+
+<h3>A <em>Kashya</em> Left Open on the <em>Siddurim</em></h3>
+
+<p>A simple empirical observation generates a <em>kashya</em> that admits no comfortable answer. In every standard <em>siddur</em>, the <em>yehi ratzon</em> for the <em>choleh</em> is printed in the margin or at the foot of <em>Refaeinu</em>, ready to hand. In the companion <em>brachah</em> of <em>Birkas HaShanim</em>, however &mdash; where the <em>Gemara</em> and the <em>Shulchan Aruch</em> grant exactly parallel permission to insert a personal <em>bakashah</em> for <em>parnasah</em> &mdash; no printed text appears. The asymmetry is universal across the <em>siddur</em> traditions. Why the <em>siddur</em>-printers of every generation and every edition should have supplied one and not the other is a question <em>Rabbi Ephrati</em> leaves open; a <em>sevara</em> worth considering is that a <em>choleh</em> is an identifiable individual whose name and condition must be fitted to the moment of <em>tefillah</em>, whereas <em>dochak parnasah</em> is a diffuse condition that the mispallel himself already carries without needing a scripted insertion. The <em>siddur</em>-printers may have calibrated to the typical practical case rather than to the full halachic permission. The <em>kashya</em> remains worth sitting with.</p>
+
+<h2>III. Mentioning the Name &mdash; and Why the Mother&rsquo;s</h2>
+
+<h3>When the <em>Choleh</em> Is Present</h3>
+
+<p>The <em>Gemara</em> in <em>Berachos</em><a class="footnote-ref" id="ref5" href="#fn5">[5]</a> derives from the shortest <em>tefillah</em> in the <em>Torah</em> &mdash; <em>Moshe Rabbeinu</em>&rsquo;s <em>Keil na refa na la</em> (<span class="heb-inline">א-ל נא רפא נא לה</span>) over <em>Miriam</em> &mdash; a specific <em>halachah</em>: when the <em>choleh</em> is present in the same room or <em>beis ha&rsquo;knesses</em> as the mispallel, there is no need to pronounce the name; the <em>tefillah</em> reaches its target through proximity. <em>Moshe</em> stood beside <em>Miriam</em> and did not need to say <em>Miriam bas Yocheved</em>. When the <em>choleh</em> is absent &mdash; in another room, another city, another country &mdash; the mispallel pronounces the name so that the <em>tefillah</em> is directed to its intended target.</p>
+
+<h3>Why the Mother&rsquo;s Name</h3>
+
+<p>For <em>kerias ha&rsquo;Torah</em> and for calling an <em>aliyah</em>, the <em>minhag</em> is uniform: the father&rsquo;s name is used &mdash; <em>ya&rsquo;amod ploni ben ploni</em>. For <em>tefillah</em> on behalf of a <em>choleh</em>, however, the <em>minhag</em> inverts: the mother&rsquo;s name is used &mdash; <em>ploni ben plonis</em>. What accounts for the inversion?</p>
+
+<p>A simple <em>pshat</em> reason is grounded in the <em>sugyos</em> of <em>Chullin</em> and <em>Kiddushin</em>:<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> maternity is empirically certain, whereas paternity is presumptive (through the <em>chazakah</em> of <em>rov be&rsquo;ilos achar ha&rsquo;ba&rsquo;al</em>). When the <em>tefillah</em>&rsquo;s effectiveness depends upon the precise identification of the <em>choleh</em> in the heavenly registry, only maternity provides identity beyond doubt.</p>
+
+<p>The deeper reason is developed by the <em>Pele Yo&rsquo;etz</em>:<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<div class="pullquote">
+<p>Mentioning the father&rsquo;s name in the <em>beis din shel ma&rsquo;alah</em> invites <em>kitrug</em> (<span class="heb-inline">קטרוג</span>). Why specifically when the <em>choleh</em> is a man? Because men carry the <em>chiyuv</em> of <em>talmud Torah</em> that women do not. The opening question that arises in the <em>beis din shel ma&rsquo;alah</em> upon the mention of a man&rsquo;s name is <em>&ldquo;where is the <em>Torah</em> he learned today?&rdquo;</em> &mdash; a question that initiates <em>din</em> at the moment the <em>tefillah</em> seeks <em>rachamim</em>. Mentioning the mother &mdash; a <em>yiddishe mamme</em> who lit <em>neiros Shabbos</em>, prepared the <em>Shabbos</em>, carried her family&rsquo;s <em>yiddishkeit</em> &mdash; invites <em>middas ha&rsquo;rachamim</em> rather than <em>din</em>. The precedent is <em>Dovid HaMelech</em>&rsquo;s <em>Anna Hashem ki ani avdecha, ani avdecha ben amasecha</em><a class="footnote-ref" id="ref8" href="#fn8">[8]</a> &mdash; <em>I am Your servant, the son of Your maidservant</em>. <em>Dovid</em> bypasses the father and reaches the <em>Ribbono Shel Olam</em> through the mother. The mispallel does the same.</p>
+</div>
+
+<p>The <em>Ben Ish Chai</em><a class="footnote-ref" id="ref9" href="#fn9">[9]</a> rules accordingly: in <em>tefillah</em> for a <em>choleh</em>, only the mother&rsquo;s name is used. The <em>pesak</em> is followed across most contemporary <em>kehillos</em> and is the standard in every <em>siddur</em>-text of the <em>yehi ratzon</em>.</p>
+
+<h2>IV. <em>Refuas HaNefesh</em> Before <em>Refuas HaGuf</em></h2>
+
+<h3>The Order in the <em>Yehi Ratzon</em></h3>
+
+<p>The order of the two <em>refuos</em> in the <em>yehi ratzon</em> is deliberate: <em>refuas ha&rsquo;nefesh u&rsquo;refuas ha&rsquo;guf</em> &mdash; the <em>nefesh</em> first, the <em>guf</em> second. The order is at first glance surprising. In the structure of <em>Shemoneh Esrei</em>, <em>Teshuvah</em>, <em>Selichah</em>, and <em>Mechilah</em> have already been davened for in the preceding <em>brachos</em>. Why return in <em>Refaeinu</em> to the <em>nefesh</em>?</p>
+
+<p>The answer is given by the <em>Rambam</em> in his <em>derashos</em>, with parallel treatment in <em>Shemoneh Perakim</em>:<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> every <em>choli ha&rsquo;guf</em> traces, in its structural diagnosis, to a <em>choli ha&rsquo;nefesh</em> that lies beneath it. The physical symptom is the surface expression of a deeper spiritual disturbance. The doctor properly identifies the natural diagnosis; the <em>Rambam</em>&rsquo;s teaching does not displace the natural diagnosis but overlays it with a deeper one. The <em>tefillah</em> on behalf of the <em>choleh</em> therefore addresses the deeper layer first and the surface layer second. The order of the <em>yehi ratzon</em> encodes the <em>Rambam</em>&rsquo;s theology of illness.</p>
+
+<h3>The Register of <em>Choli HaNefesh</em> in This <em>Brachah</em></h3>
+
+<p>The term <em>choli ha&rsquo;nefesh</em> can be read in two distinct registers. In contemporary usage, <em>choleh nefesh</em> denotes mental or emotional illness &mdash; a register in which the present generation is <em>be&rsquo;sheler lo</em> rich with cases. In the older halachic-musar register, <em>choli ha&rsquo;nefesh</em> denotes a <em>neshamah</em> in need of <em>teshuvah</em> &mdash; a soul estranged from its proper station through <em>aveiros</em>. Both registers are live; the <em>Rambam</em>&rsquo;s teaching in the <em>derashos</em> operates in the older register, and that is the register in which the <em>brachah</em> is to be read. The <em>chasimah</em> of <em>rofei cholei amo Yisrael</em>, read against this register, resolves naturally: <em>cholei ha&rsquo;nefesh</em> in the sense of the <em>neshamah</em> in need of <em>teshuvah</em> is a category that applies specifically to <span class="heb-inline">כלל ישראל</span>, whose <em>neshamah</em> is bound to the <em>Torah</em>&rsquo;s standard of what constitutes its ill health. The <em>tikkun</em> for which we daven in the deeper layer of the <em>brachah</em> is the <em>tikkun nishmas Yisrael</em>.</p>
+
+<h2>V. <em>Refaeinu Hashem Ve&rsquo;Nerafei</em></h2>
+
+<p>The <em>pasuk</em> that opens the <em>brachah</em> &mdash; <em>Refaeinu Hashem ve&rsquo;nerafei, hoshi&rsquo;einu ve&rsquo;nivashei&rsquo;ah</em> &mdash; sounds at first redundant. <em>Heal us, and we will be healed</em>: does not the first clause already contain the second? The source is <em>Yirmiyahu</em><a class="footnote-ref" id="ref11" href="#fn11">[11]</a>:</p>
+
+<blockquote>
+<div class="heb">רְפָאֵנִי ה' וְאֵרָפֵא, הוֹשִׁיעֵנִי וְאִוָּשֵׁעָה, כִּי תְהִלָּתִי אָתָּה.</div>
+<div class="trans">Heal me, Hashem, and I will be healed; save me, and I will be saved &mdash; for You are my praise.</div>
+<div class="source"><em>Yirmiyahu</em> 17:14</div>
+</blockquote>
+
+<p>The <em>Anshei Knesses HaGedolah</em> transposed the <em>pasuk</em> from <em>lashon yachid</em> into <em>lashon rabbim</em> for the communal <em>tefillah</em>. The redundancy is dissolved by the <em>mefarshim</em> in a single stroke: a doctor&rsquo;s <em>refuah</em> is contingent and reversible &mdash; it may succeed, it may fail, and the condition may return. The <em>Ribbono Shel Olam</em>&rsquo;s <em>refuah</em>, when the <em>choleh</em> recognizes it as His, is of a different order: durable, complete, not subject to recurrence. <em>Rafa&rsquo;eini Hashem</em> &mdash; heal me, <em>and</em> &mdash; and only then &mdash; <em>I will <em>actually</em> be healed</em>. The <em>pasuk</em> contrasts two <em>refuos</em>; the second clause specifies the first.</p>
+
+<h2>VI. The Doctor as <em>Shaliach</em></h2>
+
+<h3>The Source of the Doctor&rsquo;s Permission</h3>
+
+<p>The <em>Gemara</em> in <em>Bava Kamma</em><a class="footnote-ref" id="ref12" href="#fn12">[12]</a> derives from the <em>pasuk</em> <em>v&rsquo;rapo yerapei</em> (<span class="heb-inline">ורפא ירפא</span>) both the <em>heter</em> and the <em>chiyuv</em> of medical practice. One who possesses the skill to heal another is permitted &mdash; and, where capable, obligated &mdash; to exercise it. The doctor&rsquo;s years of training, the vast investment of time and money that produces him, the full body of his acquired skill, is a <em>chesed</em> from the <em>Ribbono Shel Olam</em> and a <em>shelichus</em> (<span class="heb-inline">שליחות</span>) as His <em>shaliach</em> for the <em>refuah</em> of those entrusted to his care.</p>
+
+<p>The <em>nisayon</em> that attaches to this <em>shelichus</em> is subtle and persistent: the doctor is positioned to mistake himself for the source of the <em>refuah</em> rather than its instrument. The slide into <em>gaavah</em> is a professional hazard. The recognition that <em>ha&rsquo;mo&rsquo;ach ve&rsquo;ha&rsquo;koach me&rsquo;ha&rsquo;Kadosh Baruch Hu</em> &mdash; the mind and the strength both come from the <em>Ribbono Shel Olam</em> &mdash; is itself part of the <em>mitzvah</em>. A doctor who holds this recognition in the moment of his most impressive technical success is a doctor who has internalized the full <em>yesod</em> of <em>Refaeinu</em>.</p>
+
+<h3>An Illustration from a Non-Jewish Surgeon</h3>
+
+<p><em>Rabbi Ephrati</em> relates an account that illustrates the <em>yesod</em> with a <em>mussar</em>-sharpness that only life experience supplies. A child in his family was in need of open-heart surgery and was brought to <em>Dr. Frank Hanley</em> at Stanford &mdash; among the world&rsquo;s foremost specialists in the pediatric procedure in question, to whom thousands come from every continent. The expectation, given the surgeon&rsquo;s unique standing, was arrogance; what the family encountered was its opposite. After a surgery that extended for nineteen to twenty hours, late in the night, the surgeon brought the father in to tell him how it had gone. The child was alive. The father, overwhelmed, took the surgeon&rsquo;s hand and said simply, <em>&ldquo;Doctor, thank you so much.&rdquo;</em> He had been saying <em>Tehillim</em> for the duration; he had been thanking the <em>Ribbono Shel Olam</em>; but in the moment he clung to the surgeon as if he were the savior. The surgeon answered with full <em>menuchas ha&rsquo;nefesh</em>: <em>&ldquo;This is my job. My hands are guided by God.&rdquo;</em> The surgeon, a non-Jew, had modeled the <em>yesod</em> of the <em>shaliach</em>-not-source distinction more cleanly than many a <em>ba&rsquo;al tefillah</em>; and in modeling it, he quietly became the <em>maggid shiur</em>&rsquo;s teacher.</p>
+
+<h2>VII. The <em>Nisayon</em> of <em>Bikkur Cholim</em></h2>
+
+<p>The <em>mitzvah</em> of <em>bikkur cholim</em> (<span class="heb-inline">ביקור חולים</span>) carries a specific <em>nisayon</em> that belongs to this <em>brachah</em>&rsquo;s subject matter rather than to a general <em>mussar</em> topic. The visitor arrives in the hospital room as the healthy one; the <em>choleh</em> is the one in need. The structural asymmetry invites a quiet thought that is itself the <em>nisayon</em>: <em>&ldquo;I am healthy; you are not. You need me.&rdquo;</em> Over time, the thought can harden into <em>gaavah</em> &mdash; the visitor&rsquo;s sense of his own standing <em>in</em> performing the <em>mitzvah</em>, independent of its object.</p>
+
+<p>The self-awareness that defuses the <em>nisayon</em> is a work of <em>tefillah</em>, not merely of general <em>mussar</em>. <em>Rabbi Ephrati</em> recounts that as a <em>bachur</em> he spent weeks of <em>bein ha&rsquo;zemanim</em> in <em>Eretz Yisrael</em> walking the halls of Hadassah Hospital, bringing food and visits. He noticed that he came home each evening feeling <em>better</em>, fuller &mdash; and when he analyzed what had happened, the answer was that he had felt <em>needed</em>. The feeling itself was neither good nor bad; the awareness of the feeling is what matters. A visitor who notices that he is being nourished by being needed can hold the nourishment at arm&rsquo;s length and keep the <em>mitzvah</em> directed outward. A visitor who does not notice is on his way to the slow transformation of <em>chesed</em> into display.</p>
+
+<p>The <em>Gemara</em> adds a datum that bears on the structure of <em>bikkur cholim</em>: a visitor who is <em>ben gilo</em> (<span class="heb-inline">בן גילו</span>) &mdash; sharing a certain resonance with the patient &mdash; takes away a sixtieth of the illness. The <em>Rishonim</em> and the <em>Rashba</em> debate the precise meaning of <em>ben gilo</em>; the pointer in every reading is to some shared register between visitor and <em>choleh</em>, such that the visit is efficacious at a level deeper than its surface sociability.</p>
+
+<div class="part-header">Part Two &nbsp;&middot;&nbsp; <span class="heb-inline">בִּרְכַּת הַשָּׁנִים</span></div>
+
+<h2>VIII. The <em>Brachah</em> of <em>Parnasah</em></h2>
+
+<h3>Agricultural Form, Universal Content</h3>
+
+<p>The ninth <em>brachah</em> &mdash; <em>Barech Aleinu</em> (<span class="heb-inline">ברך עלינו</span>) in the <em>nusach</em> for the rainy season, <em>Barech-einu</em> (<span class="heb-inline">ברכנו</span>) in the summer formulation, together known as <em>Birkas HaShanim</em> &mdash; reads on its surface as a thoroughly agricultural <em>tefillah</em>. Every <em>lashon</em> of the <em>brachah</em> &mdash; the <em>tevuah</em> (<span class="heb-inline">תבואה</span>), the <em>adamah</em>, the produce, the harvest &mdash; is drawn from the vocabulary of farming. In an agricultural economy, this is the <em>brachah</em> for <em>parnasah</em>, and it would have been said with full <em>kavvanah</em> by every member of the <em>kehillah</em>.</p>
+
+<p>In the economy of the present day, the agricultural idiom has stretched to cover every form of livelihood. The <em>brachah</em> is to be davened by the dentist, the surgeon, the broker, the merchant, the practitioner of every trade; the <em>bakashah</em> for the <em>tevuah</em> of the field encompasses the full range of callings by which the mispallel feeds his household.</p>
+
+<h3>The Chabad <em>Kavvanah</em> for the <em>Mitzvos</em> of the Year</h3>
+
+<p>A particular <em>kavvanah</em> is preserved in the Chabad tradition and recorded in collections of <em>Minhagei Chabad</em><a class="footnote-ref" id="ref13" href="#fn13">[13]</a>: when the mispallel recites <em>Barech Aleinu</em>, he is to have in mind not only his own <em>parnasah</em> but the agricultural produce required for the <em>mitzvos</em> of the coming year. The specific items are three:</p>
+
+<ul>
+  <li>Good wheat for <em>matzah</em> on <em>Pesach</em>.</li>
+  <li>Fine <em>minim</em> for the <em>arba minim</em> on <em>Sukkos</em>.</li>
+  <li>Good wine from good <em>gefanim</em> (<span class="heb-inline">גפנים</span>) for <em>kiddush</em>.</li>
+</ul>
+
+<p>Three times each day, read with this <em>kavvanah</em>, the mispallel is davening for an <em>esrog</em>. The <em>kavvanah</em> is simple to plug in and sweet to carry; <em>Rabbi Ephrati</em> relates that he adopted it for himself from this source.</p>
+
+<h2>IX. The <em>Baal Shem Tov</em>&rsquo;s <em>Kashya</em></h2>
+
+<h3>The <em>Sugya</em> of <em>Mezonos Ketzuvim</em></h3>
+
+<p>The <em>Gemara</em> in <em>Beitzah</em><a class="footnote-ref" id="ref14" href="#fn14">[14]</a> teaches that <em>mezonosav shel adam ketzuvin lo me&rsquo;Rosh HaShanah ad Rosh HaShanah</em> (<span class="heb-inline">מזונותיו של אדם קצובין לו מראש השנה ועד ראש השנה</span>) &mdash; a person&rsquo;s sustenance is decreed for him on <em>Rosh HaShanah</em> for the full year to follow. The <em>Gemara</em> notes one exception: <em>Shabbos</em>, <em>Yom Tov</em>, and the <em>talmud Torah</em> of the children (<em>schar limud</em>) are reimbursed above the quota. The <em>kashya</em> is immediate. If the yearly sum is fixed, what is the mispallel seeking when he davens, three times each day, for better <em>parnasah</em>?</p>
+
+<h3>The Baal Shem Tov&rsquo;s <em>Chiddush</em></h3>
+
+<p>The <em>Baal Shem Tov</em>&rsquo;s resolution<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> is a <em>chiddush</em> of the first order and is widely preserved across the early <em>chassidishe sefarim</em>: the <em>amount</em> of <em>parnasah</em> is decreed on <em>Rosh HaShanah</em>, but the <em>quality</em> of the <em>parnasah</em> is not. Money arrives in different modes. It may be <em>berucha</em> (<span class="heb-inline">ברוכה</span>) or <em>arura</em> (<span class="heb-inline">ארורה</span>). It may be liquid or illiquid, accessible or locked in paper, sufficient to its purposes or accompanied by hidden costs that drain it. A person may be rich on paper and short of cash in his pocket; the yearly sum has arrived, but it has arrived in a form that does not nourish. The daily <em>tefillah</em> is a <em>bakashah</em> that the decreed <em>parnasah</em> arrive in a form that actually sustains &mdash; <em>berucha</em>, usable, accessible, sufficient, calm.</p>
+
+<h3>The Last <em>Minchah</em> of the Year</h3>
+
+<p>A chain of <em>mesorah</em> preserved in the court of <em>Skver</em> renders the weight of <em>Barech Aleinu</em> in the mode of the <em>tzaddikim</em>. <em>Reb Yankel Shalom Unger</em>, the father of the Unger family of <em>Skverer</em> <em>chassidim</em>, in his later years settled in Miami and davened at the small shul on 37<sup>th</sup> and Prairie among the elderly <em>chassidim</em> wintering or settled there.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> On every <em>Erev Rosh HaShanah</em>, Reb Yankel Shalom wept through the silent <em>Shemoneh Esrei</em> of <em>Minchah</em>. Asked why he wept at that specific point &mdash; with all of <em>Rosh HaShanah</em> itself ahead, the <em>Aseres Yemei Teshuvah</em>, <em>Yom Kippur</em> &mdash; he answered that he had heard from the elder <em>Skverer Rebbe</em> that the weeping belonged at the words <em>Barech aleinu Hashem Elokeinu es ha&rsquo;shanah ha&rsquo;zos</em> &mdash; <em>bless upon us, Hashem our God, this year</em>. <em>What year?</em> the <em>Skverer Rebbe</em> would say through the tears. The year is finished. Five minutes remain of it. <em>The last five minutes!</em> &mdash; and in those last five minutes, the entire year can still be <em>mesukan</em>. <em>Baruch Hashem, you have a last chance.</em></p>
+
+<p>The practice establishes a <em>kavvanah</em> for every day. When the mispallel reaches <em>es ha&rsquo;shanah ha&rsquo;zos</em>, he asks himself <em>what year is it?</em> &mdash; and remembers that the <em>brachah</em> he is about to say may still draw down <em>berachah</em> upon the remainder of a year that has not yet closed.</p>
+
+<h2>X. <em>Be&rsquo;Heter Ve&rsquo;Lo Be&rsquo;Issur</em></h2>
+
+<h3>The <em>Yaaros Devash</em>&rsquo;s Unwritten <em>Kavvanah</em></h3>
+
+<p>In his <em>derashos</em> on <em>Birkas HaShanim</em>, <em>Rabbi Yonasan Eibschutz</em>, the <em>Yaaros Devash</em>,<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> develops a <em>kavvanah</em> that does not appear in the printed text of the <em>brachah</em> but belongs to it in substance: the mispallel is to daven that his <em>parnasah</em> arrive <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em> (<span class="heb-inline">בהיתר ולא באיסור</span>) &mdash; earned within the boundaries of <em>halachah</em>, not through <em>gezel</em> or any of its proximities. There is no <em>berachah</em> in money that is not properly the earner&rsquo;s. The <em>tefillah</em>&rsquo;s outcome must be tied to its halachic foundation, or it will not land as a <em>berachah</em> at all.</p>
+
+<p>Every generation, the <em>Yaaros Devash</em> warns, requires the explicit reminder. No generation of <span class="heb-inline">כלל ישראל</span> has been fully clean of the hazard; and the specific shapes in which the hazard presents itself change with the economic conditions of each era.</p>
+
+<h3>The <em>Arizal</em>&rsquo;s Kabbalistic <em>Kavvanah</em></h3>
+
+<p>Parallel to the <em>Yaaros Devash</em>, the <em>Arizal</em>, as transmitted in <em>Shaar HaKavanos</em> by <em>Rabbi Chaim Vital</em>,<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> develops a kabbalistic <em>kavvanah</em> for <em>Birkas HaShanim</em> that reaches further still: beyond davening for the <em>parnasah</em> itself, the mispallel is to beg the <em>Ribbono Shel Olam</em> for the <em>seichel</em> (<span class="heb-inline">שכל</span>) &mdash; the cognitive and ethical clarity &mdash; to recognize the boundary between <em>heter</em> and <em>issur</em> in business and earnings, and the <em>siyyua min ha&rsquo;shamayim</em> to remain on the right side of the boundary. The <em>bakashah</em> ties the <em>brachah</em>&rsquo;s outcome to its halachic foundation at the level of the mispallel&rsquo;s own decisions.</p>
+
+<h2>XI. <em>Koach HaPo&rsquo;el BaNif&rsquo;al</em> &mdash; The <em>Bnei Yissaschar</em></h2>
+
+<h3>A Teaching Delivered as a Principle, Never Applied to a Person</h3>
+
+<p>The <em>Bnei Yissaschar</em>,<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> drawing on the <em>Rishonim</em>&rsquo;s principle that an effect retains the <em>koach</em> of its cause &mdash; <em>koach ha&rsquo;po&rsquo;el ba&rsquo;nif&rsquo;al</em> (<span class="heb-inline">כח הפועל בנפעל</span>) &mdash; develops a <em>mussar</em>-teaching of unusual sharpness. People came to him with the painful <em>kashya</em> of their generation: why were their children going off the <em>derech</em>? He gave an answer that is explicitly meant to be understood as a general principle and never as an attribution against a particular family. The principle is this: money generated through <em>gezel</em> &mdash; even partially, even at the edges, even in forms the earner did not himself regard as <em>gezel</em> &mdash; carries the imprint of the <em>cheit</em> in its very substance. When such money is used to buy the food and the clothing of the children &mdash; the pizza, the ice cream, the chicken, the day-school tuition, the shoes &mdash; the children ingest, in the <em>Bnei Yissaschar</em>&rsquo;s formulation, the residue of the <em>cheit</em> embedded in the bills. The <em>tikkun</em> of those children, at the level the <em>Bnei Yissaschar</em> is describing, is undermined at the source.</p>
+
+<p>Two cautions attend the teaching. First, the <em>Bnei Yissaschar</em> himself insists that the principle is <em>never</em> to be turned into an accusation against a particular family or a particular child; the <em>mussar</em> is for the earner about his own earnings, not for the observer about anyone else&rsquo;s. Second, the mechanism of transmission is left by the <em>Bnei Yissaschar</em> at the level of principle, not reduced to a physicalist account; it operates in the register of <em>middas ha&rsquo;din</em> and of <em>chinuch</em>, not as a claim about particles in bread. The teaching grounds the kabbalistic <em>kavvanah</em> of <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em>: the <em>brachah</em>&rsquo;s request is not merely for the sum but for the halachic shape of its earning.</p>
+
+<h2>XII. <em>Gezel Akum</em> &mdash; Principle and Contemporary Application</h2>
+
+<h3>The <em>Smag</em>&rsquo;s <em>Pesak</em></h3>
+
+<p>The <em>Smag</em><a class="footnote-ref" id="ref20" href="#fn20">[20]</a> addresses the laxity of his generation on the question of <em>gezel akum</em> (<span class="heb-inline">גזל עכו&quot;ם</span>). In the <em>Rishonim</em>&rsquo;s era, many <em>yiddin</em> considered the <em>issur</em> to apply only among Jews and treated taking from non-Jews as unregulated. The <em>Smag</em> rules sharply that the <em>issur</em> is operative in both registers: <em>gezel</em> is <em>gezel</em> regardless of the identity of the victim, both as a straightforward <em>issur gezel</em> and as a <em>chilul Hashem</em>. The <em>sugya</em> in <em>Tosafos Bava Kamma</em> on <em>gezel goy</em> develops the parameters at length &mdash; the distinct categories of outright <em>gezel</em>, of <em>ta&rsquo;us akum</em>, and of dealings with non-Jewish governments.</p>
+
+<h3>The Historical Backdrop</h3>
+
+<p>The historical conditions of pre-war Europe shaped the <em>minhag</em> of entire communities on this question. In many places, in many eras, the <em>yiddin</em> had no legitimate access to the economy; the governments under which they lived neither protected their persons nor employed them lawfully; survival often required working around the law. In those conditions, the <em>halachic</em> judgment of the behavior of particular individuals is not simple, and the <em>Rishonim</em> and <em>Acharonim</em> of each place addressed it as it stood.</p>
+
+<p>The complication of the present era is not the behavior of the pre-war generations but the inheritance of their mentality by generations whose actual circumstances are entirely different. A Jew who lives in a country whose laws protect him, whose economy employs him legitimately, and whose public programs are offered on stated terms, no longer has the pre-war halachic cover for working around the law. The <em>Smag</em>&rsquo;s <em>pesak</em> &mdash; that <em>gezel</em> is <em>gezel</em> &mdash; applies with its full force.</p>
+
+<h3>The Halachic Criterion</h3>
+
+<p>The halachic question that a <em>sefer</em>-reader will want to carry away is: by what criterion does a given use of a public program cross the line into <em>gezel akum</em>-shaped territory? The principle that emerges from the <em>Smag</em> and <em>Tosafos</em>, applied to publicly offered programs, is this: a program is offered on stated terms; one who meets those terms and takes what is offered is within <em>heter</em>; one who does not meet the stated terms and nonetheless takes is within <em>issur</em>, both as <em>gezel</em> proper and as <em>chilul Hashem</em>. The salient question is not whether neighbors or friends are enrolled, nor whether taxes have been paid, nor whether the program is <em>felt</em> to be generous or deserved; it is whether the particular applicant genuinely meets the stated conditions.</p>
+
+<p>Where the applicant does meet the stated conditions &mdash; a large family of modest earnings who satisfies the published thresholds for a given benefit &mdash; the program is within <em>heter</em>, and the <em>mussar</em> considerations of this section do not apply to him. Where the applicant does not meet the stated conditions &mdash; and takes nonetheless, on the reasoning that the money is <em>there</em> or that others are taking it &mdash; the <em>Smag</em>&rsquo;s <em>pesak</em> operates. The <em>mussar</em> point that <em>Rabbi Ephrati</em> presses, in the register of this <em>brachah</em>, is that the question &mdash; <em>am I in <em>heter</em> or in <em>issur</em>?</em> &mdash; is one the mispallel owes himself <em>honestly</em>, and the <em>Bnei Yissaschar</em>&rsquo;s <em>mussar</em> of <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em> is the <em>brachah</em>&rsquo;s own standing reminder.</p>
+
+<div class="part-header">Part Three &nbsp;&middot;&nbsp; <span class="heb-inline">וְתֵן טַל וּמָטָר</span></div>
+
+<h2>XIII. When the Request for Rain Begins</h2>
+
+<h3>The Two Dates</h3>
+
+<p>Embedded within <em>Birkas HaShanim</em> is the seasonal request for rain &mdash; <em>Ve&rsquo;sein tal u&rsquo;matar liverachah</em> (<span class="heb-inline">ותן טל ומטר לברכה</span>). The <em>halachah</em> fixes two distinct dates for its onset:</p>
+
+<ul>
+  <li><strong><em>Eretz Yisrael</em></strong>: from the seventh of <em>Cheshvan</em>.</li>
+  <li><strong><em>Chutz La&rsquo;Aretz</em></strong>: from the fourth of December (and from the fifth of December in the civil year preceding a leap year).</li>
+</ul>
+
+<h3>The <em>Mishnah</em> in <em>Ta&rsquo;anis</em></h3>
+
+<p>The <em>Mishnah</em> in <em>Ta&rsquo;anis</em><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> explains the delay in <em>Eretz Yisrael</em>: the <em>olei regel</em> who ascended to <em>Yerushalayim</em> for <em>Sukkos</em> must have time to return home to the furthest reaches of the land &mdash; traditionally reckoned by the <em>Mishnah</em> as the <em>Nahar Peras</em> &mdash; without being caught in rain on the way. From the completion of <em>Sukkos</em>, a two-week interval is given, and from the seventh of <em>Cheshvan</em> the request is added to <em>Birkas HaShanim</em>.</p>
+
+<h3>The <em>Kashya</em> on <em>Chutz La&rsquo;Aretz</em></h3>
+
+<p>The <em>Shulchan Aruch</em> rules that all of <em>Chutz La&rsquo;Aretz</em> follows the climate of <em>Bavel</em>. <em>Bavel</em>, lying slightly to the north of <em>Eretz Yisrael</em>, needed its rains later; the date for asking is correspondingly later, falling &mdash; by the arithmetic of sixty days from <em>tekufas Tishrei</em> &mdash; on December 4 of the civil calendar. The entire diaspora follows the date.</p>
+
+<p>This is one of the strangest <em>halachos</em> in the <em>Shulchan Aruch</em>. Argentina lies in the southern hemisphere, where the seasonal rhythm is inverted. Australia the same. Panama has its own climate. On what principle does every <em>kehillah</em> on earth daven for rain according to the climate of a region none of them inhabits, and on which many of them inhabit a seasonal opposite?</p>
+
+<h2>XIV. The <em>Rosh</em>&rsquo;s Lifelong Attempt</h2>
+
+<h3>The <em>Teshuvah</em></h3>
+
+<p>The <em>Rosh</em>, <em>Rabbeinu Asher ben Yechiel</em>, was bothered by exactly this question through the entirety of his life. His <em>teshuvah</em> on the matter<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> is among the most personally revealing of the thousand or so <em>teshuvos</em> in his collected <em>She&rsquo;eilos U&rsquo;Teshuvos</em>.</p>
+
+<h3>The <em>Rosh</em>&rsquo;s Path</h3>
+
+<p>The <em>Rosh</em> was born in <em>Ashkenaz</em> around 1250. The great <em>talmid</em> of the <em>Maharam MiRothenburg</em>, he came of age in a world whose foundations were being pulled out from under it. When the <em>Maharam</em> was captured by Emperor Rudolf I in 1286 and imprisoned at Ensisheim in Alsace, the Jewish communities of <em>Ashkenaz</em> raised a staggering sum for his redemption &mdash; standardly reckoned as 23,000 marks of silver &mdash; and the <em>Maharam</em> himself refused to permit the ransom, citing the <em>Mishnah</em> in <em>Gittin</em><a class="footnote-ref" id="ref23" href="#fn23">[23]</a>: <em>ein podin es ha&rsquo;shevuyim yoser mi&rsquo;kedei dameihen</em> (<span class="heb-inline">אין פודין את השבויים יותר מכדי דמיהן</span>) &mdash; captives are not redeemed above market value, lest the practice incentivize further captures and endanger the broader <em>kehillah</em>. The <em>Maharam</em> remained in prison for seven years and died there in 1293; his body was redeemed fourteen years later by <em>Rabbi Alexander Zuskind Wimpfen</em>, who bequeathed his entire fortune for the purpose and is buried alongside the <em>Maharam</em> in Worms.</p>
+
+<p>In the aftermath of the <em>Maharam</em>&rsquo;s death and in the growing shadow of the Rindfleisch massacres of 1298 &mdash; which killed tens of thousands of <em>yiddin</em> in Germany, among them the <em>Mordechai ben Hillel Ashkenazi</em>, his wife <em>Zelda</em>, and their children &mdash; the <em>Rosh</em> understood that the <em>Ashkenaz</em> he had inherited was no longer safe for its communities. He fled, traveling through France into Spain &mdash; which in his time was divided among the Christian kingdoms of Castile and Aragon.</p>
+
+<h3>The First and Last <em>Ashkenazi</em> Chief Rabbi of Spain</h3>
+
+<p>What followed was, historians note, unprecedented: an <em>Ashkenazi</em> rav accepted as <em>rav</em> of a major <em>Sefaradi</em> <em>kehillah</em>. As the <em>Rosh</em> traveled through Barcelona, the <em>Rashba</em> recognized his stature and told the local <em>kehillah</em> to honor him and seat him on a pedestal. The <em>Rosh</em> eventually took the position of <em>rav</em> of Toledo, where he integrated the <em>Ashkenazi</em> and <em>Sefaradi</em> traditions in his own <em>pesakim</em>. His son, the <em>Tur</em>, built the <em>Arba&rsquo;ah Turim</em> on that <em>Ashkenazi</em>-<em>Sefaradi</em> foundation; the <em>Beis Yosef</em> built the <em>Shulchan Aruch</em> on the <em>Tur</em>. An entire architecture of unified <em>pesak</em> traces back to the <em>Rosh</em>&rsquo;s displacement and his welcome in Toledo.</p>
+
+<h3>The Drought and the First Night of <em>Pesach</em></h3>
+
+<p>The <em>teshuvah</em> recounts the <em>ma&rsquo;aseh</em> on which the <em>Rosh</em>&rsquo;s larger attempt turned. A severe drought struck Spain. The winter season passed without rain. In <em>Eretz Yisrael</em>, <em>Pesach</em> marks the close of the rainy season, and <em>mashiv ha&rsquo;ruach u&rsquo;morid ha&rsquo;geshem</em> ceases from <em>Shacharis</em> of the first day; in Spain, rain continues well into the spring. The <em>Rosh</em>, sitting outside his home on the first night of <em>Pesach</em> before <em>kiddush</em>, learning with his <em>talmidim</em>, told them that the drought had made the standard <em>minhag</em> inappropriate. The next morning, he instructed, the shul would continue to say <em>morid ha&rsquo;geshem</em> rather than switch to <em>morid ha&rsquo;tal</em>. The <em>talmidim</em> agreed. Word went out to the <em>kehal</em>. The next morning, the <em>chazan</em> said <em>geshem</em>.</p>
+
+<h3>The <em>Tumult</em> and the Yielding</h3>
+
+<p>The shul erupted. <em>Rebbi, are you a navi? Who are you to change the minhag?</em> The <em>chachomim</em> and <em>zekeinim</em> of Toledo protested; nothing in the broader situation changed; it did not begin to rain. Uncharacteristically, the <em>Rosh</em> backed down on the spot.</p>
+
+<p>The <em>teshuvah</em> was written on <em>Chol HaMo&rsquo;ed Pesach</em> &mdash; the only <em>teshuvah</em> in the <em>Rosh</em>&rsquo;s collected <em>She&rsquo;eilos U&rsquo;Teshuvos</em> written on <em>Chol HaMo&rsquo;ed</em>; he apologizes in the opening lines for the writing itself, invoking <em>davar ha&rsquo;aveid</em> and <em>chilul Hashem</em> as the <em>heterim</em> for the permission he took from himself. He then records the long history of his lifelong attempt:</p>
+
+<blockquote>
+<em>From <em>Ashkenaz</em> through France, through every <em>kehillah</em> I passed, into <em>Sefarad</em>, in every place I asked: why are you not asking for rain in the season when you need it? Why follow the climate of <em>Bavel</em>, which is not your climate? Every <em>kehillah</em> acknowledged that I was correct. None would change the <em>minhag</em>. After the whole of my life trying &mdash; I lift my hands. I will not create <em>machlokes</em> in <span class="heb-inline">כלל ישראל</span>.</em>
+</blockquote>
+
+<p>The <em>Rosh</em> understood the principle better than almost any <em>rishon</em> of his era: <em>agudah achas</em> (<span class="heb-inline">אגודה אחת</span>) &mdash; <span class="heb-inline">כלל ישראל</span> as one bound community, davening together as a single body, even at the cost of climatic incoherence between the <em>minhag</em>&rsquo;s date and the local field. The yielding was not a concession on the merits of the <em>halachic</em> argument but a judgment about the <em>halachic</em> weight of communal unity in the <em>minhag</em> of <em>tefillah</em>. The <em>Rosh</em>&rsquo;s own <em>halachic</em> position persisted; he had simply decided that there was no legitimate way to realize it without breaking the body of <span class="heb-inline">כלל ישראל</span> into regional <em>minhagim</em>, and he judged the cost too high.</p>
+
+<h2>XV. Closing &mdash; Two <em>Brachos</em> That Open the Mispallel&rsquo;s Mouth</h2>
+
+<p>The two <em>brachos</em> studied in these pages share a feature that <em>Chazal</em> did not grant any other middle <em>brachah</em> of <em>Shemoneh Esrei</em>: the mispallel is invited to insert, within the <em>brachah</em> itself, a personal <em>bakashah</em> that fits its theme. <em>Refaeinu</em> and <em>Birkas HaShanim</em> &mdash; <em>refuah</em> and <em>parnasah</em> &mdash; are the two <em>brachos</em> of <em>Shemoneh Esrei</em> at which <em>Chazal</em> permit the standardized <em>tefillah</em> to open and admit the mispallel&rsquo;s voice directly. The pairing is not accidental. These are the two universal registers of human need: the integrity of the body and <em>nefesh</em>, and the means by which to sustain that body and <em>nefesh</em> in dignity. On both, <em>Chazal</em> made room for the particular individual within the collective script.</p>
+
+<p>And on both, the structure of the <em>brachah</em> presses the mispallel to a larger frame than his individual case. <em>Refaeinu</em>&rsquo;s <em>chasimah</em> binds his personal <em>yehi ratzon</em> for a loved one to the <em>cholei amo Yisrael</em> at large. <em>Birkas HaShanim</em>&rsquo;s <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em>, carried through from the <em>Yaaros Devash</em> to the <em>Bnei Yissaschar</em> to the <em>Arizal</em>, binds his personal <em>bakashah</em> for <em>parnasah</em> to the <em>halachic</em> character of its earning. And embedded within the second <em>brachah</em>, the request for rain binds his personal climate &mdash; wherever on earth he stands &mdash; to the <em>agudah achas</em> of a <span class="heb-inline">כלל ישראל</span> that davens together across every <em>klima</em>. The <em>Rosh</em> gave his life to the attempt to realign the <em>minhag</em> with the local field, and in the end he gave his life to the recognition that the <em>agudah</em> is worth more than the alignment.</p>
+
+<p>May the <em>Ribbono Shel Olam</em> grant to <span class="heb-inline">כלל ישראל</span> <em>refuah shelemah</em> &mdash; <em>refuas ha&rsquo;nefesh u&rsquo;refuas ha&rsquo;guf</em>; <em>parnasah berevach, be&rsquo;shefa, u&rsquo;be&rsquo;heter</em>; <em>tal u&rsquo;matar li&rsquo;verachah</em> in every <em>klima</em>; and the ultimate <em>geulah</em> <em>bimheirah be&rsquo;yameinu</em>. <em>Amen.</em></p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first, then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Gemara Megillah</em> 17b &mdash; the eighth <em>brachah</em> of <em>Shemoneh Esrei</em> set against <em>bris milah</em> of the eighth day.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> ordering the eighteen <em>brachos</em> of <em>Shemoneh Esrei</em> (<em>hani temanei sarei keneged mi</em>) is on <em>Megillah</em> 17b, not 17a; the earlier draft of this material cited 17a and the daf is corrected here. The <em>sugya</em>&rsquo;s formulation <em>refuah keneged milah she&rsquo;nitnah ba&rsquo;shemini</em> grounds both the position of <em>Refaeinu</em> as the eighth <em>brachah</em> and the frame of its <em>chasimah</em> on <em>cholei amo Yisrael</em> &mdash; a <em>refuah</em> structurally tied to a <em>mitzvah</em> given uniquely to <span class="heb-inline">עם ישראל</span>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Midrash</em> on <em>Avraham</em>&rsquo;s <em>bris milah</em> &mdash; the first <em>Baruch Rofei Cholim</em>; precise source not located.</span>
+  <span class="expanded">&mdash; The teaching that the words <em>Baruch Rofei Cholim</em> were first uttered by the <em>malachei ha&rsquo;shareis</em> in response to the <em>Ribbono Shel Olam</em>&rsquo;s immediate <em>refuah</em> of <em>Avraham Avinu</em> after his <em>bris milah</em> at age ninety-nine, is cited in the shiur as a <em>midrash</em>. The teaching is widely repeated in later <em>sifrei drush</em> on <em>Parshas Vayera</em> and on <em>Birkas Refaeinu</em>; the <em>Avraham</em>-recovery material is in <em>Bereishis Rabbah</em> on <em>Lech Lecha</em> and <em>Vayera</em> and in <em>Bava Metzia</em> 86b, but the explicit formulation of the <em>malachim</em> uttering <em>Baruch Rofei Cholim</em> has not been located in these classical sources, and a specific pin is reserved for a future edition. The teaching is reproduced here as transmitted in the shiur.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Shulchan Aruch Orach Chaim</em> 119:1&ndash;2 &mdash; the <em>me&rsquo;ein ha&rsquo;brachah</em> permission.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> in <em>Orach Chaim</em> 119, with <em>Mishnah Berurah</em> and <em>Biur Halachah</em>, codifies the <em>pesak</em> drawn from the <em>sugya</em> in <em>Avodah Zarah</em> 7b&ndash;8a: a <em>yachid</em> may insert personal <em>bakashos</em> in any of the middle twelve <em>brachos</em> of <em>Shemoneh Esrei</em> when the request is <em>me&rsquo;ein ha&rsquo;brachah</em> &mdash; within its theme. <em>Refaeinu</em> and <em>Birkas HaShanim</em> are the two <em>brachos</em> with the most direct precedent in <em>Chazal</em>: a named <em>choleh</em> for the former, a <em>bakashah</em> for relief from <em>dochak parnasah</em> for the latter.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Ran</em> on <em>Berachos</em> &mdash; the <em>yehi ratzon</em> inserted within <em>Refaeinu</em> itself.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Nissim Gerondi</em> (the <em>Ran</em>, c. 1320&ndash;1376, Barcelona), in his commentary on the <em>Rif</em> to <em>Berachos</em> around <em>daf</em> 34, develops the position that the <em>yehi ratzon</em> on behalf of a specific <em>choleh</em> may be inserted directly within <em>Refaeinu</em> in the silent <em>Shemoneh Esrei</em>, as <em>me&rsquo;ein ha&rsquo;brachah</em>, and need not be deferred to <em>Shema Koleinu</em>. The <em>Ran</em>&rsquo;s position is preserved as the principal <em>shitah</em> in the standard <em>siddurim</em>; some later <em>acharonim</em> prefer to defer the <em>bakashah</em> to <em>Shema Koleinu</em>. (The shiur attributed the position to the <em>Ran</em> with the hedge <em>&ldquo;I believe&rdquo;</em>; the precise placement on the <em>Rif</em>&rsquo;s pagination of <em>Berachos</em> warrants a final confirmation before print.)</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Gemara Berachos</em> 34a &mdash; <em>Moshe</em>&rsquo;s <em>tefillah</em> for <em>Miriam</em>; the <em>halachah</em> of naming the <em>choleh</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Berachos</em> 34a (with the <em>Mishnah</em> at 5:5) derives from <em>Moshe Rabbeinu</em>&rsquo;s <em>Keil na refa na la</em> (<em>Bamidbar</em> 12:13) the principle that one need not name the <em>choleh</em> when the <em>choleh</em> is present &mdash; the <em>tefillah</em> reaches its target through proximity. When the <em>choleh</em> is absent, the mispallel pronounces the name to direct the <em>tefillah</em>.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Chullin</em> 11b and <em>Kiddushin</em> 75a &mdash; the <em>yesod</em> of certain maternity vs. presumptive paternity.</span>
+  <span class="expanded">&mdash; The <em>sugyos</em> in <em>Chullin</em> and <em>Kiddushin</em> develop the <em>halachic</em> principles that ground the formulation offered here: in <em>Chullin</em> 11a&ndash;b, the <em>sugya</em> on <em>rov</em> and the status of empirical certainty; in <em>Kiddushin</em> 75a, the discussion of paternity-doubt and <em>mamzeirus</em>. The specific phrase <em>&ldquo;maternity certain, paternity presumptive&rdquo;</em> is editorial synthesis of what these <em>sugyos</em> treat; the <em>sugyos</em> themselves do not frame the principle in those exact words. The principle grounds the <em>pshat</em> reason for using the mother&rsquo;s name in <em>tefillah</em> for a <em>choleh</em>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Pele Yo&rsquo;etz</em> (<em>Rabbi Eliezer Papo</em>), entry <em>Bikkur Cholim</em> / <em>Tefillah</em> &mdash; naming the mother to avoid <em>kitrug</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Eliezer Papo</em> (the <em>Pele Yo&rsquo;etz</em>, c. 1785&ndash;1828, Sarajevo and Sliven), in his alphabetically arranged <em>sefer</em> on <em>mussar</em> and <em>avodah</em>, develops the deeper reason for using the mother&rsquo;s name in <em>tefillah</em> for a <em>choleh</em>: mentioning the father invites <em>kitrug</em> tied to the <em>chiyuv talmud Torah</em> that falls on men; mentioning the mother invites <em>middas ha&rsquo;rachamim</em> through the <em>tzidkus</em> and <em>mitzvos</em> of the <em>yiddishe mamme</em>. The <em>Dovid HaMelech</em> precedent of <em>ben amasecha</em> is the textual model. The precise entry in the <em>Pele Yo&rsquo;etz</em> warrants a final pin before print.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Tehillim</em> 116:16 &mdash; <em>Anna Hashem ki ani avdecha, ani avdecha ben amasecha</em>.</span>
+  <span class="expanded">&mdash; <em>Dovid HaMelech</em>&rsquo;s plea: <em>I am Your servant, the son of Your maidservant</em>. The identification of <em>Dovid</em>&rsquo;s mother by name (<em>Nitzeves bas Adael</em>) is drawn from <em>Bava Basra</em> 91a and not from the <em>pasuk</em> in <em>Tehillim</em> itself; the <em>pasuk</em> here is cited only for the <em>ben amasecha</em> formulation. The <em>pasuk</em> grounds both the <em>Pele Yo&rsquo;etz</em>&rsquo;s explanation and the <em>Ben Ish Chai</em>&rsquo;s <em>pesak</em> below.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Ben Ish Chai</em> (<em>Rabbi Yosef Chaim of Baghdad</em>) &mdash; <em>pesak</em> that only the mother&rsquo;s name is used in <em>tefillah</em> for a <em>choleh</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yosef Chaim of Baghdad</em> (the <em>Ben Ish Chai</em>, 1832&ndash;1909), in his <em>derashos</em>-<em>halachah</em> arranged over the <em>parshios</em> of the year, codifies the <em>pesak</em>: in <em>tefillah</em> for a <em>choleh</em> only the mother&rsquo;s name is used, both for the <em>Pele Yo&rsquo;etz</em>&rsquo;s reasoning and on the kabbalistic ground that the <em>nefesh</em> draws its connection to the body principally through the mother. The <em>pesak</em> is followed across most contemporary <em>kehillos</em>. The precise <em>parshah</em> and <em>os</em> warrant a final pin before print.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Rambam</em>, <em>derashos</em>; parallel in <em>Shemoneh Perakim</em> ch. 3 and <em>Hilchos De&rsquo;os</em> ch. 2 &mdash; <em>choli ha&rsquo;guf</em> rooted in <em>choli ha&rsquo;nefesh</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Ephrati</em> cites the <em>Rambam</em>&rsquo;s <em>derashos</em> for the integrated diagnosis: <em>choli ha&rsquo;guf</em> often manifests <em>choli ha&rsquo;nefesh</em>; the soul&rsquo;s distress finds expression in the body. The parallel is developed in <em>Shemoneh Perakim</em> ch. 3 (parallel of health of body and health of soul) and in <em>Hilchos De&rsquo;os</em> ch. 2 (the physician of souls). The natural medical diagnosis is correct on its own register; the <em>Rambam</em>&rsquo;s structural diagnosis sits beneath it. The <em>tefillah</em>&rsquo;s ordering &mdash; <em>refuas ha&rsquo;nefesh</em> first, then <em>refuas ha&rsquo;guf</em> &mdash; encodes the <em>Rambam</em>&rsquo;s theology.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Yirmiyahu</em> 17:14 &mdash; <em>Refa&rsquo;eini Hashem ve&rsquo;erafei</em>.</span>
+  <span class="expanded">&mdash; <em>Yirmiyahu</em>&rsquo;s declaration: <em>Heal me, Hashem, and I will be healed; save me, and I will be saved &mdash; for You are my praise</em>. The doubled grammatical form distinguishes the <em>refuah</em> of the <em>Ribbono Shel Olam</em> from the temporary <em>refuah</em> of a doctor: only His healing is durable. The <em>Anshei Knesses HaGedolah</em> transposed the <em>pasuk</em> from <em>lashon yachid</em> to <em>lashon rabbim</em> for the communal <em>tefillah</em>.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Gemara Bava Kamma</em> 85a &mdash; <em>v&rsquo;rapo yerapei: mikan she&rsquo;nitnah reshus la&rsquo;rofei le&rsquo;rapos</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Bava Kamma</em> 85a derives from the <em>pasuk</em> <em>v&rsquo;rapo yerapei</em> (<em>Shemos</em> 21:19) both the <em>heter</em> and the <em>chiyuv</em> of medical practice. The doctor is permitted &mdash; and, where capable, obligated &mdash; to heal. The <em>pasuk</em> grounds the doctor&rsquo;s <em>shelichus</em>: he is appointed as the <em>Ribbono Shel Olam</em>&rsquo;s <em>shaliach</em> for <em>refuah</em>, possessed of his skill as a <em>chesed</em> from above. The internal challenge &mdash; the recognition that the <em>shaliach</em> is not the source &mdash; is part of the <em>mitzvah</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Minhagei Chabad</em> / <em>Siddur im Dach</em> &mdash; the <em>kavvanah</em> for <em>matzah</em>, <em>arba minim</em>, and wine in <em>Barech Aleinu</em>.</span>
+  <span class="expanded">&mdash; The <em>kavvanah</em> is recorded in the Chabad tradition of <em>kavvanas ha&rsquo;tefillah</em>, drawing on the <em>Baal HaTanya</em>&rsquo;s <em>Siddur im Dach</em> and on later collections of <em>Minhagei Chabad</em> (including those attributed in the shiur to <em>Rabbi Yitzchak Kohen</em>). When reciting <em>Barech Aleinu</em>, the <em>kavvanah</em> reaches beyond ordinary <em>parnasah</em> to the agricultural produce required for the <em>mitzvos</em> of the year &mdash; wheat for <em>matzah</em>, the four <em>minim</em> for <em>Sukkos</em>, grapes for <em>kiddush</em>-wine. The precise siman in the Chabad <em>siddur</em> literature warrants a final pin before print; the shiur itself invited the <em>oilam</em> to verify the specific attribution.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Gemara Beitzah</em> 16a &mdash; <em>mezonosav shel adam ketzuvin lo me&rsquo;Rosh HaShanah ad Rosh HaShanah</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> teaches that a person&rsquo;s sustenance for the year is decreed on <em>Rosh HaShanah</em>, with the exception of expenditures for <em>Shabbos</em>, <em>Yom Tov</em>, and <em>schar limud</em> of the children &mdash; which are reimbursed above the yearly quota. The <em>sugya</em> grounds the <em>kashya</em> that the <em>Baal Shem Tov</em>&rsquo;s <em>chiddush</em> addresses.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short">Teaching of the <em>Baal Shem Tov</em> &mdash; the <em>amount</em> is decreed, the <em>quality</em> is not.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yisrael ben Eliezer</em>, the <em>Baal Shem Tov</em> (c. 1698&ndash;1760, founder of <em>chassidus</em>): on the <em>kashya</em> of <em>mezonos ketzuvim</em>, the <em>amount</em> of <em>parnasah</em> is decreed on <em>Rosh HaShanah</em>, but the <em>quality</em> &mdash; whether the sum arrives in liquid, accessible, nourishing form, or whether it arrives locked up, illiquid, or accompanied by hidden costs &mdash; is not. The daily <em>tefillah</em> addresses the quality. The <em>chiddush</em> is recorded across the early <em>chassidishe sefarim</em> (<em>Baal Shem Tov al HaTorah</em>; <em>Degel Machaneh Efraim</em>; <em>Toldos Yaakov Yosef</em>) and is widely repeated in later <em>chassidishe</em> treatments of <em>Birkas HaShanim</em>; a specific <em>parshah</em> pin from these collections warrants a final confirmation before print. Parallel treatments of the quality-versus-quantity frame are developed by other <em>rishonim</em> and <em>acharonim</em>, including in the <em>Nefesh HaChaim</em> and in the writings of the <em>Chasam Sofer</em>.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short">Oral <em>mesorah</em> from <em>Reb Yankel Shalom Unger</em> &mdash; the elder <em>Skverer Rebbe</em>&rsquo;s weeping on the last five minutes of the year.</span>
+  <span class="expanded">&mdash; Oral <em>mesorah</em> from <em>Reb Yankel Shalom Unger</em> (<em>Skverer</em> <em>chassid</em>; father of the Unger family of <em>Skver</em>; settled in Miami in his later years and davened at the small shul on 37<sup>th</sup> and Prairie) &mdash; heard by him from the elder <em>Skverer Rebbe</em>, likely <em>Rebbe Yaakov Yosef Twersky ha&rsquo;zaken</em>, <em>zt&rdquo;l</em> (1899&ndash;1968), the second <em>Skverer Rebbe</em> and founder of New Square in 1954. The practice: weeping at <em>Barech aleinu Hashem Elokeinu es ha&rsquo;shanah ha&rsquo;zos</em> at <em>Minchah</em> of <em>Erev Rosh HaShanah</em>, on the consciousness that the full concluding year still rests on those last five minutes &mdash; the <em>tikkun</em> of the year remains possible until its final breath. <em>Rabbi Ephrati</em> heard the practice and its source from Reb Yankel Shalom himself over his years davening at the Miami shul.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Yaaros Devash</em> (<em>Rabbi Yonasan Eibschutz</em>) &mdash; <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em> as a <em>kavvanah</em> in <em>Birkas HaShanim</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yonasan Eibschutz</em> (c. 1690&ndash;1764; Prague, Metz, and Hamburg-Altona), in <em>Yaaros Devash</em> on <em>Birkas HaShanim</em>, develops the unwritten <em>kavvanah</em>: to daven not merely for sustenance but for sustenance <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em> &mdash; earned within <em>halachah</em>, not from <em>gezel</em> or its proximities. The precise <em>drush</em> number within <em>Yaaros Devash</em> warrants a final pin before print.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Arizal</em>, via <em>Shaar HaKavanos</em> of <em>Rabbi Chaim Vital</em> &mdash; the <em>bakashah</em> for <em>seichel</em> to earn <em>be&rsquo;heter</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yitzchak Luria</em>, the <em>Arizal</em> (1534&ndash;1572, Tzfas), as transmitted by <em>Rabbi Chaim Vital</em> in <em>Shaar HaKavanos</em>, develops the kabbalistic <em>kavvanah</em> in <em>Birkas HaShanim</em>: in addition to the request for <em>parnasah</em> itself, the mispallel is to daven for the <em>seichel</em> to recognize the boundary between <em>heter</em> and <em>issur</em> in his earnings, and for the <em>siyyua min ha&rsquo;shamayim</em> to remain on the right side of the line. The precise location in <em>Shaar HaKavanos</em> warrants a final pin before print.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Bnei Yissaschar</em> (<em>Rabbi Tzvi Elimelech of Dinov</em>) &mdash; <em>koach ha&rsquo;po&rsquo;el ba&rsquo;nif&rsquo;al</em>; <em>parnasah</em> and the <em>tikkun</em> of children.</span>
+  <span class="expanded">&mdash; <em>Rabbi Tzvi Elimelech of Dinov</em> (the <em>Bnei Yissaschar</em>, 1783&ndash;1841, Galicia), drawing on the <em>Rishonim</em>&rsquo;s principle that an effect retains the <em>koach</em> of its cause, develops the <em>mussar</em>: money earned through <em>gezel</em> &mdash; even partial, even at the edges &mdash; carries the imprint of the <em>cheit</em> in its substance. The teaching is formulated as a general principle and is never to be applied as an attribution against a particular family; the <em>Bnei Yissaschar</em> himself insists upon this. The mechanism of transmission is left at the register of <em>middas ha&rsquo;din</em> and of <em>chinuch</em>; it is not reduced to a physicalist account about particles in bread. The teaching grounds the <em>kavvanah</em> of <em>be&rsquo;heter ve&rsquo;lo be&rsquo;issur</em>.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Smag</em> on <em>gezel akum</em>; <em>Tosafos Bava Kamma</em> 113 &mdash; the <em>sugya</em> and its parameters.</span>
+  <span class="expanded">&mdash; <em>Rabbi Moshe of Coucy</em> (the <em>Smag</em>, c. 1200&ndash;1260, France) addresses the laxity of his generation regarding <em>gezel akum</em>: many <em>yiddin</em> in his time treated it as unregulated; the <em>Smag</em> rules sharply that it is forbidden, both as <em>issur gezel</em> proper and as <em>chilul Hashem</em>. The relevant <em>mitzvah</em> is in <em>Sefer Mitzvos Gadol</em>, <em>Mitzvos Lo Ta&rsquo;aseh</em>, in the sections treating <em>gezel</em>; the precise siman within those sections (the shiur cited 155) warrants a final pin against the Sefaria edition before print. <em>Tosafos</em> in <em>Bava Kamma</em> 113a&ndash;b develops the long <em>sugya</em> on the parameters: outright <em>gezel</em> from non-Jews; <em>ta&rsquo;us akum</em>; dealings with non-Jewish governments. The <em>pesak</em> is universal: <em>gezel</em> is <em>gezel</em> regardless of the identity of the victim.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Mishnah Ta&rsquo;anis</em> 1:3; <em>Shulchan Aruch Orach Chaim</em> 117 &mdash; <em>tal u&rsquo;matar</em> from the seventh of <em>Cheshvan</em> in <em>Eretz Yisrael</em>; from the fourth or fifth of December in <em>Chutz La&rsquo;Aretz</em>.</span>
+  <span class="expanded">&mdash; The <em>Mishnah</em> in <em>Ta&rsquo;anis</em> 1:3 rules that in <em>Eretz Yisrael</em> the request begins on the seventh of <em>Cheshvan</em> &mdash; fifteen days after the close of <em>Sukkos</em> &mdash; to allow the <em>olei regel</em> who came up to <em>Yerushalayim</em> for <em>Chag</em> to return safely home without being caught in the rain, reckoned by the furthest pilgrim&rsquo;s distance to the <em>Nahar Peras</em>. The <em>halachah</em> follows <em>Rabban Gamliel</em>&rsquo;s <em>shitah</em> within the <em>Mishnah</em>. The <em>Shulchan Aruch</em> in <em>Orach Chaim</em> 117:1 codifies that <em>Chutz La&rsquo;Aretz</em> follows the climate of <em>Bavel</em>, beginning the request sixty days after <em>tekufas Tishrei</em> &mdash; corresponding to December 4 (or December 5 in the civil year preceding a Gregorian leap year).</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>Shu&rdquo;t HaRosh</em>, <em>Klal</em> 4, <em>Siman</em> 10 &mdash; the Toledo drought (c. 1273); the <em>Rosh</em>&rsquo;s lifelong attempt to realign <em>tal u&rsquo;matar</em> with local climate; written on <em>Chol HaMo&rsquo;ed Pesach</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Asher ben Yechiel</em> (the <em>Rosh</em>, c. 1250&ndash;1327; born in <em>Ashkenaz</em>, fled to Spain in the years following the <em>Maharam</em>&rsquo;s death and the Rindfleisch massacres, became <em>rav</em> of Toledo) records the <em>ma&rsquo;aseh</em>: a severe drought struck Spain; on the first night of <em>Pesach</em>, the <em>Rosh</em> instructed his shul to continue saying <em>mashiv ha&rsquo;ruach u&rsquo;morid ha&rsquo;geshem</em> the next morning rather than switch to the standard <em>morid ha&rsquo;tal</em>; the shul erupted in protest; nothing changed; the <em>Rosh</em> backed down. He wrote the <em>teshuvah</em> on <em>Chol HaMo&rsquo;ed</em> (justifying the rare permission by <em>davar ha&rsquo;aveid</em> and <em>chilul Hashem</em>) recording his lifelong attempt &mdash; through every <em>kehillah</em> from <em>Ashkenaz</em> through France to <em>Sefarad</em> &mdash; to realign the local <em>tal u&rsquo;matar</em> with the local climate. Every <em>kehillah</em> agreed in principle; none would change in practice. The <em>Rosh</em> yielded to <em>agudah achas</em>: <span class="heb-inline">כלל ישראל</span> as one body davening together. The <em>teshuvah</em> is one of the most personally revealing in his collected <em>She&rsquo;eilos U&rsquo;Teshuvos</em>. The precise <em>klal</em> and <em>siman</em> are standardly reported as <em>Klal</em> 4, <em>Siman</em> 10, and warrant a final confirmation against the Sefaria edition before print.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Mishnah Gittin</em> 4:6 &mdash; <em>ein podin es ha&rsquo;shevuyim yoser mi&rsquo;kedei dameihen</em>; the <em>Maharam MiRothenburg</em> case.</span>
+  <span class="expanded">&mdash; The <em>Mishnah</em> in <em>Gittin</em> rules that captives are not redeemed above market value, lest inflated ransoms incentivize further captures and endanger the broader community. The classic application is to the <em>Maharam MiRothenburg</em> (<em>Rabbi Meir ben Baruch</em>, c. 1215&ndash;1293; foremost <em>posek</em> of <em>Ashkenaz</em>; <em>rebbi</em> of the <em>Rosh</em>): captured by Emperor Rudolf I in 1286 and held in Ensisheim, the <em>Maharam</em> refused his community&rsquo;s offer to redeem him for the sum of 23,000 marks of silver, citing this <em>Mishnah</em>; he died in prison in 1293 after seven years of captivity. His body was redeemed fourteen years later by <em>Rabbi Alexander Zuskind Wimpfen</em>, who bequeathed his entire fortune for the purpose and is buried alongside the <em>Maharam</em> in Worms. (The shiur as delivered referred in passing to a figure of fourteen years in captivity and twenty thousand marks; the standard reckoning preserved here is seven years and 23,000 marks of silver.)</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of <em>Rabbi Ephrati</em>&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 25 May 2025. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice; preserves the three-part architecture of <em>Refaeinu</em>, <em>Birkas HaShanim</em>, and <em>Tal u&rsquo;Matar</em>; reconciles the <em>Rosh</em>&rsquo;s dates and the <em>Maharam</em>&rsquo;s captivity figures against the standard chronological reckoning; sharpens the <em>halachic</em> frame on <em>gezel akum</em> as a principle grounded in the <em>Smag</em>, while reserving its application to the honest self-examination of the particular mispallel; and closes with the <em>agudah achas</em> that the two <em>brachos</em> share in giving voice to the individual mispallel within the standing script of <span class="heb-inline">כלל ישראל</span>.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Birkat Modim and Nesias Kapayim</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">בִּרְכַּת מוֹדִים וּנְשִׂיאַת כַּפַּיִם</h1>
+  <div class="english-title">Birkat Modim and Nesias Kapayim &mdash; The Thanksgiving That Remains, <em>Modim DeRabbanan</em>, and the Puzzle of Daily <em>Duchening</em> in <em>Chutz LaAretz</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded <span class="heb-inline">ל׳ אב תשפ״ה</span> &nbsp;&middot;&nbsp; 24 August 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Sponsored <span class="heb-inline">לעילוי נשמת הרב זצ״ל, ישועה בן רחמים</span>.</em></p>
+
+<p class="lead">A treatise on <em>Birkat Modim</em> (<span class="heb-inline">ברכת מודים</span>), the penultimate <em>berachah</em> (<span class="heb-inline">ברכה</span>) of <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>): the standing pause of the <em>Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>) at <em>Modim</em>; the <em>kavanah</em> (<span class="heb-inline">כוונה</span>) of thanks for every breath; the <em>Midrash</em> (<span class="heb-inline">מדרש</span>) that of all <em>korbanos</em> (<span class="heb-inline">קרבנות</span>) and all prayers only thanksgiving will remain in the time to come.</p>
+
+<p class="lead">It treats <em>Modim DeRabbanan</em> (<span class="heb-inline">מודים דרבנן</span>) as the gathered formulations of <em>Rav Pappa</em> (<span class="heb-inline">רב פפא</span>)&rsquo;s <em>&ldquo;limeimrinhu l&rsquo;tarvaihu&rdquo;</em> (<span class="heb-inline">למימרינהו לתרווייהו</span>); the learning of <em>&ldquo;thank you&rdquo;</em> in English by <em>Rav Elyashiv</em> (<span class="heb-inline">רב אלישיב</span>) at the age of one hundred and two; and the <em>Modim</em> that the <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) must not say silently.</p>
+
+<p class="lead">It then takes up the long puzzle of <em>nesias kapayim</em> (<span class="heb-inline">נשיאת כפים</span>) in <em>chutz laaretz</em> (<span class="heb-inline">חוץ לארץ</span>): why <em>Ashkenazim</em> (<span class="heb-inline">אשכנזים</span>) there do not <em>duchen</em> (<span class="heb-inline">דוכן</span>) daily; the attempts of the <em>Gra</em> (<span class="heb-inline">גר״א</span>), <em>Reb Chaim of Volozhin</em> and the <em>Baal HaTanya</em> (<span class="heb-inline">בעל התניא</span>) to restore it; <em>Rav Nosson HaKohen Adler</em> (<span class="heb-inline">רבי נתן הכהן אדלר</span>) in Frankfurt as the one who succeeded; <em>chezkas kehunah</em> (<span class="heb-inline">חזקת כהונה</span>) in exile; and the regional custom of the <em>Galil</em> (<span class="heb-inline">גליל</span>).</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. The Primacy of <em>Modim</em> (<span class="heb-inline">מודים</span>)</h2>
+
+<h3>The Body That Bows</h3>
+
+<p>The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) reflects a recognition of human limits: a Jew cannot sustain full <em>kavanah</em> (<span class="heb-inline">כוונה</span>) through every <em>berachah</em> (<span class="heb-inline">ברכה</span>) of <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>); it is too difficult. The <em>Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>)<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> records the candid word of one of the <em>amoraim</em> (<span class="heb-inline">אמוראים</span>): <em>&ldquo;I am fortunate that my body bows down of itself</em> (<span class="heb-inline">מאליו</span>) <em>at Modim and at Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>)<em> &mdash; for were it not so, I would not even know to do it.&rdquo;</em> The body knows; the mind drifts.</p>
+
+<p>The standard rule is that the one <em>berachah</em> that requires <em>kavanah</em> without exception is the first, <em>Avos</em> (<span class="heb-inline">אבות</span>), which closes with <em>Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>). A variant reading (<span class="heb-inline">גרסה</span>) of the <em>Gemara</em> equates <em>Modim</em> with it. At the least, then, one must have <em>kavanah</em> at one of the two, and ideally at both.</p>
+
+<h3>The <em>Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>)</h3>
+
+<p>It is told that someone once had the temerity (<span class="heb-inline">חוצפה</span>) to ask the <em>Chofetz Chaim</em>: <em>&ldquo;Rebbe</em> (<span class="heb-inline">רבי</span>)<em>, why do you stand so long during Shemoneh Esrei? Say the words with kavanah and be done.&rdquo;</em></p>
+
+<p>The <em>Chofetz Chaim</em> answered: <em>&ldquo;You are mistaken. I daven Shemoneh Esrei very quickly. <strong>At Modim I stop and pause.</strong> I cannot get enough of this emotion &mdash; of expressing thanks and gratitude to Hakadosh Baruch Hu (<span class="heb-inline">הקדוש ברוך הוא</span>) for every moment of my life. My Shemoneh Esrei is short; the Modim is long.&rdquo;</em></p>
+
+<h3>What <em>Kavanah</em> in <em>Modim</em> Requires</h3>
+
+<p>The <em>berachah</em> declares thanks to the Holy One, blessed be He, for all that He does <em>boker v&rsquo;erev v&rsquo;tzohorayim</em> (<span class="heb-inline">בקר וערב וצהרים</span>). The commentators (<span class="heb-inline">מפרשים</span>) explain that the soul (<span class="heb-inline">נשמה</span>) entrusted to Him each night with <em>&ldquo;beyadcha afkid ruchi&rdquo;</em> (<span class="heb-inline">בידך אפקיד רוחי</span>) at <em>krias shema al hamitah</em> (<span class="heb-inline">קריאת שמע על המטה</span>) returns whole each morning. We are alive.</p>
+
+<p>The <em>Toras Chaim</em> (<span class="heb-inline">תורת חיים</span>)<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> cites earlier authorities (<span class="heb-inline">קדמונים</span>) that a person should thank the Holy One for <em>every single breath</em>. <em>David HaMelech</em> (<span class="heb-inline">דוד המלך</span>) closes <em>Tehillim</em> (<span class="heb-inline">תהלים</span>) with <em>&ldquo;kol haneshamah tehallel Kah&rdquo;</em> (<span class="heb-inline">כל הנשמה תהלל י־ה</span>) &mdash; every breath should praise. Were we to function as we ought, we would give thanks for each inhalation and exhalation; but who can? Hence in <em>Modim</em> we say <em>&ldquo;al nishmoseinu hapekudos lach&rdquo;</em> (<span class="heb-inline">על נשמותינו הפקודות לך</span>) with the <em>kavanah</em>: <em>we thank You for every breath</em>. To dwell upon this and have proper <em>kavanah</em> takes time; that is why the <em>Chofetz Chaim</em> stood long at this place.</p>
+
+<h3>The Bowing &mdash; Equal to <em>Avos</em> (<span class="heb-inline">אבות</span>)</h3>
+
+<p>A further sign of the standing of <em>Modim</em> is that we bow in it. We bow at <em>Avos</em> and at <em>Modim</em> &mdash; the four bows of <em>Shemoneh Esrei</em>. Bowing is the body&rsquo;s expression of complete subservience (<span class="heb-inline">השתעבדות</span>): <em>&ldquo;We are Yours.&rdquo;</em> As at <em>Avos</em>, so at <em>Modim</em>, at the opening (<span class="heb-inline">פתיחה</span>) and at the close (<span class="heb-inline">חתימה</span>) of the <em>berachah</em>: the posture is identical.</p>
+
+<h2>II. The Eternal <em>Todah</em> (<span class="heb-inline">תודה</span>)</h2>
+
+<p>A striking <em>Midrash</em> (<span class="heb-inline">מדרש</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> teaches that in the time to come (<span class="heb-inline">לעתיד לבוא</span>) all <em>korbanos</em> will be annulled (<span class="heb-inline">בטל</span>) except the <em>korban todah</em> (<span class="heb-inline">קרבן תודה</span>). (The plain sense (<span class="heb-inline">פשט</span>) of the <em>Rambam</em> (<span class="heb-inline">רמב״ם</span>) is that <em>korbanos</em> will be brought again when <em>Mashiach</em> (<span class="heb-inline">משיח</span>) comes; the <em>Midrash</em> contemplates a still later moment, at which all but the <em>todah</em> fall away.) The <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) brings the idea into <em>halachah</em> (<span class="heb-inline">הלכה</span>), in the form that all songs (<span class="heb-inline">שירות</span>) will be annulled except <em>Mizmor LeTodah</em> (<span class="heb-inline">מזמור לתודה</span>) &mdash; which is why it is said to a melody. It is unusual for the <em>Shulchan Aruch</em> to bring a <em>midrash</em>; this underlines the standing of <em>todah</em>.</p>
+
+<h3>The Four Who Must Bring the <em>Korban Todah</em></h3>
+
+<p>The <em>Torah</em> (<span class="heb-inline">תורה</span>) knows four categories, remembered by the mnemonic <em>&ldquo;Chayim&rdquo;</em> (<span class="heb-inline">חיים</span>), from <em>&ldquo;Chayim yoducha&rdquo;</em> (<span class="heb-inline">חיים יודוך</span>):</p>
+
+<ul>
+  <li><strong><span class="heb-inline">ח</span></strong> &mdash; <em>cholah shenitrapei</em> (<span class="heb-inline">חולה שנתרפא</span>): one who has recovered from illness.</li>
+  <li><strong><span class="heb-inline">י</span></strong> &mdash; <em>yam</em> (<span class="heb-inline">ים</span>): a sea traveler.</li>
+  <li><strong><span class="heb-inline">י</span></strong> &mdash; one released from prison or from great affliction (<span class="heb-inline">יסורים</span>).</li>
+  <li><strong><span class="heb-inline">ם</span></strong> &mdash; <em>midbar</em> (<span class="heb-inline">מדבר</span>): a desert traveler.</li>
+</ul>
+
+<p>One who would have brought the <em>korban todah</em>, in the absence of the <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>), recites <em>Birkas HaGomel</em> (<span class="heb-inline">ברכת הגומל</span>) instead. When we recite <em>Mizmor LeTodah</em> daily we partially discharge our obligation of <em>todah</em>. We cannot know how many times in the past year a <em>todah</em> was owed &mdash; how many times our lives were saved without our knowing.</p>
+
+<p>The same principle holds for <em>tefillah</em> (<span class="heb-inline">תפילה</span>). Since <em>tefillah</em> stands in place of the <em>korbanos</em> (<span class="heb-inline">כנגד הקרבנות</span>), the <em>Midrash</em> teaches: as all <em>korbanos</em> will be annulled but the <em>todah</em>, so all prayers will be annulled but the prayer of thanksgiving, which is received as <em>&ldquo;Modim anachnu lach&rdquo;</em> (<span class="heb-inline">מודים אנחנו לך</span>). <em>Modim</em> is eternal.</p>
+
+<h2>III. <em>Modim DeRabbanan</em> (<span class="heb-inline">מודים דרבנן</span>)</h2>
+
+<h3>Its Origin</h3>
+
+<p>The <em>Gemara</em> in <em>Sotah</em> (<span class="heb-inline">סוטה</span>) 40a<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> relates that when the <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) says <em>&ldquo;Modim anachnu lach,&rdquo;</em> the congregation (<span class="heb-inline">ציבור</span>) bows with him and says its own formulation of thanksgiving. Several <em>amoraim</em> proposed different wordings (<span class="heb-inline">גרסאות</span>). <strong><em>Rav Pappa</em></strong> settled it, characteristically, at the end of the <em>sugya</em> (<span class="heb-inline">סוגיא</span>): <em>&ldquo;limeimrinhu l&rsquo;tarvaihu&rdquo;</em> (<span class="heb-inline">למימרינהו לתרווייהו</span>) &mdash; say them all. <em>Rav</em> (<span class="heb-inline">רב</span>) proposed <em>&ldquo;Modim anachnu lach Hashem Elokeinu al she&rsquo;anu modim lach&rdquo;</em>; <em>Shmuel</em> (<span class="heb-inline">שמואל</span>), <em>&ldquo;Elokei kol basar al she&rsquo;anu modim lach&rdquo;</em>; and <em>Rabbi Simai</em> (<span class="heb-inline">רבי סימאי</span>), the sages of <em>Neharde&rsquo;a</em> in his name, and <em>Rav Acha bar Yaakov</em> (<span class="heb-inline">רב אחא בר יעקב</span>) each contributed a further formulation. As <em>Rav Pappa</em> ruled, we incorporate them all. This composite is <em>Modim DeRabbanan</em>.</p>
+
+<h3>Why <em>&ldquo;DeRabbanan&rdquo;</em> (<span class="heb-inline">דרבנן</span>)?</h3>
+
+<p>It is a fair question, since everything in <em>tefillah</em> is from the Sages (<span class="heb-inline">רבנן</span>). The answer proposed is that this <em>berachah</em> is called <em>Modim DeRabbanan</em> because it is a <em>combination</em> of all the wordings (<span class="heb-inline">לשונות</span>) that the various <em>amoraim</em> proposed; the Rabbis collected them, hence <em>&ldquo;DeRabbanan.&rdquo;</em> This is one explanation among several.</p>
+
+<h3>Why the Congregation Says It At All</h3>
+
+<p>A deeper question: why does the congregation recite its own <em>Modim</em>? Elsewhere we are discharged through the <em>shaliach tzibbur</em>. But thanks cannot be offered to the Holy One through an agent (<span class="heb-inline">שליח</span>)<a class="footnote-ref" id="ref5" href="#fn5">[5]</a>; <em>todah</em> demands the personal voice.</p>
+
+<div class="pullquote">
+<h3 style="margin-top:0">Rav Elyashiv at One Hundred and Two</h3>
+<p><strong>Rav Elyashiv</strong> (<span class="heb-inline">רב אלישיב זצ״ל</span>)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> was the <em>posek hador</em> (<span class="heb-inline">פוסק הדור</span>) in <em>Yerushalayim</em> (<span class="heb-inline">ירושלים</span>), the <em>gadol hador</em> (<span class="heb-inline">גדול הדור</span>), who did not leave <em>Yerushalayim</em>; he did not leave his four cubits (<span class="heb-inline">ארבע אמות</span>), learning day and night (<span class="heb-inline">יומם ולילה</span>) for nearly a hundred years. At the age of one hundred and two he underwent open-heart surgery. The best surgeon in America was flown to <em>Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>) rather than fly <em>Rav Elyashiv</em> abroad.</p>
+<p>When he woke after the surgery he turned to his attendant and asked: &ldquo;How do you say <em>yasher koach</em> (<span class="heb-inline">יישר כוח</span>)? How do you say <em>todah rabbah</em> (<span class="heb-inline">תודה רבה</span>) in English?&rdquo; He did not know the words &ldquo;thank you.&rdquo; They taught him.</p>
+<p>He called the doctor in. &ldquo;Thank you very much.&rdquo; Those around him said: &ldquo;Rebbe, you could have told us; we would have thanked him in English on your behalf. You could have spoken in <em>lashon hakodesh</em> (<span class="heb-inline">לשון הקודש</span>) and we would have translated.&rdquo;</p>
+<p><em>Rav Elyashiv</em> answered: &ldquo;<strong>That is exactly why we say <em>Modim DeRabbanan</em>!</strong> One does not send another to give thanks. When you have to thank, even if it is in a different language, learn that language yourself. Do not send a <em>shaliach tzibbur</em> to thank on your behalf.&rdquo;</p>
+</div>
+
+<p>The congregation joins, bows, and thanks the Holy One personally. Thanks given through an agent is not a true thank-you.</p>
+
+<h3><em>&ldquo;Al She&rsquo;anu Modim Lach&rdquo;</em> (<span class="heb-inline">על שאנו מודים לך</span>)</h3>
+
+<p>The closing line has been understood from childhood as follows: we thank the Holy One that we have the ability to thank Him &mdash; for the gift of gratitude itself. One of the <em>Rishonim</em> (<span class="heb-inline">ראשונים</span>), in a responsum (<span class="heb-inline">תשובה</span>)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a>, reads it differently: <em>&ldquo;al she&rsquo;anu modim lach&rdquo;</em> means that in addition to what we thanked You for in the silent prayer (<span class="heb-inline">תפילת לחש</span>), we now add these formulations. The two readings are not mutually exclusive.</p>
+
+<h2>IV. The <em>Shaliach Tzibbur</em> and the Silent <em>Modim</em></h2>
+
+<p>A common error: many a <em>shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) recites <em>Modim</em> silently during the repetition (<span class="heb-inline">חזרת הש״ץ</span>), quietly while the congregation (<span class="heb-inline">קהל</span>) says <em>Modim DeRabbanan</em>, reasoning that no one can hear him anyway; he raises his voice only at the conclusion.</p>
+
+<p><strong>This is wrong.</strong> The <em>shaliach tzibbur</em> must say every word of the repetition aloud, <em>Modim</em> included, even though the congregation will not hear it because it is saying its own <em>Modim DeRabbanan</em>. That was the ordinance (<span class="heb-inline">תקנה</span>). We do not strictly need the repetition today, since each person davens individually; but once it was incorporated, there is no deviating from it.</p>
+
+<p>Some authorities (<span class="heb-inline">פוסקים</span>) require ten persons in the vicinity of the <em>shaliach tzibbur</em> who hear every word<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> &mdash; practically difficult, for <em>&ldquo;shelosha kolos lo yishtamu&rdquo;</em> (<span class="heb-inline">שלשה קולות לא ישתמעו</span>), three voices cannot be heard at once; yet that is the ruling. It is a <em>mitzvah</em> (<span class="heb-inline">מצוה</span>) to set this right (<span class="heb-inline">מתקן</span>): whoever would conduct the repetition as it should be conducted must say every word aloud, <em>Modim</em> included.</p>
+
+<h2>V. <em>Nesias Kapayim</em> (<span class="heb-inline">נשיאת כפים</span>) &mdash; A Long Puzzle</h2>
+
+<h3>The Practice</h3>
+
+<p>Why is it that we in <em>chutz laaretz</em> (<span class="heb-inline">חוץ לארץ</span>) do not <em>duchen</em> (<span class="heb-inline">דוכן</span>) daily? In <em>Eretz Yisrael</em> they do so every day. Among <em>Sephardim</em> (<span class="heb-inline">ספרדים</span>) in <em>chutz laaretz</em>, every day. Even in an <em>Ashkenazi</em> (<span class="heb-inline">אשכנזי</span>) shul in <em>Eretz Yisrael</em> with an entirely <em>Ashkenazi</em> <em>minyan</em> (<span class="heb-inline">מנין</span>), they <em>duchen</em> daily. Only the <em>Ashkenazim</em> of <em>chutz laaretz</em> reserve the practice for <em>Yom Tov</em> (<span class="heb-inline">יום טוב</span>). No <em>posek</em> (<span class="heb-inline">פוסק</span>) offers a fully satisfying explanation.</p>
+
+<h3>The <em>Mitzvah</em></h3>
+
+<p><em>Birkas Kohanim</em> (<span class="heb-inline">ברכת כהנים</span>) is one of the 613 <em>mitzvos</em> (<span class="heb-inline">תרי״ג מצוות</span>)<a class="footnote-ref" id="ref9" href="#fn9">[9]</a>. The <em>Rambam</em> (<span class="heb-inline">רמב״ם</span>), the <em>Chinuch</em> (<span class="heb-inline">חינוך</span>) and the <em>Rishonim</em> (<span class="heb-inline">ראשונים</span>): the <em>kohanim</em> (<span class="heb-inline">כהנים</span>) are to bless <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) daily. In the formulation of the <em>Gemara</em>, a <em>kohen</em> (<span class="heb-inline">כהן</span>) who does not ascend the platform transgresses three positive commandments, corresponding to the three expressions of the verse: <em>&ldquo;koh sevarchu&rdquo;</em> (<span class="heb-inline">כה תברכו</span>), <em>&ldquo;amor lahem&rdquo;</em> (<span class="heb-inline">אמור להם</span>), <em>&ldquo;v&rsquo;samu es shemi al bnei Yisrael va&rsquo;ani avarchem&rdquo;</em> (<span class="heb-inline">ושמו את שמי על בני ישראל ואני אברכם</span>). The <em>Chinuch</em> describes the <em>mitzvah</em> as practiced <em>&ldquo;b&rsquo;chol yom uvchol zman&rdquo;</em> (<span class="heb-inline">בכל יום ובכל זמן</span>), every day and at all times.</p>
+
+<p>How is it that we in <em>chutz laaretz</em> stopped fulfilling this?</p>
+
+<h3>Not at <em>Minchah</em> (<span class="heb-inline">מנחה</span>)</h3>
+
+<p>There is one exception even in <em>Eretz Yisrael</em>: no <em>duchening</em> at <em>Minchah</em>. (At <em>Neilah</em> (<span class="heb-inline">נעילה</span>) on <em>Yom Kippur</em> (<span class="heb-inline">יום כיפור</span>) there is variation; some shuls do, some do not.)</p>
+
+<p>The <em>Rambam</em>&rsquo;s explanation<a class="footnote-ref" id="ref10" href="#fn10">[10]</a>: <em>Minchah</em> follows the day&rsquo;s principal meal. In those generations that meal was taken in the afternoon, and three drinks were standard at meals: milk, water, <em>and wine</em>. Wine was far more common at meals than it is today, and the Sages were wary of intoxication (<span class="heb-inline">שכרות</span>) at <em>Minchah</em>. <em>Nesias kapayim</em> has the status of service (<span class="heb-inline">עבודה</span>) &mdash; like the service in the <em>Beis HaMikdash</em> &mdash; and a <em>kohen</em> may not perform service while intoxicated. Hence not at <em>Minchah</em>. <em>Shacharis</em> (<span class="heb-inline">שחרית</span>) is untroubled: who drinks wine before <em>Shacharis</em>?</p>
+
+<h3><em>Nesias Kapayim</em> as <em>Avodah</em> (<span class="heb-inline">עבודה</span>)</h3>
+
+<p>The <em>Torah</em> records the first blessing of <em>Aharon</em> (<span class="heb-inline">אהרן</span>): <em>&ldquo;Vayisa Aharon es yadav el ha&rsquo;am vayevarcheim vayered me&rsquo;asos hachatas vehaolah vehashelamim&rdquo;</em> (<span class="heb-inline">וישא אהרן את ידיו אל העם ויברכם וירד מעשת החטאת והעולה והשלמים</span>) &mdash; the blessing is given in the midst of the service. The <em>Mishnah</em> (<span class="heb-inline">משנה</span>)<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> records <em>nesias kapayim</em> in the <em>Beis HaMikdash</em> as part of the daily order of the <em>Tamid</em> (<span class="heb-inline">תמיד</span>): the <em>kohanim</em> came and stood on the steps of the <em>Ulam</em> (<span class="heb-inline">אולם</span>) and blessed the people. The blessing is <em>avodah</em>; that is why the rule of intoxication applies, and it is also why the matter is taken so seriously.</p>
+
+<h2>VI. The Old <em>Minhag</em> (<span class="heb-inline">מנהג</span>) of <em>Chutz LaAretz</em></h2>
+
+<h3>The Antiquity of the Custom</h3>
+
+<p>Why, then, do we not <em>duchen</em> in <em>chutz laaretz</em>? An ancient <em>minhag</em>. The <em>poskim</em> report testimony from as far back as the <em>Maharam of Rothenburg</em> (<span class="heb-inline">מהר״ם מרוטנבורג</span>) &mdash; some seven hundred years ago in Europe &mdash; that they did not <em>duchen</em> except a few times a year, on <em>Yom Tov</em> only, and only at <em>Musaf</em> (<span class="heb-inline">מוסף</span>). The <em>poskim</em> and the historians struggle to explain why. When did the practice change, and how? They do not know.</p>
+
+<h3>The <em>Rema</em>&rsquo;s Reason</h3>
+
+<p>The <em>Rema</em> (<span class="heb-inline">רמ״א</span>)<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> brings the well-known reason: in exile (<span class="heb-inline">גלות</span>), Jews in <em>chutz laaretz</em> were so consumed with the difficulty of earning a livelihood (<span class="heb-inline">פרנסה</span>) that they could not have proper <em>kavanah</em>; and <em>Birkas Kohanim</em> requires love and joy (<span class="heb-inline">אהבה ושמחה</span>) &mdash; not merely the absence of intoxication but real love and joy. With no joy (<span class="heb-inline">שמחה</span>) in exile, the practice lapsed. On <em>Yom Tov</em> there <em>is</em> joy, there is no work, the day is free; the <em>kohanim</em> can <em>duchen</em>.</p>
+
+<h3>And <em>Shabbos</em>?</h3>
+
+<p>The <em>Rema</em> holds that most Jews on <em>Shabbos</em> (<span class="heb-inline">שבת</span>) are mentally occupied with the week&rsquo;s business. (<em>Halachah</em> (<span class="heb-inline">הלכה</span>) permits thinking about business on <em>Shabbos</em>: it is speaking of business that is forbidden, under <em>&ldquo;v&rsquo;daber davar&rdquo;</em> (<span class="heb-inline">ודבר דבר</span>); if one cannot restrain oneself and thinks about deals, that is permitted.) So even on <em>Shabbos</em> the repose of mind (<span class="heb-inline">מנוחת הנפש</span>) needed for the blessing is not assumed; only <em>Yom Tov</em>, when everyone is in a different frame of mind, suffices.</p>
+
+<h3>The Difficulty With This Reason</h3>
+
+<p>This is a difficult reason. Are we to say that Jews in <em>Eretz Yisrael</em> today have an easier time with <em>parnasah</em>? They too worry about the next bill, the deal that is to close, the stocks. The <em>Rema</em>&rsquo;s reason has the air of a justification after the fact for a <em>minhag</em> whose origin is genuinely obscure; but it is what we have. The <em>Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) himself states that there is no correct reason for our custom of annulling this <em>mitzvah</em> all year, and that it has been called a bad custom (<span class="heb-inline">מנהג גרוע</span>).</p>
+
+<h3>The Witness of <em>Eretz Yisrael</em> and Egypt</h3>
+
+<p>The <em>Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>)<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> contrasts the practice of the people of <em>Eretz Yisrael</em>, and of Egypt &mdash; the <em>Sephardim</em> who lived there for some four or five hundred years and did <em>duchen</em> every day &mdash; and praises them for acting correctly; it is a loss that the people of <em>chutz laaretz</em> do not. And the <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) is cited as saying that one who cannot do it with his hands should not do it with his mouth; hence <em>Sephardim</em> today do so daily.</p>
+
+<p>The practical conclusion drawn by many <em>poskim</em> is that an <em>Ashkenazi</em> whose custom has been, for eight hundred years, not to <em>duchen</em> daily in <em>chutz laaretz</em> should not change it; even though it is a <em>mitzvah</em> to hear <em>Birkas Kohanim</em>, one need not alter the <em>minhag</em> of the place.</p>
+
+<h2>VII. The Failed Attempts to Restore</h2>
+
+<p>Several great men (<span class="heb-inline">גדולים</span>) sought to overturn the <em>minhag</em> and reinstate daily <em>duchening</em> in <em>chutz laaretz</em>. The pattern is striking.</p>
+
+<h3>The <em>Gra</em> (<span class="heb-inline">גר״א</span>)</h3>
+
+<p>The <em>Gra</em> in Vilna determined that enough was enough. He gathered his students (<span class="heb-inline">תלמידים</span>): <em>&ldquo;Tomorrow we begin daily duchening. We are changing the ancient minhag.&rdquo;</em></p>
+
+<p>The next day the <em>Gra</em> was put in jail. The dispute between <em>Chassidim</em> (<span class="heb-inline">חסידים</span>) and <em>Misnagdim</em> (<span class="heb-inline">מתנגדים</span>) was raging, and an informer reported him to the non-Jewish authorities. The <em>Gra</em> took it as a sign from Heaven (<span class="heb-inline">סימן מן השמים</span>). On his release, which came at once, he retracted: <em>&ldquo;Forget it. No daily duchening.&rdquo;</em></p>
+
+<h3><em>Reb Chaim of Volozhin</em></h3>
+
+<p>The <em>Gra</em>&rsquo;s great disciple, <strong>Reb Chaim of Volozhin</strong>, did not take the lesson. The <em>Netziv</em> (<span class="heb-inline">נצי״ב</span>), Reb Chaim&rsquo;s grandson, records that he heard from his father, <em>Rabbi Yitzchak of Volozhin</em> (<span class="heb-inline">רבי יצחק מוולוז׳ין</span>), son of Reb Chaim:</p>
+
+<p>After the <em>Gra</em>&rsquo;s passing, Reb Chaim in Volozhin &mdash; a city in Belarus, where the <em>yeshivah</em> (<span class="heb-inline">ישיבה</span>) building still stands as a museum &mdash; resolved to restore daily <em>nesias kapayim</em>. He told his students: <em>&ldquo;Tomorrow we begin a new minhag in the beis midrash (<span class="heb-inline">בית מדרש</span>). We start duchening daily.&rdquo;</em> It is related that that night half the city of Volozhin burned down: the buildings were of wood, one house caught fire, then the next, then the next. Reb Chaim said: <em>&ldquo;I wanted to break an ancient minhag. I do not know why Hakadosh Baruch Hu did this; apparently the shefa (<span class="heb-inline">שפע</span>) in chutz laaretz flows differently from that in Eretz Yisrael. We should not do it.&rdquo;</em> He retracted.</p>
+
+<p>The <em>Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>)<a class="footnote-ref" id="ref14" href="#fn14">[14]</a>, recording a tradition that two great men of earlier generations each sought to institute daily <em>nesias kapayim</em> and were frustrated, says: <em>&ldquo;It is as if a bas kol (<span class="heb-inline">בת קול</span>) went out from Heaven&rdquo;</em> &mdash; <strong>not to allow us to lift our hands all year</strong>.</p>
+
+<h3>The <em>Baal HaTanya</em> (<span class="heb-inline">בעל התניא</span>)</h3>
+
+<p>Some say the <em>Baal HaTanya</em> also tried. The Lubavitcher Rebbe gave a <em>sichah</em> (<span class="heb-inline">שיחה</span>)<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> on this. <em>Shulchan Aruch HaRav</em> (<span class="heb-inline">שולחן ערוך הרב</span>) records no such attempt; but the <em>sichah</em> says that the <em>Alter Zeide</em> (<span class="heb-inline">אלטע זיידע</span>), the <em>Rebbe</em> the <em>Zakein Baal HaTanya</em> (<span class="heb-inline">הזקן בעל התניא</span>), also wished to restore it &mdash; and something happened, there was some confusion, and he retracted.</p>
+
+<h3><em>Rav Nosson HaKohen Adler</em> &mdash; The One Who Succeeded</h3>
+
+<p>One Jew succeeded. <strong>Rav Nosson HaKohen Adler</strong> (<span class="heb-inline">רבי נתן הכהן אדלר</span>)<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> was the teacher of the <em>Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>), who was born in Frankfurt and became <em>gadol hador</em> (<span class="heb-inline">גדול הדור</span>) in Pressburg. <em>Rav Nosson Adler</em> was a <em>gaon</em> (<span class="heb-inline">גאון</span>), a <em>tzaddik</em> (<span class="heb-inline">צדיק</span>) and a <em>mekubal</em> (<span class="heb-inline">מקובל</span>) who did unusual things in Frankfurt &mdash; a <span class="heb-inline">יעקישע שטאט</span> (a &ldquo;Yekkish&rdquo; German city) &mdash; among them changing the <em>nusach</em> (<span class="heb-inline">נוסח</span>) from <em>Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>), which was unheard of there. The <em>rabbanim</em> (<span class="heb-inline">רבנים</span>) drove him from the city, and the <em>Chasam Sofer</em> left with him while still young and never returned to Frankfurt; he went on to Pressburg.</p>
+
+<p><em>Rav Nosson Adler</em> was a <em>kohen</em>. In his <em>beis midrash</em> he instituted daily <em>nesias kapayim</em>. <strong>He was the only one who succeeded</strong>; he always recited <em>Birkas Kohanim</em>, until he was forced from the city. No one else succeeded.</p>
+
+<h2>VIII. <em>Chezkas Kehunah</em> (<span class="heb-inline">חזקת כהונה</span>) &mdash; Lost in <em>Galus</em> (<span class="heb-inline">גלות</span>)</h2>
+
+<h3>The Argument</h3>
+
+<p>Some <em>poskim</em> trace the <em>minhag</em> to a halachic concern: <em>kohanim</em> in <em>chutz laaretz</em> have lost their <em>chezkas kehunah</em>. The <em>Sheilas Margolios</em> (<span class="heb-inline">שאלת מרגליות</span>)<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> is said to have an entire responsum on it. The point is not about any individual&rsquo;s father: a given <em>kohen</em>&rsquo;s father was a <em>kohen</em>, and his father before him; he knows it and believes it. The question is structural, across generations of exile.</p>
+
+<h3>The Story of the <em>Kohen</em> From Pinsk</h3>
+
+<div class="pullquote">
+<p>A well-known story<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> tells of a man who emigrated from Pinsk in Belarus to America in the early 1900s &mdash; the <em>Goldene Medina</em> (the &ldquo;golden land&rdquo;). He came to a new congregation (<span class="heb-inline">קהילה</span>) looking for a <em>kohen</em>. In the new world, he decided to pass himself off as a <em>kohen</em>: back in the <em>shtetl</em> (<span class="heb-inline">שטעטל</span>) he had been a simple person sitting at the back of the shul, but here he could be a <em>kohen</em>. He bought a new suit, polished his shoes, and walked into a shul where no one knew him.</p>
+<p>They needed a <em>kohen</em> for the first <em>aliyah</em> (<span class="heb-inline">עליה</span>). &ldquo;<span class="heb-inline">איך בין הכהן</span>&rdquo; (&ldquo;I am the <em>kohen</em>!&rdquo;), he called out. He received the <em>aliyah</em> and felt important. After davening he went to greet the <em>rav</em> (<span class="heb-inline">רב</span>). The <em>rav</em> looked at him: &ldquo;<strong>Shmerel!</strong> I know you. You are from Pinsk. I am from Pinsk too. Shmerel, I don&rsquo;t understand: your father was not a <em>kohen</em> &mdash; I knew him. Your grandfather was not a <em>kohen</em>. How are you suddenly a <em>kohen</em>?&rdquo;</p>
+<p>Shmerel answered: &ldquo;Rabbi, this is a new country. <strong>If you can be a <em>rav</em>, I can be a <em>kohen</em>.</strong>&rdquo;</p>
+</div>
+
+<p>The story is humorous, and the point beneath it is real: it illustrates the loosening of <em>chezkas kehunah</em>, but it is not itself the halachic argument, which is structural and does not rest on cases of individual error or fraud. <strong>Rav Frank</strong> and <strong>Rabbi Efraim Zalman Margolios</strong><a class="footnote-ref" id="ref19" href="#fn19">[19]</a> are cited as holding that <em>kohanim</em> across <em>galus</em> have lost their <em>chezkas kehunah</em>. Many families have a <em>yichus</em> letter (<span class="heb-inline">יחוס בריף</span>) at home &mdash; a documented family record; not all do. A family in Lakewood, until the mid-2000s, performed <em>duchening</em> and <em>pidyon haben</em> (<span class="heb-inline">פדיון הבן</span>); on a family trip to the ancestral graves (<span class="heb-inline">קברי אבות</span>) abroad they discovered, from the gravestones (<span class="heb-inline">מצבות</span>) of their elders, that they were <em>not</em> <em>kohanim</em> at all. Those for whom they had performed <em>pidyon haben</em> had to find another <em>kohen</em>, so that the earlier ceremonies were thought to require repeating &mdash; a conclusion that is itself open to discussion.</p>
+
+<h3>Why <em>Eretz Yisrael</em> Differs</h3>
+
+<p>Why do the <em>Sephardim</em> of <em>Eretz Yisrael</em> <em>duchen</em>? The historical fact: the <em>kohanim</em> there never left the land continuously since the <em>churban</em> (<span class="heb-inline">חורבן</span>), and therefore never lost their <em>chezkah</em> (<span class="heb-inline">חזקה</span>). They were never scattered through exile as the <em>kohanim</em> of Europe were. The reasoning is admittedly hard to follow, and the tension was observed that a <em>kohen</em> is relied upon for <em>pidyon haben</em> while his presumption is held too weak for <em>duchening</em>.</p>
+
+<h3>DNA and <em>Kehunah</em></h3>
+
+<p>Today there are DNA tests, and contemporary responsa (<span class="heb-inline">תשובות</span>) on the subject. There is an island in Tunisia, Djerba, said to be known as the city of the <em>kohanim</em> (<span class="heb-inline">עיר הכהנים</span>); as reported, DNA testing there indicated common descent from the seed of <em>Aharon HaKohen</em> (<span class="heb-inline">זרע אהרן הכהן</span>)<a class="footnote-ref" id="ref20" href="#fn20">[20]</a>. Whether to rely on DNA in <em>halachah</em> is its own question.</p>
+
+<div class="pullquote">
+<p>The first major halachic case on DNA arose after September 11, 2001. A special <em>beis din</em> (<span class="heb-inline">בית דין</span>) was set up for the <em>agunos</em> (<span class="heb-inline">עגונות</span>); many Jews had died, remains were processed for years, and the question was whether DNA matches sufficed for a <em>heter</em> (<span class="heb-inline">היתר</span>). Three <em>poskim</em> are reported on that <em>beis din</em>: <strong>Rav Shmuel Fuerst</strong> of Chicago, <strong>Rav Avrohom Felder</strong> (<em>rosh yeshivah</em> (<span class="heb-inline">ראש ישיבה</span>) in South Fallsburg), and <strong>Rav Eliyahu Levine</strong> of Lakewood (an expert (<span class="heb-inline">מומחה</span>) in contemporary technical questions). They are said to have written an unpublished responsum of some four hundred pages, whose conclusion was not to rely on DNA testing. By extension: not relied upon for <em>kehunah</em> either.</p>
+</div>
+
+<h3>The Documented Families</h3>
+
+<p>The <strong>Baal Shem Tov</strong> (<span class="heb-inline">בעל שם טוב</span>)<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> is said to have declared that there are three families with established lineage (<span class="heb-inline">יחוס</span>) as <em>kohanim</em>: <strong>Rapoport</strong>, <strong>Katz</strong>, and one other (some say Margolios, though not all Margolios are <em>kohanim</em>). The blessing (<span class="heb-inline">ברכה</span>) of the <em>Baal Shem Tov</em> on these families is taken as substantiation.</p>
+
+<h2>IX. Regional Custom in <em>Eretz Yisrael</em> &mdash; The <em>Galil</em> (<span class="heb-inline">גליל</span>)</h2>
+
+<p>One more layer. Even within <em>Eretz Yisrael</em>, <em>Ashkenazim</em> do not everywhere <em>duchen</em> daily. <em>Sephardim</em> do so everywhere. But <em>Ashkenazim</em> in the <em>Galil</em> &mdash; Haifa, Tiberias, Tzfas &mdash; <em>duchen</em> only on <em>Shabbos</em> and <em>Yom Tov</em>, not during the week. One may walk into an <em>Ashkenazi</em> shul in Tzfas, Tiberias, Haifa, all the way down to Hadera, and they do not <em>duchen</em> on weekdays. (At Meron they <em>duchen</em> daily, because so many come there from <em>Yerushalayim</em>; the custom of <em>Yerushalayim</em> governs.)</p>
+
+<h3>The Historical Explanation</h3>
+
+<p>The <em>Galil</em> was thinly populated for stretches of history. Tzfas was a major city in the time of the <em>Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>) and the <em>Arizal</em> (<span class="heb-inline">אריז״ל</span>); then a famous earthquake in the eighteenth century emptied much of Tzfas, and the survivors went to <em>Yerushalayim</em>. Who came to resettle it? European Jews: the disciples of the <em>Baal Shem Tov</em> &mdash; <em>Reb Mendel of Vitebsk</em> among the first &mdash; and the disciples of the <em>Gra</em> (<span class="heb-inline">תלמידי הגר״א</span>). They brought with them their <em>chutz laaretz</em> custom of not <em>duchening</em> daily, and chose not to reinstitute it. The compromise: on <em>Shabbos</em> and <em>Yom Tov</em> they <em>duchen</em>; on weekdays they do not.</p>
+
+<p>So even today, large communities in the <em>Galil</em> do not <em>duchen</em> during the week. The disciples of the <em>Gra</em> sought to <em>duchen</em> daily like their master; the <em>Chassidim</em> chose not to. To this day some rabbis regard the <em>chutz laaretz</em> custom in the <em>Galil</em> as a mistaken custom (<span class="heb-inline">מנהג טעות</span>) and try to reinstitute daily <em>duchening</em>; it has not taken hold.</p>
+
+<h3>Kfar Hasidim &mdash; One Exception</h3>
+
+<p>One place &mdash; the <em>yeshivah</em> at <strong>Kfar Hasidim</strong>, today called Rechasim &mdash; does <em>duchen</em> daily. It was instituted there by <strong>Rav Noach Shimonowitz</strong><a class="footnote-ref" id="ref22" href="#fn22">[22]</a>, whose <em>Chiddushei Rav Noach</em> (<span class="heb-inline">חידושי רב נח</span>) is a major work. The rabbis of the north still debate the underlying dispute (<span class="heb-inline">מחלוקת</span>).</p>
+
+<h3><em>Rav Kook</em>&rsquo;s Stand</h3>
+
+<p>There are letters of <strong><em>Rav Kook</em></strong> (<span class="heb-inline">רב קוק</span>)<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> on this. On one occasion he travelled from <em>Yerushalayim</em> to Haifa. He himself <em>duchened</em> daily; he was a <em>kohen</em>. In Haifa they told him: <em>&ldquo;Rav, here we don&rsquo;t do that.&rdquo;</em> <em>Rav Kook</em> stood up: <em>&ldquo;I don&rsquo;t care, I am duchening.&rdquo;</em> He blessed the congregation; nothing happened. But he <em>duchened</em> only while he was there; once he left, no one continued the practice.</p>
+
+<h2>X. Closing</h2>
+
+<p><em>[Editorial coda &mdash; not part of the delivered shiur.]</em> From <em>Modim</em>, where the <em>Chofetz Chaim</em> stood pausing because he could not have enough of thanking the Holy One, and where <em>Rav Elyashiv</em> at one hundred and two learned to say &ldquo;thank you&rdquo; in English in his own voice, through to <em>nesias kapayim</em>, where attempt after attempt to restore the <em>mitzvah</em> in <em>chutz laaretz</em> was met with prison cells and city fires, the underlying theme is the same: <em>tefillah</em> moves through structures we did not invent and cannot dismantle, and through <em>mitzvos</em> we did not impose and cannot easily restore. We work within the structure as it has come down to us, with the pauses of the <em>Chofetz Chaim</em> and the English &ldquo;thank you&rdquo; of <em>Rav Elyashiv</em> as our models. <em>B&rsquo;ezras Hashem</em> (<span class="heb-inline">בעזרת השם</span>), may <em>Mashiach</em> bring us to a world in which the <em>kohanim</em> bless <em>Klal Yisrael</em> daily again. Nor is it a contradiction that, when every other prayer has fallen away, thanksgiving alone remains: <em>Birkas Kohanim</em> is <em>avodah</em>, as has been seen, and not <em>tefillah</em> in the ordinary sense; and the <em>Modim</em> that remains is the <em>Modim</em> of a Jew who thanks in his own voice.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Notes marked with a caveat record points not verified, or verified differently from the delivered text.</p>
+<ol>
+
+<li id="fn1">
+  <div class="note-academic"><strong>The <em>Yerushalmi</em> on the body that bows at <em>Modim</em> and <em>Magen Avraham</em></strong> (<span class="heb-inline">תלמוד ירושלמי ברכות פ״ב ה״ד</span>, as given in the weekly write-up) &mdash; an <em>amora</em> grateful that his body bows of itself, lest he fail to register where he stands. The statement grounds the standard rule that <em>kavanah</em> is required at least in <em>Magen Avraham</em>, with a variant reading requiring it in <em>Modim</em> also. <em>Caveat:</em> neither the locus nor the wording of the <em>Yerushalmi</em> was located on Sefaria, and the <em>sugya</em> on <em>kavanah</em> in <em>Avos</em> and <em>Modim</em> was cited without a reference in the shiur; both are retained as presented, not pinned.</div>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <div class="note-academic"><strong>The <em>Toras Chaim</em></strong> (<span class="heb-inline">תורת חיים</span>; an early commentary on the <em>siddur</em>) on thanking for every breath, with <em>Tehillim</em> 150:6, <em>&ldquo;kol haneshamah tehallel Kah halelu-Kah&rdquo;</em> (<span class="heb-inline">כל הנשמה תהלל י־ה הללו־י־ה</span>) &mdash; the <em>kavanah</em> of <em>&ldquo;al nishmoseinu hapekudos lach&rdquo;</em>: that one should ideally thank for each breath, and that the structural impossibility of doing so grounds the gathered thanksgiving of <em>Modim</em>. <em>Caveat:</em> the <em>Toras Chaim</em> was not located on Sefaria; the exposition is retained as presented in the shiur.</div>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Vayikra Rabbah</em> 9:7 (<span class="heb-inline">ויקרא רבה ט׳:ז׳</span>); <em>Shulchan Aruch Orach Chaim</em> 51:9 (<span class="heb-inline">שולחן ערוך אורח חיים נ״א:ט׳</span>); <em>Tehillim</em> 107 &mdash; <em>korban todah</em> and <em>todah</em> never annulled; the four categories of <em>&ldquo;Chayim.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>Midrash</em> (verified on Sefaria), in the name of <em>Rabbi Pinchas</em>, <em>Rabbi Levi</em> and <em>Rabbi Yochanan</em> in the name of <em>Rabbi Menachem of Galya</em> (<span class="heb-inline">רבי מנחם דגליא</span>), states that in the time to come all offerings will be annulled but the thanks-offering will not; all prayers will be annulled but the thanksgiving (<span class="heb-inline">הודאה</span>) will not &mdash; proved from <em>Yirmiyahu</em> 33:11 (&ldquo;the voice of those who say: Give thanks to the Lord of hosts&hellip; bringing thanks-offerings to the House of the Lord&rdquo;) and <em>Tehillim</em> 56:13 (<em>todos</em>, in the plural). The identification of the thanksgiving with the blessing <em>Modim</em> is the traditional application, and the shiur&rsquo;s; the <em>Midrash</em> itself says <em>hoda&rsquo;ah</em>. The <em>Shulchan Aruch</em> (corrected locus, verified) brings the idea in the form that <em>Mizmor LeTodah</em> is said to a melody because in the future all songs will be annulled except <em>Mizmor LeTodah</em>; it speaks of songs, not of <em>korbanos</em> and <em>tefillos</em>. The four categories obligated in <em>todah</em> are those of <em>Tehillim</em> 107, remembered by the acronym <em>&ldquo;Chayim&rdquo;</em>: <em>cholah</em>, <em>yam</em>, <em>yissurim</em> (released from prison or affliction), <em>midbar</em>. (The shiur gave the second <em>yud</em> only as &ldquo;released from prison or great difficulty,&rdquo; and worked out the mnemonic aloud.)</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Sotah</em> 40a (<span class="heb-inline">סוטה מ׳ ע״א</span>) &mdash; <em>Modim DeRabbanan</em>; the dispute of the <em>amoraim</em>; <em>Rav Pappa</em>&rsquo;s <em>&ldquo;limeimrinhu l&rsquo;tarvaihu.&rdquo;</em></span>
+  <span class="expanded">&mdash; Verified on Sefaria. The <em>sugya</em> records the several formulations the congregation recites while the <em>shaliach tzibbur</em> recites <em>Modim</em>: <em>Rav</em> (<em>&ldquo;Modim anachnu lach&hellip; al she&rsquo;anu modim lach&rdquo;</em>), <em>Shmuel</em> (<em>&ldquo;Elokei kol basar&hellip;&rdquo;</em>), <em>Rabbi Simai</em> (the Creator &ldquo;Who created in the beginning&rdquo;), the sages of <em>Neharde&rsquo;a</em> in his name (blessings and praises to Your great name, for You have given us life and sustained us), and <em>Rav Acha bar Yaakov</em> (the gathering of exiles into the sacred courtyards). <em>Rav Pappa</em> concludes that, since each added something, we recite all of them. The weekly write-up&rsquo;s listing of <em>Rabbi Shimon bar Menasya</em> is not in the <em>sugya</em>, and the siddur wordings the shiur attributed to individual <em>amoraim</em> (<em>&ldquo;Baruch Kel HaHoda&rsquo;os&rdquo;</em>, <span class="heb-inline">ברוך א־ל ההודאות</span>, and <em>&ldquo;Atah Hu Hashem Elokeinu&rdquo;</em>) are not located there as such; they belong to the composite text. The explanation of the name <em>&ldquo;DeRabbanan&rdquo;</em> as the combination of the <em>amoraim</em>&rsquo;s wordings is one view; the <em>Shiur Review</em> notes that other explanations exist among the <em>Rishonim</em> (for example, that the designation marks the individual&rsquo;s obligation as a rabbinic institution parallel to the ordinance of the <em>shaliach tzibbur</em>&rsquo;s <em>Modim</em>); none is retrieved here. The same page of <em>Sotah</em> contains the principle &ldquo;Is there a servant who is being blessed and does not listen?&rdquo; (relevant to chapter V).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <div class="note-academic"><strong>That thanks cannot be given through a <em>shaliach</em></strong> &mdash; presented in the shiur as a principle of the Sages, with the remark that the source may be the <em>Avudraham</em> (<span class="heb-inline">אבודרהם</span>), who may say something different. <em>Caveat:</em> the shiur itself was unsure of the source; the <em>Avudraham</em> was not retrieved, and the principle is retained as the shiur stated it, without a pinned locus.</div>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <div class="note-academic"><strong>Rav Yosef Shalom Elyashiv</strong> (<span class="heb-inline">רב יוסף שלום אלישיב זצ״ל</span>; 1910&ndash;2012; <em>posek hador</em> in <em>Yerushalayim</em>) &mdash; the open-heart surgery, the American surgeon flown to <em>Eretz Yisrael</em>, the question how to say &ldquo;thank you&rdquo; in English, and the lesson drawn for <em>Modim DeRabbanan</em>: that thanks must be given in one&rsquo;s own voice and not delegated. The story circulates in <em>Yerushalayim</em> oral tradition (<span class="heb-inline">מסורה</span>) as an illustration of his exactness in <em>mitzvos</em>, here the <em>mitzvah</em> of gratitude (<span class="heb-inline">הכרת הטוב</span>) toward a non-Jewish physician. <em>Caveat:</em> the Editorial Review places the surgery in 2012 at about age 101 rather than 102, and records that the identity of the surgeon is variously reported (a visiting American surgeon in some accounts; an Israeli cardiologist in others); neither the age nor the surgeon is verified, and no printed source is cited.</div>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <div class="note-academic"><strong>The responsum on <em>&ldquo;al she&rsquo;anu modim lach&rdquo;</em></strong> (<span class="heb-inline">על שאנו מודים לך</span>) &mdash; the alternate reading that the words mean &ldquo;in addition to what we thanked You for in the silent <em>tefillah</em>, we add these formulations.&rdquo; The weekly write-up attributes it to the <em>Ran</em> (<span class="heb-inline">ר״ן</span>, <em>Rabbeinu Nissim Gerondi</em>, c. 1320&ndash;1376, Barcelona). <em>Caveat:</em> the recording renders the source as a responsum of &ldquo;&hellip;megash,&rdquo; which suggests the <em>Ri Migash</em> (<span class="heb-inline">רבי יוסף אבן מיגאש</span>) rather than the <em>Ran</em>; the attribution could not be located on Sefaria and is left unresolved pending the recording. The standard reading (we thank for the gift of being able to thank) is the other.</div>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <div class="note-academic"><strong>The ten who hear the <em>shaliach tzibbur</em></strong>; <em>&ldquo;shelosha kolos lo yishtamu&rdquo;</em> (<span class="heb-inline">שלשה קולות לא ישתמעו</span>) &mdash; the requirement that the repetition be said aloud in full, <em>Modim</em> included, and the report that some <em>poskim</em> require ten who hear every word. <em>Caveat:</em> no <em>posek</em> or <em>siman</em> was named in the shiur, and none is pinned here.</div>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Rambam, Sefer HaMitzvos</em>, <em>Aseh</em> 26 (<span class="heb-inline">רמב״ם, ספר המצוות מצות עשה כ״ו</span>); <em>Chinuch</em> 378 (<span class="heb-inline">חינוך מצוה שע״ח</span>); <em>Sotah</em> 38b (<span class="heb-inline">סוטה ל״ח ע״ב</span>) &mdash; <em>Birkas Kohanim</em> as one of the 613; the three positive commandments; <em>&ldquo;b&rsquo;chol yom uvchol zman.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>Rambam</em> counts <em>Birkas Kohanim</em> as positive commandment 26 (verified). The <em>Sefer HaChinuch</em> (<em>Naso</em>, commandment 378; verified) titles it the commandment of the priestly blessing every day, states that the commandment is practiced every day and at all times, and obligates the <em>kohanim</em> at <em>Shacharis</em>, <em>Musaf</em> and <em>Neilah</em>. (Corrected from the weekly write-up: <em>&ldquo;b&rsquo;chol makom, b&rsquo;chol zman, b&rsquo;chol yom&rdquo;</em> is not the <em>Chinuch</em>&rsquo;s wording.) The &ldquo;three positive commandments&rdquo; are not in the <em>Chinuch</em>: they are from <em>Rabbi Yehoshua ben Levi</em> in <em>Sotah</em> 38b, that a <em>kohen</em> who does not ascend the platform transgresses <em>&ldquo;koh sevarchu,&rdquo;</em> <em>&ldquo;amor lahem&rdquo;</em> (<em>Bamidbar</em> 6:23) and <em>&ldquo;v&rsquo;samu es shemi&rdquo;</em> (6:27) (verified). The shiur&rsquo;s formulation, that a <em>kohen</em> who blesses fulfills three, is the converse of the <em>Gemara</em>&rsquo;s.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Rambam, Hilchos Tefillah UVirkas Kohanim</em> 14:1&ndash;2 (<span class="heb-inline">רמב״ם, הלכות תפילה וברכת כהנים פי״ד ה״א־ב</span>) &mdash; <em>Minchah</em> and intoxication; <em>nesias kapayim</em> as <em>avodah</em>.</span>
+  <span class="expanded">&mdash; Corrected locus (the weekly write-up cited chapter 15); verified. The <em>Rambam</em> rules that the <em>kohanim</em> lift their hands at <em>Shacharis</em>, <em>Musaf</em> and <em>Neilah</em> but not at <em>Minchah</em>, &ldquo;because by <em>Minchah</em> all the people have already eaten, and perhaps the <em>kohanim</em> drank wine, and a drunk is forbidden in <em>nesias kapayim</em>&rdquo;; the same holds even for <em>Minchah</em> of a fast day (a decree lest it be confused with the ordinary <em>Minchah</em>), while a fast whose <em>Minchah</em> is near sunset (and so resembles <em>Neilah</em>) includes it (14:2). The <em>Rambam</em> does not in this <em>halachah</em> call <em>nesias kapayim</em> <em>avodah</em>; that identification rests on <em>Sotah</em> 38b (see note 11). That a <em>kohen</em> may not perform service while intoxicated is the parallel the shiur drew.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Mishnah Tamid</em> 5:1; 7:2 (<span class="heb-inline">משנה תמיד פ״ה מ״א; פ״ז מ״ב</span>); <em>Sotah</em> 38b; <em>Vayikra</em> 9:22 (<span class="heb-inline">ויקרא ט׳:כ״ב</span>) &mdash; <em>nesias kapayim</em> in the <em>Beis HaMikdash</em>.</span>
+  <span class="expanded">&mdash; Corrected and tightened (verified on Sefaria). <em>Tamid</em> 5:1 records that in the <em>Lishkas HaGazis</em> the priestly watch recited <em>Shema</em> and blessed the people with three blessings &mdash; <em>Emes V&rsquo;Yatziv</em>, the <em>Avodah</em> and the Priestly Blessing (the last as a prayer, without the lifting of hands, per <em>Tosafos</em>). <em>Tamid</em> 7:2 records that the <em>kohanim</em>, after the service, stood on the steps of the <em>Ulam</em> and blessed the people, in the <em>Mikdash</em> as one blessing, with the Name pronounced as written and the hands raised above the head, as against three blessings, the Name by its appellation and hands at shoulder height in the rest of the country. The <em>baalei maamados</em> in the <em>azarah</em>, whom the shiur mentioned, are not found in these <em>mishnayos</em>; the shiur was explicitly unsure of the exact <em>mishnah</em> and the earlier write-up supplied a certainty it did not carry. The textual ground for <em>nesias kapayim</em> as <em>avodah</em> is <em>Sotah</em> 38b, which derives from <em>Vayikra</em> 9:22 that <em>Aharon</em> lifted his hands during the service, and so the <em>kohen</em> who has not begun to ascend during the blessing of <em>Avodah</em> may not ascend. The shiur&rsquo;s own pointer to the verse was hedged (&ldquo;I have to look at that <em>pasuk</em>&rdquo;).</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Rema, Orach Chaim</em> 128:44 (<span class="heb-inline">רמ״א, אורח חיים סימן קכ״ח סעיף מ״ד</span>) &mdash; the <em>parnasah</em> reason for <em>chutz laaretz</em>; <em>v&rsquo;daber davar</em> on <em>Shabbos</em>.</span>
+  <span class="expanded">&mdash; Verified on Sefaria. The <em>Rema</em>, in his gloss, states the custom in these lands: the <em>kohanim</em> do not lift their hands except on <em>Yom Tov</em>, because only then do they dwell in the joy of the festival and the one who blesses must have a full heart; not so on other days, even on the <em>Shabbosos</em> of the year, when they are occupied with thoughts of livelihood and fear of losing work. Even on <em>Yom Tov</em> they lift their hands only at <em>Musaf</em>, since they are about to leave the synagogue rejoicing; on <em>Yom Kippur</em> they do as on <em>Yom Tov</em>, and in some places also at <em>Neilah</em> or <em>Shacharis</em>. The point that thinking of business is permitted on <em>Shabbos</em> while speaking is not (<em>Yeshayahu</em> 58:13) is the shiur&rsquo;s elaboration and is not in the <em>Rema</em>. <em>Caveat:</em> the recording names the leniency permitting thought of business on <em>Shabbos</em> in a phrase (rendered &ldquo;nishabas gemar&rdquo;) that cannot be reconstructed and is omitted; the Editorial Review notes it is not a recognized halachic term. The weekly write-up&rsquo;s quotation of the <em>Rema</em> in Hebrew was a paraphrase and has not been reproduced. The shiur itself characterized the <em>Rema</em>&rsquo;s reason as a justification of an obscure older custom.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <div class="note-academic"><strong>The <em>Beis Yosef</em> on <em>Orach Chaim</em> 128 and the <em>Mishnah Berurah</em></strong> &mdash; the praise of the people of <em>Eretz Yisrael</em> and Egypt for daily <em>duchening</em>, with the shiur&rsquo;s specification that the <em>Sephardim</em> of Egypt had done so for some four to five hundred years; and the remark attributed to the <em>Mishnah Berurah</em> that one who cannot do it with his hands should not do it with his mouth. <em>Caveat:</em> the <em>Beis Yosef</em> and the <em>Mishnah Berurah</em> were not retrieved on Sefaria and neither <em>siman</em> nor <em>seif katan</em> is pinned; the <em>Aruch HaShulchan</em> (<em>Orach Chaim</em> 128:64, verified) does state that in <em>Eretz Yisrael</em>, Egypt and all Asia the <em>kohanim</em> lift their hands daily. The <em>Mishnah Berurah</em> remark appears in the Shiur Review as a point omitted from the weekly write-up; it is restored here as the shiur gave it, unlocated.</div>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Aruch HaShulchan, Orach Chaim</em> 128:64 (<span class="heb-inline">ערוך השלחן אורח חיים סימן קכ״ח סעיף ס״ד</span>) &mdash; <em>&ldquo;v&rsquo;chaileu bas kol yatza&hellip;&rdquo;</em></span>
+  <span class="expanded">&mdash; Corrected (verified on Sefaria). The <em>Aruch HaShulchan</em> writes that there is surely no correct reason for our custom of annulling the positive commandment of <em>Birkas Kohanim</em> all year, and that it has been called a bad custom (<span class="heb-inline">מנהג גרוע</span>); yet &ldquo;what can we do &mdash; as if a <em>bas kol</em> went out&rdquo; not to allow us to lift our hands all year. He adds a received tradition (<span class="heb-inline">ומקובלני</span>) that two great men of earlier generations, each in his own place, wished to institute daily <em>nesias kapayim</em>, and when a day was fixed for it the matter became confused and failed, and they said it was decreed from Heaven. He does <em>not</em> name the <em>Gra</em> or <em>Reb Chaim of Volozhin</em>, nor mention imprisonment or fire; those identifications and details come from the shiur&rsquo;s oral account. <em>Caveat:</em> the jail account of the <em>Gra</em>, and the fire at Volozhin as told by <em>Rabbi Yitzchak of Volozhin</em> through the <em>Netziv</em>, are oral tradition not located on Sefaria; the Editorial Review observes that several fires at Volozhin are historically attested and that the pairing of this attempt with a fire on the very night is a family tradition rather than a dated event, and the text is accordingly phrased as a tradition (&ldquo;it is related&rdquo;). The shiur&rsquo;s dating cue to the <em>yahrzeit</em> of the <em>Netziv</em> is omitted.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <div class="note-academic"><strong>The <em>sichah</em> of the Lubavitcher Rebbe</strong> (<span class="heb-inline">רבי מנחם מענדל שניאורסון זצ״ל</span>, 1902&ndash;1994) on the attempt of his ancestor the <em>Baal HaTanya</em> (<span class="heb-inline">רבי שניאור זלמן מליאדי</span>, 1745&ndash;1812, author of the <em>Tanya</em> and <em>Shulchan Aruch HaRav</em>) to restore daily <em>nesias kapayim</em>; the shiur reports that something happened, there was confusion, and he retracted, and that <em>Shulchan Aruch HaRav</em> does not record it. <em>Caveat:</em> the shiur gave no precise citation; the Editorial Review asks that the <em>sichah</em> be located in <em>Likkutei Sichos</em> or <em>Sichos Kodesh</em> with volume and page. Not verified.</div>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <div class="note-academic"><strong>Rav Nosson HaKohen Adler</strong> (<span class="heb-inline">רבי נתן הכהן אדלר</span>; 1741&ndash;1800, per the Editorial Review) and the <em>Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>, born Frankfurt, 1762) &mdash; the account of the changed <em>nusach</em>, the opposition of the Frankfurt <em>rabbanim</em>, and daily <em>nesias kapayim</em> in his <em>beis midrash</em>. <em>Caveat:</em> the shiur&rsquo;s telling (that the <em>rabbanim</em> threw him out of the city and the <em>Chasam Sofer</em> left with him while a young child and never returned) compresses a more complex sequence, which the Editorial Review describes as communal opposition, a period of departure and return, and the <em>Chasam Sofer</em>&rsquo;s later studies in other towns before reaching Pressburg; the text is accordingly softened, and the exact dates and ages are not verified here. The weekly write-up&rsquo;s aside on the Hirsch Museum in Frankfurt is not in the recording and is omitted.</div>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <div class="note-academic"><strong>The <em>Sheilas Margolios</em></strong> (<span class="heb-inline">שאלת מרגליות</span>) on loss of <em>chezkas kehunah</em> in exile. The weekly write-up identified the author as Rabbi Reuven Margoliot (1889&ndash;1971); the recording gives <em>Rav Efraim Zalman Margolios</em> (of Brody), a different author of a different century (corrected). The position attributed to him: the long pattern of dispersal and persecution across European communities has eroded the firm halachic presumption that one claiming <em>kehunah</em> is a <em>kohen</em> of the seed of <em>Aharon</em>, which grounds the reluctance to <em>duchen</em> daily and to apply other laws of <em>kehunah</em> with full strictness; the view is contested, and many <em>poskim</em> maintain the presumption for families that have transmitted the identity continuously. <em>Caveat:</em> the title, the exact work and the responsum were not located on Sefaria, and the recording renders it unclearly; retained as the shiur gave it.</div>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <div class="note-academic">The &ldquo;<em>kohen</em> from Pinsk&rdquo; anecdote &mdash; told in the shiur as a famous story, and circulating in early twentieth-century American Jewish humor and memoir as an illustration of the loosening of <em>chezkas kehunah</em> in immigrant America; its punch line, &ldquo;If you can be a <em>rav</em> here, I can be a <em>kohen</em>,&rdquo; carries the same dislocation that allowed unqualified men to assume rabbinical positions. No source is cited; it is brought as illustration of the concern behind the <em>Sheilas Margolios</em>, and not as an argument.</div>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <div class="note-academic"><strong>Rav Tzvi Pesach Frank</strong> (<span class="heb-inline">רב צבי פסח פרנק זצ״ל</span>, 1873&ndash;1960, <em>av beis din</em> of <em>Yerushalayim</em>; author of <em>Har Tzvi</em>) and <strong>Rabbi Efraim Zalman Margolios</strong> (note 17; the identification as Rabbi Reuven Margoliot is corrected) &mdash; the authorities named for the view that <em>kohanim</em> in <em>chutz laaretz</em> have lost their <em>chezkas kehunah</em>. The contrary view, that contemporary <em>kohanim</em> retain a valid presumption, is held by most <em>poskim</em> in practice; the question is unresolved. The Lakewood family case, in which a family found from the gravestones of its ancestors that it was not of <em>kohanim</em>, illustrates the practical concern; the Editorial Review notes that the claim that earlier <em>pidyon haben</em> ceremonies &ldquo;needed to be redone&rdquo; is itself a contested question of status after the fact, and the text is phrased accordingly. <em>Caveat:</em> whether Rav Frank is the authority the recording names alongside <em>Rav Efraim Zalman Margolios</em> was read from an unclear passage and is not verified.</div>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <div class="note-academic"><strong>Djerba; DNA testing; the post-September 11 <em>beis din</em></strong> &mdash; as the shiur reported, Djerba as an island of <em>kohanim</em> (<span class="heb-inline">עיר הכהנים</span>) with a DNA study confirming descent from <em>Aharon</em>; and a special <em>beis din</em> for the <em>agunos</em> of September 11, 2001, comprising <em>Rav Shmuel Fuerst</em> (Chicago), <em>Rav Avrohom Felder</em> (<em>rosh yeshivah</em>, South Fallsburg) and <em>Rav Eliyahu Levine</em> (Lakewood), who wrote an unpublished responsum of some four hundred pages concluding that DNA testing is not relied upon. <em>Caveat:</em> the Editorial Review observes that Djerba&rsquo;s Jewish community has an unusually high concentration of <em>kohanim</em> and a traditional claim to priestly descent, but is not composed entirely of <em>kohanim</em>, that the Cohen Modal Haplotype studies show a shared signature among self-identified <em>kohanim</em> generally and are not a Djerba-specific confirmation, and that the joint authorship, roster and page count of the 9/11 responsum are unverified and may conflate several separate halachic responses; the text is softened to &ldquo;as reported.&rdquo; The biographical identifiers added in the weekly write-up (the roster&rsquo;s institutional affiliations) were editorial research, not from the recording. Not verified.</div>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <div class="note-academic">The tradition attributed to the <em>Baal Shem Tov</em> on three families with established <em>yichus</em> as <em>kohanim</em>: <em>Rapoport</em> (Rapaport), <em>Katz</em> (acronym for <em>kohen tzedek</em>, <span class="heb-inline">כהן צדק</span>), and a third. The shiur named Margolios, adding that not all Margolios are <em>kohanim</em>; the Editorial Review notes that the triad is usually given as Rapoport, Katz and Horowitz (Hurwitz), with Margolios the variant. The tradition circulates within <em>Chassidus</em> and is followed by some Chassidic communities as a marker of which <em>kohanim</em> may be relied upon with greater confidence for <em>pidyon haben</em>, <em>nesias kapayim</em> and the laws of <em>kehunah</em>; non-Chassidic <em>poskim</em> follow ordinary standards of presumption. Not verified; oral tradition.</div>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <div class="note-academic"><strong><em>Chiddushei Rav Noach</em></strong> (<span class="heb-inline">חידושי רב נח</span>) by <strong>Rav Noach Shimonowitz</strong>, of the <em>yeshivah</em> at <strong>Kfar Hasidim</strong> (today Rechasim, near Haifa), where daily <em>nesias kapayim</em> is practiced contrary to the regional custom of the <em>Galil</em>. In the recording the institution is credited to Rav Shimonowitz, the father-in-law of the <em>rosh yeshivah</em> of the time, and the <em>sefer</em> is described as a major work; the practical decision sits within the broader debate among the northern rabbis whether the <em>Galil</em> custom is authentic regional practice or a <em>minhag taus</em> imported by the disciples of the <em>Gra</em> and Chassidic resettlers in the eighteenth century after the earthquake at Tzfas. <em>Caveat:</em> the Editorial Review asks that the attribution at the level of the <em>yeshivah</em> rather than the <em>beis midrash</em>, and the <em>sefer</em>&rsquo;s name and edition, be verified; not located on Sefaria.</div>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <div class="note-academic"><strong><em>Rav Avraham Yitzchak HaKohen Kook</em></strong> (<span class="heb-inline">רב אברהם יצחק הכהן קוק זצ״ל</span>, 1865&ndash;1935; first <em>Ashkenazi</em> Chief Rabbi of <em>Eretz Yisrael</em>; a <em>kohen</em>) &mdash; the Haifa episode: on a visit from <em>Yerushalayim</em>, he insisted on <em>duchening</em> as he did at home, despite the local custom, did not try to reform the custom there, and left it as it was. <em>Caveat:</em> the shiur spoke of letters of <em>Rav Kook</em> on the subject; no letter was located (<em>Igros HaRaayah</em>), and no printed source for the episode is cited. The weekly write-up&rsquo;s further elaboration (that he framed the obligation as overriding local custom for an individual <em>kohen</em>) is not in the recording and has been removed. Not verified.</div>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning shiur on <em>Tefillah</em>, recorded <span class="heb-inline">ל׳ אב תשפ״ה</span> &middot; 24 August 2025. This edition rewrites the delivered shiur in the classical sefer voice; corrects the formulations of the <em>amoraim</em> in <em>Sotah</em> 40a (<em>Rabbi Simai</em>, the sages of <em>Neharde&rsquo;a</em> and <em>Rav Acha bar Yaakov</em> in place of <em>Rabbi Shimon bar Menasya</em>); corrects the <em>Shulchan Aruch</em> on the eternal <em>todah</em> to <em>Orach Chaim</em> 51:9 (songs, not <em>korbanos</em> and <em>tefillos</em>); corrects the <em>Rambam</em> on <em>Minchah</em> to <em>Hilchos Tefillah UVirkas Kohanim</em> 14:1&ndash;2; corrects the <em>Chinuch</em>&rsquo;s wording and locates the three positive commandments in <em>Sotah</em> 38b; corrects <em>Mishnah Tamid</em> to 5:1 and 7:2 and drops the <em>baalei maamados</em>; corrects the <em>Aruch HaShulchan</em> to 128:64 (an unnamed tradition of two great men, with no jail or fire); and corrects the author of the <em>Sheilas Margolios</em> to <em>Rav Efraim Zalman Margolios</em>. It restores the <em>Mishnah Berurah</em> and <em>Beis Yosef</em> remarks and the hedges on the <em>Avudraham</em> and the <em>mishnah</em>; reconstructs the garbled &ldquo;<em>Yekkish shtot</em>&rdquo;; omits the unrecoverable &ldquo;nishabas gemar&rdquo;; softens the Djerba, 9/11, Volozhin-fire, Frankfurt and Lakewood claims to what the shiur reported; omits live-shiur cues (the approaching trip to Pressburg, the <em>Netziv</em>&rsquo;s <em>yahrzeit</em>, the Hirsch Museum aside, the &ldquo;Reworked&rdquo; date); folds the short sections on <em>kavanah</em> and bowing into the first chapter; breaks the opening into three paragraphs; and adds, as a marked editorial coda, the closing synthesis. The <em>Mareh Mekomos</em> is renumbered in body order.
+</footer>
+
+</body>
+</html>

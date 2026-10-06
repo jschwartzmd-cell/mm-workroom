@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition — Mitzvas Yishuv Eretz Yisrael — A Halachic Survey</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">מִצְוַת יִשּׁוּב אֶרֶץ יִשְׂרָאֵל</h1>
+  <div class="english-title">Mitzvas Yishuv Eretz Yisrael &mdash; A Halachic Survey from the <em>Rishonim</em> to the Post-1948 <em>Poskim</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Yom Yerushalayim Shiur</div>
+  <div class="date">Delivered <span class="heb-inline">כ&quot;ח אייר תשפ&quot;ה</span> &nbsp;&middot;&nbsp; 26 May 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Dedicated <span class="heb-inline">לעילוי נשמת יוסף בן שמואל הלוי ז&quot;ל</span>, murdered by the Nazis <span class="heb-inline">ימ&quot;ש</span>, and <span class="heb-inline">לעילוי נשמת זולמה ע&quot;ה</span> &mdash; by a survivor of Bergen-Belsen.</em></p>
+
+<h2>I. Opening Frame &mdash; The Halachic Register</h2>
+
+<p>A sustained halachic treatment of <em>mitzvas yishuv Eretz Yisrael</em> (<span class="heb-inline">מצות ישוב ארץ ישראל</span>) sits uneasily astride the ideological landscape of contemporary Jewish life. The <em>sugya</em> (<span class="heb-inline">סוגיא</span>) is one on which the historical currents of the past century &mdash; the rise of the <em>chareidi</em> rejectionist position typified by <em>Satmar</em>, the national-religious position typified by the <em>talmidim</em> of <em>Rav Kook</em>, and the broad <em>yeshivish</em> middle inherited from <em>Rav Moshe</em> and the Lithuanian <em>poskim</em> &mdash; have each left a mark on the halachic literature itself. A survey that is fully <em>halachic</em> must therefore acknowledge from the outset that a <em>posek</em>'s <em>hashkafah</em> (<span class="heb-inline">השקפה</span>) sometimes shapes his <em>pesak</em> on this question, and must discipline itself accordingly. The <em>halachah</em> (<span class="heb-inline">הלכה</span>) remains the <em>halachah</em>; the <em>Torah</em> remains the <em>Torah</em>; the <em>ratzon Hashem</em> (<span class="heb-inline">רצון ה&apos;</span>) stands independent of the preferences of any community. The pages that follow are addressed to the <em>halachah</em>; the <em>hashkafic</em> implications are indicated where they bear on <em>pesak</em>, and otherwise set aside.</p>
+
+<p>The structure is linear. The survey begins with the underlying <em>pasuk</em> (<span class="heb-inline">פסוק</span>) in <em>Parshas Mas'ei</em>; proceeds through the foundational <em>machlokes</em> (<span class="heb-inline">מחלוקת</span>) of <em>Rashi</em> and the <em>Ramban</em> (<span class="heb-inline">רמב&quot;ן</span>); the <em>Ramban</em>'s own biography and <em>mesiras nefesh</em> for the <em>mitzvah</em>; the <em>Rambam</em>'s famous omission from <em>Sefer HaMitzvos</em> and its principal resolutions; the dissenting voice of <em>Rabbeinu Chaim HaKohen</em> cited in <em>Tosafos</em>; the <em>Terumas HaDeshen</em>'s historical qualification; the <em>sugya</em> of the <em>shalosh shevu'os</em> (<span class="heb-inline">שלש שבועות</span>) at the close of <em>Kesubos</em> and the <em>Avnei Nezer</em>'s resolution; the modern voices &mdash; the <em>Chasam Sofer</em>, the <em>Minchas Chinuch</em>, <em>Rav Kook</em>, <em>Rav Teichtal</em>, <em>Rav Moshe</em>, the <em>Chazon Ish</em>, the <em>Rav</em>, and the <em>Tzitz Eliezer</em> &mdash; and closes with the practical <em>maskana</em> (<span class="heb-inline">מסקנא</span>) for the <em>yachid</em> (<span class="heb-inline">יחיד</span>) in <em>chutz la'aretz</em> (<span class="heb-inline">חוץ לארץ</span>) today.</p>
+
+<h2>II. The Underlying Pasuk</h2>
+
+<p>The source-<em>pasuk</em> for the <em>mitzvah</em> is in <em>Parshas Mas'ei</em>:</p>
+
+<blockquote>
+  <div class="heb">וְהוֹרַשְׁתֶּם אֶת הָאָרֶץ וִישַׁבְתֶּם בָּהּ, כִּי לָכֶם נָתַתִּי אֶת הָאָרֶץ לָרֶשֶׁת אֹתָהּ.</div>
+  <div class="trans">And you shall drive out the inhabitants of the land, and dwell in it; for I have given you the land to possess it.</div>
+  <div class="source"><em>Bamidbar</em> 33:53<a href="#fn1" id="ref1" class="footnote-ref">[1]</a></div>
+</blockquote>
+
+<p>The <em>pasuk</em> contains two verbs: <em>v'horashtem</em> (<span class="heb-inline">והורשתם</span>), the dispossession of the seven nations, and <em>vishavtem bah</em> (<span class="heb-inline">וישבתם בה</span>), the <em>yeshivah</em> (<span class="heb-inline">ישיבה</span>) &mdash; dwelling &mdash; in the land. The entire first-order <em>machlokes</em> of the <em>Rishonim</em> turns on whether this doubled formulation constitutes a <em>tzivui</em> (<span class="heb-inline">ציווי</span>), an affirmative <em>chiyuv</em>, or a <em>havtachah</em> (<span class="heb-inline">הבטחה</span>), a descriptive divine assurance.</p>
+
+<h2>III. The Classical Machlokes &mdash; Rashi and the Ramban</h2>
+
+<h3>The Shitah of Rashi</h3>
+
+<p><em>Rashi</em><a href="#fn2" id="ref2" class="footnote-ref">[2]</a> reads the <em>pasuk</em> sequentially and descriptively: <em>v'horashtem osah mi'yoshvehah, v'az vishavtem bah</em> &mdash; when the seven nations have been dispossessed, dwelling in the land will follow. On this reading, the <em>pasuk</em> is an <em>havtachah</em> to the generation entering <em>Eretz Yisrael</em> under <em>Yehoshua</em>, not a standing <em>chiyuv</em> upon every <em>yid</em> in every generation. The <em>Ramban</em>, in his <em>hassagos</em> (<span class="heb-inline">השגות</span>), understands <em>Rashi</em>'s reading as entailing the fuller conclusion that there is no independent <em>mitzvah</em> upon the <em>yachid</em> to live in <em>Eretz Yisrael</em>.</p>
+
+<h3>The Shitah of the Ramban</h3>
+
+<p>The <em>Ramban</em><a href="#fn3" id="ref3" class="footnote-ref">[3]</a> emerges as the great champion of the <em>mitzvah</em> among the <em>Rishonim</em>. In his <em>peirush al haTorah</em> (<span class="heb-inline">פירוש על התורה</span>) on <em>Mas'ei</em>, in his treatment of <em>Parshas Acharei Mos</em>, in his <em>derashos</em>, and in his <em>hassagos</em> on the <em>Rambam</em>'s <em>Sefer HaMitzvos</em>, he develops the position systematically. His <em>lashon</em> on <em>Rashi</em>'s reading is sharp: <em>&quot;shegagah gedolah hi be'einai&quot;</em> (<span class="heb-inline">שגגה גדולה היא בעיני</span>) &mdash; this is a serious error in my eyes. The <em>Ramban</em>'s position has three principal components:</p>
+
+<ol>
+  <li>The <em>pasuk</em> is a full <em>mitzvas aseh</em> upon every <em>yid</em> in every generation &mdash; a <em>chiyuv de'oraisa</em>.</li>
+  <li>The source is not the <em>pasuk</em> in <em>Mas'ei</em> alone; many <em>pesukim</em> in <em>Sefer Devarim</em> command <em>aliyah</em> (<span class="heb-inline">עליה</span>) to the land, reinforcing the <em>chiyuv</em>.</li>
+  <li>The <em>mitzvah</em> contains three distinguishable <em>chalakim</em>:
+    <ul>
+      <li><em>Kibbush ha'aretz</em> (<span class="heb-inline">כיבוש הארץ</span>) &mdash; the conquest dimension, dispossessing hostile nations;</li>
+      <li><em>Yeshivah ba'aretz</em> (<span class="heb-inline">ישיבה בארץ</span>) &mdash; the affirmative dimension of dwelling;</li>
+      <li><em>She'lo neizvennah be'yad zulasenu</em> (<span class="heb-inline">שלא נעזבנה ביד זולתנו מן האומות או לשממה</span>) &mdash; the negative component of not abandoning the land to the hands of foreign nations or to desolation. This third <em>chelek</em>, articulated explicitly by the <em>Ramban</em> in his <em>hassagos</em>, is the operative dimension for the <em>Avnei Nezer</em>'s and the <em>Tzitz Eliezer</em>'s modern halachic application &mdash; and it is the <em>chelek</em> under which the practical <em>eitzos</em> of purchasing property and material support of <em>yishuv</em> (<span class="heb-inline">יישוב</span>) qualify as <em>ma'aseh mitzvah</em>.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>IV. The Ramban's Proofs from Shas</h2>
+
+<p>The <em>Ramban</em>'s halachic argument against <em>Rashi</em>'s reading proceeds not only from the <em>pesukim</em> but from a series of <em>halachos</em> scattered through <em>Shas</em> that are intelligible only on the premise of a standing <em>mitzvah</em>. A sampling:</p>
+
+<h3>Kefiyah on a Spouse</h3>
+
+<p>The <em>mishnah</em> at the close of <em>Kesubos</em><a href="#fn7" id="ref7" class="footnote-ref">[7]</a> rules that where one spouse wishes to make <em>aliyah</em> and the other refuses, the one who wishes to ascend may compel: <em>hakol ma'alin l'Eretz Yisrael</em> (<span class="heb-inline">הכל מעלין לארץ ישראל</span>). Either spouse may issue the <em>ultimatum</em>: ascend with me, or receive a <em>get</em> (<span class="heb-inline">גט</span>). The <em>Rambam</em><a href="#fn8" id="ref8" class="footnote-ref">[8]</a> codifies the <em>pesak</em> in <em>Hilchos Ishus</em>. If no standing <em>mitzvah</em> exists, the halachic basis for this unusual <em>kefiyah</em> &mdash; which overrides the ordinary presumption against uprooting a spouse &mdash; disappears.</p>
+
+<h3>Travel Before Shabbos</h3>
+
+<p>The ordinary <em>halachah</em>, codified by the <em>Rambam</em> and the <em>Shulchan Aruch</em>,<a href="#fn9" id="ref9" class="footnote-ref">[9]</a> prohibits beginning a long-distance sea voyage within three days of <em>Shabbos</em> if it would predictably entail <em>chilul Shabbos</em>. For <em>aliyah l'Eretz Yisrael</em> an explicit exception is granted: one may set out even on <em>Erev Shabbos</em>. This <em>heter</em> is intelligible only on the premise that <em>aliyah</em> itself carries the halachic weight of a <em>mitzvah</em> grave enough to override the baseline restriction.</p>
+
+<h3>Mezuzah</h3>
+
+<p>The <em>Gemara</em> in <em>Menachos</em>,<a href="#fn10" id="ref10" class="footnote-ref">[10]</a> codified by the <em>Rambam</em> in <em>Hilchos Mezuzah</em>, draws a structural distinction: in <em>chutz la'aretz</em>, a renter has thirty days before becoming <em>chayav</em> in <em>mezuzah</em>; in <em>Eretz Yisrael</em>, the <em>chiyuv</em> is immediate. The <em>Gemara</em>'s reasoning: <em>yishuv Eretz Yisrael</em> is itself a <em>mitzvah</em>, and the immediate <em>chiyuv mezuzah</em> both anchors the new resident and ensures that, should he leave, the <em>mezuzah</em> remains in place to draw the next <em>yid</em> who will take the apartment. The <em>halachah</em> presupposes the <em>mitzvah</em>.</p>
+
+<h3>Issur Yetziah</h3>
+
+<p>The <em>Rambam</em> rules in <em>Hilchos Melachim</em><a href="#fn8" class="footnote-ref">[8]</a> that one may not leave <em>Eretz Yisrael</em> for <em>chutz la'aretz</em> except for narrow enumerated purposes &mdash; severe famine, marriage, or <em>talmud Torah</em> unavailable in the land. An <em>issur</em> of such force on <em>yetziah</em> is unintelligible if no corresponding <em>mitzvah</em> of <em>yeshivah</em> stands behind it.</p>
+
+<p>These four <em>halachos</em>, taken together, carry the <em>Ramban</em>'s argument: the body of practical <em>pesak</em> throughout <em>Shas</em> presupposes a standing <em>mitzvah</em> of <em>yishuv</em>, and the <em>pasuk</em> of <em>vishavtem bah</em> is its source.</p>
+
+<h2>V. The Rambam's Omission</h2>
+
+<p>The <em>Rambam</em>, in his enumeration of the <em>taryag mitzvos</em> (<span class="heb-inline">תרי&quot;ג מצות</span>) in <em>Sefer HaMitzvos</em>, omits <em>mitzvas yishuv Eretz Yisrael</em> from the count. The <em>Ramban</em> in his <em>hassagos</em><a href="#fn4" id="ref4" class="footnote-ref">[4]</a> places this omission at the head of his list of <em>mitzvos</em> the <em>Rambam</em> failed to include, restoring the <em>mitzvah</em> to the count and declaring it a <em>mitzvah noheges b'zman hazeh</em>. The question remains: on what grounds did the <em>Rambam</em> leave it out, and does the omission reflect a halachic position that there is no <em>mitzvah</em>, or only a structural feature of his count?</p>
+
+<h3>The Megillas Esther &mdash; and Its Refutation</h3>
+
+<p>The <em>Megillas Esther</em> on <em>Sefer HaMitzvos</em> &mdash; by <strong><em>Rabbi Yitzchak de Leon ibn Tzur</em></strong> (sixteenth century; the <em>sefer</em> first printed Venice 1592)<a href="#fn15" id="ref15" class="footnote-ref">[15]</a> &mdash; defends the <em>Rambam</em> at face value: in the <em>Rambam</em>'s view, the <em>mitzvah</em> of <em>yishuv</em> applied only during the era of the <em>Beis HaMikdash</em>; after the <em>churban</em>, the <em>mitzvah</em> lapsed. The <em>Megillas Esther</em>'s reading is the most ambitious attempt to take the <em>Rambam</em>'s silence at face value, and it is the historical anchor for every later <em>posek</em> who wished to argue that the <em>chiyuv</em> does not apply <em>b'zman hazeh</em>.</p>
+
+<p>The reading cannot be sustained against the <em>Rambam</em>'s own body of <em>pesak</em>. The <em>Rambam</em> himself rules &mdash; in <em>Hilchos Ishus</em> on <em>kefiyah</em> for <em>aliyah</em>, in <em>Hilchos Shabbos</em> on travel before <em>Shabbos</em> for the sake of <em>aliyah</em>, and in <em>Hilchos Mezuzah</em> on the immediate <em>chiyuv</em> in <em>Eretz Yisrael</em> &mdash; <em>pesakim</em> that are explicitly operative <em>b'zman hazeh</em>. Each is a direct refutation of the <em>Megillas Esther</em>'s reconstruction. <em>Rav Ovadia Yosef</em>, <em>zt&quot;l</em>, in <em>Shu&quot;t Yabia Omer</em>,<a href="#fn16" id="ref16" class="footnote-ref">[16]</a> rejects the <em>Megillas Esther</em> in characteristically forceful <em>lashon</em>: <em>&quot;dachu kol ha'acharonim es ha'Megillas Esther b'shtei yadayim&quot;</em> (<span class="heb-inline">דחו כל האחרונים את המגילת אסתר בשתי ידיים</span>) &mdash; all the <em>Acharonim</em> rejected him with both hands. The <em>Rambam</em>'s own <em>pesakim</em> settle the matter: the <em>Rambam</em> held the <em>mitzvah</em> applies <em>b'zman hazeh</em>. What remains is the narrower question of why he did not separately enumerate it.</p>
+
+<h3>The Umbrella-Mitzvah Resolution</h3>
+
+<p>The resolution adopted by the mainstream of <em>Acharonim</em> is structural rather than substantive. The <em>Rambam</em> does not separately enumerate <em>mitzvos</em> that are themselves <em>kollel</em> &mdash; umbrella categories under which many enumerated <em>mitzvos</em> sit. Where one <em>mitzvah</em> contains others, the <em>Rambam</em> counts the specific contained <em>mitzvos</em> and does not count the umbrella above them. <em>Yishuv Eretz Yisrael</em> is such an umbrella: it contains the entire <em>seder Zera'im</em> &mdash; <em>shemittah</em> (<span class="heb-inline">שמיטה</span>), <em>yoveil</em> (<span class="heb-inline">יובל</span>), <em>terumos u'ma'asros</em> (<span class="heb-inline">תרומות ומעשרות</span>), and the full set of <em>mitzvos ha'teluyos ba'aretz</em> (<span class="heb-inline">מצות התלויות בארץ</span>). The <em>Rambam</em> counts those; the umbrella he does not separately count. The omission is formal, not substantive.</p>
+
+<h3>The Rambam's Own Visit to Eretz Yisrael</h3>
+
+<p>A further proof is adduced from the <em>Rambam</em>'s own personal conduct. The <em>Sefer Chareidim</em> &mdash; by <em>Rabbi Elazar Azkari</em>, <em>zt&quot;l</em> (1533&ndash;1600, <em>Tzfas</em>; member of the kabbalistic circle of <em>Tzfas</em>; author also of the <em>piyut</em> <em>Yedid Nefesh</em>) &mdash; preserves a letter of the <em>Rambam</em><a href="#fn11" id="ref11" class="footnote-ref">[11]</a> in which the <em>Rambam</em> records that he set foot in <em>Eretz Yisrael</em> at <em>Akko</em> (<span class="heb-inline">עכו</span>) on <em>gimmel Sivan</em> and establishes that day as a permanent <em>yom tov</em> for his family: a <em>mishteh</em>, abstention from <em>melachah</em>, and festive demeanor across generations. The historical record is that the <em>Rambam</em> did not settle in <em>Eretz Yisrael</em> &mdash; he continued to Egypt, where he lived and died &mdash; but the force of the <em>raya</em> is undiminished. A <em>yid</em> who establishes a permanent family <em>yom tov</em> upon arrival in the land plainly holds the <em>mitzvah</em> of <em>yishuv</em> to be of the gravest order.</p>
+
+<h2>VI. The Dissenting Shitah &mdash; Rabbeinu Chaim HaKohen</h2>
+
+<p>Intellectual honesty requires acknowledging the <em>Rishonim</em> who diverged. <em>Tosafos</em> at the close of <em>Kesubos</em><a href="#fn12" id="ref12" class="footnote-ref">[12]</a>, on the <em>sugya</em> of compelling a spouse to make <em>aliyah</em>, cites <strong><em>Rabbeinu Chaim HaKohen</em></strong> &mdash; a <em>talmid</em> of <em>Rabbeinu Tam</em>, twelfth-century France: <em>&quot;b'zman hazeh einah mitzvah ladur b'Eretz Yisrael&quot;</em> (<span class="heb-inline">בזמן הזה אינה מצוה לדור בארץ ישראל</span>). The reasoning rests on two concerns:</p>
+
+<ol>
+  <li><em>Sakanas ha'derachim</em> (<span class="heb-inline">סכנת הדרכים</span>) &mdash; the perils of twelfth-century travel and of life in <em>Eretz Yisrael</em> under hostile governance.</li>
+  <li><em>Chashash kishalon</em> in <em>mitzvos ha'teluyos ba'aretz</em> &mdash; the concern that a <em>yid</em> unaccustomed to <em>terumos u'ma'asros</em>, <em>shemittah</em>, and <em>yoveil</em> will stumble.</li>
+</ol>
+
+<h3>The Forgery Argument</h3>
+
+<p>Beginning in the fifteenth and sixteenth centuries, a cluster of major <em>poskim</em> &mdash; the <em>Maharit</em>,<a href="#fn13" id="ref13" class="footnote-ref">[13]</a> the <em>Mabit</em>, the <em>Rashbash</em>, and the <em>Rashbatz</em> &mdash; argue, on internal grounds and on an external <em>mesorah</em>, that this <em>Tosafos</em>'s citation of <em>Rabbeinu Chaim HaKohen</em> is a <em>talmid toeh</em> (<span class="heb-inline">תלמיד טועה</span>) interpolation and does not represent <em>Rabbeinu Chaim HaKohen</em>'s actual position. The classical <em>mekor</em> for the forgery argument is <em>Shu&quot;t Maharit</em> on <em>Yoreh De'ah</em>; <em>Rav Ovadia Yosef</em> in <em>Yabia Omer</em> adopts the position of these <em>poskim</em>.</p>
+
+<p>The substantive objection reinforces the textual: the <em>purpose</em> of a <em>yid</em>'s halachic life is to fulfill as many <em>mitzvos</em> as possible &mdash; <em>&quot;ratzah HaKadosh Baruch Hu l'zakos es Yisrael, l'fichach hirbah lahem Torah u'mitzvos&quot;</em> (<span class="heb-inline">רצה הקדוש ברוך הוא לזכות את ישראל, לפיכך הרבה להם תורה ומצות</span>). An argument that would deprive <em>klal Yisrael</em> of the opportunity to fulfill the many <em>mitzvos ha'teluyos ba'aretz</em> on the ground that an individual <em>yid</em> might stumble has struck many <em>poskim</em> as inverted on its face.</p>
+
+<h3>Reliance on This Shitah in the Vayoel Moshe</h3>
+
+<p>The <em>Satmar Rav</em>, <em>zt&quot;l</em>, in <em>Vayoel Moshe</em><a href="#fn23" id="ref23" class="footnote-ref">[23]</a> &mdash; the single most extended halachic-ideological treatment of the <em>sugya</em> from the opposing side &mdash; leans heavily on this <em>Rabbeinu Chaim HaKohen</em> as a central <em>Rishon</em>-source. The reliance is precarious given the cluster of <em>poskim</em> rejecting the citation as a <em>talmid toeh</em> interpolation. The deeper halachic foundation of the <em>Vayoel Moshe</em>'s position rests not on this <em>Tosafos</em> but on the <em>sugya</em> of the <em>shalosh shevu'os</em> (treated below in Section VII).</p>
+
+<h2>VII. The Shalosh Shevu'os</h2>
+
+<p>The <em>sugya</em> of the <em>shalosh shevu'os</em> &mdash; the three oaths at the close of <em>Kesubos</em><a href="#fn25" id="ref25" class="footnote-ref">[25]</a> &mdash; is the independent foundation of the position against contemporary mass <em>aliyah</em>. <em>Rabbi Yosi b'Rabbi Chanina</em> teaches in the <em>Gemara</em> that <em>HaKadosh Baruch Hu</em> adjured <em>klal Yisrael</em> with three oaths: that they not ascend <em>b'chomah</em> (<span class="heb-inline">בחומה</span>), that is, as an armed collective; that they not rebel against the nations of the world; and (the parallel oath) that the nations not oppress <em>Yisrael</em> excessively. These oaths were the halachic ground of the classical <em>Satmar</em> position that any collective <em>aliyah</em> absent clear <em>mashiach</em>-markers violates a <em>shevu'ah</em>.</p>
+
+<p>The <em>Ramban</em> himself, in his <em>hassagos</em> to the <em>Rambam</em>'s <em>Sefer HaMitzvos</em>, treats the <em>shevu'os</em> as a limitation on manner, not on the <em>mitzvah</em> itself: the oaths restrict the mode of return (not <em>b'chomah</em>) but do not abrogate the standing <em>mitzvah</em> of individual <em>yeshivah</em>.</p>
+
+<p>The decisive halachic treatment in the <em>Acharonim</em> is that of the <strong><em>Avnei Nezer</em></strong>,<a href="#fn26" id="ref26" class="footnote-ref">[26]</a> <em>Yoreh De'ah</em> 454. Several <em>yesodos</em> emerge from the <em>teshuvah</em>:</p>
+
+<ul>
+  <li>The <em>shevu'os</em> are conditional &mdash; mutually binding on <em>klal Yisrael</em> and on the nations. The oath that the nations not oppress <em>Yisrael</em> excessively was violated continuously by the nations; a conditional <em>shevu'ah</em> whose counter-condition has been violated is <em>batel</em>.</li>
+  <li>The oath against ascending <em>b'chomah</em> prohibits collective armed revolt against the ruling power of the land; it does not prohibit individual <em>aliyah</em>, nor does it prohibit communal purchase, settlement, and development with the permission of the governing authority.</li>
+  <li>The <em>Avnei Nezer</em> rules affirmatively that the <em>mitzvah</em> of <em>yishuv</em> is a full <em>chiyuv</em> upon the <em>yachid</em> in <em>zman hazeh</em>, and that no <em>shevu'ah</em>-based <em>petur</em> stands.</li>
+</ul>
+
+<p>The <em>Avnei Nezer</em>'s resolution is adopted, with variations, by the mainstream of post-<em>churban</em> <em>poskim</em>. <em>Rav Yissachar Shlomo Teichtal</em>, <em>zt&quot;l</em>, in <em>Eim HaBanim Semeichah</em><a href="#fn27" id="ref27" class="footnote-ref">[27]</a> &mdash; a <em>sefer</em> composed in Budapest in the final years of the <em>Churban Europa</em> by a <em>talmid</em> of the <em>Munkatcher</em> school who publicly reversed his earlier position &mdash; builds upon the <em>Avnei Nezer</em> and marshals the full force of <em>Chazal</em>'s <em>aggados</em> on the <em>ma'alas Eretz Yisrael</em> as a direct halachic challenge to the Hungarian-chassidish position of his teachers. The <em>sefer</em> is cited here not as a <em>pesak</em> that settles the <em>sugya</em> but as the paradigmatic internal reversal from within the chassidish world against the <em>Satmar</em> position; a halachic survey that cites <em>Vayoel Moshe</em> owes its reader the <em>Eim HaBanim Semeichah</em> in the same breath.</p>
+
+<h2>VIII. The Terumas HaDeshen &mdash; Historical Qualification</h2>
+
+<p>The <strong><em>Terumas HaDeshen</em></strong><a href="#fn14" id="ref14" class="footnote-ref">[14]</a> &mdash; <em>Rabbi Yisrael Isserlein</em>, c. 1390&ndash;1460, Austria &mdash; responded to an inquiry from <em>Eretz Yisrael</em>: is the <em>mitzvah</em> of <em>yishuv Eretz Yisrael</em> fulfilled? His answer: yes, in full. The questioner then pressed: why, then, does the <em>Terumas HaDeshen</em> not himself bring his <em>yeshivah</em> and his <em>talmidim</em> over? The reply is historically revealing. The <em>Terumas HaDeshen</em> writes that the <em>Ashkenazim</em> who made <em>aliyah</em> in his era &mdash; the fifteenth century &mdash; suffered persecution not only from the surrounding <em>Yishmaelim</em> but also from the long-established <em>Sefardi</em> <em>kehillah</em> in <em>Yerushalayim</em>, where the arrival of newcomers from northern Europe disrupted settled arrangements. The <em>Terumas HaDeshen</em> notes the condition as <em>&quot;kayadu'a&quot;</em> (<span class="heb-inline">כידוע</span>).</p>
+
+<p>This is <em>sakanah</em> of a different register from <em>Rabbeinu Chaim HaKohen</em>'s &mdash; a social-political <em>sakanah</em> rather than a <em>sakanas ha'derachim</em> &mdash; but the structural shape of the ruling is the same: the <em>mitzvah</em> exists in full; the conditions of his generation produced a specific <em>petur</em> for his specific situation. The <em>Terumas HaDeshen</em>'s <em>teshuvah</em> is a historical artifact of fifteenth-century conditions; the conditions it describes do not obtain today, and the <em>petur</em> it extracted falls away with them.</p>
+
+<h2>IX. Chazal on the Ma'alah of the Land</h2>
+
+<p>The <em>Ramban</em>'s <em>pesak</em> rests not only on the <em>pesukim</em> and the <em>halachos</em> but on the aggadic literature of <em>Chazal</em> on the <em>ma'alah</em> of life in <em>Eretz Yisrael</em>. Three loci bear directly on the <em>sugya</em>.</p>
+
+<h3>Kol HaDar b'Chutz La'aretz &mdash; Kemi She'ein Lo Elokah</h3>
+
+<p>The <em>Gemara</em> at the close of <em>Kesubos</em><a href="#fn7" class="footnote-ref">[7]</a>:</p>
+
+<blockquote>
+  <div class="heb">כׇּל הַדָּר בְּחוּצָה לָאָרֶץ &mdash; כְּמִי שֶׁאֵין לוֹ אֱלוֹקַּ.</div>
+  <div class="trans">Anyone who dwells outside the Land &mdash; it is as if he has no <em>Elokim</em>.</div>
+  <div class="source"><em>Kesubos</em> 110b</div>
+</blockquote>
+
+<p>The <em>lashon</em> is startling &mdash; a <em>yid</em> in <em>chutz la'aretz</em> remains, of course, a <em>yid</em> who serves the same <em>Ribbono shel Olam</em> as the <em>yid</em> in <em>Eretz Yisrael</em>. The <em>Ramban</em> and his <em>talmid</em> the <em>Rashba</em> develop the <em>sugya</em> at length. The structural principle is that every land and every nation receives its <em>shefa</em> through a <em>sar</em> (<span class="heb-inline">שר</span>) &mdash; a specific <em>malach</em> appointed over that land. <em>Yidden</em> in <em>Eretz Yisrael</em> are under the direct <em>hashgachah</em> of <em>HaKadosh Baruch Hu</em>; <em>yidden</em> in <em>chutz la'aretz</em> receive the <em>shefa</em> through intermediate conduits. The <em>Gemara</em>'s <em>lashon</em> captures the <em>mediated</em> character of the connection &mdash; not <em>chas v'shalom</em> an absence of <em>Elokim</em> but a less direct experience of His presence.</p>
+
+<h3>Four Amos b'Eretz Yisrael</h3>
+
+<p>The <em>Gemara</em>, on the same <em>amud</em>: <em>&quot;kol ha'mehalech arba amos b'Eretz Yisrael, harei hu ben olam haba&quot;</em> (<span class="heb-inline">כל המהלך ארבע אמות בארץ ישראל הרי הוא בן עולם הבא</span>) &mdash; one who walks four <em>amos</em> in the land has a share in <em>olam haba</em>. The <em>Ramban</em> brings a parallel teaching: even a <em>shifchah</em> (<span class="heb-inline">שפחה</span>) &mdash; a maidservant unschooled in <em>Torah</em> &mdash; has a portion in <em>olam haba</em> solely by virtue of residing in <em>Eretz Yisrael</em>. The <em>Ramban</em>'s argument from these teachings is a <em>kol she'kein</em>: <em>Chazal</em> do not speak this way of the land unless its <em>yeshivah</em> is a <em>mitzvah</em> of the first order.</p>
+
+<h3>The Sifri at Platia</h3>
+
+<p>The <em>Sifri</em><a href="#fn21" id="ref21" class="footnote-ref">[21]</a> on <em>Parshas Re'eh</em> records a <em>ma'aseh</em>: four <em>Tannaim</em> &mdash; <em>Rabbi Yehudah ben Beseira</em>, <em>Rabbi Masya ben Charash</em>, <em>Rabbi Chananiah ben Achi Rabbi Yehoshua</em>, and <em>Rabbi Yonasan</em> &mdash; traveled to a place called <em>Platia</em> (<span class="heb-inline">פלטיא</span>) on the border of <em>Eretz Yisrael</em>. As they crossed the border outward, they lifted their eyes, wept until their cheeks were full of tears, tore their garments, and recited the <em>pasuk</em> <em>&quot;virishtem osah vishavtem bah&quot;</em>, declaring:</p>
+
+<blockquote>
+  <div class="heb">יְשִׁיבַת אֶרֶץ יִשְׂרָאֵל שְׁקוּלָה כְּנֶגֶד כׇּל הַמִּצְוֹת שֶׁבַּתּוֹרָה.</div>
+  <div class="trans">Dwelling in <em>Eretz Yisrael</em> is equivalent to all the <em>mitzvos</em> in the <em>Torah</em>.</div>
+  <div class="source"><em>Sifri</em>, <em>Parshas Re'eh</em></div>
+</blockquote>
+
+<p>Few <em>mitzvos</em> in the <em>Torah</em> receive this designation. The <em>Ramban</em> brings the <em>Sifri</em> as a central proof for his position; the line stands among the most-cited <em>Chazal</em> texts on the <em>ma'alas Eretz Yisrael</em>.</p>
+
+<h2>X. The Ramban's Mesiras Nefesh &mdash; From Barcelona to Akko</h2>
+
+<p>The <em>Ramban</em>'s halachic position is reinforced by the arc of his own life &mdash; the <em>Ramban</em> is one of the <em>Rishonim</em> whose personal conduct bore most consequential testimony to his <em>pesak</em>. A sketch of the arc follows; the full biographical treatment is in the standard literature.</p>
+
+<p><em>Rabbeinu Moshe ben Nachman</em> was born in <em>Girona</em>, Catalonia, around 1194 and died c. 1270. He stood as <em>rav</em>, <em>posek</em>, philosopher, <em>mekubal</em>, and <em>rofei</em> &mdash; one of the supreme <em>Rishonim</em> of the age.</p>
+
+<h3>The Barcelona Disputation</h3>
+
+<p>In <em>Tammuz</em> 1263, <em>King James I of Aragon</em> summoned the <em>Ramban</em> to a public <em>vikuach</em> (<span class="heb-inline">ויכוח</span>) with the apostate <strong>Pablo Christiani</strong>, in the presence of king, ministers, clergy, and the head of the Dominican Order (Raymond of Penyafort). Four consecutive days. The <em>Ramban</em> documented the entire disputation in his <em>Sefer HaVikuach</em><a href="#fn5" id="ref5" class="footnote-ref">[5]</a>. He emerged, by his own record, the clear victor, and made public <em>la'ag</em> (<span class="heb-inline">לעג</span>) of the Christian claims. The king personally acknowledged the <em>Ramban</em>'s victory and, the <em>Shabbos</em> following, appeared in the main synagogue of Barcelona and addressed the <em>kehal</em>; the <em>Ramban</em> rose to respond respectfully but firmly, and the king embraced him and gave him three hundred dinar.</p>
+
+<h3>The Flight and the Arrival at Akko</h3>
+
+<p>Two years later the <em>Ramban</em>'s <em>talmidim</em> circulated the <em>Sefer HaVikuach</em>. The Christian authorities, scandalized, demanded his prosecution. The king deflected the pressure; the matter escalated to <em>Pope Clement IV</em>, who issued an order requiring the <em>Ramban</em>'s appearance to stand trial for <em>la'ag</em> on the Christian claims. Most historians read the record as establishing that the <em>Ramban</em> understood he could not expect to survive the trial. He fled.</p>
+
+<p>The <em>Ramban</em> arrived in <em>Eretz Yisrael</em> in 1267, landing at <em>Akko</em>. From <em>Akko</em> he traveled to <em>Yerushalayim</em>, where he built the <em>beis haknesses</em> known thereafter as the <em>Beis Haknesses HaRamban</em> and gave decisive <em>koach</em> to the renewal of Jewish <em>yishuv</em> in the city. In 1972, archaeologists in <em>Eretz Yisrael</em> recovered the <em>Ramban</em>'s personal seal<a href="#fn24" id="ref24" class="footnote-ref">[24]</a>, bearing the inscription <em>&quot;Rabbeinu Moshe ben Nachman&quot;</em> &mdash; one of the most significant material artifacts of the era of the <em>Rishonim</em>; it is on display at the Israel Museum.</p>
+
+<h3>The Derashas Rosh HaShanah at Akko</h3>
+
+<p>On the first <em>Rosh HaShanah</em> after his arrival &mdash; traditionally dated to <em>Rosh HaShanah</em> 5028, autumn 1267, in <em>Akko</em> &mdash; the <em>Ramban</em> delivered the <em>Derashas Rosh HaShanah</em><a href="#fn6" id="ref6" class="footnote-ref">[6]</a>. The <em>derashah</em> is preserved in his collected <em>derashos</em> and runs to tens of printed pages. In its course the <em>Ramban</em> reiterates his <em>pesak</em>: there is a <em>mitzvah</em> on every <em>yid</em> to come to <em>Eretz Yisrael</em>, and living there raises the <em>yid</em> to a far higher <em>madreigah</em> (<span class="heb-inline">מדרגה</span>). He turns autobiographical: he describes his <em>mitzvah</em>-driven commitment as the motive for leaving Spain, invokes the <em>Gemara</em> in <em>Eiruvin</em><a href="#fn22" id="ref22" class="footnote-ref">[22]</a> on <em>talmidei chachamim</em> who become <em>&quot;achzarim al b'neihem ka'orev&quot;</em> (<span class="heb-inline">אכזרים על בניהם כעורב</span>) in pursuit of <em>Torah</em>, and writes openly of his separation from his wife and children in Spain: he had come, in his own <em>lashon</em>, <em>l'chasos b'tzel immi</em> (<span class="heb-inline">לחסות בצל אמי</span>) &mdash; to shelter in the bosom of his mother, that is, in <em>Eretz Yisrael</em>. The <em>derashah</em> is among the most personal <em>Torah</em>-texts the <em>Rishonim</em> bequeathed.</p>
+
+<h2>XI. The Modern Acharonim and the Twentieth-Century Poskim</h2>
+
+<p>The arc from the <em>Ramban</em> and the <em>Rambam</em> through the <em>Acharonim</em> to the post-1948 <em>poskim</em> is dense; a halachic survey can mark only its principal stations.</p>
+
+<h3>The Chasam Sofer and the Minchas Chinuch</h3>
+
+<p>The <strong><em>Chasam Sofer</em></strong>,<a href="#fn28" id="ref28" class="footnote-ref">[28]</a> in his <em>teshuvos</em> on <em>Yoreh De'ah</em> and in his <em>drashos</em>, rules with the <em>Ramban</em> that the <em>mitzvah</em> of <em>yishuv Eretz Yisrael</em> is a <em>mitzvah noheges b'zman hazeh</em>. His position bridges the classical and modern eras and is a central <em>mekor</em> for every nineteenth-century <em>posek</em> on the <em>sugya</em>. The <strong><em>Minchas Chinuch</em></strong><a href="#fn29" id="ref29" class="footnote-ref">[29]</a>, in his treatment of the <em>mitzvah</em> &mdash; placed in the structural tradition of <em>Sefer HaChinuch</em> &mdash; follows the <em>Ramban</em>'s enumeration and develops the halachic implications in <em>sefer hamitzvos</em>-register.</p>
+
+<h3>Rav Avraham Yitzchak HaKohen Kook, zt&quot;l</h3>
+
+<p><em>Rav Avraham Yitzchak HaKohen Kook</em>, <em>zt&quot;l</em> (1865&ndash;1935; <em>talmid</em> of <em>Rav Naftali Zvi Yehudah Berlin</em> at <em>Volozhin</em>; first Ashkenazi Chief Rabbi of <em>Eretz Yisrael</em> from 1921) held a position of radical <em>ahavas Eretz Yisrael</em> within the halachic tradition. His correspondence &mdash; collected in <em>Igros HaRaayah</em><a href="#fn19" id="ref19" class="footnote-ref">[19]</a> &mdash; contains a famous reply to the <strong><em>Ridvaz</em></strong> &mdash; <em>Rabbi Yaakov Dovid Willowsky</em>, <em>zt&quot;l</em> (1845&ndash;1913, author of the <em>Ridvaz</em> commentary on the <em>Yerushalmi</em>; settled in <em>Tzfas</em> in 1903) &mdash; who had accused <em>Rav Kook</em>, in the context of the <em>heter mechirah</em> debate of <em>shemittah</em> 5670, of having &quot;become a Zionist.&quot; <em>Rav Kook</em>'s reply, in substance:</p>
+
+<blockquote>
+  <em>If to be a &quot;Zionist&quot; means to follow the <em>Gemara</em> &mdash; which teaches that a <em>shifchah</em> living in <em>Eretz Yisrael</em> has more direct connection to <em>HaKadosh Baruch Hu</em> than a <em>yid</em> in <em>chutz la'aretz</em>, that four <em>amos</em> in the land bring one to <em>olam haba</em>, and that (per the <em>Yerushalmi</em><a href="#fn20" id="ref20" class="footnote-ref">[20]</a>) one who dwells in the land and eats <em>chulin b'taharah</em> is as if he has fulfilled the whole <em>Torah</em> &mdash; then that is the <em>Gemara</em>'s own position, and I will wear it as a badge of honor.</em>
+  <div class="source" style="margin-top:8px;font-size:13.5px;color:#b8860b;">Paraphrased in substance from <em>Igros HaRaayah</em>, correspondence of the <em>shemittah</em> debate of 5670 (1909&ndash;10); for the specific <em>igros</em> see note <a href="#fn19">[19]</a>.</div>
+</blockquote>
+
+<p>In the same correspondence, <em>Rav Kook</em> develops the position that even the secular <em>yidden</em> engaged in the building of the <em>yishuv</em> participate, at some level, in the <em>mitzvah</em> itself &mdash; a position controversial in the <em>chareidi</em> world of his day and ours, and one which must be understood on its own terms rather than caricatured. The reader is referred to the <em>Igros</em> themselves for the full development.</p>
+
+<h3>Rav Teichtal and Eim HaBanim Semeichah</h3>
+
+<p>The treatment of the <em>shalosh shevu'os</em> above (Section VII) already brought <em>Rav Yissachar Shlomo Teichtal</em>, <em>zt&quot;l</em>, and <em>Eim HaBanim Semeichah</em>.<a href="#fn27" class="footnote-ref">[27]</a> The <em>sefer</em> deserves placement here as well: for a halachic survey that cites the <em>Vayoel Moshe</em>, the parallel voice from within the Hungarian-chassidish world &mdash; a <em>posek</em> who publicly reversed his earlier position and marshaled the <em>Ramban</em>, the <em>Avnei Nezer</em>, and the body of <em>Chazal</em>'s aggadic material in defense of contemporary <em>aliyah</em> &mdash; stands as a necessary counterweight within the same cultural register.</p>
+
+<h3>Rav Moshe Feinstein, zt&quot;l &mdash; Mitzvah Kiyumis</h3>
+
+<p><em>Rav Moshe Feinstein</em>, <em>zt&quot;l</em>, in <em>Shu&quot;t Igros Moshe</em>,<a href="#fn17" id="ref17" class="footnote-ref">[17]</a> rules with the mainstream that the <em>mitzvah</em> of <em>yishuv</em> is a <em>mitzvah</em> &mdash; the many <em>halachos</em> in <em>Orach Chaim</em>, <em>Even HaEzer</em>, and <em>Yoreh De'ah</em> that presuppose it leave no room to deny it &mdash; and introduces a structural <em>chiddush</em> on the character of the <em>chiyuv</em>. His <em>yesod</em>: <em>mitzvas yishuv Eretz Yisrael</em> is a <em>mitzvah kiyumis</em> (<span class="heb-inline">מצוה קיומית</span>), not a <em>mitzvah chiyuvis</em> (<span class="heb-inline">מצוה חיובית</span>).</p>
+
+<p>The structural analogy is to <em>tzitzis</em> at the <em>de'oraisa</em> level: a <em>yid</em> is not under absolute <em>chiyuv</em> to wear a four-cornered <em>beged</em>; <em>if</em> he does so, the <em>chiyuv</em> of attaching <em>tziztzis</em> triggers. On <em>Rav Moshe</em>'s reading, <em>mitzvas yishuv Eretz Yisrael</em> operates on the same structural principle: <em>if</em> a <em>yid</em> is in <em>Eretz Yisrael</em>, he is <em>mekayem</em> a <em>mitzvah de'oraisa</em>; he is not under absolute obligation to relocate. The <em>chiddush</em> establishes a halachic framework within which an American <em>yid</em> who does not make <em>aliyah</em> is not a <em>mevatel aseh</em> &mdash; a reading that bore directly on the self-understanding of the mid-twentieth-century American <em>chareidi</em> world. The position is contested; the <em>Tzitz Eliezer</em> treats it below.</p>
+
+<h3>The Chazon Ish</h3>
+
+<p>The <strong><em>Chazon Ish</em></strong>, in positions attributed to him by his <em>talmidim</em>, is reported to have held a related structural distinction: there is a <em>mitzvah</em> of <em>ha'achzakah</em> (<span class="heb-inline">החזקה</span>) of <em>yishuv</em> &mdash; of strengthening and maintaining Jewish settlement in the land &mdash; which operates somewhat independently of a per-<em>yachid</em> <em>chiyuv</em> to make <em>aliyah</em>. The structural resonance with <em>Rav Moshe</em>'s <em>kiyumis</em>/<em>chiyuvis</em> framing is suggestive; the two <em>poskim</em> stand together as the twentieth-century <em>mesorah</em> that treated the <em>yachid</em>'s <em>chiyuv aliyah</em> as a <em>kiyum</em> rather than an unconditional affirmative obligation.</p>
+
+<h3>Rav Yosef Dov Soloveitchik, zt&quot;l &mdash; Kol Dodi Dofek</h3>
+
+<p>The <em>Rav</em>, <em>zt&quot;l</em>, in <em>Kol Dodi Dofek</em>,<a href="#fn30" id="ref30" class="footnote-ref">[30]</a> develops a position that the events of 1948 constitute a <em>dofek</em> &mdash; a knock of the <em>Dod</em> &mdash; to which <em>klal Yisrael</em> is halachically required to respond. The <em>Rav</em>'s treatment of the <em>mitzvah</em> is distinctive: he recognizes the halachic weight of the <em>sheish defikos</em> (six knocks) and the standing <em>mitzvah</em> of <em>yishuv</em>, while declining to translate them into a straightforward <em>chiyuv aliyah</em> upon every <em>yachid</em> in <em>galus</em>. The <em>Rav</em>'s shape is intermediate between <em>Rav Moshe</em>'s <em>kiyumis</em> framing and the <em>Tzitz Eliezer</em>'s unqualified <em>chiyuv</em>; the reader is referred to <em>Kol Dodi Dofek</em> itself for the full development.</p>
+
+<h3>The Tzitz Eliezer &mdash; After 1948</h3>
+
+<p>The <strong><em>Tzitz Eliezer</em></strong><a href="#fn18" id="ref18" class="footnote-ref">[18]</a> &mdash; <em>Rav Eliezer Yehuda Waldenberg</em>, <em>zt&quot;l</em> (1915&ndash;2006, <em>Yerushalayim</em>; <em>dayan</em> on the <em>Beis Din HaGadol</em> of the Israeli <em>Rabbanus</em>) &mdash; disagrees with <em>Rav Moshe</em>. His position: <em>mitzvas yishuv Eretz Yisrael</em> is a full <em>mitzvah chiyuvis</em> upon every <em>yachid</em>, with an additional collective dimension upon <em>klal Yisrael</em> through <em>koach ha'rabim</em> (<span class="heb-inline">כח הרבים</span>) &mdash; the strength of <em>yishuv</em> deriving from the aggregate numbers of <em>yidden</em> in the land.</p>
+
+<p>The decisive <em>chiddush</em>: after 1948, the historical <em>peturim</em> cited by earlier <em>Acharonim</em> &mdash; <em>sakanas ha'derachim</em>, hostile governance, restrictive Ottoman arrangements, intra-communal friction &mdash; no longer obtain. The State of Israel actively welcomes Jewish settlement; <em>nefesh b'nefesh</em> and other programs subsidize <em>aliyah</em>; the dangers of the past are gone. The <em>Tzitz Eliezer</em> writes that no <em>petur</em> survives the changed conditions. Every <em>yachid</em> who can make <em>aliyah</em> is under a full <em>chiyuv</em> to do so.</p>
+
+<h2>XII. The Question of the Modern Gedolim</h2>
+
+<p>A question that cannot be sidestepped: on the position of the <em>Ramban</em> and the <em>Tzitz Eliezer</em>, why did many of the great <em>gedolim</em> of the twentieth century who had the capacity to make <em>aliyah</em> not do so? <em>Rav Moshe</em>, <em>Rav Aharon Kotler</em>, the <em>Rav</em>, the <em>Satmar Rav</em> &mdash; the question stands against each.</p>
+
+<p>The <em>sugya</em> admits several candidate <em>mehalchim</em>, which a halachic survey can at least name without pretending to adjudicate among them:</p>
+
+<ul>
+  <li><strong><em>Harbatzas Torah</em> as <em>oness</em></strong>. The classical <em>heter</em> of <em>talmud Torah</em> unavailable elsewhere is codified by the <em>Rambam</em> himself in <em>Hilchos Melachim</em>; a <em>gadol</em> whose capacity to build <em>Torah</em> is tied to a specific <em>kehillah</em> in <em>chutz la'aretz</em> may fall within the category.</li>
+  <li><strong><em>Rav Moshe</em>'s own <em>kiyumis</em> framing</strong>. On his own halachic position, the absence of <em>chiyuv</em> for the <em>yachid</em> to relocate is dispositive; the question does not even arise.</li>
+  <li><strong>The <em>Chazon Ish</em>'s <em>ha'achzakah</em> framing</strong>. A <em>gadol</em> whose influence materially strengthens the <em>yishuv</em> from abroad &mdash; through <em>tzedakah</em>, <em>talmidim</em>, infrastructure, and <em>pesak</em> &mdash; may be fulfilling the <em>chelek</em> of <em>she'lo neizvennah</em> on a collective level.</li>
+  <li><strong>Personal <em>sakanah</em> and family circumstance</strong>. The <em>Terumas HaDeshen</em>-type exception is available in principle; a <em>yachid</em>'s halachic situation may generate a <em>petur</em> that does not generalize.</li>
+  <li><strong>The <em>Satmar</em> position</strong> &mdash; where <em>shalosh shevu'os</em> is understood as still binding and <em>Vayoel Moshe</em>'s halachic reading is accepted on its own terms.</li>
+</ul>
+
+<p>None of these resolves the question definitively; each is a position within the <em>sugya</em>. The purpose of naming them is to replace the appearance of a shrug with the shape of the actual <em>machlokes</em>.</p>
+
+<h2>XIII. Three Shitos in Brief</h2>
+
+<p>The <em>sugya</em>, reduced to its three principal <em>shitos</em>:</p>
+
+<ol>
+  <li><strong>The <em>Ramban</em></strong> &mdash; <em>mitzvah de'oraisa</em>, operative in every generation, upon every <em>yid</em>. Three <em>chalakim</em>: <em>kibbush</em>, <em>yeshivah</em>, and <em>she'lo neizvennah be'yad zulasenu</em>. Followed by the <em>Chasam Sofer</em>, the <em>Minchas Chinuch</em>, the <em>Avnei Nezer</em>, <em>Rav Teichtal</em>, <em>Rav Kook</em>, <em>Rav Ovadia Yosef</em>, and the <em>Tzitz Eliezer</em>, with the <em>Tzitz Eliezer</em> adding that no <em>petur</em> survives the post-1948 conditions.</li>
+  <li><strong>The <em>Rambam</em></strong> (as read by the mainstream of <em>Acharonim</em> after refuting the <em>Megillas Esther</em>) &mdash; agrees there is a <em>mitzvah noheges b'zman hazeh</em>; declines to separately enumerate it because it is an umbrella containing the <em>mitzvos ha'teluyos ba'aretz</em>. On <em>Rav Moshe</em>'s reading, the <em>chiyuv</em> is <em>kiyumis</em> rather than <em>chiyuvis</em>: triggered by presence in the land, not standing as an unconditional affirmative obligation to relocate.</li>
+  <li><strong><em>Rabbeinu Chaim HaKohen</em></strong> (as cited in <em>Tosafos</em>) &mdash; no <em>mitzvah</em> in <em>zman hazeh</em>, due to <em>sakanas ha'derachim</em> and <em>chashash kishalon</em> in the <em>mitzvos ha'teluyos ba'aretz</em>. Rejected by the cluster of fifteenth- and sixteenth-century <em>poskim</em> as a <em>talmid toeh</em> interpolation. The <em>Satmar</em> position's reliance on this <em>Tosafos</em>, as developed in <em>Vayoel Moshe</em>, inherits the textual difficulty; the firmer foundation for that position is the <em>shalosh shevu'os</em> treated in Section VII, which the <em>Avnei Nezer</em> resolves.</li>
+</ol>
+
+<h2>XIV. Practical Maskana &mdash; The Yachid in Chutz La'aretz</h2>
+
+<p>What follows for the <em>yachid</em> in <em>chutz la'aretz</em> today? On the <em>Tzitz Eliezer</em>'s reading, the full <em>chiyuv</em> stands and the <em>yachid</em> who can make <em>aliyah</em> is halachically required to do so. On <em>Rav Moshe</em>'s reading, no absolute obligation attaches; <em>aliyah</em> remains a <em>mitzvah kiyumis</em> of the first order, and a <em>yid</em> who can make <em>aliyah</em> ought to pursue it, but the halachic weight falls short of unconditional <em>chiyuv</em>. On either reading, a <em>yachid</em> who does not make <em>aliyah</em> is left with a positive halachic question: how does he participate in the <em>mitzvah</em>?</p>
+
+<p>The <em>poskim</em> describe several alternative modes of participation, each of which stands as a <em>ma'aseh mitzvah</em> rather than as a mere <em>hiddur</em>, on the strength of the <em>Ramban</em>'s third <em>chelek</em> of <em>she'lo neizvennah be'yad zulasenu</em>:</p>
+
+<ul>
+  <li><strong>Purchasing property in <em>Eretz Yisrael</em></strong>. A <em>yachid</em> who cannot physically relocate but who purchases a residence &mdash; even a modest one, used three or four times a year &mdash; participates concretely in the <em>chelek</em> of not abandoning the land. The <em>eitzah</em> is standard among the <em>poskim</em> who treat the practical implications of the <em>mitzvah</em>.</li>
+  <li><strong>Material and financial support of <em>yidden</em> in <em>Eretz Yisrael</em></strong>. The strengthening of the <em>yishuv</em> from without &mdash; through <em>tzedakah</em> directed to <em>mosdos</em>, families, and <em>yishuvim</em> under pressure &mdash; is itself <em>yishuv Eretz Yisrael</em>. On the <em>Chazon Ish</em>'s framing of <em>ha'achzakah</em>, this is the central <em>kiyum</em> available to a <em>yachid</em> abroad.</li>
+  <li><strong>Short-term and repeated visits</strong>. On the <em>Gemara</em>'s teachings &mdash; the four <em>amos</em>, the <em>shifchah</em>'s portion in <em>olam haba</em> &mdash; even time spent in the land carries halachic significance; the <em>yachid</em> who travels to <em>Eretz Yisrael</em> for <em>yom tov</em>, for <em>simchos</em>, for extended periods of <em>limmud</em>, enters the structure of the <em>mitzvah</em>.</li>
+</ul>
+
+<p>The <em>maskana</em> for the <em>yachid</em>: the <em>mitzvah</em> exists; the <em>chiyuv</em> is contested as to its force; the alternative modes of <em>kiyum</em> are halachically real. A <em>yid</em> who can make <em>aliyah</em> should do so, with awareness of the halachic weight the <em>poskim</em> have placed upon the act. A <em>yid</em> who cannot has concrete <em>eitzos</em> through which the <em>mitzvah</em> is still accessible &mdash; and the halachic infrastructure within which to understand that his participation is not peripheral but substantive.</p>
+
+<h2>XV. Closing</h2>
+
+<p>The <em>mitzvah</em> of <em>yishuv Eretz Yisrael</em> is one of the <em>mitzvos</em> on which the halachic literature records both the firmest <em>Chazal</em>-level anchor and the most varied practical application across the generations. The <em>Ramban</em>'s voice, written into his <em>peirush</em>, pressed into his <em>hassagos</em>, and borne out in his own <em>mesiras nefesh</em>, remains the dominant <em>mekor</em>. May <em>klal Yisrael</em> be <em>zocheh</em> to the full <em>kiyum</em> of the <em>mitzvah</em> with the coming of the <em>geulah sheleimah</em>:</p>
+
+<blockquote>
+  <div class="heb">וּפְדוּיֵי ה&apos; יְשׁוּבוּן, וּבָאוּ לְצִיּוֹן בְּרִנָּה.</div>
+  <div class="trans">And the redeemed of Hashem shall return, and come to Zion with song.</div>
+  <div class="source"><em>Yeshayahu</em> 35:10</div>
+</blockquote>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Bamidbar</em> 33:53 &mdash; <em>&quot;v'horashtem es ha'aretz vishavtem bah, ki lachem nasati es ha'aretz lareshes osah&quot;</em>.</span>
+  <span class="expanded">&mdash; The principal <em>pasuk</em> on <em>mitzvas yishuv Eretz Yisrael</em> in <em>Parshas Mas'ei</em>: a doubled <em>tzivui</em> &mdash; to dispossess the seven nations (<em>v'horashtem</em>) and to dwell in the land (<em>vishavtem bah</em>) &mdash; anchored by the divine grant: <em>&quot;for I have given the land to you to inherit it.&quot;</em> The <em>Ramban</em>'s position rests substantially on this <em>pasuk</em>; <em>Rashi</em>'s reading detaches the <em>tzivui</em> register and treats it as a <em>havtachah</em>. The <em>pasuk</em> is reinforced across <em>Sefer Devarim</em> in the <em>Ramban</em>'s halachic discussions.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Rashi</em> on <em>Bamidbar</em> 33:53 &mdash; <em>&quot;v'horashtem osah mi'yoshvehah, v'az vishavtem bah&quot;</em>.</span>
+  <span class="expanded">&mdash; <em>Rashi</em>'s reading takes the <em>pasuk</em> as sequenced and descriptive: dispossess the inhabitants, then you will be able to dwell. The <em>Ramban</em> understands <em>Rashi</em> as concluding from this that the <em>pasuk</em> is a divine assurance for the generation entering the land, not a standing <em>chiyuv</em> on every <em>yid</em>. Whether this is <em>Rashi</em>'s actual position on <em>mitzvas yishuv</em> in toto, or only his reading of this particular <em>pasuk</em>, is itself debated by the <em>Acharonim</em>.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Ramban</em> on <em>Bamidbar</em> 33:53 (and parallel on <em>Vayikra</em> 18, <em>Parshas Acharei Mos</em>) &mdash; <em>mitzvah de'oraisa</em> in three components: <em>kibbush</em>, <em>yeshivah</em>, and <em>she'lo neizvennah be'yad zulasenu</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Moshe ben Nachman</em> (c. 1194&ndash;1270, Girona and <em>Eretz Yisrael</em>) develops his position on <em>mitzvas yishuv Eretz Yisrael</em> across his <em>peirush al haTorah</em>, his <em>derashos</em>, and his <em>hassagos</em> to <em>Sefer HaMitzvos</em>. The <em>pasuk</em> in <em>Mas'ei</em> is a clear <em>tzivui</em>, with three distinguishable components &mdash; <em>kibbush</em>, <em>yeshivah</em>, and the negative component of not abandoning the land to foreign hands or desolation. The <em>mitzvah</em> is <em>noheges b'zman hazeh</em>. The <em>Ramban</em>'s <em>lashon</em> against <em>Rashi</em> on this reading: <em>&quot;shegagah gedolah hi be'einai.&quot;</em></span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Hassagos HaRamban</em> on <em>Sefer HaMitzvos LaRambam</em>, <em>Mitzvah</em> 4 of the <em>shichechah</em> &mdash; restoring <em>mitzvas yishuv Eretz Yisrael</em> to the count of <em>taryag</em>.</span>
+  <span class="expanded">&mdash; In his <em>hassagos</em> at the close of the <em>Rambam</em>'s <em>Sefer HaMitzvos</em>, the <em>Ramban</em> lists the <em>mitzvos</em> the <em>Rambam</em> failed to include and that he restores. <em>Mitzvas yishuv Eretz Yisrael</em> appears in this list as one of the gravest omissions. The <em>Ramban</em> writes that the <em>mitzvah</em> is <em>chamurah</em> in his estimation, a <em>chiyuv</em> on every <em>yid</em> in every generation. The explicit <em>lashon</em> &mdash; <em>&quot;she'lo neizvennah be'yad zulasenu min ha'umos o la'shemamah&quot;</em> &mdash; grounds the third <em>chelek</em> of the <em>mitzvah</em>.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Sefer HaVikuach</em> &mdash; the <em>Ramban</em>'s account of the Barcelona disputation (20&ndash;24 July 1263) against the apostate <strong>Pablo Christiani</strong>, before <strong>King James I of Aragon</strong>.</span>
+  <span class="expanded">&mdash; The <em>Ramban</em>'s record of the four-day disputation runs to several thousand words and presents the proceedings as a sustained victory; the surviving Latin Christian record reaches the opposite verdict. Both records survive. The publication of the <em>Ramban</em>'s account a few years after the disputation triggered the Christian reaction that culminated in Pope Clement IV's order for the <em>Ramban</em>'s prosecution and his subsequent flight to <em>Eretz Yisrael</em> in 1267.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Derashas Rosh HaShanah</em> of the <em>Ramban</em> &mdash; delivered at <em>Akko</em>, traditionally dated to <em>Rosh HaShanah</em> 5028 (autumn 1267); surviving in his collected <em>derashos</em>.</span>
+  <span class="expanded">&mdash; The <em>Ramban</em>'s <em>Derashas Rosh HaShanah</em> at <em>Akko</em> &mdash; running to tens of pages of printed text &mdash; is preserved in his collected <em>derashos</em>. The <em>derashah</em> is autobiographical in places: the <em>Ramban</em> describes his commitment to <em>mitzvas yishuv Eretz Yisrael</em> as the motive for leaving Spain, the <em>tza'ar</em> of separation from wife and children, and the <em>ma'alah</em> of life in the land &mdash; <em>&quot;l'chasos b'tzel immi,&quot;</em> sheltering in the bosom of his mother (<em>Eretz Yisrael</em>). The <em>derashah</em> stands among the most personal <em>Torah</em>-texts the <em>Rishonim</em> bequeathed.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Mishnah Kesubos</em> 13:11 and <em>Gemara Kesubos</em> 110b &mdash; <em>kefiyah</em> on a spouse for <em>aliyah</em>; <em>&quot;kol ha'dar b'chutz la'aretz k'mi she'ein lo Elokah&quot;</em>; <em>&quot;kol ha'mehalech arba amos b'Eretz Yisrael&quot;</em>; the <em>shifchah</em> in <em>olam haba</em>.</span>
+  <span class="expanded">&mdash; The closing <em>perek</em> of <em>Kesubos</em> contains the densest concentration of <em>Chazal</em>'s teachings on <em>ma'alas Eretz Yisrael</em>. The <em>mishnah</em> rules that either spouse may compel the other to make <em>aliyah</em> (with <em>get</em> as alternative). The <em>Gemara</em> on 110b develops the famous statements: living outside <em>Eretz Yisrael</em> is <em>&quot;as if one has no Elokim&quot;</em> (because <em>shefa</em> reaches <em>chutz la'aretz</em> through intermediate <em>sarim</em>, not directly); four <em>amos</em> in the land grant <em>olam haba</em>; even an unschooled <em>shifchah</em> living in the land has a portion in <em>olam haba</em>. These <em>sugyos</em> together form the textual ground of the <em>Ramban</em>'s position and of <em>Rav Kook</em>'s reply to the <em>Ridvaz</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Rambam</em>, <em>Mishneh Torah</em>, <em>Hilchos Ishus</em> 13:19&ndash;20 (<em>kefiyah</em> for <em>aliyah</em>); <em>Hilchos Melachim</em> 5:9&ndash;12 (<em>issur yetziah</em>).</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> codifies the <em>pesak</em> of the <em>mishnah</em> in <em>Kesubos</em> within <em>Hilchos Ishus</em>: a husband may compel his wife to make <em>aliyah</em>, and a wife may compel her husband, with <em>get</em> as the alternative. In <em>Hilchos Melachim</em> 5 he further rules on the <em>issur yetziah</em> from <em>Eretz Yisrael</em> to <em>chutz la'aretz</em> except in narrow circumstances (severe famine, marriage, <em>talmud Torah</em> unavailable in the land) &mdash; and on the <em>sechar</em> for dwelling in the land. The <em>pesakim</em> are operative <em>b'zman hazeh</em> and are decisive against the <em>Megillas Esther</em>'s reading that the <em>Rambam</em> held the <em>mitzvah</em> applies only when the <em>Beis HaMikdash</em> stood.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Rambam</em>, <em>Hilchos Shabbos</em> 30:13; <em>Shulchan Aruch</em>, <em>Orach Chaim</em> 248 &mdash; the three-day rule and its exception for <em>aliyah l'Eretz Yisrael</em>.</span>
+  <span class="expanded">&mdash; The standard <em>din</em>: one does not begin a sea or long-distance journey within three days of <em>Shabbos</em> if it would create a likelihood of <em>chilul Shabbos</em>. The <em>Rambam</em> codifies, and the <em>Shulchan Aruch</em> follows, an exception: for <em>aliyah l'Eretz Yisrael</em> one may begin the journey even on <em>Erev Shabbos</em>. The exception is intelligible only on the premise that <em>aliyah</em> itself constitutes a <em>mitzvah</em> grave enough to override the standard restriction &mdash; a halachic argument against the <em>Megillas Esther</em>.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Menachos</em> 44a; <em>Rambam</em>, <em>Hilchos Mezuzah</em> 5:11 &mdash; <em>chiyuv mezuzah</em> immediate in <em>Eretz Yisrael</em>; thirty-day delay in <em>chutz la'aretz</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> in <em>Menachos</em> 44a establishes, and the <em>Rambam</em> codifies, a structural <em>chiluk</em>: in <em>chutz la'aretz</em>, a renter has thirty days before becoming <em>chayav</em> in <em>mezuzah</em>; in <em>Eretz Yisrael</em>, the <em>chiyuv</em> is immediate. The <em>Gemara</em>'s reasoning: <em>yishuv Eretz Yisrael</em> is itself a <em>mitzvah</em>; the immediate <em>chiyuv mezuzah</em> in the land incentivizes settlement and ensures that even if the original tenant departs, the <em>mezuzah</em> remains as a draw for the next <em>yid</em> to take the apartment. The <em>pesak</em> is structurally inseparable from <em>mitzvas yishuv</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Sefer Chareidim</em> (<em>Rabbi Elazar Azkari</em>, 1533&ndash;1600, <em>Tzfas</em>) &mdash; bringing the <em>Rambam</em>'s letter on his arrival in <em>Eretz Yisrael</em>; <em>gimmel Sivan</em> as a family <em>yom tov</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Elazar Azkari</em>, member of the kabbalistic circle of <em>Tzfas</em> alongside the <em>Arizal</em> and <em>Rabbi Yosef Karo</em>; author of <em>Sefer Chareidim</em> and the <em>piyut</em> <em>&quot;Yedid Nefesh.&quot;</em> <em>Sefer Chareidim</em>, in its treatment of <em>mitzvos ha'teluyos ba'aretz</em>, preserves a letter of the <em>Rambam</em> recording his arrival at <em>Akko</em> on <em>gimmel Sivan</em> and his establishment of the day as a permanent <em>yom tov</em> for his family across generations. The historical <em>Rambam</em> visited <em>Eretz Yisrael</em> briefly, davened at the <em>Makom HaMikdash</em>, and continued to Egypt, where he lived and died; the letter nonetheless carries decisive weight on his <em>pesak</em> that <em>yishuv</em> is a <em>mitzvah chiyuvis</em>, against the <em>Megillas Esther</em>'s reading. (The critical editions of the <em>Igros HaRambam</em> &mdash; Shilat; Blau &mdash; treat the <em>gimmel Sivan</em> letter as authentic.)</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Tosafos Kesubos</em> 110b, <em>d&quot;h hu omer la'alos</em> &mdash; citing <em>Rabbeinu Chaim HaKohen</em>: no <em>mitzvah</em> in <em>zman hazeh</em>.</span>
+  <span class="expanded">&mdash; <em>Tosafos</em> at the close of <em>Kesubos</em> brings <em>Rabbeinu Chaim HaKohen</em> (<em>talmid</em> of <em>Rabbeinu Tam</em>, twelfth century, France): <em>&quot;b'zman hazeh einah mitzvah ladur b'Eretz Yisrael&quot;</em> &mdash; there is no current <em>mitzvah</em> to live in <em>Eretz Yisrael</em>. The two reasons: <em>sakanas ha'derachim</em> (the journey) and <em>chashash kishalon</em> in the <em>mitzvos ha'teluyos ba'aretz</em>. This single source is the textual base for every later <em>posek</em> who wished to relax the <em>chiyuv</em> of <em>aliyah</em>; major <em>poskim</em> rejected the source as a <em>talmid toeh</em> interpolation.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Shu&quot;t Maharit</em> on <em>Yoreh De'ah</em>; <em>Mabit</em>, <em>Kiryas Sefer</em>, <em>Hilchos Melachim</em> perek 5; and the parallel citations in the <em>Rashbash</em> and <em>Rashbatz</em> &mdash; rejecting <em>Tosafos</em>'s citation of <em>Rabbeinu Chaim HaKohen</em> as a <em>talmid toeh</em> interpolation.</span>
+  <span class="expanded">&mdash; A cluster of major <em>poskim</em>: the <strong><em>Maharit</em></strong> (<em>Rabbi Yosef Trani</em>, 1568&ndash;1639, <em>Tzfas</em> and Constantinople); the <strong><em>Mabit</em></strong> (<em>Rabbi Moshe Trani</em>, 1500&ndash;1580, <em>Tzfas</em>; father of the <em>Maharit</em>); the <strong><em>Rashbash</em></strong> (<em>Rabbi Shlomo ben Shimon Duran</em>, c. 1400&ndash;1467, North Africa); and the <strong><em>Rashbatz</em></strong> (<em>Rabbi Shimon ben Tzemach Duran</em>, 1361&ndash;1444, Algiers; father of the <em>Rashbash</em>). The classical <em>mekoros</em> are the <em>Maharit</em>'s <em>teshuvos</em> on <em>Yoreh De'ah</em> and the <em>Mabit</em>'s treatment in <em>Kiryas Sefer</em> on <em>Hilchos Melachim</em>. On internal grounds and external <em>mesorah</em>, these <em>poskim</em> argue that the <em>Tosafos</em>'s citation of <em>Rabbeinu Chaim HaKohen</em> is a <em>talmid toeh</em>'s interpolation that does not represent his actual position. The cluster is decisive in the eyes of most later <em>poskim</em>; <em>Rav Ovadia Yosef</em> in <em>Yabia Omer</em> follows them.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Terumas HaDeshen</em> (<em>Rabbi Yisrael Isserlein</em>, c. 1390&ndash;1460, Austria) &mdash; fifteenth-century <em>sakanah</em> in <em>Eretz Yisrael</em>; <em>Ashkenazim</em> and <em>Sefaradim</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yisrael Isserlein</em>, author of the <em>Terumas HaDeshen</em>, responds to a question from <em>Eretz Yisrael</em>: yes, the <em>mitzvah</em> of <em>yishuv Eretz Yisrael</em> applies; but he himself does not bring his <em>yeshivah</em> over because of the <em>sakanah</em> faced by <em>Ashkenazim</em> in fifteenth-century <em>Eretz Yisrael</em> &mdash; both from the surrounding <em>Yishmaelim</em> and from intra-Jewish friction with the long-established <em>Sefardi</em> <em>kehillah</em> in <em>Yerushalayim</em>. The <em>teshuvah</em> is historically valuable as a snapshot of fifteenth-century conditions; the conditions it describes do not obtain today.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Megillas Esther</em> on <em>Sefer HaMitzvos LaRambam</em> &mdash; <em>Rabbi Yitzchak de Leon ibn Tzur</em>, sixteenth century; <em>sefer</em> first printed Venice 1592. Defending the <em>Rambam</em>'s omission as principled.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yitzchak de Leon ibn Tzur</em> composed the <em>Megillas Esther</em> as a defense of the <em>Rambam</em>'s <em>Sefer HaMitzvos</em> against the <em>Ramban</em>'s <em>hassagos</em>. On <em>yishuv Eretz Yisrael</em>, the <em>Megillas Esther</em> argues that the <em>Rambam</em> deliberately excluded the <em>mitzvah</em> because in his view it applied only when the <em>Beis HaMikdash</em> stood; after the <em>churban</em>, the <em>mitzvah</em> lapsed. <em>Rav Ovadia Yosef</em> in <em>Yabia Omer</em> rejects the <em>Megillas Esther</em> <em>&quot;b'shtei yadayim,&quot;</em> citing the <em>Rambam</em>'s own <em>pesakim</em> in <em>Hilchos Ishus</em>, <em>Hilchos Shabbos</em>, and <em>Hilchos Mezuzah</em> as decisive evidence that the <em>Rambam</em> held the <em>mitzvah</em> applies <em>b'zman hazeh</em>. The author is not to be confused with the thirteenth-century <em>Rabbi Moshe de Leon</em> associated with the <em>Zohar</em>.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Shu&quot;t Yabia Omer</em> (<em>Rav Ovadia Yosef</em>, <em>zt&quot;l</em>) &mdash; rejection of the <em>Megillas Esther</em>; <em>pesak</em> with the <em>Ramban</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Ovadia Yosef</em>, <em>zt&quot;l</em> (1920&ndash;2013), in <em>Shu&quot;t Yabia Omer</em>, treats <em>mitzvas yishuv Eretz Yisrael</em> at length and rules with the <em>Ramban</em>: the <em>mitzvah</em> is a full <em>chiyuv de'oraisa</em> in <em>zman hazeh</em>. He demonstrates that the <em>Rambam</em>'s own <em>pesakim</em> require this conclusion and rejects the <em>Megillas Esther</em>'s narrowing in characteristically sharp <em>lashon</em>: <em>&quot;dachu kol ha'acharonim es ha'Megillas Esther b'shtei yadayim.&quot;</em> Precise <em>chelek</em> and <em>siman</em> as cited in the <em>shiur</em>: not specified; cross-reference the <em>yabia omer</em> indices under <em>Yoreh De'ah</em>.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Shu&quot;t Igros Moshe</em>, <em>Even HaEzer</em> 1:102 (and related in <em>EH</em> 4:49) &mdash; <em>mitzvah kiyumis</em>; the <em>tzitzis</em> structural analogy.</span>
+  <span class="expanded">&mdash; <em>Rav Moshe Feinstein</em>, <em>zt&quot;l</em> (1895&ndash;1986), in <em>Shu&quot;t Igros Moshe</em> &mdash; principally <em>Even HaEzer</em> 1:102, with related material in <em>Even HaEzer</em> 4:49 &mdash; develops the structural distinction between <em>mitzvah chiyuvis</em> (an absolute affirmative <em>chiyuv</em>) and <em>mitzvah kiyumis</em> (a <em>mitzvah</em> one fulfills if and when the conditions arise, but is not under standing obligation to seek out). The analogy: <em>tzitzis</em> at the <em>de'oraisa</em> level &mdash; one is not <em>chayav</em> to wear a four-cornered <em>beged</em>, but <em>if</em> one does, the <em>chiyuv</em> of attaching <em>tziztzis</em> triggers. <em>Rav Moshe</em>'s reading: <em>yishuv Eretz Yisrael</em> works the same way &mdash; <em>if</em> one is in <em>Eretz Yisrael</em>, one is <em>mekayem</em> a <em>mitzvah</em>; one is not under absolute <em>chiyuv</em> to relocate. The position is contested; the <em>Tzitz Eliezer</em> and <em>Rav Ovadia Yosef</em> hold it is <em>mitzvah chiyuvis</em> proper.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Shu&quot;t Tzitz Eliezer</em> (<em>Rav Eliezer Yehuda Waldenberg</em>, <em>zt&quot;l</em>) &mdash; <em>mitzvah chiyuvis</em>; <em>koach ha'rabim</em>; the changed reality after 1948.</span>
+  <span class="expanded">&mdash; <em>Rav Eliezer Yehuda Waldenberg</em>, <em>zt&quot;l</em> (1915&ndash;2006, Jerusalem; <em>dayan</em> on the <em>Beis Din HaGadol</em> of the Israeli <em>Rabbanus</em>; author of the multi-volume <em>Shu&quot;t Tzitz Eliezer</em>) develops the position that <em>mitzvas yishuv Eretz Yisrael</em> is a full <em>mitzvah chiyuvis</em> on every <em>yachid</em>, with an additional collective dimension on <em>klal Yisrael</em> (the strength of <em>yishuv</em> deriving from <em>koach ha'rabim</em>). After the establishment of the State of Israel in 1948 and the dramatic improvement in conditions for new <em>olim</em>, the <em>Tzitz Eliezer</em> writes that the historical <em>peturim</em> of earlier generations &mdash; danger of the journey, persecution by surrounding nations, restrictive Ottoman governance &mdash; no longer obtain. The full <em>chiyuv</em> stands.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Igros HaRaayah</em> (<em>Rav Avraham Yitzchak HaKohen Kook</em>, <em>zt&quot;l</em>) &mdash; letter to the <em>Ridvaz</em>; vision of secular <em>yidden</em>' eventual return.</span>
+  <span class="expanded">&mdash; <em>Rav Avraham Yitzchak HaKohen Kook</em>, <em>zt&quot;l</em> (1865&ndash;1935; born in Latvia; <em>talmid</em> of <em>Rav Naftali Zvi Yehudah Berlin</em> at <em>Volozhin</em>; first Ashkenazi Chief Rabbi of <em>Eretz Yisrael</em> from 1921), in his collected letters (<em>Igros HaRaayah</em>) &mdash; particularly the correspondence around the <em>heter mechirah</em> debate of <em>shemittah</em> 5670 (1909&ndash;10) with the <strong><em>Ridvaz</em></strong> (<em>Rabbi Yaakov Dovid Willowsky</em>, 1845&ndash;1913, author of the <em>Ridvaz</em> commentary on the <em>Yerushalmi</em>; settled in <em>Tzfas</em> in 1903). <em>Rav Kook</em>'s reply to the <em>Ridvaz</em>'s charge of being a &quot;Zionist&quot; stands as one of the great expressions of his theology of <em>Eretz Yisrael</em>; he embraces the label as a halachic position grounded in the <em>Gemara</em>'s and the <em>Yerushalmi</em>'s teachings on the <em>ma'alah</em> of life in the land. The specific <em>igros</em> are in the standard editions of <em>Igros HaRaayah</em> for 5670; a precise <em>igros</em> number was not supplied in the source <em>shiur</em>.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Yerushalmi Shabbos</em> 1:3 and <em>Yerushalmi Kila'im</em> 9:4 &mdash; <em>&quot;kol ha'dar b'Eretz Yisrael v'ocheil chulin b'taharah k'ilu kiyem es kol haTorah kullah.&quot;</em></span>
+  <span class="expanded">&mdash; The <em>Yerushalmi</em> twice repeats the striking <em>derashah</em>: anyone who lives in <em>Eretz Yisrael</em> and eats <em>chulin b'taharah</em> (ordinary food in a state of ritual purity, as the <em>chaverim</em> of the <em>mishnah</em>-period did) is regarded as having fulfilled the entire <em>Torah</em>. The teaching is invoked by <em>Rav Kook</em> in his reply to the <em>Ridvaz</em> as one of the <em>Chazal</em> sources legitimating the most maximalist halachic-theological reading of life in the land.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Sifri</em> on <em>Parshas Re'eh</em> &mdash; the <em>Tannaim</em> at <em>Platia</em>; <em>&quot;yeshivas Eretz Yisrael shekulah k'neged kol ha'mitzvos.&quot;</em></span>
+  <span class="expanded">&mdash; The <em>Sifri</em> on <em>Parshas Re'eh</em> records the <em>ma'aseh</em> of four <em>Tannaim</em> &mdash; <em>Rabbi Yehudah ben Beseira</em>, <em>Rabbi Masya ben Charash</em>, <em>Rabbi Chananiah ben Achi Rabbi Yehoshua</em>, and <em>Rabbi Yonasan</em> &mdash; who reached <em>Platia</em> on the border of <em>Eretz Yisrael</em>. As they crossed the border outward (in the standard reading of the text), they wept, tore their garments, and recited <em>&quot;virishtem osah vishavtem bah,&quot;</em> declaring: <em>&quot;yeshivas Eretz Yisrael shekulah k'neged kol ha'mitzvos sheba'Torah&quot;</em> &mdash; dwelling in <em>Eretz Yisrael</em> is equivalent to all the <em>mitzvos</em> in the <em>Torah</em>. The <em>Ramban</em> brings the <em>Sifri</em> as a central proof for his position.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>Gemara Eiruvin</em> 22a &mdash; <em>talmidei chachamim</em> who become <em>&quot;achzarim al b'neihem ka'orev&quot;</em> for the sake of <em>Torah</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Eiruvin</em> develops the demanding image of <em>talmidei chachamim</em> who, in the pursuit of <em>Torah</em>, become <em>&quot;achzarim al b'neihem ka'orev&quot;</em> &mdash; like ravens, who do not properly care for their young. The image is not endorsed approvingly; it captures a <em>metzius</em> that <em>Chazal</em> register honestly. The <em>Ramban</em> brings the <em>sugya</em> in his <em>Derashas Rosh HaShanah</em> at <em>Akko</em> as the framework for understanding his own decision to leave wife and children in Spain in pursuit of <em>mitzvas yishuv Eretz Yisrael</em> &mdash; a personal <em>mesiras nefesh</em> the <em>derashah</em> records candidly.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Sefer Vayoel Moshe</em> (<em>Rebbe Reb Yoel Teitelbaum</em>, the <em>Satmar Rav</em>, <em>zt&quot;l</em>) &mdash; the sustained halachic case against contemporary <em>yishuv</em>, resting on <em>Rabbeinu Chaim HaKohen</em> and on the <em>shalosh shevu'os</em>.</span>
+  <span class="expanded">&mdash; The <em>Satmar Rav</em>, <em>zt&quot;l</em> (1887&ndash;1979, Hungary, then Williamsburg), in <em>Sefer Vayoel Moshe</em> (published 1959&ndash;1961), develops the <em>Satmar</em> halachic-ideological position against the State of Israel and against the <em>chiyuv</em> of contemporary <em>aliyah</em>. The <em>sefer</em> is in three parts: <em>Ma'amar Shalosh Shevu'os</em>, <em>Ma'amar Yishuv Eretz Yisrael</em>, and <em>Ma'amar Leshon HaKodesh</em>. The position on <em>yishuv</em> rests substantially both on <em>Tosafos</em>'s citation of <em>Rabbeinu Chaim HaKohen</em> and on the <em>sugya</em> of the <em>shalosh shevu'os</em>; the former is precarious given the cluster of <em>poskim</em> rejecting the citation as a <em>talmid toeh</em> interpolation, while the latter is resolved in the mainstream <em>Acharonim</em> by the <em>Avnei Nezer</em>'s treatment (see note <a href="#fn26">[26]</a>).</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short">The personal seal of the <em>Ramban</em>, recovered in archaeological excavations in <em>Eretz Yisrael</em> in 1972; bears the inscription <em>&quot;Rabbeinu Moshe ben Nachman&quot;</em>; on display at the Israel Museum, <em>Yerushalayim</em>.</span>
+  <span class="expanded">&mdash; The seal is among the most significant material artifacts of the era of the <em>Rishonim</em> recovered to date and substantiates the <em>Ramban</em>'s residence in <em>Eretz Yisrael</em> from 1267 onward. Find-year and site should be verified against a scholarly archaeological reference; the ArtScroll <em>Ramban</em> edition reproduces the seal on its cover.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short"><em>Gemara Kesubos</em> 110b&ndash;111a &mdash; the <em>shalosh shevu'os</em> of <em>Rabbi Yosi b'Rabbi Chanina</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> at the close of <em>Kesubos</em> develops the three oaths with which <em>HaKadosh Baruch Hu</em> adjured <em>klal Yisrael</em> and the nations at the time of the <em>churban</em>: that <em>Yisrael</em> not ascend <em>b'chomah</em>, not rebel against the nations, and (the parallel oath) that the nations not oppress <em>Yisrael</em> excessively. The <em>Ramban</em> in his <em>hassagos</em> to <em>Sefer HaMitzvos</em> treats the <em>shevu'os</em> as a limitation on manner (prohibiting mass armed collective ascent against the ruling power) rather than as an abrogation of the <em>mitzvah</em> of individual <em>yeshivah</em>. The <em>sugya</em> is the halachic foundation of the <em>Satmar</em> position developed in <em>Vayoel Moshe</em>'s <em>Ma'amar Shalosh Shevu'os</em>.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <span class="short"><em>Shu&quot;t Avnei Nezer</em>, <em>Yoreh De'ah</em> 454 (and related, 455&ndash;456) &mdash; the resolution of the <em>shalosh shevu'os</em>; affirmative <em>chiyuv aliyah</em> in <em>zman hazeh</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Avraham Bornsztain</em> of <em>Sochatchov</em> (1838&ndash;1910; the <em>Avnei Nezer</em>), in <em>Yoreh De'ah</em> 454 and the surrounding <em>siman</em>im, provides the decisive <em>Acharon</em> treatment of the <em>shalosh shevu'os</em>. The core <em>yesodos</em>: (i) the oaths are conditional on mutual observance by the nations &mdash; the nations' violation of their parallel oath renders the Jewish oath <em>batel</em>; (ii) the oath against ascending <em>b'chomah</em> prohibits mass armed revolt, not individual <em>aliyah</em> or communal purchase and settlement with the permission of the governing authority; (iii) the <em>mitzvah</em> of <em>yishuv</em> is a full <em>chiyuv</em> upon the <em>yachid</em> in <em>zman hazeh</em>, with no <em>shevu'ah</em>-based <em>petur</em>. The <em>teshuvah</em> is the single most important <em>Acharon</em>-source on the <em>sugya</em>.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short"><em>Sefer Eim HaBanim Semeichah</em> (<em>Rav Yissachar Shlomo Teichtal</em>, <em>zt&quot;l</em>, Budapest, 1943) &mdash; internal chassidish reversal; defense of contemporary <em>aliyah</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Yissachar Shlomo Teichtal</em>, <em>zt&quot;l</em> (1885&ndash;1945; <em>Hy&quot;d</em>, murdered on a death-march in the final weeks of the war; <em>talmid</em> of the <em>Munkatcher</em> school), composed <em>Eim HaBanim Semeichah</em> in Budapest in 1943, in the shadow of the <em>Churban Europa</em>. The <em>sefer</em> is a sustained halachic and <em>hashkafic</em> argument against the Hungarian-chassidish anti-<em>yishuv</em> position of his teachers &mdash; a public reversal of his own earlier position. He builds on the <em>Avnei Nezer</em>'s resolution of the <em>shalosh shevu'os</em> and marshals the body of <em>Chazal</em>'s aggadic material on the <em>ma'alah</em> of <em>Eretz Yisrael</em>. For a halachic survey that cites <em>Vayoel Moshe</em>, <em>Eim HaBanim Semeichah</em> is the parallel voice from within the same cultural register.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <span class="short"><em>Chasam Sofer</em>, <em>Shu&quot;t</em> on <em>Yoreh De'ah</em> and <em>drashos</em> &mdash; <em>mitzvah noheges b'zman hazeh</em>, following the <em>Ramban</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Moshe Sofer</em> (the <em>Chasam Sofer</em>, 1762&ndash;1839, Pressburg), in his <em>teshuvos</em> on <em>Yoreh De'ah</em> and in his <em>drashos</em> (and in his <em>peirush</em> to <em>Chumash</em>), treats <em>mitzvas yishuv Eretz Yisrael</em> as a <em>chiyuv</em> operative in his generation and in the generations to come. The <em>Chasam Sofer</em>'s position bridges the classical <em>poskim</em> and the modern period; nineteenth-century <em>poskim</em> on this <em>sugya</em> uniformly take him as the central <em>mekor</em>.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn29">
+  <span class="short"><em>Minchas Chinuch</em>, <em>Mitzvah</em> 425 &mdash; <em>sefer hamitzvos</em>-register treatment of the <em>Ramban</em>'s enumeration.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yosef Babad</em> (1801&ndash;1874; the <em>Minchas Chinuch</em>), in his treatment of the <em>mitzvah</em> within the structure of <em>Sefer HaChinuch</em>, follows the <em>Ramban</em>'s enumeration of <em>mitzvas yishuv Eretz Yisrael</em> and develops the halachic implications. The <em>Minchas Chinuch</em>'s treatment is the standard <em>sefer hamitzvos</em>-level analysis for later <em>yeshivish</em> <em>lomdus</em> on the <em>sugya</em>.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn30">
+  <span class="short"><em>Kol Dodi Dofek</em> (<em>Rav Yosef Dov Soloveitchik</em>, <em>zt&quot;l</em>) &mdash; the <em>sheish defikos</em> and the halachic weight of 1948.</span>
+  <span class="expanded">&mdash; <em>Rav Yosef Dov Soloveitchik</em>, <em>zt&quot;l</em> (1903&ndash;1993; the <em>Rav</em>), in <em>Kol Dodi Dofek</em> (delivered as a <em>Yom Ha'atzmaut</em> address at Yeshiva University; subsequently published), develops the position that the events of 1948 constitute a <em>dofek</em> of the <em>Dod</em> to which <em>klal Yisrael</em> is halachically required to respond. The <em>Rav</em>'s treatment of the <em>mitzvah</em> is intermediate between <em>Rav Moshe</em>'s <em>kiyumis</em> framing and the <em>Tzitz Eliezer</em>'s unqualified <em>chiyuv</em>; it recognizes the halachic weight of the <em>sheish defikos</em> and of the standing <em>mitzvah</em> of <em>yishuv</em>, while declining to translate them into a straightforward per-<em>yachid</em> <em>chiyuv aliyah</em> in <em>galus</em>. The reader is referred to <em>Kol Dodi Dofek</em> itself for the full development.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati's Yom Yerushalayim <em>shiur</em> on <em>mitzvas yishuv Eretz Yisrael</em>, delivered <span class="heb-inline">כ&quot;ח אייר תשפ&quot;ה</span> &middot; 26 May 2025. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice; integrates the delivered material with the <em>sugya</em> of the <em>shalosh shevu'os</em>, the <em>Avnei Nezer</em>, the <em>Chasam Sofer</em>, the <em>Minchas Chinuch</em>, <em>Rav Teichtal</em>, the <em>Chazon Ish</em>, and the <em>Rav</em>, which the delivered <em>shiur</em> flagged but did not reach for lack of time; corrects the <em>Megillas Esther</em> author attribution; sharpens the <em>Rambam</em> citations for <em>Hilchos Ishus</em> and <em>Hilchos Mezuzah</em>; adds the <em>Ramban</em>'s third <em>chelek</em> of <em>she'lo neizvennah be'yad zulasenu</em> to the two-<em>chalakim</em> frame; and replaces the pastoral close with a halachic <em>maskana</em> on the practical options available to the <em>yachid</em> in <em>chutz la'aretz</em>.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefaria Verification — 2025-05-25 — Refaeinu & Barech Aleinu</title>
+<style>
+  body{font-family:Georgia,serif;max-width:1100px;margin:30px auto;padding:0 20px;color:#1a1a1a;line-height:1.5;font-size:15px;background:#fdfaf3}
+  h1{color:#1e3a8a;border-bottom:3px double #c9a227;padding-bottom:8px}
+  h2{color:#1e3a8a;margin-top:30px;font-size:19px;border-bottom:1px solid #c9a227;padding-bottom:4px}
+  .alert{background:#fff4e5;border:1px solid #b8860b;padding:12px 16px;border-radius:4px;margin:16px 0}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px}
+  th,td{border:1px solid #d4c7a0;padding:7px 9px;vertical-align:top;text-align:left}
+  th{background:#f5efe0;color:#1e3a8a}
+  .ok{color:#1f7a1f;font-weight:600}
+  .flag{color:#b8860b;font-weight:600}
+  .err{color:#b22222;font-weight:600}
+  .skip{color:#555;font-weight:600}
+  .heb{font-family:"SBL Hebrew","Times New Roman",serif;direction:rtl;unicode-bidi:embed}
+  code{background:#f0ebd8;padding:1px 4px;border-radius:3px;font-size:13px}
+  .counts{background:#eaf2f8;border-left:4px solid #1e3a8a;padding:10px 16px;margin:14px 0}
+</style>
+</head>
+<body>
+
+<h1>Sefaria Verification — <span class="heb">רפאנו</span> &amp; <span class="heb">ברך עלינו</span> (2025-05-25)</h1>
+
+<div class="alert">
+<strong>Tool failure notice.</strong> The <code>mcp__workspace__web_fetch</code> tool timed out (180 s) on every attempted call during this run — including plain <code>google.com</code> as a sanity check. No live Sefaria API responses were obtained. The verdicts below are therefore <em>knowledge-based</em> (checked against standard printed editions and recalled Sefaria addresses), not live-API-confirmed. Every <em>flag</em> row should be re-checked against Sefaria before the Sefer-edition rewrite goes to print; the <em>likely-OK</em> rows should still get a confirming hit.
+</div>
+
+<div class="counts">
+<strong>Counts (knowledge-based):</strong>
+likely verified: <strong>14</strong> &nbsp;·&nbsp;
+flagged (wrong location / needs correction): <strong>3</strong> &nbsp;·&nbsp;
+needs manual Sefaria check (uncertain): <strong>5</strong> &nbsp;·&nbsp;
+not Sefaria-verifiable (modern / oral): <strong>5</strong>
+</div>
+
+<h2>1. Citations verifiable via Sefaria</h2>
+
+<table>
+<tr><th>#</th><th>Citation as given</th><th>Sefaria ref</th><th>Status</th><th>Notes</th></tr>
+
+<tr><td>fn1</td>
+<td><span class="heb">גמרא מגילה י"ז ע"א</span> — eighth brachah tied to brit milah on 8th day</td>
+<td><code>Megillah.17b.14</code> (likely)</td>
+<td class="flag">FLAG — wrong daf</td>
+<td>The sugya ordering Shemoneh Esrei brachos (<span class="heb">הני תמני סרי כנגד מי</span>, including <span class="heb">רפואה כנגד מילה שנתנה בשמיני</span>) runs on <strong>Megillah 17b</strong>, not 17a. Sheet should read <span class="heb">י"ז ע"ב</span>.</td></tr>
+
+<tr><td>fn3</td>
+<td><span class="heb">גמרא ברכות ל"ד</span> — <span class="heb">א-ל נא רפא נא לה</span>; no need to name <span class="heb">חולה</span> when present</td>
+<td><code>Berakhot.34a</code> / also mishnah Berakhot 5:5</td>
+<td class="ok">Likely verified</td>
+<td>The <span class="heb">מתני'</span> + sugya on <span class="heb">המתפלל על החולה אין צריך להזכיר שמו</span>, derived from Moshe's <span class="heb">תפילה</span> on Miriam, is on <strong>Berachos 34a</strong>. Pin precise segment (around <span class="heb">דף ל"ד ע"א</span>, bottom) in the sefer.</td></tr>
+
+<tr><td>fn4</td>
+<td><span class="heb">גמרא חולין י"א ע"ב</span> and <span class="heb">קידושין ע"ה ע"א</span></td>
+<td><code>Chullin.11b</code>, <code>Kiddushin.75a</code></td>
+<td class="flag">Needs manual check</td>
+<td>Chullin 11a–b is the classic sugya on <span class="heb">מנא הא מילתא דאזלינן בתר רובא</span>; the Kiddushin 75a reference is to the mamzeirus/paternity-doubt discussion. The specific framing "maternity certain, paternity presumptive" is <em>editorial synthesis</em> — the exact phrase is not in either place. Consider softening the footnote to "principles underlying" rather than a direct citation.</td></tr>
+
+<tr><td>fn7</td>
+<td><span class="heb">תהלים קט"ז:ט"ז</span> — <span class="heb">אנא ה' כי אני עבדך בן אמתך</span></td>
+<td><code>Psalms.116.16</code></td>
+<td class="ok">Verified</td>
+<td>Pasuk reads <span class="heb">אָנָּה ה' כִּי אֲנִי עַבְדֶּךָ אֲנִי עַבְדְּךָ בֶּן אֲמָתֶךָ…</span> — correct. (Minor: the sheet writes <span class="heb">אנא</span>; printed <span class="heb">אנה</span>. Both appear in <span class="heb">נוסחאות</span>.) Attribution of <strong>Dovid's mother as "<span class="heb">נצבת בת עדאל</span>"</strong> (editorial, in fn7) comes from <strong>Bava Basra 91a</strong>, not from Tehillim itself — footnote should credit BB 91a, as the Shiur Review also noted.</td></tr>
+
+<tr><td>fn9</td>
+<td><span class="heb">ירמיהו י"ז:י"ד</span></td>
+<td><code>Jeremiah.17.14</code></td>
+<td class="ok">Verified</td>
+<td><span class="heb">רְפָאֵנִי ה' וְאֵרָפֵא הוֹשִׁיעֵנִי וְאִוָּשֵׁעָה כִּי תְהִלָּתִי אָתָּה</span> — matches. (Note: sheet writes <span class="heb">רפאני</span>; MT has <span class="heb">רְפָאֵנִי</span> — same word, pointing only.)</td></tr>
+
+<tr><td>fn10</td>
+<td><span class="heb">גמרא בבא קמא פ"ה ע"א</span> — <span class="heb">ורפא ירפא — מכאן שניתנה רשות לרופא לרפאות</span></td>
+<td><code>Bava_Kamma.85a</code></td>
+<td class="ok">Verified</td>
+<td>The drasha on <span class="heb">ורפא ירפא</span> (<span class="heb">שמות כ"א:י"ט</span>) is on <strong>BK 85a</strong>. The pasuk citation itself (<span class="heb">שמות כ"א:י"ט</span>) in the expanded footnote is also correct.</td></tr>
+
+<tr><td>fn12</td>
+<td><span class="heb">שולחן ערוך אורח חיים סימן קי"ט</span> — adding bakashos in <span class="heb">רפאנו</span> / <span class="heb">ברכת השנים</span></td>
+<td><code>Shulchan_Arukh,_Orach_Chayim.119</code></td>
+<td class="ok">Verified</td>
+<td>SA OC 119 is indeed the <span class="heb">סימן</span> on <span class="heb">שואל צרכיו באמצע הברכות</span>. The specific examples of <span class="heb">חולה</span> in Refaeinu and <span class="heb">דוחק פרנסה</span> in Birkas HaShanim are explicit in <span class="heb">סעיף א-ב</span>. Sugya source is <strong>Avodah Zara 7b–8a</strong> (not Avodah Zara as the fn12 expanded text says — correct).</td></tr>
+
+<tr><td>fn14</td>
+<td><span class="heb">ביצה ט"ז ע"א</span> — <span class="heb">מזונותיו של אדם קצובין לו מראש השנה לראש השנה</span></td>
+<td><code>Beitzah.16a</code></td>
+<td class="ok">Verified</td>
+<td>Correct — <strong>Beitzah 16a</strong>. The Baal Shem Tov attribution itself is unverifiable via Sefaria (chasidic oral tradition / early seforim).</td></tr>
+
+<tr><td>fn19a</td>
+<td><span class="heb">משנה תענית פ"א מ"ג</span> — asking for rain from <span class="heb">ז' חשון</span></td>
+<td><code>Mishnah_Taanit.1.3</code></td>
+<td class="flag">Needs verification — likely 1:3 but check</td>
+<td>Mishnah Taanis 1:3 reads <span class="heb">בשלשה במרחשון שואלין את הגשמים, רבן גמליאל אומר בשבעה בו, חמשה עשר יום אחר החג, כדי שיגיע אחרון שבישראל לנהר פרת</span>. Pasuk reference and content <strong>match</strong>. SA follows R. Gamliel. Confirm whether sheet means mishnah 3 or the gemara expansion.</td></tr>
+
+<tr><td>fn19b</td>
+<td><span class="heb">שולחן ערוך אורח חיים סימן קי"ז</span> — Dec 4 for <span class="heb">חוץ לארץ</span></td>
+<td><code>Shulchan_Arukh,_Orach_Chayim.117</code></td>
+<td class="ok">Verified</td>
+<td>SA OC 117:1 — <span class="heb">בחוץ לארץ מתחילין לשאול מתשלים ששים יום אחר תקופת תשרי</span>. Correct <span class="heb">סימן</span>.</td></tr>
+
+<tr><td>fn20</td>
+<td><span class="heb">שו"ת הרא"ש כלל ד' סימן י'</span> — Toledo drought teshuva</td>
+<td><code>Teshuvot_HaRosh.4.10</code></td>
+<td class="flag">Needs manual check — klal/siman uncertain</td>
+<td>The Rosh's famous teshuva on <span class="heb">שאלת גשמים</span> in Toledo is commonly cited; some sources give it as <strong>Shut HaRosh klal 4 siman 10</strong>, others at a different klal. Sefaria's Teshuvot HaRosh indexing is reliable — hit the ref to confirm. Also verify: the Rosh's dates in the body ("born 1215") contradict the footnote ("c. 1250–1327") — Editorial Review already flagged this; 1250 is correct.</td></tr>
+
+<tr><td>fn21</td>
+<td><span class="heb">משנה גיטין ד':ו'</span> — <span class="heb">אין פודין את השבויים יותר על כדי דמיהן</span></td>
+<td><code>Mishnah_Gittin.4.6</code></td>
+<td class="ok">Verified</td>
+<td>Mishnah Gittin 4:6 — correct. Gemara on <span class="heb">גיטין מ"ה ע"א</span>. (Independent of Sefaria: the <strong>Maharam's captivity is standardly reckoned as 7 years</strong>, not 14 as the body text says — Editorial Review flagged; ransom figure 23,000 marks, not 20,000.)</td></tr>
+
+<tr><td>inline</td>
+<td><span class="heb">במדבר י"ב:י"ג</span> — <span class="heb">א-ל נא רפא נא לה</span> (referenced in fn3)</td>
+<td><code>Numbers.12.13</code></td>
+<td class="ok">Verified</td>
+<td>Pasuk is correct.</td></tr>
+
+<tr><td>inline</td>
+<td><span class="heb">שמות כ"א:י"ט</span> — <span class="heb">ורפא ירפא</span> (referenced in fn10)</td>
+<td><code>Exodus.21.19</code></td>
+<td class="ok">Verified</td>
+<td>Pasuk is correct.</td></tr>
+
+<tr><td>inline</td>
+<td><span class="heb">בראשית י"ז</span> — Avraham's <span class="heb">ברית מילה</span> at 99 (fn2 context)</td>
+<td><code>Genesis.17</code></td>
+<td class="ok">Verified</td>
+<td>Perek 17 is correct for Avraham's milah.</td></tr>
+
+</table>
+
+<h2>2. Flagged — likely wrong Sefaria address or misattribution</h2>
+
+<table>
+<tr><th>#</th><th>Issue</th></tr>
+<tr><td>fn1</td><td><strong>Megillah 17a → should be 17b.</strong> The <span class="heb">סדר ברכות שמונה עשרה</span> sugya tying <span class="heb">רפואה</span> to <span class="heb">מילה</span> is on <span class="heb">י"ז ע"ב</span>. Fix in body text and footnote.</td></tr>
+<tr><td>fn2</td><td><strong>"<span class="heb">מדרש</span> on <span class="heb">בראשית י"ז</span> / parshas Lech Lecha" for the <span class="heb">מלאכים</span> saying "<span class="heb">ברוך רופא חולים</span>" after Avraham's bris — needs a specific pin.</strong> I cannot locate this precise formulation in Bereishis Rabbah on Lech Lecha / Vayera from memory. The Avraham-recovery material is in <strong>Bereishis Rabbah 48 / 49</strong> and <strong>Bava Metzia 86b</strong> (angels visiting), but the explicit utterance "<span class="heb">ברוך רופא חולים</span>" by malachim is not standard in either. Possible source: a later <span class="heb">מדרש</span> or an <span class="heb">אבודרהם</span>-style citation that the Rebbe is paraphrasing. <em>Must be located or honestly flagged in the sefer as "midrash cited in the shiur; precise source not located."</em></td></tr>
+<tr><td>fn18</td><td><strong>Smag LT 155 for <span class="heb">גזל עכו"ם</span>.</strong> Standard Smag siman numbers for <span class="heb">גזל</span>-related lavin fall in the 150s but the <em>specific</em> siman for <span class="heb">גזל עכו"ם</span> is not firmly 155 in my recollection — may be 152 or thereabouts. Hit <code>Sefer_Mitzvot_Gadol,_Negative_Commandments.155</code> on Sefaria and confirm the content. Tosafos BK 113 is correct (sugya on <span class="heb">גזל גוי</span> is on Bava Kamma 113a–b).</td></tr>
+</table>
+
+<h2>3. Needs manual Sefaria check (content, not just address)</h2>
+
+<table>
+<tr><th>#</th><th>Issue</th></tr>
+<tr><td>fn5</td><td>Pele Yoetz — correct author/sefer, but Shiur Review flagged attribution of the reasoning ("<span class="heb">חיוב ת"ת</span> brings <span class="heb">קטרוג</span>" etc.) as needing confirmation that Pele Yoetz actually says this in those words. Entry is probably "<span class="heb">בקור חולים</span>" or "<span class="heb">תפילה</span>" (alphabetical sefer); worth pinning the entry.</td></tr>
+<tr><td>fn6</td><td>Ben Ish Chai — pin the parsha/year/siman. The <span class="heb">פסק</span> is standard, but the sefer should cite the exact location (e.g. <em>Shanah Rishonah, Parshas Pinchas</em>, or wherever).</td></tr>
+<tr><td>fn8</td><td>Rambam — Shiur Review already flagged this. Rav said "<span class="heb">דרשות</span>"; the footnote broadens to <em>Shemoneh Perakim</em> + <em>Hilchos De'os</em>. Shemoneh Perakim ch. 3 does develop <span class="heb">חולי הנפש</span> as parallel to <span class="heb">חולי הגוף</span> — that is a real source. Hilchos De'os ch. 2 similarly. But narrow the citation to one that actually says what the sheet claims it says.</td></tr>
+<tr><td>fn11</td><td>Ran on Berachos 34 — Shiur Review noted the Rav hedged ("I believe"). The Ran on Berachos (on the Rif) exists; whether he says exactly this at daf 34 of the Rif's pagination needs a hit. Alternate: it may be the Rosh / Rashba.</td></tr>
+<tr><td>fn16</td><td>Yaaros Devash on <span class="heb">ברכת השנים</span> — correct author/sefer. Pin the exact drasha (volume and <span class="heb">דרוש</span> number) so the sefer can cite it formally.</td></tr>
+</table>
+
+<h2>4. Not Sefaria-verifiable (modern / oral / chasidic)</h2>
+
+<ul>
+<li><strong>fn13</strong> — Rabbi Yitzchak Kohen, <em>Minhagei Chabad</em> / Siddur im Dach kavanah. Modern Chabad source; verify via Chabad library, not Sefaria.</li>
+<li><strong>fn14</strong> — Baal Shem Tov teaching (sources named: <em>Baal Shem Tov al HaTorah</em>, <em>Degel Machaneh Efraim</em>, <em>Toldos Yaakov Yosef</em>). Chasidic — not reliably on Sefaria for pin-by-pin verification.</li>
+<li><strong>fn15</strong> — Oral <span class="heb">מסורה</span> from Reb Yankel Shalom Unger / Skverer Rebbe. Unverifiable in principle.</li>
+<li><strong>fn17</strong> — Bnei Yissachar on <span class="heb">כח הפועל בנפעל</span> / toxic <span class="heb">פרנסה</span>. On Sefaria in some form but the specific teaching should be located manually.</li>
+<li><strong>fn22</strong> — Arizal / Shaar HaKavanos. Shaar HaKavanos is on Sefaria; the specific kavanah for <span class="heb">ברכת השנים</span> re: <span class="heb">שכל</span> to earn <span class="heb">בהיתר</span> needs manual location.</li>
+<li>Dr. Frank Hanley personal account, HUD/Lakewood anecdotes — not citations.</li>
+</ul>
+
+<h2>5. Cross-flags from the two existing reviews</h2>
+<ul>
+<li><strong>Shiur Review</strong> flagged: fn7 "<span class="heb">נצבת בת עדאל</span>" as reviewer expansion (actual source BB 91a); fn12 OC 119 and fn19 OC 117 as reviewer-supplied siman numbers (correct but editorial); fn11 R"N hedge ("I believe"); fn8 Rambam broadened beyond Rav's "<span class="heb">דרשות</span>".</li>
+<li><strong>Editorial Review</strong> flagged: Rosh birth year (1215 → ~1250); Maharam captivity (14 → 7 years); ransom figure (20,000 → 23,000 marks); Rindfleisch casualty figure overstated; fn13 Chabad hedge; fn14 Baal Shem Tov lacks pin; fn22 called out of sequence; general footnote-numbering is out of order (fn12 before fn11; fn6 after fn7; fn22 before fn18).</li>
+</ul>
+
+<h2>6. Most important issues for the Sefer rewrite</h2>
+<ol>
+<li><strong>fn1 Megillah 17a → 17b</strong> (daf correction).</li>
+<li><strong>fn2 Midrash</strong> — the "<span class="heb">ברוך רופא חולים</span>" malachim quote lacks a locatable source; either pin or honestly flag.</li>
+<li><strong>fn18 Smag siman number</strong> — verify 155 vs alternative.</li>
+<li><strong>Rosh biographical data</strong> — correct body text to match footnote (1250, not 1215; 7 yrs Maharam, not 14; 23,000 marks).</li>
+<li><strong>Dovid's mother</strong> — fn7's name expansion should credit BB 91a, not float as if from Tehillim.</li>
+<li><strong>Live Sefaria run still required</strong> — this report is knowledge-based because web_fetch was non-functional. Re-run against the live API before print.</li>
+</ol>
+
+</body>
+</html>

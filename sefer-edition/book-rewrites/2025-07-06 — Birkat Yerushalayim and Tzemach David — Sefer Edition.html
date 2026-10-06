@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Ulirushalayim Ircha and Es Tzemach Dovid</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">וְלִירוּשָׁלַיִם עִירְךָ וְאֶת צֶמַח דָּוִד</h1>
+  <div class="english-title">Birkas Yerushalayim and Tzemach Dovid &mdash; <em>Ulirushalayim Ircha</em> and <em>Es Tzemach Dovid</em>: The Throne of <em>Dovid</em>, the Cave of <em>Gush Chalav</em>, and the Sprout of <em>Mashiach</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 6 July 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<h2>Hakdamah</h2>
+
+<p>Two <em>berachos</em> (<span class="heb-inline">ברכות</span>) stand at the threshold of the <em>geulah</em> (<span class="heb-inline">גאולה</span>) in <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>): <em>Ulirushalayim Ircha</em> (<span class="heb-inline">ולירושלים עירך</span>) and <em>Es Tzemach Dovid</em> (<span class="heb-inline">את צמח דוד</span>). In <em>Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>) they were once recited as a single <em>berachah</em> (<span class="heb-inline">ברכה</span>); today they stand as two. The inquiry that follows proceeds from the <em>Tur</em>’s (<span class="heb-inline">טור</span>) <em>gematria</em> (<span class="heb-inline">גימטריא</span>) of 1,800, drawn from the opening letters of the <em>berachos</em>, to the question on <em>mein ha’chasimah</em> (<span class="heb-inline">מעין החתימה</span>) put to the <em>Bach</em> (<span class="heb-inline">ב״ח</span>) by the blind <em>Rav Shabsai Sofer</em> (<span class="heb-inline">רב שבתי סופר</span>); to the <em>kavanah</em> (<span class="heb-inline">כוונה</span>) that the <em>Arizal</em> (<span class="heb-inline">אריז״ל</span>) received from <em>Shmaya v’Avtalyon</em> (<span class="heb-inline">שמעיה ואבטליון</span>) in their cave at <em>Gush Chalav</em> (<span class="heb-inline">גוש חלב</span>) &mdash; that <em>Mashiach ben Yosef</em> (<span class="heb-inline">משיח בן יוסף</span>) not be slain by <em>Armilus HaRasha</em> (<span class="heb-inline">ארמילוס הרשע</span>); to <em>Sefer Zerubavel</em> (<span class="heb-inline">ספר זרובבל</span>) and the war between <em>Paras</em> (<span class="heb-inline">פרס</span>) and <em>Edom</em> (<span class="heb-inline">אדום</span>); to the names of <em>Mashiach</em> (<span class="heb-inline">משיח</span>) and the acrostic <em>“Chaim”</em> (<span class="heb-inline">חיים</span>); and finally to <em>Rav Schwab</em> (<span class="heb-inline">רב שוואב</span>) on the tears that water the <em>tzemach</em> (<span class="heb-inline">צמח</span>), and <em>Rav Shimshon Raphael Hirsch</em> (<span class="heb-inline">רב שמשון רפאל הירש</span>) on the long struggle against the influence of the nations.</p>
+
+<h2>I. The Opening <em>Vav</em> and the Third <em>Beis HaMikdash</em></h2>
+
+<p>Two <em>berachos</em> of <em>Shemoneh Esrei</em> open with a <em>vav</em> (<span class="heb-inline">ו׳</span>): <em>Velamalshinim</em> (<span class="heb-inline">ולמלשינים</span>) and <em>Ulirushalayim</em> (<span class="heb-inline">ולירושלים</span>). No other <em>berachah</em> begins so.</p>
+
+<p>The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) in <em>Megillah</em> 17b<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> derives the order of the <em>berachos</em>: <em>Yerushalayim</em> (<span class="heb-inline">ירושלים</span>) follows <em>Al HaTzaddikim</em> (<span class="heb-inline">על הצדיקים</span>) because the <em>keren</em> (<span class="heb-inline">קרן</span>) of the <em>tzaddikim</em> (<span class="heb-inline">צדיקים</span>) can be raised only in <em>Yerushalayim</em>. The <em>pasuk</em> (<span class="heb-inline">פסוק</span>) reads <em>“yishlayu ohavayich”</em> (<span class="heb-inline">ישליו אוהביך</span>) &mdash; a <em>lashon</em> (<span class="heb-inline">לשון</span>) of <em>shalvah</em> (<span class="heb-inline">שלוה</span>), tranquillity. The ultimate <em>shalvah</em> of the <em>tzaddikim</em> at the end of days is bound to <em>Yerushalayim</em>; hence the <em>vav</em> of <em>Ulirushalayim</em>, the structural continuation of <em>Al HaTzaddikim</em>.</p>
+
+<h3>The Midrash of the <em>Shibbolei HaLeket</em></h3>
+
+<p>The <em>Shibbolei HaLeket</em> (<span class="heb-inline">שבולי הלקט</span>)<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> brings a <em>midrash</em> (<span class="heb-inline">מדרש</span>): when <em>Shlomo HaMelech</em> (<span class="heb-inline">שלמה המלך</span>) completed the building of the <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>), the <em>malachei hashareis</em> (<span class="heb-inline">מלאכי השרת</span>) rejoiced and proclaimed <em>“Baruch atah Hashem boneh Yerushalayim”</em> (<span class="heb-inline">ברוך אתה ה׳ בונה ירושלים</span>). The prayer recited today, however, is not for the <em>Yerushalayim</em> of <em>Shlomo</em> but for the <em>Beis HaMikdash HaShlishi</em> (<span class="heb-inline">בית המקדש השלישי</span>). The first and second were destroyed; the third, say <em>Chazal</em> (<span class="heb-inline">חז״ל</span>), will stand forever &mdash; <em>binyan olam</em> (<span class="heb-inline">בנין עולם</span>).</p>
+
+<p>A question raised in the course of the shiur &mdash; whether the third <em>Beis HaMikdash</em> can be built by human hands &mdash; touches a <em>machlokes</em> (<span class="heb-inline">מחלוקת</span>) over the manner of its coming: whether it is built by man, or is already built above and will descend whole. <em>Rashi</em> (<span class="heb-inline">רש״י</span>) is cited for the second view.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a></p>
+
+<h2>II. The <em>Tur</em> and the Number 1,800</h2>
+
+<p>A question of <em>nusach</em> (<span class="heb-inline">נוסח</span>) opens the matter. <em>Nusach Edos HaMizrach</em> (<span class="heb-inline">נוסח עדות המזרח</span>) begins this <em>berachah</em> not with <em>“Ulirushalayim”</em> but with <em>“Tishkon”</em> (<span class="heb-inline">תשכון</span>) &mdash; without the opening <em>vav</em>. The difference is not slight.</p>
+
+<p>The <em>Tur</em> (<span class="heb-inline">טור</span>) in <em>Orach Chaim</em> (<span class="heb-inline">אורח חיים</span>) <em>siman</em> 118<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> defends the <em>vav</em>. He brings a <em>midrash</em> of the <em>darshei reshumos</em> (<span class="heb-inline">דורשי רשומות</span>): the <em>roshei teivos</em> (<span class="heb-inline">ראשי תיבות</span>) &mdash; the opening letters &mdash; of the eighteen <em>berachos</em> sum, by <em>gematria</em>, to 1,800 (<span class="heb-inline">אלף ות״ת</span>), the number of the <em>malachim</em> (<span class="heb-inline">מלאכים</span>) who receive the <em>tefilos</em> (<span class="heb-inline">תפילות</span>) of <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>). The count is exact only according to the <em>nusach</em> that includes the <em>vav</em> of <em>Ulirushalayim</em>. The <em>Zohar HaKadosh</em> (<span class="heb-inline">זוהר הקדוש</span>) is also invoked, in the shiur, for the 1,800 angels appointed over the prayers of <em>Klal Yisrael</em>; the exactness of the tally &mdash; <em>mamash</em> the opening letter of every single <em>berachah</em> &mdash; is itself a cause for wonder.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a></p>
+
+<h3>The <em>Arizal</em> and <em>Nusach Sefard</em></h3>
+
+<p>The <em>Arizal</em> (<span class="heb-inline">אריז״ל</span>)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a>, however, recited <em>“Tishkon”</em> without the <em>vav</em>. He was not troubled by the <em>gematria</em>. <em>Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) &mdash; and what is called <em>nusach Sefard</em> (<span class="heb-inline">נוסח ספרד</span>) today &mdash; follows the <em>Tur</em>’s calculation; the <em>Sefardim</em> of <em>Edos HaMizrach</em> follow the <em>Arizal</em>, and have their own <em>mesorah</em> (<span class="heb-inline">מסורה</span>).</p>
+
+<h2>III. The Question of <em>Mein HaChasimah</em></h2>
+
+<p>The <em>berachah</em> reads: <em>“Return in mercy to Yerushalayim Your city, and dwell in it as You have spoken, and build it…”</em> It then continues <em>“v’chisei Dovid avdecha meheirah l’socha tachin”</em> (<span class="heb-inline">וכסא דוד עבדך מהרה לתוכה תכין</span>) and closes <em>“Baruch atah Hashem boneh Yerushalayim.”</em> The final line before every <em>chasimah</em> (<span class="heb-inline">חתימה</span>) must be <em>mein ha’chasimah</em> (<span class="heb-inline">מעין החתימה</span>) &mdash; substantively close to the <em>chasimah</em> itself. Here the preceding line concerns the throne of <em>Dovid</em> (<span class="heb-inline">דוד</span>), while the <em>chasimah</em> concerns the rebuilding of <em>Yerushalayim</em>. They appear to be different subjects.</p>
+
+<h3>The Answer of the <em>Bach</em></h3>
+
+<p>The <em>Bach</em> (<span class="heb-inline">ב״ח</span>)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> takes up the question, and records the name of the one who put it to him: <em>Rav Shabsai Sofer</em> (<span class="heb-inline">רב שבתי סופר</span>).<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></p>
+
+<div class="callout">
+<h3 style="margin-top:0">A Word About <em>Rav Shabsai Sofer</em></h3>
+<p><em>Rav Shabsai Sofer</em> (<span class="heb-inline">רב שבתי סופר</span>) flourished at the turn of the seventeenth century and was a <em>talmid</em> (<span class="heb-inline">תלמיד</span>) of the <em>Levush</em> (<span class="heb-inline">לבוש</span>). He was called <em>Rav Shabsai Sagi Nahor</em> (<span class="heb-inline">רב שבתי סגי נהור</span>) &mdash; literally “full of light,” the euphemism for blindness &mdash; because he lost his sight in old age. Despite the blindness he became one of the most consequential figures in the history of the <em>siddur</em> (<span class="heb-inline">סידור</span>), authoring a <em>siddur</em> according to our <em>nusach</em> at the request of the <em>gedolei hador</em> (<span class="heb-inline">גדולי הדור</span>).</p>
+<p>He lived in <em>Przemyśl</em> (not <em>Premishlan</em>), in southeastern Poland &mdash; Galicia, today on the Polish&ndash;Ukrainian border &mdash; and was called <em>“Shabsai Premishla”</em> after his city. The <em>hakdamah</em> (<span class="heb-inline">הקדמה</span>) to his <em>siddur</em> alone runs six hundred pages. In it he relates that he was blind throughout the project and had to dictate everything. The work was undertaken at the instance of, and received <em>haskamos</em> (<span class="heb-inline">הסכמות</span>) from, the <em>Maharsha</em> (<span class="heb-inline">מהרש״א</span>), the <em>Bach</em>, the <em>Rema</em> (<span class="heb-inline">רמ״א</span>) school, and the <em>Shelah</em> (<span class="heb-inline">של״ה</span>). Dozens of <em>talmidei chachamim</em> (<span class="heb-inline">תלמידי חכמים</span>) assisted in the compilation.</p>
+<p>The <em>Vaad Arba Aratzos</em> (<span class="heb-inline">ועד ארבע ארצות</span>)<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> &mdash; the central rabbinic authority of Polish Jewry, whose standing was such that one hesitates to say <em>Sanhedrin</em> (<span class="heb-inline">סנהדרין</span>), yet the idea is very similar &mdash; issued a <em>kol koreh</em> (<span class="heb-inline">קול קורא</span>) that every <em>beis knesses</em> (<span class="heb-inline">בית כנסת</span>) within its jurisdiction should own a copy. Hand-copied <em>siddurim</em> were rare; in many wooden synagogues the <em>nusach</em> of <em>Rav Shabsai</em> was written on the walls so that the <em>kahal</em> (<span class="heb-inline">קהל</span>) might compare. The trust placed in his <em>diyuk</em> (<span class="heb-inline">דיוק</span>), his exactitude, was unique.</p>
+</div>
+
+<p><em>Rav Shabsai</em> put the <em>kushya</em> (<span class="heb-inline">קושיא</span>) to the <em>Bach</em>: how can the line before the <em>chasimah</em> speak of the throne of <em>Dovid</em> when the <em>chasimah</em> is <em>“boneh Yerushalayim”</em>? No other <em>berachah</em> in <em>Shemoneh Esrei</em> shows such a discrepancy.</p>
+
+<p>The <em>Bach</em> answered, and <em>Rav Shabsai</em> accepted his answer: <strong>the entire <em>tachlis</em> (<span class="heb-inline">תכלית</span>) of <em>Yerushalayim</em> is <em>malchus beis Dovid</em></strong> (<span class="heb-inline">מלכות בית דוד</span>). <em>Yerushalayim</em> is not what one might imagine today &mdash; buildings, holy sites. <em>Yerushalayim</em> is <em>Yerushalayim</em> only when <em>Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>) sits upon his throne &mdash; or whoever will be <em>Mashiach ben Dovid</em> (<span class="heb-inline">משיח בן דוד</span>) &mdash; and the kingdom of <em>Dovid</em> is intact. <em>Kisei Dovid</em> (<span class="heb-inline">כסא דוד</span>) <em>is</em> the rebuilding of <em>Yerushalayim</em>. The line before the <em>chasimah</em> is therefore, in truth, <em>mein ha’chasimah</em>, pointing at the same target from another side.</p>
+
+<h3><em>Tzarich Iyun</em>: The Question of <em>Bentching</em></h3>
+
+<p>A question was put in the course of the shiur, which the <em>maggid shiur</em> (<span class="heb-inline">מגיד שיעור</span>) called an excellent one, acknowledged that he had never considered, and left open: if, as the <em>Bach</em> holds, <em>Yerushalayim</em> and <em>malchus beis Dovid</em> are inseparable, why does <em>Boneh Yerushalayim</em> in <em>Birkas HaMazon</em> (<span class="heb-inline">ברכת המזון</span>) close without any reference to the throne of <em>Dovid</em>?</p>
+
+<p>The question remains a <em>tzarich iyun</em> (<span class="heb-inline">צריך עיון</span>). Two directions suggest themselves, offered here as editorial observations and not as teachings of the shiur. First, the <em>berachah</em> of <em>Bentching</em> may be a request for the rebuilding of the city alone, whereas the <em>berachah</em> of <em>Shemoneh Esrei</em> is a petition for the complete <em>geulah</em> &mdash; the city together with the kingdom. Second, the principle of the <em>Bach</em> may operate only at the level of <em>mein ha’chasimah</em>, a technical law in the construction of a <em>berachah</em>; the <em>berachah</em> of <em>Bentching</em>, which has no preceding line about the throne of <em>Dovid</em> that stands in need of explanation, simply never raises the difficulty.</p>
+
+<h2>IV. One <em>Berachah</em> in <em>Eretz Yisrael</em></h2>
+
+<p>The answer of the <em>Bach</em> explains a structural fact: in ancient <em>Eretz Yisrael</em>, <em>“Ulirushalayim”</em> and <em>“Es Tzemach Dovid”</em> were <strong>one</strong> <em>berachah</em>. The <em>Tosefta</em> (<span class="heb-inline">תוספתא</span>) and the <em>Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>)<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> reflect a tradition that <em>Yerushalayim</em> and <em>Dovid HaMelech</em> were one &mdash; the <em>Tosefta</em> permits including <em>Dovid</em> within <em>Boneh Yerushalayim</em>. This confirms the reading of the <em>Bach</em>: they are not two themes but one.</p>
+
+<p>If they were originally one, the older count was <strong>seventeen</strong> <em>berachos</em>. With the addition of <em>Velamalshinim</em>, the number reached eighteen. Our practice today is otherwise: the two are recited separately, and the <em>berachos</em> number nineteen. The <em>Gemara</em> in <em>Megillah</em> records them as separate, and it is that <em>Gemara</em> that we follow.</p>
+
+<h3>The Proof from the <em>Kalir</em>’s <em>Kerovetz</em> for <em>Purim</em></h3>
+
+<p>On <em>Purim</em> (<span class="heb-inline">פורים</span>) morning the <em>kerovetz</em> (<span class="heb-inline">קרובץ</span>) of the <em>Kalir</em> (<span class="heb-inline">הקליר</span>) is recited &mdash; a <em>piyut</em> (<span class="heb-inline">פיוט</span>) corresponding to each <em>berachah</em> of <em>Shemoneh Esrei</em>, tying that <em>berachah</em> to the events of <em>Purim</em>. The <em>Kalir</em> composed a piece for every <em>berachah</em> <em>except</em> <em>Es Tzemach Dovid</em>. In his <em>mesorah</em> there was no separate <em>berachah</em> of <em>Tzemach Dovid</em>; in his time and tradition the two were combined.</p>
+
+<p>The proof is strong, though not conclusive. The absence of a <em>Tzemach Dovid</em> piece may reflect a liturgical rather than a <em>halachic</em> (<span class="heb-inline">הלכתי</span>) merger, or some other reason particular to the <em>paytan</em> (<span class="heb-inline">פייטן</span>); and the textual witnesses to the older count of the <em>berachos</em> are not uniform.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a></p>
+
+<h3>Who Composed <em>“Yerushalayim Irecha”</em>?</h3>
+
+<p>The <em>paytan</em> who composed <em>“Yerushalayim Irecha”</em> (<span class="heb-inline">ירושלים עירך</span>) was an early poet of <em>Eretz Yisrael</em>. A major <em>machlokes</em> surrounds his identity: some attribute the <em>piyut</em> to <em>Rabbi Elazar b’Rabbi Shimon</em> (<span class="heb-inline">רבי אלעזר ברבי שמעון</span>), the son of <em>Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>). Most scholars today, on the strength of discoveries in the Cairo Geniza,<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> hold that he was an earlier, anonymous poet of <em>Eretz Yisrael</em>. Like the <em>Kalir</em>, he wrote no separate piece for <em>Tzemach Dovid</em> &mdash; for him, too, the two were one. The <em>Gemara</em> in <em>Megillah</em>, however, records the two as separate <em>berachos</em>, and we follow it.</p>
+
+<h3>The Meaning of <em>Kerovos</em></h3>
+
+<p>The <em>Taz</em> (<span class="heb-inline">ט״ז</span>) on <em>Orach Chaim</em>,<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> reporting the teaching of a senior member of his family, explains that <em>any</em> <em>piyut</em> incorporated into <em>Shemoneh Esrei</em> is called <em>kerovos</em> (<span class="heb-inline">קרובות</span>). Today <em>kerovos</em> are said principally on <em>Purim</em>; in earlier centuries the practice was wider. The pronunciation evolved into <em>“kroivitz”</em> (<span class="heb-inline">קרויביץ</span>).</p>
+
+<h2>V. The <em>Kavanah</em> of the <em>Arizal</em> &mdash; A Cave in <em>Gush Chalav</em></h2>
+
+<p>Certain <em>siddurim</em> &mdash; in particular those of <em>nusach Sefard</em> and <em>Edos HaMizrach</em> &mdash; print a parenthetical instruction for <em>kavanah</em> at <em>Tzemach Dovid</em>. It may be thought that the <em>Arizal</em> and <em>Kabbalah</em> (<span class="heb-inline">קבלה</span>) are not for us, who are simple <em>Yehudim</em> (<span class="heb-inline">יהודים</span>). The reality is that an enormous portion of what is said and done in <em>tefillah</em> (<span class="heb-inline">תפילה</span>) rests upon the <em>Toras HaArizal</em> (<span class="heb-inline">תורת האריז״ל</span>), even when this goes unnoticed.</p>
+
+<h3>The <em>Arizal</em> and the <em>Kivrei Tzaddikim</em></h3>
+
+<p><em>Rav Chaim Vital</em> (<span class="heb-inline">רב חיים ויטאל</span>)<a class="footnote-ref" id="ref14" href="#fn14">[14]</a>, the principal <em>talmid</em> of the <em>Arizal</em>, used to accompany his <em>rebbe</em> (<span class="heb-inline">רבי</span>) on regular journeys to prostrate himself at the graves of <em>tzaddikim</em> (<em>kivrei tzaddikim</em>, <span class="heb-inline">קברי צדיקים</span>). <em>Most of the graves of tanna’im (<span class="heb-inline">תנאים</span>) and amora’im (<span class="heb-inline">אמוראים</span>) in Eretz Yisrael were identified by the Arizal himself.</em> The blue paint still seen on graves in <em>Tzfas</em> (<span class="heb-inline">צפת</span>) goes back to him: when he came to <em>Eretz Yisrael</em> he travelled with his <em>talmidim</em> and pointed to particular spots &mdash; <em>“Here this tanna is buried; here this amora is buried.”</em> They marked the sites, and the marking became the basis of what is today an entire enterprise of <em>kivrei tzaddikim</em> travel &mdash; buses, hotels, food. <em>Baruch Hashem</em> (<span class="heb-inline">ברוך השם</span>), the <em>Arizal</em> has provided <em>parnassah</em> (<span class="heb-inline">פרנסה</span>) for many Jewish children.</p>
+
+<h3>The Cave of <em>Shmaya v’Avtalyon</em></h3>
+
+<p>The <em>Arizal</em> once visited the cave of <em>Shmaya v’Avtalyon</em> (<span class="heb-inline">שמעיה ואבטליון</span>) in <em>Gush Chalav</em> (today, in its Arabic name, <em>Jish</em>), a short distance from <em>Tzfas</em>. <em>Shmaya</em> and <em>Avtalyon</em> were the teachers of <em>Hillel</em> (<span class="heb-inline">הלל</span>) and <em>Shammai</em> (<span class="heb-inline">שמאי</span>). <em>Chazal</em> say that they were <em>geirei tzedek</em> (<span class="heb-inline">גרי צדק</span>), or descendants of <em>geirei tzedek</em>; the matter is a <em>machlokes</em>.</p>
+
+<div class="callout">
+<h3 style="margin-top:0">Gush Chalav, Ancient and Modern</h3>
+<p>In ancient times <em>Gush Chalav</em> was a major centre of Jewish <em>lamdus</em> (<span class="heb-inline">למדנות</span>), since <em>Shmaya</em> and <em>Avtalyon</em> lived there. They travelled at times to <em>Yerushalayim</em> for the <em>Sanhedrin</em>, but were buried in <em>Gush Chalav</em>. The area later came to have a Muslim majority; today it is home chiefly to some 13,000 <strong>Maronite Christians</strong>, a Lebanese sect persecuted under Muslim rule but living peacefully within the democratic framework of the State of Israel, with churches and schools, some of them serving in the IDF.</p>
+</div>
+
+<h3>The Revelation</h3>
+
+<p><em>Rav Chaim Vital</em> records that the <em>Arizal</em> entered the small cave of <em>Shmaya v’Avtalyon</em> &mdash; a small space with a few <em>kochim</em> (<span class="heb-inline">כוכים</span>) &mdash; and that when he emerged he told his <em>talmidim</em> that <em>Shmaya</em> and <em>Avtalyon</em> had revealed themselves to him as he prostrated himself there. Such revelations are not granted to us; they are granted to the <em>gedolei Yisrael</em> (<span class="heb-inline">גדולי ישראל</span>).</p>
+
+<p>What did they teach him? <strong>A new <em>sod</em> (<span class="heb-inline">סוד</span>) concerning the <em>kavanah</em> at <em>“Es Tzemach Dovid avdecha”</em>: that <em>Mashiach ben Yosef</em> not be killed by <em>Armilus HaRasha</em>.</strong> The <em>Vilna Gaon</em> (<span class="heb-inline">גר״א</span>) taught a related <em>kavanah</em> on this <em>berachah</em>.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a></p>
+
+<h2>VI. <em>Armilus HaRasha</em> and the End of Days</h2>
+
+<p>What is the subject here? The genre is Jewish eschatology &mdash; the study of <em>acharis hayamim</em> (<span class="heb-inline">אחרית הימים</span>). The Armageddon and apocalypse of popular imagination are downstream of it; each tradition has its own version. Ours is to be found in our <em>berachos</em>, in the <em>siddur</em> itself.</p>
+
+<h3><em>Sefer Zerubavel</em> and <em>Armilus</em></h3>
+
+<p><em>Armilus</em> (<span class="heb-inline">ארמילוס</span>) first appears in <em>Sefer Zerubavel</em>.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> <em>Zerubavel</em> (<span class="heb-inline">זרובבל</span>) of <em>Tanach</em> (<span class="heb-inline">תנ״ך</span>) is, according to <em>Chazal</em>, none other than <em>Nechemiah ben Chachalyah</em> (<span class="heb-inline">נחמיה בן חכליה</span>) &mdash; the great leader of <em>Klal Yisrael</em> in the era of the return to <em>Tzion</em> (<span class="heb-inline">ציון</span>) from <em>Bavel</em> (<span class="heb-inline">בבל</span>), a descendant of the tribe of <em>Yehudah</em> (<span class="heb-inline">יהודה</span>) and of the royal house of <em>Dovid</em>. <em>Sefer Zerubavel</em> is allegedly the work of <em>Nechemiah</em> himself; it is not part of <em>Tanach</em>. (The <em>Sefer Nechemiah</em> (<span class="heb-inline">ספר נחמיה</span>) that we have in <em>Tanach</em> is a different book; <em>Sefer Zerubavel</em> is a separate, mystical work.) The <em>Ibn Ezra</em> (<span class="heb-inline">אבן עזרא</span>) at the opening of <em>Shemos</em> (<span class="heb-inline">שמות</span>) dismisses its authority; <em>Rav Saadia Gaon</em> (<span class="heb-inline">רב סעדיה גאון</span>) in the ninth century quotes it, and <em>Targum Yonasan</em> (<span class="heb-inline">תרגום יונתן</span>) on <em>Devarim</em> (<span class="heb-inline">דברים</span>) and elsewhere is said to reflect it. The tradition is divided.</p>
+
+<p>According to <em>Sefer Zerubavel</em>, <em>Nechemiah</em> asked the angel <em>Michael</em> (<span class="heb-inline">מלאך מיכאל</span>) what would occur at the end of days, and the text records a long account of an Armageddon-like war. The name <em>Armageddon</em> derives from <em>Har Megiddo</em> (<span class="heb-inline">הר מגידו</span>), the mountain in northern <em>Eretz Yisrael</em> that was the site of major wars throughout <em>Tanach</em> and on which <em>Yigael Yadin</em> spent much of his career excavating at Tell Megiddo. According to tradition, the great battle of <em>acharis hayamim</em> is to be fought at <em>Har Megiddo</em>.</p>
+
+<p>The name <em>Armilus</em> itself is understood as <em>Romulus</em>, the legendary founder of Rome, raised by wolves in Roman mythology. In our tradition the leader of <em>malchus Edom</em> (<span class="heb-inline">מלכות אדום</span>) at the end of days is associated with <em>Romulus</em> or his <em>gilgul</em> (<span class="heb-inline">גלגול</span>) &mdash; hence <em>Armilus HaRasha</em>. <em>Edom</em> is Rome; Rome is Western civilization; its end-time leader is <em>Armilus</em>.</p>
+
+<h3>The War Between <em>Paras</em> and <em>Edom</em></h3>
+
+<p>The <em>Gemara</em> in <em>Yoma</em> 10a<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> records a <em>machlokes</em> over the fate of the two empires: whether Rome is destined to fall into the hands of Persia, or Persia into the hands of Rome. The understanding followed in the shiur is that at the end of days there will be a war between <em>malchus Edom</em> (the West, in the shiur’s framing) and <em>malchus Paras</em> (<span class="heb-inline">מלכות פרס</span>) (Iran and the broader Islamic world), in which <em>Edom</em> will ultimately prevail. The view was voiced that this generation is approaching <em>acharis hayamim</em>: Western civilization sits in <em>malchus Edom</em>, <em>Paras</em> sits in the Islamic world, and the conflict is unfolding.</p>
+
+<p>But the leader of <em>Edom</em> &mdash; <em>Armilus HaRasha</em> &mdash; will come down to <em>Eretz Yisrael</em> and fight <em>Klal Yisrael</em>. According to <em>Sefer Zerubavel</em>, <em>Armilus</em> will reach <em>Har Megiddo</em> and <strong>kill <em>Mashiach ben Yosef</em></strong>.</p>
+
+<h3><em>Mashiach ben Yosef</em> and <em>Mashiach ben Dovid</em></h3>
+
+<p>The notion of <em>Mashiach ben Yosef</em> may sound strange. In our tradition <em>Mashiach ben Yosef</em> falls at the hands of <em>Armilus HaRasha</em>; thereafter <strong><em>Mashiach ben Dovid</em></strong> comes and avenges his death, and this brings the <em>geulah</em>.</p>
+
+<p>The <em>kavanah</em> revealed in the cave of <em>Shmaya v’Avtalyon</em> is that when one says <em>“Es Tzemach Dovid avdecha,”</em> one prays that <em>Armilus HaRasha</em> not have the <em>koach</em> (<span class="heb-inline">כח</span>) to kill <em>Mashiach ben Yosef</em> &mdash; that he survive, and the <em>geulah</em> unfold without that <em>churban</em> (<span class="heb-inline">חורבן</span>). This is real substance in our <em>tefillah</em>: we hope for <em>acharis hayamim</em>, and ask <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) that we somehow prevail over <em>Armilus</em> before he can take the life of <em>Mashiach ben Yosef</em>.</p>
+
+<p>The <em>kavanah</em> raises a question that the shiur did not close. Do we pray for his survival, or for his eventual victory through death and vengeance? The sources &mdash; <em>Sefer Zerubavel</em>, the <em>Pesikta Rabbasi</em> (<span class="heb-inline">פסיקתא רבתי</span>), the <em>Zohar</em> &mdash; are not uniform. If the death of <em>Mashiach ben Yosef</em> is a necessary step in the eschatological drama, a prayer for his survival would seem to stand in tension with the received <em>mesorah</em>. The <em>chiddush</em> (<span class="heb-inline">חידוש</span>) of the <em>Arizal</em> is that the death is not inevitable, and that the <em>tefillah</em> of <em>Klal Yisrael</em> can avert it.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<h2>VII. <em>Tzemach Dovid</em> &mdash; Why <em>“Tzemach”</em>?</h2>
+
+<p>The word <em>tzemach</em> (<span class="heb-inline">צמח</span>) means a sprout &mdash; a flower or blade of grass beginning to grow. <em>Pesukim</em> in <em>Tanach</em> repeatedly refer to <em>Mashiach</em> as <em>tzemach</em>, and there is a <em>shitah</em> (<span class="heb-inline">שיטה</span>) that his very name <em>is</em> <em>Tzemach</em>.</p>
+
+<h3>The Names of <em>Mashiach</em></h3>
+
+<p>The <em>Gemara</em> in <em>Sanhedrin</em> 98b<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> records the names of <em>Mashiach</em>: <strong><em>Shiloh</em> (<span class="heb-inline">שילה</span>), <em>Yinnon</em> (<span class="heb-inline">ינון</span>), <em>Chaninah</em> (<span class="heb-inline">חנינא</span>), and Menachem ben Chizkiyah</strong> (<span class="heb-inline">מנחם בן חזקיה</span>). The initial letters of <em>Menachem</em>, <em>Yinnon</em>, <em>Shiloh</em>, <em>Chaninah</em>, rearranged, spell <em>Mashiach</em> (<span class="heb-inline">משיח</span>). The <em>Gemara</em> in <em>Pesachim</em> 54a<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> teaches that seven things were created before the world &mdash; <em>Torah</em> (<span class="heb-inline">תורה</span>), <em>teshuvah</em> (<span class="heb-inline">תשובה</span>), <em>Gan Eden</em> (<span class="heb-inline">גן עדן</span>), <em>Gehinnom</em> (<span class="heb-inline">גיהנם</span>), the <em>Kisei HaKavod</em> (<span class="heb-inline">כסא הכבוד</span>), the <em>Beis HaMikdash</em>, and the name of <em>Mashiach</em>. The name represents the <em>tachlis</em> of all of <em>beriyah</em> (<span class="heb-inline">בריאה</span>), and the <em>geulah</em> through <em>Mashiach</em> is built into the structure of the world from its inception.</p>
+
+<h3>The Acrostic <em>“Mashiach Hashem Shemo Chaim”</em></h3>
+
+<p>An acrostic is brought on the name of <em>Mashiach</em>, in the form <em>“Mashiach Hashem shemo Chaim”</em> (<span class="heb-inline">משיח ה׳ שמו חיים</span>), and is read as a hint that a <em>gadol</em> (<span class="heb-inline">גדול</span>) who bore the name <em>Chaim</em> carried a <em>nitzotz</em> (<span class="heb-inline">ניצוץ</span>) of the <em>neshamah</em> (<span class="heb-inline">נשמה</span>) of <em>Mashiach</em>. The written summary of the shiur attributed the remez to the <em>Chida</em> (<span class="heb-inline">חיד״א</span>) at the close of <em>Parshas Re’eh</em> (<span class="heb-inline">פרשת ראה</span>); the shiur itself, as recorded, names the bearer of the <em>nitzotz</em> as <em>Rav Chaim ben Attar</em> (<span class="heb-inline">רב חיים בן עטר</span>), the <em>Ohr HaChaim HaKadosh</em> (<span class="heb-inline">אור החיים הקדוש</span>).<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></p>
+
+<div class="callout">
+<h3 style="margin-top:0">The <em>Baal Shem Tov</em> and the <em>Gadol HaDor</em></h3>
+<p>The <em>Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>)<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> is said to have testified that <em>Rav Chaim ben Attar</em> bore a <em>nitzotz</em> of <em>Mashiach</em>. One <em>Shabbos</em> (<span class="heb-inline">שבת</span>) the <em>Baal Shem Tov</em> was washing for <em>seudah shlishis</em> (<span class="heb-inline">סעודה שלישית</span>) when an illumination suddenly came upon him. After the meal he told his <em>talmidim</em>: <em>“The gadol hador (<span class="heb-inline">גדול הדור</span>) has just passed away.”</em></p>
+<p>How did the <em>Baal Shem Tov</em> in <em>Mezhbizh</em> know that a <em>tzaddik</em> had passed from the world in <em>Eretz Yisrael</em> at that very moment? They asked him, and he answered: <em>“There is a sod in netilas yadayim (<span class="heb-inline">נטילת ידים</span>) for seudah shlishis that is known to only one Jew in each generation &mdash; the tzaddik hador (<span class="heb-inline">צדיק הדור</span>). I never knew it. Suddenly, as I washed for shalosh seudos (<span class="heb-inline">שלוש סעודות</span>), the sod came into my head. That means that the tzaddik hador has just passed; the sod was transferred to me.”</em></p>
+<p>The <em>maggid shiur</em> was himself aware that the account circulates widely among the <em>chassidic</em> traditions &mdash; it is told, in his words, as a story “everybody has.”</p>
+</div>
+
+<h3>The Meaning of <em>“Tzemach”</em></h3>
+
+<p>Why <em>tzemach</em>? <em>Mashiach</em> is sprouting even now &mdash; like a seed deep in the ground that has begun to germinate. It takes time before it breaks the surface. Throughout the generations we are growing the seed of <em>Mashiach</em>; he germinates underground, and one day we shall see him emerge. <em>“Meheirah tatzmiach”</em> (<span class="heb-inline">מהרה תצמיח</span>) &mdash; let it sprout quickly. <em>“Bimeinu achishenah”</em> (<span class="heb-inline">בימינו אחישנה</span>) &mdash; in our days, may it be hastened.</p>
+
+<h2>VIII. The Tears That Water the <em>Tzemach</em></h2>
+
+<p><em>Rav Shimshon Schwab</em> (<span class="heb-inline">רב שמשון שוואב</span>)<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> writes, in a passage of deep feeling, that every <em>tzemach</em> requires irrigation. What waters the <em>tzemach</em> of <em>Mashiach</em>? <strong>The tears shed at <em>“v’al Yerushalayim ircha berachamim tashuv.”</em></strong> If one wept at <em>“Yerushalayim ircha,”</em> one’s tears irrigated the <em>tzemach</em>.</p>
+
+<p>The <em>Arizal</em> in his <em>kavanos</em> (<span class="heb-inline">כוונות</span>) on <em>Shemoneh Esrei</em><a class="footnote-ref" id="ref24" href="#fn24">[24]</a> asks how a <em>Yehudi</em> could fail to weep at <em>“Yerushalayim ircha berachamim tashuv.”</em> The <em>pasuk</em> in <em>Yeshayahu</em> (<span class="heb-inline">ישעיהו</span>)<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> reads <em>“malachei shalom mar yivkayun”</em> (<span class="heb-inline">מלאכי שלום מר יבכיון</span>): the <em>malachim</em> weep continuously over <em>Yerushalayim</em> &mdash; <em>“tamid”</em> (<span class="heb-inline">תמיד</span>). We are seeking to console <em>Rachel Imeinu</em> (<span class="heb-inline">רחל אמנו</span>), who weeps for her children. How could a <em>Yehudi</em> not weep? Once a year, on <em>Tishah B’Av</em> (<span class="heb-inline">תשעה באב</span>), we sit on the floor and speak of <em>Yerushalayim</em>; the rest of the year we live as though it does not weigh upon us. The <em>geulah shleimah</em> (<span class="heb-inline">גאולה שלמה</span>) with <em>Yerushalayim</em> and <em>malchus beis Dovid</em> awaits the tears.</p>
+
+<h2>IX. <em>“Ki Lishuasecha Kivinu Kol HaYom U’metzapim LiYeshuah”</em></h2>
+
+<p>Whence come the words <em>“u’metzapim liyeshuah”</em> (<span class="heb-inline">ומצפים לישועה</span>)? <em>“Ki lishuasecha kivinu kol hayom”</em> (<span class="heb-inline">כי לישועתך קוינו כל היום</span>) is in the standard <em>nusach</em>. <em>“U’metzapim liyeshuah”</em> appears in many <em>siddurim</em> in parentheses or brackets. It is recited by those who follow the <em>Sefardi</em> custom, though many <em>Sefardim</em> do not say it.</p>
+
+<h3>The Source &mdash; A Printer’s Mistake</h3>
+
+<p>The <em>Arizal</em> (or his <em>talmidim</em> in his name) wrote that when one says <em>“ki lishuasecha kivinu kol hayom,”</em> the <em>kavanah</em> should be the following. The <em>Gemara</em> in <em>Shabbos</em> 31a<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> teaches that among the questions asked in the <em>beis din shel maalah</em> (<span class="heb-inline">בית דין של מעלה</span>) is <em>“Tzipisa liyeshuah?”</em> (<span class="heb-inline">צפית לישועה</span>) &mdash; did you await <em>Mashiach</em>?</p>
+
+<div class="callout">
+<p>What shame shall be ours when we are asked, <em>“Did you await Mashiach?”</em> Are we waiting? <em>Mashiach</em> is not a bumper sticker. To await <em>Mashiach</em> in truth means to hope that the world should be a better place &mdash; that humanity should be elevated. We shall be embarrassed.</p>
+</div>
+
+<p>The <em>Arizal</em> accordingly wrote: have <em>kavanah</em> that you truly desire the <em>yeshuah</em> (<span class="heb-inline">ישועה</span>), so that when you come to <em>Shamayim</em> (<span class="heb-inline">שמים</span>) you may answer, <em>“Yes &mdash; every day I anticipated the yeshuah.”</em></p>
+
+<p>This <em>kavanah</em> was meant to be printed in brackets as an instruction &mdash; <em>not</em> as part of the <em>nusach</em>. Somewhere in the printing history, however, a printer brought the bracketed <em>kavanah</em> into the text of the <em>nusach</em> itself. So we say <em>“u’metzapim liyeshuah”</em> &mdash; by mistake, according to the <em>Likutei Ari</em> (<span class="heb-inline">לקוטי אר״י</span>).<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> Some <em>kehillos</em> (<span class="heb-inline">קהילות</span>) noticed and removed it. In either case the <em>kavanah</em> remains the point: whether in brackets or in the <em>nusach</em>, this is what is sought.</p>
+
+<h2>X. What the <em>Berachah</em> Asks of Us &mdash; <em>Geulah</em> and Separation from the Nations</h2>
+
+<p>The tears shed for <em>Yerushalayim</em> cannot be separated from the condition that occasions them: the exile in which <em>Klal Yisrael</em> still lives, not yet fully separate from the nations among whom it dwells. It is here that <em>Rav Shimshon Raphael Hirsch</em> (<span class="heb-inline">רב שמשון רפאל הירש</span>) is quoted at length on this <em>berachah</em>, together with the testimony of his successor in the Frankfurt tradition, <em>Rav Schwab</em>.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> The <em>geulah</em> of <em>Klal Yisrael</em>, with <em>Yerushalayim</em> and <em>Mashiach</em>, is beyond our full grasp. But at that point <em>Klal Yisrael</em> will be separated from <em>umos ha’olam</em> (<span class="heb-inline">אומות העולם</span>).</p>
+
+<p>We do not realise, writes <em>Rav Hirsch</em>, how much of the philosophy and <em>hashkafah</em> (<span class="heb-inline">השקפה</span>) of the nations has infiltrated our ranks. The <em>pasuk</em> in <em>Tehillim</em> (<span class="heb-inline">תהלים</span>) alludes to it: some Jews spend their entire lives fighting off the <em>hashpaah</em> (<span class="heb-inline">השפעה</span>) of the surrounding nations.</p>
+
+<h3>The Generations Move Down</h3>
+
+<p>As the generations draw nearer to the <em>geulah</em>, two things occur: <em>Klal Yisrael</em> becomes more affected by the nations, and the nations themselves grow worse.</p>
+
+<div class="callout">
+<p>The example of <em>Rav Schwab</em>, in the Frankfurt tradition of <em>Rav Hirsch</em>: when he was a child in Germany, before the First World War, there was no such thing as mixed swimming. Even the German gentiles kept that boundary &mdash; even the supposedly cultured Germans, full of <em>derech eretz</em> (<span class="heb-inline">דרך ארץ</span>), who would later murder six million. This changed after the First World War. The world became more degenerate, more lustful &mdash; <em>parutz</em> (<span class="heb-inline">פרוץ</span>). After the war it became normalised in Europe; today it is universal. Can it be said that the outlook of the world does not creep into <em>Klal Yisrael</em>?</p>
+<p>The measure of <em>bushah</em> (<span class="heb-inline">בושה</span>) and <em>tznius</em> (<span class="heb-inline">צניעות</span>) in our community is lower than it was a generation ago, and lower than the generation before that. We must remember who we are. We are <em>bnei malachim</em> (<span class="heb-inline">בני מלאכים</span>); we are <em>“rachmanim, bayshanim, gomlei chasadim”</em> (<span class="heb-inline">רחמנים, ביישנים, גומלי חסדים</span>). <em>Bushah</em> is in the very makeup of <em>Klal Yisrael</em>. We do not see it because we are so deeply influenced by the nations around us.</p>
+</div>
+
+<h3>Up the Ladder and Down</h3>
+
+<p>A further observation. In Germany, Jews who wished to integrate with the upper classes went to university and became authors, poets, philosophers, doctors. Later the imitation went down the social ladder as well. In America in the 1920s and 1930s, the lower echelons were copied too: there was a Jewish mafia. The <em>maggid shiur</em> knew a <em>Yehudi</em> in Miami whose grandfather owned a kosher restaurant where <strong>Meyer Lansky</strong> and his associates used to sit; Lansky was a Jew. Another, <strong>Benjamin “Bugsy” Siegel</strong>, is credited with founding Las Vegas &mdash; so that, as the sardonic remark has it, not only <em>Eretz Yisrael</em> is ours, but Las Vegas as well. How did we sink so low?</p>
+
+<h3>Yearning</h3>
+
+<p>Says <em>Rav Hirsch</em>: we do not have <em>Yerushalayim</em>; we do not have <em>malchus beis Dovid</em>; we do not have <em>geulah</em>. We should yearn for the days when we shall not be trying to copy the nations &mdash; the days when <em>they</em> will try to copy <em>us</em>, when we shall be a light to the nations. One must pause and reflect how low we have fallen, even within the ultra-Orthodox community. <em>Baruch Hashem</em>, we keep <em>Torah u’mitzvos</em> (<span class="heb-inline">תורה ומצוות</span>); but the Jewish nation across the generations has been drawn along by what the nations were doing.</p>
+
+<p>For this reason we should truly yearn for the days of an elevated life &mdash; with <em>Yerushalayim</em>, with the <em>Beis HaMikdash</em>, with <em>korbanos</em> (<span class="heb-inline">קרבנות</span>), with <em>malchus beis Dovid</em>. <em>Meheirah tatzmiach</em>; <em>bimeinu achishenah</em>.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Notes marked <em>flag retained</em> carry an honest caveat: the citation could not be verified against Sefaria or the shiur in the Sefaria pass of 5 October 2026.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Megillah</em> 17b–18a (<span class="heb-inline">מגילה י״ז ע״ב</span>) — the order of the <em>berachos</em>; <em>Yerushalayim</em> follows <em>Al HaTzaddikim</em>.</span>
+  <span class="expanded">— Verified on Sefaria (Megillah 17b). The <em>Gemara</em> derives the placement of the <em>berachah</em> of <em>Yerushalayim</em> after <em>Al HaTzaddikim</em> from <em>“Sha’alu shalom Yerushalayim, yishlayu ohavayich”</em> (<span class="heb-inline">שאלו שלום ירושלים ישליו אוהביך</span>, <span class="heb-inline">תהלים קכ״ב:ו׳</span>): the horns of the righteous are exalted in <em>Yerushalayim</em>, and the <em>berachah</em> of <em>Dovid</em> follows once <em>Yerushalayim</em> is rebuilt.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Shibbolei HaLeket</em> (<span class="heb-inline">שבולי הלקט</span>) — <em>midrash</em> of the <em>malachim</em> proclaiming <em>“boneh Yerushalayim”</em> at the dedication of <em>Shlomo</em>’s <em>Beis HaMikdash</em>.</span>
+  <span class="expanded">— Cited as in the shiur (<em>Rabbi Tzidkiyah ben Avraham HaRofeh</em>, <span class="heb-inline">רבי צדקיה בן אברהם הרופא</span>, thirteenth-century Italy). The passage was not located on Sefaria in this pass, and the exact <em>siman</em> is not supplied; the attribution stands on the shiur.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Rashi</em> — the third <em>Beis HaMikdash</em> built above and descending.</span>
+  <span class="expanded">— Cited as the shiur’s aside; the Shiur Review locates the <em>Rashi</em> in <em>Taanis</em> (<span class="heb-inline">תענית</span>). The exact passage was not located in this pass. The <em>machlokes</em> over whether the <em>Beis HaMikdash</em> will be built by man or descend from <em>Shamayim</em> is noted but its sources are not developed here. <strong>Flag retained: source to be confirmed before print.</strong></span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Tur, Orach Chaim</em> 118 (<span class="heb-inline">טור אורח חיים סימן קי״ח</span>) — the 1,800 <em>gematria</em> of the opening letters of the eighteen <em>berachos</em>.</span>
+  <span class="expanded">— Verified on Sefaria (Tur, Orach Chayim 118). In the <em>seif</em> on <em>Boneh Yerushalayim</em> the <em>Tur</em> gives the <em>nusach</em> of the <em>Ashkenazim</em>, <em>“Ulirushalayim ircha berachamim tashuv, v’tishkon b’socha ka’asher dibarta,”</em> and supports it from a <em>midrash</em> of the <em>darshei reshumos</em>: the count of the <em>roshei teivos</em> of the eighteen <em>berachos</em> comes to 1,800, “equal to the number of <em>malachim</em> who receive the <em>tefilos</em> of <em>Yisrael</em>,” and “according to this <em>nusach</em> the count is exact.” The <em>Tur</em> cites the <em>darshei reshumos</em>, not the <em>Zohar</em>; the <em>Zohar</em> connection is as presented in the shiur and was not located on Sefaria. <em>Editorial correction:</em> the weekly write-up’s secondary reference to <em>siman</em> 236 could not be confirmed and is omitted.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Oral mesorah</em> — the exchange in the shiur on the <em>tav</em> and the <em>vav</em>.</span>
+  <span class="expanded">— In the live shiur a <em>Sefardi</em> participant joked with the <em>maggid shiur</em> over the difference in <em>nusach</em>: where <em>Edos HaMizrach</em> have the <em>tav</em> (<span class="heb-inline">ת</span>) of <em>Tishkon</em> and <em>Ashkenaz</em> the <em>vav</em> (<span class="heb-inline">ו</span>), four hundred against six, “you have more <em>malachim</em>.” Preserved here as oral <em>mesorah</em> of the <em>beis midrash</em>, without interpretation.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Arizal</em> on <em>Nusach Edos HaMizrach</em> — <em>“Tishkon”</em> without the <em>vav</em>.</span>
+  <span class="expanded">— <em>Rabbi Yitzchak Luria</em> (<span class="heb-inline">רבי יצחק לוריא</span>), as transmitted by <em>Rav Chaim Vital</em> in the <em>Pri Etz Chaim</em> (<span class="heb-inline">פרי עץ חיים</span>) and <em>Shaar HaKavanos</em> (<span class="heb-inline">שער הכוונות</span>), recited <em>“Tishkon.”</em> His reasons rest on kabbalistic <em>kavanos</em>, not on the <em>gematria</em> of 1,800; a fuller treatment would engage why his system of <em>kavanos</em> (the opening letters as names of <em>malachim</em>) prefers <em>“Tishkon,”</em> and not merely observe his indifference to the <em>Tur</em>’s count. The <em>Pri Etz Chaim</em> reference is cited from the weekly apparatus and was not re-checked on Sefaria.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Bach, Orach Chaim</em> 118 (<span class="heb-inline">ב״ח, אורח חיים סימן קי״ח</span>) — <em>kisei Dovid</em> as <em>mein ha’chasimah</em> of <em>“boneh Yerushalayim.”</em></span>
+  <span class="expanded">— <em>Rabbi Yoel Sirkes</em> (<span class="heb-inline">רבי יואל סירקיש</span>, the <em>Bach</em>, Krakow), in his commentary on the <em>Tur</em>. Sefaria confirms that the <em>Bach</em> comments at this passage of <em>siman</em> 118; the specific wording of the question of <em>Rav Shabsai Sofer</em> and of the <em>Bach</em>’s reply was not independently confirmed in this pass and is given as in the shiur.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <div class="note-academic"><strong><span class="heb-inline">רב שבתי סופר</span></strong> — the <em>Rav Shabsai Sofer</em> of <em>Przemyśl</em>, author of the annotated <em>siddur</em> of <em>nusach Ashkenaz</em> with a six-hundred-page <em>hakdamah</em>; blind in old age and said to have dictated the work to <em>talmidim</em>; approved by the <em>Maharsha</em> (<span class="heb-inline">מהרש״א</span>, <em>Rabbi Shmuel Eliezer Eidels</em>), the <em>Bach</em>, the <em>Rema</em> school, and the <em>Shelah HaKadosh</em> (<span class="heb-inline">של״ה הקדוש</span>, <em>Rabbi Yeshayah HaLevi Horowitz</em>). <br><em>Editorial caveat (flag retained):</em> this biographical sketch is the weekly write-up’s own compilation; it was not located on Sefaria (outside its corpus). The dates given in the weekly note (c. 1545–1622) differ from those commonly given and are therefore omitted here. The identification of the <em>Maharsha</em>, <em>Bach</em>, <em>Rema</em> school, and <em>Shelah</em> as those who commissioned and approved the work is as stated in the shiur and has not been independently confirmed.</div>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <div class="note-academic">The <strong>Council of Four Lands</strong> (<span class="heb-inline">ועד ארבע ארצות</span>; active c. 1580–1764) — the central authority of Polish Jewry, issuing <em>takanos</em> on taxation, communal organisation, and approved publications; dissolved by Polish royal decree in 1764. <br><em>Editorial caveat (flag retained):</em> reviewer-supplied enrichment; the shiur mentioned the <em>Vaad</em> and its <em>kol koreh</em> only in passing. The <em>kol koreh</em> requiring every synagogue to own a copy of the <em>siddur</em> is as reported in the shiur; modern historical scholarship on the <em>Vaad</em> was not consulted here.</div>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Tosefta Berachos</em> 3:25 (<span class="heb-inline">תוספתא ברכות ג:כ״ה</span>); <em>Yerushalmi Berachos</em> 4:3 (<span class="heb-inline">ירושלמי ברכות פרק ד הלכה ג</span>) — <em>Dovid</em> included within <em>Boneh Yerushalayim</em>.</span>
+  <span class="expanded">— Verified on Sefaria: <em>Tosefta Berachos</em> 3:25 teaches that the eighteen <em>berachos</em> correspond to the eighteen mentions of the Divine Name in <em>Tehillim</em> 29, and that one may combine the <em>berachos</em> of the <em>minim</em> and the <em>perushim</em>, of the <em>geirim</em> and the <em>zekenim</em>, and of <em>Dovid</em> and <em>Yerushalayim</em>; one who recites each separately has also fulfilled his obligation. The <em>Yerushalmi</em> reference is tightened from the weekly’s chapter-level citation to <em>Berachos</em> 4:3, the <em>sugya</em> on the eighteen <em>berachos</em> (Sefaria confirms the <em>mishnah</em> of <em>Rabban Gamliel</em> on the eighteen <em>berachos</em> at this location); the specific line on the merged <em>berachah</em> was not located and is left to the reader to confirm. <em>Editorial correction:</em> the weekly’s statement that the two <em>berachos</em> were “later split when <em>Birkas HaMinim</em> was added” is not supported by these sources and is omitted.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Lomdish</em> note — the limits of the <em>Kalir</em> proof.</span>
+  <span class="expanded">— From the Shiur Review. The <em>Yerushalmi</em> and <em>Tosefta</em> have textual variants in their lists of <em>berachos</em>; that <em>Ulirushalayim</em> and <em>Tzemach Dovid</em> were specifically the pair merged is one of several possibilities. The <em>Kalir</em>’s silence on <em>Tzemach Dovid</em> is strong evidence, but not dispositive.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <div class="note-academic"><strong>Cairo Geniza</strong> — the recovery of the Geniza manuscripts to Cambridge University Library in 1896–97 is associated with <em>Solomon Schechter</em>; the early <em>piyut</em> of <em>Eretz Yisrael</em> recovered from it has been studied by <em>Menahem Zulay</em>, <em>Ezra Fleischer</em>, and others. The traditional attribution of <em>“Yerushalayim Irecha”</em> to <em>Rabbi Elazar b’Rabbi Shimon</em> (<span class="heb-inline">רבי אלעזר ברבי שמעון</span>) has been challenged by Geniza-based scholarship in favour of an anonymous early poet of <em>Eretz Yisrael</em>. <br><em>Editorial caveat (flag retained):</em> reviewer-supplied enrichment; the shiur named no scholars. The specific attribution to <em>Zulay</em> and <em>Fleischer</em> should be checked against a named article (for example <em>Fleischer</em>’s work on medieval Hebrew liturgical poetry) before print. The weekly’s claim that the Geniza recovered <em>piyutim</em> of the “late tannaitic and early amoraic periods” is omitted as unverified.</div>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Taz on Orach Chaim</em> <span class="heb-inline">ט״ז על אורח חיים</span> — <em>kerovos</em> as the general term for any <em>piyut</em> embedded within <em>Shemoneh Esrei</em>.</span>
+  <span class="expanded">— <em>Rabbi Dovid HaLevi Segal</em> (<span class="heb-inline">רבי דוד הלוי סגל</span>, the <em>Taz</em>, 1586–1667). The weekly write-up places this at <em>siman</em> 68 and says the <em>Taz</em> cites “his grandfather”; the <em>Taz</em> was the son-in-law of the <em>Bach</em>, and the relationship is therefore left unspecified in the text above. The <em>siman</em> and the identity of the family authority were not confirmed in this pass.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Rav Chaim Vital</em> on the <em>Arizal</em> — <em>kivrei tzaddikim</em>; the cave of <em>Shmaya v’Avtalyon</em> at <em>Gush Chalav</em>.</span>
+  <span class="expanded">— <em>Rav Chaim Vital</em> (1542–1620), principal <em>talmid</em> of the <em>Arizal</em>. The weekly write-up places the cave revelation in <em>Shaar HaGilgulim</em> (<span class="heb-inline">שער הגלגולים</span>); the Editorial Review observes that the <em>Arizal</em>’s cave revelations are variously recorded in <em>Shaar HaGilgulim</em>, <em>Shivchei HaAri</em>, and <em>Toldos HaAri</em>, and that <em>Shivchei HaAri</em> is a later hagiographical compilation, not <em>Rav Chaim Vital</em>’s own writing. <strong>Flag retained: the precise location in the Vital corpus has not been confirmed.</strong></span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Gra</em> — a related <em>kavanah</em> on <em>“Es Tzemach Dovid.”</em></span>
+  <span class="expanded">— As in the shiur: <em>Rabbi Eliyahu of Vilna</em> (<span class="heb-inline">רבי אליהו מווילנא</span>, 1720–1797) taught a related <em>kavanah</em> on this <em>berachah</em>. The weekly write-up had specified the <em>Siddur HaGra</em> and the content of the <em>kavanah</em> as parallel to the <em>Arizal</em>’s; neither was confirmed, and the text above is accordingly softened to “a related <em>kavanah</em>.” <strong>Flag retained: verify in the <em>Siddur HaGra</em>.</strong></span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <div class="note-academic"><strong><span class="heb-inline">ספר זרובבל</span></strong> — an apocalyptic work attributed to <em>Zerubavel ben Shealtiel</em> (<span class="heb-inline">זרובבל בן שאלתיאל</span>), identified by <em>Chazal</em> with <em>Nechemiah ben Chachalyah</em>; it recounts a vision granted by the angel <em>Michael</em> of the eschatological war, the rise of <em>Armilus</em> from <em>Edom</em>, the death of <em>Mashiach ben Yosef</em>, and the vengeance of <em>Mashiach ben Dovid</em>. <br><em>Editorial caveat (flag retained):</em> the dating of the work (the weekly write-up proposes an early Geonic composition, c. seventh century) is reviewer-supplied, not from the shiur. The citations of the work by <em>Rav Saadia Gaon</em> (<em>Emunos V’Deos</em>), the reflection of it in <em>Targum Yonasan</em> on <em>Devarim</em> 34, and the dismissal of it by the <em>Ibn Ezra</em> at the opening of <em>Shemos</em> are as stated in the shiur; a Sefaria search was not available, and none was located in this pass.</div>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Yoma</em> 10a (<span class="heb-inline">יומא י׳ ע״א</span>) — the <em>machlokes</em> whether <em>Rome</em> will fall to <em>Persia</em> or <em>Persia</em> to <em>Rome</em>.</span>
+  <span class="expanded">— Verified on Sefaria (Yoma 10a). <em>Rabbi</em> (via <em>Rabbi Yehoshua ben Levi</em>), and <em>Rabbi Yochanan</em> in the name of <em>Rabbi Yehuda bar Ilai</em>, hold that Rome is destined to fall into the hands of Persia (<em>Yirmiyahu</em> 49:20, “the youngest of the flock” read as <em>Paras</em>, <em>Tiras</em>); <em>Rav</em> holds the opposite — Persia is destined to fall into the hands of Rome, “the King’s decree” that the builders fall into the hands of the destroyers. The shiur’s picture of a conflict in which <em>Edom</em> prevails follows <em>Rav</em>. <em>Editorial correction:</em> the weekly’s citation of a parallel in <em>Megillah</em> 6 could not be confirmed and is omitted; the formulation quoted in the shiur (<em>“shiyavo al malchus Edom”</em>) was not found in the text of <em>Yoma</em> 10a and is not presented here as a quotation of the <em>Gemara</em>.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Lomdish</em> observation — survival or vengeance of <em>Mashiach ben Yosef</em>.</span>
+  <span class="expanded">— From the Shiur Review. The question is raised, not closed, in the shiur; the <em>Pesikta Rabbasi</em> and <em>Zohar</em> references are as named there and were not located on Sefaria in this pass.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Sanhedrin</em> 98b (<span class="heb-inline">סנהדרין צ״ח ע״ב</span>) — the names of <em>Mashiach</em>.</span>
+  <span class="expanded">— Verified on Sefaria (Sanhedrin 98b). The <em>Gemara</em> asks <em>“What is his name?”</em> and answers: the school of <em>Rabbi Sheila</em> — <em>Shiloh</em> (<span class="heb-inline">בראשית מ״ט:י׳</span>); the school of <em>Rabbi Yannai</em> — <em>Yinnon</em> (<span class="heb-inline">תהלים ע״ב:י״ז</span>); the school of <em>Rabbi Chanina</em> — <em>Chaninah</em> (<span class="heb-inline">ירמיהו ט״ז:י״ג</span>); “and some say” <em>Menachem ben Chizkiyah</em> (<span class="heb-inline">איכה א:ט״ז</span>); and the Rabbis say, “the leper of the house of <em>Rabbi</em>” (<span class="heb-inline">ישעיהו נ״ג:ד׳</span>). <em>Editorial correction:</em> the weekly attributed <em>Menachem</em> to “the school of <em>Rabbi</em>”; in the text it is the <em>“some say”</em> opinion. That the initial letters spell <em>Mashiach</em> is the shiur’s observation, not stated in the <em>Gemara</em>. Sefaria’s text reads <em>Chaninah</em>; the variants on which the <em>maggid shiur</em> hedged in the room were not found there.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Pesachim</em> 54a (<span class="heb-inline">פסחים נ״ד ע״א</span>) — seven things created before the world.</span>
+  <span class="expanded">— Verified on Sefaria (Pesachim 54a): <em>Torah</em>, <em>teshuvah</em>, <em>Gan Eden</em>, <em>Gehinnom</em>, <em>Kisei HaKavod</em>, <em>Beis HaMikdash</em>, and the name of <em>Mashiach</em>.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Chida</em> or <em>Ohr HaChaim</em> — the acrostic <em>“Mashiach Hashem shemo Chaim.”</em></span>
+  <span class="expanded">— The Shiur Review records that the shiur, at about 29:50 in the transcript, names the bearer of the <em>nitzotz</em> as <em>Rav Chaim ben Attar</em> (<span class="heb-inline">רב חיים בן עטר</span>, <em>Ohr HaChaim HaKadosh</em>, 1696–1743), not the <em>Chida</em> (<em>Rabbi Chaim Yosef Dovid Azulai</em>, 1724–1806); the written summary had substituted the <em>Chida</em>. The text above follows the shiur. The weekly’s sourcing of the acrostic to the <em>Chida</em> at the close of <em>Parshas Re’eh</em> names no <em>sefer</em>; if it is the <em>Chida</em>’s own <em>remez</em>, it would be located in his commentary on <em>Re’eh</em> (<em>Nachal Kedumim</em>, <em>Pnei Dovid</em>, or <em>Chomas Anach</em>), and was not located. <em>Further caveat:</em> as given, the initials of <em>“Mashiach Hashem shemo Chaim”</em> do not yield all four letters of <em>Mashiach</em> (<span class="heb-inline">מ-ש-י-ח</span>); the shiur is recorded as saying <em>“mem, shin, yud, ches,”</em> and a four-word form (for example, with an added <em>yihyeh</em>) has been suggested, but no source for it was found. <strong>Flag retained: the acrostic and its source remain unresolved.</strong></span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <div class="note-academic"><strong><em>Baal Shem Tov</em></strong> tradition — the <em>Baal Shem Tov</em> (1698–1760) perceives the passing of a <em>gadol hador</em> through the unexpected revelation of a <em>sod</em> in <em>netilas yadayim</em> for <em>seudah shlishis</em>, known to one <em>tzaddik</em> in each generation. <br><em>Editorial caveat (flag retained):</em> the weekly write-up named the <em>Chida</em> as the subject of the story and sourced it to <em>Degel Machaneh Ephraim</em> and <em>Toldos Yaakov Yosef</em>; as the <em>Chida</em> outlived the <em>Baal Shem Tov</em> by decades, the story cannot be told of him. Following the shiur, it is told here of <em>Rav Chaim ben Attar</em>, whose chronology (d. 1743) fits. The <em>maggid shiur</em> recalled hearing the story as well in <em>Chabad</em> circles and observed that “everybody has this story”; its precise earliest source was not located, and the citation to <em>Degel Machaneh Ephraim</em> and <em>Toldos Yaakov Yosef</em> is not confirmed. As a <em>chassidic maaseh</em>, it lies outside the corpus Sefaria verifies.</div>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Rav Shimshon Schwab, Rav Schwab on Prayer</em> (<span class="heb-inline">עיון תפילה</span>) — the tears that water the <em>tzemach</em>.</span>
+  <span class="expanded">— <em>Rav Shimshon Schwab</em> (1908–1995, <em>rav</em> of <em>Kahal Adath Jeshurun</em>, Washington Heights). The image of the <em>tzemach</em> of <em>Mashiach</em> as a sprout irrigated by the tears of <em>Klal Yisrael</em> at <em>“v’al Yerushalayim ircha berachamim tashuv”</em>, as presented in the shiur. The weekly write-up also attributes to the same work the reading of the influence of the nations before and after the First World War; the shiur’s treatment of that theme is built on <em>Rav Hirsch</em> (see below). Page references were not supplied.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short"><em>Arizal</em> on the <em>kavanos</em> of <em>Shemoneh Esrei</em>; <em>Likutei Ari</em> — weeping at <em>“Yerushalayim ircha.”</em></span>
+  <span class="expanded">— Cited as in the shiur: the <em>Arizal</em>’s <em>kavanos</em> require weeping at <em>“v’al Yerushalayim ircha berachamim tashuv.”</em> The specific location (<em>Pri Etz Chaim</em>, <em>Shaar HaKavanos</em>, or <em>Likutei Ari</em>) was not confirmed.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short"><em>Yeshayahu</em> 33:7 (<span class="heb-inline">ישעיהו ל״ג:ז׳</span>) — <em>“Hen erelam tzaaku chutzah, malachei shalom mar yivkayun.”</em></span>
+  <span class="expanded">— The <em>pasuk</em> describes the <em>malachei shalom</em> weeping bitterly; <em>Chazal</em> and the <em>Arizal</em> read it as the <em>malachim</em> mourning the destruction of <em>Yerushalayim</em>, imposing an obligation of tears upon <em>Klal Yisrael</em> below. (<em>Pasuk</em> not re-fetched in this pass.)</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <span class="short"><em>Shabbos</em> 31a (<span class="heb-inline">שבת ל״א ע״א</span>) — <em>“Tzipisa liyeshuah?”</em> in the <em>beis din shel maalah</em>.</span>
+  <span class="expanded">— The <em>Gemara</em> lists the questions put to a person upon his ascent: <em>“Nasasa v’nasata b’emunah? Kavata itim laTorah? Asakta b’peryah u’revyah? Tzipisa liyeshuah? Pilpalta b’chochmah? Hevanta davar mitoch davar?”</em> (<span class="heb-inline">נשאת ונתת באמונה? קבעת עתים לתורה? עסקת בפריה ורביה? צפית לישועה? פלפלת בחכמה? הבנת דבר מתוך דבר?</span>). The <em>daf</em> is the standard location of this passage; the page was reached on Sefaria in this pass but the specific lines of the six questions were not individually fetched.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn27">
+  <span class="short"><em>Likutei Ari</em> — <em>“u’metzapim liyeshuah”</em> as a marginal <em>kavanah</em> absorbed into the <em>nusach</em>.</span>
+  <span class="expanded">— As in the shiur and the weekly apparatus: a marginal note instructing the <em>mispallel</em> to anticipate the <em>yeshuah</em> was, in some printings, absorbed into the body of the <em>nusach</em>, producing <em>“u’metzapim liyeshuah.”</em> Some <em>kehillos</em> noticed the error and removed it; others retain it. The specific passage in the <em>Arizal</em>’s writings was not located in this pass.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn28">
+  <span class="short"><em>Rav Shimshon Raphael Hirsch</em> — the <em>hashpaah</em> of the nations; the pre- and post-war change in Germany.</span>
+  <span class="expanded">— The shiur quotes <em>Rav Hirsch</em> at length on this <em>berachah</em> without naming the work. <em>Editorial correction:</em> the example of a childhood in Germany before the First World War, and the change after it, cannot be <em>Rav Hirsch</em>’s own (he died in 1888); it corresponds to <em>Rav Schwab</em> (born 1908 in Germany), to whom the weekly write-up’s own note on <em>Rav Schwab on Prayer</em> also credits the pre- and post-war analysis. The text above therefore attributes the example to <em>Rav Schwab</em> and the general theme of the nations’ <em>hashpaah</em> to <em>Rav Hirsch</em>, as in the shiur. The passage as a whole should be traced to its source before print. <strong>Flag retained: source of the quotation unconfirmed.</strong> The Shiur Review notes that the texture of this section is sharper and more charged on the audio than on the page.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<footer>
+  Sponsored by the Bachler Family. Sefer Edition of the shiur of Rabbi Ephrati recorded 6 July 2025 &mdash; <em>Ulirushalayim Ircha</em> and <em>Es Tzemach Dovid</em>. This edition renumbers the <em>Mareh Mekomos</em> in body order; folds the <em>Shibbolei HaLeket</em> and the third <em>Beis HaMikdash</em> into the opening section; restores the <em>tzarich iyun</em> from <em>Bentching</em> on the <em>Bach</em>; restores the <em>Rashi</em> on the third <em>Beis HaMikdash</em> (flagged), the <em>Bugsy Siegel</em> remark, and the <em>Baal Shem Tov</em> story as told of <em>Rav Chaim ben Attar</em>; corrects the citations of <em>Tosefta Berachos</em>, <em>Yoma</em> 10a, <em>Sanhedrin</em> 98b, and the <em>Tur</em> in accordance with Sefaria; consolidates the eschatology sections; frames the closing section as the <em>berachah</em>&rsquo;s demand upon the reader; and attributes the pre- and post-war German example to <em>Rav Schwab</em> on chronological grounds.
+</footer>
+
+</body>
+</html>

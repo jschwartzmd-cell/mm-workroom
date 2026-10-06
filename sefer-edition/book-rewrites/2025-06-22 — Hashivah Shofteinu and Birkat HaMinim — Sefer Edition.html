@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Hashivah Shofteinu and Birkat HaMinim</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">הָשִׁיבָה שׁוֹפְטֵינוּ וּבִרְכַּת הַמִּינִים</h1>
+  <div class="english-title">The Berachah of Judges and the Nineteenth Berachah &mdash; <em>Malchus</em>, <em>Mishpat</em>, and the Separation from the <em>Minim</em></div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 22 June 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Sponsored by Reb Abish and Mrs. Mendel upon the commemoration of <span class="heb-inline">תח&quot;ת</span> (1648), on which day a community was spared the sword of the Crusades and established half a day as a <span class="heb-inline">תענית</span> and half as a <span class="heb-inline">יום טוב</span>. <span class="heb-inline">לעילוי נשמת</span> <span class="heb-inline">אסתר בת ינקל שלום</span> and her relatives who perished <span class="heb-inline">על קידוש השם</span> in Auschwitz, and <span class="heb-inline">לעילוי נשמת</span> Reb Mulch Yitzchak Akiva (Reb Tommy Herman) and his sisters, aged four and seven, killed in Auschwitz &mdash; <span class="heb-inline">השם ינקום דמם</span>. <span class="heb-inline">זמן תשובה</span> for <span class="heb-inline">יהודי הונגריה</span>.</em></p>
+
+<p class="lead">Two consecutive <em>berachos</em> of <em>Shemoneh Esrei</em> stand at the heart of the <em>bakashos</em> for the <em>ge&rsquo;ulah</em>. The first bears a signature found nowhere else in the <em>Amidah</em>; the second was never part of the original eighteen at all.</p>
+
+<h2>I. The Structural Place and the Restoration of <em>Sanhedrin</em></h2>
+
+<p>The <em>berachah</em> of <em>Hashivah Shofteinu</em> (<span class="heb-inline">הָשִׁיבָה שׁוֹפְטֵינוּ</span>) sits within the sequence of petitions for the future <em>ge&rsquo;ulah</em> that begins with <em>Teka b&rsquo;Shofar</em> (<span class="heb-inline">תְּקַע בְּשׁוֹפָר</span>). The order is itself the order of the <em>ge&rsquo;ulah</em>: the <em>Ribbono Shel Olam</em> gathers the exiles; the great <em>shofar</em> sounds; and the <em>Sanhedrin</em> (<span class="heb-inline">סַנְהֶדְרִין</span>) is reconstituted so that <em>mishpat</em> (<span class="heb-inline">מִשְׁפָּט</span>) may once again be delivered under <em>malchus</em> (<span class="heb-inline">מַלְכוּת</span>). Three times each day <em>Klal Yisrael</em> places the request upon its lips: <em>Hashivah shofteinu k&rsquo;varishonah, v&rsquo;yo&rsquo;atzeinu k&rsquo;vatechilah</em> &mdash; <em>restore our judges as in the beginning and our counselors as of old</em>.</p>
+
+<h3>The Historical Precedent &mdash; The <em>Mahari Beirav</em></h3>
+
+<p>The most consequential historical attempt to reconstitute the <em>Sanhedrin</em> was undertaken in sixteenth-century <em>Tzefas</em> by the <em>Mahari Beirav</em> (<span class="heb-inline">מהר&quot;י בי רב</span>), a contemporary of the <em>Beis Yosef</em> and one of his teachers.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The halachic ground of the attempt was the ruling of the <em>Rambam</em> in <em>Hilchos Sanhedrin</em> that the unanimous consent of the <em>chachmei Eretz Yisrael</em> may reconstitute the broken chain of <em>semichah</em> (<span class="heb-inline">סְמִיכָה</span>). In the year 1538 the <em>Mahari Beirav</em> acted upon this ruling and conferred <em>semichah</em> upon a small circle of <em>talmidim</em>. The <em>Ralbach</em> (<span class="heb-inline">רלב&quot;ח</span>), then <em>Rav</em> of <em>Yerushalayim</em>, opposed the project on halachic grounds, and the <em>semichah</em> chain was not effectively renewed. Contemporary attempts to reconstitute a <em>Sanhedrin</em> in <em>Eretz Yisrael</em> have had still less success. The <em>berachah</em>, accordingly, remains active as a daily petition.</p>
+
+<h2>II. The Unique <em>Chasimah</em> &mdash; The Only &ldquo;<em>Melech</em>&rdquo;</h2>
+
+<p><em>Rav Saadia Gaon</em> (<span class="heb-inline">רַב סַעֲדְיָא גָּאוֹן</span>) is credited with the observation that <em>Hashivah Shofteinu</em> is the single <em>berachah</em> in all of <em>Shemoneh Esrei</em> whose <em>chasimah</em> (<span class="heb-inline">חֲתִימָה</span>) contains the word <em>melech</em> (<span class="heb-inline">מֶלֶךְ</span>): <em>Baruch Atah Hashem, Melech oheiv tzedakah u&rsquo;mishpat</em> (<span class="heb-inline">בָּרוּךְ אַתָּה ה&rsquo; מֶלֶךְ אוֹהֵב צְדָקָה וּמִשְׁפָּט</span>).<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The observation is the gateway to the <em>Tur</em>&rsquo;s famous <em>kushya</em>.</p>
+
+<h3>The Halachic Background</h3>
+
+<p>The <em>Gemara</em> in <em>Berachos</em><a class="footnote-ref" id="ref3" href="#fn3">[3]</a> establishes the foundational <em>din</em> of every <em>berachah</em>: <em>kol berachah she&rsquo;ein bah hazkaras ha&rsquo;Shem u&rsquo;malchus einah berachah</em> (<span class="heb-inline">כל ברכה שאין בה הזכרת השם ומלכות אינה ברכה</span>) &mdash; without the divine Name and without <em>malchus</em>, the formula is structurally not a <em>berachah</em>. There is a single exception: <em>berachah ha&rsquo;semuchah la&rsquo;chaverta</em> (<span class="heb-inline">בְּרָכָה הַסְּמוּכָה לַחֲבֶרְתָּהּ</span>) &mdash; a <em>berachah</em> whose opening adjoins the <em>chasimah</em> of the <em>berachah</em> before it borrows the preceding <em>malchus</em> and requires no new one of its own. The middle <em>berachos</em> of <em>Shemoneh Esrei</em> are the canonical application of this exception: none opens with <em>Baruch Atah Hashem Elokeinu Melech ha&rsquo;Olam</em>, each resting upon the <em>chasimah</em> of the one before it.</p>
+
+<h3>The <em>Tur</em>&rsquo;s <em>Kushya</em></h3>
+
+<p>Upon this background the <em>Tur</em> raises his question in <em>Siman</em> 118.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> Every middle <em>berachah</em> of <em>Shemoneh Esrei</em> sits inside the chain of <em>berachos ha&rsquo;semuchos</em>. <em>Magen Avraham</em>, <em>Mechayei HaMeisim</em>, <em>HaKel HaKadosh</em> &mdash; none bear <em>&ldquo;melech&rdquo;</em> in the <em>chasimah</em>; each relies on the chain. The phrase <em>Melech oheiv tzedakah u&rsquo;mishpat</em> contains the word <em>melech</em> within the body of the <em>chasimah</em> itself, something no other middle <em>berachah</em> does. Why, then, did the <em>Anshei Knesses HaGedolah</em> single out <em>this</em> <em>berachah</em> and insert <em>melech</em> into its closing formula?</p>
+
+<h2>III. The Answer in the Name of <em>Rabbeinu Yechiel</em></h2>
+
+<p>The <em>Tur</em> &mdash; <em>Rabbeinu Yaakov Ba&rsquo;al HaTurim</em>, son of the <em>Rosh</em> &mdash; brings the answer from his oldest brother. It is uncharacteristic of the <em>Tur</em> to cite a sibling by name within the <em>Arba&rsquo;ah Turim</em>, and the citation itself is a mark of regard: <em>my older brother <span class="heb-inline">רַבֵּינוּ יְחִיאֵל</span> spoke of this with my father many times in my presence</em>. The <em>Rosh</em> is known to have had several sons &mdash; <em>Rabbeinu Yechiel</em>, the oldest; <em>Rabbeinu Yaakov</em>, the <em>Tur</em>; <em>Rabbi Yehudah</em>, author of <em>Zichron Yehudah</em>; and others &mdash; and the oldest, <em>Rabbeinu Yechiel</em>, received the family&rsquo;s unanimous recognition as its outstanding scholar, succeeding his father on the rabbinate of <em>Toledo</em>.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a></p>
+
+<h3>A Measure of <em>Rabbeinu Yechiel</em>&rsquo;s Stature</h3>
+
+<p>Very little of <em>Rabbeinu Yechiel</em>&rsquo;s <em>Torah</em> survives independently of the <em>Tur</em>&rsquo;s citations in his father&rsquo;s name. Perhaps the clearest trace of his stature is a <em>mesorah</em> preserved by the <em>Chida</em> in his <em>Birkei Yosef</em> on <em>Hilchos Kibbud Av va&rsquo;Em</em>.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> The <em>Chida</em> addresses the question whether a father must rise for his son when the son has reached the <em>madreigah</em> of a great <em>talmid chacham</em> &mdash; <em>zakein</em> in <em>Kiddushin</em> being read as <em>zeh kanah chachmah</em> (<span class="heb-inline">זֶה קָנָה חָכְמָה</span>). His decisive evidence is <em>mesorah</em>: the <em>Rosh</em>, <em>gadol ha&rsquo;dor</em> of his time, would rise fully each time his son <em>Rabbeinu Yechiel</em> entered the room. The <em>Torah</em> of <em>Rabbeinu Yechiel</em> stood at that height.</p>
+
+<h3>The <em>Yesod</em> &mdash; <em>Melech b&rsquo;Mishpat Ya&rsquo;amid Aretz</em></h3>
+
+<p>The answer <em>Rabbeinu Yechiel</em> received from the <em>Rosh</em> is rooted in a <em>pasuk</em> in <em>Mishlei</em>:<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<blockquote>
+<div class="heb">מֶלֶךְ בְּמִשְׁפָּט יַעֲמִיד אָרֶץ, וְאִישׁ תְּרוּמוֹת יֶהֶרְסֶנָּה.</div>
+<div class="trans">A king through <em>mishpat</em> establishes the land; a man of exactions destroys it.</div>
+<div class="source"><em>Mishlei</em> 29:4</div>
+</blockquote>
+
+<p><em>Mishpat</em> is specifically the <em>middah</em> that only a <em>melech</em> can deliver. True <em>mishpat</em> requires an authority above all parties, uncontested, with the power to enforce. In this <em>berachah</em> &mdash; and in this <em>berachah</em> alone among the middle <em>berachos</em> &mdash; the structural requirement of the content requires <em>malchus</em> to be present in the <em>chasimah</em> itself. The general rule of <em>berachah ha&rsquo;semuchah</em> is not displaced by the <em>chachomim</em>&rsquo;s insertion; the insertion rather signals that the subject-matter of <em>this</em> <em>berachah</em> cannot stand without an explicit <em>malchus</em>.</p>
+
+<h3>The Load-Bearing Reach of the <em>Yesod</em></h3>
+
+<p>The <em>yesod</em> is load-bearing well beyond the uniqueness of the <em>chasimah</em>. During <em>Aseres Yemei Teshuvah</em> the <em>chasimah</em> is modified to <em>HaMelech ha&rsquo;mishpat</em> (<span class="heb-inline">הַמֶּלֶךְ הַמִּשְׁפָּט</span>) &mdash; a sharpening by which the <em>Melech</em> Himself is understood to be presiding over the <em>mishpat</em> of the <em>Yamim Nora&rsquo;im</em>. If one erred and said the year-round <em>Melech oheiv tzedakah u&rsquo;mishpat</em>, the <em>Rama</em><a class="footnote-ref" id="ref8" href="#fn8">[8]</a> rules that he need not return. The reason follows directly from <em>Rabbeinu Yechiel</em>&rsquo;s <em>yesod</em>: the year-round <em>chasimah</em> already carries <em>melech</em>, satisfying the structural requirement of the season <em>b&rsquo;dieved</em>. The <em>Aruch</em>, working from older <em>nuschaos</em> in which the year-round <em>chasimah</em> did not include <em>melech</em>, holds that one must repeat.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The <em>pesak</em> follows the <em>Rama</em>. The <em>Aruch</em>&rsquo;s stricter view bears witness, from the opposite direction, to the same reality: the <em>yesod</em> that <em>mishpat</em> structurally requires <em>malchus</em> was already pressing on the <em>nusach</em> of this <em>berachah</em> in the gaonic period.</p>
+
+<p>A parallel observation deepens the <em>pshat</em>. During <em>Aseres Yemei Teshuvah</em>, the <em>chasimah</em> of <em>HaKel HaKadosh</em> is likewise modified to <em>HaMelech HaKadosh</em>, and omission requires repetition. Year-round, <em>mishpat</em> alone carries <em>melech</em> in its <em>chasimah</em>; <em>kedushah</em> does not. During the <em>Yamim Nora&rsquo;im</em>, both do. The asymmetry suggests that <em>mishpat</em> is <em>operational-of-malchus</em> in a way <em>kedushah</em> is not: a king&rsquo;s <em>kedushah</em> is a predicate; his <em>mishpat</em> is the exercise of his sovereignty. The <em>Rabbeinu Yechiel</em> <em>yesod</em> therefore does load-bearing work year-round for one <em>berachah</em> and seasonally for a second, and the two together sharpen the <em>pshat</em> rather than complicate it.</p>
+
+<h2>IV. The <em>Pasuk</em> in <em>Yeshayahu</em> and the <em>Rambam</em>&rsquo;s Mechanism</h2>
+
+<p>The language of the <em>berachah</em> is drawn almost verbatim from the <em>pasuk</em> in <em>Yeshayahu</em><a class="footnote-ref" id="ref10" href="#fn10">[10]</a> read as the <em>haftarah</em> of <em>Chazon</em> on the <em>Shabbos</em> before <em>Tishah b&rsquo;Av</em>:</p>
+
+<blockquote>
+<div class="heb">וְאָשִׁיבָה שׁוֹפְטַיִךְ כְּבָרִאשׁוֹנָה, וְיֹעֲצַיִךְ כְּבַתְּחִלָּה.</div>
+<div class="trans">And I will return your judges as in the beginning, and your counselors as of old.</div>
+<div class="source"><em>Yeshayahu</em> 1:26</div>
+</blockquote>
+
+<p>The <em>Anshei Knesses HaGedolah</em> made a precise and telling change. <em>Yeshayahu</em> speaks in the first person of the <em>Ribbono Shel Olam</em>: <em>v&rsquo;ashivah</em> &mdash; <em>and I will return</em>, in the future. The <em>berachah</em> turns the <em>pasuk</em> around and places it as a petition in the mouth of <em>Klal Yisrael</em>: <em>hashivah</em> &mdash; <em>return</em>. The <em>havtachah</em> of the <em>navi</em> becomes the daily <em>bakashah</em> of the <em>mispallel</em>, who thereby participates in the fulfillment of what the <em>navi</em> has already assured. The <em>pasuk</em>&rsquo;s subject becomes the <em>berachah</em>&rsquo;s addressee.</p>
+
+<h3>The <em>Rambam</em> &mdash; <em>Sanhedrin</em> Before <em>Mashiach</em></h3>
+
+<p>The <em>Rambam</em> in his <em>Perush ha&rsquo;Mishnah</em> on <em>Perek Chelek</em><a class="footnote-ref" id="ref11" href="#fn11">[11]</a> develops two principles with direct bearing upon the <em>berachah</em>. First: the precise sequence of events in <em>yemos ha&rsquo;Mashiach</em> is unclear in the sources of <em>Chazal</em>; theories conflict, and no single <em>pesak</em> as to order is forced. Second, and more decisively: the arrival of <em>Mashiach ben David</em> structurally requires a functioning <em>Sanhedrin</em>. The <em>Sanhedrin</em> must therefore precede the arrival of <em>Mashiach</em>, not follow it. The <em>Rambam</em>&rsquo;s position is not uncontested &mdash; the <em>Raavad</em> and others in different parts of the literature allow the possibility that <em>Mashiach</em> himself will restore <em>semichah</em> &mdash; but it is the <em>Rambam</em>&rsquo;s <em>pesak</em> upon which the <em>Mahari Beirav</em>&rsquo;s project rested, and it is the position that gives <em>Hashivah Shofteinu</em> its full operational force: the <em>berachah</em> is not a wish but the pursuit of a precondition.</p>
+
+<p>In his <em>Hakdamah</em> to the <em>Perush ha&rsquo;Mishnah</em>, the <em>Rambam</em> traces the chain of <em>Torah she&rsquo;b&rsquo;al peh</em> through a particular link crucial to the mechanism: <em>Achiyah ha&rsquo;Shiloni</em> (<span class="heb-inline">אֲחִיָּה הַשִּׁילוֹנִי</span>), <em>navi</em> in the days of <em>David</em> and <em>Shlomo</em>, received the <em>mesorah</em> from his teachers; <em>Eliyahu ha&rsquo;Navi</em> (<span class="heb-inline">אֵלִיָּהוּ הַנָּבִיא</span>) received from <em>Achiyah</em>. The chain of <em>semichah</em>, broken in the external world across the long <em>galus</em>, is thus preserved intact in the person of <em>Eliyahu</em>. When <em>Eliyahu</em> returns, he arrives with <em>semichah</em> &mdash; and is thereby able to confer it, reopening the chain. <em>V&rsquo;ashivah shofetayich</em> is spoken by the One who has already arranged the mechanism of its fulfillment.</p>
+
+<h2>V. Rav Schwab &mdash; <em>V&rsquo;Haser Mimenu Yagon va&rsquo;Anachah</em></h2>
+
+<p>The <em>chasimah</em> is preceded by a two-word phrase whose connection to the restoration of judges is not immediately transparent: <em>v&rsquo;haser mimenu yagon va&rsquo;anachah</em> (<span class="heb-inline">וְהָסֵר מִמֶּנּוּ יָגוֹן וַאֲנָחָה</span>) &mdash; <em>and remove from us <span class="heb-inline">יָגוֹן</span> and <span class="heb-inline">אֲנָחָה</span></em>. <em>Yagon</em> is the deepest grade of grief; <em>anachah</em> is its outward expression in sighing. What is the connection between the restoration of the <em>Sanhedrin</em> and the removal of this particular pair?</p>
+
+<p>Rav Shimshon Schwab, <em>zt&rdquo;l</em>,<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> develops the answer in <em>Iyyun Tefillah</em>. The <em>Gemara</em> in <em>Yevamos</em><a class="footnote-ref" id="ref13" href="#fn13">[13]</a> derives from <em>lo tisgodedu</em> (<span class="heb-inline">לֹא תִתְגֹּדְדוּ</span>) &mdash; read in its <em>peshat</em> as a prohibition against self-laceration in mourning &mdash; an additional <em>issur</em>: <em>lo sa&rsquo;asu agudos agudos</em> (<span class="heb-inline">לֹא תַעֲשׂוּ אֲגֻדּוֹת אֲגֻדּוֹת</span>), do not divide into separate halachic factions. In the absence of a central authority, <em>Klal Yisrael</em> inevitably fragments. Every <em>beis ha&rsquo;knesses</em> develops its own <em>minhagim</em>; every <em>kehillah</em> its own <em>pesak</em>; every <em>chug</em> its own <em>da&rsquo;as Torah</em>. The <em>Gemara</em> records that in the generations before the <em>talmidim</em> of <em>Shammai</em> and <em>Hillel</em> there were no major <em>machlokesos</em> in <em>Klal Yisrael</em>; a single path of <em>avodas Hashem</em> was walked by all. The fragmentation that followed is a <em>mazkeres</em> of the loss of central authority, and the <em>mazkeres</em> itself is the <em>yagon</em> and the <em>anachah</em>. The <em>chasimah</em> of the <em>berachah</em> is not an addendum to the request for judges; it is the operational heart of the request. We ask that the fragmentation be dissolved under one <em>Sanhedrin</em> and one <em>malchus beis David</em>.</p>
+
+<h3>The <em>Kavvanah</em></h3>
+
+<p>Rav Schwab therefore instructs that this <em>berachah</em> be davened with a specific <em>kavvanah</em>: <em>Ribbono Shel Olam &mdash; we are scattered, divided, broken into <span class="heb-inline">אֲגֻדּוֹת אֲגֻדּוֹת</span>. Dissolve the <span class="heb-inline">יָגוֹן</span> and the <span class="heb-inline">אֲנָחָה</span> of our scatteredness; return us to the unity of <span class="heb-inline">סַנְהֶדְרִין</span> and <span class="heb-inline">מַלְכוּת בֵּית דָּוִד</span></em>. The three-step argument &mdash; <em>mishpat</em> requires <em>melech</em>; <em>melech</em> presupposes a <em>Sanhedrin</em> under his authority; the absence of both is the <em>yagon</em> itself &mdash; is the structural reading of the <em>berachah</em> entire.</p>
+
+<h2>VI. <em>Derech Agav</em> &mdash; The <em>Chet ha&rsquo;Meraglim</em> and the <em>Chisaron</em> of Leaderlessness</h2>
+
+<p>The reading of Rav Schwab is anchored, by a path not immediately obvious, in <em>parshas ha&rsquo;shavua</em>. The <em>meraglim</em> (<span class="heb-inline">מְרַגְּלִים</span>) describe themselves in their report with a <em>pasuk</em> that <em>Chazal</em> treat as foundational:</p>
+
+<blockquote>
+<div class="heb">וַנְּהִי בְעֵינֵינוּ כַּחֲגָבִים, וְכֵן הָיִינוּ בְּעֵינֵיהֶם.</div>
+<div class="trans">We were in our own eyes as grasshoppers, and so we were in their eyes.</div>
+<div class="source"><em>Bamidbar</em> 13:33</div>
+</blockquote>
+
+<p>The <em>Kotzker Rebbe</em>&rsquo;s famous reading<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> extracts a <em>mussar</em> point from the sequencing: because they saw themselves as <em>chagavim</em> (<span class="heb-inline">חֲגָבִים</span>), they were seen that way by others. The self-perception is causally prior. <em>&ldquo;If you look at yourself as a <span class="heb-inline">חָגָב</span>, you are a <span class="heb-inline">חָגָב</span>.&rdquo;</em></p>
+
+<h3><em>Rashi</em>&rsquo;s Rendering &mdash; <em>Nemalim</em></h3>
+
+<p>The <em>pasuk</em> says <em>chagavim</em>, grasshoppers. <em>Rashi</em>, however, renders <em>nemalim</em> (<span class="heb-inline">נְמָלִים</span>) &mdash; ants. The source is the <em>Gemara</em> in <em>Sotah</em>:<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> the <em>anakim</em> in the vineyards, observing the <em>meraglim</em>, remarked that they looked like insects (<em>kamsi</em>, in the Aramaic). The term is ambiguous between ants and grasshoppers, and <em>Rashi</em> selects <em>nemalim</em>.</p>
+
+<p>Why? Two <em>pesukim</em> in <em>Mishlei</em> couple the <em>nemalah</em> and the <em>arbeh</em> under one specific <em>chisaron</em>: both species have no <em>melech</em>. <em>Shlomo ha&rsquo;Melech</em> states it of the <em>nemalah</em> directly &mdash; <em>asher ein lah katzin, shoter u&rsquo;moshel</em> (<span class="heb-inline">אֲשֶׁר אֵין לָהּ קָצִין שֹׁטֵר וּמֹשֵׁל</span>) &mdash; and of the <em>arbeh</em> implicitly: <em>melech ein la&rsquo;arbeh</em> (<span class="heb-inline">מֶלֶךְ אֵין לָאַרְבֶּה</span>). The <em>Gemara</em> in <em>Shabbos</em><a class="footnote-ref" id="ref16" href="#fn16">[16]</a> preserves <em>Rabbi Shimon ben Chalafta</em>&rsquo;s famous experiment: he covered an ant nest to simulate shade, watched one ant exit and return to report, and observed that upon the removal of the shade the reporting ant was killed by the colony. The experiment was intended to test whether ants have a king; the <em>Gemara</em>&rsquo;s treatment resolves the question in deference to <em>Shlomo ha&rsquo;Melech</em>&rsquo;s testimony: ants have no king and no central authority at all. Both species that <em>Rashi</em>&rsquo;s rendering joins &mdash; <em>nemalim</em> and <em>chagavim</em> &mdash; share, in <em>Shlomo</em>&rsquo;s classification, the single <em>chisaron</em> of leaderlessness.</p>
+
+<h3>The Punchline &mdash; <em>Rejection of Leadership</em></h3>
+
+<p>Upon this reading, the <em>chet ha&rsquo;meraglim</em> is read as a rejection of leadership. In their own eyes they were as insects; and the insects to which they likened themselves are precisely the species that live without a <em>melech</em>, each creature acting on its own impulse. The immediate historical sequel confirms the reading: the <em>ma&rsquo;apilim</em> (<span class="heb-inline">מַעְפִּילִים</span>) rose up the following day and attempted to ascend to <em>Eretz Yisrael</em> without <em>Moshe Rabbeinu</em> at their head, and were destroyed. The <em>chisaron</em> that produced the <em>meraglim</em>&rsquo;s self-perception produced the <em>ma&rsquo;apilim</em>&rsquo;s uprising. When leadership is rejected or absent, <em>Klal Yisrael</em> descends into the pits. This is the <em>parshah</em>&rsquo;s support for Rav Schwab&rsquo;s reading of the <em>berachah</em>: the <em>yagon va&rsquo;anachah</em> of leaderlessness is not a byproduct but the inner structure of a <em>Klal Yisrael</em> left to its own <em>agudos agudos</em>.</p>
+
+<h2>VII. The Diminished <em>Sidrei Kavod</em></h2>
+
+<p>Rav Schwab draws from the same <em>berachah</em> a further observation that reaches into the halachah of the <em>birchos ha&rsquo;shevach</em> on seeing a <em>chacham</em> and on seeing a king. The classical <em>berachah</em> on seeing a <em>chacham</em> from the <em>umos ha&rsquo;olam</em> is <em>Baruch Atah Hashem Elokeinu Melech ha&rsquo;Olam she&rsquo;nasan mei&rsquo;chochmaso l&rsquo;basar va&rsquo;dam</em>. Rav Schwab is <em>mesupak</em> whether the <em>berachah</em> is sayable in our generation. His concern is that the arc of <em>chochmas ha&rsquo;teva</em> in the modern period is overwhelmingly one of successive revision: each generation&rsquo;s wisdom is reopened by the next.</p>
+
+<p>His one acknowledged exception is Albert Einstein, whose foundational work in physics has continued to be confirmed rather than overturned.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> Figures of comparable popular reputation in subsequent generations &mdash; Rav Schwab names Stephen Hawking as the illustration &mdash; are more likely to be partially superseded. It should be noted, in sefer-register fairness, that the halachic criterion of the <em>berachah</em> on seeing a <em>chacham</em> does not strictly turn on whether the <em>chacham</em>&rsquo;s theories will survive the next century; it turns on contemporary recognition of <em>chochmah</em>. On a strictly halachic reading no <em>chacham</em> would ever warrant the <em>berachah</em>, since every generation&rsquo;s science is in principle subject to revision. Rav Schwab&rsquo;s point is best read as a <em>hashkafic</em> observation about the character of the age dressed in halachic language, not as a halachic <em>safek</em> in the technical sense. Read that way it stands.</p>
+
+<p>Rav Schwab extends the same observation to the <em>berachah</em> on seeing a king and to the <em>berachah</em> on seeing a <em>gadol ha&rsquo;dor</em>. The <em>Satmar kehillah</em> famously said the <em>berachah</em> on the Queen of England; the applicability of the <em>berachah</em> on a modern constitutional president is a live <em>machlokes</em>. Even concerning the <em>berachah</em> on a <em>gadol ha&rsquo;dor</em>, Rav Schwab was <em>mesupak</em> whether a figure of universal, uncontested stature can be found in our generation. He grounded the right to raise the question in a biographical experience: he had spent a <em>Shabbos</em> in the presence of the <em>Chofetz Chaim</em> in 1930, and in his own telling never stopped speaking of it for the rest of his life. He accordingly held that he knew what the <em>berachah</em> was for &mdash; and that since the <em>Chofetz Chaim</em>&rsquo;s <em>petirah</em>, no figure had risen to that level of unanimous reception.</p>
+
+<p>The register is uncomfortable but internally consistent. All three <em>sidrei kavod</em> &mdash; the halachic authority of a central <em>beis din</em>, the political authority of a <em>melech</em>, and the intellectual authority of a <em>chacham</em> whose <em>chochmah</em> is unassailable &mdash; share the same impoverishment. Ours is in this sense a <em>yasmi d&rsquo;yasmi</em> generation (<span class="heb-inline">יְתָמֵי דְיַתְמֵי</span>) &mdash; an orphan generation of orphans, as the <em>Gemara</em> speaks of its own. <em>Hashivah Shofteinu</em>, in Rav Schwab&rsquo;s reading, is a daily petition for all three to be restored at once.</p>
+
+<h2>VIII. <em>Birkat HaMinim</em> &mdash; The Nineteenth <em>Berachah</em></h2>
+
+<p>The <em>berachah</em> that follows <em>Hashivah Shofteinu</em> &mdash; <em>v&rsquo;la&rsquo;malshinim</em> (<span class="heb-inline">וְלַמַּלְשִׁינִים</span>) &mdash; is unique among the <em>berachos</em> of <em>Shemoneh Esrei</em> in a basic respect: for the first centuries of <em>Shemoneh Esrei</em>&rsquo;s history as a fixed <em>nusach</em> it did not exist. The <em>Rambam</em> at the opening of <em>Hilchos Tefillah</em><a class="footnote-ref" id="ref18" href="#fn18">[18]</a> writes that <em>Ezra ha&rsquo;Sofer</em> and the <em>Anshei Knesses HaGedolah</em> in the early <em>Bayis Sheini</em> standardized the <em>Shemoneh Esrei</em> at <em>eighteen</em> <em>berachos</em>. The nineteenth was added later, in the days of <em>Rabban Gamliel</em> in <em>Yavneh</em>. Across all the centuries since, <em>Klal Yisrael</em> has continued to call the <em>tefillah</em> <em>Shemoneh Esrei</em>, retaining the original name of the eighteen even as a nineteenth stands within it. The retention is itself a <em>tefillah</em>: for the day on which the <em>minim</em> disappear and <em>Shemoneh Esrei</em> becomes <em>Shemoneh Esrei</em> again.</p>
+
+<h3><em>Shimon ha&rsquo;Pakuli</em> in <em>Yavneh</em></h3>
+
+<p>The <em>Gemara</em> in <em>Berachos</em> and in the parallel in <em>Megillah</em><a class="footnote-ref" id="ref19" href="#fn19">[19]</a> records one of the most consequential <em>takkanos</em> in the history of <em>Klal Yisrael</em>. <em>Shimon ha&rsquo;Pakuli</em> (<span class="heb-inline">שִׁמְעוֹן הַפָּקוּלִי</span>) &mdash; a <em>tanna</em> named after the trade (cotton) in which he supported himself &mdash; arranged the <em>Shemoneh Esrei</em> in the fixed order in which it is said to this day. Until then, as the <em>Rambam</em> describes, every mispallel davened in his own words, and the <em>nusachos</em> had drifted into a chaos of competing formulations. <em>Shimon ha&rsquo;Pakuli</em> unified the <em>nusach</em>. He then presented the arrangement before <em>Rabban Gamliel</em>. <em>Rabban Gamliel</em> stood and said: <em>&ldquo;Rabbosai &mdash; we require another <span class="heb-inline">בְּרָכָה</span>.&rdquo;</em> The <em>Anshei Knesses HaGedolah</em> had set eighteen; <em>Rabban Gamliel</em> required a nineteenth. Why?</p>
+
+<h3>The <em>Minim</em> and the Crisis of Indistinguishability</h3>
+
+<p>The decades following the <em>churban Bayis Sheini</em> saw the emergence of a group within <em>Klal Yisrael</em> that posed a danger of a specific kind. The first Christians were <em>yehudim</em>: Jews persuaded that the reading of <em>Tanach</em> advanced by <em>Yeshu</em> and his <em>talmidim</em> was the truth and the reading of <em>Chazal</em> was not. They set up to be <em>meisis u&rsquo;madiach</em> (<span class="heb-inline">מֵסִית וּמַדִּיחַ</span>), to persuade <em>yehudim</em> in town squares and in the lobbies of <em>batei knesses</em>, distorting <em>pesukim</em> in <em>Tanach</em> to support their claims. The theological pressure within the Christian camp drove the mission further still, as the Second Coming was held to require the conversion of all unbelievers.</p>
+
+<p>The crisis the <em>kehillos</em> faced was a crisis of <em>indistinguishability</em>. The <em>minim</em> wore <em>tzitzis</em>; they attended the <em>minyanim</em>; they recited the <em>tefillos</em>. In the <em>terminology</em> of the period they were called <em>nozrim yehudim</em> (<span class="heb-inline">נוֹצְרִים יְהוּדִים</span>) &mdash; Jewish Christians. There was no visible seam by which the <em>kahal</em> could distinguish them from any other mispallel. <em>Rabban Gamliel</em> understood that a sharp halachic instrument was required to draw the line.</p>
+
+<h3>The <em>Takkanah</em></h3>
+
+<p><em>Rabban Gamliel</em> asked his <em>talmidim</em>: <em>who can compose a <span class="heb-inline">בְּרָכָה</span> for the <span class="heb-inline">מִינִים</span>?</em> The original <em>nusach</em> was <em>v&rsquo;la&rsquo;minim</em> (<span class="heb-inline">וְלַמִּינִים</span>). Printed editions of the <em>siddur</em> from the sixteenth century onward routinely replaced the original <em>la&rsquo;minim</em> with <em>la&rsquo;malshinim</em>, as Christian censors could not tolerate the direct naming; manuscript evidence, including from the Cairo Geniza, preserves the earlier form.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> The scatter of <em>nusachos</em> that survives in various <em>Rishonim</em> &mdash; <em>malchus ha&rsquo;rish&rsquo;ah</em> (<span class="heb-inline">מַלְכוּת הָרִשְׁעָה</span>), <em>kol ha&rsquo;resha&rsquo;im</em> (<span class="heb-inline">כָּל הָרְשָׁעִים</span>), <em>malchus zadon</em> (<span class="heb-inline">מַלְכוּת זָדוֹן</span>) &mdash; is almost entirely the product of external pressure across the generations, not of internal variation.</p>
+
+<h3>The Operational Mechanism</h3>
+
+<p>The mechanism by which the <em>berachah</em> did its work is halachic machinery, not pastoral practice. Every <em>min</em> &mdash; every Christian-leaning <em>yehudi</em> &mdash; would skip <em>v&rsquo;la&rsquo;minim</em> upon reaching it in the silent <em>Shemoneh Esrei</em>: he would not pronounce a curse upon himself and his community. The <em>shaliach tzibbur</em> stood as the <em>bodek</em>. A mispallel who skipped was thereby flagged as a <em>min</em>; a formal procedure of expulsion followed. The structure is a species of <em>bedikah b&rsquo;darkei amitah</em> (<span class="heb-inline">בְּדִיקָה בְּדַרְכֵי אֲמִתָּהּ</span>) &mdash; a halachic test in which the behavior of the subject under the test itself constitutes the evidence &mdash; applied not to <em>minus</em> in the abstract but to a <em>chezkas minus</em> that the subject&rsquo;s own conduct establishes. The <em>takkanah</em> succeeded: the <em>bedikah</em> produced the clean separation <em>Rabban Gamliel</em> required.</p>
+
+<h2>IX. <em>Shmuel ha&rsquo;Katan</em></h2>
+
+<p>The one who arose from the <em>talmidim</em> and composed the <em>berachah</em> was <em>Shmuel ha&rsquo;Katan</em> (<span class="heb-inline">שְׁמוּאֵל הַקָּטָן</span>). He is one of the great <em>tannaim</em> of the generation of <em>Rabban Gamliel</em>, yet he is cited only rarely in <em>Chazal</em> &mdash; once in the <em>Mishnah</em>, a handful of times in the <em>Gemara</em>. The <em>Yerushalmi</em> at the close of <em>Sukkah</em><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> offers several accounts of the epithet <em>ha&rsquo;katan</em>:</p>
+
+<ul>
+  <li>For his <em>anavah</em> (<span class="heb-inline">עֲנָוָה</span>). The <em>Gemara</em> in <em>Sanhedrin</em> records that a <em>chacham</em> was about to be publicly embarrassed; <em>Shmuel ha&rsquo;Katan</em> accepted the blame upon himself to shield him, and would not admit afterward that it was not he.</li>
+  <li>For comparison to <em>Shmuel ha&rsquo;Navi</em> &mdash; <em>Shmuel ha&rsquo;Gadol</em>. This <em>tanna</em> approached the <em>madreigah</em> of <em>Shmuel ha&rsquo;Navi</em>, and was accordingly a <em>katan</em>-sized <em>Shmuel ha&rsquo;Gadol</em>.</li>
+  <li>For his <em>tznius</em>.</li>
+</ul>
+
+<p>The <em>Gemara</em> in <em>Berachos</em> preserves a further detail of signal weight: <em>Shmuel ha&rsquo;Katan</em> composed the <em>berachah</em> and then himself forgot its text the following year.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> He stood before the <em>amud</em> and labored to recover it. The <em>Tosafos</em> there discuss why he was nevertheless not removed from the <em>amud</em> as a stumbling <em>chazzan</em> would be: his character stood as his credential, and the stumble over this particular <em>berachah</em>, authored by his own hand, bore its own kind of testimony. The author of <em>v&rsquo;la&rsquo;minim</em> was uniquely bound to it &mdash; and uniquely at risk of forgetting it.</p>
+
+<h2>X. <em>Binfol Oyivcha Al Tismach</em> &mdash; One Arc, Two Readings</h2>
+
+<p><em>Shmuel ha&rsquo;Katan</em> is cited one time in the <em>Mishnah</em>, in <em>Pirkei Avos perek daled</em>. Every other <em>tanna</em> in <em>Pirkei Avos</em> states a <em>torah</em> of his own; <em>Shmuel ha&rsquo;Katan</em>, uniquely, states nothing of his own and instead quotes a <em>pasuk</em> of <em>Shlomo ha&rsquo;Melech</em>:</p>
+
+<blockquote>
+<div class="heb">שְׁמוּאֵל הַקָּטָן אוֹמֵר: בִּנְפֹל אוֹיִבְךָ אַל תִּשְׂמָח, וּבִכָּשְׁלוֹ אַל יָגֵל לִבֶּךָ.</div>
+<div class="trans"><em>Shmuel ha&rsquo;Katan</em> says: &ldquo;At your enemy&rsquo;s fall do not rejoice, and at his stumble let your heart not exult.&rdquo;</div>
+<div class="source"><em>Mishlei</em> 24:17; <em>Avos</em> 4:19</div>
+</blockquote>
+
+<p>The placement is striking. The <em>tanna</em> who composed the <em>berachah</em> directed most sharply against enemies of <em>Klal Yisrael</em> is the <em>tanna</em> who in <em>Avos</em> warns against <em>simchah</em> at an enemy&rsquo;s downfall. Two <em>peshatim</em> have been offered. In the sefer-register they are best read not as alternative explanations but as two faces of a single arc.</p>
+
+<h3><em>Peshat Aleph</em> &mdash; The Warning</h3>
+
+<p>The first reading reads the <em>pasuk</em> as a counterweight that <em>Shmuel ha&rsquo;Katan</em> attaches to his own <em>berachah</em>. The <em>takkanah</em> succeeded so completely in flushing the <em>minim</em> from the <em>beis ha&rsquo;knesses</em> that the author of the <em>berachah</em> felt compelled to publish a disclaimer alongside it. <em>I am the one who composed <span class="heb-inline">וְלַמִּינִים</span>; I am the one who brings down enemies through <span class="heb-inline">תְּפִילָה</span>. Remember, nonetheless: <span class="heb-inline">בִּנְפֹל אוֹיִבְךָ אַל תִּשְׂמָח</span>. Rejoice that <span class="heb-inline">הַקָּדוֹשׁ בָּרוּךְ הוּא</span> answers your <span class="heb-inline">תְּפִילָה</span>; do not rejoice in the destruction itself.</em> The exception for <em>b&rsquo;avod resha&rsquo;im rinah</em> (<span class="heb-inline">בַּאֲבֹד רְשָׁעִים רִנָּה</span>) covers particular enemies of <em>Klal Yisrael</em> whose fall is itself a <em>yeshuah</em>; the general rule, published by <em>Shmuel ha&rsquo;Katan</em> as his single <em>mishnah</em>-contribution, stands.</p>
+
+<h3><em>Peshat Beis</em> &mdash; Rav Kook on the Credential</h3>
+
+<p>Rav Avraham Yitzchak ha&rsquo;Kohen Kook, <em>zt&rdquo;l</em>,<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> reverses the direction of the inference. The <em>pasuk</em> is not a warning <em>Shmuel ha&rsquo;Katan</em> attached <em>after</em> composing the <em>berachah</em>; it is the <em>credential</em> that <em>Rabban Gamliel</em> relied upon when selecting him <em>beforehand</em>. A <em>berachah</em> directed against <em>minim</em> can safely be composed only by one who already inhabits the antithesis of <em>sinah</em>. The author must be a man whose <em>tefillah</em> against enemies springs purely from <em>kinas Hashem</em> and not from personal animus. The <em>middah</em> that found expression in the <em>mishnah</em> in <em>Avos</em> &mdash; the <em>middah</em> of <em>anavah</em> and of refusal to exult at any <em>mapalah</em> &mdash; was the <em>middah</em> that qualified <em>Shmuel ha&rsquo;Katan</em>, uniquely among the <em>talmidim</em>, to author the <em>berachah</em>.</p>
+
+<h3>The Two as One Arc</h3>
+
+<p>The two <em>peshatim</em> do not stand in <em>machlokes</em>. They are the same <em>middah</em> viewed from the two ends of a single arc. The <em>credential</em> that qualifies the author in advance is the <em>warning</em> that the author publishes afterward; the <em>warning</em> that frames the <em>berachah</em> from <em>Avos</em> is the <em>credential</em> that the <em>Rosh Yeshiva</em> in <em>Yavneh</em> recognized at the moment of appointment. The author who stands at the <em>amud</em> composing the <em>berachah</em> and the <em>tanna</em> who steps forward in <em>Avos</em> to say <em>binfol oyivcha</em> are the same man moving across the same <em>middah</em>, pre- and post-<em>takkanah</em>. The <em>berachah</em> and the <em>mishnah</em> are two chapters of one <em>sefer</em>.</p>
+
+<h2>XI. The Two <em>Berachos</em> as a Single Petition</h2>
+
+<p>The two <em>berachos</em> stand together as a single petition. <em>Hashivah Shofteinu</em> asks for the restoration of the central authority whose absence is the <em>yagon</em> of our scatteredness; <em>v&rsquo;la&rsquo;malshinim</em> asks for the dissolution of the internal pressures that have historically splintered <em>Klal Yisrael</em> from within. The <em>Shemoneh Esrei</em> that holds a nineteenth <em>berachah</em> is itself a <em>tefillah</em> for its own return to eighteen &mdash; the day on which the <em>minim</em> have vanished and the <em>takkanah</em> of <em>Rabban Gamliel</em> is retired as a <em>monument</em> no longer required. On that same day, the <em>sidrei kavod</em> whose impoverishment Rav Schwab lamented will have been restored: the <em>Sanhedrin</em> reconstituted under <em>Eliyahu</em>&rsquo;s <em>semichah</em>, the <em>malchus beis David</em> seated upon its throne, and the <em>chachmei Yisrael</em> once again speaking with the authority that no subsequent generation unseats. <em>Hashem oz l&rsquo;amo yitein; Hashem yevareich es amo va&rsquo;shalom.</em></p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short">The <em>Mahari Beirav</em>&rsquo;s renewal of <em>semichah</em> in <em>Tzefas</em>, 1538.</span>
+  <span class="expanded">&mdash; <em>Rabbi Yaakov Beirav</em> (c. 1474&ndash;1546), born in Maqueda, Spain, expelled in 1492, settled in <em>Tzefas</em> after stops in Fez and Egypt. The halachic basis for his project was the <em>Rambam</em> in <em>Hilchos Sanhedrin</em> 4:11, which rules that unanimous consent of the <em>chachmei Eretz Yisrael</em> may reconstitute a broken chain of <em>semichah</em>. In 1538 he conferred <em>semichah</em> upon a small circle of <em>talmidim</em>: the <em>Beis Yosef</em> (<em>Rabbi Yosef Karo</em>) and the <em>Mabit</em> (<em>Rabbi Moshe mi&rsquo;Trani</em>) are the two universally agreed upon; the standard lists also name <em>Rabbi Yosef Sagis</em> and a fourth variously identified as <em>Rabbi Yisrael de Curiel</em> or (less probably on chronological grounds) the <em>Ramak</em>. The <em>Ralbach</em> (<em>Rabbi Levi ibn Chaviv</em>), then <em>Rav</em> of <em>Yerushalayim</em>, opposed the project halachically, and the <em>semichah</em> chain was not effectively renewed. The episode is the principal historical precedent for subsequent attempts to reconstitute the <em>Sanhedrin</em> and the inevitable backdrop to the <em>Rambam</em>-<em>Eliyahu</em> mechanism later in this chapter.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short">The observation that <em>Hashivah Shofteinu</em> alone bears <em>&ldquo;melech&rdquo;</em> in its <em>chasimah</em> &mdash; attributed to <em>Rav Saadia Gaon</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Saadia Gaon</em> (<em>Rasag</em>, 882&ndash;942), <em>Rosh Yeshivah</em> of <em>Sura</em>. The observation is cited in the Rebbe&rsquo;s name as <em>Rasag</em>&rsquo;s; whether the uniqueness-remark is preserved in <em>Siddur Rav Saadia Gaon</em> itself or in a later commentator <em>upon</em> the <em>Siddur</em> or elsewhere in the <em>Rasag</em> corpus requires verification against a critical edition before print. The <em>Tur</em>&rsquo;s <em>kushya</em> in <em>Siman</em> 118 presupposes the observation and treats it as settled, which is itself testimony to its gaonic provenance.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Berachos</em> 12a &mdash; <em>&ldquo;kol berachah she&rsquo;ein bah hazkaras ha&rsquo;Shem u&rsquo;malchus einah berachah&rdquo;</em>; <em>berachah ha&rsquo;semuchah la&rsquo;chaverta</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Berachos</em> establishes the foundational <em>din</em>: every <em>berachah</em> requires both <em>hazkaras ha&rsquo;Shem</em> and <em>malchus</em>; without both it is structurally not a <em>berachah</em>. The exception of <em>berachah ha&rsquo;semuchah la&rsquo;chaverta</em>, under which a <em>berachah</em> adjoining a prior <em>berachah</em> borrows the prior <em>malchus</em>, is the canonical structure of the middle <em>berachos</em> of <em>Shemoneh Esrei</em>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Tur Orach Chaim Siman</em> 118 &mdash; the <em>kushya</em> on <em>&ldquo;melech&rdquo;</em> and the answer in the name of <em>Rabbeinu Yechiel</em>.</span>
+  <span class="expanded">&mdash; The <em>Tur</em> (<em>Rabbeinu Yaakov Ba&rsquo;al HaTurim</em>, c. 1269&ndash;1343, son of the <em>Rosh</em>) raises the <em>kushya</em> in <em>Siman</em> 118: why does only <em>Hashivah Shofteinu</em> contain <em>&ldquo;melech&rdquo;</em> in its <em>chasimah</em> when <em>berachah ha&rsquo;semuchah</em> would not require it? He answers in the name of his older brother <em>Rabbeinu Yechiel</em>, drawn from the <em>Rosh</em>&rsquo;s own exposition. The <em>Tur</em>&rsquo;s discussion of the <em>Aseres Yemei Teshuvah</em> change to <em>HaMelech ha&rsquo;mishpat</em> and the <em>b&rsquo;dieved</em> ruling appears in parallel in <em>Siman</em> 118 and &mdash; for the <em>hilchos</em> of <em>Aseres Yemei Teshuvah</em> proper &mdash; in <em>Siman</em> 582.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short">The sons of the <em>Rosh</em> &mdash; <em>Rabbeinu Yechiel</em> as the eldest.</span>
+  <span class="expanded">&mdash; The <em>Rosh</em> (<em>Rabbeinu Asher ben Yechiel</em>, c. 1250&ndash;1327) is known to have had at least four sons who entered the rabbinic record: <em>Rabbeinu Yechiel</em>, who succeeded his father on the rabbinate of <em>Toledo</em> and is universally identified as the eldest; <em>Rabbeinu Yaakov</em>, the <em>Tur</em>; <em>Rabbi Yehudah</em>, author of <em>Zichron Yehudah</em>; and <em>Rabbi Hillel</em>. The <em>Tur</em>&rsquo;s citation in <em>Siman</em> 118 is to <em>Rabbeinu Yechiel</em> as his <em>&ldquo;older brother.&rdquo;</em> Transcript variants that name <em>Rabbi Hillel</em> as the oldest son appear to reflect a shiur-moment slip; the historical record and the standard biographical sources place <em>Rabbeinu Yechiel</em> at the head of the siblings.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Chida</em>, <em>Birkei Yosef</em> on <em>Shulchan Aruch Yoreh De&rsquo;ah Siman</em> 240 &mdash; the <em>Rosh</em> stood for his son <em>Rabbeinu Yechiel</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Chaim Yosef David Azulai</em> (the <em>Chida</em>, 1724&ndash;1806), in <em>Birkei Yosef</em> on <em>Yoreh De&rsquo;ah</em> at the <em>hilchos kibbud av va&rsquo;em</em>, addresses the <em>din</em> of when a father must rise before his <em>talmid chacham</em> son. His decisive evidence is <em>mesorah</em>: the <em>Rosh</em>, <em>gadol ha&rsquo;dor</em> of his time, rose fully each time his son <em>Rabbeinu Yechiel</em> entered the room. The episode testifies to the <em>madreigah</em> of <em>Rabbeinu Yechiel</em> as a <em>talmid chacham</em>, and is one of the principal traces of his stature, since little of his <em>Torah</em> survives independently. The underlying halachic principle &mdash; that <em>kibbud av va&rsquo;em</em> is taught not through <em>derashos</em> but through <em>ma&rsquo;aseh</em> &mdash; is familiar from every generation of a serious Jewish home.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Mishlei</em> 29:4 &mdash; <em>&ldquo;melech b&rsquo;mishpat ya&rsquo;amid aretz v&rsquo;ish terumos yeharsenah.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Shlomo ha&rsquo;Melech</em>&rsquo;s <em>pasuk</em> in <em>Mishlei</em>: a king establishes the land through <em>mishpat</em>; one who exacts unwarranted tributes destroys it. The <em>pasuk</em> binds <em>malchus</em> to <em>mishpat</em> as its proper instrument &mdash; the king&rsquo;s authority is actualized only through the delivery of <em>mishpat</em>. The <em>Rosh</em>, and the <em>Tur</em> in his name through <em>Rabbeinu Yechiel</em>, reads the <em>pasuk</em> as the structural ground for inserting <em>&ldquo;melech&rdquo;</em> uniquely into the <em>chasimah</em> of <em>Hashivah Shofteinu</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Rama</em>, <em>Shulchan Aruch Orach Chaim Siman</em> 118 (and <em>Siman</em> 582 for the <em>hilchos</em> of the season) &mdash; <em>b&rsquo;dieved</em> saying <em>&ldquo;melech oheiv tzedakah u&rsquo;mishpat&rdquo;</em> in <em>Aseres Yemei Teshuvah</em>.</span>
+  <span class="expanded">&mdash; The <em>Rama</em> rules that one who erred and said the year-round <em>chasimah</em> in place of <em>&ldquo;HaMelech ha&rsquo;mishpat&rdquo;</em> during the <em>Aseres Yemei Teshuvah</em> need not return &mdash; because the <em>berachah</em>&rsquo;s <em>chasimah</em> already contains <em>&ldquo;melech,&rdquo;</em> which satisfies the structural requirement of the season <em>b&rsquo;dieved</em>. The <em>pesak</em> is the standard practice today and is itself a halachic application of the <em>Rabbeinu Yechiel</em> <em>yesod</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short">The <em>Aruch</em>&rsquo;s contrary view &mdash; older <em>nusach</em> without <em>&ldquo;melech.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>Aruch</em> (<em>Rabbi Nassan bar Yechiel of Rome</em>, c. 1035&ndash;1106), working from older <em>nuschaos</em> in which the year-round <em>chasimah</em> of <em>Hashivah Shofteinu</em> read <em>&ldquo;oheiv tzedakah u&rsquo;mishpat&rdquo;</em> without <em>&ldquo;melech,&rdquo;</em> rules that one who said the year-round <em>chasimah</em> in <em>Aseres Yemei Teshuvah</em> must repeat. The <em>pesak</em> follows the <em>Rama</em>; the <em>Aruch</em>&rsquo;s reading bears witness to the development of the <em>nusach</em> across the gaonic period, and from the opposite side to the same <em>yesod</em>: that <em>mishpat</em> structurally requires <em>malchus</em> in the <em>chasimah</em> and the <em>nusach</em> gradually crystallized to reflect it.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Yeshayahu</em> 1:26 &mdash; <em>&ldquo;v&rsquo;ashivah shofetayich k&rsquo;varishonah v&rsquo;yo&rsquo;atzayich k&rsquo;vatechilah.&rdquo;</em></span>
+  <span class="expanded">&mdash; <em>Yeshayahu</em>&rsquo;s <em>pasuk</em> in the opening <em>perek</em>, read as the <em>haftarah</em> of <em>Chazon Yeshayahu</em> on the <em>Shabbos</em> before <em>Tishah b&rsquo;Av</em>. The <em>pasuk</em>&rsquo;s first-person future-tense <em>havtachah</em> &mdash; <em>&ldquo;And I will return&rdquo;</em> &mdash; is turned by the <em>Anshei Knesses HaGedolah</em> into the daily <em>bakashah</em> of <em>Klal Yisrael</em> addressed back to its speaker: <em>&ldquo;Return.&rdquo;</em> The transformation is itself a <em>yesod</em>: the <em>mispallel</em> daily participates in the fulfillment of a prophecy whose fulfillment is already guaranteed.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Rambam</em>, <em>Perush ha&rsquo;Mishnah</em> on <em>Sanhedrin perek</em> 10 (<em>Perek Chelek</em>) and <em>Hakdamah l&rsquo;Perush ha&rsquo;Mishnah</em> &mdash; <em>Mashiach ben David</em> after <em>Sanhedrin</em>; <em>Achiyah ha&rsquo;Shiloni</em> as the link to <em>Eliyahu</em>.</span>
+  <span class="expanded">&mdash; In <em>Perek Chelek</em> the <em>Rambam</em> rules that the sequence of events in <em>yemos ha&rsquo;Mashiach</em> is not fully specified in the sources of <em>Chazal</em>, but that <em>Mashiach ben David</em> structurally requires a functioning <em>Sanhedrin</em>, so that <em>&ldquo;v&rsquo;ashivah shofetayich&rdquo;</em> precedes <em>&ldquo;u&rsquo;malkam Hashem oseh es ha&rsquo;shem.&rdquo;</em> In the <em>Hakdamah</em>, the <em>Rambam</em> traces the chain of <em>Torah she&rsquo;b&rsquo;al peh</em> through <em>Achiyah ha&rsquo;Shiloni</em> &mdash; a <em>navi</em> who left <em>Mitzrayim</em> with <em>Klal Yisrael</em> and lived through <em>David</em> and <em>Shlomo</em> &mdash; to <em>Eliyahu ha&rsquo;Navi</em>. The chain is thereby preserved intact in <em>Eliyahu</em>&rsquo;s person; when he returns, he arrives with <em>semichah</em> and may renew it. The <em>Rambam</em>&rsquo;s position on <em>Sanhedrin</em>-before-<em>Mashiach</em> is not universally held &mdash; the <em>Raavad</em> and others allow the alternative that <em>Mashiach</em> himself will reconstitute <em>semichah</em> &mdash; but it is the position upon which the <em>Mahari Beirav</em>&rsquo;s project rested and which gives the <em>berachah</em> its operational force.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <span class="short">Rav Shimshon Schwab, <em>zt&rdquo;l</em>, <em>Iyyun Tefillah</em> &mdash; <em>&ldquo;v&rsquo;haser mimenu yagon va&rsquo;anachah&rdquo;</em> as the <em>tefillah</em> for the end of <em>agudos agudos</em>.</span>
+  <span class="expanded">&mdash; Rav Shimshon Refael Schwab, <em>zt&rdquo;l</em> (1908&ndash;1995), <em>Rav</em> of <em>Kehal Adas Yeshurun</em> in Washington Heights, in <em>Iyyun Tefillah</em> (English: <em>Rav Schwab on Prayer</em>), reads the <em>chasimah</em>-phrase as structurally the operational heart of the <em>berachah</em>: the absence of central halachic authority produces fragmentation into <em>agudos agudos</em>; fragmentation produces <em>yagon</em> and <em>anachah</em> by definition; the <em>berachah</em> accordingly asks for the dissolution of fragmentation through the restoration of one <em>Sanhedrin</em>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Yevamos</em> 13b &mdash; <em>&ldquo;lo tisgodedu &mdash; lo sa&rsquo;asu agudos agudos.&rdquo;</em></span>
+  <span class="expanded">&mdash; The <em>sugya</em> in <em>Yevamos</em> derives from <em>&ldquo;lo tisgodedu&rdquo;</em> (<em>Devarim</em> 14:1) &mdash; read in its <em>peshat</em> as a prohibition against self-laceration in mourning &mdash; the additional <em>issur</em> of <em>&ldquo;lo sa&rsquo;asu agudos agudos&rdquo;</em>: do not divide into separate halachic factions. The <em>issur</em> targets the structural <em>chilluk</em> of <em>Klal Yisrael</em> into competing halachic communities, the very <em>matzav</em> Rav Schwab identifies with the <em>yagon va&rsquo;anachah</em> the <em>berachah</em> seeks to dissolve. The <em>Gemara</em> adds the historical observation that in the generations before the <em>talmidei Shammai v&rsquo;Hillel</em>, no major <em>machlokos</em> are recorded in <em>Klal Yisrael</em> &mdash; the fragmentation of <em>pesak</em> is itself a product of the broken central authority.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short">The <em>Kotzker</em> on <em>&ldquo;ka&rsquo;chagavim b&rsquo;eineinu&rdquo;</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbi Menachem Mendel of Kotzk</em> (1787&ndash;1859), in the chassidishe reading preserved across his <em>divrei Torah</em> (<em>Emes v&rsquo;Emunah</em> and parallel collections), reads the double formulation of the <em>pasuk</em> &mdash; <em>&ldquo;in our own eyes&hellip; and so in their eyes&rdquo;</em> &mdash; as teaching that self-perception precedes external perception. The <em>meraglim</em>&rsquo;s own diminishment of themselves became the ground upon which the <em>anakim</em> diminished them. The Rebbe&rsquo;s punchline: <em>&ldquo;If you look at yourself as a <span class="heb-inline">חָגָב</span>, you are a <span class="heb-inline">חָגָב</span>.&rdquo;</em></span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Sotah</em> 35a &mdash; the <em>anakim</em>&rsquo;s observation; the Aramaic <em>&ldquo;kamsi.&rdquo;</em> <em>Rashi</em>&rsquo;s rendering of <em>chagavim</em> as <em>nemalim</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> in <em>Sotah</em> records that the <em>anakim</em>, observing the <em>meraglim</em> in the vineyards, remarked that they appeared as insects. The Aramaic term <em>&ldquo;kamsi&rdquo;</em> is ambiguous between ants and grasshoppers. <em>Rashi</em> on the <em>pasuk</em> in <em>Bamidbar</em> renders <em>chagavim</em> as <em>nemalim</em>. The preference is tracked by later <em>mefarshim</em> to two <em>pesukim</em> in <em>Mishlei</em> that couple the two species under the single <em>chisaron</em> of leaderlessness: of the <em>nemalah</em>, <em>&ldquo;asher ein lah katzin, shoter u&rsquo;moshel&rdquo;</em> (<em>Mishlei</em> 6:7); of the <em>arbeh</em>, <em>&ldquo;melech ein la&rsquo;arbeh&rdquo;</em> (<em>Mishlei</em> 30:27). The chassidishe <em>gilyonos</em> of <em>Shalal Alter</em> (distributed in the Flatbush shul the week of the shiur) crystallize the linkage.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Shabbos</em> 77b (and the parallel in <em>Chullin</em> 57b) &mdash; <em>Rabbi Shimon ben Chalafta</em>&rsquo;s experiment on ants.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> preserves the famous experiment of <em>Rabbi Shimon ben Chalafta</em>: he covered an ant nest to simulate the shade of evening, watched a single ant exit and return to report to the colony, and &mdash; upon lifting the cover &mdash; observed that the reporting ant was killed by the colony for its false report. The experiment was intended to test whether ants have a king who would prevent an unsanctioned execution. The <em>Gemara</em>&rsquo;s treatment ultimately defers to <em>Shlomo ha&rsquo;Melech</em>&rsquo;s own testimony: ants have no <em>katzin, shoter u&rsquo;moshel</em>. The reading supports <em>Rashi</em>&rsquo;s rendering of <em>chagavim</em> as <em>nemalim</em>: the <em>meraglim</em> likened themselves to the species that lives without a <em>melech</em>, and the <em>chet</em> was the rejection of leadership itself. The <em>ma&rsquo;apilim</em>&rsquo;s immediate uprising &mdash; ascending to <em>Eretz Yisrael</em> without <em>Moshe Rabbeinu</em> &mdash; carries the same <em>chisaron</em> to its destruction.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short">Rav Schwab&rsquo;s contemporary examples &mdash; Einstein, Hawking, and the <em>berachos</em> on <em>chachamim</em>, <em>melachim</em>, and <em>gedolim</em>.</span>
+  <span class="expanded">&mdash; Albert Einstein (1879&ndash;1955) is cited by Rav Schwab as arguably the single contemporary <em>chacham</em> whose foundational work has continued to be confirmed rather than overturned, and therefore the rare figure on whom <em>&ldquo;she&rsquo;nasan mei&rsquo;chochmaso l&rsquo;basar va&rsquo;dam&rdquo;</em> would stand without retrospective embarrassment. Rav Schwab&rsquo;s broader framing &mdash; that the arc of <em>chochmas ha&rsquo;teva</em> in the modern period is one of successive revision &mdash; is best read as a <em>hashkafic</em> observation about the age dressed in halachic language; the strict halachic criterion of the <em>berachah</em> turns on contemporary recognition of <em>chochmah</em>, not on retrospective durability. The point is likewise extended to the <em>berachah</em> on seeing a king (<em>Satmar</em> on the Queen of England as a known precedent; the <em>safek</em> on a modern constitutional president) and even to the <em>berachah</em> on seeing a <em>gadol ha&rsquo;dor</em>. Rav Schwab grounded the right to raise the question on contemporary <em>gedolim</em> in the biographical experience of having spent a <em>Shabbos</em> with the <em>Chofetz Chaim</em> in 1930: he never stopped speaking of it, and held that no figure since the <em>Chofetz Chaim</em>&rsquo;s <em>petirah</em> had attained the universality of reception the <em>berachah</em> presupposes. The register in which Rav Schwab delivers all three observations is the register of <em>yasmi d&rsquo;yasmi</em>: ours is an orphan generation of orphans with respect to all three <em>sidrei kavod</em> &mdash; halachic, royal, and intellectual &mdash; and <em>&ldquo;Hashivah Shofteinu&rdquo;</em> is a <em>tefillah</em> for the restoration of all three.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <span class="short"><em>Rambam</em>, <em>Hilchos Tefillah</em> 1:4&ndash;6 &mdash; <em>Ezra</em> and the <em>Anshei Knesses HaGedolah</em> instituted eighteen <em>berachos</em>; the nineteenth added later.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> at the opening of <em>Hilchos Tefillah</em> describes the historical evolution. <em>Moshe Rabbeinu</em> instituted the three daily <em>tefillos</em>; <em>Ezra ha&rsquo;Sofer</em> and the <em>Anshei Knesses HaGedolah</em> in early <em>Bayis Sheini</em> standardized the eighteen <em>berachos</em> after a long period in which <em>Klal Yisrael</em> davened without fixed <em>nusach</em>; <em>Rabban Gamliel</em> and his <em>beis din</em> in <em>Yavneh</em> later added the nineteenth against the <em>minim</em>. The <em>Rambam</em>&rsquo;s own continued use of the name <em>Shemoneh Esrei</em> is itself an act of <em>Chazal</em>&rsquo;s preservation of the original <em>shem</em> &mdash; a <em>tefillah</em> that the nineteenth become unnecessary.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <span class="short"><em>Berachos</em> 28b and <em>Megillah</em> 17b &mdash; <em>Shimon ha&rsquo;Pakuli</em> and <em>Rabban Gamliel</em>; the <em>takkanah</em> of the nineteenth <em>berachah</em>.</span>
+  <span class="expanded">&mdash; The parallel <em>sugyos</em> record the <em>takkanah</em>: <em>Shimon ha&rsquo;Pakuli</em> arranged the eighteen <em>berachos</em> in their fixed order before <em>Rabban Gamliel</em> in <em>Yavneh</em>; <em>Rabban Gamliel</em> then asked his <em>talmidim</em> to compose a nineteenth. <em>Shmuel ha&rsquo;Katan</em> arose, composed it, and &mdash; the following year &mdash; forgot it himself and labored at the <em>amud</em> to recover it; the <em>Tosafos</em> ad loc discuss why he was not removed. The <em>Gemara</em> further records the operational mechanism: a <em>min</em> would not say the <em>berachah</em> against himself; skipping it identified him publicly.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short">Censorship of <em>&ldquo;la&rsquo;minim&rdquo;</em> to <em>&ldquo;la&rsquo;malshinim&rdquo;</em>; the scatter of <em>nusachos</em>.</span>
+  <span class="expanded">&mdash; Printed editions of the <em>siddur</em> from the sixteenth century onward routinely replaced the original <em>&ldquo;la&rsquo;minim&rdquo;</em> with <em>&ldquo;la&rsquo;malshinim,&rdquo;</em> and in some editions substituted still further with <em>&ldquo;malchus zadon,&rdquo;</em> <em>&ldquo;malchus ha&rsquo;rish&rsquo;ah,&rdquo;</em> or <em>&ldquo;kol ha&rsquo;resha&rsquo;im.&rdquo;</em> Christian censors across the generations could not tolerate the direct naming of <em>minim</em>, which they correctly identified as targeting the <em>nozrim yehudim</em> who had become the ancestors of their faith. Manuscript evidence &mdash; including the Cairo Geniza &mdash; preserves the original <em>&ldquo;la&rsquo;minim&rdquo;</em>; some contemporary <em>siddurim</em> have restored it. The scatter of surviving <em>nusachos</em> is almost entirely the product of external pressure across generations, not of internal halachic variation.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Yerushalmi Sukkah</em> at the end of the masechta; <em>Sanhedrin</em> 11a; <em>Mishnah Avos</em> 4:19 &mdash; <em>Shmuel ha&rsquo;Katan</em>.</span>
+  <span class="expanded">&mdash; <em>Shmuel ha&rsquo;Katan</em> was a <em>tanna</em> of the generation of <em>Rabban Gamliel</em> in <em>Yavneh</em>. The sources offer competing accounts of the epithet: the <em>Gemara</em> in <em>Sanhedrin</em> 11a records his <em>anavah</em> in shielding another <em>chacham</em> from public embarrassment by taking the <em>chet</em> upon himself; the <em>Yerushalmi</em> at the close of <em>Sukkah</em> reads the title as comparison to <em>Shmuel ha&rsquo;Navi</em> &mdash; a <em>katan</em>-sized <em>Shmuel ha&rsquo;Gadol</em>, signaling the highest <em>madreigah</em>; parallel sources cite his <em>tznius</em>. He is cited once in the <em>Mishnah</em>, in <em>Avos</em> 4:19, where uniquely he states no original <em>Torah</em> and quotes only the <em>pasuk</em> in <em>Mishlei</em> 24:17.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>Berachos</em> 28b&ndash;29a &mdash; <em>Shmuel ha&rsquo;Katan</em> forgot his own <em>berachah</em>; <em>Tosafos</em> on his not being removed from the <em>amud</em>.</span>
+  <span class="expanded">&mdash; The <em>Gemara</em> records that <em>Shmuel ha&rsquo;Katan</em> stood before the <em>amud</em> and, in the course of davening, could not recover the text of the very <em>berachah</em> he had composed. He paused, labored to retrieve it, and ultimately succeeded. The <em>Tosafos</em> address why he was not removed from the <em>amud</em> under the general rule that a <em>chazzan</em> who stumbles in a <em>berachah</em> is replaced: his character stood as his credential, and the stumble bore its own kind of testimony &mdash; the author uniquely bound to the <em>berachah</em> was also uniquely at risk of its loss.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short">Rav Avraham Yitzchak ha&rsquo;Kohen Kook, <em>zt&rdquo;l</em> &mdash; the inverse reading of <em>binfol oyivcha</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Kook</em> (1865&ndash;1935), in his collected writings on <em>Pirkei Avos</em> and on <em>tefillah</em> (<em>Ein Ayah</em> and parallel <em>peirushim</em>), develops the reading opposite to the standard one: <em>Shmuel ha&rsquo;Katan</em>&rsquo;s quoting of <em>&ldquo;binfol oyivcha al tismach&rdquo;</em> is not a self-warning attached <em>after</em> the <em>berachah</em>; it is the credential that qualified him <em>beforehand</em>. A <em>berachah</em> directed against <em>minim</em> requires authorship by one who already inhabits the antithesis of <em>sinah</em> &mdash; a <em>tanna</em> whose <em>tefillah</em> against enemies springs purely from <em>kinas Hashem</em>, not from personal animus. The two <em>peshatim</em> are best read together as two faces of a single arc, pre- and post-<em>takkanah</em>, around the one <em>middah</em> of <em>Shmuel ha&rsquo;Katan</em>&rsquo;s <em>anavah</em>.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 22 June 2025 &mdash; the <em>berachah</em> of <em>Hashivah Shofteinu</em> and the nineteenth <em>berachah</em> of <em>v&rsquo;la&rsquo;malshinim</em>. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice; opens the <em>Rabbeinu Yechiel</em> <em>yesod</em> across its year-round and seasonal halachic reach; restores the <em>derech agav</em> on the <em>chet ha&rsquo;meraglim</em> and the <em>chisaron</em> of leaderlessness as the <em>parshah</em>&rsquo;s support for Rav Schwab&rsquo;s <em>agudos agudos</em> reading; separates Rav Schwab&rsquo;s teaching on the diminished <em>sidrei kavod</em> into its own section with the <em>Chofetz Chaim</em> frame restored; supplies the halachic frame of the <em>bedikah b&rsquo;darkei amitah</em> for <em>Birkat HaMinim</em>&rsquo;s operational mechanism; and reads the two <em>peshatim</em> on <em>&ldquo;binfol oyivcha&rdquo;</em> as a single arc of one <em>middah</em>, closing on the two <em>berachos</em> as a single petition for the restoration of all three <em>sidrei kavod</em>.
+</footer>
+
+</body>
+</html>

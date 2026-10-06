@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Tefillas Nachem and Birkas Modim</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">תְּפִלַּת נַחֵם וּבִרְכַּת מוֹדִים</h1>
+  <div class="english-title">Tefillas Nachem and Birkas Modim &mdash; The Once-a-Year <em>Chasimah</em>, the Dates of the <em>Churban</em>, the Bow of <em>Modim</em>, and the Hidden <em>Berachah</em> for Children</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded <span class="heb-inline">ג׳ אב תשפ״ה</span> &nbsp;&middot;&nbsp; 27 July 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+
+<p class="dedication"><em>לעילוי נשמת רבינו ר' נחמן מנדל בן ר' נחמן מנדל הלוי זצ"ל</em></p>
+
+<p class="lead">A treatise in two parts. The first concerns <em>Tefillas Nachem</em> (<span class="heb-inline">תפילת נחם</span>), the one <em>berachah</em> whose <em>chasimah</em> (<span class="heb-inline">חתימה</span>) is said once a year: its single source in the <em>Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>), the structural rule of <em>Rav Muna</em> (<span class="heb-inline">רב מונא</span>) and the placement of the <em>Rif</em> (<span class="heb-inline">רי"ף</span>), the laws of one who forgot it, the prohibition against altering its <em>nusach</em> (<span class="heb-inline">נוסח</span>), the question of why it is said only at <em>Minchah</em> (<span class="heb-inline">מנחה</span>), and the dates of the <em>churban</em> (<span class="heb-inline">חורבן</span>) from the seventh through the tenth of <em>Av</em> (<span class="heb-inline">אב</span>) with the position of <em>Rebbi Yochanan</em> (<span class="heb-inline">רבי יוחנן</span>). The second concerns <em>Birkas Modim</em> (<span class="heb-inline">ברכת מודים</span>): the bow, the <em>Gemara</em> of the spine and the snake, the double sense of <em>modim</em>, and the <em>berachah</em> for children that lies concealed in <em>&ldquo;l&rsquo;dor va-dor&rdquo;</em> (<span class="heb-inline">לדור ודור</span>).</p>
+
+<h2>I. The <em>Berachos</em> Said Only Once a Year</h2>
+
+<p>It is told that a riddle was passed down in the family of the Rav, posed by his grandfather to the children: <em>which berachos (<span class="heb-inline">ברכות</span>) do we say only once in the year?</em> The answer begins with <em>Shehecheyanu</em> (<span class="heb-inline">שהחיינו</span>) on the night of <em>Yom Kippur</em> (<span class="heb-inline">ליל יום הכפורים</span>); with <em>&ldquo;al achilas matzah&rdquo;</em> (<span class="heb-inline">על אכילת מצה</span>) &mdash; once a year in <em>Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>), where there is a single <em>seder</em>, though twice in <em>Chutz La&rsquo;aretz</em> (<span class="heb-inline">חוץ לארץ</span>), where there are two; with <em>&ldquo;al bi&rsquo;ur chametz&rdquo;</em> (<span class="heb-inline">על ביעור חמץ</span>); with <em>&ldquo;al mikra Megillah&rdquo;</em> (<span class="heb-inline">על מקרא מגילה</span>), according to certain opinions; and, according to <em>Rav Saadia Gaon</em> (<span class="heb-inline">רב סעדיה גאון</span>), with the <em>berachah</em> on the immersion of <em>Yom Kippur</em> (<span class="heb-inline">טבילת יום הכפורים</span>). One more remains, and it is the subject of the first part of this chapter: the <em>chasimah</em> of <em>Tefillas Nachem</em> at <em>Minchah</em> of <em>Tisha B&rsquo;Av</em> (<span class="heb-inline">תשעה באב</span>) &mdash; <em>&ldquo;Baruch Atah Hashem, menachem Tziyon uvoneh Yerushalayim&rdquo;</em> (<span class="heb-inline">ברוך אתה ה' מנחם ציון ובונה ירושלים</span>).</p>
+
+<h3>The Bear and the Honey</h3>
+
+<p>The best-known <em>ma&rsquo;aseh</em> (<span class="heb-inline">מעשה</span>) bearing on the matter is told of <em>Rabbi Yonasan Eibeschutz</em> (<span class="heb-inline">רבי יונתן אייבשיץ</span>).<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> A nobleman wagered that no one could teach a bear to pray. <em>Rabbi Yonasan</em> smeared honey on every page of a <em>siddur</em> (<span class="heb-inline">סידור</span>); the bear learned to open the book and to turn its pages, one after another, in pursuit of the honey. So, too, many a Jew turns the pages of the <em>siddur</em> and moves his lips, with no <em>kavanah</em> (<span class="heb-inline">כוונה</span>) at all.</p>
+
+<p>The <em>nimshal</em> (<span class="heb-inline">נמשל</span>) is plain. A person who recites <em>Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) daily can fall into the posture of the bear: words turning over without engagement. On <em>Minchah</em> of <em>Tisha B&rsquo;Av</em> the <em>siddur</em> opens to a <em>berachah</em> that has not been said all year &mdash; <em>Nachem</em> (<span class="heb-inline">נחם</span>) &mdash; and at once the worshipper wakes. He begins to think about what he is saying, and the attention of that single moment suffuses the whole year.</p>
+
+<h2>II. The Source of <em>Tefillas Nachem</em></h2>
+
+<h3>The <em>Yerushalmi</em> Alone</h3>
+
+<p><em>Tefillas Nachem</em> is not found in the <em>Bavli</em> (<span class="heb-inline">בבלי</span>). Its source is the <em>Yerushalmi</em>,<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> where the individual (<span class="heb-inline">יחיד</span>) is told that on <em>Tisha B&rsquo;Av</em> he must mention the <em>me&rsquo;ein ha-me&rsquo;ora</em> (<span class="heb-inline">מעין המאורע</span>) &mdash; an addition tied to the character of the day. <em>Rav Saadia Gaon</em> is reported to have written<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> that although the <em>Bavli</em> community did not recite it, since the <em>Yerushalmi</em> records it and the <em>bnei Eretz Yisrael</em> (<span class="heb-inline">בני ארץ ישראל</span>) say it, there is <em>&ldquo;ein hefsed b&rsquo;amiraso&rdquo;</em> (<span class="heb-inline">אין הפסד באמירתו</span>) &mdash; no loss in saying it. The framing is not that of obligation but of availability. The <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>), in any event, rules that it is said.</p>
+
+<h3>The Principle of <em>Me&rsquo;ein HaMe&rsquo;ora</em></h3>
+
+<p>The <em>Yerushalmi</em> thus establishes a structural principle: on a day with a distinctive character, <em>Shemoneh Esrei</em> is supplemented with content bearing on the event of the day. On <em>Chanukah</em> (<span class="heb-inline">חנוכה</span>) and <em>Purim</em> (<span class="heb-inline">פורים</span>) this is <em>Al HaNissim</em> (<span class="heb-inline">על הניסים</span>); on <em>Tisha B&rsquo;Av</em>, <em>Nachem</em>.</p>
+
+<h3>The Rule of <em>Rav Muna</em></h3>
+
+<p>The passage records that <em>Rabbi Avdima of Tzippori</em> (<span class="heb-inline">רבי אבדימא דציפורין</span>) put a question before <em>Rav Muna</em> (<em>Rabbi Mana</em>, <span class="heb-inline">רבי מנא</span>): in which <em>berachah</em> of <em>Shemoneh Esrei</em> is the insertion to be said? One might have expected the reply, <em>&ldquo;v&rsquo;liYerushalayim irecha&rdquo;</em> (<span class="heb-inline">ולירושלים עירך</span>). The reply was instead a structural rule:</p>
+
+<blockquote>
+<div class="heb">כָּל דָּבָר שֶׁהוּא לָבֹא אוֹמְרָהּ בָּעֲבוֹדָה. וְכָל דָּבָר שֶׁהוּא לְשֶׁעָבַר אוֹמְרָהּ בְּהוֹדָאָה.</div>
+<div class="trans">Anything that concerns the future is said in <em>Avodah</em> (<em>Retzei</em>); anything that concerns the past is said in <em>Hoda&rsquo;ah</em> (<em>Modim</em>).</div>
+<div class="source"><em>Yerushalmi Berachos</em> 4:3 &middot; parallel in <em>Taanis</em> 2:2</div>
+</blockquote>
+
+<p>The rule accounts for what we know. <em>Al HaNissim</em> speaks of miracles already wrought, and is therefore placed in <em>Modim</em>. <em>Ya&rsquo;aleh v&rsquo;Yavo</em> (<span class="heb-inline">יעלה ויבוא</span>) speaks of future remembrance and of <em>Mashiach</em> (<span class="heb-inline">משיח</span>), and is placed in <em>Retzei</em> (<span class="heb-inline">רצה</span>).</p>
+
+<h3>Where Does <em>Nachem</em> Belong?</h3>
+
+<p><em>Nachem</em> looks principally to the future: it asks that <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) console us, rebuild the <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>), and restore <em>Yerushalayim</em>. By the rule of <em>Rav Muna</em> it would belong in <em>Retzei</em>. Yet it also dwells upon the past <em>churban</em>, and the authorities were therefore divided as to whether it is a matter of the past or of the future &mdash; whether it belongs in <em>Retzei</em> or in <em>Modim</em>.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<h3>Our <em>Psak</em> &mdash; <em>V&rsquo;liYerushalayim Irecha</em></h3>
+
+<p>We follow neither limb of the <em>Yerushalmi</em>&rsquo;s rule. The <em>Rif</em> (<span class="heb-inline">רי"ף</span>)<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> rules that <em>Nachem</em> is recited in the <em>berachah</em> of <em>v&rsquo;liYerushalayim irecha</em>, on a different ground altogether: the <em>halachah</em> in <em>Avodah Zarah</em> (<span class="heb-inline">עבודה זרה</span>)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> that one may add, in any <em>berachah</em>, a request that is <em>me&rsquo;ein inyan ha-berachah</em> (<span class="heb-inline">מעין ענין הברכה</span>) &mdash; of the nature of that <em>berachah</em>. <em>Nachem</em> speaks of <em>Yerushalayim</em>, and so it belongs in <em>Birkas Yerushalayim</em>.</p>
+
+<div class="pullquote">
+<h3 style="margin-top:0"><em>Hearah</em> &mdash; Two Principles, One Placement</h3>
+<p>The two principles seem to stand in tension: if the rule of <em>Rav Muna</em> reflects the very structure of <em>Shemoneh Esrei</em>, how can a consideration of <em>me&rsquo;ein ha-berachah</em> override it? It may be suggested that the rule of <em>Rav Muna</em> is a default governing additions for which no <em>berachah</em> is on point. <em>Al HaNissim</em> has no <em>berachah</em> of its own in <em>Shemoneh Esrei</em> concerning <em>Chanukah</em> or <em>Purim</em>, and so the shape of the content &mdash; past or future &mdash; decides its place. <em>Nachem</em>, by contrast, has a <em>berachah</em> squarely on point in <em>Birkas Yerushalayim</em>, and specificity prevails over shape. On this reading both <em>halachos</em> stand. (This is offered as an analytic suggestion; it is not stated in the sources cited.)</p>
+</div>
+
+<h2>III. One Who Forgot <em>Nachem</em></h2>
+
+<p>An entire <em>siman</em> of the <em>Shulchan Aruch</em> is devoted to this <em>berachah</em> &mdash; <em>Orach Chayim</em> 557 (<span class="heb-inline">סימן תקנ"ז</span>), <em>Hilchos Tisha B&rsquo;Av</em>.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<h3>Forgotten in <em>Birkas Yerushalayim</em></h3>
+
+<p>By the structural rule of the <em>Yerushalmi</em> (future &rarr; <em>Retzei</em>) one might have returned and said it in <em>Retzei</em>. But the <em>Taz</em> (<span class="heb-inline">ט"ז</span>) rules otherwise: it is said in <em>Shema Koleinu</em> (<span class="heb-inline">שמע קולנו</span>), a comprehensive <em>berachah</em> into which any request may be admitted.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></p>
+
+<p>A critical detail: when <em>Nachem</em> is said in <em>Shema Koleinu</em>, the special <em>chasimah</em> &mdash; <em>&ldquo;menachem Tziyon uvoneh Yerushalayim&rdquo;</em> &mdash; is <em>not</em> recited. One concludes as always, <em>&ldquo;Baruch Atah Hashem, shomea tefillah&rdquo;</em> (<span class="heb-inline">ברוך אתה ה' שומע תפילה</span>). The once-a-year <em>chasimah</em> is forfeited.</p>
+
+<h3>Forgotten Entirely</h3>
+
+<p>One who completed <em>Shemoneh Esrei</em> and realized that he had omitted <em>Nachem</em> altogether does not repeat. The <em>klal</em> (<span class="heb-inline">כלל</span>): an addition for the <em>me&rsquo;ora</em> of the day, on a day that has no <em>korban Mussaf</em> (<span class="heb-inline">קרבן מוסף</span>), does not require repetition if forgotten.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a></p>
+
+<ul>
+  <li><em>Ya&rsquo;aleh v&rsquo;Yavo</em> on <em>Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>): there <em>is</em> a <em>Mussaf</em> &mdash; one repeats.</li>
+  <li><em>Nachem</em> on <em>Tisha B&rsquo;Av</em>: there is no <em>Mussaf</em> &mdash; one does not repeat.</li>
+</ul>
+
+<p>A further question was raised in connection with the forgotten <em>Nachem</em>, concerning the position of <em>Rabbeinu Yitzchak ibn Giyas</em>; it is recorded in the notes.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></p>
+
+<h2>IV. The Inviolability of the <em>Nusach</em></h2>
+
+<p>The <em>berachah</em> describes <em>Yerushalayim</em> as ruined and degraded. A certain rabbi in <em>Eretz Yisrael</em> proposed to alter the <em>nusach</em>: &ldquo;What is meant by <em>&lsquo;Yerushalayim charavah&rsquo;</em> (<span class="heb-inline">ירושלים חרבה</span>)? Today Yerushalayim is built and magnificent. There is no <em>Beis HaMikdash</em>, but the city itself is not destroyed.&rdquo; He would have rephrased it in praise: &ldquo;<em>Baruch Hashem</em> (<span class="heb-inline">ברוך ה'</span>), we see the great change; only give us the <em>Beis HaMikdash</em>.&rdquo;</p>
+
+<p><em>Chas v&rsquo;shalom</em> (<span class="heb-inline">חס ושלום</span>). It is forbidden to deviate from the <em>mesorah</em> (<span class="heb-inline">מסורה</span>). <em>Yerushalayim</em> remains destroyed, degraded, and desolate. Without the <em>malchus beis Dovid</em> (<span class="heb-inline">מלכות בית דוד</span>), without the <em>Beis HaMikdash</em>, without <em>korbanos</em> (<span class="heb-inline">קרבנות</span>), without the <em>kohanim</em> (<span class="heb-inline">כהנים</span>) at their stations in song and music (<span class="heb-inline">בשירה ובזמרה</span>) &mdash; it <em>is</em> destroyed. We are a nation that wakes each day in anticipation of <em>chazon ha-nechamah</em> (<span class="heb-inline">חזון הנחמה</span>); and until that day &mdash; <em>baruch Hashem</em> for the <em>yishuv</em> (<span class="heb-inline">יישוב</span>) in <em>Eretz Yisrael</em>, for the <em>Torah</em> and <em>mitzvos</em> (<span class="heb-inline">תורה ומצוות</span>) kept there in such abundance &mdash; <em>Yerushalayim</em> remains in the language of <em>churban</em>. To alter the <em>nusach</em> is unthinkable.</p>
+
+<h3>The Language of the <em>Nusach</em></h3>
+
+<p>When the <em>berachah</em> is said with its <em>chasimah</em> it is enough to bring tears. The <em>nusach</em> speaks of the city as <em>&ldquo;ka-ishah akarah she-lo yaldah&rdquo;</em> (<span class="heb-inline">כאשה עקרה שלא ילדה</span>), a barren woman who bore no child, whom the nations devoured; <em>&ldquo;al kein Tziyon be-mar tivkeh&rdquo;</em> (<span class="heb-inline">על כן ציון במר תבכה</span>). A moving melody on these words was composed by <em>Shlomo Simchi</em>.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> <em>&ldquo;Libi, libi al chalalei&rdquo;</em> (<span class="heb-inline">לבי לבי על חלליהם</span>) &mdash; let the heart be broken over the slain; for it was <em>HaKadosh Baruch Hu</em> who kindled it, and He will rebuild it with fire.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+
+<p>Yet the very first word of the <em>berachah</em> is <strong><em>Nachem</em></strong> (<span class="heb-inline">נחם</span>): now is the time for consolation, the time for <em>Mashiach</em> to be born. Even as the <em>Beis HaMikdash</em> burns we already hold <em>nechamah</em> (<span class="heb-inline">נחמה</span>), because we believe that the <em>nechamah</em> will come.</p>
+
+<h3><em>&ldquo;Ba&rsquo;esh Hitzatah u&rsquo;va&rsquo;esh Atah Asid l&rsquo;vnosah&rdquo;</em></h3>
+
+<p>The <em>berachah</em> closes with its great declaration: <em>&ldquo;ki Atah Hashem ba&rsquo;esh hitzatah u&rsquo;va&rsquo;esh Atah asid l&rsquo;vnosah&rdquo;</em> (<span class="heb-inline">כי אתה ה' באש הצתה ובאש אתה עתיד לבנותה</span>). <em>HaKadosh Baruch Hu</em> burned the <em>Beis HaMikdash</em> through the nations, with fire, and He will rebuild it with fire: on one view, the third <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש השלישי</span>) descends from <em>Shamayim</em> (<span class="heb-inline">שמים</span>) in fire.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+
+<p>A debate among the <em>acharonim</em> (<span class="heb-inline">אחרונים</span>) arises from this. There is a <em>mitzvas aseh</em> (<span class="heb-inline">מצות עשה</span>) of <em>binyan beis ha-bechirah</em> (<span class="heb-inline">בנין בית הבחירה</span>). If the third <em>Beis HaMikdash</em> descends from heaven, how is the <em>mitzvah</em> to be discharged? Some say that we shall perform the <em>gimurim</em> (<span class="heb-inline">גימורים</span>) &mdash; the gates, the finishing work, the completion (<span class="heb-inline">השלמה</span>).</p>
+
+<h2>V. Why Only at <em>Minchah</em>?</h2>
+
+<p>The question is a real one. <em>Al HaNissim</em> is said at every <em>tefillah</em> (<span class="heb-inline">תפילה</span>) of <em>Chanukah</em> and <em>Purim</em>; <em>Ya&rsquo;aleh v&rsquo;Yavo</em> at <em>Shacharis</em> (<span class="heb-inline">שחרית</span>), <em>Minchah</em>, and <em>Ma&rsquo;ariv</em> (<span class="heb-inline">מעריב</span>). Why is <em>Nachem</em> said only at <em>Minchah</em>?<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<h3>The <em>Rosh</em></h3>
+
+<p>The <em>Rosh</em> (<span class="heb-inline">רא"ש</span>) writes that all his days he wondered at the custom, for it is illogical: it should be said at every <em>tefillah</em> of <em>Tisha B&rsquo;Av</em>.</p>
+
+<h3>The <em>Mechaber</em> and the <em>Rama</em></h3>
+
+<p>The <em>Mechaber</em> (<span class="heb-inline">מחבר</span>) words the <em>halachah</em> without qualification &mdash; <em>&ldquo;b&rsquo;Tisha B&rsquo;Av omer bi-voneh Yerushalayim: Nachem Hashem Elokeinu es avelei Tziyon&rdquo;</em> (<span class="heb-inline">בתשעה באב אומר בבונה ירושלים נחם ה' אלהינו את אבילי ציון</span>) &mdash; which is understood to mean at every <em>tefillah</em>; many <em>Sefardim</em> (<span class="heb-inline">ספרדים</span>) follow this. (Practice among <em>Sefardim</em> varies by community. The Rav had at first been under the impression that they did not say it at every <em>tefillah</em>, and confirmed the <em>Mechaber</em>&rsquo;s wording only when pressed.) The <em>Rama</em> (<span class="heb-inline">רמ"א</span>) glosses: the practice is widespread to say <em>Nachem</em> only at <em>Minchah</em> of <em>Tisha B&rsquo;Av</em>.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a></p>
+
+<h3>The Reason of the <em>Rama</em></h3>
+
+<p>The <em>Rama</em>, citing the <em>Rokeach</em> (<span class="heb-inline">רוקח</span>) and the <em>Avudraham</em> (<span class="heb-inline">אבודרהם</span>), gives the reason: the fire was set in the <em>Beis HaMikdash</em> only at the close of <em>Tisha B&rsquo;Av</em> &mdash; late afternoon, into the night &mdash; and therefore <em>Nachem</em> belongs only at the close of the day. Earlier, there is no <em>nechamah</em> yet: the <em>Beis HaMikdash</em> is, so to speak, still burning. The <em>Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>) gives the same reason in explaining the practice, which he traces to <em>Rabbeinu Saadia</em> (<span class="heb-inline">רבינו סעדיה</span>).</p>
+
+<p>The <em>Tur</em> (<span class="heb-inline">טור</span>) records that there were places in which <em>Rachem</em> (<span class="heb-inline">רחם</span>) was said at night and in the morning, and <em>Nachem</em> at <em>Minchah</em>; and that the matter depends upon <em>minhag</em> (<span class="heb-inline">מנהג</span>).</p>
+
+<div class="pullquote">
+<h3 style="margin-top:0"><em>Hearah</em> &mdash; A Question on the Reason</h3>
+<p>If the reason is the burning, one might ask why <em>Nachem</em> is not also said at <em>Ma&rsquo;ariv</em> of the following night, when the fire was at its height. It seems that <em>Nachem</em> is anchored to the day of the fast itself, said in its latest <em>tefillah</em>; the <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) on the <em>siman</em> may be consulted for the working-out. (Offered as a question, not a resolution.)</p>
+</div>
+
+<h2>VI. The Dates of the <em>Churban</em></h2>
+
+<p>It is a striking fact that <em>&ldquo;Tisha B&rsquo;Av&rdquo;</em> is nowhere stated in <em>Tanach</em> (<span class="heb-inline">תנ"ך</span>) as the date of the <em>churban</em>.</p>
+
+<h3>Two <em>Pesukim</em></h3>
+
+<ul>
+  <li><em>Yirmeyahu</em> (<span class="heb-inline">ירמיהו</span>)<a class="footnote-ref" id="ref16" href="#fn16">[16]</a>: <em>Nevuzaradan</em> (<span class="heb-inline">נבוזראדן</span>), servant of <em>Nevuchadnezzar</em> (<span class="heb-inline">נבוכדנצר</span>), burned the <em>Beis HaMikdash</em>, the king&rsquo;s palace, and <em>Yerushalayim</em> on the <strong>tenth</strong> of <em>Av</em>.</li>
+  <li><em>Sefer Melachim</em> (<span class="heb-inline">ספר מלכים</span>): a similar but not identical <em>pasuk</em> (<span class="heb-inline">פסוק</span>) records the <strong>seventh</strong> of <em>Av</em>.</li>
+</ul>
+
+<p>Neither says the <em>ninth</em>; yet we fast on the ninth.</p>
+
+<h3>The <em>Karaim</em></h3>
+
+<p>The <em>Karaim</em> (<span class="heb-inline">קראים</span>), who reject <em>Chazal</em> (<span class="heb-inline">חז"ל</span>) and follow only the text of <em>Tanach</em>, fasted on both &mdash; the seventh and the tenth, as the <em>pesukim</em> say. We follow <em>Chazal</em>, and <em>Chazal</em> resolved the contradiction.</p>
+
+<h3>The Process &mdash; <em>Taanis</em> 29a</h3>
+
+<p>The <em>Gemara</em> in <em>Taanis</em><a class="footnote-ref" id="ref17" href="#fn17">[17]</a> teaches that there was a process. <em>Nevuzaradan</em>, <em>sar ha-tabbachim</em> (<span class="heb-inline">שר הטבחים</span>), <em>yemach shemo</em> (<span class="heb-inline">ימ"ש</span>), came on the seventh of <em>Av</em>, as <em>Melachim</em> records, and with him the nations entered the <em>heichal</em> (<span class="heb-inline">היכל</span>):</p>
+
+<blockquote>
+<div class="heb">בְּשִׁבְעָה נִכְנְסוּ נׇכְרִים לַהֵיכָל, וְאָכְלוּ וְקִלְקְלוּ בּוֹ שְׁבִיעִי שְׁמִינִי. וּתְשִׁיעִי סָמוּךְ לַחֲשֵׁיכָה הֵצִיתוּ בּוֹ אֶת הָאוּר, וְהָיָה דּוֹלֵק וְהוֹלֵךְ כׇּל הַיּוֹם כּוּלּוֹ.</div>
+<div class="trans">On the seventh the gentiles entered the Sanctuary, and on the seventh and eighth they ate in it and desecrated it. On the ninth, adjacent to nightfall, they set fire to it, and it burned on through the whole of the day.</div>
+<div class="source"><em>Taanis</em> 29a</div>
+</blockquote>
+
+<p>In the language of the tradition, they were <em>&ldquo;ochlin v&rsquo;shosin u&rsquo;mekarkerin&rdquo;</em> (<span class="heb-inline">אוכלין ושותין ומקרקרין</span>) &mdash; the word for revelry. On the seventh and eighth there was desecration but not yet fire. Only on the ninth, toward nightfall, was the fire set; it burned on throughout the tenth.</p>
+
+<p>Some opinions held that one should fast on the tenth as well; we no longer do. A parallel <em>halachah</em> remains: a restraint from meat and wine extends into the tenth until midday.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<div class="pullquote">
+<h3 style="margin-top:0">A Family Note &mdash; and the Basis of the Midday <em>Kulah</em></h3>
+<p>One <em>halachah</em>: after midday on <em>Tisha B&rsquo;Av</em> one may sit upon a chair. The Rav tells a family story. When his younger brother was a small child he came home from <em>gan</em> (<span class="heb-inline">גן</span>) or first grade convinced that after midday <em>Tisha B&rsquo;Av</em> was over &mdash; not only sitting on chairs, but eating and drinking; he put on shoes and began a meal. To this day the family teases him.</p>
+<p>The basis of the <em>kulah</em> (<span class="heb-inline">קולא</span>) after midday: there is a <em>mesorah</em> that <em>Mashiach</em> was born on <em>Tisha B&rsquo;Av</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> The <em>midrash</em> (<span class="heb-inline">מדרש</span>) says that <em>ben Dovid Mashiach</em> (<span class="heb-inline">בן דוד משיח</span>) was born &mdash; whatever precisely that means. Since <em>Mashiach</em> was born around midday, half the day already carries <em>nechamah</em>.</p>
+</div>
+
+<h2>VII. <em>Rebbi Yochanan</em>&rsquo;s <em>Shitah</em> &mdash; Why Not the Tenth?</h2>
+
+<p>The same passage<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> records a striking statement of <em>Rebbi Yochanan</em>:</p>
+
+<blockquote>
+<div class="heb">אִלְמָלֵי הָיִיתִי בְּאוֹתוֹ הַדּוֹר לֹא קְבַעְתִּיו אֶלָּא בָּעֲשִׂירִי, מִפְּנֵי שֶׁרוּבּוֹ שֶׁל הֵיכָל בּוֹ נִשְׂרַף. וְרַבָּנַן &mdash; אַתְחַלְתָּא דְפוּרְעֲנוּתָא עֲדִיפָא.</div>
+<div class="trans">Had I been in that generation I would have fixed it only on the tenth, for the greater part of the <em>heichal</em> was burned on it. And the Sages: it is preferable to mark the beginning of the calamity.</div>
+<div class="source"><em>Taanis</em> 29a</div>
+</blockquote>
+
+<p>We do not follow <em>Rebbi Yochanan</em>. <em>Chazal</em> mark the day of <em>techilas ha-pur&rsquo;anus</em> (<span class="heb-inline">תחילת הפורענות</span>), the beginning of the punishment, when the fire was set: the ninth.</p>
+
+<h3>A <em>Tzeiruf</em> for the <em>Lamdanim</em> &mdash; <em>Bava Kamma</em> 22</h3>
+
+<p>A famous <em>machlokes</em> (<span class="heb-inline">מחלוקת</span>) in <em>Bava Kamma</em><a class="footnote-ref" id="ref21" href="#fn21">[21]</a> concerns the verse <em>&ldquo;ki seitzei esh&rdquo;</em> (<span class="heb-inline">כי תצא אש</span>): when fire goes out and damages, one pays. Why? <em>Mishum mamono</em> (<span class="heb-inline">משום ממונו</span>) &mdash; because it is one&rsquo;s property, like one&rsquo;s animal that did damage; or <em>mishum chitzav</em> (<span class="heb-inline">משום חיציו</span>) &mdash; because it is one&rsquo;s <em>arrow</em>, one&rsquo;s own action? <em>Rebbi Yochanan</em> holds <em>mishum chitzav</em>; <em>Resh Lakish</em> (<span class="heb-inline">ריש לקיש</span>) holds <em>mishum mamono</em>.</p>
+
+<p>It has been suggested that <em>Rebbi Yochanan</em> is consistent with himself (<span class="heb-inline">רבי יוחנן לשיטתו</span>). If fire is an arrow shot by its owner, the damage where the arrow lands is <em>his action</em>; the fire ignited by <em>Nevuzaradan</em> on the ninth continued as arrows in flight, and the principal damage of the tenth is part of the same act. On that reading the <em>severity</em> of the arrows landed on the tenth, and the fast should mark the tenth. <em>Chazal</em> hold that the primary moment is the beginning of the punishment, the ninth.</p>
+
+<div class="pullquote">
+<h3 style="margin-top:0"><em>Hearah</em> &mdash; The Connection Is a Suggestion</h3>
+<p>The <em>Gemara</em> in <em>Taanis</em> gives its own reason in the mouth of <em>Rebbi Yochanan</em>: <em>&ldquo;mipnei she-rubo shel heichal bo nisraf&rdquo;</em> (<span class="heb-inline">מפני שרובו של היכל בו נשרף</span>) &mdash; the greater part of the <em>heichal</em> burned on the tenth. That is a consideration of <em>rov</em> (<span class="heb-inline">רוב</span>), of the majority of the damage, and not as such a consideration of <em>chitzav</em>. The link to <em>Bava Kamma</em> is therefore a <em>tzeiruf</em> and not a settled connection: perhaps <em>Rebbi Yochanan</em> locates the day by where the damage fell, rather than where the cause began, precisely because he reads fire as <em>chitzav</em> rather than <em>mamon</em>. It should be treated as a <em>lomdish</em> suggestion.</p>
+</div>
+
+<h2>VIII. <em>Birkas Modim</em> &mdash; The Bow</h2>
+
+<p>The <em>seder</em> of <em>Shemoneh Esrei</em> resumes: <em>&ldquo;Modim anachnu lach&rdquo;</em> (<span class="heb-inline">מודים אנחנו לך</span>).</p>
+
+<h3>The Obligation of Bowing</h3>
+
+<p>At <em>Modim</em> the <em>halachah</em> requires a bow: at the opening (<em>&ldquo;Modim&rdquo;</em>) and at the <em>chasimah</em> (<em>&ldquo;Baruch Atah Hashem&rdquo;</em>). The four bows of <em>Shemoneh Esrei</em> are at the opening and close of <em>Birkas Avos</em> (<span class="heb-inline">ברכת אבות</span>) and at the opening and close of <em>Modim</em>.</p>
+
+<h3>The <em>Gemara</em> in <em>Bava Kamma</em></h3>
+
+<p>A frightening <em>Gemara</em><a class="footnote-ref" id="ref22" href="#fn22">[22]</a> states of the one who does not bow at <em>Modim</em>:</p>
+
+<blockquote>
+<div class="heb">שִׁדְרוֹ שֶׁל אָדָם &ndash; לְאַחַר שֶׁבַע שָׁנִים נַעֲשֶׂה נָחָשׁ. וְהָנֵי מִילֵּי דְּלָא כָּרַע בְּ״מוֹדִים״.</div>
+<div class="trans">A person&rsquo;s spine, after seven years, becomes a snake &mdash; and this applies to one who did not bow at <em>Modim</em>.</div>
+<div class="source"><em>Bava Kamma</em> 16a</div>
+</blockquote>
+
+<p>What does this mean? <em>Tosafos</em><a class="footnote-ref" id="ref23" href="#fn23">[23]</a> takes it up: the punishment is measure for measure (<span class="heb-inline">מדה כנגד מדה</span>) &mdash; one who rose from his bow like a snake, as is told of <em>Rav Sheishes</em> (<span class="heb-inline">רב ששת</span>) in <em>Berachos</em> 12b, is made into one; being made a snake is itself the disgrace. A gloss printed alongside the <em>Tosafos</em> adds an explanation offered by &ldquo;some&rdquo;: there is a small bone in the spine &mdash; the <em>etzem ha-luz</em> (<span class="heb-inline">עצם הלוז</span>) &mdash; that, according to <em>Chazal</em>, never decomposes. (The Rav devoted an entire exposition to it; physicians debate which bone is meant.) From this bone <em>HaKadosh Baruch Hu</em> will reconstruct the body at <em>techiyas ha-meisim</em> (<span class="heb-inline">תחיית המתים</span>). Were that bone to become a snake, there would be no <em>techiyas ha-meisim</em> &mdash; and the gloss rejects this as too harsh a punishment for this sin, since every Jew has a share in the <em>Olam Haba</em> (<span class="heb-inline">עולם הבא</span>). In the Rav&rsquo;s formulation, there is some lesser punishment, with <em>snake-like characteristics</em>.</p>
+
+<h3>Why a Snake?</h3>
+
+<p>Because the <em>nachash</em> (<span class="heb-inline">נחש</span>) was the original <em>kafui tov</em> (<span class="heb-inline">כפוי טובה</span>). <em>HaKadosh Baruch Hu</em> created the <em>nachash</em> as the most clever of creatures, and the <em>nachash</em> repaid Him by leading <em>Adam</em> and <em>Chavah</em> to the <em>Eitz HaDaas</em> (<span class="heb-inline">עץ הדעת</span>). We are still engaged in repairing that sin; <em>Chazal</em> say that every soul was present at it. One who cannot bring himself to bow at <em>Modim</em> &mdash; who cannot acknowledge the goodness bestowed upon him at every breath &mdash; is turned into the very creature that was the first to deny it.</p>
+
+<h3>The <em>Halachic</em> Posture</h3>
+
+<p>The <em>halachah</em><a class="footnote-ref" id="ref24" href="#fn24">[24]</a> is to bow all the way, <em>&ldquo;ad she-yispakeku kol chuliyos she-ba-shidrah&rdquo;</em> (<span class="heb-inline">עד שיתפקקו כל חוליות שבשדרה</span>) &mdash; until the vertebrae of the spine loosen. One bows at <em>&ldquo;Baruch&rdquo;</em> and stands erect at the Name: <em>&ldquo;Baruch&rdquo;</em> bowing, <em>&ldquo;Hashem&rdquo;</em> (<span class="heb-inline">ה'</span>) erect, in the opening of <em>Modim</em> and again at the <em>chasimah</em>. The bow is the body&rsquo;s expression of total acknowledgment: <em>&ldquo;kol atzmosai tomarnah&rdquo;</em> (<span class="heb-inline">כל עצמותי תאמרנה</span>).<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> Not only the mouth gives thanks, but the body itself in the act of acknowledgment.</p>
+
+<p><em>L&rsquo;ma&rsquo;aseh</em> (<span class="heb-inline">למעשה</span>): those who suffer from back trouble must take care, and the <em>poskim</em> (<span class="heb-inline">פוסקים</span>) address it. The <em>halachah</em> is <em>lechatchilah</em> (<span class="heb-inline">לכתחילה</span>); no one is asked to injure himself. But one who is able should do it the right way every day.</p>
+
+<div class="pullquote">
+<h3 style="margin-top:0"><em>Hearah</em> &mdash; The Continuation of the <em>Pasuk</em></h3>
+<p>The verse <em>&ldquo;kol atzmosai tomarnah Hashem mi chamocha&rdquo;</em> continues: <em>&ldquo;matzil ani me-chazak mimenu&rdquo;</em> (<span class="heb-inline">מציל עני מחזק ממנו</span>) &mdash; Who rescues the poor from one stronger than he. If the bow of <em>Modim</em> is the body&rsquo;s voice of <em>&ldquo;kol atzmosai,&rdquo;</em> it may be that the <em>hoda&rsquo;ah</em> acknowledged by the bow is specifically the thanks of the weak who were rescued from the strong &mdash; a theme that fits the closing of <em>Modim</em>, <em>&ldquo;mei-olam kivinu lach&rdquo;</em> (<span class="heb-inline">מעולם קוינו לך</span>). (An observation for further study; not developed in the sources cited.)</p>
+</div>
+
+<h2>IX. The Meaning of <em>&ldquo;Modim&rdquo;</em></h2>
+
+<p>In plain speech, <em>modim</em> is <em>&ldquo;thanks.&rdquo;</em> In the <em>Mishnah</em> (<span class="heb-inline">משנה</span>) and the <em>Gemara</em>, however, <em>&ldquo;modeh&rdquo;</em> (<span class="heb-inline">מודה</span>) means <em>&ldquo;acknowledges, agrees, admits&rdquo;</em>: <em>&ldquo;modim chachamim l&rsquo;Rebbi&rdquo;</em> (<span class="heb-inline">מודים חכמים לרבי</span>) &mdash; the Sages agree.</p>
+
+<p>The two senses fold into one. The essence of <em>todah</em> (<span class="heb-inline">תודה</span>) is <em>acknowledgment</em> &mdash; the recognition that <em>HaKadosh Baruch Hu</em> gives us life at every moment and protects us at every moment; that recognition <em>obligates</em> thanks. So <em>&ldquo;modim&rdquo;</em> says both at once: we acknowledge that You are God and that You sustain us &mdash; and therefore we thank You.</p>
+
+<h2>X. <em>&ldquo;L&rsquo;dor va-Dor&rdquo;</em> &mdash; The Hidden <em>Berachah</em> for Children</h2>
+
+<h3>The Missing <em>Berachah</em></h3>
+
+<p><em>Shemoneh Esrei</em> contains no explicit <em>berachah</em> for children. The most important thing in a person&rsquo;s life, the continuity of his family, the <em>nachas</em> (<span class="heb-inline">נחת</span>) of grandchildren in the <em>beis knesses</em> &mdash; and there is no formal <em>berachah</em> for it? We add such a request, in our own words, within <em>Shema Koleinu</em>. But why is there no formal <em>berachah</em>?</p>
+
+<p>One candidate presents itself in <em>Birkas Avos</em>, in the words <em>&ldquo;u&rsquo;meivi go&rsquo;el li-vnei v&rsquo;neihem&rdquo;</em> (<span class="heb-inline">ומביא גואל לבני בניהם</span>), which has been proposed as a reference to the continuing generations. But <em>Birkas Avos</em> is <em>shevach</em> (<span class="heb-inline">שבח</span>), praise, and not <em>bakashah</em> (<span class="heb-inline">בקשה</span>), request: it is an expression of faith that <em>Hashem</em> will bring redemption to the grandchildren, not a petition on their behalf. It does not answer the question.</p>
+
+<p>One <em>acharon</em> has proposed that the <em>berachah</em> for children is hidden in <em>&ldquo;l&rsquo;dor va-dor&rdquo;</em> here in <em>Modim</em>.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a></p>
+
+<div class="pullquote">
+<h3 style="margin-top:0">Davening Now for the Children To Come</h3>
+<p>If one is a <em>bachur</em> (<span class="heb-inline">בחור</span>), one should daven now for one&rsquo;s future children. Why wait? One may daven for a good <em>shidduch</em> (<span class="heb-inline">שידוך</span>) and for good children at the same moment.</p>
+<p>A personal recollection of the Rav illustrates it. Before returning to America after three years in <em>Eretz Yisrael</em>, knowing it was over, with the <em>shidduchim</em> process ahead, he asked himself how to take leave of <em>Eretz Yisrael</em>. He went to <em>Meron</em> (<span class="heb-inline">מירון</span>) and spent the entire night at the grave of <em>Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>). He began by davening for an easy <em>shidduch</em> &mdash; the &ldquo;freezer&rdquo; of the process is unpleasant; he went through it nonetheless, so apparently the <em>kavanah</em> was not enough. But in the course of the night he asked himself: <em>why stop here? Who knows the next time I will be in Meron?</em> He began to daven for good children, and he ended up davening more for good children than for the <em>shidduch</em> itself.</p>
+<p>It is permitted to daven for good children before one is married. Every Jew should daven that his children, grandchildren, and great-grandchildren be good <em>Yidden</em>.</p>
+</div>
+
+<h3>The Three-Year-Old&rsquo;s <em>Berachos</em></h3>
+
+<div class="pullquote">
+<p>The Rav was preparing a <em>Pirkei Avos</em> (<span class="heb-inline">פרקי אבות</span>) class upstairs. The other children were away at camp; only the youngest was home, a three-year-old just past his <em>upsherin</em> (<span class="heb-inline">אפשערניש</span>) and beginning to learn <em>berachos</em>. He played with magna-tiles on the floor and began to say &mdash; not to eat, only to say &mdash; <em>&ldquo;Baruch Atah Hashem Elokeinu melech ha-olam&hellip;&rdquo;</em> (<span class="heb-inline">ברוך אתה ה' אלקינו מלך העולם</span>), running through <em>&ldquo;shehakol&rdquo;</em> (<span class="heb-inline">שהכל</span>), <em>&ldquo;mezonos&rdquo;</em> (<span class="heb-inline">מזונות</span>), <em>&ldquo;ha-adamah&rdquo;</em> (<span class="heb-inline">האדמה</span>) &mdash; every <em>berachah</em>, without eating anything.</p>
+<p>It pained the Rav to hear the Name spoken in vain, but he chose not to silence the child. Let him practice. It is <em>chinuch</em> (<span class="heb-inline">חינוך</span>). When a child practices, it is not a <em>berachah levatalah</em> (<span class="heb-inline">ברכה לבטלה</span>); it is the <em>berachah</em> in its highest form. There is no greater fulfillment of a <em>berachah</em> than the practice of a child learning to say it.</p>
+<p>Seated upstairs, hearing him, the Rav was struck by the words <em>&ldquo;l&rsquo;dor va-dor nodeh lecha&rdquo;</em> (<span class="heb-inline">לדור ודור נודה לך</span>): we are privileged that our children &mdash; small children, in this generation, exposed to a world with everything in the palm of the hand &mdash; still come to <em>shul</em>, still say a <em>berachah</em>, still recognize <em>HaKadosh Baruch Hu</em>. We should dance.</p>
+</div>
+
+<p>One should therefore have <em>kavanah</em> at <em>&ldquo;l&rsquo;dor va-dor&rdquo;</em>: although there is no explicit <em>berachah</em> for children, the <em>tefillah</em> is held in those words &mdash; the generations continuing; <em>nachas</em> from them; the chain unbroken.</p>
+
+<h2>XI. Epilogue</h2>
+
+<p>From <em>Tefillas Nachem</em> at <em>Minchah</em> of <em>Tisha B&rsquo;Av</em>, where the mourning of a year rises in a single <em>chasimah</em>; through <em>Modim</em>, where the body bows to acknowledge what the mind already knows; into <em>&ldquo;l&rsquo;dor va-dor,&rdquo;</em> where every Jew prays for the children he has and the children he has not yet had &mdash; <em>tefillah</em> follows a single arc: <em>churban</em> answered by <em>nechamah</em>; <em>kafui tov</em> answered by <em>hakaras ha-tov</em> (<span class="heb-inline">הכרת הטוב</span>); a broken generation answered by a faithful one. <em>B&rsquo;ezras Hashem</em> (<span class="heb-inline">בעזרת ה'</span>), may we be privileged to hear <em>besoros tovos</em> (<span class="heb-inline">בשורות טובות</span>) very soon.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Notes marked with a caveat record points not verified, or verified differently from the delivered text.</p>
+<ol>
+
+<li id="fn1">
+  <div class="note-academic"><strong>Rabbi Yonasan Eibeschutz</strong> (<span class="heb-inline">רבי יונתן אייבשיץ</span>, c. 1690&ndash;1764; rabbi of Prague, Metz, and Altona-Hamburg-Wandsbek; author of <em>Ye&rsquo;aros Devash</em>, <span class="heb-inline">יערות דבש</span>, and many other works) &mdash; the <em>ma&rsquo;aseh</em> of the bear taught to turn the pages of a <em>siddur</em> by means of honey circulates in oral and printed <em>chassidic</em>-influenced sources as a paradigmatic <em>mashal</em>. <em>Caveat:</em> the attribution of the story itself to <em>Rabbi Yonasan</em> is not established by any source known to this edition; the Rav himself introduced it with the remark that one should not let the truth interfere with a good story. It is retained here as a <em>mashal</em>, not as a documented episode.</div>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Yerushalmi Berachos</em> 4:3; <em>Yerushalmi Taanis</em> 2:2 &mdash; the individual&rsquo;s <em>me&rsquo;ein ha-me&rsquo;ora</em> on <em>Tisha B&rsquo;Av</em>; <em>Rav Muna</em>&rsquo;s rule.</span>
+  <span class="expanded">&mdash; In <em>Yerushalmi Berachos</em> 4:3 (and in the parallel passage in <em>Taanis</em> 2:2), <em>Rabbi Acha bar Yitzchak</em> reports in the name of <em>Rabbi Chunah Rubah of Tzippori</em> that an individual on <em>Tisha B&rsquo;Av</em> must mention the <em>me&rsquo;ein ha-me&rsquo;ora</em>, and the passage gives its text &mdash; a precursor of our <em>Nachem</em>, beginning <span class="heb-inline">רחם ה' אלהינו</span> and ending (in <em>Berachos</em>) <span class="heb-inline">כי באש היצתה ובאש אתה עתיד לבנותה</span>. There follows the question of <em>Rabbi Avdima of Tzippori</em> before <em>Rabbi Mana</em> (<em>Rav Muna</em>): where is it said? <em>Rabbi Mana</em> answers with the rule <span class="heb-inline">כל דבר שהוא לבא אומרה בעבודה, וכל דבר שהוא לשעבר אומרה בהודאה</span>; in <em>Taanis</em> he cites it in the name of <em>Rav Yirmiyah</em> in the name of <em>Rav</em>. The same <em>Yerushalmi</em> passage (<em>Berachos</em> 4:3, in the name of <em>Rabbi Simon</em>) also ties the eighteen <em>berachos</em> to the eighteen vertebrae of the spine and cites <em>&ldquo;kol atzmosai tomarnah Hashem mi chamocha&rdquo;</em> as the ground for bowing through all of them &mdash; a source we shall meet again in the discussion of <em>Modim</em>. (Verified against Sefaria.)</span>
+  <div class="note-academic"><strong>Flag:</strong> The <em>Rav Muna</em> biographical description given in the delivered text (that he was <em>rosh yeshivah</em> in Tzippori, and <em>Rabbi Avdima</em> his <em>talmid</em>) was not confirmed in the source text and is omitted.</div>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Siddur Rav Saadia Gaon</em> &mdash; the saying of <em>Nachem</em> despite the silence of the <em>Bavli</em>.</span>
+  <span class="expanded">&mdash; <em>Rav Saadia Gaon</em> (882&ndash;942, head of the academy of <em>Sura</em>) is reported to have addressed the absence of <em>Nachem</em> from the <em>Bavli</em>: the <em>Yerushalmi</em> records it and the <em>bnei Eretz Yisrael</em> recite it, and <em>&ldquo;ein hefsed b&rsquo;amiraso.&rdquo;</em></span>
+  <div class="note-academic"><strong>Flag:</strong> <em>Sefaria verification:</em> the phrase <span class="heb-inline">אין הפסד באמירתו</span> and the stated position of <em>Rav Saadia</em> could not be located. What Sefaria does record (<em>Beis Yosef</em>, <em>Orach Chayim</em> 557, citing the <em>Avudraham</em>) is that <em>Rav Amram</em> and <em>Rav Saadia</em> differed, and that the practice spread in accordance with <em>Rav Saadia</em> that <em>Nachem</em> is said only at <em>Minchah</em>. To be checked against the <em>Siddur Rav Saadia Gaon</em> itself.</div>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Beis Yosef</em> and <em>Taz</em> on <em>Orach Chayim</em> 557 &mdash; whether <em>Nachem</em> belongs to the past or the future.</span>
+  <span class="expanded">&mdash; The question appears in the <em>Taz</em> on <em>Shulchan Aruch</em> <em>Orach Chayim</em> 557:1, who cites the <em>Beis Yosef</em> citing the <em>Avudraham</em> that a forgotten <em>Nachem</em> is said in <em>Hoda&rsquo;ah</em> (<em>Modim</em>), and who objects that, since <em>Nachem</em> concerns the future, the reading <span class="heb-inline">הודאה</span> must be a misprint for <span class="heb-inline">עבודה</span> (<em>Retzei</em>). The <em>Beis Yosef</em> has the former in the name of <em>Rabbeinu Gershom bar Shlomo</em>. This is the textual form of the dispute &ldquo;past or future.&rdquo;</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <span class="short"><em>Rif</em> and <em>Rosh</em>, end of <em>Taanis</em> &mdash; saying <em>Nachem</em> in <em>Birkas Yerushalayim</em>.</span>
+  <span class="expanded">&mdash; <em>Rabbeinu Yitzchak Alfasi</em> (the <em>Rif</em>, 1013&ndash;1103) and the <em>Rosh</em> write at the end of <em>Maseches Taanis</em> that the custom is to say <em>Nachem</em> in <em>bonei Yerushalayim</em>, relying on <em>Avodah Zarah</em> 8a; so the <em>Beis Yosef</em> (<em>Orach Chayim</em> 557) and the <em>Taz</em> report. The placement is adopted by the <em>Tur</em> (<span class="heb-inline">ואומר אותה בבונה ירושלים לפי שהיא מענינה</span>), the <em>Shulchan Aruch</em>, and the standard <em>siddurim</em>.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Avodah Zarah</em> 8a &mdash; adding <em>me&rsquo;ein ha-berachah</em> in any <em>berachah</em>.</span>
+  <span class="expanded">&mdash; As cited by the <em>Beis Yosef</em> (<em>Orach Chayim</em> 557): <em>Rav Yehudah bar Shmuel bar Sheilat</em> in the name of <em>Rav</em> &mdash; <span class="heb-inline">אף על פי שאמרו שואל אדם צרכיו בשומע תפלה, אם בא לומר בסוף כל ברכה מעין אותה ברכה אומר</span> &mdash; although one may ask for his needs in <em>Shomea Tefillah</em>, one who wishes may say at the end of any <em>berachah</em> something that is <em>me&rsquo;ein</em> that <em>berachah</em>. This is the ground of the <em>Rif</em>&rsquo;s placement of <em>Nachem</em> in <em>Birkas Yerushalayim</em>. (Verified via the <em>Beis Yosef</em>&rsquo;s citation; the page of <em>Avodah Zarah</em> itself was not separately fetched.)</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Shulchan Aruch Orach Chayim</em> 557:1 &mdash; <em>Nachem</em> on <em>Tisha B&rsquo;Av</em>.</span>
+  <span class="expanded">&mdash; The <em>Mechaber</em>: <span class="heb-inline">בתשעה באב אומר בבונה ירושלים נחם ה' אלהינו את אבילי ציון וכו' ועננו בשומע תפלה, ואם לא אמר לא זה ולא זה אין מחזירין אותו</span>. The <em>Rama</em>: <span class="heb-inline">והמנהג פשוט שאין אומרים נחם רק בתפלת מנחה של תשעה באב לפי שאז הציתו אש במקדש ולכן מתפללים אז על נחמה</span> (<em>Rokeach</em> and <em>Avudraham</em>); one who ate on <em>Tisha B&rsquo;Av</em> says <em>Nachem</em> in <em>Birkas HaMazon</em> (<em>Maharil</em>). The <em>siman</em> consists of a single <em>seif</em>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Taz</em> on <em>Orach Chayim</em> 557:1 &mdash; forgotten in <em>Yerushalayim</em>: said in <em>Shema Koleinu</em> without the special <em>chasimah</em>.</span>
+  <span class="expanded">&mdash; The <em>Taz</em>, reasoning on his own (<span class="heb-inline">ולענ"ד</span>) from the ground of the <em>Rif</em> and <em>Rosh</em> (<span class="heb-inline">שואל אדם צרכיו</span>, <span class="heb-inline">מעין הברכה</span>): one who forgot to say <em>Nachem</em> in its place says it in <em>Shomea Tefillah</em>, a comprehensive <em>berachah</em>, <span class="heb-inline">ועכ"פ לא יחתום בברוך מנחם ציון רק בש"ת</span> &mdash; but he does not close with <em>menachem Tziyon</em>, only with <em>shomea tefillah</em>, as with <em>Aneinu</em>. The <em>Beis Yosef</em>, by contrast, cites the <em>Avudraham</em> in the name of <em>Rabbeinu Gershom bar Shlomo</em> that one who forgot says it in <em>Hoda&rsquo;ah</em>. <em>Note on the delivered text:</em> that text credited the <em>Tur</em> together with the <em>Taz</em> for the <em>Shema Koleinu</em> ruling; the <em>Tur</em> (557) gives the placement in <em>Yerushalayim</em> and the <em>Rosh</em>&rsquo;s wonder but not this ruling, which is the <em>Taz</em>&rsquo;s own.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Beis Yosef Orach Chayim</em> 557 &mdash; no repetition on a day without <em>Mussaf</em>.</span>
+  <span class="expanded">&mdash; The <em>Beis Yosef</em>, citing the <em>Avudraham</em> in the name of <em>Rabbeinu Gershom bar Shlomo</em>: one who completed his <em>tefillah</em> without mentioning <em>Nachem</em> does not return, <span class="heb-inline">כי בימים שאין בהן קרבן מוסף אם טעה ולא אמר מעין המאורע אין מחזירין אותו</span>. The <em>Mechaber</em> likewise rules <span class="heb-inline">אין מחזירין אותו</span>. The <em>Mishnah Berurah</em> on the <em>siman</em> develops the applications.</span>
+  <div class="note-academic"><strong>Flag:</strong> <em>Mishnah Berurah</em> wording not independently verified in this pass; the <em>Shulchan Aruch</em>&rsquo;s own treatment may include exceptions where the forgotten addition belongs to the essence of the <em>berachah</em>; to be checked before print.</div>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <div class="note-academic"><strong>The position of <em>Rabbeinu Yitzchak ibn Giyas</em> (the <em>Ritz Geyos</em>)</strong> &mdash; a contemporary of the <em>Rif</em> &mdash; was raised in the course of discussion of the forgotten <em>Nachem</em>. As reported, he holds that since <em>Chazal</em> added a <em>chasimah</em> to the <em>berachah</em> that became part of <em>Kri&rsquo;as Shema</em>, forgetting requires repetition; and the question was floated whether, on that model, a worshipper who realized only late that he had omitted <em>Nachem</em> might say the <em>Nachem</em> <em>chasimah</em> at the end of <em>Shemoneh Esrei</em>, at <em>Elokai Netzor</em>. The Rav explicitly noted that he did not know how we rule. <em>Caveat:</em> this note records the question as raised and does not give a <em>psak</em>; the question is <em>nogea l&rsquo;ma&rsquo;aseh</em> and should be put to a <em>moreh hora&rsquo;ah</em>.</div>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <div class="note-academic"><strong>Shlomo Simchi</strong> (as the name was given) &mdash; a contemporary Israeli composer of a well-known melody for these words, circulating in contemporary <em>Tisha B&rsquo;Av</em> services and recordings. <em>Caveat:</em> no recording reference was supplied; the spelling of the name has not been confirmed.</div>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <div class="note-academic"><strong>The words of the <em>nusach</em>.</strong> The delivered text rendered the phrases &ldquo;<em>Yerushalayim ka-almanah</em>&rdquo; and &ldquo;<em>lifei libi al chalalai</em>,&rdquo; and quoted the close of the <em>berachah</em> in two slightly different forms (<span class="heb-inline">ובאש אתה עתיד לבנותו</span> and <span class="heb-inline">ובו אש אתה עתיד לבנותה</span>). The form given here is the received <em>nusach</em>: <span class="heb-inline">כי אתה ה' באש הצתה ובאש אתה עתיד לבנותה</span>, which matches the <em>Yerushalmi</em>&rsquo;s text in <em>Berachos</em> 4:3 (<span class="heb-inline">כי באש היצתה ובאש אתה עתיד לבנותה</span>; in <em>Taanis</em> 2:2, <span class="heb-inline">החרבתה</span>). The earlier phrases in the <em>nusach</em> as printed in the <em>siddurim</em> are <span class="heb-inline">כאשה עקרה שלא ילדה</span> and <span class="heb-inline">לבי לבי על חלליהם</span>; the wording of the delivered text, which reflects the live rendering, should be checked against a printed <em>siddur</em>.</div>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <div class="note-academic"><strong>The descent of the third <em>Beis HaMikdash</em>.</strong> The delivered text presented the view that the third <em>Beis HaMikdash</em> descends from <em>Shamayim</em> in fire as the view of &ldquo;the <em>rishonim</em> and <em>acharonim</em>.&rdquo; It is better described as one view in a well-known dispute: one line holds that it descends already built (<em>Rashi</em>, <em>Sukkah</em> 41a), another that it is built by <em>Mashiach</em> (<em>Rambam</em>, <em>Hilchos Melachim</em> 11:1). <em>Caveat:</em> these references were supplied from the standard literature and were not verified in this pass; they should be checked before print. The debate among the <em>acharonim</em> concerning the <em>mitzvah</em> of <em>binyan beis ha-bechirah</em> was reported without naming its participants.</div>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <span class="short"><em>Tur Orach Chayim</em> 557; <em>Beis Yosef</em> there &mdash; the <em>Rosh</em>&rsquo;s wonder; <em>Rachem</em> at night and morning; <em>Nachem</em> at <em>Minchah</em>.</span>
+  <span class="expanded">&mdash; The <em>Tur</em>: <span class="heb-inline">כתב א"א הרא"ש ז"ל כל ימי תמהתי למה אין אומרים אותו אלא בתפלת המנחה</span> &mdash; the <em>Rosh</em> wondered, since an individual on <em>Tisha B&rsquo;Av</em> must mention the <em>me&rsquo;ein ha-me&rsquo;ora</em>, presumably in all his <em>tefillos</em>, as on <em>Rosh Chodesh</em>, <em>Chanukah</em>, and <em>Purim</em>. And the <em>Tur</em>: <span class="heb-inline">ואיכא דוכתין דנהיגי למימר ערבית שחרית רחם ובמנחה נחם והא מלתא תליא במנהגא</span>. The <em>Beis Yosef</em> adds that the <em>Kol Bo</em> writes that on <em>Tisha B&rsquo;Av</em> it is said in all <em>tefillos</em>, while the <em>Rokeach</em> writes that it is said only at <em>Minchah</em>.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Rama</em> on <em>Orach Chayim</em> 557:1; <em>Beis Yosef</em> &mdash; the reason: the fire was set late in the day.</span>
+  <span class="expanded">&mdash; See note on <em>Shulchan Aruch</em> 557:1 above. The <em>Beis Yosef</em> gives the reason for the practice of <em>Rabbeinu Saadia</em> in his own words: <span class="heb-inline">ונראה לי שטעם רבינו סעדיה משום דלעת ערב הציתו בו אש הלכך באותה שעה מזכירין שפלות ירושלים ואביליה ומתפללין על תנחומיה</span>.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>Yirmeyahu</em> 52:12&ndash;13; <em>Melachim II</em> 25:8&ndash;9 &mdash; the tenth and the seventh of <em>Av</em>.</span>
+  <span class="expanded">&mdash; <em>Yirmeyahu</em> 52:12&ndash;13 gives the tenth of the fifth month (the nineteenth year of <em>Nevuchadnezzar</em>); <em>Melachim II</em> 25:8&ndash;9 gives the seventh. Both name <em>Nevuzaradan</em>, <em>rav tabbachim</em>, servant of the king of <em>Bavel</em>, as the one who came and burned the house of <em>Hashem</em>. Neither gives the ninth. <em>Chazal</em> reconcile them in <em>Taanis</em> 29a. (Both verses quoted in <em>Taanis</em> 29a; verified.)</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn17">
+  <span class="short"><em>Taanis</em> 29a &mdash; the process from the seventh through the tenth.</span>
+  <span class="expanded">&mdash; The <em>baraisa</em> reconciles the two <em>pesukim</em>: <span class="heb-inline">אי אפשר לומר בשבעה שהרי כבר נאמר בעשור, ואי אפשר לומר בעשור שהרי כבר נאמר בשבעה, הא כיצד</span> &mdash; on the seventh the gentiles entered the <em>heichal</em> and ate and desecrated it on the seventh and eighth; on the ninth, adjacent to nightfall (<span class="heb-inline">סמוך לחשכה</span>), they set it afire, and it burned throughout the day of the tenth, as in <em>&ldquo;Oy lanu ki panah ha-yom ki yinatu tzilelei erev&rdquo;</em> (<em>Yirmeyahu</em> 6:4). The delivered text had the fire set &ldquo;after midday&rdquo;; the <em>Gemara</em> says <em>semuch la-chashechah</em>, near nightfall, and the text has been corrected here. (Verified against Sefaria.)</span>
+  <div class="note-academic"><strong>Flag:</strong> The word <span class="heb-inline">מקרקרין</span> and the phrase <span class="heb-inline">אוכלין ושותין</span> are the Rav&rsquo;s language, not the <em>Gemara</em>&rsquo;s, whose own words are <span class="heb-inline">ואכלו וקלקלו בו</span>.</div>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn18">
+  <div class="note-academic"><strong>Restraint into the tenth.</strong> The custom of refraining from meat and wine until midday of the tenth is codified in the <em>Shulchan Aruch</em> (<em>Hilchos Tisha B&rsquo;Av</em>), and is not derived in <em>Taanis</em> 29a. <em>Caveat:</em> the precise <em>siman</em> was not verified in this pass. The delivered text stated the rule in terms of a particular year (&ldquo;Sunday night through midday Monday&rdquo;); it is restated here in general terms.</div>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn19">
+  <div class="note-academic"><strong><em>Mashiach</em> born on <em>Tisha B&rsquo;Av</em>.</strong> The tradition appears in the <em>Yerushalmi</em> (<em>Berachos</em> 2:4) and in <em>Eichah Rabbah</em> (1:51). <em>Caveat:</em> these references are supplied from the standard literature; the delivered text gave no source, and they were not verified in this pass. That this <em>mesorah</em> is the ground of the midday <em>kulah</em> is the Rav&rsquo;s explanation; others ground the relief after midday in the burning continuing into the tenth.</div>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn20">
+  <span class="short"><em>Taanis</em> 29a &mdash; <em>Rebbi Yochanan</em>: the fast should have been the tenth.</span>
+  <span class="expanded">&mdash; <span class="heb-inline">אילמלי הייתי באותו הדור לא קבעתיו אלא בעשירי, מפני שרובו של היכל בו נשרף. ורבנן — אתחלתא דפורענותא עדיפא</span> &mdash; quoted verbatim (verified against Sefaria). <em>Chazal</em> reject this view: the fast marks <em>techilas ha-pur&rsquo;anus</em>, the moment the fire was set, not the moment of greatest damage.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn21">
+  <span class="short"><em>Bava Kamma</em> 22a &mdash; <em>mishum chitzav</em> versus <em>mishum mamono</em>.</span>
+  <span class="expanded">&mdash; <em>Rebbi Yochanan</em>: <span class="heb-inline">אשו משום חיציו</span>; <em>Resh Lakish</em>: <span class="heb-inline">אשו משום ממונו</span>. <em>Resh Lakish</em> reasons that fire is not an arrow, which proceeds by its owner&rsquo;s own force; <em>Rebbi Yochanan</em> that fire is not property, which is a tangible substance. The <em>sugya</em> develops across the following <em>amud</em> (verified for 22a). The <em>lomdish</em> linking of <em>Rebbi Yochanan</em>&rsquo;s position on the date of the fast to his position here is a <em>tzeiruf</em> advanced in the exposition and not found in these sources.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn22">
+  <span class="short"><em>Bava Kamma</em> 16a &mdash; the spine that becomes a snake.</span>
+  <span class="expanded">&mdash; The passage is a <em>baraisa</em> that describes a sequence of transformations (<span class="heb-inline">צבוע זכר לאחר שבע שנים נעשה עטלף</span> and onward) and concludes: <span class="heb-inline">שדרו של אדם לאחר שבע שנים נעשה נחש, והני מילי דלא כרע במודים</span>. It establishes the <em>chiyuv</em> of bowing at <em>Modim</em>, one of the four bows of <em>Shemoneh Esrei</em>. (Verified against Sefaria; the earlier paraphrase, <span class="heb-inline">מי שאינו כורע במודים...</span>, has been replaced by the actual text.)</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn23">
+  <span class="short"><em>Tosafos Bava Kamma</em> 16a, <em>d&rdquo;h v&rsquo;hu d&rsquo;lo chara b&rsquo;Modim</em> &mdash; measure for measure; the <em>etzem ha-luz</em> in the printed gloss.</span>
+  <span class="expanded">&mdash; <span class="heb-inline">לפי שמצוה לכרוע, וכי זקיף זקיף כחויא... מדה כנגד מדה ונעשה נחש זהו עונשו, שגנאי הוא לו במה שנעשה נחש</span> &mdash; because bowing is a <em>mitzvah</em>, and he rose like a snake (as with <em>Rav Sheishes</em>, <em>Berachos</em> 12b), measure for measure he is made a snake. A <em>gilayon</em> printed beside it adds <span class="heb-inline">ויש מפרשים</span>: there is a bone in the spine from which a person is re-formed in the future, so hard that fire cannot burn it; if it became a snake he would not live in the future &mdash; and the gloss rejects this: <span class="heb-inline">ואין סברא לומר שיהא עונש גדול כל כך בשביל עון זה, דהא כל ישראל יש להם חלק לעולם הבא</span>.</span>
+  <div class="note-academic"><strong>Flag:</strong> <em>Sefaria verification:</em> the delivered exposition attributed the <em>luz</em> proposal and its rejection to <em>Tosafos</em> itself; on Sefaria it appears in the printed <em>gilayon</em> (&ldquo;some explain&rdquo;), not in the body of the <em>Tosafos</em>. The body text and this note reflect the printed text.</div>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn24">
+  <span class="short"><em>Shulchan Aruch Orach Chayim</em> 113:7; <em>Mishnah Berurah</em> there &mdash; bowing at <em>Baruch</em>, standing at the Name; the depth of the bow.</span>
+  <span class="expanded">&mdash; <em>Shulchan Aruch</em> 113:7: <span class="heb-inline">כשכורע כורע בברוך וכשזוקף זוקף בשם</span> (verified). The requirement of bowing <span class="heb-inline">עד שיתפקקו כל חוליות שבשדרה</span> and the allowances for those with back conditions are developed in the <em>poskim</em>.</span>
+  <div class="note-academic"><strong>Flag:</strong> The wording of the <em>Mishnah Berurah</em> on a partial bow for those with back conditions was not located in this pass; the page-level reference should be verified before it is relied upon.</div>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn25">
+  <span class="short"><em>Tehillim</em> 35:10 &mdash; <em>&ldquo;kol atzmosai tomarnah Hashem mi chamocha&rdquo;</em>.</span>
+  <span class="expanded">&mdash; <em>David HaMelech</em>: <em>&ldquo;All my bones shall declare, Hashem, who is like You?&rdquo;</em> The <em>Yerushalmi</em> (<em>Berachos</em> 4:3, <em>Rabbi Simon</em>) cites the verse as the ground for bowing through all the vertebrae of the spine, corresponding to the eighteen <em>berachos</em>. (Verified: text as quoted in the <em>Yerushalmi</em>.)</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn26">
+  <div class="note-academic"><strong>The <em>acharon</em></strong> to whom this <em>chiddush</em> is attributed was not named in the delivered exposition. <em>Caveat:</em> until he is named, the reading should be understood as one view reported without attribution, and not as an established position in the <em>acharonim</em>; the precise halachic status (a <em>kavanah</em>, or an obligation at that word) is likewise unspecified.</div>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning shiur on <em>Tefillah</em>, recorded <span class="heb-inline">ג׳ אב תשפ״ה</span> &middot; 27 July 2025. This edition rewrites the delivered shiur in the classical sefer voice; corrects the <em>Taanis</em> 29a account (the fire set toward nightfall; <em>Nevuzaradan</em> as the agent in <em>Yirmeyahu</em>); attributes the <em>Shema Koleinu</em> ruling to the <em>Taz</em> alone; restores the <em>Rokeach</em>/<em>Avudraham</em> citations of the <em>Rama</em>; corrects the attribution of the <em>etzem ha-luz</em> to the printed gloss beside the <em>Tosafos</em>; restores the grandfather&rsquo;s riddle, the <em>Eretz Yisrael</em>/<em>Chutz La&rsquo;aretz</em> qualification on <em>al achilas matzah</em>, the <em>Ritz Geyos</em> question, and the <em>Avos</em> candidate for the children&rsquo;s <em>berachah</em>; moves the discussion of the language of the <em>nusach</em> beside the prohibition against altering it; and renumbers the <em>Mareh Mekomos</em> in body order.
+</footer>
+
+</body>
+</html>

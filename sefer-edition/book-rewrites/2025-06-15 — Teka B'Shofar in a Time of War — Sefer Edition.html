@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Teka B'Shofar in a Time of War</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:32px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .epigraph{
+    text-align:center;
+    margin:22px auto 34px auto;
+    padding:14px 0;
+    max-width:620px;
+  }
+  .epigraph .heb{
+    font-size:22px;
+    line-height:1.8;
+    display:block;
+  }
+  .epigraph .trans{
+    font-style:italic;
+    color:#555;
+    margin-top:6px;
+    font-size:14px;
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+  }
+  .lead .heb-inline{font-style:normal;}
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh li .note-academic{border-left:3px solid #d97706;background:rgba(217,119,6,0.05);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">תְּקַע בְּשׁוֹפָר &mdash; בְּעֵת מִלְחָמָה</h1>
+  <div class="english-title">Teka B&rsquo;Shofar in a Time of War &mdash; The Hinge of Shemoneh Esrei and the Shofar Gadol</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Sunday Morning Series on <em>Tefillah</em></div>
+  <div class="date">Recorded 15 June 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Delivered two days into the war with Iran. Dedicated to the <span class="heb-inline">חייל</span> killed that morning in <span class="heb-inline">עזה</span>, and to the welfare of <span class="heb-inline">אחינו בני ישראל</span> in <span class="heb-inline">ארץ ישראל</span>.</em></p>
+
+<div class="epigraph">
+<span class="heb">וְתָקַע בְּשׁוֹפָר גָּדוֹל לְחֵרוּתֵנוּ, וְשָׂא נֵס לְקַבֵּץ גָּלֻיּוֹתֵינוּ.</span>
+<span class="trans">Sound the great <em>shofar</em> for our freedom, and raise a banner to gather our exiles.</span>
+</div>
+
+<p class="lead">The streets of <span class="heb-inline">בני ברק</span> stood empty. Missiles had fallen in <span class="heb-inline">בת ים</span>, and three children were among the dead. The <span class="heb-inline">קהילות</span> of Lawrence had begun saying <span class="heb-inline">אבינו מלכנו</span> that morning.</p>
+
+<p class="lead">The <em>shiur</em> turns in that hour to the <span class="heb-inline">ברכה</span> of <span class="heb-inline">תקע בשופר</span>: the hinge on which <span class="heb-inline">שמונה עשרה</span> turns from the private <span class="heb-inline">בקשות</span> to the communal, from <span class="heb-inline">רפואה</span> and <span class="heb-inline">פרנסה</span> up to <span class="heb-inline">קיבוץ נדחי עמו ישראל</span> &mdash; which the <span class="heb-inline">גמרא</span> installs as the deepest <span class="heb-inline">מנוחת הנפש</span> a <span class="heb-inline">יהודי</span> can ask for. From there to the two readings of the <span class="heb-inline">שופר גדול</span> itself: the <em>Pirkei DeRabbi Eliezer</em> reading of the <em>right horn of the <span class="heb-inline">איל העקידה</span></em> awaiting <span class="heb-inline">אליהו הנביא</span>'s hand, and <strong>Rav Shimshon Schwab <span class="heb-inline">זצ&quot;ל</span></strong>'s reading of the <span class="heb-inline">שופר</span> as the universal <span class="heb-inline">הכרה</span> moment &mdash; the hour when every head of state publicly declares that his throne is <span class="heb-inline">מלכות הקדוש ברוך הוא</span>.</p>
+
+<h2>I. The Hour</h2>
+
+<h3>Empty Streets</h3>
+
+<p>Someone sent a photograph from <strong><span class="heb-inline">בני ברק</span></strong> &mdash; the <span class="heb-inline">עיר ואם בישראל</span><a href="#fn1" id="ref1" class="footnote-ref">[1]</a>, the city that learns and davens day and night, the city that does not sleep &mdash; empty. The streets, empty. <span class="heb-inline">ברוך השם</span>, the <span class="heb-inline">קהילה</span> is following the instructions of <span class="heb-inline">פיקוד העורף</span>; but it is frightening to see those streets as they were. People are sheltering at home.</p>
+
+<p>Word came while we spoke: three children killed in Bat Yam. Missiles falling everywhere. Devastation.<a href="#fn2" id="ref2" class="footnote-ref">[2]</a></p>
+
+<h3>Trust and <em>Hishtadlus</em></h3>
+
+<p>The <span class="heb-inline">גאון רבי חיים קנייבסקי זצ&quot;ל</span>, during the first Gulf War when Scuds were flying toward <span class="heb-inline">בני ברק</span>, said: <em>&quot;<span class="heb-inline">כל טיל יש לו כתובת</span>&quot;</em><a href="#fn3" id="ref3" class="footnote-ref">[3]</a> &mdash; every missile has its address. That is believed absolutely. And in the same breath, the <span class="heb-inline">חיוב</span> of <em>hishtadlus</em> (<span class="heb-inline">השתדלות</span>) for <em>pikuach nefesh</em> (<span class="heb-inline">פיקוח נפש</span>) is not suspended; one goes to the <em>miklat</em> (<span class="heb-inline">מקלט</span>). Both halves are the tradition; neither cancels the other.</p>
+
+<p>Several of our Lawrence shuls &mdash; the Young Israel of Lawrence and Cedarhurst among them &mdash; began saying <span class="heb-inline">אבינו מלכנו</span> this morning. The specific <em>halachos</em> (<span class="heb-inline">הלכות</span>) governing the recitation of <span class="heb-inline">אבינו מלכנו</span> outside the <em>Aseres Yemei Teshuvah</em> require checking;<a href="#fn4" id="ref4" class="footnote-ref">[4]</a> but when <span class="heb-inline">כלל ישראל</span> is reaching for <span class="heb-inline">אבינו מלכנו</span>, the moment is real.</p>
+
+<h3>Seriousness</h3>
+
+<p>I saw a picture of three <em>chayalim</em> (<span class="heb-inline">חיילים</span>) davening at the <em>Kosel</em> (<span class="heb-inline">כותל</span>) &mdash; heartbreaking. Michael's son was at the <span class="heb-inline">כותל</span> Friday night: he must be told that when there is an <em>azakah</em> (<span class="heb-inline">אזעקה</span>), he goes to the <span class="heb-inline">מקלט</span>. This is not an hour for heroics; it is <em>pikuach nefesh</em>, and <em>pikuach nefesh</em> is <em>docheh ha&rsquo;kol</em>.</p>
+
+<p>We dedicate today's <em>divrei Torah</em> (<span class="heb-inline">דברי תורה</span>) to the welfare of <em>acheinu Bnei Yisrael</em> (<span class="heb-inline">אחינו בני ישראל</span>) in <span class="heb-inline">ארץ ישראל</span>, and especially to the <em>chayal</em> killed this morning in <em>Azah</em> (<span class="heb-inline">עזה</span>) &mdash; we forget there is still a war ongoing in <span class="heb-inline">עזה</span> alongside everything else.</p>
+
+<p><span class="heb-inline">רבונו של עולם</span>, we need <em>rachamei Shamayim</em> (<span class="heb-inline">רחמי שמים</span>). We need to feel the <em>tzaar</em> (<span class="heb-inline">צער</span>). A little less smiles, a little less jokes, a register of seriousness. They are laughing less when they run to the <em>miklatim</em> (<span class="heb-inline">מקלטים</span>).</p>
+
+<h3>For the Leadership of <em>Medinas Yisrael</em></h3>
+
+<p>Someone sent a video of <em>Yidden</em> singing <em>Kabbalas Shabbos</em> in a bomb shelter. The decisions at the head of <em>Medinas Yisrael</em> are unbearably weighty &mdash; when to strike, whom, how. <span class="heb-inline">השם ירחם</span>. <span class="heb-inline">הקדוש ברוך הוא</span> is with us; we will be victorious; perhaps we are at the threshold of the <em>geulah sheleimah</em> (<span class="heb-inline">גאולה שלמה</span>).</p>
+
+<h2>II. The <em>Shofar</em> Already Sounding &mdash; <em>Hashgachah</em> in This Week's Events</h2>
+
+<p>Before we open the <span class="heb-inline">ברכה</span> itself, one further observation about the hour. The <em>Hezbollah</em> pager operation of the previous autumn, and the strike this week on the Iranian drone-headquarters: whatever one makes of them as military events, their only honest reading &mdash; by any <em>yarei shamayim</em> watching from any angle &mdash; is <em>Baruch Hu</em>, not <em>kochi v&rsquo;otzem yadi</em> (<span class="heb-inline">כחי ועצם ידי</span>).<a href="#fn5" id="ref5" class="footnote-ref">[5]</a> I am more <em>nispoel</em> from the drone-headquarters strike than from any battlefield report: no human doctrine of planning accounts for it. Hold this in mind; it returns later in the <em>shiur</em>, when Rav Schwab's reading of the <em>shofar gadol</em> turns out to describe exactly this register of <em>hakarah</em>.</p>
+
+<h2>III. <span class="heb-inline">ברכת תקע בשופר</span> &mdash; From Personal to Communal</h2>
+
+<p>There is no <span class="heb-inline">ברכה</span> more meaningful at this moment in the <em>tekufah</em> (<span class="heb-inline">תקופה</span>) of <span class="heb-inline">כלל ישראל</span>. We are in a difficult <span class="heb-inline">תקופה</span>; every <span class="heb-inline">יהודי</span> who says <span class="heb-inline">תקע בשופר</span> wants to <em>hear</em> that <span class="heb-inline">שופר</span>.</p>
+
+<h3>The <em>Seder</em> in <span class="heb-inline">מגילה י&quot;ז</span></h3>
+
+<p>The <span class="heb-inline">גמרא</span><a href="#fn6" id="ref6" class="footnote-ref">[6]</a> gives the <em>seder</em> of the middle <em>brachos</em> of <span class="heb-inline">שמונה עשרה</span>. After <span class="heb-inline">ברך עלינו</span> we close the arc of personal <em>bakashos</em> (<span class="heb-inline">בקשות</span>) &mdash; <em>daas</em>, <em>teshuvah</em>, <em>selichah</em>, <em>geulah peratis</em> (<span class="heb-inline">גאולה פרטית</span>), <em>refuah</em>, <em>parnassah</em> &mdash; and turn to the <em>bakashos</em> of the <em>klal</em>. The <em>Gemara</em> grounds each adjacency in a specific <em>pasuk</em>; underneath those <em>pesukim</em>, the Rebbe here reads a hashkafic ascent: a person first asks for <em>refuah</em> (<em>bri&rsquo;us</em> as the precondition of everything); then for <em>parnassah</em> (the basis of <em>menuchas ha&rsquo;nefesh</em>, <span class="heb-inline">מנוחת הנפש</span>, and <em>yishuv ha&rsquo;daas</em>, <span class="heb-inline">יישוב הדעת</span>); then for the deepest <em>menuchas ha&rsquo;nefesh</em> a <span class="heb-inline">יהודי</span> can ask for &mdash; <em>&quot;<span class="heb-inline">וקבצנו יחד מארבע כנפות הארץ</span>&quot;</em>. <em>Kibbutz nedachim</em> (<span class="heb-inline">קיבוץ נדחים</span>) is the deepest <em>shalom</em>.</p>
+
+<p>In a time of war the frame reads differently than in a time of quiet. <em>Teka B&rsquo;Shofar</em> is not primarily, in that hour, an eschatological petition about the end of days: it is the <em>bakashah</em> for peace-as-reunion, for the ingathering that is the end of running to <em>miklatim</em>.</p>
+
+<h2>IV. The <em>Midrash</em> &mdash; The Reunion in <span class="heb-inline">מצרים</span></h2>
+
+<p>Each <span class="heb-inline">ברכה</span> in <span class="heb-inline">שמונה עשרה</span> was first uttered by the <em>malachei ha&rsquo;shareis</em> (<span class="heb-inline">מלאכי השרת</span>) at one moment of biblical history.<a href="#fn7" id="ref7" class="footnote-ref">[7]</a> <em>&quot;<span class="heb-inline">ברוך מקבץ נדחי עמו ישראל</span>&quot;</em> was first proclaimed when <em>Yaakov Avinu</em> (<span class="heb-inline">יעקב אבינו</span>) and the <em>shevatim</em> (<span class="heb-inline">שבטים</span>) arrived in <span class="heb-inline">מצרים</span> and were reunited &mdash; after <em>Yosef</em>'s years in <em>galus Mitzrayim</em> (<span class="heb-inline">גלות מצרים</span>) and <em>Shimon</em>'s imprisonment. The first time the family &mdash; the nucleus of <span class="heb-inline">כלל ישראל</span>, the twelve <em>shevatim</em> complete &mdash; stood as one.</p>
+
+<p>Note the strangeness of the location. The <em>bracha</em> of <em>mekabetz nidchei amo Yisrael</em> was first uttered <em>in Mitzrayim</em>, at the threshold of the <em>galus</em> &mdash; not at its end. The <em>malachim</em>, watching the family stand complete <em>before</em> the long dispersion opened, saw <em>in</em> that moment of reunion the prototype of every later ingathering: the <em>galus</em> yet to come would be measured, in <em>Shamayim</em>, against the <em>first</em> time the family had stood whole. From that reunion the <em>bracha</em> enters the <em>siddur</em>.</p>
+
+<p>May we be <em>zocheh</em> to see the ingathering of <span class="heb-inline">כלל ישראל</span> soon, and join the <em>malachim</em> in saying it.</p>
+
+<h2>V. What Is the <em>Shofar</em>? &mdash; The <em>Pshat</em> Question</h2>
+
+<p>The <em>pesukim</em> in <em>Tanach</em> (<span class="heb-inline">תנ&quot;ך</span>) we read on <em>Rosh HaShanah</em> (<span class="heb-inline">ראש השנה</span>) seem to indicate that we will literally <em>hear</em> a <em>shofar</em> &mdash; an actual blast that grows and grows until the entire world hears it and gathers to <span class="heb-inline">ארץ ישראל</span>. Is the <em>shofar gadol</em> physical, or metaphorical?</p>
+
+<p>Underneath the dispute lies a classical axis of Jewish thought. The <em>Rambam</em>, in <em>Hilchos Melachim</em> 12,<a href="#fn8" id="ref8" class="footnote-ref">[8]</a> cautions against being <em>mesapek</em> in the aggadic particulars of the days of <em>Mashiach</em>: <em>&quot;a person should not occupy himself in the aggados on this subject, nor spend time on the midrashim... for these matters neither bring to love nor to fear&quot;</em>; the actual course of events will be known only when it happens. On the other pole stands the <em>Pirkei DeRabbi Eliezer</em> &mdash; which specifies the physical origin of the <em>shofar gadol</em> itself.</p>
+
+<h3>The <em>Pirkei DeRabbi Eliezer</em> &mdash; Physical, and Traceable</h3>
+
+<p>The <em>midrash</em><a href="#fn9" id="ref9" class="footnote-ref">[9]</a>: the <em>shofar</em> is physical, and <em>traceable</em>. When <em>Avraham Avinu</em> (<span class="heb-inline">אברהם אבינו</span>) found the <em>ayil ne&rsquo;echaz ba&rsquo;svach b&rsquo;karnav</em> (<span class="heb-inline">איל נאחז בסבך בקרניו</span>) &mdash; the ram caught in the thicket &mdash; and offered it in place of <em>Yitzchak</em>, the two <em>karnos</em> (<span class="heb-inline">קרנות</span>) of that ram entered Jewish history:</p>
+
+<ul>
+  <li>The <strong>left horn</strong> sounded the <em>kol shofar</em> (<span class="heb-inline">קול שופר</span>) at <em>Matan Torah</em> (<span class="heb-inline">מתן תורה</span>) &mdash; <em>&quot;<span class="heb-inline">ויהי במשך בקרן היובל</span>&quot;</em>, in the <em>midrash</em>'s own quotation; what we hear in the <em>pesukim</em> of <em>Yisro</em> as <em>&quot;<span class="heb-inline">וקול שופר חזק מאד</span>&quot;</em>.</li>
+  <li>The <strong>right horn</strong>, which is larger than the left, is the <em>shofar shel Mashiach</em> &mdash; held in reserve since the <em>akeidah</em> (<span class="heb-inline">עקידה</span>), awaiting the moment of <em>&quot;<span class="heb-inline">והיה ביום ההוא יתקע בשופר גדול</span>&quot;</em> (<em>Yeshayahu</em> 27:13).</li>
+</ul>
+
+<p>The connection is dense and beautiful: the <em>tzaar</em> of the <em>akeidah</em>, <em>Avraham</em>'s and <em>Yitzchak</em>'s <em>mesiras nefesh</em> (<span class="heb-inline">מסירת נפש</span>), the ram caught in the thicket &mdash; that very horn closes our story. Another <em>midrash</em> adds that <em>Eliyahu HaNavi</em> (<span class="heb-inline">אליהו הנביא</span>) will be the one to blow it.</p>
+
+<h3>The <em>Tur</em> &mdash; <em>Teka B&rsquo;Shofar</em> and the <em>Chatzotzros</em></h3>
+
+<p>This week's <em>parsha</em> (<em>Beha&rsquo;aloscha</em>, <span class="heb-inline">בהעלותך</span>) contains the <em>pasuk</em> of the <em>chatzotzros</em>:<a href="#fn10" id="ref10" class="footnote-ref">[10]</a> <em>&quot;<span class="heb-inline">ותקעתם בחצוצרות על עולותיכם ועל זבחי שלמיכם</span>&quot;</em>. The <em>Tur</em>, in <em>Orach Chaim</em> <span class="heb-inline">סימן קי&quot;ח</span>, connects <em>teka b&rsquo;shofar</em> to the moment we return to <span class="heb-inline">ארץ ישראל</span> with <em>korbanos</em> in the <em>Beis HaMikdash</em>: both are <em>teki&rsquo;os</em>. The <em>Tur</em>'s point is deepened by the <em>Rambam</em>'s treatment of the <em>chatzotzros</em> in <em>Hilchos Taaniyos</em> 1:1 as the sound-signature of <em>communal tzarah</em>: a <em>klal</em>-shaped sound, both for the <em>bakashah</em> and for the eventual return.</p>
+
+<h2>VI. Rav Schwab &mdash; The Metaphor</h2>
+
+<p>Rav Shimshon Schwab <span class="heb-inline">זצ&quot;ל</span><a href="#fn11" id="ref11" class="footnote-ref">[11]</a> proposes a different reading of the <em>shofar gadol</em>: it need not be physical. It is a <em>mashal</em> (<span class="heb-inline">משל</span>).</p>
+
+<p>Rav Schwab was <em>niftar</em> in 1995 &mdash; this year, thirty years ago &mdash; and the <em>sefer Iyun Tefillah</em> (now also published in English as <em>Rav Schwab on Prayer</em>) came to this <em>shiur</em>'s hand only recently, when Rabbi Yossi Popack <span class="heb-inline">שליט&quot;א</span> gave it as a gift.<a href="#fn12" id="ref12" class="footnote-ref">[12]</a> The timing itself is a <em>hashgachah</em> moment: a <em>sefer</em> arriving in the thirtieth-<em>yahrzeit</em> year, in the week of a war whose <em>pshat</em> is the Rav Schwab reading. The more one reads, the more one appreciates the <em>yid</em> behind it.</p>
+
+<h3>The Misconception</h3>
+
+<p>Rav Schwab observed something in his day. In the 1980s, when the beeper entered Jewish life &mdash; and later <em>WhatsApp</em> and global messaging &mdash; the technology offered an unprecedented thing: at the press of a button, the entire globe could receive a single message. Various circles in <span class="heb-inline">כלל ישראל</span> began circulating: <em>&quot;<span class="heb-inline">משיח</span> is coming now,&quot;</em> <em>&quot;We want <span class="heb-inline">משיח</span> now.&quot;</em> Bumper stickers. Street-corner posters. <em>&quot;<span class="heb-inline">משיח</span> is here.&quot;</em></p>
+
+<p>Rav Schwab said clearly: <em>&quot;I don't like it.&quot;</em></p>
+
+<div class="pullquote">
+<p>I present Rav Schwab's <em>shitah</em> (<span class="heb-inline">שיטה</span>) without any <em>zilzul</em> toward another <em>shitah</em>. <strong>The Lubavitcher Rebbe <span class="heb-inline">זי&quot;ע</span></strong> had a deliberate <em>mehalech</em> here &mdash; to dissolve the <em>todaas galus</em> (<span class="heb-inline">תודעת גלות</span>) in which <span class="heb-inline">כלל ישראל</span> had been embedded for two thousand years and to bring the consciousness of <em>Mashiach</em> to the front of the mind. To make <em>Yidden</em> aware. I am also a Lubavitcher <em>chassid</em> by lineage; we study every <em>shitah</em>, learn from everyone, and think critically. Rav Schwab opposed that <em>mehalech</em>. Both <em>shitos</em> have <em>al mi lismoch</em> (<span class="heb-inline">על מי לסמוך</span>).</p>
+</div>
+
+<p>Rav Schwab's claim: a public campaign of this shape risks turning <em>Mashiach</em> and <em>geulah</em> into a slogan, and the slogan into a <em>zilzul</em> of one of the most sacred ideas in <em>Yiddishkeit</em> &mdash; a <em>musag</em> (<span class="heb-inline">מושג</span>), in his language, <em>&quot;as holy as the <span class="heb-inline">רוח אלקים</span> at the beginning of <span class="heb-inline">בראשית</span>&quot;</em>. <em>Mashiach</em> is not a man on a white donkey saying <em>&quot;come back home.&quot;</em> Those are <em>meshalim</em>. What <em>Mashiach</em> represents is something far more profound.</p>
+
+<h3>The <em>Kashya</em> Posed to Rav Schwab</h3>
+
+<p>People came to him: <em>&quot;Rebbe, if we do not do something to prepare the world for <span class="heb-inline">גאולה</span>, how will we be able to look <span class="heb-inline">משיח</span> in the face? What will we say to him when he asks what we did to bring him?&quot;</em></p>
+
+<p>Rav Schwab's answer: <em>&quot;Even with all your bumper stickers and beeper messages, do you think you will be able to <em>look</em> at <span class="heb-inline">משיח</span>? Do you know how afraid we will be? <span class="heb-inline">חז&quot;ל</span> describe <span class="heb-inline">משיח בן יוסף</span> and <span class="heb-inline">משיח בן דוד</span>; <span class="heb-inline">הנביא ישעיהו</span> describes the world at that moment &mdash; the <em>yiras shamayim</em> so intense that even the greatest <span class="heb-inline">צדיקים</span> will be hiding in the <em>nekikei ha&rsquo;sela&rsquo;im</em> (<span class="heb-inline">נקיקי הסלעים</span>),<a href="#fn13" id="ref13" class="footnote-ref">[13]</a> in the crevices of the rocks, unable to gaze upward.&quot;</em></p>
+
+<h2>VII. Two Stories from Brisk</h2>
+
+<p>Two stories transmitted in the name of <strong>Rav Chaim Soloveitchik of Brisk</strong> <span class="heb-inline">זצ&quot;ל</span><a href="#fn14" id="ref14" class="footnote-ref">[14]</a> ground Rav Schwab's reading in a Brisker <em>mesorah</em> that long preceded the beeper era. Both stories illuminate the same point.</p>
+
+<h3>The <em>Hallel</em> on <em>Pesach</em> Night</h3>
+
+<p>Rav Chaim as a child loved music deeply. (He himself could not sing &mdash; he had no voice &mdash; but he understood music, perhaps mathematically.) In Brisk they followed <em>nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) per the <em>Rama</em>'s codification<a href="#fn15" id="ref15" class="footnote-ref">[15]</a> and did not say <em>Hallel</em> on <em>leil Pesach</em> in shul. The <em>Beis HaLevi</em> (<span class="heb-inline">רבי יוסף דוב הלוי סולובייצ&rsquo;יק זצ&quot;ל</span>, Rav Chaim's father and <em>rav</em> of Brisk) would head straight home from <em>Ma&rsquo;ariv</em> to begin the <em>Seder</em>.</p>
+
+<p>The <em>chassidim</em> in Brisk &mdash; Lechovitch, Kabrina, Slonim &mdash; kept their own <em>shtibl</em> where they <em>did</em> say <em>Hallel</em> at night, and sang it beautifully. One <em>Pesach</em> night, walking home with his father, young Rav Chaim heard the <em>Hallel</em> through the windows. He stopped. He wanted to listen. The <em>Beis HaLevi</em> pulled his hand to keep walking.</p>
+
+<p>Rav Chaim protested: <em>&quot;I want to stay for the beautiful music, the beautiful <em>Hallel</em>!&quot;</em></p>
+
+<p>The <em>Beis HaLevi</em> answered, in characteristically Brisker form: <em>&quot;It is not <em>halachah</em> to say <em>Hallel</em> now. If it is not the proper <em>zman halachti</em> (<span class="heb-inline">זמן הלכתי</span>), what is beautiful about it? Beautiful music is beautiful only when it fulfills <em>retzon Hashem</em> (<span class="heb-inline">רצון ה'</span>).&quot;</em></p>
+
+<h3>The <em>Chazzan</em>'s <em>Brachah</em></h3>
+
+<p>Years later, Rav Chaim attended a function with a choir led by a head <em>chazzan</em> who sang like a <em>malach</em>. Rav Chaim approached him: <em>&quot;You moved me deeply. I want to give you a <em>brachah</em>. What would you like &mdash; long life? Success? Children?&quot;</em></p>
+
+<p>The <em>chazzan</em>'s answer was unusual. Not wealth, not fame, not a greater hall. <em>&quot;Rebbe, I want a <em>brachah</em> that when <em>Mashiach</em> comes, I should be part of the choir that greets him &mdash; to be <em>mekabel pnei Mashiach</em> (<span class="heb-inline">מקבל פני משיח</span>) with song.&quot;</em></p>
+
+<div class="pullquote">
+<p>Rav Chaim began trembling with <em>yiras shamayim</em>. He answered: <em>&quot;Who do you think you are? Even the greatest <em>tzaddikim</em> will be hiding their faces. <em>Mashiach</em> is a complete <em>gilui kevod Shamayim</em> (<span class="heb-inline">גילוי כבוד שמים</span>) in this world. We will be hiding in the crevices of the rocks, as <em>Yeshayahu</em> describes. You think you have the audacity to imagine yourself singing in <em>Mashiach</em>'s choir? It is beautiful you think of such things &mdash; but that <em>brachah</em> I will not give.&quot;</em></p>
+</div>
+
+<p>Both stories &mdash; the child wanting to listen to <em>Hallel</em> at the wrong <em>zman</em>, the <em>chazzan</em> wanting to sing in <em>Mashiach</em>'s choir &mdash; point to the same Brisker <em>yesod</em>: spiritual experience is real, but always subordinate to the <em>halachic</em> structures that <span class="heb-inline">הקדוש ברוך הוא</span> built. <em>Mashiach</em> is not a venue for self-expression. He is overwhelming <em>kedushah</em>.</p>
+
+<h2>VIII. <em>Shitos</em> in <em>Klal Yisrael</em> &mdash; A Framing</h2>
+
+<p>Other <em>kehillos</em> in <em>Klal Yisrael</em> have in our generations done real work to bring <em>Mashiach</em> and <em>geulah</em> into the collective consciousness. Today there is no <em>yid</em> who does not recognize the signs or know the conviction that there will be a <em>Mashiach</em> and a <em>geulah</em>. Each <em>kehillah</em> has <em>al mi lismoch</em>; the appropriate posture is to learn the best from everyone.</p>
+
+<p>Many <em>tzaddikim</em> kept a special <em>beged</em> (<span class="heb-inline">בגד</span>) ready &mdash; a <em>bekishe</em> (<span class="heb-inline">בעקעשע</span>), a frock coat, depending on the <em>mesorah</em> &mdash; for <em>Shabbos</em> or for <em>Mashiach</em>. Being prepared is appropriate. The <em>texture</em> of preparation differs across <em>kehillos</em>; each draws on real <em>mekoros</em>.</p>
+
+<h2>IX. Rav Schwab on the <em>Shofar Gadol</em> &mdash; The Universal <em>Hakarah</em></h2>
+
+<p>Rav Schwab returns to the <em>shofar gadol</em> with this frame: the <em>shofar</em> is the metaphor for <em>the moment when the world recognizes that <span class="heb-inline">הקדוש ברוך הוא</span> is <span class="heb-inline">המלך</span></em> &mdash; that no power exists except through Him.</p>
+
+<p>Imagine when the President of the United States, the kings and prime ministers and presidents of every country &mdash; secular or religious, makes no difference &mdash; stand and declare: <em>&quot;I am in this position only through the grace of God. I was elected, I was appointed; I hold this office because <span class="heb-inline">הקדוש ברוך הוא</span> placed me here. Everything is <em>malchus HaKadosh Baruch Hu</em> (<span class="heb-inline">מלכות הקדוש ברוך הוא</span>).&quot;</em> Imagine the United Nations &mdash; all the leaders of the nations &mdash; proclaiming together that everything belongs to <span class="heb-inline">הקדוש ברוך הוא</span>, that recognition reverberating through every corner of creation.</p>
+
+<p><em>That</em> is the <em>shofar gadol</em>. The <em>geulah</em>, on this reading, is fundamentally a transformation of consciousness &mdash; a universal <em>hakarah</em> (<span class="heb-inline">הכרה</span>) that <em>&quot;<span class="heb-inline">ה' מלך, ה' מלך, ה' ימלוך לעולם ועד</span>&quot;</em>.<a href="#fn16" id="ref16" class="footnote-ref">[16]</a></p>
+
+<h3>Seeds Already Visible</h3>
+
+<p>We see fragments today. President <em>Trump</em>, after the attempt on his life, said publicly: <em>&quot;If not for the grace of God...&quot;</em> &mdash; a bare acknowledgment, but on a world stage. Days before this war erupted, the Argentinian president <em>Milei</em> stood crying at the <em>Kosel</em>; a <em>goy</em> who is, by Rabbi Anki's description, <em>&quot;a Lubavitcher's best buddy.&quot;</em> When a <em>goy</em> is such, it makes one a little nervous &mdash; and yet good <em>mitzvah Hashem</em> is going to come out of it. Add to that the <em>Hezbollah</em> pager operation and the drone-headquarters strike mentioned above: on no honest reading is any of it <em>kochi v&rsquo;otzem yadi</em>. These are brief, partial, seed-shaped &mdash; but they are seeds of the <em>hakarah</em> that in Rav Schwab's reading will one day become the <em>shofar gadol</em> itself.</p>
+
+<h2>X. Closing</h2>
+
+<p>The <em>bracha</em> of <em>Yerushalayim</em>, which the <em>Gemara</em>'s <em>seder</em> places next, we defer to the following week. For now, in this hour: may we hear <em>besoros tovos</em> (<span class="heb-inline">בשורות טובות</span>) from <span class="heb-inline">ארץ ישראל</span> speedily. May the <em>chayalim</em> in <span class="heb-inline">עזה</span> and on every front return home safely. May the leadership of <em>Medinas Yisrael</em> have <em>siyata di&rsquo;Shmaya</em> (<span class="heb-inline">סייעתא דשמיא</span>) in every decision they face. May the <em>shofar gadol</em> be heard &mdash; physical or metaphorical, however <span class="heb-inline">הקדוש ברוך הוא</span> chooses &mdash; and may the world know <span class="heb-inline">ה' מלך, ה' מלך, ה' ימלוך לעולם ועד</span>. And may the streets of <span class="heb-inline">בני ברק</span> fill again.</p>
+
+<h2>XI. Postscript &mdash; Rabbi Kozak's Organization</h2>
+
+<p>The <em>shiur</em> was abbreviated this morning because the <em>rabbanim</em> of Lawrence &mdash; Rabbi Asher Stern, Rabbi Aharon, Rabbi Masri, Rabbi Orlian &mdash; were co-hosting a breakfast for an extraordinary <em>chassid</em> from <em>Gur</em>, <strong>Rabbi Kozak</strong>, whose organization provides mental-health therapy in <span class="heb-inline">ארץ ישראל</span> for those outside <em>Bituach Leumi</em>'s coverage &mdash; <em>chayalim</em> returning from <span class="heb-inline">עזה</span> with <em>PTSD</em>, families needing therapy for their children, anyone in spiritual or psychological crisis. <em>Hatzalas nefashos mamash</em> (<span class="heb-inline">הצלת נפשות ממש</span>). The <em>Tzahal</em> framework offers returning <em>chayalim</em> one therapy session and is done; people fly to Thailand to escape what they saw, or come home shattered. This <em>yid</em> built the bridge.</p>
+
+<p>I checked the organization carefully before lending my name. In a <em>sefer</em> whose spine is the <em>bakashah</em> for the end of <em>chayalim</em> running from the <em>azakah</em>, no appeal belongs more honestly in it than this one.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><span class="heb-inline">בני ברק</span> as <span class="heb-inline">עיר ואם בישראל</span>; cf. <span class="heb-inline">שמואל ב' כ':י&quot;ט</span>.</span>
+  <span class="expanded">&mdash; The phrase <em>&quot;<span class="heb-inline">עיר ואם בישראל</span>&quot;</em> originates in <em>Shmuel II</em> 20:19, in the speech of the wise woman of <em>Avel Beis Maakhah</em> pleading with <em>Yoav</em> not to destroy her city. The phrase entered <em>Chazal</em>'s and contemporary rabbinic Hebrew as an expression of reverence for cities of <em>Torah</em> distinction. <em>Bnei Brak</em> &mdash; the Tannaitic city of <em>Rabbi Akiva</em> &mdash; was rebuilt as a modern <em>ir Torah</em> in 1924 by Rabbi Yitzchak Gerstenkorn with the explicit vision of an <em>ir charedis</em>; the <em>Chazon Ish</em>'s residence there from 1933 onward established it as the spiritual center of Lithuanian <em>Torah</em> in <em>Eretz Yisrael</em>.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn2">
+  <div class="note-academic">Iran-Israel war of June 2025 &mdash; Israeli operation <em>Rising Lion</em> commenced 13 June 2025; Iran responded with sustained missile and drone barrages against Israeli civilian and military targets. The strike on Bat Yam in the early days of the war killed multiple civilians including children. Reference for historical contextualization of the <em>shiur</em>'s urgency.</div>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn3">
+  <div class="note-academic"><strong>Rav Chaim Kanievsky, <em>zt&rdquo;l</em></strong> (1928&ndash;2022, <em>Bnei Brak</em>; son of the <em>Steipler</em>; one of the <em>gedolei ha&rsquo;dor</em> of the previous generation) reportedly responded during the first Gulf War (<em>Tashna</em>, 1991), when Scud missiles were fired toward Israel, with the now-famous formulation <em>&quot;<span class="heb-inline">כל טיל יש לו כתובת</span>&quot;</em> &mdash; every missile has its predetermined address. The teaching reflects the classical position on individual <em>hashgachah peratis</em> in matters of life and death; pairs in practical application with the <em>chiyuv</em> of <em>hishtadlus</em> for <em>pikuach nefesh</em>. Attributed also in parallel transmissions to the <em>Chazon Ish</em> during the War of Independence and to Rav Shach; the <em>Rav Chaim</em> attribution is standard for the first Gulf War.</div>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Mishnah Berurah</em> 584; <em>Shulchan Aruch Orach Chaim</em> 579 &mdash; <em>Avinu Malkeinu</em> in <em>eis tzarah</em>.</span>
+  <span class="expanded">&mdash; The standard <em>chiyuv</em> of <em>Avinu Malkeinu</em> is during the <em>Aseres Yemei Teshuvah</em> and on <em>ta&rsquo;anis tzibbur</em>. The <em>Shulchan Aruch Orach Chaim</em> 579, with the <em>Mishnah Berurah</em>'s discussion, treats the recitation during communal <em>eis tzarah</em>; the <em>poskim</em> permit (and, in a declared <em>tzarah</em>, encourage) the <em>minhag</em> for a <em>kehillah</em> to institute <em>Avinu Malkeinu</em> during a <em>milchemes mitzvah</em> or similar <em>eis tzarah</em> affecting <em>Klal Yisrael</em>. The question whether the authority sits with the individual <em>rav</em>, the <em>mo&rsquo;etzes</em>, or the <em>minyan</em> itself is treated in the <em>acharonim</em>. The <em>Rebbe</em> left this <em>halachic</em> question open in the <em>shiur</em>; this footnote identifies the <em>mekoros</em> for the follow-up.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn5">
+  <div class="note-academic">The <em>Hezbollah</em> pager operation of September 2024 and the Israeli strike on an Iranian drone-coordination facility in the opening days of operation <em>Rising Lion</em> are the two live events the Rebbe cites in the <em>shiur</em> as <em>hashgachah</em>-moments beyond ordinary military explanation. <em>&quot;<span class="heb-inline">כחי ועצם ידי</span>&quot;</em> &mdash; <em>Devarim</em> 8:17 &mdash; is the <em>Torah</em>'s warning against reading victory as self-generated power. The <em>pasuk</em> in context: <em>&quot;And you say in your heart, my strength and the might of my hand has made for me this wealth&quot;</em>; the next <em>pasuk</em>: <em>&quot;And you shall remember Hashem your God, for it is He who gives you strength to do mighty things.&quot;</em></div>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Megillah</em> 17b&ndash;18a &mdash; the <em>seder</em> of <em>Shemoneh Esrei</em>; <em>refuah</em>, <em>parnassah</em>, <em>kibbutz galuyos</em>.</span>
+  <span class="expanded">&mdash; The <em>sugya</em> on <em>Megillah</em> 17b opens with <em>&quot;<span class="heb-inline">ומה ראו לומר</span>&quot;</em> and runs through 18a. The <em>Gemara</em>'s own derivation sets each adjacency on a specific <em>pasuk</em>: <em>refuah</em> at the eighth (keyed to <em>milah</em> on the eighth day, requiring healing); <em>birkas ha&rsquo;shanim</em> at the ninth (<em>Rabbi Alexandri</em>: against those who raise prices); <em>kibbutz galuyos</em> after <em>birkas ha&rsquo;shanim</em> (<em>Yechezkel</em> 36:8 &mdash; <em>&quot;<span class="heb-inline">הרי ישראל ענפכם תתנו</span>...<span class="heb-inline">כי קרבו לבוא</span>&quot;</em>); then <em>&quot;once the exiles are gathered, judgment is executed on the wicked&quot;</em>; and so on. The Rebbe's hashkafic reading &mdash; <em>refuah</em> as precondition, <em>parnassah</em> as <em>yishuv ha&rsquo;daas</em>, <em>kibbutz nedachim</em> as the ultimate <em>menuchas ha&rsquo;nefesh</em> &mdash; sits on the <em>sugya</em>'s halachic skeleton as its mussar reading.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Bereishis Rabbah</em> on the reunion in <em>Mitzrayim</em>; cf. <em>Tanchuma</em> parallels.</span>
+  <span class="expanded">&mdash; The <em>midrash</em> that the <em>malachei ha&rsquo;shareis</em> first uttered <em>&quot;<span class="heb-inline">ברוך מקבץ נדחי עמו ישראל</span>&quot;</em> at the reunion of <em>Yaakov</em> and the <em>shevatim</em> in <em>Mitzrayim</em> &mdash; after <em>Yosef</em>'s years in <em>galus</em> and <em>Shimon</em>'s imprisonment &mdash; circulates in <em>Chazal</em> as the prototypical first instance of <em>kibbutz nedachim</em>. The parallel passages appear in <em>Bereishis Rabbah</em> on <em>Vayigash</em> and <em>Vayechi</em> (<em>parshah</em> 94&ndash;95), with <em>Tanchuma</em> parallels; the frame of each <em>brachah</em> in <em>Shemoneh Esrei</em> originating with the <em>malachim</em> at a biblical moment is developed across the <em>midrashei Chazal</em> on prayer. The force of the <em>midrash</em> here: the <em>bracha</em> was first said <em>at the threshold</em> of the <em>galus</em>, not at its end &mdash; the moment of family reunion <em>in</em> <em>Mitzrayim</em> as the prototype of every later ingathering.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Rambam, Hilchos Melachim</em> 12:1&ndash;2 &mdash; humility about the particulars of <em>yemos ha&rsquo;Mashiach</em>.</span>
+  <span class="expanded">&mdash; The <em>Rambam</em> at the close of <em>Yad HaChazakah</em> famously writes: <em>&quot;<span class="heb-inline">אין בין העולם הזה לימות המשיח אלא שעבוד מלכויות בלבד</span>&quot;</em> and continues that <em>&quot;a person should not occupy himself in the aggados on this subject, nor spend time on the midrashim concerning these and like matters, nor make them the <span class="heb-inline">עיקר</span>, for they bring neither to love nor to fear; and so too should he not calculate the end-times.&quot;</em> The <em>Rambam</em>'s metaphorical temperament is one pole; the <em>Pirkei DeRabbi Eliezer</em>'s specifying temperament is the other. Rav Schwab's reading of the <em>shofar gadol</em> as <em>mashal</em> sits comfortably within the <em>Rambam</em>'s axis; the <em>Pirkei DeRabbi Eliezer</em> position sits on the <em>aggadic</em> pole. The dispute is a classic one; it is not a <em>Rav Schwab chiddush</em> but a <em>Rav Schwab inheritance</em> of the <em>Rambam</em>-side temperament.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn9">
+  <span class="short"><em>Pirkei DeRabbi Eliezer</em> ch. 31 (R. Chananya ben Dosa) &mdash; the two horns of <em>eil ha&rsquo;akeidah</em>.</span>
+  <span class="expanded">&mdash; The teaching, attributed in <em>Pirkei DeRabbi Eliezer</em> ch. 31 to <em>Rabbi Chananya ben Dosa</em>: nothing of the ram caught in the thicket was wasted. Its ashes founded the inner altar; its sinews became the strings of <em>David</em>'s harp; its skin, the leather girdle of <em>Eliyahu HaNavi</em>; the left horn, blown at <em>Har Sinai</em> (the <em>midrash</em> cites <em>&quot;<span class="heb-inline">ויהי במשך בקרן היובל</span>&quot;</em>, <em>Yehoshua</em> 6:5, as its prooftext for a <em>yovel</em>-type shofar sound); and the right horn, larger than the left, destined to be sounded in the future &mdash; <em>&quot;<span class="heb-inline">והיה ביום ההוא יתקע בשופר גדול</span>&quot;</em> (<em>Yeshayahu</em> 27:13). Verified on Sefaria (<em>Pirkei DeRabbi Eliezer</em> 31, paragraph 13).</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn10">
+  <span class="short"><em>Bamidbar</em> 10:10 (<em>Beha&rsquo;aloscha</em>); <em>Tur Orach Chaim</em> <span class="heb-inline">קי&quot;ח</span>; <em>Rambam Hilchos Taaniyos</em> 1:1.</span>
+  <span class="expanded">&mdash; The <em>pasuk</em>: <em>&quot;<span class="heb-inline">ותקעתם בחצוצרות על עולותיכם ועל זבחי שלמיכם</span>&quot;</em>. The <em>Tur</em> in <em>Orach Chaim</em> <em>siman</em> <span class="heb-inline">קי&quot;ח</span>, in his treatment of <em>birkas teka b&rsquo;shofar</em>, connects the future <em>shofar gadol</em>'s <em>teki&rsquo;ah</em> to the resumed <em>teki&rsquo;os</em> of the <em>chatzotzros</em> on the <em>korbanos</em> in the rebuilt <em>Beis HaMikdash</em>: both are sound-events marking the closure of <em>galus</em> and the return to full <em>avodah</em>. The <em>Rambam</em> in <em>Hilchos Taaniyos</em> 1:1 identifies the <em>chatzotzros</em> as the sound-signature of <em>communal</em> <em>tzarah</em> &mdash; a <em>klal</em>-shaped sound, which strengthens the Rebbe's framing of <em>teka b&rsquo;shofar</em> as <em>tefillah of the klal</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn11">
+  <span class="short"><em>Sefer Iyun Tefillah</em> (Rav Shimshon Schwab <em>zt&rdquo;l</em>; Eng. <em>Rav Schwab on Prayer</em>) &mdash; the <em>shofar gadol</em> as universal <em>hakarah</em> of <em>malchus Shamayim</em>.</span>
+  <span class="expanded">&mdash; <strong>Rav Shimshon Schwab, <em>zt&rdquo;l</em></strong> (1908&ndash;1995; <em>rav</em> of <em>Kehal Adath Jeshurun</em> in Washington Heights for nearly four decades, from 1958 until his <em>petirah</em>); <em>talmid</em> of the <em>Chofetz Chaim</em> at Mir, of <em>Rav Baruch Ber Leibowitz</em> at Kaminetz, and of the <em>Alter</em> of Slabodka. In his collected <em>derashos</em> and the posthumous <em>Iyun Tefillah</em> / <em>Rav Schwab on Prayer</em>, he develops a non-physical reading of the <em>shofar gadol</em> in <em>birkas teka b&rsquo;shofar</em>: the <em>shofar</em> is the metaphor for the universal <em>hakarah</em> of <em>malchus Shamayim</em> by the leaders and peoples of the world. The reading sits within Rav Schwab's broader caution against the trivialization of <em>Mashiach</em> and <em>geulah</em> through bumper-sticker culture, grounded on his theological claim that <em>Mashiach</em> is a <em>musag</em> &quot;<em>as holy as the <span class="heb-inline">רוח אלקים</span> at the beginning of <span class="heb-inline">בראשית</span></em>.&quot;</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn12">
+  <div class="note-academic">Personal acknowledgment: <strong>Rabbi Yossi Popack <span class="heb-inline">שליט&quot;א</span></strong> (member of the Lawrence community) recently gave the Rebbe the <em>Sefer Iyun Tefillah</em>. The connection to the Schwab family runs through <em>Meir Weiss</em>, the <em>mechutan</em> connecting to a <em>bar mitzvah</em> made for <em>Yisrael Schwab</em>, an <em>einikl</em> of Rav Shimshon Schwab. The arrival of the <em>sefer</em> coincided with Rav Schwab's thirtieth <em>yahrzeit</em> (<em>niftar</em> 1995) and with the opening days of the Iran war &mdash; the <em>hashgachah</em>-timing the <em>shiur</em> itself foregrounds.</div>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn13">
+  <span class="short"><em>Yeshayahu</em> 2:19&ndash;21 &mdash; <em>&quot;<span class="heb-inline">ובאו במערות צרים ובמחלות עפר... לבוא בנקרות הצורים ובסעיפי הסלעים מפני פחד ה'</span>&quot;</em>.</span>
+  <span class="expanded">&mdash; <em>Yeshayahu</em>'s vision of the day of <em>Hashem</em>: people fleeing into mountain crevices and rock fissures from the overwhelming presence of <em>pachad Hashem</em>. The <em>pasuk</em> grounds both Rav Schwab's and Rav Chaim of Brisk's readings of the <em>geulah</em> moment as one of overwhelming <em>yiras shamayim</em> rather than self-celebratory triumph: even the <em>tzaddikim gemurim</em> will be unable to gaze directly at the <em>gilui Shechinah</em>; the appropriate posture is humility, not theatrical readiness.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn14">
+  <div class="note-academic">Brisker tradition transmitted from <strong>Beis HaLevi</strong> (<em>Rabbi Yosef Dov HaLevi Soloveitchik</em>, <em>zt&rdquo;l</em>, 1820&ndash;1892, <em>rav</em> of Brisk) and <strong>Rav Chaim Soloveitchik</strong> (<em>Rabbi Chaim Soloveitchik</em>, <em>zt&rdquo;l</em>, 1853&ndash;1918, son of the <em>Beis HaLevi</em>; <em>rosh yeshiva</em> of Volozhin and <em>rav</em> of Brisk after his father's <em>petirah</em>; founder of the analytical <em>derech ha&rsquo;limud</em> known as the Brisker <em>derech</em>). The two stories &mdash; the <em>Pesach</em>-night <em>Hallel</em> and the <em>chazzan</em>'s requested <em>brachah</em> &mdash; circulate widely in Brisker oral <em>mesorah</em> as paradigmatic examples of the Brisker subordination of spiritual experience to <em>halachic</em> structure. Parallel traditions attribute versions of the <em>chazzan</em> story also to the <em>Brisker Rav</em> (Rav Yitzchak Zev); the version here follows the <em>mesorah</em> around <em>Reb Chaim</em>. Collected in <em>Uvdos v&rsquo;Hanhagos LeBeis Brisk</em> and parallel biographical anthologies; precise published source not specified in the <em>shiur</em>.</div>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn15">
+  <span class="short"><em>Rama, Shulchan Aruch Orach Chaim</em> <span class="heb-inline">תפ&quot;ז</span> &mdash; <em>minhag Ashkenaz</em> not to recite <em>Hallel</em> in shul on <em>leil Pesach</em>.</span>
+  <span class="expanded">&mdash; The <em>Rama</em> in his glosses on the <em>Shulchan Aruch</em> codifies the <em>minhag</em> of <em>kehillos Ashkenaz</em> &mdash; Lithuanian and German communities including Brisk &mdash; not to recite <em>Hallel</em> with the <em>tzibbur</em> on <em>leil Pesach</em> in <em>beis knesses</em>. The <em>Hallel</em> of the night is fulfilled at the <em>Seder</em> within <em>Maggid</em>. <em>Chassidische</em> and Sephardi <em>kehillos</em> recite <em>Hallel</em> at <em>Ma&rsquo;ariv</em> in shul. The Brisker family's strict adherence to the <em>Rama</em> grounds the story of young Rav Chaim and the music of the Lechovitcher <em>shtibl</em>.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+
+<li id="fn16">
+  <span class="short"><em>&quot;<span class="heb-inline">ה' מלך, ה' מלך, ה' ימלוך לעולם ועד</span>&quot;</em>; <em>&quot;<span class="heb-inline">ותקע בשופר גדול לחירותנו</span>&quot;</em>.</span>
+  <span class="expanded">&mdash; The triadic declaration <em>&quot;<span class="heb-inline">ה' מלך, ה' מלך, ה' ימלוך לעולם ועד</span>&quot;</em> &mdash; attributed in part to <em>Heichalos</em> literature and embedded in the <em>siddur</em> in the <em>Kedushah</em> and elsewhere &mdash; proclaims <em>Hashem</em>'s <em>malchus</em> across past, present, and future. Rav Schwab reads the <em>shofar gadol</em> of <em>&quot;<span class="heb-inline">ותקע בשופר גדול לחירותנו</span>&quot;</em> as the moment when this triadic recognition becomes universal across all the nations of the world. The <em>shofar</em>, on this reading, is the sound-form of universal <em>hakarah</em>.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+
+</ol>
+</section>
+
+<footer>
+Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning <em>shiur</em> on <em>Tefillah</em>, recorded 15 June 2025 &mdash; two days into the Israel-Iran war. This edition reworks the delivered <em>shiur</em> in the classical sefer voice; preserves the architecture of the <em>matzav</em>-opening and the <em>Teka B&rsquo;Shofar</em> arc; restores the <em>Hezbollah</em>-pager / Iran drone-strike and <em>Milei</em> live-event illustrations of Rav Schwab's reading; grounds the <em>Rambam</em>-<em>Pirkei DeRabbi Eliezer</em> axis as the structural dispute underneath the <em>physical-vs-metaphor</em> dialectic; identifies the <em>mekoros</em> for the <em>Avinu Malkeinu</em> question the Rebbe left pending; and gives the Rabbi Kozak appeal its own closing postscript.
+</footer>
+
+</body>
+</html>

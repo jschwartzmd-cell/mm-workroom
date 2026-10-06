@@ -227,3 +227,112 @@ Verified inline during 4-agent Sefer Edition pipeline (Sefaria verify integrated
 - **fn22 (Rosh via Tur OC 68)** — VERIFIED.
 - **Preserved UNCERTAIN** (chassidishe/kabbalistic/oral/non-Sefaria): fn4 (Zohar end of Balak, כ"ה אלול), fn8 (modern coffee psak), fn10 (Arizal on RH tears), fn11 (Reishis Chochma), fn13 (Arizal/Gra sleep after חצות), fn15 (Arizal Ps. 47 x7), fn19 (chassidishe minhag המלך הקדוש), fn20 (piyutim gzeiros framing), fn21 (Rav Hai teshuvah locus), fn23 (Gra מעשה רב), fn24 (Maharil), fn25 (הקליר legends).
 - **Total:** 1 correction (fn18 YD 210→211), 10 confirmations, 14 preserved. Modified: original shiur HTML.
+
+---
+
+## Backfill entry — 2025-07-27 (Batch 8, run 2026-10-05)
+
+### 2025-07-27 — Tefillat Nachem and Modim
+Method note: the two note-academic flags (fn15 Shlomo Simchi, fn16 R' Yonasan Eibeschutz) are in skip-domains (modern composer; oral/chassidishe maaseh) and were left UNCERTAIN. Because several unflagged standard-canon citations carried material errors, they were also spot-checked via mcp__workspace__web_fetch and corrected in place.
+- **fn1 (Yerushalmi Berachos 4:3, Rav Muna rule)** — VERIFIED (R' Avdima d'Tzipori asks R' Mana; rule quoted). Name corrected Avdimi -> **Avdima** (דצפורין); parallel **Yerushalmi Taanis 2:2** added, where R' Mana cites the rule in the name of Rav Yirmiyah in the name of Rav.
+- **fn2 (Rav Saadia, "ein hefsed b'amiraso")** — UNCERTAIN; phrase not located. Beis Yosef OC 557 (citing Abudraham) records Rav Saadia as saying Nachem only at Mincha. Flag added; claim left.
+- **fn3 (AZ 7b-8a me'ein ha-bracha)** — **CORRECTED** to **AZ 8a** (Rav Yehuda b. Shmuel b. Sheilat in the name of Rav), via Beis Yosef OC 557.
+- **fn4 (Rif, Taanis)** — VERIFIED (Rif and Rosh at end of Taanis, per Beis Yosef/Taz).
+- **fn5 (Tur and Taz: forgot -> Shema Koleinu)** — **CORRECTED**: this is the **Taz's own ruling** (557:1, "ולענ"ד", no menachem Tziyon chasimah); the Tur does not give it. Body text adjusted; Beis Yosef's Hoda'ah (R' Gershom) noted.
+- **fn6 (SA OC 557 / Rama)** — VERIFIED locus; **CORRECTED** characterization: Mechaber's wording is unqualified; Rama's gloss cites **Rokeach and Avudraham** (and Maharil: one who ate says Nachem in Birkas HaMazon).
+- **fn7 (Yirmeyahu 52:12-13; Melachim II 25:8-9)** — VERIFIED. Body corrected: Nevuchadnezzar -> **Nevuzaradan** (servant of N.) as the agent.
+- **fn8 (Taanis 29a process)** — **CORRECTED**: fire set on the ninth **סמוך לחשכה** (near nightfall), not "after midday"; seventh and eighth = eating/desecration (ואכלו וקלקלו בו). "אוכלין ושותין ומקרקרין" is the speaker's paraphrase, not Gemara. Restraint into the tenth is not in this passage (flag added).
+- **fn9 (R' Yochanan, Taanis 29a)** — VERIFIED verbatim.
+- **fn10 (BK 22a-23a, chitzav/mamono)** — VERIFIED for 22a.
+- **fn11 (BK 16a, spine/snake)** — VERIFIED locus; **CORRECTED** quote to actual baraisa text (שדרו של אדם לאחר שבע שנים נעשה נחש, והני מילי דלא כרע במודים).
+- **fn12 (Tosafos BK 16a, luz bone)** — **CORRECTED**: main Tosafos = middah k'neged middah (Rav Sheishes, Berachos 12b); the luz-bone proposal and its rejection appear in the printed **גליון** ("ויש מפרשים"), not in Tosafos proper. Body and note revised.
+- **fn13 (Tehillim 35:10)** — VERIFIED (text via Yerushalmi Berachos 4:3, R' Simon: bowing through all vertebrae); parallel added.
+- **fn14 (MB 113)** — SA OC 113:7 VERIFIED (כורע בברוך, זוקף בשם); MB back-condition wording UNCERTAIN, flag added.
+- **fn15, fn16** — UNCERTAIN, preserved (skip-rule: modern composer; chassidishe/oral maaseh).
+- **Total:** 8 corrections (fn1 name, fn3, fn5, fn6, fn7/body, fn8, fn11, fn12), 6 confirmations (fn1 locus, fn4, fn9, fn10, fn13, fn14 SA), 4 preserved/flagged (fn2, fn14 MB, fn15, fn16). Modified: final MM/2025-07-27 — Tefillat Nachem and Modim.html.
+
+### 2025-07-31 — Al Naharot Bavel — A Study of Tehillim 137
+- **fn1 (Malbim on Tehillim 137:1, 2, 7, 8)** — VERIFIED (settled/Jer 29:5; aravim as sweet; gemul as act from love/hatred). **CORRECTED** characterization: gemul repaid "b'sinah v'nekamah" (not "rather than vengeance"); the "aru aru ad hayesod" inner-yesod reading is the speaker's extension (Malbim 137:7: Edom aided the destruction). Noted: Malbim dates the mizmor to year 1 after Koresh.
+- **fn4 (Yirmiyahu 29:5-7)** — VERIFIED. Midrash Eichah (atrocities) — UNCERTAIN, not located, preserved.
+- **fn5 (Radak 137:2)** — VERIFIED.
+- **fn6 (Alshich)** — UNCERTAIN (not located on Sefaria; aphoristic wording may be the speaker's); preserved.
+- **fn7 (Midrash Tehillim 137)** — VERIFIED march/ship/loads/tohu vavohu/angels/mashal/thumbs/tilei tilim. **CORRECTED** body + note: "tanchumin shel hevel ... al tachishu" is not the midrash; actual: "תנחומין הללו שאתם מנחמים אותי ניאוצין הן לפני" + Yeshayahu 22:4 "אל תאיצו לנחמני"; queen's retort "ריקה" (not ריקן); verse glossed is "ותוללינו שמחה" (not "ושואלינו"); loads were sand-filled sacks made of books (not "stones"). "ומקרקרין" not found in this midrash (speaker's gloss).
+- **fn8 (BB 60b)** — VERIFIED locus, R. Yehoshua, "ein gozrin gezeirah", afar mikleh on chasan. **CORRECTED** list: bread (menachos), fruit (bikkurim), water (nisuch hamayim) → silent; oil/chavitei kohen gadol is not in the passage.
+- **fn9 (SA OC 1)** — SA OC 1:3 VERIFIED for the general churban-grief obligation; **CORRECTED**: the Al Naharos Bavel minhag is MB 1:11 citing the Shelah ("at every meal"; Shir HaMaalos on Shabbos and no-Tachanun days), not the Mechaber. Body adjusted.
+- **fn10 (Perfidy)** — skip-rule (modern work); preserved, flag kept.
+- **fn11 (Kotel 1967)** — skip-rule (oral/modern); preserved. Added note: "Har HaBayis b'yadeinu" is conventionally attributed to Mota Gur, Rav Goren blew the shofar.
+- **fn2 (Simchas Torah 5784)** — skip-rule (speaker's own); preserved.
+- **Total:** 6 corrections (fn1 characterization, fn7 quote/retort/verse/loads, fn8 foods, fn9 source, plus fn11 attribution note), 5 confirmations (fn1, fn4, fn5, fn7, fn8), 4 preserved/flagged (Alshich, Eichah, Perfidy, Kotel). Modified: final MM/2025-07-31 — Al Naharot Bavel — A Study of Tehillim 137.html.
+
+---
+
+## Backfill entry — 2025-07-20 (Batch 8, run 2026-10-05)
+
+### 2025-07-20 — Shema Koleinu: The Culmination of Our Petitions
+Method note: mcp__workspace__web_fetch against Sefaria (texts API). Aruch HaShulchan, Bach, Iyun Tefillah and Zohar were not retrievable and were left UNCERTAIN (flags added). Corrections applied in place to the final MM HTML (body + notes); fn19 (Rashi) added.
+- **fn1 (Megillah 17b)** — **CORRECTED** to **17b-18a**: Hoshea 3:5 then Yeshayahu 56:7 ("בית תפילתי") are on 18a; body reworded (David comes -> tefillah comes). Tur 119 and Beis Yosef 119:1 give the same rationale.
+- **fn2 (Tur OC 118, 1,800)** — locus VERIFIED, **CORRECTED** attribution: the Tur cites the מדרש דורשי רשומות (not the Zohar) in Boneh Yerushalayim, in support of ולירושלים עירך; no mention of אב הרחמן in 118 or 119. The ש-vs-א conclusion is the speaker's application, flagged. Editorial arithmetic: 19 initials = 1,799 (+1 kollel); with א for ש = 1,500.
+- **fn3 (Shaar HaKavanos)** — UNCERTAIN (flag added).
+- **fn4 (Taanis 25b)** — VERIFIED (before sunrise / after sunset; both meshalim). Gemara's own answer (משיב הרוח / מוריד הגשם) added.
+- **fn5 (AZ 7b-8a)** — **CORRECTED** to **8a**; **be'arai/bekviyus is NOT in the Gemara** (removed; attributed to Taz/AH as presented).
+- **fn6 (SA OC 119)** — VERIFIED 119:1-2 (Rabbeinu Yonah, Rama); MB 119:4 viduy/parnasah verified; "majority permits daily" unverified, flagged.
+- **fn7 (Taz 119)** — UNCERTAIN: 119:1 has Rabbeinu Yonah's four categories and "בקשה שלו תהיה טפילה", but no be'arai/bekviyus prohibition located.
+- **fn8 (MB 119)** — **CORRECTED**: verified s"k 3, 4, 12; the Taz-machloket description and the Kedusha warning not located in 119 (cross-ref siman 122), flagged.
+- **fn9 (AH 119)**, **fn13 (Bach)**, **fn11 (Iyun Tefillah)**, **fn14 (Zohar: 1,800 / Rav Yeiva Saba)** — UNCERTAIN; Zohar Vayishlach locus for specifying the sin found via MB 119:2 (Pri Chadash).
+- **fn10 (Yaavetz/Landsofer)** — UNCERTAIN; caution added (Yaavetz = Altona/Emden; Prague drasha points to Landsofer).
+- **fn12 (Tehillim 37:25)** — VERIFIED.
+- **fn19 (new, Rashi Bereishis 30:8)** — **CORRECTED**: "חיבור" is Menachem ben Saruk's reading cited by Rashi; Rashi's own is persistent wrestling (נתעקשתי והפצרתי).
+- **Preserved UNCERTAIN (non-Sefaria):** fn15 (R' Yaakov Yosef), fn16 (Brisker Rav), fn17 (Baal Shem Tov), fn18 (R' Schorr); Editorial: "השיבנו בחיים / בא נשלום" possible transcription artifacts (noted in Sefer Edition).
+- **Total:** 5 corrections (fn1, fn2 attribution, fn5, fn8, Rashi), 5 confirmations (fn4, fn6 SA, fn12, MB 119:4, Megillah verses), ~12 preserved/flagged. Modified: final MM/2025-07-20 — Shema Koleinu — The Culmination of Our Petitions.html. Sefer Edition: book-rewrites/2025-07-20 — Shema Koleinu — The Culmination of Our Petitions — Sefer Edition.html.
+
+---
+
+## Backfill entry — 2025-08-24 (Batch 8, run 2026-10-05)
+
+### 2025-08-24 — Birkat Modim and Nesias Kapayim
+Method note: mcp__workspace__web_fetch against Sefaria (texts API; search-wrapper returned "Unsupported HTTP method" and was not usable). Corrections applied in place to the final MM HTML (body + notes). Ran/Ri Migash, Yerushalmi, Torat Chaim, Beis Yosef, Mishnah Berurah, Avudraham were not retrievable and left UNCERTAIN.
+- **fn1 (Sotah 40a, Modim DeRabbanan)** — VERIFIED locus and Rav Pappa's "recite all of them". **CORRECTED** list of formulators: Rav, Shmuel, R. Simai, the sages of Neharde'a in his name, Rav Acha bar Yaakov (not R. Shimon bar Menasya). "ברוך א-ל ההודאות" / "אתה הוא ה' אלהינו" are siddur composite wording, not attributed to individual amoraim in the sugya; body line 104 corrected to the actual Rav / Shmuel formulations.
+- **fn2 (Yerushalmi Berachos 2:4, body bows)** — UNCERTAIN (not located); flag added.
+- **fn3 (Torat Chaim; Tehillim 150:6)** — UNCERTAIN (Torat Chaim not located); flag added.
+- **fn4 (Vayikra Rabbah 9:7)** — VERIFIED (R. Pinchas / R. Levi / R. Yochanan in name of R. Menachem of Galya; korbanos and tefillos/hoda'ah). **CORRECTED** SA locus: **OC 51:9** (all *songs* batel except Mizmor LeTodah, hence said to a melody), not korbanos/tefillos; body adjusted. "Modim" = hoda'ah is the speaker's application.
+- **fn5 (Ran, "al she'anu modim lach")** — UNCERTAIN: recording reads "...megash" (Ri Migash?), not located on Sefaria; flag added.
+- **fn6 (Rambam SM Aseh 26; Chinuch 378)** — VERIFIED. **CORRECTED**: "בכל מקום, בכל זמן, בכל יום" is not the Chinuch's wording (practiced every day and at all times; body/notes changed to בכל יום ובכל זמן); the "three mitzvos aseh" are R. Yehoshua ben Levi, **Sotah 38b** (non-ascending kohen transgresses three), not the Chinuch; speaker's "fulfills three" is the converse.
+- **fn7 (Rambam, Hil. Tefillah ch. 15)** — **CORRECTED** to **ch. 14:1-2** (no nesias kapayim at Mincha: people already ate, perhaps wine, a drunk may not duchen; fast-day Mincha decree; Mincha near sunset like Ne'ilah). Rambam does not call it avodah here; avodah = Sotah 38b.
+- **fn8 (Mishnah Tamid 5:1, 7)** — VERIFIED / **CORRECTED**: Tamid 5:1 = three blessings incl. Birkas Kohanim as prayer (Lishkas HaGazis); Tamid **7:2** = kohanim on the Ulam steps, one blessing in the Mikdash, Name as written, hands above head. "Baalei maamados in the azarah" not in these mishnayos (removed; speaker was hedging). Body quote "וידבר ה' אל משה... ויברך את העם" replaced by **Vayikra 9:22** (וישא אהרן את ידיו אל העם ויברכם), the Sotah 38b source for avodah.
+- **fn9 (Rema OC 128:44)** — VERIFIED (Ashkenaz custom, Yom Tov only, only at Musaf; livelihood on Shabbos too; Yom Kippur incl. Ne'ilah/Shacharis in some places). **CORRECTED**: Hebrew "quote" was a paraphrase (removed); dibbur/machshavah (Yeshayahu 58:13) is the speaker's elaboration, not in the Rema. "נשבת גמר" (Editorial) not recoverable; omitted in Sefer Edition.
+- **fn10 (Beis Yosef 128)** — UNCERTAIN (not retrieved); Aruch HaShulchan 128:64 verifies daily duchening in EY, Egypt, Asia.
+- **fn11 (Aruch HaShulchan OC 128)** — locus pinned to **128:64**, VERIFIED "כאילו בת קול יצא שלא להניח לנו לישא כפים". **CORRECTED**: AH records an unnamed tradition ("ומקובלני") of **two** great men of earlier generations, each in his own place; he names neither the Gra nor Reb Chaim and mentions no jail or fire (those are the speaker's/oral tradition; flag added). Body re-worded.
+- **fn12 (Lubavitcher Rebbe sicha on Baal HaTanya)**, **fn15 (9/11 beis din)**, **fn16 (Rav Noach Shimonowitz)**, **fn18 (Baal Shem Tov families)**, **fn19 (Rav Elyashiv)**, **fn20 (Pinsk)** — skip-rule (oral/modern/chassidish); preserved, flags kept. fn15 flag extended per Editorial (roster/page count unverified).
+- **fn13/fn14 (Sheilas Margolios; Rav Frank)** — **CORRECTED** attribution per the recording (Shiur Review): **R' Efraim Zalman Margolios (of Brody)**, not Rabbi Reuven Margoliot; body "Rabbi Margoliot" changed. Title/work not located on Sefaria: UNCERTAIN, flag added.
+- **Body (Editorial)**: garbled "שטעט יקי" resolved from recording ("a yekish shtot, a German city") to יעקישע שטאט.
+- **Total:** 9 corrections (fn1, fn4 SA locus, fn6, fn7, fn8, fn9, fn11, fn13/14 author, body Yekkish), 5 confirmations (fn1 locus, fn4 VR, fn6 Rambam/Chinuch, fn9 Rema, fn11 AH quote), ~11 preserved/flagged. Modified: final MM/2025-08-24 — Birkat Modim and Nesias Kapayim.html. Sefer Edition: book-rewrites/2025-08-24 — Birkat Modim and Nesias Kapayim — Sefer Edition.html.
+
+
+---
+
+## Backfill entries — Batch 7 (ran 2026-10-05; Sefaria pass completed earlier in session)
+
+### 2025-05-25 — Refaeinu and Barech Aleinu
+- **CORRECTED**: Megillah 17a → **17b**; Maharam captivity numbers corrected. Modified: final MM/2025-05-25 html.
+
+### 2025-05-26 — Mitzvat Yishuv Eretz Yisrael
+- Rambam Melachim/Ishus citations pinned; shalosh shevuos added; Megillas Esther author resolved. No flags found.
+
+### 2025-06-15 — Teka B'Shofar in a Time of War
+- **CORRECTED**: fn3, fn7 (Chazon Ish → Chofetz Chaim at Mir), fn10, Hebrew agreement. Pirkei d'R. Eliezer 31 / Megillah 17b VERIFIED. Modified: final MM/2025-06-15 html.
+
+### 2025-06-22 — Hashivah Shofteinu and Birkat HaMinim
+- **FLAGGED**: fn14 Yerushalmi Sukkah vs. Sotah 9:13 possible miscitation (warrants final pin).
+
+### 2025-06-29 — Birkat HaMinim and Birkat Al HaTzaddikim
+- **FLAGGED**: fn25 Terumot 1:1 vs. Chagigah 3:1; fn7 Tehillim 75:11 variant (warrants final pin).
+
+## Backfill entry — 2025-07-06 (Batch 8, run 2026-10-05)
+
+### 2025-07-06 — Birkat Yerushalayim and Tzemach David
+- **fn3 (Tur OC 118)** — VERIFIED; 1,800 count is the darshei reshumos', not Zohar; removed unconfirmed "siman 236".
+- **fn7 (Tosefta Berakhot 3:25)** — **CORRECTED**: only David+Jerusalem combination permitted; Yerushalmi tightened to 4:3; unsupported "later split" dropped.
+- **fn12 (Yoma 10a)** — VERIFIED (Rome/Persia dispute); Megillah 6 parallel dropped.
+- **fn13 (Sanhedrin 98b)** — **CORRECTED**: Menachem is a "some say" opinion, not a school.
+- Confirmed: Megillah 17b, Pesachim 54a. Not re-fetched: fn15 Shabbat 31a.
+- **UNCERTAIN (non-Sefaria)**: fn6, 11, 17, 21, 22 (Rashi Taanis/third Mikdash, Vital cave, Gra kavanah, acrostic, Hirsch quote). Sefer Edition: Hirsch childhood example attributed to Rav Schwab (Hirsch d. 1888) — editorial note.

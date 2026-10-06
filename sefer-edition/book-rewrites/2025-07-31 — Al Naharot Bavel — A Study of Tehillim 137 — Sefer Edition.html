@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Al Naharos Bavel: A Study of Tehillim 137</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">עַל נַהֲרוֹת בָּבֶל — עִיּוּן בְּתְהִלִּים קל״ז</h1>
+  <div class="english-title">Al Naharos Bavel &mdash; A Study of <em>Tehillim</em> 137: Settled, Weeping, and the Harps upon the Willows</div>
+  <div class="sub">Shiur of Rabbi Ephrati &mdash; Special Pre-<em>Tishah B&rsquo;Av</em> Study</div>
+  <div class="date">Recorded <span class="heb-inline">ו׳ אב תשפ״ה</span> &nbsp;&middot;&nbsp; 31 July 2025, three nights before <span class="heb-inline">תשעה באב</span> &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication"><em>Upon <span class="heb-inline">פרק קל״ז</span> of <em>Tehillim</em>: the <em>Malbim</em>&rsquo;s reading of a community settled yet weeping; the <em>Radak</em> on tears that prevent song; the <em>Midrash</em>&rsquo;s account of the march to <em>Bavel</em>, of the harps hung upon the willows, and of the thumbs bitten off; the <em>Alshich</em> on the worst aspect of <em>galus</em>; the question of the <em>malachim</em>; and the closing <em>pesukim</em> reframed as <em>gemul</em>.</em></p>
+
+<h2>I. Why This <em>Perek</em></h2>
+
+<p>It is fitting to gather before <em>Tishah B&rsquo;Av</em> (<span class="heb-inline">תשעה באב</span>) in order to enter the consciousness that the season requires. Among the chapters of <em>Tehillim</em> (<span class="heb-inline">תהלים</span>), none is more suited to the task than <span class="heb-inline">פרק קל״ז</span>, <em>&ldquo;Al Naharos Bavel&rdquo;</em> (<span class="heb-inline">על נהרות בבל</span>), which is recited on weekdays before <em>Birkas HaMazon</em> (<span class="heb-inline">ברכת המזון</span>). The <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) at the opening of <span class="heb-inline">אורח חיים</span> establishes grief over the <em>churban</em> (<span class="heb-inline">חורבן</span>) as a standing obligation, and the <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>), citing the <em>Shelah</em> (<span class="heb-inline">של״ה</span>), records the practice of reciting this <em>perek</em>, with <em>Shir HaMaalos</em> (<span class="heb-inline">שיר המעלות</span>) said in its place on <em>Shabbos</em> and on days when <em>Tachanun</em> is omitted.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> To read the <em>perek</em> in depth, with what <em>Chazal</em> (<span class="heb-inline">חז״ל</span>) and the <em>mefarshim</em> (<span class="heb-inline">מפרשים</span>) have to say, is to set the perspective for what a Jew is meant to feel during <em>Tishah B&rsquo;Av</em> and the days that surround it.</p>
+
+<p><em>Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>) composed this <em>perek</em> long before the <em>churban</em> of the <em>Bayis Rishon</em>, beholding it through <em>ruach hakodesh</em> (<span class="heb-inline">רוח הקודש</span>).<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The image he draws is one that Israel knows well &mdash; burned into the <em>neshamos</em> (<span class="heb-inline">נשמות</span>) of every generation, even of those whose parents and grandparents were the ones who saw it directly. How many paintings of that scene have been made; how many photographs.</p>
+
+<h2>II. <em>Pasuk Alef</em> &mdash; Settled, and Still Weeping</h2>
+
+<blockquote>
+  <div class="heb">עַל נַהֲרוֹת בָּבֶל שָׁם יָשַׁבְנוּ גַּם בָּכִינוּ בְּזָכְרֵנוּ אֶת צִיּוֹן.</div>
+  <div class="trans">By the rivers of Babylon, there we sat, and also wept, when we remembered Zion.</div>
+  <div class="source"><em>Tehillim</em> 137:1</div>
+</blockquote>
+
+<h3>The Literal Reading</h3>
+
+<p>On the plain reading the verse paints a scene of mourners (<em>aveilim</em>, <span class="heb-inline">אבלים</span>) walking the banks of the rivers of <em>Bavel</em> with sacks upon their backs, newly expelled from <em>Yerushalayim</em>, weeping as they remember <em>Tzion</em> (<span class="heb-inline">ציון</span>).</p>
+
+<h3>The <em>Malbim</em>&rsquo;s Reading &mdash; Settled and Weeping</h3>
+
+<p>The <em>Malbim</em> (<span class="heb-inline">מלבי״ם</span>) proposes a different reading.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> One must not suppose for a moment that in <em>Bavel</em> the exiles lacked material comfort (<em>gashmius</em>, <span class="heb-inline">גשמיות</span>); they had it all &mdash; property, commerce, prosperity, whatever a community requires in order to endure in <em>galus</em> (<span class="heb-inline">גלות</span>). It took time to break into the Babylonian network of business and wealth, but they broke in. The <em>Malbim</em> adduces the <em>pesukim</em> in <em>Yirmiyahu</em> (<span class="heb-inline">ירמיהו</span>) which describe how, not long after their arrival, the Jews of <em>Bavel</em> already had homes, fields, and vineyards.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<p>Accordingly, <em>&ldquo;sham yashavnu&rdquo;</em> (<span class="heb-inline">שם ישבנו</span>), on the <em>Malbim</em>&rsquo;s reading, does not describe sitting on the floor in the manner of a mourner. It means that they settled; as the Yiddish idiom has it, <em>&ldquo;es iz geven in ordnung&rdquo;</em> (<span class="heb-inline">עס איז געווען אין ארדנונג</span>) &mdash; it was in order; they had what they needed. And then: <em>&ldquo;gam bachinu&rdquo;</em> (<span class="heb-inline">גם בכינו</span>) &mdash; <em>even so</em> they wept. Despite the comfort, despite the material ease, they retained the capacity to weep for what they had lost.</p>
+
+<h2>III. <em>Pasuk Beis</em> &mdash; The Harps upon the Willows</h2>
+
+<blockquote>
+  <div class="heb">עַל עֲרָבִים בְּתוֹכָהּ תָּלִינוּ כִּנֹּרוֹתֵינוּ.</div>
+  <div class="trans">Upon the willows in its midst we hung our harps.</div>
+  <div class="source"><em>Tehillim</em> 137:2</div>
+</blockquote>
+
+<h3>What the <em>Kinnoros</em> Signify</h3>
+
+<p>What does a person take with him when he is expelled from his homeland? On the eve of the <em>Shoah</em>, what did the generation of our grandparents take? The most precious, the most sentimental, the most valuable thing they owned. <em>Dovid HaMelech</em> says that when <em>Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) went forth from <em>Yerushalayim</em>, they took their harps &mdash; their <em>kinnoros</em> (<span class="heb-inline">כנורות</span>), their violins.</p>
+
+<p>The <em>kinnoros</em> represent the bond of <em>Klal Yisrael</em> with <em>HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>). When Jews ascended to the <em>Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>) for the <em>avodah</em> (<span class="heb-inline">עבודה</span>), the <em>Leviim</em> (<span class="heb-inline">לוים</span>) sang <em>shir v&rsquo;zimrah</em>. That divine music &mdash; not music as it is known today, but holy <em>niggunim</em>, <em>kedushah</em> rendered in sound &mdash; awakened <em>dveikus</em> (<span class="heb-inline">דבקות</span>) with <em>HaKadosh Baruch Hu</em>. <em>Nevuah</em> (<span class="heb-inline">נבואה</span>) in ancient times came by way of music; the <em>kinnoros</em> were the instrument of that connection. That is what the exiles carried with them.</p>
+
+<h3>The Willows &mdash; <em>Salix Babylonica</em></h3>
+
+<p><em>Dovid HaMelech</em> describes the harps hung upon the <em>aravim</em> (<span class="heb-inline">ערבים</span>) beside the Euphrates. In botanical taxonomy these trees are named <em>Salix babylonica</em> &mdash; the Babylonian willow, named in consequence of this very verse &mdash; and in English they are called weeping willows, for their drooping branches that appear to mourn. <em>Klal Yisrael</em> hung their harps upon trees that themselves seemed to weep.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a></p>
+
+<h3>The <em>Radak</em> &mdash; When Tears Prevent Song</h3>
+
+<p>The <em>Radak</em> (<span class="heb-inline">רד״ק</span>) explains that <em>Klal Yisrael</em> had taken the harps in the hope of a quiet interval &mdash; a moment of <em>menuchas hanefesh</em> (<span class="heb-inline">מנוחת הנפש</span>) in which to take them out and play, and to hear again the melodies that had stirred <em>dveikus</em> in the <em>Beis HaMikdash</em>.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> When that moment finally arrived, they began to play &mdash; and could not continue. The memory of <em>Tzion</em>, of the glory of the <em>Beis HaMikdash</em>, broke through; they wept and stopped. <em>&ldquo;We cannot play. It is the wrong time. We cannot play <em>shir Hashem</em> (<span class="heb-inline">שיר ה׳</span>).&rdquo;</em> And so they hung the <em>kinnoros</em> upon the weeping willows: <em>&ldquo;You belong here now. We are too overcome. Your time will come; but this is a time to weep, not to play <em>shir Hashem</em>.&rdquo;</em></p>
+
+<h3>The <em>Malbim</em> &mdash; The Sweetness of <em>Bavel</em></h3>
+
+<p>The <em>Malbim</em>&rsquo;s <em>chiddush</em> (<span class="heb-inline">חידוש</span>) is sharper.<a class="footnote-ref" href="#fn3">[3]</a> He reads <em>aravim</em> as a play on words: <em>aravim</em> as willows, and <em>aravim</em> in the sense of sweet things (<em>mil&rsquo;shon areivim</em>, <span class="heb-inline">מלשון ערבים — נעימים</span>). <em>Because</em> of the sweetness of <em>Bavel</em> they hung up their harps.</p>
+
+<p><em>Bavel</em> tempted them with the pleasures of <em>olam hazeh</em> (<span class="heb-inline">עולם הזה</span>): <em>&ldquo;Come and join us; sing and dance with us; eat our food; enjoy our wealth; enjoy <em>Bavel</em>.&rdquo;</em> And precisely because of that sweetness &mdash; <em>&ldquo;al aravim b&rsquo;socha taliynu kinnoroseinu&rdquo;</em> (<span class="heb-inline">על ערבים בתוכה תלינו כנרותינו</span>) &mdash; <em>&ldquo;How can we play music that celebrates the materialism of <em>Bavel</em>? How can we celebrate their culture, their way of life, their <em>olam hazeh</em>, with our harps?&rdquo;</em></p>
+
+<p>The sweetness of <em>olam hazeh</em> &mdash; what does it represent? It represents a world that hates <em>ruchnius</em> (<span class="heb-inline">רוחניות</span>), that hates <em>yiddishkeit</em> (<span class="heb-inline">יידישקייט</span>), that hates Jews. And the reason for the hatred is that Israel possesses the <em>Torah</em> and a bond with <em>HaKadosh Baruch Hu</em>; Israel is the antithesis of the celebration of <em>olam hazeh</em> for its own sake. Israel employs <em>olam hazeh</em> in the service of <em>avodah</em>, and <em>avodah</em> is far higher.</p>
+
+<p>When, therefore, <em>Bavel</em> called Israel to dance to its music, the Jews of that generation answered no: <em>&ldquo;Sham yashavnu&rdquo;</em> &mdash; though we settled here; <em>&ldquo;gam bachinu&rdquo;</em> &mdash; we still weep, because we still yearn for <em>kedushah</em> (<span class="heb-inline">קדושה</span>); <em>&ldquo;taliynu kinnoroseinu&rdquo;</em> &mdash; we hung up our harps. <em>&ldquo;Forgive us, <em>Nevuchadnetzar</em>; forgive us, <em>Bavel</em>; forgive us, <em>umos haolam</em> (<span class="heb-inline">אומות העולם</span>). We know what we have lost. We may not possess it now, but we yearn to be reconnected to it, and the two cannot be mixed.&rdquo;</em></p>
+
+<h2>IV. <em>Pesukim Gimmel</em>&ndash;<em>Daled</em> &mdash; <em>Bavel</em>&rsquo;s Demand and the Jewish Refusal</h2>
+
+<blockquote>
+  <div class="heb">כִּי שָׁם שְׁאֵלוּנוּ שׁוֹבֵינוּ דִּבְרֵי שִׁיר וְתוֹלָלֵינוּ שִׂמְחָה שִׁירוּ לָנוּ מִשִּׁיר צִיּוֹן.</div>
+  <div class="trans">For there our captors asked of us words of song, and our tormentors asked for joy: &ldquo;Sing for us from the songs of Zion.&rdquo;</div>
+  <div class="source"><em>Tehillim</em> 137:3</div>
+</blockquote>
+
+<p>The word <em>&ldquo;toluleinu&rdquo;</em> (<span class="heb-inline">תוללינו</span>) derives from the root <em>t-l-l</em>, the same root as the harps that were hung: <em>Bavel</em> demanded that they take down what they had hung up, and play. <em>Bavel</em> had seen <em>Klal Yisrael</em> hang the harps upon the willows and declared: <em>&ldquo;No! <em>Ruchnius</em> is your past. You are out of your land. The Jewish story of connection with <em>HaKadosh Baruch Hu</em> in the <em>Beis HaMikdash</em> is over. <em>Olam hazeh</em> is the present. You are a nation among the nations now.&rdquo;</em></p>
+
+<h3>What Was Demanded</h3>
+
+<p>The <em>Malbim</em> reads the demand with precision. Every nation has an anthem &mdash; a song that boasts of its wealth, its resources, its power, its talents. <em>Bavel</em> asked: <em>&ldquo;What is yours?&rdquo;</em> Israel&rsquo;s song was <em>shir Hashem</em> &mdash; the songs of the <em>Beis HaMikdash</em>, the <em>shir shel yom</em> (<span class="heb-inline">שיר של יום</span>), the chapters of <em>Tehillim</em> (<em>kapitlach Tehillim</em>, <span class="heb-inline">קפיטלעך תהלים</span>), the <em>shirah</em> of the <em>hashraas haShechinah</em> (<span class="heb-inline">השראת השכינה</span>).</p>
+
+<p>And <em>Bavel</em> sought something worse still. <em>&ldquo;Do not stop singing <em>shir Hashem</em>. We wish to hear it &mdash; the way you sang and danced to <em>HaKadosh Baruch Hu</em> in the <em>Beis HaMikdash</em>. Take that very song and change only the words. Cut and paste. Where you sang to <em>HaKadosh Baruch Hu</em>, sing to <em>Bavel</em> &mdash; the same intensity, the same passion, the same enthusiasm &mdash; for <em>olam hazeh</em>.&rdquo;</em></p>
+
+<p>Israel refused. At that moment <em>Klal Yisrael</em> preserved their dignity (<em>dignitet</em>, <span class="heb-inline">דיגניטעט</span>): <em>&ldquo;We are not like the <em>umos haolam</em>. We will not dance to the tunes of the nations of the world. We will not sing their music.&rdquo;</em> The point cuts deep, and it is not narrowly about Jewish or non-Jewish music. It concerns taking <em>shir Hashem</em> and bending it into a celebration of <em>olam hazeh</em>. That is what <em>Bavel</em> wanted; that is what <em>Klal Yisrael</em> would not give.</p>
+
+<blockquote>
+  <div class="heb">אֵיךְ נָשִׁיר אֶת שִׁיר ה׳ עַל אַדְמַת נֵכָר.</div>
+  <div class="trans">How shall we sing the song of Hashem upon foreign soil?</div>
+  <div class="source"><em>Tehillim</em> 137:4</div>
+</blockquote>
+
+<p><em>Dovid HaMelech</em> asks: how can one request of a Jew who has known <em>kedushah</em> in the <em>Beis HaMikdash</em> &mdash; who lived within the <em>hashraas haShechinah</em> that confirmed itself daily, who could approach a <em>navi</em> (<span class="heb-inline">נביא</span>) and ask, <em>&ldquo;What is my task?&rdquo;</em> &mdash; to sing <em>shir Hashem</em> upon the soil of strangers? It is impossible. One cannot expect a Jew who knows what <em>shir Hashem</em> is, and what <em>shir Tzion</em> is, to celebrate the materialism of <em>Bavel</em> with the songs of <em>Tzion</em>. The two do not go together.</p>
+
+<h2>V. The <em>Midrash</em> &mdash; The Brutality of the March</h2>
+
+<p>A Jew must know this <em>Midrash</em> in order to know who he is.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<p>The <em>Midrash</em> on the first <em>pasuk</em> teaches that <em>Bavel</em> did not allow the exiles to sit for a moment. They were driven out of <em>Yerushalayim</em> and made to walk and walk &mdash; in chains, hungry, thirsty, beneath the burning Middle Eastern sun. It was <em>Tishah B&rsquo;Av</em>. No food, no drink, metal chains, columns marched in single file. The echo of the <em>Shoah</em> is unmistakable: <em>schnell, schnell</em> &mdash; the guards&rsquo; shouted command to hurry &mdash; and dogs barking. Go. No time to think. No time for a moment of <em>menuchas hanefesh</em>.</p>
+
+<p>Even the simplest human need &mdash; to weep, to begin to come to terms emotionally with the tragedy &mdash; the Babylonians would not permit. After losing so much, a person needs to weep. The first time they were permitted to sit was <em>&ldquo;al naharos Bavel&rdquo;</em>, at the Euphrates, after a tremendous distance. <em>&ldquo;Sham yashavnu&rdquo;</em> &mdash; <em>there</em>, finally, after so many days, they could sit; and for the first time they could weep.</p>
+
+<h3>The <em>Alshich</em> &mdash; The Worst Aspect of <em>Galus</em></h3>
+
+<p>The <em>Alshich HaKadosh</em> (<span class="heb-inline">אלשיך הקדוש</span>) asks: what is the worst aspect of <em>galus Bavel</em>? What is the worst aspect of the <em>churban Beis HaMikdash</em>?<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> It is not the destruction of the <em>Beis HaMikdash</em> itself, and it is not the geographic exile. The worst of it is that they did not let us weep.</p>
+
+<p>To forbid a Jew to weep is the worst <em>galus</em>. And perhaps the <em>Alshich</em> intends more than the physical prevention. When a Jew engages too deeply with <em>olam hazeh</em>, when he dulls his sensitivity to <em>kedushah</em> &mdash; to <em>yiddishkeit</em>, to the <em>Beis HaMikdash</em>, to the <em>Shechinah HaKedoshah</em> (<span class="heb-inline">שכינה הקדושה</span>) &mdash; when he becomes like <em>Bavel</em> rather than like the Jews who said no, then he can no longer weep. Not because anyone forces him, but because desensitization has set in. He knows that he is supposed to weep; he knows that there is something to weep about; but there is a numbness, and the tears do not come.</p>
+
+<h3>The Soldier at the <em>Kosel</em></h3>
+
+<p>The well-known account of 1967 illustrates the point.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> When the Israeli forces reached the <em>Kosel</em> (<span class="heb-inline">כותל</span>), the cry went up: <em>&ldquo;Har HaBayis b&rsquo;yadeinu! HaKosel b&rsquo;yadeinu!&rdquo;</em> (<span class="heb-inline">הר הבית בידינו! הכותל בידינו!</span>) Jews rushed from across <em>Yerushalayim</em> to embrace the stones &mdash; to pray, to dance, to weep. Among them stood a soldier from a kibbutz, a secular soldier from a non-religious upbringing, weeping. Beside him stood a religious soldier of his platoon &mdash; a young man with a <em>kippah</em> and <em>tzitzis</em> &mdash; also weeping. The religious soldier asked: <em>&ldquo;I understand why I am crying. Why are you?&rdquo;</em></p>
+
+<p>The secular soldier answered: <em>&ldquo;Do you know why I am crying? I am crying because I do not know what you are crying about. I do not understand what there is to cry about &mdash; and that itself makes me cry.&rdquo;</em></p>
+
+<p>Only a Jew could give that answer. The <em>neshamah</em> of a Jew, even when buried beneath decades of secular life, knows that there is something to weep about. The Jews of <em>Bavel</em> retained that capacity; many in <em>galus</em>, across our generations, have not. The <em>peshat</em> of the <em>Alshich</em> stands.</p>
+
+<h2>VI. <em>Nevuchadnetzar</em>&rsquo;s Cruise and the Pride of the Exiles</h2>
+
+<p>The <em>Midrash</em> continues. As the Jews walked along the river, <em>Nevuchadnetzar</em> (<span class="heb-inline">נבוכדנצר</span>) was on a ship sailing the Euphrates beside them, his officers and nobles (<em>sarav v&rsquo;gedolav</em>, <span class="heb-inline">שריו וגדוליו</span>) with him, <em>kol minei zemer</em> (<span class="heb-inline">כל מיני זמר</span>) playing royal music, eating and drinking and carousing (<em>ochlim v&rsquo;shosim um&rsquo;karkerin</em>, <span class="heb-inline">אוכלים ושותים ומקרקרין</span>). The contrast is complete: the oppressor in luxury; the oppressed in chains.</p>
+
+<h3>Heads Held High</h3>
+
+<p>Watching the Jews walk into <em>galus</em>, <em>Nevuchadnetzar</em> saw something extraordinary. Their heads were held high. Their bearing was dignified, though they were stripped, in shackles, bereft of everything, carrying a sack of clothing and a worn harp or violin. A Jew is a Jew. Even leaving <em>Yerushalayim</em> with smoke billowing behind them, even with everything taken from them, they did not bow their heads.</p>
+
+<p><em>Nevuchadnetzar</em> demanded of his servants: <em>&ldquo;What is this? How do these Jews walk into <em>galus</em> with their heads held high? Take loads of sand and place them upon their backs, that they should not walk with their heads erect!&rdquo;</em> The servants gathered sacks (the <em>Midrash</em> says they fashioned them from books), filled them with sand, and set them upon every Jew. Now they could no longer hold their heads high; bent and hunched, they walked like those who were truly going into <em>galus</em>. <em>Nevuchadnetzar</em> could not endure the sight of a Jew walking into <em>galus</em> with his dignity intact.</p>
+
+<h3><em>HaKadosh Baruch Hu</em>&rsquo;s Decision</h3>
+
+<p>At that moment, the <em>Midrash</em> teaches, when even the pride of <em>Klal Yisrael</em> was being stripped away &mdash; when <em>Bavel</em> declared, <em>&ldquo;You are no longer a Jew; that is your past; you are like everyone else&rdquo;</em> &mdash; <em>HaKadosh Baruch Hu</em> decided: <em>&ldquo;Enough (<em>dayeinu</em>, <span class="heb-inline">דיינו</span>). If this is how My children are treated, let the world return to <em>tohu vavohu</em> (<span class="heb-inline">תוהו ובוהו</span>); let us begin again. This is not the world I created.&rdquo;</em></p>
+
+<h3>The <em>Malachim</em>&rsquo; Plea</h3>
+
+<p>The <em>malachim</em> (<span class="heb-inline">מלאכים</span>) came before <em>HaKadosh Baruch Hu</em>: <em>&ldquo;<em>Ribbono shel Olam</em> (<span class="heb-inline">רבונו של עולם</span>), how can You destroy the world? It is grievous enough that You have destroyed the <em>Beis HaMikdash</em>; must You now destroy the whole of creation?&rdquo;</em></p>
+
+<p><em>HaKadosh Baruch Hu</em> answered &mdash; and the language of the <em>Midrash</em> is severe &mdash; <em>&ldquo;<span class="heb-inline">תנחומין הללו שאתם מנחמים אותי ניאוצין הן לפני</span> &mdash; these consolations you offer Me are provocations before Me.&rdquo;</em> The <em>Midrash</em> adds the words of <em>Yeshayahu</em> (<span class="heb-inline">ישעיהו כ״ב:ד׳</span>): <em>&ldquo;<span class="heb-inline">אל תאיצו לנחמני</span>.&rdquo;</em> Comfort from the <em>malachim</em> is unwelcome at that hour. <em>&ldquo;Do you have a complaint? Go down to the world below. Go to those Jews walking <em>&lsquo;al naharos Bavel&rsquo;</em> and lift the burdens from their backs.&rdquo;</em></p>
+
+<p>At once the <em>malachim</em> descended and removed the loads. Eventually <em>Nevuchadnetzar</em> himself restored some clothing to the exiles. For a moment their dignity was restored &mdash; because the <em>malachim</em> intervened, after <em>HaKadosh Baruch Hu</em> told them to remedy the matter themselves rather than to offer consolation.</p>
+
+<h2>VII. The Question, and Its Midrashic Answer</h2>
+
+<h3>The Question</h3>
+
+<p>A question arises here &mdash; one that sounds sacrilegious, and yet one that must be asked.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> The one who asks it is a grandson of survivors of the <em>Shoah</em> and a great-grandson of Jews who died <em>al kiddush Hashem</em> (<span class="heb-inline">על קידוש השם</span>). Israel knows what it is to be killed and to be exiled; and it has seen what the evil ones (<em>yemach shemam</em>, <span class="heb-inline">ימח שמם</span>) did on <em>Simchas Torah</em> (<span class="heb-inline">שמחת תורה</span>) two years ago. None of this is foreign.</p>
+
+<p>Where were the <em>malachim</em> seventy-five, eighty years ago, in Auschwitz? When Jews descended from the trains naked, carrying whatever they could salvage from their homes? When children were torn from their mothers and sent to the right and to the left? Where was <em>HaKadosh Baruch Hu</em> through every expulsion, every pogrom, every persecution across the centuries? Where were the <em>malachim</em> in <em>Kfar Aza</em> (<span class="heb-inline">כפר עזה</span>), in <em>Moshav Be&rsquo;eri</em> (<span class="heb-inline">מושב בארי</span>)? If <em>HaKadosh Baruch Hu</em> acts thus when He sees His children leaving <em>Yerushalayim</em> for <em>Bavel</em> &mdash; declaring <em>&ldquo;dayeinu; I shall destroy the world; remove the loads from their backs&rdquo;</em> &mdash; where were the <em>malachim</em> in all the exiles since?</p>
+
+<p>It is known that such questions are not to be asked, yet they trouble every one of us. The <em>Midrash</em> does not answer the question on its own terms; it reframes it as a question put to the questioner. What the <em>Midrash</em> says next is the beginning of that reframing.</p>
+
+<h3>The Demand to Sing</h3>
+
+<p>As the Jews sat for the first time at the rivers of <em>Bavel</em> &mdash; hungry, thirsty, exhausted &mdash; <em>Nevuchadnetzar</em> ordered them: <em>&ldquo;Rise and prepare yourselves. I am about to begin a feast upon this ship. Take your harps down from the willows and play for me.&rdquo;</em></p>
+
+<p>His own band possessed <em>kol minei kli zemer</em>, and it did not suffice. He wanted the Jew&rsquo;s music. He wanted to take <em>shir Hashem</em> and uproot it from the heart, redirecting that intensity toward what <em>Bavel</em> represents: materialism.</p>
+
+<p>The <em>Midrash</em> relates that <em>Klal Yisrael</em> looked at one another and said: <em>&ldquo;Is it not enough that we destroyed the <em>Beis HaMikdash</em> through our <em>aveiros</em> (<span class="heb-inline">עבירות</span>)? Now we are to stand and play, upon those very same instruments, before this dwarf (<em>hanenas hazeh</em>, <span class="heb-inline">הננס הזה</span>), before this wicked one, before his <em>avodah zarah</em> (<span class="heb-inline">עבודה זרה</span>)?&rdquo;</em></p>
+
+<h3>What This Teaches</h3>
+
+<p>One must pause and take in what the <em>Midrash</em> is teaching. Even hungry, thirsty, beneath heavy loads, even after losing his <em>ruchnius</em> and his world, the Jew can look at the man who did this to him, at the <em>rasha</em> (<span class="heb-inline">רשע</span>), and say: <em>&ldquo;I should stand and play for this dwarf?&rdquo;</em></p>
+
+<p>That is a Jew. <em>Nevuchadnetzar</em> was victorious; he had burned and destroyed everything sacred &mdash; and now he wants the Jew to play for him? The Jews understood. They had the sensitivity to recognize that he was a dwarf in the larger scheme of things: physically, as <em>Chazal</em> say, <em>Nevuchadnetzar</em> was small,<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> but far more fundamentally, in the order of the universe. Shall one take <em>shir Hashem</em> and play it for one so small? Play it before his <em>avodah zarah</em>?</p>
+
+<h3>The <em>Mashal</em> of the Queen</h3>
+
+<p>The <em>Midrash</em> offers a <em>mashal</em> (<span class="heb-inline">משל</span>). There was a queen married to a king, both of royal lineage. One day he said: <em>&ldquo;My queen, pour me a cup of wine.&rdquo;</em> She was in a rebellious mood and refused. He expelled her from his house for refusing to pour wine for the king.</p>
+
+<p>She wandered, seeking a home, seeking someone to marry. At length she found a husband &mdash; but he was a <em>mukeh shechin</em> (<span class="heb-inline">מוכה שחין</span>), covered in boils from head to foot, an awful sight. Yet that was who she found.</p>
+
+<p>One day the <em>mukeh shechin</em> said to her: <em>&ldquo;My dear wife, pour me a cup of wine.&rdquo;</em></p>
+
+<p>What did she answer? The <em>Midrash</em> records: <em>&ldquo;<span class="heb-inline">ריקה</span>! Empty-headed fool! I did not pour wine for the king when he asked. I erred; I sinned; I should have. But <strong>now you want me to pour wine for you &mdash; for a <em>mukeh shechin</em>?</strong>&rdquo;</em></p>
+
+<p>So <em>Klal Yisrael</em>: <em>&ldquo;I did not pour wine for <em>HaKadosh Baruch Hu</em>. I did not play music for <em>HaKadosh Baruch Hu</em> as I should have, and that is why the <em>Beis HaMikdash</em> was destroyed. Now you ask me to play music for the nations of the world, for <em>Bavel</em>, for this dwarf, for this wicked one, for this idolatry? Shall I pour wine for the <em>mukeh shechin</em>? No. I am still a Jew. I have my pride, my <em>dignitet</em>. We will not sell ourselves to the nations who would have us dance to their tunes.&rdquo;</em></p>
+
+<h3>The Bitten Thumbs</h3>
+
+<p>The <em>Midrash</em> records &mdash; sparing the gory details &mdash; that the Jews saw no way out of the demand: he would force them. So they took their right thumbs, the fingers needed to play the strings, and bit them off. They maimed themselves, so that they would be unable to play the harps for <em>Nevuchadnetzar</em>, for his <em>avodah zarah</em>, for this dwarf.</p>
+
+<p>And then they said the next <em>pasuk</em> &mdash; not <em>&ldquo;we will not&rdquo;</em> but <em>&ldquo;eich nashir&rdquo;</em> (<span class="heb-inline">איך נשיר</span>), <em>&ldquo;how can we?&rdquo;</em> Our fingers are gone; we have no hands left; we cannot play. They held up their maimed hands to <em>Nevuchadnetzar</em>: <em>&ldquo;We cannot.&rdquo;</em></p>
+
+<h3><em>Nevuchadnetzar</em>&rsquo;s Rage and the Secret of <em>Galus</em></h3>
+
+<p>This enraged <em>Nevuchadnetzar</em>. Herein lies the secret of <em>galus</em>. He wished to tear the <em>Beis HaMikdash</em> from their hearts, to uproot <em>ruchnius</em>. And the Jews bit off their fingers rather than play the music of <em>olam hazeh</em>, the music of materialism, the music of the dwarf.</p>
+
+<p>He was enraged because he understood, in that moment, what a Jew is. One may take the <em>Beis HaMikdash</em> from him; one may take <em>Eretz Yisrael</em> and <em>Yerushalayim</em>; one may take <em>ruchnius</em> from him &mdash; and he remains a Jew, who looks upon his captor as upon a dwarf. <em>You are nothing.</em></p>
+
+<div class="pullquote"><em>One may take the Beis HaMikdash from him; one may take Eretz Yisrael and Yerushalayim; one may take ruchnius from him &mdash; and he is still a Jew.</em></div>
+
+<p>At that moment <em>Nevuchadnetzar</em> became so enraged that he slaughtered Jews by the thousands upon thousands before they ever reached <em>galus</em> &mdash; killed brutally by <em>Nevuchadnetzar</em> and his soldiers. The <em>Midrash</em> reads <em>&ldquo;v&rsquo;toluleinu simchah&rdquo;</em> (<span class="heb-inline">ותוללינו שמחה</span>) in this light: <em>&ldquo;<span class="heb-inline">תלי תלים של הרוגים</span>&rdquo;</em> &mdash; heaps upon heaps of the slain.</p>
+
+<p>Yet the <em>Midrash</em> says that this is a <em>mizmor</em> (<span class="heb-inline">מזמור</span>), a song of <em>Dovid HaMelech</em>: there was <em>simchah</em>. It was not any pleasure in the deaths themselves; it was the joy of restraint &mdash; of not having given in, of not having sold themselves to the music of the nations. When they turned and saw the heaps of corpses upon the ground, that very sight brought joy into their hearts, because they still knew that they were Jews, the nation of <em>HaKadosh Baruch Hu</em>.</p>
+
+<h3>The Answer to the Question</h3>
+
+<p>The moment a Jew goes out into <em>galus</em>, he is already re-establishing his connection with the <em>Beis HaMikdash</em> and with <em>HaKadosh Baruch Hu</em>. That is a Jew. The very same Jews through whose sin the <em>Beis HaMikdash</em> was destroyed, when they see how <em>Nevuchadnetzar</em> treats them, respond at once: <em>&ldquo;We are still Jews. We will not give you <em>shir Tzion</em>. How could the joy we had in singing in the <em>Beis HaMikdash</em> be equated with the songs of <em>olam hazeh</em>? We cannot. Our hands are maimed. The harps belong upon the weeping willows. That is where they belong.&rdquo;</em></p>
+
+<p>And the question returns, with the answer within it: <strong>Are we ready to bite off our fingers rather than dance and sing to the tunes of the nations of the world?</strong></p>
+
+<p>The Jews of that generation were ready &mdash; and they did so. The <em>malachim</em> descended for them. If we are not prepared to make even a small sacrifice in our <em>olam hazeh</em> for the sake of our <em>yiddishkeit</em>, then the calculus is different.</p>
+
+<h2>VIII. The Essence of <em>Galus</em></h2>
+
+<p><em>Galus</em> is not merely sitting on <em>Tishah B&rsquo;Av</em> and reciting <em>kinnos</em> (<span class="heb-inline">קינות</span>) for a few hours and calling it a day. <em>Galus</em> means the victory of <em>olam hazeh</em> &mdash; the triumph of <em>Bavel</em>, of materialism, of excessive luxury, of eating and drinking without restraint. It means living a coarse life (a <em>grub</em> life, in the Yiddish term), the life of a <em>goy</em>, instead of living as a Jew is meant to live: in the <em>Beis HaMikdash</em>, with <em>kedushah</em> and <em>taharah</em> (<span class="heb-inline">טהרה</span>), elevating all materiality toward something transcendent.</p>
+
+<p>The moment a Jew declares, <em>&ldquo;I no longer enjoy my <em>Mikdash</em>; I have no pleasure from it; at least let me enjoy life &mdash; eat, drink, be merry; let me enjoy the prosperity <em>Bavel</em> offers&rdquo;</em> &mdash; at that moment that Jew loses the ability to weep.</p>
+
+<h3>The <em>Gemara</em> in <em>Bava Basra</em> 60b</h3>
+
+<p>The <em>Gemara</em> (<span class="heb-inline">גמרא</span>) records that at the time of the <em>churban</em> many Jews began to abstain from meat and wine.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> <em>Rabbi Yehoshua</em> (<span class="heb-inline">רבי יהושע</span>) approached them: <em>&ldquo;Why?&rdquo;</em> They answered: <em>&ldquo;How can we eat meat? How can we drink wine? Meat was brought just now as <em>korbanos</em> (<span class="heb-inline">קרבנות</span>) in the <em>Beis HaMikdash</em>, drawing us close to <em>HaKadosh Baruch Hu</em>; wine was poured as <em>nesachim</em> (<span class="heb-inline">נסכים</span>) upon the <em>mizbeach</em> (<span class="heb-inline">מזבח</span>), bringing us to <em>dveikus</em>. Now? It has no taste. How can we?&rdquo;</em></p>
+
+<p><em>Rabbi Yehoshua</em> replied: <em>&ldquo;If so, we should also not eat bread, for the <em>menachos</em> (<span class="heb-inline">מנחות</span>) have ceased. We should not eat fruit, for the <em>bikkurim</em> (<span class="heb-inline">ביכורים</span>) have ceased. We should not even drink water, for the water libation has ceased.&rdquo;</em> They were silent.</p>
+
+<p>The <em>Gemara</em> concludes with the principle that a decree is not imposed upon the <em>tzibbur</em> (<span class="heb-inline">ציבור</span>) unless the majority can abide by it (<span class="heb-inline">גזירה שאין הציבור יכול לעמוד בה</span>). The Nine Days alone are difficult enough; every few seconds there is another <em>siyum</em> on Zoom or elsewhere. Universal abstention cannot be imposed <em>l&rsquo;maaseh</em> (<span class="heb-inline">למעשה</span>). Yet the sensitivity that the <em>Midrash</em> records &mdash; <em>&ldquo;How can I enjoy any <em>olam hazeh</em> when I do not have the <em>Beis HaMikdash</em>?&rdquo;</em> &mdash; is the spirit of the <em>halachah</em> (<span class="heb-inline">הלכה</span>), even if it is not the letter.</p>
+
+<h2>IX. <em>Pesukim Hei</em>&ndash;<em>Vav</em> &mdash; <em>&ldquo;Im Eshkachaich Yerushalayim&rdquo;</em></h2>
+
+<blockquote>
+  <div class="heb">אִם אֶשְׁכָּחֵךְ יְרוּשָׁלִָם תִּשְׁכַּח יְמִינִי. תִּדְבַּק לְשׁוֹנִי לְחִכִּי אִם לֹא אֶזְכְּרֵכִי אִם לֹא אַעֲלֶה אֶת יְרוּשָׁלִַם עַל רֹאשׁ שִׂמְחָתִי.</div>
+  <div class="trans">If I forget you, O Jerusalem, may my right hand forget its skill. May my tongue cleave to my palate if I do not remember you, if I do not raise Jerusalem above my chiefest joy.</div>
+  <div class="source"><em>Tehillim</em> 137:5&ndash;6</div>
+</blockquote>
+
+<p>From this <em>pasuk</em> the <em>Gemara</em> derives a foundational principle: at every moment of joy &mdash; even the greatest <em>simchah</em> of one&rsquo;s life, the night of a <em>chasunah</em> (<span class="heb-inline">חתונה</span>) &mdash; ashes are placed upon the head of the <em>chasan</em> (<span class="heb-inline">חתן</span>), as an expression of the phrase <em>&ldquo;al rosh simchasi&rdquo;</em> (<span class="heb-inline">על ראש שמחתי</span>).</p>
+
+<p>It is not merely a token. There is no real <em>simchah</em> any longer. We once had real <em>simchah</em>; perhaps our senses are too dulled to know what we are missing. But at the very least we should know how a Jew is supposed to think. The Jews of <em>Bavel</em> refused meat and wine because the meat in their mouths lacked the salt of <em>kedushah</em>. There is no true joy in pure materialism: pleasure to the senses, yes, but devoid of meaning. That is why a <em>chasan</em> wears ashes: <em>&ldquo;In truth, I do not have complete joy. This is not the wholeness of <em>simchah</em> we had in the days of the <em>Beis HaMikdash</em>.&rdquo;</em></p>
+
+<p><em>&ldquo;Tidbak leshoni l&rsquo;chikki&rdquo;</em> (<span class="heb-inline">תדבק לשוני לחכי</span>) &mdash; let my tongue cleave to the roof of my mouth if I do not remember <em>Yerushalayim</em> above my highest joy. One may sing a beautiful song for <em>Yerushalayim</em> beneath the <em>chuppah</em> (<span class="heb-inline">חופה</span>); what matters is the thought at that moment: that we are missing the real joy. We may be too deep in <em>olam hazeh</em> to yearn for it truly. But we should at least know what we are supposed to yearn for.</p>
+
+<p>By the logic of the <em>Malbim</em> the <em>pesukim</em> fit precisely: the more one enjoys <em>Bavel</em>, the more one engages with the music and dancing of the nations &mdash; beckoning, <em>&ldquo;come and join us; you are no longer the nation of <em>HaKadosh Baruch Hu</em>; you are like all other nations&rdquo;</em> &mdash; the more one loses the ability to weep, the capacity to yearn for real things.</p>
+
+<h2>X. <em>Pasuk Zayin</em> &mdash; <em>Edom</em> on the Sidelines</h2>
+
+<blockquote>
+  <div class="heb">זְכֹר ה׳ לִבְנֵי אֱדוֹם אֵת יוֹם יְרוּשָׁלִָם הָאֹמְרִים עֱרוּ עֱרוּ עַד הַיְסוֹד בָּהּ.</div>
+  <div class="trans">Remember, Hashem, against the children of Edom the day of Jerusalem, those who said: &ldquo;Raze it, raze it, to its very foundation!&rdquo;</div>
+  <div class="source"><em>Tehillim</em> 137:7</div>
+</blockquote>
+
+<p>An odd shift: the <em>perek</em> speaks of <em>Bavel</em>, the first <em>galus</em>; <em>Edom</em> (<span class="heb-inline">אדום</span>) is the last, hundreds of years later. Why does <em>Dovid HaMelech</em> fast-forward to <em>Edom</em>?</p>
+
+<h3>Two Approaches</h3>
+
+<ul>
+  <li>The <em>Midrash</em>: during the <em>churban</em> of the <em>Bayis Rishon</em>, the Babylonians destroyed, while the Edomites stood on the sidelines, cheering and jeering, urging <em>Bavel</em>: <em>&ldquo;Do not stop! Burn it to the ground! <em>Aru, aru, ad hayesod bah!</em>&rdquo;</em> <em>Dovid HaMelech</em> pleads: <em>&ldquo;HaKadosh Baruch Hu, remember that they laughed and encouraged <em>Bavel</em> to make it worse.&rdquo;</em> The <em>Malbim</em> likewise reads <em>Edom</em> as those who aided the destruction.</li>
+  <li>An alternate reading: <em>Dovid HaMelech</em> refers forward to the <em>churban Bayis Sheni</em>, when <em>Edom</em> acted similarly.</li>
+</ul>
+
+<h3>The Deeper <em>Peshat</em></h3>
+
+<p>By an extended reading, which is not the <em>Malbim</em>&rsquo;s own but which the <em>shiur</em> adopts in preference to the historical approaches: when a Jew lives immersed in <em>olam hazeh</em>, when he sells himself to play the music of the nations &mdash; though <em>Yerushalayim</em> still lies desolate, the moment a Jew declares <em>&ldquo;I do not care; let me enjoy <em>olam hazeh</em>&rdquo;</em> &mdash; at that moment <em>&ldquo;aru, aru, ad hayesod bah&rdquo;</em>: the very foundations of the <em>Beis HaMikdash</em> have been uprooted from within him.</p>
+
+<p>And conversely: if a Jew can preserve his Jewish pride &mdash; <em>&ldquo;I do not have the <em>Beis HaMikdash</em> now, but I know what real joy is; I know what <em>shiras Hashem</em> is&rdquo;</em> &mdash; then <em>Edom</em> did not succeed in uprooting the foundations. The Jews of <em>Bavel</em> were <em>zocheh</em> (<span class="heb-inline">זוכה</span>): though <em>Edom</em> screamed for the <em>yesod</em> (<span class="heb-inline">יסוד</span>) to be torn out, the <em>yesod</em> remained deep in their hearts; the nations could not extract it.</p>
+
+<h2>XI. <em>Pesukim Ches</em>&ndash;<em>Tes</em> &mdash; The Harsh Conclusion</h2>
+
+<blockquote>
+  <div class="heb">בַּת בָּבֶל הַשְּׁדוּדָה אַשְׁרֵי שֶׁיְשַׁלֶּם לָךְ אֶת גְּמוּלֵךְ שֶׁגָּמַלְתְּ לָּנוּ. אַשְׁרֵי שֶׁיֹּאחֵז וְנִפֵּץ אֶת עֹלָלַיִךְ אֶל הַסָּלַע.</div>
+  <div class="trans">Daughter of Babylon, the plundered one, happy is he who repays you according to your deed, which you did to us. Happy is he who seizes and dashes your infants against the rock.</div>
+  <div class="source"><em>Tehillim</em> 137:8&ndash;9</div>
+</blockquote>
+
+<p>The <em>perek</em> ends with two of the harshest <em>pesukim</em> in <em>Tanach</em> (<span class="heb-inline">תנ״ך</span>). <em>&ldquo;Daughter of Bavel, the destroyed one, fortunate is the one who repays you for what you did to us. Fortunate is the one who seizes your children and smashes them against the rocks.&rdquo;</em></p>
+
+<p>What has become of us? Are we a brutal nation? Do we wish to take Babylonian babies and smash their heads against rocks? Is this the conclusion the <em>perek</em> wants &mdash; a searing image of murder? What an image, seared into the mind: people taking Babylonian babies &mdash; and here the speaker adds, explicitly offering it as a <em>mashal</em>, &ldquo;Palestinian babies&rdquo;<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> &mdash; and smashing them against the rocks. Is that what a Jew is?</p>
+
+<p>As a child, the speaker confesses, he never understood this <em>pasuk</em>. The <em>Malbim</em> resolves it in one word.</p>
+
+<h3>The Meaning of <em>&ldquo;Gemul&rdquo;</em></h3>
+
+<p>What does <em>gemul</em> (<span class="heb-inline">גמול</span>) mean? When one pays for what was done to him, that is <em>sachar</em> (<span class="heb-inline">שכר</span>) &mdash; reward. <em>Gemul</em> reflects something deeper: receiving back not only what one deserves, but in the very manner in which it was done. The <em>Malbim</em> defines <em>gemul</em> as an act arising from the passion of love or of hatred; what <em>Bavel</em> did to Israel came from hatred, and so it will be repaid with hatred.<a class="footnote-ref" href="#fn3">[3]</a></p>
+
+<p>The manner in which the Babylonians made Israel suffer &mdash; the monstrosities, the unspeakable acts: what did they do? They took Israel&rsquo;s babies and smashed them against the rocks. One may read <em>Midrash Eichah</em> for what was done to women and children then, and the same record across the generations of the enemies of Israel.</p>
+
+<p>The <em>pasuk</em> does not say <em>&ldquo;we want this to happen to them.&rdquo;</em> The <em>pasuk</em> says: by the way, you should know that the only true justice for what you did, the only justice possible to repay a nation that committed such atrocities, is the very same. <em>Gemul</em>. When one brings such animal behavior into the world, in the end it turns back upon him. The <em>perek</em> does not glorify the smashing; it reports the <em>metziyus</em> (<span class="heb-inline">מציאות</span>).</p>
+
+<h2>XII. The Lesson &mdash; What to Read</h2>
+
+<p>The <em>Malbim</em>, it may be, understands the harsh ending differently &mdash; not so harsh after all.</p>
+
+<p>The next time one faces a <em>nisayon</em> (<span class="heb-inline">נסיון</span>), when one struggles and wants more <em>olam hazeh</em>, when one is tempted to dance to the tunes of the <em>goy</em> &mdash; the next time one sits with him over a cocktail and he says, <em>&ldquo;Come, sit, relax, enjoy. You are an American citizen &mdash; perhaps a Jew second. <em>Eretz Yisrael</em> is the past; that is over&rdquo;</em> &mdash; at that moment, do this:</p>
+
+<p>Open <em>Perfidy</em>.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> Have you read <em>Perfidy</em>? Read it every year. If one lacks the patience, one might watch <em>Schindler&rsquo;s List</em> &mdash; though, on reflection, perhaps not. Take out a book about the <em>Shoah</em>. Take out a book about <em>Simchas Torah</em> of two years ago.</p>
+
+<p>Read what they did. Then think twice before eating from that hand &mdash; for that is what they represent, and Israel represents the exact opposite. We are <em>kedushah</em>, <em>dveikus</em>, the nation of <em>HaKadosh Baruch Hu</em>. We represent the <em>Beis HaMikdash</em> filled with <em>Torah</em> and <em>avodah</em>.</p>
+
+<h3>The Jew&rsquo;s Portfolio</h3>
+
+<p>A Jew carries a portfolio: <em>Torah</em>, <em>avodah</em>, meaning, <em>olam haba</em> (<span class="heb-inline">עולם הבא</span>), <em>sachar v&rsquo;onesh</em> (<span class="heb-inline">שכר ועונש</span>), <em>Gan Eden</em> (<span class="heb-inline">גן עדן</span>), <em>Gehinnom</em> (<span class="heb-inline">גיהנום</span>) &mdash; an entire world. The Babylonians, the nations, the enemies of Israel represent the antithesis, and they want to wrestle that portfolio out of Israel&rsquo;s hands.</p>
+
+<p>Remember: they smashed our babies against the rocks. Does one wish to join the people who smashed his babies against rocks, who vanquished <em>ruchnius</em>, who destroyed the <em>Beis HaMikdash</em>, who could not tolerate the very word &ldquo;Jew,&rdquo; because the existence of a Jew as ambassador of the Divine in this world drove them mad?</p>
+
+<p>Perhaps that is why <em>Dovid HaMelech</em> closes the <em>perek</em> with that note. The next time one is tempted, let him remember <em>&ldquo;bas Bavel hashedudah&rdquo;</em> (<span class="heb-inline">בת בבל השדודה</span>): at the end of days they will be repaid with the exact passion and hatred with which they punished Israel across <em>galus</em>. Let him think of what they did to Jews. And then ask: do I wish to go to that side, or do I wish to remain like the Jew in <em>Bavel</em>, gazing at the silent harp upon the willow, waiting for the day that <em>Mashiach</em> (<span class="heb-inline">משיח</span>) comes and we play <em>shir Hashem</em> again?</p>
+
+<h2>XIII. Closing</h2>
+
+<p>May we be <em>zocheh</em> this <em>Tishah B&rsquo;Av</em> &mdash; at the very least &mdash; to adopt this mindset. We are Jews. We are higher than <em>olam hazeh</em>. We are <em>olam haba&rsquo;dike</em> Jews (<span class="heb-inline">עולם הבא&rsquo;דיקע יהודים</span>); we are <em>Yerushalayim&rsquo;dike</em> Jews (<span class="heb-inline">ירושלים&rsquo;דיקע יהודים</span>); we are <em>shir Hashem&rsquo;dike</em> Jews (<span class="heb-inline">שיר ה׳&rsquo;דיקע יהודים</span>) &mdash; that is, Jews of the world to come, of <em>Yerushalayim</em>, of <em>shir Hashem</em>. Before we run to <em>olam hazeh</em>, before we join the <em>goy</em>, let us think of that.</p>
+
+<p>May <em>HaKadosh Baruch Hu</em> bring us the <em>geulah shleimah</em> (<span class="heb-inline">גאולה שלמה</span>) speedily in our days. <em>Amen</em>.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note runs <em>short citation</em> first (for quick lookup), then an expanded elaboration. Material marked <strong>[Ed.]</strong> was supplied by the editors for this edition and was not cited in the delivered <em>shiur</em>. Citations were checked against Sefaria; where verification was not possible, the note says so.</p>
+<ol>
+
+<li id="fn1">
+  <span class="short"><em>Shulchan Aruch, Orach Chaim</em> 1:3; <em>Mishnah Berurah</em> 1:11 (citing the <em>Shelah</em>) &mdash; mourning the <em>churban</em>; the recitation of <em>Al Naharos Bavel</em>.</span>
+  <span class="expanded">&mdash; The <em>Shulchan Aruch</em> states: <em>&ldquo;It is proper for every God-fearing person to be aggrieved and anxious over the destruction of the <em>Beis HaMikdash</em>&rdquo;</em> (<span class="heb-inline">ראוי לכל ירא שמים שיהא מיצר ודואג על חורבן בית המקדש</span>). The <em>Mishnah Berurah</em> there (1:11) writes: <em>&ldquo;The <em>Shelah</em> wrote that at every meal one should say <em>Al Naharos Bavel</em>; and on <em>Shabbos</em>, and on days when <em>Tachanun</em> is not said, <em>Shir HaMaalos</em>.&rdquo;</em> The <em>shiur</em> cited the <em>Mishnah Berurah</em> for the <em>Shabbos</em> and <em>Yom Tov</em> substitution and noted that the speaker was not certain of his citation. <strong>[Ed.]</strong> The <em>Mechaber</em>&rsquo;s own text does not mention <span class="heb-inline">פרק קל״ז</span>; the practice is that of the <em>Shelah</em> as recorded in the <em>Mishnah Berurah</em>, and by its wording applies to every meal and not only to weekdays before <em>Birkas HaMazon</em>. <a class="backref" href="#ref1" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn2">
+  <span class="short"><em>Tehillim</em> 137 &mdash; the primary text; its authorship and time of composition.</span>
+  <span class="expanded">&mdash; The <em>perek</em> consists of nine <em>pesukim</em>, attributed in the <em>shiur</em> to <em>Dovid HaMelech</em> by <em>ruach hakodesh</em>, composed before the <em>churban</em> of the <em>Bayis Rishon</em>; compare the <em>Midrash Tehillim</em> on <span class="heb-inline">פרק קל״ז</span>, which records that <em>HaKadosh Baruch Hu</em> showed <em>Dovid</em> the destruction of both <em>Batei Mikdash</em>. <strong>[Ed.]</strong> The <em>Malbim</em> (on <em>pasuk</em> 1) writes by contrast that the <em>mizmor</em> was composed in the first year after <em>Koresh</em> conquered <em>Bavel</em>. The text of the <em>shiur</em> follows the former tradition and this edition preserves it. <a class="backref" href="#ref2" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn3">
+  <span class="short"><em>Malbim on Tehillim</em> 137:1, 2, 7, 8 &mdash; <em>&ldquo;sham yashavnu&rdquo;</em> as <em>settled</em>; <em>aravim</em> as <em>sweet things</em>; <em>Edom</em>; <em>gemul</em>.</span>
+  <span class="expanded">&mdash; <strong>[Ed.]</strong> <em>Rabbi Meir Leibush Malbim</em> (<span class="heb-inline">רבי מאיר ליבוש מלבי״ם</span>, 1809&ndash;1879, Romania and Russia). Verified against Sefaria. On <em>pasuk</em> 1 the <em>Malbim</em> writes that the weeping was not for lost material goods, <em>&ldquo;for also &lsquo;by the rivers of Bavel, there we sat&rsquo; &mdash; we sat a settled sitting (<span class="heb-inline">ישיבת קבע</span>), and we had there an inheritance of field and vineyard, as it is written, &lsquo;Build houses and dwell&hellip;&rsquo;&rdquo;</em> (<em>Yirmiyahu</em> 29:5), yet <em>&ldquo;we also wept when we remembered <em>Tzion</em>&rdquo;</em> for the holiness of <em>Tzion</em>. On <em>pasuk</em> 2 he reads <em>aravim</em> as <em>ha&rsquo;arevim v&rsquo;neimim la&rsquo;guf</em> (<span class="heb-inline">הערבים ונעימים לגוף</span>): despite all the pleasures of <em>Bavel</em>, on that very account they hung up their harps. On <em>pasuk</em> 7 the <em>Malbim</em> explains <em>Edom</em> as those who helped to destroy <em>Yerushalayim</em> (<span class="heb-inline">אשר הם עזרו להחריבה</span>); the reading of <em>&ldquo;aru aru ad hayesod&rdquo;</em> as the uprooting of the inner <em>yesod</em> in each Jew, developed in chapter X, is the speaker&rsquo;s own extension and was not located in the <em>Malbim</em>. On <em>pasuk</em> 8 the <em>Malbim</em> defines <em>gemul</em> as an act done from the passion of love or of hatred, so that <em>Bavel</em>, which acted from hatred, will be repaid <em>b&rsquo;sinah v&rsquo;nekamah</em> (<span class="heb-inline">בשנאה ונקמה</span>). <a class="backref" href="#ref3" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn4">
+  <span class="short"><em>Yirmiyahu</em> 29:5&ndash;7 &mdash; the letter to the exiles; <em>Midrash Eichah</em> on the atrocities of the <em>churban</em>.</span>
+  <span class="expanded">&mdash; The <em>iggeres</em> of <em>Yirmiyahu</em> to the early Babylonian exiles: <em>&ldquo;Build houses and dwell in them; plant gardens and eat their fruit&hellip; and seek the welfare of the city to which I have exiled you.&rdquo;</em> (<span class="heb-inline">בנו בתים ושבו ונטעו גנות ואכלו את פרין… ודרשו את שלום העיר</span>) Verified against Sefaria. The <em>shiur</em> cited the <em>pesukim</em> generally; the specific chapter and verses are <strong>[Ed.]</strong>. The <em>shiur</em>&rsquo;s further reference, in chapter XI, to <em>Midrash Eichah</em> (<span class="heb-inline">מדרש איכה</span>) for the treatment of women and children was not traced to a specific passage. <a class="backref" href="#ref4" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn5">
+  <div class="note-academic"><span class="short"><em>Salix babylonica</em> &mdash; the weeping willow named from <em>Tehillim</em> 137.</span> <span class="expanded">&mdash; The name <em>Salix babylonica</em> was given by Linnaeus (<em>Species Plantarum</em>, 1753), and rests on the identification of the <em>aravim</em> of this <em>pasuk</em> with the willow. <strong>[Ed.]</strong> This identification is disputed: many botanists hold that the biblical <em>aravim</em> by the Euphrates were poplars (<em>Populus euphratica</em>), not willows. The detail is preserved as delivered, with this caveat. Not verifiable through Sefaria; left flagged.</span> <a class="backref" href="#ref5" title="Return to text">&#8617;</a></div>
+</li>
+
+<li id="fn6">
+  <span class="short"><em>Radak on Tehillim</em> 137:2 &mdash; the emotional inability to play.</span>
+  <span class="expanded">&mdash; <strong>[Ed.]</strong> <em>Rabbi Dovid Kimchi</em> (<span class="heb-inline">רבי דוד קמחי</span>, 1160&ndash;1235, Narbonne). The <em>Radak</em> explains that the <em>aravim</em> are the willows of the brook that grow upon the riverbanks, and that the exiles, sitting with their harps in hand to arouse song as they had done in <em>Tzion</em>, would put them aside from excess of sorrow whenever they recalled <em>Tzion</em>, and hang them upon the willows. Verified against Sefaria. The <em>Radak</em> is the standard <em>peshat</em>; the <em>Malbim</em>&rsquo;s reading of <em>aravim</em> as <em>sweet things</em> is an additional layer. <a class="backref" href="#ref6" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn7">
+  <span class="short"><em>Midrash Tehillim (Shochar Tov)</em> on <em>perek</em> 137 &mdash; the march; the cruise; the loads; the <em>malachim</em>; the demand to play; the <em>mashal</em> of the queen; the bitten thumbs; <em>Nevuchadnetzar</em>&rsquo;s rage.</span>
+  <span class="expanded">&mdash; Verified against Sefaria, <em>Midrash Tehillim</em> 137. The <em>Midrash</em> records: that the exiles had no place to sit from <em>Yerushalayim</em> until the Euphrates; that <em>Nevuchadnetzar</em> sat in a ship with all his nobles and <em>kol minei zemer</em>; that the exiles walked in iron chains, and that <em>Nevuchadnetzar</em> had sacks made of books, filled with sand and set upon their shoulders until they were bent; that <em>HaKadosh Baruch Hu</em> wished to return the world to <em>tohu vavohu</em> (the statement of <em>Rabbi Acha bar Abba</em>); that the <em>malachim</em> came (in the name of <em>Rabbi Alfa bar Kruya</em>), and that He replied, <em>&ldquo;<span class="heb-inline">תנחומין הללו שאתם מנחמים אותי ניאוצין הן לפני רדו מלפני ושאו המשאוי מעליהם</span>&rdquo;</em>, citing <em>Yeshayahu</em> 22:4; that <em>Nevuchadnetzar</em> said, <em>&ldquo;prepare yourselves while we eat and drink; I ask that you stand and play before me and before this idol with your harps&rdquo;</em>; that they said, <em>&ldquo;<span class="heb-inline">לא דיינו שהחרבנו את מקדשו אלא עכשיו אנו עומדים להקיש לפני הננס הזה</span>&rdquo;</em>; the <em>mashal</em> of the queen and the <em>mukeh shechin</em>, in the name of <em>Rabbi Yitzchak bar Tavla</em> (the queen&rsquo;s retort opens <span class="heb-inline">ריקה</span>); that they took their thumbs (<span class="heb-inline">אליוני ידיהם</span>) into their mouths and bit them; and that, when <em>Nevuchadnetzar</em> knew it, he cast down <span class="heb-inline">תלי תלים של הרוגים</span>, and <em>&ldquo;even so they had joy that they did not sing before an idol&rdquo;</em>, as it says <span class="heb-inline">ותוללינו שמחה</span>. <strong>[Ed.]</strong> <em>Midrash Tehillim</em> is a work of <em>Eretz Yisrael</em>, of uncertain date. The phrase <span class="heb-inline">אוכלים ושותים ומקרקרין</span>, used in chapter VI, was not located in this <em>Midrash</em>; it is the speaker&rsquo;s gloss. Some details of the march and the thumbs are also associated by others with <em>Eichah Rabbah</em>; this edition cites only what was verified. <a class="backref" href="#ref7" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn8">
+  <span class="short"><em>Alshich HaKadosh on Tehillim</em> 137 &mdash; the worst aspect of <em>galus</em> is when we cannot weep.</span>
+  <div class="note-academic"><span class="expanded"><strong>[Ed.]</strong> <em>Rabbi Moshe Alshich</em> (<span class="heb-inline">רבי משה אלשיך</span>, 1508&ndash;1593, Tzfas; a <em>talmid</em> of <em>Rabbi Yosef Karo</em>). The <em>shiur</em> attributes the line to the <em>Alshich</em> without locating it, and the sharply aphoristic wording (<em>&ldquo;the worst part of <em>galus</em> is that they did not let us weep&rdquo;</em>) may reflect the speaker&rsquo;s crystallization of the <em>Alshich</em>&rsquo;s reading, in which <em>&ldquo;gam bachinu&rdquo;</em> marks a spiritual accomplishment. This could not be verified on Sefaria and the attribution is left flagged; the <em>Alshich</em>&rsquo;s own passage should be located before print.</span></div> <a class="backref" href="#ref8" title="Return to text">&#8617;</a>
+</li>
+
+<li id="fn9">
+  <div class="note-academic"><span class="short">The 1967 <em>Kosel</em> account &mdash; the secular soldier who wept without knowing why.</span> <span class="expanded">&mdash; An account circulating orally and in print since the Six-Day War (7 June 1967) and widely told in <em>drashos</em>; the specific dialogue cannot be verified, and the substance is taken as expressive of the <em>neshamah</em>&rsquo;s recognition that survives when conscious religious knowledge does not. <strong>[Ed.]</strong> The attribution of the cry <em>&ldquo;Har HaBayis b&rsquo;yadeinu&rdquo;</em> is uncertain: it is usually attributed in historical accounts to <em>Mota Gur</em>, commander of the paratroopers who reached the <em>Kosel</em>, while <em>Rav Shlomo Goren</em>, Chief Chaplain of the IDF, blew the <em>shofar</em> at the wall. The speaker himself was unsure which of the lines was said by whom, and the text here therefore records the cry without assigning it. Not verifiable on Sefaria; left flagged.</span> <a class="backref" href="#ref9" title="Return to text">&#8617;</a></div>
+</li>
+
+<li id="fn10">
+  <div class="note-academic"><span class="short">The question of Divine silence in the <em>Shoah</em> and on <em>Simchas Torah</em> 5784.</span> <span class="expanded">&mdash; The question, raised in the first person in the <em>shiur</em> and answered through the <em>Midrash</em>&rsquo;s account of the Jews who bit off their thumbs rather than play for <em>Nevuchadnetzar</em>: the <em>malachim</em>&rsquo; descent was triggered by the Jews&rsquo; refusal to sell their <em>kedushah</em>, and the speaker draws the further lesson that the question of Divine response in later <em>galuyos</em> connects to the spiritual posture of the generation that endured them. The speaker frames it as a question one is not supposed to ask, and answers it by way of the <em>Midrash</em>, not by a theodicy. <strong>[Ed.]</strong> The date is <em>Shemini Atzeres&ndash;Simchas Torah</em> 5784 (7 October 2023); in <em>chutz la&rsquo;aretz</em> <em>Simchas Torah</em> fell the following day. The speaker&rsquo;s particular answer is stated in the text; the question of its strict logical implications is left to the reader.</span> <a class="backref" href="#ref10" title="Return to text">&#8617;</a></div>
+</li>
+
+<li id="fn11">
+  <div class="note-academic"><span class="short"><em>Nevuchadnetzar</em>&rsquo;s smallness (&ldquo;<em>Chazal</em> say&rdquo;).</span> <span class="expanded">&mdash; The <em>shiur</em> states that <em>Chazal</em> describe <em>Nevuchadnetzar</em> as physically small. The <em>Midrash Tehillim</em> on this <em>perek</em> does call him <span class="heb-inline">הננס</span>, the dwarf, which supports the statement as used here; no other source was identified, and this is left flagged. <strong>[Ed.]</strong> The motif of the dwarf, repeated in the <em>shiur</em>, is rendered here with the <em>Midrash</em>&rsquo;s own word.</span> <a class="backref" href="#ref11" title="Return to text">&#8617;</a></div>
+</li>
+
+<li id="fn12">
+  <span class="short"><em>Gemara, Bava Basra</em> 60b &mdash; abstaining from meat and wine after the <em>churban</em>; <em>Rabbi Yehoshua</em>&rsquo;s reply; the ashes on the <em>chasan</em>.</span>
+  <span class="expanded">&mdash; Verified against Sefaria. The <em>sugya</em> records the ascetics who, after the second <em>churban</em> (<em>Tosefta Sotah</em> 15), refused meat and wine because the altar had ceased; <em>Rabbi Yehoshua</em> answered, <em>&ldquo;then we shall not eat bread, for the <em>menachos</em> have ceased&rdquo;</em>; <em>&ldquo;then we shall not eat fruit, for the <em>bikkurim</em> have ceased&rdquo;</em>; <em>&ldquo;then we shall not drink water, for the water libation has ceased&rdquo;</em>; <em>&ldquo;they were silent.&rdquo;</em> (Oil is not mentioned in the passage.) He concluded that one may neither refrain from mourning altogether nor mourn excessively, <em>&ldquo;for the Sages do not decree a decree upon the <em>tzibbur</em> unless the majority of the <em>tzibbur</em> can abide by it.&rdquo;</em> The same <em>sugya</em> continues with the unfinished plaster, the dish left out of a meal, and the woman&rsquo;s cosmetic left undone, all derived from <em>&ldquo;im eshkachaich Yerushalayim&rdquo;</em>, and records <em>Rav Yitzchak</em>&rsquo;s derivation of the <em>afar mikleh</em> (burnt ashes) on the <em>chasan</em>&rsquo;s head from <em>&ldquo;al rosh simchasi&rdquo;</em>, placed, per <em>Abaye</em>, where the <em>tefillin</em> rest. <strong>[Ed.]</strong> The ashes and the <em>gezeirah</em> are therefore one <em>sugya</em> rather than two. <a class="backref" href="#ref12" title="Return to text">&#8617;</a></span>
+</li>
+
+<li id="fn13">
+  <div class="note-academic"><span class="short">&ldquo;Palestinian babies&rdquo; &mdash; the speaker&rsquo;s aside on <em>Tehillim</em> 137:9.</span> <span class="expanded">&mdash; In the delivered <em>shiur</em>, while voicing the shock of the closing <em>pasuk</em>, the speaker said, <em>&ldquo;Babylonian babies, Palestinian babies &mdash; I am using the <em>mashal</em>.&rdquo;</em> The earlier written draft omitted the clause; the review of the <em>shiur</em> advised against silent omission, and it is restored here with the speaker&rsquo;s own qualification that it is used as a <em>mashal</em>. <strong>[Ed.]</strong> Whether it remains in the printed edition is an editorial decision.</span> <a class="backref" href="#ref13" title="Return to text">&#8617;</a></div>
+</li>
+
+<li id="fn14">
+  <div class="note-academic"><span class="short"><em>Perfidy</em> by Ben Hecht.</span> <span class="expanded">&mdash; The <em>shiur</em> says only: <em>&ldquo;Open up <em>Perfidy</em>. Have you read <em>Perfidy</em>? Every year, that is the read.&rdquo;</em> <strong>[Ed.]</strong> <em>Perfidy</em> by <strong>Ben Hecht</strong> (1894&ndash;1964), published 1961 by Julian Messner, Inc.; a polemic on the conduct of Mapai and the Jewish leadership during and after the <em>Shoah</em>, built around the Kastner trial. The book remains controversial and is contested by establishment historiography. The note is the editors&rsquo; context; it is not the speaker&rsquo;s endorsement of every claim in the book.</span> <a class="backref" href="#ref14" title="Return to text">&#8617;</a></div>
+</li>
+
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s pre-<span class="heb-inline">תשעה באב</span> <em>shiur</em> on <span class="heb-inline">תהלים פרק קל״ז</span>, recorded <span class="heb-inline">ו׳ אב תשפ״ה</span> &middot; 31 July 2025. This edition rewrites the delivered <em>shiur</em> in the classical sefer voice; preserves every source and every historical detail of the original; corrects the <em>Midrash</em>&rsquo;s wording of the <em>malachim</em>&rsquo;s rebuff, the queen&rsquo;s retort, the verse glossed by <em>&ldquo;toluleinu&rdquo;</em>, and <em>Rabbi Yehoshua</em>&rsquo;s list of foods, against Sefaria; restores the &ldquo;Palestinian babies&rdquo; aside with its qualification; gathers the question of the <em>malachim</em> and its <em>Midrash</em>ic answer into a single chapter; and renumbers the <em>Mareh Mekomos</em> in body order, marking editorial additions <strong>[Ed.]</strong>. Hebrew terms are given in the Hebrew alphabet on first use.
+</footer>
+
+</body>
+</html>
