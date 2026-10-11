@@ -336,3 +336,38 @@ Method note: mcp__workspace__web_fetch against Sefaria (texts API; search-wrappe
 - **fn13 (Sanhedrin 98b)** — **CORRECTED**: Menachem is a "some say" opinion, not a school.
 - Confirmed: Megillah 17b, Pesachim 54a. Not re-fetched: fn15 Shabbat 31a.
 - **UNCERTAIN (non-Sefaria)**: fn6, 11, 17, 21, 22 (Rashi Taanis/third Mikdash, Vital cave, Gra kavanah, acrostic, Hirsch quote). Sefer Edition: Hirsch childhood example attributed to Rav Schwab (Hirsch d. 1888) — editorial note.
+
+
+---
+
+## 2026-10-11 — Nishmas Kol Chai — Layers, Legends, and the Question of Authorship
+
+- **fn2 (Pesachim 117b/118a)** — **VERIFIED** amud split (mishnah on the fourth cup 117b; "מאי ברכת השיר" 118a). **CORRECTED/pinned**: Nishmas is Rabbi Yochanan's answer, Yehalelucha is Rav Yehuda's; wording added to note.
+- **fn3 (Berachos 59)** — **CORRECTED**: 59a → **59b**. The phrase is Rabbi Yochanan's closing of the rain thanksgiving ("אילו פינו מלא שירה כים וכו'", Gemara has no initial vav); Rav Yehuda's formula is "מודים אנחנו לך על כל טיפה וטיפה". 59a (thunder/lightning) lacks it. Body: "(59b ...)" added.
+- **fn4 (Berachos 60b)** — **VERIFIED**: מתיר אסורים, זוקף כפופים, פוקח עורים, מלביש ערומים, המעביר חבלי שינה מעיני are there; המשיח אלמים / המפענח נעלמים / סומך נופלים are not in the Gemara's list (noted).
+- **fn9 (Bereishis 25:21)** — **VERIFIED** verse text added.
+- **fn10 (Berachos 26b; Bereishis 24:63)** — **VERIFIED** (baraita supporting R. Yosei b. R. Chanina; Avraham/Yitzchak/Yaakov with verses). **Machzor Vitry located**: Order of Shabbat §161 "פתרון נשמת" (as numbered on Sefaria): "וכתוב בו יצחק ורבקה ... אין עניין יצחק ורבקה לכאן ... דהא יצחק אבינו תיקן תפילת המנחה". **UNCERTAIN**: the Rav's "later couple" conclusion is not in that text (body now says "as the Rav reports it").
+- **fn14 (Avos 1; Berachos 48a)** — **VERIFIED** Avos 1:6/1:8/1:10 pairs; Berachos 48a (Yannai, מלכתא, "שמעון בן שטח אחוה"). **CORRECTED** note: the Gemara does not name the queen Shlomtzion or the king "Alexander Jannaeus".
+- **fn17 (Shulchan Aruch OC 580)** — **CORRECTED**: locus is **580:2**; wording is "לא נודע איזה היא הצרה שאירע בו", not "ולא נודע על מה" (header + body fixed); no Rema/Ezra/Shimon Kipa in that text. Baruch Ta'am gloss not on Sefaria: UNCERTAIN.
+- **fn1 (SA/Mishnah Berurah OC 52)** — SA 52 is a single se'if (with Rema). **VERIFIED** MB 52:5 (Shabbos: obligated in Nishmas; minimum "ב"ש ותהלה לדוד ונשמת וישתבח") and 52:6. **UNCERTAIN**: "must say Nishmas after davening" not found in MB 52 (52:9 = Torah blessings/אלהי נשמה); flag kept and extended; body prefaced "According to the Rav".
+- **fn23 (Beitzah 16a; Taanis 27b)** — **CORRECTED** quote: Beitzah 16a (Resh Lakish) "נשמה יתירה נותן הקדוש ברוך הוא באדם ערב שבת, ולמוצאי שבת נוטלין אותה הימנו"; Taanis 27b "נשמה יתירה ניתנה בו באדם בערב שבת". Old quote ("ניתנה לאדם בערב שבת") was a hybrid.
+- **fn24 (Tur OC 281; Devarim 5:15)** — **CORRECTED/located**: Tur OC 281 "ואחר השירה מוסיפין נשמת שיש בו מענין יציאת מצרים, לכך סמכוהו אצל השירה וחותמין בישתבח": the Tur ties **Nishmas** (not Shabbos) to Yetzias Mitzrayim. Body re-worded; Devarim 5:15 VERIFIED; flag tightened.
+- **fn26 (Mishnah Yadayim 3:5)** — **VERIFIED**: Rabbi Akiva, "שכל הכתובים קודש ושיר השירים קודש קדשים"; the Rav's "Gemara" is a Mishnah. Rokeach part not checkable.
+- **fn5 (Chida, Simchas HaRegel)** — index **VERIFIED** (Chida, Haggadah commentary, c. 1758-82, Livorno 1782); passage text not retrievable: **UNCERTAIN**.
+- **fn28 (Yesod VeShoresh HaAvodah)** — index VERIFIED (R. Alexander Ziskind, c. 1769-81, pub. 1782); Third Gate (שער השיר) = Pesukei DeZimra; Nishmas/simchah passage **UNCERTAIN** (not located).
+- **fn18, fn19, fn21, fn22 (Machzor Vitry Peter passage; Sefer Chasidim; Avodah piyut; Nishmas daily)** — **UNCERTAIN**: not located in Sefaria's Machzor Vitry (Order of Shabbat §§155-168, Laws of Shabbat, Order of Yom Kippur §354 has only a rubric "אתה כוננת") nor, for Sefer Chasidim, found; flags extended.
+- **Not checkable on Sefaria / skip-rule**: fn6 (Algazi), fn7 (Gaonic siddurim not indexed as texts), fn8, fn11 (Rokeach not indexed), fn12, fn13, fn15, fn16, fn20 (New Testament), fn25, fn27, fn29.
+- **Total:** 8 corrections (fn3, fn14 note, fn17, fn23, fn24, fn2 attribution pin, fn1 body attribution, fn10 body attribution), 9 verified (fn2, fn4, fn9, fn10, fn14, fn17 locus, fn23, fn24 Devarim, fn26), ~8 UNCERTAIN, ~12 not checkable/skipped. Modified: final MM/2026-10-11 — Nishmas Kol Chai — Layers, Legends, and the Question of Authorship.html.
+
+
+### 2026-10-11 addendum — reconciled to Sofer.ai transcript
+
+- **fn25 (Tosafos Pesachim 118a, d"h רבי יוחנן אמר נשמת כל חי)** — **LOCATED/VERIFIED** on Sefaria (Tosafot on Pesachim 118a:1): "וקורא נשמת כל חי ברכת השיר לפי שבשבתות אומרים אותו אחר פסוקי דזמרה"; "רבינו חיים כהן לא היה חותם ביהללוך כי אם בנשמת לבדו". The Rav (Sofer) says "Tosafos in Pesachim" holds it was said in Chazal's time while Gaonic siddurim say only yechidim; **UNCERTAIN/flagged**: the Tosafos text does not say so explicitly (only the Shabbos practice). The Plaud-based attribution (Tosafos = individuals only) was reversed per Sofer.
+- **fn3 (Shulchan Aruch OC 221)** — **VERIFIED/added**: the Rav's "a whole siman" = Orach Chaim 221 (ברכת הודאת הגשמים): 221:1 + Rema (custom not to recite today); 221:2 "מודים אנחנו לך ה' אלהינו על כל טפה וטפה". Siman number is the editor's identification (flagged).
+- **fn1 (Mishnah Berurah 52:5)** — **RE-CHECKED**: text "עוד כתב דבשבת מחוייב לומר נשמת והיא נקראת [בפסחים קי"ח] ברכת השיר" (the Rav's Pesachim 118 reference matches); still **no** statement that a skipped Nishmas is said after davening. Sofer shows the Rav attributes that to the Mishnah Berurah; flag kept (UNCERTAIN).
+- **fn2 (Pesachim)** — pinned to the Rav's own daf: 118a (Sofer: "קי"ח ע"א"); 117b Mishnah remains the editor's.
+- **fn4 (Berachos 60b)** — Rav's daf given in Sofer as "ס׳ ס״א" (60-61); content previously VERIFIED at 60b; flag updated, no new text check.
+- **fn26 (Yadayim 3:5)** — Sofer: the Rav says "Mishnah" (not "Gemara"); Mishnah previously VERIFIED, wording only.
+- **fn6 (Algazi)** — Sefaria search (name API) returned no topic for Yisrael Yaakov Algazi / Yom Tov Algazi: **not checkable**; Sofer: Rav says "the Maharit Algazi's son", name "רב יעקב ישראל אלגאזי"; family relation flagged for verification.
+- **fn17 (SA OC 580:2 / Baruch Ta'am)** — no change to the Sefaria text; Sofer shows the Rav's "ולא נודע למה" is a paraphrase and that "מצאתי כתב יד" is the Baruch Ta'am's phrase (not the Rav seeing a manuscript); Baruch Ta'am is father-in-law (not father) of the Tzanzer Rav per the Rav. Gloss still not on Sefaria: UNCERTAIN.
+- **Not checkable / unchanged**: fn5, fn7, fn8, fn10-fn16, fn18-fn22 (as in the earlier entry), fn27-fn29. Modified: final MM/2026-10-11 — Nishmas Kol Chai — Layers, Legends, and the Question of Authorship.html.

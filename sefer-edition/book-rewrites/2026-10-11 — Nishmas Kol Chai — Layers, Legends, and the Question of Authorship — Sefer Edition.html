@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Nishmas Kol Chai: Layers, Legends, and the Question of Authorship</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">נִשְׁמַת כָּל חַי — שְׁכָבוֹת, אַגָּדוֹת וּשְׁאֵלַת הַמְחַבֵּר</h1>
+  <div class="english-title"><em>Nishmas Kol Chai</em>: Layers, Legends, and the Question of Authorship</div>
+  <div class="sub">Studies in the Shabbos <em>Tefillos</em> (<span class="heb-inline">תפילות</span>) &mdash; The End of <em>Pesukei DeZimra</em></div>
+  <div class="date">30 Tishrei 5787 &nbsp;&middot;&nbsp; <em>Rosh Chodesh Cheshvan</em> &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse was delivered <span class="heb-inline">לעילוי נשמת</span> departed relatives of members of the congregation, and for a <em>yeshuah</em> (<span class="heb-inline">ישועה</span>) for all Israel. <span class="confirm">[Dedication wording and names to be confirmed with the Rav before printing.]</span></p>
+
+<p class="lead"><em class="term">Nishmas</em> (<span class="heb-inline">נשמת כל חי</span>) is ascribed in the tradition to many hands. This discourse first reads it as a text of layers: the <em class="term">Birchas HaShir</em> (<span class="heb-inline">ברכת השיר</span>) of the Seder night, the rain-thanksgiving of <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>), the lines that the <em class="term">Chida</em> (<span class="heb-inline">החיד״א</span>) connects with a miracle in Jerusalem, and a late closing section that carries an acrostic of <span class="heb-inline">יצחק</span> and <span class="heb-inline">רבקה</span>. It then sets beside that account the competing traditions that give the whole prayer a single author: Ezra and the <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>), the primordial prayer of the <em class="term">Rokeach</em> (<span class="heb-inline">הרוקח</span>), Shimon ben Shetach by way of a reverse acrostic, and Shimon Kipa, whom a legend identifies with Peter. It states plainly that the layer model and the single-author model cannot both be right, and it records that the lecturer works within the first: <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) accepted the entire prayer, with its parts composed at different times. The closing sections give the reasons for Shabbos, the Chasidic experience of the prayer, and the question that remains open at its end.</p>
+
+<h2>I. One Prayer, Four Questions</h2>
+
+<p>At the close of <em class="term">Pesukei DeZimra</em> (<span class="heb-inline">פסוקי דזמרה</span>) on Shabbos and Yom Tov stands <em class="term">Nishmas</em> (<span class="heb-inline">נשמת כל חי</span>). The <em class="term">siddur</em> (<span class="heb-inline">סידור</span>) prints it in separate paragraphs, but it is a single continuous prayer. In the lecturer’s description it runs from <span class="heb-inline">נשמת</span> through <span class="heb-inline">כל עצמותי תאמרנה</span> and <span class="heb-inline">שוכן עד</span> to the words <span class="heb-inline">ובמקהלות רבבות עמך בית ישראל</span>, and flows without a break into <span class="heb-inline">וּבְכֵן יִשְׁתַּבַּח שִׁמְךָ לָעַד מַלְכֵּנוּ</span>.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> It is a long introduction to <em class="term">Yishtabach</em> (<span class="heb-inline">ישתבח</span>), the <em class="term">berachah</em> (<span class="heb-inline">ברכה</span>) that closes Pesukei DeZimra as <em class="term">Baruch SheAmar</em> (<span class="heb-inline">ברוך שאמר</span>) opens it. Pesukei DeZimra therefore stand between two berachos, and Nishmas is the crescendo that leads into the second.</p>
+
+<blockquote><div class="heb">נִשְׁמַת כָּל חַי תְּבָרֵךְ אֶת שִׁמְךָ ה׳ אֱלֹהֵינוּ, וְרוּחַ כָּל בָּשָׂר תְּפָאֵר וּתְרוֹמֵם זִכְרְךָ מַלְכֵּנוּ תָּמִיד.</div>
+<div class="trans">The soul of every living being shall bless Your Name, Hashem our God; and the spirit of all flesh shall always glorify and exalt Your remembrance, our King.</div></blockquote>
+
+<p>No other <em class="term">tefillah</em> (<span class="heb-inline">תפילה</span>) has drawn such extreme opinions about its authorship, and none shows so plainly the marks of having been put together over time. The inquiry is organised around four questions:</p>
+<ol>
+<li>Why is Nishmas added on Shabbos?</li>
+<li>Who composed it?</li>
+<li>When did it enter the <em class="term">Seder</em> (<span class="heb-inline">סדר</span>)?</li>
+<li>Why does <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) treat it with such seriousness?</li>
+</ol>
+<p>The lecturer states that he is himself uncertain of the timeline. The aim is to arrive at a picture of how the prayer was written, why, and when it entered the <em>siddur</em>, from the Rishonim and Geonim who quote parts of it. The same candour governs what follows: where the sources conflict, the conflict is stated. The one sentence that the lecturer offers as a governing principle, and which is therefore set down here at the outset, is this: <strong><em>Klal Yisrael</em> has accepted the entire Nishmas, with all its parts, which were composed at different times.</strong> The final section returns to the four questions and records how far each has been answered.</p>
+
+<h2>II. The Measure of Its Standing</h2>
+
+<p>The seriousness with which Klal Yisrael treats Nishmas is visible first in practical <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>). The <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>), in the name of the <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>), rules for the worshipper who arrives late to shul on Shabbos morning.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> He may join the <em class="term">tzibbur</em> (<span class="heb-inline">ציבור</span>) only after certain portions of Pesukei DeZimra have been said: Baruch SheAmar and Yishtabach, the two berachos that frame the section, together with <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>) and, on Shabbos morning, Nishmas. These must be said before he proceeds to <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>).</p>
+
+<p>As the lecturer understands the Mishnah Berurah, the ruling goes further. One who omitted Nishmas for lack of time, in order to catch the prayer with the tzibbur, must say it after the prayers. The remaining <em class="term">Hallelukahs</em> (<span class="heb-inline">הללוקה</span>) of Pesukei DeZimra need not be made up afterwards, and neither need <em class="term">Shiras HaYam</em> (<span class="heb-inline">שירת הים</span>), although many <em class="term">poskim</em> (<span class="heb-inline">פוסקים</span>) regard it too as of great importance and one who has time recites it as well; but Nishmas must be made up. The ruling, as he reports it, is the clearest measure of the prayer’s standing: Nishmas has become part of the core structure of Pesukei DeZimra on Shabbos and Yom Tov.</p>
+
+<p>The question that organises the rest of the inquiry follows directly: what is it about this prayer that earns it such a place?</p>
+
+<h2>III. The First Layer: <em class="term">Birchas HaShir</em> (<span class="heb-inline">ברכת השיר</span>) on the Fourth Cup</h2>
+
+<p>The earliest mention of Nishmas in the literature of <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) is in the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) at the end of <em class="term">Maseches</em> (<span class="heb-inline">מסכת</span>) <em class="term">Pesachim</em> (<span class="heb-inline">פסחים</span>), on 118a, in the <em class="term">sugya</em> (<span class="heb-inline">סוגיא</span>) of the Seder night.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> The Gemara goes through what is done at each of the <em class="term">four cups</em> (<span class="heb-inline">ארבע כוסות</span>). A cup requires a berachah and praise of Hashem, and the Gemara asks what is said over the fourth. According to one opinion one recites Birchas HaShir, “the blessing over song”; and the Gemara asks what that blessing is. The answer given in the name of <em>Rabbi Yochanan</em> (<span class="heb-inline">רבי יוחנן</span>) is <strong>Nishmas Kol Chai</strong>. The other opinion, of <em>Rav Yehuda</em> (<span class="heb-inline">רב יהודה</span>), is <em class="term">Yehalelucha</em> (<span class="heb-inline">יהללוך</span>).</p>
+
+<p>The Gemara does not mean the whole of the prayer as now printed, but only its first part, up to a certain point; the <em class="term">girsaos</em> (<span class="heb-inline">גרסאות</span>) differ as to where it ends, and some say that it extends as far as <span class="heb-inline">וְאִלּוּ פִינוּ מָלֵא שִׁירָה כַּיָּם</span>. The Gemara says nothing of Shabbos. It speaks of one night in the year, the Seder, on which this special prayer is said.</p>
+
+<p>The consequence for chronology is considerable. If this portion of Nishmas appears in the Gemara, it was composed in the time of Chazal. The lecturer reports that most <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) understand it to be the work of the <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>), and specifically of <em class="term">Ezra HaSofer</em> (<span class="heb-inline">עזרא הסופר</span>): Ezra wrote this beautiful prayer, and Chazal then decided that it should be said on the Seder night as Birchas HaShir. Later in the same discourse the attribution is introduced more cautiously, as the view of “some Rishonim.” No individual Rishon is named in either place, and the two formulations are left as they were spoken.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> The second stretch of the prayer, from <span class="heb-inline">ואילו פינו</span> to the end, is also mentioned in the Gemara, and it is remarkable that two different things were put together.</p>
+
+<h2>IV. The Second Layer: <em>V’ilu Finu</em> (<span class="heb-inline">ואילו פינו</span>) and the Prayer for Rain</h2>
+
+<p>From <span class="heb-inline">ואילו פינו מלא שירה כים</span> onward the prayer draws on a different source. This is the expansive passage in which the worshipper declares that even if his mouth were as full of song as the sea he could never thank Hashem enough:</p>
+
+<blockquote><div class="heb">וְאִלּוּ פִינוּ מָלֵא שִׁירָה כַּיָּם, וּלְשׁוֹנֵנוּ רִנָּה כֶּהֲמוֹן גַּלָּיו …</div>
+<div class="trans">Were our mouths as full of song as the sea, and our tongues as full of jubilation as the multitude of its waves …</div></blockquote>
+
+<p>This passage too is in the Gemara, in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 59b, in the <em class="term">sugya</em> on abundant rain.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> When rain falls in abundance a special berachah and prayer of thanks are said, and these words belong to it; the lecturer cites their continuation, <span class="heb-inline">ולשוננו רנה כהמון גליו</span>. The season of the rains opens in <em class="term">Cheshvan</em> (<span class="heb-inline">חשוון</span>), and the discourse falls on its <em class="term">Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>). The thanksgiving is not said today, but the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) devotes a whole <em class="term">siman</em> (<span class="heb-inline">סימן</span>) to it.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> In the time of Chazal significant rain mattered enormously in the Middle East, for the crops and for agriculture, and abundant rain called for a prayer of gratitude of its own.</p>
+
+<p>At some point this passage was taken out of the prayers of the rainy season and joined, “like a puzzle,” to the Nishmas of the fourth cup. The result was a single prayer, which Klal Yisrael undertook to say every Shabbos. The central fact is that <strong>two distinct texts, from two different talmudic contexts, were welded into one.</strong></p>
+
+<p>One detail is to be noted for later. The Gemara reads <span class="heb-inline">אילו</span>, without an initial <em>vav</em>, whereas the siddur reads <span class="heb-inline">ואילו</span>. The reverse acrostic discussed in Section IX is built on the siddur’s <em>vav</em>, from which it follows that, if the acrostic is deliberate, it was devised after the two texts had been fused.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<h2>V. The Third Layer: <em class="term">Elohei HaRishonim</em> (<span class="heb-inline">אלהי הראשונים</span>) and Reb <em class="term">Kloynimus</em> (<span class="heb-inline">קלונימוס</span>) <em class="term">Ba’al HaNes</em> (<span class="heb-inline">בעל הנס</span>)</h2>
+
+<p>Within Nishmas, before <span class="heb-inline">ואילו פינו</span>, the prayer describes the greatness of Hashem. This is the part that the lecturer finds most surprising:</p>
+
+<blockquote><div class="heb">אֱלֹהֵי הָרִאשׁוֹנִים וְהָאַחֲרוֹנִים, אֱלוֹהַּ כָּל בְּרִיּוֹת, אֲדוֹן כָּל תּוֹלָדוֹת … וַה׳ לֹא יָנוּם וְלֹא יִישָׁן. הַמְעוֹרֵר יְשֵׁנִים, וְהַמֵּקִיץ נִרְדָּמִים, וְהַמֵּשִׂיחַ אִלְּמִים, וְהַמַּתִּיר אֲסוּרִים, וְהַסּוֹמֵךְ נוֹפְלִים, וְהַזּוֹקֵף כְּפוּפִים, וְהַמְפַעְנֵחַ נֶעֱלָמִים. וּלְךָ לְבַדְּךָ אֲנַחְנוּ מוֹדִים.</div>
+<div class="trans">God of the first and of the last, Master of all creatures … He who awakens the sleeping, rouses the slumbering, makes the mute speak, releases the bound, supports the fallen, straightens the bent and deciphers the hidden: to You alone do we give thanks.</div></blockquote>
+
+<h3>The Chida’s Account</h3>
+
+<p>The <em class="term">Chida</em> (<span class="heb-inline">החיד״א</span>), Rabbi Chaim Yosef David Azulai (1724–1806), wrote about a hundred works, among them a commentary on the <em class="term">Haggadah</em> (<span class="heb-inline">הגדה</span>) entitled <em class="term">Simchas HaRegel</em> (<span class="heb-inline">שמחת הרגל</span>). At Nishmas in the Haggadah he tells, as the lecturer relates it, something that Klal Yisrael had not known: that this section of the prayer, the lines on Hashem who awakens the sleeping, opens the mouth of the mute and deciphers the hidden, was added to Nishmas some seven or eight hundred years ago, in the circumstances of a particular miracle in Jerusalem, wrought through a man known as Reb Kloynimus Ba’al HaNes. The date is examined below.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></p>
+
+<h3>The Man and His Title</h3>
+
+<p>In Jerusalem there lived a Jew named Reb Kloynimus (<span class="heb-inline">רב קלונימוס</span>), later known as <em>Ba’al HaNes</em>, “master of the miracle.”<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The title is borne by very few in Jewish history. It is given to one through whom, or for whom, a miracle was wrought, and there is a dispute as to who first bore it, whether the <em class="term">Tanna</em> (<span class="heb-inline">תנא</span>) <em class="term">Rabbi Meir</em> (<span class="heb-inline">רבי מאיר</span>) or a later figure. At the time of the events Reb Kloynimus did not yet have the title; he received it afterwards. He was the rabbi of Jerusalem at the time. Beyond this his identity is a matter of some mystery: no exact date is known, and no biography.</p>
+
+<h3>The Blood Libel in Jerusalem</h3>
+
+<p>The story is that of a classic blood libel, set in Eretz Yisrael. A Muslim child had died, at about the time of <em class="term">Pesach</em> (<span class="heb-inline">פסח</span>). The blood libel was not a purely Christian phenomenon; the great majority of recorded libels occurred in Christian countries, but this one arose in a Muslim land. The child’s body was thrown into the courtyard of the synagogue, and the accusers came with the old lie: the Jews had slaughtered the child because they needed his blood to bake <em class="term">matzos</em> (<span class="heb-inline">מצות</span>).</p>
+
+<p>Reb Kloynimus was told that the governor, a pasha, had resolved to put an end to the Jews and to drive them out of Jerusalem because of the affair. The fate of the community hung on it.</p>
+
+<h3>The Miracle</h3>
+
+<p>Reb Kloynimus went to the body of the child. By means of the Divine Name, spoken or written (the account does not say which), the child, who had lain dead for days, opened his mouth and declared exactly who had killed him. A non-Jew had done it; the child said who he was and where he was to be found. He was found, and the Jewish community of Jerusalem was saved. For this Reb Kloynimus became known as Ba’al HaNes.</p>
+
+<p>The lecturer states his own position plainly: the account, as the Chida tells it, has the sound of legend, and one who does not follow the Chida need not believe it; he himself accepts it. The story, he adds, does not rest on the Chida alone. Other works record it, he says, even before the Chida, and he names Rabbi Yaakov Yisrael Algazi (<span class="heb-inline">רב יעקב ישראל אלגאזי</span>), whom he describes as “the Maharit Algazi’s son,” one of the leading rabbis of Jerusalem, who came originally from Izmir in Turkey. Neither the Chida nor Algazi cites the other, which suggests that it was a story people knew.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></p>
+
+<div class="callout"><span class="label">A Detail That Ties the Story to the Shabbos Prayer</span>
+<p>The miracle took place on <strong>Shabbos</strong>. To save the community Reb Kloynimus had to desecrate Shabbos (<em class="term">chillul Shabbos</em>, <span class="heb-inline">חילול שבת</span>) for the sake of saving life (<em class="term">pikuach nefesh</em>, <span class="heb-inline">פיקוח נפש</span>); he had to write a Name (<em class="term">Shem</em>, <span class="heb-inline">שם</span>). Yet although he acted for the sake of saving life, he held that he was no longer on the same <em>madreigah</em> (<span class="heb-inline">מדרגה</span>) afterwards. This is the thread that ties the story to the Shabbos prayer.</p></div>
+
+<h3>Burial and the Lost Grave</h3>
+
+<p>On account of that single act Reb Kloynimus asked the community to bury him outside <em class="term">Har HaZeisim</em> (<span class="heb-inline">הר הזיתים</span>), apart from the regular cemetery there in which the members of the community were buried at that time. He said: “I do not deserve to be buried among Klal Yisrael.” The detail is given as the measure of the man: a great <em class="term">tzaddik</em> (<span class="heb-inline">צדיק</span>) who held himself accountable for one instance of chillul Shabbos undertaken to save lives.</p>
+
+<p>His grave was well known. A pile of stones lay on it, and before 1948 there was a famous <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) in Jerusalem: one in need of a <em class="term">yeshuah</em> (<span class="heb-inline">ישועה</span>) would go to pray at the grave and take a stone with him for his need, and would swear to bring the stone back and cover the grave again. In 1948, under Jordanian rule, the site was lost. Its approximate location is known, its exact location is not, and so people no longer go.</p>
+
+<h3>From the Miracle to the Text</h3>
+
+<p>After the incident, according to the Chida, Reb Kloynimus composed a new section of prayer and incorporated it into Nishmas: the lines quoted above. Each answers to the story:</p>
+<ul>
+<li><span class="heb-inline">הַמֵּשִׂיחַ אִלְּמִים</span>: Hashem opens the mouth of those who cannot speak. In the story He opened the mouth of the dead child, and the community was saved.</li>
+<li><span class="heb-inline">הַמְפַעְנֵחַ נֶעֱלָמִים</span>: Hashem deciphers the hidden. Who had killed the child was hidden, and it was brought to light.</li>
+<li>The framing lines, <span class="heb-inline">וַה׳ לֹא יָנוּם וְלֹא יִישָׁן</span>: Hashem guards all Israel, even in the midst of so terrible a libel.</li>
+</ul>
+<p>And because the miracle occurred on Shabbos, he fixed the lines in the Shabbos prayer. The lecturer remarks that his own first reaction to the account was incredulity, and that it is nevertheless what the Acharonim write. All of Klal Yisrael, on this account, commemorates each Shabbos an obscure miracle of Jerusalem because Reb Kloynimus Ba’al HaNes wrote these lines. Next time the lines are said, the lecturer’s instruction is to have this in mind.</p>
+
+<h3>The Evidence of the Gaonic Siddurim</h3>
+
+<p>That this section is a later addition is supported, as the lecturer reports, by the oldest prayer books. In the siddurim of <em class="term">Rav Amram Gaon</em> (<span class="heb-inline">רב עמרם גאון</span>; of the ninth century) and <em class="term">Rav Saadia Gaon</em> (<span class="heb-inline">רב סעדיה גאון</span>; of the tenth) this part of Nishmas does not appear.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> It follows that the lines were added after the Gaonic period. Whether they were added because of the story of Reb Kloynimus the lecturer leaves open; that is the account of the Chida. The <em class="term">nusach</em> (<span class="heb-inline">נוסח</span>) differences bear on the matter. Nusach <em class="term">Ashkenaz</em> (<span class="heb-inline">אשכנז</span>) omits some of this material while retaining the essential core, whereas in Nusach <em class="term">Sefard</em> (<span class="heb-inline">ספרד</span>) “we say the whole thing,” including <span class="heb-inline">משיח אלמים</span> and <span class="heb-inline">מפענח נעלמים</span>. Which lines Ashkenaz omits the lecturer does not specify.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> The Geonim, he notes, already had the prayer of Nishmas itself.</p>
+
+<h3>The Chronology: What Is and Is Not Known</h3>
+
+<p>The date of Reb Kloynimus is unknown, and the lecturer’s own markers do not agree. He places the events “approximately seven hundred years ago,” and the addition of the lines “seven or eight hundred years ago”; he identifies the governor as an Ottoman pasha; and near the close of the account he calls the miracle “an obscure miracle that happened a couple of centuries ago.” These cannot all be right. The following can be set out without asserting a date:<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+<ul>
+<li>Seven or eight hundred years before 2026 is the thirteenth or fourteenth century. The Ottoman conquest of Eretz Yisrael took place in 1517. “Ottoman” and “seven hundred years” are therefore incompatible. The identification of the ruler as Ottoman is an inference of the lecturer’s own, reached by asking who ruled the land at the time; it is not a datum of the account.</li>
+<li>The Chida and Rabbi Algazi are reporters of a much later age than the events as the lecturer dates them; neither is a witness, and the account does not say from what source they received it.</li>
+<li>If the lines are absent from the Gaonic siddurim, as reported, they were added after the tenth century (an inference from the lecturer’s evidence).</li>
+<li>The <em class="term">Rokeach</em> (<span class="heb-inline">הרוקח</span>; died c. 1238) and the <em class="term">Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>; c. 1100) already know the lines, on the lecturer’s own reports of them: the Rokeach as the ancient substitute for Birchos HaShachar, and the Machzor Vitry as saying that Nishmas was recited in place of them (Sections VIII and XI). An insertion made seven hundred years before our time would have to follow both Rishonim.</li>
+</ul>
+<p>The date of Reb Kloynimus therefore remains unknown, and the question stands among the Open Questions at the end.</p>
+
+<h2>VI. A Much Later Section: <span class="heb-inline">וכל הלבבות</span> to <span class="heb-inline">שוכן עד</span></h2>
+
+<p>The passage that began with <span class="heb-inline">ואילו פינו</span>, the lecturer says, ends with <span class="heb-inline">וְכָל לָשׁוֹן לְךָ תִשָּׁבַע, וְכָל קוֹמָה לְפָנֶיךָ תִשְׁתַּחֲוֶה</span>. On the basis of his own examination of ancient siddurim, the section that follows, beginning <span class="heb-inline">וְכָל הַלְּבָבוֹת יִירָאוּךָ</span> and running, as he describes it, to <span class="heb-inline">שׁוֹכֵן עַד</span> (“until Yishtabach”), is a later part of the prayer. In his words it “was authored much, much later,” and who authored it is a major dispute. This is therefore the latest layer by the lecturer’s account. The lateness is his claim and is not independently dated; as will appear, the Machzor Vitry (c. 1100) already knew the acrostic discussed here, so that the section may be earlier than the lines of Reb Kloynimus.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<h3>The Acrostic</h3>
+
+<p>A hint to the author appears in the text itself. In the line <span class="heb-inline">בְּפִי יְשָׁרִים</span> many siddurim print certain letters in bold:</p>
+
+<blockquote><div class="heb">בְּפִי <strong>יְ</strong>שָׁרִים תִּתְרוֹמָם, וּבְשִׂפְתֵי <strong>צַ</strong>דִּיקִים תִּתְבָּרַךְ, וּבִלְשׁוֹן <strong>חֲ</strong>סִידִים תִּתְקַדָּשׁ, וּבְקֶרֶב <strong>קְ</strong>דוֹשִׁים תִּתְהַלָּל.</div>
+<div class="trans">By the mouth of the upright You shall be exalted; by the lips of the righteous You shall be blessed; by the tongue of the devout You shall be sanctified; and among the holy You shall be praised.</div></blockquote>
+
+<p>The initial letters of <span class="heb-inline">ישרים, צדיקים, חסידים, קדושים</span> are <em>yud, tzadi, chet, kuf</em>, spelling <strong><em class="term">Yitzchak</em> (<span class="heb-inline">יצחק</span>)</strong>. The third letter of each of the four verbs gives <em>resh, beis, kuf, heh</em>, spelling <strong><em class="term">Rivka</em> (<span class="heb-inline">רבקה</span>)</strong>:</p>
+
+<blockquote><div class="heb">תִּתְ<strong>ר</strong>וֹמָם · תִּתְ<strong>בָּ</strong>רַךְ · תִּתְ<strong>קַ</strong>דָּשׁ · תִּתְ<strong>הַ</strong>לָּל</div></blockquote>
+
+<p>Some say, as the lecturer reports, that this section was said by Yitzchak and Rivka themselves, in connection with the opening of <em class="term">Parashas</em> (<span class="heb-inline">פרשת</span>) <em class="term">Toldos</em> (<span class="heb-inline">תולדות</span>): <span class="heb-inline">וַיֶּעְתַּר יִצְחָק לַה׳ לְנֹכַח אִשְׁתּוֹ</span>. Rivka was <em class="term">barren</em> (<span class="heb-inline">עקרה</span>); when at last children (twins) were born, the couple said this prayer to commemorate the day, and on this view husband and wife composed it together.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> No source for the view is named.</p>
+
+<h3>The Machzor Vitry’s Objection</h3>
+
+<p>The Machzor Vitry quotes the attribution and rejects it.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> If it were the prayer of Yitzchak and Rivka, why would it be placed in <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>)? It was Yitzchak who instituted <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>),<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> and a prayer of his belongs there; “something does not add up.” The lecturer reports, further, that the Machzor Vitry concludes that it must have been a <em>later</em> couple, another Yitzchak and Rivka, who for some reason thanked Hashem and composed a prayer, which Klal Yisrael adopted for reasons now unknown. That further conclusion is the lecturer’s report of the Machzor Vitry and is not found in the passage examined. It remains a mystery.</p>
+
+<h2>VII. Two Models, One Prayer</h2>
+
+<p>The material so far presents Nishmas as a composite: the Birchas HaShir of the Seder night, the rain-prayer <span class="heb-inline">ואילו פינו</span>, the lines of Reb Kloynimus, and the closing section with its acrostic, each from a different hand and age. What follows presents it as the work of a single author: the Anshei Knesses HaGedolah, the Rokeach’s primordial prayer, Shimon ben Shetach, or Peter. <strong>These two models cannot both be right.</strong> Three collisions in particular are to be noted:</p>
+<ol>
+<li><strong>The acrostic and the layers.</strong> The reverse acrostic of Section IX runs through paragraphs that the layer model assigns to different centuries, and it requires the siddur’s <span class="heb-inline">ואילו</span> rather than the Gemara’s <span class="heb-inline">אילו</span>, so that it was built on the text already welded together. An acrostic author is therefore either the redactor of an existing composite, or the layer model is mistaken.</li>
+<li><strong>The Rokeach and Reb Kloynimus.</strong> The Rokeach places the cluster of lines on Hashem who releases the bound, awakens the sleeping and supports the fallen before the Gemara; the tradition of the Chida places the same cluster after the Geonim. The lecturer himself notes that the Rokeach’s statement “does not fit” with what the Chida said.</li>
+<li><strong>The Machzor Vitry in two roles.</strong> It appears with two unrelated claims: the objection to Yitzchak and Rivka (located in its text) and, as the lecturer reports, the rebuttal of the legend of Peter (not located).</li>
+</ol>
+
+<p>The lecturer does not choose between the models in so many words. He states that Klal Yisrael accepted the whole of Nishmas, “with all the different parts that were obviously composed at different times,” which is the language of the layer model; and he presents each single-author claim as a received tradition whose sources he reports. He also repeatedly declares himself unsure of the chronology. The layer model is accordingly the working framework of what follows, and the authorship traditions are treated as the history of attempts to account for the prayer’s authority. No adjudication between them is attempted. The claims examined in this and the following sections are gathered here for reference:</p>
+
+<table class="syn">
+<thead><tr><th>Claimed author</th><th>Claimed date</th><th>Part of the text</th><th>Reported source</th><th>Objection / status</th></tr></thead>
+<tbody>
+<tr><td>Birchas HaShir of the fourth cup, in the name of Rabbi Yochanan</td><td>Time of Chazal</td><td>First part, to <span class="heb-inline">ואילו פינו</span> (girsaos differ)</td><td>Pesachim 118a</td><td>Rav Yehuda gives <span class="heb-inline">יהללוך</span> instead</td></tr>
+<tr><td>Rain thanksgiving closing <span class="heb-inline">אילו פינו</span> (Rabbi Yochanan)</td><td>Time of Chazal</td><td><span class="heb-inline">ואילו פינו</span> onward</td><td>Berachos 59b; Shulchan Aruch, Orach Chaim 221</td><td>The Gemara reads <span class="heb-inline">אילו</span>; the thanksgiving is not said today</td></tr>
+<tr><td>Ezra HaSofer / Anshei Knesses HaGedolah</td><td>Time of Ezra</td><td>The prayer, or its first part</td><td>“Most” / “some” Rishonim (as reported; none named)</td><td>None reported</td></tr>
+<tr><td>Reb Kloynimus Ba’al HaNes</td><td>Unknown (reported markers: seven to eight hundred years ago; “a couple of centuries ago”)</td><td><span class="heb-inline">אלהי הראשונים</span> … <span class="heb-inline">המפענח נעלמים</span></td><td>Chida, Simchas HaRegel; Rabbi Yaakov Yisrael Algazi (as reported)</td><td>Lines absent from the Gaonic siddurim (reported); in tension with the Rokeach; date unresolved</td></tr>
+<tr><td>Yitzchak and Rivka</td><td>Patriarchal era</td><td>The acrostic in <span class="heb-inline">בפי ישרים</span></td><td>“Some say” (none named)</td><td>Rejected by Machzor Vitry (Yitzchak instituted Minchah)</td></tr>
+<tr><td>A later couple, Yitzchak and Rivka</td><td>Unknown</td><td>The same</td><td>Machzor Vitry (as reported)</td><td>Not found in the passage examined</td></tr>
+<tr><td>Unnamed first author</td><td>Before Rebbi redacted the Mishnah; before Birchos HaShachar</td><td>The whole prayer; the cluster as daily thanks</td><td>Rokeach (as reported)</td><td>In tension with the Kloynimus tradition</td></tr>
+<tr><td>Shimon ben Shetach</td><td>Reign of Yannai</td><td>Reverse acrostic across the prayer</td><td>The siddur of Treves (as reported)</td><td>None reported; the acrostic presupposes the welded text</td></tr>
+<tr><td>Shimon Kipa, identified with Peter</td><td>Days of the Second Temple (legend)</td><td>The same acrostic; the Avodah <em>piyut</em> (legend)</td><td>A midrash of debated source; Treves quotes it (as reported); the Baruch Ta’am margin</td><td>Rejected by Machzor Vitry (as reported; not located); Sefer Chasidim uses the epithet <span class="heb-inline">פטר חמור</span> but says he began as a tzaddik</td></tr>
+</tbody></table>
+
+<h2>VIII. The Rokeach: The First Prayer</h2>
+
+<p>The most extreme claim for antiquity is that of the Rokeach, Rabbeinu Elazar of Worms, whom the lecturer has discussed at length in earlier discourses on tefillah.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> He holds that Nishmas is the oldest prayer in existence, the first ever authored, recited even before <em class="term">Rebbi</em> (<span class="heb-inline">רבי</span>; Rabbi Yehudah HaNasi) redacted the <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>), so that it precedes the Oral Torah in writing; the lecturer observes that nothing of the kind is known of any other prayer. He draws a further conclusion from the cluster of lines on Hashem who releases the bound, awakens the sleeping, opens the mouth of the mute, supports the fallen and straightens the bent. What does this recall? <strong><em class="term">Birchos HaShachar</em> (<span class="heb-inline">ברכות השחר</span>).</strong><a class="footnote-ref" id="ref19" href="#fn19">[19]</a></p>
+
+<p>The Rokeach’s <em>chiddush</em> (<span class="heb-inline">חידוש</span>) is this. In the early period, before Chazal composed Birchos HaShachar in the Gemara, there were no Birchos HaShachar. People said this passage of Nishmas in their place, <em>Hamei’ir Yesheinim</em> (<span class="heb-inline">המעורר ישנים</span>) and <em>Hamekitz Nirdamim</em> (<span class="heb-inline">המקיץ נרדמים</span>), and it was the expression of their thanks: I woke, I opened my mouth, I stood up. The lecturer says that he has not heard this anywhere else.</p>
+
+<p>The claim collides with the account of Section V. If the Rokeach is right about the antiquity of these lines, Reb Kloynimus cannot have written them. If Reb Kloynimus did, the Rokeach must be describing something else, namely the thematic parallel with the morning blessings and not the specific lines <span class="heb-inline">המשיח אלמים</span> and <span class="heb-inline">המפענח נעלמים</span>, which the Gemara’s list of morning blessings lacks. The sources reported do not resolve the matter.</p>
+
+<h2>IX. <em class="term">Shimon ben Shetach</em> (<span class="heb-inline">שמעון בן שטח</span>) and the Reverse Acrostic</h2>
+
+<p>A further answer is offered in the siddur of Reb Naftali Hertz Treves (<span class="heb-inline">ר׳ נפתלי הירץ טריוויש</span>), one of the early printed siddurim of the Ashkenazi rite.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> He is known as “Reb Hertz Shatz,” the last word being <span class="heb-inline">ש״ץ</span>, an acronym of <em class="term">shliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>), for he was a cantor who knew the prayers; he was born in Worms, buried in Frankfurt, and lived in the sixteenth century. His siddur is quoted often by the <em class="term">Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>), the <em class="term">Shelah</em> (<span class="heb-inline">של״ה</span>) and other Acharonim, which shows the standing of the work. At Nishmas he cites a <em>yesh omrim</em> (<span class="heb-inline">יש אומרים</span>, “some say”) as to its authorship, and the answer is far earlier than the Anshei Knesses HaGedolah or the Geonim: it was written by <strong>Shimon ben Shetach</strong>. This would also explain why the Rokeach holds that Nishmas precedes Birchos HaShachar.</p>
+
+<h3>Who Was Shimon ben Shetach?</h3>
+
+<p>Shimon ben Shetach lived in the time of King Alexander <em class="term">Yannai</em> (<span class="heb-inline">ינאי המלך</span>; Alexander Jannaeus), and was the brother of the queen, Shlomtzion, who was married to Yannai.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> He belongs to the era of the <em class="term">Zugos</em> (<span class="heb-inline">זוגות</span>), the “pairs” named at the opening of <em class="term">Pirkei Avos</em> (<span class="heb-inline">פרקי אבות</span>), and the lecturer describes him as the teacher of Shemaya and Avtalyon. He says as well that the tradition about <em class="term">Jesus</em> (<span class="heb-inline">ישו</span>) in Chazal begins in his time, and that Rabbi Yehoshua ben Perachya was his student. This is long before the <em class="term">Tannaim</em> (<span class="heb-inline">תנאים</span>), among the earliest of the sages of Israel. If Treves is right, Nishmas is extremely early, and the lecturer adds that he knows of no other prayer in the siddur attributed to so early a source.</p>
+
+<h3>The Proof: Reading the Prayer Backwards</h3>
+
+<p>Treves’s evidence is an acrostic formed by the initial letters of sections of Nishmas read in reverse order, from the end of the prayer. In the sequence the lecturer gives:<a class="footnote-ref" id="ref22" href="#fn22">[22]</a></p>
+<ul>
+<li><strong>Shin</strong>: <span class="heb-inline">שַׁוְעַת עֲנִיִּים אַתָּה תִשְׁמַע</span></li>
+<li><strong>Mem</strong>: <span class="heb-inline">מִי יִדְמֶה לָּךְ</span></li>
+<li><strong>Ayin</strong>: <span class="heb-inline">עַד הֵנָּה עֲזָרוּנוּ רַחֲמֶיךָ</span></li>
+<li><strong>Vav</strong>: <span class="heb-inline">וְאִלּוּ פִינוּ מָלֵא שִׁירָה כַּיָּם</span></li>
+<li><strong>Nun</strong>: <span class="heb-inline">נִשְׁמַת</span></li>
+</ul>
+<p>Read from the bottom, <em>shin, mem, ayin, vav, nun</em> spell <strong><span class="heb-inline">שמעון</span></strong> (Shimon), written into the prayer in reverse. Treves concludes that the author was Shimon ben Shetach. The acrostic uses the <em>vav</em> of <span class="heb-inline">ואילו</span>, the siddur’s reading and not the Gemara’s (Section IV). The lecturer then introduces what he calls “the most controversial thing that was ever said about anything in our siddur.”</p>
+
+<h2>X. The Legend of <em class="term">Shimon Kipa</em> (<span class="heb-inline">שמעון כיפא</span>)</h2>
+
+<h3>What the Tradition Is, and Who Rejects It</h3>
+
+<p>The reverse acrostic reads <span class="heb-inline">שמעון</span>, and a further tradition holds that the Shimon in question is not Shimon ben Shetach but <strong>Shimon Kipa</strong> (Kefa, Cephas), whom the tradition identifies with Peter, the apostle of Jesus and, in Catholic tradition, the first pope. The lecturer says that the tradition appears in “some <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>)” of debated source, that other Rishonim relate it and that Treves quotes it, and that some Rishonim are very upset when it is told. What can be said plainly is this. The tradition is a <strong>legend</strong>: the narrative of a Jewish sage sent by the Sages to infiltrate the early Christian community and to create a lasting separation from it is not supported by any historical source.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> As the lecturer reports it, the Machzor Vitry rejects the claim that Peter wrote Nishmas in the strongest terms, and the <em class="term">Sefer Chasidim</em> (<span class="heb-inline">ספר חסידים</span>) uses the same disparaging epithet of Peter while saying that he began as a tzaddik. What follows records the legend as the lecturer relayed it, each element introduced as a claim of the legend.</p>
+
+<h3>The Rejection by the Rishonim</h3>
+
+<p>The Machzor Vitry, in the lecturer’s paraphrase, is vehement. Whoever repeats such a thing will, when the <em class="term">Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>) is rebuilt, have to bring a <em class="term">korban chatas</em> (<span class="heb-inline">קרבן חטאת</span>); one may not say it; it is out of the question that Nishmas was written by Peter. And it calls him <span class="heb-inline">הנבל פטר חמור</span>, “the villain, Peter the donkey.” The epithet is a play on the Biblical <em>peter chamor</em> (<span class="heb-inline">פטר חמור</span>), the firstborn of a donkey (<em class="term">Shemos</em>, <span class="heb-inline">שמות</span> 13:13), and is medieval polemic rather than a neutral description. The lecturer adds that Peter was a Jew, as they all were at the time, “but a <em>kofer</em>” (<span class="heb-inline">כופר</span>). The Sefer Chasidim also calls him <span class="heb-inline">פטר חמור</span>, but it says that he began as a tzaddik. It is reported to use the epithet and to qualify it; it is not reported to reject the claim that he wrote Nishmas.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> The lecturer concludes: “nobody really knows what the story with this Peter is.”</p>
+
+<h3>The Names Peter and Kefa</h3>
+
+<p>According to the New Testament his name was originally Shimon, son of Yonah (<em class="term">Bar Yonah</em>, <span class="heb-inline">בר יונה</span>). The name <em>Kipa</em> or <em>Kefa</em> (<span class="heb-inline">כיפא</span>) is Aramaic for a rock (<span class="heb-inline">סלע</span>), and the New Testament says that Jesus gave it to him: “you are Peter, and on this rock I will build my congregation.”<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> The lecturer reports as well that, according to “sources in our sources” which he does not identify, he was called Peter because the word is related to the Hebrew <span class="heb-inline">פוטר</span>, to exempt: he exempted the former Jews from the mitzvos, saying that they might eat what they pleased and desecrate Shabbos on Saturday and keep Sunday instead.</p>
+
+<h3>The Setting: The Early Followers</h3>
+
+<p>In the first generations Jesus (in the lecturer’s speech <span class="heb-inline">ישקע</span>, followed by the formula <span class="heb-inline">ימח שמו וזכרו</span>) and his disciples were Jews, and the community of his followers sat among the rest of the Jewish community and prayed in the same synagogues. The lecturer states that the Last Supper was a Seder night; the Gospels differ on the point.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> For the Sages there was a real problem: how to distinguish between those who believed and those who did not, when they sat together in the same shul.</p>
+
+<h3>The Commission</h3>
+
+<p>The legend, which the lecturer says “reads like a novel,” relates that the Sages resolved, in the days of the <em class="term">Second Temple</em> (<span class="heb-inline">בית שני</span>), to infiltrate the new movement, which was then still very small. The followers were persecuted: the Jews were against them, the Romans were against them, “as we know from the story of the cross.” The Sages decided to send a double agent, a God-fearing Jew of great stature who would make believe that he subscribed to all their beliefs and who, once the founder was gone, could make new rules for the Christians, so that it would be recognizable who was a Christian and who a Jew. The aim was to alienate the Christians completely from the Jewish community.</p>
+
+<p>The man chosen was Shimon Kipa, one of the sages of the time, a Tanna (the lecturer does not say which). The story, in a midrash of debated source, has them take him to the Beis HaMikdash itself and swear him in: he was to put off his head-covering, make believe that he was a Christian, believe in Jesus and do as they did, on one condition, that he make new rules to create the distinction. In return the Sages promised, “We will <em class="term">forgive</em> (<span class="heb-inline">מוחל</span>); we will take upon ourselves all the <em class="term">sins</em> (<span class="heb-inline">עבירות</span>) you may end up doing for the rest of your life.” According to the midrashim, he rose to the upper ranks of the movement.</p>
+
+<h3>What the Legend Ascribes to Peter</h3>
+
+<p>The lecturer relays the following as what the legend claims of Peter, adding that it is known “from the New Testament.” The New Testament does not, however, attribute these changes to Peter, and several of them are not found there at all.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> The legend claims that Peter:</p>
+<ul>
+<li>moved the day of rest from Saturday to Sunday, so that whoever keeps Sunday is known to be a Christian;</li>
+<li>replaced the festivals: Pesach (the Last Supper) with Easter, <em class="term">Shavuos</em> (<span class="heb-inline">שבועות</span>) with Pentecost, and, in the lecturer’s continuation, <em class="term">Sukkos</em> (<span class="heb-inline">סוכות</span>) with Christmas and <em class="term">Shemini Atzeres</em> (<span class="heb-inline">שמיני עצרת</span>) with New Year’s;</li>
+<li>received a dream in which Jesus came to him and the laws of the Torah, specifically <em class="term">kashrus</em> (<span class="heb-inline">כשרות</span>), were abolished, so that only forbidden food should be eaten, and his disciples began to eat it: another means of distinguishing the two communities.</li>
+</ul>
+<p>On the dream the lecturer makes two statements that stand side by side: that the account is “all made up, obviously, according to our tradition,” and that “some part of this legend has to be true.” He adds that many other things in the New Testament and in Jewish sources point, in his view, to this Peter: a Tanna, a holy man, and the author of Nishmas. Such is the shape of the legend’s conclusion. The lecturer adds that this is unsettling.</p>
+
+<h3>The Ninth of Teves</h3>
+
+<p>A member of the congregation adds a source: a gloss of the <em class="term">Baruch Ta’am</em> (<span class="heb-inline">ברוך טעם</span>) at <em class="term">Shulchan Aruch</em>, Orach Chaim 580, the siman dealing with fasts that are no longer observed.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> There the Shulchan Aruch records the ninth of Teves, the day before <em class="term">Asarah B’Teves</em> (<span class="heb-inline">עשרה בטבת</span>), and says of it that it is not known which calamity occurred on that day (<span class="heb-inline">לא נודע איזה היא הצרה שאירע בו</span>). Among the many opinions of the <em class="term">nosei keilim</em> (<span class="heb-inline">נושאי כלים</span>), the lecturer mentions one that Ezra HaSofer died on that day, as it is said in the <em class="term">selichos</em> (<span class="heb-inline">סליחות</span>) of Asarah B’Teves. The Baruch Ta’am was Rabbi Baruch Frankel-Teomim, the Rav of Leipnik and, as the lecturer says, the father-in-law of the Tzanzer Rav, one of the great Acharonim. In his margin to the Shulchan Aruch he writes something very mysterious: <span class="heb-inline">מצאתי כתב יד</span>, “I found a manuscript” saying that this is the day on which Shimon HaKipa died. On this account the day would be commemorated by a fast because of the great service he did for Klal Yisrael in making the distinction between Jews and Christians. The fast is not observed today, and the Shulchan Aruch itself says that the reason is unknown; the report is at three removes (a congregant, a manuscript, a gloss), the printed gloss has not been located, and it is not an accepted reason for any fast.</p>
+
+<p>The lecturer takes the report to add to the legend, since it makes Shimon Kipa a real person who might have written Nishmas, and he takes it to explain why the acrostic reads “Shimon” and not “Shimon ben Shetach”: the name, in the reversed initials, is Shimon, hence Shimon Kipa.</p>
+
+<h3>The Atah Konanta of Yom Kippur</h3>
+
+<p>The legend ascribes to him a second composition, <span class="heb-inline">אַתָּה כוֹנַנְתָּ עוֹלָם מֵרֹאשׁ</span>, the opening of the <em class="term">Seder Avodah</em> (<span class="heb-inline">סדר העבודה</span>) of <em class="term">Musaf</em> (<span class="heb-inline">מוסף</span>) on <em class="term">Yom Kippur</em> (<span class="heb-inline">יום כיפור</span>), the holiest day of the year (the lecturer mentions that the Avodah has two versions, <em class="term">Atah Konanta</em> (<span class="heb-inline">אתה כוננת</span>) and <em class="term">Ametz Koach</em> (<span class="heb-inline">אמיץ כח</span>), which he assigns to Sefard and Ashkenaz). He ties this to the commemoration of his <em>yahrzeit</em> (<span class="heb-inline">יארצייט</span>) on that day. The lecturer remarks that “the machzor” says that one is not allowed to say it. The antecedent of “it” is not clear; in context the more natural reading is that one may not say that Peter wrote it, as in the earlier rebuttal, and not that the piyut may not be recited.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a></p>
+
+<p>Two different days are thus given as the yahrzeit of Shimon Kipa: the ninth of Teves, on the strength of the Baruch Ta’am’s manuscript, and Yom Kippur, in connection with the Avodah. The lecturer does not reconcile them. They are recorded here as two separate claims within the legend, the first resting on a manuscript note and the second on the ascription of the Avodah piyut to him; which of them, if either, is meant as the day of death is not stated.</p>
+
+<h3>The End of the Legend</h3>
+
+<p>The lecturer relates a further midrash, of unknown source: at the end of his life, having had enough of what he calls the foolishness, Peter wished to return to Judaism (“whether it was for the sake of Heaven or not we shall never know”). He sat in a tower on top of a rock in Rome, which, the lecturer says, is claimed to be known, and this is another reason for the name Kefa. According to the legend, he wrote many <em class="term">piyut</em> (<span class="heb-inline">פיוט</span>)im and prayers, and among them Nishmas, which he sent to the Sages in Eretz Yisrael, who loved it and him so much that they made every Jew say it each Shabbos. In Catholic tradition he was the first pope, taken to Rome, where he died. There was also, the lecturer notes, a lifelong dispute between Peter and Paul, among other things over whether Christianity was meant for gentiles at all or only for Jews; Peter held that it was mainly for Jews.</p>
+
+<h3>One Shimon or Two?</h3>
+
+<p>The lecturer is asked, in response to a remark from the congregation, whether the two Shimons, Shimon ben Shetach and Shimon Kipa, could be one person. He answers that it “does not really fit,” though perhaps on one view it fits, “with the dates of Christianity, of Jesus, of Yehoshua ben Perachya.” He had not thought of it, he has seen no one who says it, and what he has seen is Shimon bar Yonah (Peter’s name in the New Testament). It is a speculation without a source.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a></p>
+
+<h3>Two Further Points</h3>
+
+<p>In Christian tradition Peter’s remains lie beneath St. Peter’s Basilica in the Vatican; some archaeologists dispute this, and another church in Italy claims to hold his skull. The lecturer’s own ruling is that one should not visit the basilica, as a place of Christian worship, while allowing that other poskim may hold otherwise. Asked why the Sages did not rather try to draw the followers back than send an infiltrator, he answers that he was not there and cannot say, but that it must have seemed very important to make the distinction.</p>
+
+<h2>XI. Why Shabbos? Three Reasons</h2>
+
+<p>The incorporation of Nishmas into the seder specifically on Shabbos (and Yom Tov) requires its own explanation. Three reasons are offered, and each can be tested against the fact that the prayer is also said on Yom Tov, for which the sources on the additional soul do not speak, and against the fact, noted below, that there were pious individuals who said it every day.</p>
+
+<h3>Reason One: More Time</h3>
+<p>A member of the congregation suggests the simplest reason: on Shabbos there is more time. This is the reason given for all the additions to Shabbos Pesukei DeZimra. It explains Yom Tov as well as Shabbos, and it explains why a prayer already known could be added on the days of leisure; it does not explain why this prayer was chosen.</p>
+
+<h3>Reason Two: The Additional Soul</h3>
+<p>Another member of the congregation points to the opening words, <span class="heb-inline">נשמת כל חי … ורוח כל בשר</span>. On an ordinary day there is “the spirit of all flesh,” the <em>nefesh</em> (<span class="heb-inline">נפש</span>) praying to Hashem; on Shabbos there is an additional soul (<em class="term">neshamah yeseirah</em>, <span class="heb-inline">נשמה יתירה</span>), and Nishmas is said to express the thanks of that soul for the fact that it has it.<a class="footnote-ref" id="ref31" href="#fn31">[31]</a> The reason fits the text of the opening, but it speaks of Shabbos only; the sources cited for the additional soul speak of Shabbos alone, and do not extend it to Yom Tov.</p>
+
+<h3>Reason Three: The Exodus</h3>
+<p>The lecturer adds that some Rishonim, “the <em class="term">Tur</em> (<span class="heb-inline">טור</span>), I think,” give a reason tied to <em class="term">Yetzias Mitzrayim</em> (<span class="heb-inline">יציאת מצרים</span>): since Shabbos is a remembrance of the exodus, and Shiras HaYam, <span class="heb-inline">אז ישיר</span>, said just before, is about the exodus, Nishmas is said right after it on Shabbos to commemorate Yetzias Mitzrayim. The lecturer was not certain that the source is the Tur. What the Tur writes, in the passage located, is narrower: it is Nishmas itself, not Shabbos, that contains the theme of the exodus, which is why it is placed next to the Shirah.<a class="footnote-ref" id="ref32" href="#fn32">[32]</a> The link between Shabbos and the exodus is a separate verse (<em class="term">Devarim</em>, <span class="heb-inline">דברים</span> 5:15). Of the three reasons this is the one with the most direct textual source, and it explains Yom Tov as well.</p>
+
+<h3>A Daily Prayer for the Pious</h3>
+<p>The lecturer observes that, essentially, Nishmas should be said every day. The Rishonim write that in their times there were <em class="term">Chasidim</em> (<span class="heb-inline">חסידים</span>), pious people, who said it every single day. This accords with the view, which he attributes to the Machzor Vitry, that Nishmas was said in place of Birchos HaShachar, a daily tefillah.<a class="footnote-ref" id="ref33" href="#fn33">[33]</a> It is also why those who go to the <em class="term">Kosel</em> (<span class="heb-inline">כותל</span>) say it daily, and why a number of people today, the lecturer notes, say it every day.</p>
+
+<h3>When Did It Enter the <em>Seder</em>?</h3>
+<p>The lecturer is “confused as to when they started saying it.” What he reports is this. <em class="term">Tosafos</em> (<span class="heb-inline">תוספות</span>) in Pesachim says that they used to say it in the times of Chazal, whereas in the siddurim of the Geonim it is said that in the times of Chazal it was not said every Shabbos: only individuals (<em class="term">yechidim</em>, <span class="heb-inline">יחידים</span>) said it, and the tzibbur began to say it as part of the siddur only in the days of the Geonim.<a class="footnote-ref" id="ref34" href="#fn34">[34]</a> What is clear is that Klal Yisrael accepted all of Nishmas, with its different parts composed at different times, and says it every single Shabbos. Why it is also said on Yom Tov the lecturer does not know. A member of the congregation points out that the Nusach Sefard, with all the lines discussed above, does not really agree with the Nusach Ashkenaz, which leaves out some of them; why the two differ, the lecturer says, he is not sure.</p>
+
+<h2>XII. Nishmas as the <em class="term">Shir HaShirim</em> (<span class="heb-inline">שיר השירים</span>) of Prayer</h2>
+
+<p>The Rokeach, as reported, compares the place of Nishmas in prayer to that of Shir HaShirim in Scripture. The Mishnah in <em class="term">Maseches</em> Yadayim (<span class="heb-inline">ידיים</span>) teaches that all of Scripture is holy and Shir HaShirim is the holy of holies (<span class="heb-inline">קדש קדשים</span>); if one knows the secrets of Shir HaShirim, it is the holiest and most sacred song that is sung. So with prayer: all prayer is holy, but Nishmas is the Shir HaShirim of prayer.<a class="footnote-ref" id="ref35" href="#fn35">[35]</a> This, the lecturer says, is why the Chasidic world treats it as it does. He himself prayed in a Chasidic congregation for ten years. “Nishmas is an experience. Nishmas is dramatic. People cry out. They say every word, and it is slow.” Satmar Chasidim, he says, say every word, slowly, bowing. It is the most expressive piece of liturgy in the siddur that thanks Hashem. He learned to say Nishmas in this way and loves it: one thanks Hashem for every moment, for every breath.</p>
+
+<p>One of the Rishonim writes, the lecturer says, that Nishmas, more than the rest of Pesukei DeZimra, is to be said in a loud voice and in song (<span class="heb-inline">בקול רם ובנעימה</span>). The sentence in which he reports this begins with the Rokeach; whether the Rokeach himself is the Rishon who writes it is not stated.<a class="footnote-ref" id="ref36" href="#fn36">[36]</a></p>
+
+<h3>Reb Moshe Wolfson</h3>
+
+<p>It is reported by a member of the congregation that in the congregation of Emunas Yisrael, of Reb Moshe Wolfson, Nishmas is said for half an hour on Shabbos morning, which is why the prayers there end so late. The lecturer confirms it from experience. When he was a rabbi in Miami, Reb Moshe Wolfson, <span class="heb-inline">זצ״ל</span>, a great tzaddik, came to Miami every winter for two or three months and prayed in the lecturer’s synagogue.<a class="footnote-ref" id="ref37" href="#fn37">[37]</a> The prayers began at nine on Shabbos morning, and he came a half hour early. He went to the <em class="term">mikveh</em> (<span class="heb-inline">מקווה</span>), the lecturer assumes, and then began Pesukei DeZimra on his own, so as not to fall behind, because Nishmas took him a half hour.</p>
+
+<p>In a Chasidic congregation the Rebbe prays Pesukei DeZimra aloud; in the lecturer’s synagogue it was the lecturer himself who led them each week, and so he stood beside Reb Moshe at the <em class="term">mizrach</em> (<span class="heb-inline">מזרח</span>). “I promise you, I never saw a Jew say Nishmas as he did.” He was already about eighty-nine or ninety; his whole body trembled and tears ran down his face. He said every word clearly: <span class="heb-inline">עַד הֵנָּה עֲזָרוּנוּ רַחֲמֶיךָ</span>. “I felt as if I were standing next to an angel who really understands every word and thanks Hashem for every breath,” for <span class="heb-inline">רוּחַ וּנְשָׁמָה שֶׁנָּפַחְתָּ בְּאַפֵּינוּ</span>. It made an unbelievable impact on the way the lecturer says Nishmas.</p>
+
+<h3>The <em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>)</h3>
+
+<p>A source from the other camp gives the same teaching. The <em>Yesod VeShoresh HaAvodah</em> of Rabbi Alexander Ziskind of Grodno (<span class="heb-inline">רבי אלכסנדר זיסקינד מגרודנא</span>), written in the late eighteenth century, is the work of a Lithuanian kabbalist who was not a Chasid and whom the Chasidim tried to claim for themselves.<a class="footnote-ref" id="ref38" href="#fn38">[38]</a> The lecturer relates that he travelled three times to the <em class="term">Maggid of Mezritch</em> (<span class="heb-inline">המגיד ממזריטש</span>), the chief disciple of the <em class="term">Baal Shem Tov</em> (<span class="heb-inline">הבעש״ט</span>), who told him that he was not for them: he was so Chasidic in spirit that he was needed among the <em class="term">Misnagdim</em> (<span class="heb-inline">מתנגדים</span>), to excite them about the service of Hashem as the Baal Shem Tov wished (the lecturer likens this to the sending of Shimon Kipa among the Christians in the legend). The book is accordingly “practically a Chasidic <em class="term">sefer</em> (<span class="heb-inline">ספר</span>),” urging excitement about every part of prayer.</p>
+
+<p>On Nishmas, the lecturer reports, the author writes something he writes of no other prayer: that a Jew saying it should feel a joy greater than anything else in the world could give him. “What is your greatest pleasure? What is your greatest desire? The joy of saying Nishmas should be higher than that.”</p>
+
+<h3>Forty Days at the Kosel</h3>
+
+<p>A contemporary custom is attached to the Kosel. In Eretz Yisrael people go to the Kosel for forty days in a row and say Nishmas, and find a <em class="term">shidduch</em> (<span class="heb-inline">שידוך</span>). It is, the lecturer says, a new thing, and the <em class="term">mekubalim</em> (<span class="heb-inline">מקובלים</span>) advise it.<a class="footnote-ref" id="ref39" href="#fn39">[39]</a> Nishmas is evidently a prayer of great weight; the custom rests on the claim, discussed above, that it is the oldest and most powerful of prayers.</p>
+
+<h2>XIII. <em class="term">Shochen Ad</em> (<span class="heb-inline">שוכן עד</span>), and Where the Inquiry Rests</h2>
+
+<p>In the lecturer’s description the prayer is concluded at <span class="heb-inline">שׁוֹכֵן עַד</span>, and on Shabbos this is the point at which the <em class="term">shliach tzibbur</em> descends to the <em class="term">amud</em> (<span class="heb-inline">עמוד</span>). On Yom Tov he begins at <span class="heb-inline">הָאֵל בְּתַעֲצֻמוֹת עֻזֶּךָ</span>, and on Yom Kippur at <span class="heb-inline">הַמֶּלֶךְ</span>.<a class="footnote-ref" id="ref40" href="#fn40">[40]</a> The lecturer does not give a reason. He says that the answer is Kabbalah, adds “I don’t know,” and mentions that according to some versions the Rishonim already discuss it. The discussion stops there.</p>
+
+<div class="callout"><span class="label">Where the Four Questions Stand</span>
+<ol>
+<li><strong>Why Shabbos?</strong> Three reasons are offered: more time, the additional soul, and the exodus theme of the prayer itself. None explains the prayer’s selection together with Yom Tov and its daily recitation by the pious; the Tur’s reason is the best sourced.</li>
+<li><strong>Who composed it?</strong> Not resolved. The composite layers (Birchas HaShir, the rain-prayer, the Kloynimus lines, the acrostic section) are in tension with the single-author claims, and the lecturer works within the former without adjudicating between the latter.</li>
+<li><strong>When did it enter the seder?</strong> On the lecturer’s uncertain account, individuals said it from the time of Chazal, the Seder-night portion being in the Gemara, and the tzibbur only from the days of the Geonim; the dates of the later layers are unknown.</li>
+<li><strong>Why is it taken so seriously?</strong> Because it has become part of the core structure of Shabbos Pesukei DeZimra (Section II), and because it is held to be the Shir HaShirim of prayer (Section XII).</li>
+</ol></div>
+
+<div class="callout"><span class="label">For Next Shabbos</span>
+<p>At <span class="heb-inline">המשיח אלמים</span> and <span class="heb-inline">המפענח נעלמים</span>, keep in mind the tradition of Reb Kloynimus. And remember that the prayer which Klal Yisrael says whole is one that it received in layers: a Birchas HaShir, a rain-prayer, a Jerusalem tradition, an acrostic, and a name hidden in the paragraphs, whether of Shimon ben Shetach or of the other Shimon.</p></div>
+
+<p class="lead">May we be worthy to thank Hashem for everything that we do. Rabbi Chananya ben Akashya (<span class="heb-inline">רבי חנניה בן עקשיא</span>) says:<a class="footnote-ref" id="ref41" href="#fn41">[41]</a></p>
+
+<blockquote><div class="heb">רצה הקדוש ברוך הוא לזכות את ישראל, לפיכך הרבה להם תורה ומצוות, שנאמר: ה׳ חָפֵץ לְמַעַן צִדְקוֹ, יַגְדִּיל תּוֹרָה וְיַאְדִּיר.</div>
+<div class="trans">The Holy One, blessed be He, wished to confer merit upon Israel; therefore He gave them Torah and mitzvos in abundance, as it is said: “Hashem desired, for the sake of its righteousness, to make the Torah great and glorious.”</div></blockquote>
+
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer&rsquo;s report, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">נשמת כל חי</span> through <span class="heb-inline">ישתבח</span> — the extent of the prayer.</span>
+  <span class="expanded"> The prayer opens <span class="heb-inline">נשמת כל חי תברך את שמך</span> and flows into <span class="heb-inline">ובכן ישתבח שמך לעד מלכנו</span>, the opening of the berachah of Yishtabach. The lecturer describes its extent as running from <span class="heb-inline">נשמת</span> through <span class="heb-inline">כל עצמותי תאמרנה</span>, <span class="heb-inline">שוכן עד</span> and <span class="heb-inline">ובמקהלות רבבות עמך בית ישראל</span>. Elsewhere he describes the late section as running from <span class="heb-inline">וכל הלבבות</span> to <span class="heb-inline">שוכן עד</span> (“until Yishtabach”), and he places the line <span class="heb-inline">בפי ישרים</span> within that section. How these descriptions correspond to the order of the printed text is recorded among the Open Questions (no. 1).</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">שולחן ערוך ומשנה ברורה אורח חיים סימן נ״ב</span> — the latecomer (<span class="heb-inline">משנה ברורה נ״ב:ה–ו</span>).</span>
+  <span class="expanded"> Shulchan Aruch, Orach Chaim 52 (a single se’if, with the gloss of the Rema), treats one who arrives in the course of the prayers. Mishnah Berurah 52:5 states that on Shabbos one is obligated to say <span class="heb-inline">נשמת</span>, which is called <span class="heb-inline">ברכת השיר</span> (Pesachim 118), and that when time is entirely lacking one says <span class="heb-inline">ברוך שאמר ותהלה לדוד ונשמת וישתבח</span>; 52:6 allows <span class="heb-inline">ברוך שאמר</span>, <span class="heb-inline">אשרי</span> and <span class="heb-inline">ישתבח</span> while the chazzan extends the words from <span class="heb-inline">יוצר</span> onward. The lecturer’s further understanding, that a skipped <span class="heb-inline">נשמת</span> is to be said after the prayers, has not been located in the Mishnah Berurah on this siman: 52:9 requires the Torah blessings and <span class="heb-inline">אלהי נשמה</span> after the prayers, not <span class="heb-inline">נשמת</span>. The ruling may stand in another se’if, in the Sha’ar HaTziyun or the Biur Halachah, or in another work (Open Question 12).</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">פסחים קי״ז ע״ב – קי״ח ע״א</span> — <span class="heb-inline">ברכת השיר</span> over the fourth cup.</span>
+  <span class="expanded"> The Mishnah (117b) teaches that over the fourth cup one completes <span class="heb-inline">הלל</span> and recites <span class="heb-inline">ברכת השיר</span>. The Gemara (118a) asks <span class="heb-inline">מאי ברכת השיר</span>: Rav Yehuda says <span class="heb-inline">יהללוך ה׳ אלהינו על כל מעשיך</span>, and Rabbi Yochanan says <span class="heb-inline">נשמת כל חי</span>. Nishmas is thus the view of Rabbi Yochanan; Yehalelucha is that of Rav Yehuda. The lecturer gave the daf as 118a and noted that the girsaos differ as to how far the passage extends, some ending at <span class="heb-inline">ואילו פינו מלא שירה כים</span>.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">אנשי כנסת הגדולה</span> and Ezra — the attribution of <span class="heb-inline">נשמת</span>.</span>
+  <span class="expanded"> The lecturer reports the ascription to the Anshei Knesses HaGedolah and Ezra as the understanding of “most Rishonim” at the Seder-night passage and of “some Rishonim” at the opening of the authorship discussion. No Rishon is named in either place, and the passage has not been located. The two formulations are not harmonised (Open Question 13).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">ברכות נ״ט ע״ב</span> — thanks for abundant rain.</span>
+  <span class="expanded"> In the sugya on abundant rain (59b), Rav Yehuda gives the thanksgiving as <span class="heb-inline">מודים אנחנו לך על כל טיפה וטיפה</span>, and <span class="heb-inline">רבי יוחנן מסיים בה הכי: אילו פינו מלא שירה כים וכו׳</span>. The Gemara quotes only the opening words; the remainder is as in the siddur. The preceding daf, 59a (thunder and lightning), does not contain the phrase. The lecturer gave the daf only (59).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">שולחן ערוך אורח חיים סימן רכ״א</span> — <span class="heb-inline">ברכת הודאת הגשמים</span>.</span>
+  <span class="expanded"> Orach Chaim 221:1, with the gloss of the Rema, records that the custom is not to recite the rain thanksgiving today; 221:2 gives its text, <span class="heb-inline">מודים אנחנו לך ה׳ אלהינו על כל טפה וטפה</span>. The lecturer spoke of “a whole siman” in the Shulchan Aruch and gave no number; the siman cited is the one that treats the rain thanksgiving.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short">Gemara <span class="heb-inline">אילו</span> and siddur <span class="heb-inline">ואילו</span>.</span>
+  <span class="expanded"> The reading without <span class="heb-inline">ו</span> is that of Berachos 59b as printed. The point that the acrostic of Section IX requires the <span class="heb-inline">ו</span> follows from comparing the two texts; it is not stated in the lecture.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">החיד״א</span>, <span class="heb-inline">שמחת הרגל</span> (commentary on the <span class="heb-inline">הגדה</span>) — at <span class="heb-inline">נשמת</span>.</span>
+  <span class="expanded"> Rabbi Chaim Yosef David Azulai (1724–1806). Simchas HaRegel is listed as his Haggadah commentary, composed c. 1758–1782 and published at Livorno in 1782. The lecturer gave no page or edition, and the passage on <span class="heb-inline">נשמת</span> has not been consulted; its wording and any date it gives are unverified (Open Question 4).</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short">The name <span class="heb-inline">קלונימוס</span>.</span>
+  <span class="expanded"> The name is a form of the Greek Kalonymos. No source cited here connects him with the Kalonymus family of the Rhineland, and none excludes the connection. The lecturer calls him the rabbi of Jerusalem (<span class="heb-inline">רב בירושלים</span>) at the time.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short">Rabbi Yaakov Yisrael Algazi — an independent record of the story.</span>
+  <span class="expanded"> As reported by the lecturer, who gives the name as <span class="heb-inline">רב יעקב ישראל אלגאזי</span>: a leading rabbi of Jerusalem, originally of Izmir, called by him “the Maharit Algazi’s son,” who records the same story independently of the Chida. The work in which the story appears is not named, and the relationship to the Maharit is unconfirmed (Open Question 4).</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">סדר רב עמרם גאון</span>; <span class="heb-inline">סידור רב סעדיה גאון</span> — <span class="heb-inline">נשמת</span> without the added lines.</span>
+  <span class="expanded"> As reported by the lecturer from the Gaonic siddurim (“a thousand years ago”): the core of <span class="heb-inline">נשמת</span> appears, but the section beginning <span class="heb-inline">אלהי הראשונים והאחרונים</span> does not. Rav Amram belongs to the ninth century and Rav Saadia to the tenth. Standard critical editions: Seder Rav Amram Gaon, ed. D. Goldschmidt (Jerusalem 1971); Siddur Rav Saadia Gaon, ed. Davidson–Assaf–Joel (Jerusalem 1941). The contents of these editions have not been checked against the claim (Open Question 5).</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short">Differences of <span class="heb-inline">נוסח</span> in <span class="heb-inline">נשמת</span>.</span>
+  <span class="expanded"> As reported: Ashkenaz omits some of the later material while retaining the essential core, and in Sefard “we say the whole thing, <span class="heb-inline">משיח אלמים, מפענח נעלמים</span>.” The lecturer does not specify which lines Ashkenaz omits, and later says that he is not sure exactly why the two rites differ. A comparison of an Ashkenaz and a Sefard siddur is required (Open Question 3).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short">The date of Reb Kloynimus — the markers compared.</span>
+  <span class="expanded"> The lecturer’s markers are: “seven hundred years ago, approximately” (the miracle); “seven hundred, eight hundred years” (the addition of the lines); the Turks, “the Ottoman Empire,” and the pasha (his answer to his own question to the congregation); and “a couple of centuries ago” (near the close of the account). The Chida (1724–1806) and Rabbi Algazi are later reporters. The Rokeach is Rabbeinu Elazar of Worms (c. 1176–c. 1238); the Machzor Vitry belongs to the school of Rashi’s students (c. 1100). The Ottoman conquest of Eretz Yisrael, in 1517, is a datum of general history. No date is asserted (Open Question 4).</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">The age of the closing section.</span>
+  <span class="expanded"> The Machzor Vitry belongs to the school of Rashi’s students, c. 1100. If its knowledge of the acrostic is accepted, the closing section is not later than the early twelfth century, whereas the Kloynimus lines are undated. “Latest” is therefore the lecturer’s claim, made while declaring himself unsure of the chronology.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">בראשית כ״ה:כ״א</span> — <span class="heb-inline">ויעתר יצחק לה׳ לנכח אשתו</span>.</span>
+  <span class="expanded"> <span class="heb-inline">וַיֶּעְתַּר יִצְחָק לַה׳ לְנֹכַח אִשְׁתּוֹ כִּי עֲקָרָה הִוא וַיֵּעָתֶר לוֹ ה׳ וַתַּהַר רִבְקָה אִשְׁתּוֹ</span>. The lecturer reports the ascription of the section to Yitzchak and Rivka as “some say”; he names no source for the view.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">מחזור ויטרי</span>, Order of Shabbat §161 (<span class="heb-inline">פתרון נשמת</span>).</span>
+  <span class="expanded"> The text speaks of <span class="heb-inline">יצחק ורבקה</span> in connection with the prayer (<span class="heb-inline">וכתוב בו יצחק ורבקה</span>) and says <span class="heb-inline">אבל אין עניין יצחק ורבקה לכאן ולא יתכן לפרש כן, דהא יצחק אבינו תיקן תפלת המנחה</span>; had it been his, he would have composed his and his wife’s names in Minchah, not in Shacharis, which Avraham instituted. The lecturer’s further report, that the Machzor Vitry concludes that a <em>later</em> couple of that name composed it, is not in this passage, which mentions a name hidden in another supplication (<span class="heb-inline">עזריאל</span>). The Machzor Vitry is the work of the school of Rabbi Simcha of Vitry, a student of Rashi, whom the lecturer calls Rashi’s <span class="heb-inline">מחותן</span> (Open Question 8).</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">ברכות כ״ו ע״ב</span> — the Patriarchs and the three tefillos.</span>
+  <span class="expanded"> A baraita brought in support of Rabbi Yosei the son of Rabbi Chanina: <span class="heb-inline">אברהם תיקן תפלת שחרית</span> (<span class="heb-inline">וישכם אברהם בבקר</span>), <span class="heb-inline">יצחק תיקן תפלת מנחה</span> (<span class="heb-inline">ויצא יצחק לשוח בשדה לפנות ערב</span>, Bereishis 24:63), <span class="heb-inline">יעקב תיקן תפלת ערבית</span> (<span class="heb-inline">ויפגע במקום</span>).</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><span class="heb-inline">הרוקח</span> (Rabbeinu Elazar of Worms, c. 1176–c. 1238) — <span class="heb-inline">נשמת</span> as the first prayer.</span>
+  <span class="expanded"> As reported by the lecturer: the Rokeach holds <span class="heb-inline">נשמת</span> to be the first prayer composed, said even before Rebbi redacted the Mishnah, and, before Chazal composed <span class="heb-inline">ברכות השחר</span>, to have served in their place. No siman was given, and Sefer HaRokeach is not among the texts that could be searched. The lecturer mentions an earlier discourse in which “the whole story of the Rokeach and the Ramban” was told; the reference is not developed (Open Question 6).</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short"><span class="heb-inline">ברכות ס׳ ע״ב</span> — <span class="heb-inline">ברכות השחר</span>.</span>
+  <span class="expanded"> The lecturer gave the daf as 60–61. The Gemara’s morning blessings (60b) include <span class="heb-inline">מתיר אסורים</span> and <span class="heb-inline">זוקף כפופים</span>, together with <span class="heb-inline">פוקח עורים</span>, <span class="heb-inline">מלביש ערומים</span> and <span class="heb-inline">המעביר חבלי שינה מעיני</span>, which overlap with the Nishmas lines <span class="heb-inline">והמתיר אסורים</span> and <span class="heb-inline">והזוקף כפופים</span>. The lines <span class="heb-inline">המשיח אלמים</span>, <span class="heb-inline">המפענח נעלמים</span> and <span class="heb-inline">סומך נופלים</span> are not in that list. The lecturer’s point was that the Nishmas cluster recalls Birchos HaShachar.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">סידור ר׳ נפתלי הירץ טריוויש</span> — <span class="heb-inline">נשמת</span> by <span class="heb-inline">שמעון בן שטח</span>.</span>
+  <span class="expanded"> As described by the lecturer: Reb Naftali Hertz, “Shatz,” also called Reb Hertz Treves, born in Worms, buried in Frankfurt, of the sixteenth century, and quoted by the Magen Avraham and the Shelah. The identification with Naftali Hertz Treves, whose siddur with commentary appeared at Thiengen in 1560, is a reading of the lecturer’s description and awaits verification, as does the location of his remark on <span class="heb-inline">נשמת</span>. The lecturer’s statement that he was the first to print a siddur is not repeated, since earlier printed siddurim exist; he is described as one of the early printers (Open Question 7).</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">משנה אבות א׳</span> — the Zugos; <span class="heb-inline">ברכות מ״ח ע״א</span> — Yannai and the queen’s brother.</span>
+  <span class="expanded"> Avos 1:6 names Yehoshua ben Perachya and Nittai; 1:8–9, Yehuda ben Tabbai and Shimon ben Shetach; 1:10, Shemaya and Avtalyon. In Berachos 48a, at a meal with King Yannai, the queen (<span class="heb-inline">מלכתא</span>) brings <span class="heb-inline">שמעון בן שטח אחוה</span>, “her brother,” to lead the Grace after Meals. The Gemara does not name the queen Shlomtzion or call the king Alexander Jannaeus; those names are from other sources. The lecturer’s description of Shimon ben Shetach as the teacher of Shemaya and Avtalyon accords with Avos 1:10. His statement that Yehoshua ben Perachya was the student of Shimon ben Shetach runs opposite to the order of the pairs in Avos, in which Yehoshua ben Perachya belongs to the earlier pair; it is recorded as he said it.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">The reverse acrostic.</span>
+  <span class="expanded"> The sequence <span class="heb-inline">שועת עניים</span>, <span class="heb-inline">מי ידמה</span>, <span class="heb-inline">עד הנה</span>, <span class="heb-inline">ואילו פינו</span>, <span class="heb-inline">נשמת</span> is that given by the lecturer, who describes the letters as the initials of the prayer read backwards. Where each of these sections begins varies with the rite and the edition of the siddur; the order of the first two in the printed text has not been compared with the sequence given, and it has not been established which text Treves’s acrostic reads off (Open Question 2).</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short">The legend of <span class="heb-inline">שמעון כיפא</span>.</span>
+  <span class="expanded"> The lecturer relays it as a midrash of debated source, which he does not identify; he says that other Rishonim relate it and that Treves quotes it. The narrative of a Jewish sage sent to infiltrate and separate the early Christian community is a medieval Jewish tradition for which no historical source exists, and the historical Simon Peter, a central figure of Christian tradition, has no attested connection with the authorship of <span class="heb-inline">נשמת</span>. The classification as legend is made on that ground and is not the lecturer’s; he says of the dream that it is “all made up, obviously, according to our tradition.” Who carries the Peter version is not clear from the lecture: Treves himself, a midrash, other Rishonim, or the source indicated by the lecturer’s remark “That’s over here, Tashbetz, right?” (Open Question 7).</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><span class="heb-inline">מחזור ויטרי</span>; <span class="heb-inline">ספר חסידים</span> — the epithet <span class="heb-inline">פטר חמור</span>.</span>
+  <span class="expanded"> As reported by the lecturer, in paraphrase and not in quotation: the Machzor Vitry says that one who repeats the attribution will have to bring a korban chatas when the Beis HaMikdash is rebuilt, and calls him <span class="heb-inline">הנבל פטר חמור</span>; the Sefer Chasidim also uses <span class="heb-inline">פטר חמור</span> while saying that he began as a tzaddik. The lecturer does not say that the Sefer Chasidim rejects the attribution of Nishmas. The passage in the Machzor Vitry was not located in the sections examined (Order of Shabbat §§155–168, the Laws of Shabbat and the Order of Yom Kippur); the passage in the Sefer Chasidim was not located either (the Margaliot and Wistinetzki editions remain to be checked). Both remain unverified. The pun refers to Shemos 13:13, <span class="heb-inline">וכל פטר חמור תפדה בשה</span> (Open Question 8).</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><span class="heb-inline">הברית החדשה</span> — Matthew 16:17–18; John 1:42.</span>
+  <span class="expanded"> “On this rock I will build my congregation” (Matthew 16:18); “Shimon son of Yonah” (Matthew 16:17); the name Kefa/Cephas (John 1:42). Kefa is Aramaic for a rock (<span class="heb-inline">סלע</span>); Peter is from the Greek <em>Petros</em>, in Latin <em>Petrus</em>, and the lecturer gives the Latin form as “Patrus.” The derivation of “Peter” from <span class="heb-inline">פוטר</span> is given by the lecturer from unidentified “sources in our sources.” The statements on the dispute with Paul (compare Galatians 2; Acts 10–15), on the papacy and on Peter’s death in Rome are Christian tradition and not the New Testament narrative; the account of a return to Judaism in a tower in Rome is a midrash of unknown source.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short">The Last Supper as a Seder.</span>
+  <span class="expanded"> The Synoptic Gospels (for example Matthew 26:17–19) present the meal as the Pesach meal; John 13:1 and 18:28 date it before Pesach. The lecturer states that it was a Seder night.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">הברית החדשה</span> — Peter’s vision (Acts 10:9–16) and the claims attributed to Peter.</span>
+  <span class="expanded"> The vision of the sheet with animals is at Acts 10:9–16; the lecturer says that he knows exactly where the dream is in the New Testament but does not give the place. The New Testament does not say that Peter moved Shabbos to Sunday or replaced the festivals: Pentecost is the Greek name of Shavuos (Acts 2), Sunday observance developed later, and the associations of Sukkos with Christmas and of Shemini Atzeres with New Year’s have no basis in the New Testament. The lecturer’s word for the Sukkos replacement is the Yiddish <span class="heb-inline">קראצמך</span>, understood as Christmas. His statement that this is known “from the New Testament” is not supported by the text.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short"><span class="heb-inline">שולחן ערוך אורח חיים סימן תק״פ סעיף ב׳</span> — <span class="heb-inline">תשיעי בטבת</span>; the <span class="heb-inline">ברוך טעם</span>.</span>
+  <span class="expanded"> Orach Chaim 580:2 lists the ninth of Teves and says <span class="heb-inline">לא נודע איזה היא הצרה שאירע בו</span>; the previous day, the eighth, is listed as the day the Torah was written in Greek in the days of King Ptolemy. Neither Ezra nor Shimon Kipa appears in that text, and the lecturer’s paraphrase, “nobody knows why,” is not its wording. The Baruch Ta’am is identified by the lecturer as Rabbi Baruch Frankel-Teomim, Rav of Leipnik; the gloss was relayed to him by a member of the congregation, and the words <span class="heb-inline">מצאתי כתב יד</span> are the Baruch Ta’am’s own, as the lecturer reports them, so that it is the Baruch Ta’am who saw a manuscript. The gloss itself has not been located in the texts searched. The statement that Ezra died on this day, as it is said in the selichos of Asarah B’Teves, is as the lecturer gave it and has not been checked (Open Question 9).</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short"><span class="heb-inline">אתה כוננת עולם מראש</span> — the Avodah of Yom Kippur Musaf.</span>
+  <span class="expanded"> Scholarship attributes <span class="heb-inline">אתה כוננת עולם מראש</span> to the early paytan Yose ben Yose. The Machzor Vitry, Order of Yom Kippur §354, contains only the rubric <span class="heb-inline">אתה כוננת</span> for the shliach tzibbur, with no statement that the piyut is forbidden or ascribed to Peter. The lecturer says only “the machzor”; which machzor is meant is not stated, and the reference of “it” is ambiguous (Open Question 8). He mentions two versions of the Avodah, <span class="heb-inline">אתה כוננת</span> and <span class="heb-inline">אמיץ כח</span>, which he assigns to Sefard and Ashkenaz.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short">One Shimon or two — the chronological question.</span>
+  <span class="expanded"> The question put to the lecturer is understood from his answer. Shimon ben Shetach belongs to the reign of Yannai, and Shimon Kipa, in the legend, to the days of Jesus’s followers; the interval between them is at least a century. The lecturer’s words are “it doesn’t really fit; maybe according to one shitah it fits” (Open Question 18).</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn31">
+  <span class="short"><span class="heb-inline">ביצה ט״ז ע״א</span>; <span class="heb-inline">תענית כ״ז ע״ב</span> — <span class="heb-inline">נשמה יתירה</span>.</span>
+  <span class="expanded"> Resh Lakish: <span class="heb-inline">נשמה יתירה נותן הקדוש ברוך הוא באדם ערב שבת, ולמוצאי שבת נוטלין אותה הימנו</span> (Beitzah 16a). The parallel in Taanis 27b reads <span class="heb-inline">נשמה יתירה ניתנה בו באדם בערב שבת</span>. The sources are not cited by the lecturer, who relays the reason from a member of the congregation.</span>
+  <a class="backref" href="#ref31" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn32">
+  <span class="short"><span class="heb-inline">טור אורח חיים סימן רפ״א</span>; <span class="heb-inline">דברים ה׳:ט״ו</span>.</span>
+  <span class="expanded"> <span class="heb-inline">ואחר השירה מוסיפין נשמת שיש בו מענין יציאת מצרים, לכך סמכוהו אצל השירה וחותמין בישתבח</span> (Tur, Orach Chaim 281). The Tur thus ties Nishmas itself, not Shabbos, to the exodus. The link of Shabbos to the exodus is Devarim 5:15, <span class="heb-inline">וזכרת כי עבד היית בארץ מצרים … על כן צוך ה׳ אלהיך לעשות את יום השבת</span>. The lecturer was unsure that the source is the Tur.</span>
+  <a class="backref" href="#ref32" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn33">
+  <span class="short">Daily recitation of <span class="heb-inline">נשמת</span> by the pious.</span>
+  <span class="expanded"> As reported by the lecturer, who ties it to the Machzor Vitry. The passage in Order of Shabbat §161 does not state that Nishmas was said daily or in place of Birchos HaShachar, so that the ascription is unverified (Open Question 8). The persons who say it daily today, to whom the lecturer refers, are not named.</span>
+  <a class="backref" href="#ref33" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn34">
+  <span class="short"><span class="heb-inline">תוספות פסחים קי״ח ע״א ד״ה רבי יוחנן אמר נשמת כל חי</span>; the Gaonic siddurim — when Nishmas entered the seder.</span>
+  <span class="expanded"> Tosafos on Pesachim 118a (d"h <span class="heb-inline">רבי יוחנן אמר נשמת כל חי</span>) says that Nishmas is called Birchas HaShir <span class="heb-inline">לפי שבשבתות אומרים אותו אחר פסוקי דזמרה</span>, and that Rabbeinu Chaim Cohen concluded only with Nishmas and not with Yehalelucha. The text speaks of the Shabbos practice; it does not state explicitly that the prayer was said in the time of Chazal. The Gaonic claim, that in the time of Chazal only individuals said it and that the tzibbur adopted it in Gaonic times, is as the lecturer reports it and has not been checked. The lecturer gave no daf for Tosafos and says that he is not sure when the prayer was incorporated (Open Question 11).</span>
+  <a class="backref" href="#ref34" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn35">
+  <span class="short"><span class="heb-inline">משנה ידיים ג׳:ה</span> — <span class="heb-inline">שיר השירים קדש קדשים</span>; the Rokeach’s analogy.</span>
+  <span class="expanded"> Rabbi Akiva: the whole world is not worth the day on which Shir HaShirim was given to Israel, <span class="heb-inline">שכל הכתובים קודש ושיר השירים קודש קדשים</span>. The lecturer cites “the Mishnah in Maseches Yadayim” and gives the analogy to Nishmas in the name of the Rokeach; the passage in the Rokeach has not been located (Open Question 6).</span>
+  <a class="backref" href="#ref35" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn36">
+  <span class="short"><span class="heb-inline">בקול רם ובנעימה</span> — the rule for Nishmas.</span>
+  <span class="expanded"> The lecturer says: “It comes from the Rokeach; one of the Rishonim writes that Nishmas, more than the other Pesukei DeZimra, is to be said <span class="heb-inline">בקול רם ובנעימה</span>.” The sentence does not make clear whether the Rokeach is himself the Rishon who writes this, and the source is unconfirmed (Open Question 6).</span>
+  <a class="backref" href="#ref36" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn37">
+  <span class="short">Personal testimony — Reb Moshe Wolfson, in Miami.</span>
+  <span class="expanded"> First-hand account of the lecturer, then a rabbi in Miami. The lecturer uses the honorifics <span class="heb-inline">זכר צדיק לברכה</span> and <span class="heb-inline">זצ״ל</span> and gives the age as “eighty-nine, ninety”; both are as spoken (Open Question 14).</span>
+  <a class="backref" href="#ref37" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn38">
+  <span class="short"><span class="heb-inline">יסוד ושורש העבודה</span> — Rabbi Alexander Ziskind of Grodno (d. 1794).</span>
+  <span class="expanded"> Composed c. 1769–1781 and published in 1782. The Third Gate (<span class="heb-inline">שער השיר</span>) treats Pesukei DeZimra; the passage on Nishmas and joy has not been located in the text consulted. The lecturer’s “about two hundred years ago” is approximate, and he names the author’s teacher only tentatively (“the Pnei Yehoshua, maybe”). The account of the author’s three journeys to the Maggid of Mezritch is reported as told (Open Question 15).</span>
+  <a class="backref" href="#ref38" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn39">
+  <span class="short">Contemporary custom — forty days at the Kosel.</span>
+  <span class="expanded"> A custom reported by the lecturer, who says that those who keep it find a shidduch and that the mekubalim advise it; no printed source was cited.</span>
+  <a class="backref" href="#ref39" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn40">
+  <span class="short">Where the shliach tzibbur descends to the amud.</span>
+  <span class="expanded"> On Shabbos at <span class="heb-inline">שוכן עד</span>, on Yom Tov at <span class="heb-inline">האל בתעצומות עזך</span>, on Yom Kippur at <span class="heb-inline">המלך</span>, as the lecturer reports. The same opening is customary on Rosh HaShanah, which he did not mention. No source was given for the reason (“Kabbalah”).</span>
+  <a class="backref" href="#ref40" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn41">
+  <span class="short"><span class="heb-inline">משנה מכות ג׳:ט״ז</span>; <span class="heb-inline">ישעיהו מ״ב:כ״א</span>.</span>
+  <span class="expanded"> <span class="heb-inline">רבי חנניה בן עקשיא אומר, רצה הקדוש ברוך הוא לזכות את ישראל, לפיכך הרבה להם תורה ומצוות, שנאמר ה׳ חפץ למען צדקו יגדיל תורה ויאדיר</span> (Mishnah Makkos 3:16, the closing mishnah of the tractate), citing Yeshayahu 42:21. The lecturer recited the mishnah in these words, naming the teacher “Rav Chananya.”</span>
+  <a class="backref" href="#ref41" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Recollections of reviewers are recorded as such and are not asserted in the text.</p>
+<ol>
+<li><strong>Extent of the prayer.</strong> The lecturer describes the prayer as running from <span class="heb-inline">נשמת</span> to <span class="heb-inline">שוכן עד</span> and the closing words <span class="heb-inline">ובמקהלות רבבות עמך בית ישראל</span>, describes the late section as running from <span class="heb-inline">וכל הלבבות</span> to <span class="heb-inline">שוכן עד</span> (“until Yishtabach”), and analyses the acrostic in <span class="heb-inline">בפי ישרים</span> as part of that section. The position of <span class="heb-inline">בפי ישרים</span> relative to <span class="heb-inline">שוכן עד</span> is to be confirmed from a printed siddur. A reviewer recalled that in the standard text <span class="heb-inline">בפי ישרים</span> follows <span class="heb-inline">שוכן עד</span>, in which case the stretch the lecturer names would not include the line he analyses; this is recorded as a recollection awaiting verification and is not asserted.</li>
+<li><strong>The reverse acrostic.</strong> Which text and which paragraph divisions the acrostic of Treves reads off, and the order of <span class="heb-inline">שועת עניים</span> and <span class="heb-inline">מי ידמה</span> in the printed siddurim. A reviewer recalled that <span class="heb-inline">שועת עניים</span> precedes <span class="heb-inline">ומי ידמה</span> in the text, which would alter the order in which the letters are read backwards; this too is unverified. The acrostic requires the <span class="heb-inline">ו</span> of <span class="heb-inline">ואילו</span> (Section IV).</li>
+<li><strong>Nusach Ashkenaz and Nusach Sefard.</strong> Which lines Ashkenaz omits. A reviewer recalled that the omitted line is <span class="heb-inline">והמפענח נעלמים</span>, which Nusach Sefard has; this is a recollection to be verified in printed siddurim. If confirmed, it bears directly on the Kloynimus tradition, which rests in part on that line.</li>
+<li><strong>Reb Kloynimus.</strong> (a) The date: whether seven to eight hundred years ago, or “a couple of centuries ago,” and whether the Ottoman setting is the Chida’s or the lecturer’s inference. (b) The exact wording of the passage in <em>Simchas HaRegel</em>. (c) Which work of Algazi records the story. The lecturer calls him “the Maharit Algazi’s son”; a reviewer recalled that reference works have the relationship the other way (the Maharit being the son of Rabbi Yisrael Yaakov Algazi), and that the name is usually given in that order; to be verified, together with his dates.</li>
+<li><strong>The Gaonic siddurim.</strong> The claim that <span class="heb-inline">אלהי הראשונים</span> and the lines that follow are absent from Rav Amram and Rav Saadia is to be checked page by page in the named editions.</li>
+<li><strong>The Rokeach.</strong> (a) The simanim in Sefer HaRokeach for the claim that Nishmas is the first prayer and for the analogy to Shir HaShirim. (b) Whether the Rokeach himself is the Rishon who writes that Nishmas is said <span class="heb-inline">בקול רם ובנעימה</span>. (c) The earlier discourse on “the Rokeach and the Ramban.”</li>
+<li><strong>Treves and the source of the Peter version.</strong> The identification of the printer, and the location of his remark on <span class="heb-inline">נשמת</span>. Who carries the Peter version of the acrostic: Treves himself, a midrash, other Rishonim, or the margin of the Baruch Ta’am. The lecturer’s remark “That’s over here, Tashbetz, right?” is unexplained: it is not clear which work is meant.</li>
+<li><strong>The Machzor Vitry and the Sefer Chasidim.</strong> (a) The conclusion that a later couple named Yitzchak and Rivka composed the closing section. (b) The passage on the korban chatas and <span class="heb-inline">פטר חמור</span>. (c) “The machzor says you’re not allowed to say it” (Atah Konanta): which machzor, and what “it” refers to. (d) The statement that Nishmas was said daily in place of Birchos HaShachar. (e) The passage in the Sefer Chasidim. (f) The description of the author of the Machzor Vitry as Rashi’s <span class="heb-inline">מחותן</span>.</li>
+<li><strong>The Baruch Ta’am.</strong> The printed gloss at Orach Chaim 580 and the manuscript he reports; and the statement that Ezra HaSofer died on the ninth of Teves, as said in the selichos of Asarah B’Teves.</li>
+<li><strong>The two yahrzeits.</strong> The Baruch Ta’am’s manuscript gives the ninth of Teves as the day of Shimon Kipa’s death, and the lecturer also ties his yahrzeit to Yom Kippur. Which the lecturer intends, or whether they are separate traditions, is to be settled with him.</li>
+<li><strong>Tosafos on individuals only.</strong> The source for the statement that in the time of Chazal only individuals said Nishmas and that the tzibbur adopted it in Gaonic times; the Tosafos passage located speaks only of the Shabbos practice.</li>
+<li><strong>The Mishnah Berurah.</strong> The source for saying a skipped Nishmas after the prayers. Not located in Mishnah Berurah 52; the adjacent simanim, the Sha’ar HaTziyun, the Biur Halachah and the Aruch HaShulchan, and the poskim on making up omitted Pesukei DeZimra, remain to be checked.</li>
+<li><strong>“Most” and “some” Rishonim.</strong> The identity of the Rishonim meant by “most” (at the Seder-night passage) and “some” (at the authorship discussion) for the attribution to the Anshei Knesses HaGedolah.</li>
+<li><strong>Reb Moshe Wolfson.</strong> The honorifics <span class="heb-inline">זכר צדיק לברכה</span> and <span class="heb-inline">זצ״ל</span> are as the lecturer spoke them. His status, and the date if he has passed, are to be confirmed before printing; if the honorifics are mistaken they must be removed. The age (“eighty-nine, ninety”) is the lecturer’s recollection.</li>
+<li><strong>The Yesod VeShoresh HaAvodah.</strong> The gate and chapter of the passage on the joy of Nishmas, and the author’s teacher.</li>
+<li><strong>The lecturer’s stated purpose.</strong> The lecturer said twice that he raised the Peter legend “for a purpose,” which he did not state; he may be asked.</li>
+<li><strong>The dedication.</strong> The wording and the names of those for whom the discourse was dedicated, and their spellings, are to be confirmed with the Rav before printing; the names, including that of a further dedicatee whose role in the dedication is not clear, are held with the source material and are not reproduced here.</li>
+<li><strong>The two Shimons.</strong> The remark that prompted the lecturer’s answer is not preserved with clarity, and the answer is recorded without the question. The interval of at least a century between the reign of Yannai and the days of Jesus’s followers is not addressed in the answer.</li>
+<li><strong>House style.</strong> The spelling of the lecturer’s name (“Ephrati” in earlier editions of this series; “Efratti” in the project’s file names); the convention for the name of Jesus (here “Jesus,” with the lecturer’s “Yeshke” given once); and the pointing policy (quoted passages pointed, running terms unpointed).</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em>Tefillah</em>, 30 Tishrei 5787 (<em>Rosh Chodesh Cheshvan</em>). The edition follows the order of the inquiry by layers and then by authorship traditions, presents legendary material as legend, and records the lecturer&rsquo;s uncertainties as he stated them.
+</footer>
+
+</body>
+</html>
