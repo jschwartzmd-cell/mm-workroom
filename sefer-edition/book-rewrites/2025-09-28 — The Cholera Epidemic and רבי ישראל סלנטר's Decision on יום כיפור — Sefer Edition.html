@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; The Cholera Epidemic and Rabbi Yisrael Salanter’s Decision on Yom Kippur</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .callout{background:rgba(184,134,11,0.06);border:1px solid var(--gold-soft);border-radius:5px;padding:12px 18px;margin:20px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.1em;color:var(--gold);font-size:.85rem;margin-bottom:4px}
+  .callout p{margin:6px 0}
+  em.term{font-style:italic}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">מַגֵּפַת הַכּוֹלֶרָה וּפְסַק רַבִּי יִשְׂרָאֵל סָלַנְטֶר בְּיוֹם הַכִּפּוּרִים</h1>
+  <div class="english-title">The Cholera Epidemic and Rabbi Yisrael Salanter’s Decision on Yom Kippur</div>
+  <div class="sub">Leadership, <em>Halachic</em> Process, and <em>Pikuach Nefesh</em> in Vilna, 5609 (1848)</div>
+  <div class="date">28 September 2025 &nbsp;&middot;&nbsp; Sefer Edition &nbsp;&middot;&nbsp; <span class="heb-inline">ו׳ תשרי תשפ״ו</span></div>
+</header>
+
+<p class="lead">Few episodes of nineteenth-century Lithuanian <em class="term">Torah</em> (<span class="heb-inline">תורה</span>) have been so widely told, or so sharply disputed, as the decision of Rabbi Yisrael Salanter (<span class="heb-inline">רבי ישראל סלנטר</span>) on <em class="term">Yom Kippur</em> (<span class="heb-inline">יום כיפור</span>) during the cholera epidemic that struck Vilna in the autumn of 1848. The episode touches the deepest questions of <em class="term">halachic</em> (<span class="heb-inline">הלכה</span>) process: the authority of the <em class="term">beis din</em> (<span class="heb-inline">בית דין</span>), the duty of a <em class="term">rav</em> (<span class="heb-inline">רב</span>) to act without delay where life is at stake, and the boundary between <em class="term">pikuach nefesh</em> (<span class="heb-inline">פיקוח נפש</span>) and the integrity of communal <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>).</p>
+
+<p class="lead">The story survives in two versions that differ on the central facts. In the first, preserved in the <em class="term">Mekor Baruch</em> (<span class="heb-inline">מקור ברוך</span>) of Rabbi Baruch Epstein, the young Rabbi Yisrael rises in the main synagogue, announces that all must eat, and makes <em class="term">kiddush</em> (<span class="heb-inline">קידוש</span>) publicly on the <em class="term">bimah</em> (<span class="heb-inline">בימה</span>) until the congregation follows him. In the second, set down on the testimony of an eyewitness, he goes quietly from person to person with small measured portions, makes no <em class="term">kiddush</em>, and does not eat himself. The discourse sets the versions side by side, with the questions each raises, and then turns to the defences that have been offered for the ruling.</p>
+
+<p class="lead">Along the way it considers the life of Rabbi Yisrael as a <em class="term">gaon</em> (<span class="heb-inline">גאון</span>) before he became the father of the <em class="term">mussar</em> (<span class="heb-inline">מוסר</span>) movement; the sources of the story; the clash between a venerable <em class="term">dayan</em> (<span class="heb-inline">דיין</span>) and a young rabbi; the law of a sick person on <em class="term">Yom Kippur</em>; the precedent of the Chasam Sofer (<span class="heb-inline">חתם סופר</span>); and the later reception of the incident.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. The <em class="term">gaon</em> (<span class="heb-inline">גאון</span>) Who Became a <em class="term">darshan</em> (<span class="heb-inline">דרשן</span>)</h2>
+
+<p>Rabbi Yisrael Salanter is remembered as the founder of the <em class="term">mussar</em> (<span class="heb-inline">מוסר</span>) movement, and it is sometimes assumed that he was therefore a man of <em class="term">middos</em> (<span class="heb-inline">מידות</span>) and <em class="term">tzidkus</em> (<span class="heb-inline">צדקות</span>), of unusual sensitivity in <em class="term">bein adam lachaveiro</em> (<span class="heb-inline">בין אדם לחברו</span>), and little more. The assumption is mistaken. He was a <em class="term">gaon</em> of the first rank, brilliant in <em class="term">Talmud</em> (<span class="heb-inline">תלמוד</span>) and in <em class="term">lamdanus</em> (<span class="heb-inline">למדנות</span>); as a young <em class="term">bachur</em> (<span class="heb-inline">בחור</span>) and <em class="term">avreich</em> (<span class="heb-inline">אברך</span>) he was known first of all for his learning and not for his piety. His standing as a master of <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>) is the necessary background to the episode of <em class="term">Yom Kippur</em> (<span class="heb-inline">יום כיפור</span>), for it explains both why a young rabbi could expect his ruling to be heeded and why a court of elders, confronted with a question on the laws of <em class="term">gittin</em> (<span class="heb-inline">גיטין</span>), found itself without an answer.</p>
+
+<p>The turning point came early in his life. Under the influence of Rabbi Yosef Zundel of Salant (<span class="heb-inline">רבי יוסף זונדל מסלנט</span>), a man of <em class="term">mussar</em>, he changed the whole direction of his work. Instead of delivering <em class="term">shiurim</em> (<span class="heb-inline">שיעורים</span>) within the <em class="term">yeshivah</em> (<span class="heb-inline">ישיבה</span>) of Vilna, he turned outward and addressed the common people (<span class="heb-inline">המונים</span>). He was an extraordinary orator and <em class="term">darshan</em>, and the people flocked to hear him.</p>
+
+<h3>The Social Revolution in Vilna</h3>
+
+<p>The novelty of this can be appreciated only against the Vilna of the period, the “Jerusalem of Lithuania” (<span class="heb-inline">ירושלים דליטא</span>). There a man was respected and valued if he was a <em class="term">lamdan</em> (<span class="heb-inline">למדן</span>) and a <em class="term">talmid</em> (<span class="heb-inline">תלמיד</span>); wealth, as always in Jewish communal life, also counted. But a man who was merely a decent Jew, who excelled in <em class="term">bein adam lachaveiro</em>, who made others feel valued, who was God-fearing, went unnoticed. Rabbi Yisrael set out to change this. He wished to bring to the forefront of Jewish consciousness the ideal of the Jew who is careful not to embarrass or humiliate others. His influence was so great that several <em class="term">yeshivos</em> (<span class="heb-inline">ישיבות</span>) adopted his approach, and the <em class="term">mussar</em> movement was born.</p>
+
+<h3>Opposition Within the Yeshivah World</h3>
+
+<p>A considerable number of the leading Torah scholars opposed his method. Excessive study of <em class="term">mussar</em> in the <em class="term">yeshivos</em>, they argued, would detract from <em class="term">lamdanus</em>, from the study of <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>). Today the great majority of <em class="term">yeshivos</em> include <em class="term">mussar</em> in their programme, with one notable exception: Brisk. In the Brisk <em class="term">yeshivah</em> in Jerusalem, in which the lecturer studied, there are no <em class="term">sifrei</em> (<span class="heb-inline">ספרי</span>) <em class="term">mussar</em> on the shelves and no set time for <em class="term">mussar</em> study; Brisk is described as the only <em class="term">yeshivah</em> in the world that has kept the original opposition to this day.</p>
+
+<div class="callout">
+  <span class="label">An Aside &mdash; The Stroke and the Carpenter’s Bench</span>
+  <p>Late in life, about a decade before his death, Rabbi Yisrael suffered a stroke. He collapsed in the street and was paralysed for a time. Many legends surround the event. According to one, the physicians told him that he was thinking too much about learning, and prescribed two hours each day of activity that was not intellectual. What does a brilliant mind do for two hours when it is not learning? He apprenticed himself to a cabinetmaker (<span class="heb-inline">נגר</span>) and became a skilled maker of cabinets (<span class="heb-inline">ארונות</span>), working with his own hands for two hours daily. Occupying his mind in a different way, he recovered his health.</p>
+</div>
+
+<h2>II. The Sources of the Story</h2>
+
+<h3><em>The Making of a Gadol</em></h3>
+
+<p>The best-known modern treatment is <em>The Making of a Gadol</em>,<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> by Rabbi Nosson Kamenetsky (<span class="heb-inline">רבי נתן קמנצקי</span>), son of Rabbi Yaakov Kamenetsky (<span class="heb-inline">רבי יעקב קמנצקי</span>) and brother of Rabbi Shmuel Kamenetsky (<span class="heb-inline">רבי שמואל קמנצקי</span>); he was a <em class="term">rosh yeshivah</em> (<span class="heb-inline">ראש ישיבה</span>) in Itri (<span class="heb-inline">איטרי</span>) and an exceptional <em class="term">talmid chacham</em> (<span class="heb-inline">תלמיד חכם</span>). When the book appeared, about fifteen years before the discourse, many rabbis of the ultra-Orthodox world reacted with great severity. They placed it in <em class="term">cherem</em> (<span class="heb-inline">חרם</span>) and declared it forbidden to buy, and, naturally, it became a bestseller. The book is controversial because it records details not meant for public consumption, down to the fact that Rabbi Yisrael smoked. It is an academic work, and its reading is demanding. A lengthy discussion of the <em class="term">kiddush</em> (<span class="heb-inline">קידוש</span>) incident on <em class="term">Yom Kippur</em> is found at p. 1136, with a further discussion, on the variation among the versions, at p. 1137.</p>
+
+<h3><em>Mekor Baruch</em> of Rabbi Baruch Epstein</h3>
+
+<p>Rabbi Baruch Epstein (<span class="heb-inline">רבי ברוך אפשטיין</span>)<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> was the son of the Aruch HaShulchan (<span class="heb-inline">ערוך השלחן</span>) and nephew of the Netziv (<span class="heb-inline">נציב</span>). He was the author of the <em>Torah Temimah</em> (<span class="heb-inline">תורה תמימה</span>) and of <em>Baruch SheAmar</em> (<span class="heb-inline">ברוך שאמר</span>), and of an autobiography, <em>Mekor Baruch</em> (<span class="heb-inline">מקור ברוך</span>), later translated into English as <em>My Uncle the Netziv</em>. He was at once a <em class="term">gaon</em> and <em class="term">talmid chacham</em> and a wealthy banker, who managed one of the principal banks of Vilna. His book is a treasury of information about the Lithuanian Torah world, about the Netziv, about Rabbi Chaim of Brisk (<span class="heb-inline">רבי חיים בריסקר</span>), and about his father. He visited America for three years in the 1920s. The English translation (1988) was abridged after complaints and has lost much of the flavour of the original; whoever wants the original must go to the Hebrew. His detailed account of the incident is the version most people know.</p>
+
+<h2>III. The Cholera Epidemic of 5609</h2>
+
+<h3>The Medical Crisis</h3>
+
+<p>In 1848<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> a great cholera epidemic struck Eastern Europe. Cholera epidemics were frequent in the nineteenth century, mainly in Eastern Europe: in Poland, in Germany, in parts of Belarus and Russia. The Hebrew name was <span class="heb-inline">כולרא</span>, understood as <span class="heb-inline">חולי רע</span>, “the evil disease.” It is a terrible illness. The victim cannot digest food, vomits continuously, suffers severe diarrhoea, is rapidly dehydrated, and very quickly reaches a state of <em class="term">pikuach nefesh</em> (<span class="heb-inline">פיקוח נפש</span>).</p>
+
+<h3>Vilna Under Siege</h3>
+
+<p>The epidemic raged in Vilna precisely in the months of <em class="term">Elul</em> (<span class="heb-inline">אלול</span>) and <em class="term">Tishrei</em> (<span class="heb-inline">תשרי</span>). Vilna, the “Jerusalem of Lithuania,” was the foremost centre of Torah scholarship of that region, with countless <em class="term">talmidei chachamim</em> (<span class="heb-inline">תלמידי חכמים</span>), rabbis and authors of <em class="term">sefarim</em> (<span class="heb-inline">ספרים</span>). And the cholera struck in <em class="term">Elul</em> and <em class="term">Tishrei</em>.</p>
+
+<h3>The Communal Deliberation</h3>
+
+<p>Throughout the <em class="term">Aseres Yemei Teshuvah</em> (<span class="heb-inline">עשרת ימי תשובה</span>) everyone in Vilna spoke of one thing only. All the physicians of the city, religious Jewish doctors, non-religious Jewish doctors, and gentile doctors alike, said the same thing: on the medical knowledge of the time, a person who neither ate nor drank for twenty-four to twenty-seven hours became significantly more susceptible to the disease. (The disease, it may be added, spread through contaminated water.) If the body’s resistance was not strengthened, there was grave concern that a person would fall ill, and once he fell ill it was a matter of <em class="term">pikuach nefesh</em>. People were falling like flies.</p>
+
+<p>The memory of the COVID-19 epidemic lets the modern reader identify with the fear, but the cholera was much worse and far more died. In the cramped Jewish quarter of Vilna, where people lived one on top of another, the disease spread easily. The physicians said unanimously: there can be no fasting; fasting will make you vulnerable.</p>
+
+<p>Every Jew in Vilna, every <em class="term">talmid chacham</em>, every pious man, debated back and forth: should we eat or not? Many did not want to eat. Even healthy people who had not caught the disease did not want to eat. It seems that the physicians of the time did not understand what is now known, that such a disease has an incubation period of from two days to a week, so that a person may already be ill without showing symptoms.</p>
+
+<h2>IV. The Decision on <em class="term">Yom Kippur</em>: The Version of <em>Mekor Baruch</em></h2>
+
+<h3>Rabbi Yisrael’s Bold Action</h3>
+
+<p>On <em class="term">Yom Kippur</em> of that year Rabbi Yisrael went to the main synagogue of Vilna. He was then, on the lecturer’s reckoning, thirty-six or thirty-seven years old: a young man, well known in Vilna but very far from the senior position he later held. Present in the city were <em class="term">dayanim</em> (<span class="heb-inline">דיינים</span>) in their eighties, far more experienced, far better known, far more widely accepted. He rose on his own initiative, without consulting the senior <em class="term">dayanim</em> of Vilna, so intent was he on saving lives.</p>
+
+<p>As <em>Mekor Baruch</em> records, he declared in the name of the <em class="term">Torah</em> (<span class="heb-inline">תורה</span>), in the manner of the formula that is recited before <em class="term">Kol Nidrei</em> (<span class="heb-inline">כל נדרי</span>),<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<blockquote><div class="heb">על דעת המקום ועל דעת הקהל, אנו מתירים …</div>
+<div class="trans">With the consent of the Omnipresent and with the consent of the congregation, we permit &hellip;</div></blockquote>
+
+<p>that all must eat and make <em class="term">kiddush</em> on <em class="term">Yom Kippur</em> at once. The sources differ on the details, and even on the date; the lecturer is concerned less with the date than with the <em class="term">halachic</em> (<span class="heb-inline">הלכה</span>) details, which vary from version to version.</p>
+
+<h3>The Congregation’s Response</h3>
+
+<p>When he gave this ruling the people did not move. One must picture the scene: a thousand or fifteen hundred Jews standing rooted to the spot, unable to bring themselves to act. Who eats on <em class="term">Yom Kippur</em>? The barrier was psychological, and it could not be overcome by words alone. Rabbi Yisrael understood that leadership at such a moment demands more than instruction. He went up to the <em class="term">bimah</em> (<span class="heb-inline">בימה</span>), took from his pocket a bottle of wine and a bag of cake, made <em class="term">kiddush</em> on <em class="term">Yom Kippur</em>, and ate, there on the <em class="term">bimah</em>, in front of the assembled congregation. When they saw their rabbi eat, they came up one by one to the <em class="term">bimah</em>, where he had prepared in advance cake and cookies, and a “<em class="term">kiddush</em> club” formed, each man making <em class="term">kiddush</em> in turn.</p>
+
+<p>This was personal leadership of the highest order. He exposed himself to risk, physically, by breaking the fast when perhaps he himself had no need to, and spiritually and socially, by acting first, visibly and irreversibly.</p>
+
+<h2>V. The Rebuke of the Elder <em class="term">dayan</em> (<span class="heb-inline">דיין</span>)</h2>
+
+<p>After <em class="term">Yom Kippur</em>, the oldest and most respected <em class="term">dayan</em> of Vilna, Rabbi Itzel HaKohen (<span class="heb-inline">רבי איצל הכהן</span>), eighty years old, chief <em class="term">dayan</em> of the city and one of the foremost <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>) of his generation, the author, as the lecturer describes him, of a work called <em>Bikurim</em> (<span class="heb-inline">ביכורים</span>),<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> delivered a sharp rebuke. (It is a tragedy that the Lithuanian <em class="term">gedolim</em> (<span class="heb-inline">גדולים</span>) are insufficiently known today. The world of the <em class="term">yeshivos</em> keeps their memory alive only through a few institutions, Ponevezh, Telz and Brisk; Lithuania was destroyed in the Holocaust, and many towering figures have been forgotten. Rabbi Itzel was among the greatest.)</p>
+
+<p>His rebuke to the whole congregation was blunt:</p>
+
+<blockquote>
+  “You all ate on <em class="term">Yom Kippur</em> while healthy? What were you doing in synagogue? If you were sick you should have been at home, and eating there. If you came to synagogue, you were healthy, and you ate on <em class="term">Yom Kippur</em>? <span class="heb-inline">חוצפה</span>!”
+</blockquote>
+
+<p>His fundamental objection was to the <em class="term">halachic</em> process. Rabbi Yisrael had not consulted the <em class="term">beis din</em> (<span class="heb-inline">בית דין</span>) before issuing so sweeping a permission. “You cannot cancel <em class="term">Yom Kippur</em> for an entire congregation on the strength of your own apprehension (<span class="heb-inline">חשש</span>). Whoever has not yet eaten must not eat. A person who feels faint or weak must consult a rabbi. Every case is a question (<span class="heb-inline">שאלה</span>) in itself.”</p>
+
+<div class="callout">
+  <span class="label">The Institutional Picture</span>
+  <p>The dynamic is easily pictured. A rabbi in his thirties rises and tells everyone to eat on <em class="term">Yom Kippur</em>; and the most venerable authority in the city, a man of eighty, publicly rebukes him. The lecturer draws the modern comparison: were he to do such a thing, and the leading <em class="term">gadol</em> (<span class="heb-inline">גדול</span>) of the generation, nearly ninety years old, were to rebuke him in public, he would become the laughingstock of the city. This was precisely the position of Rabbi Yisrael.</p>
+</div>
+
+<h3>The Koidenover Chasidim</h3>
+
+<p>Vilna, though a heartland of Lithuanian Torah, had some Chasidim (<span class="heb-inline">חסידים</span>). The Chasidim of the Koidenover Rebbe (<span class="heb-inline">רבי מקוידנוב</span>), a dynasty of Chasidim that flourished before the war, heard of the incident and reported it to their Rebbe, who spoke against Rabbi Yisrael: how could he do such a thing? The Chasidim later ascribed the stroke that Rabbi Yisrael suffered to the Rebbe’s displeasure, his <em class="term">kefeidah</em> (<span class="heb-inline">כפידה</span>), a matter that in the Chasidic idiom is grave, for a mishap that befalls a man is attributed to his having wounded the feelings of a Rebbe.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+
+<h2>VI. The Clash of Two Principles</h2>
+
+<p>Two fundamental principles of the service of God collided here.</p>
+
+<p><strong><em class="term">Pikuach nefesh</em> supersedes everything.</strong> In a cholera epidemic the danger was real and immediate. Fasting could weaken people and make them more susceptible, and Rabbi Yisrael, seeing the emergency, acted decisively to save lives: <span class="heb-inline">ונשמרתם מאד לנפשתיכם</span>.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<p><strong><em class="term">Halachic</em> process and authority must be preserved.</strong> Rabbi Itzel represented the traditional structure: that major decisions affecting the entire community are brought before the <em class="term">beis din</em>; that individual questions require individual rulings; that one may not unilaterally override established <em class="term">halachah</em>, however good the intention.</p>
+
+<p>The dispute was therefore not merely over a ruling. It was a defining moment in the understanding of what rabbinic leadership in a crisis looks like.</p>
+
+<h2>VII. The Summons to <em class="term">beis din</em> and the <em>Kashya</em> on <em class="term">gittin</em></h2>
+
+<h3>The Summons</h3>
+
+<p>Rabbi Itzel HaKohen made a great dispute (<span class="heb-inline">מחלוקת</span>) of the incident. He summoned Rabbi Yisrael to the <em class="term">beis din</em> after <em class="term">Yom Kippur</em>, to apologise and to receive punishment. His argument was unsparing:</p>
+
+<blockquote>
+  “What happened, happened because of you. People desecrated <em class="term">Yom Kippur</em> because of you, and we must punish you. You should not have ruled on your own without first consulting the <em class="term">beis din</em>. Had you come to us in Vilna and argued it out with us, perhaps we should have agreed, and announced before <em class="term">Yom Kippur</em> that everyone should eat; you might have convinced us. But you did not come.”
+</blockquote>
+
+<p>This was an age in which the <em class="term">beis din</em> wielded great authority, and everyone was bound to obey it. (The <em class="term">beis din</em> has authority today also, but few, unfortunately, listen.) The court told him to choose his own punishment for not having asked first.</p>
+
+<h3>The <em>Kashya</em> on <em class="term">gittin</em></h3>
+
+<p>Rabbi Yisrael answered, in the famous version: “I shall choose my own punishment. But first permit me to ask a question.” He turned to the <em class="term">beis din</em>, men much older than he, and said:</p>
+
+<blockquote>
+  “You are great <em class="term">geonim</em> (<span class="heb-inline">גאונים</span>). I shall ask you a question (<span class="heb-inline">קושיא</span>) that I guarantee none of you can answer. It concerns the laws of <em class="term">gittin</em>. For three decades you have been writing <em class="term">gittin</em> in a certain manner, and I have a question on the way you write the <em class="term">get</em> (<span class="heb-inline">גט</span>). According to my question, every <em class="term">get</em> you have written for thirty years is invalid. Do you want to go there? I shall ask. If you have an answer, I shall accept the punishment. If not, nothing will happen to me.”
+</blockquote>
+
+<p>It is well known that he asked an extraordinarily powerful question on a ruling of one of the <em class="term">Acharonim</em>, the very ruling on which <em class="term">gittin</em> are still written today. The question stunned them, and no one could answer it. They said: “We did not realise that he was such a great man in <em class="term">halachah</em>!” They understood that he stood on a higher level in learning than they, and that they had no right to question his instruction to eat on <em class="term">Yom Kippur</em>.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></p>
+
+<p>The question itself is not known. It may be taken as certain that either he had an answer in mind, or he held that the ruling had a good answer; for no <em class="term">gittin</em> were in fact invalidated, and had any been, the result would have been a catastrophe of <em class="term">agunah</em> (<span class="heb-inline">עגונה</span>) cases, a general chaos (<span class="heb-inline">בלגן</span>). He merely put the question, they could not answer, and they said: “We shall not punish him.”</p>
+
+<h2>VIII. Two <em>Halachic</em> Questions</h2>
+
+<p>A pair of <em class="term">halachic</em> questions was put in the name of Rabbi Baruch (<span class="heb-inline">רבינו ברוך</span>),<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> and they ought to trouble every reader.</p>
+
+<h3>The First Question &mdash; Why Not Less Than the <em>Shiur</em>?</h3>
+
+<p>The <em>Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) devotes an entire chapter, <em>siman</em> (<span class="heb-inline">סימן</span>) 618,<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> to the law of a sick person on <em class="term">Yom Kippur</em>: <span class="heb-inline">דין חולה ביום הכפורים</span>. Every year the most common question that a rabbi receives in the days before and on <em class="term">Yom Kippur</em> is precisely this, because <em class="term">Yom Kippur</em> is the only fast that is from the <em class="term">Torah</em> itself and the most stringent of all fasts, and many sick persons, <em>chas veshalom</em> (<span class="heb-inline">חס ושלום</span>), ask whether they must fast or are forbidden to.</p>
+
+<p>The <em>Shulchan Aruch</em> is clear. If a sick person must eat, he is <strong>obligated</strong> to eat. The same God who commanded the fast tells him that if he is sick and needs to eat, he is commanded to eat. Many people become anxious at this, and it is difficult to tell a person: “You are doing the will of God.” But to fast when one is forbidden to fast is a great transgression, comparable to desecrating <em class="term">Yom Kippur</em> itself, like kindling a fire on the holiest day. The few things that are not set aside for <em class="term">pikuach nefesh</em> are the three cardinal sins, and this is not one of them. If the physician says that one must eat, one must eat.</p>
+
+<p>The <em>Shulchan Aruch</em> adds a qualification: there is a way of eating on <em class="term">Yom Kippur</em>. One eats <strong>less than the measure, and less again</strong> (<span class="heb-inline">פחות פחות מכשיעור</span>), in small portions at intervals, so that the portions do not combine to the <em class="term">shiur</em> (<span class="heb-inline">שיעור</span>). For liquids the measure is a cheekful (<span class="heb-inline">מלא לוגמיו</span>). As the lecturer describes the working method: one fills the mouth with liquid until the cheeks bulge, spits it into a cup, divides it in half, and drinks slightly less than that half. All depends on the size of one’s own cheeks, as the <em>Gemara</em> and the <em>Shulchan Aruch</em> say; some people have larger cheeks and some smaller. It is easier to measure with both cheeks than with one. The lecturer advises that the measure be worked out before <em class="term">Yom Kippur</em> by one who may need it.</p>
+
+<p>There is a great dispute as to how long one must wait between one portion of less than the measure and the next: some say two minutes and some nine. The lecturer advises that one who can be stringent should drink slightly less than that half-cheekful every nine minutes. (These are the lecturer’s practical remarks and are not a ruling for any individual; each case is put to a rabbi.)</p>
+
+<p>The question is therefore sharp. This is not a new <em class="term">halachah</em>. Why would Rabbi Yisrael permit all, even people who came to synagogue and appeared healthy, to eat as they pleased? He should have said: “Gentlemen, this is the measure. Each of you must measure.” If he held that they were all in a state of doubt as to danger to life (<span class="heb-inline">ספק פיקוח נפש</span>), let them eat less than the measure. How could he <em>abrogate</em>, which is the correct word, the fast on <em class="term">Yom Kippur</em> for the whole congregation, so that all might eat as they wished?</p>
+
+<h3>The Second Question &mdash; Why <em>Kiddush</em>?</h3>
+
+<p>The second question is more astonishing. The version of <em>Mekor Baruch</em> has Rabbi Yisrael make <em class="term">kiddush</em> on <em class="term">Yom Kippur</em>. <em class="term">Kiddush</em>? Has anyone heard of making <em class="term">kiddush</em> on <em class="term">Yom Kippur</em>? Even a sick person who must eat does not make <em class="term">kiddush</em>. It is held that when <em class="term">Yom Kippur</em> falls on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) and a person is sick, then from the side of <em class="term">Shabbos</em> he must make <em class="term">kiddush</em>;<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> but on an ordinary <em class="term">Yom Kippur</em>? One might say <em>Yaaleh VeYavo</em> (<span class="heb-inline">יעלה ויבוא</span>), perhaps, on some view; but a complete <em class="term">kiddush</em> would be a blessing said in vain (<span class="heb-inline">ברכה לבטלה</span>). Something does not add up: no one in his right mind would make <em class="term">kiddush</em> on <em class="term">Yom Kippur</em> even if obliged to eat. The Sages instituted no <em class="term">kiddush</em> for a sick person who eats by dispensation; at most one adds <em>Yaaleh VeYavo</em>, and the Name is mentioned in the prayers in any case.</p>
+
+<p>The question is therefore twofold: why did Rabbi Yisrael not instruct the people to eat less than the measure, and what is the <em class="term">kiddush</em> about?</p>
+
+<h2>IX. The Eyewitness Version: Shimon Strashun</h2>
+
+<p>The versions of the story differ widely, and this is why biographies of the <em class="term">gedolim</em> are valuable: they show a figure from different angles. A Yiddish work, <em>Gedolim fun Unzer Zeit</em> (<span class="heb-inline">גדולים פון אונזער צייט</span>, “Great Ones of Our Time”),<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> brings the testimony of an eyewitness, a Jew named Shimon Strashun (<span class="heb-inline">שמעון שטראשון</span>), who was in that very synagogue in Vilna in 1848. (He is not to be confused with the famous Rashash (<span class="heb-inline">רש״ש</span>), Shmuel Strashun, who also lived in Vilna at the time.) He says: it is a great mistake; the story was not like that at all. Stories take on a life of their own.</p>
+
+<div class="callout">
+  <span class="label">The Brisker Rav’s Aside</span>
+  <p>A Jew once came to the Brisker Rav (<span class="heb-inline">הרב מבריסק</span>) and told him a story, and the Rav responded with a story of his own. As the man left the room the Brisker Rav turned to his children and said: “I guarantee you that by the time he is out of the door he has added more details to the story.” And so it was. By the time the man had gone out of the house, he had already embellished it. Stories decorate themselves.</p>
+</div>
+
+<p>The testimony of Strashun is as follows. Before the festival, Rabbi Yisrael prepared many small bags, there being no plastic bags in those days, only small bags; each held a thin slice of cake, less than the volume of an egg (<span class="heb-inline">כביצה</span>), together with small cups, so that each person might measure for himself. There was very little grape juice or tea, or whatever was to be had.</p>
+
+<p>In the middle of the prayers he went about the synagogue of Vilna. This is what a <em class="term">gadol</em> does. He forgot his own prayer, his own <em class="term">Yom Kippur</em>, his own self-perfection, and his own relation to the Holy One, blessed be He: he was concerned only with <em class="term">pikuach nefesh</em>. He went from person to person, looked into their faces to see whether they were weak, and wherever he saw weakness he said at once: “Here, take this. Eat less than the measure. Say the blessing.”</p>
+
+<p>There was no <em class="term">kiddush</em> on the <em class="term">bimah</em>. He went from person to person and told them to eat, without their having to seek out a rabbi to ask. “I am the rabbi,” he said, in effect; “I rule that you must eat,” and this only for those who were sick. And he himself did not eat at all.</p>
+
+<p>Shalom Almanori (<span class="heb-inline">שלום עלמנורי</span>),<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> in his book on those who died on <em class="term">Yom Kippur</em>, gives the same version. The story, it is said, was so significant that even the <em>Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) and the <em>Biur Halachah</em> (<span class="heb-inline">ביאור הלכה</span>) refer to it in passing. Almanori writes of the eyewitness: “He was right. Rabbi Yisrael did not make <em class="term">kiddush</em>; there is no need to make <em class="term">kiddush</em>. He did not abrogate the fast for everybody; it was only for the sick, and for those who felt themselves becoming sick.”</p>
+
+<p>On this version the anger of the elderly <em class="term">beis din</em> reduces to a much narrower complaint: “You should have sent the people to us. You should have sent them to the <em class="term">beis din</em>. Why did you decide on their behalf, as though you alone were the rabbi?”</p>
+
+<h2>X. The Deepest <em>Halachic</em> Defence: The <em>Chasid Shoteh</em></h2>
+
+<p>Why, then, did Rabbi Yisrael permit eating, even person by person, without first asking the <em class="term">beis din</em>? Who gave him the right? What was the emergency measure (<span class="heb-inline">הוראת שעה</span>) that justified it?</p>
+
+<p><em>The Making of a Gadol</em> opens up the question. Its author was the son of Rabbi Yaakov Kamenetsky, and Rabbi Yaakov had a friend, Rabbi David Leibowitz (<span class="heb-inline">רבי דוד ליבוביץ</span>), a grandson of the brother of the Chofetz Chaim (<span class="heb-inline">חפץ חיים</span>) on his mother’s side. The well-known Rabbi Henoch Leibowitz (<span class="heb-inline">רב חנוך ליבוביץ</span>), associated with the Chofetz Chaim yeshivos in America (the lecturer calls him their founder), was his son.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> Rabbi David told Rabbi Yaakov Kamenetsky: “I heard this story from the Chofetz Chaim himself.” The Chofetz Chaim was a child living in Vilna at the time of the epidemic: ten or twenty years old, according to whether he died at ninety-four or one hundred and four, which is a famous dispute, and a gap of a decade. His own father fell ill and died in that very epidemic.</p>
+
+<p>What the Chofetz Chaim related was this. When Rabbi Itzel HaKohen summoned Rabbi Yisrael and said, “You had no right to rule in this way without asking the <em class="term">beis din</em>,” Rabbi Yisrael answered, in addition to the matter of the question on <em class="term">gittin</em>, which may also be true, by invoking a <em class="term">halachah</em> of the sick person on <em class="term">Shabbos</em>. The Jerusalem Talmud (<span class="heb-inline">ירושלמי</span>) puts the case thus:<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> when one encounters <em class="term">pikuach nefesh</em>, the man who runs first to a rabbi to ask before saving a life is “spilling blood” (<span class="heb-inline">שופך דמים</span>), and the rabbi who is asked is shamed (<span class="heb-inline">מגונה</span>). The <em>Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>) explains the <em>Yerushalmi</em>: a rabbi who has not stood up in the synagogue or in the city to announce publicly that where life is in question one does not ask but acts, has failed. It is not the fault of the man who asked that he asked; it is the rabbi’s fault that the message had not been issued.</p>
+
+<p>The <em>Gemara</em> in <em class="term">Sotah</em> (<span class="heb-inline">סוטה</span>)<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> calls such a person a <em>chasid shoteh</em> (<span class="heb-inline">חסיד שוטה</span>), a “pious fool”: a man who runs from a possible danger to life to ask his rabbi before saving it. The <em>Tur</em> (<span class="heb-inline">טור</span>)<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> calls him one who spills blood.</p>
+
+<p>In this light, the Chofetz Chaim’s tradition holds, Rabbi Yisrael’s defence was complete. Precisely because the <em class="term">beis din</em> had not gone from synagogue to synagogue before <em class="term">Yom Kippur</em> and announced unequivocally that fasting was forbidden to anyone who felt himself becoming weak, he could not afford to wait. Asking would itself have been a form of spilling blood.</p>
+
+<div class="callout">
+  <span class="label">An Incident in Shavel</span>
+  <p>Such things do happen. In the Lithuanian city of Shavel (<span class="heb-inline">שאוועל</span>),<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> a man came to the rabbi, who stood in the front row, five minutes before the end of <em>Neilah</em> (<span class="heb-inline">נעילה</span>) on <em class="term">Yom Kippur</em>. “Rabbi, I feel weak. I must eat.” The rabbi took him by the hand and said: “It is only five minutes, friend. Calm down. What can five minutes do to you?” The man went back to his place and collapsed. It was not the only time that such a thing happened.</p>
+</div>
+
+<h3>The Brisker Approach</h3>
+
+<p><em class="term">Pikuach nefesh</em> is no joke. The <em class="term">Torah</em> knows what it is saying: one may be as stringent as one wishes in everything else, but where there is a doubt of a doubt of a doubt of life, one is extraordinarily lenient. The bar for <em class="term">pikuach nefesh</em> is set very low. In Brisk it was set lower than the <em>Shulchan Aruch</em>: Rabbi Chaim of Brisk was more lenient still, a revolutionary position that most <em class="term">poskim</em> (<span class="heb-inline">פוסקים</span>) do not accept, and in Brisk, as the lecturer reports, they ate on the minor fast days even for a small headache.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> The famous Brisker joke captures the attitude exactly.</p>
+
+<div class="callout">
+  <span class="label">The Famous Brisker Joke</span>
+  <p>A young man marries into a Brisker family. On the first fast day after the wedding, he comes home from the first <em class="term">seder</em> (<span class="heb-inline">סדר</span>) and sees the kitchen table bare. “Rebbetzin, nu, nu!” “What do you mean, ‘nu, nu’? It is a fast.” “Ah! In Brisk we are stringent about <em class="term">pikuach nefesh</em>. We are frummer than the rest of the world. I do not feel well. Let us go to lunch.” She leaves the room, returns, and sets the table for two. “No!” he says. “But you told me that in Brisk one eats on a fast.” “Yes,” he says, “<em>I</em> do! But I am not going to be pious at <em>your</em> expense. <em>You</em> can fast.”</p>
+</div>
+
+<h2>XI. The Chasam Sofer’s Earlier Precedent</h2>
+
+<p>The responsa of the Chasam Sofer<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> present a striking parallel. Twelve years earlier, in 1836, the same situation is said to have arisen in Pressburg (<span class="heb-inline">פרשבורג</span>) during a cholera epidemic, and the Chasam Sofer was asked what to do. His ruling was essentially that of Rabbi Yisrael: not a blanket permission for all to eat as usual, but a direction that all eat <strong>less than the measure</strong>. Where the danger is established as certain, there is no question at all, and all must eat; the question is <em>how</em>, and the Chasam Sofer ruled: less than the measure.</p>
+
+<p>The reasoning is presented thus. Take the established law of a pregnant woman (<span class="heb-inline">עוברה</span>) on <em class="term">Yom Kippur</em>. If she is healthy, but medical opinion holds that if she does not drink, dehydration could create a doubt as to danger to life for the unborn child (<span class="heb-inline">ולד</span>) in her womb, she must drink; but not a full measure at once. She drinks small amounts, about every nine minutes, so that the doubt of danger to life is averted without breaking the fast more than necessary. How much more so where <em>one’s own</em> life, on the medical opinion of the day, may be in doubt by not eating: one eats, but only less than the measure.</p>
+
+<h2>XII. The <em class="term">bein adam lachaveiro</em> Dimension: Rabbi Yaakov Kamenetsky</h2>
+
+<p>Rabbi Yaakov Kamenetsky discusses the incident in his <em>Emes LeYaakov</em> (<span class="heb-inline">אמת ליעקב</span>),<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> and brings out an element that is rarely stressed. Rabbi Yisrael, he explains, refrained from approaching the <em class="term">beis din</em> of Vilna not only on <em class="term">halachic</em> grounds but on grounds of <em class="term">bein adam lachaveiro</em>.</p>
+
+<p>His reasoning was this. Had he gone to the <em class="term">beis din</em> and asked, “What shall we do? There are people who may fall sick and perhaps die; how are we to proceed?” the very question would have been a public shaming of the court. It was the <em class="term">beis din</em> who should have taken the initiative <em>before</em> <em class="term">Yom Kippur</em>: to visit every synagogue, to post notices, and to proclaim: “The rabbi rules that it is forbidden to fast if you feel even slightly faint. If you are apprehensive (<span class="heb-inline">חושש</span>) that you may fall ill, it is forbidden to fast.” They had not done so. Rabbi Yisrael did not wish to put them to shame in public by asking. Therefore, on <em class="term">Yom Kippur</em> itself, seeing no alternative, he rose and decided on his own authority: not despite his sensitivity in <em class="term">bein adam lachaveiro</em>, but because of it.</p>
+
+<h2>XIII. The Later Reception</h2>
+
+<p>The story spread far beyond Lithuania. Even in Jerusalem it was discussed at length, because the same cholera epidemic later struck the Land of Israel, and the same question arose. The Rishon LeTzion (<span class="heb-inline">ראשון לציון</span>), the title by which the Sephardim call the chief rabbi of Jerusalem, Rabbi Chaim David Chazan (<span class="heb-inline">רבי חיים דוד חזן</span>),<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> is reported to have said: “I know that some years ago in Europe a rabbi stood up in the synagogue and permitted everyone to eat. But here I shall not do this. How can one do this?” Everyone knew the story; it had become a defining narrative.</p>
+
+<p>Fifty to a hundred years afterwards the <em class="term">Acharonim</em> discussed the case at length. They argued the reasoning of those who held that the action was forbidden and the reasoning of those who held it permitted. Rabbi Baruch Ber Leibowitz (<span class="heb-inline">רבי ברוך בער ליבוביץ</span>) of Kamenetz (<span class="heb-inline">קמניץ</span>), one of the great <em class="term">roshei</em> (<span class="heb-inline">ראשי</span>) <em class="term">yeshivah</em> of Lithuania, devoted an entire <em class="term">shiur</em> to the subject in his <em class="term">yeshivah</em>; he sided with Rabbi Itzel HaKohen and held the action forbidden, disagreeing with Rabbi Yisrael’s permission.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a></p>
+
+<h2>XIV. Conclusion: The Consistency of the Ruling</h2>
+
+<p>Read together, the eyewitness version, the Chasam Sofer’s parallel ruling, and Rabbi Yaakov Kamenetsky’s insight in <em class="term">bein adam lachaveiro</em> sharpen the picture. Rabbi Yisrael’s actual ruling, on the eyewitness account, to give small portions, less than the measure, only to those in danger or possible danger, is exactly what the <em>Shulchan Aruch</em> prescribes. Why should one eat more than the measure when it is unnecessary? The fast is broken only when one eats more than the measure, and a person who eats only less than the measure because he is permitted to has not broken it. On this account Rabbi Yisrael’s ruling was, in the lecturer’s estimate, entirely correct. That conclusion rests on the eyewitness version; on the version of <em>Mekor Baruch</em>, with a public <em class="term">kiddush</em> and a blanket permission, the two questions of Section VIII remain.</p>
+
+<p><em>[Editorial coda &mdash; not part of the delivered discourse.]</em> The episode may be read as a study in the two sides of rabbinic leadership in a crisis: the bold, unilateral act that saves lives, and the process of consultation and authority on which the community’s <em class="term">halachic</em> order depends. On the version of the eyewitness and of Rabbi Yaakov Kamenetsky, Rabbi Yisrael walked the narrow line between the two, with <em class="term">halachic</em> precision and with unusual regard for the feelings of others.</p>
+
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer’s report, or could not be verified, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short">Rabbi Nosson Kamenetsky, <em>The Making of a Gadol</em> — the discussion of the <em class="term">kiddush</em> incident, p. 1136.</span>
+  <span class="expanded"> A biographical study of the Lithuanian <em class="term">gedolim</em> by the son of Rabbi Yaakov Kamenetsky (<span class="heb-inline">רבי יעקב קמנצקי</span>, 1891–1986). The lecturer reports that the book appeared “about fifteen years” before the discourse, that it was widely banned in the ultra-Orthodox world and became a bestseller nonetheless, and that it records frank detail, such as that Rabbi Yisrael smoked. He locates a long discussion of the incident at p. 1136 and refers to p. 1137 for the variation among the versions. The book is not available among the texts checked; the page numbers and the date are as the lecturer gave them and have not been compared with the printed volume.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><em>Mekor Baruch</em> (<span class="heb-inline">מקור ברוך</span>), Rabbi Baruch Epstein (1860–1941); English: <em>My Uncle the Netziv</em> (1988).</span>
+  <span class="expanded"> As described by the lecturer: Rabbi Baruch HaLevi Epstein, son of the Aruch HaShulchan and nephew of the Netziv, was the author of <em>Torah Temimah</em> and <em>Baruch SheAmar</em>, a banker who ran one of the main banks of Vilna, and a visitor to America for three years in the 1920s. His autobiography contains the account of the cholera incident followed in Section IV. The English edition is an abridgement; the lecturer recommends the Hebrew original. The dates of birth and death are those commonly given and were not stated by the lecturer. The work is not among the texts checked; the account itself has not been compared with the original.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short">The year of the incident.</span>
+  <span class="expanded"> The lecturer gives the year as 1848 and cautions that the sources differ on the date and, more importantly, on the <em class="term">halachic</em> details. The autumn of 1848 falls in the Hebrew year 5609 (<span class="heb-inline">תר״ט</span>); the Hebrew year 5608 (<span class="heb-inline">תר״ח</span>), which an earlier draft supplied, began in the autumn of 1847. The lecturer also mentions another version by a writer whose name is rendered uncertainly (see Open Questions, no. 6).</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short">The formula recited before <span class="heb-inline">כל נדרי</span> (<em>al daas hamakom</em>).</span>
+  <span class="expanded"> In the Ashkenazic rite the formula recited before Kol Nidrei reads <span class="heb-inline">על דעת המקום ועל דעת הקהל, אנו מתירין להתפלל עם העבריינים</span>. The lecturer cites the words as the model for the form of Rabbi Yisrael’s announcement (“in the name of the <em class="term">Torah</em>”); as delivered, he places them “before <em class="term">kiddush</em>,” but the words are those of the Kol Nidrei formula, to which they are referred here. The continuation is left open in the text, since the exact words attributed to Rabbi Yisrael are not reported.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short">The elder <em class="term">dayan</em> of Vilna — Rabbi Itzel HaKohen and the work <em>Bikurim</em>.</span>
+  <span class="expanded"> The lecturer speaks of the oldest and most respected <em class="term">dayan</em> of Vilna, eighty years old, an <em class="term">acharon</em> (<span class="heb-inline">אחרון</span>) whose works he loves, and names a work of his as <em>Bikurim</em>; in the account of the summons the same figure is called Rabbi Itzel HaKohen. His full name and the identification of the work are not given, and the identification is not resolved here. An earlier draft named him Rabbi Yechezkel Landau, and another version of the notes spoke of the <em>Ketzos HaChoshen</em> (<span class="heb-inline">קצות החושן</span>); neither can be right, for the author of the <em>Noda BiYehudah</em> (<span class="heb-inline">נודע ביהודה</span>) died in 1793 and the author of the <em>Ketzos HaChoshen</em> (Rabbi Aryeh Leib Heller, 1745–1812) in 1812, many decades before 1848 (dates as commonly given, not checked here).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short">The Koidenover Rebbe and the stroke.</span>
+  <span class="expanded"> As told by the lecturer: Chasidim of Koidenov, a pre-war dynasty, lived in Vilna; they reported the incident to their Rebbe, who spoke against Rabbi Yisrael; and the Chasidim attributed the stroke of Rabbi Yisrael, which the lecturer places about a decade before his death, to the Rebbe’s displeasure (<em class="term">kefeidah</em>). No source is named for the ascription, which is reported as the Chasidim’s own claim and not as history; the dating of the stroke relative to the incident is not given.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">דברים ד:טו</span>; <span class="heb-inline">ברכות לב ע״ב</span>; <span class="heb-inline">יומא פה ע״ב</span>; <span class="heb-inline">רמב״ם הלכות רוצח ושמירת הנפש יא:ד</span>.</span>
+  <span class="expanded"> Verified. <span class="heb-inline">ונשמרתם מאד לנפשתיכם</span> is <em>Devarim</em> 4:15, and is cited in <em>Berachos</em> 32b. The <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>) grounds the duty to remove dangers in the neighbouring verse <span class="heb-inline">השמר לך ושמור נפשך מאד</span> (<em>Devarim</em> 4:9) in <em>Hilchos Rotzeach UShemiras HaNefesh</em> 11:4, not in 4:15. The principle that <em class="term">pikuach nefesh</em> overrides the other commandments (apart from the three cardinal sins) rests on <span class="heb-inline">וחי בהם</span> (<em>Vayikra</em> 18:5), read in <em>Yoma</em> 85b as <span class="heb-inline">ולא שימות בהם</span>.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short">The question on <em class="term">gittin</em>.</span>
+  <span class="expanded"> The lecturer states that the question concerned the manner in which <em class="term">gittin</em> have been written for some thirty years, according to a ruling of one of the <em class="term">Acharonim</em> still followed today; that its content is not known; and that no <em class="term">gittin</em> were invalidated. No source is named, and none was found.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short">The two questions in the name of “Rabbi Baruch.”</span>
+  <span class="expanded"> The lecturer introduces the questions of Section VIII as those of “Rabbi Baruch” (<span class="heb-inline">רבינו ברוך</span>) without further identification. It may be Rabbi Baruch Epstein in <em>Mekor Baruch</em>, but the lecturer does not say so, and the point is left open (Open Questions, no. 3).</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">שולחן ערוך אורח חיים סימן תרי״ח</span>; <span class="heb-inline">משנה ברורה תרי״ח:כא</span>; <span class="heb-inline">חתם סופר, לקוטים טז</span>.</span>
+  <span class="expanded"> Verified. <em>Siman</em> 618 has ten <em>seifim</em>. <em>Seif</em> 1: a sick person who needs to eat is fed on the word of an expert physician, even a non-Jew, and if the patient himself says that he needs food he is fed even against many physicians; <em>seifim</em> 2–5: conflicting physicians and cases of doubt; <em>seif</em> 6: a physician unfamiliar with the illness; <em>seif</em> 7: the measured feeding, in small portions so that they do not combine to the <em class="term">shiur</em>, about two-thirds of a medium egg (<span class="heb-inline">כשני שלישי ביצה בינונית</span>), pausing for the time it takes to eat four eggs (<span class="heb-inline">כדי אכילת ארבעה ביצים</span>), and for drink the patient’s own <span class="heb-inline">כמלא לוגמיו</span>; <em>seif</em> 8: if these amounts do not suffice, or there is doubt, he is fed as needed at once; <em>seif</em> 10: a patient who ate and can bless mentions <span class="heb-inline">יעלה ויבא</span> in the Grace after Meals. The <em>Mishnah Berurah</em> (<em>seif katan</em> 21) tells the patient to test his own tolerance and cites the Chasam Sofer (<span class="heb-inline">ח״ו סי׳ ט״ז</span>) for an interval of nine minutes, the time to eat a <span class="heb-inline">פרס</span>; that responsum, <em>Teshuvos Chasam Sofer</em>, Collected Responsa 16, is among the texts checked and states <span class="heb-inline">חצי מיל שהוא ט׳ מינוטין</span>. The cheek-method described in the text is the lecturer’s own summary and is not quoted from the sources; the decision in each case belongs to a rabbi. The lecturer’s mnemonic for the <em>siman</em> (<span class="heb-inline">תרי״ח</span>), rendered “Rosh Hashanah and Thursday, the healing of the sick of Israel,” does not map evidently onto the letters and may be corrupt.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short">The sick person and <em class="term">kiddush</em> on <em class="term">Yom Kippur</em> that falls on <em class="term">Shabbos</em>.</span>
+  <span class="expanded"> The lecturer attributes the view that a sick person eating on a <em class="term">Yom Kippur</em> that falls on <em class="term">Shabbos</em> must make <em class="term">kiddush</em> from the side of <em class="term">Shabbos</em> to the <em>Ketzos HaChoshen</em> (<span class="heb-inline">קצות החושן</span>); the name as delivered may be that of Rabbi Akiva Eger (<span class="heb-inline">רבי עקיבא איגר</span>). The attribution was not located and remains unverified. Verified for the ordinary case: the <em>Magen Avraham</em> (<span class="heb-inline">תרי״ח ס״ק י׳</span>) states that a sick person who ate on <em class="term">Yom Kippur</em> need not make <em class="term">kiddush</em>, it being a blessing in vain, and the <em>Mishnah Berurah</em> (<span class="heb-inline">תרי״ח ס״ק כ״ט</span>), in a passage that also treats <em>Yaaleh VeYavo</em> and, if the day is <em class="term">Shabbos</em>, <em>Retzei</em> (<span class="heb-inline">רצה</span>), rules that he should certainly not make <em class="term">kiddush</em>, because of the concern of a blessing in vain. That passage appears to run against the position cited by the lecturer; the full text should be read before a conclusion is drawn.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><em>Gedolim fun Unzer Zeit</em> (<span class="heb-inline">גדולים פון אונזער צייט</span>) — the testimony of Shimon Strashun.</span>
+  <span class="expanded"> A Yiddish biographical collection, cited by the lecturer for the testimony of an eyewitness who was in the Vilna synagogue in 1848 and whom he names as Shimon Strashun (<span class="heb-inline">שמעון שטראשון</span>). The lecturer distinguishes him from the Rashash, Rabbi Shmuel Strashun (<span class="heb-inline">רבי שמואל שטראשון</span>, 1794–1872 as commonly given), who also lived in Vilna. The author, edition and page are not given and were not located; the surname is reconstructed from the lecturer’s pronunciation (“Shpashun,” “Strashun”).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short">Shalom Almanori (<span class="heb-inline">שלום עלמנורי</span>), on those who died on <em class="term">Yom Kippur</em>.</span>
+  <span class="expanded"> The lecturer reports that Almanori gives the same version as the eyewitness, and that the <em>Mishnah Berurah</em> and the <em>Biur Halachah</em> mention the story in passing. The book was not located; its title (rendered in earlier drafts <span class="heb-inline">עליך שמך ישראל</span>) and the author’s name are uncertain. On the text of the <em>Mishnah Berurah</em> on <em>siman</em> 618 (<em>seifei katan</em> 21 and 29) there is no reference to Rabbi Yisrael or to cholera; the <em>Biur Halachah</em> could not be retrieved, so the lecturer’s report is left unverified.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">Rabbi David Leibowitz, Rabbi Yaakov Kamenetsky, and the Chofetz Chaim’s tradition.</span>
+  <span class="expanded"> As reported by the lecturer from <em>The Making of a Gadol</em>: Rabbi David Leibowitz heard the account from the Chofetz Chaim and told it to Rabbi Yaakov Kamenetsky. The family relationships (a maternal grandfather who was the Chofetz Chaim’s brother; a son, Rabbi Henoch Leibowitz) and the death of the Chofetz Chaim’s father in the epidemic are the lecturer’s and have not been compared with the book. The lecturer’s “ten or twenty years old” follows from the dispute over the age at which the Chofetz Chaim died, ninety-four or one hundred and four.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">ירושלמי יומא פ״ח ה״ה</span>; <span class="heb-inline">בית יוסף אורח חיים סימן שכ״ח</span>.</span>
+  <span class="expanded"> Verified. <span class="heb-inline">הזריז משובח, והנשאל מגונה, והשואל הרי זה שופך דמים</span>: when there is <em class="term">pikuach nefesh</em> on <em class="term">Shabbos</em>, the one who acts swiftly is praiseworthy, the rabbi who is asked is shamed, and the one who asks is spilling blood (the text checked also records a variant reading of the first clauses). The <em>Beis Yosef</em>, at the words <span class="heb-inline">הנשאל הרי זה מגונה</span>, cites <span class="heb-inline">ה״ר ישראל</span> in his writings (<span class="heb-inline">סימן קנ״ו</span>) that the reason is that the rabbi should have informed the people of his town of this law in advance. This is the thought the lecturer attributes to the <em>Beis Yosef</em> and to the Chofetz Chaim’s tradition.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">משנה סוטה ג:ד</span>; <span class="heb-inline">סוטה כא ע״ב</span>; <span class="heb-inline">רמב״ם הלכות שבת ב:ג</span>.</span>
+  <span class="expanded"> Verified. The <em>Mishnah</em> lists the <em>chasid shoteh</em>, and the <em>Gemara</em> (<em>Sotah</em> 21b) gives the example of a man who sees a woman drowning in a river and says that it is improper to look at her. The application to one who runs to ask a rabbi before saving a life is that of the lecturer and of the tradition he reports, not the text of the <em>Gemara</em>. The <em class="term">Rambam</em> (<em>Hilchos Shabbos</em> 2:3) rules <span class="heb-inline">ואסור להתמהמה בחילול שבת לחולה שיש בו סכנה</span>: it is forbidden to delay. The words “the one who asks” and “spilling blood” are not in that halachah; they are in <em>Shulchan Aruch, Orach Chaim</em> 328:2.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">טור אורח חיים סימן שכ״ח</span>; <span class="heb-inline">שולחן ערוך אורח חיים שכ״ח:ב</span>.</span>
+  <span class="expanded"> Verified. The <em>Tur</em>, citing the <em>Yerushalmi</em>, reads <span class="heb-inline">הנשאל הרי זה מגונה והשואל הרי זה שופך דמים</span> and adds <span class="heb-inline">וחי בהם ולא שימות בהם</span>; the <em>Shulchan Aruch</em> has <span class="heb-inline">והזריז הרי זה משובח והשואל הרי זה שופך דמים</span>.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short">The incident in Shavel (<span class="heb-inline">שאוועל</span>).</span>
+  <span class="expanded"> Reported by the lecturer as an incident in the Lithuanian city of Shavel (Šiauliai). The rabbi’s name is not given: the lecturer begins to name a well-known rabbi of the city and then says that the rabbi in this case was another. The incident is told as a warning from experience and is not documented here.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">The Brisker leniency.</span>
+  <span class="expanded"> As reported by the lecturer, Rabbi Chaim of Brisk held a position more lenient than the <em>Shulchan Aruch</em> in <em class="term">pikuach nefesh</em>, which most <em class="term">poskim</em> do not accept, and in Brisk they ate on the minor fasts (the lecturer names Tzom Gedaliah and Taanis Esther) even for a small headache. The lecturer’s further words, that Yom Kippur and Tishah BeAv are apparently excepted, are unclear at this point and are not asserted. The joke that follows is oral tradition.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short">Teshuvos Chasam Sofer — Pressburg, the cholera, 1836.</span>
+  <span class="expanded"> Not located. The responsum on the cholera epidemic in Pressburg in 1836 could not be found among the texts checked (<em>Orach Chaim</em> 157 and 158 were examined and are on other subjects). The year, the content of the ruling, and the pregnant-woman reasoning are as the lecturer reports them; whether that reasoning is the Chasam Sofer’s own is not stated. The nine-minute interval attributed to the Chasam Sofer by the <em>Mishnah Berurah</em> is in Collected Responsa 16 (see note 10), which is dated to the Slichos season of 5594 (about 1834) and treats a different question. The Chasam Sofer (Rabbi Moshe Sofer, 1762–1839, as commonly given) lived in Pressburg.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><em>Emes LeYaakov</em> (<span class="heb-inline">אמת ליעקב</span>), Rabbi Yaakov Kamenetsky.</span>
+  <span class="expanded"> The lecturer cites the book, a work of Rabbi Yaakov Kamenetsky, for the explanation in <em class="term">bein adam lachaveiro</em>. Whether the passage is in the volume on the Torah or in the one on the Talmud is not stated, and it was not located.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">The Rishon LeTzion, Rabbi Chaim David Chazan.</span>
+  <span class="expanded"> Reported by the lecturer; no source is given for the quotation. The lecturer says that the epidemic reached Jerusalem “a couple of years later,” and the interval has not been verified.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short">Rabbi Baruch Ber Leibowitz of Kamenetz.</span>
+  <span class="expanded"> The lecturer reports that he gave a whole <em class="term">shiur</em> on the incident and held the action forbidden. The <em class="term">shiur</em> is not located; the town of Kamenetz is the lecturer’s identification of his <em class="term">yeshivah</em>.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Recollections of reviewers are recorded as such and are not asserted in the text.</p>
+<ol>
+<li><strong>The elder <span class="heb-inline">דיין</span>.</strong> His full name; the identity of the work called <em>Bikurim</em>; and whether “Rabbi Itzel HaKohen” in the account of the summons and the elder who rebuked the congregation are, as here assumed, one man. (See note 5.)</li>
+<li><strong>The <span class="heb-inline">קידוש</span> for a sick person on a <span class="heb-inline">שבת</span> that is <span class="heb-inline">יום כיפור</span>.</strong> Whose view it is: the <em>Ketzos HaChoshen</em>, Rabbi Akiva Eger, or another; and how it is to be reconciled with the <em>Mishnah Berurah</em> (618:29), which appears to rule against <span class="heb-inline">קידוש</span>. (See note 11.)</li>
+<li><strong>“Rabbi Baruch.”</strong> Whose are the two questions of Section VIII: Rabbi Baruch Epstein in <em>Mekor Baruch</em>, or another. The kashya on <span class="heb-inline">גיטין</span> is likewise unsourced.</li>
+<li><strong>The eyewitness and the books.</strong> The full titles, authors and pages of <em>Gedolim fun Unzer Zeit</em> and of Almanori’s book, and the passage in the <em>Mishnah Berurah</em> or <em>Biur Halachah</em> (if any) that mentions the story. A reviewer recalled that modern scholarship has questioned parts of the <em>Mekor Baruch</em> account; this is a recollection awaiting verification and is not asserted.</li>
+<li><strong>The <em>Chasam Sofer</em>.</strong> The responsum on the Pressburg cholera, its date, and whether the reasoning from the pregnant woman is his own. The lecturer’s sentence that the question is not a question “when the danger is at one hundred percent” is unclear in the delivered text and is rendered here as the lecturer’s report.</li>
+<li><strong>Other versions.</strong> The lecturer mentions a different version of the story by a writer rendered “Reb Moshe Steinbach” (name uncertain) and a further discussion at p. 1137 of <em>The Making of a Gadol</em>; their content is not recorded.</li>
+<li><strong>Ages and dates.</strong> The lecturer gives Rabbi Yisrael’s age at the time as thirty-six or thirty-seven; the birth year usually given for him (about 1809) would make him a little older, and the figure is left as the lecturer’s. The date of <em>The Making of a Gadol</em> (“about fifteen years” before the discourse) and the interval before the cholera reached Jerusalem are likewise the lecturer’s.</li>
+<li><strong>The size of the congregation.</strong> “A thousand or fifteen hundred” is the lecturer’s own range.</li>
+<li><strong>The scope of the closing line.</strong> The statement in the conclusion that the fast is broken only by eating more than the measure is the lecturer’s, in the context of one who is permitted to eat; a reviewer recalled that for a healthy person even eating less than the measure is forbidden at the rabbinic level. This is a recollection to be verified and is not asserted.</li>
+<li><strong>Practical measures.</strong> The method of measuring a cheekful and the nine-minute interval are the lecturer’s practical advice. Before printing, the passage should be checked against the sources in note 10 and should carry a direction that each case is to be put to a rabbi.</li>
+<li><strong>The Brisker exceptions.</strong> Whether Yom Kippur and Tishah BeAv are excepted from the Brisker leniency, which the delivered text does not make clear.</li>
+<li><strong>The name of the Shavel rabbi</strong> and the identity of the Brisker Rav in the anecdote of embellishment, neither of which the lecturer names.</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati’s discourse delivered in the days before <em>Yom Kippur</em>, 6 <em>Tishrei</em> 5786 (28 September 2025). The edition presents the two versions of the incident side by side, keeps the lecturer’s practical remarks as his own, and records his uncertainties as he stated them.
+</footer>
+
+</body>
+</html>

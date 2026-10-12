@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Closing the Amidah: Yihyu Leratzon, Elokai Netzor, and the Pressburg Controversy</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">סִיּוּם שְׁמוֹנֶה עֶשְׂרֵה — יִהְיוּ לְרָצוֹן, אֱלֹהַי נְצוֹר, וּמַחֲלֹקֶת פְּרֶסְבּוּרְג</h1>
+  <div class="english-title">Closing the <em>Amidah</em>: <em>Yihyu Leratzon</em>, <em>Elokai Netzor</em>, and the Pressburg Controversy</div>
+  <div class="sub">Studies in <em>Tefillah</em> (<span class="heb-inline">תפילה</span>) &mdash; The Close of <em>Shemoneh Esrei</em></div>
+  <div class="date">27 Tishrei 5786 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse was delivered <span class="heb-inline">לעילוי נשמת</span> <span class="heb-inline">ר׳ חיים יהודה בן מאיר ווילינגער ז״ל</span>, a survivor of the war and of the death march, of the city of Selish, who left behind a beautiful family. It was sponsored by Reb Yitzchak and Mrs. Paley, his daughter. The rav of Selish was the author of a <em>sefer</em> entitled <em>Tzeror HaChaim</em> (<span class="heb-inline">צרור החיים</span>): <span class="heb-inline">נשמתו תהא צרורה בצרור החיים</span>. <span class="confirm">[Names, spelling of the surname and of the town to be confirmed before printing.]</span></p>
+
+<p class="lead">This discourse takes up what follows the blessing of peace at the close of <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>): the two endings of that blessing, <em class="term">Oseh HaShalom</em> (<span class="heb-inline">עושה השלום</span>) and <em class="term">HaMevarech es Amo Yisrael BaShalom</em> (<span class="heb-inline">המברך את עמו ישראל בשלום</span>); the controversy they provoked in <em class="term">Pressburg</em> (<span class="heb-inline">פרשבורג</span>), as recounted in the book <em class="term">Chut HaMeshulash</em> (<span class="heb-inline">חוט המשולש</span>); and the verse <em class="term">Yihyu Leratzon</em> (<span class="heb-inline">יהיו לרצון</span>), with the question whether it is said before or after <em class="term">Elokai Netzor</em> (<span class="heb-inline">אלהי נצור</span>).</p>
+
+<p class="lead">It then turns to the history of <em class="term">Elokai Netzor</em> (<span class="heb-inline">אלהי נצור</span>) and to its author, <em class="term">Mar bereih d’Ravina</em> (<span class="heb-inline">מר בריה דרבינא</span>), whose miracles and whose breaking of a glass at his son&rsquo;s wedding the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) relates, and who is the source of the custom of the <em class="term">chuppah</em> (<span class="heb-inline">חופה</span>); and to the inner meaning of <em class="term">Yihyu Leratzon</em> (<span class="heb-inline">יהיו לרצון</span>), which asks acceptance for words said without <em class="term">kavanah</em> (<span class="heb-inline">כוונה</span>) and for thoughts that words cannot hold.</p>
+
+<p class="lead">It closes with the plea against <em class="term">lashon hara</em> (<span class="heb-inline">לשון הרע</span>) with which the added prayer begins; with judgment, <em class="term">sechar ve’onesh</em> (<span class="heb-inline">שכר ועונש</span>) and the identification of the soul by its name; and with the <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) of the verse that begins and ends with the letters of one&rsquo;s name, traced to its earliest printed sources.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. The Two Endings of the Blessing of Peace</h2>
+
+<h3>The Question of Text</h3>
+
+<p>The blessing of peace, with which <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) ends, closes in most <em class="term">siddurim</em> (<span class="heb-inline">סידורים</span>) with the words <span class="heb-inline">ברוך אתה ה׳ המברך את עמו ישראל בשלום</span>. <em class="term">Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) reads <span class="heb-inline">עושה השלום</span> in its place during <em class="term">Aseres Yemei Teshuvah</em> (<span class="heb-inline">עשרת ימי תשובה</span>). The <em class="term">siddurim</em> differ in detail, and the related question of <em class="term">Sim Shalom</em> (<span class="heb-inline">שים שלום</span>) against <em class="term">Shalom Rav</em> (<span class="heb-inline">שלום רב</span>) is reserved for the treatment of <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>).</p>
+
+<p>It is reported in <em class="term">Chut HaMeshulash</em> (<span class="heb-inline">חוט המשולש</span>) that in earlier times <em class="term">Nusach Ashkenaz</em> said <em class="term">Oseh HaShalom</em> (<span class="heb-inline">עושה השלום</span>) throughout the year, and that the practice was later confined to the ten days.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a></p>
+
+<h3>Why in the Ten Days of Repentance</h3>
+
+<p>The reason offered is that the <em class="term">gematria</em> (<span class="heb-inline">גימטריא</span>) of <span class="heb-inline">השלום</span> equals that of <em class="term">Safriel</em> (<span class="heb-inline">ספריאל</span>), the angel who writes and records the decree of inscription and sealing for a good year. During the ten days, when the decree is being written, mercy is sought through that angel.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The question arises how one may address angels at all. The answer, given in an earlier discourse, is that the prayer is not addressed to them: when <em class="term">machnisei rachamim</em> (<span class="heb-inline">מכניסי רחמים</span>) is said, the angels are asked only to bring the petitions before God.</p>
+
+<p>The matter carries its own irony. The numerical value of <span class="heb-inline">עושה</span> is likewise that of <span class="heb-inline">השלום</span>, so that the same angel is invoked by the single word <span class="heb-inline">עושה</span>. The allusions carried by each of the two endings, said to call upon different angels and different mercies, were treated at length in an earlier discourse of this series and are not repeated here. What is to be observed is how Jewish controversy turns ironic: when <em class="term">Oseh HaShalom</em> was said all the year round there was a real dispute over which ending was correct, and different <em class="term">siddurim</em> printed it differently.</p>
+
+<h2>II. The Book <em class="term">Chut HaMeshulash</em></h2>
+
+<p>The book <em class="term">Chut HaMeshulash</em> is a biography of three generations: <em class="term">Rav Akiva Eiger</em> (<span class="heb-inline">רבי עקיבא איגר</span>), the <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>), and the <em class="term">Ksav Sofer</em> (<span class="heb-inline">כתב סופר</span>). It was written, as reported, by a grandson of the <em class="term">Chasam Sofer</em>,<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> and every devotee of the <em class="term">Chasam Sofer</em> should have it at home. <em class="term">Rav Akiva Eiger</em> was the father-in-law of the <em class="term">Chasam Sofer</em>: as the lecturer tells it, the first wife of the <em class="term">Chasam Sofer</em> was childless for many years, and he afterward married the daughter of <em class="term">Rav Akiva Eiger</em>. The title is the verse <span class="heb-inline">והחוט המשולש לא במהרה ינתק</span> (<em class="term">Koheles</em>, <span class="heb-inline">קהלת</span> 4:12), which the <em class="term">Gemara</em> in <em class="term">Kesubos</em> (<span class="heb-inline">כתובות</span>) applies to three consecutive generations of <em class="term">Torah</em> (<span class="heb-inline">תורה</span>): once a family has three generations of <em class="term">talmidei chachamim</em> (<span class="heb-inline">תלמידי חכמים</span>), the <em class="term">Torah</em> does not depart from it.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<p>The family of the <em class="term">Chasam Sofer</em> bears the verse out to the present day: his children, grandchildren and great-grandchildren are great rabbis, and they number in the thousands. In the generations after him each gave his own work a title containing the name <span class="heb-inline">סופר</span>: the <em class="term">Chasam Sofer</em> wrote the <span class="heb-inline">חתם סופר</span>; his son, the <span class="heb-inline">כתב סופר</span>; the son of the <em class="term">Ksav Sofer</em>, the <em class="term">Shevet Sofer</em> (<span class="heb-inline">שבט סופר</span>); and his son, the <em class="term">Da’as Sofer</em> (<span class="heb-inline">דעת סופר</span>). One of them, the lecturer relates, was the first of the family to settle in <em class="term">Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>).<a class="footnote-ref" id="ref5" href="#fn5">[5]</a></p>
+
+<h2>III. The Controversy in Pressburg</h2>
+
+<h3>Pressburg and Its Text of the Prayer</h3>
+
+<p><em class="term">Pressburg</em> (<span class="heb-inline">פרשבורג</span>) was always a city apart. It was a city of Oberlander Jews (<span class="heb-inline">אובערלענדער</span>), who prayed <em class="term">Nusach Ashkenaz</em>. But after the <em class="term">Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>) and the rise of Chassidus there was an upheaval over the text of the prayer. The <em class="term">Chasam Sofer</em> and others changed certain things, and many persons moved to <em class="term">Nusach Sefard</em> (<span class="heb-inline">נוסח ספרד</span>); so that much of the dispute between the <em class="term">Misnagdim</em> (<span class="heb-inline">מתנגדים</span>) and the <em class="term">Chassidim</em> (<span class="heb-inline">חסידים</span>) was about the text of the prayers and the manner of praying. Why the community of Pressburg shifted its text as it did is a question left open here.</p>
+
+<h3>The Chassidic Revolution</h3>
+
+<p>The <em class="term">Chassidim</em> arose in the eighteenth century and changed the way Jews prayed in two respects.</p>
+
+<p>The first was bodily. The <em class="term">Vilna Gaon</em> (<span class="heb-inline">הגאון מווילנא</span>) and his disciples placed the <em class="term">Chassidim</em> under <em class="term">cherem</em> (<span class="heb-inline">חרם</span>) &mdash; a subject on which it is customary to speak with delicacy, and one that Chassidic usage softens in speech. Among the principal charges, set out in the text of the <em class="term">cherem</em>, was that in prayer they appeared as madmen: they leaped up and down, rolled on the floor and called out.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> Swaying in prayer, as in study, is itself an established practice, grounded in the <em class="term">Zohar HaKadosh</em> (<span class="heb-inline">זוהר הקדוש</span>) and in the sefarim; but the <em class="term">Chassidim</em> carried it further, to rolling and leaping and wild movements of the hands, and in the view of the Gaon the decorum of the synagogue became that of a circus.</p>
+
+<p>The second was the text of the prayer itself. They changed it, and the responsa literature of the <em class="term">poskim</em> (<span class="heb-inline">פוסקים</span>) of that period is full of sharp objections to the <em class="term">Chassidim</em> on that account.</p>
+
+<p>In practice, however, the <em class="term">Chassidim</em> prevailed. It is reported of the <em class="term">Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>) that toward the end of his life he said that, had it not been for the <em class="term">Baal Shem Tov</em> and the Chassidic movement, the <em class="term">maskilim</em> (<span class="heb-inline">משכילים</span>) would have taken over <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>); the warmth was needed.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> That warmth came at a price: a change in the decorum of the synagogue, a change in the text of the prayers, and the introduction of many customs based on <em class="term">Kabbalah</em> (<span class="heb-inline">קבלה</span>) that had not been part of ordinary Jewish practice. Yet the outcome lies with God, who knows what He does. Nor is the other side of the argument without worth; it is a loss that genuine <em class="term">Misnagdim</em> are now hardly to be found.</p>
+
+<p>The <em class="term">Nusach HaAri</em> (<span class="heb-inline">נוסח האר״י</span>), the text used by Chabad, expresses the same decision to bring matters drawn from <em class="term">Kabbalah</em> into the text of the prayer.</p>
+
+<h3>The Split Over the Blessing of Peace</h3>
+
+<p>In Pressburg the community divided over precisely this blessing. One party said <em class="term">Oseh HaShalom</em>; the other said <em class="term">HaMevarech es Amo Yisrael BaShalom</em> (<span class="heb-inline">המברך את עמו ישראל בשלום</span>). The dispute grew so sharp in the affairs of the community that those who said <em class="term">Oseh HaShalom</em> were nicknamed the <em>Oseh-niks</em> (<span class="heb-inline">עושה׳ניקס</span>) and the others the <em>Hamevarech-niks</em> (<span class="heb-inline">המברך׳ניקס</span>).</p>
+
+<p>This account is found, according to the lecturer, only in <em class="term">Chut HaMeshulash</em>; he reports that he has found it nowhere else.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> Such disputes commonly begin in the synagogue, and later divisions within Chassidic courts have followed the same pattern.</p>
+
+<p>The irony is plain. The blessing of peace became the source of two names for two factions at war with each other. Peace is all that is asked for, and over its blessing they fought; and the two endings, as noted, are the same in meaning.</p>
+
+<h2>IV. <em class="term">Yihyu Leratzon</em>: Before, After, or Both?</h2>
+
+<h3>The Question</h3>
+
+<p>After the blessing of peace and before <em class="term">Elokai Netzor</em>, a verse is said: <span class="heb-inline">יהיו לרצון אמרי פי והגיון לבי לפניך ה׳ צורי וגואלי</span> (<em class="term">Tehillim</em>, <span class="heb-inline">תהלים</span> 19:15). Is it said before <em class="term">Elokai Netzor</em>, after it, or both? The <em class="term">siddur</em> (<span class="heb-inline">סידור</span>) prints it in both places.</p>
+
+<p>What does the verse mean? That what the worshipper has said, the words of his mouth and also the thoughts of his heart, be accepted before God. But the grammar is open. The verb may point forward, to what he is about to say in the coming minutes of the prayer, or backward, to what he has already said. The <em class="term">Gemara</em> in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) therefore asks: who told us to say it at the end of <em class="term">Shemoneh Esrei</em>? Perhaps, like <em class="term">Hashem Sefasai Tiftach</em> (<span class="heb-inline">ה׳ שפתי תפתח</span>) at the beginning, it should be said at the beginning.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a></p>
+
+<p>The answer turns on what is meant by <em class="term">tefillah</em> (<span class="heb-inline">תפילה</span>). In the strict sense <em class="term">tefillah</em> is <em class="term">Shemoneh Esrei</em>; <em class="term">Kerias Shema</em> (<span class="heb-inline">קריאת שמע</span>) is not <em class="term">tefillah</em>, though all is gathered together under the name of prayer. One may not interpose between <em class="term">geulah</em> (<span class="heb-inline">גאולה</span>) and <em class="term">tefillah</em>; yet <em class="term">Hashem Sefasai Tiftach</em>, said at the beginning, is not regarded as an interruption, for the Sages instituted it as part of the prayer itself. So too <em class="term">Yihyu Leratzon</em> at the end is part of <em class="term">Shemoneh Esrei</em>.</p>
+
+<h3>Following Dovid HaMelech</h3>
+
+<p>The Sages follow <em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>), especially in <em class="term">Shemoneh Esrei</em>. Each blessing of the prayer corresponds to chapters of <em class="term">Tehillim</em>, in the order in which Dovid set his petitions, and after eighteen chapters Dovid says <span class="heb-inline">יהיו לרצון אמרי פי והגיון לבי לפניך</span>. It must therefore come at the end. Strictly it follows nineteen chapters, not eighteen; but the first two chapters of <em class="term">Tehillim</em> are counted as one in the reckoning of the <em class="term">Gemara</em>, and the prayer too has nineteen blessings once <em class="term">Birkas HaMinim</em> (<span class="heb-inline">ברכת המינים</span>) is counted.</p>
+
+<h3>The Dispute of the Rishonim</h3>
+
+<p>The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) differ over where the verse stands in relation to <em class="term">Elokai Netzor</em>. The <em class="term">Rabad</em> (<span class="heb-inline">ראב״ד</span>), as cited by the <em class="term">Rashba</em> (<span class="heb-inline">רשב״א</span>), holds that <em class="term">Yihyu Leratzon</em> must be said immediately after the eighteen blessings, as Dovid said it immediately after the eighteen chapters; that is, before <em class="term">Elokai Netzor</em>, since <em class="term">Elokai Netzor</em> is not part of <em class="term">Shemoneh Esrei</em>.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></p>
+
+<p>Against this the <em class="term">Vilna Gaon</em> objects, in the position attributed to him. If <em class="term">Yihyu Leratzon</em> is said first, <em class="term">Elokai Netzor</em> is excluded from the prayer; the worshipper no longer stands in <em class="term">Shemoneh Esrei</em> before God, as though he had stepped back. Yet <em class="term">Elokai Netzor</em> is a prayer one wishes to say as part of <em class="term">Shemoneh Esrei</em>. Is it part of the prayer or not? The solution attributed to the <em class="term">Gra</em> (<span class="heb-inline">גר״א</span>) is to place <em class="term">Elokai Netzor</em> immediately after <span class="heb-inline">המברך את עמו ישראל בשלום</span>, while still within the prayer, and to say <em class="term">Yihyu Leratzon</em> only afterward.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> The <em class="term">Rema</em> (<span class="heb-inline">רמ״א</span>) in the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) likewise records the order in which <em class="term">Elokai Netzor</em> precedes the verse.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> The <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) rules that the better practice is to say <em class="term">Yihyu Leratzon</em> both before and after the supplications: before, because the verse is to be joined to <em class="term">Shemoneh Esrei</em>; after, to satisfy the <em class="term">Gra</em>. This arrangement is a case of <em class="term">terei desisrei</em> (<span class="heb-inline">תרתי דסתרי</span>), as has been remarked, and does not wholly cohere.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+
+<div class="callout">
+<span class="label">A Standing Question at Minchah of Yom Kippur</span>
+<p>A question arises among the <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>) at <em>Minchah</em> (<span class="heb-inline">מנחה</span>) of Yom Kippur: is <em class="term">Al Chet</em> (<span class="heb-inline">על חטא</span>) said before <em class="term">Elokai Netzor</em> or after it? The <em class="term">vidui</em> (<span class="heb-inline">וידוי</span>) must be part of the prayer and cannot follow <em class="term">Shemoneh Esrei</em>, yet <em class="term">Elokai Netzor</em> and the verse stand at its close. The <em class="term">Acharonim</em> differ as to what should be done. The practice commonly given is to follow what is printed in one&rsquo;s <em class="term">machzor</em> (<span class="heb-inline">מחזור</span>); there is on whom to rely either way (<em class="term">yesh al mi lismoch</em>, <span class="heb-inline">יש על מי לסמוך</span>).<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+</div>
+
+<h2>V. <em class="term">Elokai Netzor</em>: A Late Addition</h2>
+
+<p><em class="term">Elokai Netzor</em> is not from <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>); it comes from much later generations. In the period of the <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>) and the <em class="term">Rishonim</em> not many said it, and the <em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>), among the principal commentators on the prayers, writes that it was said by <em class="term">yechidim</em> (<span class="heb-inline">יחידים</span>) alone.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> Today it stands in every <em class="term">siddur</em> and is recited three times a day as though it belonged to the prayer, but it was not always so. The early <em class="term">siddurim</em> do not all include <em class="term">Yihyu Leratzon</em>, and not all the <em class="term">Geonim</em> and <em class="term">Rishonim</em> are known to have said it; for some reason the practice was adopted.</p>
+
+<p>Its source is a passage of the <em class="term">Gemara</em> in <em class="term">Berachos</em> concerning an <em class="term">amora</em> (<span class="heb-inline">אמורא</span>) named <em class="term">Mar bereih d’Ravina</em>, son of Ravina.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> The lecturer distinguishes him from the Ravina of the pair <em>Ravina and Rav Ashi</em> and places him earlier.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a></p>
+
+<h2>VI. <em class="term">Mar bereih d’Ravina</em>: Miracles and Customs</h2>
+
+<h3>The Wall at Worms and the Wall at Mechoza</h3>
+
+<p>Visitors to Worms are shown, beside the <em class="term">beis midrash</em> (<span class="heb-inline">בית מדרש</span>) of <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>), an indentation in the wall of a very narrow alley. According to the legend, when the mother of <em class="term">Rashi</em> was carrying him, a knight on horseback came riding through the alley; she would have been trampled, and there would have been no <em class="term">Rashi</em> on the Torah and on the Talmud. God wrought a <em class="term">nes</em> (<span class="heb-inline">נס</span>): the wall opened, she pressed herself into it, the knight passed, and <em class="term">Rashi</em> was born. The historian who pointed the place out mocked the tale, and showed by evidence that it never happened.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> Whence, then, did such a story come? From the <em class="term">Gemara</em>; not of <em class="term">Rashi</em>, but of <em class="term">Mar bereih d’Ravina</em>.</p>
+
+<p>The <em class="term">Gemara</em> in <em class="term">Berachos</em> 54a relates that <em class="term">Mar bereih d’Ravina</em> was walking in the marketplace of <em class="term">Mechoza</em> (<span class="heb-inline">מחוזא</span>), a place in Babylonia, in what is now Iraq,<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> when a wild camel charged at him. The wall cracked open behind him; he went inside it and was saved. Earlier, thirsty in the valley of the <span class="heb-inline">ערבות</span>, a spring had been created for him. At each place he afterward recited a blessing naming both miracles, and the <em class="term">Gemara</em> concludes that even a miracle done for an individual obligates him to bless.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> Unlike the legend of Worms, the account in the <em class="term">Gemara</em> is not legend: the words of <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) are true.</p>
+
+<p>The familiar form of the blessing for an individual, <span class="heb-inline">ברוך שעשה לי נס במקום הזה</span>, is given in the same passage, in the name of Rava, to a man saved from a lion; the <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) gives the form for a place where miracles were done for Israel, <span class="heb-inline">ברוך שעשה נסים לאבותינו במקום הזה</span>. <em class="term">Mar bereih d’Ravina</em> is spoken of as <span class="heb-inline">מלומד בנסים</span>, one to whom miracles happen continually.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></p>
+
+<h3>The Origin of Breaking the Glass at the Chuppah</h3>
+
+<p><em class="term">Mar bereih d’Ravina</em> is also the source of the custom of breaking a glass under the <em class="term">chuppah</em>. The <em class="term">Gemara</em> in <em class="term">Berachos</em> relates that he made a wedding for his son and saw the Sages exceedingly merry, more than he could bear; the joy had passed into frivolity (<span class="heb-inline">הוללות</span>). He brought a cup worth four hundred <span class="heb-inline">זוזי</span> and broke it before them, and they were saddened. The frivolity vanished, and they understood that it had gone too far.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> From this passage <em class="term">Tosafos</em> (<span class="heb-inline">תוספות</span>) derive the custom of breaking glass at weddings, and later authorities give it the added meaning of <em class="term">zecher lechurban</em> (<span class="heb-inline">זכר לחורבן</span>): <span class="heb-inline">אם אשכחך ירושלים תשכח ימיני</span> (<em class="term">Tehillim</em> 137:5) &mdash; that even at the height of joy Jerusalem is not forgotten. May all merit to break glass at the weddings of their children and grandchildren.</p>
+
+<h2>VII. The Prayer of <em class="term">Mar bereih d’Ravina</em></h2>
+
+<p>The <em class="term">Gemara</em> relates that <em class="term">Mar bereih d’Ravina</em>, at the close of his <em class="term">Shemoneh Esrei</em>, added a prayer of his own. This is itself a <em class="term">chiddush</em> (<span class="heb-inline">חידוש</span>), for nothing may be added to the <em class="term">matbea shetavu Chachamim</em> (<span class="heb-inline">מטבע שטבעו חכמים</span>) fixed by <em class="term">Anshei Knesses HaGedolah</em>, the last generation of the prophets, with <em class="term">Shimon HaTzaddik</em> (<span class="heb-inline">שמעון הצדיק</span>) and persons from centuries before him. The line that tradition draws is that no further <em class="term">Berachos</em> may be added to the prayer, while personal petitions in one&rsquo;s own words may be added after it.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> <em class="term">Mar bereih d’Ravina</em> did so: <span class="heb-inline">אלהי נצור לשוני מרע ושפתי מדבר מרמה</span>.</p>
+
+<p>In the text of the <em class="term">Gemara</em> the prayer continues: <span class="heb-inline">וכל החושבים עלי רעה מהרה הפר עצתם וקלקל מחשבתם</span>, and asks to be saved from an evil mishap, from the evil inclination, and from a bad woman.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> The text printed in our <em class="term">siddurim</em> differs from that of the <em class="term">Gemara</em>, and the clause about the bad woman is lacking; yet the worshipper is to have the original sense in mind.</p>
+
+<p>Whoever says <em class="term">Yihyu Leratzon</em> has sealed <em class="term">Shemoneh Esrei</em>; it is as though he had stepped back. Now he may add whatever he wishes. Were it not for the prayer of <em class="term">Mar bereih d’Ravina</em>, the three steps back would be taken immediately after <em class="term">Yihyu Leratzon</em>; since his prayer was adopted, the feet are kept together, <em class="term">Elokai Netzor</em> is said, and only then are the three steps taken.</p>
+
+<p>Why this prayer, of all the personal prayers of the <em class="term">amoraim</em> (<span class="heb-inline">אמוראים</span>) recorded in the <em class="term">Gemara</em>, became the standard one is a question the <em class="term">Gemara</em> does not answer; it was reserved for the following discourse.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a></p>
+
+<h2>VIII. The Plea Against Lashon Hara</h2>
+
+<p>Of all the transgressions, why does the prayer ask specifically for protection from <em class="term">lashon hara</em>? We say <em>thank You</em> for everything, and then: guard my tongue from evil today. The <em class="term">commentators on the prayers</em> (<span class="heb-inline">מפרשי התפילה</span>) explain that this is a sign of how pervasive, and how grave, the transgression is. We do not realize what we are saying: sometimes, even while taking the three steps back, a person is already speaking <em class="term">lashon hara</em> to the one beside him.</p>
+
+<p>The <em class="term">Gemara</em> teaches that no one should say &ldquo;I am a righteous man&rdquo;; everyone stumbles in <em class="term">lashon hara</em>, if not in the thing itself then in <em class="term">avak lashon hara</em> (<span class="heb-inline">אבק לשון הרע</span>).<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> A Jew prays: I know that I am about to go out into the world; I have just finished <em class="term">Shemoneh Esrei</em> and spoken with You; let the words that leave my mouth be holy. That the first thing asked is protection from <em class="term">lashon hara</em> teaches the gravity of the prohibition.</p>
+
+<h2>IX. Two Intentions in <em class="term">Yihyu Leratzon</em></h2>
+
+<h3>Acceptance of Words Without <em class="term">kavanah</em></h3>
+
+<p>No one has <em class="term">kavanah</em> for every word of <em class="term">Shemoneh Esrei</em> unless he stands at a very high level. To say every word is difficult enough; to have the thought for every word is harder still. In saying <em class="term">Yihyu Leratzon</em> the worshipper asks that the words he said be accepted, even if empty of <em class="term">kavanah</em>: <span class="heb-inline">אמרי פי</span>; and the thoughts in which there was <em class="term">kavanah</em>, <span class="heb-inline">והגיון לבי</span>, likewise. It is an appeal for mercy at the end of the prayer.</p>
+
+<p>The verse <span class="heb-inline">אלה ברכב ואלה בסוסים ואנחנו בשם ה׳ אלהינו נזכיר</span> (<em class="term">Tehillim</em> 20:8) says that the nations have chariots and horses, a military, and Israel has the Name of God.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> The world makes a joke of it. When a man of the nations wants to travel to Hong Kong, he must book a ticket and arrange a vehicle; when a Jew wants to travel to Hong Kong, he need only take three steps back, three steps forward, and begin <em class="term">Shemoneh Esrei</em>: his mind is already there. The joke makes a point. We ask that even if our minds wandered, the words, the going through the motions, be accepted. It is lip service, indeed, but we are weak.</p>
+
+<h3>The <em class="term">Radak</em> (<span class="heb-inline">רד״ק</span>): Thoughts Beyond Words</h3>
+
+<p>The <em class="term">Radak</em> on the verse <span class="heb-inline">יהיו לרצון</span> teaches that, besides the words spoken, there are thoughts and intentions in the heart that were never voiced.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> A person often wishes to pray for something, has it all worked out in his mind, and lacks the words. At this point in the prayer one is meant to use one&rsquo;s own words, and the <em class="term">poskim</em> say that one may add whatever one wishes to <em class="term">Elokai Netzor</em>: a match for a child, a livelihood. But some thoughts cannot be brought out. To these the worshipper says: You are <em class="term">yodea machshavos</em> (<span class="heb-inline">יודע מחשבות</span>); You know what is in my heart; read my thoughts as if I had said them. That too is an intention a Jew may bring to <em class="term">Yihyu Leratzon</em>: I do not know how to say it, but You know what I want; fulfil my wish and accept my prayer so.</p>
+
+<h2>X. When to Lengthen</h2>
+
+<p>Where is it better to dwell on one&rsquo;s petitions: at <em class="term">Shomea Tefillah</em> (<span class="heb-inline">שומע תפילה</span>) within <em class="term">Shemoneh Esrei</em>, or after <em class="term">Yihyu Leratzon</em>? The <em class="term">poskim</em> rule that it is better after <em class="term">Yihyu Leratzon</em>. If one lengthens his petitions within the <em class="term">Amidah</em> (<span class="heb-inline">עמידה</span>), the <em class="term">shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) will begin the <em class="term">chazaras hashatz</em> (<span class="heb-inline">חזרת הש״ץ</span>), and he will miss <em class="term">Kaddish</em> (<span class="heb-inline">קדיש</span>), <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) and the responses of <em class="term">Amen</em> (<span class="heb-inline">אמן</span>). After <em class="term">Yihyu Leratzon</em> the prayer is complete, and one is permitted to interrupt: to answer <em class="term">Amen</em>, <em class="term">Kaddish</em> and <em class="term">Kedushah</em>; and one may go on and ask for whatever one wishes during <em class="term">Elokai Netzor</em>.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a></p>
+
+<h2>XI. Judgment and the Name</h2>
+
+<h3>Reward and Punishment</h3>
+
+<p>There is a tradition &mdash; the lecturer calls it a legend, since its source in <em class="term">Chazal</em> is not known &mdash; that in the World to Come God will judge, and the wicked will be punished. <em class="term">sechar ve’onesh</em> is real. Whatever the temptation to soften the matter, to tell children that God loves them and everything is good, everything is not good. One who performs <em class="term">mitzvos</em> (<span class="heb-inline">מצוות</span>) is rewarded; one who commits transgressions is punished. This must not be forgotten, even in the present day. <em class="term">teshuvah</em> (<span class="heb-inline">תשובה</span>) is real, and after Yom Kippur one is clean; but a sin carries its punishment.</p>
+
+<p>When a wicked man comes to heaven, the sefarim say, they will strike him. The descriptions of <em class="term">Gehinnom</em> (<span class="heb-inline">גיהנום</span>), of its fires, and of the angels of destruction surrounding the soul, are such that one with any fear of Heaven should read them with care. The language is of physical blows, although the soul is spiritual, and how a soul receives physical punishment is left to the imagery. But the picture is grim.</p>
+
+<h3>The Name as the Identity of the Soul</h3>
+
+<p>In this world a person is identified by his appearance, his work, his career, and also by his name. In the <em class="term">Olam HaEmes</em> (<span class="heb-inline">עולם האמת</span>) the soul is identified by one thing alone: its name. For this reason it matters to call a Jew by his Hebrew name, his true name, and not only by the English name that he uses in business. Many great men opposed the use of English names; today necessity has prevailed. It is a familiar fact that the Hungarian Jews who came after the war took English names, though in Hungary they had borne Hungarian ones. The Hebrew name is the identity of the <em class="term">neshamah</em> (<span class="heb-inline">נשמה</span>). The <em class="term">Arizal</em> (<span class="heb-inline">אריז״ל</span>) teaches that when a father names his son at the <em class="term">bris milah</em> (<span class="heb-inline">ברית מילה</span>), it is <em class="term">ruach hakodesh</em> (<span class="heb-inline">רוח הקודש</span>): the name is a heavenly matter, the means by which God, as it were, identifies souls.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a></p>
+
+<div class="callout">
+<span class="label">By the Way &mdash; Waking by the Hebrew Name</span>
+<p>To wake someone, a child for example, when alarm clocks, water and lights do not help, call him by his Hebrew name. One then speaks to the <em class="term">neshamah</em> and not to the body; the <em class="term">neshamah</em> departs from the body in sleep, and calling the name invites it to return.<a class="footnote-ref" id="ref31" href="#fn31">[31]</a></p>
+</div>
+
+<p>It is said further that when the wicked soul is being judged and struck, it will be asked its name, and will forget it. A whole life a man walks about with a name, and at that moment he forgets it. The <em class="term">Shelah</em> (<span class="heb-inline">של״ה</span>) is cited for this, though the source of the account is not known. To remember one&rsquo;s name there is a <em class="term">segulah</em>: at the end of <em class="term">Shemoneh Esrei</em> say a verse that begins with the first letter of one&rsquo;s name and ends with its last letter. A man named Yisrael would say a verse that begins with a <em>yud</em> (<span class="heb-inline">י</span>) and ends with a <em>lamed</em> (<span class="heb-inline">ל</span>).<a class="footnote-ref" id="ref32" href="#fn32">[32]</a></p>
+
+<h2>XII. The Verse of One&rsquo;s Name: Its Sources</h2>
+
+<p>The origin of the custom is obscure. In studying <em class="term">Tanach</em> (<span class="heb-inline">תנ״ך</span>) with the commentary of <em class="term">Rashi</em> one meets, here and there, passages printed in parentheses. Some are by <em class="term">Rashi</em>; some are a different interpretation (<span class="heb-inline">פירוש אחר</span>); who wrote them is not known. <em class="term">Shem Ephraim</em> (<span class="heb-inline">שם אפרים</span>), Ephraim Zalman Margolioth of Brody, one of the most prolific authors of his age, wrote with great sharpness in his commentary on <em class="term">Rashi</em> to the Prophets and Writings (on Shoftim, chapter 20) against the printers and publishers who added material to <em class="term">Rashi</em> without attribution, so that the world thinks <em class="term">Rashi</em> said what he never said.<a class="footnote-ref" id="ref33" href="#fn33">[33]</a> He did not succeed in his protest: the parentheses remain in every edition of <em class="term">Tanach</em> to this day.</p>
+
+<p>One such parenthetical addition, in <em class="term">Rashi</em> on the book of <em class="term">Michah</em> (<span class="heb-inline">מיכה</span>), one of the <em class="term">Trei Asar</em> (<span class="heb-inline">תרי עשר</span>), is the earliest known reference to the verse of one&rsquo;s name.<a class="footnote-ref" id="ref34" href="#fn34">[34]</a> It is a later addition, not <em class="term">Rashi</em>&rsquo;s. It says that whoever recites daily a verse that begins and ends as his name does, the <em class="term">Torah</em> saves him from <em class="term">Gehinnom</em>. It does not say that the verse is recited in prayer.</p>
+
+<p>The first appearance of the practice in a <em class="term">siddur</em>, as part of the prayer, is in Amsterdam in 1699. From then on the printers included it universally; why not? Everyone wants an additional merit against <em class="term">Gehinnom</em>. The <em class="term">Yaavetz</em> (<span class="heb-inline">יעב״ץ</span>), Rabbi Yaakov Emden, brings the custom in his <em class="term">siddur</em>, and after 1699 it appears in nearly all <em class="term">siddurim</em>.<a class="footnote-ref" id="ref35" href="#fn35">[35]</a></p>
+
+<p>The idea that a person&rsquo;s name is his <em class="term">neshamah</em> is cited also from the <em class="term">Or HaChaim</em> (<span class="heb-inline">אור החיים</span>), in Parshas Haazinu.<a class="footnote-ref" id="ref36" href="#fn36">[36]</a> By saying the verse of his name a man invokes his <em class="term">neshamah</em>, and the power of the <em class="term">Torah</em> in repeating the verse protects him.</p>
+
+<p>The custom does not, then, originate with the <em class="term">Shelah</em>, though he is its best-known advocate. It is a beautiful custom, and it is to be encouraged.</p>
+
+<h2>XIII. Names from the Tanach</h2>
+
+<p>Which biblical names are fitting to give a child? Nimrod (<span class="heb-inline">נמרוד</span>) is a popular name in <em class="term">Eretz Yisrael</em>, yet he is an infamous figure in <em class="term">Tanach</em>. Yishmael (<span class="heb-inline">ישמעאל</span>) is also a name in <em class="term">Tanach</em>, and there are Jews named Yishmael; there was also Yishmael the <em class="term">Kohen Gadol</em> (<span class="heb-inline">כהן גדול</span>).<a class="footnote-ref" id="ref37" href="#fn37">[37]</a> It is a sorrow that persons take biblical names without understanding them; yet one must judge Jews favorably. Many simply do not know the biblical context; they hear a name that sounds biblical and pleasant and use it. There is a story of a <em class="term">mohel</em> (<span class="heb-inline">מוהל</span>) who refused to perform a <em class="term">bris milah</em> when the parents wished to name the child Nimrod, precisely because of that figure&rsquo;s reputation in <em class="term">Tanach</em>.</p>
+
+<h2>XIV. Closing</h2>
+
+<p>May all merit to pray to God so that all their prayers are accepted, and to guard themselves from <em class="term">lashon hara</em>.</p>
+
+<p>The discourse closed with the <em class="term">Mishnah</em>: <span class="heb-inline">רבי חנניא בן עקשיא אומר: רצה הקדוש ברוך הוא לזכות את ישראל, לפיכך הרבה להם תורה ומצוות, שנאמר: ה׳ חפץ למען צדקו יגדיל תורה ויאדיר</span>.<a class="footnote-ref" id="ref38" href="#fn38">[38]</a> The treatment of <em class="term">Elokai Netzor</em> itself continues in the following discourse.</p>
+
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer&rsquo;s report, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">חוט המשולש</span> — the three-generation biography of the family of the <span class="heb-inline">חתם סופר</span>.</span>
+  <span class="expanded"> The book is not in the text consulted, and the details given here rest on the lecturer. The lecturer reports that it records the earlier practice of <span class="heb-inline">נוסח אשכנז</span> to say <span class="heb-inline">עושה השלום</span> throughout the year. The author&rsquo;s name and dates have not been established (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short">The <span class="heb-inline">גימטריא</span> of <span class="heb-inline">השלום</span> and of <span class="heb-inline">ספריאל</span>.</span>
+  <span class="expanded"> Each equals 381 (<span class="heb-inline">השלום</span>: 5+30+300+30+6+40; <span class="heb-inline">ספריאל</span>: 60+80+200+10+1+30). The identification of <span class="heb-inline">ספריאל</span> as the angel who writes the decree is the lecturer&rsquo;s report of a source not located; the lecturer also states that <span class="heb-inline">עושה</span> has the same value. The question of addressing angels is treated in an earlier discourse of the series.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short">The authorship of <span class="heb-inline">חוט המשולש</span>.</span>
+  <span class="expanded"> As reported by the lecturer, a grandson of the <span class="heb-inline">חתם סופר</span>. Not verified; see Open Questions, no. 1.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">קהלת ד׳:י״ב</span>; <span class="heb-inline">כתובות ס״ב ע״ב</span>; cf. <span class="heb-inline">בבא מציעא פ״ה ע״א</span>.</span>
+  <span class="expanded"> <span class="heb-inline">והחוט המשולש לא במהרה ינתק</span>. In <span class="heb-inline">כתובות ס״ב ע״ב</span> Rami bar Chama cites the verse of Rabbi Oshaya bar Rabbi Chama bar Bisa, a third generation of Torah scholars in his family. A related teaching, <span class="heb-inline">בבא מציעא פ״ה ע״א</span>, states in the name of Rabbi Yochanan that when a scholar, his son and his grandson are scholars, the Torah does not depart from his seed (<span class="heb-inline">ישעיה נ״ט:כ״א</span>).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short">The series of titles containing <span class="heb-inline">סופר</span>.</span>
+  <span class="expanded"> <span class="heb-inline">חתם סופר</span>, <span class="heb-inline">כתב סופר</span>, <span class="heb-inline">שבט סופר</span>, <span class="heb-inline">דעת סופר</span>, as the lecturer lists them. The lecturer did not name the member of the family who first settled in <span class="heb-inline">ארץ ישראל</span>; the identification is left open (Open Questions, no. 2).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short">The charges in the <span class="heb-inline">חרם</span> against the <span class="heb-inline">חסידים</span>.</span>
+  <span class="expanded"> The lecturer&rsquo;s description of the content of the texts of the ban; the passages have not been cited from the texts themselves here (Open Questions, no. 3).</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short">The remark of the <span class="heb-inline">חפץ חיים</span>.</span>
+  <span class="expanded"> Reported by the lecturer; the source of the remark has not been located (Open Questions, no. 4).</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short">The Pressburg controversy over <span class="heb-inline">עושה השלום</span>.</span>
+  <span class="expanded"> Reported by the lecturer from <span class="heb-inline">חוט המשולש</span>, and according to him found nowhere else. The account has not been independently confirmed; no source outside that book is cited here.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">ברכות ד׳ ע״ב</span> and <span class="heb-inline">ברכות ט׳ ע״ב</span>; <span class="heb-inline">תהלים נ״א:י״ז</span>, <span class="heb-inline">י״ט:ט״ו</span>.</span>
+  <span class="expanded"> Rabbi Yochanan requires <span class="heb-inline">ה׳ שפתי תפתח</span> (<span class="heb-inline">תהלים נ״א:י״ז</span>) before the prayer and <span class="heb-inline">יהיו לרצון</span> (<span class="heb-inline">תהלים י״ט:ט״ו</span>) after it (<span class="heb-inline">ד׳ ע״ב</span>). In <span class="heb-inline">ט׳ ע״ב</span> the Gemara asks why <span class="heb-inline">יהיו לרצון</span> is placed at the end, answers in the name of Rabbi Yehudah bar Rabbi Shimon ben Pazi that David said it after eighteen chapters of Tehillim, and resolves the count of nineteen by counting chapters one and two as one. The same passage treats <span class="heb-inline">ה׳ שפתי תפתח</span> as an extension of the prayer, so that it is no interruption between redemption and prayer.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">רשב״א, ברכות י״ז ע״א</span>, citing the <span class="heb-inline">ראב״ד</span>.</span>
+  <span class="expanded"> The Rashba on <span class="heb-inline">ברכות י״ז ע״א</span> (on the prayer of <span class="heb-inline">מר בריה דרבינא</span>) cites the Rabad, who wrote that <span class="heb-inline">יהיו לרצון</span> is not to be said after those supplications but before them, immediately after the eighteen blessings, as David said it after eighteen psalms. The lecturer ascribed the position to the Rashba himself; in the comment as available it is the Rabad&rsquo;s, and the Rashba&rsquo;s own conclusion has not been established.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">ביאור הגר״א, אורח חיים קכ״ב</span>.</span>
+  <span class="expanded"> The lecturer reports that the Gaon of Vilna objects to the position of the Rabad and places <span class="heb-inline">אלהי נצור</span> within the Amidah, with <span class="heb-inline">יהיו לרצון</span> only after. The Biur HaGra on <span class="heb-inline">אורח חיים קכ״ב</span>, as available in the text consulted, treats only <span class="heb-inline">יהיו לרצון</span> and does not mention <span class="heb-inline">אלהי נצור</span>; the Gaon&rsquo;s position as reported rests on tradition and has not been verified (Open Questions, no. 5).</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">רמ״א, שלחן ערוך אורח חיים קכ״ב:א׳</span>.</span>
+  <span class="expanded"> The gloss of the Rema records the custom, in some places, of interrupting with <span class="heb-inline">אלהי נצור</span> before <span class="heb-inline">יהיו לרצון</span>, and therefore of interrupting also for <span class="heb-inline">קדיש</span> and <span class="heb-inline">קדושה</span>.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">משנה ברורה, אורח חיים קכ״ב, ס״ק ג׳</span>.</span>
+  <span class="expanded"> The Mishnah Berurah states <span class="heb-inline">וטוב לומר יהיו לרצון קודם התחנונים ואחריהם</span> &mdash; it is good to say it both before the supplications and after them. The explanation that the first recital satisfies the Rabad and the second the Gaon, and the description of the arrangement as <span class="heb-inline">תרתי דסתרי</span>, are the lecturer&rsquo;s; neither was located in the Mishnah Berurah.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">The question at <span class="heb-inline">מנחה</span> of <span class="heb-inline">יום כיפור</span>.</span>
+  <span class="expanded"> The lecturer&rsquo;s account; the discussion among the later authorities has not been cited here (Open Questions, no. 6).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">אבודרהם</span>, on the close of the Amidah.</span>
+  <span class="expanded"> Rabbi David Abudarham (Seville, fourteenth century), author of the classic commentary on the prayers. As the lecturer reports, he records that <span class="heb-inline">אלהי נצור</span> was originally said by individuals. The exact location in the printed text has not been verified.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">ברכות י״ז ע״א</span>.</span>
+  <span class="expanded"> The prayer of <span class="heb-inline">מר בריה דרבינא</span> follows those of Rabbi Alexandri and Rava, and precedes that of Rav Sheshet. It begins <span class="heb-inline">אלהי נצור לשוני מרע ושפתי מדבר מרמה</span> and ends with <span class="heb-inline">יהיו לרצון אמרי פי והגיון לבי לפניך ה׳ צורי וגואלי</span>.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short">The chronology of <span class="heb-inline">מר בריה דרבינא</span>.</span>
+  <span class="expanded"> The lecturer&rsquo;s placement of him earlier than the Ravina of Ravina and Rav Ashi; the matter has not been verified.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short">The legend of the wall at Worms.</span>
+  <span class="expanded"> Related by the lecturer, who adds that a historian shows the story to be without basis. No source for the legend is cited here.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">The location of <span class="heb-inline">מחוזא</span>.</span>
+  <span class="expanded"> The lecturer placed it near Mosul. The usual identification is a Babylonian Jewish center on the Tigris near Ctesiphon, south of modern Baghdad (Open Questions, no. 7).</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">ברכות נ״ד ע״א</span>; <span class="heb-inline">משנה ברכות ט׳:א׳</span>.</span>
+  <span class="expanded"> The Mishnah: <span class="heb-inline">הרואה מקום שנעשו בו נסים לישראל אומר ברוך שעשה נסים לאבותינו במקום הזה</span>. In the Gemara (<span class="heb-inline">נ״ד ע״א</span>) Rava tells a man saved from a lion to say, whenever he comes to that place, <span class="heb-inline">ברוך שעשה לי נס במקום הזה</span>. Of <span class="heb-inline">מר בריה דרבינא</span> two miracles are told: a spring created for him in the valley of the <span class="heb-inline">ערבות</span> when he was thirsty, and, in <span class="heb-inline">מחוזא</span>, a wild camel (<span class="heb-inline">גמלא פריצא</span>) attacked him and the wall cracked open and he entered it. He blessed at each place naming both miracles, and the Gemara concludes that a miracle done for an individual obligates him to bless.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short">The epithet <span class="heb-inline">מלומד בנסים</span>.</span>
+  <span class="expanded"> Not located in the passage of <span class="heb-inline">ברכות נ״ד ע״א</span>; the epithet is the lecturer&rsquo;s (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short"><span class="heb-inline">ברכות ל׳ ע״ב &ndash; ל״א ע״א</span>; <span class="heb-inline">תוספות</span>; <span class="heb-inline">רמ״א, אורח חיים תקס:ב׳</span>; <span class="heb-inline">אבן העזר ס״ה:ג׳</span>.</span>
+  <span class="expanded"> <span class="heb-inline">מר בריה דרבינא</span> made a wedding feast for his son, saw the Sages excessively joyous, brought a cup worth four hundred <span class="heb-inline">זוזי</span> and broke it before them, and they were saddened; Rav Ashi did likewise with a cup of white glass. Tosafos on the latter: <span class="heb-inline">מכאן נהגו לשבר זכוכית בנשואין</span>. The reason of remembrance of the destruction is not in Tosafos: the Shulchan Aruch <span class="heb-inline">אורח חיים תקס:ב׳</span> ties the remembrance of Jerusalem at times of joy to <span class="heb-inline">תהלים קל״ז:ה׳</span>, and the Rema there records the custom, in some places, of breaking a glass at the <span class="heb-inline">חופה</span>; the Rema <span class="heb-inline">אבן העזר ס״ה:ג׳</span> records the custom, in some places, of breaking a cup after the seven blessings.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short">The rule on adding to the fixed prayer.</span>
+  <span class="expanded"> The lecturer&rsquo;s statement of the rule; no source is cited here (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><span class="heb-inline">ברכות י״ז ע״א</span>.</span>
+  <span class="expanded"> After <span class="heb-inline">אלהי נצור לשוני מרע ושפתי מדבר מרמה</span> the Gemara continues <span class="heb-inline">וכל החושבים עלי רעה מהרה הפר עצתם וקלקל מחשבתם</span>. The later petitions in the Gemara (against evil mishap, the evil inclination and a bad woman) are not in our printed text.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short">Why this prayer became the standard one.</span>
+  <span class="expanded"> The Gemara gives no reason why the prayer of <span class="heb-inline">מר בריה דרבינא</span> in particular became the standard one. The lecturer reserved the question for the following discourse.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><span class="heb-inline">בבא בתרא קס״ה ע״א</span>.</span>
+  <span class="expanded"> The Gemara teaches that most stumble in robbery, a minority in immorality, and all in <span class="heb-inline">אבק לשון הרע</span>.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">תהלים כ׳:ח׳</span>.</span>
+  <span class="expanded"> <span class="heb-inline">אלה ברכב ואלה בסוסים ואנחנו בשם ה׳ אלהינו נזכיר</span>.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short"><span class="heb-inline">רד״ק על תהלים י״ט:ט״ו</span>.</span>
+  <span class="expanded"> Rabbi David Kimchi (Provence, c. 1160&ndash;1235) distinguishes <span class="heb-inline">אמרי פי</span>, what David spoke, from <span class="heb-inline">הגיון לבי</span>, what he thought in his heart without voicing it, and asks that this too be accepted. The development that follows &mdash; thoughts that cannot be put into words, addressed to the One who knows them &mdash; is the lecturer&rsquo;s extension. The lecturer placed the Radak at <span class="heb-inline">תהלים כ׳:ח׳</span>; the comment is on <span class="heb-inline">י״ט:ט״ו</span>.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short"><span class="heb-inline">שלחן ערוך, אורח חיים קכ״ב</span>.</span>
+  <span class="expanded"> Se&rsquo;if 1 rules that between the eighteen blessings and <span class="heb-inline">יהיו לרצון</span> one does not interrupt for <span class="heb-inline">קדיש</span> or <span class="heb-inline">קדושה</span>; the Rema adds that where the custom is to say <span class="heb-inline">אלהי נצור</span> first, one does interrupt. Se&rsquo;if 2 speaks of one who says supplications after his prayer when the chazzan reaches <span class="heb-inline">קדיש</span> or <span class="heb-inline">קדושה</span>. That personal petitions are best lengthened after <span class="heb-inline">יהיו לרצון</span> is the practical conclusion of the authorities, here in the lecturer&rsquo;s words.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short">The name given at the <span class="heb-inline">ברית</span>.</span>
+  <span class="expanded"> Ascribed by the lecturer to the Arizal. The passage in his writings has not been located here (Open Questions, no. 10).</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn31">
+  <span class="short">Waking by the Hebrew name.</span>
+  <span class="expanded"> Ascribed by the lecturer to the <span class="heb-inline">בני יששכר</span>. The passage has not been located here (Open Questions, no. 10).</span>
+  <a class="backref" href="#ref31" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn32">
+  <span class="short">The <span class="heb-inline">סגולה</span> of the verse of one&rsquo;s name; the <span class="heb-inline">של״ה</span>.</span>
+  <span class="expanded"> Rabbi Yeshayahu Horowitz (1565&ndash;1630), author of <span class="heb-inline">שני לוחות הברית</span>. The custom is associated with him in popular tradition; the lecturer notes that the direct attribution to him is uncertain, and the source has not been located (Open Questions, no. 11).</span>
+  <a class="backref" href="#ref32" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn33">
+  <span class="short"><span class="heb-inline">שם אפרים</span>, Rabbi Ephraim Zalman Margolioth of Brody (d. 1828).</span>
+  <span class="expanded"> As the lecturer describes it, he protests the printers&rsquo; interpolations into the commentary of Rashi on the Prophets and Writings (the lecturer cites <span class="heb-inline">שופטים</span>, chapter 20). The Hebrew text of Rashi on <span class="heb-inline">שופטים כ׳</span> does contain parenthetical passages, chiefly verse citations; the <span class="heb-inline">שם אפרים</span> itself was not located.</span>
+  <a class="backref" href="#ref33" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn34">
+  <span class="short"><span class="heb-inline">רש״י על מיכה ו׳:ט׳</span>.</span>
+  <span class="expanded"> In the printed text, the comment of Rashi on <span class="heb-inline">וְתוּשִׁיָּה יִרְאֶה שְׁמֶךָ</span> is followed by a passage entirely in parentheses: <span class="heb-inline">ותושיה יראה שמך. מכאן שכל מי שאומר בכל יום מקרא המתחיל ומסיים כמו שמתחיל ומסיים שמו התורה מצילו מגיהנם</span>. The parentheses mark it as an addition, as the lecturer says; it does not mention prayer.</span>
+  <a class="backref" href="#ref34" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn35">
+  <span class="short"><span class="heb-inline">סידור</span>, Amsterdam 1699.</span>
+  <span class="expanded"> Reported by the lecturer as the first printed appearance of the verse of one&rsquo;s name in a prayer book; he adds that he has seen a copy. The bibliographic data has not been verified, and the attribution to the <span class="heb-inline">יעב״ץ</span> has not been verified (Open Questions, no. 12).</span>
+  <a class="backref" href="#ref35" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn36">
+  <span class="short"><span class="heb-inline">אור החיים הקדוש</span>, <span class="heb-inline">פרשת האזינו</span>.</span>
+  <span class="expanded"> The lecturer cites the Or HaChaim on Haazinu, with a hedge (&ldquo;I think&rdquo;), for the principle that a person&rsquo;s name is his soul. The Or HaChaim on <span class="heb-inline">דברים ל״ב</span>, as available in the text consulted, shows no such passage; the citation is not located (Open Questions, no. 13).</span>
+  <a class="backref" href="#ref36" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn37">
+  <span class="short">The biblical names.</span>
+  <span class="expanded"> The lecturer&rsquo;s mention of Yishmael the High Priest has not been identified with a source here (Open Questions, no. 14).</span>
+  <a class="backref" href="#ref37" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn38">
+  <span class="short"><span class="heb-inline">משנה מכות ג׳:ט״ז</span>.</span>
+  <span class="expanded"> <span class="heb-inline">רבי חנניא בן עקשיא אומר: רצה הקדוש ברוך הוא לזכות את ישראל, לפיכך הרבה להם תורה ומצוות, שנאמר: ה׳ חפץ למען צדקו יגדיל תורה ויאדיר</span> (<span class="heb-inline">ישעיה מ״ב:כ״א</span>).</span>
+  <a class="backref" href="#ref38" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Recollections of reviewers are recorded as such and are not asserted in the text.</p>
+<ol>
+<li><strong>The book <span class="heb-inline">חוט המשולש</span>.</strong> Its author, as reported a grandson of the <span class="heb-inline">חתם סופר</span>, and the book&rsquo;s account of the earlier practice of <span class="heb-inline">עושה השלום</span> throughout the year, are to be confirmed from the book itself.</li>
+<li><strong>The first of the family to settle in <span class="heb-inline">ארץ ישראל</span>.</strong> The lecturer did not name him; the identification, and the placing of the titles <span class="heb-inline">שבט סופר</span> and <span class="heb-inline">דעת סופר</span> in the line, are to be confirmed. The genealogy of the first wife of the <span class="heb-inline">חתם סופר</span> is given as the lecturer told it.</li>
+<li><strong>The <span class="heb-inline">חרם</span> against the <span class="heb-inline">חסידים</span>.</strong> The charges described are the lecturer&rsquo;s; the passages in the texts of the ban are to be cited.</li>
+<li><strong>The remark of the <span class="heb-inline">חפץ חיים</span>.</strong> The source is to be located.</li>
+<li><strong>The position of the Gaon of Vilna.</strong> The Biur HaGra on <span class="heb-inline">אורח חיים קכ״ב</span> does not, as available, mention <span class="heb-inline">אלהי נצור</span>; the source of the reported position is to be located. The Rashba&rsquo;s own conclusion on the question is likewise not established.</li>
+<li><strong>The question at <span class="heb-inline">מנחה</span> of <span class="heb-inline">יום כיפור</span>.</strong> The discussion among the later authorities is to be cited.</li>
+<li><strong>The location of <span class="heb-inline">מחוזא</span>.</strong> The lecturer placed it near Mosul; the usual identification differs (see note).</li>
+<li><strong>The epithet <span class="heb-inline">מלומד בנסים</span>.</strong> Not located in the Gemara passage; to be confirmed or removed.</li>
+<li><strong>The rule on adding to the fixed prayer.</strong> The source of the distinction between adding blessings and adding personal petitions is to be cited.</li>
+<li><strong>The Arizal and the <span class="heb-inline">בני יששכר</span>.</strong> The passages on the name given at the <span class="heb-inline">ברית</span> and on waking by the Hebrew name are to be located.</li>
+<li><strong>The <span class="heb-inline">של״ה</span> and the <span class="heb-inline">סגולה</span> of the verse of one&rsquo;s name.</strong> Whether the custom is truly his, and where he writes it, is to be confirmed.</li>
+<li><strong>Amsterdam 1699 and the <span class="heb-inline">יעב״ץ</span>.</strong> The bibliographic data, and the statement that the <span class="heb-inline">יעב״ץ</span> brings the custom in his <span class="heb-inline">סידור</span>, are to be verified.</li>
+<li><strong>The <span class="heb-inline">אור החיים</span> on <span class="heb-inline">האזינו</span>.</strong> Not located in the commentary as available; the lecturer cited it with a hedge.</li>
+<li><strong>Yishmael the High Priest.</strong> The reference is to be identified and sourced.</li>
+<li><strong>The dedication.</strong> The names and the spelling of the surname and of the town are to be confirmed before printing.</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em>Tefillah</em>, 27 Tishrei 5786. The edition follows the order of the discourse, records the lecturer&rsquo;s reports as his, and leaves unresolved items to the Open Questions.
+</footer>
+
+</body>
+</html>
