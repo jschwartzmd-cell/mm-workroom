@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; The Depth of Kavanah at the Close of the Amidah</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .mareh .note-academic{border-left:3px solid var(--gold-soft);background:rgba(184,134,11,0.04);padding:8px 12px;margin-top:4px;font-size:0.95em;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .callout{background:rgba(184,134,11,0.06);border:1px solid var(--gold-soft);border-radius:5px;padding:12px 18px;margin:20px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.1em;color:var(--gold);font-size:.85rem;margin-bottom:4px}
+  .callout p{margin:6px 0}
+  em.term{font-style:italic}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">עֹמֶק הַכַּוָּנָה בִּסְיוּם תְּפִלַּת שְׁמוֹנֶה עֶשְׂרֵה</h1>
+  <div class="english-title">The Depth of Kavanah at the Close of the Amidah</div>
+  <div class="sub"><em>Yihyu Leratzon</em>, <em>Elokai Netzor</em>, Dust and Stars, the Four <em>Lema’an</em> Phrases, and the Three Steps Back</div>
+  <div class="date">27 October 2025 &nbsp;&middot;&nbsp; Sefer Edition &nbsp;&middot;&nbsp; <span class="heb-inline">ה׳ חשון תשפ״ו</span></div>
+</header>
+
+<p class="dedication"><span class="heb-inline">לעילוי נשמת ר׳ חסקל פלדמן ז״ל</span>, whose <em>yahrtzeit</em> fell in the week of the discourse; <span class="heb-inline">לעילוי נשמת הרבנית ויינגרטן ליבע שמילצר ע״ה</span>, on her second <em>yahrtzeit</em>; and <span class="heb-inline">לעילוי נשמת יאיר בן בנימין ז״ל</span>.</p>
+
+<p class="lead">The close of the <em class="term">Amidah</em> (<span class="heb-inline">עמידה</span>) is a small text of great weight. In a few lines (<em>Yihyu Leratzon</em>, <em>Elokai Netzor</em>, and the four phrases of <em>lema’an</em>) the worshipper gathers everything he has prayed, asks that even the thoughts he could not utter be received, and prepares to step out into a day of dealings with other people. This discourse follows that close line by line: the hidden structure of the verse <em class="term">Yihyu Leratzon</em> (<span class="heb-inline">יהיו לרצון</span>); the history of <em class="term">Elokai Netzor</em> (<span class="heb-inline">אלהי נצור</span>) and the reason why one prayer, out of the many personal prayers of the <em class="term">amoraim</em> (<span class="heb-inline">אמוראים</span>), became the prayer of all Israel; its closing request, “let my soul be as dust to all”, and what the dust teaches about humility; the four phrases of <em>lema’an</em> and the teaching of the <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) that they are the bow set in the cloud; and the three steps back.</p>
+
+<p class="lead">The discourse is as much about practice as about sources. It asks the worshipper to use his own words after the fixed text, to say <em class="term">Yihyu Leratzon</em> slowly, to hold in two pockets the words “the world was created for me” and “I am dust and ash”, and to understand the three steps back as the leave-taking of a servant from the presence of his King.</p>
+
+<p class="lead">Two matters are treated with particular care. The stories of <em>Yoma</em> 53, of disciples who took leave of their teachers walking backward, are set out as the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) tells them; and the discourse’s reports about Nebuchadnezzar’s steps and about the reason given for the three steps by the <em>Mahari”a</em> are set beside the texts of the <em class="term">Gemara</em> and of the <em class="term">Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>). Where a report in the discourse differs from the text consulted, or could not be checked, the endnotes say so.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. The Ten Words and Ten Yuds of <em class="term">Yihyu Leratzon</em> (<span class="heb-inline">יהיו לרצון</span>)</h2>
+
+<p>The verse with which the <em class="term">Amidah</em> (<span class="heb-inline">עמידה</span>) closes, <span class="heb-inline">יִהְיוּ לְרָצוֹן אִמְרֵי פִי וְהֶגְיוֹן לִבִּי לְפָנֶיךָ ה׳ צוּרִי וְגוֹאֲלִי</span> (<em class="term">Tehillim</em>, <span class="heb-inline">תהלים</span> 19:15), is said, by a widespread custom, twice: once before <em class="term">Elokai Netzor</em> (<span class="heb-inline">אלהי נצור</span>) and once after it. The <em>Seder HaYom</em> (<span class="heb-inline">סדר היום</span>) of Rabbi Moshe ben Machir (<span class="heb-inline">רבי משה בן מכיר</span>, also spelled ben Mochir), a scholar of Safed in the days of the Arizal (<span class="heb-inline">האר״י</span>) and the <em class="term">Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>), treats this verse with exceptional gravity.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a></p>
+
+<p>He calls it a <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) to say the verse with <em class="term">kavanah</em> (<span class="heb-inline">כוונה</span>), and says that it must be said slowly and not mumbled. In this one sentence is gathered every intention that accompanied the prayer and every word of the <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>): the worshipper asks that all of it be accepted, even the thoughts that could not be put into words.</p>
+
+<p>The <em>Seder HaYom</em> adds a hidden structure. The verse in full is ten words; it opens with a <em>yud</em> and closes with a <em>yud</em>; and the letter <em>yud</em> appears in it ten times.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> This, he writes, is a great <em class="term">secret</em> (<span class="heb-inline">סוד</span>): those who know the secrets of the Torah concentrate on this verse, and when they do, Heaven answers their prayer. For the rest, the lesson is plainer: the verse is not to be rushed.</p>
+
+<h2>II. How <em class="term">Elokai Netzor</em> Entered the <em class="term">Amidah</em></h2>
+
+<h3>Not Originally a Part of the Amidah</h3>
+
+<p><em class="term">Elokai Netzor</em> is a relatively late fixture of the liturgy. It appears that the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) did not recite it as part of the <em class="term">Amidah</em>. There is a single early hint among the <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>): Rav Amram <em class="term">gaon</em> (<span class="heb-inline">גאון</span>) (<span class="heb-inline">רב עמרם גאון</span>) mentions the recitation of prayers of this kind,<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> but they were optional, the province of individuals (<em class="term">yechidim</em>, <span class="heb-inline">יחידים</span>), and not meant for all.</p>
+
+<p>Strictly, then, <em class="term">Elokai Netzor</em> is not part of the <em class="term">Amidah</em>. Yet over the centuries it was so thoroughly absorbed that it now carries <em>halachic</em> weight. One who has not yet said <em class="term">Yihyu Leratzon</em> before it is regarded as still within the prayer, and may not respond to <em class="term">Kaddish</em> (<span class="heb-inline">קדיש</span>), <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) or <em class="term">Barechu</em> (<span class="heb-inline">ברכו</span>); he must remain silent.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<p>The <em>Avudraham</em> (<span class="heb-inline">אבודרהם</span>), one of the great <em class="term">Rishonim</em> on the liturgy, is reported to testify that in his day the <em class="term">Amidah</em> ended with its concluding blessing, after which the worshipper took three steps back, and that was all.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> It is reported also that the early printers of the <em class="term">siddur</em> (<span class="heb-inline">סדור</span>) had a large share in what followed: they placed <em class="term">Elokai Netzor</em> at the end of every <em class="term">Amidah</em>, and in time it became, in practice, a part of it.</p>
+
+<h3>Its Source in the Gemara</h3>
+
+<p>The source is <em class="term">Berakhos</em> (<span class="heb-inline">ברכות</span>) 16b–17a,<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> where a full page of <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) records the short personal prayers that individual sages would say after their <em class="term">Amidah</em>: Rabbi Elazar, Rabbi Yochanan, Rabbi Zeira, Rabbi Chiya, Rav, Rebbi and Rav Safra; then Rabbi Alexandri, Rava, Mar son of Ravina and Rav Sheshes. From these, a single prayer was chosen and set at the close of every <em class="term">Amidah</em> as the common request of all Israel: that of Mar son of Ravina (<span class="heb-inline">מר בריה דרבינא</span>), <em>Elokai netzor leshoni mera</em>, “My God, guard my tongue from evil.”</p>
+
+<h2>III. Each in His Own Words</h2>
+
+<p>The choice of one prayer for all has a counterweight. The Men of the Great Assembly (<span class="heb-inline">אנשי כנסת הגדולה</span>) fixed a single text of the <em class="term">Shemoneh Esrei</em> for all Israel, and it takes months of study to see how its words embrace every request a Jew may have. But the very page of <em class="term">Gemara</em> that records the personal prayers of the sages teaches that, after the fixed text, each worshipper has a mouth, thoughts, requests and gratitude of his own.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> The request may be specific: a meeting at ten o’clock, a transaction that must close. It may be made in any language that opens the heart, whether Hebrew, Yiddish or English. One who had no <em class="term">kavanah</em> in <em class="term">Modim</em> (<span class="heb-inline">מודים</span>) may give his thanks again, in his own words. Heaven knows thoughts as well as words (<em>hegyon libi</em>, <span class="heb-inline">הגיון לבי</span>), yet it is fitting to give them voice.</p>
+
+<p>The custom, accordingly, is to say the prayer of Mar son of Ravina, and after it one’s own. There is also a practical reason for saying <em class="term">Yihyu Leratzon</em> first. One who has much to say to his Creator may find that the <em class="term">shaliach tzibur</em> (<span class="heb-inline">שליח ציבור</span>) has already reached <em class="term">Kedushah</em>; having said <em class="term">Yihyu Leratzon</em>, he is free to interrupt for <em class="term">Kaddish</em>, <em class="term">Kedushah</em> and <em class="term">Barechu</em>, and may then make his requests at leisure.</p>
+
+<div class="callout">
+  <span class="label">Sensitivity in Prayer</span>
+  <p>It is told of a beloved rav of the community, whose first <em class="term">yahrtzeit</em> (<span class="heb-inline">יארצייט</span>) was then approaching, that when he saw the congregation waiting for him because he was praying a longer <em class="term">Amidah</em>, he would omit <em class="term">Elokai Netzor</em>.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> Some might say, in astonishment, “The rav did not say <em>Elokai Netzor</em>!” But it is no cause for alarm. The prayer is said by all, yet to omit it in such a case is not like omitting a blessing of the <em class="term">Amidah</em>, and it lies within what the Sages permitted. The <em class="term">Rishonim</em>, whom we revere, did not say it at all. The lesson drawn is the sensitivity to the <em class="term">tzibur</em> (<span class="heb-inline">ציבור</span>) of a true <em>mensch</em>.</p>
+</div>
+
+<h2>IV. Why This Prayer, of All the Prayers of the Amoraim?</h2>
+
+<p>Among the many beautiful personal prayers of <em class="term">Berakhos</em> 17, why did those who built a prayer into the <em class="term">Amidah</em> choose Mar’s <span class="heb-inline">אלהי נצור לשוני מרע</span>, “guard my tongue from evil”? Two answers are given.</p>
+
+<h3>Guard My Tongue from Evil</h3>
+
+<p>The <em class="term">Gemara</em> teaches that everyone stumbles in <em class="term">lashon hara</em> (<span class="heb-inline">לשון הרע</span>), if only in its <em class="term">avak</em> (<span class="heb-inline">אבק</span>), its dust, the faintest hint of it.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The discourse adds: every day. We think ourselves righteous; yet the hint of evil speech is the hardest to avoid. Of all the commandments and transgressions in the Torah, this is the one for which we ask Heaven’s help at the close of every <em class="term">Amidah</em>: <em>help me guard myself from evil speech today</em>.</p>
+
+<h3>And My Lips from Speaking Deceit</h3>
+
+<p>A second reading, which the discourse ascribes to the <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>), takes the second half of the same request, <span class="heb-inline">ושפתי מדבר מרמה</span>, “and my lips from speaking deceit,”<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> as a confession. Mar stood before Heaven for the <em class="term">Amidah</em>, two minutes or ten. Like all of us, he spoke; sometimes he scarcely knew where he was; he mumbled the words, said and said, and at times did not understand what he was saying. “Master of the World, if my heart was not in what my lips said, then I spoke falsely before You, speaking to the King without being present. Forgive me; help me to align my heart and my mouth.”</p>
+
+<p>Read so, <em class="term">Elokai Netzor</em> is an apology at the close of the <em class="term">Amidah</em>. It admits that the worshipper may have been absent the whole time, in fantasies and daydreams, wherever the mind wandered, and it asks for help to be present and focused next time, so as not to come out speaking deceit before the King. It is a beautiful way to end the <em class="term">Amidah</em>: honest in its vulnerability, in the knowledge that Heaven understands that we are human.</p>
+
+
+<h2>V. “Let My Soul Be as Dust to All”</h2>
+
+<h3>The Plain Reading</h3>
+
+<p>The prayer closes with <span class="heb-inline">ונפשי כעפר לכל תהיה</span>, “and let my soul be as dust to all.”<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> <em class="term">afar</em> (<span class="heb-inline">עפר</span>) is earth, dust, sand. The <em class="term">Rishonim</em>, it is said, explain the request thus. The worshipper is about to go out from <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>) into his day, and he will deal with other people; and wherever there are people there are quarrels, arguments and misunderstandings, which are the human condition. He does not wish to fight, to speak negatively, to speak falsehood or <em class="term">lashon hara</em>. Of those who curse him and provoke him he asks that his soul be like the dust that all tread upon: whatever happens today, may he not respond wrongly. <em>You</em> take care of it, he says to Heaven; I need not be involved.</p>
+
+<h3>The Vilna Gaon: The Reward of Dust</h3>
+
+<p>The Vilna <em class="term">gaon</em> (<span class="heb-inline">הגר״א</span>) teaches something deeper, which the discourse thinks he draws from the <em>Zohar</em>.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> People want good children. Heaven promised the Patriarchs that their children would be like the stars of heaven and like the dust of the earth, which cannot be counted. If a Jew resolves to be like the dust that all tread upon, and despite his pride, which urges him, “Will you let so-and-so humiliate you? Answer him!”, he refuses, then he merits the <em>reward of dust</em>: children as numerous as the grains of sand, and good ones. <em class="term">middah keneged middah</em> (<span class="heb-inline">מידה כנגד מידה</span>).</p>
+
+<h3>The Maharsha: In the End the Dust Prevails</h3>
+
+<p>The Maharsha (<span class="heb-inline">מהרש״א</span>) is reported to add a quietly humorous reading.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> Make yourself like dust that all tread on: what is the end of the story? Everyone treads on dust, but at the end the dust treads on us; we all end beneath it. One who makes himself dust now, in humility, will in the end come out on top, as the dust outlives those who walk on it. The prayer that follows is that we merit length of days and years.</p>
+
+<div class="callout">
+  <span class="label">The Land Speaks</span>
+  <p>It is told of Rabbi Chaim of Volozhin (<span class="heb-inline">רבי חיים מוולוז׳ין</span>)<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> that two men came to him with a quarrel over a piece of land. Each said, “The land is mine!”, and no one could make peace between them. “Let me hear what the land says,” said Rabbi Chaim. He took them out to the field, bent his ear to the ground, listened a moment, and rose. “The land says that you both belong to it; it does not belong to you. You will both end in the land. What are you fighting for? One hundred and twenty years, and you belong to the land.” One who makes himself as dust ends as the dust does: on top.</p>
+</div>
+
+<h2>VI. Two Schools of Humility: Novardok and Slabodka</h2>
+
+<p>The making of oneself into dust was taken to an extreme in Novardok (<span class="heb-inline">נוברדוק</span>).<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> The <em class="term">Mussar</em> (<span class="heb-inline">מוסר</span>) movement, founded by Rabbi Yisrael Salanter (<span class="heb-inline">רבי ישראל סלנטר</span>), developed in the next generation in two directions. Novardok, led by the Alter, Rabbi Yosef Yozel Horowitz (<span class="heb-inline">רבי יוסף יוזל הורוביץ</span>), was radical: it emphasized putting oneself down. Slabodka (<span class="heb-inline">סלבודקה</span>) emphasized <em class="term">gadlus ha'adam</em> (<span class="heb-inline">גדלות האדם</span>), the greatness of man: you are the crown of creation, and should walk with confidence and pride.</p>
+
+<p>Here, it is said, lies the origin of a certain air among older <em class="term">bachurim</em> (<span class="heb-inline">בחורים</span>) toward younger ones: <em>I am older; I am holding up the world with my Torah.</em> The thought was that at the impressionable ages of sixteen, seventeen and eighteen, young men should feel that they sustain the world by their learning. The method can go either way; it can turn into what the lecturer calls, with an apology for the phrase, “Litvish <em>ga’avah</em>” (<span class="heb-inline">גאוה</span>). Its source is good; its execution requires discipline.</p>
+
+<p>Novardok took the opposite course. Its young men would go into a pharmacy and ask for a package of nails, knowing perfectly well that a pharmacy sells none, in order to be shouted at, to be looked at as nothing, to be treated as fools; it was a deliberate technique to bring a person to <em class="term">shiflus</em> (<span class="heb-inline">שפלות</span>), true lowliness. <em class="term">afar</em> is the paradigm of this <em class="term">avodah</em> (<span class="heb-inline">עבודה</span>).</p>
+
+<h2>VII. The Two Pockets</h2>
+
+<p>The present generation speaks incessantly of self-esteem, and in a generation that needs elevation this is true. Yet we are adults, and there is no reason why we should not also work on <em class="term">humility</em> (<span class="heb-inline">ענוה</span>). The answer is given in a saying of Rabbi Simcha Bunim of Peshischa (<span class="heb-inline">רבי שמחה בונים מפשיסחא</span>):<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> every Jew must have two pockets. In one pocket, the words <span class="heb-inline">בשבילי נברא העולם</span>, “the world was created for me” (<em>Sanhedrin</em> 37a): for my service, for my Torah, for my prayer; if I am not here, the world is lacking, “if I am not for myself, who will be for me?” In the other pocket, <span class="heb-inline">ואנכי עפר ואפר</span>, “I am but dust and ash” (<em>Bereishis</em> 18:27). It is a balance, and it takes a wise person to maintain it; each person has his own service in this.</p>
+
+<p>The Kli Yakar (<span class="heb-inline">כלי יקר</span>) is cited in connection with the two similes that Heaven uses of the Patriarchs’ children: as the dust of the earth, and as the stars of heaven.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> Dust is humble and simple, a grain of sand; a star is an entire universe, which looks small from here but is enormous up close. A Jew must know both at once: <em>I am a star in heaven, and my light shines very far</em>; and also, <em>I am a grain of sand</em>. He must hold both.</p>
+
+<h2>VIII. The End of <em class="term">Elokai Netzor</em>: “You Take Care of It”</h2>
+
+<p>The closing petitions of <em class="term">Elokai Netzor</em> concern others. Whoever plans to bring me down today, whoever plans to take advantage of me, a business partner, a friend, someone speaking ill of me: <em>You</em> see to it, so that I need not deal with it. Some texts add, before the closing <em>yehi ratzon</em>, a further petition that no one be jealous of me and that I not be jealous of others, that I not be angry today and that none be angry with me; those who say it, say it.</p>
+
+<div class="callout">
+  <span class="label">Personal Kavanah: Where Do You Connect?</span>
+  <p>It is worth asking oneself, and others: which words of the <em class="term">Shemoneh Esrei</em> are the ones in which you are most truly present, talking to Heaven with full attention? Each Jew has his own; one may hope that we have <em class="term">kavanah</em> throughout. The lecturer shares his own: the petition for the return to Zion, <span class="heb-inline">ותחזינה עינינו בשובך לציון</span>,<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> where, asking Heaven to bring everyone back together and redeem His scattered flock, he loses himself. For two thousand years we have asked three times a day for redemption and for the Temple; we beg and weep that the sufferings end. A Yiddish proverb says: <span class="heb-inline">ביז מ׳קומט צום קרעטשמע, דארף מען אויך אַ טרינק</span>, “until you reach the inn, you also need a drink.” In the days of travel by horse and wagon there were inns at intervals, where one took a <em>l’chaim</em>, rested by the fire and moved on to the next stage; the Chassidim spoke of going from one inn to the next, a ride of three hours. Until the redemption comes, what will be? <em>Make Your children happy.</em> A father wants his children to be happy; if they are not, he is not. We ask Heaven to make us happy until we reach the next inn.</p>
+</div>
+
+<h2>IX. The Four Phrases: <em>Lema’an Shemecha</em></h2>
+
+<p>In the <em>nusach</em> of Sefard (<span class="heb-inline">נוסח ספרד</span>) the close of the <em class="term">Amidah</em> continues with four phrases, which are among the most powerful words of the whole close:<a class="footnote-ref" id="ref19" href="#fn19">[19]</a></p>
+
+<blockquote>
+  <span class="heb">עֲשֵׂה לְמַעַן שְׁמֶךָ, עֲשֵׂה לְמַעַן יְמִינֶךָ, עֲשֵׂה לְמַעַן תּוֹרָתֶךָ, עֲשֵׂה לְמַעַן קְדֻשָּׁתֶךָ.</span>
+  <div class="trans">Act for the sake of Your Name; act for the sake of Your right hand; act for the sake of Your Torah; act for the sake of Your holiness.</div>
+</blockquote>
+
+<p>It is said that the <em class="term">Rishonim</em> ascribe this prayer to Rabbi Akiva, and perhaps parts of it to Rabbi Eliezer. The <em class="term">Beis Yosef</em> brings an aggadic source (<em class="term">haggadah</em>, <span class="heb-inline">הגדה</span>) that whoever says these four things every day after the <em class="term">Amidah</em> merits <span class="heb-inline">לקבל פני שכינה</span>, to receive the face of the <em class="term">Shechinah</em> (<span class="heb-inline">שכינה</span>). The Sages seldom promise so much for words said within the <em class="term">Amidah</em>.</p>
+
+<h3>The Kavanah</h3>
+
+<p>What is the <em class="term">kavanah</em>? <em>Not for me.</em> I do not deserve the requests I have just made, and I do not deserve their fulfillment; I know my sins, my thoughts, my failings. Therefore: do it for Your sake. If I have the livelihood I need, the health I need, the good children I need, it is so that I shall be able to serve You: for Your Name, for Your right hand, for Your Torah, for Your holiness. Said with <em class="term">kavanah</em>, the words have tremendous power.</p>
+
+
+<h2>X. The <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>): <em>Keshti Nasati Ba’anan</em></h2>
+
+<p>The students of the <em class="term">Chasam Sofer</em> report that he gave the following teaching every year on the Sabbath of <em>Parashas Noach</em> (<span class="heb-inline">פרשת נח</span>).<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> Of the rainbow after the <em class="term">Mabul</em> (<span class="heb-inline">מבול</span>) the verse says <span class="heb-inline">אֶת קַשְׁתִּי נָתַתִּי בֶּעָנָן</span>, “I have set My bow in the cloud” (<em class="term">Bereishis</em>, <span class="heb-inline">בראשית</span> 9:13).<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> The word <span class="heb-inline">קשתי</span>, he taught, is the acronym <span class="heb-inline">קשת״י</span> of the four phrases:</p>
+
+<blockquote>
+  <span class="heb">קְדֻשָּׁתְךָ · שִׁמְךָ · תּוֹרָתְךָ · יְמִינְךָ</span>
+  <div class="trans"><strong>K</strong>edushascha · <strong>Sh</strong>imcha · <strong>T</strong>orascha · <strong>Y</strong>eminecha: your holiness, your Name, your Torah, your right hand.</div>
+</blockquote>
+
+<h3>Breaking Through the Cloud</h3>
+
+<p>The <em class="term">Gemara</em> says, in words difficult for a Jew to hear, that from the day the <em>Beis HaMikdash</em> was destroyed the gates of prayer were locked (<em class="term">Berakhos</em> 32b):<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> “Though I cry and call out, He shuts out my prayer” (<em class="term">Eichah</em>, <span class="heb-inline">איכה</span> 3:8). Yet the <em class="term">Gemara</em> continues: even though the gates of prayer were locked, the gates of tears were not locked, for it is written, “Hear my prayer, O Lord, and give ear to my cry; be not silent at my tears” (<em class="term">Tehillim</em> 39:13). A verse in <em class="term">Eichah</em> (3:44) gives the image of what stands in the way: “You have screened Yourself with a cloud, that no prayer may pass through.”<a class="footnote-ref" id="ref23" href="#fn23">[23]</a></p>
+
+<p>The teaching of the <em class="term">Chasam Sofer</em> is that there is a way through that cloud, and it is what Heaven told Noach: “I have set <em>keshti</em> in the cloud.” If a person prays not for himself but says, “for Your Name, for Your right hand, for Your Torah, for Your holiness”, his prayer goes <em>through</em> the cloud. If Heaven withholds our prayer on account of our own deserts, we say: this is for <em>Your</em> sake, and Heaven opens the way. The <em>keshet</em> is also the bow of the bow and arrow; one who has this <em class="term">kavanah</em> in the words, and who says them from a broken heart, shoots through the cloud. His students report that such a person is assured that his prayer will be accepted: “I have ended my prayer; all I said is for Your sake and not for mine.”</p>
+
+<h2>XI. The Three Steps Back</h2>
+
+<h3>The Retreat from a Presence</h3>
+
+<p>Before the words <em class="term">Oseh Shalom</em> (<span class="heb-inline">עושה שלום</span>) (“He who makes peace in His heights”), the worshipper takes three steps back. The foundation is the <em class="term">Gemara</em> in <em class="term">Yoma</em> (<span class="heb-inline">יומא</span>) 53.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> The <em>Mishnah</em> teaches that the <em class="term">Kohen Gadol</em> (<span class="heb-inline">כהן גדול</span>) left the <em class="term">Kodesh HaKodashim</em> (<span class="heb-inline">קודש הקדשים</span>) on <em>Yom Kippur</em> by the way he had entered, not turning his back but walking backward with his face toward the Ark; and the <em class="term">Gemara</em> derives this from Solomon, who “came to the high place at Gibeon” and then to Jerusalem (<em>Divrei HaYamim</em> II 1:13): as his face was toward the holy place when he arrived, so it was when he left. The principle extends. The priests at their service, the Levites on their platform, and the Israelites at their <em class="term">ma'amados</em> (<span class="heb-inline">מעמדות</span>) left without turning their backs; they turned sideways. <em class="term">ma'amados</em> were the rotating delegations of Israelites who went up to Jerusalem for a week to stand at the <em class="term">korbanos</em> (<span class="heb-inline">קרבנות</span>) on behalf of the nation.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> And so it is for a student taking leave of his teacher.</p>
+
+<div class="callout">
+  <span class="label">A Personal Recollection: The Farher in Brisk</span>
+  <p>The lecturer recalls that when he first went to take the <em>farher</em>, the entrance interview, at the <em class="term">yeshivah</em> (<span class="heb-inline">ישיבה</span>) of Brisk with Rabbi Meshulam HaLevi Soloveitchik (<span class="heb-inline">רבי משולם הלוי סולובייצ׳יק</span>), the man who was to be his <em>rebbi</em> for three years and whom he already treated as such, his father had told him beforehand: when you leave a <em>rebbi</em>, as when you leave a Chassidic Rebbe, you take three steps back.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> He did so on leaving the room, though the rav had not yet told him whether he was accepted; it is very hard to be accepted there. “I do not know whether that is why I was accepted, but I did get a call the next day that I had been.” People who honored their teachers did this; the Chassidim who came to the Lubavitcher Rebbe certainly did not turn their backs on him as they left.</p>
+</div>
+
+<h3>Elazar and Yochanan, and Rava and Rav Yosef</h3>
+
+<p>The <em class="term">Gemara</em> gives examples of a disciple’s reverence. When Rabbi Yochanan was departing, Rabbi Elazar would bow and stand where he was until Rabbi Yochanan was out of his sight; and when Rabbi Elazar himself took leave of Rabbi Yochanan, he walked backward until Rabbi Yochanan could no longer see him.</p>
+
+<p>Then Rava, who took leave of Rav Yosef, who was blind. Rava walked backward from his teacher until his legs were bruised and the threshold of Rav Yosef’s house was bloodied. Ordinarily one looks behind to see whether there is an obstacle or a step; Rava did not look. So wholly was he given over to submission before his teacher that he took the steps back, stumbled, and fell again. The commentators, the lecturer reports, say that the blood was never washed away and that the dried blood blackened the threshold.</p>
+
+<p>Rav Yosef could not see it. When they told him, “This is what Rava does,” he blessed him, in the Aramaic of the <em class="term">Gemara</em>: <span class="heb-inline">יְהֵא רַעֲוָא דְּתָרוּם רֵישָׁךְ אַכּוּלֵּהּ כַּרְכָּא</span>, “May it be [His] will that you lift your head over the whole city.”<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> The lecturer understands the city as Mechoza (<span class="heb-inline">מחוזא</span>), where Rava became head of the <em class="term">yeshivah</em>, at the time the center of Babylonian Torah moved to it from Pumbedita; and from there he became the teacher of all Israel. Rava is one of the fathers of the Babylonian Talmud: on every page he speaks. In the roughly three hundred disputes between Abaye and Rava, the lecturer’s estimate, the <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>) follows Rava, except in six cases summarized by the mnemonic <span class="heb-inline">יע״ל קג״ם</span>.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> The commentators connect this with the honor he gave his teacher, never turning his back even at the cost of falling and bleeding. Humility, the discourse concludes, is a school in which a person grows in Torah.</p>
+
+<h3>A Question Left Open</h3>
+
+<p>The <em class="term">Gemara</em> derives the retreat from Solomon’s departure from Gibeon. A question was raised about the wording of that verse, and the lecturer found it a good question and offered only a tentative suggestion: perhaps the verse describes what came after the leave-taking and a night’s stay there. The matter is recorded here as open.</p>
+
+<h3>The Practice</h3>
+
+<p>On the basis of this <em class="term">Gemara</em>, the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>) rules (<em>Orach Chaim</em> 123:1) that one bows and takes three steps back in a single bow; still bowed, one turns the head to the left at <em>oseh shalom bimromav</em> and to the right at <em>hu ya’aseh shalom aleinu</em>, and bows forward like a servant taking leave of his master. The gloss adds the custom of saying, “May it be Your will that the Temple be rebuilt.”<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> One looks first to the sides to be sure that no one is standing behind; for one who is still praying behind him is, in effect, in front of the one stepping back, and it is forbidden to pass or to stand within four <em class="term">amos</em> (<span class="heb-inline">אמות</span>) in front of one who is praying, even though benches now separate people, which many <em class="term">poskim</em> (<span class="heb-inline">פוסקים</span>) say is not enough.</p>
+
+<h3>Why Three?</h3>
+
+<p>The number is stated in <em class="term">Yoma</em> 53b, on the page following the stories: Rabbi Yehoshua ben Levi, in the name of Rabbi Alexandri, taught that one who prays takes three steps back at the end of his prayer and then says <em>shalom</em>, as one leaving the presence of the Holy One; a <em>baraita</em> teaches the same, and adds that if he does not, it would have been better had he not prayed; and Abaye and Rava were seen to take the three steps within a single bow. The discourse, citing the page on which the stories are told, understood that the <em class="term">Gemara</em> there does not give the number, and sought it elsewhere.</p>
+
+<h3>Nebuchadnezzar’s Steps</h3>
+
+<p>For the number the discourse cites a further source, which it traces to a Rabbi Kalish, who is said to have it from a <em class="term">Gemara</em>: the story of Nebuchadnezzar (<span class="heb-inline">נבוכדנצר</span>) in <em class="term">Sanhedrin</em> (<span class="heb-inline">סנהדרין</span>) 96a.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a> Before he reigned he was the scribe of Baladan (<span class="heb-inline">בלאדן</span>), king of Babylon, who sent a letter of peace to Hezekiah, king of Judah. The letter was written in his absence: “Peace to King Hezekiah, peace to Jerusalem, and peace to the great God.” When he returned and saw it, he said, “Are you mad? You put God last? Put Him first, then the people, then the king of flesh and blood!” They answered, “You are the scribe; you write it, and you deliver it.” According to the <em class="term">Gemara</em> he ran after the messenger for four paces, until the angel Gabriel stopped him. The lecturer related the story as three steps backward in honor of the <em class="term">Shechinah</em>, and observed that the <em class="term">Gemara</em> says four, so that perhaps the <em class="term">Rishonim</em> had a reading of three. The <em class="term">Gemara</em> records that Heaven rewarded him for those paces; in the discourse’s telling, the reward was that he was permitted to be the destroyer of the <em>Beis HaMikdash</em>, a link the passage itself does not make explicit.</p>
+
+<p>This is Nebuchadnezzar, destroyer of the Temple, head of the wicked, whose name the <em>midrash</em> is said always to follow with the letters <span class="heb-inline">ש״ט</span>, <span class="heb-inline">שחיק טמיא</span>, “may his bones be ground to dust.” We suffer to this day from what he did to us; yet one thing he did right: he gave honor to Heaven in that letter, and took steps to honor the <em class="term">Shechinah</em>. And the <em class="term">Acharonim</em> say that this is the meaning of the close of the <em class="term">Amidah</em>: we show Heaven that we are like Nebuchadnezzar, but better. We give honor, and we do not have the wickedness in us. Therefore we take three steps back, and ask: <span class="heb-inline">עושה שלום במרומיו הוא יעשה שלום עלינו</span>, and that the <em>Beis HaMikdash</em> be rebuilt speedily. He took three steps back and destroyed; we take three steps back and ask Heaven to build.</p>
+
+<h2>XII. Rabbeinu Yitzchak Abuhav and the Three <em>Mil</em></h2>
+
+<h3>Who He Was</h3>
+
+<p>The <em class="term">Beis Yosef</em> (<em>Orach Chaim</em> 123) gives a reason for the three steps in the name of <span class="heb-inline">רבינו הגדול מהרי״א</span>, whom the discourse identifies as Rabbi Yitzchak Abuhav (<span class="heb-inline">רבי יצחק אבוהב</span>), a figure in the transition between the <em class="term">Rishonim</em> and the <em class="term">Acharonim</em>, “the generation before the Beis Yosef.”<a class="footnote-ref" id="ref31" href="#fn31">[31]</a> He was a rav and head of a <em class="term">yeshivah</em> in Toledo at the time of the expulsion from Spain in 1492, and a leader of Klal Yisrael. With Don Yitzchak Abarbanel (<span class="heb-inline">דון יצחק אברבנאל</span>), a wealthy royal official who is told to have tried to bribe Ferdinand and Isabella, he took part in the diplomacy that preceded the expulsion; Abuhav, a head of a <em class="term">yeshivah</em>, appears not to have been wealthy. They tried; in the end they had to leave Spain.</p>
+
+<p>Abuhav went to Portugal, where he met King João II, known for his conversations with Jews and rabbis, and tried to win a return of the Jews to Spain. He could not, and, pained by this, he died in Portugal in 1493. Yet the <em class="term">Beis Yosef</em> calls him <em>rabbeinu hagadol</em> and cites him again and again; he was apparently the <em>gadol hador</em>, and many of our practices, as the <em class="term">Beis Yosef</em> records them, come from him.</p>
+
+<p>In Safed there is a synagogue named for him, <em>Beis HaKnesses Abuhav</em> (<span class="heb-inline">בית הכנסת אבוהב</span>), part of the regular tour route. It is said, as a legend, that the Sefer Torah in its Ark, which stands there to this day, is the one he wrote; he was a <em class="term">sofer</em> (<span class="heb-inline">סופר</span>). A scroll of five or six hundred years, it is thought no longer to be used, but to be kept under lock and key.</p>
+
+<h3>His Reason for the Three Steps</h3>
+
+<p>The <em class="term">Beis Yosef</em> cites the <em>Mahari”a</em> for the reason: the three steps correspond to the three <em class="term">mil</em> (<span class="heb-inline">מיל</span>) that Israel retreated from Mount Sinai at the giving of the Torah. According to the <em class="term">Gemara</em> in <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) 88b, when Israel stood at Sinai and heard <em>Anochi</em> (<span class="heb-inline">אנכי</span>) from the mouth of the Almighty, they could not bear it. The body could not contain the divine voice; the soul departed; and they were driven back. To remind ourselves that we stand before the <em class="term">Shechinah</em>, and ought to retreat in awe, we should retreat three <em class="term">mil</em>. Three <em class="term">mil</em> would mean walking all the way to the next town, so we commemorate it with three steps.</p>
+
+<div class="callout">
+  <span class="label">A Difficulty</span>
+  <p>On opening the <em class="term">Gemara</em> in <em class="term">Shabbos</em> 88b one finds not three <em class="term">mil</em> but <strong>twelve</strong>: at each utterance Israel retreated twelve <em class="term">mil</em>, and the angels led them back.<a class="footnote-ref" id="ref32" href="#fn32">[32]</a> Rashi on <em class="term">Shemos</em> (<span class="heb-inline">שמות</span>) 20:15 gives twelve, and the <em>Mechilta</em>, it is reported, likewise; no one says three. “I do not understand for the life of me where three comes from.” Perhaps three <em>parsa’os</em> (<em class="term">parsa'os</em>, <span class="heb-inline">פרסאות</span>), each of four <em class="term">mil</em>, make twelve <em class="term">mil</em>; but this is conjecture. The discourse remarks that it would pay money to anyone who could resolve the difficulty. Yet this is what the <em class="term">Beis Yosef</em> cites from the <em>Mahari”a</em> as the reason for the three steps at the end of every <em class="term">Amidah</em>.</p>
+</div>
+
+<h2>XIII. The Honor of the Shechinah and the <em>Aron HaKodesh</em></h2>
+
+<p>Some have the practice of leaving a synagogue facing the <em class="term">Aron HaKodesh</em> (<span class="heb-inline">ארון הקודש</span>). This is not found in the <em class="term">Gemara</em>; the discourse traces it to the <em class="term">Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>),<a class="footnote-ref" id="ref33" href="#fn33">[33]</a> which draws on the principle of the <em class="term">Gemara</em>. As one does not turn one’s back on one’s teacher, so one does not turn one’s back on the Ark.</p>
+
+<h2>XIV. An Aside: The First Blessing</h2>
+
+<p>A guest raised the question of where <em class="term">kavanah</em> is most essential. The <em class="term">Gemara</em>’s answer, as the discourse affirms, is that if one can have <em class="term">kavanah</em> in only one blessing, it must be the first, which is the <em>ikar</em> of the <em class="term">Amidah</em>. The <em class="term">Shulchan Aruch</em> rules (<em>Orach Chaim</em> 101:1) that one who had no <em class="term">kavanah</em> in the first blessing must return and pray again, and the gloss adds that nowadays one does not repeat, since a second <em class="term">Amidah</em> would likely lack <em class="term">kavanah</em> as well.<a class="footnote-ref" id="ref34" href="#fn34">[34]</a> The discourse adds that one should not return to say the first blessing again at once: even without speaking, that is a <em class="term">hefsek</em> (<span class="heb-inline">הפסק</span>), which disturbs the structure of the <em class="term">Amidah</em> that rests on that blessing. If the heart was not there, one comes back to it at the next prayer.</p>
+
+<p>Here the discourse breaks off; the treatment of <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>) was to follow.</p>
+
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer’s report, or could not be verified, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short"><em>Seder HaYom</em> (<span class="heb-inline">סדר היום</span>), Rabbi Moshe ben Machir (Safed, late sixteenth century).</span>
+  <span class="expanded"> Rabbi Moshe ben Machir (<span class="heb-inline">רבי משה בן מכיר</span>, also spelled ben Mochir) was a Safed scholar in the era of the Arizal and the <em class="term">Beis Yosef</em>. His <em>Seder HaYom</em> is a structured exposition of the daily, weekly and yearly service of God (reportedly first printed in Venice in 1599; not verified). His remark on the ten words and ten <em>yuds</em> of the verse has not been located in the text and is given as the lecturer reported it. The lecturer also credited him with the authorship of a famous liturgical poem said to date from the 1500s; the audio at that point is unclear, and the identification of that poem with <em>Yigdal</em> is not accepted here, since <em>Yigdal</em> is conventionally attributed to an earlier author (not checked here). The earlier write-up’s placing of him in <em>Ein Zeitim</em> and its link to the ten <em>sefiros</em> are not in the discourse and have been removed.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short">Ten words and ten <em>yuds</em> in the closing verse, <em>Tehillim</em> 19:15.</span>
+  <span class="expanded"> The verse in full is <span class="heb-inline">יִהְיוּ לְרָצוֹן אִמְרֵי פִי וְהֶגְיוֹן לִבִּי לְפָנֶיךָ ה׳ צוּרִי וְגֹאֲלִי</span>. The count holds for the full verse: ten words (counting the two hyphenated pairs as four), a <em>yud</em> at the beginning and at the end, and ten <em>yuds</em> if the Divine Name is counted as spelled out (nine if it is written <span class="heb-inline">ה׳</span>). This was checked against the Masoretic text. The shorter quotation printed in the earlier write-up was incomplete and has been restored to the whole verse.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><em>Seder Rav Amram Gaon</em> (ninth century).</span>
+  <span class="expanded"> Rav Amram bar Sheshna, <em class="term">gaon</em> of Sura (died about 875), compiled the earliest extant ordered <em class="term">siddur</em>. The exact form of <em class="term">Elokai Netzor</em> is not standard in his <em class="term">siddur</em>; the lecturer’s report is that he mentions the recitation of personal closing prayers, which the <em class="term">Geonim</em> treat as optional for individuals. The placement is to be verified against the Goldschmidt edition (Jerusalem, 1971); not done here.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 122, on <em class="term">Yihyu Leratzon</em> and <em class="term">Elokai Netzor</em>.</span>
+  <span class="expanded"> The lecturer reports that one who has not yet said the closing verse is still regarded as within the prayer and may not respond to <em class="term">Kaddish</em>, <em class="term">Kedushah</em> or <em class="term">Barechu</em>. The ruling belongs to the laws of the close of the <em class="term">Amidah</em> in <em>Orach Chaim</em> 122; the precise paragraph was not checked here, and the statement is given as the lecturer reported it.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><em>Avudraham</em>, on the close of the <em class="term">Amidah</em>.</span>
+  <span class="expanded"> Rabbi David Abudarham (Seville, mid-fourteenth century). The lecturer reports that in the author’s time the <em class="term">Amidah</em> ended with its concluding blessing and three steps back, and that <em class="term">Elokai Netzor</em> was not yet part of it. The passage has not been located, so the wording of the concluding blessing is not asserted; the AI summary gave <span class="heb-inline">עושה השלום</span>, while the audio is closer to <span class="heb-inline">המברך את עמו ישראל בשלום</span>. The earlier write-up’s statement that <em class="term">Elokai Netzor</em> was “reserved for individuals” in his time, and the dating of its universal incorporation to the early printers (the lecturer says the 1500s), are unverified.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><em class="term">Berakhos</em> 16b–17a: the personal prayers of the sages after the <em class="term">Amidah</em>.</span>
+  <span class="expanded"> The <em class="term">Gemara</em> records in succession the personal closing prayers of about a dozen sages (the lecturer said “let’s say fifteen”): on 16b Rabbi Elazar, Rabbi Yochanan, Rabbi Zeira, Rabbi Chiya, Rav, Rebbi and Rav Safra; on 17a Rabbi Alexandri (the same prayer being ascribed by some to Rav Hamnuna), Rava, Mar son of Ravina and Rav Sheshes. The prayer of Mar son of Ravina opens <span class="heb-inline">אֱלֹהַי נְצוֹר לְשׁוֹנִי מֵרָע וּשְׂפָתַי מִדַּבֵּר מִרְמָה</span> (the last word is <em>mirmah</em>, “deceit”); the phrase <span class="heb-inline">וְנַפְשִׁי כֶּעָפָר לַכֹּל תִּהְיֶה</span> occurs partway through it, and it ends <span class="heb-inline">ה׳ צוּרִי וְגֹאֲלִי</span>. The page does not say why this prayer became the standard one. The lecturer’s account (the early printers placed it at the end of every <em class="term">Amidah</em>) is his report and was not located.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short">Each worshipper’s own words after the fixed text.</span>
+  <span class="expanded"> The plea that each person speak to Heaven in his own words and his own language is the lecturer’s. What the <em class="term">Gemara</em> on the page records is that the sages each added a prayer of their own composition; the halachic limits on such additions are not treated in the discourse and are not asserted here.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short">A story of a beloved rav of the community, as told by the lecturer.</span>
+  <span class="expanded"> The lecturer speaks of a late rav of his community, whose first <em class="term">yahrtzeit</em> was approaching, who used to omit <em class="term">Elokai Netzor</em> when he saw the congregation waiting for him. The name appears in the AI summary as “Rabbi Kinsler”, which is an unconfirmed rendering of the audio and is not printed here. The story is a personal recollection and is not otherwise sourced.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short">Everyone stumbles in the dust of evil speech.</span>
+  <span class="expanded"> The statement that all people stumble in <em>avak lashon hara</em> is, as far as the lecturer’s citation goes, from the <em class="term">Gemara</em> in <em>Bava Basra</em> 165a, where it is listed among the three offenses from which no one is wholly free. The page was not re-checked here. The lecturer’s application of it to the choice of Mar’s prayer is his own.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short">The second reading of Mar’s prayer: lips and heart.</span>
+  <span class="expanded"> The discourse ascribes to the <em class="term">Acharonim</em> the reading that <span class="heb-inline">וּשְׂפָתַי מִדַּבֵּר מִרְמָה</span> asks that the lips not speak what the heart does not hold, which is the deceit of prayer said without <em class="term">kavanah</em>. The source was not identified. The word in the prayer is <em>mirmah</em>, “deceit”; the lecturer’s paraphrase (“falsehood”) is faithful to the sense, and an earlier heading that read <span class="heb-inline">שקר</span> has been corrected.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">וְנַפְשִׁי כֶּעָפָר לַכֹּל תִּהְיֶה</span>: <em class="term">Berakhos</em> 17a.</span>
+  <span class="expanded"> The phrase is part of the prayer of Mar son of Ravina in the <em class="term">Gemara</em> (see the note on <em class="term">Berakhos</em> 16b–17a above). Abraham’s self-description, “I am but dust and ashes” (<span class="heb-inline">וְאָנֹכִי עָפָר וָאֵפֶר</span>, <em class="term">Bereishis</em> 18:27), is the biblical background the discourse draws on in this section.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short">The Vilna <em class="term">gaon</em> and the <em>Zohar</em> on dust and the Patriarchs’ children.</span>
+  <span class="expanded"> The lecturer reports that the Vilna <em class="term">gaon</em>, apparently drawing on the <em>Zohar</em> (he said, “I think he brings it from the…”), reads <em>ke’afar</em> in light of the promise to the Patriarchs that their descendants would be like the dust of the earth (<em class="term">Bereishis</em> 13:16, to Abraham; 28:14, to Jacob) and the stars (compare 22:17): one who makes himself like dust merits children as numerous as the dust, measure for measure. The location in the commentary of the Vilna <em class="term">gaon</em> and the passage of the <em>Zohar</em> have not been located.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><em>Chiddushei Agados</em> of the Maharsha, <em class="term">Berakhos</em> 17a.</span>
+  <span class="expanded"> Rabbi Shmuel Eliezer Eidels (1555–1631). His <em>Chiddushei Agados</em> on <em class="term">Berakhos</em> 17a comments on the closing lines of Mar’s prayer, referring to the <em>Tosafos</em> and offering a reading that the phrase continues the preceding petition: his opponents should regard him as dust and not curse him. The lecturer’s reading (the dust outlasts the one who tramples it) was not located in the comment as retrieved; it is given as reported.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">Rabbi Chaim of Volozhin and the land.</span>
+  <span class="expanded"> Rabbi Chaim of Volozhin (<span class="heb-inline">רבי חיים מוולוז׳ין</span>, 1749–1821). The story is told by the lecturer without a source. In the audio the rabbi addresses one party, whose name appears variously as “Rabbi Yisai” (automatic rendering) and “Reb Yitzchak” (summary); no second name is given, and an earlier write-up’s “Reb Moshe” has been removed.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short">Novardok and Slabodka.</span>
+  <span class="expanded"> The two approaches are described as the lecturer gave them. The schools are those of Novardok, associated with Rabbi Yosef Yozel Horowitz (1847–1919), and Slabodka, associated with Rabbi Nosson Tzvi Finkel (1849–1927); the names and dates are supplied here, not by the lecturer, and are those commonly given.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short">Rabbi Simcha Bunim of Peshischa (1765–1827) and the two pockets.</span>
+  <span class="expanded"> A leader of the Peshischa school of <em class="term">Chassidus</em> (<span class="heb-inline">חסידות</span>) and the teacher of the Kotzker Rebbe (an earlier version of this note called him the founder of Peshischa and the rebbe of Kotzk; corrected). His celebrated teaching: every Jew must carry two slips of paper, one in each pocket. On one: “For my sake the world was created” (<em class="term">Sanhedrin</em> 37a, where the Mishnah says each person must say, “The world was created for me”; checked). On the other: “I am but dust and ashes” (<em class="term">Bereishis</em> 18:27). The attribution to him, and its report in the Chassidic story literature, are traditional and have not been checked.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><em>Kli Yakar</em> on <em class="term">Bereishis</em> 28:14 (<em>Parashas Vayetze</em>).</span>
+  <span class="expanded"> Rabbi Shlomo Ephraim of Luntschitz (1550–1619). The <em>Kli Yakar</em> on <em class="term">Bereishis</em> 28:14 (<span class="heb-inline">וְהָיָה זַרְעֲךָ כַּעֲפַר הָאָרֶץ</span>) reads the promise in light of Abraham’s humility (“dust and ashes”, 18:27; <em>Tehillim</em> 37:11, “the humble shall inherit the land”) and of the sudden rise from the lowest humility to the highest rank. The pairing of dust and stars as the dual self-awareness of the individual Jew, which the lecturer presents as the teaching of the <em>Kli Yakar</em> (he said, “I think in <em>Vayetze</em>”), was not found in that comment as retrieved; the locus remains unconfirmed.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short">The lecturer’s own <em class="term">kavanah</em>.</span>
+  <span class="expanded"> The lecturer shares a petition of his own in the close of the <em class="term">Amidah</em>, <span class="heb-inline">וְתֶחֱזֶינָה עֵינֵינוּ בְּשׁוּבְךָ לְצִיּוֹן</span>, and a Yiddish saying about the next inn. They are personal recollections and are not otherwise sourced.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short"><em>Beis Yosef</em>, <em>Orach Chaim</em> 122, citing a <em>haggadah</em>.</span>
+  <span class="expanded"> In <em>Orach Chaim</em> 122 the <em class="term">Beis Yosef</em>, discussing <em class="term">Elokai Netzor</em> and the additions said after the prayer, cites a <em>haggadah</em> (an aggadic source; an earlier write-up called it a <em>midrash</em>) that one who says “these four things” is privileged to receive the presence of the <em class="term">Shechinah</em>. The passage as retrieved does not itself list the four phrases or name Rabbi Akiva or Rabbi Eliezer. The lecturer’s identification of the “four things” with the four <em>lema’an</em> phrases, and his report that the <em class="term">Rishonim</em> ascribe the recitation to Rabbi Akiva, are given as reported. The first phrase echoes <em>Yirmeyahu</em> 14:7 (<span class="heb-inline">עֲשֵׂה לְמַעַן שְׁמֶךָ</span>; checked); the biblical sources of the other three, listed in an earlier version, were not checked and have been removed.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><em>Chasam Sofer</em> on the Torah, <em>Parashas Noach</em>.</span>
+  <span class="expanded"> Rabbi Moshe Sofer (Pressburg, 1762–1839). The lecturer reports, on the testimony of the <em class="term">Chasam Sofer</em>’s students, that he repeated annually on <em>Parashas Noach</em> the teaching that <span class="heb-inline">קשת״י</span> is an acronym of the four phrases, which pierces the cloud of <span class="heb-inline">סַכּוֹתָה בֶֽעָנָן לָךְ מֵעֲבוֹר תְּפִלָּה</span> (<em>Eichah</em> 3:44). The passage was not found in the text of his commentary on <em>Noach</em> as consulted (the acronym and the word <em>anan</em> do not appear in the portion retrieved); the teaching is given as reported.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><em class="term">Bereishis</em> 9:13, “I have set My bow in the cloud.”</span>
+  <span class="expanded"> The sign of the covenant with Noach: the rainbow placed in the cloud. <em>Chagigah</em> 16a records that one who gazes at the rainbow shows no regard for the honor of his Maker, citing <em>Yechezkel</em> 1:28 (checked). The reading of <span class="heb-inline">קשת״י</span> as the initials of the four phrases is the <em class="term">Chasam Sofer</em>’s as reported (see the preceding note).</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short"><em class="term">Berakhos</em> 32b: the gates of prayer and the gates of tears.</span>
+  <span class="expanded"> From the day the <em>Beis HaMikdash</em> was destroyed the gates of prayer were locked; yet “even though the gates of prayer were locked, the gates of tears were not locked” (note the singular <span class="heb-inline">דמעה</span> in the Hebrew). The proof for the first statement is <em>Eichah</em> 3:8; for the second, <em class="term">Tehillim</em> 39:13 (checked against the text of the page). The earlier write-up proved the second statement from <em>Eichah</em> 3:44, which proves the opposite; the reasoning has been corrected. One of the most cited teachings on prayer after the destruction.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short"><em>Eichah</em> 3:44, “You have screened Yourself with a cloud.”</span>
+  <span class="expanded"> <span class="heb-inline">סַכּוֹתָה בֶֽעָנָן לָךְ מֵעֲבוֹר תְּפִלָּה</span>: “You have screened Yourself with a cloud, that no prayer may pass through” (checked). The <em class="term">Gemara</em> in <em class="term">Berakhos</em> 32b proves that the gates of prayer are locked from <em>Eichah</em> 3:8, not from this verse; the cloud verse is the one used in the <em class="term">Chasam Sofer</em>’s teaching as reported. The earlier note’s statement that this verse is the proof-text cited by Rashi for the <em class="term">Gemara</em> is not supported and has been removed.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><em class="term">Yoma</em> 53a–b.</span>
+  <span class="expanded"> The Mishnah (53a): the <em class="term">Kohen Gadol</em> leaves the <em class="term">Kodesh HaKodashim</em> by the way he entered, not turning his back; the <em class="term">Gemara</em> derives this from Solomon (<em>Divrei HaYamim</em> II 1:13). Priests, Levites and Israelites at their <em class="term">ma'amados</em> left sideways; likewise a student leaving his teacher; then Rabbi Elazar and Rabbi Yochanan, and Rava, who walked backward from Rav Yosef until his legs were bruised and the threshold of Rav Yosef’s house was bloodied (all checked). The <em class="term">Gemara</em> spells the name Rava, not Rabbah. The lecturer’s remark that the blood blackened the threshold “according to the commentators” was not located.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><em>Mishnah Taanis</em> 4:2; <em class="term">Taanis</em> (<span class="heb-inline">תענית</span>) 27a.</span>
+  <span class="expanded"> The Mishnah (and the <em class="term">Gemara</em> on 27a) describes the watches of priests and the corresponding groups of Israelites who stood by the communal offerings on behalf of the people (checked). The <em class="term">Gemara</em> in <em class="term">Yoma</em> 53a mentions Israelites at their <em class="term">ma'amados</em> leaving the Temple sideways.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short">The lecturer’s Brisk recollection.</span>
+  <span class="expanded"> A personal recollection of the lecturer’s entrance interview at the <em class="term">yeshivah</em> of Brisk. The name of the rav as given in the audio and the summary is Rabbi Meshulam HaLevi Soloveitchik; the identification and the details are as the lecturer told them and have not been independently verified.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short">Rav Yosef’s blessing to Rava, <em class="term">Yoma</em> 53b.</span>
+  <span class="expanded"> The Aramaic of the <em class="term">Gemara</em> is <span class="heb-inline">יְהֵא רַעֲוָא דְּתָרוּם רֵישָׁךְ אַכּוּלֵּהּ כַּרְכָּא</span> (checked). An earlier write-up printed a blessing of “head of all Israel, head of Mechoza” and a Divine quotation; neither is in the passage and both have been removed. The lecturer’s identification of the city with Mechoza is his gloss.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short"><span class="heb-inline">יע״ל קג״ם</span>: the six exceptions to <em>halachah ke-Rava</em>.</span>
+  <span class="expanded"> The standard mnemonic: in the disputes of Abaye and Rava the <em class="term">halachah</em> follows Rava except in six cases summarized by <span class="heb-inline">יע״ל קג״ם</span>. The enumeration of the six and the page references printed in an earlier version are unverified and have been removed, as has a confused remark about Rabbah. The lecturer’s figure of “two hundred, three hundred” disputes is his estimate.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 123:1; <em class="term">amos</em> in 102:4.</span>
+  <span class="expanded"> <em>Orach Chaim</em> 123:1 (checked): bow, take three steps backward in a single bow, then turn the head to the left (<span class="heb-inline">עושה שלום במרומיו</span>) and to the right (<span class="heb-inline">הוא יעשה שלום עלינו</span>), and bow forward like a servant taking leave of his master; the gloss adds the custom of saying <span class="heb-inline">יהי רצון שיבנה בית המקדש</span>. For the four <em class="term">amos</em>: <em>Orach Chaim</em> 102:4 forbids passing in front of one who is praying within four <em class="term">amos</em> (checked). The earlier note’s statement about not returning to one’s place before the repetition of the <em class="term">shaliach tzibur</em> was not found in the paragraph and has been removed. The lecturer’s remark that benches do not suffice is reported as his.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short"><em class="term">Sanhedrin</em> 96a: Nebuchadnezzar and the steps for the honor of Heaven.</span>
+  <span class="expanded"> The <em class="term">Gemara</em> (checked in outline): the king Baladan sent letters to Hezekiah; Nebuchadnezzar, his scribe, was absent when the letter was written; on his return he objected to the order of the salutations (the “great God” last), had it reversed, and ran after the messenger; Gabriel came and stopped him; Rabbi Yochanan says that otherwise there would have been no remedy for the enemies of Israel. The passage speaks of four steps and of a reward for them. The Divine quotation printed in the earlier version (“you ran three steps… I will give you three kings”) is not in the passage and has been removed. The lecturer noted that the <em class="term">Gemara</em> says four and suggested a reading of three; his link between the story and the destruction of the <em>Beis HaMikdash</em> is not stated in the passage as retrieved, and the connection to the three steps at the end of prayer he attributes to a Rabbi Kalish (identity unconfirmed).</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn31">
+  <span class="short"><em>Beis Yosef</em>, <em>Orach Chaim</em> 123, citing the <em>Mahari”a Abuhav</em>.</span>
+  <span class="expanded"> Rabbi Yitzchak Abuhav (traditionally dated 1433–1493), a leading Spanish rabbi at the time of the expulsion from Spain (1492). The lecturer reports that he headed a <em class="term">yeshivah</em> in Toledo, that he went to Portugal and met King João II seeking permission for the Jews to return, and that he died there in 1493; these details are the lecturer’s and were not checked. The <em class="term">Beis Yosef</em> in <em>Orach Chaim</em> 123 repeatedly cites <span class="heb-inline">רבינו הגדול מהרי״א ז״ל</span> (checked); among the reasons given there for the three steps is that they correspond to the three <em class="term">mil</em> that Israel retreated from Mount Sinai at the giving of the Torah, cited by the <em>Mahari”a</em> in the name of a work abbreviated <span class="heb-inline">א״ח</span> (presumably <em>Orchos Chaim</em>). That the <em>Mahari”a</em> is Rabbi Yitzchak Abuhav is the lecturer’s identification and was not confirmed in the passage. The <em>Beis HaKnesses Abuhav</em> in Safed bears his name, and its Sefer Torah is by tradition his. The earlier note’s statements that the expulsion decree was lifted in 1493 and that he “led a delegation” to Portugal are not supported and have been removed.</span>
+  <a class="backref" href="#ref31" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn32">
+  <span class="short"><em class="term">Shabbos</em> 88b: the giving of the Torah and the retreat of the souls.</span>
+  <span class="expanded"> <em class="term">Shabbos</em> 88b (checked): Rabbi Yehoshua ben Levi teaches that at each utterance Israel retreated twelve <em class="term">mil</em> and the ministering angels brought them back, and that at each utterance their souls departed and were revived with the dew of the resurrection. Rashi on <em class="term">Shemos</em> 20:15 gives twelve <em class="term">mil</em> (checked); the parallel in the <em>Mechilta</em> is the lecturer’s report and was not checked. The Hebrew quotation printed in the earlier version was not found and has been removed. The three <em class="term">mil</em> of the <em>Mahari”a</em> remain, as the lecturer says, a difficulty; his suggestion that three <em class="term">parsa'os</em> (four <em class="term">mil</em> each) make twelve <em class="term">mil</em> is his own.</span>
+  <a class="backref" href="#ref32" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn33">
+  <span class="short"><em class="term">Magen Avraham</em>, <em>Orach Chaim</em>, on leaving facing the <em class="term">Aron HaKodesh</em>.</span>
+  <span class="expanded"> The practice of leaving the synagogue facing the Ark: the lecturer traces it to the <em class="term">Magen Avraham</em> (Rabbi Avraham Gombiner, 1635–1682), not directly to the <em class="term">Gemara</em>; the paragraph was not located (the commentary on <em>Orach Chaim</em> 123 as retrieved does not contain it).</span>
+  <a class="backref" href="#ref33" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn34">
+  <span class="short"><em>Shulchan Aruch</em>, <em>Orach Chaim</em> 101:1.</span>
+  <span class="expanded"> One who prayed without <em class="term">kavanah</em> in the first blessing must return and pray again; the gloss adds that nowadays one does not repeat, since a second <em class="term">Amidah</em> would likely lack <em class="term">kavanah</em> as well (the paragraph is cited from the standard text; not separately re-checked here). The lecturer’s remark that returning at once to say the first blessing is a <em class="term">hefsek</em> is his own report.</span>
+  <a class="backref" href="#ref34" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Recollections of reviewers are recorded as such and are not asserted in the text.</p>
+<ol>
+<li><strong>Date and weekday.</strong> The earlier write-up gave <span class="heb-inline">כ״ו תשרי</span> and a Sunday; 27 October 2025 was a Monday, <span class="heb-inline">ה׳ חשון תשפ״ו</span> (checked against a calendar converter). The weekday was not stated by the lecturer; the text gives the date only.</li>
+<li><strong>Ten <span class="heb-inline">יו״דין</span>.</strong> Whether the lecturer counts the Divine Name as spelled out (ten) or as written <span class="heb-inline">ה׳</span> (nine); the audio says only “ten times the letter <em>yud</em>”. (See note 2.)</li>
+<li><strong>Rabbi Moshe ben Machir and the poem.</strong> The audio is unclear on which famous liturgical poem the lecturer attributes to him; <em>Yigdal</em> is the AI summary’s identification and is not accepted. (See note 1.)</li>
+<li><strong>The late rav.</strong> His name (rendered “Rabbi Kinsler” in the summary) is unconfirmed and is not printed. (See note 8.)</li>
+<li><strong>The Vilna <span class="heb-inline">גאון</span> and the <em>Zohar</em>.</strong> The lecturer’s sentence breaks off (“I think he brings it from the…”); the location in either source is open. (See note 12.)</li>
+<li><strong>The Maharsha, the <em>Kli Yakar</em> and Rabbi Chaim of Volozhin.</strong> The readings the lecturer reports were not found in the comments as retrieved, and the name of the party in the story of Rabbi Chaim varies. (See notes 13, 14 and 17.)</li>
+<li><strong>The four phrases.</strong> Whether the “four things” of the <em>Beis Yosef</em> are the four <span class="heb-inline">למען</span>-phrases, and the source of the ascription to Rabbi Akiva. (See note 19.)</li>
+<li><strong>The <em>Chasam Sofer</em>.</strong> The teaching on <span class="heb-inline">קשת״י</span> was not found in the text of his commentary on <em>Noach</em>. (See note 20.)</li>
+<li><strong>Solomon at Gibeon.</strong> The lecturer’s question on the verse in <em>Divrei HaYamim</em> II 1 and his tentative suggestion are left open; no answer is asserted.</li>
+<li><strong>Nebuchadnezzar.</strong> The <em>gemara</em> says four steps; the identity of “Rabbi Kalish”, to whom the lecturer attributes the link to the three steps, is unconfirmed. (See note 30.)</li>
+<li><strong>Abuhav and the three <span class="heb-inline">מילין</span>.</strong> Whether the <em>Mahari”a</em> of the <em>Beis Yosef</em> is Rabbi Yitzchak Abuhav; the biographical details (Toledo, Portugal, 1493); and above all how three <span class="heb-inline">מילין</span> are derived from Sinai when <em>Shabbos</em> 88b and Rashi give twelve. (See notes 31 and 32.)</li>
+<li><strong>The <em>Magen Avraham</em>.</strong> The paragraph on leaving facing the Ark was not located. (See note 33.)</li>
+<li><strong>Rav Yosef’s blessing.</strong> The reading of the city as Mechoza and the report that the blood blackened the threshold are the lecturer’s and unsourced. (See notes 24 and 27.)</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati’s morning shiur of 27 October 2025 (<span class="heb-inline">ה׳ חשון תשפ״ו</span>), continuing the previous week’s treatment of <em>Yihyu Leratzon</em> and <em>Elokai Netzor</em>. The discourse breaks off before <em>Tachanun</em>. The edition keeps the lecturer’s personal remarks as his own and records his uncertainties as he stated them.
+</footer>
+
+</body>
+</html>

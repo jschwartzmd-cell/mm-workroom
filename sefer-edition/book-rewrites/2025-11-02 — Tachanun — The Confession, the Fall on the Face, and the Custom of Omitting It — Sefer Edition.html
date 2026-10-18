@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Tachanun &mdash; The Confession, the Fall on the Face, and the Custom of Omitting It</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">תַּחֲנוּן — הַוִּדּוּי, נְפִילַת אַפַּיִם, וּמִנְהַג הַהַשְׁמָטָה</h1>
+  <div class="english-title"><em>Tachanun</em> &mdash; The Confession, the Fall on the Face, and the Custom of Omitting It</div>
+  <div class="sub">Studies in <em>Tefillah</em> (<span class="heb-inline">תפילה</span>) &mdash; The Order of the Morning Prayer</div>
+  <div class="date">11 Cheshvan 5786 &nbsp;&middot;&nbsp; 2 November 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<div class="dedication">
+  <span class="heb-inline">לעילוי נשמת ר׳ דוד בן משה שלום ע״ה</span> &mdash; Danny Kriegsman, whose <em class="term">yahrzeit</em> (<span class="heb-inline">יארצייט</span>) fell on <em class="term">Shemini Atzeres</em> (<span class="heb-inline">שמיני עצרת</span>).<a class="footnote-ref" id="ref1" href="#fn1">[1]</a><br>
+  Sponsored by Reb Meyer and Mrs. Weissman.
+</div>
+
+<p class="lead">This discourse takes up <em class="term">tachanun</em> (<span class="heb-inline">תחנון</span>), the supplication that follows the weekday <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>), in three aspects: the confession that precedes it, the fall on the face that is its heart, and the custom, in some circles, of leaving it out. It begins from a question about the closing words of the <em class="term">Shemoneh Esrei</em>, and goes on to ask where the <em class="term">vidui</em> (<span class="heb-inline">וידוי</span>), <em class="term">Ashamnu</em> (<span class="heb-inline">אשמנו</span>) and the <em class="term">Thirteen Attributes of Mercy</em> (<span class="heb-inline">שלש עשרה מידות הרחמים</span>), that now stands before the fall on the face came from, why it is said by those who have not committed the sins it lists, and how the <em class="term">Ve'atah Tzaddik</em> (<span class="heb-inline">ואתה צדיק על כל הבא עלינו</span>) of the same prayer is to be understood.</p>
+
+<p class="lead">It then turns to the fall on the face itself: its sources in the Torah, the absence of an explicit passage in the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) that places it after the prayer, and the narrative of the oven of Achnai, <em class="term">Rabbi Eliezer</em> (<span class="heb-inline">רבי אליעזר בן הורקנוס</span>) and <em class="term">Imma Shalom</em> (<span class="heb-inline">אימא שלום</span>), from which the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) derive that it follows the <em class="term">Shemoneh Esrei</em> immediately and that it is a <em class="term">reshus</em> (<span class="heb-inline">רשות</span>) and not a <em class="term">chiyuv</em> (<span class="heb-inline">חיוב</span>). A digression on obeying a wife against the will of Heaven, and a discussion of the days on which <em class="term">tachanun</em> is omitted, lead to the Chassidic custom of omitting it.</p>
+
+<p class="lead">Finally it takes up the Chassidic custom in detail, with the criticism of the <em class="term">Minchas Elazar</em> (<span class="heb-inline">מנחת אלעזר</span>), the stand of the <em class="term">Divrei Chaim</em> (<span class="heb-inline">דברי חיים</span>), and the story of the <em class="term">Radoshitzer Rebbe</em> (<span class="heb-inline">ראדושיצער רבי</span>) and the five thousand <em class="term">tachanunim</em> (<span class="heb-inline">תחנונים</span>), and closes with the guidance of <em class="term">Rav Moshe Feinstein</em> (<span class="heb-inline">רב משה פיינשטיין</span>) for one whose <em class="term">minyan</em> (<span class="heb-inline">מנין</span>) omits it, and the practice of the <em class="term">Chazon Ish</em> (<span class="heb-inline">חזון איש</span>), who said it alone after a <em class="term">baal tefillah</em> (<span class="heb-inline">בעל תפילה</span>) had skipped it in his own house, and then thanked him.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. A Preliminary Question: To Whom Is <em class="term">ve'imru amen</em> (<span class="heb-inline">ואמרו אמן</span>) Said?</h2>
+
+<p>The <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) ends with the words <span class="heb-inline">עושה שלום במרומיו, הוא יעשה שלום עלינו ועל כל ישראל ואמרו אמן</span>, “He who makes peace in His heights, may He make peace upon us and upon all Israel, and say, Amen.”<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> In the <em class="term">Kaddish</em> (<span class="heb-inline">קדיש</span>) no question arises as to whom the words are addressed: the <em class="term">chazan</em> (<span class="heb-inline">חזן</span>) says them and the congregation answers. But here, at the end of a private prayer, there is no one to answer. To whom, then, is <em class="term">ve'imru amen</em> said?</p>
+
+<p>Some say that the words are addressed to the <em class="term">malachim</em> (<span class="heb-inline">מלאכים</span>). Having finished the long prayer, the worshipper turns to them: that all his prayers be accepted, and that there be peace upon <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>), say Amen. Their answer cannot be heard, but one is to imagine that they respond with a resounding Amen.</p>
+
+<h2>II. The <em class="term">Vidui</em> (<span class="heb-inline">וידוי</span>) Before <em class="term">Nefilas Apayim</em> (<span class="heb-inline">נפילת אפים</span>)</h2>
+
+<h3>An Addition of the <em class="term">Arizal</em> (<span class="heb-inline">האריז״ל</span>)</h3>
+
+<p><em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>), as it is said, begins with <em class="term">Ashamnu</em> (<span class="heb-inline">אשמנו</span>) and the <em class="term">Thirteen Attributes of Mercy</em> (<span class="heb-inline">שלש עשרה מידות הרחמים</span>), and only afterwards comes the fall on the face. The confession before the fall is not part of the original <em class="term">tachanun</em>. In the time of the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) most communities did not say it. It is an addition from the time of the <em class="term">Arizal</em> (1534&ndash;1572), and one more example of the degree to which the <em class="term">siddur</em> (<span class="heb-inline">סידור</span>) was reshaped by his introduction into daily prayer of practices rooted in <em class="term">Kabbalah</em> (<span class="heb-inline">קבלה</span>) and not in <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>).</p>
+
+<p>At present all of <em class="term">Klal Yisrael</em> that follows <em class="term">Nusach Sefarad</em> (<span class="heb-inline">נוסח ספרד</span>) says <em class="term">Ashamnu</em> before the fall on the face. In <em class="term">Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) the practice varies: some say it on Mondays and Thursdays, some not at all, some only at certain times. All of it derives from the <em class="term">Arizal</em>, who found the practice in the <em class="term">Zohar</em> (<span class="heb-inline">זוהר</span>).<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> It is not a matter of <em class="term">halachah</em> in the <em class="term">Tur</em> (<span class="heb-inline">טור</span>) or the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שלחן ערוך</span>); the <em class="term">Tur</em> is reported to note that some communities had the custom, but it was far from universal.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> The <em class="term">Arizal</em> introduced it, and from him it spread throughout <em class="term">Klal Yisrael</em>, so that for some four centuries and more it has been kept with great fidelity.</p>
+
+<h3>The <em class="term">Zohar</em> and the Accusers</h3>
+
+<p>The <em class="term">Zohar</em> reveals what is neither seen nor heard. In Heaven, the moment a person finishes his prayer, the <em class="term">mekatrigim</em> (<span class="heb-inline">מקטרגים</span>) &mdash; the <em class="term">Sitra Achra</em> (<span class="heb-inline">סטרא אחרא</span>), the Samech-Mem, the <em class="term">Satan</em> (<span class="heb-inline">שטן</span>), whatever name is given to those forces of impurity &mdash; pounce on his prayers and seek to block them from reaching the Holy One. Their plea is: Why should the prayer of this man be accepted? He is a sinner; he has done this and that. And they begin to recite, against him, all the <em class="term">Ashamnu</em> and <em class="term">bagadnu</em> (<span class="heb-inline">בגדנו</span>) that he has done.</p>
+
+<p>The counsel of the <em class="term">Zohar</em> is to be clever and to take their words from them: to state one&rsquo;s sins before the accuser has had the chance to open his mouth. When the worshipper has already said that he has sinned and is sorry, the accuser is left standing in the corner with nothing to say; it has all been said already. Before he can block the prayer, a breach is made, and the worshipper says to the Holy One that there is no need to listen to him, for he himself has confessed. So important did the <em class="term">Arizal</em> consider this, that he established it at once after the prayer, even though the <em class="term">Rishonim</em> and the <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>) had not said it.</p>
+
+<h3>Why Only After <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>)?</h3>
+
+<p>It may be asked why the confession is not placed likewise after <em class="term">Mincha</em> (<span class="heb-inline">מנחה</span>) and <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>). Only a tentative answer is given: it appears, from the account of the <em class="term">Zohar</em>, that it is immediately after the morning prayer that the accuser acts to block, and the confession makes the breach before him. What takes place on high is not known, and a fuller answer was deferred.</p>
+
+<h2>III. <em class="term">Ashamnu</em> <em class="term">bagadnu</em>: A Confession Made on Behalf of All</h2>
+
+<h3>“But I Did Not Do These Things”</h3>
+
+<p>A question is asked of the confession. If a person has never stolen, or if he repented and returned what he took, why does he say <em class="term">gazalnu</em> (<span class="heb-inline">גזלנו</span>)? Why does he stand before the Holy One and confess to what he did not do?</p>
+
+<p>The answer is that in saying <em class="term">Ashamnu</em> a person confesses not only for himself. He says: I am sorry on behalf of my friends, my colleagues, my peers, on behalf of all <em class="term">Klal Yisrael</em>. It is not for a Jew to say, “Live and let live; my life is my own concern.” The people is connected in every member, and it is incumbent on each to do what he can to prevent any transgression. <em class="term">Klal Yisrael</em> is one organism, one body; though its members may be distant from one another, in their essence they are one. Therefore each says <em class="term">Ashamnu</em> even for sins he did not commit. And, to a degree, even he who has stolen nothing may have done something that was a trace of theft, and for that too he confesses.</p>
+
+<h3>The Account Brought by the <em class="term">Chida</em> (<span class="heb-inline">חיד״א</span>): The Sage and the <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>)</h3>
+
+<p>The <em class="term">Chida</em> brings a well-known account.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> In the time of the <em class="term">Rambam</em> there was a great sage and <em class="term">tzaddik</em> (<span class="heb-inline">צדיק</span>) who came to him with a question. The <em class="term">Chida</em> says that he had the account from one who had it from one, in an unbroken chain reaching back to the <em class="term">Rambam</em> himself, which is a rare thing; the sage is not named.</p>
+
+<p>The man told the <em class="term">Rambam</em> that he did not say <em class="term">tachanun</em> on <em class="term">Yom Kippur</em> (<span class="heb-inline">יום כיפור</span>), neither <em class="term">Ashamnu</em> <em class="term">bagadnu</em> nor <em class="term">Al Cheit</em> (<span class="heb-inline">על חטא</span>), because, looking at the list, he had not done these things. Why should he stand five times before the Holy One on that day and lie, saying he had done what he had not? The <em class="term">Rambam</em> answered that he had better say it: every one of the sins in the <em class="term">Al Cheit</em> and in the <em class="term">Ashamnu</em> he transgresses every day; and, at his level, probably more.</p>
+
+<p>How can a Jew transgress <em class="term">avodah zarah</em> (<span class="heb-inline">עבודה זרה</span>)? When was the last time any of us served an idol? The answer is that whoever becomes angry is as if he worships idols.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> It is not literally so, but <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) regard it as a trace of <em class="term">avodah zarah</em>. Whoever shouts at his wife in anger transgresses it; whoever lets his <em class="term">ga'avah</em> (<span class="heb-inline">גאוה</span>) rear its head transgresses it. So it is that a person transgresses all these things and does not know it. The <em class="term">Rambam</em> added that he must now say <em class="term">Al Cheit</em> also for the sin of not wanting to say <em class="term">Al Cheit</em>; and that too is a transgression.</p>
+
+<h3><em class="term">Bagadnu</em></h3>
+
+<p>The word <em class="term">bagadnu</em> means that we were disloyal: that we were not faithful to the Holy One in the relationship with Him. It is the language of infidelity. Every transgression is, as it were, a form of unfaithfulness, and that is the meaning of the word.</p>
+
+<h2>IV. <em class="term">Ve'atah Tzaddik</em> (<span class="heb-inline">ואתה צדיק על כל הבא עלינו</span>): Accepting His Judgment</h2>
+
+<h3>The Author of the <em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>)</h3>
+
+<p>An interesting <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>) is brought in the <em class="term">Yesod VeShoresh HaAvodah</em>, a work of Rabbi Alexander Ziskind of Horodna, one of the great men of the generations immediately after the <em class="term">Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>).<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> He was a great <em class="term">tzaddik</em> and <em class="term">mekubal</em> (<span class="heb-inline">מקובל</span>) who came very close to joining the Chassidic movement, which in his time was a revolution in <em class="term">Klal Yisrael</em>. He went to the <em class="term">Maggid of Mezritch</em> (<span class="heb-inline">מגיד ממעזריטש</span>), the chief disciple of the <em class="term">Baal Shem Tov</em> and his successor, and said that he wished to be his disciple. The <em class="term">Maggid</em> told him that he did not belong there: the <em class="term">Litvaks</em> (<span class="heb-inline">ליטוואקעס</span>) needed him. He was to remain with the <em class="term">misnagdim</em> (<span class="heb-inline">מתנגדים</span>), who would study his book.</p>
+
+<p>Many of those who came to the <em class="term">Maggid</em> stayed, and that is how <em class="term">Chassidus</em> (<span class="heb-inline">חסידות</span>) flourished. This author was perhaps the only man of his era so steeped in <em class="term">Kabbalah</em> and in what may be called <em class="term">Chassidus</em> in the general sense, not as a movement; and the world of the <em class="term">misnagdim</em> is grateful that it held on to him. His book is easy to learn, and it gives understanding and appreciation of every prayer that is said and every <em class="term">mitzvah</em> (<span class="heb-inline">מצוה</span>) that is done; each part of it is best learned in its season, before <em class="term">Rosh Hashanah</em> (<span class="heb-inline">ראש השנה</span>), before <em class="term">Sukkos</em> (<span class="heb-inline">סוכות</span>), before Pesach.</p>
+
+<h3>The <em class="term">midrash</em></h3>
+
+<p>The book brings the <em class="term">midrash</em>:<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> the Holy One says to the ministering angels, Look at My children, look at My beloved <em class="term">Klal Yisrael</em>. I give them troubles, I give them sufferings, personal and communal, and the people suffers greatly. Yet instead of complaining, instead of saying that it is not fair, My children come to Me every day and say <span class="heb-inline">ואתה צדיק על כל הבא עלינו</span>: You are righteous in all that has come upon us; what You do to us is right; we deserve it. You are the righteous One and we are the wicked, we have sinned. When they say this with passion, it arouses great compassion and mercy, and the Holy One shows it to the angels: Look at My children; they never blame Me, they always blame themselves.</p>
+
+<p>For this reason there is a great <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) in saying <em class="term">Ve'atah Tzaddik</em> with <em class="term">kavanah</em> (<span class="heb-inline">כוונה</span>) and complete <em class="term">anavah</em> (<span class="heb-inline">ענוה</span>), and in meaning it. It lends force to all the prayers that have just been said, that they be accepted.</p>
+
+<h2>V. <em class="term">Nefilas Apayim</em>: Sources and Posture</h2>
+
+<h3>The Sources in the Torah</h3>
+
+<p>Whence the practice of falling on the face? It is found with <em class="term">Moshe Rabbeinu</em> (<span class="heb-inline">משה רבינו</span>), in <em class="term">Parashas Eikev</em> (<span class="heb-inline">פרשת עקב</span>), <span class="heb-inline">ואתנפל</span>, “and I fell down before the Lord.”<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> It is found in the story of <em class="term">Korach</em> (<span class="heb-inline">קרח</span>), where <em class="term">Moshe Rabbeinu</em> and <em class="term">Aharon</em> (<span class="heb-inline">אהרן</span>) <span class="heb-inline">ויפלו על פניהם ויאמרו: א-ל אלהי הרוחות לכל בשר</span>, “fell on their faces and said, O God, God of the spirits of all flesh.”<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> It appears that when forgiveness was sought in the matter of <em class="term">Korach</em>, it was granted through the falling. Falling on the floor expresses subjugation: we are worthless; we nullify ourselves before the Holy One, immediately after the <em class="term">Shemoneh Esrei</em>.</p>
+
+<h3>The Posture</h3>
+
+<p>In earlier times they literally fell on the floor, in every synagogue. At present the practice has been softened, and some remain standing. The <em class="term">Shulchan Aruch</em> directs that it be done sitting and not standing, and so, it is said, is the practice according to <em class="term">Kabbalah</em>.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a></p>
+
+<h3>Why After the Prayer?</h3>
+
+<p>But whence the placement of the fall on the face immediately after the prayer? There is no passage in the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>), and nothing explicit in <em class="term">Chazal</em>, that says that it is to be done after the <em class="term">Shemoneh Esrei</em>. The source is a story in the <em class="term">Gemara</em>, one of the most important in understanding the authority of the <em class="term">Torah Shebe'al Peh</em> (<span class="heb-inline">תורה שבעל פה</span>), the story of the oven of Achnai.</p>
+
+<h2>VI. The <em class="term">Oven of Achnai</em> (<span class="heb-inline">תנור של עכנאי</span>), <em class="term">Rabbi Eliezer</em> (<span class="heb-inline">רבי אליעזר בן הורקנוס</span>), and <em class="term">Imma Shalom</em> (<span class="heb-inline">אימא שלום</span>)</h2>
+
+<h3>The Setting</h3>
+
+<p>After the <em class="term">churban</em> (<span class="heb-inline">חורבן</span>), <em class="term">Rabbi Yochanan ben Zakkai</em> (<span class="heb-inline">רבי יוחנן בן זכאי</span>) led <em class="term">Klal Yisrael</em> and was its authority in <em class="term">halachah</em>. It was a time of crisis: the spiritual center of the people, the Beis HaMikdash, was gone; the <em class="term">Sadducees</em> (<span class="heb-inline">צדוקים</span>) and the <em class="term">Pharisees</em> (<span class="heb-inline">פרושים</span>) had been at war, and the <em class="term">Sadducees</em> had undermined all of the <em class="term">Torah Shebe'al Peh</em>. The <em class="term">Pharisees</em>, a far smaller body, the Sages of <em class="term">Chazal</em> with whom the people has stayed, had moved the <em class="term">Sanhedrin</em> (<span class="heb-inline">סנהדרין</span>) to <em class="term">Yavneh</em> (<span class="heb-inline">יבנה</span>) shortly before the <em class="term">churban</em>, and it became the center of authority in <em class="term">halachah</em>.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> <em class="term">Rabbi Yochanan ben Zakkai</em> was afraid that without the Beis HaMikdash, with <em class="term">Klal Yisrael</em> scattered, the people would be lost. It was necessary to show that the power of <em class="term">Chazal</em> was intact, and that a ruling of <em class="term">halachah</em> remained binding on every Jew.</p>
+
+<h3>The Dispute</h3>
+
+<p>In that period <em class="term">Rabbi Eliezer</em>, one of the greatest of the <em class="term">tanna'im</em> (<span class="heb-inline">תנאים</span>), disputed with all the <em class="term">Sages</em> (<span class="heb-inline">חכמים</span>) the case of a certain oven.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> It had been cut into rings, with sand placed between them, and the question was whether it could receive <em class="term">tumah</em> (<span class="heb-inline">טומאה</span>). <em class="term">Rabbi Eliezer</em> held that it was <em class="term">tahor</em> (<span class="heb-inline">טהור</span>): once it had been broken down, the putting of it together again did not make it a <em class="term">keli</em> (<span class="heb-inline">כלי</span>), and so it could not become <em class="term">tamei</em> (<span class="heb-inline">טמא</span>). The <em class="term">Sages</em> held that it was <em class="term">tamei</em>.</p>
+
+<p>The two sides argued, and <em class="term">Rabbi Eliezer</em> would not yield. The <em class="term">Sages</em> said that they had counted the votes, that they were the <em class="term">rabim</em> (<span class="heb-inline">רבים</span>); he might hold as he wished, but he must submit to them. He answered that the truth was with him and that he would prove it through <em class="term">nissim</em> (<span class="heb-inline">נסים</span>). The carob tree outside the <em class="term">beis midrash</em> (<span class="heb-inline">בית המדרש</span>) uprooted itself; the stream of water flowed backward; the walls of the <em class="term">beis midrash</em> began to lean, as though to fall on the <em class="term">Sages</em>. He said: See, the <em class="term">halachah</em> is as I say. The <em class="term">Sages</em> were not moved. At the height of the dispute he called out: Masters, hear the <em class="term">bas kol</em> (<span class="heb-inline">בת קול</span>)! A voice from Heaven declared that the <em class="term">halachah</em> was as he said. <em class="term">Rabbi Yehoshua</em> (<span class="heb-inline">רבי יהושע</span>) rose and proclaimed <span class="heb-inline">לא בשמים היא</span>, “It is not in heaven.”<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<p>That declaration established the authority of <em class="term">Chazal</em> to this day: Heaven is not heeded in <em class="term">halachah</em>, for the Torah was given to us. The <em class="term">Gemara</em> relates that when the Holy One heard it He smiled and said <em class="term">Nitzchuni Banai</em> (<span class="heb-inline">נצחוני בני</span>), “My children have defeated Me.” The Holy One held the <em class="term">halachah</em> as <em class="term">Rabbi Eliezer</em> did, but the decision was no longer His to make. The Torah was given to us, and we decide by our power of understanding it and by the methods we were taught.</p>
+
+<h3>The Ban</h3>
+
+<p><em class="term">Rabbi Eliezer</em> was therefore placed in <em class="term">niduy</em> (<span class="heb-inline">נידוי</span>), one of the harshest penalties in all the stories of the <em class="term">tanna'im</em>. He remained at home, barred from the <em class="term">beis midrash</em>, unable even to pray with a <em class="term">minyan</em> (<span class="heb-inline">מנין</span>), a lonely, isolated, rejected and alienated man for many years, until the day of his death, when, as the account is told, the <em class="term">Sages</em> came to him and said that they were sorry for what they had done, but that they had had to do it.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> <em class="term">Rabbi Akiva</em> (<span class="heb-inline">רבי עקיבא</span>), his own student, stood with the <em class="term">Sages</em> and was the one who brought him the news. The greatest man of the generation was under the ban.</p>
+
+<h3><em class="term">Imma Shalom</em></h3>
+
+<p>The wife of <em class="term">Rabbi Eliezer</em> was named <em class="term">Imma Shalom</em>, “Mother of Peace,” an apt name for a wife. She was the sister of <em class="term">Rabban Gamliel</em> (<span class="heb-inline">רבן גמליאל</span>), who led the ban. He had become <em class="term">nasi</em> (<span class="heb-inline">נשיא</span>) after <em class="term">Rabbi Yochanan ben Zakkai</em>, and came of a family of royal lineage. She was caught between a rock and a hard place: her brother, the leader of the generation, had placed her husband, its greatest man, under the ban.</p>
+
+<p>She understood that her husband was deeply hurt, and that his power of prayer was exceptional. Should he pray &mdash; God forbid &mdash; that her brother be punished or die for what he had done to him, though the ban was justified (the <em class="term">Gemara</em> teaches that even the Holy One agreed that <em class="term">Rabbi Eliezer</em> was right, and yet we stand by <em class="term">Chazal</em>; it is our Torah), his prayer would be answered. It was not the <em class="term">Shemoneh Esrei</em> alone that she feared. She was most concerned for the fall on the face that followed it: for in the <em class="term">Shemoneh Esrei</em> his feelings might or might not rise, but when he fell to the floor and felt the full pain of being cast out of his <em class="term">beis midrash</em> for the sake of a true ruling, his anguish would be so great that the Holy One would surely hear him. She wanted peace.</p>
+
+<p>Every day, therefore, while <em class="term">Rabbi Eliezer</em> prayed at home, she stood by him; and the moment he finished the <em class="term">Shemoneh Esrei</em> she distracted him, so that he forgot <em class="term">tachanun</em> and the fall on the face. So she did every day for a long time, and she was saving her brother&rsquo;s life every morning.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a></p>
+
+<h3>The Day of the <em class="term">Shofar</em> (<span class="heb-inline">שופר</span>)</h3>
+
+<p>One day there was a mistake. There were no calendars on the wall in those days; she thought it was <em class="term">Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>), when <em class="term">tachanun</em> is not said, but she had erred by a day in the length of the month. For the first time in a long while she did not interrupt, and <em class="term">Rabbi Eliezer</em> fell on his face and said <em class="term">tachanun</em>. Suddenly she ran into the room: Woe! You have killed my brother! As the words left her mouth a <em class="term">shofar</em> sounded from the house of <em class="term">Rabban Gamliel</em>. The <em class="term">nasi</em> had died. <em class="term">Rabbi Eliezer</em> had done it in that one moment.</p>
+
+<p>The <em class="term">Gemara</em> gives another version: a poor man knocked at the door, and she ran to give him a loaf of bread, and in those moments <em class="term">Rabbi Eliezer</em> had his chance. Whichever account is correct, on that day, in that moment, he fell on his face, and <em class="term">Rabban Gamliel</em> died.</p>
+
+<h2>VII. The Power of <em class="term">Nefilas Apayim</em></h2>
+
+<p>The power of the fall on the face is thus plain. <em class="term">Rabbi Eliezer</em> stood on the highest rank. But when an ordinary Jew says it, according to the <em class="term">Arizal</em> and the <em class="term">Rishonim</em> it is even more potent than the <em class="term">Shemoneh Esrei</em>. The physical act of falling, of subjugating oneself completely, saying <em class="term">Ashamnu</em>, <em class="term">bagadnu</em>, <em class="term">gazalnu</em>, and showing the Holy One that for all one&rsquo;s ego when one stood before Him in the <em class="term">Shemoneh Esrei</em>, one is nothing: the anguish that a Jew then feels arouses overwhelming compassion and mercy. If a man is pursued by another, if someone hates him, this is the time to ask that his pursuers be removed.</p>
+
+<p>That is not to be done against those one merely dislikes. The model is not the world but <em class="term">Imma Shalom</em>, who wanted peace. Yet this is the most powerful moment of the entire prayer, where a Jew may ask the Holy One to be rid of his enemies, and it is to be said as much as possible.</p>
+
+<h2>VIII. The <em class="term">Halachos</em> (<span class="heb-inline">הלכות</span>) of <em class="term">Nefilas Apayim</em></h2>
+
+<h3>Immediately After the <em class="term">Shemoneh Esrei</em></h3>
+
+<p>It is not stated in the <em class="term">Gemara</em> that <em class="term">Rabbi Eliezer</em> fell on his face immediately after the <em class="term">Shemoneh Esrei</em>; the <em class="term">Rishonim</em> understand it so. The <em class="term">Ritva</em> (<span class="heb-inline">ריטב״א</span>) asks: Had <em class="term">Imma Shalom</em> nothing better to do, all day, than to stand beside her husband while he prayed, and the moment he finished to begin to distract him? Perhaps he might have said it later in the day; did she not leave his side the whole day, to see that he did not say <em class="term">tachanun</em>? She was not that kind of wife, the <em class="term">Ritva</em> answers. The proof is that it was right after the <em class="term">Shemoneh Esrei</em>, so that she needed to be with him only for those few minutes. She knew when <em class="term">Rabbi Eliezer</em> finished the prayer each day, and she came into the room at that moment and made him forget. From this the <em class="term">Gemara</em> teaches that <em class="term">tachanun</em>, the fall on the face, is bound to the <em class="term">Shemoneh Esrei</em> and is to be said immediately after it.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a></p>
+
+<p>The <em class="term">Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>) brings a proof from this <em class="term">Gemara</em> that <em class="term">nefilas apayim</em> is said after the <em class="term">Shemoneh Esrei</em>. The <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>) ask what, exactly, the proof is. On the view of the <em class="term">Ritva</em> it can be understood in part, though it might equally have been after <em class="term">Mincha</em>; but the implication of the <em class="term">Gemara</em> is that her interruption was after <em class="term">Shacharis</em>.</p>
+
+<h3>A <em class="term">reshus</em> (<span class="heb-inline">רשות</span>), Not a <em class="term">chiyuv</em> (<span class="heb-inline">חיוב</span>)</h3>
+
+<p>The <em class="term">Rishonim</em> derive another point from this <em class="term">Gemara</em>: that the fall on the face is only a <em class="term">reshus</em>, not a <em class="term">chiyuv</em>; it may be done and it may be left undone. Were it a <em class="term">chiyuv</em>, <em class="term">Rabbi Eliezer</em> would not have yielded to his wife; he would have said, Forgive me, <em class="term">Rebbetzin</em> (<span class="heb-inline">רבנית</span>), I am saying <em class="term">tachanun</em>. If one&rsquo;s wife tells him not to say <em class="term">Kerias Shema</em> (<span class="heb-inline">קריאת שמע</span>) or the <em class="term">Shemoneh Esrei</em>, he does not listen.</p>
+
+<p>The <em class="term">Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>) is reported to write that there are times when one does not listen to one&rsquo;s wife.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> One should listen to her in nearly everything, and be a great advocate of <em class="term">shalom bayis</em> (<span class="heb-inline">שלום בית</span>); but when what is asked runs against the will of the Holy One, he must stand firm, doing so with care and without causing trouble at home. Where a wife asks her husband to act against what the Holy One wants, that is the time to say: we follow the Holy One, and peace upon Israel.</p>
+
+<h2>IX. The Chassidic Custom of Omitting <em class="term">Tachanun</em></h2>
+
+<p>Who decides whether <em class="term">tachanun</em> is said on a given day? In many Chassidic houses of prayer, when the <em class="term">baal tefillah</em> (<span class="heb-inline">בעל תפילה</span>) has a <em class="term">yahrzeit</em>, or even a doubtful <em class="term">yahrzeit</em>, it is he who determines whether the congregation omits it. This is a sensitive matter, and it is not for the lecturer to mock or to criticize <em class="term">Chassidim</em> (<span class="heb-inline">חסידים</span>).</p>
+
+<h3>The Origin of the Custom</h3>
+
+<p>The custom goes back to the disciples of the <em class="term">Baal Shem Tov</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> Their reasoning was a grave one. <em class="term">Tachanun</em> is an extraordinarily potent and powerful prayer; if one is not fully directed in it, as <em class="term">Rabbi Eliezer</em> was directed, whose intense <em class="term">kavanah</em> cost <em class="term">Rabban Gamliel</em> his life, it is dangerous. One is falling before the Holy One, with all the power of the prayer, and if one fails in his <em class="term">kavanah</em> the result is terrible. The <em class="term">Zohar</em> is reported to say in so many words that whoever is not properly directed in the fall on the face will not merit length of days: the Holy One will cut him down before his time. From this the custom spread to omit it whenever there is even a trace of joy.</p>
+
+<p>A second ground is given for the same custom: the disciples of the <em class="term">Baal Shem Tov</em> held that the day of the death of a <em class="term">tzaddik</em> is a <em class="term">hilula</em> (<span class="heb-inline">הילולא</span>), like that of <em class="term">Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>), which, as reported, the <em class="term">Zohar</em> calls a <em class="term">hilula</em>, and a <em class="term">hilula</em> connotes joy; so <em class="term">tachanun</em> is not said. By the same reasoning <em class="term">tachanun</em> is omitted on <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>) and <em class="term">Purim</em> (<span class="heb-inline">פורים</span>). It is of interest that in the great academies of <em class="term">Bavel</em> (<span class="heb-inline">בבל</span>), <em class="term">Pumbedisa</em> (<span class="heb-inline">פומבדיתא</span>) and the others, it is said that <em class="term">tachanun</em> was said even on <em class="term">Chanukah</em> and <em class="term">Purim</em>.</p>
+
+<h3>The Criticism of the <em class="term">Minchas Elazar</em> (<span class="heb-inline">מנחת אלעזר</span>)</h3>
+
+<p>The holy <em class="term">Minchas Elazar</em> wrote in his books, with fire and brimstone, against the <em class="term">Chassidim</em> who choose any <em class="term">yahrzeit</em> of any <em class="term">tzaddik</em> as grounds to omit <em class="term">tachanun</em>.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> His argument is that there is no day in the Jewish calendar without the <em class="term">yahrzeit</em> of some holy man; carried to its conclusion, <em class="term">tachanun</em> would never be said at all. Many <em class="term">Chassidim</em> did indeed keep handbooks of the <em class="term">yahrzeit</em> of <em class="term">tzaddikim</em> (<span class="heb-inline">צדיקים</span>) for this purpose. It is recalled that at the Chassidic yeshiva in Kerestir, after the prayer, the handbook was opened at once, and it was noted that this day was the <em class="term">yahrzeit</em> of such and such a Rebbe; and <em class="term">tachanun</em> was almost never said.</p>
+
+<h3>The <em class="term">Divrei Chaim</em> (<span class="heb-inline">דברי חיים</span>) and His Stick</h3>
+
+<p>The <em class="term">Divrei Chaim</em>, the holy Rebbe of <em class="term">Sanz</em> (<span class="heb-inline">צאנז</span>), was the father of the last generation of <em class="term">Chassidus</em>.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> For the Galician, Polish and Hungarian <em class="term">Chassidim</em>, the Rebbe of <em class="term">Sanz</em> was everything; even the Satmar Rebbe, one of the leading figures of Chassidic life on American shores, followed <em class="term">Sanz</em> in all things. The Rebbe of <em class="term">Sanz</em> omitted <em class="term">tachanun</em> on one <em class="term">yahrzeit</em> only, 21 Adar, that of the <em class="term">Noam Elimelech</em> (<span class="heb-inline">נועם אלימלך</span>). That was the single exception. On any other occasion, if a <em class="term">Chassid</em> (<span class="heb-inline">חסיד</span>) decided on the strength of his Rebbe&rsquo;s <em class="term">yahrzeit</em> that <em class="term">tachanun</em> was not to be said, the Rebbe of <em class="term">Sanz</em> took out a stick and said: Everyone, say <em class="term">tachanun</em>, now. So the great Chassidic Rebbes, Chassidic as they were, derided the custom, and so did the <em class="term">Minchas Elazar</em>.</p>
+
+<h3>The <em class="term">Radoshitzer Rebbe</em> (<span class="heb-inline">ראדושיצער רבי</span>) and the Five Thousand <em class="term">tachanunim</em> (<span class="heb-inline">תחנונים</span>)</h3>
+
+<p>Even the Chassidic Rebbes who cared about <em class="term">halachah</em> were troubled by the abandonment of <em class="term">tachanun</em>. A story is told of the <em class="term">Radoshitzer Rebbe</em>.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> A man came to him who had lost his fortune, a <em class="term">yored minechasav</em> (<span class="heb-inline">יורד מנכסיו</span>), and said: Rebbe, I have lost everything; my family is hungry; I have debts; what shall I do? I need salvation.</p>
+
+<p>The Rebbe asked him whether he said <em class="term">tachanun</em> every day. The man answered that it was a foreign word. How long, the Rebbe asked, had he been missing <em class="term">tachanun</em> at <em class="term">Shacharis</em>? Since childhood, he said; he had grown up in a Chassidic yeshiva and never said it, perhaps a few times a year. And how many times had he missed it in his life? The man sat down and calculated: thousands.</p>
+
+<p>The Rebbe told him that he must now make up every <em class="term">tachanun</em> he had missed: to sit and say <em class="term">tachanun</em> five thousand times, over and over, and only then to ask for salvation. The man took it seriously. He sat for five weeks, saying <em class="term">tachanunim</em> seventy or eighty times a day, until he had completed the five thousand. The day he finished the last of them, he closed a successful business deal; it all ended well, and he recovered his fortune.</p>
+
+<h2>X. The Days on Which <em class="term">Tachanun</em> Is Omitted</h2>
+
+<p>Since <em class="term">tachanun</em> is in its origin a <em class="term">reshus</em> and not a <em class="term">chiyuv</em>, whenever there is a recognized reason it is omitted. By the standard list: on <em class="term">Lag BaOmer</em> (<span class="heb-inline">ל״ג בעומר</span>), the <em class="term">yahrzeit</em> of <em class="term">Rabbi Shimon bar Yochai</em>, called a <em class="term">hilula</em> in the <em class="term">Zohar</em>; at a <em class="term">bris</em> (<span class="heb-inline">ברית מילה</span>), though there is a dispute concerning <em class="term">Mincha</em> on the day of a <em class="term">bris</em>; when a <em class="term">chasan</em> (<span class="heb-inline">חתן</span>) is present, as at <em class="term">Shalosh Seudos</em> (<span class="heb-inline">שלש סעודות</span>); by some, even at a <em class="term">bar mitzvah</em> (<span class="heb-inline">בר מצוה</span>) or a <em class="term">siyum</em> (<span class="heb-inline">סיום מסכתא</span>); on <em class="term">Chanukah</em> and <em class="term">Purim</em>; on <em class="term">Rosh Chodesh</em>, on <em class="term">yamim tovim</em> (<span class="heb-inline">ימים טובים</span>), and on <em class="term">Chol HaMoed</em> (<span class="heb-inline">חול המועד</span>); and through <em class="term">Tishrei</em> (<span class="heb-inline">תשרי</span>) after <em class="term">Sukkos</em>.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a></p>
+
+<p>The question of <em class="term">Mincha</em> on the day of a <em class="term">bris</em> is discussed by an authority the lecturer called the <em class="term">Bar Heitam</em> (<span class="heb-inline">בר היטם</span>), in <em class="term">siman</em> (<span class="heb-inline">סימן</span>) 131: in <em class="term">Brisk</em> (<span class="heb-inline">בריסק</span>) they did say <em class="term">tachanun</em> at <em class="term">Mincha</em> even if the <em class="term">bris</em> had taken place that day, while elsewhere they did not &mdash; a dispute, it is said, between <em class="term">Brisk</em> and <em class="term">Vilna</em> (<span class="heb-inline">וילנא</span>).<a class="footnote-ref" id="ref24" href="#fn24">[24]</a></p>
+
+<div class="callout">
+  <span class="label">A Note on <em class="term">Yahrzeit</em> Practice</span>
+  <p>According to the <em class="term">Shulchan Aruch</em>, the original practice on a parent&rsquo;s <em class="term">yahrzeit</em> was not to drink brandy and eat cake, but to fast.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> Who fasts at present on the <em class="term">yahrzeit</em> of his father? The <em class="term">Litvaks</em> do, and others who follow the <em class="term">Shulchan Aruch</em> keep it; for the most part the practice has been softened. The holy Rav Zalman Meltzer is reported to have fasted on a <em class="term">yahrzeit</em> and to have held a <em class="term">seudah</em> (<span class="heb-inline">סעודה</span>).</p>
+</div>
+
+<h2>XI. <em class="term">Rav Moshe Feinstein</em> (<span class="heb-inline">רב משה פיינשטיין</span>): Do Not Make a Fight</h2>
+
+<p>Even the great rabbis who held strongly that <em class="term">tachanun</em> should be said addressed the practical problem: what is a person to do who finds himself in a <em class="term">minyan</em> that omits it? <em class="term">Rav Moshe Feinstein</em> rules, according to the report, that he is not to make a fight and not to start screaming.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> This is what so often happens in the synagogue: <em class="term">tachanun</em>, or no <em class="term">tachanun</em>, and an argument breaks out. He teaches that this is to miss the point. Even if in his view the others are acting contrary to <em class="term">halachah</em>, after the <em class="term">Kaddish</em> one goes to the side and says <em class="term">tachanun</em> quietly on his own. One is not trying to embarrass anyone, and one is not making a public stand. (In the order of the prayer, <em class="term">tachanun</em> stands before <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>) and <em class="term">U'va LeTzion</em> (<span class="heb-inline">ובא לציון</span>), for a reason the lecturer proposed to take up later. But it is to be said.)</p>
+
+<h2>XII. The <em class="term">Chazon Ish</em> (<span class="heb-inline">חזון איש</span>) and the <em class="term">baal tefillah</em></h2>
+
+<p>The <em class="term">Chazon Ish</em> never prayed in a synagogue; he had his own <em class="term">minyan</em> in his house in Bnei Brak, a private <em class="term">shtiebel</em> (<span class="heb-inline">שטיבל</span>).<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> He did not know of selective omission of <em class="term">tachanun</em>. The <em class="term">Shulchan Aruch</em> says that it is said; it is omitted on <em class="term">Rosh Chodesh</em>, on <em class="term">yamim tovim</em>, on <em class="term">Chol HaMoed</em>, and, as the discourse has it, through <em class="term">Tishrei</em> after <em class="term">Sukkos</em>, since most of the month it was not said &mdash; and no more. In his <em class="term">minyan</em>, where he was the rabbi and decided everything, all went by the book.</p>
+
+<p>One day a <em class="term">shaliach tzibur</em> (<span class="heb-inline">שליח ציבור</span>) came, perhaps a <em class="term">Chassid</em>, who decided that it was his Rebbe&rsquo;s <em class="term">yahrzeit</em> and that he would not say <em class="term">tachanun</em>. Without asking the <em class="term">Chazon Ish</em>, in his own house, he went straight into <em class="term">Kaddish</em> after the <em class="term">Shemoneh Esrei</em>, giving no one a chance to begin.</p>
+
+<p>One would have expected the <em class="term">Chazon Ish</em> to protest. He said nothing. A student who was present testified that he remained silent. After the prayer, quietly, after <em class="term">Ashrei</em> and <em class="term">U'va LeTzion</em>, the <em class="term">Chazon Ish</em> went to the side, in his own house and in his own <em class="term">minyan</em>, and said <em class="term">tachanun</em> by himself. Then he turned to the <em class="term">baal tefillah</em> and said <span class="heb-inline">יישר כח</span>: not a word of criticism.</p>
+
+<p>The <em class="term">baal tefillah</em> had certainly erred in acting against <em class="term">halachah</em> in the <em class="term">Chazon Ish</em>&rsquo;s own <em class="term">minyan</em>. But the lesson is for all. He did not publicly correct or rebuke. When one is tempted to make a scene over <em class="term">tachanun</em>, whether to say it or not to say it, one should think twice. If one wishes to say <em class="term">tachanun</em> as <em class="term">Moshe Rabbeinu</em> said it, as <em class="term">Rabbi Eliezer</em> said it, as the <em class="term">Chazon Ish</em> said it, one should say it quietly, on his own.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>Editorial Summary</h2>
+
+<p>The discourse closes on the guidance of the last two stories, and does not itself draw a conclusion. In outline, it presents <em class="term">tachanun</em> as a prayer of great power: preceded by a confession that the <em class="term">Arizal</em> introduced to forestall the accusers; resting, in its fall on the face, on the story of <em class="term">Rabbi Eliezer</em> and <em class="term">Imma Shalom</em>; a <em class="term">reshus</em> that is omitted for recognized reasons; and the subject of a Chassidic custom of omission that earlier authorities criticized. Where the custom of one&rsquo;s <em class="term">minyan</em> differs, the course taught is to avoid dispute, and to say it quietly alone.</p>
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer&rsquo;s report, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">לעילוי נשמת</span> Reb David ben Moshe Shalom (Danny Kriegsman).</span>
+  <span class="expanded"> The dedication was made by Reb Meyer and Mrs. Weissman in memory of her father, whose <em class="term">yahrzeit</em> fell on <em class="term">Shemini Atzeres</em>, the day on which their grandson, Yoel Rubin, was circumcised in Baltimore. The account of his life is as relayed to the lecturer in a message from Mrs. Weissman and is not independently verified: that he was employed by a company working for NASA; that, without him, Neil Armstrong would not have survived “the first spacewalk”; that through him a company of over forty thousand employees began to hire Sabbath observers, who were allowed to leave early on Fridays; and that, during a test run in mission control that fell on <em class="term">Purim</em>, he received a special <em class="term">heter</em> (<span class="heb-inline">היתר</span>) to hear the <em class="term">Megillah</em> (<span class="heb-inline">מגילה</span>) by telephone. The mission is not identified, and the year 1969 was supplied by a listener (the lecturer himself was unsure; see Open Question 1). The lecturer stressed that the <em class="term">heter</em> was given in a case of <em class="term">sha'at hadchak</em> (<span class="heb-inline">שעת הדחק</span>) and is not to be relied on otherwise.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">עושה שלום במרומיו</span>.</span>
+  <span class="expanded"> The closing words of the <em class="term">Shemoneh Esrei</em>. The question was put by Reb Zeriel David, and follows a discussion, in the preceding discourse, of the three steps taken at the close of the prayer. That the words are addressed to the <em class="term">malachim</em> is given as the view of “those who say”; no source was named, and none has been located. See Open Question 2.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short">The <em class="term">Zohar</em> and the <em class="term">Arizal</em> on the <em class="term">vidui</em>.</span>
+  <span class="expanded"> The lecturer named no passage. The weekly write-up gave <span class="heb-inline">זוהר ח״ג, פרשת בלק רכ״ב ע״א</span> and <span class="heb-inline">זוהר ח״א נ״ח ע״ב</span>, and the Arizal&rsquo;s <span class="heb-inline">שער הכוונות</span>; none of these could be opened or confirmed, and the first pairing is doubtful as given (222a does not appear to fall within <span class="heb-inline">בלק</span> in the standard pagination). The account of the accusers who seek to block the prayer after it ends, the counsel to anticipate them by confessing, and the statement that one not properly directed in the fall on the face will not merit length of days are all given as the <em class="term">Zohar</em>&rsquo;s, as reported by the lecturer. The siddurim of <em class="term">Nusach Sefarad</em>, he reports, introduce the confession with a reference to the <em class="term">Zohar</em>. Not located; see Open Question 3.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">טור</span> and <span class="heb-inline">שלחן ערוך, אורח חיים סימן קל״א</span>.</span>
+  <span class="expanded"> <em class="term">Shulchan Aruch</em> OC 131 (verified): 131:1, there is to be no speaking between the <em class="term">Shemoneh Esrei</em> and the fall on the face; 131:2, it is said sitting and not standing; 131:4&ndash;7, the days and circumstances on which it is omitted; 131:5, on a public fast day on which a <em class="term">bris</em> takes place, <em class="term">Selichos</em> (<span class="heb-inline">סליחות</span>) and <em class="term">vidui</em> are said but not the fall on the face. The <em class="term">Tur</em>, <span class="heb-inline">סימן קל״א</span>, as consulted, describes the fall on the face (the <em class="term">Rambam</em>, <span class="heb-inline">רב נטרונאי</span>, the text of <span class="heb-inline">רב האי גאון</span>) but does not mention a <em class="term">vidui</em> or <em class="term">Ashamnu</em> before it; the report that the <em class="term">Tur</em> notes some communities with this custom could not be confirmed. The <em class="term">Arizal</em> lived 1534&ndash;1572; the lecturer&rsquo;s “three or four hundred years” is a round figure. The weekly write-up&rsquo;s references to a <span class="heb-inline">למנצח</span> and <span class="heb-inline">ארץ ישראל</span> distinction and to simanim 131&ndash;134 as a whole were not supported and are not repeated.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">חיד״א</span> (Rabbi Chaim Yosef David Azulai, 1724&ndash;1806).</span>
+  <span class="expanded"> The account is given as the <em class="term">Chida</em>&rsquo;s, received <span class="heb-inline">איש מפי איש</span> from the <em class="term">Rambam</em>; the work in which he tells it was not located (the weekly write-up suggested <span class="heb-inline">דבש לפי</span>, <span class="heb-inline">פתח עינים</span> or <span class="heb-inline">לב דוד</span>, without confirmation), and the sage is not named (the lecturer remarks: “I don&rsquo;t know who he is. It sounds like the <em class="term">Chida</em> knew, but he doesn&rsquo;t want to say”). The words attributed to the sage and to the <em class="term">Rambam</em> are the lecturer&rsquo;s paraphrase, not a located quotation. Not located; see Open Question 4.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">רמב״ם, הלכות דעות ב:ג</span>; <span class="heb-inline">שבת ק״ה ע״ב</span>.</span>
+  <span class="expanded"> The saying <span class="heb-inline">כל הכועס כאילו עובד עבודה זרה</span> is cited by the <em class="term">Rambam</em>, <span class="heb-inline">הלכות דעות</span> 2:3, as the saying of “the early Sages” (verified). <span class="heb-inline">שבת</span> 105b (verified) has a related <span class="heb-inline">ברייתא</span>, that whoever rends his garments, breaks vessels or scatters money in anger should be like an idolater in your eyes, and R. Avin&rsquo;s reading of <span class="heb-inline">תהלים פ״א:י׳</span>, <span class="heb-inline">לא יהיה בך אל זר</span>, that the strange god within a person is the evil inclination. The lecturer ascribed the saying to “the <em class="term">Gemara</em>”; the wording is not found in <span class="heb-inline">שבת</span> 105b or <span class="heb-inline">נדרים</span> 22b. The weekly write-up&rsquo;s <span class="heb-inline">זוהר</span> reference was unsupported.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">יסוד ושורש העבודה</span>, <span class="heb-inline">ר׳ אלכסנדר זיסקין מהורודנא</span>.</span>
+  <span class="expanded"> The author, Rabbi Alexander Ziskind of Horodna (Grodno), is described by the lecturer as living in the generation immediately after the <em class="term">Baal Shem Tov</em>. The weekly write-up gave dates of 1730&ndash;1794; they could not be verified and are omitted. The account of his going to the <em class="term">Maggid</em> and of the <em class="term">Maggid</em>&rsquo;s reply is the lecturer&rsquo;s report, and no source was given. The lecturer recalls (“I think”) that an English translation was recently published by ArtScroll. The work was consulted, but the passage below could not be searched.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">ואתה צדיק על כל הבא עלינו</span> &mdash; <span class="heb-inline">נחמיה ט:לג</span>.</span>
+  <span class="expanded"> The verse (verified): “Surely You are in the right with respect to all that has come upon us.” The <em class="term">midrash</em> is given as brought in the <em class="term">Yesod VeShoresh HaAvodah</em>; it was not located, and it is not known whether it appears in the author&rsquo;s treatment of <em class="term">nefilas apayim</em> or of the confession (the weekly write-up&rsquo;s “in his treatment of <em class="term">nefilas apayim</em>” was its own addition). Not located; see Open Question 5.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">דברים ט:יח</span>; <span class="heb-inline">ט:כה</span>.</span>
+  <span class="expanded"> <span class="heb-inline">ואתנפל לפני ה׳</span>, verified at 9:18 (“as before,” <span class="heb-inline">כראשונה</span>, the first forty days) and again at 9:25: both verses speak of the same forty days after the calf, recounted twice. The weekly write-up&rsquo;s “other crisis moments” has no basis in either verse.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">במדבר טז:כב</span>; <span class="heb-inline">טז:מה</span>.</span>
+  <span class="expanded"> Verified at 16:22, “they fell on their faces and said, O God, Source of the breath of all flesh,” where the subject is <em class="term">Moshe Rabbeinu</em> and <em class="term">Aharon</em>; and at 16:45. The lecturer spoke of <em class="term">Klal Yisrael</em> as falling; the verse names Moses and Aaron. That the people were forgiven through the falling is the lecturer&rsquo;s inference.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">שלחן ערוך אורח חיים קל״א:ב</span>.</span>
+  <span class="expanded"> Verified: it is said sitting and not standing; the <em class="term">Rema</em> (<span class="heb-inline">רמ״א</span>) adds that it is done only where there is an ark with a Torah. The lecturer&rsquo;s account that in earlier times they literally fell on the floor in every synagogue, that many today do not, and that sitting is the practice according to <em class="term">Kabbalah</em>, is his report and was not located elsewhere.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">גיטין נו ע״ב</span>.</span>
+  <span class="expanded"> Verified: during the siege of Jerusalem <em class="term">Rabbi Yochanan ben Zakkai</em> asked Vespasian for Yavneh and its Sages. The framing of the oven episode as the occasion on which <em class="term">Rabbi Yochanan ben Zakkai</em> needed to show the authority of <em class="term">Chazal</em> is the lecturer&rsquo;s; the <em class="term">Gemara</em> (<span class="heb-inline">בבא מציעא נט ע״ב</span>) does not mention <em class="term">Rabbi Yochanan ben Zakkai</em> in that episode, and the ban is led by <em class="term">Rabban Gamliel</em> (see Open Question 6).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">בבא מציעא נט ע״ב</span>; <span class="heb-inline">משנה כלים ה:י</span>.</span>
+  <span class="expanded"> Verified. The <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) has the oven cut into rings with sand between them; <em class="term">Rabbi Eliezer</em> declares it clean and the Sages unclean, and the <em class="term">Gemara</em> explains the name Achnai from <span class="heb-inline">עכנא</span>, a snake, because the Sages surrounded it with arguments. The lecturer described the oven as “broken down and reconnected with cement” and gave R. Eliezer&rsquo;s reasoning (that reconnecting does not make it a <span class="heb-inline">כלי</span>) in his own words; both are marked here as his. The <em class="term">Gemara</em> has the carob tree uprooted a hundred cubits (some say four hundred) and the walls leaning but, out of respect for both sages, neither falling nor straightening.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short"><span class="heb-inline">דברים ל:יב</span>; <span class="heb-inline">שמות כג:ב</span>.</span>
+  <span class="expanded"> <span class="heb-inline">לא בשמים היא</span>, verified. In the <em class="term">Gemara</em> it is <em class="term">Rabbi Yehoshua</em> who cites it; the explanation that, since the Torah was given at Sinai, a <span class="heb-inline">בת קול</span> is not heeded, for it is written <span class="heb-inline">אחרי רבים להטות</span>, is given by R. Yirmeya; and the Holy One&rsquo;s smile is reported through Elijah (all verified).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">בבא מציעא נט ע״ב</span>; <span class="heb-inline">סנהדרין סח ע״א</span>.</span>
+  <span class="expanded"> In the <em class="term">Gemara</em> (verified), the Sages burned everything <em class="term">Rabbi Eliezer</em> had declared pure and placed him under the ban; <em class="term">Rabbi Akiva</em> volunteered to bring him the news, in black, sitting four cubits from him. In <span class="heb-inline">סנהדרין</span> 68a the Sages visit him in his final illness, sitting four cubits away because he was in <span class="heb-inline">נידוי</span>, and at his death <em class="term">Rabbi Yehoshua</em> declares the ban lifted. The words of apology (“we are sorry, but we had to do it”) are the lecturer&rsquo;s paraphrase and are not in either text.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">בבא מציעא נט ע״ב</span> &mdash; <em class="term">Imma Shalom</em>.</span>
+  <span class="expanded"> Verified: <em class="term">Imma Shalom</em> is <em class="term">Rabbi Eliezer</em>&rsquo;s wife and <em class="term">Rabban Gamliel</em>&rsquo;s sister; from the time of the ban she did not let him fall on his face; on the day in question she mistook a full month for a deficient one, according to one account, or, according to another, a poor man came and she brought him bread; she found him fallen on his face and said that he had killed her brother, and a <span class="heb-inline">שופר</span> sounded from the house of <em class="term">Rabban Gamliel</em>. The lecturer&rsquo;s version, that she was off “by one day,” the thirtieth and not the thirty-first (there is no thirty-first day), is not repeated. Not in the lecturer&rsquo;s account: in the <em class="term">Gemara</em> she explains that she had a tradition from her father&rsquo;s house that all the gates are locked except the gates of those wronged (<span class="heb-inline">אונאה</span>). That <em class="term">Rabbi Eliezer</em> &ldquo;accomplished it&rdquo; is the lecturer&rsquo;s reading.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">ריטב״א</span>; <span class="heb-inline">בית יוסף, אורח חיים סימן קל״א</span>.</span>
+  <span class="expanded"> The question and answer given in the text are the lecturer&rsquo;s report of the <em class="term">Ritva</em>. A <em class="term">Ritva</em> on <span class="heb-inline">בבא מציעא</span> could not be located among the texts consulted. The <em class="term">Beis Yosef</em> (verified) cites not the <em class="term">Ritva</em> but the <span class="heb-inline">תלמידי הרשב״א</span> on <span class="heb-inline">בבא מציעא נט ע״ב</span> (<span class="heb-inline">כל יומא לא הוה שבקה ליה למיפל על אפיה</span>) and concludes that one is not to speak between prayer and <em class="term">tachanun</em>. The statement that the fall on the face is a <em class="term">reshus</em> the lecturer attributes to “the <em class="term">Rishonim</em>,” with no name. What proof the <em class="term">Acharonim</em> question, and the way the <em class="term">Ritva</em> answers it, are as reported; see Open Question 7.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><span class="heb-inline">חפץ חיים</span> on the wife.</span>
+  <span class="expanded"> The lecturer says only that the <em class="term">Chofetz Chaim</em> writes in his books, and “we learned this from other <em class="term">Rishonim</em>,” that there are times one does not listen to one&rsquo;s wife. No source was located. The weekly write-up&rsquo;s supports were removed: Rashi on <span class="heb-inline">בראשית כא:יב</span> (verified) says only that Abraham was inferior to Sarah in prophecy, and <span class="heb-inline">בבא מציעא נט ע״א</span> (verified: R. Chelbo on the honor due a wife, Rava, and the saying “if your wife is short, bend down and whisper to her”) does not state the principle. In a lighter vein the lecturer also mentioned a comment attributed to the <span class="heb-inline">בעל הטורים</span> that Eve struck Adam with a branch to compel him to eat; he noted that it is regarded by some as a later insertion. It was not located and is not relied on.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">The Chassidic custom: its origin.</span>
+  <span class="expanded"> The account of the disciples of the <em class="term">Baal Shem Tov</em>, of the danger of <em class="term">tachanun</em> without <em class="term">kavanah</em>, of the <em class="term">hilula</em>, and of the earlier practice in the academies of <em class="term">Bavel</em> is as reported by the lecturer; no source was named for any of it. The <em class="term">Zohar</em> on the length of days: see the note at <span class="heb-inline">זוהר</span>. That the <em class="term">Zohar</em> calls the day of <em class="term">Rabbi Shimon bar Yochai</em>&rsquo;s death a <em class="term">hilula</em> is the lecturer&rsquo;s statement. The claim that <em class="term">tachanun</em> was said on <em class="term">Chanukah</em> and <em class="term">Purim</em> in <em class="term">Pumbedisa</em> was not located.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">שו״ת מנחת אלעזר</span>, <span class="heb-inline">ר׳ חיים אלעזר שפירא ממונקאטש</span>.</span>
+  <span class="expanded"> Rabbi Chaim Elazar Spira of Munkatch (1868&ndash;1937; not among the texts consulted, dates as given by the weekly write-up and not verified). The critique is as reported by the lecturer, who did not give the place. The lecturer&rsquo;s example from Kerestir is his own recollection; the example of a date given in the weekly write-up (the tenth of Nisan) is not found in the discourse and is omitted.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">דברי חיים</span>, <span class="heb-inline">ר׳ חיים האלברשטאם מצאנז</span> (1797&ndash;1876).</span>
+  <span class="expanded"> Dates as given by the weekly write-up; not verified. As delivered, the account gives the one exceptional <em class="term">yahrzeit</em> as “Kuf-Aleph Adar,” of the “Nurey Ameli Melech,” which is garbled; it is read here as the <em class="term">Noam Elimelech</em>, Rabbi Elimelech of Lizhensk, on the strength of the date (21 Adar). The identification is an inference. A phrase preceding it (“besides for like Boimer”) is unrecoverable. That the Satmar Rebbe followed <em class="term">Sanz</em> in all things, and the stick, are the lecturer&rsquo;s report. See Open Question 8.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">The story of the <span class="heb-inline">ראדושיצער</span>.</span>
+  <span class="expanded"> The lecturer called him “one of the big Chassidic Rebbes, the Radashitzah,” without further identification; the weekly write-up&rsquo;s identification with Rabbi Yissachar Ber of Radoshitz (1765&ndash;1843), and its suggested printed source, were not verified. In the discourse as delivered the man is called a <span class="heb-inline">יורד בן חשוב</span>, one who has come down in the world. The figures are the lecturer&rsquo;s; seventy or eighty <em class="term">tachanunim</em> a day for five weeks (thirty-five days) comes to some 2,450&ndash;2,800, not five thousand (Open Question 9).</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short"><span class="heb-inline">שלחן ערוך, אורח חיים קל״א:ד&ndash;ז</span>.</span>
+  <span class="expanded"> The list is as the lecturer gave it. <em class="term">Shulchan Aruch</em> OC 131 (verified) records further days: <em class="term">Tu B'Av</em> (<span class="heb-inline">ט״ו באב</span>), <em class="term">Tu BiShvat</em> (<span class="heb-inline">ט״ו בשבט</span>), <em class="term">Rosh Chodesh</em> (and the <em class="term">Mincha</em> before it), <em class="term">Chanukah</em>, <em class="term">Purim</em>, <em class="term">Lag BaOmer</em>, the eves of <em class="term">Yom Kippur</em> and <em class="term">Rosh Hashanah</em> (131:6); all of <em class="term">Nisan</em> (<span class="heb-inline">ניסן</span>), <em class="term">Tisha B'Av</em> (<span class="heb-inline">תשעה באב</span>), the period between <em class="term">Yom Kippur</em> and <em class="term">Sukkos</em>, and, according to a gloss, from <em class="term">Rosh Chodesh</em> of Sivan until after <em class="term">Shavuos</em> (<span class="heb-inline">שבועות</span>; 131:7); a house of mourning or of a groom, and the synagogue of a <em class="term">bris</em> or a groom (131:4). Purim Katan: <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) 131:33. The lecturer&rsquo;s “through <em class="term">Tishrei</em> after <em class="term">Sukkos</em>” (repeated of the <em class="term">Shulchan Aruch</em> in Section XII) was not found in the <em class="term">Shulchan Aruch</em>, which has the period between <em class="term">Yom Kippur</em> and <em class="term">Sukkos</em>; it is given here as he gave it. That a <em class="term">chasan</em> at <em class="term">Shalosh Seudos</em> and a <em class="term">bar mitzvah</em> or <em class="term">siyum</em> exempt is his report. See Open Question 10.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><span class="heb-inline">רמ״א, אורח חיים קל״א:ד</span>.</span>
+  <span class="expanded"> The <em class="term">Rema</em> (verified) rules that on the day of a <em class="term">bris</em> <em class="term">tachanun</em> is omitted in the synagogue where the <em class="term">bris</em> takes place at <em class="term">Shacharis</em>, but that at <em class="term">Mincha</em> it is said even in the presence of the child. The lecturer&rsquo;s “<em class="term">Bar Heitam</em>” (possibly the <span class="heb-inline">באר היטב</span>, which could not be retrieved) and his report of the dispute between <em class="term">Brisk</em> and <em class="term">Vilna</em> were not located; the <em class="term">Beis Yosef</em> on <span class="heb-inline">סימן קל״א</span>, as consulted, does not mention them. The account at this point is self-contradictory (“even if the <em class="term">bris</em> was before <em class="term">Mincha</em>&hellip; you don&rsquo;t say”), and the text follows the weekly write-up&rsquo;s reading.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><span class="heb-inline">שלחן ערוך, יורה דעה סימן ת״ב סעיף יב</span>.</span>
+  <span class="expanded"> Verified (main text): “It is a religious duty to fast on the day that one&rsquo;s father or mother died.” The lecturer&rsquo;s account of Rav Zalman Meltzer is unclear as delivered (“Rabbi Zalman brought a [seudah?], and he fasted; that&rsquo;s his grandfather, the holy Zalman Meltzer,” apparently said of someone in the room); the weekly write-up&rsquo;s <span class="heb-inline">מלמדי זלמן</span> and “grandson” are not supported. See Open Question 11.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><span class="heb-inline">שו״ת אגרות משה</span>, <span class="heb-inline">ר׳ משה פיינשטיין</span> (1895&ndash;1986).</span>
+  <span class="expanded"> The lecturer says only that Rav Moshe writes; no volume or responsum was given (the weekly write-up&rsquo;s <span class="heb-inline">אורח חיים</span> is its own addition). The words “Don&rsquo;t make a fight; don&rsquo;t start screaming” are the lecturer&rsquo;s paraphrase and are reported as such. Not located; see Open Question 12.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">חזון איש</span> (Rabbi Avraham Yeshaya Karelitz, 1878&ndash;1953).</span>
+  <span class="expanded"> The account is from the oral tradition of Bnei Brak, as told by the lecturer, who grew up there; no printed source was given. The weekly write-up&rsquo;s suggestions (<span class="heb-inline">פאר הדור</span>, <span class="heb-inline">מעשה איש</span>) were not checked. The statement that the <em class="term">Shulchan Aruch</em> omits <em class="term">tachanun</em> on those days is the lecturer&rsquo;s; see the note at <span class="heb-inline">שלחן ערוך</span> 131:4&ndash;7 above. See Open Question 13.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing.</p>
+<ol>
+<li><strong>The dedication and the account of Danny Kriegsman.</strong> Whether the mission referred to was “the first spacewalk” or another; the year (“1969” was supplied by a listener; the lecturer said “I think nineteen seventy”); the particulars of the <em class="term">heter</em>; all as relayed in a message and unverified.</li>
+<li><strong>The opening question.</strong> The “three steps” discussed in the preceding discourse, and the source of the view that <em class="term">ve'imru amen</em> is addressed to the <em class="term">malachim</em>.</li>
+<li><strong>The <em class="term">Zohar</em>, the <em class="term">Arizal</em>, the <em class="term">Tur</em>.</strong> The passages of the <em class="term">Zohar</em> on the accusers and on the shortening of days; the Arizal&rsquo;s own source for placing the confession before the fall; whether the <em class="term">Tur</em> mentions it; and why it is said only after <em class="term">Shacharis</em> (deferred in the discourse).</li>
+<li><strong>The <em class="term">Chida</em>.</strong> The work in which the account of the sage and the <em class="term">Rambam</em> appears; the name of the sage.</li>
+<li><strong>The <em class="term">Yesod VeShoresh HaAvodah</em>.</strong> The place of the <em class="term">midrash</em> on <span class="heb-inline">ואתה צדיק</span>; the author&rsquo;s dates (omitted); the English translation mentioned by the lecturer (“I think” ArtScroll).</li>
+<li><strong>The setting of the oven of Achnai.</strong> Whether the account is to be set in the time of <em class="term">Rabbi Yochanan ben Zakkai</em>, as the lecturer framed it, or in that of <em class="term">Rabban Gamliel</em>, as the <em class="term">Gemara</em> has it; and the sources for <em class="term">Rabban Gamliel</em>&rsquo;s having succeeded <em class="term">Rabbi Yochanan ben Zakkai</em> and being of royal lineage (the lecturer&rsquo;s statements).</li>
+<li><strong>The <em class="term">Ritva</em> and the <em class="term">Beis Yosef</em>.</strong> Where the <em class="term">Ritva</em> says what the lecturer reports; which <em class="term">Rishonim</em> derive that the fall on the face is a <em class="term">reshus</em>; the proof of the <em class="term">Beis Yosef</em> that the <em class="term">Acharonim</em> question.</li>
+<li><strong>The Sanzer&rsquo;s exceptional <em class="term">yahrzeit</em>.</strong> Whether “Kuf-Aleph Adar” is that of the <em class="term">Noam Elimelech</em>; the lecturer&rsquo;s phrase “besides for like Boimer”; the place of the critique of the <em class="term">Minchas Elazar</em>; the date of the example from Kerestir (omitted).</li>
+<li><strong>The <em class="term">Radoshitzer Rebbe</em>.</strong> Which Rebbe is meant; the source of the story; the arithmetic of five weeks and five thousand.</li>
+<li><strong>The days of omission.</strong> The source of “through <em class="term">Tishrei</em> after <em class="term">Sukkos</em>” (the <em class="term">Shulchan Aruch</em> has the period between <em class="term">Yom Kippur</em> and <em class="term">Sukkos</em>); the Babylonian practice on <em class="term">Chanukah</em> and <em class="term">Purim</em>; the <em class="term">Bar Heitam</em> and the dispute of <em class="term">Brisk</em> and <em class="term">Vilna</em>.</li>
+<li><strong>Rav Zalman Meltzer.</strong> The lecturer&rsquo;s remark is unclear as delivered and is given in the narrowest terms; the names of the guest introduced at the start (“Rabbi Melzer… a grandson of the Rosh Yeshiva in Eretz Yisrael”) are garbled.</li>
+<li><strong>Rav Moshe Feinstein.</strong> The volume and responsum; the reason, promised for later, for the placement of <em class="term">tachanun</em> before <em class="term">Ashrei</em> and <em class="term">U'va LeTzion</em> (the weekly write-up&rsquo;s <span class="heb-inline">קבלת עולים</span> is unintelligible and is omitted).</li>
+<li><strong>The <em class="term">Chazon Ish</em>.</strong> The printed source, if any, of the account.</li>
+<li><strong>The <em class="term">Chofetz Chaim</em>.</strong> The source of his teaching on a wife&rsquo;s request, and the Rishonim the lecturer had in mind; the aside on the <span class="heb-inline">בעל הטורים</span> (not located).</li>
+<li><strong>Omitted asides.</strong> A joke on the shtreimel of Yaakov Avinu; a remark on rabbis&rsquo; wives; the lecturer&rsquo;s own recollection of not saying <em class="term">tachanun</em> often at Kerestir (garbled); a closing remark on a Friday and on Europe (garbled); the statement that the laws of the fall on the face would be taken up the following Sunday; and announcements.</li>
+<li><strong>Dating.</strong> The date 11 Cheshvan 5786 is calculated from 2 November 2025 (Rosh Hashanah 5786 fell on 23 September 2025); no Hebrew date was stated in the discourse.</li>
+<li><strong>House style.</strong> The spelling of the lecturer&rsquo;s name (“Ephrati” in this series; “Efratti” in the project&rsquo;s file names).</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s Sunday-morning discourse on <em>Tefillah</em>, 11 Cheshvan 5786 (2 November 2025). The edition follows the order of the discourse: the closing question of the <em>Shemoneh Esrei</em>, the confession and its origin, the fall on the face and the story of the oven of Achnai, the laws, and the Chassidic custom with the guidance of Rav Moshe Feinstein and the Chazon Ish; reads Moshe and Aharon, not all Israel, as those who fell in the matter of Korach; sets the saying on anger with the Rambam and <em>Shabbos</em> 105b; corrects the oven to sand, the calendar error, the role of Rabbi Akiva and the Sages&rsquo; visit to Rabbi Eliezer; recasts oral paraphrase as reported speech; restores the posture of the fall on the face and the second ground of the Chassidic custom; and omits live-shiur cues, asides and the composed summary of the weekly write-up.
+</footer>
+
+</body>
+</html>

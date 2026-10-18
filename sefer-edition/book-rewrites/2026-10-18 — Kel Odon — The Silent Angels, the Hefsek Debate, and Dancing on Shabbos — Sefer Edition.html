@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kel Odon — The Silent Angels, the Hefsek Debate, and Dancing on Shabbos — Sefer Edition</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">אֵל אָדוֹן — הַמַּלְאָכִים הַשּׁוֹתְקִים, מַחֲלֹקֶת הַהֶפְסֵק וְהָרִקּוּד בְּשַׁבָּת</h1>
+  <div class="english-title"><em>Kel Odon</em>: The Silent Angels, the <em>Hefsek</em> Debate, and Dancing on Shabbos</div>
+  <div class="sub">Studies in the Shabbos <em>Tefillos</em> (<span class="heb-inline">תפילות</span>) &mdash; The Piyutim of <em>Yotzer Or</em></div>
+  <div class="date">7 Cheshvan 5787 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse was delivered <span class="heb-inline">לעילוי נשמת</span> the mother of one member of the congregation and the father of another, each of whom sponsored the morning. <span class="confirm">[Dedication wording and names to be confirmed with the Rav before printing; they are held with the source material and are not reproduced here.]</span></p>
+
+<p class="lead">On Shabbos morning the first blessing before <em class="term">Keriyas Shema</em> (<span class="heb-inline">קריאת שמע</span>) grows from a few lines to a long poem. This discourse asks why, and answers in three stages. First, a tradition in the <em class="term">Tosafos</em> (<span class="heb-inline">תוספות</span>) gives the angels six wings, one song for each weekday, and none for Shabbos, so that the song of the day falls to <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>); on that reading <span class="heb-inline">הכל יודוך</span> recalls the first Shabbos of Creation, when the angels, created on Monday, still had a wing to spare. Second, it sets out the sharp dispute among the Geonim and Rishonim over whether these additions may be said at all: <em class="term">Rav Saadia Gaon</em> (<span class="heb-inline">רב סעדיה גאון</span>) and the <em class="term">Rambam</em> (<span class="heb-inline">הרמב״ם</span>) do not include them, the Tur reports that Toledo did not say <span class="heb-inline">לאל אשר שבת</span>, and Rabbeinu Yehuda ben Barzilai calls them an interruption, while <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) holds that the Anshei Knesses HaGedolah themselves enacted them; and it follows the Or Zarua and the Magen Avraham to the practical question of one who missed them. Third, it turns from the legitimacy of the piyutim to their joy: the closing words of <span class="heb-inline">לאל אשר שבת</span> as a cure for a verse that ends badly, the <em class="term">Zohar</em> (<span class="heb-inline">זוהר</span>)&rsquo;s picture of the angels, Shabbos itself and Adam HaRishon singing and dancing together, the old quarrel between Chassidim and Misnagdim over dancing on Shabbos, and the niggun that Reb Moshe Wolfson introduced for <span class="heb-inline">הכל יודוך</span>.</p>
+
+<h2>I. The Question: Why Is the Shabbos <em class="term">Yotzer</em> Longer?</h2>
+
+<p>The discourse follows directly on the previous week&rsquo;s inquiry into <em class="term">Nishmas</em> (<span class="heb-inline">נשמת כל חי</span>), which had ranged from the Anshei Knesses HaGedolah to Shimon ben Shetach, from the Rokeach&rsquo;s claim that it was composed before Rabbeinu HaKadosh redacted the Mishnah, to the legend that it was written by Shimon Kefa, Peter.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The lecturer adds one point before moving on. On Shabbos tefillin are not worn, and Rav Chaim Vital is reported to say that reciting Nishmas is, as it were, putting on tefillin; the lecturer says he does not know where this is stated, and remarks that there are great secrets (<span class="heb-inline">סודות</span>) in Nishmas.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> As was said the week before, the practical rule is that Nishmas must be said, and one who missed it must say it.</p>
+
+<p>After Nishmas and <em class="term">Yishtabach</em> (<span class="heb-inline">ישתבח</span>) come <em class="term">Barechu</em> (<span class="heb-inline">ברכו</span>) and the first blessing of Shema, <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור ובורא חושך</span>). On a weekday the blessing continues <span class="heb-inline">המאיר לארץ ולדרים עליה</span> and then adds a short alphabetical poem in which each letter receives a single word. This is the poem by which the alphabet is learned:</p>
+
+<blockquote><div class="heb">אֵל בָּרוּךְ גְּדוֹל דֵּעָה, הֵכִין וּפָעַל …</div>
+<div class="trans">The blessed God, great in knowledge, prepared and made …</div></blockquote>
+
+<p>On Shabbos the poem is far longer and describes the greatness of Hashem at length. Each letter of the alphabet receives a whole sentence, twenty-two lines in all:</p>
+
+<blockquote><div class="heb">אֵל אָדוֹן עַל כָּל הַמַּעֲשִׂים, בָּרוּךְ וּמְבֹרָךְ בְּפִי כָּל נְשָׁמָה …</div>
+<div class="trans">God, Master of all works, blessed and blessed again by the mouth of every soul &hellip;</div></blockquote>
+
+<h3>A Note on the Singing</h3>
+
+<p>The lecturer reports a recent complaint about the way the poem is sung in his congregation. In every synagogue in which he had prayed since childhood, the chazzan sang a line, the congregation repeated it, and so on, line by line. In this congregation, the chazzan and the congregation sing it together, without pausing. The saving of time was named as the reason, perhaps thirteen or fifteen seconds. Members of the congregation observed that the practice is common, including in many synagogues, and that it is the Sefardi custom. The lecturer&rsquo;s own view is that there is no halachic issue and that either practice is acceptable. A member of the congregation proposed that the real reason is the women, who prefer the poem sung straight through; the lecturer took up the suggestion with evident pleasure, adding a joke about the number of women who are in the women&rsquo;s section at that hour.</p>
+
+<h2>II. The Six Wings and the Silent Angels</h2>
+
+<p>The discourse now puts the larger question. The Shabbos Pesukei DeZimra is longer than the weekday one, and the Shabbos blessings of Shema are expanded; why? The lecturer says that he had raised this when the series studied Pesukei DeZimra some months earlier, and that the answer is one that every Jew should know.</p>
+
+<p>The answer is given in the <em class="term">Tosafos</em> on <em class="term">Sanhedrin</em> (<span class="heb-inline">סנהדרין</span>) 37b.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> On each day of the week the angels sing <em class="term">shirah</em> (<span class="heb-inline">שירה</span>). The lecturer, saying that he does not know what this means, connects it with the verse that gives the angels six wings, <span class="heb-inline">שש כנפים לאחד</span>: each wing sings on one day of the week, the first on Sunday, the second on Monday, and so on to Friday. On Shabbos no wing is left. At that point, as the lecturer reports the Tosafos, Hakadosh Baruch Hu tells the angels that they have sung throughout the six days of the week, silences them, and says that He wishes to hear the song of His children. The printed Tosafos, as far as it could be checked, says only that each wing sings one song a day on the six weekdays and that when Shabbos arrives the creatures (<span class="heb-inline">חיות</span>) speak before Hamakom; the silencing of the angels is the lecturer&rsquo;s report. On Shabbos, therefore, Klal Yisrael sings. This is why Pesukei DeZimra are lengthened, why the blessings of Shema are expanded, and why on Shabbos the congregation praises Hakadosh Baruch Hu at length: the angels are silent that day, and the song is ours.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<h2>III. <span class="heb-inline">הכל יודוך</span> and the First Shabbos</h2>
+
+<p>The Shabbos blessing of Yotzer Or opens with a verse of universal praise:</p>
+
+<blockquote><div class="heb">הַכֹּל יוֹדוּךָ, וְהַכֹּל יְשַׁבְּחוּךָ, וְהַכֹּל יֹאמְרוּ אֵין קָדוֹשׁ כַּה׳.</div>
+<div class="trans">All shall thank You, and all shall praise You, and all shall say: there is none holy like Hashem.</div></blockquote>
+
+<p>The word <span class="heb-inline">הכל</span>, &ldquo;all,&rdquo; is repeated several times in this section, by the lecturer&rsquo;s count six, from <span class="heb-inline">ברוך אתה ה׳ יוצר</span> to <span class="heb-inline">בורא את הכל</span>. He says that he does not know the source of the explanation that follows, which &ldquo;the world&rdquo; gives, and that it depends on the answer to a question: when were the angels created?</p>
+
+<p>A member of the congregation answers that it was on the second day, Monday. The lecturer confirms that he has said so before, in the study of the angels, and that Rashi implies it in Bereishis. The matter, however, is the subject of a major dispute in the Midrash, between <em>Rabbi Chanina</em> (<span class="heb-inline">רבי חנינא</span>) and <em>Rabbi Yochanan</em> (<span class="heb-inline">רבי יוחנן</span>): some say the second day of Creation, some say a later day (the Midrash as retrieved has the fifth), and some say that the angels were created before the world, being spiritual beings who precede the physical world.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> Most follow the opinion that they were created on Monday. A proof is brought from <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>) 104, <span class="heb-inline">ברכי נפשי</span>: the verse <span class="heb-inline">המקרה במים עליותיו</span> is followed at once by <span class="heb-inline">עושה מלאכיו רוחות משרתיו אש לוהט</span>, which suggests that the angels were made on the day that follows.</p>
+
+<p>From this the lecturer draws a calculation. In the first week of the world the angels, created on Monday, sang on Monday with the first wing, and so on through Friday, five wings in all. On the first Shabbos they had a wing left over. On that first Shabbos, he says, Klal Yisrael sang together with them, <span class="heb-inline">והכל ישבחוך</span>.<span class="confirm"> [&ldquo;Klal Yisrael&rdquo; is the lecturer&rsquo;s phrase; in the account of the Zohar below it is Adam HaRishon who joins the angels and Shabbos. See Open Question 4.]</span> The opening of the blessing, <span class="heb-inline">הכל יודוך</span>, is therefore said in commemoration of that extra unison, the singing and praising of Hakadosh Baruch Hu together on the first Shabbos. From the second week onward the angels use all their wings between Sunday and Friday, and on every Shabbos the song belongs to Klal Yisrael alone; hence the length of the praises of Shabbos Kodesh.</p>
+
+<p>A member of the congregation asked about Michael and Gavriel, with a reference to the Gemara in Berachos. The lecturer answered that the verse of the six wings is the general principle, and called the question a good one.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+
+<h2>IV. May These Piyutim Be Said? The Dispute of the Geonim and Rishonim</h2>
+
+<p>The lecturer now turns to a fact that the tradition of the long Shabbos <em>Yotzer</em> tends to hide. The additions to Yotzer Or, <span class="heb-inline">הכל יודוך</span>, <span class="heb-inline">אל אדון על כל המעשים</span> and <span class="heb-inline">לאל אשר שבת מכל המעשים</span>, were not said by all.</p>
+
+<h3>Rav Saadia Gaon and the Rambam</h3>
+
+<p>Rav Saadia Gaon, in his <em class="term">siddur</em> (<span class="heb-inline">סידור</span>), a very ancient one, says that no addition is made on Shabbos morning: not <span class="heb-inline">הכל יודוך</span>, not <span class="heb-inline">אל אדון</span>, not <span class="heb-inline">לאל אשר שבת</span>. In the lecturer&rsquo;s words there is no source for them in Chazal, in either Talmud.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> The Rambam, at the end of the Laws of Prayer in the Book of Ahavah of his <em class="term">Yad HaChazakah</em> (<span class="heb-inline">יד החזקה</span>), sets out the order of the prayers, and for Shabbos morning he gives Nishmas, then Yishtabach, then the ordinary blessing <span class="heb-inline">יוצר אור ובורא חושך</span>, without any of the additions.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> In their world, the lecturer observes, the weekday text was said, and the congregation saved several minutes every Shabbos morning. He asks what happened to the Ashkenazic communities, and asks the Sefardim in the room what they say; a member of the congregation answered that all the Sefardim say the additions, the Syrians among them. A short exchange about <span class="heb-inline">אל אדון</span> on Yom Tov was not clear enough on the recording to be reported.</p>
+
+<h3>Toledo and the Tur</h3>
+
+<p>The Tur, Rabbeinu Yaakov ben Asher, was the son of the Rosh. The Rosh had been in Ashkenaz and, in unusual circumstances which the lecturer says he has described on another occasion, moved to Spain, and his son moved with him, so that the Tur knew both traditions. In the Laws of Shabbos, Orach Chaim 281, where he treats the text of Shabbos morning, the Tur states that in Toledo they did not say the addition. The lecturer reports it as covering both <span class="heb-inline">אל אדון</span> and <span class="heb-inline">לאל אשר שבת</span> and wonders about Morocco.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a></p>
+
+<h3>Rabbeinu Yehuda ben Barzilai</h3>
+
+<p>One of the Rishonim goes further than omitting them. Rabbeinu Yehuda ben Barzilai of Barcelona, whom the lecturer places in the late eleventh century as a contemporary of the Rif, writes in his <em class="term">Sefer HaIttim</em> (<span class="heb-inline">ספר העתים</span>) that saying them is a mistake. The blessings of Keriyas Shema are a <em class="term">matbea shetavu chachamim</em> (<span class="heb-inline">מטבע שטבעו חכמים</span>), a fixed formula, written by the Anshei Knesses HaGedolah, and one may not interrupt it. These additions were added later; those who say them make an <em class="term">hefsek</em> (<span class="heb-inline">הפסק</span>), and the lecturer says the Rishon calls it an act of audacity. He writes in very sharp language of those places that were accustomed to add piyutim to Yotzer Or.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> A member of the congregation observed that the Ashkenazim say many piyutim throughout the prayers; the lecturer agreed, and added that they are glad not to say them all, because the prayers would be much longer. He agreed that the Poskim discuss how it is permitted at all: the Beis Yosef brings views, and the question is how to add something that is not in the Talmud Bavli and was not instituted by the Anshei Knesses HaGedolah.</p>
+
+<h3>Rashi in the <em>Sefer HaPardes</em></h3>
+
+<p>On the other side stands <em>Rashi</em>. In his <em class="term">Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>), the lecturer reports, a collection of many laws and customs, Rashi writes that the Anshei Knesses HaGedolah <em>did</em> enact these additions. Ashkenaz, in other words, had a tradition that differed from that of Sefard, according to which they belong here, and for that reason they are no interruption and ought to be said.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a></p>
+
+<h3>Who May Insert?</h3>
+
+<p>The lecturer asks the congregation whether they understand that things like <span class="heb-inline">ה׳ שפתי תפתח</span>, placed before the Shemoneh Esrei, do not make an interruption, because they belong to the same subject. Only the Gemara, he says, has the right to say so; <span class="heb-inline">ה׳ שפתי תפתח</span> is part of the Shemoneh Esrei and Hashkiveinu is part of the blessing of redemption.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> It does not follow that any person may write a poem in praise of Hakadosh Baruch Hu and insert it. Here there is a real dispute: either it is forbidden, or it is the best thing in the world and ought to be done. Klal Yisrael loved the piyutim, and the lecturer is sure that the practice is correct; but it should be known that in many synagogues and study halls of the Rishonim they were not said, and that some thought it wrong to say them.</p>
+
+<h3>Why Not Elsewhere?</h3>
+
+<p>One may ask why the piyutim were not placed before the blessing, or after Yishtabach. The lecturer answers that this too would be an interruption, here between Yishtabach and Yotzer Or. He recalls the announcement made before battle, when the <em class="term">kohen</em> (<span class="heb-inline">כהן</span>) said that those with sins should go home, and says that one who interrupts at this point is treated as one who returns from the lines of battle.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> If they are to be said after the prayers, they should be said after the prayers; but Klal Yisrael adopted the custom of Ashkenaz, and Rashi is holy to us. A congregant raised another addition, <span class="heb-inline">שיר המעלות</span>, which the lecturer called a very big question and which was not further explained on the recording.</p>
+
+<h2>V. If One Missed Them: The Or Zarua and the Magen Avraham</h2>
+
+<p><span class="confirm">[As the lecturer reports these two authorities; neither text was located, and the Mishnah Berurah limits the rule to <span class="heb-inline">לאל אשר שבת</span> (note 14).]</span></p>
+
+<p>The lecturer uses the dispute to show how seriously a disagreement among the Rishonim is taken in practice. The <em class="term">Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>) cites the <em class="term">Or Zarua</em> (<span class="heb-inline">אור זרוע</span>), one of the great Rishonim, frequently quoted by the <em class="term">Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>). The Or Zarua writes that one who did not say <span class="heb-inline">לאל אשר שבת</span> and <span class="heb-inline">אל אדון</span> on Shabbos morning, having come late, for example, to a prayer in which everyone had already said them, <span class="heb-inline">צריך לחזור</span>, must return and say Yotzer Or again.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> No one, the lecturer notes, is ever seen to do this.</p>
+
+<p>The Magen Avraham finds this impossible. A rule that came after the text of Yotzer Or was composed, whether by the Anshei Knesses HaGedolah or others, cannot invalidate the blessing if it is omitted. The Or Zarua must therefore mean that the worshipper has skipped the additional Shabbos piyutim, not that his blessing is defective. He continues with the congregation, says Shema and prays with them; but after the Shemoneh Esrei he should open the siddur and make up what he omitted. The lecturer remarks that one does not make up Ashrei, or Yishtabach, which must be said, while these piyutim, by this rule, must be. As reported by the lecturer, the Magen Avraham is thus innovating a rule on the basis of the Or Zarua: the piyutim are so much a part of the prayer that, if missed, they must be said, and he adds that the Acharonim agree.</p>
+
+<p>A member of the congregation asked whether one should then skip the piyut deliberately in order to pray the Shemoneh Esrei with the congregation. The lecturer replied that on the Magen Avraham&rsquo;s reading, yes, since the Or Zarua does not mean that the blessing is defective, only that the piyutim must be said at some time on Shabbos. But no one does this: no one skips <span class="heb-inline">אל אדון</span> in order to pray with the congregation, and no one returns to it afterwards. He told the room that he was teaching a halachah that none of them had learned and that he himself had not known until now.</p>
+
+
+<h2>VI. Ending on a <em class="term">Davar Tov</em>: <span class="heb-inline">לאשמה בה</span></h2>
+
+<p>The lecturer has described the piyutim as the subject of dispute. He now turns to the closing words of <span class="heb-inline">לאל אשר שבת</span>, which solve a problem in the Torah reading.</p>
+
+<blockquote><div class="heb">לָאֵל אֲשֶׁר שָׁבַת מִכָּל הַמַּעֲשִׂים, בַּיּוֹם הַשְּׁבִיעִי נִתְעַלָּה וְיָשַׁב עַל כִּסֵּא כְבוֹדוֹ.</div>
+<div class="trans">To the God who rested from all works; on the seventh day He ascended and sat upon His throne of glory.</div></blockquote>
+
+<p>There is a rule in the Shulchan Aruch that every aliyah, and every extra aliyah (<em class="term">hosafah</em>, <span class="heb-inline">הוספה</span>), should end on a good matter, a <em class="term">davar tov</em> (<span class="heb-inline">דבר טוב</span>).<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> The lecturer jokes with the congregation about the practice of adding aliyos, which in the <em>heimishe</em> shtiebel can reach fifteen extra, among the Sefardim in some places, and almost nowhere in the Ashkenazic synagogues of the strict kind. An aliyah that ends on a negative note is not good, and congregants are sometimes insulted when they notice where the reader ended theirs.</p>
+
+<p>The lecturer asks for a Chumash and reads the end of Parashas Vayikra: <span class="heb-inline">וְכִפֶּר עָלָיו הַכֹּהֵן לִפְנֵי ה׳ וְנִסְלַח לוֹ עַל אַחַת מִכֹּל אֲשֶׁר יַעֲשֶׂה לְאַשְׁמָה בָהּ</span>. It ends with guilt. The <em class="term">Maor VaShemesh</em> (<span class="heb-inline">מאור ושמש</span>) of Rav Kalonymus Kalman Epstein of Krakow, which the lecturer calls the Shulchan Aruch of Chassidus, says that this is not a way to end, and records a custom that no one now keeps, apart perhaps from Spinka: after the reader says <span class="heb-inline">לאשמה בה</span>, the whole congregation says <span class="heb-inline">לאל אשר שבת מכל המעשים ביום השביעי</span>. The first letters of those words are the letters of <span class="heb-inline">לאשמה בה</span>. The lecturer says that the Maor VaShemesh brings it from the Apter Rav, and that the words are a beautiful and positive praise of the Creator who stopped the work of the six days and sits upon His throne.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> Someone in the room suggested that the verse contains the Name before its last words and that the reader might raise his voice; the lecturer was not aware of such a custom, and held that ending on <span class="heb-inline">לאשמה בה</span> is not good.</p>
+
+<p>The lecturer gives a second example, from the second day of Rosh Hashanah, when the reading ends with <span class="heb-inline">וְאֶת תַּחַשׁ וְאֶת מַעֲכָה</span>, names without any evident connection to the day. The <em class="term">Imrei Noam</em> (<span class="heb-inline">אמרי נועם</span>), a Chassidic work, reads <span class="heb-inline">תחש</span> as the initials of <span class="heb-inline">תקעו בחודש שופר</span> and <span class="heb-inline">מעכה</span> as the initials of <span class="heb-inline">מלוך על כל העולם</span>.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> The lecturer adds a plea for Chassidic books: it is worth looking at them, because they give a spark of enthusiasm in the service of Hashem, and one need not remain dry and cold. A congregant raised a Gemara in Megillah that, as he put it, learns something from the seven eunuchs; the lecturer postponed it to the study of the Torah reading. The Gemara in question (Megillah 23a) derives the seven readers of Shabbos from the seven who saw the king&rsquo;s face (Esther 1:14), not from eunuchs.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<h2>VII. From Legitimacy to Joy: The Zohar&rsquo;s Picture of the Angels</h2>
+
+<p>The discourse so far has asked whether one may say these piyutim. It now asks what one is doing when one says them, and the two questions are one. The angels fall silent on Shabbos and the song passes to Klal Yisrael; and yet the Zohar, as the lecturer relates it, has the angels singing and dancing on Shabbos too. These are two pictures of one day, and the lecturer does not reconcile them in so many words. On the first he builds the argument that the length of the Shabbos prayer is ours. On the second, in the passage that follows, he describes the moment at which the song of the angels and the song of Israel join.</p>
+
+<p>&ldquo;Gentlemen, just to give you an idea of what we say by <span class="heb-inline">לאל אשר שבת מכל המעשים</span>: it is important for a Jew to know,&rdquo; the lecturer says, what the <em class="term">Zohar HaKadosh</em> describes.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> Whenever Hakadosh Baruch Hu created the <em class="term">malachim</em> (<span class="heb-inline">מלאכים</span>), on whichever day it was, He did not yet give them their tasks. He gave them their missions on Shabbos. On Shabbos, in the Zohar&rsquo;s words as the lecturer gives them, <span class="heb-inline">כינס את כל מלאכי השרת לפניו</span>, He gathered all the ministering angels before Him and told them who would do what: Michael this, Gavriel that, Raphael another. A member of the congregation objected that assigning work is a weekday matter; the lecturer replied that he did not understand the Zohar fully, but that this much was certain. With their tasks given, all the angels were glad that they could now function as emissaries, and they began, in the Zohar&rsquo;s language, to sing and dance before Hakadosh Baruch Hu where He sits on His throne. The lecturer adds that he does not know what this means, since angels are spiritual.</p>
+
+<p>The whole week He had not sat down, being engaged, so to speak, in the work of Creation. Now, <span class="heb-inline">ביום השביעי נתעלה וישב על כסא כבודו</span>: the world is complete, Adam HaRishon and Chava stand in it, and the angels have their tasks.</p>
+
+<p>Then Shabbos itself sings. The lecturer says he does not know what kind of being Shabbos is, but the Zohar speaks of one: Shabbos was so moved that on its own day every angel does the will of Hashem, and none waits idle for assignment, that Shabbos began to sing before Hakadosh Baruch Hu, <span class="heb-inline">מזמור שיר ליום השבת</span>. Adam HaRishon, the Zohar says, heard Shabbos sing. By then he had done <em class="term">teshuvah</em> (<span class="heb-inline">תשובה</span>) for the sin of the Tree of Knowledge, which the lecturer understands the Gemara in <em class="term">Avodah Zarah</em> (<span class="heb-inline">עבודה זרה</span>) to teach, and so he joined Shabbos and the angels, &ldquo;and there was song and dance. It was like a <em class="term">chasunah</em> (<span class="heb-inline">חתונה</span>), it was Simchas Torah, it was Purim up in heaven.&rdquo;<a class="footnote-ref" id="ref20" href="#fn20">[20]</a></p>
+
+<p>That, in the lecturer&rsquo;s account, is why on every Shabbos we say <span class="heb-inline">מזמור שיר ליום השבת</span>, <span class="heb-inline">אל אדון על כל המעשים</span> and <span class="heb-inline">לאל אשר שבת מכל המעשים</span>, and why we sing them: that is the manner a Jew should be in on Shabbos, with the whole creation, Shabbos included, in song. When the text says <span class="heb-inline">ויום השביעי משבח ואומר: מזמור שיר ליום השבת</span>, we answer, <span class="heb-inline">לפיכך יפארו ויברכו לאל כל יצוריו</span>. Only when Shabbos itself opens its mouth, so to speak, do Jews have the strength to join Shabbos and the angels and sing before Hakadosh Baruch Hu.</p>
+
+<div class="callout">
+  <div class="callout-title">Two Pictures, One Shabbos</div>
+  <p>In the Tosafos, the angels are silent and the song is Israel&rsquo;s. In the Zohar, the angels are sent to their tasks, and then angels, Shabbos and Adam HaRishon sing together. The lecturer does not resolve this in so many words. It is possible to read the first as the reason for the length of the Shabbos prayer, and the second as its content: Israel fills the hour left empty by the angels, and in doing so enters the chorus that the angels, by their Shabbos tasks, are free to join. This reading is the editor&rsquo;s, offered as a bridge, and is recorded again among the Open Questions.</p>
+</div>
+
+<h2>VIII. Singing, Clapping, and Dancing on Shabbos: The Talner Rebbe&rsquo;s <em class="term">Tish</em></h2>
+
+<p>The lecturer says that in the Chassidic synagogues in which he has prayed, when they say <span class="heb-inline">אל אדון</span> not only do they clap; he has seen people rise and dance, and he suggests that we ought to do the same. This was the first Shabbos of his life, he says, that he went to a <em class="term">bris</em> (<span class="heb-inline">ברית</span>) and a Kiddush at a Chassidic shul in the neighbourhood; the singing and dancing there astonished him. &ldquo;It is beautiful,&rdquo; he says. &ldquo;It is a fine thing to sing and dance on Shabbos Kodesh.&rdquo;</p>
+
+<p>He then cautions that the halachah is not so simple. In the Shulchan Aruch, it is forbidden to clap, slap the thigh or dance on Shabbos.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> He says that he claps, and that some others do. This was one of the chief disputes between the Chassidim and the Misnagdim at the beginning of the second and third generations of the students of the Baal Shem Tov: singing and dancing on Shabbos, which the Misnagdim saw as contrary to halachah. The Noda BiYehuda, he says, came out against it; he was very upset.</p>
+
+<h3>A Grandson at a Tish</h3>
+
+<p>The lecturer tells of something he saw once, which he calls a secret. A grandson of the Noda BiYehuda, a man named Rav Elazar Halevi Landa, whom he describes as a great Torah scholar, writes in the introduction to his book that he was a rav in a Lithuanian town. The Talner Rebbe, one of the great Chernobyl dynasty, about two hundred years ago, came to the town, and a <em class="term">tish</em> (<span class="heb-inline">טיש</span>) was arranged. The Lithuanian rav, to whom it was not a matter of honour, came to the tish on Friday night. In the middle of it the Rebbe rose and began to dance, and the Chassidim, overjoyed, climbed onto the table, on the kugel and the herring, the lecturer says.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a></p>
+
+<p>As the lecturer paraphrases the introduction, the rav writes that he had never seen such a thing in his life, that his grandfather would have told him to leave, but that he enjoyed it so much that he felt Shabbos as he never had before. &ldquo;So you see,&rdquo; the lecturer says, &ldquo;the Misnagdim came to terms with the Chassidim and their dancing and singing.&rdquo; He adds that today we are comfortable with Chassidus, but that it began then. The words are the lecturer&rsquo;s English rendering of the passage as he remembers it, not a quotation of the printed text.</p>
+
+<p>He wonders why Rebbes do not come to his synagogue, and proposes to invite some and hold a tish on Friday night, to bring the congregation into it. A Skverer Rebbe, he recalls, was once there, long ago. The point of the account is, he repeats, that the Rishonim, quoting the Zohar HaKadosh, say that everyone sang: the angels, Adam HaRishon and Shabbos, all dancing in unison. &ldquo;I think that is a very beautiful image to have when we say this.&rdquo;</p>
+
+<h2>IX. Singing <span class="heb-inline">הכל יודוך</span>: Reb Moshe Wolfson and the Rokeach</h2>
+
+<p>The lecturer closes with a point raised at the beginning of the morning by a member of the congregation: in some places not only is <span class="heb-inline">אל אדון</span> sung, but <span class="heb-inline">הכל יודוך והכל ישבחוך</span> is sung aloud as well.</p>
+
+<p>The lecturer had the privilege, when he was the rabbi in Miami, of having Rav Moshe Wolfson of Emunas Yisrael, whom he mentioned the week before, come for a whole winter, for months, and pray in his shul every day and every Shabbos morning. The local congregants were unhappy, since it made the prayers much longer, but Rav Wolfson introduced that when they came to <span class="heb-inline">הכל יודוך</span>, the <em class="term">shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) would sing it, from <span class="heb-inline">הפותח בכל יום דלתות שערי מזרח ובוקע חלוני רקיע</span>, in a long niggun, the cantor and the congregation together, back and forth.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> He wondered, he says, where that custom comes from.</p>
+
+<p>The Rokeach, he says, writes that this part of the prayers is said <span class="heb-inline">בנעימה ובשירה ובזמרה</span>, with melody, song and music. For some reason Klal Yisrael does not do so, though certain Chassidim do.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> The lecturer anticipates the objection that a certain large congregation sings everything; a member of the congregation replied that they do sing it there, as an introduction, and that they add <span class="heb-inline">אין ערוך לך ואין זולתך, אפס בלתך</span>. The lecturer joked about how to bring such a person back for Shabbos morning, and concluded: &ldquo;It is all right, let them sing it.&rdquo; He wished the congregation a wonderful week.</p>
+
+<div class="callout">
+  <div class="callout-title">The Course of the Discourse</div>
+  <p>The discourse begins with a question about the length of the Shabbos prayer, answers it with the silence of the angels, finds that the answer does not make the piyutim lawful, follows the dispute over their lawfulness down to the practical question of a missed piyut, and then leaves legitimacy for joy. It ends, as the closing sections of <span class="heb-inline">לאל אשר שבת</span> teach, on a good matter: the angels, Shabbos and Adam HaRishon dancing together, and a congregation invited to join them.</p>
+</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer&rsquo;s report, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short">Last week&rsquo;s discourse (2026-10-11): authorship claims for <span class="heb-inline">נשמת כל חי</span>.</span>
+  <span class="expanded"> The lecturer recalls the range of claims treated the week before: the Anshei Knesses HaGedolah, Shimon ben Shetach, the Rokeach (that it predates Rabbeinu HaKadosh&rsquo;s redaction of the Mishnah), and Shimon Kefa. A recap only; no new source is given. The Rokeach is not checkable on Sefaria and no siman is stated.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short">Rav Chaim Vital: saying <span class="heb-inline">נשמת</span> on Shabbos as putting on tefillin.</span>
+  <span class="expanded"> The lecturer reports that, on Shabbos, when tefillin are not worn, Rav Chaim Vital says that saying Nishmas is as if one puts on tefillin, and that there are great secrets in it. He gives no work or locus, and none was found; it is not checkable on Sefaria. It stands as the lecturer&rsquo;s report.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">תוספות סנהדרין ל״ז ע״ב ד״ה מכנף הארץ זמירות שמענו</span>; <span class="heb-inline">ישעיהו ו׳:ב׳</span>.</span>
+  <span class="expanded"> The lecturer cites the Tosafos in Sanhedrin 37b for the idea that each wing sings on one day of the week. On Sefaria (Vilna edition) the comment beginning <span class="heb-inline">מכנף הארץ זמירות שמענו</span> reads, in the part retrieved, <span class="heb-inline">וכל כנף הוא אומר שירה אחת ביום בששת ימי החול</span> (each wing says one song a day on the six weekdays), and then <span class="heb-inline">וכשיגיע שבת אומרים החיות לפני המקום</span> (and when Shabbos arrives the creatures say before Hamakom &hellip;). <strong>Corrected:</strong> the lecturer says the six-wing verse is in Yechezkel; Yechezkel 1:6 gives each creature four wings, and the verse with six wings is Yeshayahu 6:2 (<span class="heb-inline">שש כנפים שש כנפים לאחד</span>). The Tosafos speaks of the living creatures (<span class="heb-inline">חיות</span>), not of angels generally. The lecturer&rsquo;s further details, that Hakadosh Baruch Hu tells the angels they are finished and says that He wishes to hear His children, were not found in the part retrieved, and stand as his report of the Tosafos (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">חולין צ״א ע״ב</span> (cross-reference, not cited by the lecturer).</span>
+  <span class="expanded"> A baraita on Chullin 91b says that the ministering angels do not say their song above until Israel say theirs below, because Israel are dearer to Hakadosh Baruch Hu (supported by Iyov 38:7). Verified on Sefaria. Its order (Israel first) differs from the lecturer&rsquo;s picture of Shabbos, in which the angels fall silent; the two are not equated here.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">בראשית רבה א׳:ג׳</span>; <span class="heb-inline">תהלים ק״ד:ג׳–ד׳</span>.</span>
+  <span class="expanded"> On Sefaria, Bereishis Rabbah 1:3 has R. Yochanan: the angels were created on the second day, citing Tehillim 104:3&ndash;4 (<span class="heb-inline">המקרה במים עליותיו</span> followed by <span class="heb-inline">עושה מלאכיו רוחות</span>); R. Chanina: on the fifth day (<span class="heb-inline">יעופף</span>, as of the birds and the seraphim); both agree they were not created on the first day. <strong>Corrected:</strong> the lecturer says &ldquo;the fourth day&rdquo;; the Midrash as retrieved gives the fifth. &ldquo;Before the world was created&rdquo; was not located in this passage. The lecturer&rsquo;s &ldquo;Rashi implies it in Bereishis&rdquo; was not identified: Rashi on Bereishis 1:1 and 1:7 does not state the angels&rsquo; day (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">ברכות ד׳ ע״ב</span> — Michael in one flight, Gavriel in two.</span>
+  <span class="expanded"> A member of the congregation asked about Michael and Gavriel; the lecturer pointed to the Gemara in Berachos and called the six wings &ldquo;the general thing.&rdquo; <strong>Corrected:</strong> he said amud alef; the passage is on Berachos 4b, where Rabbi Elazar bar Avina contrasts Michael, who flies in one flight, with Gavriel, in two. That the question refers to this passage is inferred; the recording does not preserve the question itself.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short">Siddur of Rav Saadia Gaon: no Shabbos additions in the morning.</span>
+  <span class="expanded"> The lecturer reports that Rav Saadia Gaon, in a very ancient siddur, makes no addition on Shabbos morning, and that there is no source for the piyutim in either Talmud. Not on Sefaria; no page given; it stands as his report. The Tur&rsquo;s sentence in note 9 also mentions Rav Amram in this connection; how that bears on Rav Saadia was not checked.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">רמב״ם, נוסח התפילה</span> (end of Sefer Ahavah) — Shabbos morning.</span>
+  <span class="expanded"> On Sefaria (Mishneh Torah, The Order of Prayer, Hebrew), the Rambam has for Shabbos <span class="heb-inline">נשמת כל חי</span>, then <span class="heb-inline">ישתבח</span>, then the first blessing of Shema, <span class="heb-inline">יוצר אור ובורא חשך</span>. <span class="heb-inline">אל אדון</span>, <span class="heb-inline">הכל יודוך</span> and <span class="heb-inline">לאל אשר שבת</span> do not appear in the text retrieved. Verified in outline. The inference that this saved the congregation some minutes is the lecturer&rsquo;s.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">טור אורח חיים סימן רפ״א</span> — Toledo.</span>
+  <span class="expanded"> On Sefaria the Tur says <span class="heb-inline">ונוהגין באשכנז ובצרפת לומר לאל אשר שבת</span> (adding that Rav Amram also wrote it) and <span class="heb-inline">ובטוליטולא אין אומרים אותו</span>. <strong>Narrowed:</strong> the sentence located names only <span class="heb-inline">לאל אשר שבת</span> for Toledo; the lecturer&rsquo;s inclusion of <span class="heb-inline">אל אדון</span> goes beyond it (<strong>uncertain</strong>). The Rosh&rsquo;s move to Spain and the Tur&rsquo;s upbringing are the lecturer&rsquo;s retelling of a history he says he gave elsewhere, not rechecked.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short">Rabbeinu Yehuda ben Barzilai, <em>Sefer HaIttim</em> (<span class="heb-inline">ספר העתים</span>).</span>
+  <span class="expanded"> The lecturer describes him as a contemporary of the Rif, of the late eleventh century, who condemns the adding of piyutim as an interruption of a fixed formula. Not on Sefaria; the passage was not located, and the dating is the lecturer&rsquo;s own. Of the Plaud summary&rsquo;s additional claims about the Rambam and Rav Saadia in this connection, none appears in the primary transcript and none is used.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><em>Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>), attributed by the lecturer to Rashi.</span>
+  <span class="expanded"> Not on Sefaria; not located. The Sefer HaPardes is generally attributed to the circle of Rashi&rsquo;s students rather than to Rashi himself; the lecturer&rsquo;s attribution is kept as he said it and is for him to confirm (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">ה׳ שפתי תפתח</span> and <span class="heb-inline">השכיבנו</span> (cross-reference).</span>
+  <span class="expanded"> The lecturer&rsquo;s contrast is between insertions the Gemara itself makes and a piyut composed by &ldquo;me and you.&rdquo; He named no daf. <span class="heb-inline">ה׳ שפתי תפתח</span> is discussed in Berachos 4b and 9b (checked in the 2025-10-19 log entry). The Beis Yosef&rsquo;s survey of views was not located on Sefaria in this pass.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">שולחן ערוך אורח חיים נ״ד:ג׳</span> — between Yishtabach and Yotzer.</span>
+  <span class="expanded"> On Sefaria, Shulchan Aruch Orach Chayim 54:3 states that speaking between Yishtabach and Yotzer is a sin, and that the speaker is among those who return from the battle lines. The siman is the editor&rsquo;s identification (the lecturer said &ldquo;the Gemara&rdquo;). The kohen&rsquo;s announcement is in Devarim 20:8; the reading of it as a man with sins is the lecturer&rsquo;s.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short"><span class="heb-inline">אור זרוע</span>; <span class="heb-inline">מגן אברהם</span>; <span class="heb-inline">שו״ע אורח חיים רפ״א:א׳</span>; <span class="heb-inline">משנה ברורה רפ״א:ג׳</span>.</span>
+  <span class="expanded"> The Or Zarua and the Magen Avraham themselves were not located; the lecturer&rsquo;s account of them stands as his report (<strong>uncertain</strong>). On Sefaria, the Rema on Shulchan Aruch Orach Chayim 281:1 says that nothing is repeated for an omission, <span class="heb-inline">מלבד אם לא אמר לאל אשר שבת וכו׳ מחזירין אותו</span>. The Mishnah Berurah (281:3) explains <span class="heb-inline">מחזירין אותו</span> as not a return to the blessing but saying it after the Shemoneh Esrei without a blessing, and limits this to <span class="heb-inline">לאל אשר שבת</span>: for the other zemiros there is no obligation to say them afterwards. <strong>Two points differ from the lecturer:</strong> the make-up obligation is limited to <span class="heb-inline">לאל אשר שבת</span>, not <span class="heb-inline">אל אדון</span> or the others; and the Chayei Adam (cited in the Mishnah Berurah) rules against skipping the piyut in order to pray with the congregation, which agrees with what everyone does and not with the lecturer&rsquo;s &ldquo;on the Magen Avraham, yes.&rdquo;</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">שולחן ערוך אורח חיים קל״ח:א׳</span> (Rema) — to begin and end on a good matter.</span>
+  <span class="expanded"> On Sefaria, 138:1 has the Mechaber&rsquo;s rule that fewer than three verses may not be skipped in a paragraph, and the Rema&rsquo;s gloss that one should take care always to begin a reading on a good matter and to end on a good matter. The siman is the editor&rsquo;s; the lecturer gave none. That additional aliyos are made in some communities and not others is the lecturer&rsquo;s report of practice.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">ויקרא ה׳:כ״ו</span>; <span class="heb-inline">מאור ושמש</span> (R. Kalonymus Kalman Epstein of Krakow).</span>
+  <span class="expanded"> The verse ends <span class="heb-inline">לְאַשְׁמָה בָהּ</span>. The initials of <span class="heb-inline">לאל אשר שבת מכל המעשים ביום השביעי</span> are <span class="heb-inline">ל-א-ש-מ-ה-ב-ה</span>, checked letter by letter. On Sefaria, the Maor VaShemesh is by Kalonymus Kalman Epstein (composed c. 1817&ndash;1823, published 1842). The custom itself was not located in a search of the Maor VaShemesh on Vayikra (<strong>uncertain</strong>). The lecturer says the Maor VaShemesh brings it from the Apter Rav; that identification and direction of citation were not checked.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">בראשית כ״ב:כ״ד</span>; <em>Imrei Noam</em> (<span class="heb-inline">אמרי נועם</span>).</span>
+  <span class="expanded"> The Torah reading ends <span class="heb-inline">וְאֶת תַּחַשׁ וְאֶת מַעֲכָה</span> (verified on Sefaria). The acrostics were checked: <span class="heb-inline">תחש</span> from <span class="heb-inline">תקעו חודש שופר</span> and <span class="heb-inline">מעכה</span> from <span class="heb-inline">מלוך על כל העולם</span>. The Imrei Noam passage was not located. The lecturer calls the author a son of the Ropshitzer; as far as we know, the author is a grandson (<strong>unverified</strong>).</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><span class="heb-inline">מגילה כ״ג ע״א</span> — the seven who saw the king&rsquo;s face.</span>
+  <span class="expanded"> On Sefaria, Megillah 23a derives the number of readers on Shabbos, seven, from the seven who <span class="heb-inline">רואי פני המלך</span> (Esther 1:14), and from a second tradition, the Priestly Blessing; it does not mention eunuchs. <strong>Corrected:</strong> the congregant&rsquo;s question, as heard, spoke of seven eunuchs (<span class="heb-inline">שבעת הסריסים</span>); the Gemara&rsquo;s source is the seven who saw the king&rsquo;s face. The lecturer&rsquo;s remark that this is why Ashkenazim make no additional aliyos was not checked.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short"><em>Zohar HaKadosh</em> — <span class="heb-inline">כינס את כל מלאכי השרת לפניו</span>.</span>
+  <span class="expanded"> The Zohar passage was not located; no parashah or page is given. All of Section VII is the lecturer&rsquo;s retelling, and he says himself that he does not fully understand it. The Mishnah Berurah (281:3, citing the Chayei Adam) shows only that the Zohar is a cited source for the wording of <span class="heb-inline">לאל אשר שבת</span>, not that it contains this account (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">עבודה זרה ח׳ ע״א</span>; <span class="heb-inline">בראשית רבה כ״ב:י״ג</span>.</span>
+  <span class="expanded"> <strong>Corrected, as the lecturer&rsquo;s understanding:</strong> Avodah Zarah 8a, as retrieved, describes Adam fasting and praying when the days shortened, and crying through the first night; it does not use the word teshuvah and does not mention Shabbos. Bereishis Rabbah 22:13 has Adam say <span class="heb-inline">מזמור שיר ליום השבת</span> after learning from Cain the power of repentance. The Zohar&rsquo;s own version was not located.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">שולחן ערוך אורח חיים של״ט:ג׳</span> — no clapping or dancing on Shabbos.</span>
+  <span class="expanded"> On Sefaria, 339:3 prohibits clapping the hands, slapping the thigh and dancing on Shabbos, as a rabbinic decree lest one fix a musical instrument; it notes that clapping with the back of the hand is allowed, and the Rema writes that in his time people clapped and danced and were not stopped, and that some authorities permit it. Verified. The siman is the editor&rsquo;s. The lecturer&rsquo;s clapping is his own practice, not a ruling.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">The Noda BiYehuda; Rav Elazar Halevi Landa&rsquo;s introduction; the Talner Rebbe&rsquo;s tish.</span>
+  <span class="expanded"> An oral report of a printed introduction. Neither the grandson&rsquo;s book, nor the town, nor the Noda BiYehuda&rsquo;s opposition to Chassidic dancing was located. The lecturer gives the name as Rav Elazar Halevi Landa and forgot where he served. The name of the book given in the Plaud summary does not appear in the primary transcript and is not used. &ldquo;Two hundred years ago&rdquo; is his approximation. The quoted words are his English rendering, not a quotation of the printed Hebrew.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short">Rav Moshe Wolfson in Miami: the <em>shaliach tzibbur</em> sings <span class="heb-inline">הכל יודוך</span>.</span>
+  <span class="expanded"> The lecturer&rsquo;s own first-hand account. There is no printed source. This week&rsquo;s recording gives Rav Wolfson no honorific; see the Open Questions of the 2026-10-11 Sefer Edition on his status.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><em>Rokeach</em> (<span class="heb-inline">רוקח</span>) — <span class="heb-inline">בנעימה ובשירה ובזמרה</span>.</span>
+  <span class="expanded"> The lecturer gives no siman. The Rokeach is not checkable on Sefaria; the exact words and the scope (<span class="heb-inline">הכל יודוך</span>, <span class="heb-inline">אל אדון</span> or the whole Yotzer) are not preserved. A parallel the lecturer did not cite: the Rema on Shulchan Aruch Orach Chayim 281:1, <span class="heb-inline">ויש להאריך ולהנעים בזמירות</span> (verified on Sefaria).</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<ol>
+<li>Which Rashi does the lecturer mean for the angels being created on Monday (note 5)? The two retrieved do not say it.</li>
+<li>Does the Tosafos on Sanhedrin 37b contain the lecturer&rsquo;s details, that Hakadosh Baruch Hu silences the angels and says He wishes to hear His children (note 3)? Only the opening lines were retrieved.</li>
+<li>Does the Tur&rsquo;s Toledo report cover <span class="heb-inline">אל אדון</span> as well as <span class="heb-inline">לאל אשר שבת</span> (note 9)? The sentence located names only the latter.</li>
+<li>Reconciling the two pictures: the lecturer says that on the first Shabbos Klal Yisrael sang with the angels (Section III), while in the Zohar it is Adam HaRishon who joins. How do the Tosafos&rsquo; silent angels and the Zohar&rsquo;s dancing angels fit together (Section VII)? The bridge offered there is the editor&rsquo;s.</li>
+<li>Is the Sefer HaPardes Rashi&rsquo;s own, as the lecturer says, or that of his students (note 11)?</li>
+<li>Where are the Or Zarua and the Magen Avraham on the make-up of the piyutim, and does the Magen Avraham extend the rule beyond <span class="heb-inline">לאל אשר שבת</span> (note 14)?</li>
+<li>The practical halachah for one who missed a piyut is narrower than the lecturer&rsquo;s report; the Mishnah Berurah should be consulted (note 14).</li>
+<li>Is the author of the Imrei Noam a son or a grandson of the Ropshitzer (note 17)?</li>
+<li>Where is the Zohar&rsquo;s account of the angels, Shabbos and Adam HaRishon (notes 19 and 20)?</li>
+<li>Where is the introduction of Rav Elazar Halevi Landa, and in which town did he serve (note 22)?</li>
+<li>Is the custom of the Maor VaShemesh and the Apter Rav, to say <span class="heb-inline">לאל אשר שבת</span> after <span class="heb-inline">לאשמה בה</span>, to be found in print (note 16)?</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em>Tefillah</em>, 7 Cheshvan 5787. The edition follows the order of the inquiry from the length of the Shabbos prayer, through the dispute over its lawfulness, to its joy; presents the lecturer&rsquo;s reports as reports; and records his uncertainties as he stated them.
+</footer>
+
+</body>
+</html>

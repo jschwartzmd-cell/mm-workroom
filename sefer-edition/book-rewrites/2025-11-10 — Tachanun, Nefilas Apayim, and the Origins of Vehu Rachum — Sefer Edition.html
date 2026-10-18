@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Tachanun, Nefilas Apayim, and the Origins of Vehu Rachum</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">תחנון, נפילת אפים, ומקורו של והוא רחום</h1>
+  <div class="english-title"><em>Tachanun</em>, <em>Nefilas Apayim</em>, and the Origins of <em>Vehu Rachum</em></div>
+  <div class="sub">Studies in <em>Tefillah</em> (<span class="heb-inline">תפילה</span>) &mdash; The Structure and History of <em>Tachanun</em></div>
+  <div class="date">Dated 10 November 2025 (19 Cheshvan 5786) &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse was delivered <span class="heb-inline">לעילוי נשמת</span> <span class="heb-inline">הרב חיים ז״ל</span> on the occasion of his <em class="term">yahrzeit</em> (<span class="heb-inline">יארצייט</span>), and <span class="heb-inline">לעילוי נשמת</span> all the souls of <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>). It was sponsored by Reb Azriel Dovid. <span class="confirm">[The full name of Rav Chaim, and the surname (given as Langer) and spelling of the sponsor&rsquo;s name, to be confirmed before printing.]</span></p>
+
+<p class="lead">This discourse examines the structure of <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>) and the origins of its parts: the confession (<em class="term">vidui</em>, <span class="heb-inline">וידוי</span>) and the <em class="term">Thirteen Attributes of Mercy</em> (<span class="heb-inline">שלש עשרה מידות</span>) said after <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>); <em class="term">Nefilas Apayim</em> (<span class="heb-inline">נפילת אפים</span>) itself, originally optional and later accepted as an obligation; and the history of its words, including the verse <em class="term">Vayomer Dovid el Gad</em> (<span class="heb-inline">ויאמר דוד אל גד</span>), the controversy over the <em class="term">Kitzur Shelah</em> (<span class="heb-inline">קיצור של״ה</span>), and the work <em class="term">Shaarei Tzion</em> (<span class="heb-inline">שערי ציון</span>).</p>
+
+<p class="lead">It then turns to <em class="term">Vehu Rachum</em> (<span class="heb-inline">והוא רחום</span>), the long supplication added on Mondays and Thursdays: the two opposed reasons for those days; the account, preserved by the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>), of three sages adrift on the Mediterranean who composed it before a trial by fire; the name <em class="term">Azriel</em> (<span class="heb-inline">עזריאל</span>) discerned in its text; and a second tradition that traces the prayer to <em class="term">Chizkiyahu</em> (<span class="heb-inline">חזקיהו</span>) and the army of <em class="term">Sancheriv</em> (<span class="heb-inline">סנחריב</span>).</p>
+
+<p class="lead">Where the lecturer reports a source he did not name, the report is marked as his; matters left unresolved are gathered at the end.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>I. The Parts of <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>)</h2>
+
+<h3>Confession and the Thirteen Attributes After the Amidah</h3>
+
+<p><em class="term">Tachanun</em> is not a single unit. The confession (<em class="term">vidui</em>, <span class="heb-inline">וידוי</span>) and the <em class="term">Thirteen Attributes of Mercy</em> (<span class="heb-inline">שלש עשרה מידות</span>) said after <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) form a section distinct from <em class="term">Nefilas Apayim</em> (<span class="heb-inline">נפילת אפים</span>) proper. In <em class="term">Nusach Sefard</em> (<span class="heb-inline">נוסח ספרד</span>) the Thirteen Attributes are said first, although the confession still stands at the head of the sequence.</p>
+
+<p>The <em class="term">Zohar</em> (<span class="heb-inline">זוהר</span>) teaches that immediately after <em class="term">Shemoneh Esrei</em> one recites the confession, so that the accusing angels (<em class="term">mekatrigim</em>, <span class="heb-inline">מקטרגים</span>) not block the prayer from ascending to the <em class="term">Kisei HaKavod</em> (<span class="heb-inline">כסא הכבוד</span>).<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> After the confession comes <em class="term">Kel Erech Apayim</em> (<span class="heb-inline">קל ארך אפים</span>), an ancient liturgical poem (<em>piyyut</em>, <span class="heb-inline">פיוט</span>) that has always served as the introduction to the Thirteen Attributes in <em class="term">Selichos</em> (<span class="heb-inline">סליחות</span>) and on <em class="term">Yom Kippur</em> (<span class="heb-inline">יום כיפור</span>). Then the Thirteen Attributes of Mercy are recited.</p>
+
+<p>It is important to grasp that this entire institution has no source in the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) or in basic <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>). It exists because the <em class="term">Zohar</em> instructs it, and the <em class="term">Arizal</em> (<span class="heb-inline">אריז״ל</span>) was exacting about it: he held that the confession and the Thirteen Attributes are to be said immediately after <em class="term">Shemoneh Esrei</em>, and that the immediacy is essential.</p>
+
+<h2>II. The Source of the Thirteen Attributes</h2>
+
+<h3>The Gemara in Rosh Hashanah</h3>
+
+<p>The Thirteen Attributes are familiar from <em class="term">Selichos</em>. Their source is the well-known passage in <em class="term">Rosh Hashanah</em> (<span class="heb-inline">ראש השנה</span>) 17b.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> After the sin of the golden calf (<span class="heb-inline">מעשה העגל</span>), the Holy One told <em class="term">Moshe</em> (<span class="heb-inline">משה</span>), in effect, that in order to forgive <em class="term">Klal Yisrael</em> He would teach him what to say. The <em class="term">Gemara</em> prefaces its account with the statement of <em class="term">Rabbi Yochanan</em> (<span class="heb-inline">רבי יוחנן</span>) that, were it not explicitly written, it would be impossible to say it: the Holy One, as it were, wrapped Himself in a <em class="term">tallis</em> (<span class="heb-inline">טלית</span>) like a prayer leader and showed <em class="term">Moshe</em> the order of prayer, saying that whenever Israel sins they are to recite it before Him and He will forgive them.</p>
+
+<h3>The Maharsha: A White Garment of Light</h3>
+
+<p>The <em class="term">Maharsha</em> (<span class="heb-inline">מהרש״א</span>) asks the obvious question: who wore a <em class="term">tallis</em>? What does it mean that the Holy One wraps Himself in one? He answers from the verse recited before donning one&rsquo;s own <em class="term">tallis</em> each morning, <span class="heb-inline">עוטה אור כשלמה</span>, &ldquo;wrapped in light as in a garment&rdquo; (<span class="heb-inline">תהלים ק״ד:ב׳</span>). The Holy One did not wear a physical <em class="term">tallis</em>; rather the Divine Presence (<span class="heb-inline">שכינה</span>) was surrounded by a garment of light, and within it He taught the Thirteen Attributes of Mercy.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> The <em class="term">Maharsha</em> adds that this garment is white: he calls it <span class="heb-inline">טלית לבנה</span>, the very garment in which He was wrapped at the creation of the world.</p>
+
+<p>The lecturer professes not to know what a &ldquo;white spiritual light&rdquo; may be, but suggests, tentatively, that this may be the source of the care taken that a <em class="term">tallis</em> be white and unsoiled. A soiled <em class="term">tallis</em> is unseemly; the <em class="term">tallis</em> of the Holy One, as it were, is white.</p>
+
+<div class="callout">
+<span class="label">A Story Told in This Connection</span>
+<p>A mother-in-law once watched from the women&rsquo;s section as her son-in-law, who had come with her daughter from <em class="term">Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>) for the festival, prayed beside her husband, and she saw that his <em class="term">tallis</em> was stained and dirty. At the festive meal she was visibly upset. Pressed by her daughter, she said that she did not like the match: a man who wears a filthy <em class="term">tallis</em> is neither neat nor clean. The daughter, who had never seen her husband from the women&rsquo;s section, said that she would speak to him and have it cleaned. He replied that he had forgotten his own <em class="term">tallis</em> in <em class="term">Eretz Yisrael</em> and had borrowed his father-in-law&rsquo;s. It was her own husband&rsquo;s <em class="term">tallis</em> that she had seen. The moral is to judge no one, even over a soiled <em class="term">tallis</em>, and always to give the benefit of the doubt (<span class="heb-inline">לכף זכות</span>). The lecturer adds that he has no licence to speak of the <em class="term">tallis</em> of the Holy One; on that he can only cite the <em class="term">Gemara</em>.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+</div>
+
+<h2>III. <em class="term">Nefilas Apayim</em>: Originally Optional</h2>
+
+<h3>A Practice, Not an Obligation</h3>
+
+<p>Turning to <em class="term">Nefilas Apayim</em> itself, the discourse recalls that many <em class="term">Chassidim</em> (<span class="heb-inline">חסידים</span>) are not strict about it and do not say <em class="term">Tachanun</em> on a <em class="term">yahrzeit</em>, a practice discussed at length in the previous discourse. One must understand that the entire institution of <em class="term">Nefilas Apayim</em> is not, in origin, an obligation. It was originally only <em class="term">reshus</em> (<span class="heb-inline">רשות</span>). A search of the whole Talmud finds no source that obligates it.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> The one Talmudic narrative in which a sage is described as falling on his face, that of <em class="term">Rabbi Eliezer</em> (<span class="heb-inline">רבי אליעזר</span>) in <em class="term">Bava Metzia</em> (<span class="heb-inline">בבא מציעא</span>) 59b, whose brother-in-law <em class="term">Rabban Gamliel</em> (<span class="heb-inline">רבן גמליאל</span>) died at the time, was treated in the earlier discourse; the lecturer cites it as showing the practice but not as showing an obligation.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+
+<p>The lecturer cites a responsum of the <em class="term">Rivash</em> (<span class="heb-inline">רי״בש</span>) that states outright that it is only optional. This is the source of the practice, among many who are not <em class="term">Chassidim</em>, of omitting <em class="term">Tachanun</em> when there is a sufficient reason (how sufficient the reason must be is itself a wide-ranging dispute).</p>
+
+<p>A member of the congregation noted a useful parallel: the evening prayer (<em class="term">Maariv</em>, <span class="heb-inline">מעריב</span>) was likewise originally optional, yet <em class="term">Klal Yisrael</em> took it upon themselves as an obligation.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> So, too, the <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) writes that in the end <em class="term">Klal Yisrael</em> accepted <em class="term">Nefilas Apayim</em> as an obligation, and one is therefore bound to say it on the appropriate days.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> It is clearly not said on <em class="term">Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>) or on the other days specified in the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שלחן ערוך</span>), and, for a <em class="term">Chassid</em> (<span class="heb-inline">חסיד</span>) by his custom, not at all.</p>
+
+<h2>IV. A Hint in the Torah: <em class="term">V’es Ma’acha</em> (<span class="heb-inline">ואת מעכה</span>)</h2>
+
+<p>A matter omitted from the previous discourse bears on this theme and on what is read at the end of the <em class="term">Akeidah</em> (<span class="heb-inline">עקדה</span>). How does <em class="term">Parshas Vayeira</em> (<span class="heb-inline">פרשת וירא</span>) end? When the <em class="term">Akeidah</em> is read on <em class="term">Rosh Hashanah</em>, the portion that follows it is added. What is its connection to <em class="term">Rosh Hashanah</em>? Why is it read on <em class="term">Rosh Hashanah</em> at all?</p>
+
+<p>One answer, which the lecturer calls &ldquo;cute&rdquo; and attributes to an authority whose name is not clear, is that the last two names in that passage are acronyms: <span class="heb-inline">מעכה</span> stands for <span class="heb-inline">מלוך על כל העולם</span> (&ldquo;rule over all the world&rdquo;), and <span class="heb-inline">תחש</span> for the sounding of the <em class="term">shofar</em> (<span class="heb-inline">שופר</span>), whose words are not clear.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The <em class="term">Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>) taught something else. Every name in the <em class="term">Torah</em> (<span class="heb-inline">תורה</span>) contains hints (<em>remazim</em>, <span class="heb-inline">רמזים</span>). The words <span class="heb-inline">ואת מעכה</span>, the <em class="term">Baal Shem Tov</em> would say, are an acronym:</p>
+
+<blockquote><div class="heb"><strong>ו</strong>ידוי <strong>א</strong>חר <strong>ת</strong>פילה <strong>מ</strong>גיע <strong>ע</strong>ד <strong>כ</strong>סא <strong>ה</strong>כבוד.</div>
+<div class="trans">A confession after prayer reaches the Throne of Glory.</div></blockquote>
+
+<p>This is worth remembering. There are hints in the <em class="term">Torah</em>, as the <em class="term">Zohar</em> already taught, that when one recites the confession after <em class="term">Shemoneh Esrei</em>, one first pleads before the Holy One, and then nullifies himself: he falls and says that he is unworthy of anything, and cries <span class="heb-inline">חטאתי, עויתי, פשעתי</span>, and the Holy One accepts the prayer. In earlier times the fall was literally to the ground; today one falls only on the head.</p>
+
+<h2>V. The History of the Words of <em class="term">Nefilas Apayim</em></h2>
+
+<h3>The Old Text</h3>
+
+<p>The original <em class="term">Nefilas Apayim</em> had no uniform text. Today one says <span class="heb-inline">רחום וחנון חטאתי לפניך</span>, and then <span class="heb-inline">ה׳ אל באפך תוכיחני</span>, which is chapter 6 of <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>).<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> Formerly a different chapter was said; the lecturer reports that the <em class="term">Levush</em> (<span class="heb-inline">לבוש</span>) mentions a different chapter altogether.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> The <em class="term">Zohar</em> instructs that during <em class="term">Nefilas Apayim</em> one say chapter 25 of <em class="term">Tehillim</em>, in which David gives himself over to the Holy One: <span class="heb-inline">לדוד אליך ה׳ נפשי אשא</span>, &ldquo;I am going to surrender my soul to You.&rdquo;<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+
+<h3>The Danger</h3>
+
+<p>The <em class="term">Zohar</em> warns that this may be said only with the proper intention (<em class="term">kavanah</em>, <span class="heb-inline">כוונה</span>). Without it there is danger that the Holy One will take a person before his time, without length of days (<span class="heb-inline">אריכות ימים</span>). Many, seeing this in the <em class="term">Zohar</em>, said: &ldquo;I will not even open this chapter,&rdquo; although it is the original source of <em class="term">Nefilas Apayim</em>, because the danger is too great. To say <span class="heb-inline">אליך ה׳ נפשי אשא</span> without intention is to tell the Holy One, &ldquo;Take my soul.&rdquo; It is meant to be self-sacrifice (<em class="term">mesiras nefesh</em>, <span class="heb-inline">מסירות נפש</span>); but self-sacrifice without the proper intention may result in the Holy One taking the person before his time. For this reason <em class="term">Klal Yisrael</em> stopped saying it.</p>
+
+<h3>What the Sephardim and the Ashkenazim Did</h3>
+
+<p>The <em class="term">Sephardim</em> (<span class="heb-inline">ספרדים</span>) do say chapter 25, but without performing <em class="term">Nefilas Apayim</em>; they say <em class="term">Tachanun</em> and then <em>Ledavid</em> (<span class="heb-inline">לדוד</span>), and they do not fall. In the lecturer&rsquo;s words, the combination of the two chapters, 6 and 25, with the falling is too dangerous, and <em class="term">Nefilas Apayim</em> itself is very dangerous. Among the <em class="term">Ashkenazim</em> (<span class="heb-inline">אשכנזים</span>), over the years, the printed <em class="term">siddur</em> (<span class="heb-inline">סידור</span>) substituted chapter 6, <span class="heb-inline">ה׳ אל באפך תוכיחני</span>, a kind of confession by which one beseeches the Holy One. The shift from chapter 25 to chapter 6 was driven by this concern.</p>
+
+<h2>VI. The Custom at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>)</h2>
+
+<p>The discourse raises a question about the afternoon prayer: why, in many congregations, is <em class="term">Tachanun</em> not said at <em class="term">Minchah</em>? The lecturer asked those present whether anyone said it; one said that he did, in a rite the lecturer could not identify, with whose members he had prayed many times without noticing it; the matter was left to be taken up later. The explanation he offered is tentative.</p>
+
+<p><em class="term">Tachanun</em> is not said at night, and to say it then is dangerous: such recitations rouse the forces of impurity. (The <em class="term">Rishonim</em> use the expression <em class="term">kitzetz banetiyos</em> (<span class="heb-inline">קיצץ בנטיעות</span>) for one who does what he should not do at the wrong time.)<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> Many pray <em class="term">Minchah</em> late, and by the time they finish <em class="term">Shemoneh Esrei</em> it is already after sunset (<em class="term">shkiah</em>, <span class="heb-inline">שקיעה</span>), when <em class="term">Tachanun</em> may not be said. The congregations therefore cancelled it at <em class="term">Minchah</em> in general, and even those who pray in the middle of the afternoon, far from sunset, refrain. The danger of <em class="term">Nefilas Apayim</em> without the proper intention is real; performed with the proper intention it is of overwhelming power, and without it, dangerous.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<h2>VII. <span class="heb-inline">ויאמר דוד אל גד</span> &mdash; A Strange Verse</h2>
+
+<h3>Has Anyone Wondered?</h3>
+
+<p>Has anyone, while saying <em class="term">Tachanun</em> in the morning, been startled by the verse <em class="term">Vayomer Dovid el Gad</em> (<span class="heb-inline">ויאמר דוד אל גד</span>)? It is said; but what is it doing here? One can understand <span class="heb-inline">נפלה נא ביד ה׳</span>, which speaks of falling. Yet the phrase says something different from what is done in <em class="term">Nefilas Apayim</em>: <span class="heb-inline">נפלה נא ביד ה׳</span> means &ldquo;let us fall <em>into</em> the hand of <em class="term">Hashem</em> (<span class="heb-inline">ה׳</span>),&rdquo; not &ldquo;before&rdquo; Him. In <em class="term">Nefilas Apayim</em> one falls before Him, not into His hand. What, then, is this verse doing in the prayer?</p>
+
+<h3>The Source in Shmuel II</h3>
+
+<p>The verse comes from the very last chapters of <em class="term">Shmuel II</em> (<span class="heb-inline">שמואל ב׳</span>), in chapter 24.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> King David sent <em class="term">Yoav</em> (<span class="heb-inline">יואב</span>), his general, to count <em class="term">Klal Yisrael</em> from north to south, a census. Jews are not counted (the reason is a <em class="term">sugya</em> (<span class="heb-inline">סוגיא</span>) unto itself, and a serious one, which the discourse does not enter); David erred in counting them. <em class="term">Gad</em> (<span class="heb-inline">גד החוזה</span>), the prophet of David&rsquo;s days, came to him and said: you have done a terrible thing; the Holy One offers you three options, choose your punishment.</p>
+
+<ol>
+  <li>Seven years of famine in <em class="term">Eretz Yisrael</em>.</li>
+  <li>Three months of an enemy in pursuit, with terrible troubles, pogroms or whatever they might be.</li>
+  <li>Three days of plague (<span class="heb-inline">דבר</span>).</li>
+</ol>
+
+<p>David answered, and this is the verse: each of the punishments is very hard, but he preferred to fall into the hand of the Holy One and not into the hand of man. Were he to choose famine, he would be in the hand of man, for the wealthy would corner the market and sell at a much higher price; were he to choose an enemy in pursuit for three months, that too is in the hand of man. He preferred to be punished by the Holy One; let there be a plague among <em class="term">Klal Yisrael</em>. And indeed seventy thousand died in those three days, a mortality beyond that of any epidemic of recent memory.</p>
+
+<h3>What Is It Doing in Tachanun?</h3>
+
+<p>Who placed this verse in the prayer books? Here it becomes important to research the source of every prayer. There is a serious possibility that this passage is a Sabbatean addition. The lecturer adds that this is not meant to alarm anyone, and that one who says it need not stop; but the trail leads, perhaps, somewhere that deserves to be known.</p>
+
+<h2>VIII. The <em class="term">Kitzur Shelah</em> (<span class="heb-inline">קיצור של״ה</span>) and a Hidden Gematria</h2>
+
+<h3>Who Yechiel Michel Epstein Was</h3>
+
+<p>There was a Jew named <em class="term">Yechiel Michel Epstein</em> (<span class="heb-inline">יחיאל מיכל עפשטיין</span>). He is not the well-known Michel Epstein of the <em class="term">Aruch HaShulchan</em>; there are many Michel Epsteins in Jewish history. The lecturer places this one in the early seventeenth century.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> He wrote the <em class="term">Kitzur Shelah</em>, an abridgment of the <em class="term">Shelah</em> (<span class="heb-inline">של״ה</span>), <em>Shnei Luchos HaBris</em> (<span class="heb-inline">שני לוחות הברית</span>) of <em class="term">Rabbi Yeshayah Horowitz</em> (<span class="heb-inline">רבי ישעיה הלוי הורוויץ</span>), one of the most important works on the Jewish bookshelf; the lecturer describes the abridger as coming some fifty to seventy years after the <em class="term">Shulchan Aruch</em>. The <em class="term">Shelah</em> is beautiful to study but very long, and an abridged version was a useful thing to have. Yet one who opens the <em class="term">Kitzur Shelah</em> finds many things that the original does not mention. That anomaly did not escape one of the most relentless defenders of orthodoxy in Jewish history.</p>
+
+<h3>Rabbi Yaakov Emden and <em>Toras HaKenaos</em></h3>
+
+<p><em class="term">Rabbi Yaakov Emden</em> (<span class="heb-inline">רבי יעקב עמדן</span>), the great opponent of the surviving followers of <em class="term">Shabsai Tzvi</em> (<span class="heb-inline">שבתי צבי</span>) in the generations after his apostasy, wrote an entire work, <em>Toras HaKenaos</em> (<span class="heb-inline">תורת הקנאות</span>) (the lecturer gives the title from memory), documenting <em class="term">Shabsai Tzvi</em> and his disciples and showing how their influence persisted in <em class="term">Klal Yisrael</em>.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> Rabbi Yaakov Emden had the eyes of a hawk. Whenever a new book appeared he examined at once its introduction and its approbations (<em class="term">haskamos</em>, <span class="heb-inline">הסכמות</span>); if he detected even a faint scent of <em class="term">Shabsai Tzvi</em> he responded with a sharp and fearless zeal (<em>kanaus</em>, <span class="heb-inline">קנאות</span>).</p>
+
+<h3>The Discovery</h3>
+
+<p>When the <em class="term">Kitzur Shelah</em> appeared, the lecturer reports, Rabbi Yaakov Emden obtained a copy, opened it, and at once issued a public proclamation (<em class="term">kol koreh</em>, <span class="heb-inline">קול קורא</span>): no one may bring this book into his home. The author, he held, was a Sabbatean, a heretic who believed himself bound to the false messiah. His proof: in the introduction (<em class="term">hakdamah</em>, <span class="heb-inline">הקדמה</span>) the author refers to <em class="term">Shabsai Tzvi</em>. Yet one who opens the introduction finds no explicit mention of <em class="term">Shabsai Tzvi</em> anywhere. What did Rabbi Yaakov Emden see?</p>
+
+<h3>The Hidden Gematria</h3>
+
+<p>The answer requires extreme attention; one must be a Yaakov Emden to catch it. In the brief introduction the author concludes, in the lecturer&rsquo;s paraphrase, with a prayer: that by learning this book Israel may merit to see the true Messiah (<span class="heb-inline">משיח האמיתי</span>) and may merit also the days of the Messiah (<span class="heb-inline">ימות המשיח</span>). On the surface this is entirely proper. But two small marks, apostrophe-like signs, stood over those words. Wherever such a mark is seen, it is a sign to the careful reader to analyze the word, by calculating its numerical value (<em class="term">gematria</em>, <span class="heb-inline">גימטריא</span>) or by reading its initials as an acronym. The lecturer reports that the numerical value of the phrase is exactly 814, which is the value of <span class="heb-inline">שבתי צבי</span>. Rabbi Yaakov Emden, in the lecturer&rsquo;s telling, was at once convinced: &ldquo;This is Sabbatean. Remove this book from my home; no one should buy it.&rdquo;<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<h3>The Impact on Our Prayer</h3>
+
+<p>The verse <em class="term">Vayomer Dovid el Gad</em> that is said in <em class="term">Tachanun</em>, specifically because it contains the words <span class="heb-inline">נפלה נא ביד ה׳</span>, originates, so the lecturer reports, from that very work. Therefore the <em class="term">Gaon of Vilna</em> (<span class="heb-inline">הגאון מווילנא</span>) and, as heard, the <em class="term">Maaseh Rav</em> (<span class="heb-inline">מעשה רב</span>) hold that one should not say it, and many others concur.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> This is why in some Ashkenazic <em class="term">siddurim</em> (<span class="heb-inline">סידורים</span>) the passage appears in small print or in parentheses: not everyone says it.</p>
+
+<p>The lecturer relates that he said it himself as a child, because he said everything printed in the <em class="term">siddur</em>; later he decided otherwise. The community at large still says it, and many congregations maintain the custom. That its source may be Sabbatean does not necessarily invalidate the words. The Gaon gave a further reason for omitting it: it speaks of a plague, of calamity, and one prefers not to invoke such things before <em class="term">Tachanun</em>. Another famous work by an Italian kabbalist also omits it.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> The practice varies. In most printed <em class="term">siddurim</em> it appears, and one who wishes to say it has a source, though the source is questionable.</p>
+
+<h2>IX. Nasan Nata Hanover and <em>Shaarei Tzion</em></h2>
+
+<p>There was a Jew named <em class="term">Nasan Nata Hanover</em> (<span class="heb-inline">נתן נטע הנובר</span>), best known for one major work, <em class="term">Yeven Metzulah</em> (<span class="heb-inline">יוון מצולה</span>). He lived through <em class="term">Tach VeTat</em> (<span class="heb-inline">תח״ת</span>), the persecutions of Bogdan Chmielnicki in 1648&ndash;1649, when the Cossacks swept through Poland and killed, in the lecturer&rsquo;s figure, between twenty and fifty thousand Jews. Many fled, and he was among them. He was an eminent rabbi from western Ukraine; as an Ashkenazic Jew he made his way to Italy, to Venice, where he met a kabbalist who was a disciple of <em class="term">Rabbi Chaim Vital</em> (<span class="heb-inline">רבי חיים ויטאל</span>), the chief disciple of the <em class="term">Arizal</em>. The kabbalist took such a liking to him that he became his student and himself a kabbalist.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></p>
+
+<p><em class="term">Yeven Metzulah</em> is the most important historical source on the events of <em class="term">Tach VeTat</em>. (The <em class="term">Shach</em> (<span class="heb-inline">ש״ך</span>), who was also there, wrote his own, <em>Megillas Eifah</em> (<span class="heb-inline">מגילת איפה</span>).)<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> But Hanover wrote another work as well, <em class="term">Shaarei Tzion</em> (<span class="heb-inline">שערי ציון</span>).<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> In it he records that many of the prayers he transmits were received from his teacher, <em class="term">Rabbi Chaim HaKohen</em> (<span class="heb-inline">רבי חיים הכהן</span>) of Aleppo (<span class="heb-inline">חלב</span>) in Syria, who also ended up in Italy, and he writes that he sets them down so that <em class="term">Klal Yisrael</em> should say them.</p>
+
+<p>Remarkably, almost every prayer book today contains these prayers, though it is not known how they spread so universally. Which prayers? Those said when the ark is opened on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>), on festivals, and on <em class="term">Rosh Hashanah</em> and <em class="term">Yom Kippur</em>, which all come from <em class="term">Shaarei Tzion</em>. All say them with reverence, and people pay substantial sums for the privilege of opening the ark. Yet, the lecturer says, none of these prayers existed in <em class="term">Klal Yisrael</em> before the disciple of the disciple of the <em class="term">Arizal</em> decided to teach them; he recorded them in his book and somehow they spread like wildfire. Every prayer book includes them, as well as the prayer said before entering the <em class="term">sukkah</em> (<span class="heb-inline">סוכה</span>), the prayer before taking the <em class="term">lulav</em> (<span class="heb-inline">לולב</span>), and many others. The lecturer adds that the verse <em class="term">Vayomer Dovid el Gad</em> is also found there, though he suspects that it comes from the <em class="term">Kitzur Shelah</em>, which preceded <em class="term">Shaarei Tzion</em> by a little, and that this is why many do not say it.
+</p>
+
+<h2>X. <em class="term">Vehu Rachum</em>: The Prayer of Monday and Thursday</h2>
+
+<h3>Why Monday and Thursday at All?</h3>
+
+<p>On Monday and Thursday, in the synagogue, <em class="term">Vehu Rachum</em> is said, <span class="heb-inline">והוא רחום יכפר עון</span>, followed by a long supplication running all the way to the <em class="term">Shema</em> (<span class="heb-inline">שמע ישראל</span>) said every day. Why on these two days? What is special about them? When fasts are kept, they are kept on Monday and Thursday. The Torah is read on Monday and Thursday; the <em class="term">Gemara</em> in <em class="term">Bava Kama</em> (<span class="heb-inline">בבא קמא</span>) 82 teaches that this was an ordinance (<em class="term">takanas Ezra</em>, <span class="heb-inline">תקנת עזרא</span>).<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> The <em class="term">Rishonim</em> give two reasons, and they truly oppose each other.</p>
+
+<h3>The First View &mdash; Days of Mercy</h3>
+
+<p>Some <em class="term">Rishonim</em> hold that Monday and Thursday are days of mercy (<em class="term">rachamim</em>, <span class="heb-inline">רחמים</span>). <em class="term">Moshe</em> ascended <em class="term">Har Sinai</em> (<span class="heb-inline">הר סיני</span>) to receive the second tablets on a Thursday and descended forty days later on a Monday, and that day was <em class="term">Yom Kippur</em>. Monday and Thursday therefore became days of mercy forever. If they are days of mercy, one asks for more: one adds prayers to the morning service, and stays an extra few minutes to say <em class="term">Vehu Rachum</em>.</p>
+
+<h3>The Second View &mdash; Days of Judgment</h3>
+
+<p>Other <em class="term">Rishonim</em> hold exactly the opposite: Monday and Thursday are days of judgment (<em class="term">din</em>, <span class="heb-inline">דין</span>), because one of <em class="term">Ezra</em> (<span class="heb-inline">עזרא</span>)&rsquo;s ordinances was that every city have a court sitting on Monday and Thursday. One who studies <em class="term">Kesubos</em> (<span class="heb-inline">כתובות</span>) knows this from its first <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>).<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> When there is judgment below, there is judgment above; the lecturer has this from the sources (the <em class="term">Gemara</em> in <em class="term">Shabbos</em> 129b gives it as the reason that bloodletting is not done on these days). And precisely because there is judgment above, one must ask for more mercy, and so the additional supplications are added. It is a curious dispute: either days of mercy or days of judgment. But where did this prayer come from?</p>
+
+<h3>Standing and Sitting</h3>
+
+<p>The lecturer notes in passing that <em class="term">Vehu Rachum</em> is to be said slowly and, according to the <em class="term">Shulchan Aruch</em>, standing; the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) is cited as permitting one to sit, though it is better to remain standing, which is the plain sense of the <em class="term">Shulchan Aruch</em>. One may not interrupt it with other matters.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a></p>
+
+<h2>XI. The Story Behind <em class="term">Vehu Rachum</em></h2>
+
+<h3>An Ancient Prayer From the Times of the Tanaim</h3>
+
+<p>The story has several versions and is brought by many <em class="term">Rishonim</em>, among them the <em class="term">Kol Bo</em> (<span class="heb-inline">כל בו</span>) and the <em class="term">Rokeach</em> (<span class="heb-inline">רוקח</span>).<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> This is one of the most ancient prayers in the prayer book, and most people say it twice a week without knowing where it came from. It comes from the times of the <em class="term">Tanaim</em> (<span class="heb-inline">תנאים</span>).</p>
+
+<h3>The Three Ships</h3>
+
+<p>After <em class="term">Titus</em> (<span class="heb-inline">טיטוס</span>) destroyed the Second Temple many Jews were exiled; the accounts of how differ. According to one, Titus sent ships out into the Mediterranean with no sailors and no means of navigation, only sails, <span class="heb-inline">לכל רוח</span>, wherever the wind would take them. Three full ships of men and women drifted on the sea. One ended up in Portugal, another in Italy, another in Africa; the versions disagree on the exact places.</p>
+
+<h3>The King&rsquo;s Test</h3>
+
+<p>The ship that came ashore (let us say in Portugal) was met by the king. &ldquo;Where do you come from?&rdquo; &ldquo;We are Jews.&rdquo; &ldquo;What are Jews?&rdquo; &ldquo;We are the descendants of <em class="term">Avraham Avinu</em> (<span class="heb-inline">אברהם אבינו</span>).&rdquo; Hundreds of men and women, strangers from a foreign land: &ldquo;What are you doing here?&rdquo; &ldquo;We were exiled when Titus destroyed the Temple.&rdquo; These were <em class="term">Tanaim</em>, Jews of two thousand years ago.</p>
+
+<p>The king said: &ldquo;You are the children of Avraham Avinu? I know a little of the Bible. We have just read of Avraham Avinu thrown into the furnace of <em class="term">Ur Kasdim</em> (<span class="heb-inline">אור כשדים</span>) and emerging unscathed. Let us see whether you can do the same. If I throw you into the fire and you come out like your forefather, then you are indeed his descendants and you are welcome in my land; I will give you homes, real estate, vineyards, fields and farms, whatever you want. If not, I will send you back on the ship.&rdquo;</p>
+
+<h3>Three Days of Prayer and Fasting</h3>
+
+<p>The three greatest of the sages on that ship gathered. &ldquo;What are we to do? We are not Avraham Avinu. This does not happen every day.&rdquo; They sat and prayed, and fasted for three days, and during those three days the three sages composed <em class="term">Vehu Rachum</em>:</p>
+
+<ol>
+  <li>One wrote from <span class="heb-inline">והוא רחום</span> until <span class="heb-inline">אין כמוך לחנון ורחום</span>.</li>
+  <li>The second wrote from <span class="heb-inline">אין כמוך</span> until <span class="heb-inline">ה׳ אלוקי ישראל שומע תרועת עמך</span>.</li>
+  <li>The third wrote the remaining part to the end.</li>
+</ol>
+
+<p>They recited it over and over.</p>
+
+<h3>The Dream of the Yerushalmi</h3>
+
+<p>On the third day the king demanded that one of them be thrown into the fire. They asked one another what each had dreamed in the past three nights. The first two had nothing of significance to report. The third, the <em class="term">Kol Bo</em> writes, was a great man from Jerusalem (<em class="term">Yerushalmi</em>, <span class="heb-inline">ירושלמי</span>) but not a scholar in the strict sense, for he did not know the Bible well. (One who does not know <em class="term">Tanach</em> (<span class="heb-inline">תנ״ך</span>) is not called a <em class="term">talmid chacham</em> (<span class="heb-inline">תלמיד חכם</span>).) &ldquo;I dreamed a verse.&rdquo; &ldquo;Which verse?&rdquo; &ldquo;I cannot remember the verse. All I remember is that the word <span class="heb-inline">כי</span> occurred twice and the word <span class="heb-inline">לא</span> three times.&rdquo;</p>
+
+<p>Today a search would produce it in seconds. But the scholars among them said at once: &ldquo;I have it,&rdquo; right on the spot. The verse is in <em class="term">Yeshayahu</em> (<span class="heb-inline">ישעיהו</span>) 43:<a class="footnote-ref" id="ref28" href="#fn28">[28]</a></p>
+
+<blockquote><div class="heb">כי תעבור במים אתך אני ובנהרות לא ישטפוך, כי תלך במו אש לא תכוה ולהבה לא תבער בך.</div>
+<div class="trans">When you pass through the waters I am with you, and through the rivers they shall not overwhelm you; when you walk through fire you shall not be burned, and the flame shall not consume you.</div></blockquote>
+
+<p>Two times <span class="heb-inline">כי</span>, three times <span class="heb-inline">לא</span>. (These are also the words of a well-known melody.) They said to him: &ldquo;You are the one we are choosing to throw into the fire, because you had the dream. As the prophet promises, you will be cast into fire and will not burn.&rdquo; He answered: &ldquo;All right, no problem.&rdquo;</p>
+
+<h3>The Miracle</h3>
+
+<p>They brought him before the king and threw him into the fire. The fire split; he walked in, and he walked out, unharmed. The king declared: &ldquo;You are indeed the children of Avraham Avinu.&rdquo; All the <em class="term">Rishonim</em> tell the story as a <em class="term">nes</em> (<span class="heb-inline">נס</span>) that took place soon after the destruction of the Temple.</p>
+
+<h3>The Letter to the Communities</h3>
+
+<p>The king accepted them, and gave them a place to live, money and real estate. They settled there and Judaism flourished, whether in Portugal or in Africa, it is not certain. After the event they sent letters to all the communities of <em class="term">Klal Yisrael</em>: &ldquo;We did this. We composed this prayer, <em class="term">Vehu Rachum</em>, and said it over and over, and it helped us; the king accepted us and the man was saved. Therefore we ask all of <em class="term">Klal Yisrael</em> to say it.&rdquo; All the communities accepted it upon themselves. That is why <em class="term">Vehu Rachum</em> is said twice every week, asking the Holy One to save us from exile and to have mercy. It is a beautiful, deeply moving, crystal-clear prayer, so important that one may not interrupt it; and it comes from before the <em class="term">Rishonim</em>, from the <em class="term">Tanaim</em> themselves. The names of the three <em class="term">Tanaim</em> are even known, though in different versions, and the lecturer does not enter into them.</p>
+
+<h2>XII. The Insertion of Rabbi Azriel</h2>
+
+<p>In <em class="term">Vehu Rachum</em> there is one piece that does not come from the three <em class="term">Tanaim</em>: the line <span class="heb-inline">ה׳ אלוקי ישראל שומע תרועת עמך ורחם על עדת עמך</span>, the beautiful refrain at the end of each stanza. Who wrote it? Rabbi Azriel, it is said, and his name can be seen in it. The words <span class="heb-inline">עוזרנו אלוקי ישענו על דבר כבוד שמך</span> (taken from <em class="term">Tehillim</em> 79:9) contain the letters of <span class="heb-inline">עזריאל</span>: the letters <span class="heb-inline">עזר</span> of <span class="heb-inline">עוזרנו</span>, the letters <span class="heb-inline">אל</span> of <span class="heb-inline">אלוקי</span>, and the <em>yud</em> (<span class="heb-inline">י</span>) of <span class="heb-inline">ישענו</span>.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> There was a Jew by that name, one of the <em class="term">Rishonim</em>, and one tradition holds that he composed this addition and that it thus became part of <em class="term">Vehu Rachum</em>.</p>
+
+<h2>XIII. The Prayer of Chizkiyahu</h2>
+
+<p>There is, however, another view of where the body of the prayer comes from. The <em class="term">Rishonim</em> say that in the days of <em class="term">Sancheriv</em>, king of Assyria, when he laid siege to <em class="term">Yerushalayim</em> (<span class="heb-inline">ירושלים</span>), King <em class="term">Chizkiyahu</em> woke in the middle of the night, went to the Temple and prayed for two hours without stopping; and the entire army fell, one hundred and eighty-five thousand soldiers.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a> What did <em class="term">Chizkiyahu</em> say that could fell so great an army? The answer, the lecturer reports, is in the initials: one stanza of <em class="term">Vehu Rachum</em> spells out <span class="heb-inline">חזקיהו</span>. <em class="term">Chizkiyahu</em> said this prayer; and when it is said on Monday and Thursday, the prayer of <em class="term">Chizkiyahu</em> is recalled, and the Holy One is asked that all the enemies of <em class="term">Klal Yisrael</em> fall as the army of <em class="term">Sancheriv</em> fell.</p>
+
+<div class="callout">
+<span class="label">Summary of the Discourse</span>
+<p>Three strands run through the discourse. The confession and the Thirteen Attributes before <em class="term">Nefilas Apayim</em> are kabbalistic in origin, instituted by the <em class="term">Arizal</em> on the authority of the <em class="term">Zohar</em> as a defense against the accusing angels. <em class="term">Nefilas Apayim</em> itself was originally optional, taken on by <em class="term">Klal Yisrael</em> as an obligation, accompanied by real danger when said without intention and by great power when said with it. And <em class="term">Vehu Rachum</em>, the long supplication of Monday and Thursday, is traced to three sages adrift on the Mediterranean, completed by the name of Rabbi Azriel, and linked by a second tradition to the prayer of <em class="term">Chizkiyahu</em>. The discourse breaks off with more to be said.</p>
+</div>
+
+
+<div class="divider">&#x2726; &nbsp; &#x2726; &nbsp; &#x2726;</div>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer&rsquo;s report, the note says so.</p>
+<ol>
+<li id="fn1">
+  <span class="short">The <span class="heb-inline">זוהר</span> and the <span class="heb-inline">אריז״ל</span> on the confession after the <span class="heb-inline">שמונה עשרה</span>.</span>
+  <span class="expanded"> As reported by the lecturer. The passage of the <span class="heb-inline">זוהר</span> was not located, and a locus sometimes given (<span class="heb-inline">חלק ג׳, פרשת בלק רכ״ב ע״א</span>) appears internally inconsistent, since folio 222 of the third volume does not seem to belong to that portion, and is not relied on. The <span class="heb-inline">אריז״ל</span>&rsquo;s insistence on immediacy is likewise as reported. The <span class="heb-inline">ערוך השלחן</span> (<span class="heb-inline">אורח חיים קל״א</span>) cites the <span class="heb-inline">זוהר</span> on the psalm said at <span class="heb-inline">נפילת אפים</span> (see below), but not on the confession (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">ראש השנה י״ז ע״ב</span>.</span>
+  <span class="expanded"> The <span class="heb-inline">גמרא</span> records that <span class="heb-inline">רבי יוחנן</span> said: <span class="heb-inline">אלמלא מקרא כתוב אי אפשר לאומרו</span> &mdash; that the Holy One wrapped Himself in a <span class="heb-inline">טלית</span> like a prayer leader (<span class="heb-inline">שליח ציבור</span>) and showed Moshe the order of prayer. The passage was checked; the closing clause (that whenever Israel sins they are to say it before Him and He will forgive) is given in substance and was not re-checked word for word.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">מהרש״א</span> (<span class="heb-inline">חידושי אגדות</span>), <span class="heb-inline">ראש השנה י״ז ע״ב</span>.</span>
+  <span class="expanded"> <span class="heb-inline">נתעטף הקב״ה באותו טלית לבנה שנתעטף בברייתו של עולם שעליו נאמר עוטה אור כשלמה שמבהיק מסוף עולם ועד סופו</span>. The garment is thus a white <span class="heb-inline">טלית</span> of light, not a physical one. The suggestion that this is the source of the custom to wear a white <span class="heb-inline">טלית</span> is the lecturer&rsquo;s own and is offered tentatively. (The <span class="heb-inline">מהרש״א</span>: <span class="heb-inline">רבי שמואל אליעזר אידלס</span>, 1555&ndash;1631.)</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short">The story of the stained <span class="heb-inline">טלית</span>.</span>
+  <span class="expanded"> Told by the lecturer as a familiar story; no source is given and none is claimed. It is condensed here.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">טור אורח חיים קל״א</span>; <span class="heb-inline">ערוך השלחן אורח חיים קל״א</span>; <span class="heb-inline">רמב״ם הלכות תפילה ה׳:י״ג</span>.</span>
+  <span class="expanded"> The <span class="heb-inline">טור</span> writes: <span class="heb-inline">ורב נטרונאי כתב: נפילת אפים בציבור על פניהם אחר התפלה רשות היא</span>. The <span class="heb-inline">ערוך השלחן</span> cites this and adds that all Israel treated it as an obligation (<span class="heb-inline">שווינהו עלייהו כחובה</span>). The <span class="heb-inline">רמב״ם</span> (<span class="heb-inline">הלכות תפילה ה׳:י״ג</span>) describes the practice and leaves the supplications to the worshipper&rsquo;s wishes, but does not call it optional. The responsum cited by the lecturer is not located: the name is indistinct (the <span class="heb-inline">רי״בש</span> is the likelier reading; the <span class="heb-inline">רשב״ש</span> is another candidate) and no <span class="heb-inline">סימן</span> was given (Open Questions, no. 2).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">בבא מציעא נ״ט ע״ב</span>.</span>
+  <span class="expanded"> Imma Shalom, wife of Rabbi Eliezer and sister of Rabban Gamliel, would not let him fall on his face (<span class="heb-inline">למיפל על אפיה</span>); one day she found him fallen on his face and said to him, <span class="heb-inline">קום</span>, &ldquo;arise, you have killed my brother,&rdquo; and the sound of a <span class="heb-inline">שופר</span> came from the house of Rabban Gamliel announcing his death. The lecturer cites the passage as a story of falling on the face, not as a source of obligation.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">ברכות כ״ז ע״ב</span>.</span>
+  <span class="expanded"> Rabban Gamliel holds that the evening prayer is obligatory, Rabbi Yehoshua that it is optional; later, Abaye rules that it is obligatory and Rava that it is optional. The parallel was raised by a member of the congregation whose name is not clear (Open Questions, no. 14).</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">ערוך השלחן אורח חיים קל״א</span>.</span>
+  <span class="expanded"> The lecturer cites the <span class="heb-inline">ערוך השלחן</span> for the statement that <span class="heb-inline">כלל ישראל</span> accepted <span class="heb-inline">נפילת אפים</span> as an obligation; the text there agrees (see the preceding notes). The <span class="heb-inline">שלחן ערוך</span> itself (<span class="heb-inline">קל״א</span>) frames the matter as custom, and sets out days on which it is not said, among them <span class="heb-inline">ראש חודש</span>, <span class="heb-inline">חנוכה</span> and <span class="heb-inline">פורים</span>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">בראשית כ״ב:כ״ד</span>; the acronyms <span class="heb-inline">מעכה</span> and <span class="heb-inline">תחש</span>; the <span class="heb-inline">בעל שם טוב</span>.</span>
+  <span class="expanded"> The verse names the children of Reumah: <span class="heb-inline">טבח וגחם ותחש ומעכה</span>. The acronym <span class="heb-inline">מעכה</span> = <span class="heb-inline">מלוך על כל העולם</span> is the lecturer&rsquo;s reading as best it can be made out; the words of <span class="heb-inline">תחש</span> are not clear, and the authority cited for the reading is not identified (the name is indistinct). The acronym <span class="heb-inline">ואת מעכה</span> = <span class="heb-inline">וידוי אחר תפילה מגיע עד כסא הכבוד</span> is attributed by the lecturer to the <span class="heb-inline">בעל שם טוב</span>; it was not located in the printed collections of his teachings (Open Questions, no. 3). The question why the portion is read on <span class="heb-inline">ראש השנה</span> is left as the lecturer posed it.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">תהלים ו׳:ב׳</span>.</span>
+  <span class="expanded"> <span class="heb-inline">ה׳ אל באפך תוכיחני ואל בחמתך תיסרני</span>. The chapter is the one the lecturer names as printed in the Ashkenazic <span class="heb-inline">סידורים</span>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">לבוש</span> on <span class="heb-inline">אורח חיים קל״א</span>.</span>
+  <span class="expanded"> The <span class="heb-inline">לבוש</span> is the work of <span class="heb-inline">רבי מרדכי יפה</span> (1530&ndash;1612). That it mentions a different chapter is the lecturer&rsquo;s report; the passage was not located (Open Questions, no. 4).</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">תהלים כ״ה:א׳</span>; the <span class="heb-inline">זוהר</span> on the danger.</span>
+  <span class="expanded"> <span class="heb-inline">לדוד אליך ה׳ נפשי אשא</span>. The <span class="heb-inline">ערוך השלחן</span> (<span class="heb-inline">אורח חיים קל״א</span>) records the Sephardic custom of saying this psalm, cites the <span class="heb-inline">זוהר</span> for it and for the warning that one who says it without the proper intention may die before his time, and explains why Ashkenazim say another psalm. The <span class="heb-inline">זוהר</span> passage itself was not located (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">חגיגה י״ד ע״ב</span> &mdash; <span class="heb-inline">קיצץ בנטיעות</span>.</span>
+  <span class="expanded"> The <span class="heb-inline">גמרא</span> says of <span class="heb-inline">אחר</span> that he &ldquo;chopped down the shoots&rdquo; (<span class="heb-inline">קיצץ בנטיעות</span>). The lecturer uses the expression for one who does what he should not do, and says that he does not know why it applies.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short"><span class="heb-inline">שלחן ערוך אורח חיים קל״א:ג׳</span>.</span>
+  <span class="expanded"> There is no falling on the face at night, with the exception of vigil <span class="heb-inline">סליחות</span>. The glosses of the <span class="heb-inline">שלחן ערוך</span> presuppose <span class="heb-inline">תחנון</span> at <span class="heb-inline">מנחה</span> (they discuss, for example, a <span class="heb-inline">ברית מילה</span> at <span class="heb-inline">מנחה</span>), so the omission described is a particular custom and not a universal one. The rite to which the lecturer refers, and whether his explanation is a received one or his own, were not established (Open Questions, no. 5).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">שמואל ב׳ כ״ד</span>; cf. <span class="heb-inline">דברי הימים א׳ כ״א</span>.</span>
+  <span class="expanded"> Verified: verse 13 gives the three options (seven years of famine; three months of flight before adversaries; three days of pestilence); verse 14 is <span class="heb-inline">נפלה נא ביד ה׳ כי רבים רחמיו וביד אדם אל אפלה</span>, &ldquo;let us fall into the hand of Hashem, for His mercies are great, and let me not fall into the hand of man&rdquo;; verse 15 gives seventy thousand dead. The parallel in <span class="heb-inline">דברי הימים</span> is not treated by the lecturer and its figures were not compared.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">קיצור של״ה</span>; <span class="heb-inline">יחיאל מיכל עפשטיין</span>.</span>
+  <span class="expanded"> The lecturer places the author in the early seventeenth century and speaks of a period fifty to seventy years after the <span class="heb-inline">שלחן ערוך</span>; a secondary reference gives 1683 for the abridgment, which does not fit that dating. The place of printing and the author&rsquo;s dates were not established. The name is given as <span class="heb-inline">יחיאל מיכל</span> at the first mention and again later (Open Questions, no. 6).</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">תורת הקנאות</span>; <span class="heb-inline">רבי יעקב עמדן</span> (1697&ndash;1776).</span>
+  <span class="expanded"> The lecturer was unsure of the title and gave it as <span class="heb-inline">תורת הקנאות</span>; its publication details have not been verified. The dates are as commonly given. That Rabbi Yaakov Emden proclaimed against the <span class="heb-inline">קיצור של״ה</span>, and the grounds he gave, are the lecturer&rsquo;s report; the passage was not located (Open Questions, no. 7).</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short">The <span class="heb-inline">גימטריא</span> 814.</span>
+  <span class="expanded"> <span class="heb-inline">שבתי צבי</span> = 300 + 2 + 400 + 10 + 90 + 2 + 10 = 814. The lecturer states that the phrase <span class="heb-inline">משיח האמיתי ימות המשיח</span> also equals 814. As written, those four words total 1,643 (<span class="heb-inline">משיח האמיתי</span> 824; <span class="heb-inline">ימות המשיח</span> 819), while the two words <span class="heb-inline">ימות משיח</span>, without the article, total 814. Which words carried the marks in the original introduction therefore remains to be checked against the printed text (Open Questions, no. 7).</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">The omission of <span class="heb-inline">ויאמר דוד אל גד</span>.</span>
+  <span class="expanded"> The lecturer reports that the <span class="heb-inline">גר״א</span> and a second source (heard as <span class="heb-inline">מעשה רב</span>, the record of the <span class="heb-inline">גר״א</span>&rsquo;s customs; the <span class="heb-inline">משנה ברורה</span> is another possible reading) say not to recite it, and that the <span class="heb-inline">גר״א</span> gave the further reason that it speaks of plague. Neither passage was located, and the <span class="heb-inline">משנה ברורה</span> on <span class="heb-inline">אורח חיים קל״א</span>, as available, contains nothing on the point. The <span class="heb-inline">ערוך השלחן</span> on <span class="heb-inline">אורח חיים קל״א</span> does note that some say <span class="heb-inline">ויאמר דוד אל גד צר לי מאוד</span> and adds <span class="heb-inline">ואנו אין נוהגין לאמרו</span>, &ldquo;and we do not follow this practice&rdquo; (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short">The work of the Italian kabbalist.</span>
+  <span class="expanded"> The title is not clear. It may be <span class="heb-inline">משנת חסידים</span> by <span class="heb-inline">רבי עמנואל חי ריקי</span>, an Italian kabbalist; this is an inference and not the lecturer&rsquo;s statement (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">רבי נתן נטע הנובר</span> and <span class="heb-inline">יוון מצולה</span>.</span>
+  <span class="expanded"> <span class="heb-inline">יוון מצולה</span> (Venice, 1653) is the principal Jewish chronicle of the massacres of 1648&ndash;1649; historians regard its figures as overstated, and the lecturer&rsquo;s figure of twenty to fifty thousand is his own. The lecturer names Hanover&rsquo;s kabbalistic teacher in Italy as <span class="heb-inline">רבי חיים הכהן</span> of Aleppo, a disciple of <span class="heb-inline">רבי חיים ויטאל</span>; a secondary reference lists <span class="heb-inline">רבי חיים הכהן</span> among his teachers, together with <span class="heb-inline">רבי משה זכות</span> and <span class="heb-inline">רבי שמואל אבוהב</span>. Reports of Hanover&rsquo;s birthplace and death differ and are not given here.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short"><span class="heb-inline">מגילת איפה</span>.</span>
+  <span class="expanded"> The work of the <span class="heb-inline">ש״ך</span> on the same persecutions, as the lecturer states; the author is commonly identified as <span class="heb-inline">רבי שבתי הכהן</span>.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short"><span class="heb-inline">שערי ציון</span> (Prague, 1662).</span>
+  <span class="expanded"> A collection of kabbalistic prayers and rectifications (<span class="heb-inline">תיקונים</span>); the date and place are from a secondary reference. The lecturer states that the prayers said at the opening of the ark, before entering the <span class="heb-inline">סוכה</span> and before taking the <span class="heb-inline">לולב</span> come from this book; he does not name the individual prayers, and the sweeping statement that none of them existed before is his. Which prayers are meant, and which entered the printed <span class="heb-inline">סידורים</span> from this work, remain to be established (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><span class="heb-inline">בבא קמא פ״ב ע״א</span> (continuing on <span class="heb-inline">ע״ב</span>).</span>
+  <span class="expanded"> Verified: the <span class="heb-inline">גמרא</span> on <span class="heb-inline">ע״א</span> records that Ezra instituted public reading of the Torah on Monday and Thursday and that courts convene on those days; the reason given is that the people should not go three days without Torah, from <span class="heb-inline">שמות ט״ו:כ״ב</span> (&ldquo;and they went three days in the wilderness and found no water&rdquo;), water being read as Torah. The list of Ezra&rsquo;s ten ordinances continues on <span class="heb-inline">ע״ב</span>, the page the lecturer cited.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><span class="heb-inline">משנה כתובות א׳:א׳</span>; <span class="heb-inline">שבת קכ״ט ע״ב</span>.</span>
+  <span class="expanded"> The first <span class="heb-inline">משנה</span> of <span class="heb-inline">כתובות</span> sets the wedding of a virgin for Wednesday and of a widow for Thursday, because courts sit in the towns twice a week, on Monday and Thursday. <span class="heb-inline">שבת קכ״ט ע״ב</span> (verified) says that one does not let blood on Monday and Thursday, the courts in the cities convening on those days, as does the heavenly court, and letting blood on a day of judgment being dangerous. The lecturer also referred to the <span class="heb-inline">זוהר</span> for judgment above; that reference was not clear and was not located.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><span class="heb-inline">שלחן ערוך אורח חיים קל״ד</span>; <span class="heb-inline">משנה ברורה</span>.</span>
+  <span class="expanded"> The <span class="heb-inline">שלחן ערוך</span> (<span class="heb-inline">קל״ד</span>) treats <span class="heb-inline">והוא רחום</span>, and the text consulted appears to require standing; this is to be confirmed. The lecturer&rsquo;s report that the <span class="heb-inline">משנה ברורה</span> permits sitting was not located (Open Questions, no. 10).</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">כל בו</span> and <span class="heb-inline">רוקח</span>.</span>
+  <span class="expanded"> The lecturer states that the story is brought by many <span class="heb-inline">ראשונים</span>, among them the <span class="heb-inline">כל בו</span> and the <span class="heb-inline">רוקח</span>. The passage was not located: the <span class="heb-inline">כל בו</span> siman on the laws of prayer, as checked, does not contain it, and the <span class="heb-inline">ספר הרוקח</span> could not be consulted. The setting is legendary; the lecturer himself notes that the versions differ on the places and on the names of the three sages, and Portugal as a kingdom is of later date than the first century (Open Questions, no. 11). The tradition that Avraham was cast into a furnace at Ur Kasdim, to which the king refers, is midrashic and is not cited by the lecturer.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short"><span class="heb-inline">ישעיהו מ״ג:ב׳</span>.</span>
+  <span class="expanded"> The verse is as quoted; counting the Hebrew, <span class="heb-inline">כי</span> occurs twice and <span class="heb-inline">לא</span> three times, as the lecturer says. The lecturer mentions in passing the well-known melody to these words.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short"><span class="heb-inline">תהלים ע״ט:ט׳</span> and the name <span class="heb-inline">עזריאל</span>.</span>
+  <span class="expanded"> The verse is <span class="heb-inline">עזרנו אלהי ישענו על דבר כבוד שמך</span>. The letters of <span class="heb-inline">עזריאל</span> are present in the words as the lecturer indicates, but not in the order of the name. The ascription to a Rishon named Azriel is a tradition reported by the lecturer; the person is not identified (Open Questions, no. 12).</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short"><span class="heb-inline">מלכים ב׳ י״ט</span>; <span class="heb-inline">ישעיהו ל״ז</span>; <span class="heb-inline">סנהדרין צ״ה ע״ב</span>.</span>
+  <span class="expanded"> Verified: an angel of Hashem struck 185,000 in the Assyrian camp in one night (<span class="heb-inline">מלכים ב׳ י״ט:ל״ה</span>); the lecturer himself hedged the number. <span class="heb-inline">סנהדרין צ״ה ע״ב</span> discusses Sancheriv&rsquo;s army and cites the verse but does not mention Chizkiyahu&rsquo;s prayer. That Chizkiyahu rose at midnight, went to the Temple and prayed for two hours, and that his prayer is encoded in the initials of one stanza of <span class="heb-inline">והוא רחום</span> spelling <span class="heb-inline">חזקיהו</span>, are reported by the lecturer as the view of the Rishonim; no source was located and the lines of the stanza were not identified (Open Questions, no. 13).</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Recollections of reviewers are recorded as such and are not asserted in the text.</p>
+<ol>
+<li><strong>The <span class="heb-inline">זוהר</span> and the <span class="heb-inline">אריז״ל</span> on the confession.</strong> The passages are to be located. The lecturer&rsquo;s wording of the order of the confession and the Thirteen Attributes in <span class="heb-inline">נוסח ספרד</span> (attributes first, yet the confession still begins) is unclear and is to be confirmed.</li>
+<li><strong>The responsum on <span class="heb-inline">רשות</span>.</strong> The lecturer cites a responsum (heard as the <span class="heb-inline">רי״בש</span>; the <span class="heb-inline">רשב״ש</span> is another candidate); author and <span class="heb-inline">סימן</span> are to be established.</li>
+<li><strong>The acronyms of <span class="heb-inline">תחש</span> and <span class="heb-inline">מעכה</span>, and the <span class="heb-inline">בעל שם טוב</span>.</strong> The authority for the first reading, the words of <span class="heb-inline">תחש</span>, and the source in the teachings of the <span class="heb-inline">בעל שם טוב</span> for <span class="heb-inline">ואת מעכה</span> are to be located.</li>
+<li><strong>The <span class="heb-inline">לבוש</span>.</strong> The passage mentioning a different chapter of <span class="heb-inline">תהלים</span> is to be located.</li>
+<li><strong><span class="heb-inline">תחנון</span> at <span class="heb-inline">מנחה</span>.</strong> Which rite omits it, and whether the explanation given is a received one, are to be established; the <span class="heb-inline">שלחן ערוך</span> presupposes <span class="heb-inline">תחנון</span> at <span class="heb-inline">מנחה</span>.</li>
+<li><strong>The author of the <span class="heb-inline">קיצור של״ה</span>.</strong> His dates and place, and the relation of the lecturer&rsquo;s &ldquo;early seventeenth century&rdquo; to the date of 1683 given in a secondary reference, are to be resolved.</li>
+<li><strong>Rabbi Yaakov Emden and the gematria.</strong> The passage in which he proclaims against the <span class="heb-inline">קיצור של״ה</span>, and which words carried the marks in the original introduction (the four words as written total 1,643; <span class="heb-inline">ימות משיח</span> totals 814), are to be checked.</li>
+<li><strong>The omission of <span class="heb-inline">ויאמר דוד אל גד</span>.</strong> The source of the <span class="heb-inline">גר״א</span>&rsquo;s position and whether the second source is the <span class="heb-inline">מעשה רב</span> or the <span class="heb-inline">משנה ברורה</span>, and the identity of the Italian kabbalist&rsquo;s work (possibly <span class="heb-inline">משנת חסידים</span>), are to be established.</li>
+<li><strong>The prayers of <span class="heb-inline">שערי ציון</span>.</strong> Which prayers are meant, and the relation of the verse <span class="heb-inline">ויאמר דוד אל גד</span> to that work and to the <span class="heb-inline">קיצור של״ה</span>, are to be established.</li>
+<li><strong>Standing and sitting at <span class="heb-inline">והוא רחום</span>.</strong> The <span class="heb-inline">משנה ברורה</span> permitting sitting, and the exact ruling of <span class="heb-inline">שלחן ערוך אורח חיים קל״ד</span>, are to be confirmed.</li>
+<li><strong>The sources of the story of the ships.</strong> The passages in the <span class="heb-inline">כל בו</span> and the <span class="heb-inline">רוקח</span>, the names of the three sages, and the places named in the different versions are to be identified.</li>
+<li><strong>Rabbi Azriel.</strong> The Rishon to whom the insertion is ascribed is to be identified, together with the manner in which the letters of the name are found in the verse.</li>
+<li><strong>The stanza spelling <span class="heb-inline">חזקיהו</span>.</strong> The lines of the stanza and the source for Chizkiyahu&rsquo;s two hours of prayer at night are to be located.</li>
+<li><strong>The member of the congregation who raised the parallel of <span class="heb-inline">ערבית</span>.</strong> The name is indistinct and is left open.</li>
+<li><strong>The dedication and the date.</strong> The full name of Rav Chaim, the surname and spelling of the sponsor, and the day of the week of the discourse (the lecturer&rsquo;s remarks suggest a Sunday, while the date is given as 10 November 2025, 19 Cheshvan 5786) are to be confirmed before printing.</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em>Tefillah</em>, dated 19 Cheshvan 5786 (10 November 2025). The edition follows the order of the discourse, records the lecturer&rsquo;s reports as his, and leaves unresolved items to the Open Questions.
+</footer>
+
+</body>
+</html>
