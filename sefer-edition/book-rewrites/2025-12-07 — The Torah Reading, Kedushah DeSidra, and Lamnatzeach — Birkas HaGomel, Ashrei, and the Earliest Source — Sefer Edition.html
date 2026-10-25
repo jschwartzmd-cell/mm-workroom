@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; The Torah Reading, Kedushah DeSidra, and Lamnatzeach: Birkas HaGomel, Ashrei, and the Earliest Source</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">קְרִיאַת הַתּוֹרָה, קְדֻשָּׁה דְסִדְרָא, וְלַמְנַצֵּחַ מִזְמוֹר לְדָוִד</h1>
+  <div class="english-title">The Torah Reading, Kedushah DeSidra, and Lamnatzeach: Birkas HaGomel, Ashrei, and the Earliest Source</div>
+  <div class="sub">Studies in <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>) — From the Open Ark to the Close of Davening</div>
+  <div class="date">17 Kislev 5786 · 7 December 2025 · Sefer Edition</div>
+</header>
+<p class="lead">This discourse leaves the opened ark of the previous week, the <em class="term">Brich Shmei</em> (<span class="heb-inline">בריך שמיה</span>), and takes up the reading of the Torah itself: why every <em class="term">oleh</em> (<span class="heb-inline">עולה</span>) makes a blessing of his own before and after his portion; why <em class="term">Birkas HaGomel</em> (<span class="heb-inline">ברכת הגומל</span>) is said at the reading; and the Monday-and-Thursday <em class="term">Yehi Ratzons</em> (<span class="heb-inline">יהי רצון</span>), one of which was lost to censorship.</p>
+<p class="lead">It then passes to <em class="term">Kedushah DeSidra</em> (<span class="heb-inline">קדושה דסידרא</span>): why <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>) is said three times a day and why it is said again here, before <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>); the contrast between the <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) and the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>); and the earliest source of <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), in a responsum of <em class="term">Rav Natronai Gaon</em> (<span class="heb-inline">רב נטרונאי גאון</span>) to the Jews of Lucena, with the picture of the <em class="term">Beis Rabbeinu SheBeBavel</em> (<span class="heb-inline">בית רבינו שבבבל</span>) behind it.</p>
+<p class="lead">The discourse stops, as the lecturer says, in the middle of <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), with the promise to continue the following week.</p>
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+<h2>I. The Blessings of the Oleh</h2>
+<h3>The Question</h3>
+<p>A person called up to the Torah blesses before and after his portion. The question arises at once: a blessing over the Torah (<em class="term">Birkas HaTorah</em> (<span class="heb-inline">ברכת התורה</span>)) was already said that morning, as every morning. Why must a second blessing be made at the reading?</p>
+<h3>Originally Every Oleh Read for Himself</h3>
+<p>In the days of the <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) and the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>)<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> every person called up read his own portion. Whoever received an <em class="term">aliyah</em> (<span class="heb-inline">עליה</span>) had to know it, including the cantillation (<em class="term">taamim</em> (<span class="heb-inline">טעמים</span>)) and the grammar of every word, and some communities still keep this practice. The law is that one who is not prepared may not read. The lecturer related that on the previous day he himself had given the reading to another because he had not prepared.</p>
+<h3>Two Verses and One Targum as Preparation</h3>
+<p>How could a person prepare when he did not know whether he would be called? The authorities answer<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> that one who completes the portion each week, <em class="term">shnayim mikra v’echad targum</em> (<span class="heb-inline">שנים מקרא ואחד תרגום</span>), is sufficiently prepared. The lecturer remarks that he does not believe those who review the portion twice today could take any unprepared <em class="term">aliyah</em> (<span class="heb-inline">עליה</span>) without further practice. But today the <em class="term">baal korei</em> (<span class="heb-inline">בעל קורא</span>) reads everything and the <em class="term">oleh</em> (<span class="heb-inline">עולה</span>) only stands; it is the <em class="term">baal korei</em> (<span class="heb-inline">בעל קורא</span>) who must prepare.</p>
+<h3>The Reason for the Extra Blessing: Kavod HaTorah</h3>
+<p>Why, then, the additional blessing? Because of the honor of the Torah (<em class="term">kavod haTorah</em> (<span class="heb-inline">כבוד התורה</span>)). The morning blessings are for one’s private study. When the Torah is read for the entire congregation, a fresh blessing is required out of respect for it.</p>
+<h2>II. Why Every Oleh: The Decree on Account of Those Entering and Leaving</h2>
+<h3>The Older Practice</h3>
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) near the end of <em class="term">Maseches Megillah</em> (<span class="heb-inline">מסכת מגילה</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> teaches that originally the first <em class="term">oleh</em> (<span class="heb-inline">עולה</span>) blessed before his portion but made no blessing after it; those who followed relied on his opening blessing; and only the last <em class="term">oleh</em> (<span class="heb-inline">עולה</span>) made the closing blessing, <em class="term">asher nasan lanu Toras emes</em> (<span class="heb-inline">אשר נתן לנו תורת אמת</span>). On Monday and Thursday there are three <em class="term">aliyos</em> (<span class="heb-inline">עליות</span>), on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) seven, and the blessings bracketed only the beginning and the end.</p>
+<h3>The Enactment</h3>
+<p>Today the Sages have ordained that every <em class="term">oleh</em> (<span class="heb-inline">עולה</span>) blesses before and after. The reason is a <em class="term">gezeirah mipnei haniknasim vehayotzim</em> (<span class="heb-inline">גזירה מפני הנכנסים והיוצאים</span>): those who enter in the middle of the reading, say during the third <em class="term">aliyah</em> (<span class="heb-inline">עליה</span>), did not hear the opening blessing, and those who leave early do not hear the closing one, and they might conclude that a blessing was omitted. The lecturer draws attention to the sensitivity this shows. A latecomer is commonly dismissed as careless; the Sages instead instituted a whole series of blessings for his sake. He adds that one who sees a man arrive late should therefore not rebuke him, and recalls what the Sages did for him.</p>
+<p>The reading is itself an obligation of the community: on Monday, on Thursday, and above all on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>), Israel may not go three days without Torah.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> When the <em class="term">oleh</em> (<span class="heb-inline">עולה</span>) says <em class="term">Barchu es Hashem hamevorach</em> (<span class="heb-inline">ברכו את ה׳ המבורך</span>), he calls everyone to take part in discharging that obligation together, and the reader and the congregation fulfil it as one.</p>
+<h3>Baruch Hu U’Varuch Shemo</h3>
+<p>The lecturer mentions in passing the confusion among the later authorities as to why the custom is to answer <em class="term">Baruch Hu uvaruch Shemo</em> (<span class="heb-inline">ברוך הוא וברוך שמו</span>) at certain blessings and not at others. The answer is not a matter of strict law and is not found in the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>); the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) wrote that it is said whenever the Name is heard, yet practice has narrowed. A comprehensive responsum on the subject, with a long tract, is found in <em class="term">Mishnah Halachos</em> (<span class="heb-inline">משנה הלכות</span>) of <em class="term">Rav Menashe Klein</em> (<span class="heb-inline">רב מנשה קליין</span>).<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> The lecturer adds an admonition: the title of that work was mocked in some quarters of the <em class="term">yeshivah</em> (<span class="heb-inline">ישיבה</span>) world during the dispute over the <em class="term">eruv</em> (<span class="heb-inline">עירוב</span>) of Boro Park, in which his wife’s grandfather, <span class="heb-inline">ר׳ ישראל בעלסקי</span>, stood on the other side. Such mockery is not the way of Israel toward its Torah scholars; whoever has a halachic argument may make it.</p>
+<h2>III. Birkas HaGomel: Why at the Reading of the Torah</h2>
+<h3>The Four Categories</h3>
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>)<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> derives from <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>) 107 four categories of persons who must give thanks after deliverance, and the <em class="term">Tur</em> (<span class="heb-inline">טור</span>)<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> gives the mnemonic <span class="heb-inline">חיים</span>:</p>
+<ol>
+<li><span class="heb-inline">ח</span> — <em class="term">chavush</em> (<span class="heb-inline">חבוש</span>), one imprisoned.</li>
+<li><span class="heb-inline">י</span> — <em class="term">yam</em> (<span class="heb-inline">ים</span>), one who crosses the sea.</li>
+<li><span class="heb-inline">י</span> — <em class="term">yissurim</em> (<span class="heb-inline">ייסורים</span>), one who was ill and recovered.</li>
+<li><span class="heb-inline">מ</span> — <em class="term">midbar</em> (<span class="heb-inline">מדבר</span>), one who travels through the wilderness.</li>
+</ol>
+<p>In the days of the <em class="term">Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>) the thanks took the form of a thanksgiving offering (<em class="term">korban todah</em> (<span class="heb-inline">קרבן תודה</span>)); today <em class="term">HaGomel</em> (<span class="heb-inline">הגומל</span>) is said in its place.</p>
+<div class="callout"><span class="label">A Dedication</span>The lecturer dedicated the discourse, though not as its sponsor, to the complete recovery of <span class="heb-inline">ר׳ יוסף נחמן זעליג שליט״א</span>, who stands in the second <span class="heb-inline">י</span> of <span class="heb-inline">חיים</span>, <em class="term">yissurim</em> (<span class="heb-inline">ייסורים</span>), and who was then preparing a wedding for his granddaughter; it is a <em class="term">mitzvah</em> (<span class="heb-inline">מצוה</span>) to call him and visit him, among the other sick of Israel.</div>
+<h3>Why at the Reading</h3>
+<p>The verse reads <span class="heb-inline">וירוממוהו בקהל עם ובמושב זקנים יהללוהו</span> (Tehillim 107:32). <em class="term">Bikhal am</em> (<span class="heb-inline">בקהל עם</span>) means a <em class="term">minyan</em> (<span class="heb-inline">מנין</span>); <em class="term">uvemoshav zekeinim</em> (<span class="heb-inline">ובמושב זקנים</span>) means at least two <em class="term">talmidei chachamim</em> (<span class="heb-inline">תלמידי חכמים</span>). Ideally, then, one blesses <em class="term">HaGomel</em> (<span class="heb-inline">הגומל</span>) before ten persons, two of them scholars; some say the two may be counted within the ten. Why is this not demanded in practice? Because scholars are not always to be found, and the Sages’ remedy was to say it at the reading of the Torah: the scroll that lies open before the person stands, in the lecturer’s words, for the two scholars. That is why the blessing is said specifically at the reading, whether or not one was called up.</p>
+<h3>A Pearl from Shalmei Nedarim</h3>
+<p>The previous afternoon, at the third meal, a member of the congregation had shared a pearl from <em class="term">Shalmei Nedarim</em> (<span class="heb-inline">שלמי נדרים</span>), a well-known work on <em class="term">Maseches Nedarim</em> (<span class="heb-inline">מסכת נדרים</span>).<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> Its author served as rabbi of Kupishok, a city in northern Lithuania near Ponevezh, for forty years; the lecturer remarks that without the book he would be unknown. In the introduction the author writes that he had been gravely ill and had recovered, that he was himself the second <span class="heb-inline">י</span> of <span class="heb-inline">חיים</span>, and that the book was his thanksgiving.</p>
+<p>There he asks why <em class="term">HaGomel</em> (<span class="heb-inline">הגומל</span>) differs from every other blessing. Elsewhere the congregation answers <em class="term">Amen</em> (<span class="heb-inline">אמן</span>) and the matter ends; here a whole sentence is added, <span class="heb-inline">מי שגמלך כל טוב הוא יגמלך כל טוב סלה</span>, for which there is no parallel. His answer: one who has been saved by a miracle fears that Heaven drew upon his account of merits to perform it, and that the account now stands lower. He is grateful and anxious together, and so the congregation reassures him: He who has given you good will continue to give you only good.</p>
+<p>A member of the congregation raised the parallel of the response after a circumcision, <span class="heb-inline">כשם שנכנס לברית כן יכנס לתורה ולחופה ולמעשים טובים</span>.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The lecturer accepted the point and distinguished the two: that response is a prayer of mercy for the parents, that the child be raised to Torah, marriage and good deeds, whereas the response to <em class="term">HaGomel</em> (<span class="heb-inline">הגומל</span>) comforts the one who blessed.</p>
+<h3>An Additional Reason: Reading as an Offering</h3>
+<p>The <em class="term">Rosh</em> (<span class="heb-inline">רא״ש</span>)<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> is cited for a further reason: as prayer stands in place of the offerings, so the reading of the Torah stands in place of offerings, and one who cannot bring a <em class="term">korban todah</em> (<span class="heb-inline">קרבן תודה</span>) discharges that wish through the reading itself.</p>
+<h3>A Question on the Response (restored from the recording)</h3>
+<p>The lecturer then recounted a question on this very point, found in the work <em class="term">Hisorerus Teshuvah</em> (<span class="heb-inline">התעוררות תשובה</span>), a responsa collection by a grandson of the <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>).<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> The <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) was succeeded in Pressburg by his eldest son, the <em class="term">Ksav Sofer</em> (<span class="heb-inline">כתב סופר</span>), whose son, <em class="term">Rav Shimon Sofer</em> (<span class="heb-inline">רב שמעון סופר</span>), was the rabbi of Erlau (Eger) in Hungary. The lecturer once met the grandson of that rabbi, a prominent collector of antique Judaica, who told him that his grandfather was ninety-five years old, after sixty years in the rabbinate, when he was taken to Auschwitz. The question in the book is whether one should answer <em class="term">Amen</em> (<span class="heb-inline">אמן</span>) to <em class="term">HaGomel</em> (<span class="heb-inline">הגומל</span>) at all, or say only <span class="heb-inline">מי שגמלך כל טוב</span>. The lecturer notes that the practice is to say both.</p>
+<h2>IV. The Yehi Ratzons of Monday and Thursday, and the Censorship of the Siddur</h2>
+<h3>When They Are Said</h3>
+<p>After the reading on Monday and Thursday, during the rolling of the scroll, several <em class="term">Yehi Ratzons</em> (<span class="heb-inline">יהי רצון</span>) are said. Their origin is unknown; they appear in early prayer books of the <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>). Their timing is disputed. <em class="term">Ashkenazim</em> (<span class="heb-inline">אשכנזים</span>) say them every Monday and Thursday; <em class="term">Sefardim</em> (<span class="heb-inline">ספרדים</span>) say them only on <em class="term">Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>), when they bless the new month; and the <em class="term">Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>)<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> writes that they are to be said only at <em class="term">Shabbos Minchah</em> (<span class="heb-inline">שבת מנחה</span>), a practice, to the lecturer’s knowledge, that no one follows today. Why they are said from the <em class="term">bimah</em> (<span class="heb-inline">בימה</span>), and why they follow the reading, the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) do not say.</p>
+<h3>The Yehi Ratzon That Was Removed</h3>
+<p>One <em class="term">Yehi Ratzon</em> (<span class="heb-inline">יהי רצון</span>) is missing from our prayer books. It began <span class="heb-inline">יהי רצון מלפני אבינו שבשמים להשמיד את אויבינו</span> and continued at length, ending with <em class="term">amen</em> (<span class="heb-inline">אמן</span>). The lecturer’s explanation is censorship: the hostile authorities of earlier centuries scrutinized every word of the prayer book, and did not welcome Jews praying twice weekly for the destruction of their enemies. When and by whom it was removed is not known; the lecturer says that this is what seems to have happened.</p>
+<h2>V. Ashrei Three Times a Day</h2>
+<h3>The Gemara</h3>
+<p>The main section of prayer is finished with <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>), the repetition, <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>), and the reading, which is bound up with prayer without being strictly part of it. A new section now begins, <em class="term">Kedushah DeSidra</em> (<span class="heb-inline">קדושה דסידרא</span>). It is so called because it contains <span class="heb-inline">ואתה קדוש יושב תהלות ישראל</span>. But before it comes <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>), which was already said in <em class="term">Pesukei DeZimrah</em> (<span class="heb-inline">פסוקי דזמרה</span>). Why again, and why here?</p>
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) at the beginning of the <em class="term">Talmud Bavli</em> (<span class="heb-inline">תלמוד בבלי</span>)<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> states: <span class="heb-inline">כל האומר תהלה לדוד בכל יום שלש פעמים מובטח לו שהוא בן עולם הבא</span>. It is, as the lecturer puts it, an entry ticket to the World to Come.</p>
+<h3>Two Reasons</h3>
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) points to two features. The psalm is alphabetical, from <span class="heb-inline">א</span> to <span class="heb-inline">ת</span>, expressing a world in order, without chaos; and it contains <span class="heb-inline">פותח את ידך ומשביע לכל חי רצון</span>, which declares that God provides each one with what he needs. Sephardim open their arms at <em class="term">Posei’ach es Yadecha</em> (<span class="heb-inline">פותח את ידך</span>); Ashkenazim have adopted the gesture, opening the channels, ready to receive.</p>
+<h3>The Requirement of Kavanah</h3>
+<p>It is not a trick by which three recitations ensure a place in the World to Come. All the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) write that it must be said with intention, especially the verse <span class="heb-inline">פותח את ידך</span>, and the law is that one who did not concentrate there returns and says it again.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+<h3>Why Twice at Shacharis</h3>
+<p>Three times a day corresponds to three prayers. Yet Ashrei is said twice at <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>), once in <em class="term">Pesukei DeZimrah</em> (<span class="heb-inline">פסוקי דזמרה</span>) and once before <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>), once at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>), and not at <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>). The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) explain that <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>) was originally optional (<em class="term">reshus</em> (<span class="heb-inline">רשות</span>)); one who for some reason did not pray it would have lost his third Ashrei, and so two were placed at <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>).</p>
+<h3>Ashrei and Kedushah</h3>
+<p>Why here? The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) connect Ashrei with <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>): it is said before the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) of <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>), and before the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) of <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>), and at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>) before the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) of the repetition. <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>) has no <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) and so no Ashrei. The lecturer says that the precise connection is beyond him, a matter of Kabbalah; his own reading is that <em class="term">kadosh</em> (<span class="heb-inline">קדוש</span>) means separate, set apart and far above us, and Ashrei, with its <span class="heb-inline">ארוממך אלוהי המלך</span>, expresses that elevation and so fittingly precedes <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>).</p>
+<div class="callout"><span class="label">A Note of Rabbi Akiva Eiger in the Gilyon HaShas</span>The lecturer observes that in the margins of his own <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>), the <em class="term">Gilyon HaShas</em> (<span class="heb-inline">גליון הש״ס</span>) printed in the Vilna <em class="term">Shas</em> (<span class="heb-inline">ש״ס</span>), <em class="term">Rabbi Akiva Eiger</em> (<span class="heb-inline">רבי עקיבא איגר</span>) wrote notes, some of them questions and some references, and that this is among the first of them.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> He points out that when the <em class="term">Rosh</em> (<span class="heb-inline">רא״ש</span>) quotes this <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>), his text does not read <span class="heb-inline">שלש פעמים בכל יום</span>, and that once a day would suffice. The lecturer adds that we do not rely on this: we are stringent, we all want livelihood, and we say it three times.</div>
+<h2>VI. The Aruch HaShulchan and the Mishnah Berurah</h2>
+<h3>Two Approaches to Practical Halachah</h3>
+<p>The <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>)<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> of <em class="term">Rabbi Yechiel Michel Epstein</em> (<span class="heb-inline">רבי יחיאל מיכל הלוי עפשטיין</span>), rabbi of Navahrudak (Novardok) in Lithuania, is quoted often and frequently disagrees with the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>). The lecturer reports that some leading authorities rely on the <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) more than on the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) for practical rulings. The reason given: the <em class="term">Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>), though the leader of his generation, never held the rabbinic office of a city, whereas the <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) had, by the lecturer’s figure, forty-five to fifty years as a communal rabbi, deciding practical questions. The <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) is often the more lenient, the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) the more stringent, and which to follow remains debated.</p>
+<p>Of the family, the lecturer notes that the author’s son, <em class="term">Rav Baruch Epstein</em> (<span class="heb-inline">רב ברוך הלוי עפשטיין</span>), the author of <em class="term">Torah Temimah</em> (<span class="heb-inline">תורה תמימה</span>), writes in his book <em class="term">Baruch SheAmar</em> (<span class="heb-inline">ברוך שאמר</span>) that the family traces itself to <em class="term">Ben Abishi</em> (<span class="heb-inline">בני אבישי</span>), with Sephardic origins. By way of aside he observes that many who consider themselves pure Lithuanian, Hungarian or Polish stock in fact descend from Spain: his own family, by tradition ten generations in Ashkenaz, goes back eleven generations to a Sephardic family from Portugal or Spain, as his older brother’s research found. He adds that the family name was Weiss for some four hundred years until his grandfather changed it to Ephrati.</p>
+<h3>The Aruch HaShulchan on the Closing Ashrei</h3>
+<p>The lecturer then gives the <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>)’s approach to the Ashrei that closes the davening. Some run through <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>), already removing their <em class="term">tefillin</em> (<span class="heb-inline">תפילין</span>). A friend, he relates, once visited a <em class="term">minyan</em> (<span class="heb-inline">מנין</span>) at the federal prison in Otisville and saw the inmates removing their <em class="term">tefillin</em> (<span class="heb-inline">תפילין</span>) at <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) as if hurrying somewhere. The <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) says that Ashrei is placed at the end precisely as people are about to leave: during the davening we fed the soul; now we go out to feed the body, to earn a living for the sake of Heaven, to support the family, to pay tuition, to buy <em class="term">mitzvos</em> (<span class="heb-inline">מצוות</span>). Here Ashrei is no longer pure praise but a real request, <span class="heb-inline">פותח את ידך</span>. The <em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>)<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> writes that this Ashrei is to be said with more intention than the Ashrei of <em class="term">Pesukei DeZimrah</em> (<span class="heb-inline">פסוקי דזמרה</span>).</p>
+<h2>VII. Lamnatzeach: From Sura to Lucena</h2>
+<h3>The Academies of Babylonia</h3>
+<p>Why is <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), the twentieth chapter of <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>), said here? The earliest source in the old prayer books is a responsum of <em class="term">Rav Natronai Gaon</em> (<span class="heb-inline">רב נטרונאי גאון</span>), head of the academy at <em class="term">Sura</em> (<span class="heb-inline">סורא</span>). Sura, with <em class="term">Pumbedisa</em> (<span class="heb-inline">פומבדיתא</span>) and <em class="term">Nehardea</em> (<span class="heb-inline">נהרדעא</span>), was one of the three great centers of Torah in Babylonia, where <em class="term">ki miTziyon teitzei Torah</em> (<span class="heb-inline">כי מציון תצא תורה</span>) became, for many centuries, <em class="term">ki miBavel teitzei Torah</em> (<span class="heb-inline">כי מבבל תצא תורה</span>). The lecturer places Sura in what is now southern Iraq, near the Saudi border, and recounts that <em class="term">Rav</em> (<span class="heb-inline">רב</span>) moved his academy there from Nehardea to renew the community.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> There followed the <em class="term">Amoraim</em> (<span class="heb-inline">אמוראים</span>), through <em class="term">Ravina</em> (<span class="heb-inline">רבינא</span>) and <em class="term">Rav Ashi</em> (<span class="heb-inline">רב אשי</span>), and then the <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>).</p>
+<h3>Rav Natronai Gaon</h3>
+<p><em class="term">Rav Natronai</em> (<span class="heb-inline">רב נטרונאי</span>) headed Sura in the middle of the ninth century and wrote more responsa than any other <em class="term">Gaon</em> (<span class="heb-inline">גאון</span>), although <em class="term">Rav Hai</em> (<span class="heb-inline">רב האי</span>), <em class="term">Rav Sherira</em> (<span class="heb-inline">רב שרירא</span>) and <em class="term">Rav Amram</em> (<span class="heb-inline">רב עמרם</span>) are better known.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> The lecturer adds, in a digression, that before the discovery of the Cairo Genizah, a single room containing some 150,000 pages unseen for a thousand years, little of the Geonic literature was known, and that a project to digitize the whole is under way.</p>
+<h3>Lucena</h3>
+<p>His correspondents included the communities of Spain, then at the beginning of its history; the golden age of the <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>), <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>), <em class="term">Rashba</em> (<span class="heb-inline">רשב״א</span>) and <em class="term">Rosh</em> (<span class="heb-inline">רא״ש</span>) came later. The lecturer says the Spanish Jews of that time were somewhat ignorant of the order of prayer. <em class="term">Rav Natronai</em> (<span class="heb-inline">רב נטרונאי</span>) gave guidance to the community of Lucena, in the region of Córdoba, a city that Jews had settled since the destruction of the Second Temple and in which, for many centuries, they were the majority. The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) call it <span class="heb-inline">אליסנה</span>, which, the lecturer explained, is the Spanish way of saying <span class="heb-inline">קהלי הושענא</span>, <span class="heb-inline">אלי הושענא</span>. The community asked: tell us how to pray. He sent them many letters, one of which, known already in the nineteenth century, before the Genizah was found, describes a custom that is the key to what follows.</p>
+<h2>VIII. Beis Rabbeinu SheBeBavel</h2>
+<h3>The Little Sanctuary</h3>
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in <em class="term">Megillah</em> (<span class="heb-inline">מגילה</span>) 29a<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> explains the verse <span class="heb-inline">ואהי להם למקדש מעט</span> as referring to the synagogues and study halls of Babylonia, and according to another view to <em class="term">Beis Rabbeinu SheBeBavel</em> (<span class="heb-inline">בית רבינו שבבבל</span>), which the lecturer, who notes the phrase is familiar to Chabad <em class="term">chassidim</em> (<span class="heb-inline">חסידים</span>) from 770, identifies with the house of <em class="term">Rav</em> (<span class="heb-inline">רב</span>) in Sura. From that original synagogue, he says, our synagogues and prayers derive their character.</p>
+<h3>The Order of Prayer in Rav’s Synagogue</h3>
+<p>The <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>)<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> records that the early pious (<em class="term">chassidim harishonim</em> (<span class="heb-inline">חסידים הראשונים</span>)) would wait an hour before praying, and they also stayed an hour after prayer; so the <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>) codifies.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> The lecturer notes that we do not do this today: we must hurry to the train. But in <em class="term">Rav</em> (<span class="heb-inline">רב</span>)’s academy the students remained in the synagogue, still in <em class="term">tallis</em> (<span class="heb-inline">טלית</span>) and <em class="term">tefillin</em> (<span class="heb-inline">תפילין</span>), opened <em class="term">Gemaras</em> (<span class="heb-inline">גמרות</span>) and <em class="term">Mishnayos</em> (<span class="heb-inline">משניות</span>), and learned for hours. Only when ready to leave did they rise and say <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>), <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) and <em class="term">Kaddish</em> (<span class="heb-inline">קדיש</span>), and depart.</p>
+<h3>The First Mention of Lamnatzeach</h3>
+<p>This, says the lecturer, is the first appearance of <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), and it was not connected to the prayer proper at all. There was a long break, perhaps even <em class="term">Kiddush</em> (<span class="heb-inline">קידוש</span>) and something to eat, and then, as they removed <em class="term">tallis</em> (<span class="heb-inline">טלית</span>) and <em class="term">tefillin</em> (<span class="heb-inline">תפילין</span>) on their way out, they said <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>), <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>) and <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>). That is what <em class="term">Rav Natronai</em> (<span class="heb-inline">רב נטרונאי</span>) wrote to Lucena: do the same.</p>
+<div class="callout"><span class="label">A Legend of the Gaonic Era</span>The lecturer observes that stories of the great did not begin with the <em class="term">Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>); even the <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>) have legends. <em class="term">Rav Natronai</em> (<span class="heb-inline">רב נטרונאי</span>) was so close to the communities of Spain that after his death a story spread that he had once appeared among them suddenly, by <em class="term">kefitzas haderech</em> (<span class="heb-inline">קפיצת הדרך</span>), from Babylonia, taught Torah, and returned. A century later <em class="term">Rav Hai Gaon</em> (<span class="heb-inline">רב האי גאון</span>) received a letter from Spain asking whether it was true, and replied that it never happened: he did not know who had fooled them; there are wonders, and Jacob our father had <em class="term">kefitzas haderech</em> (<span class="heb-inline">קפיצת הדרך</span>), but not this. Someone had appeared in Spain claiming to be <em class="term">Rav Natronai</em> (<span class="heb-inline">רב נטרונאי</span>) and invented the tale.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a></div>
+<h3>The End of Lucena</h3>
+<p>Lucena was so significant that the <em class="term">Rif</em> (<span class="heb-inline">רי״ף</span>), <em class="term">Rabbeinu Yitzchak Alfasi</em> (<span class="heb-inline">רבינו יצחק אלפסי</span>), whose work stands at the back of every <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>), was its rabbi; so were <em class="term">Rabbi Yitzchak ibn Ghayyat</em> (<span class="heb-inline">ר״י גאת</span>) and <em class="term">Rabbi Yosef ibn Migash</em> (<span class="heb-inline">רי מיגאש</span>). Today there are no Jews in Lucena. About twenty years earlier, the lecturer reports, Spanish newspapers in Córdoba told that road works at Lucena had uncovered an ancient cemetery with more than three hundred graves, proving at last the size of the community. Only two of the three hundred gravestones remained intact and legible. The reason, he explains, is that Spanish law for many years allowed gravestones of a Jewish cemetery to be taken for building; who knows how many Spanish homes were built from the stones of our forefathers.</p>
+<p>The lecturer recalls a similar sight in Nikolsburg, in Czechoslovakia, where a fence in the city, not far from the cemetery, is built entirely of gravestones, a sight he found heartrending. Such is the story of Israel in exile; but the Torah remains. The gravestones are gone, and we are alive and learning the same Torah the Rif learned.</p>
+<h2>IX. Why Lamnatzeach Here, and What It Means</h2>
+<h3>The Eighteen Chapters</h3>
+<p>In the structure of <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>), the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>)<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> states several times that chapters one and two were originally a single chapter. Our twentieth chapter is therefore, in the older count, the nineteenth. And the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) counts the eighteen blessings of <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) against the first eighteen chapters. After the eighteen comes, in that count, <em class="term">Lamnatzeach Mizmor LeDavid</em> (<span class="heb-inline">למנצח מזמור לדוד</span>). After our eighteen blessings, the lecturer concludes, we say <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>).</p>
+<h3>What the Chapter Says</h3>
+<p><span class="heb-inline">יענך ה׳ ביום צרה</span><a class="footnote-ref" id="ref25" href="#fn25">[25]</a>: Master of the universe, answer the prayers we have just begged for.</p>
+<h3>A Blessing Rooted in the Yerushalmi</h3>
+<p>The lecturer reports something he had come across the night before. The custom today, especially among <em class="term">chassidim</em> (<span class="heb-inline">חסידים</span>), at the graves of the righteous or after the prayers of the <em class="term">Yamim Noraim</em> (<span class="heb-inline">ימים נוראים</span>), is that one says to another <span class="heb-inline">מ׳האט געפועלט אלעס גוט</span>, in Yiddish, that all one prayed for should come true; it has even been set to a song. The <em class="term">Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>) in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>), he says, is the source.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> On the verse <span class="heb-inline">יענך ה׳ ביום צרה</span> it teaches that when one sees a person praying, crying and asking, then after he finishes it is fitting to go to him and say that the Holy One should accept his prayer, and that this should be done every day.</p>
+<h3>The Communal Dimension</h3>
+<p>We do this every day. The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>), on the basis of the <em class="term">Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>), give this as the simple sense of reciting <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>) at the close of davening: one is not speaking to oneself but to the congregation. Saying <span class="heb-inline">יענך ה׳ ביום צרה</span>, one blesses the person on one’s right and the person on one’s left, that God should answer all their prayers. It is not a selfish request. The lecturer calls it a beautiful intention for <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>).</p>
+<h2>X. Closing</h2>
+<p>There is much more to say on <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), which is full of historical depth, and the lecturer promised to continue the following week. The discourse closed with the <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>): <span class="heb-inline">רבי חנניה בן עקשיא אומר רצה הקדוש ברוך הוא לזכות את ישראל</span>.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a></p>
+<section class="mareh">
+<h2>מראה מקומות &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">משנה מגילה ד׳:א׳</span>; <span class="heb-inline">גמרא מגילה כ״א ע״א–ב</span>.</span>
+  <span class="expanded"> The Mishnah (Sefaria) fixes three readers on Monday, Thursday and <em class="term">Shabbos Minchah</em> (<span class="heb-inline">שבת מנחה</span>), with a blessing only for the first and the last. The Gemara on 21b takes up the later enactment (see the note following). The lecturer’s statement that one not prepared may not read is his own ruling and was not located in the passage consulted.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">שלחן ערוך, אורח חיים רפ״ה</span>; <span class="heb-inline">ברכות ח׳ ע״א</span>.</span>
+  <span class="expanded"> The obligation of <em class="term">shnayim mikra v’echad targum</em> (<span class="heb-inline">שנים מקרא ואחד תרגום</span>) is from <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 8a; its function as preparation for an <em class="term">aliyah</em> (<span class="heb-inline">עליה</span>) is as the lecturer reports the authorities. The text of the passage was not retrieved for this edition.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">מגילה כ״א ע״ב</span> — <span class="heb-inline">גזירה מפני הנכנסין ומפני היוצאין</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: the Gemara explains that the decree is on account of those who enter in the middle of the reading and those who leave early, lest they conclude that one blessing suffices. The earlier practice, that the first blessed before and the last after, is implied by the Gemara and stated in the Mishnah.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">בבא קמא פ״ב ע״א</span>.</span>
+  <span class="expanded"> On Sefaria the Gemara derives the reading on Monday, Thursday and <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) from <span class="heb-inline">וילכו שלשת ימים במדבר ולא מצאו מים</span> (Shemos 15:22), water being Torah, and ascribes the original enactment to “the prophets among them”; <em class="term">Ezra</em> (<span class="heb-inline">עזרא</span>) instituted that three persons read, ten verses in all. The lecturer’s attribution to <em class="term">Moshe Rabbeinu</em> (<span class="heb-inline">משה רבינו</span>) was not located in this passage (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">שו״ת משנה הלכות</span>, <span class="heb-inline">ר׳ מנשה קליין</span>.</span>
+  <span class="expanded"> Rabbi Menashe Klein, the Ungvarer Rav of Boro Park, is the author of the multi-volume <em class="term">Mishnah Halachos</em> (<span class="heb-inline">משנה הלכות</span>). The dates and the details of his biography, and the content of the tract on <em class="term">Baruch Hu uvaruch Shemo</em> (<span class="heb-inline">ברוך הוא וברוך שמו</span>), have not been verified here (Open Questions, no. 2). The remarks on the <em class="term">eruv</em> (<span class="heb-inline">עירוב</span>) dispute are the lecturer’s report.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">ברכות נ״ד ע״ב</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria. Four must give thanks: seafarers, desert travelers, one who recovered from illness, and one released from prison. Abaye derives the need for ten from <span class="heb-inline">בקהל עם</span> and Mar Zutra the need for two sages from <span class="heb-inline">ובמושב זקנים</span> (Tehillim 107:32); Rav Ashi’s objections are left unresolved. That a Torah scroll stands in for the two sages is the lecturer’s report and was not located in the Gemara.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">טור, אורח חיים רי״ט</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: <span class="heb-inline">ארבעה צריכים להודות</span>, before ten, with two sages, and the mnemonic <span class="heb-inline">וכל החיים יודוך סלה</span>. The Rosh on <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) ch. 9 likewise notes that the question of ten and two sages is unresolved and that one follows the stringent view.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><em class="term">Shalmei Nedarim</em> (<span class="heb-inline">שלמי נדרים</span>), introduction.</span>
+  <span class="expanded"> The author’s name is uncertain: the recording renders it as “Alexander Sender HaKohen” followed by a garbled surname (Kaplan in one transcript, Shefelin in the summary). The rabbinate in Kupishok for forty years and the content of the introduction are as the lecturer reports; the book was not located on Sefaria (Open Questions, no. 3).</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">שבת קל״ז ע״ב</span> — the blessing after a circumcision.</span>
+  <span class="expanded"> Confirmed on Sefaria: those standing there say, “Just as he has entered into the covenant, so may he enter into Torah, marriage, and good deeds.” The lecturer first cited the page as 139; it is 137b.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">רא״ש</span> on <span class="heb-inline">ברכות</span>, ch. 9.</span>
+  <span class="expanded"> As the lecturer reports. On Sefaria the Rosh on <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 9:3 discusses the ten and two sages of <em class="term">HaGomel</em> (<span class="heb-inline">הגומל</span>); the comparison of the reading to a <em class="term">korban todah</em> (<span class="heb-inline">קרבן תודה</span>) was not found there and is unlocated (Open Questions, no. 4). That prayer stands in place of the offerings is <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 26b, confirmed.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><em class="term">Hisorerus Teshuvah</em> (<span class="heb-inline">התעוררות תשובה</span>), <span class="heb-inline">ר׳ שמעון סופר</span>, rabbi of Erlau.</span>
+  <span class="expanded"> Restored from the recording; the work and its author are as the lecturer reports, and the biographical details (age, years in the rabbinate, death in Auschwitz) are the grandson’s, relayed. Not located on Sefaria (Open Questions, no. 5). The summary garbled the title as <em class="term">Eretz Truva</em> (<span class="heb-inline">אריץ טרובא</span>) and the author’s work as <em class="term">Ateres Tzvi</em> (<span class="heb-inline">עטרת צבי</span>); neither is accepted here.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><em class="term">Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>), <span class="heb-inline">ר׳ שמחה מויטרי</span>.</span>
+  <span class="expanded"> Rabbi Simcha of Vitry, a student of Rashi. The statement that the <em class="term">Yehi Ratzons</em> (<span class="heb-inline">יהי רצון</span>) are said only at <em class="term">Shabbos Minchah</em> (<span class="heb-inline">שבת מנחה</span>) is as the lecturer reports; the passage was not located (Open Questions, no. 6).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">ברכות ד׳ ע״ב</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: Rabbi Elazar said in the name of Rabbi Avina, “Anyone who recites <em class="term">Tehillah LeDavid</em> (<span class="heb-inline">תהלה לדוד</span>) three times every day is assured of a place in the World to Come.” The Gemara concludes that the preeminence of the psalm comes from combining its alphabetical order with its mention of God’s sustaining all creation.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short"><span class="heb-inline">שלחן ערוך, אורח חיים נ״א:ז׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: one must concentrate on the verse <span class="heb-inline">פותח את ידך</span>, and if one’s attention wandered one must return and say it again. The reference to the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) 51:16 in the working text was not retrieved and is not relied on (Open Questions, no. 7).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><em class="term">Gilyon HaShas</em> (<span class="heb-inline">גליון הש״ס</span>), <em class="term">Rabbi Akiva Eiger</em> (<span class="heb-inline">רבי עקיבא איגר</span>), on <span class="heb-inline">ברכות ד׳ ע״ב</span>.</span>
+  <span class="expanded"> The recording names <em class="term">Rabbi Akiva Eiger</em> (<span class="heb-inline">רבי עקיבא איגר</span>); the summary had misrendered it as the <em class="term">Ketzos HaChoshen</em> (<span class="heb-inline">קצות החושן</span>), an error carried into the working text and corrected here. Confirmed on Sefaria: the Gilyon HaShas on 4b has the comment beginning <span class="heb-inline">שם בכל יום ג״פ</span>, to the effect that the Rosh lacks “three times” and that the Tur and the Rokeach (siman 320) likewise have the saying without it. The Rosh’s own text was not located (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>), <span class="heb-inline">ר׳ יחיאל מיכל הלוי עפשטיין</span>.</span>
+  <span class="expanded"> Rabbi Yechiel Michel Epstein served in Navahrudak (Sefaria: composition 1865–1905). The lecturer’s figure of forty-five to fifty years as a rabbi is his own and is higher than the working text’s “over 35 years”; the dates <span class="heb-inline">1829–1908</span> were not confirmed on Sefaria (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>), <span class="heb-inline">ר׳ אלכסנדר זיסקינד מהורודנא</span>.</span>
+  <span class="expanded"> As the lecturer reports; the passage was not located. The passage of the <em class="term">Aruch HaShulchan</em> (<span class="heb-inline">ערוך השלחן</span>) on the closing Ashrei was likewise not retrieved (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><em class="term">Sura</em> (<span class="heb-inline">סורא</span>) and the academy of <em class="term">Rav</em> (<span class="heb-inline">רב</span>).</span>
+  <span class="expanded"> As the lecturer reports. That <em class="term">Rav</em> (<span class="heb-inline">רב</span>) moved his academy from Nehardea to Sura is not established from the sources consulted and is left as his report (Open Questions, no. 10).</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short"><span class="heb-inline">תשובות רב נטרונאי גאון</span>, ed. Brody (Jerusalem 1994).</span>
+  <span class="expanded"> Rav Natronai bar Hilai headed Sura c. 853–858. The edition by Robert Brody is the modern critical one; the publisher named in the working text (Yad HaRav Herzog) was not confirmed and is omitted. The responsum to Lucena in which <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>) is first mentioned was not located (Open Questions, no. 11).</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">מגילה כ״ט ע״א</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria. Rabbi Yitzchak reads <span class="heb-inline">ואהי להם למקדש מעט</span> (Yechezkel 11:16) of the synagogues and study halls in Babylonia, and Rabbi Elazar of the house of our master in Babylonia, i.e. Rav. The lecturer’s identification of that house with a synagogue Rav founded at Sura is his report.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">משנה ברכות ה׳:א׳</span>; <span class="heb-inline">ברכות ל״ב ע״ב</span>; <span class="heb-inline">ירושלמי ברכות ה׳:א׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria. The Mishnah has the early pious wait an hour before praying; the Baraisa on 32b has them wait an hour, pray, and wait an hour after, from <span class="heb-inline">אשרי יושבי ביתך</span> (Tehillim 84:5) and <span class="heb-inline">אך צדיקים יודו לשמך</span> (140:14); the Yerushalmi on the Mishnah in 5:1 likewise speaks of an hour after prayer. The lecturer cited the Mishnah; the summary and the working text cited the Yerushalmi.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short"><span class="heb-inline">רמב״ם, הלכות תפילה ד׳:ט״ז</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: the pious of earlier generations would wait an hour before praying and an hour after. The halakhah cites no source.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short">The legend of <em class="term">Rav Natronai</em> (<span class="heb-inline">רב נטרונאי</span>); the reply of <em class="term">Rav Hai</em> (<span class="heb-inline">רב האי</span>).</span>
+  <span class="expanded"> As the lecturer relates it. The reply of Rav Hai was not located. In the commonly told version the legend places Rav Natronai in Germany (Mainz) and not in Spain; the lecturer said Spain (Open Questions, no. 12).</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><span class="heb-inline">ברכות ט׳ ע״ב</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: the Gemara counts nineteen chapters up to <span class="heb-inline">יהיו לרצון</span> (Tehillim 19:15) against the Sages’ eighteen, and resolves it by treating chapters 1 and 2 as one. Hence our chapter 20 is the nineteenth in the older count. The working text had the numbers reversed; the lecturer’s own wording is unclear and is rendered here as the Gemara has it.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><span class="heb-inline">תהלים כ׳:ב׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: “May God answer you in time of trouble, the name of Jacob’s God keep you safe.”</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><span class="heb-inline">ירושלמי ברכות</span>.</span>
+  <span class="expanded"> Not located. The Yerushalmi on <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 4:4 and 5:1 on Sefaria do not cite <span class="heb-inline">תהלים כ׳:ב׳</span> in this connection. The lecturer said he found the source the night before; he cited no chapter. The phrase he quoted is as transcribed from the recording (Open Questions, no. 13).</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">משנה מכות ג׳:ט״ז</span>.</span>
+  <span class="expanded"> The closing <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) recited by the lecturer at the end of the recording; the text was not retrieved for this edition.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Reports of the lecturer are recorded as his and are not asserted in the text.</p>
+<ol>
+<li><strong>The attribution to Moshe at Mei Marah.</strong> The lecturer said that Moshe instituted the three-day reading; the Gemara in <em class="term">Bava Kamma</em> (<span class="heb-inline">בבא קמא</span>) 82a, as retrieved, says “the prophets.” To be sourced.</li>
+<li><strong><em class="term">Mishnah Halachos</em></strong><strong> (</strong><span class="heb-inline">משנה הלכות</span><strong>)</strong><strong>.</strong> The tract on <em class="term">Baruch Hu uvaruch Shemo</em> (<span class="heb-inline">ברוך הוא וברוך שמו</span>) and the biographical particulars of its author to be confirmed.</li>
+<li><strong>The author of </strong><strong><em class="term">Shalmei Nedarim</em></strong><strong> (</strong><span class="heb-inline">שלמי נדרים</span><strong>)</strong><strong>.</strong> Name (Kaplan or Shefelin), rabbinate and the quoted question to be confirmed from the book.</li>
+<li><strong>The </strong><strong><em class="term">Rosh</em></strong><strong> (</strong><span class="heb-inline">רא״ש</span><strong>)</strong><strong> on the reading as an offering.</strong> Not found in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) ch. 9; to be located.</li>
+<li><strong><em class="term">Hisorerus Teshuvah</em></strong><strong> (</strong><span class="heb-inline">התעוררות תשובה</span><strong>)</strong><strong>.</strong> The question on <em class="term">Amen</em> (<span class="heb-inline">אמן</span>) and <span class="heb-inline">מי שגמלך</span>, and the biographical report of the author’s age and death, to be confirmed with the work. Restored from the recording, omitted from the earlier text.</li>
+<li><strong>The </strong><strong><em class="term">Machzor Vitry</em></strong><strong> (</strong><span class="heb-inline">מחזור ויטרי</span><strong>)</strong><strong>.</strong> The passage on <em class="term">Shabbos Minchah</em> (<span class="heb-inline">שבת מנחה</span>) to be located.</li>
+<li><strong><em class="term">Mishnah Berurah</em></strong><strong> (</strong><span class="heb-inline">משנה ברורה</span><strong>)</strong><strong> on the intention at </strong><span class="heb-inline">פותח את ידך</span><strong>.</strong> The working text’s reference (51:16) was not retrieved; to be cited.</li>
+<li><strong>The </strong><strong><em class="term">Gilyon HaShas</em></strong><strong> (</strong><span class="heb-inline">גליון הש״ס</span><strong>)</strong><strong> and the </strong><strong><em class="term">Rosh</em></strong><strong> (</strong><span class="heb-inline">רא״ש</span><strong>)</strong><strong>.</strong> The note of <em class="term">Rabbi Akiva Eiger</em> (<span class="heb-inline">רבי עקיבא איגר</span>) is confirmed (note 15); the text of the Rosh on <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 4b, which the note says lacks “three times,” remains to be located.</li>
+<li><strong>The </strong><strong><em class="term">Aruch HaShulchan</em></strong><strong> (</strong><span class="heb-inline">ערוך השלחן</span><strong>)</strong><strong>.</strong> The passage on the closing Ashrei, the <em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>), the dates, and the years of rabbinate (forty-five to fifty versus over thirty-five) to be confirmed.</li>
+<li><strong><em class="term">Rav</em></strong><strong> (</strong><span class="heb-inline">רב</span><strong>)</strong><strong> and Sura.</strong> Whether <em class="term">Rav</em> (<span class="heb-inline">רב</span>) moved his academy from Nehardea to Sura, and the location of Sura, to be confirmed.</li>
+<li><strong>The responsum of </strong><strong><em class="term">Rav Natronai</em></strong><strong> (</strong><span class="heb-inline">רב נטרונאי</span><strong>)</strong><strong> to Lucena.</strong> The passage, the edition and its publisher, and the claim that it is the first mention of <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), to be located.</li>
+<li><strong>The legend of </strong><strong><em class="term">Rav Natronai</em></strong><strong> (</strong><span class="heb-inline">רב נטרונאי</span><strong>)</strong><strong> and the reply of </strong><strong><em class="term">Rav Hai</em></strong><strong> (</strong><span class="heb-inline">רב האי</span><strong>)</strong><strong>.</strong> The source, and whether the place was Spain (the lecturer) or Mainz (common telling), to be settled.</li>
+<li><strong>The </strong><strong><em class="term">Yerushalmi</em></strong><strong> (</strong><span class="heb-inline">ירושלמי</span><strong>)</strong><strong> on </strong><span class="heb-inline">יענך ה׳ ביום צרה</span><strong>.</strong> Not located; the chapter to be obtained from the lecturer.</li>
+<li><strong>The dedication.</strong> The name and spelling to be confirmed.</li>
+<li><strong>The Hebrew date.</strong> Computed as 17 Kislev 5786 for 7 December 2025; the earlier text and the summary gave 7 Kislev.</li>
+</ol>
+</section>
+<footer>
+  Sefer Edition of Rabbi Ephrati’s discourse on <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>), 17 Kislev 5786. The edition follows the order of the discourse, records the lecturer’s reports as his, and leaves unresolved items to the Open Questions.
+</footer>
+
+</body>
+</html>

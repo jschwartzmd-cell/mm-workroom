@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Siyum Tachanun — Shomer Yisrael, Kel Erech Apayim, and Brich Shmei — Sefer Edition</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+<header class="title">
+  <h1 dir="rtl">סִיּוּם הַתַּחֲנוּן וּפְתִיחַת הָאָרוֹן — שׁוֹמֵר יִשְׂרָאֵל, קֵל אֶרֶךְ אַפַּיִם, וּבְרִיךְ שְׁמֵהּ</h1>
+  <div class="english-title">Closing <em>Tachanun</em> and Opening the <em>Aron</em>: <em>Shomer Yisrael</em>, <em>Kel Erech Apayim</em>, and <em>Brich Shmei</em></div>
+  <div class="sub">Studies in <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>) — From <em class="term">Tachanun</em> to the Torah Reading</div>
+  <div class="date">3 Kislev 5786 &nbsp;&middot;&nbsp; 23 November 2025 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+<p class="lead">This discourse completes <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>) and crosses into the Torah reading. It begins with <em class="term">Shomer Yisrael</em> (<span class="heb-inline">שומר ישראל</span>) and the stanza of it that almost no <em class="term">siddur</em> prints, and with the closing verses of <em class="term">Tachanun</em>; it takes up <em class="term">VaAnachnu Lo Neda</em> (<span class="heb-inline">ואנחנו לא נדע</span>) and the three postures of prayer, and the verse <em class="term">Al Tizkar Lanu Avonos Rishonim</em> (<span class="heb-inline">אל תזכר לנו עונות ראשונים</span>) as read by the <em class="term">Ach Pri Tevuah</em> (<span class="heb-inline">אך פרי תבואה</span>); and it explains the <em class="term">Chatzi Kaddish</em> (<span class="heb-inline">חצי קדיש</span>) that follows.</p>
+<p class="lead">It then turns to the opening of the <em class="term">Aron</em> (<span class="heb-inline">ארון</span>) as a time of favor (<span class="heb-inline">עת רצון</span>); to <em class="term">Kel Erech Apayim</em> (<span class="heb-inline">קל ארך אפים</span>), the one prayer of the weekday <em class="term">siddur</em> that is printed in two versions, with the three reasons given for it and the count of fifty words in the <em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>); and to <em class="term">VaYehi BiNsoa HaAron</em> (<span class="heb-inline">ויהי בנסוע הארן</span>), the verse of the ark that went before Israel.</p>
+<p class="lead">It closes with <em class="term">Brich Shmei</em> (<span class="heb-inline">בריך שמיה</span>): its source in the <em class="term">Zohar</em> (<span class="heb-inline">זוהר</span>), the time for saying it, the words in parentheses that ask for children, and the saying <em class="term">Ana Avda</em> (<span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>), together with the manner in which the moment is to be kept.</p>
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+<h2>I. Shomer Yisrael</h2>
+<h3>An Ancient Piyyut</h3>
+<p><em class="term">Shomer Yisrael</em> (<span class="heb-inline">שומר ישראל</span>) is said every day: not only on the days when <em class="term">Tachanun</em> is said, but also on Monday and Thursday, when it follows <em class="term">Vehu Rachum</em> (<span class="heb-inline">והוא רחום</span>). It opens:</p>
+<blockquote>
+<div class="heb">שׁוֹמֵר יִשְׂרָאֵל, שְׁמוֹר שְׁאֵרִית יִשְׂרָאֵל, וְאַל יֹאבַד יִשְׂרָאֵל הָאוֹמְרִים שְׁמַע יִשְׂרָאֵל.</div>
+<div class="trans">Guardian of Israel, guard the remnant of Israel, and let not Israel perish, those who say “Hear, O Israel.”</div>
+</blockquote>
+<p>The author of this <em class="term">piyyut</em> (<span class="heb-inline">פיוט</span>) is unknown. Researchers have tried to trace its first appearance, and it is found already in the <em class="term">siddurim</em> of the Ashkenazic <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>), among them the <em class="term">Siddur Rashi</em> (<span class="heb-inline">סדור רש״י</span>), of which the lecturer has spoken on many occasions.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The <em class="term">piyyut</em> is a petition, at the end of <em class="term">Tachanun</em> and after <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>), that the Guardian of Israel guard the people that has just said <em class="term">Shema Yisrael</em> (<span class="heb-inline">שמע ישראל</span>).</p>
+<h3>The Missing Stanza</h3>
+<p>A stanza of the <em class="term">piyyut</em> is missing from the <em class="term">siddurim</em> of most Ashkenazic communities. Those who pray <em class="term">Nusach Sefard</em> (<span class="heb-inline">נוסח ספרד</span>) and the Sephardic and Eastern rites add it; as the lecturer recited it, it reads:</p>
+<blockquote>
+<div class="heb">שׁוֹמֵר גּוֹי קָדוֹשׁ, שְׁמוֹר שְׁאֵרִית עַם קָדוֹשׁ, וְאַל יֹאבַד גּוֹי קָדוֹשׁ, הַמְשַׁלְּשִׁים בְּשָׁלשׁ קְדֻשּׁוֹת לְקָדוֹשׁ.</div>
+<div class="trans">Guardian of the holy nation, guard the remnant of the holy people, and let not the holy nation perish, who three times proclaim sanctity to the Holy One.</div>
+<div class="source">As recited in the recording; the text is that of the Sephardic rites.</div>
+</blockquote>
+<p>The <em class="term">Shelah HaKadosh</em> (<span class="heb-inline">של״ה הקדוש</span>) issued his own <em class="term">siddur</em>, <em class="term">Shaar HaShamayim</em> (<span class="heb-inline">שער השמים</span>),<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> and charged his children in his ethical will (<span class="heb-inline">צוואה</span>) that when they printed it they not omit a further verse that he had found to belong to the <em class="term">piyyut</em>. The lecturer gave it as <em class="term">Shomer Goy Rabba</em> (<span class="heb-inline">שומר גוי רבא</span>), “guardian of the great nation,” continuing in the same pattern and ending <em class="term">HaOmrim Amen Yehei Shemei Rabba</em> (<span class="heb-inline">האומרים אמן יהא שמיה רבא</span>); he said that he did not remember the rest of it.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> <em class="term">Rabbi Nosson Adler</em> (<span class="heb-inline">ר׳ נתן אדלר</span>), the teacher of the <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>), is reported to have added it as well.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> The Ashkenazic community does not say it, and the lecturer has seen no Ashkenazic <em class="term">siddur</em> that prints it; yet to the <em class="term">Shelah</em> it was essential.</p>
+<h3>Differing Customs</h3>
+<p>The <em class="term">Gra</em> (<span class="heb-inline">הגר״א</span>) did not say <em class="term">Shomer Yisrael</em> on an ordinary weekday, but only on a public fast (<span class="heb-inline">תענית ציבור</span>); the lecturer cites the <em class="term">Maaseh Rav</em> (<span class="heb-inline">מעשה רב</span>), the record of the <em class="term">Gra</em>’s customs and practices.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> The rest of Israel is not like that: <em class="term">Shomer Yisrael</em> is printed in every Ashkenazic <em class="term">siddur</em> and is said every day.</p>
+<h2>II. Closing Tachanun</h2>
+<p>After <em class="term">Shomer Yisrael</em> the text continues <em class="term">Mispayyes BeTachanunim</em> (<span class="heb-inline">מתפייס בתחנונים</span>), “He is appeased by supplications,” the culmination of all the supplications that have been said: the worshipper asks that God be appeased by all that has just been poured out before Him.</p>
+<p>Then one last <em class="term">Avinu Malkeinu</em> (<span class="heb-inline">אבינו מלכנו</span>) is said, the <em class="term">Avinu Malkeinu</em> of <em class="term">Rabbi Akiva</em> (<span class="heb-inline">רבי עקיבא</span>).<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> In a year of drought no one could bring rain; <em class="term">Rabbi Akiva</em> rose as <em class="term">shaliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) and said <em class="term">Avinu Malkeinu</em>, and the rain came. Why this one <em class="term">Avinu Malkeinu</em> was set into the daily <em class="term">Tachanun</em> the lecturer does not know; it is the custom.</p>
+<h2>III. VaAnachnu Lo Neda</h2>
+<h3>The Three Postures</h3>
+<p>A short passage follows: <em class="term">VaAnachnu Lo Neda Mah Na’aseh, Ki Alecha Eineinu</em> (<span class="heb-inline">ואנחנו לא נדע מה נעשה כי עליך עינינו</span>), “we do not know what to do, for our eyes are upon You.” The <em class="term">Rishonim</em>, as the lecturer reports, explain that it comes at the end of the three physical postures of prayer.</p>
+<p>The opening of the service, <em class="term">Pesukei DeZimra</em> (<span class="heb-inline">פסוקי דזמרה</span>) and <em class="term">Kri’as Shema</em> (<span class="heb-inline">קריאת שמע</span>), is said <em class="term">miyushav</em> (<span class="heb-inline">מיושב</span>), seated; the lecturer says that the <em class="term">Shulchan Aruch</em> directs one to sit for <em class="term">Kri’as Shema</em>, although some people stand.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> <em class="term">Shemoneh Esrei</em> is said <em class="term">me’umad</em> (<span class="heb-inline">מעומד</span>), standing. <em class="term">Tachanun</em> is <em class="term">nefilas apayim</em> (<span class="heb-inline">נפילת אפים</span>), falling on the face: in earlier times lying flat on the floor, today on the forearm. The worshipper has stood, has sat, and has fallen; he has prayed in whatever manner he can. What is left is to say: please accept.</p>
+<h3>Sitting and Standing</h3>
+<p>On this basis the <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>) is that <em class="term">VaAnachnu Lo Neda</em> is said seated and <em class="term">Mah Na’aseh</em> standing. The <em class="term">Mechaber</em> (<span class="heb-inline">מחבר</span>) is not strict about it, but the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) brings it in the name of the <em class="term">Shelah</em>.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> People are not always careful about it; many rise at <em class="term">VaAnachnu Lo Neda</em>, but the proper practice is the reverse. The lecturer adds that the <em class="term">siddurim</em> (he names the ArtScroll) print it so, and that the <em class="term">Rambam</em> in <em class="term">Hilchos Tefillah</em> (<span class="heb-inline">הלכות תפילה</span>) writes that after <em class="term">nefilas apayim</em> one sits.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> He says that he does not know the reason for the division, calling such matters “secrets” (<span class="heb-inline">סודות</span>), and offers the three postures as a possible one.</p>
+<h2>IV. Al Tizkar Lanu Avonos Rishonim</h2>
+<h3>The Ach Pri Tevuah</h3>
+<p>The verse is <em class="term">Al Tizkar Lanu Avonos Rishonim, Maher Yekademunu Rachamecha Ki Dalonu Me’od</em> (<span class="heb-inline">אל תזכר לנו עונות ראשונים</span>, <span class="heb-inline">מהר יקדמונו רחמיך כי דלונו מאד</span>):<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> do not remember our earlier sins; let Your mercy come quickly to meet us, for we are very poor. The lecturer brings a reading from the <em class="term">Ach Pri Tevuah</em>,<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> the book of <em class="term">Rabbi Hershele of Liska</em> (<span class="heb-inline">ר׳ הירשעלע ליסקא</span>), whom he describes as a great <em class="term">talmid chacham</em> (<span class="heb-inline">תלמיד חכם</span>) and <em class="term">tzaddik</em>, a disciple of the <em class="term">Yismach Moshe</em> (<span class="heb-inline">ישמח משה</span>) and one of the major Hungarian Chassidic <em class="term">Rebbes</em>. The book is difficult to study, but rich.</p>
+<h3>Rivkah’s Veil</h3>
+<p>The <em class="term">Ach Pri Tevuah</em> writes on a verse in <em class="term">Chayei Sarah</em> (<span class="heb-inline">חיי שרה</span>). <em class="term">Yitzchak</em> is seen by <em class="term">Rivkah</em> as she approaches on the camels; she falls from her camel at the sight of him (<span class="heb-inline">ותפל מעל הגמל</span>), and then “she took the veil and covered herself” (<span class="heb-inline">ותקח הצעיף ותתכס</span>).<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> Many commentators find this difficult. The <em class="term">Ach Pri Tevuah</em> reads it as an allusion (<span class="heb-inline">בדרך הרמז</span>) to the sentence <em class="term">Amcha Yisrael Tzerichin Parnasah</em> (<span class="heb-inline">עמך ישראל צריכין פרנסה</span>), “Your people Israel need sustenance,” which the lecturer identifies with the <em class="term">Gemara</em> at the very beginning of the <em class="term">Talmud</em>.</p>
+<h3>Dovid HaMelech’s Day</h3>
+<p><em class="term">Berachos</em> 3b (<span class="heb-inline">ברכות ג׳ ע״ב</span>) gives the daily schedule of <em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>).<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> A harp hung above his bed; at midnight the north wind blew on it and it played of itself, and he rose and learned <em class="term">Torah</em> until dawn. At first light he took questions: releasing wives to their husbands, the laws of <em class="term">niddah</em> (<span class="heb-inline">נדה</span>), questions of every kind. And every day, the <em class="term">Gemara</em> continues, the sages of Israel came to him and said: “Our master the king, Your people Israel need sustenance.” The first task of a king, of any leader of Israel, is the livelihood of his people. First he told them to do business with one another.</p>
+<p>The lecturer observes that sometimes it takes a king to tell Jews to do business with Jews. There is a <em class="term">mitzvah</em> (<span class="heb-inline">מצוה</span>) to buy from Jews and to sell to Jews; the practical question is price. If the other store is much cheaper, one may buy there, but <em class="term">lechatchilah</em> (<span class="heb-inline">לכתחילה</span>), even at some added cost, one should give a fellow Jew a little livelihood. The greatest <em class="term">mitzvah</em> is to raise the livelihood of other people. When that was not enough, the <em class="term">Gemara</em> has <em class="term">Dovid</em> say <em class="term">Lechu UFishtu BaGedud</em> (<span class="heb-inline">לכו ופשטו בגדוד</span>), “go and take up arms with the troops.” The lecturer glosses this as taking from the Philistines, who were in constant battle with Israel, and calls it controversial.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+<h3>The Two First Questions</h3>
+<p>The <em class="term">Ach Pri Tevuah</em> continues: <em class="term">Rivkah</em> is <em class="term">chesed</em> (<span class="heb-inline">חסד</span>), <em class="term">Yitzchak</em> is <em class="term">din</em> (<span class="heb-inline">דין</span>) and <em class="term">gevurah</em> (<span class="heb-inline">גבורה</span>); to sweeten the judgments (<span class="heb-inline">להמתיק הדינים</span>), a term common in kabbalistic and Chassidic books, she drew the veil over herself. The whole matter is folded into our verse. What are the first two questions a Jew is asked in heaven?<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> The first is <em class="term">Nasasa VeNasata BeEmunah</em> (<span class="heb-inline">נשאת ונתת באמונה</span>): did you deal faithfully in business? The second is <em class="term">Kavata Itim LaTorah</em> (<span class="heb-inline">קבעת עתים לתורה</span>): did you set fixed times for <em class="term">Torah</em>, however busy and however hard you worked? (The lecturer notes that another <em class="term">Gemara</em> seems to say otherwise, but these are the first two.)</p>
+<p>The only excuse a Jew has for either, a poor excuse but an excuse, is: I had to earn a living. I could not learn enough, for I had to feed my family. I cut a corner, for I needed the money. That, the lecturer says, is what the verse tells God: <em class="term">Al Tizkar Lanu Avonos Rishonim</em>, do not hold against us the first two sins we know we shall be asked about; <em class="term">Ki Dalonu Me’od</em>, we are so poor. We ask for sustenance in ease (<span class="heb-inline">ברווח</span>), so that we are not tempted to steal and not tempted to neglect <em class="term">Torah</em>. <em class="term">Rivkah</em> covered the <em class="term">gevuros</em> of <em class="term">Yitzchak</em> with the veil for the same purpose, to soften the judgments that flow from those two questions. The lecturer adds that this is not a good excuse, and that one should not rely on it.</p>
+<h2>V. Chatzi Kaddish — Why Half?</h2>
+<p>Then a <em class="term">Chatzi Kaddish</em> (<span class="heb-inline">חצי קדיש</span>) is said. Why only half? The <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>) in <em class="term">Hilchos Tefillah</em> writes that the <em class="term">shaliach tzibbur</em> says <em class="term">Kaddish</em> before and after <em class="term">Kri’as Shema</em>.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> Ordinarily a <em class="term">Kaddish</em> that closes a section of prayer contains <em class="term">Titkabel Tzelosehon UVa’usehon</em> (<span class="heb-inline">תתקבל צלותהון ובעותהון</span>), that the prayers be accepted, and that is not said until after <em class="term">Ashrei</em> and <em class="term">UVa LeTziyon</em> (<span class="heb-inline">אשרי ובא לציון</span>). What is this short <em class="term">Kaddish</em> doing here?</p>
+<h3>Rabbeinu Manoach</h3>
+<p>The lecturer says that he will not speak of <em class="term">kabbalah</em> (going up and coming down through the worlds, according to the <em class="term">Arizal</em>); he has no license for that, and is speaking <em class="term">peshat halachah</em>. He brings a commentary on the <em class="term">Rambam</em>’s <em class="term">Hilchos Tefillah</em> by <em class="term">Rabbeinu Manoach</em> (<span class="heb-inline">רבינו מנוח</span>),<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> not often cited because, he says, little of it survives. (The name is rare today; <em class="term">Manoach</em> was the father of <em class="term">Shimshon</em>. The lecturer reports that he found a <em class="term">Rabbeinu Manoach</em> cited once in <em class="term">Tosafos</em> and thinks it the same <em class="term">Rishon</em>.)</p>
+<p><em class="term">Rabbeinu Manoach</em> explains that <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) knew that not every Jew can stay to the end of the prayer. People run to catch the train and must be in the office on time; and if the <em class="term">shaliach tzibbur</em> is slow, or it is Monday or Thursday with the additional supplications, some must leave before <em class="term">Ashrei</em> and <em class="term">UVa LeTziyon</em>. So they instituted a <em class="term">Kaddish</em> immediately after <em class="term">Tachanun</em>, but only half of one, to make clear that the prayer is not yet finished. The Jew who must leave receives a partial send-off; only one who stays through <em class="term">Ashrei</em> and <em class="term">UVa LeTziyon</em> merits the <em class="term">Titkabel</em> of the full <em class="term">Kaddish</em>. The lecturer adds that there are further reasons, which he does not know.</p>
+<h2>VI. The Open Aron — A Time of Favor</h2>
+<h3>Silence at the Opening</h3>
+<p>When the <em class="term">Aron</em> is opened to take out the <em class="term">Sefer Torah</em>, it is an <em class="term">eis ratzon</em> (<span class="heb-inline">עת רצון</span>), a time of favor. The <em class="term">Zohar</em> teaches, as the lecturer reports, that when the <em class="term">Aron</em> opens below the gates of heaven open above.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> The <em class="term">Chida</em> (<span class="heb-inline">חיד״א</span>) says that one must be silent at the opening of the <em class="term">Aron</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> The lecturer applies this to a familiar scene: the <em class="term">Aron</em> opens, the <em class="term">gabbai</em> is settling who will receive the <em class="term">aliyah</em>, there are a few loose seconds, and conversation begins, even while <em class="term">Kel Erech Apayim</em> and <em class="term">Brich Shmei</em> are being said. He says that he does not know the exact limits of speech once the <em class="term">Sefer Torah</em> is open, but that the <em class="term">Chida</em> does not permit speech at the opening of the <em class="term">Aron</em>: <em class="term">Ki MiTziyon Teitzei Torah</em> (<span class="heb-inline">כי מציון תצא תורה</span>);<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> as the scroll leaves the <em class="term">Aron</em>, the gates of heaven are opening.</p>
+<h3>The Baal Shem Tov on Brich Shmei</h3>
+<p>The <em class="term">Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>), in <em class="term">Kesser Shem Tov</em> (<span class="heb-inline">כתר שם טוב</span>),<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> is reported to teach that a simple Jew who says <em class="term">Brich Shmei</em> from the depth of his heart and with simple faith, using the very words of the prayer, can accomplish much in heaven, for all the gates are open at that moment. If he believes, and says the words with <em class="term">kavanah</em> (<span class="heb-inline">כוונה</span>), God will answer his prayer: perhaps not all of it, but at least something will be granted.</p>
+<h2>VII. Kel Erech Apayim — Two Versions Side by Side</h2>
+<h3>A Unique Phenomenon</h3>
+<p><em class="term">Kel Erech Apayim</em> (<span class="heb-inline">קל ארך אפים</span>) is, as far as the lecturer knows, the only prayer in the weekday <em class="term">siddur</em> that is printed in two versions, <em class="term">Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) and <em class="term">Nusach Polin</em> (<span class="heb-inline">נוסח פולין</span>), each labeled. The differences are minute: two short sentences, one reading <em class="term">Hoshi’enu</em> (<span class="heb-inline">הושיענו</span>) where the other has <em class="term">Hatzilenu</em> (<span class="heb-inline">הצילנו</span>). In <em class="term">Selichos</em> (<span class="heb-inline">סליחות</span>) there is a similar division, but in the ordinary daily prayer this is unique. Every <em class="term">siddur</em>, whether <em class="term">Nusach Ashkenaz</em>, <em class="term">Sefard</em> or <em class="term">Ari</em>, prints both, and has for centuries. Why here?</p>
+<p>The lecturer’s own practice had been to say only the first. In preparing the discourse he concluded that those who say <em class="term">both</em> are doing the right thing. It takes about fourteen seconds. The reasons follow.</p>
+<h3>First Reason — The Latecomers</h3>
+<p>Some <em class="term">Rishonim</em> who wrote commentaries on the prayers explain that <em class="term">Kel Erech Apayim</em> was instituted for those who arrive late on Monday and Thursday. By the time they come in, the <em class="term">Sefer Torah</em> is already being taken out, and they have not said <em class="term">Vehu Rachum</em>, which has become a beloved prayer throughout Israel (the lecturer recalls the discussion of two weeks earlier, with the three great men and the miracle of the fire). They want to say it. But during the Torah reading everyone must listen and follow every word, and <em class="term">Vehu Rachum</em> cannot be said. So <em class="term">Chazal</em> gave the latecomer a small abbreviated form of “do not punish us”: these two short stanzas, enough to discharge the intent of the missed prayer without disturbing the reading.</p>
+<p>According to this view the prayer is said only on days when <em class="term">Tachanun</em> is said. The <em class="term">Gra</em> (<span class="heb-inline">הגר״א</span>) attributes the institution to the <em class="term">chachmei Italia</em> (<span class="heb-inline">חכמי איטליא</span>), the scholars of Italy.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a></p>
+<h3>An Aside on Nusach Bnei Romi</h3>
+<p>Beyond the principal rites — <em class="term">Nusach Ashkenaz</em>, <em class="term">Sefard</em>, <em class="term">Ari</em> (the rite of Chabad) and the Eastern communities — there is a distinct <em class="term">Nusach Bnei Romi</em> (<span class="heb-inline">נוסח בני רומי</span>), the rite of the Italian communities, which the lecturer knows to be kept in only two places in the world. Its <em class="term">siddur</em> is based, he says, on the <em class="term">Shibbolei HaLeket</em> (<span class="heb-inline">שבלי הלקט</span>) of <em class="term">Rabbi Tzidkiah ben Avraham HaRofe</em> (<span class="heb-inline">ר׳ צדקיה בן אברהם הרופא</span>), one of the <em class="term">Rishonim</em>.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> Its Friday-night <em class="term">Maariv</em> differs; its <em class="term">Emes VeEmunah</em> (<span class="heb-inline">אמת ואמונה</span>) reads differently; on Shabbos it returns the <em class="term">Sefer Torah</em> between <em class="term">Ashrei</em> and <em class="term">UVa LeTziyon</em> (as does one other community); and it omits <em class="term">HaNoten LaYaef Koach</em> (<span class="heb-inline">הנותן ליעף כח</span>), with a different blessing at that place in <em class="term">Birchos HaShachar</em> (<span class="heb-inline">ברכות השחר</span>). The lecturer has not prayed in Rome; he watched videos of the service.</p>
+<p>There is also a former Italian synagogue in Jerusalem, on Rechov Hillel in Nachalat Shiva, near Nachla’os, which preserves the tradition. The lecturer reports that after the founding of the State it opened, in 1951, as a <em class="term">shul</em> for Italian immigrants; the community dwindled and the building became a museum, though <em class="term">minyanim</em> are still held there on Shabbos and <em class="term">Yom Tov</em>. The <em class="term">Aron</em> of an Italian town was reconstructed in it, with objects from the Italian communities of the 1700s and 1800s. For many years the <em class="term">Nusach Bnei Romi</em> was prayed there.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a></p>
+<p>When one opens the <em class="term">Machzor Bnei Romi</em>, however, <em class="term">Kel Erech Apayim</em> does not appear. The lecturer therefore says that he is not sure which Italian community the <em class="term">Gra</em> meant: perhaps a regional variant, perhaps a tradition in manuscript, perhaps a mistake. The result, on this view, is the same: the prayer was instituted for the latecomer, and everyone says it now so as not to single out the latecomers.</p>
+<h3>Second Reason — Days of Din</h3>
+<p>Most authorities follow a different line, which has nothing to do with <em class="term">Tachanun</em>. The <em class="term">Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>) explains:<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> Monday and Thursday are the days on which the Torah is read. They were also, in earlier centuries, the days on which the <em class="term">beis din</em> (<span class="heb-inline">בית דין</span>) of every city sat, not daily but on those days, because they were market days when the villagers came to the city (compare the opening <em class="term">mishnah</em> of <em class="term">Kesubos</em> and <em class="term">Megillah</em>).<a class="footnote-ref" id="ref26" href="#fn26">[26]</a> When there is judgment below there is judgment above. It is not wished that the judges err, and so the whole community prays on Monday and Thursday, even when <em class="term">Tachanun</em> is not said: <em class="term">Hatzilenu MiKol Ra</em> (<span class="heb-inline">הצילנו מכל רע</span>), save us from every evil, perhaps including a mistake in judgment. The lecturer notes that he sees no direct reference to judges in the prayer itself; the link is a reading. On this view the prayer belongs to the day and not to <em class="term">Tachanun</em>.</p>
+<h3>Third Reason — An Apology Before the Reading</h3>
+<p>Other <em class="term">Rishonim</em> give a reason that is still more moving. The <em class="term">Sefer Torah</em> about to be taken out contains <em class="term">mitzvos</em> that, in honesty, we do not always keep. So we apologize first: <em class="term">Kel Erech Apayim</em>, be patient with us, have mercy. We know that we are about to read from Your <em class="term">Torah</em> of things that we do not always do properly. The <em class="term">Siddur HaRokeach</em> (<span class="heb-inline">סידור הרוקח</span>) is cited for this explicitly.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> On this view the prayer belongs to <em class="term">every</em> taking-out of the <em class="term">Sefer Torah</em>: whenever the <em class="term">Aron</em> opens one apologizes first.</p>
+<table class="syn">
+<tr><th>Reason</th><th>Source (as reported)</th><th>When the prayer is said</th></tr>
+<tr><td>For the latecomers who missed <em class="term">Vehu Rachum</em></td><td>Some <em class="term">Rishonim</em>; the <em class="term">Gra</em> attributes the institution to the <em class="term">chachmei Italia</em></td><td>Only on days when <em class="term">Tachanun</em> is said</td></tr>
+<tr><td>Monday and Thursday are days of <em class="term">din</em></td><td><em class="term">Machzor Vitry</em></td><td>Monday and Thursday, even without <em class="term">Tachanun</em></td></tr>
+<tr><td>An apology before reading what we do not keep</td><td><em class="term">Siddur HaRokeach</em></td><td>Every taking-out of the <em class="term">Sefer Torah</em></td></tr>
+</table>
+<h2>VIII. The Avudraham — Fifty Words</h2>
+<h3>Why Two Versions?</h3>
+<p>The two versions may have begun as something close to an error. In ancient <em class="term">siddurim</em> both prayers appear together, without any labeling of “Ashkenaz” and “Polin,” before the distinction existed.</p>
+<h3>Who the Avudraham Was</h3>
+<p>The <em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>),<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> the work of <em class="term">Rabbeinu David Avudraham</em> (<span class="heb-inline">רבינו דוד אבודרהם</span>), is the foundational book for the explanation of the prayers, quoted hundreds of times. The correct pronunciation of the name, the lecturer says, is Arabic: <em class="term">Abu Dirham</em>. The dirham is the ancient Middle Eastern coin still used in Morocco and the Emirates. On the simple explanation, his family were money-changers, and he was “father of the coin.” On a more poetic one, since he gave his life to explaining the prayers, and prayer is called <em class="term">matbea shetavu chachamim</em> (<span class="heb-inline">מטבע שטבעו חכמים</span>), the coinage that the Sages minted, which may not be altered, he was “father of that coinage.” The lecturer does not know which is historically accurate but finds the second beautiful.</p>
+<h3>The Count</h3>
+<p>The <em class="term">Avudraham</em> counts every word of the prayers, and in his commentaries he regularly finds hints in the numbers of words and letters. He counted the two versions of <em class="term">Kel Erech Apayim</em> together and found fifty words: forty plus ten, corresponding to the forty days and forty nights that <em class="term">Moshe Rabbeinu</em> spent on <em class="term">Har Sinai</em> and to the <em class="term">Aseres HaDibros</em> (<span class="heb-inline">עשרת הדברות</span>). Therefore, the lecturer reports, one should say <em class="term">both</em> versions; he states that the <em class="term">Avudraham</em> calls it an error to say only one. The lecturer adds that a later printing of the ArtScroll <em class="term">siddur</em> notes that some are accustomed to say both, citing this very matter of fifty words as an arousal of mercy before the taking-out of the <em class="term">Sefer Torah</em>. He resolved, <em class="term">bli neder</em> (<span class="heb-inline">בלי נדר</span>), to begin saying both the next day: fourteen seconds, and the <em class="term">Rishonim</em> are clear.</p>
+<h2>IX. VaYehi BiNsoa HaAron</h2>
+<p><em class="term">Rashi</em> on the words of this verse explains why it is said as the <em class="term">Aron</em> is opened.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a> He brings from the <em class="term">Midrash Tanchuma</em> that when Israel traveled in the wilderness the ark went <em class="term">before</em> them, a three days’ journey ahead. (One tends to picture the ark traveling with the camp; in fact it traveled in front, while the whole camp was surrounded by the clouds of glory.) <em class="term">Moshe Rabbeinu</em> would pray, each time the ark moved: <em class="term">Kumah Hashem</em> (<span class="heb-inline">קומה ה׳</span>),<a class="footnote-ref" id="ref30" href="#fn30">[30]</a> “rise up, <em class="term">Hashem</em>,” and the <em class="term">Rashi</em> has him add: stand and wait for us, and do not go farther from us. We want to stay near the <em class="term">Shechinah</em> (<span class="heb-inline">שכינה</span>).</p>
+<p>The same is true when the <em class="term">Aron</em> is opened to remove the <em class="term">Sefer Torah</em>. We feel how far we are from the <em class="term">Shechinah</em> and from the ark. We say these verses to relive the plea of <em class="term">Moshe Rabbeinu</em>: stay close, do not distance Yourself. A Jew who says <em class="term">VaYehi BiNsoa HaAron</em> should think: Master of the world, I want to cling (<span class="heb-inline">דבק</span>) to the <em class="term">Torah</em>. The <em class="term">Sefer Torah</em> is leaving the <em class="term">Aron</em>, traveling, as it were, from the ark to the <em class="term">bimah</em> (<span class="heb-inline">בימה</span>). The <em class="term">Torah</em> is always ahead of us; we are always falling behind. Let us not fall so far behind; let us cling to the holy <em class="term">Torah</em>. A beautiful <em class="term">kavanah</em> for that moment.</p>
+<p>Then <em class="term">Ki MiTziyon Teitzei Torah</em> (<span class="heb-inline">כי מציון תצא תורה ודבר ה׳ מירושלים</span>) is said because the <em class="term">Torah</em> is going forth, out of the <em class="term">Aron</em> toward the people. At the end of days, when all enemies are gone, <em class="term">Torah</em> will go forth from <em class="term">Yerushalayim</em>. We are not yet worthy of that fully, though those who live in <em class="term">Eretz Yisrael</em> are closer to it; but we yearn for the full revelation.</p>
+<h2>X. Brich Shmei</h2>
+<h3>From the Zohar</h3>
+<p><em class="term">Brich Shmei</em> (<span class="heb-inline">בריך שמיה</span>) is a passage of the <em class="term">Zohar</em>, and every word of it is in the <em class="term">Zohar</em>.<a class="footnote-ref" id="ref31" href="#fn31">[31]</a> No one in Israel said it until the <em class="term">Zohar</em> was revealed. Before it was printed a few select individuals knew it from manuscript and said it; after the printing it spread rapidly, in the lecturer’s account, into almost every <em class="term">siddur</em>. Sephardim say it. The <em class="term">Yekkes</em> (German Jews) do not, which the lecturer says he had not known. In an aside he adds that some say <em class="term">Shabbsai Tzvi</em> had a hand in adding it, and that this is not the time to discuss that.<a class="footnote-ref" id="ref32" href="#fn32">[32]</a></p>
+<h3>Where to Stand</h3>
+<p>The lecturer is asked whether it matters if one says <em class="term">Brich Shmei</em> at one’s seat or near the <em class="term">Aron</em>. Many in his <em class="term">shul</em> go to the <em class="term">Aron</em>, a beautiful custom, which he saw brought in a book of <em class="term">halachah</em> (he thinks the <em class="term">Seder HaYom</em>): there is a matter of going to the <em class="term">Aron</em> in order to honor the <em class="term">Torah</em> and show love for it. It is not <em class="term">halachah</em>; one need not do it, but it is a fine thing. In a large <em class="term">shul</em> it is impractical; if everyone went, there would be a traffic jam. The <em class="term">Mishnah Berurah</em> discusses how far one accompanies the <em class="term">Sefer Torah</em>, depending on where one stands.<a class="footnote-ref" id="ref33" href="#fn33">[33]</a></p>
+<h3>When to Say It</h3>
+<p>There is a real dispute in the <em class="term">Zohar</em> itself, the lecturer says, whether it is to be said only on Shabbos and <em class="term">Yom Tov</em> or also on Monday and Thursday, as we do. The <em class="term">Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>) writes that it is not said on Monday and Thursday, only on Shabbos, <em class="term">Yom Tov</em> and <em class="term">Rosh Chodesh</em>.<a class="footnote-ref" id="ref34" href="#fn34">[34]</a> The reason, he says, is the words <em class="term">Brich Kitrach VeAtrach</em> (<span class="heb-inline">בריך כתרך ועתרך</span>), “blessed be Your crown”: the crown of God is mentioned only on the days when it is revealed, Shabbos and <em class="term">Yom Tov</em> (compare <em class="term">Yisgadal Shemei Rabba</em> in <em class="term">Kaddish</em>). The <em class="term">Magen Avraham</em> is an Ashkenazic authority, but apart from the <em class="term">Yekkes</em> no one follows him here; all say it during the week, because the plain sense of the <em class="term">Zohar</em> is that it is said whenever the <em class="term">Aron</em> is opened.</p>
+<p>As to the time within the opening, the <em class="term">Mishnah Berurah</em> rules that one may say <em class="term">Brich Shmei</em> until the <em class="term">Sefer Torah</em> is placed on the <em class="term">bimah</em> and opened for reading.<a class="footnote-ref" id="ref35" href="#fn35">[35]</a> For one who is running behind, that is the latest opportunity.</p>
+<h3>The Parenthesis for Children</h3>
+<p>At the end of <em class="term">Brich Shmei</em>, in many <em class="term">siddurim</em>, there are words in parentheses: a prayer for male children who do the will of God (<span class="heb-inline">בנין דכרין</span>). It is beautiful; why the parentheses? The <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>) explain, as the lecturer reports, that whatever stands in parentheses in the <em class="term">siddur</em> is not “equal to every soul” (<span class="heb-inline">שווה לכל נפש</span>). An unmarried young man: should he pray for children? The lecturer says that he himself began to pray for good children as a <em class="term">bachur</em>, and that one should; it is a mistake to think that one begins to pray for a match at twenty-one or twenty-two. Pray now.</p>
+<p>And what of an older man who can have no more children? Perhaps the right reading is that he asks not for <em class="term">new</em> children but that the children and grandchildren he already has be doers of the will of God. On that reading the prayer fits everyone. The lecturer finds it hard to drop the words; they are in the <em class="term">Zohar</em>; whoever can say them with <em class="term">kavanah</em> should say them.</p>
+<h3>Ana Avda DeKudsha Brich Hu</h3>
+<p>The lecturer once attended a <em class="term">shalosh seudos</em> (<span class="heb-inline">שלש סעודות</span>) at which <em class="term">Rabbi Ram Shor</em>, a <em class="term">rav</em> in Flatbush, spoke of how special <em class="term">Brich Shmei</em> is, and then put a question to the room, sharp <em class="term">mussar</em> (<span class="heb-inline">מוסר</span>). One says <em class="term">Ana Avda DeKudsha Brich Hu</em> (<span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>), “I am a servant of the Holy One, blessed be He.” Truly? Are you a servant of the Holy One? One is about to declare it before the open <em class="term">Aron</em>, with the <em class="term">Sefer Torah</em> before him. What was he doing before the prayer? What will he do after?<a class="footnote-ref" id="ref36" href="#fn36">[36]</a></p>
+<p>The speaker said that he does not say <em class="term">Ana Avda</em>, though the <em class="term">Zohar</em> has this text, but <em class="term">Ana Mevai LeMehevei Avda DeKudsha Brich Hu</em> (<span class="heb-inline">אנא מבעי למהוי עבדא דקודשא בריך הוא</span>), “I wish to become a servant of the Holy One”; he does not have the audacity to say that he is one. After that <em class="term">shalosh seudos</em> the lecturer did not have the audacity to change the text. He still says <em class="term">Ana Avda</em>, but cringes each time, and the words still echo in his ear. Who is he to say that he is a servant? At the least, when one says it, one should have in mind: help me earn the right to say these words; I want to be a true servant of the Holy One.</p>
+<h2>XI. The Proper Manner</h2>
+<p>Because all this is so significant, so great a moment of mercy, the <em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>)<a class="footnote-ref" id="ref37" href="#fn37">[37]</a> writes, as does the <em class="term">Chida</em>, that everyone should be silent and have <em class="term">kavanah</em> while these words are said. One should look at the <em class="term">Sefer Torah</em> in the open <em class="term">Aron</em> and try to arouse in oneself love for the holy <em class="term">Torah</em> and love for those who learn <em class="term">Torah</em>. Then one says <em class="term">LeTav LeChayim LeShalom Amen</em> (<span class="heb-inline">לטב לחיים ולשלום אמן</span>).</p>
+<p>The discourse closed with the <em class="term">mishnah</em> of <em class="term">Rabbi Chananya ben Akashya</em>:<a class="footnote-ref" id="ref38" href="#fn38">[38]</a></p>
+<blockquote>
+<div class="heb">רַבִּי חֲנַנְיָא בֶן עֲקַשְׁיָא אוֹמֵר: רָצָה הַקָּדוֹשׁ בָּרוּךְ הוּא לְזַכּוֹת אֶת יִשְׂרָאֵל, לְפִיכָךְ הִרְבָּה לָהֶם תּוֹרָה וּמִצְוֺת, שֶׁנֶּאֱמַר: ה׳ חָפֵץ לְמַעַן צִדְקוֹ יַגְדִּיל תּוֹרָה וְיַאְדִּיר.</div>
+<div class="trans">Rabbi Chananya ben Akashya says: The Holy One, blessed be He, wished to make Israel worthy; therefore He gave them much <em class="term">Torah</em> and many <em class="term">mitzvos</em>, as it is said: “<em class="term">Hashem</em> desired, for His righteousness’ sake, to make the <em class="term">Torah</em> great and glorious.”</div>
+<div class="source"><em class="term">Makkos</em> 3:16; <em class="term">Yeshayahu</em> 42:21</div>
+</blockquote>
+<p>and with <em class="term">Kaddish</em>.</p>
+
+<section class="mareh">
+<h2>מראה מקומות &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<ol>
+<li id="fn1">
+  <span class="short"><em class="term">Siddur Rashi</em> (<span class="heb-inline">סדור רש״י</span>), ed. Buber–Freimann (Berlin 1911).</span>
+  <span class="expanded"> A medieval compilation of the laws of prayer, dated in the catalogue data consulted to c. 1080–1120 at Troyes and first published from manuscript in 1911; its manuscripts attribute it to <em class="term">Rashi</em>, and scholars debate how much is his own. The lecturer placed the first appearance of the <em class="term">piyyut</em> “in the 1200s”; the <em class="term">Siddur Rashi</em> is earlier than that. That <em class="term">Shomer Yisrael</em> stands in the <em class="term">Siddur Rashi</em> is the lecturer’s report and was not checked in the text (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><em class="term">Shaar HaShamayim</em> (<span class="heb-inline">שער השמים</span>), the <em class="term">siddur</em> of the <em class="term">Shelah</em> (<span class="heb-inline">ר׳ ישעיה הלוי הורוויץ</span>, 1565–1630).</span>
+  <span class="expanded"> As the lecturer describes it, the <em class="term">Shelah</em>’s own <em class="term">siddur</em>, with his commentary. Printing and publication details were not given in the recording and have not been established (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short">The stanzas <em class="term">Shomer Goy Kadosh</em> and <em class="term">Shomer Goy Rabba</em>.</span>
+  <span class="expanded"> In the clearest recording the lecturer first recites <em class="term"><span class="heb-inline">שומר גוי קדוש</span>, <span class="heb-inline">שמור שארית עם קדוש</span>, <span class="heb-inline">ואל יאבד גוי קדוש</span>, <span class="heb-inline">המשלשים בשלש קדושות לקדוש</span></em> as the text of the Sephardic and Eastern rites, and then, for the <em class="term">Shelah</em>’s will, <em class="term"><span class="heb-inline">שומר גוי רבא</span>, <span class="heb-inline">שמור שארית עם רבא</span>, <span class="heb-inline">ואל יאבד גוי רבא</span> ... <span class="heb-inline">האומרים אמן יהא שמיה רבא</span></em>, adding that he does not remember that part. The second transcript agrees (“the guardian of the great nation”). The AI summary gives the <em class="term">Shelah</em>’s stanza as <em class="term">goy kadosh</em>; the recordings do not support this. The lecturer’s remark that the stanzas answer what Israel has just said (<em class="term">Shema</em>, the threefold <em class="term">Kedushah</em>, <em class="term">Amen Yehei Shemei Rabba</em>) is unclear in all the sources and is not developed here (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><em class="term">Rabbi Nosson Adler</em> (<span class="heb-inline">ר׳ נתן אדלר</span>).</span>
+  <span class="expanded"> The teacher of the <em class="term">Chasam Sofer</em>, of Frankfurt. That he added the stanza is, in the lecturer’s words, a testimony that has come down; no source was named (Open Questions, no. 1).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><em class="term">Maaseh Rav</em> (<span class="heb-inline">מעשה רב</span>), the record of the practices of the <em class="term">Gra</em>.</span>
+  <span class="expanded"> The lecturer reports that it records that the <em class="term">Gra</em> said <em class="term">Shomer Yisrael</em> only on a public fast and not on a regular day. The passage was not located (Open Questions, no. 2).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><em class="term">Taanis</em> 25b (<span class="heb-inline">תענית כ״ה ע״ב</span>) — <em class="term">Rabbi Akiva</em> and <em class="term">Avinu Malkeinu</em>.</span>
+  <span class="expanded"> In a year of drought <em class="term">Rabbi Eliezer</em> recited twenty-four blessings and was not answered; <em class="term">Rabbi Akiva</em> then said <em class="term"><span class="heb-inline">אבינו מלכנו</span>, <span class="heb-inline">אין לנו מלך אלא אתה</span>; <span class="heb-inline">אבינו מלכנו</span>, <span class="heb-inline">למענך רחם עלינו</span></em>, and rain fell at once. A heavenly voice explained that it was not that one sage was greater than the other, but that this one was forgiving and that one was not. The closing <em class="term">Avinu Malkeinu</em> of daily <em class="term">Tachanun</em> derives from this prayer, in expanded form. (The source consulted gave the passage in English only; the Hebrew words are those commonly cited.)</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short">The sitting posture of <em class="term">Kri’as Shema</em>.</span>
+  <span class="expanded"> The lecturer says that the <em class="term">Shulchan Aruch</em> directs one to sit for <em class="term">Kri’as Shema</em>, and that some stand. In the clearest recording the ground given is <em class="term"><span class="heb-inline">על פי קבלה</span></em>; the second transcript is close to this, and the AI summary has <em class="term"><span class="heb-inline">על פי כבוד</span></em>. The <em class="term">siman</em> was not named and has not been identified (Open Questions, no. 3).</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><em class="term">Mishnah Berurah</em>, <em class="term">Orach Chaim</em> 131:9 (<span class="heb-inline">משנה ברורה קל״א</span>:<span class="heb-inline">ט׳</span>).</span>
+  <span class="expanded"> The comment, which ends by naming the <em class="term">Shelah</em> and later authorities, says that it is fitting to say <em class="term">VaAnachnu Lo Neda</em> seated and <em class="term">Mah Na’aseh</em> standing (<span class="heb-inline">וראוי לומר ואנחנו לא נדע בישיבה מה נעשה בעמידה</span>). The <em class="term">Shulchan Aruch</em> 131:1 says that after falling on the face one lifts the head and supplicates a little while seated (<span class="heb-inline">ולאחר שנפל על פניו יגביה ראשו ויתחנן מעט מיושב</span>), and gives the custom of saying <em class="term">VaAnachnu Lo Neda</em>, <em class="term">Chatzi Kaddish</em>, <em class="term">Ashrei</em> and <em class="term">LaMenatzeach</em>; it does not itself divide the verse between sitting and standing. The explanation by the three postures is the lecturer’s. (The AI summary has <em class="term">zochrenu</em> for <em class="term">Mah Na’aseh</em>; the recordings have <em class="term">Mah Na’aseh</em>, and so does the <em class="term">Mishnah Berurah</em>.)</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short">The <em class="term">Rambam</em> on sitting after <em class="term">nefilas apayim</em>.</span>
+  <span class="expanded"> The lecturer says that the <em class="term">Rambam</em> in <em class="term">Hilchos Tefillah</em> writes that after <em class="term">nefilas apayim</em> one sits. The passage was not located; the <em class="term">Shulchan Aruch</em> 131:1 has the same ruling (see the note on <em class="term">Mishnah Berurah</em> 131:9) (Open Questions, no. 4).</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><em class="term">Tehillim</em> 79:8 (<span class="heb-inline">תהלים ע״ט</span>:<span class="heb-inline">ח׳</span>).</span>
+  <span class="expanded"> <span class="heb-inline">אל תזכר לנו עוונות ראשונים מהר יקדמונו רחמיך כי דלונו מאד</span>. The word is spelled <em class="term"><span class="heb-inline">תזכר</span></em> in the verse and in the <em class="term">siddur</em>. The verse is said near the close of <em class="term">Tachanun</em>.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><em class="term">Ach Pri Tevuah</em> (<span class="heb-inline">אך פרי תבואה</span>), <em class="term">Rabbi Tzvi Hirsch Friedman of Liska</em>.</span>
+  <span class="expanded"> A commentary on the <em class="term">Torah</em> by the <em class="term">Liska Rebbe</em>, as commonly identified; the lecturer calls him <em class="term">Hershele Liska</em> and describes him as a disciple of the <em class="term">Yismach Moshe</em> (<span class="heb-inline">ר׳ משה טייטלבוים</span> of Ujhel). The reading of <em class="term">Al Tizkar</em> through <em class="term">Chayei Sarah</em> and <em class="term">Berachos</em> 3b is reported from the book by the lecturer; the passage and the edition have not been located (Open Questions, no. 5). The second transcript and the summary also give a name <em class="term">R’ Shaya’le</em>; the clearest recording does not, and the attribution here follows the clearest recording.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><em class="term">Bereishis</em> 24:64–65 (<span class="heb-inline">בראשית כ״ד</span>:<span class="heb-inline">ס״ד</span>–<span class="heb-inline">ס״ה</span>).</span>
+  <span class="expanded"> <span class="heb-inline">וַתִּשָּׂא רִבְקָה אֶת עֵינֶיהָ וַתֵּרֶא אֶת יִצְחָק וַתִּפֹּל מֵעַל הַגָּמָל</span> (v. 64); after she asks who the man is and the servant answers <em class="term"><span class="heb-inline">הוא אדני</span></em>, <span class="heb-inline">וַתִּקַּח הַצָּעִיף וַתִּתְכָּס</span> (v. 65). Translations render <em class="term">vatipol</em> as “alighted”; the lecturer says “fell.” The reading of <em class="term">Rivkah</em> as <em class="term">chesed</em> and <em class="term">Yitzchak</em> as <em class="term">din</em> and <em class="term">gevurah</em> is the <em class="term">Ach Pri Tevuah</em>’s, as reported.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><em class="term">Berachos</em> 3b (<span class="heb-inline">ברכות ג׳ ע״ב</span>) — the day of <em class="term">Dovid HaMelech</em>.</span>
+  <span class="expanded"> The <em class="term">Gemara</em> has the lyre (<em class="term">kinnor</em>) hanging above <em class="term">Dovid</em>’s bed, the north wind at midnight, and the sages’ petition <em class="term"><span class="heb-inline">אדונינו המלך</span>, <span class="heb-inline">עמך ישראל צריכין פרנסה</span></em>; <em class="term">Dovid</em> answers “go and sustain one another,” they reply that a handful does not satisfy a lion and a pit is not filled by its own rain, and he says <em class="term"><span class="heb-inline">לכו ופשטו ידיכם בגדוד</span></em> (“go and take up arms with the troops”). The recording and the summary place before the sentence <em class="term"><span class="heb-inline">עמך ישראל צריכין פרנסה</span></em> the words <em class="term"><span class="heb-inline">כי אם ראש חודש ושבת</span></em>, which the lecturer ascribes to the <em class="term">Ach Pri Tevuah</em>’s allusion; they are not in this passage of the <em class="term">Gemara</em>, and their source has not been identified (Open Questions, no. 5).</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">“Philistines.”</span>
+  <span class="expanded"> The word does not appear in the <em class="term">Gemara</em>, which says only <em class="term">bagedud</em>, “the troops.” The identification of the troops as Philistines is the lecturer’s gloss, and he himself calls the advice controversial (Open Questions, no. 6).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><em class="term">Shabbos</em> 31a (<span class="heb-inline">שבת ל״א ע״א</span>).</span>
+  <span class="expanded"> <em class="term">Rava</em> says that when a person is brought to judgment he is asked whether he dealt faithfully in business (<span class="heb-inline">נשאת ונתת באמונה</span>); whether he set times for <em class="term">Torah</em> (<span class="heb-inline">קבעת עתים לתורה</span>); and further whether he engaged in procreation, awaited salvation, engaged in the dialectics of wisdom, and understood one matter from another. If the fear of God is his treasure, he is worthy; if not, none of this has value. The lecturer treats the first two as the “first questions,” and notes, without naming it, another <em class="term">Gemara</em> that seems to say otherwise.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><em class="term">Rambam</em>, <em class="term">Hilchos Tefillah</em> 9 (<span class="heb-inline">רמב״ם</span>, <span class="heb-inline">הלכות תפילה פרק ט׳</span>).</span>
+  <span class="expanded"> Chapter 9 gives the order of the service: in the morning the <em class="term">shaliach tzibbur</em> descends before the ark and says <em class="term">Kaddish</em>, then <em class="term">Barchu</em> and <em class="term">Kri’as Shema</em> (9:1); after the <em class="term">Amidah</em> come supplications and a second <em class="term">Kaddish</em> (9:5); at night, after <em class="term">Shema</em> and its blessings, <em class="term">Kaddish</em> (9:9). The lecturer’s statement that <em class="term">Kaddish</em> is said before and after <em class="term">Kri’as Shema</em> corresponds to 9:1 (morning, before) and 9:9 (evening, after). The <em class="term">Chatzi Kaddish</em> after <em class="term">Tachanun</em> is not named as such in the chapter as available.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><em class="term">Rabbeinu Manoach</em> (<span class="heb-inline">רבינו מנוח</span>), commentary on the <em class="term">Rambam</em>’s <em class="term">Hilchos Tefillah</em>.</span>
+  <span class="expanded"> <em class="term">Rabbeinu Manoach</em> of Narbonne, commentator on the <em class="term">Mishneh Torah</em>. The explanation of the <em class="term">Chatzi Kaddish</em> is reported by the lecturer; the passage was not located. His statement that little of the commentary survives, “only on <em class="term">Hilchos Tefillah</em>,” is not what a reviewer recalls (the commentary is printed on much of the <em class="term">Mishneh Torah</em>); recorded as a recollection, to be confirmed. The recording says that he is cited once in <em class="term">Tosafos</em> in <em class="term">Shabbos</em>; the AI summary has <em class="term">Chullin</em>. Whether the <em class="term">Tosafos</em> citation concerns the same <em class="term">Rishon</em> is the lecturer’s “probably” and has not been established (Open Questions, no. 7).</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><em class="term">Zohar</em>, vol. II, <em class="term">Vayakhel</em>, 206a (<span class="heb-inline">זוהר ח״ב ויקהל ר״ו ע״א</span>).</span>
+  <span class="expanded"> The commonly cited locus of <em class="term">Brich Shmei</em>, and of the teaching that the gates of mercy open above when the <em class="term">Sefer Torah</em> is taken out before the congregation. The passage could not be retrieved in the source consulted, and no Aramaic is quoted here as the lecturer’s (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">The <em class="term">Chida</em> (<span class="heb-inline">חיד״א</span>), <em class="term">Rabbi Chaim Yosef David Azulai</em> (1724–1806).</span>
+  <span class="expanded"> The lecturer reports that the <em class="term">Chida</em> teaches silence at the opening of the <em class="term">Aron</em>, because it is a great time of favor. The work and the <em class="term">siman</em> were not named (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><em class="term">Yeshayahu</em> 2:3 (<span class="heb-inline">ישעיהו ב׳</span>:<span class="heb-inline">ג׳</span>).</span>
+  <span class="expanded"> <span class="heb-inline">כי מציון תצא תורה ודבר ה׳ מירושלים</span>. From the prophet’s vision of the end of days; recited as the scroll leaves the <em class="term">Aron</em>.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><em class="term">Kesser Shem Tov</em> (<span class="heb-inline">כתר שם טוב</span>).</span>
+  <span class="expanded"> A collection of teachings and customs of the <em class="term">Baal Shem Tov</em>, first printed at Zolkva in 1794 according to the catalogue data consulted, and republished by Chabad-Lubavitch (the lecturer calls it a very thick <em class="term">sefer</em>, which he thinks the <em class="term">shul</em> owns). The passage on <em class="term">Brich Shmei</em> is reported by the lecturer and was not located (Open Questions, no. 10).</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">The <em class="term">Gra</em> and the <em class="term">chachmei Italia</em>.</span>
+  <span class="expanded"> The lecturer reports that the <em class="term">Gra</em> attributes the institution of <em class="term">Kel Erech Apayim</em> to the scholars of Italy. The passage was not located in the <em class="term">Biur HaGra</em> to <em class="term">Orach Chaim</em> 131 or 134 as available (Open Questions, no. 11). The lecturer points out that the <em class="term">Machzor Bnei Romi</em> does not contain the prayer.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short"><em class="term">Nusach Bnei Romi</em> (<span class="heb-inline">נוסח בני רומי</span>) and <em class="term">Shibbolei HaLeket</em> (<span class="heb-inline">שבלי הלקט</span>).</span>
+  <span class="expanded"> The Italian rite. The lecturer says its <em class="term">siddur</em> is based on the <em class="term">Shibbolei HaLeket</em> of <em class="term">Rabbi Tzidkiah ben Avraham HaRofe</em>, an Italian <em class="term">Rishon</em> of the 13th century (the catalogue data give the family name as Anav). The particulars of the rite are the lecturer’s. In the clearest recording the blessing omitted is <em class="term"><span class="heb-inline">הנותן ליעף כח</span></em>, with a different blessing in <em class="term">Birchos HaShachar</em>; the AI summary’s <em class="term"><span class="heb-inline">אין כאלוקינו לעולם כח</span></em> is not supported by the recordings (Open Questions, no. 12).</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short">The Jerusalem museum.</span>
+  <span class="expanded"> As the lecturer tells it, a former Italian synagogue on Rechov Hillel, in Nachalat Shiva, opened in 1951 and now a museum. Not checked in the sources consulted. A reviewer’s recollection, recorded only as such, is that the interior is that of a synagogue from Conegliano Veneto and was dedicated in 1952, with the museum following later (Open Questions, no. 12).</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><em class="term">Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>), <em class="term">Rabbi Simchah of Vitry</em>.</span>
+  <span class="expanded"> A compendium of prayer and its laws by a disciple of <em class="term">Rashi</em> (11th–12th century). In the <em class="term">Order of Shacharit</em>, for Monday, it says <em class="term"><span class="heb-inline">שב״ד שלמעלה ולמטה שוין מרבים בתפילה ורחמים</span></em>, that the heavenly and the earthly courts are alike and that one increases prayer and mercy. This is the ground of the lecturer’s second reason; the link to <em class="term">Hatzilenu MiKol Ra</em> and to judicial error is, in his words, his own reading (Open Questions, no. 13).</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><em class="term">Mishnah Kesubos</em> 1:1 (<span class="heb-inline">משנה כתובות פ״א מ״א</span>); cf. <em class="term">Megillah</em> 1:1–2.</span>
+  <span class="expanded"> A virgin marries on Wednesday, because the courts convene twice a week in the towns, on Monday and Thursday. <em class="term">Megillah</em> ch. 1, cited by the lecturer, deals with the villagers who come to the city on those days; it was not rechecked here.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><em class="term">Siddur HaRokeach</em> (<span class="heb-inline">סידור הרוקח</span>), <em class="term">Rabbi Elazar of Worms</em> (c. 1176–1238).</span>
+  <span class="expanded"> The lecturer describes it as a commentary of the <em class="term">Baal HaRokeach</em>, one of the <em class="term">Rishonim</em>, on the <em class="term">siddur</em>, and reports that it explains <em class="term">Kel Erech Apayim</em> as an apology before the reading, so that it belongs to every taking-out of the <em class="term">Sefer Torah</em>. The passage was not located (Open Questions, no. 14).</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short"><em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>), <em class="term">Rabbeinu David Avudraham</em> (Seville, 14th century).</span>
+  <span class="expanded"> In the section on the Torah reading in the weekday prayers (second paragraph, beginning <em class="term"><span class="heb-inline">ואומר אל ארך אפים</span></em>) he writes: <em class="term"><span class="heb-inline">ותמצא בשתיהן חמשים תיבות כנגד עשרת הדברו׳ וארבעים יום שעמד משה בהר לקבל התורה</span></em> (text of the Lisbon 1489 edition). That it is an <em class="term">error</em> to say only one version is not in the paragraph as available, and is given as the lecturer’s statement; likewise the ArtScroll remark (Open Questions, no. 15). The two explanations of the name are the lecturer’s.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short"><em class="term">Rashi</em> on <em class="term">Bamidbar</em> 10:35 (<span class="heb-inline">רש״י על במדבר י׳</span>:<span class="heb-inline">ל״ה</span>).</span>
+  <span class="expanded"> On the words <em class="term"><span class="heb-inline">קומה ה׳</span></em> <em class="term">Rashi</em> writes that the ark went before them a journey of three days, and <em class="term">Moshe</em> would say <em class="term"><span class="heb-inline">עמוד והמתן לנו ואל תתרחק יותר</span></em>, citing <em class="term"><span class="heb-inline">תנחומא בויקהל</span></em>. On the words <em class="term"><span class="heb-inline">ויהי בנסע הארן</span></em> he explains the signs set before and after the passage (<em class="term">Shabbos</em> 115). Cf. <em class="term">Rashi</em> on 10:33: the ark went three days ahead (<em class="term">Sifrei Bamidbar</em> 82; <em class="term">Yerushalmi Shekalim</em> 6:1).</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short"><em class="term">Bamidbar</em> 10:35 (<span class="heb-inline">במדבר י׳</span>:<span class="heb-inline">ל״ה</span>); <em class="term">Shabbos</em> 115b–116a.</span>
+  <span class="expanded"> <span class="heb-inline">ויהי בנסע הארן ויאמר משה קומה ה׳ ויפצו איביך וינסו משנאיך מפניך</span>. In the scroll the passage is set off by signs before and after. <em class="term">Shabbos</em> 116a records the view of <em class="term">Rabbi Yehudah HaNasi</em> that it is a book in itself, and the dissent of <em class="term">Rabban Shimon ben Gamliel</em>. The transposition of <em class="term">Moshe</em>’s prayer at each movement of the ark to the moment the <em class="term">Torah</em> moves from the <em class="term">Aron</em> to the <em class="term">bimah</em> is the lecturer’s.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn31">
+  <span class="short">The revelation and printing of the <em class="term">Zohar</em>.</span>
+  <span class="expanded"> The lecturer says the <em class="term">Zohar</em> was revealed “approximately in the 1400s or early 1500s” and first printed in Turkey, in 1557 or 1559. By the usual reckoning the first printings were in Italy, at Mantua (1558–1560) and Cremona (1559–1560); the catalogue data consulted give no printing data. A reviewer’s recollection, to be confirmed, is that the <em class="term">Zohar</em> began to circulate in the late thirteenth century, associated with <em class="term">Rabbi Moshe de León</em>. The text of <em class="term">Brich Shmei</em> as commonly cited begins <em class="term"><span class="heb-inline">בריך שמיה דמארי עלמא</span>, <span class="heb-inline">בריך כתרך ואתרך</span></em> (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref31" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn32">
+  <span class="short">The remark on <em class="term">Shabbsai Tzvi</em> and the <em class="term">Yekkes</em>.</span>
+  <span class="expanded"> The lecturer says, in an aside, that some say <em class="term">Shabbsai Tzvi</em> had a large part in adding <em class="term">Brich Shmei</em> “because of this line,” and that this is not the time to discuss it; separately, that the <em class="term">Yekkes</em> (Frankfurt) do not say it. He does not connect the two, and made no promise to return to it. The remark is reported as made (Open Questions, no. 16).</span>
+  <a class="backref" href="#ref32" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn33">
+  <span class="short">The custom of going to the <em class="term">Aron</em>.</span>
+  <span class="expanded"> The lecturer says that he once cited, he thinks, the <em class="term">Seder HaYom</em>: one of the later authorities writes that there is a matter of going to the <em class="term">Aron</em> to honor the <em class="term">Torah</em>; not <em class="term">halachah</em>, but a fine thing. The <em class="term">Mishnah Berurah</em>’s discussion of how far one accompanies the <em class="term">Sefer Torah</em> is also his reference. Neither locus has been identified (Open Questions, no. 17).</span>
+  <a class="backref" href="#ref33" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn34">
+  <span class="short"><em class="term">Magen Avraham</em>, <em class="term">Orach Chaim</em> 282 (<span class="heb-inline">מגן אברהם</span>, <span class="heb-inline">או״ח רפ״ב</span>).</span>
+  <span class="expanded"> The opening comment (282:1) says that on Shabbos morning at the opening of the <em class="term">Aron</em> one says <em class="term">Brich Shmei</em>, “as written in the <em class="term">Zohar Vayakhel</em>” (<span class="heb-inline">כמ״ש בזהר ויקהל</span>); its mention of Monday and Thursday concerns breaking off the reading in the middle of a portion on those days, not the saying of <em class="term">Brich Shmei</em>. The lecturer reports that the <em class="term">Magen Avraham</em> (<span class="heb-inline">ר׳ אברהם הלוי גומבינר</span>, 1635–1682) would say it only on Shabbos, <em class="term">Yom Tov</em> and <em class="term">Rosh Chodesh</em>, because of <em class="term"><span class="heb-inline">בריך כתרך</span></em>. That reasoning and the Monday and Thursday exclusion were not located (Open Questions, no. 18).</span>
+  <a class="backref" href="#ref34" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn35">
+  <span class="short"><em class="term">Mishnah Berurah</em>, <em class="term">Orach Chaim</em> 134:13 (<span class="heb-inline">משנה ברורה קל״ד</span>:<span class="heb-inline">י״ג</span>).</span>
+  <span class="expanded"> <span class="heb-inline">ומנהג העולם לומר בריך שמיה בשעת הוצאת הס״ת בין בחול בין בשבת</span>; and: <span class="heb-inline">ואם לא אמרו בשעת הוצאה יוכל לאמרו עד שעה שפותחין לקרותו</span>.</span>
+  <a class="backref" href="#ref35" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn36">
+  <span class="short"><em class="term">Ana Avda DeKudsha Brich Hu</em> (<span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>).</span>
+  <span class="expanded"> The text of <em class="term">Brich Shmei</em> in the <em class="term">Zohar</em>. The variant <em class="term"><span class="heb-inline">אנא מבעי למהוי עבדא דקודשא בריך הוא</span></em> is the one the lecturer attributes to <em class="term">Rabbi Ram Shor</em>; its source, and whether it is found in any <em class="term">siddur</em>, are not known (Open Questions, no. 19).</span>
+  <a class="backref" href="#ref36" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn37">
+  <span class="short"><em class="term">Yesod VeShoresh HaAvodah</em> (<span class="heb-inline">יסוד ושורש העבודה</span>), <em class="term">Rabbi Alexander Ziskind of Horodna</em>; the <em class="term">Chida</em>.</span>
+  <span class="expanded"> The lecturer reports that the <em class="term">Yesod VeShoresh HaAvodah</em> writes, as does the <em class="term">Chida</em>, that all should be silent and have <em class="term">kavanah</em> at this moment, look at the <em class="term">Sefer Torah</em> in the open <em class="term">Aron</em>, and arouse love of <em class="term">Torah</em> and of those who learn it, concluding <em class="term"><span class="heb-inline">לטב לחיים ולשלום אמן</span></em>. The passages were not located (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref37" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn38">
+  <span class="short"><em class="term">Mishnah Makkos</em> 3:16 (<span class="heb-inline">משנה מכות ג׳</span>:<span class="heb-inline">ט״ז</span>).</span>
+  <span class="expanded"> <span class="heb-inline">רבי חנניא בן עקשיא אומר</span>: <span class="heb-inline">רצה הקדוש ברוך הוא לזכות את ישראל</span>, <span class="heb-inline">לפיכך הרבה להם תורה ומצוות</span>, <span class="heb-inline">שנאמר</span>: <span class="heb-inline">ה׳ חפץ למען צדקו יגדיל תורה ויאדיר</span> (<span class="heb-inline">ישעיה מ״ב</span>:<span class="heb-inline">כ״א</span>). Recited by the lecturer at the close of the discourse, with <em class="term">Kaddish</em>.</span>
+  <a class="backref" href="#ref38" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Recollections of reviewers are recorded as such and are not asserted in the text.</p>
+<ol>
+<li><strong>The stanzas of <em class="term">Shomer Yisrael</em>.</strong> The wording of the Sephardic stanza and of the <em class="term">Shelah</em>’s verse (<em class="term">goy rabba</em>) is to be checked in a printed <em class="term">siddur</em> and in the <em class="term">Shaar HaShamayim</em> and the <em class="term">Shelah</em>’s will; the place of the <em class="term">piyyut</em> in the <em class="term">Siddur Rashi</em>; the printing details of the <em class="term">Shaar HaShamayim</em>; and the source of the testimony about <em class="term">R’ Nosson Adler</em>.</li>
+<li><strong>The <em class="term">Maaseh Rav</em>.</strong> The locus of the <em class="term">Gra</em>’s practice of saying <em class="term">Shomer Yisrael</em> only on a public fast is to be cited.</li>
+<li><strong>Sitting for <em class="term">Shema</em>.</strong> The <em class="term">siman</em> of the <em class="term">Shulchan Aruch</em> and the ground (<em class="term">kabbalah</em>; <em class="term">kavod</em> in the summary) are to be established.</li>
+<li><strong>The <em class="term">Rambam</em> on sitting after <em class="term">nefilas apayim</em>.</strong> The <em class="term">halachah</em> in <em class="term">Hilchos Tefillah</em> is to be located.</li>
+<li><strong>The <em class="term">Ach Pri Tevuah</em>.</strong> The passage, the edition, and whether the words <em class="term"><span class="heb-inline">כי אם ראש חודש ושבת</span></em> are his or the lecturer’s are to be confirmed; the author’s identification (<em class="term">Liska</em>) follows the clearest recording.</li>
+<li><strong>“The Philistines.”</strong> To be confirmed whether the lecturer’s gloss on <em class="term">bagedud</em> has a source.</li>
+<li><strong>The <em class="term">Tosafos</em> citing <em class="term">Rabbeinu Manoach</em>.</strong> The recording says <em class="term">Shabbos</em>, the summary <em class="term">Chullin</em>; the locus, and whether the <em class="term">Rishon</em> is the commentator on the <em class="term">Rambam</em>, are to be established; and the claim that little of his commentary survives.</li>
+<li><strong>The <em class="term">Zohar</em>.</strong> The locus (II, 206a) and the Aramaic are to be checked; the dating of the <em class="term">Zohar</em>’s revelation (the lecturer said the 1400s) and the first printing (Mantua, not Turkey) are to be confirmed.</li>
+<li><strong>The <em class="term">Chida</em> and the <em class="term">Yesod VeShoresh HaAvodah</em>.</strong> The works and <em class="term">simanim</em> on silence at the opening of the <em class="term">Aron</em> are to be cited.</li>
+<li><strong>The <em class="term">Kesser Shem Tov</em>.</strong> The passage on <em class="term">Brich Shmei</em> is to be located.</li>
+<li><strong>The <em class="term">Gra</em> and Italy.</strong> The source of the attribution of <em class="term">Kel Erech Apayim</em> to the <em class="term">chachmei Italia</em> is to be located; it is not in the <em class="term">Biur HaGra</em> to <em class="term">Orach Chaim</em> 131 or 134 as available.</li>
+<li><strong>The Roman rite and the Jerusalem museum.</strong> The particulars of the rite (<em class="term">HaNoten LaYaef Koach</em>; the different <em class="term">Maariv</em> and <em class="term">Emes VeEmunah</em>), the date of 1951, and the town of the reconstructed <em class="term">Aron</em> are to be confirmed.</li>
+<li><strong>The <em class="term">Machzor Vitry</em>.</strong> Whether the <em class="term">Machzor Vitry</em> links the Monday and Thursday prayer to judicial error, or only to the likeness of the two courts, is to be established; the lecturer sees no direct reference.</li>
+<li><strong>The <em class="term">Siddur HaRokeach</em>.</strong> The passage on <em class="term">Kel Erech Apayim</em> as an apology is to be located.</li>
+<li><strong>The <em class="term">Avudraham</em>.</strong> Where he says that saying only one version is an error, and which printing of the ArtScroll <em class="term">siddur</em> notes that some say both, are to be located.</li>
+<li><strong>The remark on <em class="term">Shabbsai Tzvi</em>.</strong> The source and meaning of the remark are not given; it is recorded as an aside.</li>
+<li><strong>Going to the <em class="term">Aron</em>.</strong> The <em class="term">Seder HaYom</em> and the passage of the <em class="term">Mishnah Berurah</em> on accompanying the <em class="term">Sefer Torah</em> are to be located.</li>
+<li><strong>The <em class="term">Magen Avraham</em>.</strong> The locus of the exclusion of weekday <em class="term">Brich Shmei</em>, and of the reasoning from <em class="term"><span class="heb-inline">כתרך</span></em>, is to be located; <em class="term">Orach Chaim</em> 282:1 does not contain it.</li>
+<li><strong>The saying of <em class="term">Rabbi Ram Shor</em>.</strong> To be confirmed with the lecturer, and whether he wishes the <em class="term">rav</em> to be named.</li>
+<li><strong>The calendar.</strong> The lecturer calls the <em class="term">parshah</em> of the veil “last week’s”; <em class="term">Chayei Sarah</em> was read two Shabbosos before this discourse. The edition says only <em class="term">Chayei Sarah</em>.</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em>Tefillah</em>, 3 Kislev 5786. The edition follows the order of the discourse, records the lecturer&rsquo;s reports as his, and leaves unresolved items to the Open Questions. The discourse continues in the next session with the prayers that surround the Torah reading.
+</footer>
+
+</body>
+</html>

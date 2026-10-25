@@ -571,3 +571,92 @@ Modified: final MM/2025-11-10 — תחנון, נפילת אפים, and the Origi
 - **fn20 (Chasam Sofer, Pressburg)** — **UNCERTAIN**: responsum not located.
 - **fn21 (Eretz Tzvi, א' ו' ח')** — **UNCERTAIN**: responsum not located; reported as chiddush, no change advocated.
 - **Total:** 1 correction (fn8 parsha/wording), ~11 verified, ~11 UNCERTAIN/not checkable. Sofer-over-Plaud choices: "תיקון Tuesday" vs "ticket/chicken"; Rokeach-style misattributions none this week; Plaud's "Yaavetz/Sheva Berachos" and Yismach Moshe points confirmed by Sofer. Modified: final MM/2026-10-25 — Shabbos Shemoneh Esrei — Why Seven, the ישמח משה Machloikes, and the Kedushah of Eretz Yisrael.html
+
+## 2025-11-23 — סיום תחנון and Opening the ארון קודש
+
+- **fn1 (Siddur Rashi; Shomer Yisrael)** — **CORRECTED** (in shiur text, as the Rav's slip): the Rav said Ashkenazic siddurim "of the 1200s such as Rashi"; Siddur Rashi dates to c. 1080–1120 (Sefaria), so text now says the lecturer said "the 1200s" but it dates to about 1100. Buber–Freimann 1911 as given on Sefaria.
+- **fn2 (Siddur Shaar HaShamayim; Shelah's testament; R. Nasan Adler)** — **UNCERTAIN**: missing stanza (שומר גוי קדוש) and printing details not on Sefaria; recording gives R. Nasan Adler (earlier draft said Binyamin, corrected).
+- **fn3 (Maaseh Rav)** — **UNCERTAIN**: Gra only on a public fast not located.
+- **fn4 (Taanis 25b)** — **VERIFIED** (story of R. Akiva, Avinu Malkeinu).
+- **fn5 (Mishnah Berurah 131:9)** — **VERIFIED / CORRECTED**: Sefaria reads ואנחנו לא נדע בישיבה מה נעשה בעמידה, attributed to the Shelah; earlier draft had זכרנו, corrected to מה נעשה. Unverified Beis Yosef/Rivash sentence removed.
+- **fn6 (Tehillim 79:8)** — **VERIFIED** (verse form אל תזכר; siddur אל תזכור).
+- **fn7 (Ach Pri Tevuah)** — **UNCERTAIN**: not on Sefaria; author ambiguous on recording (Lisker vs R. Yeshayahle of Kretschnif).
+- **fn8 (Bereishis 24:65)** — **VERIFIED** (ותקח הצעיף ותתכס).
+- **fn9 (Berachos 3b)** — **VERIFIED**: lyre over David's bed; "Our master, the king, your nation requires sustenance". **UNCERTAIN**: the words כי אם ראש חודש ושבת are not in the passage (kept as the Rav's quote of the Lisker).
+- **fn10 (Shabbos 31a)** — **VERIFIED**: "Did you conduct business faithfully? Did you set times for Torah?"
+- **fn11 (Rambam, Tefillah)** — **UNCERTAIN**: Kaddish before/after Shema not located. Rambam Prayer 5:13 (sits, then falls on his face) retrieved; bears on the Rav's garbled remark on sitting after nefilas apayim (Open Question).
+- **fn12 (Rabbeinu Manoach)** — **UNCERTAIN**: half-Kaddish reason not located.
+- **fn13 (Zohar II 206a)** — **UNCERTAIN**: passage not retrieved; earlier invented Aramaic quotation removed.
+- **fn14 (Chida)** — **UNCERTAIN**: work/siman not named; earlier Birkei Yosef citation and gabbai/bizayon details removed.
+- **fn15 (Yeshayahu 2:3)** — **VERIFIED**.
+- **fn16 (Keter Shem Tov)** — **UNCERTAIN**: not located.
+- **fn17 (Gra on sages of Italy; Machzor Bnei Roma)** — **UNCERTAIN**: not located.
+- **fn18 (Shibbolei HaLeket)** — **UNCERTAIN**: rite details are the Rav's report.
+- **fn19 (Machzor Vitry)** — **VERIFIED**: Mon/Thu courts alike, increase prayer and mercy. **UNCERTAIN**: הצילנו מכל רע not located in the passage.
+- **fn20 (Kesubos 1:1; Megillah 1)** — **VERIFIED** as pointers (court on Monday and Thursday).
+- **fn21 (Sidur HaRokeach)** — **UNCERTAIN**: not located.
+- **fn22 (Avudraham)** — **VERIFIED**: חמשים תיבות כנגד עשרת הדברות וארבעים יום; "error to say only one" **UNCERTAIN**.
+- **fn23 (Rashi Bamidbar 10:35, Tanchuma)** — **VERIFIED**: ark three days ahead; "Stay and wait for us, do not travel further away from us"; Tanchuma (Vayakhel). Earlier invented leveling-mountains/snakes detail removed.
+- **fn24 (Bamidbar 10:35)** — **VERIFIED**.
+- **fn25 (Zohar first printing)** — **CORRECTED**: Rav said Turkey 1557/1559; Sefaria gives Mantua 1558 (Cremona 1559–60). Rav's words kept, correction in text and note.
+- **fn26 (Magen Avraham)** — **CORRECTED**: OC 282 (opening comment), not 134. Reasoning from כתרך and Mon/Thu exclusion **UNCERTAIN**, the Rav's report.
+- **fn27 (Mishnah Berurah 134:13)** — **VERIFIED**: ומנהג העולם לומר בריך שמיה בשעת הוצאת הס"ת בין בחול בין בשבת. "Until opened on the bimah" **UNCERTAIN** (Rav's statement; unsupported sentence softened).
+- **fn28 (Yesod VeShoresh HaAvodah; Chida)** — **UNCERTAIN**: not located; claim that the Chida "codifies with halachic force" in Birkei Yosef softened to the Rav's report.
+- **Total:** 5 corrections (fn1 date, fn5 sit/stand, fn25 Zohar printing, fn26 siman, Nasan Adler/date fixes), ~12 verified, ~14 UNCERTAIN. Also corrected: Hebrew date כ״ג חשון -> ג׳ כסלו תשפ״ו (Summary had תשפ״ה); מתרצה ברחמים ומתפייס (Summary garbled "מזריזין ... ומספיסין"); "next week" Sabbatean promise unsupported. Modified: final MM/2025-11-23 — סיום תחנון and Opening the ארון קודש.html
+
+---
+
+## 2025-11-30 — קריאת התורה — Sacred Protocols and the Legacy of יקעס
+
+- **fn1 (Zohar II Vayakhel 206a; first printing)** — **UNCERTAIN**: not checkable on Sefaria; lecturer's "Constantinople 1557" vs standard Mantua/Cremona 1558–60 noted; entry via Shaarei Tzion (Prague 1662) conflicts with "standard by mid-1600s".
+- **fn2 (Divrei Koheles; Geiger)** — **UNCERTAIN**: not on Sefaria; first-draft dates (1792–1878; 1862) unverified and conflict with lecturer's period; withdrawn from the Sefer Edition.
+- **fn3 (Meshech Chochmah, Bechukosai)** — **UNCERTAIN**: retrieval failed.
+- **fn4 (Sanhedrin 99a)** — **VERIFIED**: "והמגלה פנים בתורה שלא כהלכה" among those with no share in the World to Come. Added as new note to final MM.
+- **fn5 (Chasam Sofer)** — **UNCERTAIN**: responsum not located; three teachers (Hafla'ah, Rav Nosson Adler, Rav Zalman Chasid) corrected to the recording; "from his tzavaah" claim withdrawn.
+- **fn6 (Maharsha)** — **UNCERTAIN**: quotation not located; Lublin grave likely the Maharshal's (flagged).
+- **fn7 (Noda BiYehuda)** — **UNCERTAIN**: Sefaria search unavailable; simanim unverified.
+- **fn8 (Darkei Moshe)** — **UNCERTAIN**: principle not found in Darkei Moshe OC 25; MB cross-reference removed.
+- **fn9 (Yerushalmi Shabbos 6:9; Daniel 3:25)** — **VERIFIED**: Nebuchadnezzar "similar to a son of gods"; angel strikes him on the mouth, "correct your words". **CORRECTED**: Pesachim 118a does not contain the phrase (cross-reference removed); Sanhedrin 92b noted as different context; Onkelos to Bereishis 6:2 is בני רברביא, and renders האלהים as דיינייא at Shemos 22:8 (lecturer's targum remark does not match; reported, not changed).
+- **fn10 (Tehillim 116:16)** — **VERIFIED**: "אני עבדך בן אמתך". **CORRECTED**: אנא עבדא דקודשא בריך הוא is a parallel, not itself a verse.
+- **fn11 (Yaavetz, Mitpachas Sefarim)** — **UNCERTAIN**: not located; "Chasam Sofer maskim" flagged as chronologically surprising.
+- **fn12 (MB OC 134; Chofetz Chaim; R. Hillel Zaks)** — **UNCERTAIN**: no printed source; Mendel (son-in-law, YU) and Hillel (grandson, Chevron) separated per recording.
+- **fn13 (Tehillim 34:4; Avudraham, Machzor Vitry)** — **VERIFIED**: six words. Avudraham/Machzor Vitry **UNCERTAIN**.
+- **fn14 (Shmuel II 6; Berachos 63b; Sotah 35b; Sanhedrin 21a)** — **VERIFIED**; **CORRECTED**: Berachos 63b is a mother-in-law and her eight daughters-in-law, six at a time (lecturer said "daughters"); "64a" dropped.
+- **fn15 (Soferim 14; SA OC 134:2; gloss OC 149:1; Eitz Chaim)** — **VERIFIED** (Soferim, SA, gloss); Eitz Chaim **UNCERTAIN**.
+- **fn16 (Magen Avraham OC 134)** — **CORRECTED/HEDGED**: SA 134:2 and MB 134:8 confirm lifting after the reading but give no reason; reason not found in Magen Avraham; lecturer unsure of attribution.
+- **fn17 (Or Zarua)** — **UNCERTAIN**: honor of handing the mantle not located.
+- **fn18 (Chida; Bereishis 30:22)** — **CORRECTED**: invented title "מחזה כהונה תמרי תקניין" removed; "Yitzchak" replaced by "yizkor" (as heard); Bereishis 30:22 **VERIFIED** as editorial inference only.
+- **fn19 (R. Chaim Palagi)** — **UNCERTAIN**: not located.
+- **fn20 (Maharshag)** — **CORRECTED**: "שם אריה" identification removed; responsum **UNCERTAIN**.
+- **fn21 (Devarim 32:3; Hakol havu godel)** — **VERIFIED**: "For the name of the Eternal I proclaim; give glory to our God!" **CORRECTED**: the call is הכל הבו גודל, not ברכו; verse is 32:3, not 32:1. Rishonim **UNCERTAIN**.
+- **fn22 (Or Zarua in Mordechai)** — **UNCERTAIN**: not located; list of divided honors narrowed to the recording's three steps.
+- **fn23 (Makkos 3:16; Yeshayahu 42:21)** — **VERIFIED**.
+- **Total:** ~9 corrections (Pesachim 118a; Bereishis/Onkelos remark; Tehillim parallel; Obed-Edom; Hakol havu/Devarim 32:3; yizkor; Magen Avraham hedge; Chida title; Maharshag/שם אריה), ~12 verified, ~14 UNCERTAIN/not checkable. Sofer-over-Plaud/AI-summary choices: Satmar Rav not Chazon Ish; ותיקין, גולל, כולל; Zaks relatives; no Yochanan ben Zakkai prayer (אב הרחמים / ויחון). Modified: final MM/2025-11-30 — קריאת התורה — Sacred Protocols and the Legacy of יקעס.html
+
+## 2025-12-07 — קריאת התורה, קדושה דסידרא, and למנצח מזמור לדוד
+
+- **fn1 (Mishnah Megillah; Megillah 21a–b)** — **CORRECTED**: Mishnah cite was פ"ד מ"ב; the passage (three readers Mon/Thu/Shabbat Mincha; first blesses before, last after) is Mishnah Megillah 4:1. **VERIFIED**: Gemara 21b gives the reason. The Rav's "end of Maseches Megillah" is loose (it is ch. 4, 21a–b).
+- **fn2 (SA OC 285; Berachos 8a)** — **UNCERTAIN**: text not retrieved; function as preparation for an aliyah is the poskim's, as reported.
+- **fn3 (Megillah 21b)** — **VERIFIED**: decree on account of those who enter mid-reading and those who leave early, "lest they conclude that one blessing suffices" (note refined; the Rav's wording, a missed blessing, kept as his).
+- **fn4 (Bava Kamma 82a; Rambam Tefillah 12:1)** — **CORRECTED**: Gemara ascribes the weekly schedule to "the prophets among them" and Ezra the three-reader/ten-verse structure; "Moshe at Mei Marah" not found there. **VERIFIED**: Rambam Tefillah 12:1 credits Moshe with the original reading (Shabbat, Mon, Thu), Ezra with Shabbat Mincha and three readers/ten verses. Exodus 15:22 derivation verified.
+- **fn5 (Rav Menashe Klein, Mishneh Halachos)** — **UNCERTAIN**: dates (1923–2011), "talmid of Satmar", content of the kuntres not verifiable.
+- **fn6 (Berachos 54b)** — **VERIFIED**: four who must thank; Hebrew is "הולכי מדברות" (HTML had "מדבריות", **CORRECTED**). Abaye: ten from בקהל עם; Mar Zutra: two of the ten rabbanan from ובמושב זקנים (Ps 107:32 begins וירוממוהו); Rav Ashi's objection left difficult.
+- **fn7 (Tur OC 219; SA OC 219)** — **VERIFIED**: Tur's siman is "וכל החיים יודוך סלה" (read as חיים); ten לכתחילה; Tosafos cite Mar Zutra, unresolved. SA 219: custom to bless after the Torah reading since ten are present.
+- **fn8 (Shalmei Nedarim)** — **UNCERTAIN**: not located on Sefaria; author's surname unresolved (Plaud/Sofer text "Kaplan"; summary and HTML "שפלן"). Not changed.
+- **fn9 (Shabbat 137b)** — **VERIFIED**: "just as he entered the covenant, so may he enter into Torah, marriage, and good deeds", said by those standing there.
+- **fn10 (Rosh on Berachos ch. 9)** — **UNCERTAIN**: Rosh Berachos 9:3 discusses ten (and two sages) but contains no comparison of the reading to a korban; not located. Note added to the HTML.
+- **fn11 (Machzor Vitry)** — **UNCERTAIN**: Sefaria fetch failed; "Shabbat Mincha" claim not verified.
+- **fn12 (Berachos 4b)** — **VERIFIED**: R. Elazar in the name of R. Avina; the Gemara rejects each reason alone (Ps 119 is also alphabetical; Hallel HaGadol also mentions sustenance) and concludes the two together.
+- **fn13 (SA OC 51:7; MB 51:16)** — **VERIFIED**: SA 51:7 requires kavanah in פותח את ידך and going back if one did not. **UNCERTAIN**: MB 51:16 wording not retrieved. Body now credits the poskim/Shulchan Aruch rather than "achronim".
+- **fn14 (Aruch HaShulchan)** — **VERIFIED** in outline: AH OC 132 explains the closing Ashrei as a request for bodily sustenance after the soul was fed; two Ashrei at Shacharis, one at Mincha; none at Maariv (no Kedushah). **UNCERTAIN**: years as rav (body 45–50 vs fn "over 35"), "nephew was the Netziv" (likely brother-in-law/uncle of his son), dates.
+- **fn15 (Yesod VeShoresh HaAvodah)** — **UNCERTAIN**: not located.
+- **fn16 (Rav Natronai, ed. Brody)** — **UNCERTAIN**: responsum to Lucena and "earliest mention of Lamnatzeach" not on Sefaria; publisher not confirmed; the legend of kefitzas haderech is usually told of Mainz, the Rav said Spain; Rav Hai's reply not located; "a hundred years later" is the Rav's (Hai was ~150 years later).
+- **fn17 (Megillah 29a)** — **VERIFIED**: Ezek 11:16; R. Yitzchak: synagogues and study halls in Babylonia; R. Elazar: the house of our master (Rav) in Babylonia. The Sura/Rav's-shul identification is the Rav's.
+- **fn18–19 (Mishnah Berachos 5:1; Berachos 32b; Yerushalmi 5:1; Rambam Tefillah 4:16)** — **VERIFIED**: Mishnah an hour before; Berachos 32b / Yerushalmi / Rambam an hour before and after. Learning in tallis and tefillin and saying Ashrei/Lamnatzeach/Uva LeTzion on rising are not in these sources (the Rav's account of Rav's beis medrash). Rambam mentions no learning.
+- **fn20 (Berachos 9b–10a)** — **CORRECTED** (body): HTML had "our nineteenth perek is, in the older count, the twentieth" and "perek כ'"; correct is our twentieth = the nineteenth in the older count. **VERIFIED**: 9b — David said the verse only after eighteen chapters; the objection that there are nineteen is answered by counting chapters 1 and 2 as one; 10a — "happy is … happy is" opens and closes the unit. (Attribution of the 18-chapter count to "the Anshei Knesses HaGedolah" removed.)
+- **fn21 (Tehillim 20:2)** — **VERIFIED**.
+- **fn22 (Yerushalmi on יענך ה' ביום צרה)** — **UNCERTAIN**: not located; Yerushalmi Berachos 4:4 and 5:1 do not cite Ps 20:2 here. "Verify exact citation" working note replaced by a plain statement.
+- **Callout (Gilyon HaShas, Berachos 4b)** — **CORRECTED**: attributed in HTML to the Ketzos HaChoshen (summary's error); the Rav said Rabbi Akiva Eger. **VERIFIED**: Gilyon HaShas on 4b: "שם בכל יום ג"פ. בהרא"ש ליתא ג"פ וכן בטור וברוקח סימן ש"ך איתא כל האומר תהלה לדוד בכל יום מובטח לו" (HTML now adds that Tur and Rokeach also lack "three times").
+- **Not in HTML, checked for the Sefer Edition:** Menachos 99b — R. Yochanan in the name of R. Shimon bar Yochai: whoever recites Shema morning and evening has fulfilled "lo yamush"; forbidden to say so before amei haaretz (Rava disagrees) — VERIFIED. Bereishis 35:20 (Yaakov's matzevah over Rachel) — VERIFIED.
+- **Other (non-Sefaria) corrections made in the HTML:** Hebrew date ז' → י״ז כסלו תשפ״ו (7 Dec 2025 = 17 Kislev 5786, computed; Chanukah 2025 begins eve of 14 Dec); אלי סנא "no, no" → אליסנה (= אלי הושענא / קהלי הושענא, as the Rav said); "זאל זיין מקובל" → מ'האט געפועלט אלעס גוט; "Last Shabbos" → "Yesterday, at סעודה שלישית"; "You correctly added" → "A congregant rightly raised"; Ps 107:32 quotation fixed; ברוך שאמר named; ר״י גאת added; Ketzos → R' Akiva Eger.
+- **Total:** ~9 corrections to HTML (fn1 Mishnah locus; fn4 Moshe/Mei Marah attribution; fn6 spelling; fn7 mnemonic; fn13 attribution; chapter count; Gilyon author; Hebrew date; Elisana), ~14 verified, ~10 UNCERTAIN/not checkable. Sofer-over-Plaud: no Sofer .docx exists for this date; the clearer bilingual Plaud file (AUDIO-2025-12-07-11-11-51.txt) was authoritative over the garbled "Speaker 1" transcript and the summary. Modified: final MM/2025-12-07 — קריאת התורה, קדושה דסידרא, and למנצח מזמור לדוד.html

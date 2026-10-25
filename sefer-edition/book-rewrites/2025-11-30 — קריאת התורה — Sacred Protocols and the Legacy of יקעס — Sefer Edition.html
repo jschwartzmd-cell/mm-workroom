@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>קריאת התורה — Sacred Protocols and the Legacy of יקעס — Sefer Edition</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+<header class="title">
+  <h1 dir="rtl">קריאת התורה — בריך שמיה וירושת היקעס</h1>
+  <div class="english-title">Sacred Protocols and the Legacy of the <em>Yekkes</em> (<span class="heb-inline">יקעס</span>)</div>
+  <div class="sub">Studies in the <em>Tefillah</em> (<span class="heb-inline">תפילה</span>) Series &mdash; <em>Brich Shmei</em> and the Torah Service</div>
+  <div class="date">10 Kislev 5786 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse is dedicated <span class="heb-inline">לעילוי נשמת</span> the lecturer&rsquo;s grandfather, <span class="heb-inline">זכר צדיק לברכה</span>, and to his great-grandfather Rav Asher Anshel, <span class="heb-inline">הי״ד</span>, who was murdered in the Holocaust. <span class="confirm">[Names and wording to be confirmed with the Rav before printing.]</span></p>
+
+<p class="lead">The lecturer opens with a personal account of a forgotten <em class="term">yahrzeit</em> (<span class="heb-inline">יארצייט</span>) and then takes up a question left over from the previous week: why do the Jews of Frankfurt not say <em class="term">Brich Shmei</em> (<span class="heb-inline">בריך שמיה</span>) when the ark is opened? The answer is a history. It runs from the two Geiger brothers and Rav Hirsch, through the long Ashkenazic suspicion of <em class="term">kabbalah</em> (<span class="heb-inline">קבלה</span>) after Shabsai Tzvi, to the Baal Shem Tov and the change in our own generation; it then weighs the two difficult phrases of the passage, <span class="heb-inline">בר אלהין</span> and <span class="heb-inline">אנא עבדא</span>, and the Chofetz Chaim&rsquo;s private practice. The second half goes through the Torah service itself: the six words of <span class="heb-inline">גדלו לה׳ אתי</span> and the six steps of the Ark, escorting the scroll, the Arizal&rsquo;s gazing at the letters, why the Ashkenazim lift the scroll after the reading, an uncommon honor, the <em class="term">pesichah</em> (<span class="heb-inline">פתיחה</span>) of an expectant father, silence while the scroll is carried, the call <span class="heb-inline">הכל הבו גודל לאלהינו</span>, and a proposal to divide the honors.</p>
+<h2>I. A Preface: Providence and a <em class="term">Yahrzeit</em></h2>
+
+<p>The discourse opens with a personal account, which the lecturer gives as his reason for sponsoring the morning’s breakfast and the discourse itself. His father had passed away some months earlier,<span class="confirm">[the recording is unclear here; see Open Questions, 2]</span> and his father’s own <em class="term">yahrzeit</em> (<span class="heb-inline">יארצייט</span>) would fall shortly after <em class="term">Pesach</em> (<span class="heb-inline">פסח</span>); his paternal grandfather’s <em class="term">yahrzeit</em> falls on the seventh of <em class="term">Kislev</em> (<span class="heb-inline">כסלו</span>). The lecturer was close to his grandfather, whom he counts himself a disciple (<em class="term">talmid</em> (<span class="heb-inline">תלמיד</span>)), and had spoken of him to the congregation on several occasions. Every year his father had telephoned him: “Light a candle for <em class="term">Saba</em> (<span class="heb-inline">סבא</span>). You were his <em class="term">talmid</em>; learn a little from his <em class="term">sefer</em> (<span class="heb-inline">ספר</span>).” This year, for the first time, no call came, and the lecturer forgot the day entirely, until an hour before <em class="term">shkiah</em> (<span class="heb-inline">שקיעה</span>).</p>
+
+<h3>The Grandfather</h3>
+
+<p>The grandfather, born Weiss, was a great <em class="term">talmid chacham</em> (<span class="heb-inline">תלמיד חכם</span>). In his native land he studied in the Satmar <em class="term">yeshivah</em> (<span class="heb-inline">ישיבה</span>), where he was counted among its best students and learned in <em class="term">chavrusa</em> (<span class="heb-inline">חברותא</span>) with the Satmar Rav, the author of the <em class="term">Divrei Yoel</em> (<span class="heb-inline">דברי יואל</span>), with whom he prepared a <em class="term">shiur</em> (<span class="heb-inline">שיעור</span>). He then moved to <em class="term">Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>), where he Hebraicized his name to Ephrati, changed his outlook (<em class="term">hashkafah</em> (<span class="heb-inline">השקפה</span>)), and became a professor of <em class="term">Talmud</em> (<span class="heb-inline">תלמוד</span>) at Bar-Ilan University; yet, the lecturer says, he always held himself a disciple of the Satmar Rav. The lecturer’s father went another way, to the Ponevezh <em class="term">yeshivah</em>, and became a “burning” (<em class="term">farbrenter</em> (<span class="heb-inline">פארברענטער</span>)) fervent <em class="term">ben Torah</em> (<span class="heb-inline">בן תורה</span>). The lecturer recalls, as a child, attending <em class="term">Yom HaAtzmaut</em> (<span class="heb-inline">יום העצמאות</span>) services with his grandfather in the latter’s synagogue in Petach Tikva: a world very different from the one his father chose, yet a world of <em class="term">Torah</em> (<span class="heb-inline">תורה</span>) and <em class="term">yiras shamayim</em> (<span class="heb-inline">יראת שמים</span>) no less.</p>
+
+<p>From the age of eighteen to twenty-one, during three years in <em class="term">Eretz Yisrael</em>, the lecturer visited his grandfather nearly every <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) and learned with him; before that, as a young child and as a boy, he had spent months in his home. The grandfather’s books, whose titles the lecturer gives as <span class="heb-inline">ועמודים לעמודים</span> and <span class="heb-inline">תלמוד לתלמידים</span>, are not popular, for he had a different method of study: he approached the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) as a researcher (<em class="term">mechkar</em> (<span class="heb-inline">מחקר</span>)), attending to variant readings (<em class="term">girsaos</em> (<span class="heb-inline">גרסאות</span>)) and texts (<em class="term">nuschaos</em> (<span class="heb-inline">נוסחאות</span>)) and to the identity of each authority, rather than in the manner of the <em class="term">yeshivos</em> (<span class="heb-inline">ישיבות</span>). He was, the lecturer adds, the trailblazer who gave the religious high schools (<em class="term">tichon</em> (<span class="heb-inline">תיכון</span>)) of <em class="term">Eretz Yisrael</em>, in which students learn sacred and secular subjects together, a system for teaching <em class="term">Gemara</em>.</p>
+
+<h3>The Reminder</h3>
+
+<p>An hour before <em class="term">shkiah</em> on the day, a man whom the lecturer had never met came to his door. He had been sent by Rabbi Meyer Travis of the community’s adopted <em class="term">kollel</em> (<span class="heb-inline">כולל</span>) in <em class="term">Eretz Yisrael</em>, and carried a newly published <em class="term">sefer</em> for the <em class="term">beis medrash</em> (<span class="heb-inline">בית מדרש</span>). Rabbi Travis’s book is a controversial work on contemporary questions of <em class="term">Even HaEzer</em> (<span class="heb-inline">אבן העזר</span>), including some that touch on transgender issues; he had told the lecturer to expect that he would be excommunicated for it, and several brave rabbis, among them the community’s late <em class="term">rav</em> (<span class="heb-inline">רב</span>), had given their approbations (<em class="term">haskamos</em> (<span class="heb-inline">הסכמות</span>)). The messenger had met Rabbi Travis once, on an airplane ten years earlier. As he was leaving he asked: “You are Avishai Efrati’s son?” He had prayed with the lecturer’s father at the early (<em class="term">vasikin</em> (<span class="heb-inline">ותיקין</span>)) <em class="term">minyan</em> (<span class="heb-inline">מנין</span>) every <em class="term">Shabbos</em> morning, and as the <em class="term">gabbai</em> (<span class="heb-inline">גבאי</span>) of that <em class="term">minyan</em>, who kept the <em class="term">yahrzeit</em> lists, he asked: “Isn’t today your grandfather’s <em class="term">yahrzeit</em>?” The lecturer had forgotten. There was time to light a candle and to learn in his memory. “People always have stories of <em class="term">hashgachah pratis</em> (<span class="heb-inline">השגחה פרטית</span>),” he says; “I am always jealous that they happen to others. Thank God I have one to share.”</p>
+
+<p>The discourse is dedicated to the memory of the grandfather, and of his father, <em class="term">Rav Asher Anshel</em> (<span class="heb-inline">רב אשר אנשיל</span>), <span class="heb-inline">השם ינקום דמו</span>, the lecturer’s great-grandfather, who was murdered in the Holocaust, “a holy Jew, a distinguished Jew”; the lecturer stood at the crematoria two years earlier and felt connected to him.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>II. <em class="term">Brich Shmei</em> (<span class="heb-inline">בריך שמיה</span>) and the Question of Frankfurt</h2>
+
+<h3>The Question</h3>
+
+<p>The preceding discourse began the study of <em class="term">Brich Shmei</em>, the passage recited as the <em class="term">aron kodesh</em> (<span class="heb-inline">ארון קודש</span>) is opened. Afterwards a member of the congregation observed, to the lecturer’s embarrassment, that in Frankfurt they did not say it at all; the lecturer investigated, and this discourse gives the result.</p>
+
+<h3>When Is It Said?</h3>
+
+<p>As noted the week before, some <em class="term">nuschaos</em> say <em class="term">Brich Shmei</em> only on <em class="term">Shabbos</em>, <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>) and <em class="term">Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>). The reason is in its own words, <span class="heb-inline">בריך כתריך ואתרך</span>, “blessed be Your crown”: the holiness of the <em class="term">keser</em> (<span class="heb-inline">כתר</span>), the crown, is invoked in the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) only when one says <span class="heb-inline">כתר יתנו לך</span>, and that is on those days. The Ashkenazic practice is to say <em class="term">Brich Shmei</em> every time the <em class="term">aron</em> (<span class="heb-inline">ארון</span>) is opened, because, the lecturer says, the plain sense (<em class="term">pshat</em> (<span class="heb-inline">פשט</span>)) of the <em class="term">Zohar</em> (<span class="heb-inline">זוהר</span>) calls for its daily recital.</p>
+
+<h3>A Recent Addition to the Prayers</h3>
+
+<p><em class="term">Brich Shmei</em> is a quotation from the <em class="term">Zohar</em>.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> As the lecturer has said many times, much of the order of prayer (<em class="term">seder hatefillah</em> (<span class="heb-inline">סדר התפילה</span>)) derives from the <em class="term">Arizal</em> (<span class="heb-inline">אריז״ל</span>), even among those who do not regard themselves as students of <em class="term">kabbalah</em> (<span class="heb-inline">קבלה</span>); one could say that one has no connection to <em class="term">kabbalah</em> and does nothing in accord with the <em class="term">Ari</em> (<span class="heb-inline">אר״י</span>), and still much of the <em class="term">siddur</em> (<span class="heb-inline">סידור</span>) would be his. The <em class="term">Zohar</em> was known only to a select few (<em class="term">yechidei segulah</em> (<span class="heb-inline">יחידי סגולה</span>)) until it was first printed, in 1557 according to the lecturer, in Constantinople. Because the <em class="term">Arizal</em> said <em class="term">Brich Shmei</em> and others saw him say it, it spread in the Ashkenazic communities and throughout Europe and among the Sephardim. The prayer books printed from the early 1600s all contain it; the lecturer marvels that within a few decades it had entered the liturgy everywhere. By the mid-1600s it was standard practice. Except in Frankfurt.</p>
+
+<h2>III. The <em class="term">Divrei Koheles</em> (<span class="heb-inline">דברי קהלת</span>) and the Two Geiger Brothers</h2>
+
+<h3>Frankfurt and Its Customs</h3>
+
+<p>Frankfurt was the bastion of German-Jewish (<em class="term">Yekkishe</em> (<span class="heb-inline">יקעס</span>)) custom, the central community from which the customs of German Jewry went out. A collection of its customs, called <em class="term">Divrei Koheles</em>, was compiled by Rav Shlomo Zalman Geiger, a judge (<em class="term">dayan</em> (<span class="heb-inline">דיין</span>)) in Frankfurt for many years, who belonged to an established German rabbinic family; the lecturer places him in the eighteenth and early nineteenth centuries.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> He compiled it because he considered it essential that the next generation know its true, authentic customs. In it he writes plainly: <span class="heb-inline">אין אומרים בריך שמיה בפרנקפורט</span>, “in Frankfurt we do not say <em class="term">Brich Shmei</em>.” The reason: it comes from the <em class="term">Zohar</em>, and in Frankfurt they stayed far from <em class="term">Zohar</em>.</p>
+
+<h3>The Brother</h3>
+
+<p>The family stands for one of the sharpest divisions in German-Jewish history. Rav Shlomo Zalman had a brother, Abraham Geiger, the Dr. Abraham Geiger of the Reform movement; the two were sons of rabbis from a rabbinic family. Abraham Geiger was a brilliant <em class="term">talmid chacham</em> who went to the University and began to apply Biblical criticism to the Torah. He deleted from the prayer book the petition <span class="heb-inline">ותחזינה עינינו בשובך לציון ברחמים</span>, saying that Jerusalem was over and that Germany was Jerusalem. The <em class="term">Meshech Chochmah</em> (<span class="heb-inline">משך חכמה</span>) writes at the end of <em class="term">Parashas Bechukosai</em> (<span class="heb-inline">פרשת בחקתי</span>) that the Reform claimed Berlin as their Jerusalem.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> The lecturer draws the lesson for his own community: Jerusalem, in the future when <em class="term">Mashiach</em> (<span class="heb-inline">משיח</span>) comes and the <em class="term">Beis HaMikdash</em> (<span class="heb-inline">בית המקדש</span>) is rebuilt, is the place of the ideal Jewish life; no diaspora city is Jerusalem; and “Torah goes out from Zion” (<span class="heb-inline">כי מציון תצא תורה</span>).</p>
+
+<p>This Abraham Geiger had been, at the University of Bonn, a <em class="term">chavrusa</em> of Rav Shimshon Raphael Hirsch. Hirsch saw that his brilliant friend was moving to the left and tried to draw him back to the right; they remained close for a time, but at the end of their lives they fought bitterly. The lecturer will not recommend Geiger’s writings: “you should not have the book in your home.” His brother Rav Shlomo Zalman remained a traditional Jew, faithful to the customs of Frankfurt.</p>
+
+<h2>IV. Rav Hirsch and the Future of German Jewry</h2>
+
+<h3>The Vision</h3>
+
+<p>A great controversy separated Rav Shimshon Raphael Hirsch from other German rabbis, among them Rav Geiger and Rav Bamberger, the Rav of Würzburg, over what German Jewry was to become. Hirsch saw that the Reform movement was tearing the soul from German Jewry: the organs introduced into synagogues, the altering of the liturgy and of <em class="term">halachah</em> (<span class="heb-inline">הלכה</span>), the assimilation. The Jews of Germany were going to universities and, as the verse says, <span class="heb-inline">ויתערבו בגוים וילמדו מעשיהם</span>, “they mingled with the nations and learned their ways”; the more one has to do with the nations, the more they influence one’s Judaism. Hirsch’s answer was his doctrine of <em class="term">Torah im derech eretz</em> (<span class="heb-inline">תורה עם דרך ארץ</span>), for which he is often blamed, but by which he restored Jewish life to the German communities and made them more observant.</p>
+
+<p>Among his innovations was the dancing of <em class="term">hakafos</em> (<span class="heb-inline">הקפות</span>) with the <em class="term">sefer Torah</em> (<span class="heb-inline">ספר תורה</span>) on <em class="term">Simchas Torah</em> (<span class="heb-inline">שמחת תורה</span>), which, the lecturer says, had not been done in Germany. Geiger and Bamberger, who preferred their established customs and distrusted anything new, even from good motives, were deeply troubled; to dance with a <em class="term">sefer Torah</em> they thought a presumption. To this day, the lecturer notes, some communities will not do it; as to the congregation of Hirsch in Washington Heights, he assumes it follows Hirsch.</p>
+
+<h3>Secession from the Community</h3>
+
+<p>When the German government first allowed Jews to secede from the unified community, Hirsch decided that the time had come to separate completely from the Reform. He issued a proclamation (<em class="term">kol korei</em> (<span class="heb-inline">קול קורא</span>)) that every family must secede and not remain together with them, and founded the congregation <em class="term">Kehal Adas Yeshurun</em> (<span class="heb-inline">קהל עדת ישורון</span>), known as KAJ. Bamberger, Geiger and others opposed him. The Reform were then “part and parcel of the community,” a spectrum from the somewhat left to the somewhat right, “one big happy family,” and the objectors said: “Why do this? It will be a destruction for generations!” Hirsch was at first unsuccessful: only eighty families followed him, according to the historians as the lecturer reports. We speak of Hirsch as the leader of German Jewry, yet the truly observant Jews of his movement were that few; most of the rest assimilated, and many perished in the war. The Reform, the lecturer adds, are “gone, assimilated.” Yet German Jewry still carries Hirsch as its hero and its great man, and his influence on all of <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) is immeasurable. His writings are read by the world, and the lecturer calls the Hirsch <em class="term">Chumash</em> (<span class="heb-inline">חומש</span>) the most beautiful book on the weekly portion; its recent five-volume English edition is rich in grammar and in the meaning of words.</p>
+
+<h2>V. The Yekkes and <em class="term">Kabbalah</em>: Why Did <em>We</em> Begin to Say It?</h2>
+
+<h3>The Real Question</h3>
+
+<p>The lecturer turns the question around. Why did Frankfurt not say <em class="term">Brich Shmei</em>? The question is rather why <em>we</em> did. For a serious student of Jewish history it is necessary to understand the attitude of the Ashkenazim, those whose ancestors came from Europe, toward <em class="term">kabbalah</em>, the “hidden wisdom” (<em class="term">chochmas hanistar</em> (<span class="heb-inline">חכמת הנסתר</span>)): they frowned upon its study and upon living by it, even though today the <em class="term">Arizal</em> is in nearly all our prayers.</p>
+
+<h3>Shabsai Tzvi</h3>
+
+<p>The reason was Shabsai Tzvi in the seventeenth century. He rose up and declared that the secret of Judaism was not in <em class="term">Talmud</em> and the <em class="term">poskim</em> (<span class="heb-inline">פוסקים</span>) but in <em class="term">kabbalah</em> and the <em class="term">Zohar</em>, and he led one of the most catastrophic false-messianic movements in Jewish history. He was one who “reveals aspects of the Torah not in accordance with <em class="term">halachah</em>” (<span class="heb-inline">מגלה פנים בתורה שלא כהלכה</span>), of whom the Sages say in the chapter <em class="term">Perek Chelek</em> (<span class="heb-inline">פרק חלק</span>) of <em class="term">Sanhedrin</em> (<span class="heb-inline">סנהדרין</span>) that he has no share in the World to Come;<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> to take the Torah and misinterpret it for one’s own benefit is to take the holy and make it profane. He ended by converting to Islam. After this, the leaders of the generation were prepared to remove the books of <em class="term">kabbalah</em> and <em class="term">Zohar</em> from the shelves as dangerous to <em class="term">Klal Yisrael</em>, and the trauma created a deep distrust of <em class="term">kabbalah</em> in Ashkenaz, especially among the Yekkes, who associated it with danger, with deviation from the solid ground of <em class="term">Gemara</em> and <em class="term">halachah</em>.</p>
+
+<h3>The Ban in Amsterdam</h3>
+
+<p>The lecturer cites as an example the ban (<em class="term">cherem</em> (<span class="heb-inline">חרם</span>)) issued in Amsterdam: whoever owned the <em class="term">Shelah HaKadosh</em> (<span class="heb-inline">של״ה הקדוש</span>), <em class="term">Shnei Luchos HaBris</em> (<span class="heb-inline">שני לוחות הברית</span>), a work we quote constantly today, or other books of <em class="term">kabbalah</em> and <em class="term">Zohar</em>, was to bring it to the community within three days to be buried (<em class="term">geniza</em> (<span class="heb-inline">גניזה</span>)). The decree is recorded in the communal ledger (<em class="term">pinkas hakehillah</em> (<span class="heb-inline">פנקס הקהילה</span>)), the notebook in which every community, as a whole genre of Jewish literature, set down its customs and decisions. Such was the fear of the influence of <em class="term">kabbalah</em>. [The lecturer gives no date; see Open Questions.]</p>
+
+<h3>The <em class="term">Chasam Sofer</em> (<span class="heb-inline">חתם סופר</span>) and the <em class="term">Maharsha</em> (<span class="heb-inline">מהרש״א</span>)</h3>
+
+<p>The <em class="term">Chasam Sofer</em> writes in a responsum — the lecturer calls it astonishing — that he does not approve of people learning <em class="term">kabbalah</em>, <em class="term">Zohar</em> in particular, and that he never heard a word about the holy <em class="term">Zohar</em> from any of his three great teachers, the <em class="term">Haflaah</em> (<span class="heb-inline">הפלאה</span>), Rav Nosson Adler and Rav Zalman Chasid.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> Perhaps they learned it in private; Rav Nosson Adler was a great kabbalist, but none taught it in public, because they understood the danger. One scarcely finds the <em class="term">Chasam Sofer</em> citing the <em class="term">Zohar</em>.</p>
+
+<p>The danger was felt before Shabsai Tzvi. The lecturer reports that the <em class="term">Maharsha</em>, whom he calls the cousin of the <em class="term">Rema</em> (<span class="heb-inline">רמ״א</span>) and at whose grave in Lublin he says the congregation stood the year before,<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> writes in a responsum: “I do not want to hear of <em class="term">Zohar</em>. We follow <em class="term">Talmud</em> and the <em class="term">poskim</em>; once you go to <em class="term">Zohar</em>, who knows where you will end up?”</p>
+
+<h3>The <em class="term">Noda BiYehuda</em> (<span class="heb-inline">נודע ביהודה</span>) Against <em class="term">Leshem Yichud</em> (<span class="heb-inline">לשם יחוד</span>)</h3>
+
+<p><em class="term">Rav Yechezkel Segal Landau</em> (<span class="heb-inline">רבי יחזקאל סגל הלוי לנדא</span>), the <em class="term">Noda BiYehuda</em>, the great man of the eighteenth century and the chief rabbi of Prague, asks in his responsa:<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> “I do not understand you. Every simple Jew says before each <em class="term">mitzvah</em> (<span class="heb-inline">מצוה</span>), <span class="heb-inline">לשם יחוד קודשא בריך הוא ושכינתיה</span>: before <em class="term">tefillin</em> (<span class="heb-inline">תפילין</span>), before <em class="term">tallis</em> (<span class="heb-inline">טלית</span>), before <em class="term">lulav</em> (<span class="heb-inline">לולב</span>). Do you know what you are saying? The whole formula is from <em class="term">Zohar</em>, from <em class="term">kabbalah</em>. If you do not understand it, do not say it.” He wrote about it in two responsa and would not allow it, and his disciples, Rav Tzvi Hirsch among them, went to war against those who said it, “because it comes from <em class="term">kabbalah</em> and <em class="term">Zohar</em>, and we stay far from it.”</p>
+
+<h3>The Principle: <em class="term">Halachah</em> Over <em class="term">Kabbalah</em></h3>
+
+<p>Much of this, though not all, stems from Shabsai Tzvi, who “ruined it for all of us”: he learned <em class="term">Zohar</em> and <em class="term">kabbalah</em> and then changed <em class="term">halachah</em> on their basis, which is forbidden. The <em class="term">Rema</em>, in his <em class="term">Darkei Moshe</em> (<span class="heb-inline">דרכי משה</span>), writes that wherever <em class="term">kabbalah</em> and <em class="term">halachah</em> conflict one follows <em class="term">halachah</em>, never <em class="term">kabbalah</em>.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></p>
+
+<h2>VI. What Changed: The <em class="term">Baal Shem Tov</em> (<span class="heb-inline">בעל שם טוב</span>) and Our Generation</h2>
+
+<p>Why does everyone learn <em class="term">Zohar</em> today? A great part of the answer lies with the <em class="term">Baal Shem Tov</em>, who spread the light of <em class="term">Chassidus</em> (<span class="heb-inline">חסידות</span>), which is wholly based on <em class="term">Zohar</em>, and who taught that in our generation, for <em class="term">Mashiach</em> to come, we need <em class="term">Zohar</em> and the study of <em class="term">kabbalah</em>. Simple Jews therefore read it. The <em class="term">Chofetz Chaim</em> (<span class="heb-inline">חפץ חיים</span>) himself told the students of his <em class="term">yeshivah</em> in Radin: even if you do not understand what you say, read it; much of it is <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>) and the words of the Sages, and the parts you understand are good, the parts you do not are still holy to say. Something changed in our generation. We accept the <em class="term">Zohar</em> as the work of <em class="term">Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>), although some passages may have been added by later scholars, in the twelfth or thirteenth century; every word is sacred to us today and it is a part of our Torah literature, canonized — the lecturer wonders by whom — perhaps by the <em class="term">Arizal</em>. The <em class="term">Chasam Sofer</em>, the lecturer adds in passing, is said to have been in agreement (<em class="term">maskim</em> (<span class="heb-inline">מסכים</span>)) with the <em class="term">Mitpachas Sefarim</em> (<span class="heb-inline">מטפחת ספרים</span>) discussed below, a point that is raised and not developed.</p>
+
+<p>Frankfurt held fast through the seventeenth and eighteenth centuries to its refusal to learn <em class="term">Zohar</em>, because of the danger it had seen, and never gave in. The Yekkes do not say <em class="term">Brich Shmei</em> to this day. The lecturer is certain that Hirsch agreed: Hirsch became the Rav of Frankfurt and, in the end, came out on top and led Frankfurt Jewry triumphantly.</p>
+
+<h2>VII. The Two Difficult Phrases in <em class="term">Brich Shmei</em></h2>
+
+<h3>“<em class="term">Bar Elahin</em> (<span class="heb-inline">בר אלהין</span>)” — a Son of God</h3>
+
+<p>There is a second reason why they omitted it. The text says <span class="heb-inline">לא על אנש רחיצנא ולא על בר אלהין סמיכנא</span>, “I do not trust in man, nor do I rely on a son of God (<em class="term">bar elahin</em>).” The rabbis of the sixteenth and seventeenth centuries who objected said: this cannot be said in the synagogue. In that age every prayer, every blessing, every word uttered in the synagogue was scrutinized by the authorities, particularly the Christian ones: are we to say publicly, each time we take out a <em class="term">sefer Torah</em>, that we do not rely on one whom they claim to be the son of God? We do not wish to utter those words, nor to incite the Church against the Jewish people; let us refrain from the whole passage.</p>
+
+<h3>The Yerushalmi</h3>
+
+<p>And there is a deeper reason. The Jerusalem Talmud in <em class="term">Shabbos</em> tells that when Nebuchadnezzar threw Chananiah, Mishael and Azariah into the furnace and the Holy One made a miracle for them, Nebuchadnezzar saw them unharmed in the fire, and a fourth with them whom the verse describes in Aramaic as resembling a <em class="term">bar elahin</em> — an angel, perhaps Gavriel, who saved them.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> The Yerushalmi teaches that an angel came and struck Nebuchadnezzar on the mouth and said: take it back; you may not speak of angels in this way. Learn from this that we never refer to anyone as a <em class="term">bar elahin</em>. In the Torah the word <em class="term">Elokim</em> (<span class="heb-inline">אלהים</span>) may be used of judges (<em class="term">dayanim</em> (<span class="heb-inline">דיינים</span>)) and anyone with halachic authority; the lecturer adds that the <em class="term">targum</em> (<span class="heb-inline">תרגום</span>) renders <span class="heb-inline">בני האלהים</span> in the Torah as <span class="heb-inline">דיינא</span>, “judges,” and that to call angels <em class="term">elaha</em> (<span class="heb-inline">אלהא</span>) is forbidden. [Onkelos does not read so at <em>Bereishis</em> 6:2; see note 9.] The phrase, though it speaks of angels and obviously not of Jesus, was dangerous.</p>
+
+<h3>“<em class="term">Ana Avda DiKudsha Brich Hu</em> (<span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>)”</h3>
+
+<p>The lecturer had said the week before, without realizing the full context, that one needs great presumption to declare <span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>, “I am a servant of the Holy One.” He quoted his teacher, Rav Avraham Shor (as heard) in Flatbush, who taught that one should say “I want to become a servant,” changing the text. Then he realized that the words are close to a verse: <span class="heb-inline">אני עבדך בן אמתך</span>, “I am Your servant, the son of Your maidservant” (<em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>) 116:16), which the lecturer recalls from the <em class="term">Hoshana Rabbah</em> (<span class="heb-inline">הושענא רבה</span>) service as <span class="heb-inline">אנא עבדך בן אמתך</span>. In saying the passage we are quoting <em class="term">David HaMelech</em> (<span class="heb-inline">דוד המלך</span>).<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></p>
+
+<blockquote><div class="heb">אָנָּה יְהוָה כִּי אֲנִי עַבְדֶּךָ אֲנִי עַבְדְּךָ בֶּן אֲמָתֶךָ</div>
+<div class="trans">“Please, Hashem, for I am Your servant; I am Your servant, the son of Your maidservant.”</div><div class="source"><em class="term">Tehillim</em> 116:16</div></blockquote>
+
+<h3>The <em class="term">Yaavetz</em> (<span class="heb-inline">יעב״ץ</span>) on the Authorship of the <em class="term">Zohar</em></h3>
+
+<p>Whether the <em class="term">Zohar</em> was written by <em class="term">Rabbi Shimon bar Yochai</em> is a dispute on which the lecturer prefers not to enter. Rav Yaakov Emden, the <em class="term">Yaavetz</em>, wrote a whole book, <em class="term">Mitpachas Sefarim</em>, seeking to show that the <em class="term">Zohar</em> was not authored entirely by <em class="term">Rashbi</em> (<span class="heb-inline">רשב״י</span>).<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> These, the lecturer warns, are dangerous claims, not to be repeated in public. The point for the present discussion: if this passage is truly that of <em class="term">Rashbi</em>, and <em class="term">Rashbi</em> himself elsewhere says one may not say <em class="term">bar elahin</em>, there is a real difficulty, and the <em class="term">Yaavetz</em> uses it as proof that this part was not his. Whatever the case, we say it.</p>
+
+<h2>VIII. The <em class="term">Chofetz Chaim</em>’s Private Practice</h2>
+
+<p>Concerning <span class="heb-inline">אנא עבדא</span>, the lecturer learned something remarkable. In the <em class="term">Mishnah Berurah</em> (<span class="heb-inline">משנה ברורה</span>) the <em class="term">Chofetz Chaim</em> writes two or three times that we say <em class="term">Brich Shmei</em> (it was relatively new, though by his day already old).<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> But his grandson Rav Hillel Zaks, a <em class="term">rosh yeshivah</em> (<span class="heb-inline">ראש ישיבה</span>) in Chevron in <em class="term">Eretz Yisrael</em>, whose father Rav Mendel Zaks, the <em class="term">Chofetz Chaim</em>’s son-in-law, was a <em class="term">rosh yeshivah</em> at Yeshiva University, testified that his grandfather, although he wrote in his book that one should, did not himself say <em class="term">Brich Shmei</em>. It is not the only matter on which the <em class="term">Chofetz Chaim</em> did not keep what he wrote: for all of us, everything is <em class="term">Mishnah Berurah</em>, yet he held a higher private standard on a few matters. The explanation given is that he did not wish to utter the words <span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>. We, however, do say it, and should: the <em class="term">Baal Shem Tov</em> taught that when <em class="term">Brich Shmei</em> is said with intention (<em class="term">kavanah</em> (<span class="heb-inline">כוונה</span>)) it is the most beautiful thing in the world and can open the gates of mercy.</p>
+
+<h2>IX. <em class="term">Gadlu laShem Iti</em> (<span class="heb-inline">גדלו לה׳ אתי</span>): Six Words for Six Steps</h2>
+
+<h3>The Count of the <em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>)</h3>
+
+<p>After the <em class="term">sefer Torah</em> is taken from the <em class="term">aron</em> the leader says:</p>
+
+<blockquote><div class="heb">גַּדְּלוּ לַיהֹוָה אִתִּי וּנְרוֹמְמָה שְׁמוֹ יַחְדָּו</div>
+<div class="trans">“Exalt Hashem with me, and let us raise His name together.”</div><div class="source"><em class="term">Tehillim</em> 34:4</div></blockquote>
+
+<p>Why this verse? The <em class="term">Avudraham</em>, who counted every word of the prayers, observed that the verse has precisely six words, and gives, in the name of the <em class="term">Machzor Vitry</em> (<span class="heb-inline">מחזור ויטרי</span>) and other <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>), a reason.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+
+<h3>David and the Ark</h3>
+
+<p>When <em class="term">David HaMelech</em> brought the <em class="term">aron habris</em> (<span class="heb-inline">ארון הברית</span>) to the City of David from the house of Oved-Edom the Gittite, as is told in <em class="term">Shmuel II</em> (<span class="heb-inline">שמואל ב׳</span>),<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> the ark had been captured by the Philistines and had remained for some months with Oved-Edom. The <em class="term">Gemara</em> at the end of <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) says that he was greatly blessed: the women of his household bore six at a time, and within a year he had a large family, and everyone recognized that this was for the ark’s sake. The lecturer says that the <em class="term">Gemara</em> speaks of his daughters; the text as checked names his mother-in-law and her eight daughters-in-law.</p>
+
+<p>When David decided to bring the ark up to the City of David, he danced before it with all his might, leaping, far more than we dance on <em class="term">Simchas Torah</em>. <em class="term">Michal bas Shaul</em> (<span class="heb-inline">מיכל בת שאול</span>) looked out of the window and said: is this how a king dances? This is how a <em class="term">prostak</em> (<span class="heb-inline">פראסטאק</span>), a peasant, dances! Because of this mockery, “Michal daughter of Saul had no child until the day of her death.” One must never mock a person who lowers himself in honor of the Torah; the greatest honor is to humble oneself, to dance before the ark and the tablets within it. The prophet tells that the procession was slow: every six steps the bearers put the ark down and offered sacrifices; the <em class="term">Gemara</em> in <em class="term">Sotah</em> (<span class="heb-inline">סוטה</span>) 35 records different opinions on what was brought.</p>
+
+<p>Says the <em class="term">Avudraham</em>: when we take the <em class="term">sefer Torah</em> from the <em class="term">aron</em> and walk it to the <em class="term">bimah</em> (<span class="heb-inline">בימה</span>), we reenact that march of the ark, and the six words of the verse recall the six steps, celebrating the Holy One at each interval.</p>
+
+<h2>X. Greeting and Escorting the <em class="term">Sefer Torah</em></h2>
+
+<h3>Walking with the Torah</h3>
+
+<p>Is there a law requiring that one come up to the <em class="term">aron</em> to greet the <em class="term">sefer Torah</em>? It is not a practical law (<em class="term">halachah lemaaseh</em> (<span class="heb-inline">הלכה למעשה</span>)) but a beautiful custom. What <em>is</em> practical law is that if the <em class="term">sefer Torah</em> passes by one’s seat one must escort it; the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שלחן ערוך</span>), in the lecturer’s words, says one walks the scroll to the <em class="term">bimah</em>. The <em class="term">Arizal</em> used to walk with it from his seat; in a crowded synagogue this is not always possible.</p>
+
+<h3>Looking at the Letters at the Lifting</h3>
+
+<p>The Sephardim, following another practice of the <em class="term">Arizal</em>, lift the scroll (<em class="term">hagbahah</em> (<span class="heb-inline">הגבהה</span>)) before the reading, whereas the Ashkenazim do so after it. The <em class="term">Shulchan Aruch</em> follows <em class="term">Maseches Soferim</em> (<span class="heb-inline">מסכת סופרים</span>), a statement of the Sages, that one lifts it immediately before the reading.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> The <em class="term">Arizal</em> would walk the scroll to the <em class="term">bimah</em>, pause, and during the lifting look carefully at the scroll to see if he could read a word or a letter; this, he said, brings “a great light upon your soul” (<span class="heb-inline">אור גדול על נשמתך</span>), the language of the <em class="term">Eitz Chaim</em> (<span class="heb-inline">עץ חיים</span>).</p>
+
+<p>There is a custom among the kabbalists: if one finds a word whose first letter is the first letter of one’s name, this is one’s connection with one of the “six hundred thousand” (<em class="term">shishim ribo</em> (<span class="heb-inline">ששים רבוא</span>)) souls of Israel. The lecturer notes that the Torah does not literally contain six hundred thousand letters, but the idea stands: there is a matter of the six hundred thousand, and each soul has a connection with a letter of the Torah. The custom continues; one sees people hurrying to the scroll after the lifting to look. It is a remedy (<em class="term">segulah</em> (<span class="heb-inline">סגולה</span>)) for guarding the eyes (<em class="term">shemiras einayim</em> (<span class="heb-inline">שמירת עינים</span>)) and brings light to the soul.</p>
+
+<h2>XI. Why the Ashkenazim Lift After the Reading</h2>
+
+<p>The source in the <em class="term">Sages</em> (<span class="heb-inline">חז״ל</span>) and the <em class="term">Shulchan Aruch</em> has the lifting before the reading, yet the Ashkenazim lift afterward. The reason, the lecturer reports, given by the <em class="term">Magen Avraham</em> (<span class="heb-inline">מגן אברהם</span>) or by one of the other later authorities (he is not certain),<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> is that if a flaw (<em class="term">pasul</em> (<span class="heb-inline">פסול</span>)) were found in the scroll during the reading, one could not truthfully have said <span class="heb-inline">וזאת התורה אשר שם משה לפני בני ישראל</span>, “this is the Torah that Moshe placed before the children of Israel.” So we wait, and only when the day’s reading has been completed without incident do we lift it and declare, with certainty: this is exactly the Torah, word for word, letter for letter, that the Holy One gave to <em class="term">Moshe Rabbeinu</em> (<span class="heb-inline">משה רבינו</span>). The lecturer adds that perhaps there was an actual incident (<em class="term">maaseh shehayah</em> (<span class="heb-inline">מעשה שהיה</span>)) in which a flaw was found after the verse had been said. A member of the congregation asked whether the scroll had not been flawed the week before also; the lecturer replied that this is so, and that nonetheless, each week that we say it, we affirm it of that reading.</p>
+
+<h2>XII. Uncommon Honors</h2>
+
+<p>There is an honor (<em class="term">kibud</em> (<span class="heb-inline">כיבוד</span>)) that the lecturer has never seen sold in any synagogue, and which would be welcome. The person who rolls and binds the scroll (<em class="term">golel</em> (<span class="heb-inline">גולל</span>), from <em class="term">gelilah</em> (<span class="heb-inline">גלילה</span>)) is handed the mantle (<em class="term">meil</em> (<span class="heb-inline">מעיל</span>)) and the belt (<em class="term">gartel</em> (<span class="heb-inline">גארטל</span>)) by someone standing by the <em class="term">bimah</em>. The act of picking up the mantle from the <em class="term">bimah</em> and handing it to the one who rolls is itself a great and distinguished honor (<em class="term">kibud muflag</em> (<span class="heb-inline">כיבוד מופלג</span>)); even if it is not sold, it should be given as an honor. The <em class="term">Or Zarua</em> (<span class="heb-inline">אור זרוע</span>), who teaches that opening the <em class="term">aron</em> and removing the scroll are honors, teaches that this one also is.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a></p>
+
+<h2>XIII. The Custom of <em class="term">Pesichah</em> (<span class="heb-inline">פתיחה</span>) for an Expectant Father</h2>
+
+<p>There is a custom to give the honor of opening the <em class="term">aron</em> (<em class="term">pesichah</em>) to a man whose wife is expecting a child. This is relatively new, and the lecturer says it comes from the <em class="term">Chida</em> (<span class="heb-inline">חיד״א</span>), who brings it explicitly.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> The Chida writes that it is a remedy (<em class="term">segulah</em>): just as the father opens the Holy of Holies, so may the Holy One open the womb and may all go smoothly. In a case of difficult labor (<em class="term">makshah leyaled</em> (<span class="heb-inline">מקשה לילד</span>)), someone once asked a great man what to say, and was told: say <span class="heb-inline">יזכור</span> [the word as heard] — so that the children should come out. Our custom is to give <em class="term">pesichah</em>. Rav Chaim Palagi, one of the great Sephardic authorities, rules that the person who opens the <em class="term">aron</em> should also close it,<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> lest, Heaven forbid, the womb remain open.</p>
+
+<h2>XIV. The Sanctity of Silence at the Removal of the Scroll</h2>
+
+<p>The lecturer gives himself a rebuke first: in the interval between the opening of the <em class="term">aron</em> and the saying of <span class="heb-inline">גדלו לה׳ אתי</span>, there is conversation, while the scroll is carried, until the <em class="term">gabbai</em> begins to call the <em class="term">aliyos</em> (<span class="heb-inline">עליות</span>). It is not supposed to be so. The <em class="term">Chida</em> rebukes sharply those who talk while the scroll is being carried, placed on the <em class="term">bimah</em> and opened, a most auspicious time. In strict law the lecturer cannot say that the <em class="term">Shulchan Aruch</em> forbids speech here, but the <em class="term">Chida</em> says: be careful, do not talk; say the words, <span class="heb-inline">לך ה׳ הגדולה</span>, <span class="heb-inline">אב הרחמים הוא ירחם עמוסים</span> and <span class="heb-inline">ויחון אותנו לפליטת עולמים</span>, beautiful prayers. The <em class="term">Chida</em> also holds that <em class="term">Brich Shmei</em> should ideally be said before the scroll is taken out; some communities said it while walking, but our custom is before. In any case, do not talk.</p>
+
+<p>There is even a question among the later authorities whether one may interrupt <em class="term">pesukei dezimrah</em> (<span class="heb-inline">פסוקי דזמרה</span>) to say <em class="term">Brich Shmei</em> and the other verses in honor of the Torah. Rav Shimon Greenfeld, the <em class="term">Maharshag</em> (<span class="heb-inline">מהרש״ג</span>), one of the great authorities of Hungary, has a whole responsum on it.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> In the end he holds that one should not interrupt, but so great is the importance of these verses, to greet and embrace the scroll as it comes to the <em class="term">bimah</em>, that he takes the question seriously.</p>
+
+<h2>XV. The Meaning of <em class="term">Hakol Havu Godel</em> (<span class="heb-inline">הכל הבו גודל לאלהינו</span>)</h2>
+
+<p>When the gabbai calls, after <span class="heb-inline">ותגלה ותראה מלכותו עלינו בזמן קרוב</span>, the words <span class="heb-inline">הכל הבו גודל לאלהינו</span>, “all, give greatness to our God,” what is he doing? The <em class="term">Rishonim</em> who explain the order of prayer, the <em class="term">Machzor Vitry</em>, the <em class="term">Avudraham</em>, Rabbi Yehudah ben Yakar and the <em class="term">Rokeach</em> (<span class="heb-inline">רוקח</span>), explain it as the call to the congregation to be silent.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> <em>Gentlemen, hush! We are about to have blessings: <em class="term">Barchu</em> (<span class="heb-inline">ברכו</span>) and the blessing over the Torah from the one called up. Be silent and answer “Amen.”</em> That is the message each week, though we do not hear it. <em class="term">Moshe Rabbeinu</em>, before the song of <em class="term">Haazinu</em> (<span class="heb-inline">האזינו</span>), said <span class="heb-inline">כי שם ה׳ אקרא הבו גדל לאלהינו</span>, “for I proclaim the name of Hashem; give greatness to our God”: answer with me. So, when the one called up receives the call, the gabbai is saying: let us listen. The lecturer announces that <em class="term">Barchu</em> and the blessing over the Torah will be taken up the following week.</p>
+
+<h2>XVI. A Proposed Custom: Dividing the Honors</h2>
+
+<p>The lecturer proposes, though it is the gabbai’s domain, a possible new custom. He found the night before, in one of the <em class="term">Rishonim</em>, the <em class="term">Or Zarua</em>, Rabbi Yitzchak of Vienna (“Wien”), a chief rabbi of Vienna and one of the later Tosafists, as brought down in the <em class="term">Mordechai</em> (<span class="heb-inline">מרדכי</span>),<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> a dispute in a synagogue. The gabbai had sold the honor of opening the <em class="term">aron</em> and taking out the scroll, to be given to the cantor (<em class="term">chazan</em> (<span class="heb-inline">חזן</span>)), and the prayer leader protested: “What do you mean? I am the <em class="term">chazan</em>, the <em class="term">shliach tzibbur</em> (<span class="heb-inline">שליח ציבור</span>); I pray <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>); I must take the scroll from the <em class="term">aron</em> and carry it to the <em class="term">bimah</em>. Why are you giving it to someone else?” The <em class="term">Mordechai</em> rules that each action done in honor of the Torah may be separated and assigned to a different person: one individual takes the scroll out of the <em class="term">aron</em> and hands it to the <em class="term">shliach tzibbur</em>, and the <em class="term">shliach tzibbur</em> carries it to the <em class="term">bimah</em>. That is the custom already practiced today, and that <em class="term">Mordechai</em> is its source.</p>
+
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+
+<h2>Closing</h2>
+
+<p>The lecturer closes the discourse with a wish for a good week and with the final <em class="term">mishnah</em> (<span class="heb-inline">משנה</span>) of <em class="term">Makkos</em> (<span class="heb-inline">מכות</span>):<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> “Rabbi Chananya ben Akashya says: the Holy One wished to make Israel meritorious; therefore He gave them much Torah and many commandments, as it is said, <span class="heb-inline">ה׳ חפץ למען צדקו יגדיל תורה ויאדיר</span>, “Hashem desired, for the sake of its righteousness, to make the Torah great and glorious.”</p>
+
+
+<section class="mareh">
+<h2><span class="heb-inline">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<ol>
+<li id="fn1">
+  <span class="short"><em>Zohar</em> II, <span class="heb-inline">ויקהל</span> 206a — the text of <span class="heb-inline">בריך שמיה</span>.</span>
+  <span class="expanded"> The location is the standard one (not retrieved on Sefaria; <strong>uncertain</strong>). The lecturer gives 1557 in Constantinople as the first printing; the usual scholarly attribution of the first printed edition is Mantua 1558–60 and Cremona 1559–60 (editor’s addition, not checked on Sefaria). The editor’s further statement that the passage reached the siddurim chiefly through <span class="heb-inline">שערי ציון</span> (Prague, 1662) sits uneasily with the lecturer’s “standard everywhere by the mid-1600s”; his timeline is reported as he gave it (see Open Questions).</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">דברי קהלת</span> of Rav Shlomo Zalman Geiger (Frankfurt am Main).</span>
+  <span class="expanded"> The lecturer places the author in the eighteenth and early nineteenth centuries. The dates given in the first draft (1792–1878; edition of 1862) were not verified and do not fit his description; they are not repeated here (see Open Questions). That the author was the brother of Abraham Geiger (1810–1874), the Reform leader, is the lecturer’s statement. The quotation <span class="heb-inline">אין אומרים בריך שמיה בפרנקפורט</span> is the lecturer’s rendering; the passage in the book was not located.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">משך חכמה</span> (Rav Meir Simchah of Dvinsk), end of <span class="heb-inline">פרשת בחקתי</span>.</span>
+  <span class="expanded"> The lecturer says the Meshech Chochmah writes there that the Reform claimed Berlin as their Jerusalem. The commentary on the last passage of Vayikra (Leviticus 26) is the probable location, but the Sefaria retrieval failed and the passage was not checked (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">סנהדרין צ״ט ע״א</span> (<span class="heb-inline">פרק חלק</span>).</span>
+  <span class="expanded"> In the list of those who have no share in the World to Come appears “one who reveals aspects of the Torah that are not in accordance with halakha” (<span class="heb-inline">והמגלה פנים בתורה שלא כהלכה</span>; Sefaria, Sanhedrin 99a, <strong>verified</strong>). The application of the phrase to Shabsai Tzvi is the lecturer’s.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">שו״ת חתם סופר</span> on the study of <span class="heb-inline">קבלה</span>.</span>
+  <span class="expanded"> The responsum was not located (<strong>uncertain</strong>); the first draft’s remark that it comes “from his own <span class="heb-inline">צוואה</span>” is withdrawn. The three teachers are named in the recording as the <span class="heb-inline">הפלאה</span>, Rav Nosson Adler and Rav Zalman Chasid. That Rav Nosson Adler was a great kabbalist who taught it only in private is the lecturer’s report.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">מהרש״א</span> on <span class="heb-inline">זוהר</span>.</span>
+  <span class="expanded"> The lecturer says the Maharsha, whom he calls the cousin of the Rema, is buried in Lublin and wrote against learning Zohar. The Maharsha served in Lublin but is, as far as the editor knows, buried in Ostroh; the grave in Lublin is that of the Maharshal (Rav Shlomo Luria, d. 1573), the better-known critic of kabbalistic usages, so the identification may be a slip. The quotation was not located (<strong>unverified</strong>; not found on Sefaria).</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">שו״ת נודע ביהודה</span> on <span class="heb-inline">לשם יחוד</span>.</span>
+  <span class="expanded"> The lecturer mentions two responsa and a campaign by the Noda BiYehuda’s disciples. The first draft cited Mahadura Tinyana, <span class="heb-inline">יורה דעה</span> 93, and <span class="heb-inline">אורח חיים</span> 147; these were not verified and the Sefaria search was unavailable (<strong>uncertain</strong>). The disciple named in the draft, Rav Tzvi Hirsch Landau, is not named in the recording.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">דרכי משה</span> (the Rema): <span class="heb-inline">הלכה</span> over <span class="heb-inline">קבלה</span>.</span>
+  <span class="expanded"> The principle is the lecturer’s report of the Darkei Moshe. Darkei Moshe on <span class="heb-inline">אורח חיים</span> 25 does not contain it as retrieved, and the passage was not located (<strong>uncertain</strong>). The cross-reference to the Mishnah Berurah in the first draft is removed as unexplained.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">דניאל ג׳:כ״ה</span>; <span class="heb-inline">ירושלמי שבת ו:ט</span>.</span>
+  <span class="expanded"> Daniel 3:25 reads, in the printed Aramaic text, <span class="heb-inline">דָּמֵה לְבַר אֱלָהִין</span> (the Sefaria English has “looks like a divine being”; the Aramaic wording was not retrieved). Yerushalmi Shabbos 6:9 (<strong>verified</strong>) has Nebuchadnezzar say that the fourth is “similar to a son of gods,” and an angel descend, strike him on the mouth and say “correct your words.” <strong>Corrected:</strong> Pesachim 118a (Gabriel’s offer to cool the furnace) does not contain the phrase, contrary to the first draft’s cross-reference; Sanhedrin 92b speaks of an angel striking Nebuchadnezzar on the mouth to stop his praises, in a different context. <strong>Corrected, as the lecturer’s remark:</strong> that the targum renders <span class="heb-inline">בני האלהים</span> as <span class="heb-inline">דיינא</span> does not match Onkelos at Genesis 6:2 (<span class="heb-inline">בני רברביא</span>); Onkelos renders <span class="heb-inline">האלהים</span> as <span class="heb-inline">דַיָנַיָא</span> at Exodus 22:8.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">תהלים קט״ז:ט״ז</span>; <span class="heb-inline">אנא עבדא דקודשא בריך הוא</span>.</span>
+  <span class="expanded"> Sefaria (Hebrew, <strong>verified</strong>): <span class="heb-inline">אנה ה׳ כי אני עבדך אני עבדך בן אמתך פתחת למוסרי</span>. <strong>Corrected:</strong> the Aramaic words of <span class="heb-inline">בריך שמיה</span> are not themselves a verse, as the first draft had it; the lecturer’s point is a parallel to this verse. The recital of <span class="heb-inline">אנא עבדך בן אמתך</span> on <span class="heb-inline">הושענא רבה</span> is his recollection and was not checked. The rav who changed the text is given in the recording as Rav Avraham Shor (as heard), in Flatbush.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">מטפחת ספרים</span> of the <span class="heb-inline">יעב״ץ</span> (Rav Yaakov Emden).</span>
+  <span class="expanded"> Emden’s critical work on the Zohar argues that it was not wholly composed by Rashbi; its conclusions were rejected by most authorities. That <span class="heb-inline">בריך שמיה</span> is used there as evidence, and that Rashbi himself elsewhere forbids saying <span class="heb-inline">בר אלהין</span>, are the lecturer’s statements; neither passage was located (<strong>uncertain</strong>). The lecturer also says in passing that the Chasam Sofer was <span class="heb-inline">מסכים</span> to this book; the editor finds the claim surprising, since the Yaavetz died in 1776 and the Chasam Sofer was born in 1762, and records it as a question.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">משנה ברורה</span> <span class="heb-inline">אורח חיים</span> 134; the Chofetz Chaim’s own practice.</span>
+  <span class="expanded"> The lecturer says the Mishnah Berurah writes two or three times that <span class="heb-inline">בריך שמיה</span> is said. His report that the Chofetz Chaim himself did not say it is the testimony of his grandson Rav Hillel Zaks, <span class="heb-inline">ראש ישיבה</span> in Chevron; Rav Hillel’s father, Rav Mendel Zaks, the Chofetz Chaim’s son-in-law, was a <span class="heb-inline">ראש ישיבה</span> at Yeshiva University. The explanation offered (that he did not wish to say <span class="heb-inline">אנא עבדא</span>) is the lecturer’s. No printed source was located (<strong>unverified</strong>).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">אבודרהם</span> and <span class="heb-inline">מחזור ויטרי</span> on <span class="heb-inline">גדלו לה׳ אתי</span>; <span class="heb-inline">תהלים ל״ד:ד׳</span>.</span>
+  <span class="expanded"> Psalm 34:4 reads <span class="heb-inline">גַּדְּלוּ לַיהוָה אִתִּי וּנְרוֹמְמָה שְׁמוֹ יַחְדָּו</span>, six words (Sefaria, <strong>verified</strong>). The Avudraham’s count of the six words as the six steps of the Ark, and the Machzor Vitry, were not located on Sefaria (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short"><span class="heb-inline">שמואל ב׳ ו׳</span>; <span class="heb-inline">ברכות ס״ג ע״ב</span>; <span class="heb-inline">סוטה ל״ה ע״ב</span>; <span class="heb-inline">סנהדרין כ״א ע״א</span>.</span>
+  <span class="expanded"> Second Samuel 6:13 (the sacrifice after six steps) and 6:23 (Michal’s childlessness) were checked. Berachos 63b (<strong>verified</strong>) has <span class="heb-inline">זו חמות ושמונה כלותיה שיילדו ששה ששה בכרס אחד</span>: a mother-in-law and her eight daughters-in-law, each bearing six at a time. <strong>Corrected:</strong> the lecturer said “his daughters”; this is reported, not silently changed. The different opinions on the offerings are in Sotah 35b (<strong>verified</strong>: Rav Pappa bar Shmuel and Rav Chisda); Sanhedrin 21a (<strong>verified</strong>) reconciles 6:23 with a birth on the day of her death (the lecturer himself says Michal had no child “until the day of her death”).</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">מסכת סופרים י״ד</span>; <span class="heb-inline">שלחן ערוך אורח חיים קל״ד:ב׳</span>; <span class="heb-inline">עץ חיים</span>.</span>
+  <span class="expanded"> Soferim 14 (<strong>verified</strong>) has the scroll raised before the reading, including at <span class="heb-inline">גדלו לה׳ אתי</span>, and notes the Ashkenazic custom of raising it after. Shulchan Aruch 134:2 and the gloss (<strong>verified</strong>) have the showing and <span class="heb-inline">וזאת התורה</span> with the Ashkenazic practice after the reading. On escorting the scroll, the gloss to 149:1 (<strong>verified</strong>) makes it an obligation of one before whom it passes (there, to the Ark). The Arizal’s gazing and the “great light” are reported in the Eitz Chaim; the passage was not located (<strong>uncertain</strong>). Finding one’s initial among the <span class="heb-inline">ששים רבוא</span> is a kabbalistic idea and not a literal letter-count, as the lecturer himself says.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">מגן אברהם</span> <span class="heb-inline">אורח חיים</span> 134 (as the lecturer reports).</span>
+  <span class="expanded"> <strong>Hedged:</strong> the lecturer says he does not know whether it is the Magen Avraham or another later authority. Shulchan Aruch 134:2 and Mishnah Berurah 134:8 (<strong>verified</strong>) confirm the Ashkenazic practice of lifting after the reading, but the Mishnah Berurah gives no reason, and the reason as stated was not found in the Magen Avraham as retrieved. The “actual incident” (<span class="heb-inline">מעשה שהיה</span>) is the lecturer’s surmise (“maybe”).</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">אור זרוע</span> (Rabbi Yitzchak of Vienna, c. 1180–1250).</span>
+  <span class="expanded"> The Or Zarua is the lecturer’s source for treating the honors at the removal of the scroll as separate honors, and for the honor of handing the mantle to the one who rolls. The passage was not located; no siman is given (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short">The <span class="heb-inline">חיד״א</span> on the <span class="heb-inline">פתיחה</span> of an expectant father.</span>
+  <span class="expanded"> The recording says only “the Chida brings it.” <strong>Corrected:</strong> the title given in the first draft came from the AI summary and corresponds to no known work of the Chida; the guesses at other titles are removed. Nothing was located on Sefaria. The word given for a difficult birth, heard as <span class="heb-inline">יזכור</span>, may be a reference to Genesis 30:22, <span class="heb-inline">ויזכר אלהים את רחל … ויפתח את רחמה</span> (Sefaria: “God remembered Rachel; God heeded her and opened her womb”); this is the editor’s inference, not the lecturer’s.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">Rav Chaim Palagi.</span>
+  <span class="expanded"> The ruling that the one who opens the ark should also close it is reported by the lecturer; the work and passage were not named, and none was located (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">מהרש״ג</span> (Rav Shimon Greenfeld, Hungary).</span>
+  <span class="expanded"> <strong>Corrected:</strong> the first draft identified him as the <span class="heb-inline">שם אריה</span>; the recording has no such title (it gives a descriptor heard as <span class="heb-inline">סמי דעירב</span>, probably a place of his rabbinate). The responsum on interrupting <span class="heb-inline">פסוקי דזמרה</span> was not located (<strong>uncertain</strong>).</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">הכל הבו גודל לאלהינו</span>; <span class="heb-inline">דברים ל״ב:ג׳</span>.</span>
+  <span class="expanded"> <strong>Corrected:</strong> the first draft made the gabbai’s call <span class="heb-inline">ברכו</span> and cited Deuteronomy 32:1. The recording has the call <span class="heb-inline">הכל הבו גודל לאלהינו</span>; Moshe’s words before <span class="heb-inline">שירת האזינו</span> are Deuteronomy 32:3, <span class="heb-inline">כי שם ה׳ אקרא הבו גדל לאלהינו</span> (Sefaria English <strong>verified</strong>: “For the name of the Eternal I proclaim; give glory to our God!”). The <span class="heb-inline">ראשונים</span> named (Machzor Vitry, Avudraham, Rabbi Yehudah ben Yakar, Rokeach) were not located. <span class="heb-inline">ברכו</span> and the blessing over the Torah are announced for the following week.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short"><span class="heb-inline">אור זרוע</span> in the <span class="heb-inline">מרדכי</span>: dividing the honors.</span>
+  <span class="expanded"> The recording attributes the passage indistinctly (the Or Zarua “in the name of the <span class="heb-inline">מהר״ח</span>”, brought in the Mordechai); it was not located. <strong>Corrected:</strong> the first draft’s wider list (replacing and closing the ark, and “selling each item separately”) is an editorial extension and is removed; the recording gives three steps, as above.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short"><span class="heb-inline">מכות ג׳:ט״ז</span>; <span class="heb-inline">ישעיהו מ״ב:כ״א</span>.</span>
+  <span class="expanded"> The final mishnah of Makkos and its verse (Sefaria, <strong>verified</strong>). The first draft’s composed concluding paragraph is not part of the lecturer’s remarks and is omitted.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<ol>
+<li>The dedication: the grandfather’s name as given in the first draft (Rav Yaakov Eliyahu, born Weiss, later Ephrati) and the great-grandfather’s (Rav Asher Anshel) are to be confirmed with the Rav before printing.</li>
+<li>Was the father’s passing “some months” before the discourse, as the context requires, or “nine years,” as both transcripts read (Section I)?</li>
+<li>The dates of Rav Shlomo Zalman Geiger and of the <em>Divrei Koheles</em> (note 2): the lecturer places him in the eighteenth and early nineteenth centuries; the first draft’s dates were not verified.</li>
+<li>Reconciling the timeline in Section II with note 1: did <em>Brich Shmei</em> enter the siddurim in the early 1600s, as the lecturer says, or through <em>Shaarei Tzion</em> (Prague, 1662)?</li>
+<li>Which responsa of the Chasam Sofer and of the Noda BiYehuda are meant (notes 5 and 7)? Where does the Amsterdam <em>pinkas</em> record the <em>cherem</em> on the Shelah, and in what year (Section V)?</li>
+<li>Is it the Maharsha or the Maharshal who wrote against learning Zohar, and whose grave was visited in Lublin (note 6)?</li>
+<li>What did the Chasam Sofer say about <em>Mitpachas Sefarim</em> (note 11), and where does Rashbi say that one may not say <em>bar elahin</em>?</li>
+<li>In which printed work is the Chofetz Chaim’s private practice recorded (note 12)? Is the Hungarian rav the Maharshag, and what is the descriptor heard as <span class="heb-inline">סמי דעירב</span> (note 20)?</li>
+<li>Which later authority gives the reason for lifting after the reading, and what was the incident (note 16)?</li>
+<li>In which work does the Chida write about the expectant father, and what is the word heard as <span class="heb-inline">יזכור</span> (note 18)? Which work of Rav Chaim Palagi has the ruling on closing the ark (note 19)?</li>
+<li>Where in the Or Zarua or Mordechai is the dispute over dividing the honors, and is the attribution to the <span class="heb-inline">מהר״ח</span> correct (notes 17 and 22)?</li>
+<li>What is the source for the daily recital of <em>Brich Shmei</em> among Ashkenazim, and was the practice of Hirsch’s own community recorded (Section II)?</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em>Tefillah</em>, 10 Kislev 5786 (30 November 2025). The edition follows the lecturer&rsquo;s order, from the personal preface through the history of Frankfurt and of Ashkenazic caution toward <em>kabbalah</em> to the order of the Torah service; presents his reports as reports; and records his uncertainties as he stated them. Corrections from the review and Sefaria passes are marked in the notes.
+</footer>
+
+</body>
+</html>
