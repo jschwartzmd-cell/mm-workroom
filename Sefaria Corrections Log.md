@@ -546,3 +546,28 @@ Modified: final MM/2025-11-10 — תחנון, נפילת אפים, and the Origi
 - **fn22 (Shulchan Aruch OC 339:3)** — **VERIFIED**: אין מספקין ואין מטפחין ואין מרקדין; Rema notes the practice of clapping and dancing and permitting authorities.
 - **Not checkable / unchanged (UNCERTAIN, not located on Sefaria)**: fn1 (recap), fn2 (R. Chaim Vital), fn7 (Rav Saadia's siddur), fn10 (Sefer HaIttim), fn11 (Sefer HaPardes; attribution to Rashi flagged), fn12 (Beis Yosef), fn14 (Shir HaMaalos aside), fn20 (Zohar passage), fn23 (Landa hakdama / Talner tish), fn24 (Wolfson, personal testimony), fn25 (Rokeach; Rema 281:1 "להאריך ולהנעים" noted as parallel).
 - **Total:** 8 corrections (fn3, fn5, fn6, fn9, fn15 narrowing, fn19, fn21, fn18 hedge) plus Sofer-over-Plaud exclusions (Sefer HaEshkol, Yad HaMelekh, R. Yehoshua Horowitz, named participants), ~13 verified (fn3 Tosafos, fn4, fn5 R. Yochanan, fn8, fn13, fn15 Rema/MB, fn16, fn17, fn18 verse/acrostics, fn22, plus Isaiah 6:2, Ezekiel 1:6, Gen 22:24), ~11 UNCERTAIN, ~11 not checkable. Modified: final MM/2026-10-18 — Kel Odon — The Silent Angels, the Hefsek Debate, and Dancing on Shabbos.html.
+
+## 2026-10-25 — Shabbos Shemoneh Esrei — Why Seven, the ישמח משה Machloikes, and the Kedushah of Eretz Yisrael
+
+- **fn1 (yahrzeit; "מה כאן עומד ומשמש")** — **UNCERTAIN**: source of the Aharon phrase not located; Hebrew date on recording garbled ("ט' סיון"), text says only "Tuesday". Plaud "ticket/chicken Tuesday" rejected (Sofer: תיקון).
+- **fn2 (Berachos 28b)** — **VERIFIED**: Shmuel HaKatan instituted the berachah of the heretics (Rabban Gamliel's question quoted); continuation not retrieved.
+- **fn3 (Berachos 21a; SA OC 268; Tur OC 268)** — **VERIFIED**: finish the berachah, "it is the Sages who did not impose upon him in deference to Shabbat"; SA OC 268 Hebrew (Sefaria presents as seif 2; English inferred seif 1).
+- **fn4 (Yerushalmi, Rav Abba at Modim)** — **UNCERTAIN**: not located; Yerushalmi Berachos 1:5 has Rebbi Abba bar Zavda's thanksgiving formula only. Rav's "tanna" description flagged.
+- **fn5 (Menachos 43b; Nishmas הן הם)** — **VERIFIED**: Rabbi Meir's hundred berachos; Rav Chiya bar Avya's spices; gematria 55+45=100. **UNCERTAIN**: author of the remez.
+- **fn6 (Rishonim "ממהרים"; Shabbos 118b; Meiri)** — **UNCERTAIN**: wording not located; Shabbos 118b (English) has no such statement; Meiri not fetchable.
+- **fn7 (Yerushalmi Shabbos 15:3)** — **VERIFIED**: "It is forbidden to pray for his needs on the Sabbath."
+- **fn8 (Midrash Tanchuma Vayera 1)** — **CORRECTED**: parsha is Vayera, not "Vaeira"; the Sefaria text opens "how many blessings does a person pray each day"; "for sanctification, for joy and rest and not for sorrow" and Tehillim 119:164 VERIFIED. **UNCERTAIN**: the Rav's lines "אסור לתבוע צרכיו / נמצא שמחלל" not found (צרכיו absent); R' Tanchuma bar Abba is an amora, not a tanna (flagged).
+- **fn9 (Tehillim 92; 119:164)** — **VERIFIED**: Name appears 7 times (vv. 2, 5, 6, 9, 10, 14, 16); 119:164 "seven times each day".
+- **fn10 (Yaavetz siddur)** — **UNCERTAIN**: not located.
+- **fn11 (Tur OC 292)** — **VERIFIED**: אתה קדשת/שבת בראשית, ישמח משה/מתן תורה, אתה אחד/עתיד; "דלכולי עלמא בשבת ניתנה תורה". Pharaoh not mentioned in this siman.
+- **fn12 (Avudraham, wedding model)** — **UNCERTAIN**: not located.
+- **fn13 (Rashi, Pardes, Machzor Vitry, Rabbeinu Tam)** — **UNCERTAIN**: Machzor Vitry fetch failed; Pardes/attribution to Rashi flagged; no passage located.
+- **fn14 (Shemos Rabbah 1:28)** — **VERIFIED** in outline: Moshe to Pharaoh, "one day a week", "instituted the day of Shabbat for rest". **UNCERTAIN**: the Tur as source of this reading, and "מדרש מגילות".
+- **fn15 (Shabbos 86b)** — **VERIFIED**: "everyone agrees that the Torah was given on Shabbat" (Rava); R' Yosei disputes only the date. **UNCERTAIN**: Panim Yafos (Noach) passage.
+- **fn16 (Masechet Soferim)** — **UNCERTAIN**: the Rav's claim (no weekday Kedushah in Eretz Yisrael) not located; Sefaria Soferim (ch. 19) reader says Kedushah at Mincha, not morning, which is a different pattern; Chida not located.
+- **fn17 (Vayikra 22:32; Berachos 21b)** — **VERIFIED**: Kedushah requires ten, derived from ונקדשתי. Rav's "Midrash: angels say Kedushah daily" not located.
+- **fn18 (Cairo Genizah; Pirkoi ben Baboi)** — **UNCERTAIN**: not on Sefaria; "two nuns" and "738" flagged for editor.
+- **fn19 (calendar dispute)** — **UNCERTAIN**: not on Sefaria; chronology (921-922, Saadia) flagged.
+- **fn20 (Chasam Sofer, Pressburg)** — **UNCERTAIN**: responsum not located.
+- **fn21 (Eretz Tzvi, א' ו' ח')** — **UNCERTAIN**: responsum not located; reported as chiddush, no change advocated.
+- **Total:** 1 correction (fn8 parsha/wording), ~11 verified, ~11 UNCERTAIN/not checkable. Sofer-over-Plaud choices: "תיקון Tuesday" vs "ticket/chicken"; Rokeach-style misattributions none this week; Plaud's "Yaavetz/Sheva Berachos" and Yismach Moshe points confirmed by Sofer. Modified: final MM/2026-10-25 — Shabbos Shemoneh Esrei — Why Seven, the ישמח משה Machloikes, and the Kedushah of Eretz Yisrael.html

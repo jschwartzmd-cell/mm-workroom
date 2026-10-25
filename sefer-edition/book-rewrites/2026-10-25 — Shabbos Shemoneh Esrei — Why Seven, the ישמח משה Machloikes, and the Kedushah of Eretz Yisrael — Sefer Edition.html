@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shabbos Shemoneh Esrei — Why Seven, the ישמח משה Machloikes, and the Kedushah of Eretz Yisrael — Sefer Edition</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">שְׁמוֹנֶה עֶשְׂרֵה שֶׁל שַׁבָּת — לָמָּה שֶׁבַע, מַחֲלֹקֶת יִשְׂמַח מֹשֶׁה וּקְדֻשַּׁת אֶרֶץ יִשְׂרָאֵל</h1>
+  <div class="english-title"><em>Shabbos Shemoneh Esrei</em>: Why Seven, the <em>Yismach Moshe</em> Machloikes, and the Kedushah of Eretz Yisrael</div>
+  <div class="sub">Studies in the Shabbos <em class="term">Tefillos</em> (<span class="heb-inline">תפילות</span>) &mdash; The Shemoneh Esrei of Shabbos and Its <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>)</div>
+  <div class="date">14 Cheshvan 5787 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse was delivered <span class="heb-inline">לעילוי נשמת</span> the shul’s late Rav, <span class="heb-inline">מורינו ורבינו ר' יהושע בן מנחם מנדל הלוי</span>, whose second <em class="term">yahrzeit</em> (<span class="heb-inline">יארצייט</span>) falls on Tuesday of this week, 16 Cheshvan; the morning’s study and breakfast were sponsored by the congregation in his memory.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> The lecturer prays not that his soul be raised (<span class="heb-inline">עלייה</span>) but that his merit stand as a shield for us (<span class="heb-inline">זכותו יגן עלינו</span>), and applies to him what <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) say of Aharon HaKohen, <span class="heb-inline">מה כאן עומד ומשמש אף שם עומד ומשמש</span>: as in life Aharon brought peace to Israel, so after death he remains an advocate for his people (<span class="heb-inline">מליץ יושר</span>). On the day of the yahrzeit a <em class="term">bris</em> (<span class="heb-inline">ברית</span>) is to be held for the rebbetzin’s grandchild.</p>
+
+<p class="lead">On a weekday the <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) has nineteen <em class="term">berachos</em> (<span class="heb-inline">ברכות</span>); on Shabbos only seven are said. This discourse asks why, and answers in two parts. The first part weighs two readings of the statement of the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) that the Sages did not impose the full prayer upon Shabbos “in deference to the day” (<span class="heb-inline">מפני כבוד שבת</span>, <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) 21a): the haste of the congregation, or a prohibition, drawn from the <em class="term">Yerushalmi</em> (<span class="heb-inline">ירושלמי</span>) and from the <em class="term">Midrash Tanchuma</em> (<span class="heb-inline">מדרש תנחומא</span>), against voicing one’s own needs on the day of rest. It then asks why the number is seven (the Name of Hashem seven times in Psalm 92, the seven daily praises, the <em class="term">Sheva Berachos</em> (<span class="heb-inline">שבע ברכות</span>) of the Yaavetz (<span class="heb-inline">יעב״ץ</span>)), why the middle berachah differs at <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>), <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>) and <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>) (the three Shabbasos of the Tur (<span class="heb-inline">הטור</span>) and the model of a wedding), and why Rashi (<span class="heb-inline">רש״י</span>) never said <span class="heb-inline">ישמח משה</span> and how Rabbeinu Tam (<span class="heb-inline">רבינו תם</span>) restored it. The second part turns from the middle berachah to the Kedushah: <em class="term">Masechet Soferim</em> (<span class="heb-inline">מסכת סופרים</span>), the Cairo <em class="term">Genizah</em> (<span class="heb-inline">גניזה</span>) and the letter of Pirkoi ben Baboi (<span class="heb-inline">פירקוי בן באבוי</span>) against the customs of Eretz Yisrael (<span class="heb-inline">ארץ ישראל</span>), the stand of the Chasam Sofer (<span class="heb-inline">חתם סופר</span>) against the Reformers of Pressburg, and the proposal of the Eretz Tzvi (<span class="heb-inline">ארץ צבי</span>) that <span class="heb-inline">אדיר וחזק</span> is a copyist’s expansion of <span class="heb-inline">אופנים וחיות</span>.</p>
+
+<h2>I. The Question: Eighteen, Nineteen, or Seven?</h2>
+
+<p>The study of the Shabbos <em class="term">tefillos</em> (<span class="heb-inline">תפילות</span>) has been a search for the points at which the prayer of Shabbos departs from the prayer of <span class="heb-inline">חול</span>, the weekday. Having completed <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>), the discourse now arrives at the Shemoneh Esrei itself, whose Shabbos form differs sharply from the weekday form.</p>
+
+<p>The weekday Shemoneh Esrei bears the name “eighteen,” and in fact has nineteen berachos. The berachah against informers and heretics, <span class="heb-inline">ולמלשינים</span>, was added to the original eighteen by Shmuel HaKatan (<span class="heb-inline">שמואל הקטן</span>) at the request of Rabban Gamliel (<span class="heb-inline">רבן גמליאל</span>), and the old name remained.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> The lecturer adds the thought that in the time to come this berachah will fall away, for there will be no informers left (<span class="heb-inline">לעתיד לבוא</span>). The full treatment of Shmuel HaKatan and this berachah belongs to an earlier chapter of the series and is not repeated here.</p>
+
+<p>On Shabbos only seven berachos are said, whence the name <em class="term">Tefillas Sheva</em> (<span class="heb-inline">תפילת שבע</span>): the first three berachos of praise, the last three of thanks, and between them a single middle berachah, <span class="heb-inline">קדושת היום</span>, the sanctity of the day. Since the first three and the last three are the same on every day, the question is narrower than it first appears. It is why the thirteen middle berachos, all of them petitions, give way on Shabbos to one berachah of sanctification.</p>
+
+<h2>II. &ldquo;Where Am I?&rdquo; The Gemara in Berachos 21a</h2>
+
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in Berachos 21a (<span class="heb-inline">ברכות כ״א ע״א</span>) starts from an experience familiar to everyone who prays. A man is praying on Shabbos and, at the very beginning of the Shemoneh Esrei, after <span class="heb-inline">אתה קדוש</span> and <span class="heb-inline">ברוך אתה ה׳ הקל הקדוש</span>, his mind wanders and he runs on in the weekday order. The lecturer confesses that this has happened to him more than once, as a boy and since: he has found himself in <span class="heb-inline">ולמלשינים</span> on Shabbos morning, and at <span class="heb-inline">שמע קולנו</span> on Friday night. “Whoa, where am I?” &mdash; in Yiddish, <em class="term">Vu bin ich</em> (<span class="heb-inline">אווּ בין איך</span>). When a member of the congregation protested that this never happens to him, the lecturer answered, in Yiddish, that this is hard to believe, and that it has happened to him almost beneath the <em class="term">chuppah</em> (<span class="heb-inline">חופה</span>), where the tongue is ready to run on from <span class="heb-inline">אשר יצר את האדם בצלמו</span> into the weekday <span class="heb-inline">יצר את האדם בחכמה וברא בו נקבים נקבים</span>. Chazal, he says, knew this about human nature: a man forgets where he is and what he is saying, and the habit of reciting the weekday Shemoneh Esrei three times a day all week makes him do the same on Shabbos.</p>
+
+<h3>A Sage&rsquo;s Confession at Modim</h3>
+
+<p>The lecturer cites a Yerushalmi that, he says, no one will believe. A sage named Rav Abba, in a statement for whose candour the lecturer knows no parallel in the writings of Chazal, says: “Thank God that at <em class="term">Modim</em> (<span class="heb-inline">מודים</span>) we bow.” At the opening and at the close of the berachah of Modim the body bows, and had the body not bowed of itself, Rav Abba would not have known what he was saying. He, too, spaces out, and the bow brings him back: “Oh!” A second version has him say that, were it not for the body acting automatically, he would not bow at all.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> The lecturer draws the lesson that the work of prayer is to pray with intention (<em class="term">kavanah</em> (<span class="heb-inline">כוונה</span>)), “but let’s not kid ourselves: we are human beings.”</p>
+
+<h3>The Case: A Weekday Berachah Begun on Shabbos</h3>
+
+<p>The Gemara asks what a man should do who, on Shabbos, began the weekday prayer. He has said <span class="heb-inline">אתה חונן</span> and is in the middle of <span class="heb-inline">רפאנו</span> when he realizes, “Oy vey, it is Shabbos! Why am I saying <span class="heb-inline">רפאנו</span>?” Does he complete the berachah and then go back to the Shabbos text, wherever he was holding, whether <span class="heb-inline">אתה קדשת</span> on Friday night or <span class="heb-inline">ישמח משה</span> on Shabbos morning, or does he stop in the middle of the berachah? He cannot simply carry on with the weekday text, and the ruling is codified in the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שולחן ערוך</span>).<a class="footnote-ref" id="ref4" href="#fn4">[4]</a></p>
+
+<p>The Gemara&rsquo;s answer, in the lecturer&rsquo;s words, is a remarkable piece of reasoning: <strong>he completes the berachah</strong> and only then returns to his place. For on Shabbos, too, he is obligated to pray the full Shemoneh Esrei. It is only that the Sages, “in deference to Shabbos,” did not impose it upon him. The Gemara gives the reason in these terms: “it is the Sages who did not impose upon him in deference to Shabbat.” He remains, in the lecturer&rsquo;s gloss, a <em class="term">bar chiyuva</em> (<span class="heb-inline">בר חיובא</span>), one who is under obligation, so that the weekday berachah he began by mistake is not a trespass to be broken off but a berachah that he is in principle bound to say; he finishes it, and goes back.</p>
+
+<h3>A Side Question: Does the Mistaken Berachah Count Toward the Hundred?</h3>
+
+<p>A member of the congregation asks whether the extra berachah counts toward the hundred berachos that a man is to say each day. The lecturer answers that, on the Gemara&rsquo;s reasoning, perhaps it does, since the man is a bar chiyuva. He recalls a point left out of the study of <em class="term">Nishmas</em> (<span class="heb-inline">נשמת כל חי</span>) [see the preceding chapter, on <em>Nishmas Kol Chai</em>]: the words <span class="heb-inline">הן הם יודו ויברכו</span> contain an allusion (<em class="term">remez</em> (<span class="heb-inline">רמז</span>)). The word <span class="heb-inline">הן</span> is fifty-five (ה = 5, נ = 50), the word <span class="heb-inline">הם</span> is forty-five (ה = 5, ם = 40), and together they are one hundred. The commentators, he says, read this as a reminder that on Shabbos, when the Shemoneh Esrei has fewer berachos, a man must not forget to complete his hundred.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> The point is not developed; the lecturer returns to the reading of the <em class="term">Bavli</em> (<span class="heb-inline">בבלי</span>).</p>
+
+<h2>III. Two Readings of &ldquo;Kavod Shabbos&rdquo;: The Bavli and the Yerushalmi</h2>
+
+<p>The discourse now sets out the dispute that frames the rest. The Bavli holds that every Jew is, in principle, obligated to pray the entire Shemoneh Esrei on every Shabbos, but that Chazal said, in effect, “we do not impose it, <em class="term">mipnei kavod Shabbos</em> (<span class="heb-inline">מפני כבוד שבת</span>),” out of respect for the day. The difficulty is what that respect consists of.</p>
+
+<h3>Reading One: The Hurried Congregation</h3>
+
+<p>When the lecturer first read the Gemara, he understood it simply. On Shabbos a man must go home, eat his meal and sing his <em class="term">zemiros</em> (<span class="heb-inline">זמירות</span>); he does not want the <em class="term">cholent</em> (<span class="heb-inline">טשאלנט</span>) to burn. Prayer is long enough already, with the Torah reading and <em class="term">Musaf</em> (<span class="heb-inline">מוסף</span>) and the other additions of the day. Were a Shemoneh Esrei and a Repetition of the <em class="term">Shaliach Tzibbur</em> (<span class="heb-inline">שליח ציבור</span>) (<span class="heb-inline">חזרת הש״ץ</span>) added to each of the three prayers of Shabbos, the service would be considerably longer. So, out of respect for Shabbos, the Sages took them away. This is how some of the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) read the Gemara, and one of them has the wording <span class="heb-inline">מפני שהעם ממהרים לבוא לבית הכנסת בשבת וממהרים לצאת</span>, which the lecturer suggests is borrowed from the passage in Shabbos 118b that is recited at the zemiros. He names the <em class="term">Meiri</em> (<span class="heb-inline">המאירי</span>) among those who read the Gemara in this way.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+
+<p>The lecturer observes that this reading is a ready justification for those who say, “I do not want to be in shul past eleven.” It is exactly this justification that the second reading sets aside: “No, no, no, no, no. You have time. Everybody has time.”</p>
+
+<h3>Reading Two: No Personal Requests on Shabbos</h3>
+
+<p>Other Rishonim hold that the first reading mistakes the <em class="term">peshat</em> (<span class="heb-inline">פשט</span>), and ground the respect of Shabbos in a statement of the Yerushalmi: it is forbidden to pray for one&rsquo;s own needs on Shabbos.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> When a man prays <span class="heb-inline">רפאנו</span> for the sick, he thinks of the sufferer, and sorrow (<em class="term">tzaar</em> (<span class="heb-inline">צער</span>)) enters his heart, “and on Shabbos there is no tzaar.” The Shabbos Shemoneh Esrei was therefore built so that nothing negative is mentioned at all, only praise and sanctity. On this reading the Sages&rsquo; restraint has nothing to do with the clock: a man has time, and may stay as long as he likes. What the day withholds is the prayer of petition itself.</p>
+
+<p>A member of the congregation recalls the familiar formula for this: <span class="heb-inline">שבת היא מלזעוק</span>, “it is Shabbos, a time not for crying out,” which in full continues <span class="heb-inline">ורפואה קרובה לבוא</span>, “and healing is near to come.”</p>
+
+<h3>Objections from the Room</h3>
+
+<p>The obvious challenge, which the Rishonim themselves raise, concerns the <em class="term">Mi Shebeirach</em> (<span class="heb-inline">מי שברך</span>) for the sick. A Mi Shebeirach, the lecturer answers, is a <em class="term">berachah</em> (<span class="heb-inline">ברכה</span>) and not a <em class="term">tefillah</em> (<span class="heb-inline">תפילה</span>), “a very, very different thing.” In tefillah a man begs, thinks of the sufferer and feels tzaar; in a Mi Shebeirach he mentions a name and invokes a blessing for him “in the merit of Shabbos.” The further questions raised, the requests added to the <em class="term">Birkas HaMazon</em> (<span class="heb-inline">ברכת המזון</span>) on <em class="term">Rosh Chodesh</em> (<span class="heb-inline">ראש חודש</span>) and the petitions of <span class="heb-inline">רחם</span> in the Birkas HaMazon of Shabbos, are deferred to the study of those texts; the Rishonim, the lecturer assures the room, address them. “As a general rule,” he says, “the Shemoneh Esrei is chopped: you take away from eighteen, nineteen berachos, and make them into seven. We do not want to ask for anything that has tzaar.”<a class="footnote-ref" id="ref8" href="#fn8">[8]</a></p>
+
+<p>Another asked about <span class="heb-inline">ומפני חטאינו גלינו מארצנו</span>, which is surely a painful petition. The lecturer answered by asking whether one ever says it on Shabbos; it is said on <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>), and when a congregant observed that Shabbos too is called a Yom Tov, he replied, “good, fine, but not every Shabbos.” The deeper answer is a distinction (<em class="term">chiluk</em> (<span class="heb-inline">חילוק</span>)): requests that are collective, for the whole of <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>), may be made, as in the Shabbos Shemoneh Esrei&rsquo;s own <span class="heb-inline">רצה ה׳ אלקינו בעמך ישראל והשב שכינתך לציון</span>; what is excluded is the individual request. Pressed once more, on the ground that the exile of the <em class="term">Shechinah</em> (<span class="heb-inline">שכינה</span>) and the request for <em class="term">Moshiach</em> (<span class="heb-inline">משיח</span>) must also bring pain, the lecturer allowed that the distinction may not be perfect: these things are, “I guess,” more spiritual (<em class="term">ruchnius&rsquo;dik</em> (<span class="heb-inline">רוחניות׳דיק</span>)), whereas a man who says <span class="heb-inline">רפאנו</span> thinks, in fact, of the sick person in his own house, his family, his community. A congregant added that <span class="heb-inline">כאילו מלאכתך עשויה</span> in the berachah of the day points the same way, and the lecturer agreed that the reason is probably both.</p>
+
+<p>A further question, imperfectly preserved on the recording, asked what difference the presence of Eliyahu HaNavi (<span class="heb-inline">אליהו הנביא</span>) makes if one may not demand one&rsquo;s needs on Shabbos. The lecturer called it a very good question and left it open. As for reciting <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>) on Shabbos, that is “something else”: one omits the <span class="heb-inline">יהי רצון</span> before and after, but the verses themselves may be said; some <em class="term">Poskim</em> (<span class="heb-inline">פוסקים</span>) hold otherwise, but the custom is to say them.</p>
+
+<h3>The Midrash Tanchuma</h3>
+
+<p>To give the Yerushalmi&rsquo;s principle in the form of a midrash, the lecturer turns to the Midrash Tanchuma at the beginning of Parashas Vayera (<span class="heb-inline">וירא</span>), the parashah of the coming Shabbos.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> He pauses to teach the basics of this literature. The Midrash is ascribed to R. Tanchuma bar Abba, an <em class="term">Amora</em> (<span class="heb-inline">אמורא</span>) of Eretz Yisrael (the lecturer calls him a <em class="term">Tanna</em> (<span class="heb-inline">תנא</span>)), and was originally known as <em class="term">Midrash Yelamdeinu</em> (<span class="heb-inline">מדרש ילמדנו</span>), because each of its sections opens with the words <span class="heb-inline">ילמדנו רבנו</span>, “let our teacher instruct us”: the voice of a student addressing his master. Each section begins with a question of halachah and the master&rsquo;s answer, and passes only then to aggadic exposition of the parashah.</p>
+
+<div class="callout">
+  <span class="label">The Midrash&rsquo;s Question, as the Lecturer Puts It</span>
+  <em>Yelamdeinu Rabbeinu</em>: why do we pray eighteen berachos on a weekday, <strong>and on Shabbos, when we are free of work (<span class="heb-inline">שנו בטלין</span>), only seven?</strong> The lecturer lingers on the force of the question. On Shabbos there is no labour and no reason to hurry; there is time for Kiddush, for a meal, even for dessert. It seems counterintuitive. Why not remain in shul and say all eighteen?
+</div>
+
+<p>The Midrash answers, as the lecturer gives it, that Shabbos was given as rest: “for sanctification, for joy and rest and not for sorrow.” A man who prays for his individual needs is dragged down. In the lecturer&rsquo;s formulation, <span class="heb-inline">אסור לאדם לתבוע צרכיו בשבת</span>, it is forbidden for a person to demand his needs on Shabbos, for <span class="heb-inline">נזכר מעשיו ומיצר</span>, he remembers his affairs and is distressed. The sharpest line follows in the same formulation: such a man <span class="heb-inline">נמצא שמחלל את השבת</span>, he turns out to be desecrating Shabbos. These three sentences are the lecturer&rsquo;s gloss and are not quoted from the Midrash; the printed text has the sense but not these words (note 9).</p>
+
+<p>There are, the lecturer explains, two ways of desecrating Shabbos. There is the ordinary breaking of Shabbos, turning on a light, driving a car, doing <em class="term">melachah</em> (<span class="heb-inline">מלאכה</span>); and there is breaking its essence, “not the letter of the law, the spirit of the law.” On this account the Midrash teaches two things at once, as a congregant suggested: that petition brings sorrow, and that a man on Shabbos should be in a frame of mind in which he needs nothing, in which “everything is fine,” with no thought of livelihood. We must therefore refrain from asking for individual needs, and that is why the whole of the weekday Shemoneh Esrei is not said.</p>
+
+<div class="callout">
+  <span class="label">The Two Readings Compared</span>
+  <p><strong>Reading one: a dispensation of convenience.</strong> The obligation to pray the full Shemoneh Esrei remains in principle; the Sages relieved the public of it so as not to burden people hastening to their meal. Consequence: a man who begins a weekday berachah by mistake is still a bar chiyuva and finishes it.</p>
+  <p><strong>Reading two: a prohibition.</strong> The weekday petitions may not be said on Shabbos at all, whatever the hour. Consequence: the Yerushalmi, the lecturer says, might tell a man in the middle of <span class="heb-inline">רפאנו</span> to stop; “I do not know.”</p>
+  <p><strong>Which fits Berachos 21a.</strong> The Gemara&rsquo;s own ruling that the man completes the berachah, because the obligation still lies upon him, fits the first reading most naturally. The second reading is the Yerushalmi&rsquo;s, and the lecturer notes that the Bavli “does not go with that reason, at least according to some Rishonim.” Both readings account for the seven; they differ over whether the weekday berachos are still, in principle, owed.</p>
+</div>
+
+<h2>IV. Why Seven?</h2>
+
+<p>On either reading the removal of the thirteen middle petitions leaves seven: three of praise, one of sanctity, three of thanks. But why should it be seven that remains? The lecturer notes that there are many opinions in Chazal, and brings three.</p>
+
+<ul>
+  <li><strong>The Name in Psalm 92.</strong> The simple peshat is that the Name of Hashem, the Tetragrammaton, appears seven times in Mizmor Shir LeYom HaShabbos (<span class="heb-inline">מזמור שיר ליום השבת</span>), beginning <span class="heb-inline">טוב להודות לה׳</span>, corresponding to the seven berachos.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></li>
+  <li><strong>The seven daily praises.</strong> The verse <span class="heb-inline">שבע ביום הללתיך</span>, “seven times a day I praise You” (Tehillim 119:164), is the verse with which the Midrash Tanchuma, in the passage the lecturer read, ties the seven berachos of Shabbos. The lecturer does not himself cite it for this purpose.</li>
+  <li><strong>The Yaavetz&rsquo;s Sheva Berachos.</strong> “The coolest thing” the lecturer saw is in the siddur of the Yaavetz (<span class="heb-inline">יעב״ץ</span>), Rav Yaakov Emden: the seven berachos are the Sheva Berachos of a wedding. On Shabbos Klal Yisrael, the lecturer begins, marries <em class="term">Hakadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>), and then corrects himself: Klal Yisrael is the <em class="term">chasan</em> (<span class="heb-inline">חתן</span>) and Shabbos is the <em class="term">kallah</em> (<span class="heb-inline">כלה</span>). Every Shemoneh Esrei of Shabbos is another Sheva Berachos. “We are all chasanim; Shabbos is the kallah.” He had never thought of it, finds it “so interesting,” and calls it a very creative way of looking at the prayer.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a></li>
+</ul>
+
+<p>The three do not compete so much as work on different levels. The first is a correspondence of number: the Name seven times, a berachah for each. The second turns the number into the rhythm of a Jew&rsquo;s day, so that seven is no more than the measure of his daily praise. The third gives the number a meaning of its own, that of a marriage. The lecturer does not rank them. The first he calls only the simple peshat; the Yaavetz&rsquo;s idea he calls “the reason.” It is also the thread that leads to the next question, for the picture of Shabbos as a wedding returns at once.</p>
+
+<h2>V. Why Does Each Shabbos Tefillah Differ? The Tur&rsquo;s Three Shabbasos and the Wedding</h2>
+
+<p>The lecturer asks a question, he says, that has never bothered the congregation. On Yom Tov every one of the three prayers, Shacharis, Minchah and Maariv, has the same middle berachah: <span class="heb-inline">אתה בחרתנו … והשיאנו, ברוך אתה ה׳ מקדש ישראל והזמנים</span>. (Musaf is different; “Musaf is Musaf.”) On Shabbos each prayer has its own:</p>
+
+<blockquote>
+<div class="heb">אַתָּה קִדַּשְׁתָּ</div>
+<div class="trans">Friday night (with <span class="heb-inline">ויכלו</span>).</div>
+<div class="heb">יִשְׂמַח מֹשֶׁה בְּמַתְּנַת חֶלְקוֹ, וְלֹא נְתַתּוֹ לְגוֹיֵי הָאֲרָצוֹת</div>
+<div class="trans">Shabbos morning.</div>
+<div class="heb">אַתָּה אֶחָד וְשִׁמְךָ אֶחָד</div>
+<div class="trans">Shabbos Minchah.</div>
+</blockquote>
+
+<p>“What is going on here?” There must be a distinction between Shabbos and Yom Tov, and the lecturer offers more than one answer.</p>
+
+<h3>The Tur: Three Shabbasos in History</h3>
+
+<p>The Tur (<span class="heb-inline">הטור</span>), Rabbeinu Yaakov ben Asher, writes that the three prayers of Shabbos correspond to the three Shabbasos of history.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+
+<ul>
+  <li><strong>Friday night</strong> is <span class="heb-inline">שבת בראשית</span>, the Shabbos of Creation: <span class="heb-inline">אתה קדשת</span> and <span class="heb-inline">ויכלו השמים והארץ</span>. Hakadosh Baruch Hu created the world and rested on the seventh day.</li>
+  <li><strong>Shabbos morning</strong> is the Shabbos of <em class="term">Matan Torah</em> (<span class="heb-inline">מתן תורה</span>): <span class="heb-inline">ישמח משה במתנת חלקו</span>, at Har Sinai; Klal Yisrael receives the Torah through Moshe Rabbeinu.</li>
+  <li><strong>Shabbos Minchah</strong> is <span class="heb-inline">אתה אחד ושמך אחד</span>, the Shabbos of <span class="heb-inline">לעתיד לבוא</span>, the day that is entirely Shabbos and rest, when everything will be one and the Name will be one: <span class="heb-inline">אברהם יגל יצחק ירנן</span>. In the lecturer&rsquo;s picture, the Patriarchs will arrive from their resting place in <em class="term">Me&rsquo;aras HaMachpelah</em> (<span class="heb-inline">מערת המכפלה</span>).</li>
+</ul>
+
+<p>“It is a beautiful reason, says the Tur, and that is why Shabbos is different.” On Yom Tov, the lecturer adds, the same text is said at each prayer, and no such distinction arises.</p>
+
+<h3>The Wedding Paradigm</h3>
+
+<p>“Other reasons are according to <em class="term">Kabbalah</em> (<span class="heb-inline">קבלה</span>), but the Rishonim already mention this”: if Shabbos is a wedding, then the three prayers are the stages of a wedding, “also a beautiful way in which a Jew should approach the davening of Shabbos.”</p>
+
+<ul>
+  <li><strong><span class="heb-inline">אתה קדשת</span>, Friday night:</strong> the <em class="term">kiddushin</em> (<span class="heb-inline">קידושין</span>), <span class="heb-inline">הרי את מקודשת לי</span>. “You enter Shabbos beneath a chuppah; you sanctify Shabbos.”</li>
+  <li><strong><span class="heb-inline">ישמח משה</span>, Shabbos morning:</strong> <em class="term">simchas chasan v&rsquo;kallah</em> (<span class="heb-inline">שמחת חתן וכלה</span>), the joy of bridegroom and bride. The lecturer attributes this parallel to the Avudraham (<span class="heb-inline">אבודרהם</span>).<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></li>
+  <li><strong><span class="heb-inline">אתה אחד ושמך אחד</span>, Shabbos afternoon:</strong> the <em class="term">yichud</em> (<span class="heb-inline">יחוד</span>), the private room of bride and groom.</li>
+  <li><strong>Musaf:</strong> the <em class="term">korbanos</em> (<span class="heb-inline">קרבנות</span>), the offerings, “that is the food, the <em class="term">seudah</em> (<span class="heb-inline">סעודה</span>) of the wedding.”</li>
+</ul>
+
+<p>This leads the lecturer to a wry observation. At a wedding it used to be that the guests sat for the first course and then danced, then the main course and danced again; lately, he observes, the entire meal is served and only then comes the <span class="heb-inline">שמחת חתן וכלה</span> and the dancing. The order of the Shabbos prayers is the other way round: first the kiddushin, then the joy, then Musaf and its offerings (the meal), and only then the yichud. “I do not know, but either way I think it is a beautiful way to look at the tefillos of Shabbos: we are basically replaying a wedding.” A congregant asked about <span class="heb-inline">בואי כלה</span>; the lecturer pointed to the study of <span class="heb-inline">בואי בשלום</span> in the chapter on Maariv of Shabbos. Another remark, partly inaudible, drew from him the laugh that it is “a good question on the kiddush club”; one must, he added, judge such people favourably.</p>
+
+<h2>VI. Rashi Never Said &ldquo;Yismach Moshe,&rdquo; and Rabbeinu Tam Restored It</h2>
+
+<p>“Now I want to share something regarding <span class="heb-inline">ישמח משה</span> in particular. No one knows this. I do not know why; it should be very well known.” Every Jew says on Shabbos morning <span class="heb-inline">ישמח משה במתנת חלקו, ושמרו בני ישראל את השבת</span>, and then the berachah. And yet, says the lecturer, “our holy Rashi never said <span class="heb-inline">ישמח משה</span> in his life.”</p>
+
+<h3>Rashi&rsquo;s Practice</h3>
+
+<p>Why not? The lecturer reconstructs Rashi&rsquo;s difficulty: what does Yismach Moshe have to do with Shabbos? On its plain sense it means that Moshe rejoiced on receiving the Torah and the two <em class="term">Luchos</em> (<span class="heb-inline">לוחות</span>), and that on the Luchos it is written to keep Shabbos. Rashi, in this reconstruction, found no connection to Shabbos in that, and, not knowing what it was doing in the berachah, did not say it. The reconstruction is the lecturer&rsquo;s own; no passage of Rashi to this effect was located.</p>
+
+<p>What Rashi did say is reported, the lecturer tells us, in the Sefer HaPardes (<span class="heb-inline">ספר הפרדס</span>) and in the Machzor Vitry (<span class="heb-inline">מחזור ויטרי</span>), the works of his students. On Shabbos morning he recited the Yom Tov berachah with Shabbos plugged in: <span class="heb-inline">אתה בחרתנו מכל העמים אהבת אותנו ורצית בנו ורוממתנו מכל הלשונות וקדשתנו במצותיך, ותתן לנו ה׳ אלקינו באהבה שבתות למנוחה לשמור ולשמוח</span>, and then went on to <span class="heb-inline">ושמרו בני ישראל את השבת</span> and <span class="heb-inline">אלקינו ואלקי אבותינו רצה נא במנוחתנו</span>.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<h3>Rabbeinu Tam Restores It</h3>
+
+<p>Here is the dispute between grandfather and grandson. Rabbeinu Tam (<span class="heb-inline">רבינו תם</span>), Rashi&rsquo;s grandson, said, in the lecturer&rsquo;s paraphrase: “My grandfather, may he rest in peace, had his custom. I should like to bring back Yismach Moshe to the Judaism of Ashkenaz (<span class="heb-inline">אשכנז</span>), to France.” All of Rashi&rsquo;s students had said the Yom Tov text with Shabbos substituted. Rabbeinu Tam held that Yismach Moshe is a great secret (<span class="heb-inline">סוד גדול</span>), that a Jew must say <span class="heb-inline">ישמח משה במתנת חלקו</span>, and he restored it. The lecturer adds, as a report of unnamed Rishonim, that in many places in Eretz Yisrael it was also not said in the old days, and that in Jerusalem, they say, no one said it; there too, as with Rashi in France, they said <span class="heb-inline">אתה בחרתנו</span>. “But Rabbeinu Tam is the one who brought it back, and that is why all of Klal Yisrael says Yismach Moshe. I do not know of anyone who says the nusach of Atah Vechartanu. It is buried here.”</p>
+
+<h3>Question A: What Is the Joy?</h3>
+
+<p>The lecturer introduces a tradition that he attributes to the Tur, of two ways of understanding <span class="heb-inline">ישמח משה</span>. The first rests on a midrash. (The Tur at Orach Chayim 292 states only the Matan Torah reading, and the Pharaoh midrash is found in Shemos Rabbah 1:28; the lecturer&rsquo;s attribution to the Tur was not confirmed, note 15.)</p>
+
+<div class="callout">
+  <span class="label">The Midrash Behind Yismach Moshe: Moshe, Pharaoh, and the First Shabbos</span>
+  <p>During the <em class="term">galus</em> (<span class="heb-inline">גלות</span>) in Egypt, Pharaoh was enslaving Klal Yisrael. <strong>Moshe Rabbeinu came to Pharaoh</strong> and said: “Pharaoh, we are working for you, we are building Pisom (<span class="heb-inline">פיתום</span>) and Raamses (<span class="heb-inline">רעמסס</span>), but you cannot make Jews work every single day. They need one day of rest, otherwise they will fall apart and collapse.” Pharaoh said, “Fine. Choose a day. You will get off.” Moshe told Pharaoh: Shabbos. And so Pharaoh was “the first king in our history” to give Shabbos.</p>
+  <p>What did the Jews do on that Shabbos in Egypt? “If I were there, I would just rest from a whole week.” But Moshe Rabbeinu had scrolls, the lecturer says, citing “the Midrash of the scrolls” (<span class="heb-inline">מדרש מגילות</span>), and they would learn Torah, some form of written Torah. “It was a beautiful Shabbos in Egypt, a Shabbos of rest.” Years later Hakadosh Baruch Hu gives Shabbos as a day of rest on which no <em class="term">melachah</em> (<span class="heb-inline">מלאכה</span>) may be done, and <strong>Moshe Rabbeinu had such joy!</strong> When he chose the seventh day for Pharaoh, as it were, he had hit the mark, and Hakadosh Baruch Hu chose the same day. <span class="heb-inline">ישמח משה במתנת חלקו</span>: he was so happy, on hearing the <em class="term">Dibros</em> (<span class="heb-inline">דיברות</span>) at Matan Torah, that Hakadosh Baruch Hu gave Shabbos as a day of rest. “That is why we say it; we commemorate that here.” On this reading Yismach Moshe is a joy in Shabbos.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a></p>
+</div>
+
+<p>The lecturer hesitates over this midrash as he tells it: “I find it hard to believe that Moshe Rabbeinu did not know that the seventh day would be Shabbos,” for the midrash, as he relates it, makes it sound as though Moshe were surprised that his choice matched the day Hashem chose. “But could be, could be.” A congregant offered an explanation that the recording does not preserve; the lecturer answered, “Yes, fine, but I just find it hard to believe.” The matter, he says, “opens room for discussion.”</p>
+
+<p>The second answer to the question locates the joy elsewhere. According to this view Yismach Moshe is not a joy in Shabbos but in the Torah itself, and the blessing commemorates the Shabbos of Matan Torah. The text that follows speaks of Torah: <span class="heb-inline">כי עבד נאמן קראת לו, כליל תפארת בראשו נתת לו בעמדו לפניך על הר סיני, ושני לוחות אבנים הוריד בידו</span>. “We are talking about the Torah, and in the two Luchos it says also to keep Shabbos.” So Yismach Moshe, in the first view, is the joy Moshe had because of Shabbos, and in the second the joy he had in the receiving of the Torah.</p>
+
+<h3>Question B: Why in the Morning and Not on Friday Night?</h3>
+
+<p>The second question is a different one, and it too has two answers. If Yismach Moshe commemorates Matan Torah, why is it said on Shabbos morning and not on Friday night?</p>
+
+<p>The first answer is a proof offered at this point, apparently by a guest from Eretz Yisrael whom the lecturer had just introduced; the recording does not mark the change of speaker. Before Matan Torah the rule was <span class="heb-inline">הלילה הולך אחר היום</span>: the night followed the day. Today the day follows the night; before Matan Torah the night came after the day. The Shabbos of Matan Torah, then, is to be found in the day, and it is the day that Yismach Moshe marks. The lecturer calls it very nice, and credits the Panim Yafos (<span class="heb-inline">פנים יפות</span>) on Parashas Noach (<span class="heb-inline">נח</span>): “beautiful, beautiful.”<a class="footnote-ref" id="ref16" href="#fn16">[16]</a></p>
+
+<p>The second answer is, in the lecturer&rsquo;s words, “a totally different reason.” The Gemara in Shabbos 86b says: <span class="heb-inline">כולי עלמא מודו דבשבת ניתנה תורה</span>, everyone agrees that the Torah was given on Shabbos. “When on Shabbos? In the morning!” Yismach Moshe is said in the morning because that is when the Torah was given, and so it is not a joy in Shabbos but the commemoration of the Shabbos of Matan Torah. The lecturer recalls the correspondence set out earlier: Shacharis is the Shabbos of Matan Torah, Friday night the Shabbos of Creation, Minchah the Shabbos to come.</p>
+
+<h2>VII. From the Middle Berachah to the Kedushah: What Eretz Yisrael Kept and Lost</h2>
+
+<p>The Shabbos Shemoneh Esrei differs from the weekday text not only in its middle berachah but also in its Kedushah, which is said at the Repetition. The two differences are, in a sense, a single story. Both turn on the liturgy of Eretz Yisrael, which differed from that of Bavel; in both a custom that had lapsed was brought back by a later authority. The thread is suggested by the lecturer&rsquo;s own remark that Yismach Moshe was missing from places in Eretz Yisrael, and the connection drawn here is the editor&rsquo;s. With a few minutes left, the lecturer turns to the Kedushah of Shabbos morning, “another fascinating thing that I cannot wrap my brain around, but if anybody researches and looks, you will find the same thing that I found.”</p>
+
+<p>Every day the congregation says the simple Kedushah: <span class="heb-inline">קדוש קדוש קדוש</span> and <span class="heb-inline">ברוך כבוד ה׳ ממקומו</span>. On Shabbos “all of a sudden Kedushah changes its face, its format.” We add <span class="heb-inline">אז בקול רעש גדול, אדיר וחזק, ממקומך מלכנו תופיע</span>. “How can a Jew not cry when he says <span class="heb-inline">ממקומך מלכנו תופיע</span>? It is Klal Yisrael yearning for Hakadosh Baruch Hu to come back, <span class="heb-inline">ותחזינה עינינו</span>.” The core remains the same, <span class="heb-inline">קדוש קדוש</span>, which is the essence of Kedushah, and <span class="heb-inline">ברוך כבוד ה׳ ממקומו</span>, which the angels say to one another; but on Shabbos we add further prayers. The <span class="heb-inline">כתר</span> of Musaf is left to the study of Musaf.</p>
+
+<h3>Masechet Soferim, as the Lecturer Reads It</h3>
+
+<p>“Where did this come from, and why do we say it? I want to tell you a <em class="term">chiddush</em> (<span class="heb-inline">חידוש</span>) people do not know.” Masechet Soferim is one of the <em class="term">Masechtos Ketanos</em> (<span class="heb-inline">מסכתות קטנות</span>), the minor tractates printed at the end of the Talmud after Avodah Zarah: an ancient work on what was said and not said in the synagogue every day, on Shabbos, Rosh Chodesh, <em class="term">Chol HaMoed</em> (<span class="heb-inline">חול המועד</span>) and Yom Tov. As the lecturer reads it, Soferim records that the old custom was <strong>never to say Kedushah during the week</strong>. At the Repetition of Shacharis and of Minchah they passed over it and went straight to <span class="heb-inline">אתה קדוש</span>. Only on Shabbos was Kedushah said, and the original Kedushah was a Shabbos Kedushah, with <span class="heb-inline">אז בקול רעש גדול</span> and <span class="heb-inline">ממקומך מלכנו תופיע</span>. He sets this in the period after the Tannaim, when the Amoraim had gone to Bavel and those who remained in Eretz Yisrael did not say it; and, correcting a questioner, he says that he does not mean the days of the <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>), nor the <em class="term">Sefardim</em> (<span class="heb-inline">ספרדים</span>), but the Jews of Eretz Yisrael in the days of the Yerushalmi, who “never said Kedushah during the week, only on Shabbos.”<a class="footnote-ref" id="ref17" href="#fn17">[17]</a></p>
+
+<p>The text of Soferim as available does not state the matter in these terms. It has the reader omit Kedushah and <em class="term">Kaddish</em> (<span class="heb-inline">קדיש</span>) at the morning service, while at the afternoon prayer both are said, which is a different pattern from the one described. The claim rests, therefore, on the lecturer&rsquo;s reading, and awaits a located text.</p>
+
+<p>Later authorities, the lecturer says, struggled to understand the matter: “Why wouldn&rsquo;t they say Kedushah?” The Chida (<span class="heb-inline">החיד״א</span>), Rav Chaim Yosef David Azulai, a scholar of the eighteenth century, offers, as the lecturer relates it, a forced reading: Soferim does not mean that they did not say Kedushah, only that they did not say it in the same nusach as on Shabbos. “All strained readings,” he says; it seems that Soferim and others did not say Kedushah. What the earlier authorities lacked, he suggests, was the literature we now have.</p>
+
+<h3>Why Would Weekday Kedushah Be Omitted?</h3>
+
+<p>The lecturer asks first what obliges one to say Kedushah every day. The verse <span class="heb-inline">ונקדשתי בתוך בני ישראל</span> requires sanctifying the Name in the midst of a congregation, but nothing in it requires doing so daily. There is, he says, a midrash that the angels say Kedushah every day, as the congregation does at Yotzer Or and at <span class="heb-inline">ובא לציון</span>. In Eretz Yisrael the Shemoneh Esrei was repeated, but they said only <span class="heb-inline">ברוך אתה ה׳ מחיה המתים, אתה קדוש ושמך קדוש</span>, “a huge chiddush.” Why omit so small a piece, “not such a big trouble”?<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<h3>The Cairo Genizah and Pirkoi ben Baboi</h3>
+
+<p>The answer lies, the lecturer says, in the Cairo <em class="term">Genizah</em> (<span class="heb-inline">גניזה</span>), of which he loves to speak, though he will not give the whole history. More than a century ago, some one hundred and twenty-five years by his count, two Scottish women, the sisters Agnes Smith Lewis and Margaret Dunlop Gibson, took fragments from Cairo and showed them to Solomon Schechter, and the great trove of the Genizah, in the attic of the Ben Ezra synagogue, came to light. (The lecturer calls them nuns; they were not, but scholars and travellers.) To this day the Genizah is being studied.</p>
+
+<p>Among the things found there was a scholar “that we never knew about,” a sage of the yeshivah in Bavel named <strong>Pirkoi ben Baboi</strong> (<span class="heb-inline">פירקוי בן באבוי</span>), “a cute name, an Aramaic name.” The lecturer places him in the eighth century, in the years around 738, almost thirteen hundred years ago, and calls him a disciple of Rav Yehudai Gaon, one of the early <em class="term">Geonim</em> (<span class="heb-inline">גאונים</span>); the usual dating is somewhat later, the early ninth century, and a disciple of a disciple of Rav Yehudai.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> A long letter of his was pieced together from the fragments, “wonderful things, chiddushim that we never knew,” and one could spend an hour on it alone. Pirkoi, the lecturer says, “was very busy knocking the customs of Eretz Yisrael.”</p>
+
+<h3>Babylonia Against Eretz Yisrael</h3>
+
+<p>There was, the lecturer explains, a major conflict between the halachic authority of the yeshivos of Bavel and the sages of Eretz Yisrael. The sages of Eretz Yisrael said: we are in Eretz Yisrael, <span class="heb-inline">כי מציון תצא תורה ודבר ה׳ מירושלים</span>; we know the sanctification of the month (<span class="heb-inline">קידוש החודש</span>) and the intercalation of the year (<span class="heb-inline">עיבור השנה</span>); whatever we decide binds Bavel. The Babylonians answered: “What are you talking about? We have the most continuous tradition of Torah. In Eretz Yisrael it was choppy; there was the destruction, we went to Bavel, we have all the traditions, and therefore the halachah should follow us.” “By the way,” the lecturer remarks, “this is the source of the Bavli&ndash;Yerushalmi dispute all the time.”</p>
+
+<p>The quarrel grew so heated, he says (“nobody knows this,” and he promises to return to it), that for two years in the 900s Klal Yisrael in Eretz Yisrael and in Bavel kept Yom Tov on separate days: “a civil war came out.” There were the letters of Rav Saadia Gaon (<span class="heb-inline">רב סעדיה גאון</span>), “unbelievable.” The episode he evidently means is the calendar dispute between Ben Meir of Eretz Yisrael and Rav Saadia, usually dated to 921&ndash;922, a century and more after Pirkoi. Pirkoi&rsquo;s letter, on that reckoning, belongs to an earlier chapter of the same long rivalry, which the lecturer traces to the time of Rav Yehudai Gaon and his disciple.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a></p>
+
+<p>Pirkoi&rsquo;s claim, as the lecturer gives it, and as he says he mentioned in the study of the introduction to the <em class="term">Machzor</em> (<span class="heb-inline">מחזור</span>), was that Judaism in Eretz Yisrael at that time did not know what it was talking about in matters of halachah. Why? Because the Judaism of Eretz Yisrael was a new category in halachah, <strong><em class="term">Yahadus HaShemad</em> (<span class="heb-inline">יהדות השמד</span>)</strong>: a Judaism forced by persecution (<em class="term">shemad</em> (<span class="heb-inline">שמד</span>)) to do things, to omit things, to add things and to change things. “We in Bavel lived in peace; the authorities liked us. They, in Eretz Yisrael, had antisemitism and shemad. They were forced to do terrible things; they were kicked out of their homes. So their entire Judaism, their entire tradition, is so choppy and so cut up that you cannot rely on them for anything.”</p>
+
+<p>Among the things that Pirkoi said the Jews of Eretz Yisrael did wrong was that they did not say Kedushah during the week. The reason, he said, was simple: there was a decree of persecution against coming to pray. For a generation or two men prayed at home, and at home one forgets. They had no siddurim, only a few manuscripts; and a man who comes to shul every day knows what to do because he has a congregation (<em class="term">kehillah</em> (<span class="heb-inline">קהילה</span>)), but alone he forgets. Kedushah, moreover, is a <em class="term">davar shebikedushah</em> (<span class="heb-inline">דבר שבקדושה</span>), which requires a <em class="term">minyan</em> (<span class="heb-inline">מנין</span>). When they returned to the synagogue after a generation or two, they had forgotten Kedushah. The Shabbos Kedushah, “for some reason,” they remembered, since it is “not so hard,” and they began again to say <span class="heb-inline">נקדישך ונעריצך</span> on Shabbos; during the week they left it out, and for generations did not say it.</p>
+
+<p>Two accounts should be kept apart here. Soferim, as the lecturer reads it, reports what the custom of Eretz Yisrael was in the age after the Tannaim; Pirkoi offers an explanation of its cause, and he offers it as a critic of Eretz Yisrael. They answer different questions, what was done and why, and the lecturer does not suggest that the second is established. It is a Babylonian polemicist&rsquo;s diagnosis.</p>
+
+<h3>The Letter and the Emissaries</h3>
+
+<p>Pirkoi wrote to the Jews of Eretz Yisrael: “You make here a terrible mistake. You must say Kedushah every day.” The Kedushah of Shabbos is indeed different, he allowed, and one should say <span class="heb-inline">ממקומך מלכנו תופיע</span>, “but you make here a big mistake.” Not only that: he sent emissaries from Bavel to Eretz Yisrael, to go to every synagogue and tell them, “Gentlemen, you must say Kedushah every day.” The sages of Bavel, the lecturer reports, won this battle; in Eretz Yisrael, in Pirkoi&rsquo;s own days, everyone returned to saying Kedushah daily. And what did they say? After a moment&rsquo;s exchange with the room the lecturer confirms that they said <span class="heb-inline">נקדישך ונעריצך</span>. The <span class="heb-inline">כתר</span>, he repeats, is for Musaf, and whether the text is the Ashkenazic or the Sefardic nusach is “another story.”</p>
+
+<h2>VIII. Whose Voice? The Chasam Sofer, the Reformers, and the Eretz Tzvi</h2>
+
+<p>“So it is very important to know, when we say <span class="heb-inline">אז בקול רעש גדול</span>, that the Chasam Sofer (<span class="heb-inline">חתם סופר</span>) writes somewhere in a responsum that nobody knows where <span class="heb-inline">אז בקול רעש גדול</span> comes from. What is the origin? Who wrote it? Who is the author?” The lecturer relays this at second hand; no such responsum has been located.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> The occasion for the remark, as he tells it, was the Reform of the Chasam Sofer&rsquo;s day (<span class="heb-inline">אוי לאזנים שכך</span>), which tried to cut up the siddur as much as it could. The Reformers of Pressburg said: where does <span class="heb-inline">אז בקול רעש גדול</span> come from? Leave it out. Leave out <span class="heb-inline">איה מקום כבודו</span> too, and all the other additions: “just say the regular Kedushah. What is the big deal?” The Chasam Sofer “fought like a lion, like a warrior,” and would not change an iota of the nusach. It is because of him, the lecturer says, that the Kedushah is still intact, and everyone owes him gratitude. That the origin of a text is unknown is no reason to alter it.</p>
+
+<h3>&ldquo;They&rdquo;: Who Is Screaming?</h3>
+
+<p>“What does <span class="heb-inline">אז בקול</span> refer to? Here is the question.” The lecturer promises a chiddush he guarantees the congregation has never heard, “so from now on you will know what you are saying on Shabbos morning.” The text reads:</p>
+
+<blockquote>
+<div class="heb">אָז בְּקוֹל רַעַשׁ גָּדוֹל אַדִּיר וְחָזָק מַשְׁמִיעִים קוֹל, מִתְנַשְּׂאִים לְעֻמַּת שְׂרָפִים, לְעֻמָּתָם מְשַׁבְּחִים וְאוֹמְרִים</div>
+<div class="trans">Then, with a great noise, mighty and strong, they make their voice heard, rising opposite the Seraphim; opposite them they give praise and say &hellip;</div>
+</blockquote>
+
+<p>“They,” the lecturer observes, “we do not say who; we do not identify.” They scream loud, <span class="heb-inline">אדיר וחזק</span>, they make their voice heard, they rise opposite the <em class="term">Seraphim</em> (<span class="heb-inline">שרפים</span>), and opposite them they praise and say. Of course they are angels. But why are they not named? In Yotzer Or the very same words do name them: <span class="heb-inline">והאופנים וחיות הקודש ברעש גדול מתנשאים לעומת שרפים</span>. “Never bothered you? Why didn&rsquo;t you say <span class="heb-inline">והאופנים וחיות הקודש</span>?”</p>
+
+<div class="callout">
+  <span class="label">The Eretz Tzvi&rsquo;s Chiddush: A Typesetter&rsquo;s Error?</span>
+  <p>The lecturer relays a responsum in the Eretz Tzvi (<span class="heb-inline">ארץ צבי</span>), whose author he identifies as the Gaon of Kozhiglov, rosh yeshivah of Yeshivas Chachmei Lublin, and says that he put this forward about eighty-five years ago; the congregation, the lecturer notes, had spoken of him on its visit to Lublin, “a genius of a man.”<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> The Eretz Tzvi proposed that the siddur originally read <span class="heb-inline">אז בקול רעש גדול</span> followed by the initials <strong><span class="heb-inline">א׳ ו׳ ח׳</span></strong>. A later copyist, seeing the abbreviation, opened it up: <span class="heb-inline">קול רעש גדול, אדיר וחזק</span>. “No! It was <span class="heb-inline">אופנים וחיות</span>!” The original read <span class="heb-inline">אז בקול רעש גדול אופנים וחיות משמיעים קול, מתנשאים לעומת שרפים, לעומתם משבחים ואומרים</span>: the very <em class="term">Ofanim</em> (<span class="heb-inline">אופנים</span>) and <em class="term">Chayos</em> (<span class="heb-inline">חיות</span>) named at Yotzer Or. “So it all makes sense.”</p>
+  <p>The Eretz Tzvi&rsquo;s own answer to why the text was never corrected is that to change it would ruin the tune; the congregation is used to <span class="heb-inline">אדיר וחזק</span>. “A wonderful chiddush.” The lecturer adds that in the Babylonian Talmud there are many abbreviations, and that scholars today think that many mistakes entered in just this way: “we call him in Yiddish the <em class="term">bocher hazetzer</em> (<span class="heb-inline">בחור הזעצער</span>),” the typesetter lad, who “thought like a great sage, &lsquo;Oh, <span class="heb-inline">א׳ ו׳ ח׳</span>, let me open up the abbreviation so everybody should be able to read it,&rsquo; and put in <span class="heb-inline">אדיר וחזק</span> instead of <span class="heb-inline">אופנים וחיות</span>.”</p>
+</div>
+
+<p>When, the congregation asks, are they screaming the “great noise”? The lecturer points to the prophetic vision in which the Ofanim and Chayos say the great Kedushah and the Seraphim answer, “three times a day, every single day,” and he names Yeshayahu. The Seraphim are indeed Yeshayahu&rsquo;s (6:2&ndash;3), but the Ofanim and Chayos belong to Yechezkel (chapter 1), and it is in Yechezkel 3:12&ndash;13 that the great noise stands beside the very phrase the Kedushah quotes. The lecturer did not cite the verse; it is added here as the natural home of <span class="heb-inline">קול רעש גדול</span>, and as support for the proposal that the noise belongs to the Ofanim and Chayos:</p>
+
+<blockquote>
+<div class="heb">וַתִּשָּׂאֵנִי רוּחַ וָאֶשְׁמַע אַחֲרַי קוֹל רַעַשׁ גָּדוֹל בָּרוּךְ כְּבוֹד ה׳ מִמְּקוֹמוֹ. וְקוֹל כַּנְפֵי הַחַיּוֹת … וְקוֹל הָאוֹפַנִּים לְעֻמָּתָם וְקוֹל רַעַשׁ גָּדוֹל.</div>
+<div class="trans">Then a spirit lifted me up, and behind me I heard a voice of great noise: &ldquo;Blessed be the glory of Hashem from His place.&rdquo; And the sound of the wings of the Chayos &hellip; and the sound of the Ofanim beside them, and the sound of a great noise.</div>
+<div class="source">Yechezkel 3:12&ndash;13 (editor&rsquo;s addition; see note 22)</div>
+</blockquote>
+
+<p>The Chasam Sofer&rsquo;s stand and the Eretz Tzvi&rsquo;s proposal are not in conflict. The one defends the text as received against those who would alter it; the other asks how that text came to be received. As for the origin of <span class="heb-inline">אדיר וחזק</span>, the lecturer says plainly, “I do not know.” A reader who knows Hebrew and sees א ו ח after <span class="heb-inline">בקול רעש גדול</span> would have read <span class="heb-inline">אדיר וחזק</span>, “a big loud voice”; but the Eretz Tzvi says the whole thing is one big mistake. “I am not saying you should change it. I am just saying it to appreciate that sometimes maybe things crept into our siddur that were innocent, or maybe not such innocent mistakes.”</p>
+
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer’s report, the note says so; where a point is the editor’s, it is marked as such.</p>
+<ol>
+<li id="fn1">
+  <span class="short">Second yahrzeit of the shul’s late Rav; <span class="heb-inline">מה כאן עומד ומשמש אף שם עומד ומשמש</span> said of Aharon HaKohen.</span>
+  <span class="expanded"> The lecturer dedicates the morning’s study and breakfast, sponsored by the congregation, <span class="heb-inline">לעילוי נשמת מורינו ורבינו ר' יהושע בן מנחם מנדל הלוי</span>; he applies to the late Rav the saying about Aharon HaKohen, mentions the bris of the rebbetzin’s grandchild on the day of the yahrzeit, and asks that someone be assigned to give a <span class="heb-inline">תיקון</span> (a learning session) in the shul on Tuesday. <strong>Date:</strong> the recording gives the Hebrew date as <span class="heb-inline">ט׳ סיון</span>, which cannot be right for this week. Tuesday of this week is 16 Cheshvan 5787 (27 October 2026), and <span class="heb-inline">ט״ז חשון</span> is the probable reading; the date is to be confirmed with the family before printing. <strong>Source:</strong> the lecturer does not name the source of <span class="heb-inline">מה כאן עומד ומשמש</span> as said of Aharon, and it was not located; it stands as his citation (<strong>uncertain</strong>). The wording of the dedication follows the recording.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">ברכות כ״ח ע״ב</span>: Shmuel HaKatan composes the berachah <span class="heb-inline">ולמלשינים</span>, making nineteen berachos.</span>
+  <span class="expanded"> The weekday Shemoneh Esrei has nineteen berachos once the berachah against the heretics is counted. In Berachos 28b Rabban Gamliel asks the Sages, “Is there any person who knows to institute the blessing of the heretics?” and Shmuel HaKatan, “who was one of the most pious men of that generation, stood and instituted it.” The lecturer refers to an earlier chapter of the series on Shmuel HaKatan and <span class="heb-inline">ולמלשינים</span> rather than repeating it. Verified in this outline; the continuation of the Gemara, that Shmuel HaKatan later forgot the berachah, was not consulted.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short">A statement attributed to a sage named Rav Abba, in a Yerushalmi, on bowing at Modim.</span>
+  <span class="expanded"> The lecturer cites a Yerushalmi in which Rav Abba says that, thank God, the bowing at the opening and the close of <span class="heb-inline">מודים</span> brings him back to himself; a second version has the body bow automatically. <strong>Not located.</strong> The Yerushalmi on bowing and thanksgiving (Berachos 1:5) has Rebbi Abba bar Zavda reporting, in the name of Rav, a private formula of thanksgiving, and does not say what the lecturer reports. The lecturer calls the speaker a Tanna; the sages named Abba in the Yerushalmi are Amoraim. The statement is therefore given as the lecturer’s report, with no locus claimed, and the lecturer himself notes that there is a second version.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">ברכות כ״א ע״א</span>; <span class="heb-inline">שולחן ערוך אורח חיים רס״ח</span>; <span class="heb-inline">טור אורח חיים רס״ח</span>: one who began the weekday berachah on Shabbos completes that berachah.</span>
+  <span class="expanded"> Berachos 21a reports the ruling of Rabba bar Avuha in the name of Rav Nachman for one who mistakenly began a weekday berachah on Shabbos: he “must complete that entire blessing”; the reason given is that “it is the Sages who did not impose upon him in deference to Shabbat,” so that the obligation is intact and the Sages merely did not burden him. The Shulchan Aruch (Orach Chayim 268) rules <span class="heb-inline">אם טעה והתחיל תפלת החול גומר אותה ברכה שנזכר בה שטעה ומתחיל של שבת</span>; the Tur at the same siman records the same ruling. <strong>Caveats.</strong> The quoted reason is from an English translation of the Gemara; the Aramaic wording is to be copied from a printed page before this edition is set. The seif number varies between presentations (268:1 in one, 268:2 in another); 268:2 is used here. The term <span class="heb-inline">בר חיובא</span> is the lecturer’s own gloss of the Gemara’s reasoning.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">מנחות מ״ג ע״ב</span>: a hundred berachos daily; Rav Chiya bar Avya’s spices; the allusion in <span class="heb-inline">הן הם</span> (55 + 45 = 100).</span>
+  <span class="expanded"> Rabbi Meir: “A person is obligated to recite one hundred blessings every day,” derived from Devarim 10:12 by reading <span class="heb-inline">מה</span> as <span class="heb-inline">מאה</span>. The Gemara notes that on Shabbos and festivals the prayers contain fewer berachos and tells how Rav Chiya, son of Rav Avya, made up the number with blessings over spices and sweet fruit. The lecturer adds the allusion in <span class="heb-inline">הן הם יודו ויברכו</span> (Nishmas): <span class="heb-inline">הן</span> (ה = 5, נ = 50) is 55, <span class="heb-inline">הם</span> (ה = 5, מ = 40) is 45, together 100. Verified (Menachos 43b), and the arithmetic checked letter by letter. <strong>Uncertain:</strong> the lecturer names no author of the allusion (“the commentators say”), and none was located; and whether a berachah said by mistake counts toward the hundred is left open by him (“maybe yes”).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short">Rishonim on <span class="heb-inline">מפני כבוד שבת</span>: the people hasten to come and hasten to leave (the Meiri and others); Shabbos 118b as the lecturer’s proposed source of the wording.</span>
+  <span class="expanded"> The lecturer reports that some Rishonim read <span class="heb-inline">מפני כבוד שבת</span> as meaning that the Sages did not burden the public, so that they could get to the meal and the zemiros, and gives the wording he attributes to one of them: <span class="heb-inline">מפני שהעם ממהרים לבוא לבית הכנסת בשבת וממהרים לצאת</span>. He names the Meiri. <strong>Not located.</strong> The quoted wording was not found. The passage in Shabbos 118b (the English consulted) contains Rabbi Yosei’s wish about praying “with the reddening of the sun” but no statement about hurrying to or from the synagogue, so the lecturer’s tie to Shabbos 118b is not confirmed; the Meiri on Berachos 21a could not be consulted. The reading stands as the lecturer’s report.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">ירושלמי שבת ט״ו:ג׳</span>: “It is forbidden to pray for his needs on the Sabbath”; the formula <span class="heb-inline">שבת היא מלזעוק</span>.</span>
+  <span class="expanded"> In the Yerushalmi’s treatment of Shabbos (chapter 15, under Halakhah 3, in the English consulted): “It was stated: It is forbidden to pray for his needs on the Sabbath.” This is the principle the lecturer applies to explain why the Shabbos Shemoneh Esrei contains no individual requests. <strong>Verified</strong> (Yerushalmi Shabbos 15:3). The lecturer’s gloss of <span class="heb-inline">צער</span> as the reason is his own reasoning, as is the distinction between a berachah (Mi Shebeirach) and a tefillah. <strong>The formula <span class="heb-inline">שבת היא מלזעוק</span></strong> was supplied by a member of the congregation, not by the lecturer, and no source was given. It is the classical expression in the halachic discussion of prayer for the sick on Shabbos (see Shulchan Aruch, Orach Chayim 287); this pointer is the editor’s and was not checked against the text.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short">The objections from the room: Mi Shebeirach, Rosh Chodesh, Rachem, <span class="heb-inline">ומפני חטאינו</span>, <span class="heb-inline">כאילו מלאכתך עשויה</span>, Eliyahu HaNavi, Tehillim.</span>
+  <span class="expanded"> The lecturer defers the sources of the Mi Shebeirach, of the Rosh Chodesh additions and of <span class="heb-inline">רחם</span> in Birkas HaMazon to the study of those texts, and states only that the Rishonim address them; none is resolved here. On <span class="heb-inline">ומפני חטאינו גלינו מארצנו</span>, the distinction between collective and individual requests is the lecturer’s own, offered with a hedge (“I guess”). The question about Eliyahu HaNavi is garbled on the recording and is reconstructed as heard; its context is uncertain. The permission to say Tehillim without the <span class="heb-inline">יהי רצון</span> is stated by the lecturer as the custom, with the acknowledgement that some Poskim differ. No source for any of these was given.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">מדרש תנחומא, פרשת וירא, סימן א׳</span> (Yelamdeinu): why seven on Shabbos; “for sanctification, for joy and rest and not for sorrow”; Tehillim 119:164.</span>
+  <span class="expanded"> The Midrash Tanchuma on Parashas Vayera, section 1, opens <span class="heb-inline">ילמדנו רבנו כמה ברכות מתפלל אדם בכל יום</span> (“how many blessings does a person pray each day”), gives several reasons for the eighteen (the Patriarchs, the Tabernacle, the vertebrae of the spine, the psalms before <span class="heb-inline">יענך ה׳</span>), and then explains that on Shabbos the Amidah has seven blessings, with rest in the middle, because Shabbos is given “for sanctification, for joy and rest and not for sorrow,” with the verse <span class="heb-inline">שבע ביום הללתיך</span> (Tehillim 119:164). <strong>Corrected in the text:</strong> the lecturer names the parashah Vaeira; the passage he reads is the opening of Vayera, the parashah of the coming Shabbos. <strong>Wording:</strong> the lecturer’s sentences <span class="heb-inline">אסור לאדם לתבוע צרכיו בשבת</span>, <span class="heb-inline">נזכר מעשיו ומיצר</span> and <span class="heb-inline">נמצא שמחלל את השבת</span> were not found in the text consulted (the Hebrew <span class="heb-inline">צרכיו</span> is absent there, <span class="heb-inline">לצרכו</span> present), though the sense is confirmed; they may come from another nusach of the Tanchuma, and are printed in the text as the lecturer’s gloss. <strong>Author:</strong> R. Tanchuma bar Abba was an Amora of Eretz Yisrael (fourth century), not a Tanna; the ascription of the Midrash to him is traditional.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">תהלים צ״ב</span>: the Name appears seven times; <span class="heb-inline">תהלים קי״ט:קס״ד</span>.</span>
+  <span class="expanded"> Psalm 92 contains the Tetragrammaton in verses 2, 5, 6, 9, 10, 14 and 16: seven times, corresponding to the seven berachos of the Shabbos Shemoneh Esrei. Tehillim 119:164, <span class="heb-inline">שבע ביום הללתיך על משפטי צדקך</span>, “I praise You seven times each day for Your just rules,” is the verse with which the Tanchuma ties the seven berachos of Shabbos (note 9); the lecturer did not cite it. <strong>Verified</strong> (the count was checked verse by verse in the Hebrew; a first pass had missed verse 14).</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short">Siddur of the Yaavetz (Rav Yaakov Emden): the seven berachos as the Sheva Berachos of Klal Yisrael and Shabbos.</span>
+  <span class="expanded"> The lecturer cites the Yaavetz’s siddur for the idea that the Shabbos Shemoneh Esrei has seven berachos because on Shabbos Klal Yisrael, as groom, marries Shabbos, the bride, so that each Shabbos Amidah is another Sheva Berachos. He first says that Klal Yisrael marries Hakadosh Baruch Hu and then corrects himself; the corrected version is used. <strong>Not located:</strong> the passage in the Yaavetz’s siddur (Beis Yaakov) was not found, and the idea is given as the lecturer’s report.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">טור אורח חיים רצ״ב</span>: <span class="heb-inline">אתה קדשת</span> against the Shabbos of Creation; <span class="heb-inline">ישמח משה</span> against the Shabbos of Matan Torah; <span class="heb-inline">אתה אחד</span> against the Shabbos of the future.</span>
+  <span class="expanded"> The Tur (Orach Chayim 292) states: <span class="heb-inline">אתה קדשת כנגד שבת בראשית</span>; <span class="heb-inline">ישמח משה כנגד שבת של מתן תורה</span>; <span class="heb-inline">ואתה אחד כנגד שבת של עתיד</span>. For the Matan Torah Shabbos the Tur relies on <span class="heb-inline">דלכולי עלמא בשבת ניתנה תורה</span>. <strong>Verified</strong> (Tur, Hebrew). The Patriarchs’ arising from Me’aras HaMachpelah is the lecturer’s illustration of <span class="heb-inline">אברהם יגל יצחק ירנן</span>, not the Tur’s. That Yom Tov uses the same middle berachah at each prayer is the lecturer’s observation, not a Tur citation. The Tur does not mention Pharaoh in this siman (see note 15).</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short">The wedding paradigm: <span class="heb-inline">קידושין</span> (<span class="heb-inline">אתה קדשת</span>), <span class="heb-inline">שמחת חתן וכלה</span> (<span class="heb-inline">ישמח משה</span>), <span class="heb-inline">יחוד</span> (<span class="heb-inline">אתה אחד</span>), <span class="heb-inline">סעודה</span> (Musaf); the Avudraham.</span>
+  <span class="expanded"> The lecturer gives the order of a wedding as a model for the Shabbos tefillos: kiddushin at Maariv, simchas chasan v’kallah at Shacharis, the yichud at Minchah, and the seudah (the korbanos) at Musaf. He says that the Avudraham is the source of the parallel between <span class="heb-inline">ישמח משה</span> and <span class="heb-inline">שמחת חתן וכלה</span>, and presents the model as one that “the Rishonim already mention.” <strong>Not located:</strong> the wording of the Avudraham was not found; only the <span class="heb-inline">ישמח משה</span>/<span class="heb-inline">שמחת חתן וכלה</span> link is attributed to him, and the rest of the model is given without a named source. The comparison with the order at a modern wedding is the lecturer’s.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">Rashi did not say <span class="heb-inline">ישמח משה</span>; he said <span class="heb-inline">אתה בחרתנו</span> (Sefer HaPardes, Machzor Vitry); Rabbeinu Tam restored <span class="heb-inline">ישמח משה</span>.</span>
+  <span class="expanded"> The lecturer reports that Rashi and his students in France did not say <span class="heb-inline">ישמח משה</span> on Shabbos morning but the Yom Tov text <span class="heb-inline">אתה בחרתנו מכל העמים … שבתות למנוחה לשמור ולשמוח</span>, then <span class="heb-inline">ושמרו בני ישראל</span>; and that Rashi’s grandson Rabbeinu Tam called <span class="heb-inline">ישמח משה</span> a <span class="heb-inline">סוד גדול</span> and restored it for Ashkenaz. <strong>Not located:</strong> no passage was found in the Sefer HaPardes or the Machzor Vitry. The Sefer HaPardes is usually ascribed to the circle of Rashi’s students rather than to Rashi himself. The lecturer’s reconstruction of Rashi’s reasoning (“I do not know what it is doing here”), the paraphrase of Rabbeinu Tam, and the report that in Jerusalem no one said <span class="heb-inline">ישמח משה</span> are all his own and were not located. The wording of the Yom Tov nusach is as the lecturer gave it.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><span class="heb-inline">שמות רבה א׳:כ״ח</span>: Moshe tells Pharaoh the slaves need a day of rest, Pharaoh agrees, and Moshe “instituted the day of Shabbat for rest”; the Tur’s reading of <span class="heb-inline">ישמח משה</span>.</span>
+  <span class="expanded"> Shemos Rabbah 1:28: Moshe says to Pharaoh, “If you do not allow them to rest one day a week they will die”; Pharaoh answers, “Go and do with them whatever you say”; “Moses went and instituted the day of Shabbat for rest.” The lecturer connects this to the reading of <span class="heb-inline">ישמח משה במתנת חלקו</span> as Moshe’s joy that the seventh day he had chosen was the day Hashem designated, and ascribes the learning of written Torah from scrolls in Egypt to a <span class="heb-inline">מדרש מגילות</span>. <strong>Verified</strong> in outline (Shemos Rabbah 1:28). <strong>Uncertain:</strong> the lecturer says the Tur gives this as one of two readings of <span class="heb-inline">ישמח משה</span>; the Tur at Orach Chayim 292 gives only the Matan Torah reading, and neither a second reading there nor the scrolls detail was located. The description of Pharaoh as “the first king in our history” to give Shabbos, and the lecturer’s hesitation that Moshe would not have been surprised, are his own and are not sources.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">שבת פ״ו ע״ב</span>: everyone agrees that the Torah was given on Shabbos; <span class="heb-inline">פנים יפות</span> (Parashas Noach) on <span class="heb-inline">הלילה הולך אחר היום</span>.</span>
+  <span class="expanded"> The Gemara in Shabbos 86b records that everyone agrees that the Torah was given to Israel on Shabbos (Rava), the dispute of Rabbi Yosei being only about the date within Sivan. The lecturer uses this to say that Yismach Moshe is said in the morning, when the Torah was given. The proof from <span class="heb-inline">הלילה הולך אחר היום</span> is attributed by the lecturer to the Panim Yafos on Parashas Noach. <strong>Verified</strong> (Shabbos 86b; the Aramaic <span class="heb-inline">כולי עלמא מודו דבשבת ניתנה תורה</span> is the lecturer’s quotation). <strong>Not located:</strong> the passage of the Panim Yafos. The proof is offered by a speaker whom the recording does not name; it is taken to be the guest (a Hebrew spelling of his name on the recording is uncertain and is not printed).</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">מסכת סופרים</span>: weekday Kedushah in Eretz Yisrael (as the lecturer reads it); the Chida.</span>
+  <span class="expanded"> The lecturer reports that Masechet Soferim records that in Eretz Yisrael they did not say Kedushah at the Repetition of the Amidah during the week, only on Shabbos (with <span class="heb-inline">אז בקול רעש גדול</span> and <span class="heb-inline">ממקומך מלכנו תופיע</span>); and that the Chida, to ease the difficulty, reads Soferim as speaking of a difference of nusach and not of omission. <strong>Not confirmed:</strong> the formulation was not located. The text of Soferim consulted (chapter 19 in its numbering) has a halachah that the reader does not say Kedushah or Kaddish in the morning service, while “in the afternoon prayer, however, both ’Holy’ and kaddish are said,” and chapter 16 limits Kedushah to ten adults; neither states the lecturer’s claim as he gave it, and both differ from it. The chapter numbering of Soferim differs between editions. The Chida’s passage was not located. The Chida (R. Chaim Yosef David Azulai, eighteenth century) is a later authority, an Acharon; the lecturer’s phrase “old Rishonim” is corrected in the text.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><span class="heb-inline">ויקרא כ״ב:ל״ב</span>; <span class="heb-inline">ברכות כ״א ע״ב</span>: Kedushah requires ten; the lecturer’s midrash that the angels say Kedushah daily.</span>
+  <span class="expanded"> Berachos 21b: Rav Adda bar Ahava derives from Vayikra 22:32 (<span class="heb-inline">ונקדשתי בתוך בני ישראל</span>) that “any expression of sanctity may not be recited in a quorum of fewer than ten men.” The lecturer points out that this requires Kedushah only in a minyan, not every day. <strong>Verified</strong> (Berachos 21b). The midrash he mentions, that the angels say Kedushah every day, was not located and stands as his report.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short">The Cairo Genizah; Agnes Smith Lewis and Margaret Dunlop Gibson; Solomon Schechter; Pirkoi ben Baboi, a disciple of Rav Yehudai Gaon.</span>
+  <span class="expanded"> The lecturer tells of the discovery of the Cairo Genizah by two Scottish women, whom he calls nuns, who brought fragments to Solomon Schechter, and of the letters of Pirkoi ben Baboi found there, in which he attacks the customs of Eretz Yisrael, including the omission of weekday Kedushah. <strong>Not on the lecturer’s authority:</strong> the discoverers are usually given as the sisters Agnes Smith Lewis and Margaret Dunlop Gibson, who were scholars and travellers and not nuns; the account of the discovery and the date of about 125 years ago are from general knowledge and were not checked against a source. Pirkoi ben Baboi is commonly dated to the early ninth century, a disciple of a disciple of Rav Yehudai Gaon; the lecturer’s “738” and “disciple of Rav Yehudai” are kept as his report, with the usual dating given beside them. The name of the yeshivah (“Gaon Yaakov”) is as heard on the recording and is not printed. That Pirkoi was unknown before the Genizah is the lecturer’s statement and was not checked.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short">The calendar dispute between Bavel and Eretz Yisrael (Ben Meir and Rav Saadia Gaon); the letters of Rav Saadia.</span>
+  <span class="expanded"> The lecturer describes the dispute between the Babylonian yeshivos and the sages of Eretz Yisrael over who sets the calendar, which, he says, led for two years “in the 900s” to the two communities keeping Yom Tov on different days, and ties its beginning to Rav Yehudai Gaon and Pirkoi ben Baboi. <strong>Not located:</strong> he gives no names or sources beyond Rav Saadia Gaon. The dispute is commonly dated to 921&ndash;922 and associated with Ben Meir and Rav Saadia; that identification is the editor’s, from general knowledge, and was not checked in a source. It is later than Pirkoi by about a century on the usual dating, which is why the text treats Pirkoi’s letter as an earlier chapter of the same rivalry.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short">Chasam Sofer: a responsum on the origin of <span class="heb-inline">אז בקול רעש גדול</span>, and the Reform in Pressburg.</span>
+  <span class="expanded"> The lecturer says that the Chasam Sofer wrote in a responsum that no one knows the origin of <span class="heb-inline">אז בקול רעש גדול</span>, that in his days the Reformers wished to remove it, with <span class="heb-inline">איה מקום כבודו</span> and other additions, and that the Chasam Sofer resisted any change in the nusach. <strong>Not located:</strong> the responsum was not found, and the lecturer gives no siman. The statement is relayed at second hand and is printed as such. The reference in the discourse to “the trip to Pressburg” is to an earlier visit by the congregation and is omitted from the text.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">Eretz Tzvi: <span class="heb-inline">אז בקול רעש גדול</span> as an expansion of the initials <span class="heb-inline">א׳ ו׳ ח׳</span> (<span class="heb-inline">אופנים וחיות</span>); Yotzer Or; Yeshayahu 6:2&ndash;3; Yechezkel 1 and 3:12&ndash;13.</span>
+  <span class="expanded"> The lecturer reports a responsum in the Eretz Tzvi that the original text of the Shabbos Kedushah was <span class="heb-inline">אז בקול רעש גדול</span> followed by the initials <span class="heb-inline">א׳ ו׳ ח׳</span>, which a later copyist “opened up” as <span class="heb-inline">אדיר וחזק</span> instead of <span class="heb-inline">אופנים וחיות</span>, so that the subject of <span class="heb-inline">משמיעים קול</span> is the Ofanim and Chayos named in Yotzer Or (<span class="heb-inline">והאופנים וחיות הקודש ברעש גדול מתנשאים לעומת שרפים</span>). <strong>Not located:</strong> the responsum was not found; it is relayed as a chiddush, secondhand, and the lecturer expressly does not advocate changing the text. The identification of the author (“the Kozhiglover Gaon, rosh yeshivah of Yeshivas Chachmei Lublin”) and the date (“about eighty-five years ago”) are as the lecturer gave them. <strong>Scripture:</strong> the Seraphim are in Yeshayahu 6:2&ndash;3; the Ofanim and Chayos are in Yechezkel 1; and the verse quoted in the text, Yechezkel 3:12&ndash;13, with the great noise beside <span class="heb-inline">ברוך כבוד ה׳ ממקומו</span>, is the editor’s addition, not cited by the lecturer. It is given from the standard text, with the middle clause omitted, and is to be checked against a printed Tanach before this edition is set.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<ol>
+<li>On what date does the second yahrzeit fall, and is <span class="heb-inline">ט״ז חשון</span> the date meant (note 1)? The family should confirm before printing.</li>
+<li>Which Yerushalmi has Rav Abba’s statement about bowing at Modim? The Yerushalmi consulted has a different statement by Rebbi Abba bar Zavda (note 3).</li>
+<li>Which Rishon uses the words <span class="heb-inline">מפני שהעם ממהרים לבוא לבית הכנסת בשבת וממהרים לצאת</span>, and where in the Meiri does the reading appear (note 6)?</li>
+<li>Which edition of the Midrash Tanchuma has <span class="heb-inline">אסור לו לאדם לתבוע צרכיו בשבת</span> and <span class="heb-inline">נמצא שמחלל את השבת</span>, or are these sentences the lecturer’s own gloss (note 9)?</li>
+<li>What is the source of <span class="heb-inline">שבת היא מלזעוק</span> as a formula for the Yerushalmi’s principle, and is the pointer to Orach Chayim 287 correct (note 7)?</li>
+<li>Where is the Yaavetz’s explanation of the seven berachos as Sheva Berachos, and where does the Avudraham draw the parallel between <span class="heb-inline">ישמח משה</span> and <span class="heb-inline">שמחת חתן וכלה</span> (notes 11 and 13)?</li>
+<li>Is there a passage of the Tur, beyond Orach Chayim 292, that gives the Pharaoh midrash as a reading of <span class="heb-inline">ישמח משה</span>, and what is the <span class="heb-inline">מדרש מגילות</span> (note 15)?</li>
+<li>Is the Sefer HaPardes Rashi’s own, as the lecturer says, or that of his students, and where is the passage on <span class="heb-inline">אתה בחרתנו</span> on Shabbos morning (note 14)?</li>
+<li>Where is the passage in the Panim Yafos on <span class="heb-inline">הלילה הולך אחר היום</span>, and was the proof indeed the guest’s (note 16)?</li>
+<li>Where is the passage of Masechet Soferim that the lecturer cites, given that the text consulted has Kedushah omitted in the morning and said at Minchah? And where is the Chida’s discussion (note 17)?</li>
+<li>Are the details of the Genizah’s discovery and of Pirkoi’s dating as given in note 19, and is the episode of the separate Yom Tov dates the calendar dispute of 921&ndash;922 (note 20)?</li>
+<li>Which responsum of the Chasam Sofer says that no one knows the origin of <span class="heb-inline">אז בקול רעש גדול</span>, and where is the responsum of the Eretz Tzvi (notes 21 and 22)?</li>
+<li>Is the text of Yechezkel 3:12&ndash;13 as given in the text, and does the Eretz Tzvi himself use it (note 22)?</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati’s discourse on <em>Tefillah</em>, 14 Cheshvan 5787. The edition follows the order of the inquiry from the number of berachos on Shabbos, through the middle berachah, to the Kedushah; presents the lecturer’s reports as reports; and records his uncertainties as he stated them.
+</footer>
+
+</body>
+</html>
