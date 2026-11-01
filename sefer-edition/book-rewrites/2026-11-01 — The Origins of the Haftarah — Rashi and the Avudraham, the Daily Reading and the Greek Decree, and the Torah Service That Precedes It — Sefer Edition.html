@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Origins of the Haftarah — Rashi and the Avudraham, the Daily Reading and the Greek Decree, and the Torah Service That Precedes It — Sefer Edition</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+<header class="title">
+  <h1 dir="rtl">מְקוֹר הַהַפְטָרָה — רש״י וְהָאַבּוּדַרְהַם, קְרִיאָה יוֹמִית וּגְזֵרַת יָוָן, וְסֵדֶר הוֹצָאַת סֵפֶר תּוֹרָה</h1>
+  <div class="english-title"><em>The Origins of the Haftarah</em>: Rashi and the Avudraham, the Daily Reading and the Greek Decree, and the Torah Service That Precedes It</div>
+  <div class="sub">Studies in the Shabbos Morning <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>) &mdash; From <span class="heb-inline">שיר של יום</span> and <span class="heb-inline">אתה הראת</span> to the Reading of the Prophets</div>
+  <div class="date">21 Cheshvan 5787 &nbsp;&middot;&nbsp; Sefer Edition</div>
+</header>
+
+<p class="dedication">This discourse was delivered in honor of the <em class="term">yahrzeit</em> (<span class="heb-inline">יארצייט</span>) of <span class="heb-inline">מרים בת חיים יצחק</span>, the mother of a friend of the shul, who sponsored the morning’s study and breakfast. The lecturer asked that her soul have an <em class="term">aliyah</em> (<span class="heb-inline">עליה</span>) and that it bring salvation to all Israel.<a class="footnote-ref" id="ref1" href="#fn1">[1]</a></p>
+
+<p class="lead">Why do we read the <em class="term">haftarah</em> (<span class="heb-inline">הפטרה</span>)? The Rishonim give two answers that could hardly be further apart. According to Rashi, as recorded in the <em class="term">Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>), a chapter of the Prophets was once read every day by every Jew after prayer, before he went to work, and it survived only on Shabbos when poverty (<span class="heb-inline">רבתה העניות</span>) ended the daily practice. According to the <em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>), it began as an emergency measure when a foreign decree forbade the reading of the Torah itself: the Sages set at least twenty-one verses of the Prophets in its place, so that the people should not forget the Torah reading, and the substitute outlived the decree. This discourse sets the two accounts side by side, with the later story of how the haftarah came to match the portion and the day, and with the dating of the decree to Antiochus by Elijah Levita. As a setting it first takes up, briefly, the service that leads to the reading: the song of the day (<span class="heb-inline">שיר של יום</span>), the taking out of the Torah, the verses of <em class="term">Masechet Soferim</em> (<span class="heb-inline">מסכת סופרים</span>) that the Or Zarua restored, <span class="heb-inline">אתה הראת</span>, and the <em class="term">Mi Sheberach</em> (<span class="heb-inline">מי שברך</span>) after each aliyah.</p>
+
+<h2>I. The Setting: The Song of the Day and the Taking Out of the Torah</h2>
+
+<p>The discourse takes up the Shabbos morning service at the point where Shacharis is complete. One item remains before the Torah is taken out: the <em class="term">Shir Shel Yom</em> (<span class="heb-inline">שיר של יום</span>), the psalm of the day. On Shabbos the congregation says <span class="heb-inline">היום יום שבת קודש, שבו היו הלוים אומרים בבית המקדש</span>, “Today is the holy Shabbos, on which the Levites used to say in the Temple,” and then Psalm 92, <span class="heb-inline">מזמור שיר ליום השבת</span>.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> <em class="term">Nusach Sefard</em> (<span class="heb-inline">נוסח ספרד</span>), which is the lecturer’s own, says the psalm after Shacharis, although it has already said Psalm 92 among the Verses of Praise (<em class="term">Pesukei DeZimrah</em>, <span class="heb-inline">פסוקי דזמרה</span>). Traditional <em class="term">Nusach Ashkenaz</em> (<span class="heb-inline">נוסח אשכנז</span>) says it after Musaf.</p>
+
+<h3>Why After Musaf?</h3>
+
+<p>The lecturer calls the Ashkenazic placement a <em class="term">peleh</em> (<span class="heb-inline">פלא</span>), a wonder. The song of the day belongs to the daily offering: while the Kohanim poured the libations that accompany every <em class="term">tamid</em> (<span class="heb-inline">תמיד</span>) offering, the Levites stood on the platform and sang, and Shacharis corresponds to the morning <em class="term">tamid</em>. There is no reason to wait for Musaf. On the contrary, on Rosh Chodesh, Shabbos and Yom Tov the Levites sang a special song over the Musaf offering, so that after Musaf a different song was due. This, in the lecturer’s understanding of the Magen Avraham, is why that authority finds the Ashkenazic custom to make no sense and holds the Sefardic placement to be the sound one. The Magen Avraham’s printed wording is, however, more guarded: it describes a custom of saying the song both after Shacharis and after Musaf, and the lecturer’s summary is to be read with that in mind.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a></p>
+
+<p>A second difficulty, which the lecturer says the Aruch HaShulchan also raises, is that the song of the Musaf offering is not said at all today. Why should the congregation say the song that went with the morning <em class="term">tamid</em> and omit the song that went with the Musaf? The lecturer’s reply is that Masechet Soferim, at the end of the volume of Avodah Zarah, sets out the songs of each Musaf (Rosh Chodesh, Shabbos, Yom Tov, Shavuos, Sukkos and Pesach).<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> How this explains the present custom is not worked out. A member of the congregation suggested that the songs are named for the day, so that a Musaf song would not be a song of the day; the lecturer answered that the Musaf song could still be added.</p>
+
+<p>The same logic, he adds, ought to require a song after Minchah, since the evening <em class="term">tamid</em> also had its libation. The Magen Avraham answers that the evening <em class="term">tamid</em> was sometimes offered so late that the libation fell after sunset, and that the Levites did not sing by night; since the song might therefore not have been said, none is said at Minchah.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> Some congregations, it is reported, have moved the song of the day, and <em class="term">Anim Zemiros</em>, to after Shacharis for a quite different reason: the disorder after Musaf, when worshippers talk and fold their <em class="term">talleisim</em> before the prayers are over. “It is not after davening yet!”<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+
+<h3>Who Opens the Ark</h3>
+
+<p>In the lecturer’s shul the honor of taking out the Torah is sold on Simchas Torah for the whole year, a custom, he says, that not every shul has. The buyer will sometimes yield it for a given Shabbos to a groom (<em class="term">chasan</em>, <span class="heb-inline">חתן</span>) or to a man whose wife is expecting a child. The custom has a source in the <em class="term">Or Zarua</em> (<span class="heb-inline">אור זרוע</span>), the work of Rabbi Yitzchak ben Moshe, the rabbi of Vienna in the thirteenth century and one of the Baalei HaTosafos, a book that records a great many halachos. He writes that it is a great merit (<em class="term">zechus</em>, <span class="heb-inline">זכות</span>) to buy the taking out of the Torah, and an honor to the Torah (<span class="heb-inline">כבוד התורה</span>).<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+
+<p>For the man whose wife is in her ninth month, the lecturer cites the Chida, who records it as an ancient custom (<em class="term">minhag vasikin</em>, <span class="heb-inline">מנהג ותיקין</span>). The idea is symbolic: she needs the opening of the womb, so he opens the ark, and the opening of the ark is an auspicious time (<em class="term">eis ratzon</em>, <span class="heb-inline">עת רצון</span>) for prayer.<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> When the lecturer sees a young man go up for this honor, he stands beside the ark and says to him: “Don’t just open it and take out the Torah. Daven! Daven that you should have children, and that the child should be a <em class="term">ben Torah</em>.” For a girl, he says, he is not sure what to ask; a member of the congregation suggested that she marry a <em class="term">talmid chacham</em>, and he agreed. As to why a groom receives the same honor, he put the question to the room: perhaps the same auspicious moment, perhaps a preparation for the mitzvah (<span class="heb-inline">הכשר מצוה</span>). “It could be” (<span class="heb-inline">קען זיין</span>), he says, and moves on.</p>
+
+<h2>II. The Verses Said as the Torah Is Taken Out: Soferim and the Or Zarua</h2>
+
+<p>During the week, as the Torah is taken out, the congregation says <span class="heb-inline">אל ארך אפים</span>, or a few verses such as <span class="heb-inline">אין כמוך</span>, and then <span class="heb-inline">ויהי בנסוע הארן</span>. On Shabbos it begins with <span class="heb-inline">אתה הראת</span> and says verses that differ from the weekday ones. The lecturer, who says he likes to ask what stands behind every line of the siddur, asks where they come from.</p>
+
+<h3>Masechet Soferim and the Customs of Eretz Yisrael</h3>
+
+<p>Among the minor tractates printed after Avodah Zarah stands <em class="term">Masechet Soferim</em> (<span class="heb-inline">מסכת סופרים</span>), the tractate of the scribes. It contains much that is found in neither Talmud, and the lecturer says that scholars still debate when it was written, by whom, and how it spread. From his reading of a book on the subject, he takes it to be chiefly a record of the ancient customs of Eretz Yisrael, which stood in a great dispute with the customs of Bavel.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> In Eretz Yisrael, it seems, a long series of verses was said when the Torah was taken out of the ark, one verse by the <em class="term">chazzan</em> and then by the congregation, some repeated twice. To do all of it on Shabbos and Yom Tov would add an hour to the service. <span class="heb-inline">בריך שמיה</span> is absent, and comes, the lecturer says, from the Zohar. Our practice is a much abbreviated form: some of our verses are in Soferim and some were added, and <span class="heb-inline">ויהי בנסוע הארן</span>, which we say each time, is not there at all. “It is a new thing.”</p>
+
+<h3>The Or Zarua and the Return of the Verses</h3>
+
+<p>What we say today, the lecturer holds, comes from the Or Zarua. The author’s book is known by a title that he explains by a story from its introduction. Writing a <em class="term">get</em> (<span class="heb-inline">גט</span>) for a man named Akiva, he had to decide whether the name ends in an <em class="term">alef</em> (as in the Bavli and the Mishnah) or in a <em class="term">heh</em> (as, the lecturer says, in the Yerushalmi and the Tosefta). A <em class="term">get</em> with a single letter wrong is invalid, and the case is that of a married woman. He tells that he was shown from Heaven in a dream a verse:</p>
+
+<blockquote>
+<div class="heb">אוֹ<strong>ר</strong> זָרֻ<strong>עַ</strong> לַצַּדִּי<strong>ק</strong> וּלְיִשְׁרֵ<strong>י</strong>־לֵ<strong>ב</strong> שִׂמְח<strong>ָה</strong></div>
+<div class="trans">Light is sown for the righteous, and joy for the upright in heart.</div>
+<div class="source">Tehillim 97:11 (the last letter of each word marked)</div>
+</blockquote>
+
+<p>The final letters of the six words read ר-ע-ק-י-ב-ה, which the lecturer takes as <span class="heb-inline">רבי עקיבה</span>; and the last letter is a <em class="term">heh</em>. “So he said, thank you, Heaven, this is how I will write the <em class="term">get</em>.” He loved the revelation so much, the lecturer says, that he named his book <em class="term">Or Zarua</em> to remind himself. The story explains the name of the book and not the custom of the verses; it is told here to introduce its author. (The objection that “the Torah is not in Heaven,” <span class="heb-inline">לא בשמים היא</span>, was raised in the room, and the lecturer called it a good one.) How the matter is decided in practice, and the related disputes over names such as Pinchas in <em class="term">gittin</em>, are beyond the scope of the discourse.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a><a class="footnote-ref" id="ref11" href="#fn11">[11]</a></p>
+
+<p>The Or Zarua writes that he travelled widely in Ashkenaz and Poland, in the thirteenth century, and that in the region he calls <em class="term">Medinas Reinus</em> (the Rhineland) nothing was said when the Torah was taken out: after Shacharis they went to the ark, took out the scroll, carried it to the <em class="term">bimah</em> and read. He urged that the custom follow that of Eretz Yisrael in Soferim, and he gave it in an abbreviated form, only several verses. Those are the verses we say. All of them are verses of Tanach, from Dovid HaMelech in Tehillim and elsewhere.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+
+<p>The lecturer gives a second account, which credits a different person. The <em class="term">Shibbolei HaLeket</em> (<span class="heb-inline">שבלי הלקט</span>), which the Beis Yosef quotes very often in the laws of prayer, was written, as the lecturer recalls, by the son of Rav Avraham the doctor, a leading authority and head of a yeshivah in Rome, of the family of the <em class="term">Anavim</em>. In this account it was Rav Avraham who saw that in Rome, as elsewhere, nothing was said when the Torah was taken out, and who urged that the custom of Soferim be brought back; “from that point on in history,” the lecturer says, all Israel says these verses. The two accounts are not reconciled in the discourse. The lecturer’s own statement, that our practice “comes from the Or Zarua,” is taken here as the main account, and Rav Avraham’s as a variant.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a></p>
+
+<div class="callout">
+  <span class="label">The Four Families Exiled to Rome</span>
+  <p>The lecturer tells, as a legend recorded by the Rishonim, that when Titus destroyed the Second Temple he exiled many Jews, and among them four very prominent families from the nobility of Jerusalem: the <em class="term">Adomim</em> (<span class="heb-inline">האדומים</span>), the <em class="term">Tapuchim</em> (<span class="heb-inline">התפוחים</span>), the <em class="term">Anavim</em> (<span class="heb-inline">הענוים</span>), and a fourth, whom he does not name. They were taken to Rome. Many of the Rishonim and Poskim came from these families, and many halachos we follow rest on books written by their members. The Poskim take them seriously because they carry a direct tradition from the ancient customs of Eretz Yisrael: “They came from the destruction of the Second Temple, and they went and they never changed. They lived in Rome for hundreds of years.”</p>
+</div>
+
+<h2>III. Atah Hareisa and Vayehi Binsoa HaAron</h2>
+
+<p>On Shabbos the Torah is taken out to the verse <span class="heb-inline">אתה הראת לדעת</span>. Why on Shabbos, and not during the week, when the congregation says <span class="heb-inline">אל ארך אפים</span>? The weekday verse speaks of forgiveness and pardon, “a weekday matter.” <span class="heb-inline">אתה הראת</span> was said of the giving of the Torah, in Parshas Vaeschanan, and the Torah was given on Shabbos; therefore, before the scroll is taken out on Shabbos, we recall that fact. The lecturer points to the Tur at Orach Chayim 281.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a></p>
+
+<blockquote>
+<div class="heb">אַתָּה הָרְאֵתָ לָדַעַת כִּי יְהוָה הוּא הָאֱלֹהִים אֵין עוֹד מִלְּבַדּוֹ</div>
+<div class="trans">You have been shown, that you may know, that Hashem is God; there is none else besides Him.</div>
+<div class="source">Devarim 4:35</div>
+</blockquote>
+
+<p>Here the two rites differ again, as they did over the song of the day. The Tur, who lived in Spain in the second half of his life, reports that the Spanish custom is to say <span class="heb-inline">אתה הראת</span>; Nusach Sefard adopted it, while Nusach Ashkenaz, the lecturer says, does not say it at all. On Shabbos it takes the place of the weekday <span class="heb-inline">אל ארך אפים</span>. The lecturer adds that the other weekday verses are left out on Shabbos, though he had said earlier that Shabbos has other verses of its own, and the point is not worked out here. After it comes <span class="heb-inline">ויהי בנסע הארן</span>, which, as noted, is not in Soferim but is entirely fitting: the Torah is being taken out of the ark, and the ark is moving.<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> Then <span class="heb-inline">בריך שמיה</span>.</p>
+
+<h2>IV. The Mi Sheberach After Each Aliyah</h2>
+
+<p>On Shabbos a <em class="term">Mi Sheberach</em> (<span class="heb-inline">מי שברך</span>) is said after every <em class="term">aliyah</em> (<span class="heb-inline">עליה</span>). On Monday and Thursday there is none, unless it is for a woman who has given birth or for someone sick. Where does the practice of stopping in the middle of the reading come from? The lecturer’s first answer is brief: “For money.”</p>
+
+<h3>The Pledge</h3>
+
+<p>The Midrash in Vayikra Rabbah and Kohelet Rabbah, he says, reflects an ancient custom of giving the man called to the Torah a blessing, <span class="heb-inline">מי שברך אבותינו אברהם יצחק ויעקב</span>, in the merit of the Torah open on the <em class="term">bimah</em>.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a> The point of the Mi Sheberach, in the lecturer’s view, is the gift: the pledge to the synagogue. One who pledges charity in public and fails to pay brings a warning that, the lecturer says, he does not want to repeat from the Midrash “because it is very scary.” The Gemara, in Shabbos 32b, says that through the sin of unfulfilled vows (<span class="heb-inline">בעוון נדרים</span>) a man’s wife and children die, Heaven forbid; the lecturer, who named Nedarim, cites it together with the verses <span class="heb-inline">מוצא שפתיך תשמור</span> and <span class="heb-inline">לא יחל דברו ככל היוצא מפיו יעשה</span>.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> For this reason the <em class="term">gabbai</em> should always add <em class="term">bli neder</em>.</p>
+
+<p>As to practice, when the <em class="term">gabbai</em> gives him an aliyah and recites <span class="heb-inline">בעבור שצוה לברכם</span>, the lecturer tells him that it should be <span class="heb-inline">בעבור שיתן מתנה</span>, “because he will give a gift,” to the synagogue, “otherwise there is no point to the Mi Sheberach.” The other wording is how rabbis think they can “get away” without a pledge. This, he says, was the original custom; he gives no source for it.</p>
+
+<h3>The Prayer for the Sick</h3>
+
+<p>The lecturer gave special attention to the Mi Sheberach for the sick after a woman of the <em class="term">ezras nashim</em> told him that she comes to shul on Shabbos morning above all for that moment. She has a list of sick people for whom she prays, and she asked why everyone was talking. He took it seriously, and the <em class="term">gabbai</em> now calls for quiet before it. People wait a whole week to say a Mi Sheberach when the Torah is open, so that the merit of the Torah may bring healing.</p>
+
+<p>But how can healing be requested on Shabbos? The Shabbos Amidah has no <span class="heb-inline">רפאנו</span>: personal requests are not made on the day when it is as though all one’s work is done (<span class="heb-inline">כל מלאכתך עשויה</span>), a day that is all Shabbos (<span class="heb-inline">יום שכולו שבת</span>). The Beis Yosef was asked exactly this and answered, in the responsum <em class="term">Avkas Rochel</em>, that a Mi Sheberach is not a prayer (<em class="term">tefillah</em>) but a blessing (<em class="term">berachah</em>): it lets the family know that we are thinking of the patient, and that the merit of the Torah should bring healing; it is “a simple blessing,” not a request. And therefore, he concludes, <span class="heb-inline">הנח להם לישראל</span>: let Israel follow its custom.<a class="footnote-ref" id="ref18" href="#fn18">[18]</a></p>
+
+<h2>V. The Haftarah: Two Accounts of Its Origin</h2>
+
+<p>After the seven aliyos of Shabbos comes the <em class="term">haftarah</em> (<span class="heb-inline">הפטרה</span>), and with it the question of this discourse: where does it come from, and why do we read it? (The word is <em class="term">haftarah</em>, from <em class="term">maftir</em>; the common pronunciation <em class="term">haftorah</em> is a mistake, though “you are not going to go to Gehinnom for it.”) The lecturer says that the Rishonim are in “a very radical <em class="term">machloket</em>, extreme from one to the other,” and that “this is all Jewish history.”</p>
+
+<p>For Rashi, as recorded in the Sefer HaPardes, the reading of the Prophets was once a daily act of study, performed by every Jew after prayer, which survived only on Shabbos. For the Avudraham it was an emergency measure, enacted when a decree forbade the reading of the Torah itself, and it outlived the decree. The accounts differ in what the reading was at first (a custom of study, or a substitute for the Torah), in how often it was read (every day, or on Shabbos), and in its relation to the Torah portion (none at first, or the very subject of what could not be read). The two accounts are taken in turn; between them stands the later history of how the haftarah came to match the day.</p>
+
+<h2>VI. The First Account: Rashi and the Daily Reading of the Prophets</h2>
+
+<h3>Before Work, a Chapter of Nevi’im</h3>
+
+<p>Rashi, as the lecturer relays him from the <em class="term">Sefer HaPardes</em>, a book that is not Rashi’s commentary on Talmud or Torah but quotes much from him, says that in earlier times every single day, and not only on Monday and Thursday, the custom was that after prayer everyone sat down and read a chapter of Nevi’im. “You ever knew this? Every day after Shacharis, you close the siddur.” The purpose was that before going to work a man should have read <em class="term">mikra</em> (<span class="heb-inline">מקרא</span>, the Chumash), <em class="term">navi</em> (<span class="heb-inline">נביא</span>), <em class="term">mishnah</em> and <em class="term">beraisa</em>, and, as the lecturer gives the list, perhaps also <em class="term">gemara</em>.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a></p>
+
+<p>The lecturer shows that the daily prayers already fulfil most of this. <em class="term">Mikra</em> is the Shema. The Gemara in Menachos 99b teaches that one who recites the Shema morning and evening has fulfilled <span class="heb-inline">והגית בו יומם ולילה</span>, but that it is forbidden to say this before <em class="term">amei ha’aretz</em>, who would conclude that they need do nothing more.<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> <em class="term">Mishnah</em> is <span class="heb-inline">איזהו מקומן</span> (“What if you don’t say it? You’re in big trouble”) and <span class="heb-inline">אלו דברים</span> after the blessing over the Torah. <em class="term">Beraisa</em> is <span class="heb-inline">רבי ישמעאל אומר</span> and others throughout the service. “But when do we say Navi?” A member of the congregation pointed to <span class="heb-inline">ובא לציון גואל</span>.</p>
+
+<p>The lecturer restates Rashi’s list and, in his second statement, it has no Gemara in it: Scripture (the Prophets and the Writings), Mishnah and Beraisa. This, he says, is why he suspects that Rashi is quoting a custom from before the Gemara was written at all. It is his surmise, and he says so. What was read is not known. They may have begun from Yehoshua and read a chapter a day; “I don’t know if they read two chapters a day.” “You would happily be well versed in Tanach if we did this every day.”</p>
+
+<h3>Why the Reading Lapsed</h3>
+
+<p>The reason it stopped, the lecturer says, is socioeconomic. Rashi writes <span class="heb-inline">רבתה העניות</span>, “poverty has grown,” and the lecturer finds it “sad to read”: people were poor and had to earn a living, and one cannot keep them in shul an extra half hour for a set study. “You can invite them to a <em class="term">daf</em>, but to force them to say it’s part of davening, don’t take off your tefillin until you read a chapter in Nevi’im, that we can’t do anymore.” The custom was nullified except on Shabbos, when no one is rushing to work.</p>
+
+<p>On this account the haftarah is a law of every day, with at first nothing to do with the weekly Torah portion, kept only on Shabbos because it could no longer be kept daily. The lecturer calls this “a startling <em class="term">chiddush</em>; people don’t know this.” He adds, without citing a source, that in Rashi’s view the reading had blessings before and after, and that it did not have to match the event (<span class="heb-inline">מעין המאורע</span>) but could be simply the next chapter.</p>
+
+<h2>VII. How the Haftarah Came to Match the Day</h2>
+
+<p>On any account the haftarah we read is tied to the day, or to the portion. The lecturer treats this as the development of the first account, but it is not Rashi’s own view, and some of his examples are later than Rashi. They are gathered here as a separate matter.</p>
+
+<h3>The Haftarah of the Day, and the Groom</h3>
+
+<p>On Yom Tov, on Rosh Chodesh, and on a Shabbos that falls the day before Rosh Chodesh, a haftarah of the day is read in place of one that matches the portion. The lecturer reports a custom, which he attributes to the Rema, that when there was a groom in shul on the Shabbos of his <em class="term">aufruf</em>, the haftarah <span class="heb-inline">שוש אשיש</span> was read, a chapter of Yeshayahu from the seven of consolation (<span class="heb-inline">שבע דנחמתא</span>) that speaks of a groom and a bride. The Sefardim adopted it, he says, and “we don’t do it.” He asked how a large Sefardic shul with a groom every week could manage, since the haftarah of the week would then never be read.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a></p>
+
+<h3>The Death of the Rambam and of Rav Sherira Gaon</h3>
+
+<p>The lecturer gives a still greater <em class="term">chiddush</em>, which, he says, he learned only that morning. The Rishonim write, he reports, that when something significant happened that week they did not read the haftarah of the week but the one that fit the event. When the Rambam died, on 20 Tevet in the year 1204 and in Egypt, a chapter of Shmuel was read that Shabbos: the capture of the ark of the covenant by the Philistines (I Shmuel 4). The Rambam, the lecturer says, was “like the ark of the covenant, the power of Torah of his generation”; the ark was taken into exile, and his soul went up to Heaven. When Rav Sherira Gaon died, in the Geonic era, around the year 1000, a special chapter was read on the death of a righteous man. “We don’t do that today.” This is a tradition the lecturer relates, and he names none of the Rishonim who record it. He himself gave the date of the Rambam’s yahrzeit only as “somewhere in Shevat,” and spoke of Eretz Yisrael; the date and place are given here as they are known.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a></p>
+
+<h3>The Triennial Cycle and the Haftarah of the Portion</h3>
+
+<p>Where the Torah was read over three years, as it was in Eretz Yisrael, each portion was much shorter, and the Acharonim point out that the haftarah was chosen to match whatever small portion was read that week; there were therefore many more haftaros than there are now. The lecturer brings Benjamin of Tudela, the twelfth-century traveller, who writes that in Cairo, “right next door to the Rambam’s shul,” there was another congregation that kept the ancient custom, completing the Torah only once in three years, with a haftarah connected to each portion.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a></p>
+
+<h3>Machar Chodesh</h3>
+
+<p>One haftarah seems to match neither the portion nor the day: <em class="term">Machar Chodesh</em> (<span class="heb-inline">מחר חודש</span>), which concerns tomorrow and not today. The lecturer calls it an excellent question, which the Magen Avraham raises, and says that he has no good answer: “the Magen Avraham doesn’t like it.” Our practice, he says, is to read the haftarah of Rosh Chodesh when Shabbos is itself Rosh Chodesh, and not Machar Chodesh; what he says of the practice of others is not clear.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a></p>
+
+<h2>VIII. The Second Account: The Avudraham and the Greek Decree</h2>
+
+<h3>A Substitute for the Torah</h3>
+
+<p>The second view is that of the Avudraham. He brings, the lecturer says, that once there was a decree against reading from the Torah, against reading the portion. The Sages, “or whoever was there at the time,” feared that the people would forget the Torah reading: they would come to shul, pray Shacharis, then Musaf, “no break,” and go home. So they enacted that, since the Torah could not be read, at least twenty-one verses of the Prophets should be read, and someone rises and makes a blessing. The haftarah was to be on the subject of what would have been read had it not been for the decree, that Shabbos’s portion; so that, “as if you read in the Torah,” the people would not forget what reading is. When the decree was lifted they returned to reading the Torah, and the haftarah remained.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a></p>
+
+<p>On this account there was never a custom of reading the haftarah every day, as Rashi has it, and the lecturer calls this too “a major <em class="term">machloket</em> in Jewish history.” What then of the daily reading of the Prophets? The point made by the member of the congregation stands: <span class="heb-inline">ובא לציון גואל</span> is a verse of Nevi’im, and a few other verses of the Prophets are said in the prayers, so that every Jew fulfils the duty of learning Nevi’im each day through them.</p>
+
+<h3>Why Twenty-One, and Why Seven?</h3>
+
+<p>Twenty-one, the lecturer explains, is seven aliyos with a minimum of three verses each (3 × 7). The reasoning is that the haftarah stands in the place of the reading that was forbidden, and so takes its measure from it: the missing reading was seven readers each reading at least three verses, and the substitute is of the same measure and of the same subject. The lecturer confirms the logic from Yom Tov, where the reading is shorter and there are fewer aliyos: there, fewer verses are needed. The requirement of twenty-one, as the Rema puts it, applies to Shabbos.</p>
+
+<p>Why there are seven aliyos at all is a separate question. The Gemara in Megillah 23a gives several reasons, one of which is the seven officers who saw the king’s face at the beginning of the Megillah of Esther, “a very mystical piece of Gemara that nobody really understands.” The lecturer adds an idea from one of the Acharonim, which he thinks the Levush brings and which the Rishonim do not give: some people in earlier times came to shul only on Shabbos, villagers who had no <em class="term">minyan</em> at home; having missed the <em class="term">Barchu</em> of the week, they hear seven aliyos, each with a blessing, to make up for it.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a></p>
+
+<h3>When Was the Decree? Elijah Levita and the Greek Kingdom</h3>
+
+<p>The Avudraham gives no date. The lecturer puts the question: when was there a decree that one could pray but not read from the Torah, though one could read from the Prophets? The answer, he says, is in the <em class="term">Sefer HaTishbi</em> (<span class="heb-inline">ספר התשבי</span>), written in the sixteenth century by Rabbi Eliyahu Bachur, Elijah Levita, and printed in his lifetime. According to the Tishbi, as the lecturer relays it, the decree was that of the Greek kingdom (<em class="term">malchus Yavan</em>, <span class="heb-inline">מלכות יון</span>), in the days of Antiochus, who ruled Eretz Yisrael and forbade the reading of the Torah each Shabbos. Since then, Levita writes, they read from the Prophets every week, and the enactment remained.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a></p>
+
+<div class="callout">
+  <span class="label">Sidebar: Elijah Levita and the Christian Hebraists</span>
+  <p>Elijah Levita (<span class="heb-inline">אליהו בחור</span>), whom the lecturer calls “more known by Christians than by Jews,” was born in Germany and lived in Italy in the sixteenth century, a brilliant man and one of the most prolific writers on Hebrew grammar. He taught Jews and, more importantly, the early Christian Hebraists: the priests and cardinals of the age who took up Hebrew and studied Tanach, Mishnah, Tosefta and Gemara. Some became real scholars, the lecturer says, and many Christian theologians afterward took Chazal and dressed them in Christian garb. Levita boarded in the house of one of the leading cardinals of his day, whose name the lecturer could not recall, edited his books, and taught him; he was unmarried (a <em class="term">bachur</em>, whence his name). Another of his students, the lecturer remembers, was Sebastian Münster.<a class="footnote-ref" id="ref28" href="#fn28">[28]</a></p>
+  <p>The lecturer observes that teaching Torah to a non-Jew is forbidden (Sanhedrin 59a), and that Rav Moshe Feinstein ruled that where a rabbi teaches the Jewish public and a non-Jew happens to enter, there is no prohibition. Levita, he supposes, drew criticism in his own day, and it is hard to say what came of it: his students did not convert. Later Acharonim were not sure that all he wrote could be relied on, but it entered our literature and the Poskim.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a></p>
+</div>
+
+<h3>The Levush: Why Never Kesuvim</h3>
+
+<p>The Levush adds, the lecturer says, something “startling” that he does not understand: the decree forbade not only the Torah but also the Writings (<em class="term">Kesuvim</em>, <span class="heb-inline">כתובים</span>), and permitted only the Prophets. “Maybe the Greeks thought the Prophets were all right to read.” That, according to the Levush, is why a haftarah is never taken from Kesuvim, a rule that the lecturer says is found in a Gemara in Megillah “but nobody knows why.” The Levush, in the lecturer’s words, tells us why; “it’s all history.”<a class="footnote-ref" id="ref30" href="#fn30">[30]</a></p>
+
+<h2>IX. Two Accounts of One Reading</h2>
+
+<p>The lecturer does not say which account he prefers. Set side by side, they agree on one thing: the haftarah as read on Shabbos is a remnant. On Rashi’s account it is what remains of a daily study that people could no longer afford, kept on the one day when no one is rushing to work. On the Avudraham’s it is what remains of a substitute for a Torah reading that people were once forbidden to make, kept after the decree was lifted. The accounts need not exclude each other entirely. The lecturer shows that the verses of the Prophets already in the daily prayers, among them <span class="heb-inline">ובא לציון גואל</span>, answer the duty of learning Nevi’im each day, which is how the Avudraham’s view meets Rashi’s. Both then lead to the haftarah as we have it, tied to the portion and to the day, as described in section VII. Which of the two is the older the lecturer does not decide; he presents both, as he says, as history.</p>
+
+<section class="mareh">
+<h2><span class="heb">מראה מקומות</span> &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<p style="text-align:center;font-style:italic;color:#555;font-size:14px;margin-bottom:18px;">Each note gives the source first, then the report or elaboration. Where a statement is the lecturer’s report, the note says so; where a point is the editor’s, it is marked as such.</p>
+<ol>
+<li id="fn1">
+  <span class="short">Dedication: the <em>yahrzeit</em> of <span class="heb-inline">מרים בת חיים יצחק</span>.</span>
+  <span class="expanded"> The lecturer dedicated the morning’s study and breakfast, sponsored by a friend of the shul, to the memory of his mother, <span class="heb-inline">מרים בת חיים יצחק</span>, and asked that her soul have an <span class="heb-inline">עליה</span> and that it bring salvation to all Israel. The sponsor is not named here. <strong>Date:</strong> the day of the yahrzeit is not stated; the family should confirm the name and the wording before this edition is set.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short">Mishnah <span class="heb-inline">תמיד</span> 7:4: the psalm of each day; Psalm 92 for Shabbos.</span>
+  <span class="expanded"> The Mishnah lists the psalm that the Levites sang over the wine libation of the daily offering: Psalm 24 on Sunday, 48 on Monday, 82 on Tuesday, 94 on Wednesday, 81 on Thursday, 93 on Friday, and on Shabbos Psalm 92, <span class="heb-inline">מזמור שיר ליום השבת</span>. <strong>Verified</strong> (Tamid 7:4). The lecturer’s account of the two rites, that Nusach Sefard says Psalm 92 both among the Verses of Praise and after Shacharis, and that Nusach Ashkenaz says it after Musaf, is his report of the custom.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short">Magen Avraham and Aruch HaShulchan, <span class="heb-inline">אורח חיים</span> 132: the song of the day after Musaf.</span>
+  <span class="expanded"> The lecturer reports that the Magen Avraham finds it illogical for Ashkenazim to say the song of the day after Musaf, since the Musaf offering had its own song, and that the Aruch HaShulchan asks why the Musaf song is not said. <strong>Uncertain.</strong> The Magen Avraham on siman 132 (the comment on <span class="heb-inline">השיר</span>, apparently seif katan 4), as consulted, states the custom as saying the song of the day on days that have a Musaf both after Shacharis and after Musaf, which is more nuanced than the lecturer’s summary and does not plainly say that the Sefardic placement alone is correct. The Aruch HaShulchan on siman 132 refers the matter to siman 133, and the text consulted did not contain the question about the Musaf song. The lecturer’s attributions are therefore given in the text as his understanding.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">מסכת סופרים</span> on the songs of the Musaf offerings.</span>
+  <span class="expanded"> The lecturer says that the end of Masechet Soferim, printed after Avodah Zarah, records the songs of each Musaf: Rosh Chodesh, Shabbos, Yom Tov, Shavuos, Sukkos and Pesach. <strong>Not located.</strong> The chapter was not found, so the lecturer’s reply is given as his report. Immediately after it he makes a remark, apparently in jest, about learning Torah whenever there is a Musaf; it cannot be made out and is not reproduced.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short">Magen Avraham, <span class="heb-inline">אורח חיים</span> 132: no song after Minchah, since the evening libation might fall after sunset.</span>
+  <span class="expanded"> The lecturer says that the evening <span class="heb-inline">תמיד</span> was at times offered so late that the libation fell after sunset, and that the Levites did not sing by night; hence no song is said at Minchah. <strong>Verified</strong> for the Magen Avraham’s wording: <span class="heb-inline">שא״א שירה אחר תמיד של בין הערבים</span>. The Magen Avraham’s reasoning about sunset is given as the lecturer relates it.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short">Nitra (Borough Park); the Young Israel of Woodmere.</span>
+  <span class="expanded"> The lecturer reports that Nitra, a shul in Borough Park, moved the song of the day to after Shacharis, and that some thirty years ago the Young Israel of Woodmere moved both the song of the day and <span class="heb-inline">אנעים זמירות</span> to after Shacharis, not for the Magen Avraham’s reason but because of the disorder after Musaf. <strong>Uncertain.</strong> This is communal history told orally, in part to the lecturer on the spot, and could not be checked. The names of the rabbi and of the committee are omitted.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">אור זרוע</span>: the merit of buying <span class="heb-inline">הוצאת ספר תורה</span>.</span>
+  <span class="expanded"> The lecturer cites the Or Zarua, Rabbi Yitzchak ben Moshe of Vienna, as the source for the custom of buying the honor of taking out the Torah, a great merit and an honor to the Torah (<span class="heb-inline">כבוד התורה</span>). <strong>Not located.</strong> The passage was not found. The identification of the author, of his city and of the century, and the description of the book as recording many halachos, are the lecturer’s, and agree with the usual account of the Or Zarua. The identity of the buyer in the lecturer’s shul is omitted.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">חיד״א</span>: an ancient custom (<span class="heb-inline">מנהג ותיקין</span>) to give the opening of the ark to a man whose wife is in her ninth month.</span>
+  <span class="expanded"> The lecturer says that the Chida records this as an ancient custom and explains it by the opening of the womb (<span class="heb-inline">פתיחת הרחם</span>) and the auspicious moment at the open ark. <strong>Not located.</strong> No title of a work was given and none is supplied. The reasons offered for a groom, the same auspicious moment or a preparation for a mitzvah (<span class="heb-inline">הכשר מצוה</span>), came from members of the congregation; the lecturer’s reply, <span class="heb-inline">קען זיין</span>, “it could be,” is not an endorsement, and they are not given as a source. The blessing for a girl was suggested from the room, and the lecturer agreed.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">מסכת סופרים</span>: ancient customs of Eretz Yisrael; the verses when the Torah is taken out; <span class="heb-inline">בריך שמיה</span> and the Zohar.</span>
+  <span class="expanded"> The lecturer calls Soferim chiefly a record of ancient customs of Eretz Yisrael, in dispute with those of Bavel. He says that its date, authorship and circulation are still debated, and that he is reading a book on it by a professor in Eretz Yisrael, whose name is not given. <strong>Verified</strong> (in part). Soferim 14:8, in the text consulted, has a long series of verses (it opens with <span class="heb-inline">אשרי יושבי ביתך</span> and <span class="heb-inline">אין כמוך באלהים</span>) and does not contain <span class="heb-inline">אתה הראת</span>; the text says “a long series” and not that it has more verses than the siddur. That <span class="heb-inline">בריך שמיה</span> is absent from Soferim and comes from the Zohar is the lecturer’s statement; the Zohar is not cited here. His estimate that the full order would add half an hour or an hour is his own.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">אור זרוע</span>: the spelling of <span class="heb-inline">עקיבא</span> and <span class="heb-inline">עקיבה</span> in a <span class="heb-inline">גט</span>; Tehillim 97:11.</span>
+  <span class="expanded"> The lecturer says that the Or Zarua, writing a <span class="heb-inline">גט</span>, had to decide between <span class="heb-inline">עקיבא</span> (the Bavli, the Mishnah) and <span class="heb-inline">עקיבה</span> (the Yerushalmi, the Tosefta), and that in his introduction he describes a dream in which he was shown <span class="heb-inline">אור זרוע לצדיק ולישרי לב שמחה</span>. <strong>Verified</strong> as to the verse (Tehillim 97:11) and its final letters, which are ר, ע, ק, י, ב, ה (computed here). The lecturer reads the first letter as the ר of <span class="heb-inline">רבי</span>; it is the last letter of the first word of the verse, and the letters are printed in the text as they stand. <strong>Not located:</strong> that the Or Zarua tells the dream in his introduction, and the pattern of spelling in the four sources, which is a sweeping claim about manuscripts and printings. The explanation of the title through the dream is the lecturer’s.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short">Spellings of names in <span class="heb-inline">גיטין</span>: Akiva, Pinchas.</span>
+  <span class="expanded"> The lecturer says that some authorities require two <span class="heb-inline">גיטין</span>, one with each spelling; that the question of the names of men and women in <span class="heb-inline">גיטין</span> is a great dispute; and that someone “wrote a whole sefer” on it, without saying who. A related exchange on the name Pinchas, with or without a <span class="heb-inline">י</span>, and on the letters added to European names, is not reproduced. He has not asked a leading expert in the writing of <span class="heb-inline">גיטין</span> what the practice is. <strong>Not checked.</strong> The reference to a discussion at Gittin 129 appears to come from the room.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">אור זרוע</span>: in the Rhineland nothing was said when the Torah was taken out.</span>
+  <span class="expanded"> The lecturer reports that the Or Zarua says he travelled in Ashkenaz and Poland in the thirteenth century; that in the Rhine region (<span class="heb-inline">מדינת ריינוס</span>) the scroll was taken to the <span class="heb-inline">בימה</span> and read with nothing said; and that he urged the return of the custom of Soferim, giving an abbreviated form. <strong>Not located.</strong> The passage was not found, and the account is not independently confirmed.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">שבלי הלקט</span>; Rav Avraham the doctor of Rome; the four families exiled by Titus.</span>
+  <span class="expanded"> The lecturer says that the Shibbolei HaLeket, which the Beis Yosef quotes often in the laws of prayer, was written by the son of Rav Avraham the doctor, a leading authority and head of a yeshivah in Rome, of the family of the <span class="heb-inline">ענוים</span>. <strong>Uncertain.</strong> The lecturer gave the author’s name hesitantly (“I think”), and it is not repeated. The legend of the four noble families of Jerusalem exiled to Rome by Titus (the <span class="heb-inline">אדומים</span>, the <span class="heb-inline">תפוחים</span>, the <span class="heb-inline">ענוים</span> and a fourth whom the lecturer did not name) is said by him to be recorded by the Rishonim; the source was not located. He began by saying that Titus exiled them to Bavel and corrected himself to Rome. Whether it was the Or Zarua or Rav Avraham who restored the verses is not settled by the lecturer; the text gives the Or Zarua as the main account, following his statement that our practice comes from him, and Rav Avraham as a variant.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short">Tur, <span class="heb-inline">אורח חיים</span> 281; Devarim 4:35: <span class="heb-inline">אתה הראת</span> before the Torah is taken out.</span>
+  <span class="expanded"> The Tur states that in Spain the custom is to say <span class="heb-inline">אתה הראת</span> before the scroll, because it was said of the receiving of the Torah, which was given on Shabbos. <strong>Verified</strong> (Tur, Orach Chayim 281: <span class="heb-inline">ומנהג בספרד לומר אתה הראת קודם ס״ת לפי שנאמר על קבלת התורה והיא ניתנה בשבת</span>), and Devarim 4:35. That the Tur lived in Spain in the second half of his life is the lecturer’s statement and is accurate in outline; it was not checked. That Nusach Ashkenaz does not say <span class="heb-inline">אתה הראת</span> is the lecturer’s report; he said that he has not prayed Nusach Ashkenaz for a long time, and confirmed it with those present. <strong>Open:</strong> he says that the other weekday verses are left out on Shabbos, whereas earlier he had said that Shabbos has other verses that differ from the weekday ones; the text states only the first verse and leaves the rest to a printed siddur.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short">Bamidbar 10:35: <span class="heb-inline">ויהי בנסע הארן</span>.</span>
+  <span class="expanded"> <strong>Verified</strong> (Bamidbar 10:35). That the verse suits the moving ark, and that it is not in Soferim, are the lecturer’s remarks; its absence is consistent with Soferim 14:8 as consulted.</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">ויקרא רבה</span> and <span class="heb-inline">קהלת רבה</span>: a blessing for the one called to the Torah.</span>
+  <span class="expanded"> The lecturer says that the Midrash in Vayikra Rabbah and in Kohelet Rabbah reflects an ancient custom of blessing the man called up, in the merit of the Torah open on the <span class="heb-inline">בימה</span>, with <span class="heb-inline">מי שברך אבותינו אברהם יצחק ויעקב</span>. <strong>Not located.</strong> The passages were not found, and no chapter was given. His statements that the point of the Mi Sheberach is the pledge, and that <span class="heb-inline">בעבור שיתן מתנה</span> is the original wording, are his own and no source is cited for them.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">שבת</span> 32b: through the sin of unfulfilled vows (<span class="heb-inline">בעוון נדרים</span>) a man’s wife and children die; Devarim 23:24; Bamidbar 30:3.</span>
+  <span class="expanded"> <strong>Corrected.</strong> The lecturer attributes <span class="heb-inline">בעוון נדרים אשתו ובניו מתים</span> to “the Gemara in Nedarim.” It was not found in Nedarim; it is in Shabbos 32b, where a man’s wife dies (Rabbi Natan) and his young children die (Rabbi Yehudah HaNasi) through the sin of unfulfilled vows. The text gives the correct source. What “the Midrash” says, which the lecturer said was too frightening to repeat, is not tied to a source and is given as his; the Gemara is the only source named here. The verses are <span class="heb-inline">מוצא שפתיך תשמור</span> (Devarim 23:24) and <span class="heb-inline">לא יחל דברו ככל היוצא מפיו יעשה</span> (Bamidbar 30:3), identified from the standard text.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><span class="heb-inline">בית יוסף</span>, responsum <span class="heb-inline">אבקת רוכל</span>: the Mi Sheberach is a berachah, not a tefillah.</span>
+  <span class="expanded"> The lecturer reports the Beis Yosef’s answer to how a prayer for the sick can be said on Shabbos: it is a blessing and not a petition, and it lets the family know that the merit of the Torah should bring healing; hence <span class="heb-inline">הנח להם לישראל</span>. <strong>Not located.</strong> The responsum was not found, and the account is kept as the lecturer’s. The omission of petitions from the Shabbos Amidah is treated in the chapter of this series on the Shabbos Shemoneh Esrei.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short"><span class="heb-inline">ספר הפרדס</span>, in the name of Rashi: a chapter of Nevi’im read daily; <span class="heb-inline">רבתה העניות</span>.</span>
+  <span class="expanded"> The lecturer reports Rashi, as recorded in the Pardes, that a chapter of the Prophets was read every day after prayer, so that before work a man would have read Mikra, Nevi’im, Mishnah and Beraisa (and perhaps Gemara), and that the custom lapsed through poverty (<span class="heb-inline">רבתה העניות</span>), remaining only on Shabbos. <strong>Uncertain.</strong> The passage was not located, and Rashi’s wording is quoted from the lecturer. The Pardes is generally ascribed to Rashi’s school and not to Rashi himself, as the lecturer’s own description (a book that quotes much from him) suggests; the text therefore says “as recorded in the Pardes.” Whether the first list includes Gemara is unclear in the lecturer’s words; in his second statement the list has none, and the inference that the custom may predate the Gemara is his surmise. The editor’s identification of the prayers, from general knowledge and not checked against a text: Shema as Mikra; <span class="heb-inline">איזהו מקומן</span> (Zevachim, chapter 5) and <span class="heb-inline">אלו דברים</span> (Mishnah Peah 1:1) as Mishnah; <span class="heb-inline">רבי ישמעאל אומר</span> (the introduction to the Sifra) as Beraisa; <span class="heb-inline">ובא לציון גואל</span> (Yeshayahu 59:20) as Nevi’im.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">מנחות</span> 99b: Shema morning and evening fulfils <span class="heb-inline">והגית בו</span>; not to be said before <span class="heb-inline">עמי הארץ</span>.</span>
+  <span class="expanded"> <strong>Corrected; verified.</strong> The lecturer gives the daf as <span class="heb-inline">צ</span> (90). The passage is Menachos 99b: Rabbi Yochanan, in the name of Rabbi Shimon bar Yochai, teaches that one who recites the Shema morning and evening has fulfilled the verse <span class="heb-inline">לא ימוש ספר התורה הזה מפיך</span> (Yehoshua 1:8), and that it is forbidden to say this in the presence of <span class="heb-inline">עמי הארץ</span>. The text gives 99b.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short">The haftarah <span class="heb-inline">שוש אשיש</span> for a groom (Yeshayahu 61:10).</span>
+  <span class="expanded"> The lecturer says that the Rema brings a custom of reading <span class="heb-inline">שוש אשיש</span> on the Shabbos of an <span class="heb-inline">אויפרוף</span>, in place of the haftarah of the week, and that the Sefardim adopted it. <strong>Verified</strong> only that <span class="heb-inline">שוש אשיש</span> opens Yeshayahu 61:10 and belongs to the haftaros of consolation, as the lecturer says. <strong>Not located:</strong> the ruling is not in the Rema’s glosses on Orach Chayim 282 and 284, as consulted, and it is therefore printed as the lecturer’s report and attributed to the Rema on his authority. His remark that “we don’t do it” describes his own shul; that the Sefardim do read it was told to him by a member of the congregation.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">Haftaros on the death of the Rambam and of Rav Sherira Gaon.</span>
+  <span class="expanded"> The lecturer reports that the Rishonim write that after the Rambam died a chapter of Shmuel on the capture of the ark by the Philistines was read as the haftarah throughout Eretz Yisrael, and that after Rav Sherira Gaon died a chapter on the death of a righteous man was read. <strong>Not located.</strong> The Rishonim are not named. <strong>Corrections:</strong> the lecturer forgot the date of the Rambam’s yahrzeit (“somewhere in Shevat”) and spoke of Eretz Yisrael; the Rambam died on 20 Tevet (1204) in Egypt, and tradition places his burial in Tiberias, which is the editor’s general knowledge and was not checked. The chapter, I Shmuel 4, and the dating of Rav Sherira Gaon to around the year 1000, are also the editor’s. Since Rashi died in 1105, a haftarah chosen for the Rambam’s death cannot belong to Rashi’s own account, and the text places it among the later developments.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short">Benjamin of Tudela; the three-year cycle and its haftaros.</span>
+  <span class="expanded"> The lecturer says that the Acharonim point out that, where the Torah was read in three years, the haftarah was chosen to match the smaller portion read each week, so that there were many more haftaros than now; that a member of the congregation added that the Chumash was divided differently; and that Benjamin of Tudela records that in Cairo, beside the Rambam’s synagogue, there was another congregation keeping the ancient custom of completing the Torah every three years, with a haftarah connected to each portion. <strong>Uncertain.</strong> The Acharonim are not named, and the passage of Benjamin of Tudela was not located. <strong>Corrected:</strong> the lecturer, and the question put to him, called the three-year cycle the custom of Bavel (<span class="heb-inline">בני בבל</span>). The triennial cycle is that of Eretz Yisrael; Bavel read the Torah in a year. The text says Eretz Yisrael, in keeping with the Cairo congregation, which is presumably the Palestinian-rite one (editor’s inference); the lecturer should confirm what he meant.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short">Magen Avraham: the haftarah <span class="heb-inline">מחר חודש</span> (I Shmuel 20:18).</span>
+  <span class="expanded"> The lecturer says that the Magen Avraham raises the question why <span class="heb-inline">מחר חודש</span>, which concerns the following day, is read at all, and that he has no good answer, since the Magen Avraham “doesn’t like it.” <strong>Not located.</strong> What he says of the practice of other communities is not clear from his words: he seems to say that <span class="heb-inline">מחר חודש</span> is read only when Shabbos is the day before Rosh Chodesh, but as he words it (Shabbos Rosh Chodesh with Sunday Rosh Chodesh) it is probably a slip for Shabbos <span class="heb-inline">ערב ראש חודש</span>. Only his statement of his own community’s practice, that on Shabbos Rosh Chodesh the haftarah of Rosh Chodesh is read, is clear. The verse is identified by the editor.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short"><span class="heb-inline">אבודרהם</span>; Rema on <span class="heb-inline">אורח חיים</span> 284: twenty-one verses on Shabbos.</span>
+  <span class="expanded"> The lecturer gives the Avudraham’s account of a decree against reading the Torah, the institution in its place of at least twenty-one verses of the Prophets, three for each of seven aliyos, and the lifting of the decree with the haftarah remaining. <strong>Verified</strong> (in part). The Rema on Orach Chayim 284 states <span class="heb-inline">ודוקא בשבת בעינן כ״א פסוקים ג׳ ג׳ פסוקים לכל א׳ מן הקרואים</span>, which fixes the measure for Shabbos only and is the basis of the text’s remark about Yom Tov. <strong>Not located:</strong> the Avudraham’s own words were not consulted. The lecturer’s statement that on Yom Tov, with a shorter reading and fewer aliyos, fewer verses are required is his. The explanation in the text, that the measure of the substitute is taken from the reading it replaces, is the lecturer’s reasoning as it can be gathered, and the Avudraham is not cited for it.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><span class="heb-inline">מגילה</span> 23a: the reasons for seven aliyos; the Acharon on <span class="heb-inline">ברכו</span>.</span>
+  <span class="expanded"> Megillah 23a gives several reasons for seven readers on Shabbos, among them the three keepers of the threshold, the five who saw the king’s face (II Melachim 25:18&ndash;19) and the seven officers who saw the king’s face (Esther 1:14); each reader reads at least three verses, twenty-one in all. <strong>Verified</strong> (Megillah 23a). The lecturer then reports an idea from one of the Acharonim, which he thinks the Levush brings, that those who came to shul only on Shabbos had missed the <span class="heb-inline">ברכו</span> of the week, and that seven aliyos, each with a blessing, make up for it; the Rishonim, he says, do not give it. <strong>Not located.</strong> The lecturer said that the villager had missed six recitations of <span class="heb-inline">ברכו את ה׳ המבורך</span> (first saying seven); the count is not explained, and the text says only that he had missed the <span class="heb-inline">ברכו</span> of the week. That the Levush brings it is the lecturer’s “I think.”</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">ספר התשבי</span> by <span class="heb-inline">אליהו בחור</span> (Elijah Levita): the decree of the Greek kingdom.</span>
+  <span class="expanded"> The lecturer says that Eliyahu Bachur writes in the Tishbi that the decree was that of the Greek kingdom, in the days of Antiochus, who ruled Eretz Yisrael and forbade the reading of the Torah each Shabbos, and that from then on the Prophets were read weekly. <strong>Not located.</strong> The Tishbi was not consulted. The lecturer began by speaking of Nebuchadnezzar, and the Greek kingdom and Antiochus were supplied from the room; the text therefore gives the dating only as his report of what Levita writes. <strong>Corrected:</strong> the lecturer calls the Tishbi a very rare book that was “discovered in the 1500s.” It was composed by Levita in the sixteenth century and, so far as the editor knows from general knowledge, printed in his lifetime (Isny, 1541); the text says so, and the point is to be checked before printing.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short">Elijah Levita; the Christian Hebraists; Sebastian Münster.</span>
+  <span class="expanded"> The lecturer describes Levita as a grammarian, born in Germany and living in Italy in the sixteenth century, who taught the Christian Hebraists, boarded with a leading cardinal, and taught Sebastian Münster. <strong>Uncertain.</strong> The lecturer could not recall the cardinal’s name. Levita is commonly said to have lived in the house of Cardinal Egidio da Viterbo; that is the editor’s identification from general knowledge, not the lecturer’s, and was not checked. The remarks that Levita would be put under a ban today and that he was unmarried (<span class="heb-inline">בחור</span>) are the lecturer’s; the derivation of his name from the latter is the editor’s gloss.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short"><span class="heb-inline">סנהדרין</span> 59a; <span class="heb-inline">אגרות משה</span>: teaching Torah where a non-Jew is present.</span>
+  <span class="expanded"> <strong>Verified</strong> for Sanhedrin 59a: a gentile who engages in Torah study is liable to death, for the Torah is “an inheritance of the congregation of Yaakov” (Devarim 33:4), ours and not theirs. <strong>Not located:</strong> the responsum of Rav Moshe Feinstein in the Igros Moshe, which the lecturer relates (a rabbi gave a daily class to which an educated non-Jewish woman came; Rav Moshe permitted it where the class is for the Jewish public and a non-Jew happens to enter); no volume or siman was given. A question from the room on a statement of the Rambam (<span class="heb-inline">ולא שבט לוי בלבד אלא כל איש ואיש</span>), to which the lecturer reacted with alarm and without a reasoned answer, is omitted; whether he wishes that exchange to appear is an open question.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short"><span class="heb-inline">לבוש</span>: the decree included Kesuvim.</span>
+  <span class="expanded"> The lecturer reports that the Levush adds that the decree forbade both the Torah and the Writings but permitted the Prophets, and that this is why a haftarah is never taken from the Writings. <strong>Not located.</strong> The Levush was not consulted. The lecturer cites him at siman <span class="heb-inline">רפ״א</span> (281), which is the siman of <span class="heb-inline">אתה הראת</span>; the Levush’s discussion of the haftarah is presumably at siman 284, where the Rema treats it, and the reference needs checking. The Gemara in Megillah that he has in mind, which limits the haftarah to the Prophets, is not identified. His wonder whether the Greeks thought the Prophets harmless is his own and not the Levush’s.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<ol>
+<li>On what date does the yahrzeit fall, and does the sponsor wish the name of his mother to be printed (note 1)?</li>
+<li>Where does the Magen Avraham say that the Ashkenazic custom does not make sense, given that the text consulted has the song said both after Shacharis and after Musaf, and where does the Aruch HaShulchan ask about the Musaf song (note 3)? Which chapter of Soferim records the Musaf songs, and what did the lecturer mean by his remark after it (note 4)?</li>
+<li>Where does the Or Zarua write of the purchase of the taking out of the Torah, of his dream, and of the Rhineland (notes 7, 10 and 12), and in which work does the Chida record the custom for the ninth month (note 8)? Who is the professor whose book on Soferim the lecturer is reading (note 9)?</li>
+<li>Did the Or Zarua or Rav Avraham the doctor of Rome restore the verses of Soferim, what was the fourth family exiled to Rome, and what is the name of the author of the Shibbolei HaLeket (note 13)?</li>
+<li>Does the lecturer hold that the other weekday verses are left out on Shabbos, as he said, or that Shabbos has other verses of its own, as he said earlier (note 14)?</li>
+<li>Which passages of Vayikra Rabbah and Kohelet Rabbah describe the blessing of the one called up, and where is the responsum Avkas Rochel (notes 16 and 18)?</li>
+<li>Where does the Sefer HaPardes say what the lecturer reports in Rashi’s name, does its list include Gemara, and is the Pardes Rashi’s own (note 19)?</li>
+<li>Where does the Rema bring the haftarah <span class="heb-inline">שוש אשיש</span> for a groom, and which Rishonim record the haftaros read after the death of the Rambam and of Rav Sherira Gaon (notes 21 and 22)?</li>
+<li>Did the lecturer mean Bavel or Eretz Yisrael for the three-year cycle, and where does Benjamin of Tudela describe the congregation beside the Rambam’s (note 23)?</li>
+<li>What is the lecturer’s account of the practice for Machar Chodesh, and where does the Magen Avraham raise the question (note 24)?</li>
+<li>What are the Avudraham’s and the Levush’s own words on the decree and on Kesuvim, and in which siman of the Levush are they (notes 25 and 30)? Which Gemara in Megillah limits the haftarah to the Prophets?</li>
+<li>How does the lecturer count the six recitations of <span class="heb-inline">ברכו</span> that a once-a-week worshipper missed (note 26)?</li>
+<li>Is the date of the Tishbi, and of its printing in the lifetime of its author, correctly given, and where is the passage on Antiochus (note 27)?</li>
+<li>In which volume of the Igros Moshe is the responsum on a non-Jew attending a class, and does the lecturer wish the exchange on the Rambam’s words to be printed (note 29)?</li>
+<li>Which of the two accounts of the origin of the haftarah does the lecturer himself prefer, if either?</li>
+</ol>
+</section>
+
+<footer>
+  Sefer Edition of Rabbi Ephrati’s discourse on <em>Tefillah</em>, 21 Cheshvan 5787. The edition takes the two origins of the haftarah as its spine and treats the service before the reading as its setting; presents the lecturer’s reports as reports; and records his uncertainties as he stated them.
+</footer>
+
+</body>
+</html>

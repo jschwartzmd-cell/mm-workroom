@@ -660,3 +660,32 @@ Modified: final MM/2025-11-10 — תחנון, נפילת אפים, and the Origi
 - **Not in HTML, checked for the Sefer Edition:** Menachos 99b — R. Yochanan in the name of R. Shimon bar Yochai: whoever recites Shema morning and evening has fulfilled "lo yamush"; forbidden to say so before amei haaretz (Rava disagrees) — VERIFIED. Bereishis 35:20 (Yaakov's matzevah over Rachel) — VERIFIED.
 - **Other (non-Sefaria) corrections made in the HTML:** Hebrew date ז' → י״ז כסלו תשפ״ו (7 Dec 2025 = 17 Kislev 5786, computed; Chanukah 2025 begins eve of 14 Dec); אלי סנא "no, no" → אליסנה (= אלי הושענא / קהלי הושענא, as the Rav said); "זאל זיין מקובל" → מ'האט געפועלט אלעס גוט; "Last Shabbos" → "Yesterday, at סעודה שלישית"; "You correctly added" → "A congregant rightly raised"; Ps 107:32 quotation fixed; ברוך שאמר named; ר״י גאת added; Ketzos → R' Akiva Eger.
 - **Total:** ~9 corrections to HTML (fn1 Mishnah locus; fn4 Moshe/Mei Marah attribution; fn6 spelling; fn7 mnemonic; fn13 attribution; chapter count; Gilyon author; Hebrew date; Elisana), ~14 verified, ~10 UNCERTAIN/not checkable. Sofer-over-Plaud: no Sofer .docx exists for this date; the clearer bilingual Plaud file (AUDIO-2025-12-07-11-11-51.txt) was authoritative over the garbled "Speaker 1" transcript and the summary. Modified: final MM/2025-12-07 — קריאת התורה, קדושה דסידרא, and למנצח מזמור לדוד.html
+
+## 2026-11-01 — שיר של יום, אתה הראת, and the Origins of the Haftarah
+
+- **fn1 (Mishnah Tamid 7:4)** — **VERIFIED**: daily psalms; Shabbos Ps 92.
+- **fn2 (Magen Avraham OC 132; Aruch HaShulchan OC 132)** — **UNCERTAIN**: MA 132 (seif katan ~4) as retrieved says our custom is shir shel yom after Shacharis *and* after Musaf, more nuanced than the Rav's summary; AH 132 refers to siman 133, Musaf-song question not found. Rav's attribution kept as his.
+- **fn3 (Magen Avraham OC 132; Masechet Soferim)** — **VERIFIED**: "שא"א שירה אחר תמיד של בין הערבים". Soferim chapter on Musaf songs **UNCERTAIN** (fetch failed).
+- **fn4 (Nitra; Young Israel of Woodmere, Rabbi Billet)** — **UNCERTAIN**: oral communal history.
+- **fn5 (Or Zarua, purchase of hotzaas sefer Torah)** — **UNCERTAIN**: not located.
+- **fn6 (Chida, ninth month)** — **UNCERTAIN**: not located; no sefer title supplied.
+- **fn7 (Masechet Soferim; Zohar for Brich Shmei)** — **VERIFIED** (partly): Soferim 14:8 has a long series of verses (Ashrei yoshvei veisecha; Ein kamocha), no Atah Hareita.
+- **fn8 (Or Zarua, Akiva/Akiva; Tehillim 97:11)** — **VERIFIED**: verse; last letters spell ר-ע-ק-י-ב-ה (computed). Dream story in Or Zarua's introduction **UNCERTAIN**.
+- **fn9 (gittin spellings; R. Moshe Langer)** — **UNCERTAIN**: not checkable.
+- **fn10 (Or Zarua, Rhineland)** — **UNCERTAIN**.
+- **fn11 (Shibbolei HaLeket; four families exiled to Rome)** — **UNCERTAIN**: author's name hesitant in recording; legend not located.
+- **fn12 (Tur OC 281; Devarim 4:35)** — **VERIFIED**: Tur Hebrew "ומנהג בספרד לומר אתה הראת קודם ס"ת לפי שנאמר על קבלת התורה והיא ניתנה בשבת"; Devarim 4:35 verified. (Plaud summary's "Tur Siman 281" confirmed; Tur 282 does not have it.)
+- **fn13 (Bamidbar 10:35)** — **VERIFIED**.
+- **fn14 (Vayikra Rabbah/Kohelet Rabbah; vows)** — **CORRECTED**: "Gemara in Nedarim" — not found in Nedarim 22a; the statement is Shabbos 32b (wife dies — R. Natan; children die — Rabbi Yehuda HaNasi / R. Elazar br. R. Shimon). Midrashim **UNCERTAIN**.
+- **fn15 (Beis Yosef, Avkas Rochel)** — **UNCERTAIN**: not retrieved.
+- **fn16 (Rashi, Sefer HaPardes)** — **UNCERTAIN**: not located.
+- **fn17 (Menachos 99b)** — **CORRECTED**: Rav said daf צ; passage is 99b. **VERIFIED**: R. Yochanan in the name of R. Shimon bar Yochai; forbidden before amei haaretz.
+- **fn18 (Rema, Sos Asis for chasan; Isaiah 61:10)** — **UNCERTAIN**: Rema glosses on SA OC 282/284 do not mention it; Isaiah 61:10 verified as the verse.
+- **fn19 (haftaros for Rambam and Rav Sherira)** — **UNCERTAIN**; flag: Rambam yahrzeit is 20 Tevet (Rav said "Shevat", forgot), died in Egypt (Rav said Eretz Yisrael).
+- **fn20 (Avudraham; Levush; SA OC 284)** — **VERIFIED** (Rema OC 284: "ודוקא בשבת בעינן כ"א פסוקים ג' ג' פסוקים לכל א' מן הקרואים"); Avudraham and Levush **UNCERTAIN**. Plaud's "Rav Drum" = אבודרהם.
+- **fn21 (Sefer HaTishbi; Elijah Levita; Münster)** — **UNCERTAIN**: not fetched; cardinal's name forgotten by Rav, none supplied.
+- **fn22 (Igros Moshe; Sanhedrin 59a)** — **VERIFIED**: Sanhedrin 59a. Igros Moshe **UNCERTAIN**.
+- **fn23 (Benjamin of Tudela)** — **UNCERTAIN**.
+- **fn24 (Megillah 23a; Levush on Barchu)** — **VERIFIED**: 3 guards + 5 + 7 officers (Esther 1:14); ≥3 verses/21 total. Levush **UNCERTAIN**.
+- **fn25 (Magen Avraham, Machar Chodesh)** — **UNCERTAIN**.
+- **Total:** 2 corrections (Nedarim→Shabbos 32b; Menachos 90→99b), ~9 verified (fully/partly), ~14 UNCERTAIN/not checkable. Sofer-over-Plaud: אבודרהם not "Rav Drum"; Shibbolei author hesitation; Langer not yet consulted. Flags: "חג כשר ושמח" at end of recording (odd, omitted); Hebrew date 21 Cheshvan 5787 is computed. Modified: final MM/2026-11-01 — שיר של יום, אתה הראת, and the Origins of the Haftarah — Or Zarua, Soferim, and the Greek Decree.html
