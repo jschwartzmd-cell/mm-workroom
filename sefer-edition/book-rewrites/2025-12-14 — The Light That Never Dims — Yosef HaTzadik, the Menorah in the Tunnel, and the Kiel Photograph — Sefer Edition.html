@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; The Light That Never Dims &mdash; Yosef HaTzadik, the Menorah in the Tunnel, and the Kiel Photograph</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">הָאוֹר שֶׁלֹּא יִדְעַךְ — פָּרָשַׁת וַיִּגַּשׁ וַחֲנֻכָּה</h1>
+  <div class="english-title">The Light That Never Dims: Yosef HaTzadik, the Menorah in the Tunnel, and the Kiel Photograph</div>
+  <div class="sub">A guest discourse for the eve of <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>)</div>
+  <div class="date">24 Kislev 5786 · 14 December 2025 · Sefer Edition</div>
+</header>
+<p class="lead">This short discourse, delivered as a guest at Young Israel of Woodmere on the eve of <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>), is not part of the lecturer’s usual series on <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>). It takes up a single question, what success means in the language of the Torah, and answers it from the story of <em class="term">Yosef HaTzadik</em> (<span class="heb-inline">יוסף הצדיק</span>) in <em class="term">Parashas Vayigash</em> (<span class="heb-inline">פרשת ויגש</span>).</p>
+<p class="lead">It then turns to the footage, published that week, of six hostages lighting the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) in a tunnel in Gaza, and to the photograph of a <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) in Kiel in 1932 that one of them recalled; and it closes with what the lecturer would have us carry from both into our own homes.</p>
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+<h2>I. A Story of Tears</h2>
+<h3>The Survivor</h3>
+<p>The lecturer opened with an encounter that has stayed with him. He sat once with an eighty-five-year-old Holocaust survivor, a group of them together in a shul, and told a story of <em class="term">mesiras nefesh</em> (<span class="heb-inline">מסירות נפש</span>) in the <em class="term">Shoah</em> (<span class="heb-inline">שואה</span>): of Jews who went up in flames <span class="heb-inline">על קידוש השם</span>. He was moved to tears. The survivor took him by the hand, called him by a Yiddish diminutive of his name, and asked in Yiddish why he was crying. The lecturer answered that he had never heard such a story, and that it moved him.</p>
+<p>The survivor answered: “I do not cry anymore.” As a child, in those years (the lecturer does not remember whether the survivor said he was ten or eight, or whether the year was 1939, 1943 or 1944), an SS officer once asked him a question. He did not speak German; he answered in Yiddish, and not as expected, and the officer slapped him. “I looked at that officer, that <span class="heb-inline">רשע ימח שמו</span>, and I realized that I did not shed a tear. I could not cry.”</p>
+<p>Then he spoke of <em class="term">Hallel</em> (<span class="heb-inline">הלל</span>), which he says every time he recites <em class="term">Hallel</em> (<span class="heb-inline">הלל</span>): <span class="heb-inline">כי חלצת נפשי ממות את עיני מן דמעה את רגלי מדחי</span><a class="footnote-ref" id="ref1" href="#fn1">[1]</a> “I think of myself. You saved me; You pulled me out of that <span class="heb-inline">מות</span>, out of the valley of death. But You also took away my ability to cry: <span class="heb-inline">את עיני מן דמעה</span>. I cannot cry. I have seen so much in my life.”</p>
+<p>Then he took the lecturer’s hand again and said, in Yiddish, <span class="heb-inline">אבער דו דארפסט וויינען</span>: “<em>You</em> should cry.” They wept together. The lecturer felt very close to him, and says the encounter gave him a whole new understanding of what kind of people we are speaking about.</p>
+<h3>A Guest’s Apology</h3>
+<p>The lecturer then thanked those who had invited him, and apologized: he would be brief, and some in the room had heard the same message from him in his own shul that morning. He gave it again, he said, because it puts <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>) in perspective: not <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>) in the days of old, but how our homes should look now. (He asked, with a smile, why a listener who had heard it that morning was looking at him: “Look down at your feet.”)</p>
+<h2>II. The Measure of Success: Yosef HaTzadik</h2>
+<h3>A Title No One Else Receives</h3>
+<p>The Torah, says the lecturer, never calls <em class="term">Avraham Avinu</em> (<span class="heb-inline">אברהם אבינו</span>), <em class="term">Yitzchak</em> (<span class="heb-inline">יצחק</span>), <em class="term">Yaakov</em> (<span class="heb-inline">יעקב</span>), <em class="term">Moshe</em> (<span class="heb-inline">משה</span>), <em class="term">Aharon</em> (<span class="heb-inline">אהרן</span>) or <em class="term">David</em> (<span class="heb-inline">דוד</span>) an <em class="term">ish matzliach</em> (<span class="heb-inline">איש מצליח</span>). Only <em class="term">Yosef</em> (<span class="heb-inline">יוסף</span>) receives the title<a class="footnote-ref" id="ref2" href="#fn2">[2]</a>. Everyone wants success: in raising children, in the family, in a career, in oneself. Would it not be worthwhile to see how the Tanakh itself uses the word? Three times the Torah applies <em class="term">matzliach</em> (<span class="heb-inline">מצליח</span>) to <em class="term">Yosef</em> (<span class="heb-inline">יוסף</span>), and each time it says that God was with him.</p>
+<h3>Three Phases</h3>
+<p>The lecturer divides the life of <em class="term">Yosef</em> (<span class="heb-inline">יוסף</span>) into three phases and asks in which of them the Torah uses the word.</p>
+<ol><li><strong>The years of light.</strong> His youth, in the light of his father: learning with <em class="term">Yaakov</em> (<span class="heb-inline">יעקב</span>), the best <em class="term">rebbe</em> (<span class="heb-inline">רבי</span>) of all time, Torah and the secrets of the universe, in the <em class="term">kesones passim</em> (<span class="heb-inline">כתונת פסים</span>), beloved. A seventeen-year-old learning in the best <em class="term">yeshivah</em> (<span class="heb-inline">ישיבה</span>) in the world: surely this is success. Yet the Torah does not use the word of this phase.</li>
+<li><strong>The years of power.</strong> From age thirty until his death at one hundred and ten, he is the viceroy of Egypt: he foretells the famine, he sustains the entire world, and he is the most powerful man after <em class="term">Paroh</em> (<span class="heb-inline">פרעה</span>) in the superpower of antiquity. Surely this is success. Yet here too the Torah does not use the word.</li>
+<li><strong>The years of darkness.</strong> Between seventeen and thirty: the pit, the hatred of his brothers, the sale, the house of <em class="term">Potifar</em> (<span class="heb-inline">פוטיפר</span>), the false accusation of <em class="term">Eishes Potifar</em> (<span class="heb-inline">אשת פוטיפר</span>) (the lecturer calls it a blood libel), the dungeon. Throughout this stretch the Torah says that he was successful. “If that is success,” says the lecturer, “I do not want any of it.” Why does the Torah use the word then, and precisely then?</li></ol>
+<h3>The Secret: The Name on His Lips</h3>
+<p>Before the word <span class="heb-inline">מצליח</span> the verses always say <span class="heb-inline">ויהי ה' אתו</span>, that God was with him. <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>)<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> explains the phrase by quoting a <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>), but briefly, only one line of it; the <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>) itself is longer. According to the <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>), <em class="term">Yosef</em> (<span class="heb-inline">יוסף</span>) used to come in to serve his master, doing a slave’s work (the lecturer lists cleaning and feeding the horses and sheep), and as he came in he was whispering something. <span class="heb-inline">פוטיפר</span> saw it. Egypt, the lecturer notes, is the land of sorcery and black magic, and <span class="heb-inline">פוטיפר</span> grew afraid: a Jew comes in muttering, and who knows what may happen? He asked: “What are you saying? Are you doing <em class="term">kishuf</em> (<span class="heb-inline">כשוף</span>) on me?”</p>
+<p><em class="term">Yosef</em> (<span class="heb-inline">יוסף</span>) answered: no, <span class="heb-inline">שם שמים שגור על פי</span>; and what he was saying was: “Thank You, Hashem, for putting me here. Please, God, help me find favor in my master’s eyes. Thank You for the past, thank You for the present, and I pray for the future.”</p>
+<p>From this, the lecturer says, we have the Jewish habit of saying <em class="term">im yirtzeh Hashem</em> (<span class="heb-inline">אם ירצה ה׳</span>) and <em class="term">be’ezras Hashem</em> (<span class="heb-inline">בעזרת ה׳</span>) all day long, and “thank You, Hashem” in nearly every other sentence. Where did we get it? From <em class="term">Yosef HaTzadik</em> (<span class="heb-inline">יוסף הצדיק</span>), who, in the worst situation a person can be in, said: thank You, Hashem; I love You; please help me do this and that; help me find my mission in this hole. That is <span class="heb-inline">יוסף הצדיק</span> and that is success.</p>
+<div class="callout"><span class="label">A Lesson for Our Children</span>The lecturer would have this told to children: one who has <em class="term">shem shamayim</em> (<span class="heb-inline">שם שמים</span>), who says <em class="term">im yirtzeh Hashem</em> (<span class="heb-inline">אם ירצה ה׳</span>), who is aware that God is with him whatever happens, and that he is here for a purpose and a mission, has success. That is why the Torah says <span class="heb-inline">מצליח</span> of <span class="heb-inline">יוסף</span> in precisely that chapter of his life: it is authentic, genuine Jewish success.</div>
+<h2>III. A Gift From Heaven: The Menorah in the Tunnel</h2>
+<h3>The Footage</h3>
+<p>The lecturer found it hard to use the words “gift from heaven,” but said that for living, breathing Jews it is a gift that, in the week just ended, the footage was made public of six hostages reciting the blessings and lighting the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) in a tunnel complex in Gaza.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> The lecturer added a prayer for vengeance for their blood and called them “the beautiful six.” Every hostage’s story is meaningful, he said, but these six lit the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) before <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>), and people are watching.</p>
+<p>The six, he said, had been secular until then, and “God help me, I am saying the truth”: they are more <em class="term">frum</em> (<span class="heb-inline">פרומער</span>), more <em class="term">ehrlich</em> (<span class="heb-inline">ערלעכער</span>) and more Jewish than all of us put together. That they light a <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) even in a tunnel moves us, but he sensed something deeper. It is a <em class="term">mitzvah</em> (<span class="heb-inline">מצוה</span>) for every Jew to watch the clip, he said; he told his congregation that whoever had not yet watched it should do so, and let the children watch. It will enhance one’s <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>): when one lights, one will feel part of their lighting and of their fulfillment of the will of the Holy One, blessed be He.</p>
+<p>They make the blessings, he said (the lecturer described the mitzvah as publicizing the miracle, <em class="term">pirsumei nisa</em> (<span class="heb-inline">פרסומי ניסא</span>)). They look very frail and thin. It was two <em class="term">Chanukahs</em> (<span class="heb-inline">חנוכות</span>) ago, as he understood, eighty days into their captivity. They were later shot at close range, all six, in about August 2024, eight to ten months after October 7. In the clip they smile and sing <em class="term">Maoz Tzur</em> (<span class="heb-inline">מעוז צור</span>) and <em class="term">Haneiros Halalu</em> (<span class="heb-inline">הנרות הללו</span>).</p>
+<h3>The Remark at the End</h3>
+<p>At the very end of the clip, the lecturer said, a remark is heard, which he believes is by Hersh Goldberg (Goldberg-Polin). He had listened again that night to be sure. In Hebrew the speaker says: <span class="heb-inline">אתם יודעים, אתם מכירים את התמונה הזאת עם הדגל הנאצי והמנורה הנגדית? שמע ישראל</span><a class="footnote-ref" id="ref5" href="#fn5">[5]</a> That is the picture of a <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) in a window with a Nazi flag opposite it.</p>
+<h2>IV. The Story Behind the Picture: Kiel</h2>
+<p>The lecturer told the story behind the picture, and said it is remarkable that the hostage brought it up, because it connects everything. In 1932 there was a rabbi in Kiel, Germany: Rabbi Dr. Akiva Baruch Posner, a doctor of philosophy of a well-known German university and the rabbi (the lecturer says “chief rabbi”) of the city. The Nazis, whom the lecturer cursed, came to power and established their headquarters in Kiel directly across the street from his home.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a></p>
+<p>It was <em class="term">Zos Chanukah</em> (<span class="heb-inline">זאת חנוכה</span>), the last night of <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>), a Friday night, as the lecturer tells it. As the rabbi was about to light, his wife, Rebbetzin Rachel Posner, took up a camera (cameras were not common then) to photograph her husband lighting. From where she stood, behind him, the picture shows the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) in the open window and, across the street, the large dark Nazi flag.</p>
+<p>On the back, as people did in those days, she wrote the date, who was in the picture, and a sentence. The date, the lecturer thinks, was <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>) 1932 (by 1933 the rabbi had already left for <em class="term">Eretz Yisrael</em> (<span class="heb-inline">ארץ ישראל</span>) and survived; he saw the writing on the wall). The sentence: “Death to Judah,” so says the flag; “Judah will live forever,” so answers the light.</p>
+<p>“Death to Judah”: that, says the lecturer, was Nazism, the declaration that the eternal flame of the Jews would be eternal no more. But the light of the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>), the flickering flames, shows the vibrancy of <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>), <em class="term">Am Yisrael chai</em> (<span class="heb-inline">עם ישראל חי</span>), <em class="term">Netzach Yisrael lo yeshaker</em> (<span class="heb-inline">נצח ישראל לא ישקר</span>): we are here forever, no matter what.</p>
+<h2>V. Our Connection Today</h2>
+<p>“We do not need stories from the Holocaust anymore, <em class="term">rabbosai</em>,” said the lecturer, “we do not need those old legends.” (He allowed that the lighting of the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) in Auschwitz, <em class="term">mehadrin min hamehadrin</em> (<span class="heb-inline">מהדרין מן המהדרין</span>), is something we do need.) “But we have something much closer to our hearts,” for every Jewish heart was invested in the plight of these hostages, who did not come out. By lighting the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>), and “I do not know which Hamas terrorist took that video, but it is a great favor for us,” they have joined us to a chain: when we light the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) tomorrow night, on every night of this <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>), make the blessing <span class="heb-inline">להדליק נר של חנוכה</span>, and sing <em class="term">Maoz Tzur</em> (<span class="heb-inline">מעוז צור</span>) and <em class="term">Haneiros Halalu</em> (<span class="heb-inline">הנרות הללו</span>) with our children and family around the flickering flames, “we will feel that connection, from generation to generation.” Whether the enemy is Nazi Germany or Hamas in Gaza, whoever tries to extinguish the flame, our light will never go out.</p>
+<h2>VI. How? The Secret</h2>
+<p>“Because we are a nation that is successful,” said the lecturer. And what is success? That wherever I am, God put me here and God is with me. “<span class="heb-inline">אם ירצה השם</span>. Thank You, Hashem”: <em class="term">Yosef HaTzadik</em> (<span class="heb-inline">יוסף הצדיק</span>) in the dungeon, in the pit, always knowing and feeling that God is with me and that He has me on a mission.</p>
+<p>Someone asked him, after he gave this message in his shul that morning: why, then, did they not get out? Why were they shot? His answer: it is a story of our national mission. When one zooms in on the individual, who can understand, and who are we to understand God’s ways? But one thing we do know: the light of our nation will never be extinguished.</p>
+<p>To bequeath this to the next generation: success, in Jewish terminology, means <em class="term">im yirtzeh Hashem</em> (<span class="heb-inline">אם ירצה השם</span>) and <em class="term">be’ezras Hashem</em> (<span class="heb-inline">בעזרת השם</span>) on one’s lips, in a tunnel, in a pit, lighting the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>), reciting the blessings, and knowing that God is with you. The lecturer closed with a prayer that God be with us and that we hear of no more sorrow and see only joyous occasions, thanked the congregation of Young Israel of Woodmere for having him, and wished them a <span class="heb-inline">פרייליכע חנוכה</span>.</p>
+<section class="mareh">
+<h2>מראה מקומות &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">תהלים קט״ז:ח׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria (English): “You have delivered me from death, my eyes from tears, my feet from stumbling.” The verse is part of <em class="term">Hallel</em> (<span class="heb-inline">הלל</span>). The wording is as the recording has it; the AI summary instead put in the mouth of the survivor <span class="heb-inline">המלאך הגאל אתי מכל רע</span>, a phrase from <span class="heb-inline">בראשית מ״ח:ט״ז</span>, a verse that is not in the recording and not in <span class="heb-inline">הלל</span>. The survivor’s reading of <span class="heb-inline">את עיני מן דמעה</span> as the cost of survival is his, as the lecturer relates it.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">בראשית ל״ט:ב׳–ג׳, כ״ג</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: 39:2, “God was with Joseph, and he was a successful man”; 39:3, God “lent success to everything he undertook”; 39:23, God made whatever he did succeed. Strictly, the phrase <span class="heb-inline">איש מצליח</span> occurs only in 39:2; in 39:3 and 39:23 it is God who <span class="heb-inline">מצליח</span>. The lecturer’s “three times” counts the three uses of the root. All three fall in the chapters of slavery and prison (Open Questions, no. 3).</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">רש״י על בראשית ל״ט:ג׳</span>; <span class="heb-inline">מדרש תנחומא, וישב ח׳</span>; cf. <span class="heb-inline">בראשית רבה פ״ו, ה׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: Rashi on the words <span class="heb-inline">כי ה׳ אתו</span> says “the name of Heaven was familiar in his mouth,” citing <span class="heb-inline">תנחומא וישב ח׳</span>. The <em class="term">Tanchuma</em> (<span class="heb-inline">תנחומא</span>) describes <span class="heb-inline">פוטיפר</span> hearing <span class="heb-inline">יוסף</span> whisper as he served and asking what he was saying; <span class="heb-inline">יוסף</span> replied that he was praying for favor in his master’s eyes. <em class="term">Bereishis Rabbah</em> (<span class="heb-inline">בראשית רבה</span>) 86:5 has <span class="heb-inline">יוסף</span> whispering on entering and leaving but does not have the wording about the Name. The suspicion of sorcery and the “abracadabra” are the lecturer’s telling. His remark that Rashi quotes only one line of a longer <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>) is borne out.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short">The footage of the hostages in the tunnel.</span>
+  <span class="expanded"> Per press reports, the footage was broadcast on 11 December 2025 (Channel 12’s <em>Uvda</em>, after the IDF obtained it from Gaza). It shows six hostages, Hersh Goldberg-Polin, Eden Yerushalmi, Ori Danino, Alex Lobanov, Carmel Gat and Almog Sarusi, lighting <em class="term">Chanukah candles</em> (<span class="heb-inline">נרות חנוכה</span>) in a tunnel in late 2023; reports say about eighty days into captivity, as the lecturer said. They were killed in a tunnel in Rafah on 29 August 2024. These facts are from press reports, not from Sefaria or from the recording (Open Questions, no. 4).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short">Hersh Goldberg-Polin’s remark.</span>
+  <span class="expanded"> The recording gives the lecturer’s identification (“I think, by Hersh Goldberg”); press reports on the clip name Hersh Goldberg-Polin as the speaker who mentions the picture of the <em class="term">chanukiah</em> (<span class="heb-inline">חנוכיה</span>) with a Nazi flag. The Hebrew wording is as transcribed from the recording, the lecturer having listened to it again the night before.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short">The Posner photograph, Kiel.</span>
+  <span class="expanded"> Rabbi Dr. Akiva Posner, a Ph.D. of Halle-Wittenberg, was the last rabbi of the Kiel community; the family left Germany in 1933 and reached Eretz Yisrael in 1934. The photograph was taken by his wife, Rachel Posner; the inscription on the back, in translation, is as the lecturer gave it. The photograph is loaned to Yad Vashem by the Posner family estate. Yad Vashem’s page dates the photograph to Chanukah 1931 with the inscription dated 1932; other reports give 1932; the lecturer said 1932. The sources consulted do not say which night it was, and describe the building opposite as hung with Nazi flags but do not confirm that it was the Nazi headquarters (Open Questions, no. 5). The earlier text’s German wording, “5694,” and the rabbi’s dates were unsupported and are omitted.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Reports of the lecturer are recorded as his and are not asserted in the text.</p>
+<ol>
+<li><strong>The survivor’s story.</strong> The setting (the lecturer says a group in a shul), the survivor’s age at the time (ten or eight) and the year (1939, 1943 or 1944) are as the lecturer gave them, hesitantly. In the recording the men who “went up in flames” are described with a word that reads as <em>Tisha B’Av</em>, which does not fit; it is not used here. The sentence about “the Axelrod space” in the recording is unclear and is omitted.</li>
+<li><strong>The mitzvah of publicizing the miracle.</strong> The AI summary has the lecturer say the hostages fulfilled <em class="term">pirsumei nisa</em> (<span class="heb-inline">פרסומי ניסא</span>); the raw transcript has an unclear phrase at that point (“the mitzvah of rochus”) and the bilingual transcript does not have it. Retained in the text, hedged; to be confirmed with the lecturer.</li>
+<li><strong>“Three times.”</strong> Whether the lecturer meant the three uses of <span class="heb-inline">מצליח</span> (as rendered) or, as he said, three times <span class="heb-inline">איש מצליח</span>; only 39:2 has the latter phrase (note 2).</li>
+<li><strong>Eighty days.</strong> The lecturer, and press reports, say about eighty days into captivity. By calendar, Chanukah 2023 began on the evening of 7 December, about sixty-two days after October 7. To be confirmed.</li>
+<li><strong>The Kiel photograph.</strong> The year (1931 or 1932), the night of <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>), whether it was a Friday night, and whether the building opposite was the Nazi headquarters, to be confirmed (note 6).</li>
+<li><strong>“Tomorrow night.”</strong> The lecturer says that the <em class="term">menorah</em> (<span class="heb-inline">מנורה</span>) would be lit “tomorrow night.” The first night of Chanukah 5786 was the evening of 14 December 2025 itself. The date of the recording, or the lecturer’s wording, to be confirmed.</li>
+<li><strong>The Hebrew date.</strong> Computed as 24 Kislev 5786 for 14 December 2025 (the previous discourse, 7 December, was 17 Kislev). The recording gives no Hebrew date.</li>
+<li><strong>The last line.</strong> The recording has the lecturer closing with an unclear phrase about “reciting <span class="heb-inline">השם מלך</span>”; omitted.</li>
+<li><strong>Names of those present.</strong> The lecturer thanks Rabbi Axelrod, mentions Rabbi Hackenbroch and quotes “Rabbi Schorr” of Boro Park; the spellings and roles are unconfirmed and the names are omitted.</li>
+</ol>
+</section>
+<footer>
+  Sefer Edition of Rabbi Ephrati’s guest discourse for the eve of <em class="term">Chanukah</em> (<span class="heb-inline">חנוכה</span>), 24 Kislev 5786. The edition follows the order of the discourse, records the lecturer’s reports as his, and leaves unresolved items to the Open Questions.
+</footer>
+
+</body>
+</html>

@@ -689,3 +689,75 @@ Modified: final MM/2025-11-10 — תחנון, נפילת אפים, and the Origi
 - **fn24 (Megillah 23a; Levush on Barchu)** — **VERIFIED**: 3 guards + 5 + 7 officers (Esther 1:14); ≥3 verses/21 total. Levush **UNCERTAIN**.
 - **fn25 (Magen Avraham, Machar Chodesh)** — **UNCERTAIN**.
 - **Total:** 2 corrections (Nedarim→Shabbos 32b; Menachos 90→99b), ~9 verified (fully/partly), ~14 UNCERTAIN/not checkable. Sofer-over-Plaud: אבודרהם not "Rav Drum"; Shibbolei author hesitation; Langer not yet consulted. Flags: "חג כשר ושמח" at end of recording (odd, omitted); Hebrew date 21 Cheshvan 5787 is computed. Modified: final MM/2026-11-01 — שיר של יום, אתה הראת, and the Origins of the Haftarah — Or Zarua, Soferim, and the Greek Decree.html
+
+## 2025-12-14 — The Light That Never Dims — Rabbi Ephrati on פרשת ויגש and חנוכה
+
+- **fn1 (survivor's verse; originally Bereishis 48:16 "המלאך הגאל")** — **CORRECTED**: the recording has the survivor reciting Tehillim 116:8 in Hallel ("כי חלצת נפשי ממות את עיני מן דמעה את רגלי מדחי"). **VERIFIED** (Sefaria English: "You have delivered me from death, my eyes from tears, my feet from stumbling"). The angel verse and the summary's "Tehillim 137:16" are not in the recording.
+- **fn2 (Bereishis 39:2, 39:3, 39:23)** — **VERIFIED**: 39:2 "a successful man"; 39:3 and 39:23 God lent success. **CORRECTED**: third quotation had spliced 39:21 and 39:23 (now "ואשר הוא עשה ה' מצליח"); note now says the phrase איש מצליח is only in 39:2.
+- **fn3 (Rashi on Bereishis 39:3; Tanchuma Vayeshev 8; Bereishis Rabbah 86:5)** — **VERIFIED**: Rashi cites Tanchuma Vayeshev 8 (name of Heaven familiar in his mouth); Tanchuma has the whispering, Potiphar's suspicion, Yosef's prayer for favor. **CORRECTED**: BR cite label ("פ"ו ה'") fixed to 86:5; BR has only the whispering, not the wording about the Name. Body/notes: "ברוך השם" replaced by אם ירצה ה' / בעזרת ה' / "thank You, Hashem" (Plaud).
+- **fn4 (hostage tunnel footage)** — **CORRECTED**: "preserved in IDF and family-released archives" unsupported; footage broadcast 11 Dec 2025 on Channel 12 Uvda after IDF obtained it (Times of Israel); six named; killed in Rafah tunnel 29 Aug 2024. Press-report facts, not Sefaria. Body: "ten months after October 7" for the lighting **CORRECTED** to eighty days into captivity (Plaud; press); ten months applies to the killing. Calendar check (Chanukah 2023 ≈ day 62) **UNCERTAIN**.
+- **fn5 (Posner photograph, Kiel)** — **CORRECTED**: removed invented German wording, "5694", lifespan 1890–1962, "eighth night", "preserved at Yad Vashem" (it is loaned by the Posner family estate); body "1932/1933" → "1932". **UNCERTAIN**: year (Yad Vashem page: Chanukah 1931, inscription 1932; other reports 1932), which night, Friday, Nazi HQ across the street (not confirmed; building hung with Nazi flags).
+- **Body (Hersh's remark)** — **CORRECTED** to Plaud wording "אתם יודעים אתם מכירים את התמונה הזאת עם הדגל הנאצי והמנורה הנגדית? שמע ישראל"; speaker identified as Hersh Goldberg-Polin per Times of Israel.
+- **Body (survivor)** — **CORRECTED**: "on that ראש השנה" → "that רשע ימח שמו"; "beat" → "slapped"; age/year hedged (ten or eight; 1939/1943/1944); lead and opening reframed as a guest drasha at Young Israel of Woodmere (not "our usual sugya of תפילה"; no "transformed my understanding of Chanukah").
+- **Total:** 13 corrections applied to the HTML, 5 verified (Tehillim 116:8; Bereishis 39:2–3, 39:23; Rashi/Tanchuma; Rafah/6 hostages), ~6 UNCERTAIN (Kiel year/night/HQ; eighty-day count; pirsumei nisa; Hebrew date 24 Kislev 5786 computed; names of hosts; closing "השם מלך"). Sofer-over-Plaud: no Sofer .docx exists; the bilingual Plaud file (AUDIO-2025-12-14-13-13-45.txt) was authoritative over the garbled "Speaker 1" transcript and the summary. Modified: final MM/2025-12-14 — The Light That Never Dims — Rabbi Ephrati on פרשת ויגש and חנוכה.html
+
+## 2025-12-28 — קדושה דסידרא, ובא לציון, and שיר של יום
+
+- **fn1 (Berachos 9b–10a; 28b)** — **CORRECTED**: HTML cited Berachos 28b and Megillah 17b for the 18 chapters; the chapters are Berachos 9b (David said the verse only after 18 chapters; ch. 1–2 counted as one — **VERIFIED**). 28b gives other reasons (Ps 29, Shema, vertebrae); Megillah 17b dropped.
+- **fn2 (Pirkei DeRabbi Eliezer)** — **UNCERTAIN**: not located.
+- **fn3 (Midrash Tehillim 20)** — **UNCERTAIN**: as retrieved, a parable of a mother crying with her daughter in labor (applied to God), not the Rav's "how did you get here" consolation. Note added.
+- **fn4 (Niddah 31b; Vayikra 12)** — **VERIFIED**: R. Shimon bar Yochai, oath in labor not to be with her husband.
+- **fn5 (Berachos 3b)** — **VERIFIED**: lyre, "your nation requires sustenance," "go and sustain one another," "go and spread out against the troop"; Philistines not named; David reciting Ps 20 for parnassah is the Rav's reading (note added).
+- **fn6 (Eichah 1:15)** — **CORRECTED** (inflated note): tefillin/study prohibitions not in the recording; removed. Verse **VERIFIED**.
+- **fn7 (Ramban Shemos 13:16; Chovos HaLevavos)** — **CORRECTED**: 13:16 treats hidden miracles, not effort/trust; locus now "not given in the shiur." Rav's Ramban claim **UNCERTAIN**.
+- **fn8 (Gen 47:23; "Sefer HaMekudashim")** — **CORRECTED**: Rav said "the holy books" (ספרים הקדושים), not a title; הא = ראשי תיבות הכנסת אורחים (garbled "(the ק of)" removed). Verse and speaker (Yosef) **VERIFIED**.
+- **fn9 (Sotah 49a)** — **VERIFIED**: no day without a greater curse; kedushah desidra and yehei shmei rabba of aggadah.
+- **fn10 (Devarim 28:67)** — **CORRECTED**: verse order was reversed (בבקר תאמר מי יתן ערב ובערב תאמר מי יתן בקר).
+- **fn11 (Rashi on Sotah 49a)** — **UNCERTAIN**: Rashi text not retrieved.
+- **fn12 (Rav Natronai to Lucena)** — **UNCERTAIN**: not located.
+- **fn13 (Rambam Tefillah)** — **CORRECTED**: locus was "9:17" (nonexistent); halakhos 5–6 of ch. 9 treat Uva LeTzion, verses of kedushah and Targum; body hedged ("it seems," per the Rav); "Verify" working note removed.
+- **fn14 (Tur / SA OC 132)** — **VERIFIED**: Tur cites Rav Tzemach (individual should not), then individual may; SA 132:1 gloss allows. Mishnah Berurah "codifies" claim removed (not said).
+- **fn15 (Arizal, Shaar HaKavanos)** — **UNCERTAIN**.
+- **fn16 (Sefer HaPardes)** — **CORRECTED/UNCERTAIN**: removed "of Vitry," dates, "Babylonia," "scholarly debate" (not said); author per Rav: Rabbeinu Nosson or Simcha. Text not located on Sefaria.
+- **fn17 (Chagigah 14b)** — **VERIFIED**.
+- **fn18 (Rambam Melachim 11:14; Yeshu)** — **CORRECTED**: "הי"ד" does not exist; label now ch. 11 (uncensored editions). Passage **UNCERTAIN** (Sefaria 11:4 as retrieved lacks it).
+- **fn19 (Gittin 57a; Yaavetz)** — **VERIFIED** (Yeshu / Onkelos, Gittin 57a); "Lechem Shamayim" attribution removed (no locus given). Yaavetz **UNCERTAIN**.
+- **fn20 (Beis Yosef OC 496 → Beitzah 4b)** — **CORRECTED**: Rav said "Gemara in Beitzah daf dalet" (summary heard Beis Yosef). **VERIFIED**: Beitzah 4b, keep the custom of your fathers "because at times the monarchy will issue decrees."
+- **fn21 (Avudraham in Beis Yosef OC 132)** — **UNCERTAIN**: fetch failed.
+- **fn22 (Mishnah Tamid 7:4)** — **VERIFIED**: Ps 24, 48, 82, 94, 81, 93, 92.
+- **fn23 (Arachin 11a)** — **CORRECTED**: quoted "אין אומרים שירה אלא ביום" and Divrei HaYamim derivation not found; Arachin 11a has R. Elazar (song by day, as the blood) and R. Yonatan (only over the wine). Rav's delayed-libation account is his.
+- **fn24 (Ramban Shemos 20:8)** — **VERIFIED**: counting toward Shabbos; remember Shabbos every day. "Ramban's additions to the Rambam's count (Hasagos)" removed (not said); body now neutral.
+- **fn25 (Ramban; Zohar)** — **CORRECTED**: Zohar was never cited (mishearing of "avodah zarah"); removed. Names-of-days content **VERIFIED** in Ramban.
+- **Non-Sefaria corrections in the HTML:** Hebrew date כ״ח טבת → ח׳ טבת תשפ״ו (28 Dec 2025 computed = 8 Tevet 5786); Ezra's yahrtzeit is tomorrow (9 Tevet), not today; "יום הילולא" → יומא דפגרא; carriage story attributed to a congregant (Lubavitcher) and reworded; "Roman authorities" → "the authorities"; Kaddish/Barchu → קדוש קדוש קדוש / ברוך כבוד ה׳ ממקומו; "recited קדיש and קדושה" → קדושה; "At Maariv we add לכו נרננה" → at the end of Wednesday's song; "Not so גלייך" removed.
+- **Omitted from HTML, restored in Sefer Edition only, as Open Question:** digression on the date of the Nishmas-composer disciple's yahrtzeit (SA OC 580 lists 8 and 9 Tevet — **VERIFIED**; the rest **UNCERTAIN**).
+- **Total:** 13 corrections applied to the HTML (date, Ezra yahrtzeit, verse order, fn1, fn6, fn7, fn8, fn13, fn20/Beitzah, fn23, Zohar/fn25, Lechu Neranenah, decree wording), ~10 verified, ~14 UNCERTAIN/not checkable. Sofer-over-Plaud: no Sofer .docx exists; the bilingual Plaud file (AUDIO-2025-12-28-13-16-19.txt) was authoritative over the garbled "Speaker 1" transcript and the summary. Modified: final MM/2025-12-28 — קדושה דסידרא, ובא לציון, and שיר של יום.html
+
+## 2026-01-01 — בית חוניו and the Possibility of Bringing קרבנות Today
+
+- **fn1 (Mishnah Menachos 13:10)** — **VERIFIED**: vow of an olah must be offered in Jerusalem; offered at Chonyo's house not fulfilled unless the vow named it; kohanim who served at Chonyo's house may not serve in Jerusalem. Gemara 109b–110a not separately retrieved.
+- **fn2 (Rambam Maaseh HaKorbanos 18; Devarim 12:13–14)** — **VERIFIED** (Devarim 12:13–14); Rambam ch. 18 **UNCERTAIN** (fetch failed).
+- **fn3 (Yeshayah 19:19)** — **VERIFIED**: "an altar to the Lord inside the land of Egypt."
+- **fn4 (Yoma 69b; Sanhedrin 64a)** — **VERIFIED** (Yoma 69b: prayer, yetzer hara of idolatry handed over, fiery lion cub from the Holy of Holies; retrieved text says "they/the Sages"). Sanhedrin 64a **UNCERTAIN**.
+- **fn5 (Rambam, Peirush HaMishnayos Menachos 13:10)** — **VERIFIED**: Chonyo dressed elder brother Shimi in women's-type garment, false accusation, fled to Alexandria, Kavtzar (Copts), not idolatry but violation of the chosen place, stood 200 years.
+- **fn6 (Tosafos Menachos 109b)** — **UNCERTAIN**: not retrieved.
+- **fn7 (Toras Chaim)** — **CORRECTED**: HTML had "ר' חיים בן שמואל שור, 1572–1632, Lublin/Belz" (and body "רב חיים שור"); recording: ר' אברהם חיים שור; Jewish Encyclopedia: died Belz 1632, rabbi Satanow/Belz, Toras Chaim (Lublin 1624). Birth year unconfirmed, dropped; "verify siman" working note replaced. Passage itself **UNCERTAIN**.
+- **fn8 (Yoma 38a; Yerushalmi Yoma 3:9)** — **VERIFIED** (Yoma 38a: Alexandrian craftsmen failed at the bread and at the incense). Yerushalmi **UNCERTAIN**; the note's claim that the Mishnah "records this as a shevach" not checked.
+- **fn9 (Divrei Shaul)** — **UNCERTAIN**: not retrieved; author dates unchecked.
+- **fn10 (Targum Sheni, Esther 1)** — **UNCERTAIN**: retrieved text (Esther 1:2, 1:2–3) has Shlomo's letter/bird/Queen of Sheba, no artisans from Alexandria.
+- **fn11 (Drishas Tzion; Kalischer)** — **CORRECTED** (body): "talmid of the Vizhnitzer rebbe" → talmid of R' Akiva Eiger (recording; Wikipedia adds R' Yaakov of Lissa); place "Lyssa" → Lyck, 1862 (Rav said 1861). Note's "and the Chasam Sofer" removed; Rothschild/Montefiore correspondence unverified.
+- **fn12 (Chasam Sofer YD 236, OC 203)** — **UNCERTAIN**: not retrieved.
+- **fn13 (Rambam Hilchos Beis HaBechirah 6:14–16; Ra'avad)** — **VERIFIED**: 6:14 sanctified for its time and for the future; 6:15 offer without a house, kodshei kodashim in ruined courtyard; 6:16 Lev 26:31, sanctity remains. **CORRECTED** (body, two places): "at the beginning of Hilchos Beis HaBechirah" → "in … (פרק ו')" for the Rambam's permission to offer; (the place of the altar at 2:1 is correct).
+- **fn14 (Vayikra 26:31; Megillah 28a)** — **VERIFIED**: Megillah 28a derives from "sanctuaries" after "desolate" that sanctity remains (said of synagogues).
+- **fn15 (Mishpat Kohen simanim 91–94)** — **UNCERTAIN**: not retrieved.
+- **fn16 (letter to Kalischer)** — **CORRECTED** (heading, body, note): attributed in HTML to R' Yitzchak Elchanan Spektor (summary error; b. 1817, younger than Kalischer b. 1795); recording: R' Akiva Eiger. Also "Gutmacher of Grodno" → Greiditz, and a student of Akiva Eiger (not of Spektor). Letter itself **UNCERTAIN**.
+- **fn17 (Kaftor VaFerach; Ishtori Haparchi)** — **CORRECTED**: body "end of the 1200s" → early 1300s (Ishtori 1280–1355, Kaftor written 1322); "student of the Rosh" hedged (not firmly established). R' Boruch testimony **UNCERTAIN**.
+- **fn18 (Disputation of Paris; Rabbeinu Yechiel)** — **VERIFIED** (partly): Disputation 1240; Yechiel d. c. 1268 Acre (disputed); Smak = Isaac of Corbeil his son-in-law. Burning date "June 17, 1242" **UNCERTAIN** (sources vary; Rav said two years later); Mordechai as son-in-law, student of R' Yehudah HeChasid, Rindfleisch — Rav's reports, **UNCERTAIN**.
+- **fn19 (Chesronos HaShas)** — **UNCERTAIN**: not checked.
+- **fn20 (Pesachim 77a–79a; Rambam on dechuyah)** — **VERIFIED** (partly): hutrah (R' Yehudah) vs dechuyah (R' Shimon). Rambam's ruling and "Rosh and others hutrah" **UNCERTAIN**. **CORRECTED** (body): "רבי אשתורי writes הותרה" → R' Kalischer (recording).
+- **fn21 (Radzyner techeiles)** — **UNCERTAIN**: background not from the shiur. **CORRECTED** (body): "show me techeiles" attributed to R' Avraham David Auerbach → R' Akiva Eiger; "הרב שירא שולר rejects his rebbe" → R' Kalischer.
+- **fn22 (Avodah Tamah)** — **UNCERTAIN**: author given only as "Rav Chaim Nosson"; "Dembitzer" unverified; working note remains.
+- **fn23 (Yam shel Shlomo)**, **fn24 (Yaavetz)** — **UNCERTAIN**: not retrieved; Lechem Shamayim citation not accepted.
+- **fn25 (Rambam Hilchos Melachim 11:1)** — **VERIFIED**: Messiah rebuilds Temple, gathers dispersed, sacrifices restored.
+- **Not in numbered notes:** Rambam Beis HaBechirah 2:1 — **VERIFIED** (precise, unchangeable place of the altar).
+- **Other (non-Sefaria) corrections made in the HTML:** body "רב חיים זנוויל" and "רבי שמעון סופר writes to his son-in-law (the כבוד)" → R' Chaim Sonnenfeld wrote to R' Shimon Sofer, grandson of the Chasam Sofer; the Chasam Sofer wrote to his father-in-law R' Akiva Eiger; "רבי טנדלר also held…" → "Others of this type also hold…" (not in recording).
+- **Total:** 14 body corrections plus footnote rewrites (fn7, fn11, fn16, fn17) in the final-MM HTML — about 10 substantive corrections (Kalischer's teacher; Torat Chaim author; Elchanan→Akiva Eiger; Gutmacher/Greiditz; Auerbach→Akiva Eiger; Shira Shuler→Kalischer; Ishtori hutrah→Kalischer; Sonnenfeld/Shimon Sofer/Chasam Sofer; Ishtori century; Tendler), ~10 verified, ~14 UNCERTAIN/not checkable. Sofer-over-Plaud: no Sofer .docx exists for this date; the bilingual Plaud file (AUDIO-2026-01-01-11-23-54.txt) was authoritative over the garbled transcript and the summary. Hebrew date 12 Tevet 5786 is computed. Modified: final MM/2026-01-01 — בית חוניו and the Possibility of Bringing קרבנות Today.html (original backed up at ~/tmpbuild/backup/2026-01-01-final-MM-original.html)

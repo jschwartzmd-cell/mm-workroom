@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Kedushah DeSidra, Uva LeTzion, and Shir Shel Yom &mdash; Lamnatzeach and Parnassah, the Decree Against Kedushah, and Counting Toward Shabbos</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">קְדֻשָּׁה דְסִדְרָא, וּבָא לְצִיּוֹן, וְשִׁיר שֶׁל יוֹם</h1>
+  <div class="english-title">Kedushah DeSidra, Uva LeTzion, and Shir Shel Yom — Lamnatzeach and Parnassah, the Decree Against Kedushah, and Counting Toward Shabbos</div>
+  <div class="sub">Studies in <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>) — From the Close of the Eighteen to the Song of the Day</div>
+  <div class="date">8 Tevet 5786 &middot; 28 December 2025 &middot; Sefer Edition</div>
+</header>
+<p class="lead">This discourse resumes the study of <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>) after several weeks, at the point where it left off: <em class="term">Kedushah DeSidra</em> (<span class="heb-inline">קדושה דסידרא</span>), the portion of the morning service after <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>). It first adds to what was said of <em class="term">Lamnatzeach Mizmor LeDavid</em> (<span class="heb-inline">למנצח מזמור לדוד</span>): its place as the nineteenth chapter after the eighteen blessings, the <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>) that speaks of a woman in labor, and the sustenance (<em class="term">parnassah</em> (<span class="heb-inline">פרנסה</span>)) for which <em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>) is said to have recited it.</p>
+<p class="lead">It then turns to <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>): the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) at the end of <em class="term">Maseches Sotah</em> (<span class="heb-inline">מסכת סוטה</span>) on the merit by which the world endures; the answer of <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) and the original structure of the daily communal learning; and three questions of practice (the Aramaic <em class="term">targum</em> (<span class="heb-inline">תרגום</span>), the individual, <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) and <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>)). Two further reasons are given: the decree against saying <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) in the synagogue, as recorded in the <em class="term">Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>), and the consideration for those who come late.</p>
+<p class="lead">The discourse closes with the opening of <em class="term">Shir Shel Yom</em> (<span class="heb-inline">שיר של יום</span>): the source in <em class="term">Maseches Tamid</em> (<span class="heb-inline">מסכת תמיד</span>), why it is said only in the morning, and why it begins with the count of the day toward <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>). It stops, as the lecturer says, in the middle of the subject, with the promise to continue the following week.</p>
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+<h2>I. Lamnatzeach as the Completion of the Eighteen</h2>
+<h3>The Nineteenth Chapter</h3>
+<p>The lecturer recalls that <em class="term">Lamnatzeach Mizmor LeDavid</em> (<span class="heb-inline">למנצח מזמור לדוד</span>), <em class="term">Yaancha Hashem BeYom Tzarah</em> (<span class="heb-inline">יענך ה׳ ביום צרה</span>), is the twentieth chapter of <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>). The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in <em class="term">Maseches Berachos</em> (<span class="heb-inline">מסכת ברכות</span>) teaches that one of the reasons for the eighteen blessings of <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) is that they correspond to the first eighteen chapters of <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>).<a class="footnote-ref" id="ref1" href="#fn1">[1]</a> In ancient times the first and second chapters were a single unit; our twentieth chapter was therefore originally the nineteenth. Just as <em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>) said eighteen chapters and we say eighteen blessings, <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>) is the nineteenth: the completion of the prayer. The Holy One answers the requests asked in the eighteen blessings, and this is the culmination. Everything said afterwards (<em class="term">Shir Shel Yom</em> (<span class="heb-inline">שיר של יום</span>), <em class="term">Aleinu</em> (<span class="heb-inline">עלינו</span>), <em class="term">Pitum HaKetores</em> (<span class="heb-inline">פיטום הקטורת</span>), <em class="term">Kaveh El Hashem</em> (<span class="heb-inline">קוה אל ה׳</span>)) is, the lecturer says, an addition that came later.</p>
+<h3>The Yahrtzeit of Ezra</h3>
+<p>The lecturer reports that Rabbi Yehuda Honig (so in the clearest transcript) sent him that morning the date of the <em class="term">yahrtzeit</em> (<span class="heb-inline">יארצייט</span>) of <em class="term">Ezra HaSofer</em> (<span class="heb-inline">עזרא הסופר</span>); he first said that it was today and then corrected himself: it falls tomorrow.<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> <em class="term">Ezra</em> (<span class="heb-inline">עזרא</span>) and the <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) instituted these prayers, including the <em class="term">Kedushah DeSidra</em> (<span class="heb-inline">קדושה דסידרא</span>) that the discourse takes up, and the reason for it rests on what he established. The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) explains that the <em class="term">Avos</em> (<span class="heb-inline">אבות</span>) may have said the same blessings, but the exact wording was forgotten, and the <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) recorded it for posterity. We do not know for certain that the <em class="term">Avos</em> (<span class="heb-inline">אבות</span>) said these very words; in <em class="term">Pirkei DeRabbi Eliezer</em> (<span class="heb-inline">פרקי דרבי אליעזר</span>) the wording seems somewhat different.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> Today our wording is accepted by nearly all of <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>).</p>
+<h2>II. The Midrash on Chapter Twenty: Comforting a Woman in Labor</h2>
+<h3>The Midrash</h3>
+<p>The lecturer introduces a <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>) that shows how <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) regarded this chapter and how it came into the prayer.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> In ancient times it was said to a woman in the pains of labor (<em class="term">chavlei leidah</em> (<span class="heb-inline">חבלי לידה</span>)). What does one say to a woman who is screaming from pain, whether for half an hour, an hour, or twenty-four hours? The doctor says to breathe in and breathe out. But a husband, a relative or a friend who wishes to appease her?</p>
+<p>The lecturer recalls the statement of <em class="term">Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>) on why the new mother brings an offering in <em class="term">Parashas Tazria</em> (<span class="heb-inline">פרשת תזריע</span>): in the throes of labor she swears never to be with her husband again, and the offering is atonement.<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> We will never understand what a woman goes through. The <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>), as the lecturer relates it, offers a psychological answer: one says to her, “How did you end up here? Do you think it was easy for your mother when she gave birth to you? And yet you are here, you are fine, life went on.” Someone suffered to bring you into the world; continue for the next generation. It is the curse that <em class="term">Chavah</em> (<span class="heb-inline">חוה</span>) received. And one says, “Yaancha Hashem biyom tzarah”: as the Holy One answered your mother when she prayed, and all her pain gave way to a new life, a new breath, a new soul, so too with you. When she sees that she herself is the proof that the pain ends in light, it resonates.</p>
+<h3>The Application to the End of Davening</h3>
+<p>This is what is done at the end of every prayer. The pain and frustration are present in the words of <em class="term">Shemoneh Esrei</em> (<span class="heb-inline">שמונה עשרה</span>) (the sicknesses, the salvations, the end of exile), and we acknowledge: <span class="heb-inline">יענך ה׳ ביום צרה ישגבך שם אלקי יעקב</span>. As He answered <em class="term">Yaakov Avinu</em> (<span class="heb-inline">יעקב אבינו</span>), He will answer us. According to this <em class="term">midrash</em> (<span class="heb-inline">מדרש</span>), that is the simple meaning of <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>) at the close of the prayer.</p>
+<h3>A Question on the Oath</h3>
+<p>A listener asked when a woman last actually took such an oath. The lecturer replied that this is a recognized question on <em class="term">Rabbi Shimon bar Yochai</em> (<span class="heb-inline">רבי שמעון בר יוחאי</span>) and that there are other opinions on why she brings an offering (some say it is a type of <em class="term">korban todah</em> (<span class="heb-inline">קרבן תודה</span>); some link it to the impurity of childbirth), but this was not the time to take it up.</p>
+<h3>When It Is Not Said, and the Bris</h3>
+<p><em class="term">Yaancha</em> (<span class="heb-inline">יענך</span>) is not said on <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>), because the verse says <span class="heb-inline">ביום צרה</span> and the day is not a day of distress. The lecturer says the practice differs, and that he is unsure about Sephardim. On a day on which <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>) is omitted, such as a day of <em class="term">yoma depagra</em> (<span class="heb-inline">יומא דפגרא</span>), <em class="term">Yaancha</em> (<span class="heb-inline">יענך</span>) is likewise omitted. But at a <em class="term">bris</em> (<span class="heb-inline">ברית</span>), according to some (the Ashkenazim say it), the great authorities of Ashkenaz explained that there is distress: the pain of the infant. All of us are happy, smelling the bagels and lox of the meal, but the child is in pain.</p>
+<h2>III. Dovid HaMelech and Parnassah</h2>
+<h3>The Daily Visit of the Sages</h3>
+<p>The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) relates that <em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>) rose at midnight, the lyre playing over his bed, and learned, prayed and recited <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>): <span class="heb-inline">חצות לילה אקום להודות לך על משפטי צדקך</span>.<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> At sunrise the sages of Israel came to him and said, “Your people Israel need sustenance.” The task of a king is to see that the economy provides for all. The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) records his replies: that they support one another, and that they go out against the troop (<em class="term">lechu ufshtu bagdud</em> (<span class="heb-inline">לכו ופשטו בגדוד</span>)). The lecturer glosses this as the advice of conquering the Philistines and taking their fields and vineyards, which he calls not politically correct but understandable once the passage is learned.</p>
+<p>The lecturer mentions a rebbe in Eretz Yisrael, known as the “Pishtu Rebbe,” who on the departure of <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) gives out garlic, calling out <span class="heb-inline">פשטו</span>, the word of the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) (spread out your hands and take what you want), as a <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) for livelihood.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a> That, he says, is the sense of the word.</p>
+<h3>The Chapter He Recited</h3>
+<p><em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>), the lecturer says, did not return to what he was doing after giving this counsel. As a true leader he took out <em class="term">Tehillim</em> (<span class="heb-inline">תהלים</span>) again and prayed that <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) should have livelihood that day and that week. The chapter he said was <em class="term">Lamnatzeach Mizmor LeDavid</em> (<span class="heb-inline">למנצח מזמור לדוד</span>); that is why it is a <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) for livelihood. The lecturer states this as the reason the prayer ends with this chapter; the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) itself, as retrieved, does not say what he recited.</p>
+<h3>Two Roles of Poseiach Es Yadecha</h3>
+<p>The prayer has <em class="term">Poseiach Es Yadecha</em> (<span class="heb-inline">פותח את ידך</span>) in <em class="term">Pesukei DeZimra</em> (<span class="heb-inline">פסוקי דזמרה</span>), where it is praise: You provide for all. Here it is a request, and so the lecturer says one should have great intention at <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>), since it is the chapter that lifts a person to the same place from which <em class="term">Dovid HaMelech</em> (<span class="heb-inline">דוד המלך</span>) prayed for livelihood.</p>
+<h3>Why Not on Tisha B’Av, Shabbos, and Yom Tov</h3>
+<p>It is not said on <em class="term">Tisha B’Av</em> (<span class="heb-inline">תשעה באב</span>), a member of the congregation answered, because one may not work on that day. The lecturer accepted this, though the actual reason, he said, is that the day is called a <em class="term">moed</em> (<span class="heb-inline">מועד</span>).<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> On <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) and <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>) it is not said because there is no labor and no livelihood.</p>
+<h2>IV. Becoming a Vessel</h2>
+<h3>Opening One’s Own Hands</h3>
+<p>A question was raised: whose hands does <em class="term">Poseiach Es Yadecha</em> (<span class="heb-inline">פותח את ידך</span>) speak of? The Holy One, figuratively, opens His hands. But we said earlier that we, too, must open our hands and make ourselves a vessel (<em class="term">keli</em> (<span class="heb-inline">כלי</span>)). A person may say the verse all day; if he does no effort (<em class="term">hishtadlus</em> (<span class="heb-inline">השתדלות</span>)) he may sit in the study hall and learn all day. Some do that, but it requires a high level of trust (<em class="term">emunah ubitachon</em> (<span class="heb-inline">אמונה ובטחון</span>)). This, the lecturer says, the <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) holds to be for the exalted alone.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a></p>
+<h3>The Story of the Alshich</h3>
+<p>The lecturer recalls the well-known story of the <em class="term">Alshich HaKadosh</em> (<span class="heb-inline">אלשיך הקדוש</span>): he taught that everything comes from the Holy One, that one may sit and learn and pray and livelihood will arrive. After the lesson his students went to work; they had heard, but in practice they needed to earn that day. One simple Jew stayed, prayed, and learned all day, and miraculously received not ordinary livelihood but abundance (<em class="term">parnassah berevach</em> (<span class="heb-inline">פרנסה ברווח</span>)). Asked why, the <em class="term">Alshich</em> (<span class="heb-inline">אלשיך</span>) said, “He really believed.” To sit with folded hands, one must really believe. “We are not on that level at all today; perhaps some are.”<a class="footnote-ref" id="ref10" href="#fn10">[10]</a></p>
+<h3>The Empty Carriage</h3>
+<p>A member of the congregation told a story, which the lecturer received with interest, about a Lubavitcher <em class="term">chassid</em> (<span class="heb-inline">חסיד</span>) who had no children for many years. Another couple, from France or elsewhere, came with a baby carriage; there was nothing in the carriage, and that year they had a child. The <em class="term">chassid</em> (<span class="heb-inline">חסיד</span>) who had waited all those years went to the Rebbe. The lecturer drew the lesson: when one comes with the vessel (<em class="term">keli</em> (<span class="heb-inline">כלי</span>)), with the readiness to receive.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a></p>
+<h3>A Segulah From This Week’s Parashah</h3>
+<p>The lecturer says he told someone the previous day, in the break between the aliyos, of a wonderful <em class="term">segulah</em> (<span class="heb-inline">סגולה</span>) from the end of the week’s portion, to be shared with anyone waiting for children. The distress of not having children is very great; he is now dealing with a couple who have waited years. The verse is spoken by <em class="term">Yosef HaTzaddik</em> (<span class="heb-inline">יוסף הצדיק</span>): <span class="heb-inline">הא לכם זרע</span>.<a class="footnote-ref" id="ref12" href="#fn12">[12]</a> The holy books, he says, teach that <em class="term">Hei</em> (<span class="heb-inline">הא</span>) (an uncommon word in the Torah) is an acronym for <em class="term">hachnasas orchim</em> (<span class="heb-inline">הכנסת אורחים</span>): even when it is uncomfortable for a couple who have no children, they should bring guests into the home, and they will have offspring. The reason, he says, is beyond the scope of the lesson.</p>
+<h2>V. Kedushah DeSidra: The Source in Sotah</h2>
+<h3>The Gemara</h3>
+<p>Why is the prayer called <em class="term">Kedushah DeSidra</em> (<span class="heb-inline">קדושה דסידרא</span>), “the sanctification of the order”? The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) at the very end of <em class="term">Maseches Sotah</em> (<span class="heb-inline">מסכת סוטה</span>) (49a) says that from the day the Temple was destroyed, no day lacks a curse greater than that of the day before.<a class="footnote-ref" id="ref13" href="#fn13">[13]</a> After the destruction came trouble upon trouble and exile upon exile, so that the verse in the rebuke says <span class="heb-inline">בבקר תאמר מי יתן ערב ובערב תאמר מי יתן בקר</span>. In the morning a person wishes it were evening; at night, that it were morning. A person even wishes that yesterday’s troubles, which he knew, would return rather than the unknown strength of tomorrow’s. The <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) asks how the world endures.</p>
+<h3>The Answer</h3>
+<p>The world endures, the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) answers, on account of <em class="term">kedushah desidra</em> (<span class="heb-inline">קדושה דסידרא</span>) and <em class="term">Yehei Shmei Rabba</em> (<span class="heb-inline">יהא שמיה רבא</span>) of the <em class="term">aggadah</em> (<span class="heb-inline">אגדתא</span>): the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) of <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) with its <span class="heb-inline">קדוש קדוש קדוש</span>, and the <em class="term">Amen Yehei Shmei Rabba</em> (<span class="heb-inline">אמן יהא שמיה רבא</span>) answered after the <em class="term">Kaddish DeRabbanan</em> (<span class="heb-inline">קדיש דרבנן</span>) that follows a lesson. If one is sensitive to the tragedy of exile and to the Divine Presence no longer resting among Israel as in the days of the Temple, if we are so disconnected, as much as we think we are connected, how does the world stand? On these two.</p>
+<h3>Rashi</h3>
+<p><em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) there explains why it is said every day.<a class="footnote-ref" id="ref14" href="#fn14">[14]</a> Every person must learn Torah daily. We do not have the time; we must work, and what we learn at night is not enough. The sages therefore wished <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) to learn Torah together as a community in the morning, in the synagogue, after <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>), instead of going straight home or out to work: a little Torah, caught up in passing. In earlier times, <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) says, more verses were said.</p>
+<h3>What Was Originally Learned</h3>
+<p>The lecturer recalls the letter of <em class="term">Rav Natronai Gaon</em> (<span class="heb-inline">רב נטרונאי גאון</span>) to the community of Lucena, discussed some weeks earlier. Originally, after the prayer everyone sat and learned together, for an hour or two. (The <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) in <em class="term">Berachos</em> (<span class="heb-inline">ברכות</span>) speaks of the early pious, who waited an hour before praying, preparing; after prayer they learned.)<a class="footnote-ref" id="ref15" href="#fn15">[15]</a> There was a lesson every day, as there is in many synagogues today, and the lecturer expects that the time will come when there will be lessons after prayer every day, a group learning together; that is what sustains the world. As exile continued many could not stay. The sources describe the course of study as Scripture (verses from the Prophets), <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>), and an explanation of the <em class="term">Mishnayos</em> (<span class="heb-inline">משניות</span>), but people were poor and had to give those minutes or hour to their work. What was left were the verses of <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) from <em class="term">Yeshayahu</em> (<span class="heb-inline">ישעיה</span>), <span class="heb-inline">קדוש קדוש קדוש</span>; with a few verses before and a few after, they are the core of <em class="term">kedushah desidra</em> (<span class="heb-inline">קדושה דסידרא</span>). It was part of the <em class="term">seder hayom</em> (<span class="heb-inline">סדר היום</span>): prayer, a little learning, and then <em class="term">Kaddish</em> (<span class="heb-inline">קדיש</span>) and <em class="term">Yehei Shmei Rabba</em> (<span class="heb-inline">יהא שמיה רבא</span>).</p>
+<h2>VI. Questions on Kedushah DeSidra</h2>
+<h3>Why the Targum?</h3>
+<p>The <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) was already said in <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>) and in the <em class="term">Chazaras HaShatz</em> (<span class="heb-inline">חזרת הש״ץ</span>), without <em class="term">targum</em> (<span class="heb-inline">תרגום</span>). Why here with it? (The lecturer notes that many say the <em class="term">targum</em> (<span class="heb-inline">תרגום</span>) quietly (<em class="term">bilachash</em> (<span class="heb-inline">בלחש</span>)), Sephardim in particular; that some <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) say it quietly because <em class="term">targum</em> (<span class="heb-inline">תרגום</span>) is not said aloud, though not by right; and that the <em class="term">Arizal</em> (<span class="heb-inline">אריז״ל</span>) was not strict.) The reason, according to <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>), is that this is a piece of learning, and even the unlettered (<em class="term">amei haaretz</em> (<span class="heb-inline">עמי הארצות</span>)), who did not know the holy tongue and spoke Aramaic in Babylonia, were to take part. <em class="term">Ezra HaSofer</em> (<span class="heb-inline">עזרא הסופר</span>) and the <em class="term">Anshei Knesses HaGedolah</em> (<span class="heb-inline">אנשי כנסת הגדולה</span>) therefore instituted that the verses be said with their translation, so that all would understand that we are learning verses of <em class="term">Yeshayahu HaNavi</em> (<span class="heb-inline">ישעיה הנביא</span>) and sanctifying the Name at once. <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) says that the two together are the merit by which the world stands. It is Torah study, not prayer proper; it is a miniature lesson in verses of Scripture. This is the simple meaning according to <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>); and the <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>), it seems, also holds that it is a matter of Torah study.<a class="footnote-ref" id="ref16" href="#fn16">[16]</a></p>
+<h3>May It Be Said by an Individual?</h3>
+<p>A listener asked why one sits and whether it may be said with fewer than ten. The <em class="term">Tur</em> (<span class="heb-inline">טור</span>) brings an opinion that it may not be said by an individual, as with <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>). The ruling, however, follows the other <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>): since it is not truly <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) but in place of Torah study, it does not carry the same law as <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) in the presence of ten, and an individual may say it.<a class="footnote-ref" id="ref17" href="#fn17">[17]</a> <em class="term">Rav Chaim Vital</em> (<span class="heb-inline">רב חיים ויטאל</span>) reports that his master the <em class="term">Arizal</em> (<span class="heb-inline">אריז״ל</span>) was not strict, though it seems they used to be careful to say it with the community.</p>
+<h3>Why Not on Shabbos and Yom Tov After Shacharis?</h3>
+<p>On <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) and <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>) <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) is not said after <em class="term">Shacharis</em> (<span class="heb-inline">שחרית</span>), only at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>). The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) say the reason is that on those days people had time to learn and did not need the extra learning. Why at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>)? The lecturer said he did not have a good answer; the point, he suggested, is that the enactment not be forgotten, so it was moved to <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>), showing that <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) differs from a weekday morning, when people must rush out. (A listener raised the saying of <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) on the departure of <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) at <em class="term">Maariv</em> (<span class="heb-inline">מעריב</span>); the lecturer said that is a different reason, to be taken up another time.)</p>
+<h2>VII. The Decree Against Kedushah</h2>
+<h3>Sefer HaPardes</h3>
+<p>The lecturer says he now comes to a reason that he finds fascinating, which concerns the disciples of <em class="term">Yeshu</em> (<span class="heb-inline">ישו</span>). It is found in the <em class="term">Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>).<a class="footnote-ref" id="ref18" href="#fn18">[18]</a> The name already sounds mystical: in the language of <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) the <em class="term">Pardes</em> (<span class="heb-inline">פרדס</span>) is the mystical orchard, as in the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in <em class="term">Chagigah</em> (<span class="heb-inline">חגיגה</span>), four entered the orchard, and only <em class="term">Rabbi Akiva</em> (<span class="heb-inline">רבי עקיבא</span>) came out unharmed.<a class="footnote-ref" id="ref19" href="#fn19">[19]</a> The book was written in the period of the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>), seemingly by a student of <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>), either <em class="term">Rabbeinu Nosson</em> (<span class="heb-inline">רבינו נתן</span>) or <em class="term">Rabbeinu Simcha</em> (<span class="heb-inline">רבינו שמחה</span>), and consists chiefly of rulings of <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>), with much on the order of prayer. The lecturer says it records this explanation in the name of <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>).</p>
+<h3>The Disciples</h3>
+<p>The lecturer mentions that he once gave a whole lesson on how <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) and the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) regarded <em class="term">Yeshu</em> (<span class="heb-inline">ישו</span>), and refers to the <em class="term">Rambam</em> (<span class="heb-inline">רמב״ם</span>) at the end of <em class="term">Hilchos Melachim</em> (<span class="heb-inline">הלכות מלכים</span>) and to the <em class="term">Yaavetz</em> (<span class="heb-inline">יעב״ץ</span>), who writes that <em class="term">Yeshu</em> (<span class="heb-inline">ישו</span>) is the acronym of <span class="heb-inline">ימח שמו וזכרו</span> (he mentioned it the previous Friday night; the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in <em class="term">Gittin</em> (<span class="heb-inline">גיטין</span>) mentions him).<a class="footnote-ref" id="ref20" href="#fn20">[20]</a> But the point here is not he; it is his disciples. Whatever one holds of him, the lecturer says, his disciples were dangerous to <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>); see <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) on the <em class="term">Shas</em> (<span class="heb-inline">ש״ס</span>) wherever they are mentioned, with the phrase <span class="heb-inline">הוא הסית והדיח וכישף</span>. (The lecturer declined to take up, or to name, a rabbi in Eretz Yisrael who had spoken about <em class="term">Yeshu</em> (<span class="heb-inline">ישו</span>) that week.)</p>
+<p>The historical setting, he stresses, is not today’s. Today Christians are Christians and Jews are Jews. In those centuries the origins of Christianity lay in our own synagogues and community; they were Jews who chose to follow him, with his heresy and denial, and it was hard to separate them from those who believed in the Torah and the Oral Torah.</p>
+<h3>The Decree</h3>
+<p>These disciples were so hostile to <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) that they went to the authorities in Eretz Yisrael and told them that what the Jews say in their synagogues mocks you and is bad; guard them and see that nothing is said against the government. Among the decrees of the government of that time, a piece of Jewish history that most do not know, was that Jews might not sanctify the Name in the synagogue: they could not say <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>), <span class="heb-inline">קדוש קדוש קדוש</span>, nor <span class="heb-inline">ברוך כבוד ה׳ ממקומו</span>, which for some reason were perceived as against him and against the local government. The lecturer says he does not understand the reason, but that there was such a decree for a long time. Imagine going to synagogue and omitting the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) of <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>), and that of the <em class="term">Chazaras HaShatz</em> (<span class="heb-inline">חזרת הש״ץ</span>). How can a Jew begin the day without <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>)?</p>
+<h3>The Enactment</h3>
+<p>The sages of that time made an enactment. The guards sent by the government left at a certain point: after <em class="term">Sim Shalom</em> (<span class="heb-inline">שים שלום</span>), at the end of the <em class="term">Chazaras HaShatz</em> (<span class="heb-inline">חזרת הש״ץ</span>), when the Jews were known not to say <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>). Once they left, the Jews rose and said <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>): that is, in <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>). This, he says, is also why the <em class="term">targum</em> (<span class="heb-inline">תרגום</span>) is said: we had missed two <em class="term">Kedushos</em> (<span class="heb-inline">קדושות</span>), that of <em class="term">Yotzer Or</em> (<span class="heb-inline">יוצר אור</span>) and that of the <em class="term">Chazaras HaShatz</em> (<span class="heb-inline">חזרת הש״ץ</span>). The <em class="term">Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>) writes this in the name of <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>). Since we must make up what we missed, with the guards standing over us like hawks, at the end of the prayer, when they had left, we say <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>). The essence of it is the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>); we repeat it in its <em class="term">targum</em> (<span class="heb-inline">תרגום</span>) to make up the two omitted. This is a completely different reason from the one given before.</p>
+<h3>Why the Enactment Remained</h3>
+<p>Today we say <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) in the morning and in the <em class="term">Chazaras HaShatz</em> (<span class="heb-inline">חזרת הש״ץ</span>) and again in <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>), because the enactment remained. The <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) say something that, the lecturer says, boggles his mind: who knows, perhaps they will return one day and decree again, so we keep it in place. This reminds him of the second day of <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>) in the Diaspora, which bothers many people: the <em class="term">Gemara</em> (<span class="heb-inline">גמרא</span>) in <em class="term">Beitzah</em> (<span class="heb-inline">ביצה</span>) (4) speaks of keeping the custom of one’s fathers lest the government issue a decree. He did not remember the exact wording and wondered aloud whether there is reason to be concerned today.<a class="footnote-ref" id="ref21" href="#fn21">[21]</a> Some enactments of the sages remained even though the reason is gone. When one says <em class="term">Kedushah DeSidra</em> (<span class="heb-inline">קדושה דסידרא</span>), the lecturer says, one is reenacting what was done when it could not be said in the synagogue.</p>
+<h3>Shema in the Kedushah of Musaf</h3>
+<p>A listener asked whether the same applies elsewhere, and the lecturer asked for a source before he would accept it; perhaps, he said, the listener meant the reason the <em class="term">Rishonim</em> (<span class="heb-inline">ראשונים</span>) give for the <span class="heb-inline">שמע ישראל ה׳ אלקינו ה׳ אחד</span> in the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) of <em class="term">Musaf</em> (<span class="heb-inline">מוסף</span>) on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>). Why say <em class="term">Shema</em> (<span class="heb-inline">שמע</span>) again? Because there was once a decree that <em class="term">Shema</em> (<span class="heb-inline">שמע</span>) might not be said in the synagogue, and by the time <em class="term">Musaf</em> (<span class="heb-inline">מוסף</span>) came, whoever was watching had left, so it was inserted into the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>); today there is no problem, but it remained part of the enactment.<a class="footnote-ref" id="ref22" href="#fn22">[22]</a> He finds it striking that <em class="term">Klal Yisrael</em> (<span class="heb-inline">כלל ישראל</span>) still clings to these because of that decree, which, he says, specifically the disciples of <em class="term">Yeshu</em> (<span class="heb-inline">ישו</span>) caused.</p>
+<h3>A Digression on a Date</h3>
+<p>The conversation touched on the legend that <em class="term">Nishmas</em> (<span class="heb-inline">נשמת</span>) was composed by one of those disciples (spoken of in an earlier lesson), and the lecturer said the yahrtzeit of that figure, “whatever his name,” falls tomorrow, citing a source in the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שלחן ערוך</span>) on the fasts of Tevet and correcting himself on whether the date is the eighth or the ninth.<a class="footnote-ref" id="ref23" href="#fn23">[23]</a> The recording is not clear enough to state this further; it is recorded in the Open Questions.</p>
+<h2>VIII. The Latecomers</h2>
+<h3>The Avudraham</h3>
+<p>There is one more reason, the lecturer says, which he loves. We frown on those who come late to synagogue, himself included. There are excuses, such as children at home or trudging through snow, as on the Shabbos before this lecture, and we cannot judge; that is the Holy One’s task. Still it bothers a Jew. <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) were much more sensitive. This is at least the sixth or seventh time on this journey through <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>) that he has stressed that certain prayers were instituted because of latecomers.</p>
+<p>The <em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>), whom the lecturer quotes often and whom the <em class="term">Beis Yosef</em> (<span class="heb-inline">בית יוסף</span>) cites here, writes that one reason we say <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) at the end of the prayer is for those who come so late that the prayer is already over. The sages made a miniature prayer for them, containing <em class="term">Ashrei</em> (<span class="heb-inline">אשרי</span>), the core of <em class="term">Pesukei DeZimra</em> (<span class="heb-inline">פסוקי דזמרה</span>) (we say <span class="heb-inline">פותח את ידך ומשביע לכל חי רצון</span>), and <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>), because these are important. <em class="term">Shema</em> (<span class="heb-inline">שמע</span>) they will have to manage on their own. So all of us stay an extra five minutes because of the latecomers of that time.<a class="footnote-ref" id="ref24" href="#fn24">[24]</a> Instead of dismissing them, the sages were sensitive to those who do not recognize the importance of coming on time, and made a whole new prayer for them. (The lecturer says that he was thinking aloud and was not sure of the connection of this to <em class="term">Lamnatzeach</em> (<span class="heb-inline">למנצח</span>).)</p>
+<h3>Why Not on Shabbos</h3>
+<p>This is also why it is not said on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) and <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>): everyone comes on time, not everywhere, but generally, because on those days the service is later. In the weekday morning one comes at seven or eight; on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) one begins much later, though the <em class="term">Shulchan Aruch</em> (<span class="heb-inline">שלחן ערוך</span>) speaks of praying early, and there is a dispute there; our custom is to pray later. The lecturer relates that his grandfather, Rabbi Yisrael Belsky (as in the clearest transcript), told him when he first married, on visiting Miami, that <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) morning in his son-in-law’s <em class="term">kollel</em> (<span class="heb-inline">כולל</span>) was at 8:15, and that in ordinary synagogues it was 8:00 to 8:30. When the lecturer prayed at a Chassidic shtiebel at nine and sat sipping his coffee for forty-five minutes, his grandfather was angry. He said that the nine o’clock hour was a new thing, from the Chassidic shtieblach that opened in America after the war, to show that they were not working on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>). A listener added that he had read in a biography of Rabbi Dovid Feinstein that MTJ prays at nine because originally it was made late deliberately, as not for those who go to work.<a class="footnote-ref" id="ref25" href="#fn25">[25]</a> Since on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) we pray later, nobody is late; it is said at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>) only to remember the enactment.</p>
+<h2>IX. Baruch Hu Elokeinu</h2>
+<h3>Gratitude</h3>
+<p>After <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) we say verses beginning <span class="heb-inline">ברוך הוא אלקינו שבראנו לכבודו והבדילנו מן התועים</span>. If <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>)’s theory is correct, that the <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>) in <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>) is there because of those who did not want us to say it, and so we waited until they left and said it here, then the verse is understood: thank God, we are not like them; we managed to snatch a <em class="term">Kedushah</em> (<span class="heb-inline">קדושה</span>), and now we can leave the synagogue and go home. This too, he says, is explained by some of the <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>) on the basis of this <em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>).</p>
+<h2>X. Shir Shel Yom</h2>
+<h3>The Source in Tamid</h3>
+<p>Every day we say the song of the day. The <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>) in <em class="term">Maseches Tamid</em> (<span class="heb-inline">מסכת תמיד</span>) teaches that every day the <em class="term">Levi’im</em> (<span class="heb-inline">לוים</span>), when they brought the wine libation (<em class="term">nisuch hayayin</em> (<span class="heb-inline">ניסוך היין</span>)) after the morning <em class="term">tamid</em> (<span class="heb-inline">תמיד</span>) and the afternoon <em class="term">tamid</em> (<span class="heb-inline">תמיד</span>), said a psalm: on Sunday <span class="heb-inline">לדוד מזמור לה׳ הארץ ומלואה</span>, then six more for the days following, and on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) <span class="heb-inline">מזמור שיר ליום השבת</span>.<a class="footnote-ref" id="ref26" href="#fn26">[26]</a></p>
+<h3>Why Only in the Morning?</h3>
+<p>There were two offerings every day. We say the song to remember the <em class="term">Levi’im</em> (<span class="heb-inline">לוים</span>) standing on the platform; why not at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>), when the same offering and libation were brought? The answer, the lecturer says (he notes that the congregation is now learning <em class="term">Zevachim</em> (<span class="heb-inline">זבחים</span>)), is that in the Temple service there was sometimes such crowding, with so many offerings, that the priests delayed the wine libation, and it came only at night, after the afternoon <em class="term">tamid</em> (<span class="heb-inline">תמיד</span>). And song is not said at night.<a class="footnote-ref" id="ref27" href="#fn27">[27]</a> So although we say it daily to remember the song of the <em class="term">Levi’im</em> (<span class="heb-inline">לוים</span>), we do not say it at <em class="term">Minchah</em> (<span class="heb-inline">מנחה</span>).</p>
+<h2>XI. “Today Is the First Day Toward Shabbos”</h2>
+<h3>The Ramban on Zachor</h3>
+<p>Why does the song begin <span class="heb-inline">היום יום ראשון בשבת שבו היו הלוים אומרים בבית המקדש</span>? A listener supplied the answer: <span class="heb-inline">זכור את יום השבת לקדשו</span>, and the lecturer said that is exactly what he wished to say. There is a <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) on the verse, and it is important for every Jew to know: do not remember <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) only on <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>), in the prayers, <em class="term">Kiddush</em> (<span class="heb-inline">קידוש</span>) and <em class="term">Havdalah</em> (<span class="heb-inline">הבדלה</span>).<a class="footnote-ref" id="ref28" href="#fn28">[28]</a> The commandment applies every day. Some say the six remembrances (<em class="term">sheish zechiros</em> (<span class="heb-inline">שש זכירות</span>)) daily at the end of the prayers, of which one is <span class="heb-inline">זכור את יום השבת לקדשו</span>; for those who do not, this is where the commandment is fulfilled. (The lecturer says that it is not counted among the commandments, which he calls a whole question among the <em class="term">Acharonim</em> (<span class="heb-inline">אחרונים</span>).) What better place than the song of the day to remember <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>)?</p>
+<h3>The Names of the Days</h3>
+<p>The <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) adds that we must be careful of the names. Among the nations the days are called Sunday, Monday, Tuesday, and so on, and the names are those of the seven planets known in antiquity, which were deities: the sun, the moon, Mars, Mercury, Jupiter, Venus, Saturn. (The lecturer worked out the order aloud with the help of the congregation, and mentioned Constantine as the one who fixed the week.) How can a Jew say “Sunday”? He is saying, in effect, “the day of the sun.” What sun? Stars and constellations: idolatry. The <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) says Jews count differently, as the lecturer’s three-year-old does, with the innocence of children: asked what day it is, he answers <span class="heb-inline">היום ראשון, מחר שני</span>. A listener asked about the months, and the lecturer replied that the <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) has a long discussion of that on <span class="heb-inline">החודש הזה לכם</span>.</p>
+<p>We live in the world and say Sunday and Monday, but the <em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) says: at least once a day call the days as they should be called, <em class="term">Rishon LeShabbos</em> (<span class="heb-inline">ראשון לשבת</span>), because every day is connected with the <em class="term">Shabbos</em> (<span class="heb-inline">שבת</span>) that follows.</p>
+<h3>Wednesday and Lechu Neranenah</h3>
+<p>A listener asked why on Wednesday <span class="heb-inline">לכו נרננה</span> is added at the end. The lecturer replied that the chapter of the day does not end there: it ends with <span class="heb-inline">ויצמיתם ה׳ אלקינו</span>, and a few verses are added so as not to end on a bad word.<a class="footnote-ref" id="ref29" href="#fn29">[29]</a></p>
+<h2>XII. Closing</h2>
+<p>The lecturer ended by saying that the following week would continue with <em class="term">Shir Shel Yom</em> (<span class="heb-inline">שיר של יום</span>), and wished all a good day and a good week. The discourse closed with the <em class="term">Mishnah</em> (<span class="heb-inline">משנה</span>): <span class="heb-inline">רבי חנניה בן עקשיא אומר רצה הקדוש ברוך הוא לזכות את ישראל לפיכך הרבה להם תורה ומצוות שנאמר ה׳ חפץ למען צדקו יגדיל תורה ויאדיר</span>.<a class="footnote-ref" id="ref30" href="#fn30">[30]</a></p>
+<section class="mareh">
+<h2>מראה מקומות &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">ברכות ט׳ ע״ב – י׳ ע״א</span>; cf. <span class="heb-inline">ברכות כ״ח ע״ב</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: the Gemara (9b) teaches that David said <span class="heb-inline">יהיו לרצון</span> only after eighteen chapters, which is why it follows the eighteen blessings; to the objection that there are nineteen, the Gemara counts chapters one and two as one. <span class="heb-inline">ברכות כ״ח ע״ב</span> gives other reasons for the eighteen blessings (Psalm 29, the eighteen mentions in Shema, the eighteen vertebrae) and does not mention the chapters. The earlier text cited <span class="heb-inline">מגילה י״ז ע״ב</span> as well; that is dropped as unverified.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short">The yahrtzeit of <em class="term">Ezra HaSofer</em> (<span class="heb-inline">עזרא הסופר</span>).</span>
+  <span class="expanded"> The date is the lecturer’s report of a message from Rabbi Yehuda Honig (so in the clearest transcript; the earlier text had “Honein”). The recording says it is “today… tomorrow? oh, good he told me,” i.e., 9 Tevet. The earlier text and the AI summary stated that it is today and gave 28 Tevet (summary: 5785); 28 December 2025 is 8 Tevet 5786 (computed), so 9 Tevet is the next day. That 9 Tevet is the traditional day is as reported; see also note 23.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><em class="term">Pirkei DeRabbi Eliezer</em> (<span class="heb-inline">פרקי דרבי אליעזר</span>).</span>
+  <span class="expanded"> As the lecturer reports (“it seems a little different”). The chapter and the text were not located for this edition.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">מדרש תהלים כ׳</span>.</span>
+  <span class="expanded"> UNCERTAIN. As retrieved, Midrash Tehillim 20 contains a related parable (a mother who cries with her daughter in labor, applied to God in the destruction) but not the lecturer’s account of comforting the woman by reference to her own birth. The midrash is recorded as he reports it; see Open Questions.</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">ויקרא י״ב</span>; <span class="heb-inline">נדה ל״א ע״ב</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: Rabbi Shimon bar Yochai in Niddah 31b says that in the pain of labor a woman impulsively takes an oath not to be with her husband, and the Torah therefore requires an offering. The lecturer’s further remarks (other opinions: <em class="term">korban todah</em> (<span class="heb-inline">קרבן תודה</span>), impurity of childbirth) are as he gives them.</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">ברכות ג׳ ע״ב – ד׳ ע״א</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: a lyre hung over David’s bed and the north wind played it at midnight; the sages said, “Our master the king, your nation requires sustenance”; he replied, “Go and sustain one another,” and when they said it is not enough, “Go and spread out against the troop.” The Philistines are not named there; that is the lecturer’s gloss. That David then recited Psalm 20 for livelihood is the lecturer’s account and is not in the passage. Psalm 119:62 is the verse <span class="heb-inline">חצות לילה אקום להודות לך על משפטי צדקך</span>.</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short">The “Pishtu Rebbe.”</span>
+  <span class="expanded"> As the lecturer reports (the AI summary wrote that the garlic is given out on Shabbos; the recording says on the departure of Shabbos). No name or source was given.</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">איכה א׳:ט״ו</span> — <span class="heb-inline">קרא עלי מועד</span>.</span>
+  <span class="expanded"> VERIFIED as the verse (“proclaimed a set time against me”). That the day is therefore treated as a <em class="term">moed</em> (<span class="heb-inline">מועד</span>) (no <em class="term">Tachanun</em> (<span class="heb-inline">תחנון</span>)) is as the lecturer states. The earlier text added reasons for the prohibition of tefillin and of study that the recording does not give; removed.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) on trust and effort.</span>
+  <span class="expanded"> UNCERTAIN. The lecturer did not give a locus. The earlier text cited Ramban on <span class="heb-inline">שמות י״ג:ט״ז</span>; as retrieved, that comment treats hidden miracles and does not discuss effort and trust. <span class="heb-inline">חובות הלבבות, שער הבטחון</span> is the classic treatment and is cited for comparison only.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short">The story of the <em class="term">Alshich</em> (<span class="heb-inline">אלשיך</span>).</span>
+  <span class="expanded"> As the lecturer relates it; he notes that the versions differ and that the differences do not matter. No source.</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short">The story of the Lubavitcher <em class="term">chassid</em> (<span class="heb-inline">חסיד</span>).</span>
+  <span class="expanded"> Told by a congregant (the clearest transcript reads “Lubavitcher Rebbe story”; the AI summary reversed it, attributing the empty carriage to the waiting <em class="term">chassid</em> (<span class="heb-inline">חסיד</span>) and omitting “Lubavitcher”). The recording does not make clear who carried the empty carriage; the text follows the recording. See Open Questions.</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">בראשית מ״ז:כ״ג</span> — <span class="heb-inline">הא לכם זרע</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: Joseph speaks (“here is seed for you to sow the land”); in the portion Vayigash, read the previous Shabbos. The lecturer cites “the holy books” (<span class="heb-inline">ספרים הקדושים</span>); the AI summary wrote a single title, <span class="heb-inline">ספר המקדושים</span>, and garbled the acronym. No sefer was named.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn13">
+  <span class="short"><span class="heb-inline">סוטה מ״ט ע״א</span>; <span class="heb-inline">דברים כ״ח:ס״ז</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: “From the day the Temple was destroyed, there is no day that does not include some curse”; the passage names the sanctification said in the order of prayers after <span class="heb-inline">ובא לציון גואל</span> and the response <span class="heb-inline">יהא שמיה רבא</span> recited after the study of aggadah. Deuteronomy 28:67 reads <span class="heb-inline">בבקר תאמר מי יתן ערב ובערב תאמר מי יתן בקר</span>; the earlier text reversed the order. CORRECTED.</span>
+  <a class="backref" href="#ref13" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn14">
+  <span class="short"><em class="term">Rashi</em> (<span class="heb-inline">רש״י</span>) on <span class="heb-inline">סוטה מ״ט ע״א</span>.</span>
+  <span class="expanded"> UNCERTAIN. Rashi’s comment on kedushah desidra could not be retrieved from Sefaria. The explanation given is the lecturer’s account of Rashi.</span>
+  <a class="backref" href="#ref14" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn15">
+  <span class="short"><em class="term">Rav Natronai Gaon</em> (<span class="heb-inline">רב נטרונאי גאון</span>); <span class="heb-inline">משנה ברכות ה׳:א׳</span>.</span>
+  <span class="expanded"> UNCERTAIN. The responsum to Lucena (the subject of an earlier lesson) was not located here; Rav Natronai bar Hilai headed Sura c. 853–858 (as in earlier notes). The Mishnah of the early pious who waited an hour before praying was verified for the 7 December 2025 edition. The Sofer-style transcript garbled the name (“Rav Nachmanoy”).</span>
+  <a class="backref" href="#ref15" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn16">
+  <span class="short"><span class="heb-inline">רמב״ם, הלכות תפילה פ״ט ה״ה–ו</span>.</span>
+  <span class="expanded"> The chapter, as retrieved, mentions <em class="term">Uva LeTzion</em> (<span class="heb-inline">ובא לציון</span>), the verses of kedushah and the <em class="term">targum</em> (<span class="heb-inline">תרגום</span>) at halakhos 5–6. The earlier text gave <span class="heb-inline">ה״י״ז</span>, which does not exist in this chapter, and stated flatly that the Rambam “paskens” that it is Torah study; the lecturer said it “seems” so. Not further checked.</span>
+  <a class="backref" href="#ref16" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn17">
+  <span class="short"><span class="heb-inline">טור, אורח חיים קל״ב</span>; <span class="heb-inline">שלחן ערוך שם</span>; <span class="heb-inline">שער הכוונות</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: the Tur cites Rav Tzemach that an individual should not say the order of kedushah, and then that an individual may; the Shulchan Aruch (132:1, gloss) allows it as with the kedushah of Yotzer. The Arizal in Shaar HaKavanos (Rav Chaim Vital) is UNCERTAIN, not retrieved. The earlier text added a Mishnah Berurah ruling the lecturer did not give.</span>
+  <a class="backref" href="#ref17" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn18">
+  <span class="short"><em class="term">Sefer HaPardes</em> (<span class="heb-inline">ספר הפרדס</span>).</span>
+  <span class="expanded"> UNCERTAIN. The text was not located on Sefaria. The author is as the lecturer says (a student of Rashi, either Rabbeinu Nosson or Rabbeinu Simcha); the earlier text’s “of Vitry” and the dates were not said. The earlier text also said the account was “flagged for scholarly debate”; the lecturer did not say so. The historical claim of a decree is recorded as his report of the Pardes.</span>
+  <a class="backref" href="#ref18" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn19">
+  <span class="short"><span class="heb-inline">חגיגה י״ד ע״ב</span> — <span class="heb-inline">ארבעה נכנסו לפרדס</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: Ben Azzai died, Ben Zoma lost his mind, Acher (Elisha ben Avuya) cut down the shoots, and Rabbi Akiva came out safely.</span>
+  <a class="backref" href="#ref19" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn20">
+  <span class="short"><span class="heb-inline">רמב״ם, הלכות מלכים פי״א</span>; <em class="term">Yaavetz</em> (<span class="heb-inline">יעב״ץ</span>); <span class="heb-inline">גיטין נ״ז ע״א</span>.</span>
+  <span class="expanded"> Gittin 57a VERIFIED on Sefaria as mentioning Yeshu (Onkelos raising him). The Rambam passage is in uncensored editions of the end of Hilchos Melachim, ch. 11; the earlier text cited <span class="heb-inline">הי״ד</span>, which does not exist; the Sefaria text of 11:4 as retrieved did not contain it, so the halakhah number is not asserted. The Yaavetz: no locus given by the lecturer (the earlier text added Lechem Shamayim, removed). The phrase <span class="heb-inline">הוא הסית והדיח וכישף</span> is the lecturer’s quotation; locus not checked.</span>
+  <a class="backref" href="#ref20" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn21">
+  <span class="short"><span class="heb-inline">ביצה ד׳ ע״ב</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria (Beitzah 4b): the instruction from Eretz Yisrael to keep the custom of one’s fathers “because at times the monarchy will issue decrees.” The earlier text cited the Beis Yosef, OC 496, from a mishearing of “Beitzah daf dalet”. CORRECTED.</span>
+  <a class="backref" href="#ref21" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn22">
+  <span class="short">The Rishonim on <span class="heb-inline">שמע ישראל</span> in <em class="term">Musaf</em> (<span class="heb-inline">מוסף</span>).</span>
+  <span class="expanded"> UNCERTAIN. No Rishon was named by the lecturer, who asked a listener for a source; not located. The reason is as reported.</span>
+  <a class="backref" href="#ref22" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn23">
+  <span class="short"><em class="term">Shulchan Aruch</em> (<span class="heb-inline">שלחן ערוך</span>), <span class="heb-inline">אורח חיים תק״פ</span>.</span>
+  <span class="expanded"> VERIFIED that OC 580 lists 8 Tevet (the Torah written in Greek under Ptolemy) and 9 Tevet (“it was not known what happened on it”). Who the lecturer meant by the “disciple” and which work (“Baruch Taam” in the transcript) he cited are UNCERTAIN; the passage was omitted from the earlier text and is restored cautiously. See Open Questions.</span>
+  <a class="backref" href="#ref23" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn24">
+  <span class="short"><em class="term">Avudraham</em> (<span class="heb-inline">אבודרהם</span>), in <span class="heb-inline">בית יוסף, אורח חיים קל״ב</span>.</span>
+  <span class="expanded"> UNCERTAIN. The Beis Yosef passage could not be retrieved (fetch failed). As the lecturer reports. The Plaud reading “Avudraham” replaces the garbled “Rav Drum” of one transcript.</span>
+  <a class="backref" href="#ref24" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn25">
+  <span class="short">The nine o’clock minyan.</span>
+  <span class="expanded"> Oral reports (the lecturer’s grandfather; a listener on a biography of Rabbi Dovid Feinstein). No source was checked. The identification of Rabbi Yisrael Belsky is from the recording (spelled בלסקי in the summary; בעלסקי in the earlier text) and is UNCERTAIN as to which relative.</span>
+  <a class="backref" href="#ref25" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn26">
+  <span class="short"><span class="heb-inline">משנה תמיד ז׳:ד׳</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: Sunday Ps. 24, Monday 48, Tuesday 82, Wednesday 94, Thursday 81, Friday 93, Shabbos 92.</span>
+  <a class="backref" href="#ref26" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn27">
+  <span class="short"><span class="heb-inline">ערכין י״א ע״א</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: Rabbi Elazar derives that the song is by day, as with the blood; Rabbi Yonatan, that song is only over the wine of the libation. The earlier text’s quotation <span class="heb-inline">אין אומרים שירה אלא ביום</span> and the Divrei HaYamim derivation were not found there and are removed. That the libation was sometimes delayed to the night is the lecturer’s account.</span>
+  <a class="backref" href="#ref27" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn28">
+  <span class="short"><em class="term">Ramban</em> (<span class="heb-inline">רמב״ן</span>) on <span class="heb-inline">שמות כ׳:ח׳</span>.</span>
+  <span class="expanded"> VERIFIED on Sefaria: Israel counts all days with reference to Shabbos (“one day after the Sabbath, two days after the Sabbath”); the nations call each day by a separate name or the name of a ministering power; the verse commands us always to remember the Sabbath every day. The earlier text added that this is one of the Ramban’s additions to the Rambam’s count and that the Zohar maps the days to the seven planets; neither is in the recording (the “Zohar” was a mishearing of <span class="heb-inline">עבודה זרה</span>). Removed.</span>
+  <a class="backref" href="#ref28" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn29">
+  <span class="short">The Wednesday psalm.</span>
+  <span class="expanded"> Psalm 94 ends <span class="heb-inline">ה׳ אלקינו יצמיתם</span> (as the lecturer says). The earlier text said <span class="heb-inline">לכו נרננה</span> is added “at Maariv”; the recording says it is added at the end of the day’s song. CORRECTED.</span>
+  <a class="backref" href="#ref29" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn30">
+  <span class="short"><span class="heb-inline">משנה מכות ג׳:ט״ז</span>.</span>
+  <span class="expanded"> The closing Mishnah, recited by the lecturer at the end of the recording and verified in the 7 December 2025 edition; omitted from the earlier text of this date.</span>
+  <a class="backref" href="#ref30" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Reports of the lecturer are recorded as his and are not asserted in the text.</p>
+<ol>
+<li><strong>The Hebrew date and the yahrtzeit of Ezra.</strong> 28 December 2025 is computed as 8 Tevet 5786. The earlier text and summary gave 28 Tevet; the date of Ezra’s yahrtzeit (9 Tevet) and the source are the lecturer’s report of a message from Rabbi Yehuda Honig (spelling of the name to be confirmed).</li>
+<li><strong>The midrash on labor.</strong> The lecturer’s account (comforting the woman by reference to her own birth) was not found in Midrash Tehillim 20. The source to be obtained.</li>
+<li><strong>The Lubavitcher story.</strong> Who brought the empty carriage, and the identity of the chassid and the Rebbe, to be confirmed with the congregant or the lecturer.</li>
+<li><strong>Sefer HaPardes.</strong> The passage ascribing kedushah desidra to the decree, in the name of Rashi, to be located; the author (Rabbeinu Nosson or Rabbeinu Simcha) as the lecturer said.</li>
+<li><strong>The Rambam at the end of Hilchos Melachim and the Yaavetz on Yeshu.</strong> Halakhah number and locus to be supplied.</li>
+<li><strong>The Rashi on Sotah 49a.</strong> The text of Rashi on kedushah desidra and the Yehei Shmei Rabba of the aggadah to be retrieved.</li>
+<li><strong>The responsum of Rav Natronai</strong> to Lucena on the structure of the daily learning (previously noted, 7 December 2025), and the Mishnah’s early pious.</li>
+<li><strong>The Ramban on trust and effort.</strong> The locus is not given; the earlier citation (Shemos 13:16) does not treat the point.</li>
+<li><strong>The Arizal in Shaar HaKavanos</strong> on saying kedushah desidra alone. To be located.</li>
+<li><strong>The Avudraham and the Beis Yosef</strong> on the latecomers. To be retrieved.</li>
+<li><strong>The Rishonim on Shema in the kedushah of Musaf.</strong> The lecturer asked for the source; none was named.</li>
+<li><strong>The digression on the date.</strong> The disciple of Yeshu said to be the composer of Nishmas, the date (8 or 9 Tevet), and the work cited (“Baruch Taam”; Shulchan Aruch OC 580 lists both days) to be confirmed with the lecturer.</li>
+<li><strong>The Pishtu Rebbe</strong> and the Alshich story: no source, as the lecturer relates them.</li>
+<li><strong>The nine o’clock minyan.</strong> Which relative Rabbi Yisrael Belsky was, and the biography of Rabbi Dovid Feinstein cited by a listener, to be confirmed.</li>
+<li><strong>The shevua of the new mother.</strong> The lecturer’s remarks on the other opinions are recorded as his and not checked.</li>
+</ol>
+</section>
+<footer>
+  Sefer Edition of Rabbi Ephrati&rsquo;s discourse on <em class="term">Tefillah</em> (<span class="heb-inline">תפילה</span>), 8 Tevet 5786. The edition follows the order of the discourse, records the lecturer&rsquo;s reports as his, and leaves unresolved items to the Open Questions.
+</footer>
+
+</body>
+</html>
