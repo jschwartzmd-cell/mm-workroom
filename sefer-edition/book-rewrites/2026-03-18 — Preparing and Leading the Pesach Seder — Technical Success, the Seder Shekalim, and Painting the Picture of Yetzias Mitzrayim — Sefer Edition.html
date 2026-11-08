@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sefer Edition &mdash; Preparing and Leading the Pesach Seder &mdash; Technical Success, the Seder Shekalim, and Painting the Picture of Yetzias Mitzrayim</title>
+<style>
+  :root{
+    --blue:#1e3a8a;
+    --blue-soft:#2c5282;
+    --gold:#b8860b;
+    --gold-soft:#d4a017;
+    --ink:#1a1a1a;
+    --paper:#fdfaf3;
+    --rule:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:"Georgia","Iowan Old Style","Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    max-width:820px;
+    margin:40px auto;
+    padding:0 28px 60px 28px;
+    line-height:1.7;
+    font-size:17px;
+  }
+  header.title{
+    text-align:center;
+    border-top:3px double var(--gold);
+    border-bottom:3px double var(--gold);
+    padding:22px 10px;
+    margin-bottom:36px;
+    background:linear-gradient(180deg,rgba(184,134,11,0.05),rgba(30,58,138,0.05));
+  }
+  header.title h1{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    text-align:center;
+    color:var(--blue);
+    font-size:30px;
+    line-height:1.35;
+    margin:0 0 8px 0;
+    font-weight:700;
+  }
+  header.title .english-title{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--gold);
+    font-size:15px;
+    font-style:italic;
+    margin-top:4px;
+  }
+  header.title .sub{
+    color:var(--gold);
+    font-size:14px;
+    font-style:italic;
+    letter-spacing:0.5px;
+    margin-top:6px;
+  }
+  header.title .date{
+    margin-top:10px;
+    color:var(--blue-soft);
+    font-size:13px;
+  }
+  .dedication{
+    text-align:center;
+    font-style:italic;
+    color:var(--blue-soft);
+    font-size:15px;
+    margin-bottom:34px;
+    padding:10px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  h2{
+    color:var(--blue);
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:6px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--gold);
+    font-variant:small-caps;
+    letter-spacing:0.4px;
+  }
+  h3{
+    color:var(--gold);
+    font-size:18px;
+    margin-top:26px;
+    margin-bottom:4px;
+    font-style:italic;
+  }
+  .lead{
+    font-style:italic;
+    color:#444;
+    border-left:3px solid var(--gold);
+    padding:4px 14px;
+    margin:18px 0 26px 0;
+    background:rgba(184,134,11,0.04);
+  }
+  .heb{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:isolate;
+    color:var(--blue);
+  }
+  .heb-inline{
+    font-family:"SBL Hebrew","Noto Serif Hebrew","David","Frank Ruehl CLM","Times New Roman",serif;
+    direction:rtl;
+    unicode-bidi:embed;
+  }
+  em.term{font-style:italic;color:#2a2a2a;}
+  blockquote{
+    border-left:4px solid var(--blue);
+    background:rgba(30,58,138,0.04);
+    margin:18px 0;
+    padding:10px 18px;
+    color:#222;
+  }
+  blockquote .heb{font-size:19px;line-height:1.9;}
+  blockquote .trans{margin-top:8px;font-style:italic;color:#444;}
+  blockquote .source{margin-top:6px;font-size:13.5px;color:var(--gold);font-style:normal;}
+  .pullquote{
+    border:1px solid var(--gold);
+    padding:14px 18px;
+    margin:18px 0;
+    background:rgba(184,134,11,0.06);
+    border-radius:4px;
+  }
+  ul,ol{margin:8px 0 14px 22px;}
+  li{margin:4px 0;}
+  .mareh{
+    margin-top:50px;
+    border-top:3px double var(--gold);
+    padding-top:18px;
+  }
+  .mareh h2{text-align:center;border-bottom:none;margin-top:0;}
+  .mareh ol{margin:0 0 0 24px;list-style:decimal;}
+  .mareh li{margin:12px 0;padding-left:4px;}
+  .mareh li .short{font-weight:600;color:var(--blue);}
+  .mareh li .expanded{color:#2a2a2a;}
+  .mareh li .backref{color:var(--gold);text-decoration:none;margin-left:6px;font-size:0.85em;}
+  .mareh li .backref:hover{text-decoration:underline;}
+  .footnote-ref{color:var(--gold);text-decoration:none;font-size:0.85em;vertical-align:super;}
+  .footnote-ref:hover{text-decoration:underline;}
+  .divider{text-align:center;color:var(--gold);margin:30px 0;letter-spacing:8px;}
+  footer{margin-top:50px;text-align:center;color:#666;font-size:13px;font-style:italic;}
+  @media print{
+    body{max-width:none;margin:0;padding:18mm;font-size:12pt;}
+    .mareh{page-break-before:always;}
+    a.footnote-ref{color:#000;}
+  }
+
+  table.syn{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  table.syn th{background:var(--blue);color:#fff;padding:7px 8px;text-align:left;font-size:12.5px}
+  table.syn td{padding:7px 8px;border-bottom:1px solid #e4dcc8;vertical-align:top}
+  .callout{background:#fbf4dd;border:1px solid var(--gold-soft);border-radius:6px;padding:12px 18px;margin:22px 0}
+  .callout .label{display:block;font-variant:small-caps;letter-spacing:.12em;color:var(--gold);font-size:.85rem;margin-bottom:6px}
+  .openq ol{margin:0 0 0 24px}
+  .dedication{text-align:center;font-style:italic;color:var(--blue-soft);font-size:15px;margin-bottom:30px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .confirm{color:#8a1c1c;font-style:normal;font-size:.88em}
+  em.term{font-style:italic}
+  blockquote .heb strong{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<header class="title">
+  <h1 dir="rtl">הַכֹּל בְּסֵדֶר — הַכָּנַת לֵיל הַסֵּדֶר וְהַנְהָגָתוֹ</h1>
+  <div class="english-title">Preparing and Leading the Pesach Seder: Technical Success, the Seder Shekalim, and Painting the Picture of Yetzias Mitzrayim</div>
+  <div class="sub">A guest discourse of Rabbi Yechiel Spero in advance of <em class="term">Pesach</em> (<span class="heb-inline">פסח</span>) — A Practical Guide for Parents</div>
+  <div class="date">29 Adar 5786 · 18 March 2026 · Sefer Edition</div>
+</header>
+<p class="lead">This guest discourse was delivered by Rabbi Yechiel Spero at Rabbi Ephrati’s shul in advance of <em class="term">Pesach</em> (<span class="heb-inline">פסח</span>). It is a practical guide for the parent who will lead the <em class="term">seder</em> (<span class="heb-inline">סדר</span>): how to prepare the children, the table and the house, and how to turn the night into an experience that the children carry with them through the year.</p>
+<p class="lead">Its governing idea is that the <em class="term">seder</em> is not an occasion for delivering <em class="term">divrei Torah</em> (<span class="heb-inline">דברי תורה</span>) but for reliving the story of <em class="term">Yetzias Mitzrayim</em> (<span class="heb-inline">יציאת מצרים</span>), and that a parent who prepares well can send every member of the family away knowing that <em class="term">HaKadosh Baruch Hu</em> (<span class="heb-inline">הקדוש ברוך הוא</span>) loves him. The lecturer, who holds up many of his own props as he speaks, directs his listeners to his website, awesomepesach.com, where nearly everything he describes is gathered and nearly all of it is free.</p>
+<p class="lead">He speaks quickly and, by his own account, skips part of what he had prepared. Where the recording is unclear the text says so or leaves the matter out, and the Open Questions at the end list what remains to be settled.</p>
+<div class="divider">&#10022; &nbsp; &#10022; &nbsp; &#10022;</div>
+<h2>I. Hakol B’Seder: The Whole Year in One Night</h2>
+<p>The lecturer began with the English rendering of the familiar phrase <span class="heb-inline">הכל בסדר</span>: “Everything is going to be okay.” On a deeper level, he said, it means that a person’s whole spiritual year can be found in the <em class="term">seder</em> (<span class="heb-inline">סדר</span>). The night is not simply a time to spend together; it is an uplifting experience. He began to say where this comes from, stopped, and accepted from a member of the audience that it is from the <em>Imrei Chaim</em> (“I believe that is from the Imrei Chaim.” “Really? <em>Hakol B’Seder</em>. Thank you.”).<a class="footnote-ref" id="ref1" href="#fn1">[1]</a></p>
+<p>The goal, therefore, is not to have a pleasant time but to create a real experience. The lecturer prepares his own <em class="term">seder</em> with great care, so much so that one of the practices he recommends is preparing one’s own <em class="term">haggadah</em> (<span class="heb-inline">הגדה</span>). He read the front page of his own: <em>Relax. You are running the seder. It is not your show.</em> He spends so much time in preparation, he said, that when the night arrives he needs only to relax, because the aim is a positive experience with one’s children and a real connection with them.</p>
+<h2>II. Technical Success: Making the Children Want to Be There</h2>
+<p>The lecturer’s term for the first task is “technical success”: arranging matters so that the <em class="term">seder</em> runs smoothly. The first requirement is that the children want to be present, and for that many things have to be going on.</p>
+<h3>Ownership</h3>
+<p>Everyone likes the product of his own work; when a person has made something he wants to see it on display. The more the children are involved in preparing for <em class="term">Pesach</em> and for the <em class="term">seder</em>, the more they will want to be at the table to see their work. They can grind the <em class="term">maror</em> (<span class="heb-inline">מרור</span>) and make the <em class="term">charoses</em> (<span class="heb-inline">חרוסת</span>). The lecturer added that anyone who does not buy salt water from Gourmet Glatt can have the children make it, and they will see how salty it is. They can make signs and prepare activities. He aims to engage children from four or five years old up to the late teens and early twenties; he has fewer suggestions for the oldest, but some, since his own children range from seven to twenty-four.</p>
+<h3>The Laminator</h3>
+<p>One of his best purchases, he said, is a laminator, which costs about thirty dollars. It is good first of all for <em class="term">Sukkos</em> (<span class="heb-inline">סוכות</span>): laminated projects can be hung in the <em class="term">sukkah</em> (<span class="heb-inline">סוכה</span>) year after year, and his father, of blessed memory, loved to put up the old projects that the lecturer and his siblings had made. For <em class="term">Pesach</em> it gets the children involved and gives them something to do before the <em class="term">seder</em>, and what is laminated can be used again. He promised to describe the things worth laminating as he went on.</p>
+<h3>Sticky Notes</h3>
+<p>The lecturer then spoke of a failing he sees in the children of today. They come home from school and forget the <em class="term">mitzvah</em> (<span class="heb-inline">מצוה</span>), <span class="heb-inline">והגדת לבנך</span>, “and you shall tell your son”:<a class="footnote-ref" id="ref2" href="#fn2">[2]</a> the <em class="term">mitzvah</em> is for the parent to tell the child, not for the child to tell the parent. It is good that children know a great deal of Torah, but what is its purpose here? The purpose is that the parent impart a message to the child.</p>
+<p>He keeps, by his own description, an “ADD <em class="term">haggadah</em>,” a <em class="term">haggadah</em> of short <em class="term">divrei Torah</em>, and he insists that this is not the goal of the <em class="term">seder</em>. The goal is not to recite <em class="term">gematrios</em> (<span class="heb-inline">גימטריות</span>) and elaborate <em class="term">pshatim</em> (<span class="heb-inline">פשטים</span>) but to tell over the story of <em class="term">Mitzrayim</em> (<span class="heb-inline">מצרים</span>). When a child comes home with a million insights, the parent should not crush his spirit. Instead he should say: “Listen, I am going to give you five sticky notes. You are going to say five at the <em class="term">seder</em>, and we will hear the rest during the rest of <em class="term">Pesach</em>.” The number depends on how many children there are and how much each knows. The children will choose their best five and will be excited, and the child has a boundary. If one child has much to say, the lecturer added, let him say as much as he likes; but the aim is that the parent have room to impart something. The matter of rewards, he said, would come soon.</p>
+<h2>III. What the Seder Is For</h2>
+<h3>Every Struggle Is Because He Loves You</h3>
+<p>“What is the goal of the <em class="term">seder</em>? For me personally,” said the lecturer, “I want everybody to walk out knowing that <em class="term">Hashem</em> (<span class="heb-inline">השם</span>) loves them.” He has signs that teach this. One reads <em>FAITH</em>; he shows it to the children and asks what it stands for, and when they answer “Forward All Issues Toward Hashem,” they receive what he calls a <em>seder shekel</em>. (He held one up, and said that the reward system would come later; see Section VI.) He has many laminated signs of this kind that he hangs up. He asked the listeners not to look up his website then; at the end he would give its name, and everything he was saying could be found there, almost all of it free.</p>
+<p>By the end of the <em class="term">seder</em> he wants his children to know that everything that happens to a person in life is because <em class="term">Hashem</em> loves him, and that every struggle a person has had is because <em class="term">Hashem</em> loves him. “You are leaving Egypt tonight. You are leaving your own struggle, whatever struggle you have.” It is not merely a beautiful teaching. He has, he said, a hundred and fifty pages of amazing Torah, but that is not the goal of the <em class="term">seder</em>; the goal is that the family relive the experience of leaving <em class="term">Mitzrayim</em>.<a class="footnote-ref" id="ref3" href="#fn3">[3]</a> That is why the discourse is about props.</p>
+<h3>A Personal Haggadah</h3>
+<p>The lecturer related that he was once asked on a podcast what he says to people who go to a hotel for <em class="term">Pesach</em>; he has, he said, unfortunately no filter, and he answered that he tells them not to go. But for those who do go, he added, there is a benefit: they are not cooking, shopping or cleaning, and so they have time to prepare questions, and the guidance he gives will help them.</p>
+<p>“An absolute must,” he said, “is printing your own <em class="term">haggadah</em>.” He does not tell anyone not to buy the published <em class="term">haggados</em> (<span class="heb-inline">הגדות</span>) that carry every possible <em class="term">dvar Torah</em> (<span class="heb-inline">דבר תורה</span>). But his own is printed from his computer, and it allows him to write into it: <em>Tell this story here. Do this prop. Remind my wife to start warming up the chicken soup.</em> Wherever the leader is holding in the text, he can find the instruction at once.</p>
+<p>Some of those present, he continued, have parents or grandparents who are Holocaust survivors. For those who are fortunate enough to have them alive and at the <em class="term">seder</em>, “we are jealous,” because they can tell the children how they left their own <em class="term">mitzrayim</em>. And if one remembers a story about a parent, a grandparent, a father-in-law or a grandfather-in-law, one should put it into the <em class="term">haggadah</em>: a person leading a <em class="term">seder</em> at ten-thirty at night cannot remember everything, and a personal <em class="term">haggadah</em> holds the notes, the stories and the agenda. Such <em class="term">haggados</em> can be found online and on his own website, and the leader then adds his own personal notes.</p>
+<h2>IV. Bringing In the Older Children</h2>
+<p>One of the best ways to involve the children, said the lecturer, is the pool noodle. He did not bring every prop, but he described this one. His son Amir, or his children as they grow older, put on a “mean Egyptian” costume bought at Party City and take the noodle and go around hitting the younger ones. The reason this works is that the older children, if they are the wicked guards, suddenly want to be at the table: they want to hit their younger siblings. “You give them tasks.”</p>
+<p>The lecturer tells his older children, “Listen, I bribe you once a year. I am asking you for two activities and one <em class="term">dvar Torah</em>.” One must know what motivates each child, and he was speaking of his children who are eighteen and up. They are not all alike in their excitement, but the younger ones feed off the older ones, so that if the older ones lead, the younger ones will follow. Bribing them is itself, he said, in the service of the <em class="term">mitzvah</em> of the night, which is to transmit to one’s child; he would speak at the end about the hope that their hearts will then be open to the parent’s messages.</p>
+<h2>V. The Night Before: Matzah, Wine and Table</h2>
+<h3>The Pre-Measured Bags</h3>
+<p>On the night before the <em class="term">seder</em> the lecturer and his daughter sit at a table with a scale. He does not do this for <em>halachic</em> reasons, he said, but because it lets the <em class="term">seder</em> run more smoothly, and he recommended it to anyone who will have more than seven or eight people at the table. They have a list of how much <em class="term">matzah</em> (<span class="heb-inline">מצה</span>) is needed to fulfil each <em class="term">mitzvah</em>.<a class="footnote-ref" id="ref4" href="#fn4">[4]</a> They open several boxes of <em class="term">matzah</em>; the daughter weighs, and he puts the portion in a bag, seals it and labels it, for example <em><em class="term">motzi matzah</em> (<span class="heb-inline">מוציא מצה</span>)</em>, and places it in a large shopping bag. He counts how many will be at the <em class="term">seder</em>, multiplies by two, and prepares all the bags of <em><em class="term">motzi matzah</em></em>, all the bags of <em><em class="term">korech</em> (<span class="heb-inline">כורך</span>)</em>, all the bags for the <em class="term">afikoman</em> (<span class="heb-inline">אפיקומן</span>) and all the bags of <em class="term">maror</em>.</p>
+<p>The reason is that handling <em class="term">matzah</em> is not like slicing <em class="term">challah</em> (<span class="heb-inline">חלה</span>), especially when one is trying to give each person the minimum measure. With the bags ready, the table runs; and his <em class="term">seder</em>, he hopes, will have ten people. To the objection that part of the experience is the measuring itself, he answered that one can put a little piece of <em class="term">matzah</em> in each bag, or take a small piece from each bag and add it to each person’s portion; but if everyone measures at the table it becomes chaos. If the practice does not work for a given family, he said, that is fine; for him it takes an hour with his daughter the night before <em class="term">Pesach</em>, and the table is cleared and prepared.</p>
+<h3>Wine, Whole Matzos, and the Table</h3>
+<p>He also opens all the bottles of wine before the <em class="term">seder</em>. He offers wine stoppers for sale through his website, because peeling the foil and working a corkscrew takes time, and this way the <em class="term">seder</em> runs without interruption. He takes two boxes of <em class="term">matzah</em>, one marked <em>whole</em> and one <em>broken</em>, and opens several boxes beforehand so that before every <em class="term">seder</em> and every meal he is not searching for whole pieces. “Unfortunately, when you buy a box of <em class="term">matzah</em>, they are not all whole,” and this way they are ready at the <em class="term">seder</em> or at any other meal.</p>
+<p>The next suggestion, he said, sounds crazy: do not set the table. The family does not eat until much later, so all that is needed at first is a plate and a cup. The forks and the other plates are not needed; that is not setting up for technical success, which means allowing the <em class="term">seder</em> to run smoothly, and if grape juice is going to be poured here and there, the rest of the cutlery and plates are unnecessary.</p>
+<h2>VI. The Reward System</h2>
+<h3>Prizes and Keep Focus Cards</h3>
+<p>If one prepares a list of prizes beyond the standard ones and simply hands them out, the children will want to be at the table, for they know that at any moment a card may be passed out. The lecturer, who has done a great deal of laminating, has laminated cards that name prizes: a trip to Seasons Express, a night of bowling, whatever it may be. “This is the night to invest money,” he said, “by the <em class="term">seder</em>.”</p>
+<p>His children, he admitted, have already beaten the system, but he described a good one for parents whose children have not yet worked out how. These are what he calls <em>Keep Focus</em> cards. They too are on his website, and they must be laminated. He and his wife spend time giving each child cards suited to him. One reads, for example, <em>Hand in this card at <em class="term">Avadim Hayinu</em> (<span class="heb-inline">עבדים היינו</span>) and get a seder shekel</em>; another, <em>Ask a question about freedom and get three shekalim</em>, since the aim is that the children ask as many questions as possible: “The more they ask, that is the name of the game tonight.”</p>
+<p>A related device is the scavenger hunt. A child who is given a set of cards will look for <em class="term">Avadim Hayinu</em>, for the first of the <em><em class="term">Mah Nishtanah</em> (<span class="heb-inline">מה נשתנה</span>)</em> questions, for the third cup of wine, for the paragraph of <span class="heb-inline">והיא שעמדה</span>, and for whatever else is on the cards; the lecturer has a whole bag of them. He divides them among the children and prepares an envelope for each, for both nights, the night before.</p>
+<h3>The Seder Shekalim</h3>
+<p>The lecturer prints <em>seder shekalim</em> in ones, fives and other denominations, and hands them out as freely as possible. The recording has him say that the printing was done in color at Office Depot or the like, but that one can do it at home, at an in-law’s or at work, and that the denominations can be adjusted. One year a company, which the recording gives as “Thank You Hashem,” made a video of him and rebranded everything, and, he said, did a better job of making the notes than he had, so he used theirs.</p>
+<p>The key, he said, is that he does not tell the children what the notes are worth. In his mind he is giving each child, say, twenty-five dollars. If the child earns a hundred shekalim, each is worth twenty-five cents; if he earns only fifty, each is worth fifty cents; if he earns two hundred, each is worth twelve and a half cents. “It works,” and the children, who want as many shekalim as possible, pile them up. One must not make the figure too extravagant. Someone had told him that his children enjoyed the shekalim so much that they did not want the prize but wanted to keep the shekalim: “That is a win, by the way.”</p>
+<p>He wants as much <em>shelo lishmah</em> (<span class="heb-inline">שלא לשמה</span>) as possible on the night of the <em class="term">seder</em>: the rewards are not for their own sake. They must also come right away. If a parent says “I will reward you” and the child must wait until, say, Lag BaOmer, it means nothing. The lecturer, on the first day of <em class="term">Chol HaMoed</em> (<span class="heb-inline">חול המועד</span>), either hands the children money or takes them to buy a present, “on Amazon, whatever it is,” so that the child sees that he worked for something and got it.</p>
+<h3>Two Bowls</h3>
+<p>The lecturer also described a device that, he said, takes patience and perception. Set out two bowls or cups, one marked <span class="heb-inline">עבדות</span>, one marked <span class="heb-inline">חירות</span> (or <span class="heb-inline">גאולה</span>, or something else). Whenever anyone at the table mentions anything about slavery or freedom, the child calls out, “He mentioned <em class="term">avdus</em> (<span class="heb-inline">עבדות</span>)!” and another shekel goes into the cup. The children are on high alert for any mention, and at the end of the <em class="term">seder</em> the shekalim in the cups are divided among them. The benefit, he said, is that they want to notice and recognize slavery and freedom as much as possible, as the family goes from one to the other.</p>
+<h2>VII. Props in the House Before Pesach</h2>
+<p>Beginning on the tenth of <em class="term">Nissan</em> (<span class="heb-inline">ניסן</span>), the lecturer puts something up around the house every night, so that when the children wake in the morning they find something new. He said that he does not do every prop that he mentions, and that he brought only some of them. Behind him were three posters of Egypt, one of the splitting of the sea and one of the desert, and he had some for sale, but said it was no matter if no one bought. He had bought extras because the year before he had ordered a prop that arrived on <em class="term">Pesach</em> itself, which defeated the purpose. He is always looking for <em class="term">Pesach</em> things during the year.</p>
+<p>He showed a lamb for the <em class="term">korban Pesach</em>, which he found, he thinks, at T.J. Maxx (he first said Costco) and puts out on the tenth of <em class="term">Nissan</em>, and a frog that, he said, “has survived many” of something (the recording has “webinars”, probably a slip) and has had surgery several times because its parts have fallen off. Walmart is dangerous, he said, but right after Halloween one finds costumes there, and he used to find them at Old Navy on Central; costumes can be used for little Moshe and the like. Another prop came from Dave &amp; Buster’s. After Easter he found a reed basket at Walmart for about a dollar, and his daughter Malka painted it black; it serves as the basket, and a baby doll is put in it as Moshe in the river. The children see what they are learning in school coming to life. His website has lists and lists of props, and each parent will know what his wife can and cannot handle.</p>
+<p>He had once painted around the doorpost with red painter’s tape he found on Amazon, and made a mistake: he had put it on the outside. Rabbi Willig of Woodmere pointed out that it belongs on the inside, which the lecturer found fascinating and had not known. The point of all of these things is that the children begin to ask questions.</p>
+<p>Among the other items he described are a “For Sale” sign, which he once put on his own house, to the surprise of a neighbor who asked whether he was moving (he was saying he hoped to go to Eretz Yisrael), and a “Private Property” sign, which he said is where Paroh went in the morning; a wall covering four feet high and twelve feet long, of which he showed a sample, lining two walls of his house; bags of candy, one for each <em class="term">seder</em>, which the children grab as he chases them through the “Yam Suf” (see Section XIV); five large inflatable animals, giraffes and elephants and others, two and a half to three feet tall, bought one year for about seventy dollars, which stand for the plagues and are set around the house; and inflatable instruments, because the Torah says that the Jews went out with instruments. Every year he buys one more thing.</p>
+<p>He also has chains, and straws taped to the wall, because the Egyptians floated like straw, and straw was used to make bricks. He has the “Split Cup,” which he found on Amazon and which they stopped selling, though he found a new one; he once bought them at 7-Eleven. It holds two colors, red and clear, that do not mix, so that two people drinking from it have two different colors, like the Egyptian and the Jew drinking from the same source. He has a brick, which one can get at Lowe’s, rocks, a blindfold, and a bone, which might be a dog bone, though that is not what he tells his children: it can be the bone of the <em class="term">korban Pesach</em> (<span class="heb-inline">קרבן פסח</span>), or “they worked us to the bone.” A key can lock a person up or let him out. The children, he added, come up with items of their own.</p>
+<p>He also has a plastic knife that is, to his children, Jewish blood. He said with some amusement that the TSA took it from him in Phoenix the year before, that he had to buy a new one for twelve dollars, and that he said to the agent, “Seriously? It is plastic.” He found a hand at a Five Below, he said, and taped it to a stick, and then extended the stick and lifted up Moshe and brought him back; he does not say so, but this appears to be the arm of Paroh’s daughter reaching for the basket. His point was that some of these ideas may sound odd, but that if one prepares them they gain the children’s attention.</p>
+<h2>VIII. Relaxation, Emunah, and Where to Sit</h2>
+<p>When one runs the <em class="term">seder</em>, said the lecturer, the most important thing is to relax. It is the night of <em class="term">emunah</em> (<span class="heb-inline">אמונה</span>): when a person is relaxed, he has <em class="term">emunah</em>. A person who faces a struggle in life, whether financial or, God forbid, of health, and who has faith in <em class="term">HaKadosh Baruch Hu</em> will be more relaxed. “Being relaxed is the ultimate sign of <em class="term">emunah</em>, and that is what we want to transmit to our children.” On the night of the <em class="term">seder</em> God took the Jews out of <em class="term">Mitzrayim</em>, and He will take a person out of his struggle, whether it is weight, an addiction, or a failure socially, emotionally, spiritually or financially.</p>
+<p>It is also a night on which we do not merely remember our forefathers’ day. “<span class="heb-inline">חייב אדם לראות את עצמו</span>”: a person must view himself as having left <em class="term">Mitzrayim</em>. That, he said, is what the family does on the night of the <em class="term">seder</em>, and he hopes that it is leaving its struggles, its own <em class="term">mitzrayim</em>. (At this point the recording has a sentence about his children being in Cairo that is unclear; it is left to the Open Questions.)</p>
+<p>Therefore the goal is not to finish the <em class="term">seder</em> as quickly as possible; it bothers the lecturer when people ask what time the <em class="term">seder</em> ended and answer, “An hour earlier.” The night is an opportunity in which God opens the leader’s mind and the children’s hearts, and the leader can share with them ideas that may carry them for the rest of the year and perhaps of their lives. The lecturer, who said that he has many unconventional ideas, suggested that the leader, usually the father or grandfather, who ordinarily sits at the head of the table, sit in the middle instead. If the table is more than six or eight feet long, as he hopes it will be if the grandchildren are there, the leader in the middle is equidistant from both ends, and no one feels that he is sitting in the back of the class. He added that he does not know what a <em class="term">seder</em> with several families is like, as he is not at that stage of life.</p>
+<p>The leader should also be aware of how much each person must eat and drink, whether <em class="term">matzah</em>, <em class="term">maror</em> or wine, because some people cannot manage four, five or six ounces of wine. The lecturer thinks the minimum is about three and a third ounces. It is better, he said, to have a full cup than the majority of a larger cup, so each should choose the size of cup that he can handle (see note 4).</p>
+<h2>IX. Questions Over Answers</h2>
+<p>The key, the lecturer said, is <em>shelo lishmah</em>: on the night of the <em class="term">seder</em> it is rewards, not for their own sake, that one wants, and one wants to give them for questions more than for anything, “because that is the goal; the goal is questions.”</p>
+<h3>Deliberate Mistakes</h3>
+<p>The lecturer then said something at which he considers himself particularly skilled, because he says things wrong and mispronounces all the time. When one repeats the story, one can repeat it wrongly, on purpose: the children then try to catch the leader. They will listen if they are told that whoever catches a mistake gets shekalim. The leader says, for instance, “So Moshe went and hit the ground when it came to <em class="term">dam</em> (<span class="heb-inline">דם</span>),” which he did not, and the children listen to catch him.</p>
+<h3>Stories and Prepared Questions</h3>
+<p>He also recommended that a parent suggest that a child or grandchild write a story, as part of the preparation, for the child to read at the <em class="term">seder</em>. The lecturer gave some possibilities and said that one can expand on them: what it was like to grow up in <em class="term">Mitzrayim</em> as a five-year-old Jewish child; what it was like to be a five-year-old Egyptian watching one’s friends’ parents, one’s own parents, cousins and neighbors; what it was like to be a <em class="term">Levi</em> (<span class="heb-inline">לוי</span>). The child puts into writing what he learned in school.</p>
+<p>His website has a whole section of questions: fun ones, hard ones, easy ones, thought-provoking ones and conversation starters. One should look at them before <em class="term">Pesach</em> and notice which will speak to which child; for example, <em>Is slavery bad or good? Is freedom bad or good? What is good about having structure? Is it good to have a job? Is hard work good? What has hard work done for you? What does it mean to have free will?</em> One might decide that this question is for Malka and that one is for another child, the lecturer said, and the more one has prepared, the more smoothly the <em class="term">seder</em> will run. He invited questions and said that the listeners could also reach him through the website.</p>
+<h2>X. A Dvar Torah: “And You Shall Show Your Son,” and Why “From the House of Slaves”</h2>
+<h3>Telling and Showing</h3>
+<p>The lecturer then shared what he called a very meaningful <em class="term">dvar Torah</em> (<span class="heb-inline">דבר תורה</span>), whose personal meaning for him he said he would not explain for lack of time (he does so below). The verse says that one should tell one’s child, but the <em>Targum</em>, he said, does not say “you shall tell your child”; it says “you shall show your child.”<a class="footnote-ref" id="ref5" href="#fn5">[5]</a> That is why the family does these things around the house: the goal is not to remember but to relive. This is the point of what <em class="term">Chazal</em> (<span class="heb-inline">חז״ל</span>) say, that a person is obligated to view himself as if he left Egypt (see note 3). He remarked, as the recording has it, that before this year this would have sounded strange, but that by “tomorrow” he hoped to have three children who had actually left Egypt (Open Questions, no. 3). The question, then, is how a person who is in Florida, the Five Towns or Israel can view himself as leaving Egypt.</p>
+<h3>Mi’beis Avadim</h3>
+<p>The verse says, “I am <em class="term">Hashem</em> your God who took you out of Egypt.” It could have stopped there, but the Torah does not waste words, and it adds two more: <span class="heb-inline">מבית עבדים</span>, “from the house of slaves.”<a class="footnote-ref" id="ref6" href="#fn6">[6]</a> Ask any person what the Jews were doing in <em class="term">Mitzrayim</em>, and the answer is that they were slaves. Why does the verse say it? The lecturer noted that this was said seven weeks after God took the Jews out of Egypt, and that they had been enslaved for two hundred and ten years, so that it was known who took them out and what they had been doing there.</p>
+<p>The answer, he said, begins with an observation about emotional experiences. A person who goes through one, whether sad, such as a funeral, or joyous, such as his child’s or grandchild’s wedding or his own, takes upon himself a <em>kabbalah</em> (<span class="heb-inline">קבלה</span>), a resolution. If a person has broken his foot, the first time he walks is wonderful; he enjoys it. And then, unfortunately, he gets used to it, and the resolutions go down the drain. How can a person keep the experience? The <em>Sfas Emes</em> (<span class="heb-inline">שפת אמת</span>), said the lecturer, says something fascinating (the other transcript has “Sifsei Chaim”): one paints the picture of what one was experiencing at the moment of the experience.<a class="footnote-ref" id="ref7" href="#fn7">[7]</a></p>
+<p>He then told of a time, twenty-two and a half years earlier (he gave twenty-three and a half a moment later), when he gave this very <em class="term">dvar Torah</em> at the <em>sheloshim</em> (<span class="heb-inline">שלושים</span>) of his wife’s brother, who had died at eighteen and had been a beloved student at Frisch. He spoke to some three hundred people in a gym and told them to look around: at what everyone was wearing, at what the gym looked like, and to imagine what the brother would have been wearing and what the walls looked like. When a person reconnects to that picture, he reignites the feelings. “That is the beauty of a picture. You are reigniting and reconnecting to those emotions.”</p>
+<p>That, said the lecturer, is how a person can view himself as having left <em class="term">Mitzrayim</em>: the Torah paints a picture. When the Jews left, they knew that God had taken them out. But seven weeks later they needed to be reminded, and so the Torah says <span class="heb-inline">מבית עבדים</span>. And so too we say that whoever elaborates on the telling of the exodus is praiseworthy:<a class="footnote-ref" id="ref8" href="#fn8">[8]</a> the more a person speaks about the miracles that took place, not the <em>gematrios</em> and not the clever <em>vertlach</em> but how God took the Jews out of <em class="term">Mitzrayim</em>, the more he reconnects to those feelings. The lecturer gave an example from his own life: he had been speaking for half an hour and had mentioned that he is on a diet, a challenge he has fought for a year and a half, in which he has lost fifty pounds without Ozempic and without exercise. He said he had not yet overcome it, but that the more a person re-experiences the great feeling of overcoming, the more he will remember what it is like.</p>
+<p>He then said that he would skip the next part of his outline for lack of time, and turn to props for <em class="term">erev Pesach</em> (<span class="heb-inline">ערב פסח</span>) and for the <em class="term">seder</em> itself.</p>
+<h2>XI. Props for the Plagues</h2>
+<h3>Moshe’s Staff Swallows the Others</h3>
+<p>The lecturer said that one should look out for the cardboard tube around which a white tablecloth is wrapped. He takes one of those, and two inner tubes from paper towels. He connects the two paper-towel tubes with fishing line, leaving about three feet between them, attaches about ten feet of line to the end of one, and feeds it through the large tube. “You have to practice, but it works”: the staff of Moshe swallows up the other six staffs. He writes <span class="heb-inline">דצ״ך עד״ש באח״ב</span> on the outside so that it is really Moshe’s staff.<a class="footnote-ref" id="ref9" href="#fn9">[9]</a> He also has a stick that, dropped on the floor, becomes a snake: a prop he found the year before for twenty-five or thirty dollars, which he did not receive until, unfortunately, <em class="term">Pesach</em> itself. He tried it in front of the audience, and it did not work at first; on a second try it did. “Hashem is good to me,” he said.</p>
+<h3>Blood</h3>
+<p>The lecturer spoke of a fascinating <em>midrash</em> that says that the blood penetrated not only the water but also a person’s body and fruit.<a class="footnote-ref" id="ref10" href="#fn10">[10]</a> He buys oranges, and has a Jew cut one open, and it is orange inside; he has an Egyptian, a guest who plays the part, cut open another, and it is a blood orange. Blood oranges, he said, are sold at the gourmet markets: one asks, and they know why. When the orange is cut open at the <em class="term">seder</em> the children cry out, because the blood penetrated the fruit as well.</p>
+<p>One year he made a deal with a friend whom the recording names as Yankee Brach, who scooped out two pineapples for him. He took a piece of tin, a nine-by-thirteen pan cut to two or three inches wide, and pushed it down the middle of each scooped-out pineapple. On one side he poured red Jell-O and on the other clear, so that the children see the blood penetrating the fruit.</p>
+<h3>Frogs, Hail, Boils</h3>
+<p>He has a large frog from Costco, which he bought at the time of <em class="term">Shavuos</em> (<span class="heb-inline">שבועות</span>) and had to hide from his children for ten and a half months, until <em class="term">Pesach</em>. For hail, <span class="heb-inline">ברד</span>, there are several things one can do. He likes marshmallow swirls, in several colors swirled together, symbolizing fire and water together, though they stopped making them, as they stopped making Jolly Ranchers. And, “the dumbest thing, but for some reason my kids like it”: he buys gummies, which are different colors but all the same, puts a half-inch of water in a cup, adds a yellow, an orange and a red gummy, and freezes it. “That is fire and water. It is not even good, but it is exciting.”</p>
+<p>For boils, <span class="heb-inline">שחין</span>, he uses Mega Button candies, which he called the most disgusting candy in history, sugar that tastes like paper. One buys them once a year, he said, and they never go bad, because they start out bad.</p>
+<h3>Darkness and the Mannequin Challenge</h3>
+<p>Before the <em class="term">seder</em> the family hides fake jewelry around the house. The lecturer, who has been teaching high-school students for twenty years, recalled that about ten years ago there was a fad called the mannequin challenge, in which video clips showed people frozen in random places. At the <em class="term">seder</em>, when darkness is reached, everybody stands up and walks around, and someone calls out “Mannequin Challenge!” Everyone above a certain age, which the leader chooses, perhaps six, seven, eight or nine, must freeze. While the older ones are frozen, those below that age run around finding the jewelry, hidden under a couch and elsewhere, and relive how the Jews found the treasure of the Egyptians in the darkness.</p>
+<h3>The Splitting of the Sea</h3>
+<p>The lecturer said that he did not know why this works but that it does, and urged the listeners to try it at home that night. Take a bowl of water and pour pepper on the top. Stick a finger in and nothing happens. But if a little dish soap, which he called Ajax, is on the tip of the finger, then when it touches the pepper the pepper splits. “Not the water. The pepper!”</p>
+<p>Another demonstration: hold a clear glass with a little grape juice or wine at the bottom, and pour water into it. “What comes up? Blood,” because the <em class="term">mitzvah</em> is the Egyptian pouring water into his cup, and the child cannot see the wine or juice at the bottom, so that red water seems to rise.</p>
+<h2>XII. The Seder Itself: Personal Definitions and a Reenactment</h2>
+<h3>What Is Your Definition of Avdus?</h3>
+<p>The lecturer is proud of one question. As he noted, not everything on his website is his own thought, for he has compiled much of it, but some of it is. When the <em class="term">seder</em> reaches <em class="term">avdus</em>, he goes around the table and asks: “What is your definition of <em class="term">avdus</em>?” He has a wide variety of people at his table. His daughter will correctly answer, “Math class”; his father-in-law, an accountant, “Tax season.” He then asks for the definition of <em class="term">cheirus</em> (<span class="heb-inline">חירות</span>), and the answers are “Four-thirty p.m.” or “June fifteenth,” and his father says “April sixteenth.” And then, “What is your definition of <em class="term">maror</em>?”</p>
+<p>Now it is real, he said. The participants are re-experiencing the idea of leaving <em class="term">Mitzrayim</em>, because each has something in his life that is bitter, something that is slavery, and, hopefully, something that is freedom, and each leaves it on the night of the <em class="term">seder</em>.</p>
+<h3>The Bricks</h3>
+<p>The lecturer then described a reenactment that he said the video company had left out as gruesome. Couches today have cushions sewn in, unlike the old ones whose pieces came off, but the lecturer builds “bricks” from the cushions with his children, takes the youngest and lays him across one of the bricks, and puts more cushions on top. The <em>Midrash</em>, he said, says that the Egyptians used Jewish babies as bricks.<a class="footnote-ref" id="ref11" href="#fn11">[11]</a> He understood why the video company cut it. His children, he said, love it.</p>
+<h3>The Chase Through Mitzrayim</h3>
+<p>They do it right after <em class="term">Dayenu</em>, which is why he put it into his own <em class="term">haggadah</em>: that is when the Jews leave <em class="term">Mitzrayim</em>. The lecturer puts on a crown, which he said looks as if he got it from Burger King, and special clothing, and becomes <em class="term">Paroh</em> (<span class="heb-inline">פרעה</span>), and he chases his children out through “Mitzrayim.” They run through the hallway, which he calls the Yam Suf and which has candies on the wall, grabbing candies, and at the end, in the room they reach, are the musical instruments that he blew up before <em class="term">Yom Tov</em> (<span class="heb-inline">יום טוב</span>). There the family sings <em><span class="heb-inline">הודו לה׳ כי טוב</span></em> (“thank you Hashem”).<a class="footnote-ref" id="ref12" href="#fn12">[12]</a></p>
+<h2>XIII. Pictures, Drawings, and the Table Runner</h2>
+<p>The lecturer remarked that, since artificial intelligence could now put him to shame, he is a little outdated, and that one could probably create far better pictures than the ones he spent a long time finding. He puts pictures up around the house: for <em><em class="term">Chad Gadya</em> (<span class="heb-inline">חד גדיא</span>)</em> each person receives a picture of one of the characters in the song and must make the sound of it, and he has all of them; pictures of hard labor; what he called his own personal bonfire, the coals that Moshe touched; the fifteenth of <em class="term">Nissan</em>, which is always a full moon, a fact his father-in-law likes to point out every year; a red river; lice, enlarged; frogs; the jewels that Moshe had the option of choosing from; and the first picture, Yosef’s coat, “how it all started.” The pictures are printed at CVS or the like and laminated, and are a great way to get the children excited in the morning.</p>
+<p>He also met a man in Los Angeles, whose name he did not recall, who made a table runner of the Ten Plagues, which costs about fifty dollars and has remarkable detail. The lecturer does not leave it on the table; he hangs it on the wall, where the details fascinate the children, who are occupied looking at it even when they are not paying attention to the <em class="term">haggadah</em>. And if the children are artistic, they can draw pictures of the plagues, which he puts up around the house, and he showed a drawing by one of his children.</p>
+<h2>XIV. The Item That Means Slavery or Freedom</h2>
+<p>The lecturer then described an exercise in which he asks everyone who comes to his <em class="term">seder</em> to bring something that represents slavery or freedom. He told of the <em class="term">seder</em> of a few years earlier, the first that he had spent with his mother in probably fifteen years or more. She said, “Yechiel, you can run the <em class="term">seder</em>, but I am leaving at ten,” and he answered, “Mom, you can do what you want; just do not make an announcement. Get up and go.” He asked her, and everyone, only to come to the <em class="term">seder</em> with something that represents slavery or freedom. That year his mother was leaving her boss after thirty years, and she came with a picture of him and said, “Slavery and freedom.” She said it with the biggest smile, and she was so happy to be involved: that was her preparation for saying, “I am going from slavery to freedom.”</p>
+<p>A cell phone, he noted, can represent either: for a child it is freedom if it is his first phone; for an adult who is mature and honest, it probably represents slavery. A key can lock a person up or unlock him. Chains need no explanation.</p>
+<h2>XV. Resources, a Caution, and the Close</h2>
+<h3>The Website</h3>
+<p>Before concluding, the lecturer gave the name of his website, awesomepesach.com (the recording first renders it as another name and corrects it at the end). All of his ideas are there, he constantly updates it, and everything is free except that there is a link to Amazon for those who want to buy, with “no pressure at all.” He has some of each of the items; the posters he had with him cost about twenty-two or twenty-three dollars on Amazon, up to twenty-five, and he is not selling them to make two dollars but as a service. He also noted that there is a scale listed there, and that the site holds everything that the non-creative parent could need. People may contact him there with questions.</p>
+<h3>A Cautionary Tale</h3>
+<p>He told, as an embarrassing story, that he once spoke in Los Angeles, where a friend had a poster. “Wow, that is beautiful! It is Paroh! It is Egyptian! It is majestic!” He clicked on it and ordered ten. In Los Angeles, in the middle of the shul, he opened an eight-foot poster, and then began to speak. His friend came up to him and said, “Yechiel, I cannot have that poster.” “She is not dressed.” She was not scantily dressed, he said; she was not dressed at all. He wanted the ground to open and swallow him and close up. He returned all of them on Amazon, and the ones he now offers are appropriate. The lesson is that a buyer of such images should look carefully.</p>
+<h3>Photographs of the Family</h3>
+<p>One of the pictures, he added, can be a photograph of one’s wife and children, or other family members, perhaps the in-laws, with backpacks, as they leave Egypt: “to make it real.”</p>
+<h3>Engagement, Not Entertainment</h3>
+<p>“The goal of the <em class="term">seder</em> is not entertainment. The goal is engagement. The goal is inspiring.” The parent has an opportunity to tell his children that they are leaving their <em class="term">Mitzrayim</em>, their constrictions and their limitations. He then quoted the line from the <em class="term">haggadah</em>, <span class="heb-inline">ואף אתה אמור לו כהלכות הפסח אין מפטירין אחר הפסח אפיקומן</span>, and said that it means that the goal of the <em class="term">seder</em> is that the <em class="term">afikoman</em> (<span class="heb-inline">אפיקומן</span>) should stay with the family forever (the line is, in the standard text, part of the answer to the wise son; the application is his). <em class="term">HaKadosh Baruch Hu</em> gives the children, on the night of the <em class="term">seder</em>, a special <em class="term">koach</em> (<span class="heb-inline">כח</span>) to ask, and, the lecturer asked the listeners to remember, <em class="term">Hashem</em> gives the parent, on that night, the <em class="term">koach</em> to answer.</p>
+<p>The children, he hopes, will be engaged in conversations about their own personal struggles, their own <em class="term">mitzrayim</em>, and their own journey to <em class="term">cheirus</em> and to receiving the Torah: that is the goal of the <em class="term">seder</em>. And if the parent prepares well, knowing which questions, which messages, and which stories of <em class="term">emunah</em>, faith and triumph from his own life to tell, he will transmit them to his children, because <em class="term">Hashem</em> gives him on that night a special <em class="term">koach</em>: for the children’s hearts to be open, and for his own <em class="term">neshamah</em> (<span class="heb-inline">נשמה</span>) to transmit its inner feelings of belief in <em class="term">HaKadosh Baruch Hu</em>, so that they carry the children through the rest of the year. He thanked the listeners, repeated the name of the website, awesomepesach.com, and wished them an amazing <em class="term">Pesach</em>.</p>
+<section class="mareh">
+<h2>מראה מקומות &nbsp;&middot;&nbsp; Mareh Mekomos</h2>
+<ol>
+<li id="fn1">
+  <span class="short"><span class="heb-inline">אמרי חיים</span>; <span class="heb-inline">ראש השנה ב׳ ע״א</span>.</span>
+  <span class="expanded"> The recording has an audience member supply the source (“I believe that’s from the Imrei Chaim”), and the lecturer accepts it with some surprise. The earlier text and the AI summary have instead the Chida’s <em>Rosh Kol Pesach</em>, which the recording does not support and which is not used. Which work and passage of the <em>Imrei Chaim</em> is meant was not located (Open Questions, no. 1). What was confirmed on Sefaria is only the background that the Mishnah (Rosh Hashanah 2a) makes the first of <em class="term">Nissan</em> (<span class="heb-inline">ניסן</span>) the New Year for kings and for the festivals; that is not given as the lecturer’s source.</span>
+  <a class="backref" href="#ref1" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn2">
+  <span class="short"><span class="heb-inline">שמות י״ג:ח׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: “And you shall tell your son on that day” (in the JPS translation, “explain to your child”): the verse is the one the Mishnah in Pesachim 10:5 cites for the obligation. The AI summary’s locator, Exodus 12:26, is a different verse and is not used. The lecturer’s contrast, “and your son shall tell you” as the reverse of the verse, is his own.</span>
+  <a class="backref" href="#ref2" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn3">
+  <span class="short"><span class="heb-inline">משנה פסחים י׳:ה׳</span>; <span class="heb-inline">רמב״ם, הלכות חמץ ומצה ז׳:ו׳</span>; <span class="heb-inline">פסחים קט״ז ע״ב</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: the Mishnah (Pesachim 10:5) says that in each generation a person must view himself as though he personally left Egypt, citing Exodus 13:8. The Rambam (Chametz UMatzah 7:6) reads that a person must <em>present</em> himself (<span class="heb-inline">להראות</span>) as if he has now left the slavery of Egypt, while the Talmud (Pesachim 116b) and the commonly accepted <em class="term">haggadah</em> (<span class="heb-inline">הגדה</span>) text read “see himself” (<span class="heb-inline">לראות</span>); the lecturer quotes the familiar <span class="heb-inline">לראות</span>. The earlier text’s statement that the Chida and others read the Rambam’s wording as an obligation to act it out is not from the shiur and was not retrieved; it is not stated here.</span>
+  <a class="backref" href="#ref3" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn4">
+  <span class="short"><span class="heb-inline">שולחן ערוך, אורח חיים תע״ב:ט׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: the passage sets the quantity of each of the four cups at a <em>revi’is</em> (<span class="heb-inline">רביעית</span>) after the wine is mixed with water, treats how much of it must be drunk, and notes that a larger cup holding several <em>revi’iyos</em> may be shared. The lecturer gives only “about three point three ounces” for the wine, says that the <em>shiurim</em> for <em class="term">matzah</em> (<span class="heb-inline">מצה</span>) and <em class="term">maror</em> (<span class="heb-inline">מרור</span>) are on a list, and states no figures for them; the earlier text’s gram and milliliter figures were not from the shiur and are omitted (Open Questions, no. 8).</span>
+  <a class="backref" href="#ref4" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn5">
+  <span class="short"><span class="heb-inline">תרגום אונקלוס על שמות י״ג:ח׳</span>.</span>
+  <span class="expanded"> Not confirmed. The English of Onkelos on Exodus 13:8 on Sefaria (Metsudah) reads, “You must tell your son”; the Aramaic was not retrieved, so the lecturer’s report that the <em>Targum</em> says “show” rather than “tell” could not be checked. The AI summary lists a <em>Targum</em> among the sources cited (Open Questions, no. 2).</span>
+  <a class="backref" href="#ref5" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn6">
+  <span class="short"><span class="heb-inline">שמות כ׳:ב׳</span>; <span class="heb-inline">דברים ה׳:ו׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: “I the Eternal am your God who brought you out of the land of Egypt, the house of bondage,” in both verses. The lecturer’s question on the apparently superfluous words is his own presentation; the answer he gives is attributed to the <em>Sfas Emes</em> (the other transcript has “Sifsei Chaim”; note 7).</span>
+  <a class="backref" href="#ref6" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn7">
+  <span class="short"><span class="heb-inline">שפת אמת</span> (or <span class="heb-inline">שפתי חיים</span>).</span>
+  <span class="expanded"> The recording is ambiguous: the bilingual transcript has the <em>Sfas Emes</em> (<span class="heb-inline">שפת אמת</span>), the other transcript “sifse chaim,” and the AI summary and the earlier text <span class="heb-inline">שפת חיים</span>, with the author identified as R’ Chaim Friedlander (1923–1986), <em>mashgiach</em> of Ponevezh. The lecturer names no author, and the passage on <span class="heb-inline">מבית עבדים</span> was not located. Not retrieved from Sefaria (Open Questions, no. 5).</span>
+  <a class="backref" href="#ref7" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn8">
+  <span class="short"><span class="heb-inline">הגדה של פסח</span>: <span class="heb-inline">וכל המרבה לספר ביציאת מצרים הרי זה משובח</span>.</span>
+  <span class="expanded"> The lecturer quotes the line from the <em class="term">haggadah</em>; Sefaria’s <em>Story of the Five Rabbis</em> page confirms the account of the sages who reclined in Bnei Brak and told of the exodus all night, until their students came and said that the time for the morning <em class="term">Shema</em> (<span class="heb-inline">שמע</span>) had come. The line quoted by the lecturer was not found on that page; the earlier text’s statement that it immediately follows the Four Sons was not confirmed and is not repeated, and the earlier description of the Bnei Brak account as a <em>midrash</em> is corrected to the <em class="term">haggadah</em>.</span>
+  <a class="backref" href="#ref8" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn9">
+  <span class="short"><span class="heb-inline">שמות ז׳:י׳–י״ב</span>; <span class="heb-inline">שבת צ״ז ע״א</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria: Aaron’s rod became a serpent, the Egyptian magicians did the same, “but Aaron’s rod swallowed their rods” (7:12). The Gemara (Shabbos 97a) records R’ Elazar’s remark that this was a miracle within a miracle, for it was Aaron’s staff, not his serpent, that swallowed the others. The earlier text’s statement that the swallowed staffs remained inside the staff after it reverted is not in the Gemara as retrieved and has been removed. The lecturer calls it Moshe’s staff and writes <span class="heb-inline">דצ״ך עד״ש באח״ב</span> (the mnemonic of the plagues) on it, not <span class="heb-inline">מטה אהרן</span> as the AI summary has; the “other six staffs” is his count, and the verse does not give a number.</span>
+  <a class="backref" href="#ref9" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn10">
+  <span class="short"><span class="heb-inline">מדרש</span> on the plague of blood.</span>
+  <span class="expanded"> The lecturer gives no source. The earlier text and the AI summary state it as a <em>midrash</em> without a locator, and none was found on Sefaria; it is recorded as the lecturer’s report (Open Questions, no. 9).</span>
+  <a class="backref" href="#ref10" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn11">
+  <span class="short"><span class="heb-inline">מדרש</span> on the Egyptians’ use of Jewish children as bricks.</span>
+  <span class="expanded"> The lecturer says only “the <em>Midrash</em> says.” The earlier text cited <em>Shemos Rabbah</em> 22:1 and <em>Tanna DeVei Eliyahu</em>; the passage was not found in the text of <em>Shemos Rabbah</em> chapter 1 retrieved from Sefaria (which reaches to Exodus 2:25), and the citation to chapter 22 was not checked, so no locator is given here (Open Questions, no. 10).</span>
+  <a class="backref" href="#ref11" title="Return to text">&#x21A9;</a>
+</li>
+<li id="fn12">
+  <span class="short"><span class="heb-inline">תהלים קל״ו:א׳</span>.</span>
+  <span class="expanded"> Confirmed on Sefaria (Psalms 136:1): “Praise God, who is good, whose steadfast love is eternal” (<span class="heb-inline">הודו לה׳ כי טוב</span>). The bilingual transcript has the lecturer say that the family sings <em>Hodu LaHashem ki tov</em> (his gloss, “thank you Hashem”) on reaching the instruments, because the Torah says the Jews went out with instruments; the AI summary and the earlier text have <em>Shiras HaYam</em> (<span class="heb-inline">שמות ט״ו</span>) and a kabbalistic remark, neither of which the recording supports.</span>
+  <a class="backref" href="#ref12" title="Return to text">&#x21A9;</a>
+</li>
+</ol>
+</section>
+<section class="mareh openq">
+<h2>Editorial Notes &nbsp;&middot;&nbsp; Open Questions</h2>
+<p style="font-style:italic;color:#555;font-size:14px;">Items unresolved at the time of writing, to be settled with the lecturer or from the sources before printing. Reports of the lecturer are recorded as his and are not asserted in the text.</p>
+<ol>
+<li><strong>The source of the opening teaching.</strong> The lecturer begins to say where “the whole year is in the <em class="term">seder</em>” comes from and accepts the <em>Imrei Chaim</em> from a member of the audience; the AI summary and the earlier text instead give the Chida’s <em>Rosh Kol Pesach</em>. The work and the passage are to be confirmed with the lecturer (note 1).</li>
+<li><strong>The <em>Targum</em>.</strong> Whether the <em>Targum</em> on “you shall tell your son” reads “show your son,” as the lecturer says, and which <em>Targum</em> he means (note 5). The AI summary lists a <em>Targum</em> but gives no further detail.</li>
+<li><strong>The date and the closing greeting.</strong> The audio file is dated 18 March 2026, a Wednesday; the Hebrew date, 29 Adar 5786, is computed (Rosh Chodesh <em class="term">Nissan</em> 5786 fell on Thursday 19 March). The lecturer speaks of “tomorrow” as the day by which he hopes to have three children who have left Egypt; the other transcript and the AI summary add a closing “Shabbos Shalom,” which the bilingual transcript does not have. The date and occasion of delivery are to be confirmed. The location is given as Rabbi Ephrati’s shul; the recording itself does not say.</li>
+<li><strong>The children in Cairo.</strong> The recording has the lecturer say that two of his children are in Cairo at that moment. The sentence is unclear and may be a slip for another place; Section VIII mentions it only as unclear and does not rely on it.</li>
+<li><strong>The <em>Sfas Emes</em> or <em>Sifsei Chaim</em>.</strong> The title is ambiguous between the transcripts; the author, and the passage on <span class="heb-inline">מבית עבדים</span>, are to be confirmed (note 7). The anecdote of the <em>sheloshim</em> is recorded as the lecturer told it, with “twenty-two and a half” and “twenty-three and a half” years both said; the name of the brother-in-law, who died at eighteen, is not given.</li>
+<li><strong>Names and companies in the recording.</strong> Several names are unclear and are given as heard or omitted: “Rabbi Willig of Woodmere” (the doorpost tape), “Yanky Brach” (the pineapples), “Thank You Hashem” (the company whose video redid the shekalim), the man in Los Angeles who made the table runner, “Zasi Fold” (whose children kept the shekalim), a remark about “Weberman kids” in the other transcript, and a woman named Laura, in connection with the diet. Spellings are as heard and none of these is asserted.</li>
+<li><strong>Garbled passages in the props section.</strong> The identification of the hand taped to a stick (apparently the arm of Paroh’s daughter); a sponge with red borscht, said to absorb the blows (band-aids, sneakers); a ruler and “snakes”; the eclipse glasses and a Conservative or Reform website that suggested playing music or darkening the room for the reading; and a remark about a Rebbe who sells <em>beckishes</em> (the bilingual transcript has “the Baluner Rebbe,” after “the Efrat Rebbe”) are unclear in the recording. They are summarized with that caution, or omitted, and are to be confirmed.</li>
+<li><strong>The measures.</strong> The lecturer’s “about three point three ounces” for the wine is a minimum he gives from memory. The earlier text also gave <em><em class="term">matzah</em></em> and <em>maror</em> measures in grams and a lower figure for the wine of about 75 ml (about 2.5 ounces); none of those figures is from the shiur and they are omitted. The measures vary with the custom of the community and the authority followed (note 4).</li>
+<li><strong>The <em>midrash</em> on blood in the body and the fruit.</strong> No source is given and none was found (note 10).</li>
+<li><strong>The <em>midrash</em> on the babies as bricks.</strong> The lecturer says only “the <em>Midrash</em> says.” The citation to <em>Shemos Rabbah</em> 22:1 in the earlier text was not found (note 11). The reenactment is gruesome by the lecturer’s own admission, and parents are to judge its suitability for their own children.</li>
+<li><strong>Details of the props.</strong> The ages of the lecturer’s children (he says seven to twenty-four); which child is Amir (the earlier text called him the older son); the cost of the inflatable animals (about seventy dollars, for five); and the prices of the posters (twenty-two to twenty-five dollars).</li>
+<li><strong>The closing line on the <em>afikoman</em>.</strong> The bilingual transcript has the lecturer quote <span class="heb-inline">ואף אתה אמור לו כהלכות הפסח אין מפטירין אחר הפסח אפיקומן</span> and say that it means that the goal of the <em class="term">seder</em> is that the <em class="term">afikoman</em> should stay with the family forever; the other transcript has only a garbled version. The reading is the lecturer’s and the placement in the <em class="term">haggadah</em> was not retrieved from Sefaria.</li>
+<li><strong>The website name.</strong> The website is first rendered in the recording as another name and is given at the end as awesomepesach.com, which is the form used. The earlier text’s remarks that the site is updated annually and that the Amazon links are affiliate links are not from the shiur and were removed.</li>
+</ol>
+</section>
+<footer>
+  Sefer Edition of Rabbi Yechiel Spero’s guest discourse at Rabbi Ephrati’s shul on preparing and leading the <em class="term">Pesach</em> (<span class="heb-inline">פסח</span>) <em class="term">seder</em> (<span class="heb-inline">סדר</span>), 29 Adar 5786. The edition follows the order of the discourse, records the lecturer’s reports as his, and leaves unresolved items to the Open Questions.
+</footer>
+
+</body>
+</html>
